@@ -13,15 +13,52 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: audio-audit-analysis
+  cancel-in-progress: true
+
 jobs:
   audit:
+    name: audit-${{ matrix.name }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: sep26
+            sparse: |
+              tools/audio_audit.py
+              music/Sep26/*
+              music/Resonant Assembly.wav
+          - name: feb26
+            sparse: |
+              tools/audio_audit.py
+              music/Feb26/*
+          - name: apr01-29
+            sparse: |
+              tools/audio_audit.py
+              music/Apr26/0[0-2][0-9]_*.wav
+          - name: apr30-59
+            sparse: |
+              tools/audio_audit.py
+              music/Apr26/0[3-5][0-9]_*.wav
+          - name: apr60-89
+            sparse: |
+              tools/audio_audit.py
+              music/Apr26/0[6-8][0-9]_*.wav
+          - name: apr90-100
+            sparse: |
+              tools/audio_audit.py
+              music/Apr26/09[0-9]_*.wav
+              music/Apr26/100_*.wav
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - name: Checkout
+      - name: Sparse checkout audio shard
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
+          sparse-checkout: ${{ matrix.sparse }}
+          sparse-checkout-cone-mode: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,7 +70,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install numpy scipy soundfile librosa pyloudnorm torch transformers sentencepiece
 
-      - name: Run full audio audit
+      - name: Run audio audit
         env:
           TOKENIZERS_PARALLELISM: 'false'
         run: python tools/audio_audit.py
@@ -42,6 +79,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: audio-audit-output
+          name: audio-audit-${{ matrix.name }}
           path: audio_audit_output/
           if-no-files-found: warn
