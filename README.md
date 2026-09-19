@@ -1,61 +1,43 @@
 # Where the Light Remains
 
-**Where the Light Remains** is a short atmospheric first-person romantic puzzle game planned for **Godot 4.x**.
+**Where the Light Remains** is a short atmospheric first-person romantic puzzle game for Windows, built in **Godot 4.x**.
 
-The project is currently in **pre-production / content preparation**. The narrative, level flow, art direction, audio direction, technical architecture, performance budget, asset manifest, concept-art prompt pack, and QA plan have already been designed. Final concept art and music are still being prepared before implementation starts.
+## Current state
+
+The project has moved from content preparation into **implementation preflight / initial implementation**. The narrative, stage flow, puzzle baseline, art direction, audio direction, technical architecture, performance budget and required asset manifest are approved. Selected concept art and the curated music package are now stored in the production asset tree and indexed for implementation.
 
 ## Core profile
 
 - Genre: atmospheric first-person narrative puzzle
 - Platform: Windows PC
-- Engine target: Godot 4.x
+- Engine: Godot 4.x / GDScript / Forward+
 - Main path: approximately 15–30 minutes
-- Structure: one central observatory/archive hub, five wings, three memories, and a finale
-- Visual direction: stylized realism, magical archive / observatory aesthetic
+- Structure: central observatory/archive hub, five wings, three memories and finale
+- Visual direction: stylized realism; magical archive / observatory
 - Performance target: 1920×1080 / 60 FPS on GTX 1060-class hardware
 - Ending: one canonical ending; optional secrets never gate the finale
 
-## Repository status
-
-This repository is being prepared as the production home for the game.
-
-Current repository content focuses on **approved design data and asset-preparation material**. Implementation instructions for Codex are intentionally **not published yet**; they will be added only after the music and concept-art package is uploaded and indexed.
-
-## Documentation
-
-See [`docs/README.md`](docs/README.md) for the documentation index.
-
-Key production documents currently included:
-
-- project overview / current design baseline;
-- required asset table;
-- concept-art prompt pack;
-- content status and upload structure.
-
-## Planned repository layout
+## Repository layout
 
 ```text
 .
-├── docs/
-│   ├── design/
-│   ├── concept_art/
-│   └── production/
+├── docs/                 # canonical implementation-facing design/production docs
 ├── assets/
-│   ├── concept_art/
-│   ├── characters/
+│   ├── concept_art/      # selected production references
+│   ├── characters/       # future source/model intake
 │   └── audio/
-│       ├── music/
+│       ├── music/        # curated source masters + runtime policy
 │       ├── ambience/
 │       └── sfx/
-└── game/
+└── game/                 # Godot project and runtime implementation
 ```
 
-## Important
+The full long-form master document remains the source of truth for details not reproduced in repository splits. `docs/design/PROJECT_BIBLE_INDEX.md` defines precedence.
 
-The project contains story spoilers and personal narrative material. Do not publish or redistribute project content without explicit approval.
+## Public repository notice
 
----
+This repository is intentionally public by project-owner decision. It contains story spoilers, personal narrative material and final-sequence references. Do not redistribute third-party assets independently of their licenses.
 
-**Status:** Pre-production / content preparation  
-**Implementation:** not started in this repository  
-**Codex handoff:** intentionally deferred until the visual and music package is complete
+## Implementation status
+
+Initial Godot project structure and core service skeletons are now allowed. Implementation must preserve the approved stage map, accessibility constraints, silence map, save/checkpoint contract and GTX 1060 performance budget.

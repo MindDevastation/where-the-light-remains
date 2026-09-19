@@ -1,33 +1,30 @@
 # Documentation index
 
-This directory contains the approved pre-production documentation for **Where the Light Remains**.
+Implementation-facing documentation for **Where the Light Remains**.
 
-## `design/`
+## Canonical design
 
-Core design information that is already stable enough to guide production:
+- `design/PROJECT_BIBLE_INDEX.md` — document precedence and canonical split map.
+- `design/PROJECT_SUMMARY.md` — compact project/stage overview.
+- `design/NARRATIVE_CANON.md` — narrative constraints and Stage 0–15 canonical beats.
+- `design/TECHNICAL_BASELINE.md` — Godot architecture, saves, settings and performance rules.
+- `design/AUDIO_BASELINE.md` — audio-system constraints derived from Audio Direction v1.2 / AUDIO_PLAN v1.0.
+- `design/REQUIRED_ASSET_TABLE.md` — 185 required/fallback asset groups from ASSET_MANIFEST v1.0.
 
-- `PROJECT_SUMMARY.md` — compact project baseline and stage map;
-- `REQUIRED_ASSET_TABLE.md` — mandatory asset groups extracted from the current asset manifest.
+## Concept art
 
-The full master Project Bible remains the authoritative long-form source outside this repository for now. A repository copy can be added later after the content package is finalized.
+- `concept_art/CONCEPT_ART_PROMPTS_v1.1.md` — current canonical generation/production prompts.
+- `concept_art/CONCEPT_ART_PROMPTS_v1.0.md` — historical prompt pack; do not use where it conflicts with v1.1/master.
 
-## `concept_art/`
+Selected reference images live under `assets/concept_art/`.
 
-- `CONCEPT_ART_PROMPTS_v1.0.md` — prompt package for generating environment, hero-prop, UI, character-reference, and production-sheet concepts.
+## Production
 
-Generated concept art will be stored under `assets/concept_art/` and indexed after selection.
+- `production/ASSET_INDEX.md` — mapping from selected assets to stages/roles.
+- `production/CONTENT_STATUS.md` — readiness and open inputs.
+- `production/QA_CHECKLIST.md` — release/acceptance baseline.
+- `production/AUDIO_PROVENANCE.md` — source/license metadata status.
 
-## `production/`
+## Source-of-truth rule
 
-- `CONTENT_STATUS.md` — current production readiness and missing external inputs.
-
-## Codex handoff
-
-Codex execution instructions are **intentionally absent at this stage**. They will be added only after:
-
-1. the selected music package is uploaded;
-2. the selected concept-art package is uploaded;
-3. those files are indexed against stages and asset IDs;
-4. the final production package is reviewed once more.
-
-This prevents implementation from starting against temporary visual/audio assumptions.
+When repository summaries disagree with the long-form Project Bible v1.8, the master document wins unless a later repository decision is explicitly marked **APPROVED OVERRIDE**. Current approved override: runtime music selection uses `GroupSharedPool + StageUniqueCue` while preserving master silence, transition and adaptive-state rules.

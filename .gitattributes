@@ -10,19 +10,22 @@
 *.yml text eol=lf
 *.yaml text eol=lf
 
-# Binary assets
+# Existing image/reference assets remain normal binary blobs.
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.webp binary
-*.wav binary
-*.ogg binary
-*.flac binary
-*.mp3 binary
-*.glb binary
-*.gltf binary
-*.blend binary
-*.fbx binary
+
+# Heavy future audio/3D changes should use Git LFS from clients configured for LFS.
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.gltf filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+
 *.psd binary
 *.kra binary
 *.docx binary

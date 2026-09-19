@@ -1,11 +1,7 @@
-# Music
+# Curated music source masters
 
-Selected music tracks and stems go here.
+The current WAV files are approved source masters, grouped as shared style pools and stage-specific cues. They are intentionally retained with recognizable source names.
 
-Planned naming baseline:
+**Runtime derivatives must use canonical names** such as `mus_s06_egg_chase_v01.ogg` and live in/import through the Godot project rather than replacing source-master provenance.
 
-```text
-mus_s##_name_v01.ogg
-```
-
-Do not commit exploratory Suno generations here unless they are intentionally kept as candidates. Final mapping to stages and AudioDirector states will be added after the music package is selected.
+See `MUSIC_INDEX.md` and `MUSIC_RUNTIME_POLICY.md`.

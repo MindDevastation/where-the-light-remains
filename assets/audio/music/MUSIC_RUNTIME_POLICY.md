@@ -1,72 +1,68 @@
 # Music Runtime Policy
 
 ## Core model
-`Stage = GroupSharedPool + UniqueCue`
 
-Every stage belongs to exactly one group. The exact same `shared/` pool is available to every stage inside that group. Each stage also owns a `unique/` cue that establishes its identity.
+`Stage = GroupSharedPool + StageUniqueCue`
 
-## Normal exploration playback
-1. Play the stage unique cue first unless a scripted silence/event owns the opening.
-2. Then build a shuffle bag from the stage group's `shared/` directory.
-3. Do not repeat a shared track until the current bag is exhausted.
-4. Never allow immediate repetition across bag boundaries.
-5. After one full shared-pool cycle, the stage unique cue may re-enter rotation with a higher weight than one shared cue.
-6. Supplemental tracks are stage-local and only enter rotation when explicitly enabled.
+Normal exploration stages play their unique cue first, then rotate the group's `shared/` pool using a shuffle bag. No immediate repeats. The stage unique cue may re-enter later rotation with higher weight.
 
-Recommended weights after the guaranteed first unique play:
-- shared cue: `1.0`
-- stage unique cue: `2.0`
-- supplemental cue: `0.5–1.0`
+This playlist model is an **approved override** layered on top of the master AUDIO_PLAN; authored silence and semantic substates always win.
 
-## Silence and transitions
-Calm exploration:
-- ambience-only gap: random `3–10 s` when scene timing allows;
-- crossfade: `4–7 s`;
-- avoid starting a fresh long track immediately before a known puzzle resolution or cinematic lock.
+## Transition timing
 
-Active states:
-- crossfade: `1.5–3 s`;
-- no random ambience gap during chase or momentum-critical sequences.
+- within-playlist calm crossfade: typically `4–7 s`
+- stage-to-stage baseline: `1–3 s`
+- authored musical morph: `3–6 s`
+- active/chase transition: `1.5–3 s`
+- calm ambience-only breathing gap: usually `3–10 s` when scene timing allows
 
-Canonical Audio Direction silence always overrides playlist behavior.
+Do not start a long cue immediately before a known solved/cinematic transition.
 
-## Suggested AudioDirector states
-General: `exploration`, `puzzle`, `solved`, `cinematic`, `silence`.
+## Stage ownership
 
-S06: `egg_stealth`, `egg_pickup_silence`, `boss_wake`, `egg_chase`, `rescue`.
+A: S00, S01, S10, S11  
+B: S02, S03  
+C: S04, S06  
+D: S05, S07  
+E: S08, S09, S12, S13, S14, S15
 
-Finale: `poem`, `acrostic`, `confession_pre`, `confession_silence`, `pre_dawn`, `dawn`, `morning`, `final_wide`.
+## Mandatory stage overrides
 
-## Scripted overrides
-### Stage 6 — Egg
-`Group C calm pool → Curious Sneaking Groove → mandatory egg-pickup silence → The Great Dodging Dash → rescue transition`.
-Shared Group C music must not restart during the chase.
+### S00 Prologue
+`scripted_only: true`, `shared_pool_enabled: false`.
 
-### Stage 12 — Poem
-Group E remains the parent group, but `Quiet Pages, Steady Light` owns the poem state. Fade toward silence at the end.
+The prologue must remain almost scoreless and reveal only the seed/first note of the Archive motif. Group A shared tracks cannot rotate here.
 
-### Stage 13 — Acrostic
-`Final Quiet of the Archive` owns the stage. Preserve the planned silence after the full acrostic.
+### S06 Egg
+Deterministic state machine: `egg_stealth → egg_pickup_silence → boss_wake → egg_chase → rescue → comedic_beat`. Group C shuffle is disabled while event states own playback.
 
-### Stage 14 — Confession
-`Silent Piano` owns the stage. On `Я люблю тебя`, force music to zero and hold **4–6 seconds of complete music silence**. Shuffle playback cannot resume inside this window.
+### S07 Seriousness / Smile
+Group D remains the parent style family, but the active cue `Wooden Hall Puzzle v2` is excluded from the quiet reflection state. Prefer `Controlled Tails`, `Quiet Corridor in Dusk`, near-silence and authored puzzle layers.
 
-### Stage 15 — Dawn
-Preferred deterministic chain: `Pre-dawn Hush → Quiet Hope → Starlit Motif → optional Glass and Wind / ambience tail`.
-`Starlit Motif` is the formal unique cue. Group E shared tracks must not interrupt the authored dawn chain.
+### S12–S15 Finale
+Critical narrative states are deterministic; shared Group E rotation may run only outside authored locks.
 
-## Future data shape
+- S12: `Quiet Pages, Steady Light` owns poem reading.
+- S13: `Final Quiet of the Archive` owns acrostic reveal with authored silence.
+- S14: `Silent Piano`; on `Я люблю тебя`, music goes to zero for approximately **4–6 s**. No second swell.
+- S15: preferred authored chain `Pre-dawn Hush → Quiet Hope → Starlit Motif → optional Glass and Wind / natural ambience`. Group E shuffle must not interrupt it.
+
+## Suggested data shape
+
 ```yaml
 group: A|B|C|D|E
 unique_track: path
 supplemental_tracks: []
+shared_pool_enabled: true
+playlist_exclusions: []
 unique_first: true
 unique_rotation_weight: 2.0
 shared_rotation_weight: 1.0
 silence_min_seconds: 3
 silence_max_seconds: 10
-crossfade_seconds: 6
+playlist_crossfade_seconds: 6
+stage_transition_crossfade_seconds: 2
 scripted_only: false
 ```
 
-`AudioDirector` owns all playlist selection, crossfades and silence locks. Scene scripts request music states; they do not directly own music players.
+`AudioDirector` owns selection, dual-player crossfades, snapshots, ducking and silence locks. Scenes request semantic states; they never directly own the global music players.

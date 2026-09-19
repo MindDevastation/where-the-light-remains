@@ -1,6 +1,6 @@
 # Assets
 
-Production assets are grouped by purpose:
+Production source/reference assets are centralized here.
 
 ```text
 assets/
@@ -12,13 +12,4 @@ assets/
     └── sfx/
 ```
 
-At this stage the folders contain intake rules rather than final assets. Selected concept art and music will be uploaded before implementation handoff.
-
-Every approved production asset should eventually be mapped to:
-
-- stage(s);
-- Asset Manifest ID(s), where applicable;
-- source/provenance;
-- license/usage basis;
-- canonical/candidate status;
-- implementation notes.
+Selected concept art and the curated music source masters are now present. `docs/production/ASSET_INDEX.md` records stage/role/canonical status. Raw source filenames may remain human-readable; runtime-imported assets under `game/` must follow the Technical Baseline naming convention.

@@ -1,0 +1,30 @@
+; Engine configuration file.
+; Where the Light Remains — initial Godot 4.x scaffold
+config_version=5
+
+[application]
+config/name="Where the Light Remains"
+run/main_scene="res://core/game_root/game_root.tscn"
+
+[display]
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
+
+[rendering]
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="forward_plus"
+
+[autoload]
+App="*res://autoload/app.gd"
+GameState="*res://autoload/game_state.gd"
+SaveManager="*res://autoload/save_manager.gd"
+SceneRouter="*res://autoload/scene_router.gd"
+AudioDirector="*res://autoload/audio_director.gd"
+SettingsManager="*res://autoload/settings_manager.gd"
+InputManager="*res://autoload/input_manager.gd"
+EventBus="*res://autoload/event_bus.gd"
+
+[physics]
+common/physics_ticks_per_second=60
