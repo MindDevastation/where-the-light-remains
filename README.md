@@ -4,7 +4,7 @@
 
 ## Current state
 
-The project has moved from content preparation into **implementation preflight / initial implementation**. The narrative, stage flow, puzzle baseline, art direction, audio direction, technical architecture, performance budget and required asset manifest are approved. Selected concept art and the curated music package are now stored in the production asset tree and indexed for implementation.
+The initial Godot scaffold has **passed engine preflight** with Godot 4.7.2: editor import, eight-autoload startup, Forward+ rendering and orderly shutdown were verified in the Linux development environment. The narrative, stage flow, puzzle baseline, art direction, audio direction, technical architecture, performance budget and required asset manifest are approved. Selected concept art and the curated music package are stored in the production asset tree and indexed for implementation.
 
 ## Core profile
 
@@ -40,7 +40,7 @@ This repository is intentionally public by project-owner decision. It contains s
 
 ## Implementation status
 
-Initial Godot project structure and core service skeletons are now allowed. Implementation must preserve the approved stage map, accessibility constraints, silence map, save/checkpoint contract and GTX 1060 performance budget.
+The initial Godot project and eight core service skeletons are runnable in the verified preflight environment. The next foundation feature is InputMap. Implementation must preserve the approved stage map, accessibility constraints, silence map, save/checkpoint contract and GTX 1060 performance budget.
 
 Engine verification and reproducible startup checks are recorded in
 [`docs/production/ENGINE_PREFLIGHT.md`](docs/production/ENGINE_PREFLIGHT.md).
