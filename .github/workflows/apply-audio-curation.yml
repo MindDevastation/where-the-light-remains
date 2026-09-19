@@ -1,0 +1,125 @@
+name: Apply Audio Curation
+
+on:
+  push:
+    branches:
+      - audio/curation-2026-09-19
+    paths:
+      - '.github/workflows/apply-audio-curation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      REPO: MindDevastation/where-the-light-remains
+      EXPECTED_MAIN_SHA: 922ba3cf17515d246f4c28a9bd4f00e36be376ec
+    steps:
+      - name: Curate and reorganize music atomically
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request, urllib.error
+
+          repo = os.environ['REPO']
+          token = os.environ['GH_TOKEN']
+          expected = os.environ['EXPECTED_MAIN_SHA']
+          api = f'https://api.github.com/repos/{repo}'
+
+          def req(method, url, body=None):
+              data = None if body is None else json.dumps(body).encode('utf-8')
+              r = urllib.request.Request(url, data=data, method=method)
+              r.add_header('Authorization', f'Bearer {token}')
+              r.add_header('Accept', 'application/vnd.github+json')
+              r.add_header('X-GitHub-Api-Version', '2022-11-28')
+              r.add_header('User-Agent', 'audio-curation-workflow')
+              if data is not None:
+                  r.add_header('Content-Type', 'application/json')
+              with urllib.request.urlopen(r) as resp:
+                  return json.loads(resp.read().decode('utf-8'))
+
+          mapping = {
+              # Group A — Archive / Observatory
+              'music/Sep26/Archive Awakening.wav': 'music/A_Archive/S01_Hub/Archive Awakening.wav',
+              'music/Sep26/Hub Motif.wav': 'music/A_Archive/S01_Hub/Hub Motif.wav',
+              'music/Sep26/The Light Path.wav': 'music/A_Archive/S10_Return/The Light Path.wav',
+              'music/Sep26/Activation Sequence.wav': 'music/A_Archive/S11_Order_of_Light/Activation Sequence.wav',
+              'music/Sep26/Mechanism Light.wav': 'music/A_Archive/S11_Order_of_Light/Mechanism Light.wav',
+              'music/Resonant Assembly.wav': 'music/A_Archive/S11_Order_of_Light/Resonant Assembly.wav',
+              'music/Apr26/012_April Snow Drift.wav': 'music/A_Archive/S11_Order_of_Light/012_April Snow Drift.wav',
+
+              # Group B — Wings / Chamber
+              'music/Sep26/Cold to Warm.wav': 'music/B_Wings/S02_Warmth_Light/Cold to Warm.wav',
+              'music/Sep26/Resonant Silence.wav': 'music/B_Wings/S03_Life_Voice/Resonant Silence.wav',
+              'music/Feb26/024_Silent Roads Beneath the Frost.wav': 'music/B_Wings/S03_Life_Voice/024_Silent Roads Beneath the Frost.wav',
+              'music/Feb26/029_Cold Arterial Glow.wav': 'music/B_Wings/S03_Life_Voice/029_Cold Arterial Glow.wav',
+              'music/Feb26/034_Muted Pulse Under Falling White.wav': 'music/B_Wings/S03_Life_Voice/034_Muted Pulse Under Falling White.wav',
+              'music/Feb26/080_Quiet Exhale Through Evergreens.wav': 'music/B_Wings/S03_Life_Voice/080_Quiet Exhale Through Evergreens.wav',
+
+              # Group C — Memories / Raid
+              'music/Apr26/048_Horizon Veil.wav': 'music/C_Memories/S04_First_Meeting/048_Horizon Veil.wav',
+
+              # Group D — Playful / Lightness
+              'music/Sep26/Wooden Hall Puzzle v2.wav': 'music/D_Playful/S05_Laughter_Lightness/Wooden Hall Puzzle v2.wav',
+
+              # Group E — Emotional / Future / Finale
+              'music/Feb26/Quiet Corridor in Dusk.wav': 'music/E_Emotional/S07_Seriousness_Smile/Quiet Corridor in Dusk.wav',
+              'music/Feb26/Candlelight Over Ledger Pages (1).wav': 'music/E_Emotional/S08_Sincerity_Admiration/Candlelight Over Ledger Pages.wav',
+              'music/Sep26/Quiet Exploration.wav': 'music/E_Emotional/S09_Future_Memory/Quiet Exploration.wav',
+              'music/Apr26/084_Snowfield in D Minor.wav': 'music/E_Emotional/S09_Future_Memory/084_Snowfield in D Minor.wav',
+              'music/Feb26/Quiet Pages, Steady Light (1).wav': 'music/E_Emotional/S12_Poem/Quiet Pages, Steady Light.wav',
+              'music/Feb26/Final Quiet of the Archive (1).wav': 'music/E_Emotional/S13-14_Reveal_Confession/Final Quiet of the Archive.wav',
+              'music/Feb26/082_Felt Moonlight in C.wav': 'music/E_Emotional/S15_Dawn/082_Felt Moonlight in C.wav',
+              'music/Apr26/018_April Snow Drift.wav': 'music/E_Emotional/S15_Dawn/018_April Snow Drift.wav',
+              'music/Apr26/070_Moss Thaw.wav': 'music/E_Emotional/S15_Dawn/070_Moss Thaw.wav',
+              'music/Apr26/076_Rain on Moss.wav': 'music/E_Emotional/S15_Dawn/076_Rain on Moss.wav',
+              'music/Apr26/099_Thawing Window.wav': 'music/E_Emotional/S15_Dawn/099_Thawing Window.wav',
+          }
+
+          branch = req('GET', f'{api}/branches/main')
+          current = branch['commit']['sha']
+          if current != expected:
+              raise SystemExit(f'ABORT: main moved. expected {expected}, got {current}')
+
+          commit = req('GET', f'{api}/git/commits/{current}')
+          base_tree = commit['tree']['sha']
+          tree = req('GET', f'{api}/git/trees/{base_tree}?recursive=1')
+          if tree.get('truncated'):
+              raise SystemExit('ABORT: recursive tree truncated')
+
+          blobs = {e['path']: e['sha'] for e in tree['tree'] if e.get('type') == 'blob'}
+          wavs = sorted(p for p in blobs if p.lower().startswith('music/') and p.lower().endswith('.wav'))
+          missing = sorted(set(mapping) - set(blobs))
+          if missing:
+              raise SystemExit('ABORT: selected source files missing:\n' + '\n'.join(missing))
+          if len(wavs) != 123:
+              raise SystemExit(f'ABORT: expected 123 WAV files before curation, found {len(wavs)}')
+
+          # Remove every old WAV path, then re-add only the curated set using the
+          # original blob SHAs. No audio bytes are re-encoded or re-uploaded.
+          entries = [{'path': p, 'mode': '100644', 'type': 'blob', 'sha': None} for p in wavs]
+          for old, new in mapping.items():
+              entries.append({'path': new, 'mode': '100644', 'type': 'blob', 'sha': blobs[old]})
+
+          index = '''# Curated Music Library\n\nCuration date: 2026-09-19  \nPre-curation commit: `922ba3cf17515d246f4c28a9bd4f00e36be376ec`  \nOriginal WAV files: **123**  \nKept after audit: **26**  \nRemoved from current tree: **97**  \nAll removed audio remains recoverable from Git history. No selected WAV was transcoded.\n\n## Group definitions\n\n- **A — Archive / Observatory:** celestial neoclassical archive material, hub, mechanisms, return and final-order puzzle.\n- **B — Wings / Chamber:** intimate chamber material for warmth/light and life/voice wings.\n- **C — Memories / Raid:** dreamlike fantasy-raid memory material.\n- **D — Playful / Lightness:** elegant playful chamber material for laughter/lightness and Egg-family music.\n- **E — Emotional / Future / Finale:** reflective, intimate and future-facing material for late wings, future memory, poem/reveal/confession and dawn.\n\n## Stage map\n\n| Stage | Group | Files kept | Role |\n|---|---|---|---|\n| 0 — Prologue | — | — | **Gap. New bespoke track required.** |\n| 1 — Hub awakening | A | `Archive Awakening.wav`, `Hub Motif.wav` | Event cue + core Archive theme |\n| 2 — Warmth / Light | B | `Cold to Warm.wav` | Primary candidate |\n| 3 — Life / Voice | B | `Resonant Silence.wav`, `024_Silent Roads Beneath the Frost.wav`, `029_Cold Arterial Glow.wav`, `034_Muted Pulse Under Falling White.wav`, `080_Quiet Exhale Through Evergreens.wav` | Primary + alternatives/layers; strongest existing dedicated pool |\n| 4 — First Meeting memory | C | `048_Horizon Veil.wav` | Temporary/ambient candidate; bespoke memory theme still recommended |\n| 5 — Laughter / Lightness | D | `Wooden Hall Puzzle v2.wav` | Existing playful candidate; bespoke theme still recommended |\n| 6a — Egg stealth | C/D | — | **Gap. New mischievous stealth track required.** |\n| 6b — Egg chase | C/D | — | **Gap. New chase variation required.** |\n| 7 — Seriousness / Smile | E | `Quiet Corridor in Dusk.wav` | Reflective candidate |\n| 8 — Sincerity / Admiration | E | `Candlelight Over Ledger Pages.wav` | Intimate candidate |\n| 9 — Future memory | E | `Quiet Exploration.wav`, `084_Snowfield in D Minor.wav` | Primary + alternate |\n| 10 — Return to Archive | A | `The Light Path.wav` | Primary candidate |\n| 11 — Order of Light | A | `Resonant Assembly.wav`, `Activation Sequence.wav`, `Mechanism Light.wav`, `012_April Snow Drift.wav` | Primary + mechanism/puzzle alternatives |\n| 12 — Poem assembly | E | `Quiet Pages, Steady Light.wav` | Primary sparse-text candidate |\n| 13–14 — Acrostic / Confession | E | `Final Quiet of the Archive.wav` | Reserve/near-silence candidate; bespoke confession bed still recommended |\n| 15 — Dawn | E | `082_Felt Moonlight in C.wav`, `018_April Snow Drift.wav`, `070_Moss Thaw.wav`, `076_Rain on Moss.wav`, `099_Thawing Window.wav` | Dawn shortlist; final Archive-theme reprise still recommended |\n\n## Audit-driven removals\n\nThe removed material was dominated by redundant April ambient variants without a unique gameplay/narrative function. The curation intentionally keeps only the strongest functional representatives instead of turning a 15–30 minute game into a playlist.\n\nThree February tracks were also removed deliberately: `009_Snowfall Through Double Glass.wav` (weakest semantic/stage fit and poor loop score ~0.452), `056_Unbroken Evergreens in Black Cold.wav` (poor loop score ~0.403 and redundant function), and `020_Buried Under Falling Silence.wav` (redundant against stronger Group B / text-friendly candidates).\n\n`Wooden Hall Puzzle.wav` was removed because it was an exact binary duplicate of `Wooden Hall Puzzle v2.wav`.\n\n## Remaining composition gaps\n\nThe current library is now intentionally compact. The highest-value next compositions are Stage 0, Stage 4, Stage 5, Stage 6a, Stage 6b, Stage 7, Stage 9, Stage 13→14 transition, Stage 14 near-silence bed, and Stage 15 resolved Archive-theme reprise. Existing tracks can cover the rest without generating more generic ambience.\n'''
+          entries.append({'path': 'music/MUSIC_INDEX.md', 'mode': '100644', 'type': 'blob', 'content': index})
+
+          new_tree = req('POST', f'{api}/git/trees', {'base_tree': base_tree, 'tree': entries})
+          new_commit = req('POST', f'{api}/git/commits', {
+              'message': 'Curate and organize music by group and stage',
+              'tree': new_tree['sha'],
+              'parents': [current],
+          })
+          req('PATCH', f'{api}/git/refs/heads/main', {'sha': new_commit['sha'], 'force': False})
+
+          print('CURATION_COMMIT', new_commit['sha'])
+          print('REMOVED_WAVS', len(wavs) - len(mapping))
+          print('KEPT_WAVS', len(mapping))
+          for old, new in sorted(mapping.items(), key=lambda kv: kv[1]):
+              print('KEEP', old, '->', new)
+          PY
