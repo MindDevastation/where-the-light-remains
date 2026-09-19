@@ -1,17 +1,28 @@
-# Godot 4+ specific ignores
+# Godot 4+
 .godot/
-.nomedia
-
-# Godot-specific ignores
 .import/
-export.cfg
-export_credentials.cfg
+.nomedia
 *.tmp
-
-# Imported translations (automatically generated from CSV files)
 *.translation
 
-# Mono-specific ignores
+# Export/build output
+build/
+dist/
+exports/
+*.pck
+*.zip
+
+# Export credentials are local-only. Keep export_presets.cfg versioned when created.
+export.cfg
+export_credentials.cfg
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Mono-specific
 .mono/
 data_*/
 mono_crash.*.json
