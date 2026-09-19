@@ -7,9 +7,11 @@ Status: **started**.
 - [x] Normalize asset roots under `assets/`.
 - [x] Curate music and define runtime playlist policy.
 - [x] Add canonical design split docs and QA baseline.
+- [x] Create repository asset index.
 - [x] Create initial Godot project.
 - [x] Create 8-autoload core service scaffold.
 - [ ] Lock exact Godot 4.x minor version after verifying the development machine/editor.
+- [ ] Perform a real Git LFS history migration for large audio/3D assets before adding more heavy binaries; do not merely add LFS attributes to unmigrated blobs.
 - [ ] Build valid InputMap in editor/project settings.
 - [ ] Create audio bus layout: Master → Music/Main/Stems, SFX/Critical/World, Ambience, UI, VO_RESERVED.
 - [ ] Add development-only debug stage/save/audio/performance tools.
