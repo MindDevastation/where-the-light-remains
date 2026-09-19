@@ -1,6 +1,16 @@
-# Technical baseline — Godot 4.x
+# Technical baseline — Godot 4.7.2
 
 Derived from Technical Specification v1.1 + Performance Budget v1.0.
+
+## Verified engine
+
+- Development baseline: **Godot 4.7.2 stable**, standard GDScript editor (not .NET).
+- Executable output: `4.7.2.stable.official.ed1daf0bf`.
+- Project feature tags: `4.7`, `Forward Plus`; target platform remains Windows.
+- The version was verified using the executable, a real editor import and runtime
+  startup/safe-exit checks. It was not inferred from the archive name.
+- Repeat engine preflight before changing this baseline. Verification scope and
+  integration status are recorded in `docs/production/ENGINE_PREFLIGHT.md`.
 
 ## Runtime architecture
 

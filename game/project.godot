@@ -1,10 +1,11 @@
 ; Engine configuration file.
-; Where the Light Remains — initial Godot 4.x scaffold
+; Where the Light Remains — verified with Godot 4.7.2 stable
 config_version=5
 
 [application]
 config/name="Where the Light Remains"
 run/main_scene="res://core/game_root/game_root.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
 
 [display]
 window/size/viewport_width=1920
