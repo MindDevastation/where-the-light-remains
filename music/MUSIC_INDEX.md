@@ -1,49 +1,70 @@
-# Curated Music Library
+# Music Library Index
 
-Curation date: 2026-09-19  
-Pre-curation commit: `922ba3cf17515d246f4c28a9bd4f00e36be376ec`  
-Original WAV files: **123**  
-Kept after audit: **26**  
-Removed from current tree: **97**  
-All removed audio remains recoverable from Git history. No selected WAV was transcoded.
+Status: **curated runtime structure applied after the 2026-09-19 repeat audit**.
 
-## Group definitions
+Core rule: each music group owns one shared pool used by every stage in that group, and every stage has a dedicated unique cue. Scripted scenes may temporarily lock out shuffle playback while remaining members of their group.
 
-- **A — Archive / Observatory:** celestial neoclassical archive material, hub, mechanisms, return and final-order puzzle.
-- **B — Wings / Chamber:** intimate chamber material for warmth/light and life/voice wings.
-- **C — Memories / Raid:** dreamlike fantasy-raid memory material.
-- **D — Playful / Lightness:** elegant playful chamber material for laughter/lightness and Egg-family music.
-- **E — Emotional / Future / Finale:** reflective, intimate and future-facing material for late wings, future memory, poem/reveal/confession and dawn.
+## Group ownership
+- **A — Archive / Observatory:** Stages 0, 1, 10, 11
+- **B — Warmth / Voice:** Stages 2, 3
+- **C — Raid Memories:** Stages 4, 6
+- **D — Lightness / Contrast:** Stages 5, 7
+- **E — Sincerity / Future / Finale:** Stages 8, 9, 12, 13, 14, 15
 
-## Stage map
+## A — Archive / Observatory
+Shared pool: `Hub Motif`, `Mechanism Light`, `Activation Sequence`, `Archive Fragment`, `Resonant Puzzle`.
 
-| Stage | Group | Files kept | Role |
-|---|---|---|---|
-| 0 — Prologue | — | — | **Gap. New bespoke track required.** |
-| 1 — Hub awakening | A | `Archive Awakening.wav`, `Hub Motif.wav` | Event cue + core Archive theme |
-| 2 — Warmth / Light | B | `Cold to Warm.wav` | Primary candidate |
-| 3 — Life / Voice | B | `Resonant Silence.wav`, `024_Silent Roads Beneath the Frost.wav`, `029_Cold Arterial Glow.wav`, `034_Muted Pulse Under Falling White.wav`, `080_Quiet Exhale Through Evergreens.wav` | Primary + alternatives/layers; strongest existing dedicated pool |
-| 4 — First Meeting memory | C | `048_Horizon Veil.wav` | Temporary/ambient candidate; bespoke memory theme still recommended |
-| 5 — Laughter / Lightness | D | `Wooden Hall Puzzle v2.wav` | Existing playful candidate; bespoke theme still recommended |
-| 6a — Egg stealth | C/D | — | **Gap. New mischievous stealth track required.** |
-| 6b — Egg chase | C/D | — | **Gap. New chase variation required.** |
-| 7 — Seriousness / Smile | E | `Quiet Corridor in Dusk.wav` | Reflective candidate |
-| 8 — Sincerity / Admiration | E | `Candlelight Over Ledger Pages.wav` | Intimate candidate |
-| 9 — Future memory | E | `Quiet Exploration.wav`, `084_Snowfield in D Minor.wav` | Primary + alternate |
-| 10 — Return to Archive | A | `The Light Path.wav` | Primary candidate |
-| 11 — Order of Light | A | `Resonant Assembly.wav`, `Activation Sequence.wav`, `Mechanism Light.wav`, `012_April Snow Drift.wav` | Primary + mechanism/puzzle alternatives |
-| 12 — Poem assembly | E | `Quiet Pages, Steady Light.wav` | Primary sparse-text candidate |
-| 13–14 — Acrostic / Confession | E | `Final Quiet of the Archive.wav` | Reserve/near-silence candidate; bespoke confession bed still recommended |
-| 15 — Dawn | E | `082_Felt Moonlight in C.wav`, `018_April Snow Drift.wav`, `070_Moss Thaw.wav`, `076_Rain on Moss.wav`, `099_Thawing Window.wav` | Dawn shortlist; final Archive-theme reprise still recommended |
+Unique cues:
+- S00: `Sparse Awakening vol.2` (supplemental: `Sparse Awakening`)
+- S01: `Archive Awakening`
+- S10: `The Light Path`
+- S11: `Resonant Assembly`
 
-## Audit-driven removals
+`Archive Fragment` and `Resonant Puzzle` are intentionally retained and integrated into the A shared pool despite their lower repeat-audit ranking, per project direction.
 
-The removed material was dominated by redundant April ambient variants without a unique gameplay/narrative function. The curation intentionally keeps only the strongest functional representatives instead of turning a 15–30 minute game into a playlist.
+## B — Warmth / Voice
+Shared pool: `024_Silent Roads Beneath the Frost`, `034_Muted Pulse Under Falling White`, `080_Quiet Exhale Through Evergreens`.
 
-Three February tracks were also removed deliberately: `009_Snowfall Through Double Glass.wav` (weakest semantic/stage fit and poor loop score ~0.452), `056_Unbroken Evergreens in Black Cold.wav` (poor loop score ~0.403 and redundant function), and `020_Buried Under Falling Silence.wav` (redundant against stronger Group B / text-friendly candidates).
+Unique cues:
+- S02: `Cold to Warm`
+- S03: `029_Cold Arterial Glow`
 
-`Wooden Hall Puzzle.wav` was removed because it was an exact binary duplicate of `Wooden Hall Puzzle v2.wav`.
+## C — Raid Memories
+Shared pool: `048_Horizon Veil`.
 
-## Remaining composition gaps
+Unique cues:
+- S04: `Remembered Stone Room`
+- S06: `Curious Sneaking Groove` (stealth) + `The Great Dodging Dash` (chase). Stage 6 is the intentional two-cue exception.
 
-The current library is now intentionally compact. The highest-value next compositions are Stage 0, Stage 4, Stage 5, Stage 6a, Stage 6b, Stage 7, Stage 9, Stage 13→14 transition, Stage 14 near-silence bed, and Stage 15 resolved Archive-theme reprise. Existing tracks can cover the rest without generating more generic ambience.
+## D — Lightness / Contrast
+Shared pool: `Wooden Hall Puzzle v2`, `Quiet Corridor in Dusk`.
+
+Unique cues:
+- S05: `Buant Motion`
+- S07: `Controlled Tails`
+
+## E — Sincerity / Future / Finale
+Shared pool: `Quiet Exploration`, `Stone Chamber Echoes`, `Glass and Wind`, `Observatory Dawn`.
+
+Unique cues:
+- S08: `Candlelight Over Ledger Pages`
+- S09: `Unresolved Breath`
+- S12: `Quiet Pages, Steady Light`
+- S13: `Final Quiet of the Archive`
+- S14: `Silent Piano`
+- S15: `Starlit Motif` (supplemental scripted chain: `Pre-dawn Hush` → `Quiet Hope` → `Starlit Motif`)
+
+## Runtime rule
+Normal exploration stages play the unique cue first, then rotate through the group's shared pool via shuffle bag. No immediate repeats. Calm scenes may use 3–10 seconds of ambience-only breathing room between tracks. Typical crossfade is 4–7 seconds; active cues use 1.5–3 seconds.
+
+Scripted exceptions:
+- S06 locks music to stealth → silence/event → chase → rescue.
+- S12–S15 use deterministic music during critical narrative beats; the E shared pool remains available only outside those locked moments.
+- S14 forces 4–6 seconds of complete music silence after `Я люблю тебя`.
+
+See `MUSIC_RUNTIME_POLICY.md` for the full playback contract.
+
+## Removed after repeat audit
+`012_April Snow Drift`, `Resonant Silence`, `084_Snowfield in D Minor`, `018_April Snow Drift`, `070_Moss Thaw`, `076_Rain on Moss`, `082_Felt Moonlight in C`, `099_Thawing Window`.
+
+Removed files remain recoverable from Git history.
