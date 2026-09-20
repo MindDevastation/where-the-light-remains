@@ -12,6 +12,8 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - Integrate stable validated progress into `main` regularly so project progress remains observable from GitHub.
 - If required data, tools, permissions, runtime capability, canonical copy or assets are missing, **pause the dependent task**. Do not invent replacements or claim unperformed validation.
 - Canonical precedence and merge validation rules are defined in `ASTRA_WORKFLOW.md`.
+- Default Astra reasoning level: **High**. Tasks listed in the reasoning-escalation policy require a pause and owner switch to Extra High / highest available before continuing.
+- 3D source/runtime work follows `docs/production/THREE_D_PRODUCTION_PIPELINE.md`.
 
 ## Milestone 0 — preflight
 
@@ -25,7 +27,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [x] Define Astra branch/commit/integration/blocker workflow.
 - [x] Lock Godot minor **4.7**, verified with the standard **4.7.2 stable** executable (`4.7.2.stable.official.ed1daf0bf`).
 - [x] Engine preflight: real editor import, GameRoot/eight-autoload startup checks, headless and Forward+ smoke tests, safe exit and native window close. See `ENGINE_PREFLIGHT.md` for evidence and scope.
-- [ ] Perform a real Git LFS history migration for large audio/3D assets before adding more heavy binaries; do not merely add LFS attributes to unmigrated blobs.
+- [!] Git LFS history migration is explicitly authorized by the owner. It remains **not yet executed** until work is performed in an authenticated environment with real `git-lfs` support and validated object upload. Do not bulk-add new `.blend/.glb/.gltf/.fbx` or additional large source audio before this task passes.
 - [x] Build valid InputMap in project settings: physical WASD/E/H and logical Esc for pause/skip. Real Godot event-dispatch checks, clean import and startup regression passed; see `INPUT_MAP.md`. Gameplay consumers and hold-to-skip policy remain in their later systems.
 - [x] Create audio bus layout: Master → Music/Main/Stems, SFX/Critical/World, Ambience, UI, VO_RESERVED. Automatic loading, real mixer routing and Music/SFX parent gain/mute passed in Godot 4.7.2; see `AUDIO_BUSES.md`. Playback, settings UI and final mix remain later work.
 - [ ] Add development-only debug stage/save/audio/performance tools.
@@ -59,9 +61,27 @@ Acceptance:
 - all player-facing slice text is Russian and Cyrillic-safe;
 - 1080p60 profiling on target-class hardware.
 
+## Epic 03 — 3D art foundation
+
+The 3D stream runs in parallel with code after the LFS gate is actually validated.
+
+Foundation acceptance:
+- [x] 3D production pipeline documented.
+- [x] Source/runtime folder split documented (`assets/3d/` vs `game/art/`).
+- [ ] Verify actual Blender version/CLI/export capabilities on the Astra machine.
+- [ ] Complete Git LFS migration and verify clone/checkout/object retrieval after rewrite.
+- [ ] Build and validate Blender→GLB→Godot export contract.
+- [ ] Create compact shared material library baseline.
+- [ ] Produce one modular Archive kit sample.
+- [ ] Produce one Wing I hero mechanism sample with gameplay pivots.
+- [ ] Import samples in Godot and validate scale, orientation, pivots, materials, collision and warnings.
+- [ ] Run representative performance check before mass asset production.
+
+No bulk modeling starts before the export/import sample is accepted.
+
 ## Milestone 4+
 
-Add remaining Archive wings one by one, then Memory I, Egg memory with runtime checkpoints, Memory III, final state machine 10–14 and seamless dawn epilogue. Do not expand core APIs without measured need.
+Add remaining Archive wings one by one, then Memory I, Egg memory with runtime checkpoints, Memory III, final state machine 10–14 and seamless dawn epilogue. Art production proceeds in parallel using the approved 3D pipeline. Do not expand core APIs or asset complexity without measured need.
 
 ## Branch execution map
 
@@ -73,6 +93,7 @@ main
     ├── feature/00-foundation/engine-preflight
     ├── feature/00-foundation/input-map
     ├── feature/00-foundation/audio-buses
+    ├── feature/00-foundation/lfs-history-migration
     └── feature/00-foundation/debug-tools
 
 main
@@ -90,6 +111,14 @@ main
     ├── feature/02-state-routing/scene-router
     ├── feature/02-state-routing/archive-main
     └── feature/02-state-routing/audio-director
+
+main
+└── epic/03-art-foundation
+    ├── feature/03-art-foundation/pipeline-spec
+    ├── feature/03-art-foundation/blender-export
+    ├── feature/03-art-foundation/material-library
+    ├── feature/03-art-foundation/modular-archive-kit
+    └── feature/03-art-foundation/import-validation
 ```
 
-Later epic/feature branches are created only when their scope is ready; do not invent unresolved implementation requirements merely to populate the branch tree.
+Later environment/hero/memory art epics are created only after the Art Foundation sample proves the pipeline. Do not invent unresolved implementation requirements merely to populate the branch tree.
