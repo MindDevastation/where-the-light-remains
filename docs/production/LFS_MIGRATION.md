@@ -1,6 +1,6 @@
 # Git LFS history migration
 
-Status: **AUTHORIZED / ESCALATION CONFIRMED / BLOCKED ON GIT AUTHENTICATION**.
+Status: **AUTHORIZED / ESCALATION CONFIRMED / BLOCKED ON NETWORK POLICY AND GIT AUTHENTICATION**.
 
 Owner authorization has been granted to rewrite the repository history so large source audio and future 3D binaries are stored through Git LFS rather than ordinary Git blobs.
 
@@ -160,6 +160,40 @@ These values were read from GitHub and the Git remote. This is a metadata snapsh
 No history rewrite, full backup verification, LFS payload upload, post-migration `fsck`, fresh-clone LFS retrieval, or Godot validation was performed in this recheck. All migration acceptance boxes remain unchecked. Under `ASTRA_WORKFLOW.md` and the owner's Phase A ordering, dependent Foundation/debug-tools work and bulk 3D production remain paused until LFS passes.
 
 ## Current blocker and full-mirror follow-up
+
+### Device-login attempt and environment reset
+
+The owner completed the requested GitHub device-authorization step. The local
+GitHub CLI login then failed with the execution environment's error:
+`Network access to "https://api.github.com:443" was blocked by policy.`
+A subsequent `gh auth status --hostname github.com` returned 1 (not logged in),
+and the dedicated GitHub CLI host configuration was absent. No usable local
+Git/LFS credential was established.
+
+An explicit request for network permission was also rejected by the execution
+policy because sandbox-approval requests are disabled (`sandbox_approval: false`).
+Do not retry the same denied network operation through a proxy or another route,
+and do not ask the owner to repeat device codes while that restriction remains.
+The required next dependency is a supported execution environment whose network
+policy permits the GitHub CLI authentication API and the repository's Git/LFS
+endpoints. The reasoning-level confirmation remains satisfied.
+
+The execution workspace subsequently reset. The local mirror, working checkout,
+and installed toolchain paths are no longer present in that workspace. The
+committed source-object hashes and earlier validation evidence remain in this
+repository; they are not a substitute for a restored, durable full backup.
+Before the reset, the official Godot 4.7.2 archive was checked against SHA-256
+`cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4`, and the
+binary reported `4.7.2.stable.official.ed1daf0bf`. This verifies that earlier
+installation, not current runtime availability or post-migration validation.
+
+After network access is configured through supported environment settings,
+restore the toolchain and full mirror, verify authentication, refresh all refs,
+preserve the backup independently, and coordinate a new write-freeze window.
+No write freeze remains active while the migration is blocked. No LFS object
+upload, history rewrite, or migration merge has occurred.
+
+### Earlier full-mirror preparation evidence
 
 
 The remaining execution blocker is **Git CLI authentication**. A non-mutating
