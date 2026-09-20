@@ -1,0 +1,120 @@
+InputMap validation — 2026-09-20
+Source commit: 09a0ba6f69200734c4cf5dea539bcdda10fce740
+Game tree: 7ae0850a886eb9f9a8fc2c9ca08f2d1b6789427c
+Clean git archive: game/ only; .godot cache absent before import
+Output normalization: ANSI terminal color sequences and trailing line spaces removed
+
+=== Clean editor import ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/input-map-evidence/clean-09a0ba6/game --editor --import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
+[   0% ] first_scan_filesystem | Scanning file structure...
+[  16% ] first_scan_filesystem | Loading global class names...
+[  33% ] first_scan_filesystem | Verifying GDExtensions...
+[  50% ] first_scan_filesystem | Creating autoload scripts...
+[  66% ] first_scan_filesystem | Initializing plugins...
+[  83% ] first_scan_filesystem | Starting file scan...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started Registering global classes... (11 steps)
+[   0% ] update_scripts_classes |
+[   8% ] update_scripts_classes |
+[  16% ] update_scripts_classes |
+[  25% ] update_scripts_classes |
+[  33% ] update_scripts_classes |
+[  41% ] update_scripts_classes |
+[  50% ] update_scripts_classes |
+[  58% ] update_scripts_classes |
+[  66% ] update_scripts_classes |
+[  75% ] update_scripts_classes |
+[  83% ] update_scripts_classes |
+[ DONE ] update_scripts_classes
+
+[   0% ] loading_editor_layout | Started Loading editor (5 steps)
+[   0% ] loading_editor_layout | Loading editor layout...
+[  16% ] loading_editor_layout | Loading docks...
+[ DONE ] loading_editor_layout
+Exit code: 0
+
+=== InputMap event dispatch ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/input-map-evidence/clean-09a0ba6/game --script res://tests/input_map_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INPUT_MAP runtime: 4.7.2-stable (official); display=headless
+INPUT_MAP source: project.godot; injected keyboard events, not OS keyboard input
+INPUT_MAP checked: W/S/A/D/E/H press and release with Latin and Cyrillic labels
+INPUT_MAP checked: physical/logical mismatch and release after modifier change
+INPUT_MAP checked: forward direction, normalized diagonal, opposite keys and release
+INPUT_MAP checked: shared Esc, repeat events, ui_cancel and ui_accept
+INPUT_MAP PASS: persisted bindings, layout-independent matching and input lifecycle
+Exit code: 0
+
+=== Engine preflight regression ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/input-map-evidence/clean-09a0ba6/game --script res://tests/engine_preflight.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"headless","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+Exit code: 0
+
+=== Normal project startup ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/input-map-evidence/clean-09a0ba6/game --quit-after 120
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Exit code: 0
+
+=== Negative control: original project without InputMap (failure expected) ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/input-map-evidence/clean-09a0ba6/game --script res://tests/input_map_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INPUT_MAP runtime: 4.7.2-stable (official); display=headless
+INPUT_MAP source: project.godot; injected keyboard events, not OS keyboard input
+ERROR: INPUT_MAP FAIL: Expected exactly 8 project actions; got []
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:60)
+ERROR: INPUT_MAP FAIL: Missing project action: hint
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:62)
+ERROR: INPUT_MAP FAIL: Missing project action: interact
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:62)
+ERROR: INPUT_MAP FAIL: Missing project action: move_backward
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:62)
+ERROR: INPUT_MAP FAIL: Missing project action: move_forward
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:62)
+ERROR: INPUT_MAP FAIL: Missing project action: move_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:62)
+ERROR: INPUT_MAP FAIL: Missing project action: move_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:62)
+ERROR: INPUT_MAP FAIL: Missing project action: pause
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:62)
+ERROR: INPUT_MAP FAIL: Missing project action: skip_sequence
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/input_map_smoke.gd:27)
+       [1] _run (res://tests/input_map_smoke.gd:62)
+Exit code: 1
+
+All four positive checks passed; missing-InputMap control failed as expected.
+Archived source files remained unchanged after validation.
