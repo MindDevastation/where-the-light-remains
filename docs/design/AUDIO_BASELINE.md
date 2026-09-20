@@ -22,6 +22,40 @@ Normal calm scenes may use group playlists, but authored stage substates overrid
 
 Source tracks should be edited into loopable sections/stems where needed. Loop points must avoid expressive cadences/clicks.
 
+## Bus layout
+
+`game/audio/default_bus_layout.tres` is the project's default `AudioBusLayout`,
+selected explicitly by `audio/buses/default_bus_layout` in `project.godot`.
+The foundation layout expands the planned Music/Main/Stems and
+SFX/Critical/World groups into these distinct Godot bus names:
+
+| Index | Bus | Sends to | Role |
+| --- | --- | --- | --- |
+| 0 | `Master` | Output | Overall mix |
+| 1 | `Music` | `Master` | Parent control for all score layers |
+| 2 | `Music_Main` | `Music` | Main music cues / crossfade players |
+| 3 | `Music_Stems` | `Music` | Authored music stems and layers |
+| 4 | `SFX` | `Master` | Parent control for effects |
+| 5 | `SFX_Critical` | `SFX` | Gameplay cues with mandatory visual equivalents |
+| 6 | `SFX_World` | `SFX` | World sound effects |
+| 7 | `Ambience` | `Master` | Environmental beds / room tone |
+| 8 | `UI` | `Master` | Interface feedback |
+| 9 | `VO_RESERVED` | `Master` | Reserved voice route; no playback enabled |
+
+Every send targets an earlier bus, so each route reaches Master without a
+cycle. Consumers should resolve buses by name rather than retain numeric
+indices. Ambience and UI are independent of Music and SFX in this layout.
+Muting Music therefore covers its Main and Stems children while preserving
+the other branches. Muting SFX covers both Critical and World; mandatory cues
+must still have their visual equivalents.
+
+The foundation layout uses neutral `0 dB` bus gain, no effects and no active
+mute/solo/bypass flags. This is routing infrastructure, not a final loudness
+or mix pass. The settings UI and saved volume application are later work;
+the scaffold's `SettingsManager` volume fields are not applied by this change.
+`AudioDirector` retains ownership of global players, authored silence,
+ducking and snapshots. Reserving a VO bus does not change the vocal policy.
+
 ## Canonical substates
 
 Egg: `STEALTH → EGG_PICKUP → BOSS_WAKE → CHASE → RESCUE → COMEDIC_BEAT`.
