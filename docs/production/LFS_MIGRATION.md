@@ -1,6 +1,6 @@
 # Git LFS history migration
 
-Status: **AUTHORIZED / NOT YET EXECUTED**.
+Status: **AUTHORIZED / BLOCKED — NOT YET EXECUTED**.
 
 Owner authorization has been granted to rewrite the repository history so large source audio and future 3D binaries are stored through Git LFS rather than ordinary Git blobs.
 
@@ -104,6 +104,54 @@ The feature is PASS only when:
 
 ## Current blocker
 
-The current ChatGPT/GitHub connector path can edit Git refs/files but does not expose Git LFS object upload, and the local execution container available in this session has no `git-lfs` installation or outbound GitHub network access. Therefore this session cannot truthfully complete or validate the LFS object migration.
+Rechecked on **2026-09-20**. Git and Git LFS are installed, and outbound GitHub Git/LFS access works. The remaining execution blocker is **local Git/LFS authentication for write access**. The earlier statement that Git LFS and outbound GitHub access were unavailable is superseded by the checks below.
 
-This is exactly a stop-on-blocker condition. The migration feature branch has been prepared for Astra, which must execute the rewrite in its authenticated git-lfs-capable environment.
+The owner already confirmed the requested reasoning escalation in the preceding session. Do not request that confirmation again solely because the execution environment was restarted. This confirmation does not supply Git/LFS credentials.
+
+### Checks actually performed
+
+| Check | Observed result |
+| --- | --- |
+| `git --version` | `git version 2.51.1` |
+| `git lfs version` | `git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)` |
+| `git ls-remote` against the repository | Succeeded; 15 branch refs, no tags; GitHub-managed PR refs were also advertised |
+| Partial clone with `--filter=blob:none --no-checkout` | Succeeded; migration branch checked out with a sparse documentation worktree |
+| Git push authentication, with terminal prompts disabled | `git push --dry-run` failed: `fatal: could not read Username for 'https://github.com': terminal prompts disabled` |
+| LFS batch endpoint, empty upload negotiation | HTTP `401`, `Requires authentication`; no payload uploaded |
+| Local credential configuration | No configured credential helper, `GIT_ASKPASS`, `GH_TOKEN`, `GITHUB_TOKEN`, or standard Git/GitHub CLI credential files found |
+| Available disk at initial check | Approximately 26.46 GiB; full backup/rewrite disk requirement has not been validated |
+| Godot availability in this session | `godot`/`godot4` absent from PATH; no matching binary found within the searched `/tmp`, `/opt`, and workspace paths (depth 4) |
+| PR #10 | Open, draft; migration feature targets `epic/00-foundation` |
+
+The push dry-run used the existing migration commit as its source and the existing migration branch as its destination. It did not update any ref. The empty LFS batch request tested reachability/authentication only; it is not an upload or retrieval acceptance test. GitHub connector access can preserve documentation changes, but its available operations do not provide a local Git credential or an LFS object-upload operation.
+
+### Ref snapshot before this documentation update
+
+These values were read from GitHub and the Git remote. This is a metadata snapshot, **not a recoverable backup** and not an old-to-new migration map.
+
+| Branch | SHA |
+| --- | --- |
+| `main` | `06a83c7ff4b19a1af2765576b3286dfbfbc2cfa6` |
+| `epic/00-foundation` | `d47c569e5e0735cec5e4879818d949520c04c172` |
+| `epic/03-art-foundation` | `8636f7f847cecec7b7456e0b8a6c834c32a5de18` |
+| `feature/00-foundation/lfs-history-migration` | `20a1cc5afb72d59851b2740696b8978d37a41ffe` |
+| `feature/00-foundation/engine-preflight` | `c09ccedb406c9720194a810853c17a859cb0b0b2` |
+| `feature/00-foundation/input-map` | `51834c47878e16d9ef8332c3bac1d3c8ae3576c9` |
+| `feature/00-foundation/audio-buses` | `b1ccc5cd1d8efaf2b9459dc9a5aabfb5e3b2d70e` |
+| `feature/03-art-foundation/pipeline-spec` | `ccc0e2153a3661b778c907adf27b88ab71e5b5f2` |
+| `analysis/audio-audit` | `9b24bed118d59c22ca78f74edbf09c5cf16d69a3` |
+| `analysis/audio-audit2` | `922ba3cf17515d246f4c28a9bd4f00e36be376ec` |
+| `analysis/audio-audit3` | `922ba3cf17515d246f4c28a9bd4f00e36be376ec` |
+| `analysis/audio-audit4` | `922ba3cf17515d246f4c28a9bd4f00e36be376ec` |
+| `analysis/audio-reaudit` | `0eca934b28881e3cceb83fe0d9f76a889c1af37a` |
+| `audio/curation-2026-09-19` | `66236f12c90f85dc8ddcb4c06592b26b07d21124` |
+| `audio/final-pool-structure` | `57f86c20a5a81f107a1e0a7536e127b51f76ce1b` |
+
+### Required to resume
+
+1. Provide an execution environment with authenticated Git push and Git LFS upload access to this repository. Configure credentials through the environment's secure authentication mechanism; do not paste credentials into repository files or the conversation.
+2. Make the approved Godot 4.7.2 executable available for mandatory post-migration import/startup/safe-exit validation. Previous engine-preflight evidence does not substitute for this fresh-clone check.
+3. Fetch and compare all refs again, coordinate the write-freeze window, measure disk requirements, and create/verify a full recoverable backup before any history rewrite. This session's partial clone is not such a backup.
+4. Resume the migration procedure above on the existing feature branch and PR #10.
+
+No history rewrite, full backup verification, LFS payload upload, post-migration `fsck`, fresh-clone LFS retrieval, or Godot validation was performed in this recheck. All migration acceptance boxes remain unchecked. Under `ASTRA_WORKFLOW.md` and the owner's Phase A ordering, dependent Foundation/debug-tools work and bulk 3D production remain paused until LFS passes.
