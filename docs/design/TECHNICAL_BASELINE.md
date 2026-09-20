@@ -102,6 +102,36 @@ Checkpoints: Archive after required fragment milestones and around memories; Egg
 
 First-person `CharacterBody3D`; walk + look baseline. No sprint/crouch/jump unless a specific scripted state needs it. `InputManager` exclusively owns mouse capture and input mode. Baseline actions: WASD, mouse look, E interact, Esc pause, optional H hint, long-hold Esc repeat-playthrough skip.
 
+The following keyboard actions are persisted in `game/project.godot`. Letter
+bindings use physical US-QWERTY positions so changing the keyboard layout does
+not move the controls. Esc uses the logical `KEY_ESCAPE` keycode. Each action
+has one keyboard event, any-device matching and the default `0.2` deadzone.
+
+| Action | Key | Intended use |
+| --- | --- | --- |
+| `move_forward` | Physical W (Ц on Russian ЙЦУКЕН) | Walk forward |
+| `move_backward` | Physical S (Ы) | Walk backward |
+| `move_left` | Physical A (Ф) | Walk left |
+| `move_right` | Physical D (В) | Walk right |
+| `interact` | Physical E (У) | Interact |
+| `pause` | Esc | Request pause |
+| `hint` | Physical H (Р) | Request an optional hint |
+| `skip_sequence` | Esc | Input source for the repeat-playthrough hold-to-skip flow |
+
+Consumers obtain walk input with
+`Input.get_vector("move_left", "move_right", "move_forward", "move_backward")`;
+forward is negative Y and diagonal length is capped at one. Mouse look consumes
+`InputEventMouseMotion` in the future player controller, with capture still
+owned exclusively by `InputManager`. It has no digital InputMap action.
+
+`pause` and `skip_sequence` expose the same raw Esc state. InputMap does not
+decide between a pause request and a skip. Future pause/sequence consumers must
+coordinate that decision, gate skipping to the approved repeat-playthrough
+states and measure the hold duration independently of keyboard repeat events.
+No hold threshold or handler is implemented by the InputMap feature. Likewise,
+binding H does not enable hints in every state. Built-in `ui_*` actions remain
+available for UI navigation; they are not repurposed as walk controls.
+
 Settings must expose resolution, fullscreen/windowed, graphics preset, shadows/effects, Master/Music/SFX, mouse sensitivity, FOV and invert-Y.
 
 ## Naming
