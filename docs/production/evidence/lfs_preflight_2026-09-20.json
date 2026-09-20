@@ -1,0 +1,1083 @@
+{
+  "status": "PREPARATION_COMPLETE_AUTHENTICATION_REQUIRED_NOT_MIGRATED",
+  "observed_at_utc": "2026-09-20T13:54:19.431521+00:00",
+  "repository": "MindDevastation/where-the-light-remains",
+  "reasoning_confirmation": "Owner confirmed requested switch: Поменял. Продолжай",
+  "git_version": "2.51.1",
+  "git_lfs_version": "3.4.1",
+  "github_cli_version": "2.101.0",
+  "github_cli_archive_sha256": "9bca2d1c16825f109907a23307628a2f0698fbf99662b73a5cf0b020293072b8",
+  "snapshot_before_preparation_commit": {
+    "refs/heads/analysis/audio-audit": "9b24bed118d59c22ca78f74edbf09c5cf16d69a3",
+    "refs/heads/analysis/audio-audit2": "922ba3cf17515d246f4c28a9bd4f00e36be376ec",
+    "refs/heads/analysis/audio-audit3": "922ba3cf17515d246f4c28a9bd4f00e36be376ec",
+    "refs/heads/analysis/audio-audit4": "922ba3cf17515d246f4c28a9bd4f00e36be376ec",
+    "refs/heads/analysis/audio-reaudit": "0eca934b28881e3cceb83fe0d9f76a889c1af37a",
+    "refs/heads/audio/curation-2026-09-19": "66236f12c90f85dc8ddcb4c06592b26b07d21124",
+    "refs/heads/audio/final-pool-structure": "57f86c20a5a81f107a1e0a7536e127b51f76ce1b",
+    "refs/heads/epic/00-foundation": "d47c569e5e0735cec5e4879818d949520c04c172",
+    "refs/heads/epic/03-art-foundation": "8636f7f847cecec7b7456e0b8a6c834c32a5de18",
+    "refs/heads/feature/00-foundation/audio-buses": "b1ccc5cd1d8efaf2b9459dc9a5aabfb5e3b2d70e",
+    "refs/heads/feature/00-foundation/engine-preflight": "c09ccedb406c9720194a810853c17a859cb0b0b2",
+    "refs/heads/feature/00-foundation/input-map": "51834c47878e16d9ef8332c3bac1d3c8ae3576c9",
+    "refs/heads/feature/00-foundation/lfs-history-migration": "20a1cc5afb72d59851b2740696b8978d37a41ffe",
+    "refs/heads/feature/03-art-foundation/pipeline-spec": "ccc0e2153a3661b778c907adf27b88ab71e5b5f2",
+    "refs/heads/main": "06a83c7ff4b19a1af2765576b3286dfbfbc2cfa6",
+    "refs/pull/1/head": "c09ccedb406c9720194a810853c17a859cb0b0b2",
+    "refs/pull/10/head": "20a1cc5afb72d59851b2740696b8978d37a41ffe",
+    "refs/pull/10/merge": "51f8e6f212895644103831a66f16e80e07644028",
+    "refs/pull/2/head": "fc6f9366d72e935fcb7db18a959384dc691c480e",
+    "refs/pull/3/head": "51834c47878e16d9ef8332c3bac1d3c8ae3576c9",
+    "refs/pull/4/head": "821eaf38e4a3559678057447cef4bdb9df1e6059",
+    "refs/pull/5/head": "b1ccc5cd1d8efaf2b9459dc9a5aabfb5e3b2d70e",
+    "refs/pull/6/head": "8a50e524163d7cc65813024d4d8d02fb802a24bd",
+    "refs/pull/7/head": "ccc0e2153a3661b778c907adf27b88ab71e5b5f2",
+    "refs/pull/8/head": "8636f7f847cecec7b7456e0b8a6c834c32a5de18",
+    "refs/pull/9/head": "06a83c7ff4b19a1af2765576b3286dfbfbc2cfa6"
+  },
+  "mirror": {
+    "ref_count": 26,
+    "branch_count": 15,
+    "pull_ref_count": 11,
+    "tag_count": 0,
+    "commit_count": 68,
+    "shallow": false,
+    "promisor": false,
+    "alternates": false,
+    "pack_sha1": "b589675b1e5a5de01fc2fd32649fa49eac4bb747",
+    "pack_bytes": 4862880442,
+    "git_fsck_full_strict_exit_code": 0,
+    "git_fsck_diagnostics": [],
+    "storage": "Local session workspace; durable independent copy still required before remote history rewrite"
+  },
+  "restore": {
+    "mode": "Separate sparse checkout sharing mirror objects",
+    "head": "20a1cc5afb72d59851b2740696b8978d37a41ffe",
+    "connectivity_exit_code": 0,
+    "independent_backup": false
+  },
+  "access": {
+    "github_git_read": true,
+    "git_push_dry_run_exit_code": 128,
+    "git_push_dry_run_failure": "Missing GitHub Git credentials",
+    "empty_lfs_download_batch_http_status": 422,
+    "empty_lfs_download_batch_message": "No objects specified.",
+    "lfs_payload_upload_verified": false,
+    "lfs_payload_download_verified": false
+  },
+  "target_patterns": [
+    "*.wav",
+    "*.flac",
+    "*.mp3",
+    "*.ogg",
+    "*.blend",
+    "*.glb",
+    "*.gltf",
+    "*.fbx"
+  ],
+  "inventory": {
+    "distinct_target_git_blobs": 139,
+    "target_uncompressed_bytes": 5021937862,
+    "existing_lfs_pointer_blobs": 0,
+    "case_variant_target_paths": [],
+    "riff_wave_signatures": 139,
+    "sha256_verified_objects": 139,
+    "full_audio_decode_or_listening_performed": false,
+    "sample_path_is_exhaustive": false,
+    "untargeted_png_blobs": 62,
+    "untargeted_png_bytes": 156413602,
+    "free_disk_bytes_after_clone_cleanup": 25858990080,
+    "disk_sufficiency_for_full_migration_certified": false
+  },
+  "target_blobs": [
+    {
+      "oid": "3e54de115c69de8539ce81d02dcd1930172556f1",
+      "size": 22554640,
+      "sample_path": "assets/audio/music/A_Archive/shared/Activation Sequence.wav",
+      "sha256": "7e7a680588fd3257a340853054960b21609fd83ce7280651f41a0c6ee331cf3a",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "17fc37330e99ea2245153e8d41f52db02910b49d",
+      "size": 33229840,
+      "sample_path": "assets/audio/music/A_Archive/shared/Archive Fragment.wav",
+      "sha256": "67bc63793e27c7734719c5aa4c0ac4780621a0fb4e338b7567d25af4664a9da0",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "d7fb27c0050f1ed7eb0efc4be8a241dd0d61fb44",
+      "size": 22669834,
+      "sample_path": "assets/audio/music/A_Archive/shared/Hub Motif.wav",
+      "sha256": "737cea8ee38fdf0d9819515f8f4d4dfbec0376fc3d80cbf76d69cd1049b3fec6",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "589c73e92baa4f924b049a129f7a3af8b48c9529",
+      "size": 25503760,
+      "sample_path": "assets/audio/music/A_Archive/shared/Mechanism Light.wav",
+      "sha256": "67a7ebe4802b710a82d0fe2b0fa18dc087bc3d0b60d97a31ad0690bb79e73b82",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "ac2e6ecb8e179d94f9e028cbb3fd548a24f2fcfe",
+      "size": 34266640,
+      "sample_path": "assets/audio/music/A_Archive/shared/Resonant Puzzle.wav",
+      "sha256": "4efb020e0ee524b940124079c31d468541dd6e1b14170c38d38bbc76efe2d875",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "e5a6aa7c7da6494e735ca3ccfbff88e76dcb8ec3",
+      "size": 31501840,
+      "sample_path": "assets/audio/music/A_Archive/stages/S00_Prologue/supplemental/Sparse Awakening.wav",
+      "sha256": "cb27c6512d710497b058d94eb74004b510c7b50f001f16e712ab7cf180e015ad",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "117a1cc4c59cb0ebb1a99586986280045028ac65",
+      "size": 32300560,
+      "sample_path": "assets/audio/music/A_Archive/stages/S00_Prologue/unique/Sparse Awakening vol.2.wav",
+      "sha256": "4bb445fdf9c9187c00ddaf4c016860ab775532b666916b15e8fbf1d11a41953b",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "cbfa0323470ee8d593a96f423d4aaa64b8e5a646",
+      "size": 24920080,
+      "sample_path": "assets/audio/music/A_Archive/stages/S01_Hub/unique/Archive Awakening.wav",
+      "sha256": "0eeaafefb8a2f14f4d167a8638c2625ac278a447eb02d5a98e104348614fb0b3",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "64a0117dccf7c09eb285a01129d3e681bba3a658",
+      "size": 17823760,
+      "sample_path": "assets/audio/music/A_Archive/stages/S10_Return/unique/The Light Path.wav",
+      "sha256": "c5f2368ed366276b66354fd2b9a7ab5595b782d549f4c77031c91781fa9ae592",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "00145ae104eb711e4c5d3ec8ee7a728955f38fc5",
+      "size": 25665040,
+      "sample_path": "assets/audio/music/A_Archive/stages/S11_Order_of_Light/unique/Resonant Assembly.wav",
+      "sha256": "645110e063cfd8d4062971739aa6b553f7153491158d3afad323ee8c506cda9b",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "52d536e576e0bfd8d782987900be5463a460dc76",
+      "size": 23032488,
+      "sample_path": "assets/audio/music/B_Wings/shared/024_Silent Roads Beneath the Frost.wav",
+      "sha256": "f653a468b5aad5cbd97b2bb88d69b27a563cab91036103dbc6b23b2aea992337",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "6e0573ac26e6ded3264e56c936dbb521fce371d1",
+      "size": 15329448,
+      "sample_path": "assets/audio/music/B_Wings/shared/034_Muted Pulse Under Falling White.wav",
+      "sha256": "1cbcaa01aa3fee728d9ffd382e3ea07c048cddfae9c443757c45127bc2c414af",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "d09c2fb94c91cc93e7299bf894c075a0d108a86a",
+      "size": 24683688,
+      "sample_path": "assets/audio/music/B_Wings/shared/080_Quiet Exhale Through Evergreens.wav",
+      "sha256": "70688672fb4e78ef67139539f2b602271fc03716f56432c575f7eef234c1153b",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "4a8069929972af86720945b99d36a64a19a740e2",
+      "size": 24582160,
+      "sample_path": "assets/audio/music/B_Wings/stages/S02_Warmth_Light/unique/Cold to Warm.wav",
+      "sha256": "ccbf2c5fbc700df6f077863c11c37fb7a962f7efd95d793b51dbce4951a96a39",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "c29e92d77896cdea5126cef28930f039b03c2706",
+      "size": 23938728,
+      "sample_path": "assets/audio/music/B_Wings/stages/S03_Life_Voice/unique/029_Cold Arterial Glow.wav",
+      "sha256": "da0f36dcc6f034b9a2107906fc7035088713e6f53d3b61a0f1dfe60f59850fba",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "4094aeaa00102f3262557c709e0d116cf117804a",
+      "size": 34537132,
+      "sample_path": "assets/audio/music/C_Memories/shared/048_Horizon Veil.wav",
+      "sha256": "19c86698f8dc7ccbebfbe14c729ab367ef885d4a2c2e046f3391dff7aef26f5f",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "9eec166bbe54a4da2f7ab0d679c818f05ea74c2b",
+      "size": 37115920,
+      "sample_path": "assets/audio/music/C_Memories/stages/S04_First_Meeting/unique/Remembered Stone Room.wav",
+      "sha256": "36106eaa46d3e0b85647af42d3f64498e71933d87df91f4d818725f12ad559ec",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "e611817b5b72307369e2ed30fe45d3a7f2cb06e2",
+      "size": 19743760,
+      "sample_path": "assets/audio/music/C_Memories/stages/S06_Egg/unique/Curious Sneaking Groove.wav",
+      "sha256": "d4b09b6ed5169e9aa76df5e3bab647d29321f02b8097f2016b4d07eff4c47721",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "893a30b40652445732af8779cb609ba4ad30f117",
+      "size": 13077532,
+      "sample_path": "assets/audio/music/C_Memories/stages/S06_Egg/unique/The Great Dodging Dash.wav",
+      "sha256": "3a97f3a98ba67517de9c6ff48d21c4ce84c5a4c717e600b9a807976a0f8016f2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "35d747e3cba726f9ca4811e2f72a582f8b3f73cd",
+      "size": 25275048,
+      "sample_path": "assets/audio/music/D_Playful/shared/Quiet Corridor in Dusk.wav",
+      "sha256": "e25038d379e4d65f6452207b22a8404b2e186a76c8e48a0a94ada94caeef7042",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "9a5fc5bdb3cb234b0bfc016412d53e5d4c42be5b",
+      "size": 25588240,
+      "sample_path": "assets/audio/music/D_Playful/shared/Wooden Hall Puzzle v2.wav",
+      "sha256": "8e860ea481b80756b2f4cd5624f1b0dd36f7bb0840358942ea3249a148ef7aed",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "f5ded4878d3cc09dffe6ac1465aef6cd8a13db92",
+      "size": 33613840,
+      "sample_path": "assets/audio/music/D_Playful/stages/S05_Laughter_Lightness/unique/Buant Motion.wav",
+      "sha256": "721e6cfafa414968a1dc804c8fc023679045f1c3806cc7b991415fd5ba46ea88",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "9a00e19e2568083f7a6b4b03333dfe2e02ee4bed",
+      "size": 28737040,
+      "sample_path": "assets/audio/music/D_Playful/stages/S07_Seriousness_Smile/unique/Controlled Tails.wav",
+      "sha256": "238cfefe81ef7089502e7d06ddc844fd08dab50be0c6a43d10237d7ae755d761",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "1e54f8b967cba07822cc3b4040aa2f403f15e32f",
+      "size": 27815440,
+      "sample_path": "assets/audio/music/E_Emotional/shared/Glass and Wind.wav",
+      "sha256": "3bcd781163903e0c93b692dab02679cd8edd9c7afc35d7554e98f498e888a8a9",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "1ffa9d8aba1508027a929de513af1f6875ad72b5",
+      "size": 31340560,
+      "sample_path": "assets/audio/music/E_Emotional/shared/Observatory Dawn.wav",
+      "sha256": "0314ad9a350e9e46b308cd8afc0689bc386fd0a57c82e71c39c2278219b54cb8",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "d238297e5e2752be7b12c83a57fda8d4b49a879a",
+      "size": 24559120,
+      "sample_path": "assets/audio/music/E_Emotional/shared/Quiet Exploration.wav",
+      "sha256": "453a916cd7dae381f545443629623863cb409dd8ca9c75a4efc4c096aad3aa1a",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "e17043097e83f2f69569beda666e0f2a9374ae87",
+      "size": 38314000,
+      "sample_path": "assets/audio/music/E_Emotional/shared/Stone Chamber Echoes.wav",
+      "sha256": "f26dcc2cfdac679f9ed4656f31a13fe542770d6619ba13d63244bdd7da3a3e9e",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "ac66917679a34f53884f2896c88aca0203c18fd0",
+      "size": 25582248,
+      "sample_path": "assets/audio/music/E_Emotional/stages/S08_Sincerity_Admiration/unique/Candlelight Over Ledger Pages.wav",
+      "sha256": "2f0efee1f7e0b5090b8f00e37a3ef281945dcd548da3d22ac83c47d8f2ef49b6",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "3b1aee9e968a4981dcf4ebee908cf2aa03e0b67c",
+      "size": 35303440,
+      "sample_path": "assets/audio/music/E_Emotional/stages/S09_Future_Memory/unique/Unresolved Breath.wav",
+      "sha256": "6cf0a530b74fdb5f32b066f0e5e32845dd6efb74b5b5a3653b5cbd2cefe8c996",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "add596d572b7686f443628e773cd8a1fcdf87b93",
+      "size": 18954408,
+      "sample_path": "assets/audio/music/E_Emotional/stages/S12_Poem/unique/Quiet Pages, Steady Light.wav",
+      "sha256": "515b7f12b1c0c4a7acfdffe239d072338080b7b2919114f5bce8d3bb5d54123a",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "2f499dfcdf632e36555b7512dbb8cabc7d4412f7",
+      "size": 24484008,
+      "sample_path": "assets/audio/music/E_Emotional/stages/S13_Acrostic/unique/Final Quiet of the Archive.wav",
+      "sha256": "b20c6423c2f3c9b2a224a3de1aef4ae0f1867446ffbbb58cc2d4d0c5eaba911d",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "37b030386ee9249d35b7ef97341975cdb4c9c71d",
+      "size": 31386640,
+      "sample_path": "assets/audio/music/E_Emotional/stages/S14_Confession/unique/Silent Piano.wav",
+      "sha256": "8265749c2d94f03d4dc68fe813aac4858619cba1181153bc3b600a6353a1983c",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "ad7066f5ab2ccd5426a4184ebee9f83dc32dc7cd",
+      "size": 33805840,
+      "sample_path": "assets/audio/music/E_Emotional/stages/S15_Dawn/supplemental/Pre-dawn Hush.wav",
+      "sha256": "865cea86b6ea207f661637ff03ef4bd5bfddee416b7fa9e2c89f99c5fd1aa653",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "17a9c3078fbf72748f9252c3c4e7c22ca180950c",
+      "size": 30572560,
+      "sample_path": "assets/audio/music/E_Emotional/stages/S15_Dawn/supplemental/Quiet Hope.wav",
+      "sha256": "f5a77bb79ae5f3b9efc9cfa9e09a6c217d396dcfe61ea789284d5587190b7f7c",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "bdb6e1178a091cbf6d4c3b9d46c1b990b119ef0a",
+      "size": 32646160,
+      "sample_path": "assets/audio/music/E_Emotional/stages/S15_Dawn/unique/Starlit Motif.wav",
+      "sha256": "f0e78f074dfa67d5b6111cb3c27cc284002079896bba6b67a829ad3a9740f686",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "b2cff725035f97adb4d274dda33318b4ca38ad43",
+      "size": 38146732,
+      "sample_path": "music/A_Archive/S11_Order_of_Light/012_April Snow Drift.wav",
+      "sha256": "8f99d21e4873525148a616bee45475d7dceb2c49ee2dc35dddc221ae3fc8813d",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "f28cee8a7ad09b1e50b366f41daeea0bfbbc6d33",
+      "size": 16756240,
+      "sample_path": "music/B_Wings/S03_Life_Voice/Resonant Silence.wav",
+      "sha256": "e0f986b824b1993bbbc3d28c0606456447e4198ce8591a5f331f0aea043379f2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "9b6c3bbbc7d00186cd77bcbcc0be3c3789d2baa0",
+      "size": 27678892,
+      "sample_path": "music/E_Emotional/S09_Future_Memory/084_Snowfield in D Minor.wav",
+      "sha256": "cad389ade176c3cbfa18ec0f8ab085e0161bb4b6388a00909822959be26d2167",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "304dc5f873d7037ae0d7216c80f7470613f649c3",
+      "size": 44851372,
+      "sample_path": "music/E_Emotional/S15_Dawn/018_April Snow Drift.wav",
+      "sha256": "ac26c093850d73c03436207d5503fa9fdb953c94e002bf533b15adf4dbb139dd",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "21446e46873532f08773047d051c85eb683129d6",
+      "size": 30297772,
+      "sample_path": "music/E_Emotional/S15_Dawn/070_Moss Thaw.wav",
+      "sha256": "6888f86927a838f3f6988a28af5111bd67c0a63b5f8a9723b6cd3b760afe68b5",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "6aaa7f9c5eb9cad71a02ddcd563aa09246e2f26a",
+      "size": 32555692,
+      "sample_path": "music/E_Emotional/S15_Dawn/076_Rain on Moss.wav",
+      "sha256": "05d638b63983c8dd0c79cb134d112c7f2c6fc0fa2e6b5e667803bdb542c33be2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "02f652a2d7fc941f3416babac0078b9543b0f9bf",
+      "size": 16128168,
+      "sample_path": "music/E_Emotional/S15_Dawn/082_Felt Moonlight in C.wav",
+      "sha256": "a2442b1565c1ab14e87eff73b430f379c1fadc457d6e6861eb4e90f2343db68a",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "e4dfdb428cddda8b0e6109302438cfc5879880e1",
+      "size": 42171052,
+      "sample_path": "music/E_Emotional/S15_Dawn/099_Thawing Window.wav",
+      "sha256": "6bd683b398837d40b7a0d47bda7a510c183757583f6fc00279ee50a11b9ff0e7",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "ef9e68e11e0810f95f211dcb4bb02f9e5af84f06",
+      "size": 41211052,
+      "sample_path": "music/Apr26/001_April Cloud Drift.wav",
+      "sha256": "0688b08d747a939497f2c682c8eeddcea00b0843d8d8ae7822af82c9dd22467d",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "5db4e90b43e0bfc2af66bff18948e24c29d887e4",
+      "size": 34122412,
+      "sample_path": "music/Apr26/002_April Cloud Drift.wav",
+      "sha256": "45eb53f2faf636f6f3658672838063690f335d7ca625c3b220cade29f5319fb2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "76720650d8638a43f6840a5ee8157fc3204281f6",
+      "size": 37409452,
+      "sample_path": "music/Apr26/003_April Moss Snow.wav",
+      "sha256": "1096ec30ebb1d1a6ff537eacb8ce0feca2b61c5eaa6350ea281fca1545cbdaf1",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "28abaf5839231fe2d97b050e151ab91cda28db71",
+      "size": 36426412,
+      "sample_path": "music/Apr26/004_April Moss Snow.wav",
+      "sha256": "31231bb228a39ca08c48b01cd7ce22aea883260621d555ed7e78f0b9408675cd",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "d58447659f4720ae04f4d7ae30bb0784d79a7c02",
+      "size": 36979372,
+      "sample_path": "music/Apr26/005_April Sky Drift.wav",
+      "sha256": "65fee224486c292cab298f5128eb39d36a0cb61fd86470d46c7a5127e6957787",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "1320390ef3dad669e278c7bfb9c05b8eb0140b4f",
+      "size": 36149932,
+      "sample_path": "music/Apr26/006_April Sky Drift.wav",
+      "sha256": "990af64555d5ab3a86b214821f8d2c5f5e4c4d97bbe08f57f48973dedbaf952c",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "7ce16b88b28f5fd07e7f2af9894a550fb9d97752",
+      "size": 35182252,
+      "sample_path": "music/Apr26/007_April Sky Drift.wav",
+      "sha256": "2e6b2918a3108798965f1b3d98f5fed89c0ef3508974fed86de59cc0bc49c10f",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "74733976586dcc7b064b2c03a8fc2bb1756cc74c",
+      "size": 60295852,
+      "sample_path": "music/Apr26/008_April Sky Drift.wav",
+      "sha256": "4f825082c356c8d4bd4b1aeaba7dc3b0b7775f2881b0887c494acefe21771590",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "4f5b614f437209d187a0fe37e6ffa98e7e597523",
+      "size": 35474092,
+      "sample_path": "music/Apr26/009_April Slush Drift.wav",
+      "sha256": "d201173cf9b842c6859ec7ea5d7119a7d3ec559425c6de7482a6b22958ff01c2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "eea00caa5fd7ef98d8aba0f8bd39492fdee0cac1",
+      "size": 34329772,
+      "sample_path": "music/Apr26/010_April Slush Drift.wav",
+      "sha256": "67a4f106599aa3fe79802378eb56f5c3924685c7c2b88e70e8ae45d24e728b6c",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "f311e8f7ea9a0bd7dd632ca210cca913a56e5be8",
+      "size": 41241772,
+      "sample_path": "music/Apr26/011_April Snow Drift.wav",
+      "sha256": "e19e1cca2d7dd9906606a2300ce23604f34f2925bc25592ba113afdf19695a7e",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "9ed4379255746b93a38abb3bfb216b21c6767a8e",
+      "size": 38968492,
+      "sample_path": "music/Apr26/013_April Snow Drift.wav",
+      "sha256": "d17a363a8582285b8edd6b5193905972206b12c1cfffdf20bf0a988d8af0a7b4",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "b7c9f15ab6311767b978d9fefdb6e1d02e3487d2",
+      "size": 45074092,
+      "sample_path": "music/Apr26/014_April Snow Drift.wav",
+      "sha256": "ee8573cc354633ca1238dea615b14da0f93f3c08e3a37553bf992630370c65bb",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "e3dc0e29a66bb0fe93220081199676b10865ba6f",
+      "size": 36403372,
+      "sample_path": "music/Apr26/015_April Snow Drift.wav",
+      "sha256": "34a3460e4cc788f383f100ae8b06c2f035520bd7bcba34f6fe1e69b3c3d9dc0f",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "38f75fa48a577d87f3fdf5449589bd6d36d06003",
+      "size": 44912812,
+      "sample_path": "music/Apr26/016_April Snow Drift.wav",
+      "sha256": "0bff7f8c7f929c5e7ca239e1d276d42628902d8b1473fd47a3c3843a2ffb9818",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "621f2fdd6283a9db599888a68498e0f2313590c6",
+      "size": 42846892,
+      "sample_path": "music/Apr26/017_April Snow Drift.wav",
+      "sha256": "afaead394e44e78e336bdf16a3eae5e069a1820d928c27b0a8cc4318ed2930b5",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "5b248368eb9763a5b535ebd09489ade3c13e22eb",
+      "size": 42117292,
+      "sample_path": "music/Apr26/019_April Snowfall Drift.wav",
+      "sha256": "2f9dae8e23774438b31287be6783a8f2f871772d15ba218690f12c651a804ae3",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "e16ba494c46cc92bf7000c919617f20cff0745a1",
+      "size": 43177132,
+      "sample_path": "music/Apr26/020_April Snowfall Drift.wav",
+      "sha256": "01dc6e300ef914553cf609630c3ff7144bf5cf4896104e34ff7219c4d6e5c6f2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "80fa2cec522110eec1306dfd4622f35f71ee79f7",
+      "size": 39974572,
+      "sample_path": "music/Apr26/021_April Snowfield.wav",
+      "sha256": "555001e3c851543d335a0decfc8ee8fda8dc54ded557ec1976c29f807a37c04f",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "a3f74d4dd4a24a6683d1cac093ca48aabf75e980",
+      "size": 42916012,
+      "sample_path": "music/Apr26/022_April Snowfield.wav",
+      "sha256": "1c1c781c9cc061a5f5813ef8e5473a76b48d43501b8ff4dcff541b1ac2570302",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "7213fe986174d2c6087093e4c37e5977c8368d8b",
+      "size": 38139052,
+      "sample_path": "music/Apr26/023_April Snowfield.wav",
+      "sha256": "eb158e609b55bac9b16e980dcccd0c152e0b290c740d35e26728f8af7f1c05d2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "97f52a4359a388d269ef6e856185180913572883",
+      "size": 37324972,
+      "sample_path": "music/Apr26/024_April Snowfield.wav",
+      "sha256": "130820ca4457ccaefa349cb3abc47259b28344ce3f55e56c2dfc752559f1b295",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "c8e59450dd310d0232c024387f49f806872d3f56",
+      "size": 36288172,
+      "sample_path": "music/Apr26/025_April Thaw.wav",
+      "sha256": "a30b96969583f28ea5147cc667e6ca3ea1276829e6ef3a2eef2a86554adf503a",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "ea938df78ee36f8aae667d9012978851165d684c",
+      "size": 42224812,
+      "sample_path": "music/Apr26/026_April Thaw Drift.wav",
+      "sha256": "0cecc5bd03732f42ebe92174a104ee500a2848dbc46023f6223139faed792edb",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "89396041d7562064ea7fd7dc6345738f80679da3",
+      "size": 38377132,
+      "sample_path": "music/Apr26/027_April Thaw Drift.wav",
+      "sha256": "e413f0b68086471315a0d3cc9e8930e7f98c666558b21739e7af4980a1fecf9f",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "8fb867af7c870375fc6f8342764ec031684a8b59",
+      "size": 38016172,
+      "sample_path": "music/Apr26/028_April Thaw.wav",
+      "sha256": "830b0cb431553b6111cde9efd8bc7278d39b645bd90e17d9880e28dbe8a64fd6",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "69ee2176ad1e1dac9181dfa568f738e4c4bacd8b",
+      "size": 92044972,
+      "sample_path": "music/Apr26/029_B Minor Thaw.wav",
+      "sha256": "dcb77ae5601a8c53632c811d04d8e7b086d0cadd1da87611a78f937d63db6554",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "2efd2db9d89b1e2b16515762b70a28f2e7efde2a",
+      "size": 43100332,
+      "sample_path": "music/Apr26/030_B Minor Thaw.wav",
+      "sha256": "6a63c48147c4b41618eba99ccfc16213eb46afa51a82000565881463a5eb3131",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "0a05e9ac3e0bf7026c323bddac01b8bf440b140b",
+      "size": 46648492,
+      "sample_path": "music/Apr26/031_Cinder Snowfall.wav",
+      "sha256": "66a4a31509326db14146f1359248b3a7a0c3331e49e9cc60d8a73ce44a472c32",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "b879218ccd8bf5698a102fa496c1c96ce4034b46",
+      "size": 44129452,
+      "sample_path": "music/Apr26/032_Cinder Snowfall.wav",
+      "sha256": "300e9ff6e5b8ee034bd87c23e10a3c51f4f5e923e521570f189d2b032b54a8fa",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "e703de91b3a6ab5aeedd34ea451e2e3560da6d1a",
+      "size": 38162092,
+      "sample_path": "music/Apr26/033_Clouds Over C.wav",
+      "sha256": "ed94523761c42fdf41542e10a0b3c8179362183c083ba7532b1b8aa901c28d25",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "720100ae1b6847f72c0b76313a4fffce5a03d198",
+      "size": 36249772,
+      "sample_path": "music/Apr26/034_Clouds Over C.wav",
+      "sha256": "5a7de93a8170641be531c3546978d3767e7f50d70984debf19dbafa416943b6a",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "8baf73addd89481299d21389129b1f523ecd2172",
+      "size": 40028332,
+      "sample_path": "music/Apr26/035_Dawn Under Clouds.wav",
+      "sha256": "9082f70a6cc1c329fd67f6435ffe6968d63af56685f040725e743b7e2b3ce916",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "6b394a79575c9de69ac450fb3efb79a29f77d460",
+      "size": 39920812,
+      "sample_path": "music/Apr26/036_Dawn Under Clouds.wav",
+      "sha256": "a3b92efde681cc3e6c59da1fd83c97961a59f22b14d4441feb90ac090cdd9ad8",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "4fc102c1225c53e08322d82ee785489d9a26f1f3",
+      "size": 44951212,
+      "sample_path": "music/Apr26/037_Fir Resin Drift.wav",
+      "sha256": "0910a1aa9f3c38755ad7294e299205c89fac4a9943990425b24d4fe6e9b7a8d2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "2aedef105cb27b2745404aca64aa6634c77d93b2",
+      "size": 38937772,
+      "sample_path": "music/Apr26/038_Fir Resin Drift.wav",
+      "sha256": "4a396d4ec3502c9e9059fbde420adc179766ea851b8ecc896fc19b9f867313d8",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "1855e21c850fa11f8cb9179e0ba7356d9d3dd8f0",
+      "size": 41257132,
+      "sample_path": "music/Apr26/039_Frost Haze Meadow.wav",
+      "sha256": "69499229c628f09b1201307510a112fa90bf5a5838bf27a33c173d7ceb3bf570",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "8b57d955c3a46e7fe9c3ff6c60201b072e2e3e78",
+      "size": 41249452,
+      "sample_path": "music/Apr26/040_Frost Haze Meadow.wav",
+      "sha256": "84545acb6b3f35b98d64b3b710e14d803ff8b27ecfcb5f001da482d3822301db",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "d4f9c843fa979f79fd2bf3982965bf2044c4cc4b",
+      "size": 35420332,
+      "sample_path": "music/Apr26/041_Frost on April Pines.wav",
+      "sha256": "0abe8fe589ec4ddb234bba2ea48ccb66554b8be42f1800643bfe84770ce7aad7",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "59641c14929c6d4c0ada1cf4e297e2a372c62b32",
+      "size": 34521772,
+      "sample_path": "music/Apr26/042_Frost on April Pines.wav",
+      "sha256": "c2683840cb83728dc323c21aa32d61207927b0ceb70c7ab563ea7f2336ef708d",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "a583c90ccfc197f64df1678c71195c2329892a95",
+      "size": 40274092,
+      "sample_path": "music/Apr26/043_Frost Tide Sleep.wav",
+      "sha256": "0db74878006155e26e047dfce98c613f5155bba99f61b1d4a48eae43a3edb87e",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "426696427aa4c7d5c150abc3cb42b17fdaebf040",
+      "size": 45634732,
+      "sample_path": "music/Apr26/044_Frost Tide Sleep.wav",
+      "sha256": "f51b1ceb2f534239320f4ec1c8297e7ad4cfa5e2ce4416cd2ddfa29326a9bef5",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "2e6b93956bceca32adb810ae21697bc0972d017e",
+      "size": 38369452,
+      "sample_path": "music/Apr26/045_Glass April Drift.wav",
+      "sha256": "b0c82aef51478022dfe0754f8865d2255f2bb76a63ed45777a6f13e6656ee29b",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "1cb3ebc35ef46b0cedb611647ee7080d47bead21",
+      "size": 30520492,
+      "sample_path": "music/Apr26/046_Glass April Drift.wav",
+      "sha256": "2b0b15bb3270136b2eefbd2084145e743d05965eb7c45968f8db972cbe5f0a1f",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "3c0475fce4d2b90d72834e3d215aa04a6185126a",
+      "size": 44144812,
+      "sample_path": "music/Apr26/047_Horizon Veil.wav",
+      "sha256": "3d693353c2b60a1ad5c806c0765d43d1bed18e2cfd51cb315cfce48fb9aba13c",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "3d022549c86e0990c8fc75ba5dc445da4daaede4",
+      "size": 49973932,
+      "sample_path": "music/Apr26/049_Late Spring Snow.wav",
+      "sha256": "db298d3ee598f75b9eeddd94b2d126bf4cf35c51249408fb63fc474cd7d28be0",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "a7345c5b3fc2d0a7224dc4f5d679605bea8fc0c0",
+      "size": 37394092,
+      "sample_path": "music/Apr26/050_Late Spring Snow.wav",
+      "sha256": "157c6f7bd40f0702aa88750646c2bed17193a0ab04a7fe00c72147552341fcc7",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "22b84992b56042eb14cb424e6cf069c3eb4d15fc",
+      "size": 35282092,
+      "sample_path": "music/Apr26/051_Melted Flakes.wav",
+      "sha256": "d083a19906d787085ca4398c4283c3359b845c482cac2318c4793d66302838f8",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "c9c7c49c6935142349215a0ff21d141c8b87b7ff",
+      "size": 39076012,
+      "sample_path": "music/Apr26/052_Melted Flakes.wav",
+      "sha256": "1ba2c0e3d29e240091f08628eae70bb9c5ff53984af3d6f774f157ee79c564b8",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "61c546b91bbb5f29e5b0734409078871e4e2e284",
+      "size": 37770412,
+      "sample_path": "music/Apr26/053_Melted Morning.wav",
+      "sha256": "94b296cc5e0c9841c5297542a9a2a240445f8f08c01bfb5beb4265ce2aaf2bba",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "1692f81be2dfe05f0d77e6acfea5732b3d61f459",
+      "size": 35474092,
+      "sample_path": "music/Apr26/054_Melted Morning.wav",
+      "sha256": "938123209ead1ea340a74017ffd17d16832a89e912ac44712436bedef0b2c0c7",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "36d4fa12358af90a0fb393f40b6186fa89565158",
+      "size": 40865452,
+      "sample_path": "music/Apr26/055_Melted Snow Drift.wav",
+      "sha256": "bfcb934f12b4f4bab52b74dd44535470657b6a427b3a77d3058ce700cc08edd8",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "7806708d8468aee98f4a8a4de28dd61c89ed62c6",
+      "size": 33254572,
+      "sample_path": "music/Apr26/056_Melted Snow Drift.wav",
+      "sha256": "d4e90c210a57e7cd93623ed44744b5ef423d3b857b6ea4db0b3beca505cbccf0",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "6c9eddb8fbede68b7f5900a27417a2fdb8ee36a3",
+      "size": 43161772,
+      "sample_path": "music/Apr26/057_Melted Snowfield.wav",
+      "sha256": "7ac07210ddffcfa5a8717fc1cc6c84e76183d09879ca3133e4dd3caeee23e8dc",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "49fb77b472ece1e931b8062076989bb8216869b8",
+      "size": 39337132,
+      "sample_path": "music/Apr26/058_Melted Snowfield.wav",
+      "sha256": "57d9b30792c8257b02442d8d295a8e995e38441908e7379f1cd9343b10abe16d",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "3f987df6b7c9033a954cf15c21903da6d57e7708",
+      "size": 46057132,
+      "sample_path": "music/Apr26/059_Misty Spring Drift.wav",
+      "sha256": "1850521ee652742279c670ba0fb29bf8bc10fa62a76e27ff16bcca0c26a61b85",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "84fb6a630ec615e0d934430b5f786ba6d2e91571",
+      "size": 42217132,
+      "sample_path": "music/Apr26/060_Misty Spring Drift.wav",
+      "sha256": "3fb89684b8a7cad049affe0444159ab345d1ce33580b29bd20f0f2e11bbee1aa",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "6a2f2d21f58561e5aa9b4890838ea72b9a831f2b",
+      "size": 43507372,
+      "sample_path": "music/Apr26/061_Moss in B Minor.wav",
+      "sha256": "8b2cbffb7423c0b5697e6b09122a5d0241ee2c165d8960b77aced934080a188c",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "5bc4102d6c22d2448b0497127868be8f76a92b7b",
+      "size": 36449452,
+      "sample_path": "music/Apr26/062_Moss in B Minor.wav",
+      "sha256": "14be5dc8078d5f9f565a89542dad0e7692ab5a35e9b2d502f83f24f7881f68a8",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "65ad55030b99d3c97119df678ef5a14959f9a8f1",
+      "size": 35412652,
+      "sample_path": "music/Apr26/063_Moss in Snowmelt.wav",
+      "sha256": "ea0df113c5b7f8df56619b42ff1d067c82b140f9616936ae2dc21e8be3a5365b",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "3a4582bff5598723cd12aa639886b6ab0a400974",
+      "size": 33454252,
+      "sample_path": "music/Apr26/064_Moss in Snowmelt.wav",
+      "sha256": "a05cabc1b30f69825ee58ed72b5db93d450e3537cc36a5ccd3d70b138224b9ae",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "74c84c6329670b2b53204addb3df9d8bb0a25647",
+      "size": 38377132,
+      "sample_path": "music/Apr26/065_Moss on Bark.wav",
+      "sha256": "039d9ae9d2a00b100c13a720aa944999b9f18209326bfcee57ca84e0913cb818",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "51d75f775619d246d673a35b23118e775bf0d7d9",
+      "size": 44728492,
+      "sample_path": "music/Apr26/066_Moss on Bark.wav",
+      "sha256": "4b6ffcb092cfc24a736c5fb5cfb21825e2f796d20214a5bb0ae3e0232d5466b6",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "7ca32faf088b098df500e036fedfdf16720432bc",
+      "size": 43069612,
+      "sample_path": "music/Apr26/067_Moss Snow Drift.wav",
+      "sha256": "b895584f149d7636226e491496a6bca694a9fcc3c8516617a4299819410705ef",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "cc29bb001a36f6f8b7ea44a39becaf03dca0eda1",
+      "size": 41241772,
+      "sample_path": "music/Apr26/068_Moss Snow Drift.wav",
+      "sha256": "d737a658355c33329a2958589bb59096059d56594993a19c1197b3608fb57a9e",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "131b86d80480c065489c80c30a557ff78f23ce04",
+      "size": 34521772,
+      "sample_path": "music/Apr26/069_Moss Thaw.wav",
+      "sha256": "16aaba3628a93df11cd5c34fcfdc0ec8ac55d1e4b8431e2f349734f315d98971",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "500e472dc76beab443da38c2d76433cb6b4cb625",
+      "size": 41940652,
+      "sample_path": "music/Apr26/071_Moss Under Frost.wav",
+      "sha256": "b037c50d578db6353895dabf0461adf3bf4b424a788b3cab5b96feaef61f41ef",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "09abe45aa0e0a9c439e44635481edc267cabe000",
+      "size": 40297132,
+      "sample_path": "music/Apr26/072_Moss Under Frost.wav",
+      "sha256": "796471655cfd4d18a6fd16adf60ef9953e9fe104dbda81c4b9648dc5a5e50a09",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "a0d58d0e3bfe63269e2c8f456ba57e48f7bab58c",
+      "size": 34898092,
+      "sample_path": "music/Apr26/073_Pale Spring Drift.wav",
+      "sha256": "ea612c40f3dc41038939a3b623ec1e7e51593ac6e6b7702c3310fdd535c5d0c1",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "a4eaf1af5b3c3c849f606df70dfe494b195ba578",
+      "size": 40811692,
+      "sample_path": "music/Apr26/074_Pale Spring Drift.wav",
+      "sha256": "f542bc2a48777e79e7f23e32454c3069e0db6383e6ebcfed6fc917e300833ab2",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "db1008f10928f22fe7d8a48413c78b17f8e96438",
+      "size": 32594092,
+      "sample_path": "music/Apr26/075_Rain on Moss.wav",
+      "sha256": "7f49019441f167eecc99e227f47987f7cc65c9b9fca7fb97c5b103fcbcc3a25b",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "0d37b44c540aa28292d9bbf724abf77b37d3d11e",
+      "size": 40965292,
+      "sample_path": "music/Apr26/077_Snow After April.wav",
+      "sha256": "66eb414f7558b53e0dab0a1f5a0d551995e15dc68faa2093e5431ffd8c31216a",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "edb716666d07a35be60a2893a3820e190626c876",
+      "size": 38269612,
+      "sample_path": "music/Apr26/078_Snow After April.wav",
+      "sha256": "f6bf0f7b6d4499a742c3975ac0a79640588d36ca6afab36a3083863280a57bb0",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "178326ca6ee076a0b817b95bbd30bf641c12fab2",
+      "size": 40251052,
+      "sample_path": "music/Apr26/079_Snow in the Pines.wav",
+      "sha256": "de61de2c53a86a4c951cf4dc5e871da4501129f7ff6bd788183ccfe8c39dc59e",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "1613d1e7654a89a2cd42b392f57a9813447e9927",
+      "size": 41026732,
+      "sample_path": "music/Apr26/080_Snow in the Pines.wav",
+      "sha256": "f6784792e6d25e96588fdb617ad989265db7d8392e5e59365aad784b5b6f715d",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "e43709305c006fd6f62f4fdc2dc44adf19ac5271",
+      "size": 37324972,
+      "sample_path": "music/Apr26/081_Snowdrift Drone.wav",
+      "sha256": "4861a4ddbf0298385487bca8f3b295fe7a811900089246ed4e7557c81b0c33f0",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "5aaafa0d1c01ad252cd4499ce231707a41112220",
+      "size": 37348012,
+      "sample_path": "music/Apr26/082_Snowdrift Drone.wav",
+      "sha256": "753660bb3410597439fe9c0b48f9a168334cd0e5e1b6cd3c65172276e312d61a",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "edb701400f96985db867c5234a36f6f073dd5caa",
+      "size": 37386412,
+      "sample_path": "music/Apr26/083_Snowfield in D Minor.wav",
+      "sha256": "7527bc4915b7eeaa09d01aa392ca2aa494a09cabce9a956c19819e8de86dbd25",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "f73911332fef46308ae56a32598b56f93426c61c",
+      "size": 36449452,
+      "sample_path": "music/Apr26/085_Snowfield in G.wav",
+      "sha256": "4c18c3a8513869e7f0bfcf227f0e65865fc79711c0b7c75b4ccd65a221269ef3",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "c1c1d67f5424e69e7fcdb06934e0e1da982d28cc",
+      "size": 41856172,
+      "sample_path": "music/Apr26/086_Snowfield in G.wav",
+      "sha256": "945a77167a02570a99e07127535a0b301c11bda83f8ca7ac32fd2476b84d1dd6",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "0e690ec5fa62eed0e4c1c7a46994685a339ced96",
+      "size": 34122412,
+      "sample_path": "music/Apr26/087_Snowmelt Canopy.wav",
+      "sha256": "a10e2ca62118d51db681e8c7d7977678d6c67c77ff24ecc1884a3e014165d935",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "f1c41a66ede923dde1cd13d3b38d9bb94e95ddd8",
+      "size": 41817772,
+      "sample_path": "music/Apr26/088_Snowmelt Canopy.wav",
+      "sha256": "b22198821a46ea1ee9f3ab92275d6b383b2156d9e0288ff05a55276bb4c85a2d",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "84ada899e5c1d247ad93e7744e1d50d91d3b3b4d",
+      "size": 42186412,
+      "sample_path": "music/Apr26/089_Snowmelt Drift.wav",
+      "sha256": "dcc14713fbaac509d3821abc5dd50714148cc4fc93e8972e302fd03cf1769443",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "57fd05224f64d30cf7af0a8ca493e14b26364873",
+      "size": 41241772,
+      "sample_path": "music/Apr26/090_Snowmelt Drift.wav",
+      "sha256": "e3f61c9802e5ec5d71ab19ff636b209ad7528ef865d38ae255c5c6b02afddf1c",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "87e58837a24b48b329b76582fa57820a48565cc4",
+      "size": 40012972,
+      "sample_path": "music/Apr26/091_Snowmelt in D Minor.wav",
+      "sha256": "89f9f38d9265b7714d6f448c0d5ece835a2491086f6009a7cc2f04dd741e08d7",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "8a041e80b41ae0e348e07cb2fa5d2944eb017ef8",
+      "size": 46049452,
+      "sample_path": "music/Apr26/092_Snowmelt in D Minor.wav",
+      "sha256": "ce97afb7cb2644c58e31e2e957ba6287721189237020b574c3c88decc88d2dfe",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "61cca8248b1744c8ebd4f0a22b34f3258869ded6",
+      "size": 41164972,
+      "sample_path": "music/Apr26/093_Thaw Under Birch Bark.wav",
+      "sha256": "63f4e6ba5707d03853a2b6fc0b534f9a332175db9f0cbc97aec357f971844974",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "15ca78c8ba7fe9b54a094a53d7144973f4713998",
+      "size": 40289452,
+      "sample_path": "music/Apr26/094_Thaw Under Birch Bark.wav",
+      "sha256": "5b43f1a42a6b632675c8fcf3af905d49871e5161bf819e64112302e9b0e9c32c",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "538f11c34ffa9fd4ddb0306436616ac32f30d450",
+      "size": 33392812,
+      "sample_path": "music/Apr26/095_Thawglass Drift.wav",
+      "sha256": "312702122a97b6cecd57e050d867e2d11b7c944ea4d25cd7a4be52393f524b55",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "fe0b4a000cdfbba204586ce2d57644b5373a0ba1",
+      "size": 39329452,
+      "sample_path": "music/Apr26/096_Thawglass Drift.wav",
+      "sha256": "1fc6d18a0ad8254296bfaf049050978af54a32833822d437437720ac99488453",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "058a158dc7eb222c3b2815fc1695a4f395ff5ce9",
+      "size": 41203372,
+      "sample_path": "music/Apr26/097_Thawing Pines.wav",
+      "sha256": "9f7220f89ff79cdc3440ee77ba6e430c06d61c3ea945d21de9d97b67cec0b701",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "454cc4b5023e068e221efbe0e84bc4bcaecf4cec",
+      "size": 42739372,
+      "sample_path": "music/Apr26/098_Thawing Pines.wav",
+      "sha256": "f9dc36f76b139c3f91855d5ba8257467030773b8ce6151c2f13e61463a94d549",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "73bc3bae39bdbf2cf747721be35af6e9225ba182",
+      "size": 37394092,
+      "sample_path": "music/Apr26/100_Thawing Window.wav",
+      "sha256": "a9045b3e90c42b0d9313b353cf640453bcb94c9d2c91b3b328f9e6deb4dc5b88",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "5bcbb071919507ea803098a23a1630b0abb16be6",
+      "size": 25474728,
+      "sample_path": "music/Feb26/009_Snowfall Through Double Glass.wav",
+      "sha256": "e33e46099aa3600b337c4414f958df87b4570accc5d40f71aa02b20c50843018",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "afd537f4c47856da4af2cb4f6dc7d2c778610913",
+      "size": 23938728,
+      "sample_path": "music/Feb26/020_Buried Under Falling Silence.wav",
+      "sha256": "6e38271b72de1bca0db885f9ee393f0f0c90a64b6907cf897134a809cbf878b7",
+      "wav_riff_header": true
+    },
+    {
+      "oid": "28d1aa0aadbdb6e0f70ee8436da1ee11feedce98",
+      "size": 25344168,
+      "sample_path": "music/Feb26/056_Unbroken Evergreens in Black Cold.wav",
+      "sha256": "0a9fd2e795f08c9a57fa8abbc81dce6e4e8674c1f2c238a366c38e208a491a49",
+      "wav_riff_header": true
+    }
+  ],
+  "not_performed": [
+    "Write freeze",
+    "Durable independent backup outside session",
+    "History rewrite",
+    "LFS upload",
+    "Rewritten remote ref update",
+    "Fresh GitHub clone after migration",
+    "Godot validation after migration"
+  ],
+  "blocker": "Authenticate Git CLI and verify repository/LFS write access before rewriting history",
+  "concurrent_change_reviewed": {
+    "previous_head": "20a1cc5afb72d59851b2740696b8978d37a41ffe",
+    "observed_head": "c94d5854a9e9ab9d8aeec911e89bb7009bf11eda",
+    "scope": "LFS_MIGRATION.md authentication preflight only; preserved in follow-up documentation",
+    "requires_fresh_snapshot_before_rewrite": true
+  }
+}

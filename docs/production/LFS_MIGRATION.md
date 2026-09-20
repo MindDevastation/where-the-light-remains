@@ -1,6 +1,6 @@
 # Git LFS history migration
 
-Status: **AUTHORIZED / BLOCKED — NOT YET EXECUTED**.
+Status: **AUTHORIZED / ESCALATION CONFIRMED / BLOCKED ON GIT AUTHENTICATION**.
 
 Owner authorization has been granted to rewrite the repository history so large source audio and future 3D binaries are stored through Git LFS rather than ordinary Git blobs.
 
@@ -102,7 +102,10 @@ The feature is PASS only when:
 - [ ] `.gitattributes` is committed with final LFS rules;
 - [ ] `IMPLEMENTATION_PLAN.md` marks the LFS gate complete only after all of the above.
 
-## Current blocker
+## Earlier authentication preflight (2026-09-20)
+
+The following evidence is preserved from commit `c94d585`. The follow-up below
+records the subsequent full-mirror preparation and current tool availability.
 
 Rechecked on **2026-09-20**. Git and Git LFS are installed, and outbound GitHub Git/LFS access works. The remaining execution blocker is **local Git/LFS authentication for write access**. The earlier statement that Git LFS and outbound GitHub access were unavailable is superseded by the checks below.
 
@@ -155,3 +158,79 @@ These values were read from GitHub and the Git remote. This is a metadata snapsh
 4. Resume the migration procedure above on the existing feature branch and PR #10.
 
 No history rewrite, full backup verification, LFS payload upload, post-migration `fsck`, fresh-clone LFS retrieval, or Godot validation was performed in this recheck. All migration acceptance boxes remain unchecked. Under `ASTRA_WORKFLOW.md` and the owner's Phase A ordering, dependent Foundation/debug-tools work and bulk 3D production remain paused until LFS passes.
+
+## Current blocker and full-mirror follow-up
+
+
+The remaining execution blocker is **Git CLI authentication**. A non-mutating
+push dry run to the existing migration branch fails because Git cannot obtain a
+GitHub username/credential. The connected GitHub application can update ordinary
+files and refs, but it does not provide an LFS payload-upload operation or export
+its credentials to local Git.
+
+The earlier tool/network blocker is partially resolved: Git 2.51.1 and Git LFS
+3.4.1 run successfully, a complete unfiltered mirror was downloaded from GitHub,
+and the LFS batch endpoint responds. An empty download batch returns HTTP 422
+(`No objects specified`); this proves endpoint reachability only, not upload or
+payload-download permission. GitHub CLI 2.101.0 was installed from its official
+release with the release SHA-256 checked, to support interactive device login.
+
+Read-only preparation is recorded in
+[`evidence/lfs_preflight_2026-09-20.json`](evidence/lfs_preflight_2026-09-20.json):
+
+- the mirror contains all 26 advertised refs (15 branches, 11 GitHub PR refs),
+  68 reachable commits, no tags, no shallow boundary, no promisor packs, and no
+  object alternates;
+- `git fsck --full --strict` on the mirror returned 0 with no diagnostics;
+- a separate sparse working checkout was restored from that mirror; its
+  connectivity check passed. This working checkout shares objects with the
+  mirror and must not be mistaken for a second independent backup;
+- all 139 distinct target WAV Git blobs were streamed, SHA-256 hashed, and
+  checked for RIFF/WAVE signatures: 5,021,937,862 bytes in total;
+- the inventory found no existing LFS pointer blobs. Signature checks are not
+  audio-quality/listening validation;
+- the checksummed manifest stores original Git blob IDs, expected LFS SHA-256
+  IDs, byte lengths, and representative historical paths. A path is an example
+  for an object, not an exhaustive list of its renamed paths;
+- the local mirror is a recovery copy for this workspace session. A durable
+  independent copy and a fresh remote-ref snapshot are still required before
+  updating any rewritten remote refs;
+- no history rewrite, LFS payload upload, post-migration fresh clone, or
+  post-migration Godot validation has occurred. The acceptance checklist remains
+  unchecked, and PR #10 remains a draft.
+
+## Execution details to preserve after authentication
+
+1. Finish all preparation commits, refresh the mirror and ref snapshot, and
+   coordinate a write freeze with the owner and other writers. An unchanged
+   `ls-remote` observation alone is not a write freeze. Any unexpected ref
+   movement requires another review before proceeding.
+2. Keep the backup immutable and recoverable outside the rewrite directory.
+   Recheck disk space for old Git objects, LFS payloads, and an independent fresh
+   clone; the current unique source payload is about 4.68 GiB.
+3. Materialize every retained production, feature, analysis and audio branch as
+   a local branch in the migration workspace. `git lfs migrate --everything`
+   scans remote-tracking refs but does not update those refs. Checking out only
+   the migration branch is therefore insufficient to migrate every branch tip.
+4. Preserve the exact eight target patterns above. Save the commit mapping with
+   `git lfs migrate import --object-map=<evidence-path>` and compare each retained
+   ref to the frozen snapshot. Verify all reachable target paths, not just the
+   current worktree. Keep non-target file contents and modes unchanged.
+5. Include GitHub-owned `refs/pull/*` in backup evidence, but never try to publish
+   changes to that read-only namespace or use `git push --mirror`. These service
+   refs can retain historical commits; migration does not guarantee immediate
+   server-side repository-size reduction. Reassess PR #10 against the rewritten
+   base and head before merging or replacing it.
+6. Verify all required LFS payloads are present on GitHub before publishing
+   pointer refs. Compare payload sizes and SHA-256 IDs against the original
+   manifest. Publish only the explicitly enumerated branch/tag refs using
+   explicit old-SHA leases and an atomic push; stop if the server cannot honor
+   those protections.
+7. Validate from a genuinely fresh clone of GitHub with no object alternates
+   or borrowed LFS cache. Retrieve every required LFS object, validate all
+   retained refs and real WAV payloads, then run the Godot 4.7.2 checks and
+   asset-path checks from the procedure above. Do not mark PASS based on local
+   pointers or a push exit code alone.
+
+Git LFS reference for the installed version:
+[git-lfs-migrate(1), v3.4.1](https://github.com/git-lfs/git-lfs/blob/v3.4.1/docs/man/git-lfs-migrate.adoc).
