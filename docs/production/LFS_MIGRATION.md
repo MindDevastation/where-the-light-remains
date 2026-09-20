@@ -1,6 +1,6 @@
 # Git LFS history migration
 
-Status: **AUTHORIZED / ESCALATION CONFIRMED / NETWORK RECHECK PASSED / GIT AUTHENTICATION REQUIRED**.
+Status: **AUTHORIZED / ESCALATION CONFIRMED / CLI AUTHENTICATION BLOCKED / PREREQUISITES NOT PASS**.
 
 Owner authorization has been granted to rewrite the repository history so large source audio and future 3D binaries are stored through Git LFS rather than ordinary Git blobs.
 
@@ -161,7 +161,54 @@ No history rewrite, full backup verification, LFS payload upload, post-migration
 
 ## Current blocker and full-mirror follow-up
 
-### Latest network recheck after owner updated environment access
+### Latest device-login result after owner confirmed completion
+
+The owner confirmed completion of the new device-authorization step. Resuming
+the existing local GitHub CLI process then returned the execution-environment
+error:
+
+```text
+Network access to "https://api.github.com:443" was blocked by policy.
+```
+
+The failed process did not expose the HTTP method or API path. Therefore no
+specific method is claimed for that policy denial. Its exact reported network
+destination is `api.github.com:443` over HTTPS.
+
+Follow-up checks in the same workspace produced:
+
+| Check | Observed result |
+| --- | --- |
+| `git lfs version` | `git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)` |
+| `gh auth status --hostname github.com`, using the login's dedicated configuration directory | Exit 1; not logged into any GitHub hosts |
+| `GET https://api.github.com` | HTTP 200 |
+| Unauthenticated `GET https://api.github.com/user` | HTTP 401 |
+| Unauthenticated `POST https://api.github.com/graphql`, read-only viewer query | HTTP 403 with GitHub's `API rate limit exceeded` response |
+| `git ls-remote --heads --tags origin` | Succeeded; the same 15 branch heads, no tags |
+| Same-ref `git push --dry-run`, prompts disabled | Exit 128; `fatal: unable to get password from user` |
+| LFS batch `POST`, empty download negotiation | HTTP 422, `No objects specified` |
+| LFS batch `POST`, empty upload negotiation | HTTP 401, `Requires authentication` |
+
+The GraphQL 403 is an anonymous GitHub API rate-limit response, not evidence
+that POST is denied by network policy. Successful unauthenticated probes do
+not establish that the GitHub CLI authentication exchange is permitted.
+The dedicated local login remains unavailable; authenticated Git/LFS write
+access remains **FAIL**, and the complete prerequisites gate remains **NOT PASS**.
+
+The migration branch was `ae2a0be8f468215507ca88fefd1cd03754ba1a22` before
+this documentation update. Main and the other branch heads match the preceding
+snapshot. The partial working checkout was clean. No history rewrite, LFS
+payload upload, rewritten-ref publication, or migration merge was performed.
+
+The next required dependency is a supported resolution of the execution
+policy's denial during local GitHub CLI authentication, or repository
+Git/LFS credentials provisioned through a supported secure mechanism.
+Do not repeat device-login codes or route the denied operation through another
+host while this cause is unresolved. Never paste credentials into this
+document or the conversation. After authentication succeeds, recheck all
+prerequisites, including the independent full backup and write-freeze window.
+
+### Pre-login network recheck after owner updated environment access
 
 The owner enabled agent internet access, allowed `api.github.com`, and enabled
 all HTTP methods. The previously denied API host was retested through the local
@@ -183,7 +230,8 @@ No new network-policy denial occurred in these probes. The LFS responses establi
 endpoint reachability only; they do not establish authenticated object upload or
 download. The full prerequisites gate remains **NOT PASS** because authenticated
 Git/LFS write access has not yet been restored. A new standard GitHub CLI device
-login was initiated after the API-host check succeeded; completion is pending.
+login was initiated after the API-host check succeeded; its failed completion
+and the subsequent checks are recorded immediately above.
 
 The existing migration branch is restored as a partial sparse working checkout.
 It is not a full backup. A refreshed, independently preserved full backup,
