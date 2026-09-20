@@ -10,7 +10,7 @@
 *.yml text eol=lf
 *.yaml text eol=lf
 
-# Binary assets
+# Binary assets kept in ordinary Git
 *.png binary
 *.jpg binary
 *.jpeg binary
@@ -19,15 +19,20 @@
 *.ogg binary
 *.flac binary
 *.mp3 binary
-*.glb binary
 *.gltf binary
-*.blend binary
-*.fbx binary
 *.psd binary
 *.kra binary
 *.docx binary
 *.pdf binary
 
-# NOTE: Git LFS migration is intentionally not declared here until existing
-# large blobs are actually migrated. Adding filter=lfs without migrating the
-# current WAV history would create pointer-consistency warnings for clones.
+# Git LFS — forward-looking production masters/runtime binaries.
+# These extensions are not currently present in the repository tree, so enabling
+# LFS here does not create pointer inconsistencies for existing tracked files.
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.glb   filter=lfs diff=lfs merge=lfs -text
+*.fbx   filter=lfs diff=lfs merge=lfs -text
+
+# Existing WAV/audio history intentionally remains ordinary Git for now.
+# A destructive history rewrite is not required to begin 3D production.
+# Any later audio-history cleanup/migration must be a separate, explicitly
+# validated maintenance task with fresh-clone and LFS-object retrieval checks.

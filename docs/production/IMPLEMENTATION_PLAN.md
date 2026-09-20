@@ -14,6 +14,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - Canonical precedence and merge validation rules are defined in `ASTRA_WORKFLOW.md`.
 - Default Astra reasoning level: **High**. Tasks listed in the reasoning-escalation policy require a pause and owner switch to Extra High / highest available before continuing.
 - 3D source/runtime work follows `docs/production/THREE_D_PRODUCTION_PIPELINE.md`.
+- Git LFS policy follows `docs/production/LFS_POLICY.md`.
 
 ## Milestone 0 — preflight
 
@@ -27,7 +28,8 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [x] Define Astra branch/commit/integration/blocker workflow.
 - [x] Lock Godot minor **4.7**, verified with the standard **4.7.2 stable** executable (`4.7.2.stable.official.ed1daf0bf`).
 - [x] Engine preflight: real editor import, GameRoot/eight-autoload startup checks, headless and Forward+ smoke tests, safe exit and native window close. See `ENGINE_PREFLIGHT.md` for evidence and scope.
-- [!] Git LFS history migration is explicitly authorized by the owner. It remains **not yet executed** until work is performed in an authenticated environment with real `git-lfs` support and validated object upload. Do not bulk-add new `.blend/.glb/.gltf/.fbx` or additional large source audio before this task passes.
+- [x] Configure forward Git LFS rules for future heavy 3D binaries (`*.blend`, `*.glb`, `*.fbx`) without rewriting existing WAV history. Destructive audio-history migration is no longer a prerequisite for 3D production.
+- [!] Before the first real LFS-backed 3D binary is merged, validate pointer creation, LFS payload upload, `git lfs fsck`, fresh-clone retrieval and Blender/Godot open/import as applicable.
 - [x] Build valid InputMap in project settings: physical WASD/E/H and logical Esc for pause/skip. Real Godot event-dispatch checks, clean import and startup regression passed; see `INPUT_MAP.md`. Gameplay consumers and hold-to-skip policy remain in their later systems.
 - [x] Create audio bus layout: Master → Music/Main/Stems, SFX/Critical/World, Ambience, UI, VO_RESERVED. Automatic loading, real mixer routing and Music/SFX parent gain/mute passed in Godot 4.7.2; see `AUDIO_BUSES.md`. Playback, settings UI and final mix remain later work.
 - [ ] Add development-only debug stage/save/audio/performance tools.
@@ -63,13 +65,14 @@ Acceptance:
 
 ## Epic 03 — 3D art foundation
 
-The 3D stream runs in parallel with code after the LFS gate is actually validated.
+The 3D stream runs in parallel with code under the active forward-only LFS policy.
 
 Foundation acceptance:
 - [x] 3D production pipeline documented.
 - [x] Source/runtime folder split documented (`assets/3d/` vs `game/art/`).
+- [x] Forward Git LFS policy configured for future `.blend/.glb/.fbx` files.
 - [ ] Verify actual Blender version/CLI/export capabilities on the Astra machine.
-- [ ] Complete Git LFS migration and verify clone/checkout/object retrieval after rewrite.
+- [ ] Validate the first real LFS-backed 3D binary end-to-end: pointer, payload upload, `git lfs fsck`, fresh clone and payload retrieval.
 - [ ] Build and validate Blender→GLB→Godot export contract.
 - [ ] Create compact shared material library baseline.
 - [ ] Produce one modular Archive kit sample.
@@ -77,7 +80,7 @@ Foundation acceptance:
 - [ ] Import samples in Godot and validate scale, orientation, pivots, materials, collision and warnings.
 - [ ] Run representative performance check before mass asset production.
 
-No bulk modeling starts before the export/import sample is accepted.
+No bulk modeling starts before the export/import sample and first real LFS object are accepted.
 
 ## Milestone 4+
 
@@ -93,7 +96,7 @@ main
     ├── feature/00-foundation/engine-preflight
     ├── feature/00-foundation/input-map
     ├── feature/00-foundation/audio-buses
-    ├── feature/00-foundation/lfs-history-migration
+    ├── feature/00-foundation/lfs-forward-config
     └── feature/00-foundation/debug-tools
 
 main
@@ -120,5 +123,7 @@ main
     ├── feature/03-art-foundation/modular-archive-kit
     └── feature/03-art-foundation/import-validation
 ```
+
+The old destructive `feature/00-foundation/lfs-history-migration` plan is superseded as a production prerequisite. A future audio-history cleanup may be performed separately only if repository-size pressure justifies the destructive rewrite.
 
 Later environment/hero/memory art epics are created only after the Art Foundation sample proves the pipeline. Do not invent unresolved implementation requirements merely to populate the branch tree.
