@@ -1,0 +1,171 @@
+Audio bus validation — 2026-09-20
+Source commit: 915abb3586b8b4c4ef3f8b5bc8dfe78a55eea23a
+Game tree: 4440b1604fe2027abca2167e374dbad590c3cca4
+Clean git archive: game/ only; .godot cache absent before import
+Output normalization: ANSI terminal color sequences and trailing line spaces removed
+
+=== Clean editor import ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/audio-bus-evidence/clean-915abb3/game --editor --import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
+[   0% ] first_scan_filesystem | Scanning file structure...
+[  16% ] first_scan_filesystem | Loading global class names...
+[  33% ] first_scan_filesystem | Verifying GDExtensions...
+[  50% ] first_scan_filesystem | Creating autoload scripts...
+[  66% ] first_scan_filesystem | Initializing plugins...
+[  83% ] first_scan_filesystem | Starting file scan...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started Registering global classes... (12 steps)
+[   0% ] update_scripts_classes |
+[   7% ] update_scripts_classes |
+[  15% ] update_scripts_classes |
+[  23% ] update_scripts_classes |
+[  30% ] update_scripts_classes |
+[  38% ] update_scripts_classes |
+[  46% ] update_scripts_classes |
+[  53% ] update_scripts_classes |
+[  61% ] update_scripts_classes |
+[  69% ] update_scripts_classes |
+[  76% ] update_scripts_classes |
+[  84% ] update_scripts_classes |
+[ DONE ] update_scripts_classes
+
+[   0% ] loading_editor_layout | Started Loading editor (5 steps)
+[   0% ] loading_editor_layout | Loading editor layout...
+[  16% ] loading_editor_layout | Loading docks...
+[ DONE ] loading_editor_layout
+Exit code: 0
+
+=== Audio bus mixer checks ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/audio-bus-evidence/clean-915abb3/game --script res://tests/audio_bus_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_BUS runtime: 4.7.2-stable (official); display=headless; audio=Dummy
+AUDIO_BUS source: project default layout; generated PCM through the real mixer; no speaker test
+AUDIO_BUS route: Master -> output; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: Music -> Master; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Main -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Stems -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: SFX -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_Critical -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_World -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: Ambience -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: UI -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: VO_RESERVED -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS gain: Music_Main; half-gain ratio=0.5
+AUDIO_BUS gain: Music_Stems; half-gain ratio=0.5
+AUDIO_BUS mute: Music_Main; Master peak=0.0
+AUDIO_BUS mute: Music_Stems; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: Music
+AUDIO_BUS gain: SFX_Critical; half-gain ratio=0.5
+AUDIO_BUS gain: SFX_World; half-gain ratio=0.5
+AUDIO_BUS mute: SFX_Critical; Master peak=0.0
+AUDIO_BUS mute: SFX_World; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: SFX
+AUDIO_BUS PASS: automatic layout, all routes, parent gain/mute and restored neutral state
+Exit code: 0
+
+=== InputMap regression ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/audio-bus-evidence/clean-915abb3/game --script res://tests/input_map_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INPUT_MAP runtime: 4.7.2-stable (official); display=headless
+INPUT_MAP source: project.godot; injected keyboard events, not OS keyboard input
+INPUT_MAP checked: W/S/A/D/E/H press and release with Latin and Cyrillic labels
+INPUT_MAP checked: physical/logical mismatch and release after modifier change
+INPUT_MAP checked: forward direction, normalized diagonal, opposite keys and release
+INPUT_MAP checked: shared Esc, repeat events, ui_cancel and ui_accept
+INPUT_MAP PASS: persisted bindings, layout-independent matching and input lifecycle
+Exit code: 0
+
+=== Engine preflight regression ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/audio-bus-evidence/clean-915abb3/game --script res://tests/engine_preflight.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"headless","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+Exit code: 0
+
+=== Normal project startup ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/audio-bus-evidence/clean-915abb3/game --quit-after 120
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Exit code: 0
+
+=== Negative control: default layout selection removed (failure expected) ===
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --headless --path /workspace/scratch/4f0b36b4bb0e/audio-bus-evidence/clean-915abb3/game --script res://tests/audio_bus_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_BUS runtime: 4.7.2-stable (official); display=headless; audio=Dummy
+AUDIO_BUS source: project default layout; generated PCM through the real mixer; no speaker test
+ERROR: AUDIO_BUS FAIL: Project default layout is not configured
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:38)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Expected 10 automatically loaded buses, got 1
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:40)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: Music
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: Music_Main
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: Music_Stems
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: SFX
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: SFX_Critical
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: SFX_World
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: Ambience
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: UI
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+ERROR: AUDIO_BUS FAIL: Missing or misplaced bus: VO_RESERVED
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_bus_smoke.gd:34)
+       [1] _check_layout (res://tests/audio_bus_smoke.gd:44)
+       [2] _run (res://tests/audio_bus_smoke.gd:96)
+Exit code: 1
+
+All five positive checks passed; default-layout control failed as expected.
+Archived source files remained unchanged after validation.
