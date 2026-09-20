@@ -40,10 +40,15 @@ This repository is intentionally public by project-owner decision. It contains s
 
 ## Implementation status
 
-The initial Godot project and eight core service skeletons are runnable in the verified preflight environment. The baseline keyboard InputMap is configured and has passed real-engine event-dispatch checks. Player movement, mouse look, pause and hold-to-skip consumers belong to later features. The next foundation feature is the audio bus layout. Implementation must preserve the approved stage map, accessibility constraints, silence map, save/checkpoint contract and GTX 1060 performance budget.
+The initial Godot project and eight core service skeletons are runnable in the verified preflight environment. The baseline keyboard InputMap and ten-bus audio layout are configured and covered by real-engine checks. Audio routing, Music/SFX parent gain and mute were verified using an in-memory test signal. The next foundation feature is development-only debug tooling.
+
+Player movement, mouse look, pause, hold-to-skip, settings UI and full AudioDirector playback belong to later features. Implementation must preserve the approved stage map, accessibility constraints, silence map, save/checkpoint contract and GTX 1060 performance budget.
 
 Engine verification and reproducible startup checks are recorded in
 [`docs/production/ENGINE_PREFLIGHT.md`](docs/production/ENGINE_PREFLIGHT.md).
 
 Input bindings, validation scope and repeatable checks are recorded in
 [`docs/production/INPUT_MAP.md`](docs/production/INPUT_MAP.md).
+
+Audio routing, mixer measurements and verification limits are recorded in
+[`docs/production/AUDIO_BUSES.md`](docs/production/AUDIO_BUSES.md).
