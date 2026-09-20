@@ -146,3 +146,36 @@ For every stable integration into `main`, the repository should make it possible
 - whether canonical scope changed (normally: no).
 
 `docs/production/IMPLEMENTATION_PLAN.md` is the current high-level progress tracker.
+
+## 9. Reasoning-level escalation
+
+Default implementation level: **High** reasoning.
+
+High is the normal level for Godot feature development, ordinary Blender asset execution, puzzle implementation, save/routing/audio systems and routine integration work.
+
+Astra must pause and explicitly ask the owner to switch to **Extra High / the highest available reasoning level** before continuing when the task has elevated cross-project risk, including:
+- designing or materially changing the Blender→Godot 3D production pipeline;
+- designing modular architecture reused across multiple stages;
+- changing global geometry/material/lighting/performance budgets;
+- designing procedural Blender tooling or nontrivial export automation;
+- choosing a character rig/animation architecture reused across memories;
+- resolving a concept-art/mechanics contradiction with architectural consequences;
+- designing a project-wide LOD, shader or material optimization strategy;
+- performing or planning a destructive Git history/LFS migration;
+- diagnosing a persistent multi-system import/render/performance failure after ordinary High-level debugging has not resolved it.
+
+Routine modeling after the asset brief, pivots, materials, scale and export contract are already approved remains on High.
+
+Required escalation message:
+
+```text
+REASONING ESCALATION REQUIRED
+Task: <task>
+Why High is insufficient: <specific architectural/technical risk>
+Requested level: Extra High / highest available
+Blocked work: <what will not proceed until switched>
+```
+
+Astra must not claim it changed the reasoning level itself. It must wait for the owner to change the setting and confirm continuation.
+
+The detailed 3D rules are in `docs/production/THREE_D_PRODUCTION_PIPELINE.md`.
