@@ -1,6 +1,6 @@
 # Git LFS history migration
 
-Status: **AUTHORIZED / ESCALATION CONFIRMED / BLOCKED ON NETWORK POLICY AND GIT AUTHENTICATION**.
+Status: **AUTHORIZED / ESCALATION CONFIRMED / NETWORK RECHECK PASSED / GIT AUTHENTICATION REQUIRED**.
 
 Owner authorization has been granted to rewrite the repository history so large source audio and future 3D binaries are stored through Git LFS rather than ordinary Git blobs.
 
@@ -161,7 +161,38 @@ No history rewrite, full backup verification, LFS payload upload, post-migration
 
 ## Current blocker and full-mirror follow-up
 
-### Device-login attempt and environment reset
+### Latest network recheck after owner updated environment access
+
+The owner enabled agent internet access, allowed `api.github.com`, and enabled
+all HTTP methods. The previously denied API host was retested through the local
+execution environment and is now reachable.
+
+| Requested check | Actual result |
+| --- | --- |
+| Git | `2.51.1` |
+| `git lfs version` | `git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)` |
+| `GET https://api.github.com` | HTTP 200; response parses as the GitHub API root JSON |
+| `git ls-remote origin` | Succeeded; 15 branches, no tags |
+| Ref snapshot | Main `06a83c7`; migration `a3403a1` before this documentation update |
+| LFS batch endpoint, `POST`, empty download negotiation | HTTP 422, `No objects specified` |
+| Same endpoint, `POST`, empty upload negotiation | HTTP 401, `Requires authentication` |
+| Local Git HTTPS credentials | No username/password returned by `git credential fill` |
+| GitHub CLI auth | Official CLI 2.101.0 restored with the pinned archive SHA-256 verified; `gh auth status` returned 1, not logged in |
+
+No new network-policy denial occurred in these probes. The LFS responses establish
+endpoint reachability only; they do not establish authenticated object upload or
+download. The full prerequisites gate remains **NOT PASS** because authenticated
+Git/LFS write access has not yet been restored. A new standard GitHub CLI device
+login was initiated after the API-host check succeeded; completion is pending.
+
+The existing migration branch is restored as a partial sparse working checkout.
+It is not a full backup. A refreshed, independently preserved full backup,
+validated disk capacity, and a coordinated write-freeze window remain mandatory
+before history rewriting. The current source-hash evidence remains unchanged.
+No `git lfs migrate import`, payload upload, rewritten ref publication or merge
+has been performed.
+
+### Earlier device-login attempt and environment reset
 
 The owner completed the requested GitHub device-authorization step. The local
 GitHub CLI login then failed with the execution environment's error:
