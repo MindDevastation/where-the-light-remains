@@ -26,7 +26,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [x] Lock Godot minor **4.7**, verified with the standard **4.7.2 stable** executable (`4.7.2.stable.official.ed1daf0bf`).
 - [x] Engine preflight: real editor import, GameRoot/eight-autoload startup checks, headless and Forward+ smoke tests, safe exit and native window close. See `ENGINE_PREFLIGHT.md` for evidence and scope.
 - [ ] Perform a real Git LFS history migration for large audio/3D assets before adding more heavy binaries; do not merely add LFS attributes to unmigrated blobs.
-- [ ] Build valid InputMap in editor/project settings.
+- [x] Build valid InputMap in project settings: physical WASD/E/H and logical Esc for pause/skip. Real Godot event-dispatch checks, clean import and startup regression passed; see `INPUT_MAP.md`. Gameplay consumers and hold-to-skip policy remain in their later systems.
 - [ ] Create audio bus layout: Master → Music/Main/Stems, SFX/Critical/World, Ambience, UI, VO_RESERVED.
 - [ ] Add development-only debug stage/save/audio/performance tools.
 
