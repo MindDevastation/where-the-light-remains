@@ -63,8 +63,8 @@ func _save_line(title: String, info: Dictionary) -> String:
 func _refresh(frame_ms: float) -> void:
     var data := Snapshot.capture(_game_root)
     var lines := PackedStringArray([
-        "ДИАГНОСТИКА РАЗРАБОТКИ · Только чтение · F3: скрыть / показать",
-        "Page Up / Page Down: прокрутка",
+        "ДИАГНОСТИКА РАЗРАБОТКИ · Только чтение",
+        "F3: скрыть / показать · Page Up / Page Down: прокрутка",
         "Этап: %s · Пауза: %s · Режим ввода: %s" % [data["stage"], _yes_no(data["paused"]), data["input_mode"]],
         "Фрагменты: %s · Игра завершена: %s" % [JSON.stringify(data["fragments"]).left(220), _yes_no(data["completed"])],
         "",
