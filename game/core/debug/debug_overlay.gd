@@ -9,7 +9,8 @@ const SAVE_STATUS := {
     "invalid_json": "ошибка JSON", "json_preview": "JSON прочитан (без проверки схемы)",
 }
 
-@onready var _text: Label = $Panel/Margin/Text
+@onready var _scroll: ScrollContainer = $Panel/Margin/Scroll
+@onready var _text: Label = $Panel/Margin/Scroll/Text
 var _game_root: Node
 var _elapsed := 0.0
 var _frames := 0
@@ -20,6 +21,9 @@ func _ready() -> void:
         queue_free()
         return
     _game_root = get_parent()
+    for bar in [_scroll.get_h_scroll_bar(), _scroll.get_v_scroll_bar()]:
+        bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
+        bar.focus_mode = Control.FOCUS_NONE
     _refresh(0.0)
 
 
@@ -33,13 +37,18 @@ func _process(delta: float) -> void:
 
 
 func _unhandled_key_input(event: InputEvent) -> void:
-    if event is InputEventKey and event.keycode == KEY_F3 and event.pressed and not event.echo:
+    if not event is InputEventKey or not event.pressed or event.echo:
+        return
+    if event.keycode == KEY_F3:
         visible = not visible
         set_process(visible)
         _elapsed = 0.0
         _frames = 0
         if visible:
             _refresh(0.0)
+        get_viewport().set_input_as_handled()
+    elif visible and event.keycode in [KEY_PAGEUP, KEY_PAGEDOWN]:
+        _scroll.scroll_vertical += -240 if event.keycode == KEY_PAGEUP else 240
         get_viewport().set_input_as_handled()
 
 
@@ -55,6 +64,7 @@ func _refresh(frame_ms: float) -> void:
     var data := Snapshot.capture(_game_root)
     var lines := PackedStringArray([
         "ДИАГНОСТИКА РАЗРАБОТКИ · Только чтение · F3: скрыть / показать",
+        "Page Up / Page Down: прокрутка",
         "Этап: %s · Пауза: %s · Режим ввода: %s" % [data["stage"], _yes_no(data["paused"]), data["input_mode"]],
         "Фрагменты: %s · Игра завершена: %s" % [JSON.stringify(data["fragments"]).left(220), _yes_no(data["completed"])],
         "",

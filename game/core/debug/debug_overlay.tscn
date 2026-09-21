@@ -20,9 +20,11 @@ layer = 200
 script = ExtResource("1")
 
 [node name="Panel" type="PanelContainer" parent="."]
+anchor_bottom = 1.0
 offset_left = 16.0
 offset_top = 16.0
 offset_right = 826.0
+offset_bottom = -16.0
 mouse_filter = 2
 theme_override_styles/panel = SubResource("PanelStyle")
 
@@ -34,8 +36,14 @@ theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 14
 theme_override_constants/margin_bottom = 12
 
-[node name="Text" type="Label" parent="Panel/Margin"]
+[node name="Scroll" type="ScrollContainer" parent="Panel/Margin"]
 layout_mode = 2
+mouse_filter = 2
+horizontal_scroll_mode = 0
+
+[node name="Text" type="Label" parent="Panel/Margin/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
 mouse_filter = 2
 theme_override_colors/font_color = Color(0.9, 0.94, 0.98, 1)
 theme_override_font_sizes/font_size = 16

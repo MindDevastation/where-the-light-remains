@@ -93,7 +93,7 @@ func _check_overlay(overlay: Node) -> void:
     _check(not GameState.collected_fragments.has("snapshot_only"), "Snapshot shares mutable GameState data")
     _check(captured["stage"] == String(GameState.current_stage_id), "Wrong stage snapshot")
     _check(captured["buses"].size() == 10 and captured["worlds"].is_empty(), "Wrong bus/world snapshot")
-    var text: Label = overlay.get_node("Panel/Margin/Text")
+    var text: Label = overlay.get_node("Panel/Margin/Scroll/Text")
     _check(text.text.contains("ДИАГНОСТИКА РАЗРАБОТКИ") and text.text.contains("СОХРАНЕНИЕ"), "Russian inspector labels missing")
     var font := text.get_theme_font("font")
     for character in "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя":
@@ -131,6 +131,19 @@ func _check_overlay(overlay: Node) -> void:
     _key(KEY_ESCAPE)
     _check(Input.is_action_pressed("pause") and Input.is_action_pressed("skip_sequence"), "Esc baseline changed")
     _key(KEY_ESCAPE, false)
+    # Long state/save previews stay inside the viewport and remain inspectable
+    # without releasing the player's mouse or capturing GUI focus.
+    text.text += "\nДлинный снимок состояния".repeat(80)
+    await get_tree().process_frame
+    await get_tree().process_frame
+    var scroll: ScrollContainer = overlay.get_node("Panel/Margin/Scroll")
+    _key(KEY_PAGEDOWN)
+    _check(scroll.scroll_vertical > 0, "Long inspection cannot scroll")
+    _key(KEY_PAGEDOWN, false)
+    _key(KEY_PAGEUP)
+    _check(scroll.scroll_vertical == 0, "Inspection did not scroll back")
+    _key(KEY_PAGEUP, false)
+    _check(Input.mouse_mode == captured_mouse, "Scrolling changed capture")
     get_tree().paused = true
     _key(KEY_F3)
     _check(not overlay.visible, "F3 cannot hide while paused")
