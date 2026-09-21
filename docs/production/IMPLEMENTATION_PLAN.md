@@ -71,7 +71,7 @@ Foundation acceptance:
 - [x] 3D production pipeline documented.
 - [x] Source/runtime folder split documented (`assets/3d/` vs `game/art/`).
 - [x] Forward Git LFS policy configured for future `.blend/.glb/.fbx` files.
-- [ ] Verify actual Blender version/CLI/export capabilities on the Astra machine.
+- [x] Verify actual Blender version/CLI/export capabilities: Blender 4.5.14 LTS background CLI, source save and disposable GLB probe PASS. See `BLENDER_PREFLIGHT.md`. Production binary/LFS acceptance remains BLOCKED on Git/LFS authentication.
 - [ ] Validate the first real LFS-backed 3D binary end-to-end: pointer, payload upload, `git lfs fsck`, fresh clone and payload retrieval.
 - [ ] Build and validate Blender→GLB→Godot export contract.
 - [ ] Create compact shared material library baseline.
