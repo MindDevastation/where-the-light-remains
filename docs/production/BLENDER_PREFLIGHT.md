@@ -11,7 +11,7 @@ Base: `349dd3a6755ce8d6e12513181223013e9d585700` (main and Art Foundation).
 | --- | --- | --- |
 | Godot standard | 4.7.2.stable.official.ed1daf0bf | Version, clean import and eight-autoload/startup/safe-exit smoke PASS |
 | Blender | 4.5.14 LTS, build 62c1db4208e8 | Background CLI, embedded Python, source save and built-in GLB exporter PASS |
-| GitHub CLI | 2.101.0 | Executable works; authentication BLOCKED |
+| GitHub CLI | 2.101.0 | Authentication and repository push permission PASS; see follow-up below |
 | Git LFS | 3.4.1 | Client works; `git lfs install --local` succeeded |
 
 Executables on this validation environment:
@@ -75,7 +75,7 @@ No binary from this probe is committed.
 
 See [actual preflight output](evidence/blender_preflight_2026-09-21.log).
 
-## Remaining authentication blocker
+## Initial authentication blocker (resolved)
 
 - `test -n "$GH_TOKEN"`: exit 1, value never printed.
 - `gh auth status`: exit 1, `You are not logged into any GitHub hosts.`
@@ -83,10 +83,49 @@ See [actual preflight output](evidence/blender_preflight_2026-09-21.log).
 - `git push --dry-run origin HEAD:refs/heads/feature/03-art-foundation/blender-export`:
   exit 128, `fatal: could not read Username for 'https://github.com': terminal prompts disabled`.
 
-Public Git fetch works and the authorized GitHub connection can preserve text
-commits. Neither proves authenticated Git/LFS payload access. `gh auth setup-git`
-is deferred until CLI authentication succeeds. Supply credentials through the
-environment's secret configuration, never through committed files or chat.
+These failures describe the initial environment. In the subsequent authorized
+credential run, `gh auth status`, `gh api user --jq .login`, `git ls-remote origin`,
+`gh auth setup-git`, the repository permissions API and Git push dry-run passed.
+The account was `MindDevastation`; repository pull/push permissions were true.
+The authenticated LFS upload batch returned HTTP 200 for a real local GLB's
+OID/size. This confirms upload negotiation only, not a payload transfer.
+
+## Current blocker: incomplete ordinary-Git objects in the partial clone
+
+The Git 2.51.1 / Git LFS 3.4.1 checkout uses `remote.origin.promisor=true` and
+`remote.origin.partialclonefilter=blob:none`. An unqualified LFS scan first
+failed on absent small Git blobs. A bounded fetch with
+`--refetch --filter=blob:limit=65536` supplied small pointer candidates and
+attribute files. With implicit Git blob downloads disabled for diagnosis,
+`GIT_NO_LAZY_FETCH=1 git lfs ls-files` completed successfully.
+
+The required full `git lfs fsck` is still **BLOCKED**. Its revision enumeration
+requires another ordinary-Git object, and without disabling lazy fetch it
+starts downloading large ordinary audio objects. The diagnostic run reported:
+
+```text
+Error in `git rev-list --objects --no-walk --stdin --`: exit status 128
+fatal: missing blob object '3e54de115c69de8539ce81d02dcd1930172556f1'
+```
+
+`git ls-tree -r HEAD` maps that object to
+`assets/audio/music/A_Archive/shared/Activation Sequence.wav`.
+This is an unmaterialized promisor blob, not evidence that the remote WAV is
+corrupt or that it should be migrated to LFS. A complete shallow-clone transfer
+was attempted and manually stopped while still downloading; it is not a
+successful fresh-clone validation. No checks were marked PASS by excluding
+the problematic file. The stopped transfer and scan left the published feature
+unchanged.
+
+The local technical sample passed Blender source reopen and Godot scale/pivot/
+normal/UV/material import checks in the preceding environment, but that
+uncommitted sample was lost when the environment was recreated. It is not
+present in this PR and is not evidence of remote payload availability.
+
+Resolve complete Git-object availability for the required validation before
+resuming the dependent binary upload/merge. Authenticated text-only status can
+be preserved through the GitHub connection. Credentials are not stored in any
+project file.
 
 The production first-binary gate remains blocked: no LFS pointer/payload upload,
 fresh-clone retrieval, retrieved-source opening or retrieved-GLB Godot import
