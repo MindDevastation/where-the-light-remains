@@ -32,7 +32,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [!] Before the first real LFS-backed 3D binary is merged, validate pointer creation, LFS payload upload, `git lfs fsck`, fresh-clone retrieval and Blender/Godot open/import as applicable.
 - [x] Build valid InputMap in project settings: physical WASD/E/H and logical Esc for pause/skip. Real Godot event-dispatch checks, clean import and startup regression passed; see `INPUT_MAP.md`. Gameplay consumers and hold-to-skip policy remain in their later systems.
 - [x] Create audio bus layout: Master → Music/Main/Stems, SFX/Critical/World, Ambience, UI, VO_RESERVED. Automatic loading, real mixer routing and Music/SFX parent gain/mute passed in Godot 4.7.2; see `AUDIO_BUSES.md`. Playback, settings UI and final mix remain later work.
-- [ ] Add development-only debug stage/save/audio/performance tools.
+- [x] Add opt-in, read-only development stage/save/audio/scene/performance inspection. Godot 4.7.2 clean import, InputMap/audio-bus regressions, graphical Cyrillic, state/file integrity and actual release startup with/without debug resources passed; see `DEBUG_TOOLS.md`. Exactly eight autoloads remain; target-hardware profiling and full save/audio implementations remain later milestones.
 
 ## Milestone 1 — boot / shell
 

@@ -1,0 +1,162 @@
+UTC validation date: 2026-09-21
+Source commit: cf551b1e2a5e616bc3312b3a5c0120fbbf778979
+Fresh git archive, no inherited .godot cache.
+
+[clean-import]
+Command: [PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64'), '--headless', '--path', PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game'), '--editor', '--import']
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
+[   0% ] first_scan_filesystem | Scanning file structure...
+[  16% ] first_scan_filesystem | Loading global class names...
+[  33% ] first_scan_filesystem | Verifying GDExtensions...
+[  50% ] first_scan_filesystem | Creating autoload scripts...
+[  66% ] first_scan_filesystem | Initializing plugins...
+[  83% ] first_scan_filesystem | Starting file scan...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started Registering global classes... (15 steps)
+[   0% ] update_scripts_classes | 
+[   6% ] update_scripts_classes | 
+[  12% ] update_scripts_classes | 
+[  18% ] update_scripts_classes | 
+[  25% ] update_scripts_classes | 
+[  31% ] update_scripts_classes | 
+[  37% ] update_scripts_classes | 
+[  43% ] update_scripts_classes | 
+[  50% ] update_scripts_classes | 
+[  56% ] update_scripts_classes | 
+[  62% ] update_scripts_classes | 
+[  68% ] update_scripts_classes | 
+[  75% ] update_scripts_classes | 
+[  81% ] update_scripts_classes | 
+[  87% ] update_scripts_classes | 
+[ DONE ] update_scripts_classes
+
+[   0% ] loading_editor_layout | Started Loading editor (5 steps)
+[   0% ] loading_editor_layout | Loading editor layout...
+[  16% ] loading_editor_layout | Loading docks...
+[ DONE ] loading_editor_layout
+
+
+Exit: 0
+
+[default-disabled]
+Command: [PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64'), '--headless', '--path', PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game'), 'res://tests/debug_tools_smoke.tscn']
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=true; display=headless; expected_overlay=false
+DEBUG_TOOLS checked: disabled path does not load development resources
+DEBUG_TOOLS PASS: gate, state/file integrity, autoloads; requesting App safe exit
+
+Exit: 0
+
+[development-inspector]
+Command: [PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64'), '--headless', '--path', PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game'), 'res://tests/debug_tools_smoke.tscn', '--', '--dev-tools', '--expect-overlay']
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=true; display=headless; expected_overlay=true
+DEBUG_TOOLS checked: missing/valid/malformed/oversize save preview without modifying source files
+DEBUG_TOOLS checked: live stage/save/audio, deep-copy snapshot, F3/echo/pause, input/capture, Cyrillic glyphs
+DEBUG_TOOLS PASS: gate, state/file integrity, autoloads; requesting App safe exit
+
+Exit: 0
+
+[engine_preflight]
+Command: [PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64'), '--headless', '--path', PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game'), '--script', 'res://tests/engine_preflight.gd']
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"headless","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+
+Exit: 0
+
+[input_map_smoke]
+Command: [PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64'), '--headless', '--path', PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game'), '--script', 'res://tests/input_map_smoke.gd']
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INPUT_MAP runtime: 4.7.2-stable (official); display=headless
+INPUT_MAP source: project.godot; injected keyboard events, not OS keyboard input
+INPUT_MAP checked: W/S/A/D/E/H press and release with Latin and Cyrillic labels
+INPUT_MAP checked: physical/logical mismatch and release after modifier change
+INPUT_MAP checked: forward direction, normalized diagonal, opposite keys and release
+INPUT_MAP checked: shared Esc, repeat events, ui_cancel and ui_accept
+INPUT_MAP PASS: persisted bindings, layout-independent matching and input lifecycle
+
+Exit: 0
+
+[audio_bus_smoke]
+Command: [PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64'), '--headless', '--path', PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game'), '--script', 'res://tests/audio_bus_smoke.gd']
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_BUS runtime: 4.7.2-stable (official); display=headless; audio=Dummy
+AUDIO_BUS source: project default layout; generated PCM through the real mixer; no speaker test
+AUDIO_BUS route: Master -> output; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: Music -> Master; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Main -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Stems -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: SFX -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_Critical -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_World -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: Ambience -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: UI -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: VO_RESERVED -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS gain: Music_Main; half-gain ratio=0.5
+AUDIO_BUS gain: Music_Stems; half-gain ratio=0.5
+AUDIO_BUS mute: Music_Main; Master peak=0.0
+AUDIO_BUS mute: Music_Stems; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: Music
+AUDIO_BUS gain: SFX_Critical; half-gain ratio=0.5
+AUDIO_BUS gain: SFX_World; half-gain ratio=0.5
+AUDIO_BUS mute: SFX_Critical; Master peak=0.0
+AUDIO_BUS mute: SFX_World; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: SFX
+AUDIO_BUS PASS: automatic layout, all routes, parent gain/mute and restored neutral state
+
+Exit: 0
+
+[normal-startup]
+Command: [PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64'), '--headless', '--path', PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game'), '--quit-after', '120']
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+Exit: 0
+
+[forward-plus-cyrillic]
+Command: ['python', PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/run_graphical.py'), '--path', PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game'), 'res://tests/debug_tools_smoke.tscn', '--', '--dev-tools', '--expect-overlay', '--screenshot=/workspace/scratch/4f0b36b4bb0e/wlr-debug-tools/docs/production/evidence/debug_tools_2026-09-21.png']
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.318 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 20.1.2, 256 bits)
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=true; display=X11; expected_overlay=true
+DEBUG_TOOLS checked: missing/valid/malformed/oversize save preview without modifying source files
+DEBUG_TOOLS checked: live stage/save/audio, deep-copy snapshot, F3/echo/pause, input/capture, Cyrillic glyphs
+DEBUG_TOOLS rendered Cyrillic evidence: /workspace/scratch/4f0b36b4bb0e/wlr-debug-tools/docs/production/evidence/debug_tools_2026-09-21.png
+DEBUG_TOOLS PASS: gate, state/file integrity, autoloads; requesting App safe exit
+
+Exit: 0
+
+[actual-release-variants]
+Command: ['python', PosixPath('/workspace/scratch/4f0b36b4bb0e/toolchain/check_debug_release.py'), PosixPath('/workspace/scratch/4f0b36b4bb0e/debug-final-validation/cf551b1e2a5e616bc3312b3a5c0120fbbf778979/game')]
+with-debug-resources-import: exit 0
+with-debug-resources-export: exit 0
+with-debug-resources-runtime: exit 0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=false; display=headless; expected_overlay=false
+DEBUG_TOOLS checked: disabled path does not load development resources
+DEBUG_TOOLS PASS: gate, state/file integrity, autoloads; requesting App safe exit
+
+without-debug-resources-import: exit 0
+without-debug-resources-export: exit 0
+without-debug-resources-runtime: exit 0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=false; display=headless; expected_overlay=false
+DEBUG_TOOLS checked: disabled path does not load development resources
+DEBUG_TOOLS PASS: gate, state/file integrity, autoloads; requesting App safe exit
+
+
+Exit: 0
+
+
+Publication verification: GitHub API commit bc72748de3b03e13418518c963aa40979afe7386 has the exact validated game tree b49af21753302adde4aa406635918d33e6b7a5ac.
