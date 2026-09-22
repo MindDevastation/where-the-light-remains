@@ -74,7 +74,7 @@ Foundation acceptance:
 - [x] Verify actual Blender version/CLI/export capabilities: Blender 4.5.14 LTS background CLI, source save and disposable GLB probe PASS. See `BLENDER_PREFLIGHT.md`. Git authentication and full local `git lfs fsck` PASS after verified recovery of missing ordinary-Git objects. First-binary pointers, real upload (2/2), independent retrieval and retrieved-copy Blender/Godot checks now PASS. Completing ordinary-Git HEAD hydration resolved the fresh-clone pull blocker. Integration is tracked in PR #15. Technical gates and the renewed PR write permission check PASS; the previous HTTP 403 is resolved. Feature integration follows PR #15 and the merged-epic smoke gate.
 - [x] Validate the first real LFS-backed 3D binary end-to-end: pointer, payload upload, independent retrieval, manifest hashes and producing/fresh-clone fsck PASS. See `LFS_POLICY.md`.
 - [x] Validate the approved Blender→GLB→Godot static export contract with a minimal one-meter fixture: scale/Y-up, transforms, pivot, normals, UV, material and separate script-free wrapper. See `EXPORT_SAMPLE.md`; production art/performance acceptance remains separate.
-- [ ] Create compact shared material library baseline.
+- [!] Create compact shared material library baseline. Preflight BLOCKED: the execution environment rejects AF_UNIX socket creation (errno 1), preventing Xvfb/Godot graphical validation. Packages were restored locally; see MATERIAL_PREFLIGHT.md. No material acceptance is claimed.
 - [ ] Produce one modular Archive kit sample.
 - [ ] Produce one Wing I hero mechanism sample with gameplay pivots.
 - [ ] Import samples in Godot and validate scale, orientation, pivots, materials, collision and warnings.
