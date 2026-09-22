@@ -1,0 +1,70 @@
+$ git push origin HEAD:refs/heads/feature/03-art-foundation/blender-export
+Uploading LFS objects: 100% (2/2), 452 KB | 0 B/s, done.
+To https://github.com/MindDevastation/where-the-light-remains.git
+   33e567f..b6bda30  HEAD -> feature/03-art-foundation/blender-export
+Exit: 0
+
+$ git clone --filter=blob:limit=65536 --depth 1 --single-branch --branch feature/03-art-foundation/blender-export --no-checkout https://github.com/MindDevastation/where-the-light-remains.git /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922
+Cloning into '/workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922'...
+Exit: 0
+
+$ git sparse-checkout set --no-cone /game/ /docs/ /tools/ /assets/3d/ /.gitattributes /.gitignore /README.md
+Exit: 0
+
+$ git checkout feature/03-art-foundation/blender-export
+Already on 'feature/03-art-foundation/blender-export'
+Your branch is up to date with 'origin/feature/03-art-foundation/blender-export'.
+Exit: 0
+
+$ git rev-parse HEAD
+b6bda309cd2e0a26553bb675515d2609dfa253b9
+Exit: 0
+
+Pre-pull check correction: Git LFS created empty hash-prefix directories during skip-smudge checkout. No payload files exist; an initial directory-sensitive guard was overly strict. No transfer has occurred.
+$ git lfs env
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+git version 2.51.1
+
+Endpoint=https://github.com/MindDevastation/where-the-light-remains.git/info/lfs (auth=none)
+LocalWorkingDir=/workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922
+LocalGitDir=/workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/.git
+LocalGitStorageDir=/workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/.git
+LocalMediaDir=/workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/.git/lfs/objects
+LocalReferenceDirs=
+TempDir=/workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/.git/lfs/tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneRemoteName=origin
+LfsStorageDir=/workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/.git/lfs
+AccessDownload=none
+AccessUpload=none
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_EXEC_PATH=/usr/local/libexec/git-core
+GIT_PAGER=cat
+GIT_TERMINAL_PROMPT=0
+git config filter.lfs.process = "git-lfs filter-process"
+git config filter.lfs.smudge = "git-lfs smudge -- %f"
+git config filter.lfs.clean = "git-lfs clean -- %f"
+Exit: 0
+
+FRESH POINTER PASS: assets/3d/blender/validation/sm_pipeline_meter_cube.blend
+FRESH POINTER PASS: game/art/meshes/validation/sm_pipeline_meter_cube.glb
+FRESH INDEPENDENCE PASS: remote HTTPS clone; no Git alternates; empty independent LFS cache
+$ git lfs pull origin
+BLOCKER: no completion/output by 184.6 seconds after pre-pull checks.
+The wrapper timeout was 180 seconds; the remaining execution session was interrupted (exit 130).
+No endpoint-specific HTTP error was returned; root cause is not established.
+After cancellation: assets/3d/blender/validation/sm_pipeline_meter_cube.blend: 131 bytes; LFS pointer=True
+After cancellation: game/art/meshes/validation/sm_pipeline_meter_cube.glb: 129 bytes; LFS pointer=True
+Fresh-cache payload files after cancellation: 0
+Retrieved-source Blender/Godot checks and fresh-clone fsck were not run.
+FIRST LFS BINARY GATE: BLOCKED. No merge into epic/main.

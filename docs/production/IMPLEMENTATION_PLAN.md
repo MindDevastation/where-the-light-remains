@@ -71,8 +71,8 @@ Foundation acceptance:
 - [x] 3D production pipeline documented.
 - [x] Source/runtime folder split documented (`assets/3d/` vs `game/art/`).
 - [x] Forward Git LFS policy configured for future `.blend/.glb/.fbx` files.
-- [x] Verify actual Blender version/CLI/export capabilities: Blender 4.5.14 LTS background CLI, source save and disposable GLB probe PASS. See `BLENDER_PREFLIGHT.md`. Git authentication and full local `git lfs fsck` PASS after verified recovery of missing ordinary-Git objects. First-binary payload upload and fresh-clone validation remain pending.
-- [ ] Validate the first real LFS-backed 3D binary end-to-end: pointer, payload upload, `git lfs fsck`, fresh clone and payload retrieval.
+- [x] Verify actual Blender version/CLI/export capabilities: Blender 4.5.14 LTS background CLI, source save and disposable GLB probe PASS. See `BLENDER_PREFLIGHT.md`. Git authentication and full local `git lfs fsck` PASS after verified recovery of missing ordinary-Git objects. First-binary pointer and real upload PASS (2/2). A fresh independent clone succeeded, but `git lfs pull origin` stalled and was canceled after 184.6 seconds; retrieval and retrieved-copy validation remain BLOCKED. PR #15 stays draft.
+- [!] Validate the first real LFS-backed 3D binary end-to-end: pointers/upload/local fsck PASS; fresh-clone payload retrieval BLOCKED (2026-09-22). See `LFS_POLICY.md`.
 - [ ] Build and validate Blender→GLB→Godot export contract.
 - [ ] Create compact shared material library baseline.
 - [ ] Produce one modular Archive kit sample.

@@ -77,3 +77,26 @@ This policy minimizes current risk:
 - no invalidation of existing clones merely to start 3D work;
 - no unnecessary LFS storage use for obsolete historical WAV revisions;
 - all new heavy 3D production files are prevented from further bloating ordinary Git history.
+
+## First-binary evidence — 2026-09-22
+
+Feature `feature/03-art-foundation/blender-export`, draft PR #15,
+sample commit `b6bda309cd2e0a26553bb675515d2609dfa253b9`:
+
+| Gate | Actual result |
+| --- | --- |
+| `.blend` and `.glb` attributes and committed pointers | PASS; exact SHA-256/size match local files |
+| Authenticated LFS batch upload negotiation | PASS; HTTP 200 for both objects |
+| Real payload upload and feature push | PASS; 2/2 objects, 452 KB |
+| Full producing-clone `git lfs fsck` | PASS after missing ordinary-Git objects were restored |
+| Fresh remote clone with independent empty LFS cache | PASS; both files initially pointers |
+| `git lfs pull origin` in fresh clone | BLOCKED; no completion/output after 184.6 seconds, canceled with exit 130 |
+| Retrieved binaries, source reopen and runtime import | NOT RUN; fresh files remained pointers |
+| First-binary acceptance | BLOCKED; no epic/main merge |
+
+The producing copies passed Blender 4.5.14 source checks and Godot 4.7.2 clean
+import/startup/safe exit. Those local results do not replace retrieved-copy
+validation. See `BLENDER_PREFLIGHT.md` and
+[evidence/lfs_transfer_2026-09-22.log](evidence/lfs_transfer_2026-09-22.log).
+Credentials are not stored in project files. The forward-only LFS scope remains
+`.blend/.glb/.fbx`; ordinary audio history is unchanged.

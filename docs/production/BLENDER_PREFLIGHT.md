@@ -3,7 +3,7 @@
 Date: 2026-09-21. Feature: `feature/03-art-foundation/blender-export`.
 Base: `349dd3a6755ce8d6e12513181223013e9d585700` (main and Art Foundation).
 
-**Local tools and full local LFS fsck: PASS (2026-09-22). First-binary remote validation: pending.**
+**Local tools, full local LFS fsck and first payload upload: PASS. Fresh-clone retrieval: BLOCKED (2026-09-22).**
 
 ## Installed and actually exercised
 
@@ -147,3 +147,37 @@ Reasoning assessment: High is sufficient for the completed installation and
 routine CLI probe. Cross-project pipeline design, modular architecture and
 nontrivial Blender automation still require the owner's Extra High escalation
 under `ASTRA_WORKFLOW.md`.
+
+## First real payload upload and current retrieval blocker
+
+Sample commit: `b6bda309cd2e0a26553bb675515d2609dfa253b9`.
+Actual source/export checks: Blender source reopen, GLB Godot clean import,
+scale/Y-up/pivot/normals/UV/material check and startup/eight-autoload/safe-exit
+all PASS. See [local output](evidence/lfs_local_export_2026-09-22.log) and
+[fixture scope](EXPORT_SAMPLE.md).
+
+Both files are exact LFS pointers in Git. Their SHA-256 IDs and sizes are in
+[evidence/lfs_sample_manifest.json](evidence/lfs_sample_manifest.json).
+Authenticated upload negotiation returned HTTP 200 for both objects. The real
+Git push reported `Uploading LFS objects: 100% (2/2), 452 KB` and updated the
+feature ref. Full local `git lfs fsck` also passed after upload.
+
+A separate HTTPS shallow partial clone at the sample commit succeeded with
+smudging disabled. It has no Git object alternates, no LFS reference directory
+and its own empty LFS object store. Both working files were verified as pointers
+before the pull. Empty hash-prefix directories were initially misclassified by
+the validation guard; inspection confirmed there were no cached payload files.
+
+**BLOCKER:** `git lfs pull origin` produced no output or completion by 184.6
+seconds. The wrapper's 180-second timeout did not terminate the remaining
+session, which was then explicitly interrupted (exit 130). Both files remained
+pointers and the fresh LFS cache contained zero payload files. No HTTP status
+or endpoint-specific error was returned, so the network/transfer root cause is
+not established. Do not infer successful retrieval from the successful upload.
+
+See [transfer and fresh-clone evidence](evidence/lfs_transfer_2026-09-22.log).
+Retrieved-copy Blender/Godot checks and fresh-clone fsck were not reached.
+The first-binary gate remains BLOCKED; PR #15 stays draft and is not merged.
+Next: diagnose the stalled LFS download in an execution environment that can
+complete it, then repeat independent payload SHA-256, Blender/Godot and fsck
+validation before integration. No destructive migration or WAV rewrite.
