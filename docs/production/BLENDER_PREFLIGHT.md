@@ -3,7 +3,7 @@
 Date: 2026-09-21. Feature: `feature/03-art-foundation/blender-export`.
 Base: `349dd3a6755ce8d6e12513181223013e9d585700` (main and Art Foundation).
 
-**Local tool preflight: PASS. Production export/LFS feature: BLOCKED.**
+**Local tools and full local LFS fsck: PASS (2026-09-22). First-binary remote validation: pending.**
 
 ## Installed and actually exercised
 
@@ -90,7 +90,7 @@ The account was `MindDevastation`; repository pull/push permissions were true.
 The authenticated LFS upload batch returned HTTP 200 for a real local GLB's
 OID/size. This confirms upload negotiation only, not a payload transfer.
 
-## Current blocker: incomplete ordinary-Git objects in the partial clone
+## Partial-clone object availability
 
 The Git 2.51.1 / Git LFS 3.4.1 checkout uses `remote.origin.promisor=true` and
 `remote.origin.partialclonefilter=blob:none`. An unqualified LFS scan first
@@ -99,7 +99,7 @@ failed on absent small Git blobs. A bounded fetch with
 attribute files. With implicit Git blob downloads disabled for diagnosis,
 `GIT_NO_LAZY_FETCH=1 git lfs ls-files` completed successfully.
 
-The required full `git lfs fsck` is still **BLOCKED**. Its revision enumeration
+The earlier full `git lfs fsck` was **BLOCKED**. Its revision enumeration
 requires another ordinary-Git object, and without disabling lazy fetch it
 starts downloading large ordinary audio objects. The diagnostic run reported:
 
@@ -122,16 +122,26 @@ normal/UV/material import checks in the preceding environment, but that
 uncommitted sample was lost when the environment was recreated. It is not
 present in this PR and is not evidence of remote payload availability.
 
-Resolve complete Git-object availability for the required validation before
-resuming the dependent binary upload/merge. Authenticated text-only status can
-be preserved through the GitHub connection. Credentials are not stored in any
-project file.
+A repair on 2026-09-21 restored 97 missing Git blobs and the unqualified
+`git lfs fsck` passed. The environment reset before that local commit reached
+GitHub, so the tools and verified recovery were repeated on 2026-09-22. This run restored 107 missing blobs (1,110,877,466 bytes); all 179 HEAD blobs became available. Unqualified `git lfs fsck` and `git fsck --connectivity-only` exited 0. See [actual repair output](evidence/partial_clone_repair_2026-09-22.log).
 
-The production first-binary gate remains blocked: no LFS pointer/payload upload,
-fresh-clone retrieval, retrieved-source opening or retrieved-GLB Godot import
-has been claimed. No history rewrite, WAV migration, pipeline scope or
-performance-budget change was performed. Art Foundation/main receive no binary
-feature merge until all required gates pass.
+`tools/hydrate_head_blobs.py` retrieves missing ordinary-Git HEAD blobs from
+public raw URLs pinned to the exact commit. It checks immutable GitHub tree
+metadata, origin, disk space, each Git blob SHA-1 and byte length before
+`git hash-object -w --no-filters`. It checks refs again at completion. This does
+not change history or working files and does not retrieve LFS payloads.
+
+```sh
+python tools/hydrate_head_blobs.py --repo /absolute/repository --scratch /absolute/temporary-directory --jobs 4
+git lfs fsck
+```
+
+The first-binary gate requires a real LFS payload upload and independent clone
+retrieval, followed by Blender/Godot checks. Upload negotiation alone remains
+insufficient. The minimal test fixture uses a one-meter cube with bottom-center
+pivot, identity object transforms, outward normals, one UV layer and one neutral
+material. Its script-free Godot wrapper is separate from imported geometry.
 
 Reasoning assessment: High is sufficient for the completed installation and
 routine CLI probe. Cross-project pipeline design, modular architecture and
