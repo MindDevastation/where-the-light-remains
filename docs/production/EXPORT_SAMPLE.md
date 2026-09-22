@@ -47,3 +47,12 @@ Y-up scale, pivot rotation, normals, UV presence, material assignment and absenc
 of gameplay scripts. This is CLI import validation, not visual art acceptance.
 
 See `LFS_POLICY.md` for the separate remote payload retrieval gate.
+
+## Remote validation result
+
+PASS on 2026-09-22 for sample commit
+`b6bda309cd2e0a26553bb675515d2609dfa253b9`: both committed LFS pointers were
+uploaded and independently retrieved from GitHub, with exact manifest hashes.
+Blender source reopen, Godot import/geometry/startup, InputMap, audio buses and
+fresh-clone full Git/LFS fsck all passed. See `LFS_POLICY.md` for partial-clone
+ordering and `evidence/lfs_retry_2026-09-22.log` for the actual output.

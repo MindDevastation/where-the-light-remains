@@ -3,7 +3,7 @@
 Date: 2026-09-21. Feature: `feature/03-art-foundation/blender-export`.
 Base: `349dd3a6755ce8d6e12513181223013e9d585700` (main and Art Foundation).
 
-**Local tools, full local LFS fsck and first payload upload: PASS. Fresh-clone retrieval: BLOCKED (2026-09-22).**
+**Local tools and first-binary end-to-end LFS validation: PASS (2026-09-22).**
 
 ## Installed and actually exercised
 
@@ -148,7 +148,7 @@ routine CLI probe. Cross-project pipeline design, modular architecture and
 nontrivial Blender automation still require the owner's Extra High escalation
 under `ASTRA_WORKFLOW.md`.
 
-## First real payload upload and current retrieval blocker
+## First real payload upload and initial retrieval blocker (resolved)
 
 Sample commit: `b6bda309cd2e0a26553bb675515d2609dfa253b9`.
 Actual source/export checks: Blender source reopen, GLB Godot clean import,
@@ -168,7 +168,7 @@ and its own empty LFS object store. Both working files were verified as pointers
 before the pull. Empty hash-prefix directories were initially misclassified by
 the validation guard; inspection confirmed there were no cached payload files.
 
-**BLOCKER:** `git lfs pull origin` produced no output or completion by 184.6
+**Initial BLOCKER:** `git lfs pull origin` produced no output or completion by 184.6
 seconds. The wrapper's 180-second timeout did not terminate the remaining
 session, which was then explicitly interrupted (exit 130). Both files remained
 pointers and the fresh LFS cache contained zero payload files. No HTTP status
@@ -176,8 +176,35 @@ or endpoint-specific error was returned, so the network/transfer root cause is
 not established. Do not infer successful retrieval from the successful upload.
 
 See [transfer and fresh-clone evidence](evidence/lfs_transfer_2026-09-22.log).
-Retrieved-copy Blender/Godot checks and fresh-clone fsck were not reached.
-The first-binary gate remains BLOCKED; PR #15 stays draft and is not merged.
-Next: diagnose the stalled LFS download in an execution environment that can
-complete it, then repeat independent payload SHA-256, Blender/Godot and fsck
-validation before integration. No destructive migration or WAV rewrite.
+Retrieved-copy Blender/Godot checks and fresh-clone fsck were not reached in
+that first attempt. The successful retry below supersedes its blocked status.
+
+## Successful independent retrieval retry
+
+The owner authorized another attempt using the same chat-provided credential.
+Authentication, account identity, origin refs, Git credential setup and LFS
+version were rechecked. In the independent clone, both working files were still
+pointers and the LFS object store contained zero payload files before this retry.
+
+Before repeating `git lfs pull`, the hydration helper restored 79 remaining
+ordinary-Git blobs (637,469,726 bytes) at sample commit
+`b6bda309cd2e0a26553bb675515d2609dfa253b9`. All 191 HEAD blobs then existed and
+refs remained unchanged. The helper wrote only verified Git objects; no LFS
+payload or source-worktree cache was copied into the fresh clone.
+
+The same `git lfs pull origin` then exited 0. Both downloaded binaries matched
+the committed manifest exactly in SHA-256 and byte length. This resolves the
+retrieval blocker after completing ordinary-Git object availability; it does
+not establish that the earlier delay was an LFS endpoint outage.
+
+Actual checks on retrieved copies all PASS:
+
+- `git lfs fsck` and `git fsck --full --strict`, both exit 0;
+- Blender 4.5.14 source reopen: meters, identity transforms, bottom-center pivot,
+  outward normals, one UV layer and one material;
+- Godot 4.7.2 editor import and GLB/wrapper geometry validation;
+- Godot startup/eight-autoload/safe exit, InputMap and audio-bus regressions.
+
+See [complete retry evidence](evidence/lfs_retry_2026-09-22.log).
+The first-binary technical gate is now PASS. Target-hardware performance and
+production art acceptance are not claimed. No history rewrite or WAV migration.
