@@ -127,3 +127,13 @@ main
 The old destructive `feature/00-foundation/lfs-history-migration` plan is superseded as a production prerequisite. A future audio-history cleanup may be performed separately only if repository-size pressure justifies the destructive rewrite.
 
 Later environment/hero/memory art epics are created only after the Art Foundation sample proves the pipeline. Do not invent unresolved implementation requirements merely to populate the branch tree.
+
+## Art Foundation integration checkpoint — 2026-09-22
+
+Blender export / first real LFS feature merged through PR #15 into Art Foundation
+at 758c4f17769de45899110572d9856b3773cd3420. Clean Godot 4.7.2 import, eight-autoload startup/safe exit, GLB wrapper/geometry smoke and LFS fsck passed on that merged epic.
+Main integration is tracked in PR #16. Actual output: evidence/art_epic_smoke_2026-09-22.log.
+
+Next feature: feature/03-art-foundation/material-library. The six-family baseline
+follows the approved production policy. Target-hardware performance is not yet
+applicable to this technical fixture; no such PASS is claimed.
