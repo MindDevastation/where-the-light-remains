@@ -208,3 +208,17 @@ Actual checks on retrieved copies all PASS:
 See [complete retry evidence](evidence/lfs_retry_2026-09-22.log).
 The first-binary technical gate is now PASS. Target-hardware performance and
 production art acceptance are not claimed. No history rewrite or WAV migration.
+
+## Remaining PR metadata permission blocker
+
+After the successful LFS retry was committed and pushed, updating PR #15 with
+the same owner-provided token again returned HTTP 403:
+`Resource not accessible by personal access token`. GitHub's response header
+explicitly reported `X-Accepted-GitHub-Permissions: pull_requests=write`.
+See [permission retry evidence](evidence/pr_permission_retry_2026-09-22.log).
+
+Git push and the technical LFS gate are PASS. PR metadata updates remain
+BLOCKED by this token's API access. No ready-for-review or merge action was
+attempted after the permission failure. Enable the required Pull requests
+write permission for this repository, then update/ready PR #15 and continue
+the validated feature → epic → main workflow with its integration smoke gate.
