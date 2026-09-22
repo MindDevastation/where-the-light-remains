@@ -179,3 +179,41 @@ Blocked work: <what will not proceed until switched>
 Astra must not claim it changed the reasoning level itself. It must wait for the owner to change the setting and confirm continuation.
 
 The detailed 3D rules are in `docs/production/THREE_D_PRODUCTION_PIPELINE.md`.
+
+## 10. Evidence-first environment recovery
+
+Owner policy, 2026-09-22; applies before every new technical task.
+
+1. Read the existing production documents, successful evidence logs and previous
+   preflight results before selecting an environment setup or diagnosing failure.
+2. Use an already verified workaround as the baseline. Do not restart solved
+   environment investigations from zero.
+3. Restore missing programs, CLI tools, runtime libraries and dependencies
+   autonomously when installation is safe and reversible. If apt/root is
+   unavailable, use a local prefix, portable binaries or verified package
+   extraction. A missing package alone is not an environment blocker.
+4. Before declaring BLOCKER, inspect prior successful evidence, identify whether
+   the same capability was already solved, execute that workaround and check
+   supported alternative transport/runtime paths. Distinguish dependency loss
+   from an actual sandbox/runtime permission limit.
+5. For this project's graphical preflight when AF_UNIX is unavailable, use
+   **Xvfb over local TCP + MIT-MAGIC-COOKIE authorization → TCP DISPLAY → Godot
+   X11 → Vulkan/Forward+**, as verified in ENGINE_PREFLIGHT.md and its evidence.
+   Restore the local xkbcomp dependency. Preserve -noreset and initialize
+   WM_DELETE_WINDOW for bare-Xvfb close tests. Do not use -nolisten tcp for this
+   path and do not disable X11 authorization.
+6. After environment preparation, run a minimal capability smoke test first,
+   then the full target-function test. Headless results do not substitute for
+   required graphical validation.
+7. An environment BLOCKER is justified only after dependencies cannot be restored
+   locally, the previous workarounds actually fail, or a required capability or
+   permission has no supported path in the current environment. Evidence must
+   contain the exact command, stdout/stderr and the reason continuation is
+   impossible. Stop only dependent work.
+8. When a new preflight contradicts earlier success, reproduce the successful
+   configuration and investigate the regression before replacing its conclusion.
+   Retain historical failures, clearly marking conclusions superseded by later
+   reproducible evidence.
+
+These recovery steps precede the missing-tool pause examples in section 6.
+They do not waive actual validation, canonical decisions or performance gates.
