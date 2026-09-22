@@ -1,0 +1,5 @@
+PATCH https://api.github.com/repos/MindDevastation/where-the-light-remains/pulls/15
+Authentication: owner-provided GH_TOKEN, value not recorded
+PR UPDATE BLOCKER: HTTP 403
+Resource not accessible by personal access token
+Accepted GitHub permissions: pull_requests=write

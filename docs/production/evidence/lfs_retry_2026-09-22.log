@@ -1,0 +1,246 @@
+$ bash -c test -n "$GH_TOKEN"
+Exit: 0
+
+$ gh auth status
+github.com
+  ✓ Logged in to github.com account MindDevastation (GH_TOKEN)
+  - Active account: true
+  - Git operations protocol: https
+  - Token: [omitted from evidence]
+Exit: 0
+
+$ gh api user --jq .login
+MindDevastation
+Exit: 0
+
+$ git ls-remote --heads origin main epic/03-art-foundation feature/03-art-foundation/blender-export
+349dd3a6755ce8d6e12513181223013e9d585700	refs/heads/epic/03-art-foundation
+473ace156bfa95fd3db22ae09540b9cc83846c59	refs/heads/feature/03-art-foundation/blender-export
+349dd3a6755ce8d6e12513181223013e9d585700	refs/heads/main
+Exit: 0
+
+$ gh auth setup-git
+Exit: 0
+
+$ git lfs version
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+Exit: 0
+
+$ python /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/tools/hydrate_head_blobs.py --repo /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922 --scratch /workspace/scratch/4f0b36b4bb0e/toolchain/fresh-object-repair --jobs 8
+HEAD: b6bda309cd2e0a26553bb675515d2609dfa253b9; missing blobs: 79; bytes: 637469726
+Restored 1/79: 893a30b40652445732af8779cb609ba4ad30f117 (13077532 bytes)
+Restored 2/79: 9a5fc5bdb3cb234b0bfc016412d53e5d4c42be5b (25588240 bytes)
+Restored 3/79: 35d747e3cba726f9ca4811e2f72a582f8b3f73cd (25275048 bytes)
+Restored 4/79: d238297e5e2752be7b12c83a57fda8d4b49a879a (24559120 bytes)
+Restored 5/79: 9a00e19e2568083f7a6b4b03333dfe2e02ee4bed (28737040 bytes)
+Restored 6/79: 1e54f8b967cba07822cc3b4040aa2f403f15e32f (27815440 bytes)
+Restored 7/79: 1ffa9d8aba1508027a929de513af1f6875ad72b5 (31340560 bytes)
+Restored 8/79: f5ded4878d3cc09dffe6ac1465aef6cd8a13db92 (33613840 bytes)
+Restored 9/79: add596d572b7686f443628e773cd8a1fcdf87b93 (18954408 bytes)
+Restored 10/79: 2f499dfcdf632e36555b7512dbb8cabc7d4412f7 (24484008 bytes)
+Restored 11/79: ac66917679a34f53884f2896c88aca0203c18fd0 (25582248 bytes)
+Restored 12/79: 17a9c3078fbf72748f9252c3c4e7c22ca180950c (30572560 bytes)
+Restored 13/79: 37b030386ee9249d35b7ef97341975cdb4c9c71d (31386640 bytes)
+Restored 14/79: ad7066f5ab2ccd5426a4184ebee9f83dc32dc7cd (33805840 bytes)
+Restored 15/79: e17043097e83f2f69569beda666e0f2a9374ae87 (38314000 bytes)
+Restored 16/79: 3b1aee9e968a4981dcf4ebee908cf2aa03e0b67c (35303440 bytes)
+Restored 17/79: 6f40945d081cbada99d707f0e1f6267b8d5c8f02 (2479440 bytes)
+Restored 18/79: ff9e85e7a40263707f91a03248ae53da19b3ac1c (2329619 bytes)
+Restored 19/79: 51fbda76e7a95fabfe56f3e256f61643bb701561 (2327824 bytes)
+Restored 20/79: 90c8518cd284913ca46985e44ffce6ca773c9b20 (2392963 bytes)
+Restored 21/79: ce739009101575173879d63cd2db1a51f153c197 (2372698 bytes)
+Restored 22/79: daf1670693600e9473e15be43f3eb69dd3e1d766 (2503933 bytes)
+Restored 23/79: 509538bc775da6ec49aeb9366987ba61c4d8e883 (2550566 bytes)
+Restored 24/79: bdb6e1178a091cbf6d4c3b9d46c1b990b119ef0a (32646160 bytes)
+Restored 25/79: 9e1bfb71e3fb82b802909e8b673c8ffb6d5142a1 (2632998 bytes)
+Restored 26/79: 15e9e00124c9cfd17ea43b9e29ccf0e2e938187e (2599608 bytes)
+Restored 27/79: 4cb3afc9ac30888ae92c0a4e00203d1a1eca05d8 (2804101 bytes)
+Restored 28/79: 0af5a3288debd28a4942a0b7ba5e6ee27c1a436f (2318606 bytes)
+Restored 29/79: 79aa4ce0a81680fab0feb6e7305729219a3ce1f1 (2601194 bytes)
+Restored 30/79: 74aeeb7a1705d23de558acc3b3eb116a8b6c20aa (2711750 bytes)
+Restored 31/79: 6f96030e86b8ff3744a31e7c1717892c2dd8dcbe (2774995 bytes)
+Restored 32/79: 9b7d1c4c7f08055516b80941bdceda4fe625cf2a (2827700 bytes)
+Restored 33/79: 590a7d6acb33538f6f0dc969c628d6825a12cfda (2799136 bytes)
+Restored 34/79: 29b22ca51822b87950d58f13222a7b6aa9cbf25d (2789155 bytes)
+Restored 35/79: 4905fe328c600cbe7cce83884365b84174b11bf2 (2924739 bytes)
+Restored 36/79: f6e0bdb4a5c2116301194e75b037e4e52f55e57f (2656304 bytes)
+Restored 37/79: 24f9a67d5c0c49518f948d2cf6f35162ebcd3f4f (2616276 bytes)
+Restored 38/79: cce0caa4c4dc9f8f05516eda19d27dfc1c3b59ef (2803056 bytes)
+Restored 39/79: 938556f0085ba085b094380e7443be49fef5f90e (2690774 bytes)
+Restored 40/79: b1fcdcdf9ca38e7e8c7c5a4ada7e3a776cf24387 (2948553 bytes)
+Restored 41/79: 4e2ffb05d2d8f50dda09749d2abbcab1645ad5af (2556160 bytes)
+Restored 42/79: c134a1af506f5301ed17e813e0c24ab7fc0ad391 (2726335 bytes)
+Restored 43/79: 953c1e6f37d5370470999b26bd3fca57b26b88d9 (2894250 bytes)
+Restored 44/79: a682ec3bd14a1097dcc0087f3e7fb5050b1880d8 (2855292 bytes)
+Restored 45/79: 769d00f29d28acb4ff9e3dabd8972bad02660de5 (2904251 bytes)
+Restored 46/79: c911e813fe86eda52e0f96fbf9ff8d3f24e39dfd (2741481 bytes)
+Restored 47/79: 1638cdd44de89992226ccaf3c5b31805408d5bfc (2809017 bytes)
+Restored 48/79: 832331ee1265169b2c3b04555d4bd1f1b28e24aa (2598482 bytes)
+Restored 49/79: 3ecf7ae0f35189029bda0978f6d1a0c00057f5ea (2340400 bytes)
+Restored 50/79: 0fcd0802052abaaff868acc1ea09c90c998688fa (2365193 bytes)
+Restored 51/79: ef79685f7a790ef239918b1b93d60aec8d21c74b (2632259 bytes)
+Restored 52/79: a6b39324d8f779efdae2ec14e7937278fb733eda (2556098 bytes)
+Restored 53/79: b9fd99c2ca63a4f38e198a10d1f3ddd40e3061f3 (2644877 bytes)
+Restored 54/79: 6cb2cc4e1597478f6d4444db60835e743d7abe77 (2502100 bytes)
+Restored 55/79: 1b052f3288d4bf7115db4dd15cbddbfda9953f15 (2334806 bytes)
+Restored 56/79: 77c41307fadfb11d820a71e0c09f7cca0a3deda2 (2761081 bytes)
+Restored 57/79: 725867bd1613d8d08e61c1c38da89271fd657770 (2145670 bytes)
+Restored 58/79: b29bb15c1cb7fd229f67a36cf894efdb86a0d09c (2424164 bytes)
+Restored 59/79: c139124eedfb3181291850b97e6a9c160995ffc9 (2193516 bytes)
+Restored 60/79: 61704b83a9d8ce11dd7c3e50620882276eda3a6b (2231501 bytes)
+Restored 61/79: 0c805455c29578d09dab5a9139d00b2e453d8ad0 (2295676 bytes)
+Restored 62/79: ef6671fe534f2cea284d4142d1bf4918e72bae88 (2478519 bytes)
+Restored 63/79: 46c16b5c0e6da40667ea9372560c3be816ba3567 (2188988 bytes)
+Restored 64/79: 5bcb17207564c0ead78fd0c47cb08dcf00db0502 (2517239 bytes)
+Restored 65/79: e4538c62792ef0c1804b3b88518e4e975c822995 (1930812 bytes)
+Restored 66/79: 40f85280b02c15bc9da76de68939c2a0fec4c0f7 (2684639 bytes)
+Restored 67/79: 698918356a29885e727c59fc826ad858b979f916 (2709757 bytes)
+Restored 68/79: 64ad9e12f633e1ee3ccb6af7d4612af7233efb40 (2005615 bytes)
+Restored 69/79: 960485886f7e5546ce68f4fbd17ec71953acab58 (2055338 bytes)
+Restored 70/79: 40bf5e7f5f23b61c487fd93ac7721ffadb153e13 (2294831 bytes)
+Restored 71/79: 049f0f72c781bdaae267a59abca4ffd60dbed2db (2502822 bytes)
+Restored 72/79: 2298197f529e65d44df798788cd658dc339845da (2495764 bytes)
+Restored 73/79: 8a11bd15dfbce17e8a263e7c1b8d3bd125e47fa2 (2465651 bytes)
+Restored 74/79: 118293ecc53d48b17dc7a72475f4853e8048ff7e (2381704 bytes)
+Restored 75/79: 9bee7088e31c526881750135b9c08c1ea6b05cb9 (2408006 bytes)
+Restored 76/79: 8c3affd15be5ad39f02c3c9dc10b86158199715b (2369445 bytes)
+Restored 77/79: 3f802e355708492223fc532dcb1d4b905b8e0e7b (2104875 bytes)
+Restored 78/79: 9a6ae67867c22527c3981b71b20b0c74e022df7e (2425151 bytes)
+Restored 79/79: f84c370b649ac1a7b25f5dd8748728f5a4c39bfc (2425849 bytes)
+HYDRATION PASS: all 191 HEAD blobs available; refs unchanged
+Exit: 0
+
+$ git lfs pull origin
+Exit: 0
+
+RETRIEVED PAYLOAD PASS: assets/3d/blender/validation/sm_pipeline_meter_cube.blend 1e6f85d79fe56dd72d16427b86f750620fa03754515f5cebdffd7329246548cb 449887
+RETRIEVED PAYLOAD PASS: game/art/meshes/validation/sm_pipeline_meter_cube.glb 245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893 1992
+$ git lfs fsck
+Git LFS fsck OK
+Exit: 0
+
+$ git fsck --full --strict
+Exit: 0
+
+$ blender --background /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/assets/3d/blender/validation/sm_pipeline_meter_cube.blend --python-exit-code 1 --python /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/tools/verify_export_source.py
+BLENDER_SOURCE PASS: meters; unit transforms; bottom-center pivot; outward normals; UV; one material
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/assets/3d/blender/validation/sm_pipeline_meter_cube.blend"
+
+Blender quit
+Exit: 0
+
+$ godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/game --editor --import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
+[   0% ] first_scan_filesystem | Scanning file structure...
+[  16% ] first_scan_filesystem | Loading global class names...
+[  33% ] first_scan_filesystem | Verifying GDExtensions...
+[  50% ] first_scan_filesystem | Creating autoload scripts...
+[  66% ] first_scan_filesystem | Initializing plugins...
+[  83% ] first_scan_filesystem | Starting file scan...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started Registering global classes... (16 steps)
+[   0% ] update_scripts_classes |
+[   5% ] update_scripts_classes |
+[  11% ] update_scripts_classes |
+[  17% ] update_scripts_classes |
+[  23% ] update_scripts_classes |
+[  29% ] update_scripts_classes |
+[  35% ] update_scripts_classes |
+[  41% ] update_scripts_classes |
+[  47% ] update_scripts_classes |
+[  52% ] update_scripts_classes |
+[  58% ] update_scripts_classes |
+[  64% ] update_scripts_classes |
+[  70% ] update_scripts_classes |
+[  76% ] update_scripts_classes |
+[  82% ] update_scripts_classes |
+[  88% ] update_scripts_classes |
+[ DONE ] update_scripts_classes
+
+[   0% ] reimport | Started (Re)Importing Assets (1 steps)
+[   0% ] reimport | Preparing files to reimport...
+[   0% ] reimport | Executing pre-reimport operations...
+[   0% ] preload_reimporting_scene | Started Preparing scenes for reload (1 steps)
+[   0% ] preload_reimporting_scene | Analyzing scene [empty]
+[  50% ] preload_reimporting_scene | Preparation done.
+[ DONE ] preload_reimporting_scene
+
+[   0% ] reimport | sm_pipeline_meter_cube.glb
+[   0% ] import | Started Import Scene (104 steps)
+[   0% ] import | Importing Scene...
+[   1% ] import | Running Custom Script...
+[  99% ] import | Saving...
+[ DONE ] import
+
+[  50% ] reimport | Finalizing Asset Import...
+[ DONE ] reimport
+
+[   0% ] reimport | Started (Re)Importing Assets (1 steps)
+[   0% ] reimport | Executing post-reimport operations...
+[ DONE ] reimport
+
+[   0% ] loading_editor_layout | Started Loading editor (5 steps)
+[   0% ] loading_editor_layout | Loading editor layout...
+[  16% ] loading_editor_layout | Loading docks...
+[ DONE ] loading_editor_layout
+
+Exit: 0
+
+$ godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/game --script res://tests/lfs_export_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+LFS_EXPORT PASS: GLB import; meters; Y-up; bottom-center pivot; normals; UV; one material; script-free wrapper
+Exit: 0
+
+$ godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/game --script res://tests/engine_preflight.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"headless","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+Exit: 0
+
+$ godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/game --script res://tests/input_map_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INPUT_MAP runtime: 4.7.2-stable (official); display=headless
+INPUT_MAP source: project.godot; injected keyboard events, not OS keyboard input
+INPUT_MAP checked: W/S/A/D/E/H press and release with Latin and Cyrillic labels
+INPUT_MAP checked: physical/logical mismatch and release after modifier change
+INPUT_MAP checked: forward direction, normalized diagonal, opposite keys and release
+INPUT_MAP checked: shared Esc, repeat events, ui_cancel and ui_accept
+INPUT_MAP PASS: persisted bindings, layout-independent matching and input lifecycle
+Exit: 0
+
+$ godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-lfs-fresh-20260922/game --script res://tests/audio_bus_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_BUS runtime: 4.7.2-stable (official); display=headless; audio=Dummy
+AUDIO_BUS source: project default layout; generated PCM through the real mixer; no speaker test
+AUDIO_BUS route: Master -> output; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: Music -> Master; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Main -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Stems -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: SFX -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_Critical -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_World -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: Ambience -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: UI -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: VO_RESERVED -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS gain: Music_Main; half-gain ratio=0.5
+AUDIO_BUS gain: Music_Stems; half-gain ratio=0.5
+AUDIO_BUS mute: Music_Main; Master peak=0.0
+AUDIO_BUS mute: Music_Stems; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: Music
+AUDIO_BUS gain: SFX_Critical; half-gain ratio=0.5
+AUDIO_BUS gain: SFX_World; half-gain ratio=0.5
+AUDIO_BUS mute: SFX_Critical; Master peak=0.0
+AUDIO_BUS mute: SFX_World; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: SFX
+AUDIO_BUS PASS: automatic layout, all routes, parent gain/mute and restored neutral state
+Exit: 0
+
+FIRST LFS BINARY GATE PASS: independent remote payload retrieval, hashes, fsck, Blender reopen and Godot import/smoke

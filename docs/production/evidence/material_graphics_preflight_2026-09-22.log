@@ -1,0 +1,36 @@
+$ xvfb-run -a -s -screen 0 1280x800x24 -nolisten tcp godot --path /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/game --script res://tests/engine_preflight.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+ERROR: X11 Display is not available
+   at: DisplayServerX11 (platform/linuxbsd/x11/display_server_x11.cpp:6943)
+WARNING: Display driver x11 failed, falling back to wayland.
+     at: setup2 (main/main.cpp:3380)
+error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+ERROR: Can't connect to a Wayland display.
+   at: init (platform/linuxbsd/wayland/wayland_thread.cpp:5589)
+ERROR: Could not initialize the Wayland thread.
+   at: DisplayServerWayland (platform/linuxbsd/wayland/display_server_wayland.cpp:2296)
+ERROR: Can't create the Wayland display server.
+   at: create_func (platform/linuxbsd/wayland/display_server_wayland.cpp:2264)
+ERROR: Unable to create DisplayServer, all display drivers failed.
+Use "--headless" command line argument to run the engine in headless mode if this is desired (e.g. for continuous integration).
+   at: setup2 (main/main.cpp:3390)
+WARNING: 6 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+     at: cleanup (core/object/object.cpp:2536)
+Exit: 1
+
+
+Xvfb server diagnostic (representative failure):
+_XSERVTransSocketOpenCOTSServer: Unable to open socket for local
+_XSERVTransOpen: transport open failed for local/localhost:99
+_XSERVTransMakeAllCOTSServerListeners: failed to open listener for local
+_XSERVTransSocketOpenCOTSServer: Unable to open socket for unix
+_XSERVTransOpen: transport open failed for unix/localhost:99
+_XSERVTransMakeAllCOTSServerListeners: failed to open listener for unix
+(EE) 
+Fatal server error:
+(EE) Cannot establish any listening sockets - Make sure an X server isn't already running(EE) 
+_XSERVTransSocketOpenCOTSServer: Unable to open socket for local
+_XSERVTransOpen: transport open failed for local/localhost:100
+_XSERVTransMakeAllCOTSServerListeners: failed to open listener for local
+
+AF_UNIX capability BLOCKER: errno=1; Operation not permitted
