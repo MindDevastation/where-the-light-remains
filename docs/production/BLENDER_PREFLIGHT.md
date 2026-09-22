@@ -209,7 +209,7 @@ See [complete retry evidence](evidence/lfs_retry_2026-09-22.log).
 The first-binary technical gate is now PASS. Target-hardware performance and
 production art acceptance are not claimed. No history rewrite or WAV migration.
 
-## Remaining PR metadata permission blocker
+## PR metadata permission blocker (resolved)
 
 After the successful LFS retry was committed and pushed, updating PR #15 with
 the same owner-provided token again returned HTTP 403:
@@ -217,8 +217,19 @@ the same owner-provided token again returned HTTP 403:
 explicitly reported `X-Accepted-GitHub-Permissions: pull_requests=write`.
 See [permission retry evidence](evidence/pr_permission_retry_2026-09-22.log).
 
-Git push and the technical LFS gate are PASS. PR metadata updates remain
-BLOCKED by this token's API access. No ready-for-review or merge action was
-attempted after the permission failure. Enable the required Pull requests
-write permission for this repository, then update/ready PR #15 and continue
-the validated feature → epic → main workflow with its integration smoke gate.
+The owner updated the token permissions. Authentication and refs were rechecked,
+and an actual PATCH to PR #15 now succeeds. The prior HTTP 403 is resolved.
+The token is supplied only to processes through GH_TOKEN and is not committed.
+
+The environment was restored again using checksum-verified Godot 4.7.2 and
+Blender 4.5.14. Both binary hashes still match the existing manifest. Missing
+ordinary-Git HEAD objects were hydrated before LFS pull/fsck; all checks passed.
+Blender source reopen, Godot clean import, export geometry, eight-autoload
+startup/safe exit, InputMap, audio buses and disabled-debug-path smoke also
+passed on feature head `957a3e4a198a4937b195a40497f19ab9a09254fd`.
+
+See [Git/LFS restoration evidence](evidence/blender_integration_2026-09-22.log)
+and [runtime integration evidence](evidence/blender_integration_runtime_2026-09-22.log).
+All feature gates are PASS. Integration follows PR #15 → Art Foundation, then
+merged-epic smoke → main. The neutral test fixture is not production art;
+target-hardware profiling remains a later vertical-slice gate.

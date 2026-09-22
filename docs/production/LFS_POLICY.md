@@ -80,7 +80,7 @@ This policy minimizes current risk:
 
 ## First-binary evidence — 2026-09-22
 
-Feature `feature/03-art-foundation/blender-export`, draft PR #15,
+Feature `feature/03-art-foundation/blender-export`, PR #15,
 sample commit `b6bda309cd2e0a26553bb675515d2609dfa253b9`:
 
 | Gate | Actual result |

@@ -26,8 +26,8 @@
 *.pdf binary
 
 # Git LFS — forward-looking production masters/runtime binaries.
-# These extensions are not currently present in the repository tree, so enabling
-# LFS here does not create pointer inconsistencies for existing tracked files.
+# These rules were introduced before the first 3D binaries; new source/export
+# assets are committed as pointers while existing audio remains ordinary Git.
 *.blend filter=lfs diff=lfs merge=lfs -text
 *.glb   filter=lfs diff=lfs merge=lfs -text
 *.fbx   filter=lfs diff=lfs merge=lfs -text
