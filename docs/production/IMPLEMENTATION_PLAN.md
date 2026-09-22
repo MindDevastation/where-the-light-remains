@@ -29,7 +29,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [x] Lock Godot minor **4.7**, verified with the standard **4.7.2 stable** executable (`4.7.2.stable.official.ed1daf0bf`).
 - [x] Engine preflight: real editor import, GameRoot/eight-autoload startup checks, headless and Forward+ smoke tests, safe exit and native window close. See `ENGINE_PREFLIGHT.md` for evidence and scope.
 - [x] Configure forward Git LFS rules for future heavy 3D binaries (`*.blend`, `*.glb`, `*.fbx`) without rewriting existing WAV history. Destructive audio-history migration is no longer a prerequisite for 3D production.
-- [!] Before the first real LFS-backed 3D binary is merged, validate pointer creation, LFS payload upload, `git lfs fsck`, fresh-clone retrieval and Blender/Godot open/import as applicable.
+- [x] First real LFS-backed 3D binary gate: pointers, real upload, independent fresh-clone retrieval, exact payload hashes, full Git/LFS fsck and retrieved-copy Blender/Godot checks PASS (2026-09-22). See `LFS_POLICY.md`.
 - [x] Build valid InputMap in project settings: physical WASD/E/H and logical Esc for pause/skip. Real Godot event-dispatch checks, clean import and startup regression passed; see `INPUT_MAP.md`. Gameplay consumers and hold-to-skip policy remain in their later systems.
 - [x] Create audio bus layout: Master → Music/Main/Stems, SFX/Critical/World, Ambience, UI, VO_RESERVED. Automatic loading, real mixer routing and Music/SFX parent gain/mute passed in Godot 4.7.2; see `AUDIO_BUSES.md`. Playback, settings UI and final mix remain later work.
 - [x] Add opt-in, read-only development stage/save/audio/scene/performance inspection. Godot 4.7.2 clean import, InputMap/audio-bus regressions, graphical Cyrillic, state/file integrity and actual release startup with/without debug resources passed; see `DEBUG_TOOLS.md`. Exactly eight autoloads remain; target-hardware profiling and full save/audio implementations remain later milestones.
@@ -71,9 +71,9 @@ Foundation acceptance:
 - [x] 3D production pipeline documented.
 - [x] Source/runtime folder split documented (`assets/3d/` vs `game/art/`).
 - [x] Forward Git LFS policy configured for future `.blend/.glb/.fbx` files.
-- [ ] Verify actual Blender version/CLI/export capabilities on the Astra machine.
-- [ ] Validate the first real LFS-backed 3D binary end-to-end: pointer, payload upload, `git lfs fsck`, fresh clone and payload retrieval.
-- [ ] Build and validate Blender→GLB→Godot export contract.
+- [x] Verify actual Blender version/CLI/export capabilities: Blender 4.5.14 LTS background CLI, source save and disposable GLB probe PASS. See `BLENDER_PREFLIGHT.md`. Git authentication and full local `git lfs fsck` PASS after verified recovery of missing ordinary-Git objects. First-binary pointers, real upload (2/2), independent retrieval and retrieved-copy Blender/Godot checks now PASS. Completing ordinary-Git HEAD hydration resolved the fresh-clone pull blocker. Integration is tracked in PR #15. Technical gates and the renewed PR write permission check PASS; the previous HTTP 403 is resolved. Feature integration follows PR #15 and the merged-epic smoke gate.
+- [x] Validate the first real LFS-backed 3D binary end-to-end: pointer, payload upload, independent retrieval, manifest hashes and producing/fresh-clone fsck PASS. See `LFS_POLICY.md`.
+- [x] Validate the approved Blender→GLB→Godot static export contract with a minimal one-meter fixture: scale/Y-up, transforms, pivot, normals, UV, material and separate script-free wrapper. See `EXPORT_SAMPLE.md`; production art/performance acceptance remains separate.
 - [ ] Create compact shared material library baseline.
 - [ ] Produce one modular Archive kit sample.
 - [ ] Produce one Wing I hero mechanism sample with gameplay pivots.

@@ -1,0 +1,112 @@
+Date: 2026-09-21
+Base: 349dd3a6755ce8d6e12513181223013e9d585700
+Scope: local tool installation and disposable CLI probe; no LFS payload validation.
+
+[GH_TOKEN presence]
+
+
+Exit: 1
+
+[Git]
+git version 2.51.1
+
+Exit: 0
+
+[Git LFS]
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+
+Exit: 0
+
+[GitHub CLI]
+gh version 2.101.0 (2026-09-15)
+https://github.com/cli/cli/releases/tag/v2.101.0
+
+Exit: 0
+
+[gh auth status]
+
+You are not logged into any GitHub hosts. To log in, run: gh auth login
+Exit: 1
+
+[gh api user]
+
+To get started with GitHub CLI, please run:  gh auth login
+Alternatively, populate the GH_TOKEN environment variable with a GitHub API authentication token.
+Exit: 4
+
+[blender-cli-validation.log]
+Info: Saved as "cli_probe.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/4f0b36b4bb0e/toolchain/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+14:52:37 | INFO: Starting glTF 2.0 export
+14:52:37 | INFO: Extracting primitive: Cube.001
+14:52:37 | INFO: Primitives created: 1
+14:52:37 | INFO: Finished glTF 2.0 export in 0.05146932601928711 s
+
+BLENDER_CLI_PROBE PASS: 4.5.14 LTS one-meter mesh, UV, normals, one material, source saved, GLB 2.0 exported
+Disposable output: /workspace/scratch/4f0b36b4bb0e/blender-cli-validation
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+
+Blender quit
+
+
+[godot-toolchain-validation.log]
+[version]
+4.7.2.stable.official.ed1daf0bf
+
+Exit: 0
+
+[clean-import]
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
+[   0% ] first_scan_filesystem | Scanning file structure...
+[  16% ] first_scan_filesystem | Loading global class names...
+[  33% ] first_scan_filesystem | Verifying GDExtensions...
+[  50% ] first_scan_filesystem | Creating autoload scripts...
+[  66% ] first_scan_filesystem | Initializing plugins...
+[  83% ] first_scan_filesystem | Starting file scan...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started Registering global classes... (15 steps)
+[   0% ] update_scripts_classes | 
+[   6% ] update_scripts_classes | 
+[  12% ] update_scripts_classes | 
+[  18% ] update_scripts_classes | 
+[  25% ] update_scripts_classes | 
+[  31% ] update_scripts_classes | 
+[  37% ] update_scripts_classes | 
+[  43% ] update_scripts_classes | 
+[  50% ] update_scripts_classes | 
+[  56% ] update_scripts_classes | 
+[  62% ] update_scripts_classes | 
+[  68% ] update_scripts_classes | 
+[  75% ] update_scripts_classes | 
+[  81% ] update_scripts_classes | 
+[  87% ] update_scripts_classes | 
+[ DONE ] update_scripts_classes
+
+[   0% ] loading_editor_layout | Started Loading editor (5 steps)
+[   0% ] loading_editor_layout | Loading editor layout...
+[  16% ] loading_editor_layout | Loading docks...
+[ DONE ] loading_editor_layout
+
+
+Exit: 0
+
+[engine-smoke]
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"headless","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+
+Exit: 0
+
+
+[git-write-preflight.log]
+git push --dry-run origin HEAD:refs/heads/feature/03-art-foundation/blender-export
+Exit: 128
+fatal: could not read Username for 'https://github.com': terminal prompts disabled
+
+
+Script SHA256 9621a61b50b7caefab726aaab49c1755fc92e17221e265fa828968619a72e6ac  tools/setup_linux_toolchain.py
+Script SHA256 600ccc2f84781afff9fc20a1df8a58c56937e1e26dc8c11250972b8b24f1f4ab  tools/blender_cli_probe.py

@@ -1,0 +1,94 @@
+$ git lfs install --local
+Updated Git hooks.
+Git LFS initialized.
+Exit: 0
+
+$ blender --background --factory-startup --python-exit-code 1 --python /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/tools/create_export_sample.py -- /workspace/scratch/4f0b36b4bb0e/wlr-blender-export
+Info: Saved as "sm_pipeline_meter_cube.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/4f0b36b4bb0e/toolchain/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+03:35:54 | INFO: Starting glTF 2.0 export
+03:35:54 | INFO: Extracting primitive: Cube.001
+03:35:54 | INFO: Primitives created: 1
+03:35:54 | INFO: Finished glTF 2.0 export in 0.010713577270507812 s
+
+EXPORT_SAMPLE CREATED: /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/assets/3d/blender/validation/sm_pipeline_meter_cube.blend /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/game/art/meshes/validation/sm_pipeline_meter_cube.glb
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+
+Blender quit
+Exit: 0
+
+$ blender --background /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/assets/3d/blender/validation/sm_pipeline_meter_cube.blend --python-exit-code 1 --python /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/tools/verify_export_source.py
+BLENDER_SOURCE PASS: meters; unit transforms; bottom-center pivot; outward normals; UV; one material
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/4f0b36b4bb0e/wlr-blender-export/assets/3d/blender/validation/sm_pipeline_meter_cube.blend"
+
+Blender quit
+Exit: 0
+
+$ godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/game --editor --import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
+[   0% ] first_scan_filesystem | Scanning file structure...
+[  16% ] first_scan_filesystem | Loading global class names...
+[  33% ] first_scan_filesystem | Verifying GDExtensions...
+[  50% ] first_scan_filesystem | Creating autoload scripts...
+[  66% ] first_scan_filesystem | Initializing plugins...
+[  83% ] first_scan_filesystem | Starting file scan...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started Registering global classes... (16 steps)
+[   0% ] update_scripts_classes |
+[   5% ] update_scripts_classes |
+[  11% ] update_scripts_classes |
+[  17% ] update_scripts_classes |
+[  23% ] update_scripts_classes |
+[  29% ] update_scripts_classes |
+[  35% ] update_scripts_classes |
+[  41% ] update_scripts_classes |
+[  47% ] update_scripts_classes |
+[  52% ] update_scripts_classes |
+[  58% ] update_scripts_classes |
+[  64% ] update_scripts_classes |
+[  70% ] update_scripts_classes |
+[  76% ] update_scripts_classes |
+[  82% ] update_scripts_classes |
+[  88% ] update_scripts_classes |
+[ DONE ] update_scripts_classes
+
+[   0% ] reimport | Started (Re)Importing Assets (1 steps)
+[   0% ] reimport | Preparing files to reimport...
+[   0% ] reimport | Executing pre-reimport operations...
+[   0% ] reimport | sm_pipeline_meter_cube.glb
+[   0% ] import | Started Import Scene (104 steps)
+[   0% ] import | Importing Scene...
+[   1% ] import | Running Custom Script...
+[  99% ] import | Saving...
+[ DONE ] import
+
+[  50% ] reimport | Finalizing Asset Import...
+[ DONE ] reimport
+
+[   0% ] reimport | Started (Re)Importing Assets (1 steps)
+[   0% ] reimport | Executing post-reimport operations...
+[ DONE ] reimport
+
+[   0% ] loading_editor_layout | Started Loading editor (5 steps)
+[   0% ] loading_editor_layout | Loading editor layout...
+[  16% ] loading_editor_layout | Loading docks...
+[ DONE ] loading_editor_layout
+
+Exit: 0
+
+$ godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/game --script res://tests/lfs_export_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+LFS_EXPORT PASS: GLB import; meters; Y-up; bottom-center pivot; normals; UV; one material; script-free wrapper
+Exit: 0
+
+$ godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-blender-export/game --script res://tests/engine_preflight.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"headless","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+Exit: 0
