@@ -134,3 +134,11 @@ metadata. The `.godot/` editor/import cache remains ignored.
 
 Next allowed feature after integration: `feature/00-foundation/input-map`.
 It is not implemented by this change.
+
+## Reusable graphical recovery — 2026-09-23
+
+The TCP/cookie workaround above was reproduced with the same Godot, Vulkan,
+Mesa and LLVM baseline. Use `tools/setup_linux_graphics.py` and
+`tools/run_graphical.py`; exact commands and current evidence are documented in
+[MATERIAL_PREFLIGHT.md](MATERIAL_PREFLIGHT.md). Do not disable TCP when AF_UNIX
+is unavailable. The runner retains authorization and the bare-Xvfb protocol atom.

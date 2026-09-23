@@ -74,7 +74,8 @@ Foundation acceptance:
 - [x] Verify actual Blender version/CLI/export capabilities: Blender 4.5.14 LTS background CLI, source save and disposable GLB probe PASS. See `BLENDER_PREFLIGHT.md`. Git authentication and full local `git lfs fsck` PASS after verified recovery of missing ordinary-Git objects. First-binary pointers, real upload (2/2), independent retrieval and retrieved-copy Blender/Godot checks now PASS. Completing ordinary-Git HEAD hydration resolved the fresh-clone pull blocker. Integration is tracked in PR #15. Technical gates and the renewed PR write permission check PASS; the previous HTTP 403 is resolved. Feature integration follows PR #15 and the merged-epic smoke gate.
 - [x] Validate the first real LFS-backed 3D binary end-to-end: pointer, payload upload, independent retrieval, manifest hashes and producing/fresh-clone fsck PASS. See `LFS_POLICY.md`.
 - [x] Validate the approved Blender→GLB→Godot static export contract with a minimal one-meter fixture: scale/Y-up, transforms, pivot, normals, UV, material and separate script-free wrapper. See `EXPORT_SAMPLE.md`; production art/performance acceptance remains separate.
-- [!] Create compact shared material library baseline. Preflight BLOCKED: the execution environment rejects AF_UNIX socket creation (errno 1), preventing Xvfb/Godot graphical validation. Packages were restored locally; see MATERIAL_PREFLIGHT.md. No material acceptance is claimed.
+- [x] Restore authenticated Xvfb TCP / Godot X11 / Vulkan Forward+ graphical preflight, with pinned local packages and repeatable runner. Engine and six-specimen material capability tests PASS; see `MATERIAL_PREFLIGHT.md` and 2026-09-23 evidence. The previous AF_UNIX-based environment blocker was an incorrect inference from a TCP-disabled invocation.
+- [ ] Create compact shared material library baseline. Graphical environment gate PASS; authored production materials and their visual acceptance remain pending.
 - [ ] Produce one modular Archive kit sample.
 - [ ] Produce one Wing I hero mechanism sample with gameplay pivots.
 - [ ] Import samples in Godot and validate scale, orientation, pivots, materials, collision and warnings.
@@ -137,3 +138,21 @@ Main integration is tracked in PR #16. Actual output: evidence/art_epic_smoke_20
 Next feature: feature/03-art-foundation/material-library. The six-family baseline
 follows the approved production policy. Target-hardware performance is not yet
 applicable to this technical fixture; no such PASS is claimed.
+
+## Graphical recovery checkpoint — 2026-09-23
+
+Feature: `feature/03-art-foundation/graphics-preflight`, based on Art Foundation
+and main `126c92394a6d35b8553b3e005c9202b9c8112ba7`. Restored the previously
+verified authenticated TCP path and recorded clean import, graphical engine,
+material contribution/Cyrillic/screenshot and GLB regression PASS.
+`ASTRA_WORKFLOW.md` now requires evidence-first recovery before an environment
+BLOCKER. Reusable installer, package lock and runner are tracked in Git.
+No production material assets or target-hardware performance were accepted.
+Next production feature remains `feature/03-art-foundation/material-library`.
+
+Recovery feature merged through PR #17 into Art Foundation at
+`0fae10ccffe03132cbbddce9b1029e9b42408440`. Its tree exactly matched the validated
+feature; graphical engine startup/eight-autoload/safe-exit smoke passed again
+on the merged epic. Actual output: `evidence/graphics_epic_smoke_2026-09-23.log`.
+The stable slice integrates through the normal epic-to-main PR route; merge
+commits in Git identify the final integration SHA.
