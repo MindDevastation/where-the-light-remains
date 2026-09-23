@@ -149,3 +149,10 @@ material contribution/Cyrillic/screenshot and GLB regression PASS.
 BLOCKER. Reusable installer, package lock and runner are tracked in Git.
 No production material assets or target-hardware performance were accepted.
 Next production feature remains `feature/03-art-foundation/material-library`.
+
+Recovery feature merged through PR #17 into Art Foundation at
+`0fae10ccffe03132cbbddce9b1029e9b42408440`. Its tree exactly matched the validated
+feature; graphical engine startup/eight-autoload/safe-exit smoke passed again
+on the merged epic. Actual output: `evidence/graphics_epic_smoke_2026-09-23.log`.
+The stable slice integrates through the normal epic-to-main PR route; merge
+commits in Git identify the final integration SHA.
