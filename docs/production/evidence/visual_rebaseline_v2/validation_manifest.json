@@ -104,5 +104,7 @@
       "bytes": 917350
     }
   ],
-  "scope": "Final authored source snapshot; neutral/warm/cool precede a tile-only layout refinement, with sphere/material/light behavior unchanged. Final tile screenshot was regenerated and inspected after refinement."
+  "scope": "Final authored source snapshot; neutral/warm/cool precede a tile-only layout refinement, with sphere/material/light behavior unchanged. Final tile screenshot was regenerated and inspected after refinement.",
+  "validated_implementation_commit": "feb658a02c41d334804620b1b6ad303df83b864a",
+  "merged_epic_commit": "93a8e116adac4bad4c04dc16fd795ea64450437e"
 }

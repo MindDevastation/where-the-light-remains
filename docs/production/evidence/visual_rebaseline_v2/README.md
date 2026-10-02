@@ -3,6 +3,9 @@
 Date: 2026-10-02 UTC. Pack: `cabe792717828dfe54009219a7f6cc4e0fb5e5e6`.
 Feature: `feature/03-art-foundation/visual-rebaseline-v2`.
 Audit commit: `92fa0f29e5156a5926c44ad24696a49e3d1137ca`.
+Material/evidence commit: `feb658a02c41d334804620b1b6ad303df83b864a`.
+Feature integration: [PR #23](https://github.com/MindDevastation/where-the-light-remains/pull/23),
+merged epic `93a8e116adac4bad4c04dc16fd795ea64450437e`.
 
 **Bounded shared-material/reference foundation: PASS. Overall visual rebaseline:
 PARTIAL. Target physical-GPU certification: BLOCKER for that gate only.**
@@ -22,6 +25,7 @@ No new LFS objects or history migration. Canonical mechanics/text/budgets unchan
 | [materials_tiles.log](materials_tiles.log) / [PNG](materials_tiles.png) | Seven opaque instances including both textile tints, 4×4 UV repetition, final separated label layout |
 | [validation_manifest.json](validation_manifest.json) | SHA-256/bytes of final authored source/resources and four final screenshots |
 | [hardware_scope.log](hardware_scope.log) | Exact exposed-device enumeration: no physical render/NVIDIA device; pinned software Vulkan is not target-GPU certification |
+| [integration_epic_smoke.log](integration_epic_smoke.log) | Merged epic tree exactly equals validated feature; authenticated X11/Vulkan GameRoot/eight-autoload/safe-exit smoke PASS |
 
 All four PNGs were visually inspected. There are 43 framebuffer sample observations
 (12×3 + 7), with RGB delta 0.039619–0.816702 against backing-only renders;

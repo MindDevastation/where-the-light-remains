@@ -243,3 +243,13 @@ exist to migrate/test; no such acceptance is claimed. Physical GTX1060-class
 performance is BLOCKER for target certification only. Overall visual rebaseline
 remains PARTIAL. The next safe feature is the already specified five-module
 Archive sample under the v2 references, with its normal asset acceptance gates.
+
+Audit checkpoint: `92fa0f29e5156a5926c44ad24696a49e3d1137ca`.
+Material/evidence checkpoint: `feb658a02c41d334804620b1b6ad303df83b864a`.
+Feature merged through [PR #23](https://github.com/MindDevastation/where-the-light-remains/pull/23)
+into Art Foundation at `93a8e116adac4bad4c04dc16fd795ea64450437e`.
+The merged tree exactly matched the validated feature. Authenticated X11 TCP /
+Vulkan Forward+ GameRoot/eight-autoload/safe-exit smoke passed again on that
+merged epic; actual output: `evidence/visual_rebaseline_v2/integration_epic_smoke.log`.
+The stable slice follows the normal epic-to-main route; Git merge history records
+the final integration SHA. Unbuilt art and target-hardware gates remain open.
