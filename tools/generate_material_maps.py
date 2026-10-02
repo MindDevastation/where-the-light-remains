@@ -8,7 +8,9 @@ Normal maps use tangent-space +Y; derivatives wrap at the tile boundary.
 """
 import argparse
 import hashlib
+import io
 import json
+import os
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -43,7 +45,15 @@ def main():
     def save(name, array):
         pixels = np.rint(np.clip(array, 0, 1) * 255).astype(np.uint8)
         path = out / (name + '.png')
-        Image.fromarray(pixels).save(path, optimize=True)
+        encoded = io.BytesIO()
+        Image.fromarray(pixels).save(encoded, format='PNG', optimize=True)
+        payload = encoded.getvalue()
+        temporary = path.with_suffix('.png.tmp')
+        with temporary.open('wb') as stream:
+            stream.write(payload)
+            stream.flush()
+            os.fsync(stream.fileno())
+        temporary.replace(path)
         # A periodic sampled field need not duplicate its last/first pixel.
         # Compare wrap differences to ordinary adjacent differences instead.
         values = pixels.astype(float)
@@ -66,11 +76,12 @@ def main():
 
     u, v = np.meshgrid(np.arange(SIZE) / SIZE, np.arange(SIZE) / SIZE)
     patches, detail = noise(5, 51), noise(90, 52)
-    patina = np.clip((patches - 0.05) * 1.7, 0, 0.8)
+    # Smooth coverage avoids hard camouflage-like thresholds in the metal.
+    patina = np.square(patches * 0.5 + 0.5) * 0.65
     brush = np.sin(2 * np.pi * (u * 170 + 0.3 * noise(5, 53)))
     color = np.array([0.59, 0.43, 0.22]) + (detail * 0.018 + brush * 0.005)[:, :, None]
     color -= patina[:, :, None] * np.array([0.21, 0.15, 0.065])
-    surface('aged_brass', color, 0.28 + 0.31 * patina + 0.035 * detail, 0.95 - 0.45 * patina, 0.0001 * patches + 0.000035 * detail + 0.000018 * brush)
+    surface('aged_brass', color, 0.32 + 0.15 * patina + 0.035 * detail, 0.96 - 0.18 * patina, 0.0001 * patches + 0.000035 * detail + 0.000018 * brush)
 
     warp = 0.2 * noise(3, 61) + 0.035 * noise(14, 62) + 0.08 * np.sin(2 * np.pi * v)
     rings = np.sin(2 * np.pi * (u * 24 + warp * 5))

@@ -26,10 +26,10 @@
     },
     {
       "file": "t_aged_brass_albedo.png",
-      "sha256": "3563cd815225630b964061190eb20e46e9c4c0655cab1ff4ff0b55cd9f6ca049",
-      "bytes": 725450,
-      "wrap_mean_8bit": 0.9277,
-      "adjacent_mean_8bit": 0.8785
+      "sha256": "8fdc78c94d5cb6350661d786f2b3471d3091531694e0776e3058862b800176ab",
+      "bytes": 685413,
+      "wrap_mean_8bit": 0.8571,
+      "adjacent_mean_8bit": 0.8361
     },
     {
       "file": "t_aged_brass_normal.png",
@@ -40,10 +40,10 @@
     },
     {
       "file": "t_aged_brass_orm.png",
-      "sha256": "4198cca2ff12d00031be6c6e2cdf60676632b96ce035b39ad6fc3caef37632f6",
-      "bytes": 526125,
-      "wrap_mean_8bit": 0.7902,
-      "adjacent_mean_8bit": 0.6206
+      "sha256": "ee05d9944768534663438d6520b638b6a28b79b1eff1f25872bb540452d92ed4",
+      "bytes": 490826,
+      "wrap_mean_8bit": 0.4904,
+      "adjacent_mean_8bit": 0.4578
     },
     {
       "file": "t_dark_walnut_albedo.png",
