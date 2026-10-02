@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "status": "sample_contract_no_meshes_yet",
+  "source_commit": "1a7171cb756cfc0e208312ebbf9257af634a898a",
+  "units": "meters",
+  "axes": {
+    "godot_up": "+Y",
+    "godot_front": "-Z",
+    "span": "+X",
+    "blender_up": "+Z",
+    "blender_front": "+Y"
+  },
+  "placement": {
+    "grid_m": 1.0,
+    "yaw_degrees": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "instance_scale": [
+      1,
+      1,
+      1
+    ],
+    "snap_tolerance_m": 0.001,
+    "floor_center_phase_xz_m": [
+      0.5,
+      0.5
+    ]
+  },
+  "uv": {
+    "tile_span_m": 1.0,
+    "scope": "sample opaque surfaces only",
+    "texture_resolution_px": 1024
+  },
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "brass": "res://art/materials/m_aged_brass.tres"
+  },
+  "references": [
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit.png",
+      "git_blob": "b9fd99c2ca63a4f38e198a10d1f3ddd40e3061f3"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet.png",
+      "git_blob": "698918356a29885e727c59fc826ad858b979f916"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_003.png",
+      "git_blob": "9e1bfb71e3fb82b802909e8b673c8ffb6d5142a1"
+    }
+  ],
+  "modules": [
+    {
+      "id": "wall_2m",
+      "inventory": "ARCH-004",
+      "stem": "sm_archive_wall_2m",
+      "bounds_min": [
+        -1,
+        0,
+        -0.2
+      ],
+      "bounds_max": [
+        1,
+        4,
+        0.2
+      ],
+      "anchors": {
+        "left": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ]
+      },
+      "materials": [
+        "stone"
+      ],
+      "triangle_ceiling": 1200,
+      "collision": "box [2,4,0.4] centered [0,2,0]"
+    },
+    {
+      "id": "wall_4m",
+      "inventory": "ARCH-004",
+      "stem": "sm_archive_wall_4m",
+      "bounds_min": [
+        -2,
+        0,
+        -0.2
+      ],
+      "bounds_max": [
+        2,
+        4,
+        0.2
+      ],
+      "anchors": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ]
+      },
+      "materials": [
+        "stone"
+      ],
+      "triangle_ceiling": 1800,
+      "collision": "box [4,4,0.4] centered [0,2,0]"
+    },
+    {
+      "id": "arch_4m",
+      "inventory": "ARCH-005",
+      "stem": "sm_archive_arch_4m",
+      "bounds_min": [
+        -2,
+        0,
+        -0.2
+      ],
+      "bounds_max": [
+        2,
+        4,
+        0.2
+      ],
+      "anchors": {
+        "left": [
+          -2,
+          0,
+          0
+        ],
+        "right": [
+          2,
+          0,
+          0
+        ],
+        "passage": [
+          0,
+          0,
+          0
+        ]
+      },
+      "materials": [
+        "stone",
+        "brass"
+      ],
+      "triangle_ceiling": 4000,
+      "opening": {
+        "width_m": 2.4,
+        "spring_y_m": 2.0,
+        "apex_y_m": 3.6,
+        "curve": "symmetric_two_center_circular",
+        "segments_per_half": 16
+      },
+      "collision": "two full-height jamb boxes [0.8,4,0.4] at x=+-1.6,y=2; 32 convex extruded crown strips matching the segmented inner curve; no full-span box"
+    },
+    {
+      "id": "floor_1m",
+      "inventory": "ARCH-006",
+      "stem": "sm_archive_floor_1m",
+      "bounds_min": [
+        -0.5,
+        -0.2,
+        -0.5
+      ],
+      "bounds_max": [
+        0.5,
+        0,
+        0.5
+      ],
+      "anchors": {
+        "left": [
+          -0.5,
+          0,
+          0
+        ],
+        "right": [
+          0.5,
+          0,
+          0
+        ],
+        "front": [
+          0,
+          0,
+          -0.5
+        ],
+        "back": [
+          0,
+          0,
+          0.5
+        ]
+      },
+      "materials": [
+        "stone"
+      ],
+      "triangle_ceiling": 128,
+      "collision": "box [1,0.2,1] centered [0,-0.1,0]"
+    },
+    {
+      "id": "pier_4m",
+      "inventory": "ARCH-009",
+      "stem": "sm_archive_pier_4m",
+      "bounds_min": [
+        -0.3,
+        0,
+        -0.3
+      ],
+      "bounds_max": [
+        0.3,
+        4.12,
+        0.3
+      ],
+      "anchors": {
+        "junction": [
+          0,
+          0,
+          0
+        ]
+      },
+      "materials": [
+        "stone",
+        "brass"
+      ],
+      "triangle_ceiling": 2200,
+      "shaft_min_width_m": 0.46,
+      "collision": "box [0.6,4.12,0.6] centered [0,2.06,0]"
+    }
+  ],
+  "sample": {
+    "purpose": "isolated art/assembly/collision fixture, not ArchiveMain layout",
+    "floor_grid": {
+      "count_x": 14,
+      "count_z": 4,
+      "first_center": [
+        -6.5,
+        0,
+        -1.5
+      ],
+      "step_x": [
+        1,
+        0,
+        0
+      ],
+      "step_z": [
+        0,
+        0,
+        1
+      ]
+    },
+    "facade": [
+      {
+        "module": "wall_4m",
+        "position": [
+          -4,
+          0,
+          0
+        ],
+        "yaw": 0
+      },
+      {
+        "module": "arch_4m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "yaw": 0
+      },
+      {
+        "module": "wall_4m",
+        "position": [
+          4,
+          0,
+          0
+        ],
+        "yaw": 0
+      }
+    ],
+    "piers": [
+      [
+        -6,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ]
+    ],
+    "replacement_test": {
+      "replace_facade_index": 0,
+      "with": [
+        {
+          "module": "wall_2m",
+          "position": [
+            -5,
+            0,
+            0
+          ],
+          "yaw": 0
+        },
+        {
+          "module": "wall_2m",
+          "position": [
+            -3,
+            0,
+            0
+          ],
+          "yaw": 0
+        }
+      ]
+    },
+    "corner_test": [
+      {
+        "module": "wall_4m",
+        "position": [
+          -2,
+          0,
+          0
+        ],
+        "yaw": 0
+      },
+      {
+        "module": "wall_4m",
+        "position": [
+          0,
+          0,
+          2
+        ],
+        "yaw": 90
+      },
+      {
+        "module": "pier_4m",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "yaw": 0
+      }
+    ],
+    "walk_probe": {
+      "height_m": 1.8,
+      "radius_m": 0.35,
+      "center_x_lanes": [
+        -0.75,
+        0,
+        0.75
+      ],
+      "feet_y": 0,
+      "start_z": -1.5,
+      "end_z": 1.5,
+      "minimum_side_clearance_m": 0.1,
+      "minimum_head_clearance_m": 0.2
+    }
+  }
+}

@@ -76,7 +76,8 @@ Foundation acceptance:
 - [x] Validate the approved Blender→GLB→Godot static export contract with a minimal one-meter fixture: scale/Y-up, transforms, pivot, normals, UV, material and separate script-free wrapper. See `EXPORT_SAMPLE.md`; production art/performance acceptance remains separate.
 - [x] Restore authenticated Xvfb TCP / Godot X11 / Vulkan Forward+ graphical preflight, with pinned local packages and repeatable runner. Engine and six-specimen material capability tests PASS; see `MATERIAL_PREFLIGHT.md` and 2026-09-23 evidence. The previous AF_UNIX-based environment blocker was an incorrect inference from a TCP-disabled invocation.
 - [x] Create compact shared material library baseline: six shared resources, eleven original 1K maps, neutral/warm/cool graphical review and 4x4 tiling PASS. See `MATERIAL_LIBRARY.md`, `MATERIAL_PREFLIGHT.md` and 2026-10-02 evidence. Full MAT inventory variants/quality tiers and representative target-hardware acceptance remain open.
-- [ ] Produce one modular Archive kit sample.
+- [x] Define the modular Archive sample brief and assembly contract: five module types, grid/pivots, passage/collision/UV rules, file ownership and acceptance sequence. See `MODULAR_ARCHIVE_KIT.md`, the versioned JSON and dimensioned drawing. Analytical compatibility is checked; no mesh/physics/art acceptance is implied.
+- [ ] Produce one modular Archive kit sample using `MODULAR_ARCHIVE_KIT.md`; author the five meshes, wrappers and isolated assembly, then execute its actual import/collision/visual/LFS gates.
 - [ ] Produce one Wing I hero mechanism sample with gameplay pivots.
 - [ ] Import samples in Godot and validate scale, orientation, pivots, materials, collision and warnings.
 - [ ] Run representative performance check before mass asset production.
@@ -121,6 +122,7 @@ main
     ├── feature/03-art-foundation/pipeline-spec
     ├── feature/03-art-foundation/blender-export
     ├── feature/03-art-foundation/material-library
+    ├── feature/03-art-foundation/modular-kit-contract
     ├── feature/03-art-foundation/modular-archive-kit
     └── feature/03-art-foundation/import-validation
 ```
@@ -184,3 +186,27 @@ validated feature. Graphical engine startup/eight-autoload/safe-exit smoke passe
 again on that epic; actual output: `evidence/material_epic_smoke_2026-10-02.log`.
 This stable slice follows the normal epic-to-main PR route; Git merge history
 records the final integration SHA.
+
+## Modular contract checkpoint — 2026-10-02
+
+Feature: `feature/03-art-foundation/modular-kit-contract`, from synchronized
+main/Art Foundation `1a7171cb756cfc0e208312ebbf9257af634a898a`.
+The existing kit, architectural sheet and hub reference were retrieved at that
+commit, hash-verified and inspected. The sample now has a concrete five-module
+brief, machine-readable dimensions/placements and a dimensioned front/plan view.
+Analytical checks cover straight/corner joins at four rotations, 4 m to 2+2 m
+substitution, support on the floor and a three-lane clearance envelope.
+
+This completes the architecture/brief step. It does not complete sample modeling,
+runtime physics, visual art acceptance, payload transfer or representative GPU
+profiling. Next executable work is the bounded five-part sample in
+`feature/03-art-foundation/modular-archive-kit`, following the acceptance sequence
+in `MODULAR_ARCHIVE_KIT.md`. The same contract supplies its dimensions and paths;
+do not redesign the grid or repeat solved environment investigations from zero.
+
+Contract merged through PR #21 into Art Foundation at
+`e1f0e0e19d2f0dde91192296a7ffa02539e43119`. The merged tree exactly matched the
+validated feature. Authenticated X11 TCP / Vulkan Forward+ engine startup,
+eight-autoload and safe-exit smoke passed on the merged epic; actual output:
+`evidence/modular_contract_epic_smoke_2026-10-02.log`. The contract follows the
+normal epic-to-main integration route; Git merge history records its final SHA.
