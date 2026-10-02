@@ -1,0 +1,7 @@
+$ python: enumerate /dev/dri/renderD*, /dev/nvidia[0-9]* and /usr/share/vulkan/icd.d/*.json
+{
+  "dri_render_devices": [],
+  "nvidia_devices": [],
+  "system_vulkan_icd_files": []
+}
+Runtime baseline is pinned lavapipe; actual graphical output reports llvmpipe CPU Vulkan. Target physical GTX1060-class profiling unavailable; software timings cannot certify 1080p60/VRAM budget. This blocks target-hardware acceptance only. No production world exists to profile.

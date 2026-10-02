@@ -62,7 +62,9 @@ for name, url, expected, folder, binary in packages:
                     raise RuntimeError('Unsafe archive member')
             package.extractall(destination)
     else:
-        with tarfile.open(archive, mode='r|*') as package:
+        # Archives are local and checksum-verified. Seekable access also avoids
+        # prematurely exhausted member streams observed in this runtime.
+        with tarfile.open(archive, mode='r:*') as package:
             for member in package:
                 safe = tarfile.data_filter(member, str(destination))
                 if not safe.isfile():
@@ -72,7 +74,15 @@ for name, url, expected, folder, binary in packages:
                 target.parent.mkdir(parents=True, exist_ok=True)
                 temporary = target.with_name(target.name + '.install-part')
                 with package.extractfile(member) as source, temporary.open('wb') as output:
-                    shutil.copyfileobj(source, output)
+                    # This managed filesystem can return a short write. Consume
+                    # the whole block before requesting the next archive block.
+                    while block := source.read(1024 * 1024):
+                        pending = memoryview(block)
+                        while pending:
+                            written = output.write(pending)
+                            if not written:
+                                raise RuntimeError(f'No extraction progress: {member.name}')
+                            pending = pending[written:]
                     output.flush()
                     os.fsync(output.fileno())
                 if temporary.stat().st_size != member.size:
