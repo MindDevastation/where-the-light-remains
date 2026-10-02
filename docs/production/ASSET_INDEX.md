@@ -107,3 +107,12 @@ the production sheet is a visual reference, not a texture source.
 All six are available for sample asset integration. Representative scene and
 target-hardware acceptance remain open; these statuses do not promote the full
 MAT inventory to final shipping acceptance.
+
+## Modular sample design contract — 2026-10-02
+
+`MODULAR_ARCHIVE_KIT.md` and `modular_archive_kit_v1.json` define the next bounded
+sample: ARCH-004 walls (2/4 m), ARCH-005 arch, ARCH-006 floor and ARCH-009 pier.
+They identify the canonical image blobs, planned source/runtime paths, shared
+materials, snapping/collision rules and pending acceptance gates. The dimensioned
+drawing is a design artifact. These planned meshes are not yet runtime assets;
+the four ARCH inventory rows remain unaccepted.

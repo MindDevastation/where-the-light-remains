@@ -83,12 +83,13 @@ def render(contract, output):
     text(64,53,'АРХИВ · КОНТРАКТ МОДУЛЬНОГО ОБРАЗЦА v1',30)
     text(64,87,'Размерная схема. Меши, физика и художественная приемка еще не выполнены.',17,'#666b72')
     text(64,142,'ФАСАД · ширина конструктивного ряда 12 м',20)
-    fx=lambda x:640+x*75
+    front_scale=65
+    fx=lambda x:640+x*front_scale
     fy=lambda y:470-y*65
     for p in walls:
         m=modules[p['module']]; x=p['position'][0]
         if p['module']!='arch_4m':
-            rect(fx(x+m['bounds_min'][0]),fy(4),m['bounds_max'][0]*150,260,'#d9d1c3')
+            rect(fx(x+m['bounds_min'][0]),fy(4),(m['bounds_max'][0]-m['bounds_min'][0])*front_scale,260,'#d9d1c3')
         else:
             points=[(-a,0)]+profile+[(a,0)]
             outer=f'M {fx(-2)} {fy(0)} L {fx(2)} {fy(0)} L {fx(2)} {fy(4)} L {fx(-2)} {fy(4)} Z '
@@ -96,16 +97,16 @@ def render(contract, output):
             svg.append(f'<path d="{outer+hole}" fill="#d9d1c3" fill-rule="evenodd" stroke="#59616a"/>')
             svg.append('<polyline points="'+' '.join(f'{fx(px):.3f},{fy(py):.3f}' for px,py in profile)+'" fill="none" stroke="#a07a3b" stroke-width="4"/>')
     for x,_,_ in piers:
-        rect(fx(x-.23),fy(4),.46*75,4*65,'#c8beac')
-        rect(fx(x-.3),fy(4.12),.6*75,.12*65,'#a78e62')
-        rect(fx(x-.3),fy(.25),.6*75,.25*65,'#b8aa90')
-    rect(fx(xmin),fy(0), (xmax-xmin)*75,13,'#c7cccf')
+        rect(fx(x-.23),fy(4),.46*front_scale,4*65,'#c8beac')
+        rect(fx(x-.3),fy(4.12),.6*front_scale,.12*65,'#a78e62')
+        rect(fx(x-.3),fy(.25),.6*front_scale,.25*65,'#b8aa90')
+    rect(fx(xmin),fy(0), (xmax-xmin)*front_scale,13,'#c7cccf')
     # Dimension guides and a deliberately schematic capsule scale marker.
     line(fx(-6),175,fx(6),175,arrows=True);text(640,166,'12,00 м',17,anchor='middle')
     line(fx(-a),495,fx(a),495,arrows=True);text(640,511,'2,40 м',17,anchor='middle')
-    line(1130,fy(0),1130,fy(4.12),arrows=True);text(1143,330,'4,12 м',16)
+    line(1068,fy(0),1068,fy(4.12),arrows=True);text(1082,330,'4,12 м',16)
     line(fx(xmin),516,fx(xmax),516,arrows=True);text(640,541,'Площадка 14,00 м · крайние опоры полностью на полу',17,anchor='middle')
-    rect(fx(-.35),fy(1.8),.7*75,1.8*65,'#accad2','#417788')
+    rect(fx(-.35),fy(1.8),.7*front_scale,1.8*65,'#accad2','#417788')
     text(640,fy(1.8)-12,'1,80 м',15,anchor='middle')
     text(64,594,'ПЛАН · -Z сверху · клетки 1 × 1 м',20)
     px=lambda x:405+x*48

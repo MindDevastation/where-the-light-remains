@@ -73,6 +73,16 @@ ceiling on every part. Exceeding one requires reviewing the cause before export.
 [Machine-readable contract](modular_archive_kit_v1.json) contains exact bounds,
 anchors, the arch profile and sample placements. [Dimensioned drawing](evidence/modular_kit_contract_2026-10-02.svg)
 is an engineering diagram of this contract, not a screenshot of finished art.
+Its source renderer is `tools/render_modular_kit_contract.py` (Python standard
+library). Reproduce the SVG and analytical checks with:
+
+```sh
+python tools/render_modular_kit_contract.py --output /absolute/path/to/kit-contract.svg
+```
+
+The checked-in PNG is a visual review copy rendered with CairoSVG 2.8.2; it is
+not required by the game. Actual design-check output and artifact hashes are in
+`evidence/modular_kit_contract_2026-10-02.log`.
 
 - Godot: +Y up, -Z primary front, +X horizontal wall span. Blender: +Z up,
   +Y primary front. Use the already verified glTF Y-up conversion once.
