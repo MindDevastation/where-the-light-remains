@@ -237,10 +237,10 @@
   "sample": {
     "purpose": "isolated art/assembly/collision fixture, not ArchiveMain layout",
     "floor_grid": {
-      "count_x": 12,
+      "count_x": 14,
       "count_z": 4,
       "first_center": [
-        -5.5,
+        -6.5,
         0,
         -1.5
       ],

@@ -159,16 +159,16 @@ store and validate retrieved files before integration, following `LFS_POLICY.md`
 
 ## Assembly and acceptance sequence
 
-The first assembly is a **12 × 4 m open review pad**, with 48 one-meter slabs.
+The first assembly is a **14 × 4 m open review pad**, with 56 one-meter slabs.
 At Z=0 place 4 m wall / arch / 4 m wall, centered at X=-4/0/+4. Four piers sit at
-X=-6/-2/+2/+6. This is 55 module instances and tests reuse and passage across the
-same floor level. It is not a proposed hub room, corridor or level route.
+X=-6/-2/+2/+6. This is 63 module instances and tests reuse and passage across the
+same floor level. The pad extends beyond the 12 m structural span so the outer piers remain fully supported. It is not a proposed hub room, corridor or level route.
 
 Also test replacement of the left wall with two 2 m pieces and a separate
 right-angle junction. Repeat anchor checks after 90/180/270-degree rotation.
-The maximum triangle sum from the ceilings is 22,544 for the primary pad and
-23,144 after the wall substitution. This arithmetic is not measured mesh data.
-There are at most 60 authored material surfaces in the primary assembly before
+The maximum triangle sum from the ceilings is 23,568 for the primary pad and
+24,168 after the wall substitution. This arithmetic is not measured mesh data.
+There are at most 68 authored material surfaces in the primary assembly before
 renderer culling/batching/shadow passes; actual draw calls must be captured.
 
 Production order and gates:
