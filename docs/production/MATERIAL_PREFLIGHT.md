@@ -1,12 +1,13 @@
 # Material library preflight
 
-Status: **PASS — graphical environment and material capability preflight** (2026-09-23).
+Status: **PASS — graphical environment and authored six-family baseline** (2026-10-02).
 
 Recovery feature: `feature/03-art-foundation/graphics-preflight`.
-Next production feature: `feature/03-art-foundation/material-library`.
-The six shared production material families remain unimplemented/unaccepted.
-This preflight uses isolated procedural test specimens under `game/tests/`;
-it does not introduce production materials, textures or a global shader strategy.
+Production feature: `feature/03-art-foundation/material-library`.
+The original 2026-09-23 preflight below used isolated procedural test specimens
+under `game/tests/`. The authored shared baseline is now implemented and checked
+separately; see the 2026-10-02 result at the end and [MATERIAL_LIBRARY.md](MATERIAL_LIBRARY.md).
+Full inventory and target-hardware acceptance remain pending.
 
 ## Corrected diagnosis
 
@@ -34,6 +35,8 @@ Known nonfatal Xvfb interface-enumeration and unused multimedia-keysym warnings
 match the earlier successful engine preflight.
 
 ## Actual validation
+
+Historical capability results, 2026-09-23:
 
 | Check | Result |
 |---|---|
@@ -87,3 +90,46 @@ The renderer is CPU software Vulkan. GTX 1060-class 1080p/60 FPS profiling remai
 a separate gate. Routine material work can now proceed with the existing approved
 six-family scope; cross-stage architecture/global shader decisions retain their
 own workflow requirements.
+
+## Authored library validation — 2026-10-02
+
+Source revision: `e304796` (full SHA in the evidence). Restored the missing
+Godot/xkbcomp links with the existing local toolchain and installer, then reran
+the authenticated TCP capability smoke before material tests. Godot 4.7.2,
+X11/Vulkan/Forward+ and the llvmpipe runtime match the proven baseline.
+
+| Check | Actual result |
+|---|---|
+| GitHub identity, origin read/write permission, Git fetch/push | PASS; MindDevastation, feature branch pushed |
+| Authenticated origin LFS read | PASS; batch HTTP 200, remote 1992-byte GLB payload and expected SHA-256 |
+| Dependencies / disk / branch base | PASS; local toolchain restored, ~30 GiB free, feature based on synchronized epic/main `2819831` |
+| Map regeneration and integrity | PASS; eleven PNGs plus manifest reproduced byte-for-byte; 6,853,964 source PNG bytes |
+| Editor import and script parse | PASS; exit 0, no script/resource errors |
+| Minimal graphical engine smoke | PASS; X11 authorization, Vulkan/Forward+, GameRoot, eight autoloads, safe exit |
+| Authored material review | PASS; six shared runtime resources in neutral/warm/cool light, 1920x1080 screenshots |
+| Framebuffer contribution | PASS; mean RGB delta 0.101–0.799 across the three six-family views, threshold 0.015 |
+| Tiling review | PASS; three opaque families repeat 4x4 without visible boundary discontinuities; generator also checks wrap-edge metrics |
+| Cyrillic / visual inspection | PASS; all four final screenshots inspected, labels legible, material families distinct |
+
+Visual review found and corrected compression banding/hard patina patches on
+brass before acceptance. The final images show pale textured stone, smoothly
+aged metal, polished dark grain, blurred/distorted backing through frosted glass,
+clearer blue crystal refraction and warm emissive glow. Initial parse errors and
+incomplete scratch PNG regeneration were fixed and retested; the final log
+records the successful source revision and screenshot hashes.
+
+Evidence: [commands/stdout/stderr](evidence/material_library_2026-10-02.log),
+[neutral](evidence/material_library_neutral_2026-10-02.png),
+[warm](evidence/material_library_warm_2026-10-02.png),
+[cool](evidence/material_library_cool_2026-10-02.png),
+[4x4 tiles](evidence/material_library_tiles_2026-10-02.png).
+
+The six-family preview reports 24 draw calls and 127,269,760 texture bytes;
+the tile view reports 5 and 118,975,360 respectively. These are total preview
+counters including the environment/framebuffer, not incremental material costs
+or target-hardware profiling. No new LFS payload/history migration was needed.
+
+Accepted scope is the reusable baseline for sample asset integration. Stone
+variants, memory text/imprints, crystal quality tiers, gameplay emission feedback,
+transparent-surface overlap on real meshes and representative GTX 1060-class
+1080p/60 Medium profiling remain open. No shipping-wide performance PASS is claimed.

@@ -1,0 +1,84 @@
+{
+  "resolution": 1024,
+  "source": "tools/generate_material_maps.py",
+  "provenance": "Original analytic/seeded periodic maps; no third-party pixels.",
+  "maps": [
+    {
+      "file": "t_observatory_stone_albedo.png",
+      "sha256": "70cdce0111813bb7d8a5cb3b19def99ee9723e5ee96fc1c27139d450159be861",
+      "bytes": 817383,
+      "wrap_mean_8bit": 0.9595,
+      "adjacent_mean_8bit": 0.8724
+    },
+    {
+      "file": "t_observatory_stone_normal.png",
+      "sha256": "af0b93b7295d1ed3f8409345beaa84135236f76b35fd7e7f8f7cb8b3c774bc52",
+      "bytes": 1460331,
+      "wrap_mean_8bit": 2.9699,
+      "adjacent_mean_8bit": 2.8794
+    },
+    {
+      "file": "t_observatory_stone_orm.png",
+      "sha256": "c37020fe7daea97898afef9ee6322962d77df15bc1430d4a2195118eecb1332b",
+      "bytes": 533317,
+      "wrap_mean_8bit": 0.6156,
+      "adjacent_mean_8bit": 0.6199
+    },
+    {
+      "file": "t_aged_brass_albedo.png",
+      "sha256": "8fdc78c94d5cb6350661d786f2b3471d3091531694e0776e3058862b800176ab",
+      "bytes": 685413,
+      "wrap_mean_8bit": 0.8571,
+      "adjacent_mean_8bit": 0.8361
+    },
+    {
+      "file": "t_aged_brass_normal.png",
+      "sha256": "c3987c56a5e546529133e8976cb2816433eea40e495710b53a54c7d904f98f7e",
+      "bytes": 421444,
+      "wrap_mean_8bit": 0.3766,
+      "adjacent_mean_8bit": 0.3734
+    },
+    {
+      "file": "t_aged_brass_orm.png",
+      "sha256": "ee05d9944768534663438d6520b638b6a28b79b1eff1f25872bb540452d92ed4",
+      "bytes": 490826,
+      "wrap_mean_8bit": 0.4904,
+      "adjacent_mean_8bit": 0.4578
+    },
+    {
+      "file": "t_dark_walnut_albedo.png",
+      "sha256": "0d8d0eef4fb173a8a996e7dfd6a6448dff36587a841581ba25b08c6ebb50f988",
+      "bytes": 544732,
+      "wrap_mean_8bit": 0.8748,
+      "adjacent_mean_8bit": 0.8661
+    },
+    {
+      "file": "t_dark_walnut_normal.png",
+      "sha256": "12c281e5cf923369028d478ce8b72691bb8874e3b17e529b9fa7c7f2106c1600",
+      "bytes": 361402,
+      "wrap_mean_8bit": 0.3275,
+      "adjacent_mean_8bit": 0.3401
+    },
+    {
+      "file": "t_dark_walnut_orm.png",
+      "sha256": "b26872206568f117e9cc4a7029fe8007c1c346d17c144a3a59cc2467bcbc8f48",
+      "bytes": 186816,
+      "wrap_mean_8bit": 0.1772,
+      "adjacent_mean_8bit": 0.1432
+    },
+    {
+      "file": "t_memory_glass_normal.png",
+      "sha256": "8e3f0bb8350f50bf07d09deb262f838896a5cc218ecf3232192fbf6e429b0a20",
+      "bytes": 821679,
+      "wrap_mean_8bit": 0.7715,
+      "adjacent_mean_8bit": 0.7711
+    },
+    {
+      "file": "t_memory_glass_roughness.png",
+      "sha256": "c5b9f2ea905b3d268cc4b735fcb741ca03221af13fea33a5ed0930b58a052be3",
+      "bytes": 530621,
+      "wrap_mean_8bit": 1.8706,
+      "adjacent_mean_8bit": 1.8516
+    }
+  ]
+}

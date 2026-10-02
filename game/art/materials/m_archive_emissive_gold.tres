@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "archive_emissive_gold"
+albedo_color = Color(0.55, 0.28, 0.065, 1)
+roughness = 0.4
+emission_enabled = true
+emission = Color(1, 0.48, 0.12, 1)
+emission_energy_multiplier = 1.5
