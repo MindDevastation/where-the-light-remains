@@ -1,0 +1,2709 @@
+{
+  "source_revision": "cabe792717828dfe54009219a7f6cc4e0fb5e5e6",
+  "legacy_revision": "75f3a04b24fb0b350090d4f9cb49949b0c037b31",
+  "inspected_pack_images": 167,
+  "v2_filename_slots": 45,
+  "v2_filename_images": 134,
+  "nonstandard_zone_sets": [
+    {
+      "slot": "s04_first_meeting/zone_environment",
+      "angles": {
+        "a": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_a.png",
+        "b": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_b.png",
+        "c": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_c.png"
+      },
+      "stage": "s04_first_meeting",
+      "notes": "Environment shell support; S04 two-rune/no-combat contract and S06 stealth/cover/boss/chase/hazard/rescue contract outrank image. Scene is not implemented."
+    },
+    {
+      "slot": "s06_egg/zone_environment",
+      "angles": {
+        "a": "assets/concept_art/memories/s06_egg/zone_environment_a.png",
+        "b": "assets/concept_art/memories/s06_egg/zone_environment_b.png",
+        "c": "assets/concept_art/memories/s06_egg/zone_environment_c.png"
+      },
+      "stage": "s06_egg",
+      "notes": "Environment shell support; S04 two-rune/no-combat contract and S06 stealth/cover/boss/chase/hazard/rescue contract outrank image. Scene is not implemented."
+    }
+  ],
+  "slots": [
+    {
+      "slot": "assets/concept_art/environments/s00_prologue/p_001",
+      "old": "assets/concept_art/environments/s00_prologue/p_001.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_c.png"
+      },
+      "stage": "S00/S15",
+      "inventory": "ARCH-001/002/017/018",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Heavy timber/iron approach and cobalt sky replace ivy/ivory language. Reduce warm practical count in dormant S00; same shell/door must return at S15."
+    },
+    {
+      "slot": "assets/concept_art/environments/s00_prologue/p_002",
+      "old": "assets/concept_art/environments/s00_prologue/p_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_c.png"
+      },
+      "stage": "S00/S15",
+      "inventory": "ARCH-001/002/017/018",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Use as alternate view of the S00 shell, not a second building. Decorative towers/bridge changes between images are not extra playable routes."
+    },
+    {
+      "slot": "assets/concept_art/environments/s00_prologue/p_003",
+      "old": "assets/concept_art/environments/s00_prologue/p_003.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_c.png"
+      },
+      "stage": "S00/S15",
+      "inventory": "ARCH-001/002/017/018",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Crimson runner and timber entrance hierarchy; keep approach calm and clear, replace literal faction marks with original project motifs."
+    },
+    {
+      "slot": "assets/concept_art/environments/s00_prologue/p_004",
+      "old": "assets/concept_art/environments/s00_prologue/p_004.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_c.png"
+      },
+      "stage": "S00/S15",
+      "inventory": "ARCH-001/002/017/018",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Readable portal/step silhouette. Exact stair/route geometry follows level design, not perspective estimates."
+    },
+    {
+      "slot": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004",
+      "old": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "inventory": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Primary functional hub reference: clear central orrery, front console and perimeter workspaces. Preserve lens/socket, five gates and channels."
+    },
+    {
+      "slot": "assets/concept_art/environments/s01_observatory/Key art/ca_002",
+      "old": "assets/concept_art/environments/s01_observatory/Key art/ca_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "inventory": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Hero hub establishing reference: cobalt dome, brass core, shelves/timber. Reuse one rotunda through S10–15; no new topology per image."
+    },
+    {
+      "slot": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002",
+      "old": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_c.png"
+      },
+      "stage": "S02",
+      "inventory": "S02 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Strong amber/blue material language, but generic orrery is not the canonical optical puzzle. Preserve three rings, emitter/star, five-position focus, Hearth."
+    },
+    {
+      "slot": "assets/concept_art/environments/s02_wing_light/Key art/wi_001",
+      "old": "assets/concept_art/environments/s02_wing_light/Key art/wi_001.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_c.png"
+      },
+      "stage": "S02",
+      "inventory": "S02 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "A/B/C form one warm/cool optical-room design. additional 2/3/4 are exact copies. Do not adopt generic orbiting planets as puzzle states."
+    },
+    {
+      "slot": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002",
+      "old": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_c.png"
+      },
+      "stage": "S03",
+      "inventory": "S03 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Horn/chimes suggest resonance; retain visible short/medium/long waveform, three resonators and impulse rings. No sound-only clue."
+    },
+    {
+      "slot": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001",
+      "old": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_c.png"
+      },
+      "stage": "S03",
+      "inventory": "S03 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Quiet resonance staging and brass/timber. Generic central sphere is atmosphere, not a replacement for waveform/sprout logic."
+    },
+    {
+      "slot": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002",
+      "old": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_c.png"
+      },
+      "stage": "S05",
+      "inventory": "S05 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Airy timber galleries. Keep one readable ground route; avoid obligatory stairs/platform gaps or spatial-memory tasks."
+    },
+    {
+      "slot": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001",
+      "old": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_c.png"
+      },
+      "stage": "S05",
+      "inventory": "S05 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Mobile/orbit language and crimson drapes; preserve three discrete counterweights, brake/stoppers, Feather/Bell rather than generic orrery controls."
+    },
+    {
+      "slot": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002",
+      "old": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_c.png"
+      },
+      "stage": "S07",
+      "inventory": "S07 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Water/reflection is mood only; no new pool or mirror-alignment mechanic. Four symbol discs, shutter and two moons remain."
+    },
+    {
+      "slot": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001",
+      "old": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_c.png"
+      },
+      "stage": "S07",
+      "inventory": "S07 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Calm blue field and two optical plates; reduce glare/lantern noise. Memory-glass imprints must remain readable without SSR."
+    },
+    {
+      "slot": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002",
+      "old": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_c.png"
+      },
+      "stage": "S08",
+      "inventory": "S08 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "S08 is a workroom, not generic globe puzzle. Keep four observers, eight stars/lines, three filters, frosted screen and Future Record."
+    },
+    {
+      "slot": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001",
+      "old": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_c.png"
+      },
+      "stage": "S08",
+      "inventory": "S08 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Readable crystal/constellation work area. Keep peripheral props away from controls, and spectacle below finale."
+    },
+    {
+      "slot": "assets/concept_art/environments/s10_return/Gameplay view/r_002",
+      "old": "assets/concept_art/environments/s10_return/Gameplay view/r_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "inventory": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Restored hub uses S01 shell. Ten free/found sigils and converging channels; do not build a differently proportioned room."
+    },
+    {
+      "slot": "assets/concept_art/environments/s10_return/Key art/r_001",
+      "old": "assets/concept_art/environments/s10_return/Key art/r_001.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "inventory": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Restoration is light/state, not extra geometry or new narrative. Lower decorative VFX if readability suffers."
+    },
+    {
+      "slot": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002",
+      "old": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_c.png"
+      },
+      "stage": "S11",
+      "inventory": "S11 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Circular table mood. Exactly five paired nodes and ten sockets; no early letters or assumed socket count from illustration."
+    },
+    {
+      "slot": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001",
+      "old": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_c.png"
+      },
+      "stage": "S11",
+      "inventory": "S11 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "A/B/C geometry differences are perspective/reference drift, not three designs. Preserve pair/swap/save contracts."
+    },
+    {
+      "slot": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal",
+      "old": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_c.png"
+      },
+      "stage": "S13",
+      "inventory": "S13 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Framed dark glass cards are a substrate only. Canonical ten Cyrillic initials appear only at S13; generic stars do not replace letters."
+    },
+    {
+      "slot": "assets/concept_art/environments/s12_s15_finale/Confession",
+      "old": "assets/concept_art/environments/s12_s15_finale/Confession.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_c.png"
+      },
+      "stage": "S14",
+      "inventory": "S14 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Quiet personal study supports tone. Show canonical confession in Archive with silence; no new book text or response mechanic."
+    },
+    {
+      "slot": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue",
+      "old": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_c.png"
+      },
+      "stage": "S15",
+      "inventory": "S15 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Same S00 entrance/exterior at dawn; no new terrace/city identity required. No heroine reaction or new romantic copy."
+    },
+    {
+      "slot": "assets/concept_art/environments/s12_s15_finale/Poem assembly",
+      "old": "assets/concept_art/environments/s12_s15_finale/Poem assembly.png",
+      "angles": {
+        "a": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_c.png"
+      },
+      "stage": "S12",
+      "inventory": "S12 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Floating parchment supports warm material language, not illegible decorative text. Ten couplets merge into readable calm layout without timer."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/Egg",
+      "old": "assets/concept_art/hero_props/Egg.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/Egg_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Egg_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Egg_v2_angle_c.png"
+      },
+      "stage": "S06",
+      "inventory": "S06 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Egg remains detachable/held prop; stone/metal cradle stays in world. Do not carry pedestal or replace pickup/chase/rescue with rotating-display puzzle."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/Final table-puzzle board",
+      "old": "assets/concept_art/hero_props/Final table-puzzle board.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_c.png"
+      },
+      "stage": "S11",
+      "inventory": "S11 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Square timber/stone board supports surface craft only. Final assembly stays integrated with central mechanism, five pairs/ten sockets; unfolding geometry requires its own brief."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/Future Record-symbolic future object",
+      "old": "assets/concept_art/hero_props/Future Record-symbolic future object.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_c.png"
+      },
+      "stage": "S08",
+      "inventory": "S08 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Glass/brass record silhouette supports presentation only. Canonical label is «Не создана»; no promise, mutual meeting, or generic constellation substitute."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/Generic modular observatory kit",
+      "old": "assets/concept_art/hero_props/Generic modular observatory kit.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_c.png"
+      },
+      "stage": "S01–09",
+      "inventory": "ARCH-004/005/006/009 sample; full ARCH kit",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "BRIEF_ONLY",
+      "required_action": "MODIFY (brief only)",
+      "severity": "ARCHITECTURE_REWORK",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Composite sheet includes sigils and kit: only lower architecture panels drive modules. Thick timber/stone, metal brackets, stepped supports; maintain existing metric interfaces."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/Sheet of all sigils",
+      "old": "assets/concept_art/hero_props/Sheet of all sigils.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_c.png"
+      },
+      "stage": "S02–14",
+      "inventory": "SIG-001–010",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M02/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "These images depict generic celestial tokens, not the ten named canonical sigils. Use rim/engraving language only; original project glyph identity remains authoritative."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/Sigil close-up style test",
+      "old": "assets/concept_art/hero_props/Sigil close-up style test.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_c.png"
+      },
+      "stage": "S02–14",
+      "inventory": "SIG-001–010",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M02/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Close-up craft/layering only. Do not promote literal faction emblem or arbitrary token into gameplay glyph."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/The Archive’s Central Mechanism",
+      "old": "assets/concept_art/hero_props/The Archive’s Central Mechanism.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_c.png"
+      },
+      "stage": "S01",
+      "inventory": "S01 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Heavy dark supports, brass rings, side console and warm core. Preserve lens and asleep/awakened/final states; no fixed orbit count inferred from perspective."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device",
+      "old": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_c.png"
+      },
+      "stage": "S05",
+      "inventory": "S05 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Suspended stars/brass mechanics support kinetic craft. Separate three counterweights/brake/stoppers and Feather/Bell rewards remain mandatory."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/The ‘Life-Voice’ device",
+      "old": "assets/concept_art/hero_props/The ‘Life-Voice’ device.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_c.png"
+      },
+      "stage": "S03",
+      "inventory": "S03 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Blue crystal ring silhouette lacks waveform/resonator specification. Reuse housing craft only; canonical visual pulse/sprout presentation remains."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/The ‘Serious-Smile’ device",
+      "old": "assets/concept_art/hero_props/The ‘Serious-Smile’ device.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_c.png"
+      },
+      "stage": "S07",
+      "inventory": "S07 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Moon/sun discs support shape but do not remove four symbol discs, frosted glass/shutter or discrete Double Moon orientations."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism",
+      "old": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_c.png"
+      },
+      "stage": "S08",
+      "inventory": "S08 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Crystal frame supports material/silhouette, but four viewers/eight stars/three filters/screen must be independent readable components."
+    },
+    {
+      "slot": "assets/concept_art/hero_props/‘Heat-Light’ device",
+      "old": "assets/concept_art/hero_props/‘Heat-Light’ device.png",
+      "angles": {
+        "a": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_c.png"
+      },
+      "stage": "S02",
+      "inventory": "S02 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Warm optical housing. Do not replace the three concentric rings, five focus stops, emitter/star/Hearth sequence with one rotating crystal."
+    },
+    {
+      "slot": "assets/concept_art/production_sheets/Architectural shape language sheet",
+      "old": "assets/concept_art/production_sheets/Architectural shape language sheet.png",
+      "angles": {
+        "a": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_a.png",
+        "b": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_b.png",
+        "c": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_c.png"
+      },
+      "stage": "S01–09",
+      "inventory": "ARCH-004/005/006/009 sample; full ARCH kit",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "BRIEF_ONLY",
+      "required_action": "MODIFY (brief only)",
+      "severity": "ARCHITECTURE_REWORK",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Layered pointed/round arches, square stepped piers, chunky timber brackets and repeated shelves. Keep existing dimensions/pivots/collision; original celestial details only."
+    },
+    {
+      "slot": "assets/concept_art/production_sheets/Lighting guide sheet",
+      "old": "assets/concept_art/production_sheets/Lighting guide sheet.png",
+      "angles": {
+        "a": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_a.png",
+        "b": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_b.png",
+        "c": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_c.png"
+      },
+      "stage": "S00–15",
+      "inventory": "stage lighting; Technical Baseline",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "ISOLATED_REVIEW_ONLY",
+      "required_action": "MODIFY (review rig only)",
+      "severity": "LIGHTING_ONLY",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Cobalt exterior/window fill, amber practicals, restrained gold/teal. Many pictured flames are not many dynamic shadow lights; retain 2–4 guideline."
+    },
+    {
+      "slot": "assets/concept_art/production_sheets/Material sheet",
+      "old": "assets/concept_art/production_sheets/Material sheet.png",
+      "angles": {
+        "a": "assets/concept_art/production_sheets/Material sheet_v2_angle_a.png",
+        "b": "assets/concept_art/production_sheets/Material sheet_v2_angle_b.png",
+        "c": "assets/concept_art/production_sheets/Material sheet_v2_angle_c.png"
+      },
+      "stage": "S00–15",
+      "inventory": "MAT families; owner v2 additions",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "M01/M02/M03/M04/M05/M06",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "SIX_SHARED_MATERIALS",
+      "required_action": "KEEP + REMATERIAL + shared extension",
+      "severity": "MATERIAL_ONLY",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Pale worn warm stone, aged brass, dark iron, carved aged wood, leather, crimson/navy textile, frosted/clear crystal. No literal icons, no copying pixels."
+    },
+    {
+      "slot": "assets/concept_art/ui/A screen featuring a collection of couplets",
+      "old": "assets/concept_art/ui/A screen featuring a collection of couplets.png",
+      "angles": {
+        "a": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_a.png",
+        "b": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_b.png",
+        "c": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_c.png"
+      },
+      "stage": "S11–15",
+      "inventory": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Navy reading panels/brass borders/crimson selection. Exactly ten canonical fragments; never copy placeholders, 12-item counters or early acrostic numbering."
+    },
+    {
+      "slot": "assets/concept_art/ui/Final assembly screen",
+      "old": "assets/concept_art/ui/Final assembly screen.png",
+      "angles": {
+        "a": "assets/concept_art/ui/Final assembly screen_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Final assembly screen_v2_angle_b.png",
+        "c": "assets/concept_art/ui/Final assembly screen_v2_angle_c.png"
+      },
+      "stage": "S11–15",
+      "inventory": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Visual chrome only. Depicted grid/word assembly is not S11 mechanics: five pairs/ten sockets, no early initials, no invented hints or confirmation semantics."
+    },
+    {
+      "slot": "assets/concept_art/ui/Final end screen-epilogue card",
+      "old": "assets/concept_art/ui/Final end screen-epilogue card.png",
+      "angles": {
+        "a": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_b.png",
+        "c": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_c.png"
+      },
+      "stage": "S11–15",
+      "inventory": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Dawn presentation only; pictured prose is not approved narrative copy. No new romantic statement or implied mutual outcome at S15."
+    },
+    {
+      "slot": "assets/concept_art/ui/Main Menu",
+      "old": "assets/concept_art/ui/Main Menu.png",
+      "angles": {
+        "a": "assets/concept_art/ui/Main Menu_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Main Menu_v2_angle_b.png",
+        "c": "assets/concept_art/ui/Main Menu_v2_angle_c.png"
+      },
+      "stage": "global/postgame",
+      "inventory": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Timber study/cobalt background/navy controls. Runtime menu labels Russian; English title is the proper game title. Functional menu remains unbuilt."
+    },
+    {
+      "slot": "assets/concept_art/ui/Pause-Settings",
+      "old": "assets/concept_art/ui/Pause-Settings.png",
+      "angles": {
+        "a": "assets/concept_art/ui/Pause-Settings_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Pause-Settings_v2_angle_b.png",
+        "c": "assets/concept_art/ui/Pause-Settings_v2_angle_c.png"
+      },
+      "stage": "global/postgame",
+      "inventory": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "Readable navy settings panel, crimson tab, brass focus. Existing controls/settings/accessibility contracts outrank pictured sliders and VO labels."
+    },
+    {
+      "slot": "assets/concept_art/ui/Secrets-Achievements screen",
+      "old": "assets/concept_art/ui/Secrets-Achievements screen.png",
+      "angles": {
+        "a": "assets/concept_art/ui/Secrets-Achievements screen_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Secrets-Achievements screen_v2_angle_b.png"
+      },
+      "stage": "global/postgame",
+      "inventory": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_godot_scenes": [],
+      "current_materials": "—",
+      "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
+      "current_visual_status": "NOT_IMPLEMENTED",
+      "required_action": "DEFER",
+      "severity": "NONE",
+      "gameplay_risk": "Preserve canonical stage/controls; see notes",
+      "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
+      "notes": "A/B are inspected; C is absent. Do not invent a third view, achievement names, totals/dates, or casting. Dependent full three-view acceptance remains blocked."
+    }
+  ],
+  "old_to_new": [
+    {
+      "old_path": "assets/concept_art/_secondary/noncanonical_final_pair_scene.png",
+      "old_blob": "509538bc775da6ec49aeb9366987ba61c4d8e883",
+      "retained_at": "assets/concept_art/_secondary/noncanonical_final_pair_scene.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "—",
+      "related_asset_ids": "—",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Explicitly noncanonical ending image; retained historically, never shipping outcome.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/characters/char_a.png",
+      "old_blob": "90c8518cd284913ca46985e44ffce6ca773c9b20",
+      "retained_at": "assets/concept_art/characters/char_a.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "S04/06/09 candidates",
+      "related_asset_ids": "CHAR-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/characters/char_b.png",
+      "old_blob": "ff9e85e7a40263707f91a03248ae53da19b3ac1c",
+      "retained_at": "assets/concept_art/characters/char_b.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "S04/06/09 candidates",
+      "related_asset_ids": "CHAR-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/characters/char_c.png",
+      "old_blob": "6f40945d081cbada99d707f0e1f6267b8d5c8f02",
+      "retained_at": "assets/concept_art/characters/char_c.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "S04/06/09 candidates",
+      "related_asset_ids": "CHAR-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/characters/char_d.png",
+      "old_blob": "51fbda76e7a95fabfe56f3e256f61643bb701561",
+      "retained_at": "assets/concept_art/_legacy/v1/characters/char_d.png",
+      "change": "replaced_upstream_legacy_preserved",
+      "new_angles": {},
+      "stage": "S04/06/09 candidates",
+      "related_asset_ids": "CHAR-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": [
+        "assets/concept_art/characters/char_d.png"
+      ]
+    },
+    {
+      "old_path": "assets/concept_art/characters/pair_character_mood_sheet.png",
+      "old_blob": "daf1670693600e9473e15be43f3eb69dd3e1d766",
+      "retained_at": "assets/concept_art/characters/pair_character_mood_sheet.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "S04/06/09 candidates",
+      "related_asset_ids": "CHAR-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s00_prologue/p_001.png",
+      "old_blob": "ce739009101575173879d63cd2db1a51f153c197",
+      "retained_at": "assets/concept_art/environments/s00_prologue/p_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_c.png"
+      },
+      "stage": "S00/S15",
+      "related_asset_ids": "ARCH-001/002/017/018",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s00_prologue/p_002.png",
+      "old_blob": "15e9e00124c9cfd17ea43b9e29ccf0e2e938187e",
+      "retained_at": "assets/concept_art/environments/s00_prologue/p_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_c.png"
+      },
+      "stage": "S00/S15",
+      "related_asset_ids": "ARCH-001/002/017/018",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s00_prologue/p_003.png",
+      "old_blob": "9b7d1c4c7f08055516b80941bdceda4fe625cf2a",
+      "retained_at": "assets/concept_art/environments/s00_prologue/p_003.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_c.png"
+      },
+      "stage": "S00/S15",
+      "related_asset_ids": "ARCH-001/002/017/018",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s00_prologue/p_004.png",
+      "old_blob": "79aa4ce0a81680fab0feb6e7305729219a3ce1f1",
+      "retained_at": "assets/concept_art/environments/s00_prologue/p_004.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_c.png"
+      },
+      "stage": "S00/S15",
+      "related_asset_ids": "ARCH-001/002/017/018",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_003.png",
+      "old_blob": "9e1bfb71e3fb82b802909e8b673c8ffb6d5142a1",
+      "retained_at": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_003.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "related_asset_ids": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Semantic many-to-one hub consolidation: establishing ca_001→ca_002, gameplay ca_003→ca_004; not a fabricated missing triplet.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004.png",
+      "old_blob": "6f96030e86b8ff3744a31e7c1717892c2dd8dcbe",
+      "retained_at": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "related_asset_ids": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s01_observatory/Key art/ca_001.png",
+      "old_blob": "74aeeb7a1705d23de558acc3b3eb116a8b6c20aa",
+      "retained_at": "assets/concept_art/environments/s01_observatory/Key art/ca_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "related_asset_ids": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Semantic many-to-one hub consolidation: establishing ca_001→ca_002, gameplay ca_003→ca_004; not a fabricated missing triplet.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s01_observatory/Key art/ca_002.png",
+      "old_blob": "4cb3afc9ac30888ae92c0a4e00203d1a1eca05d8",
+      "retained_at": "assets/concept_art/environments/s01_observatory/Key art/ca_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "related_asset_ids": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002.png",
+      "old_blob": "0af5a3288debd28a4942a0b7ba5e6ee27c1a436f",
+      "retained_at": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_c.png"
+      },
+      "stage": "S02",
+      "related_asset_ids": "S02 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001.png",
+      "old_blob": "f6e0bdb4a5c2116301194e75b037e4e52f55e57f",
+      "retained_at": "assets/concept_art/environments/s02_wing_light/Key art/wi_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_c.png"
+      },
+      "stage": "S02",
+      "related_asset_ids": "S02 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002.png",
+      "old_blob": "590a7d6acb33538f6f0dc969c628d6825a12cfda",
+      "retained_at": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_c.png"
+      },
+      "stage": "S03",
+      "related_asset_ids": "S03 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001.png",
+      "old_blob": "b1fcdcdf9ca38e7e8c7c5a4ada7e3a776cf24387",
+      "retained_at": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_c.png"
+      },
+      "stage": "S03",
+      "related_asset_ids": "S03 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002.png",
+      "old_blob": "cce0caa4c4dc9f8f05516eda19d27dfc1c3b59ef",
+      "retained_at": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_c.png"
+      },
+      "stage": "S05",
+      "related_asset_ids": "S05 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001.png",
+      "old_blob": "4905fe328c600cbe7cce83884365b84174b11bf2",
+      "retained_at": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_c.png"
+      },
+      "stage": "S05",
+      "related_asset_ids": "S05 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002.png",
+      "old_blob": "938556f0085ba085b094380e7443be49fef5f90e",
+      "retained_at": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_c.png"
+      },
+      "stage": "S07",
+      "related_asset_ids": "S07 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001.png",
+      "old_blob": "29b22ca51822b87950d58f13222a7b6aa9cbf25d",
+      "retained_at": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_c.png"
+      },
+      "stage": "S07",
+      "related_asset_ids": "S07 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002.png",
+      "old_blob": "24f9a67d5c0c49518f948d2cf6f35162ebcd3f4f",
+      "retained_at": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_c.png"
+      },
+      "stage": "S08",
+      "related_asset_ids": "S08 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001.png",
+      "old_blob": "832331ee1265169b2c3b04555d4bd1f1b28e24aa",
+      "retained_at": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_c.png"
+      },
+      "stage": "S08",
+      "related_asset_ids": "S08 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s10_return/Gameplay view/r_002.png",
+      "old_blob": "a682ec3bd14a1097dcc0087f3e7fb5050b1880d8",
+      "retained_at": "assets/concept_art/environments/s10_return/Gameplay view/r_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "related_asset_ids": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s10_return/Key art/r_001.png",
+      "old_blob": "769d00f29d28acb4ff9e3dabd8972bad02660de5",
+      "retained_at": "assets/concept_art/environments/s10_return/Key art/r_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_c.png"
+      },
+      "stage": "S01/S10–15",
+      "related_asset_ids": "ARCH-003/014/015; PROP-001/002/003",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002.png",
+      "old_blob": "c911e813fe86eda52e0f96fbf9ff8d3f24e39dfd",
+      "retained_at": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_c.png"
+      },
+      "stage": "S11",
+      "related_asset_ids": "S11 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001.png",
+      "old_blob": "953c1e6f37d5370470999b26bd3fca57b26b88d9",
+      "retained_at": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_c.png"
+      },
+      "stage": "S11",
+      "related_asset_ids": "S11 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal.png",
+      "old_blob": "4e2ffb05d2d8f50dda09749d2abbcab1645ad5af",
+      "retained_at": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_c.png"
+      },
+      "stage": "S13",
+      "related_asset_ids": "S13 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s12_s15_finale/Confession.png",
+      "old_blob": "c134a1af506f5301ed17e813e0c24ab7fc0ad391",
+      "retained_at": "assets/concept_art/environments/s12_s15_finale/Confession.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_c.png"
+      },
+      "stage": "S14",
+      "related_asset_ids": "S14 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue.png",
+      "old_blob": "1638cdd44de89992226ccaf3c5b31805408d5bfc",
+      "retained_at": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_c.png"
+      },
+      "stage": "S15",
+      "related_asset_ids": "S15 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/environments/s12_s15_finale/Poem assembly.png",
+      "old_blob": "ef79685f7a790ef239918b1b93d60aec8d21c74b",
+      "retained_at": "assets/concept_art/environments/s12_s15_finale/Poem assembly.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_a.png",
+        "b": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_b.png",
+        "c": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_c.png"
+      },
+      "stage": "S12",
+      "related_asset_ids": "S12 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/Egg.png",
+      "old_blob": "1b052f3288d4bf7115db4dd15cbddbfda9953f15",
+      "retained_at": "assets/concept_art/hero_props/Egg.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/Egg_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Egg_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Egg_v2_angle_c.png"
+      },
+      "stage": "S06",
+      "related_asset_ids": "S06 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/Final table-puzzle board.png",
+      "old_blob": "77c41307fadfb11d820a71e0c09f7cca0a3deda2",
+      "retained_at": "assets/concept_art/hero_props/Final table-puzzle board.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_c.png"
+      },
+      "stage": "S11",
+      "related_asset_ids": "S11 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/Future Record-symbolic future object.png",
+      "old_blob": "a6b39324d8f779efdae2ec14e7937278fb733eda",
+      "retained_at": "assets/concept_art/hero_props/Future Record-symbolic future object.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_c.png"
+      },
+      "stage": "S08",
+      "related_asset_ids": "S08 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/Generic modular observatory kit.png",
+      "old_blob": "b9fd99c2ca63a4f38e198a10d1f3ddd40e3061f3",
+      "retained_at": "assets/concept_art/hero_props/Generic modular observatory kit.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_c.png"
+      },
+      "stage": "S01–09",
+      "related_asset_ids": "ARCH-004/005/006/009 sample; full ARCH kit",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/Sheet of all sigils.png",
+      "old_blob": "6cb2cc4e1597478f6d4444db60835e743d7abe77",
+      "retained_at": "assets/concept_art/hero_props/Sheet of all sigils.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_c.png"
+      },
+      "stage": "S02–14",
+      "related_asset_ids": "SIG-001–010",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/Sigil close-up style test.png",
+      "old_blob": "3ecf7ae0f35189029bda0978f6d1a0c00057f5ea",
+      "retained_at": "assets/concept_art/hero_props/Sigil close-up style test.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_c.png"
+      },
+      "stage": "S02–14",
+      "related_asset_ids": "SIG-001–010",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/The Archive’s Central Mechanism.png",
+      "old_blob": "0fcd0802052abaaff868acc1ea09c90c998688fa",
+      "retained_at": "assets/concept_art/hero_props/The Archive’s Central Mechanism.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_c.png"
+      },
+      "stage": "S01",
+      "related_asset_ids": "S01 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device.png",
+      "old_blob": "725867bd1613d8d08e61c1c38da89271fd657770",
+      "retained_at": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_c.png"
+      },
+      "stage": "S05",
+      "related_asset_ids": "S05 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/The ‘Life-Voice’ device.png",
+      "old_blob": "0c805455c29578d09dab5a9139d00b2e453d8ad0",
+      "retained_at": "assets/concept_art/hero_props/The ‘Life-Voice’ device.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_c.png"
+      },
+      "stage": "S03",
+      "related_asset_ids": "S03 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/The ‘Serious-Smile’ device.png",
+      "old_blob": "61704b83a9d8ce11dd7c3e50620882276eda3a6b",
+      "retained_at": "assets/concept_art/hero_props/The ‘Serious-Smile’ device.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_c.png"
+      },
+      "stage": "S07",
+      "related_asset_ids": "S07 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism.png",
+      "old_blob": "5bcb17207564c0ead78fd0c47cb08dcf00db0502",
+      "retained_at": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_c.png"
+      },
+      "stage": "S08",
+      "related_asset_ids": "S08 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/hero_props/‘Heat-Light’ device.png",
+      "old_blob": "c139124eedfb3181291850b97e6a9c160995ffc9",
+      "retained_at": "assets/concept_art/hero_props/‘Heat-Light’ device.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_a.png",
+        "b": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_b.png",
+        "c": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_c.png"
+      },
+      "stage": "S02",
+      "related_asset_ids": "S02 package; REQUIRED_ASSET_TABLE",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/mi_002.png",
+      "old_blob": "b29bb15c1cb7fd229f67a36cf894efdb86a0d09c",
+      "retained_at": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/mi_002.png",
+      "change": "unchanged_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_a.png",
+        "b": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_b.png",
+        "c": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_c.png"
+      },
+      "stage": "S04",
+      "related_asset_ids": "S04 package; CHAR-001/002",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/memories/s04_first_meeting/Key art/mi_001.png",
+      "old_blob": "ef6671fe534f2cea284d4142d1bf4918e72bae88",
+      "retained_at": "assets/concept_art/memories/s04_first_meeting/Key art/mi_001.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "S04",
+      "related_asset_ids": "S04 package; CHAR-001/002",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/memories/s04_first_meeting/pair_keyframe.png",
+      "old_blob": "46c16b5c0e6da40667ea9372560c3be816ba3567",
+      "retained_at": "assets/concept_art/memories/s04_first_meeting/pair_keyframe.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "S04",
+      "related_asset_ids": "S04 package; CHAR-001/002",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/memories/s06_egg/egg_rescue.png",
+      "old_blob": "960485886f7e5546ce68f4fbd17ec71953acab58",
+      "retained_at": "assets/concept_art/_legacy/v1/memories/s06_egg/egg_rescue.png",
+      "change": "replaced_upstream_legacy_preserved",
+      "new_angles": {},
+      "stage": "S06",
+      "related_asset_ids": "S06 package; CHAR-002/004/005",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only.",
+      "new_single_supporting_references": [
+        "assets/concept_art/memories/s06_egg/egg_rescue.png"
+      ]
+    },
+    {
+      "old_path": "assets/concept_art/memories/s06_egg/egg_theft_v01.png",
+      "old_blob": "e4538c62792ef0c1804b3b88518e4e975c822995",
+      "retained_at": "assets/concept_art/_legacy/v1/memories/s06_egg/egg_theft_v01.png",
+      "change": "replaced_upstream_legacy_preserved",
+      "new_angles": {},
+      "stage": "S06",
+      "related_asset_ids": "S06 package; CHAR-002/004/005",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only.",
+      "new_single_supporting_references": [
+        "assets/concept_art/memories/s06_egg/egg_theft_v01.png"
+      ]
+    },
+    {
+      "old_path": "assets/concept_art/memories/s06_egg/egg_theft_v02.png",
+      "old_blob": "64ad9e12f633e1ee3ccb6af7d4612af7233efb40",
+      "retained_at": "assets/concept_art/memories/s06_egg/egg_theft_v02.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {},
+      "stage": "S06",
+      "related_asset_ids": "S06 package; CHAR-002/004/005",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only.",
+      "new_single_supporting_references": [
+        "assets/concept_art/memories/s06_egg/egg_theft_v01.png"
+      ]
+    },
+    {
+      "old_path": "assets/concept_art/memories/s09_future/Gameplay - memory view/miii_002.png",
+      "old_blob": "049f0f72c781bdaae267a59abca4ffd60dbed2db",
+      "retained_at": "assets/concept_art/memories/s09_future/Gameplay - memory view/miii_002.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "S09",
+      "related_asset_ids": "S09 package",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/memories/s09_future/Key art/miii_001.png",
+      "old_blob": "40f85280b02c15bc9da76de68939c2a0fec4c0f7",
+      "retained_at": "assets/concept_art/memories/s09_future/Key art/miii_001.png",
+      "change": "unchanged_legacy",
+      "new_angles": {},
+      "stage": "S09",
+      "related_asset_ids": "S09 package",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending.",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/memories/s09_future/pair_keyframe.png",
+      "old_blob": "40bf5e7f5f23b61c487fd93ac7721ffadb153e13",
+      "retained_at": "assets/concept_art/_legacy/v1/memories/s09_future/pair_keyframe.png",
+      "change": "replaced_upstream_legacy_preserved",
+      "new_angles": {},
+      "stage": "S09",
+      "related_asset_ids": "S09 package",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending.",
+      "new_single_supporting_references": [
+        "assets/concept_art/memories/s09_future/pair_keyframe.png"
+      ]
+    },
+    {
+      "old_path": "assets/concept_art/production_sheets/Architectural shape language sheet.png",
+      "old_blob": "698918356a29885e727c59fc826ad858b979f916",
+      "retained_at": "assets/concept_art/production_sheets/Architectural shape language sheet.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_a.png",
+        "b": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_b.png",
+        "c": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_c.png"
+      },
+      "stage": "S01–09",
+      "related_asset_ids": "ARCH-004/005/006/009 sample; full ARCH kit",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/production_sheets/Lighting guide sheet.png",
+      "old_blob": "2298197f529e65d44df798788cd658dc339845da",
+      "retained_at": "assets/concept_art/production_sheets/Lighting guide sheet.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_a.png",
+        "b": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_b.png",
+        "c": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_c.png"
+      },
+      "stage": "S00–15",
+      "related_asset_ids": "stage lighting; Technical Baseline",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/production_sheets/Material sheet.png",
+      "old_blob": "9a6ae67867c22527c3981b71b20b0c74e022df7e",
+      "retained_at": "assets/concept_art/production_sheets/Material sheet.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/production_sheets/Material sheet_v2_angle_a.png",
+        "b": "assets/concept_art/production_sheets/Material sheet_v2_angle_b.png",
+        "c": "assets/concept_art/production_sheets/Material sheet_v2_angle_c.png"
+      },
+      "stage": "S00–15",
+      "related_asset_ids": "MAT families; owner v2 additions",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/ui/A screen featuring a collection of couplets.png",
+      "old_blob": "118293ecc53d48b17dc7a72475f4853e8048ff7e",
+      "retained_at": "assets/concept_art/ui/A screen featuring a collection of couplets.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_a.png",
+        "b": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_b.png",
+        "c": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_c.png"
+      },
+      "stage": "S11–15",
+      "related_asset_ids": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/ui/Final assembly screen.png",
+      "old_blob": "8a11bd15dfbce17e8a263e7c1b8d3bd125e47fa2",
+      "retained_at": "assets/concept_art/ui/Final assembly screen.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/ui/Final assembly screen_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Final assembly screen_v2_angle_b.png",
+        "c": "assets/concept_art/ui/Final assembly screen_v2_angle_c.png"
+      },
+      "stage": "S11–15",
+      "related_asset_ids": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/ui/Final end screen-epilogue card.png",
+      "old_blob": "8c3affd15be5ad39f02c3c9dc10b86158199715b",
+      "retained_at": "assets/concept_art/ui/Final end screen-epilogue card.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_b.png",
+        "c": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_c.png"
+      },
+      "stage": "S11–15",
+      "related_asset_ids": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/ui/Main Menu.png",
+      "old_blob": "f84c370b649ac1a7b25f5dd8748728f5a4c39bfc",
+      "retained_at": "assets/concept_art/ui/Main Menu.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/ui/Main Menu_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Main Menu_v2_angle_b.png",
+        "c": "assets/concept_art/ui/Main Menu_v2_angle_c.png"
+      },
+      "stage": "global/postgame",
+      "related_asset_ids": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/ui/Pause-Settings.png",
+      "old_blob": "3f802e355708492223fc532dcb1d4b905b8e0e7b",
+      "retained_at": "assets/concept_art/ui/Pause-Settings.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/ui/Pause-Settings_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Pause-Settings_v2_angle_b.png",
+        "c": "assets/concept_art/ui/Pause-Settings_v2_angle_c.png"
+      },
+      "stage": "global/postgame",
+      "related_asset_ids": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    },
+    {
+      "old_path": "assets/concept_art/ui/Secrets-Achievements screen.png",
+      "old_blob": "9bee7088e31c526881750135b9c08c1ea6b05cb9",
+      "retained_at": "assets/concept_art/ui/Secrets-Achievements screen.png",
+      "change": "deleted_upstream_restored_legacy",
+      "new_angles": {
+        "a": "assets/concept_art/ui/Secrets-Achievements screen_v2_angle_a.png",
+        "b": "assets/concept_art/ui/Secrets-Achievements screen_v2_angle_b.png"
+      },
+      "stage": "global/postgame",
+      "related_asset_ids": "UI-005/006/007",
+      "current_blender": [],
+      "current_glb": [],
+      "current_scenes": [],
+      "current_materials": [
+        "game/art/materials/m_observatory_stone.tres",
+        "game/art/materials/m_aged_brass.tres",
+        "game/art/materials/m_dark_walnut.tres",
+        "game/art/materials/m_memory_glass.tres",
+        "game/art/materials/m_crystal_glass.tres",
+        "game/art/materials/m_archive_emissive_gold.tres"
+      ],
+      "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
+    }
+  ],
+  "preserved_contracts": [
+    {
+      "path": "game/autoload/app.gd",
+      "sha256": "41177f7843d1f7cd1c07a2828edd2f0be03eef8331be5cd62689cc903f067b0d"
+    },
+    {
+      "path": "game/autoload/audio_director.gd",
+      "sha256": "fdbc9df6d5e0c8bba43165278d1718cf856a043286375627531f46c009a10f54"
+    },
+    {
+      "path": "game/autoload/event_bus.gd",
+      "sha256": "2a575ae11ad09672a2d96019b7c8c0c72474eb86b290ede99361f2132335936d"
+    },
+    {
+      "path": "game/autoload/game_state.gd",
+      "sha256": "da5290dad9dfe6f1d39ad73f8c4004fa070cc02a5b6a3e1c9626bf709bb1f4c4"
+    },
+    {
+      "path": "game/autoload/input_manager.gd",
+      "sha256": "0c8728417e4f2118ddcb713a351e05e690b759c9cee0191e56399685953f3745"
+    },
+    {
+      "path": "game/autoload/save_manager.gd",
+      "sha256": "d8a426225f09925dfea04698633744fa82de06a1721a45d2ccedd3134b5acb62"
+    },
+    {
+      "path": "game/autoload/scene_router.gd",
+      "sha256": "8d4d31635b16918bea159470ef1de78243b61adc8e0dd4c00b4de6009552b92b"
+    },
+    {
+      "path": "game/autoload/settings_manager.gd",
+      "sha256": "dd185890070b99d420b4e1a0012862ac43f8f492888adec20f19abfc381f08db"
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "sha256": "02b8d78256448eb3aaf247ce337cc4de13167125f2a89a79ec683029746b1bf7"
+    },
+    {
+      "path": "game/core/debug/debug_snapshot.gd",
+      "sha256": "9387d1a7b483210df15fa79605aa5afc1f653924223bbae7c79e81f0e6458a44"
+    },
+    {
+      "path": "game/core/game_root/game_root.gd",
+      "sha256": "7a88fd643934a4cc25d89a27d845d670de4a63e5393b764c78dc3644d29daaa1"
+    },
+    {
+      "path": "game/core/game_root/game_root.tscn",
+      "sha256": "e131c8044e7d903da3d7443bd8c913f463e9f5b09ea3db2077210963fb2a82d0"
+    },
+    {
+      "path": "game/project.godot",
+      "sha256": "ffaf5dafee34979d3c3c0077aa64ab1455c2c7582ffd35428bdfe9bb0cca3a68"
+    },
+    {
+      "path": "game/tests/fixtures/lfs_export_sample.tscn",
+      "sha256": "79c00e6a06dc98b80562880e2b93caebf7f3d47d8b7651f67eed9765bdac9ef7"
+    }
+  ],
+  "missing_angle_c": null,
+  "review_method": "Every 167 pack PNG inspected in labeled contact sheets; all 62 legacy PNG inspected. Full PNG decode/hash verification; scores are qualitative agent review, not owner art acceptance."
+}

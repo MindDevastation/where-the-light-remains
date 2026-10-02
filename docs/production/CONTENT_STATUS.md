@@ -37,3 +37,29 @@
 ## Implementation status
 
 Implementation is **GO for preflight and vertical-slice work**. Do not treat concept art as gameplay authority; use the canonical design splits/master. First technical milestone remains Hub → Wing I → fragment → save/load → return, then profile on GTX 1060-class hardware.
+
+## Visual rebaseline v2 — 2026-10-02 UTC / 2026-10-03 Moscow
+
+**PARTIAL.** Owner-approved visual direction: Hybrid Warcraft Observatory;
+mechanics/narrative/accessibility/performance authority unchanged. Pack `cabe792`
+contains 45 named v2 slots + two zone A/B/C sets. All 167 incoming PNGs and all
+62 legacy PNGs inspected; exact mappings/hash inventory retained in
+`VISUAL_REBASELINE_V2.md` and its JSON. Legacy references are explicitly superseded.
+
+Existing audit covered six shared materials and one technical .blend/GLB cube
+family: KEEP 6, REMATERIAL 1. The bounded foundation migration is validated:
+wood aged response, six additional shared resources, 12 resources / 20 original
+1K maps in total, updated modular visual references and isolated lighting review.
+Blender/GLB regression, editor import, startup/contracts, deterministic maps and
+four real X11/Vulkan/Forward+ graphical reviews PASS. Evidence:
+`evidence/visual_rebaseline_v2/README.md` and `MATERIAL_PREFLIGHT.md`.
+
+Worlds/puzzles/characters/shipping UI are unimplemented, not assets to rebuild.
+No production scene/light/UI or gameplay/save contract was replaced. This cannot
+certify the full visual game or GTX1060 performance. Missing Secrets-Achievements C and exact
+assignments for six unmatched additional concepts block only dependent work.
+Final avatar/casting, gameplay briefs and target hardware remain open inputs.
+Target hardware is BLOCKER only for physical-GPU certification; the software
+renderer passes the graphical capability/material gate. Next safe roadmap step:
+the bounded five-module Archive sample using the updated v2 brief. Its actual
+mesh/collision/art/LFS gates and representative performance gate still apply.

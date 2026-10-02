@@ -1,0 +1,3 @@
+$ python tools/generate_material_maps.py --output ../toolchain/v2-material-reproduction
+MATERIAL_MAPS PASS: 20 original 1024px periodic maps; 13176703 PNG bytes
+REPRODUCTION PASS: all 20 maps + manifest byte-identical; 13176703 PNG bytes.

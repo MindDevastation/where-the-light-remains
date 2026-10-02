@@ -90,7 +90,26 @@ def main():
     color = np.array([0.24, 0.133, 0.074]) + (0.025 * noise(8, 63) + rings * 0.019)[:, :, None]
     color -= dark_grain[:, :, None] * np.array([0.064, 0.042, 0.024])
     color -= pores[:, :, None] * np.array([0.026, 0.015, 0.009])
-    surface('dark_walnut', color, 0.25 + 0.045 * dark_grain + 0.025 * noise(12, 64), 0.0, 0.00022 * rings - 0.0001 * dark_grain - 0.000035 * pores)
+    # V2 keeps grain/UV/color identity and replaces the polished surface with
+    # aged timber. Carving belongs to mesh/trim, not another material per prop.
+    surface('dark_walnut', color, 0.58 + 0.055 * dark_grain + 0.045 * noise(12, 64), 0.0, 0.00022 * rings - 0.0001 * dark_grain - 0.000035 * pores)
+
+    forged, pits = noise(14, 81), noise(160, 82)
+    iron_color = np.array([0.14, 0.155, 0.17]) + (0.014 * forged + 0.007 * pits)[:, :, None]
+    surface('dark_iron', iron_color, 0.57 + 0.07 * forged + 0.025 * pits, 0.92, 0.00016 * forged + 0.00004 * pits)
+
+    leather_grain, leather_wear = noise(170, 91), noise(8, 92)
+    leather_color = np.array([0.30, 0.16, 0.085]) + (0.025 * leather_wear + 0.012 * leather_grain)[:, :, None]
+    surface('aged_leather', leather_color, 0.66 + 0.045 * leather_wear + 0.035 * leather_grain, 0.0, 0.00015 * leather_grain + 0.00004 * leather_wear)
+
+    # Crimson and deep navy share the same weave, differentiated by resource
+    # tint. Smooth periodic threads avoid tile-edge breaks and unique maps.
+    warp_thread = np.cos(2 * np.pi * u * 128)
+    weft_thread = np.cos(2 * np.pi * v * 128)
+    weave = 0.5 * (warp_thread + weft_thread)
+    weave_detail = noise(150, 101)
+    fabric_color = np.array([0.78, 0.76, 0.73]) + (0.025 * weave + 0.012 * weave_detail)[:, :, None]
+    surface('woven_textile', fabric_color, 0.87 + 0.025 * weave + 0.02 * weave_detail, 0.0, 0.000075 * weave + 0.00002 * weave_detail)
 
     frost, grain = noise(18, 71), noise(180, 72)
     save('t_memory_glass_normal', normals(0.00011 * frost + 0.000045 * grain))

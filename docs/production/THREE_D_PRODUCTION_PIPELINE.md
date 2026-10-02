@@ -270,3 +270,10 @@ Blocked work: <what will not proceed until switched>
 ```
 
 Astra must not claim it changed the reasoning level itself. It must wait for the owner to switch it and confirm continuation.
+
+## Current visual authority — v2 owner rebaseline
+
+For new visual work use `VISUAL_REBASELINE_V2.md`, its explicit current references
+and `assets/concept_art/README.md`. Nonsuffixed v1 sheets/images referenced above
+are historical/LEGACY; technical validation stays valid in its recorded scope.
+Canonical mechanics and global budgets remain unchanged.

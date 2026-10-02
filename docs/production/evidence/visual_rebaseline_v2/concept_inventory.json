@@ -1,0 +1,1233 @@
+{
+  "revision": "cabe792717828dfe54009219a7f6cc4e0fb5e5e6",
+  "images": [
+    {
+      "path": "assets/concept_art/_secondary/noncanonical_final_pair_scene.png",
+      "bytes": 2550566,
+      "sha256": "acdc53a9c2fbb461ec488e077d07a090e347333d513264083807e5af975118b8",
+      "git_blob": "509538bc775da6ec49aeb9366987ba61c4d8e883"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/1.png",
+      "bytes": 2785060,
+      "sha256": "fce6d74e0421a23ee16b7524ae2b55950c12d44724baff75db3304d1768d7740",
+      "git_blob": "b79aac4038eea29e590466969ba7cc4c4418bb4d"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/2.png",
+      "bytes": 2728346,
+      "sha256": "42a374179355f8a538b8645552867918e14ebe7b752ec6eac8a1b548e834d6ee",
+      "git_blob": "f5ef9b0cbfa0c757290eb2870320fadf84bc90c0"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/3.png",
+      "bytes": 2806924,
+      "sha256": "07ebdbc5099c57e7e04b07629e8c59590e403c354c329c05c4c79229f3321e03",
+      "git_blob": "c069fb7c0df7d25c1da482b26e8bc706acc94b46"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/4.png",
+      "bytes": 2841961,
+      "sha256": "ded04ed38a910bbadddaec4762463a84d0cf6d4046852090226c53df18130d78",
+      "git_blob": "23fd00472de93e20e93289839e75dc067afb316b"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/5.png",
+      "bytes": 2875545,
+      "sha256": "2301826e3ba6261dfaddd6ca15a542fea7dc1338089638838a5d89e34f7fd4c8",
+      "git_blob": "fcd3c0ac08c4e3b148dcec00c6c7e886ee3d042c"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/6.png",
+      "bytes": 2746892,
+      "sha256": "c39607b89c7aa5290b8cb492f73204e89bf9cc0511c2a4953942a117d4bf1210",
+      "git_blob": "3b8bda65b12b9c4ad55010c05bf5888fed9818ec"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/7.png",
+      "bytes": 2793791,
+      "sha256": "5662d7b140cdd2850e998a6b231b5d616e28cf96dd118097831b7a56b2696965",
+      "git_blob": "7676524720bc924000f97f8f956af02dece001fe"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/8.png",
+      "bytes": 2714845,
+      "sha256": "aad55716862f30fa9adf503ddb24501bb3ac0a54802920123decc4cd18bc71ba",
+      "git_blob": "ff7b0e33643e7e7ee51b894e45207fddc4de9ea8"
+    },
+    {
+      "path": "assets/concept_art/additional_concepts/9.png",
+      "bytes": 2684736,
+      "sha256": "e5fd76f852a0db273299d9380f9fd097ab425e048c00e0f55f1aa5757100777a",
+      "git_blob": "c714350be0ce860dda14c0ddfba5bfac961976c5"
+    },
+    {
+      "path": "assets/concept_art/characters/char_a.png",
+      "bytes": 2392963,
+      "sha256": "f727316a87e3dc019b6eeccef88b175bc29218c15c96194f141df32c406decc9",
+      "git_blob": "90c8518cd284913ca46985e44ffce6ca773c9b20"
+    },
+    {
+      "path": "assets/concept_art/characters/char_b.png",
+      "bytes": 2329619,
+      "sha256": "438fe56c7e4b33ddb3384d20d21502c5e95427df5eda29ec200461310d2d6c44",
+      "git_blob": "ff9e85e7a40263707f91a03248ae53da19b3ac1c"
+    },
+    {
+      "path": "assets/concept_art/characters/char_c.png",
+      "bytes": 2479440,
+      "sha256": "ca652000d6a6f7edf55e6db71383dc37894e5fcb5ed9acd49bc8cad185d522c8",
+      "git_blob": "6f40945d081cbada99d707f0e1f6267b8d5c8f02"
+    },
+    {
+      "path": "assets/concept_art/characters/char_d.png",
+      "bytes": 2758694,
+      "sha256": "883f462697c03e27fcc8113f5f4300fae93123c9385e1ba804d9d8f2732b6bbc",
+      "git_blob": "e60acdbfd7f457f326d0286f2e3c61a1982bc97e"
+    },
+    {
+      "path": "assets/concept_art/characters/char_e.png",
+      "bytes": 2772205,
+      "sha256": "48d20b7c9579659b449d01ce197daf28d426aff38276babfeaaecfc9b7c75839",
+      "git_blob": "949a04c28d43b933396052f87046993c5e6b7b2c"
+    },
+    {
+      "path": "assets/concept_art/characters/char_f.png",
+      "bytes": 2727466,
+      "sha256": "55d4fba5fd9f5ad8e4c33be24f676832dfa080505e1ee6bccf14693c32fa7eab",
+      "git_blob": "06a9a8babedeed7e6e66d9105032c6da0953af21"
+    },
+    {
+      "path": "assets/concept_art/characters/char_g.png",
+      "bytes": 2524749,
+      "sha256": "d2df261b3b48ba8b1f2390932bbc71a3fdacdbad1f56fd036eb51ea7459e4a5c",
+      "git_blob": "fae77cf8853fb23f5f399203f5b609fe830e2696"
+    },
+    {
+      "path": "assets/concept_art/characters/char_j.png",
+      "bytes": 2885681,
+      "sha256": "789fb5bc475048a24139a7727fca2dc7c27aad5bd3ee4a5c476542c1b1e325b8",
+      "git_blob": "0836841dd57cb4f1cb9e742d8df5f4b7668ecb5e"
+    },
+    {
+      "path": "assets/concept_art/characters/pair_character_mood_sheet.png",
+      "bytes": 2503933,
+      "sha256": "5597588e56b00df3c6a8198a0a38309c500f73ee467e96529490aadfc0ffd5eb",
+      "git_blob": "daf1670693600e9473e15be43f3eb69dd3e1d766"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_a.png",
+      "bytes": 2496899,
+      "sha256": "050ae87142f188e375c208b3e5543d339c0288839d1a0c905bb087450630b320",
+      "git_blob": "ca547981b56ca9c975bd4d7f2e113405c036792d"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_b.png",
+      "bytes": 2761669,
+      "sha256": "31e33509b13209019909a344a87ac5c7f326ecf8e6da9be2e14393cf869d8e68",
+      "git_blob": "5fc13106f604ffe86260709a94ad10f05a532b82"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_c.png",
+      "bytes": 2774230,
+      "sha256": "68ff80fda32ab2cf5fa670d1847fe51f4f214630a94e702f272b3a3c4499099a",
+      "git_blob": "bdf1719427a89b0f37791f40e9e6c6a734557e32"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_a.png",
+      "bytes": 2753249,
+      "sha256": "74a0853fec5df91c9fed518fb27397d86fa7b5995e6eee88d1e0b3b8ed30a949",
+      "git_blob": "8139ad9ddf856f76986c11b866470a868eeffd98"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_b.png",
+      "bytes": 2664671,
+      "sha256": "f7b3abffa2c69ce21773dfd86976116649a956b9fb83e1f56484b4c43f7c9c80",
+      "git_blob": "72375bfc74aac98fcd12b11715f416fefd3dab5e"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_c.png",
+      "bytes": 2443659,
+      "sha256": "c8dbd34e7263d708a6f95e2c7e6f41b57bd1832c84390e86c65b5cf1710dc124",
+      "git_blob": "848607689b3f8d1bc63585e65b14fcc45417e805"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_a.png",
+      "bytes": 2318460,
+      "sha256": "096fff259e0a79b74bc99d85f6283f6a25fe2e2c479787d5cd443b7d30042456",
+      "git_blob": "68a441aadeffd651799f2f6980feb9262108d94d"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_b.png",
+      "bytes": 2612150,
+      "sha256": "43c950f33af2c37bb8800a6ddf7aef9644594f344fb7b54893d4b7c5989d58f5",
+      "git_blob": "f7b85caed60bbe57125b96184ef96d643047a291"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_c.png",
+      "bytes": 2520529,
+      "sha256": "3659d23147bea2d8f353e197b923a4328631cf58c323c736650dfd4ec140954f",
+      "git_blob": "2ef961bb2f0dc81cabb45786ab80358941330153"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_a.png",
+      "bytes": 2837870,
+      "sha256": "0179e9cc59dbe40e94ec58829a9a2c61d790185de72f5b507fb16a30b72881fc",
+      "git_blob": "8597f6bf8ef9e6e7818cbe1d833c0088a3a44c5a"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_b.png",
+      "bytes": 2794714,
+      "sha256": "8f96cab04b58cfd8419ac9c5c7dc31de654ab12b3c5d7471603ff63591386bb4",
+      "git_blob": "35fd31401b02607d06c6d8b0d2ca8ffa56eea504"
+    },
+    {
+      "path": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_c.png",
+      "bytes": 2495018,
+      "sha256": "2edca0e23554833a55813dde8fb4bb4c96036375747c1e15e43e77a6c2a0c923",
+      "git_blob": "3f1c69f7211a44029437a5381473ee0f70b62c0e"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_a.png",
+      "bytes": 2675242,
+      "sha256": "52e758653c4042d9a60268b2b70b4536f0d1d32427c959e9c88a45aca091ff0d",
+      "git_blob": "30e54185412a8103b1fc2a02a0ec8b974e239727"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_b.png",
+      "bytes": 2562590,
+      "sha256": "23c3f4e36aefb56c67c3c7d63542ea39d2890f388fdcf1c9dcf9bf3507e3eeb6",
+      "git_blob": "8bd44e2745982beac1403321642a22f2078adce7"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_c.png",
+      "bytes": 2721245,
+      "sha256": "63b2e3c44b6b8769d35b592965bab2972c7a5dd5b1b98dc0164bbc7d57807da7",
+      "git_blob": "11d27ed3f654c6bf30e8a8d84abf56b7ebba22ce"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_a.png",
+      "bytes": 2693988,
+      "sha256": "beb3bfc77d7b6a3cfb16ba03c7dd0f00894bd70f78abb8c6eb4c6e646e56f514",
+      "git_blob": "2e893618e42f99e57c2ea8292c8f9bb3c4022755"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_b.png",
+      "bytes": 2613978,
+      "sha256": "8e39e8299da2beeee4f8005709e94d5f86b645d98ae46f2802440a63f4595274",
+      "git_blob": "bf4974dec9bd04b49e786438d0816058f8043cde"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_c.png",
+      "bytes": 2599438,
+      "sha256": "089c110455a802ce9705ab2cb32165890d8503b92651ac963b081586ae7cb359",
+      "git_blob": "b30ee93e0076a7a8fb48236cc4da72e0fb186a91"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_a.png",
+      "bytes": 2470296,
+      "sha256": "fd48d679468af3eec489d6f0cdd36934e573fba1b3332395bc9a2a7c517c283e",
+      "git_blob": "aa725d266cdaa5528abd1a5ee4b121f5ca6ab42f"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_b.png",
+      "bytes": 2548335,
+      "sha256": "5c74210307c9c4c1c107b27864d60957c39c91c9721c8441110a18c810c8c47f",
+      "git_blob": "bba1ce619c580dc931e1ff287ff057f85bb6a403"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_c.png",
+      "bytes": 2766126,
+      "sha256": "b90c07718e4ef845fe6e51c5847c863d2bc7e7071fb067212293ef35fda3dcf5",
+      "git_blob": "2f5930c2642b196ee64ca7a59d15bfed9a20afec"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_a.png",
+      "bytes": 2728346,
+      "sha256": "42a374179355f8a538b8645552867918e14ebe7b752ec6eac8a1b548e834d6ee",
+      "git_blob": "f5ef9b0cbfa0c757290eb2870320fadf84bc90c0"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_b.png",
+      "bytes": 2806924,
+      "sha256": "07ebdbc5099c57e7e04b07629e8c59590e403c354c329c05c4c79229f3321e03",
+      "git_blob": "c069fb7c0df7d25c1da482b26e8bc706acc94b46"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_c.png",
+      "bytes": 2841961,
+      "sha256": "ded04ed38a910bbadddaec4762463a84d0cf6d4046852090226c53df18130d78",
+      "git_blob": "23fd00472de93e20e93289839e75dc067afb316b"
+    },
+    {
+      "path": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_a.png",
+      "bytes": 2541173,
+      "sha256": "74ad08a30a6e42415427fda02b02b9d5719bd6a18b498954946f332a2b527b74",
+      "git_blob": "63567f9fc28129a924593e7b423baa70e0e85dc7"
+    },
+    {
+      "path": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_b.png",
+      "bytes": 2505401,
+      "sha256": "526fb6500ab527f66b40ba303f1066465a4c78702c4b69b9a01ae096fd42bc96",
+      "git_blob": "7564d76bfcdc5eebfd42e90e3cb45be28ec4d237"
+    },
+    {
+      "path": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_c.png",
+      "bytes": 2530664,
+      "sha256": "fd551c22f83ef9c0e2d086d8e251f4853298bf7d7b612097c3ec1c07779c711b",
+      "git_blob": "d268eca25760dc923c6ea94c2580823abbb8e593"
+    },
+    {
+      "path": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_a.png",
+      "bytes": 2749400,
+      "sha256": "2cc481fa4a14b05a910b6f348b4863b38bfe22ffc1c6e972c1b2ed4e06e0287c",
+      "git_blob": "1d9747b05d49a201f78aaeeb9594fd941b6bc0ae"
+    },
+    {
+      "path": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_b.png",
+      "bytes": 2741614,
+      "sha256": "b1b7fe4697dd32f6468b20a632d019fe7aebdfd29daa69864f4b22dbc280ad97",
+      "git_blob": "d3bc9d908a0b8a0af4f070da4665a0201d9b7a7e"
+    },
+    {
+      "path": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_c.png",
+      "bytes": 2863291,
+      "sha256": "c332804fc54c59b7ea1aeabbda0beb369c95b085dc0da0b827241e61c028886c",
+      "git_blob": "801f3cfd9ccda155325d6e91b799d31859f90f6f"
+    },
+    {
+      "path": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_a.png",
+      "bytes": 2719321,
+      "sha256": "80d5f6c84119db4d6696c26e226229c52bfa91000298138a486ee72b20fd24ad",
+      "git_blob": "ef5ad30a7deefd7a5cd5855909489a79322c8b6b"
+    },
+    {
+      "path": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_b.png",
+      "bytes": 2553461,
+      "sha256": "00088bd591828e1bad362b49033a0d1a65dec12c13745d28c44814bda2dd6331",
+      "git_blob": "d0ecab1c5271b774e66a03d8dfa16388167f7984"
+    },
+    {
+      "path": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_c.png",
+      "bytes": 2705790,
+      "sha256": "0ed38cceed866adf043774b4364fa5b864325dc5b3898c50d5eca069d6658d2d",
+      "git_blob": "f8ca28cd201d3af3d04568e4e166837e25096b1c"
+    },
+    {
+      "path": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_a.png",
+      "bytes": 2807971,
+      "sha256": "6861ee23a3e4e499298e5135c9a6281d5a9c07bc423fc4ec3d0171f98048e071",
+      "git_blob": "49918997beb20223fbab3cdec2f0deda960878c0"
+    },
+    {
+      "path": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_b.png",
+      "bytes": 2647997,
+      "sha256": "98a7e7ae3c645ad7737ea3858afc717f747a5d401c7fe6d6c383b0813cb1989a",
+      "git_blob": "21e02c85ad917c73cfa9d1d67ad0916d508a1208"
+    },
+    {
+      "path": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_c.png",
+      "bytes": 2727229,
+      "sha256": "77e1ee30311617421930600b861d7e39ac59efce74346249db8ba091e6c00f12",
+      "git_blob": "a449d971aa43ee404333a3bf52f3114adecff665"
+    },
+    {
+      "path": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_a.png",
+      "bytes": 2572511,
+      "sha256": "36786115639396a72dbb831277c65c675302ab5d2ea9f8a35a11817053886595",
+      "git_blob": "b1c48ea563d009bfeae9a6092c92dd8318498528"
+    },
+    {
+      "path": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_b.png",
+      "bytes": 2549142,
+      "sha256": "a4e40865c88c872dda17489c6497c4178c846ea9144826c0e6af147ca87c264c",
+      "git_blob": "0e670c8dd9c27175f3f0913e22f3f328e8f56470"
+    },
+    {
+      "path": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_c.png",
+      "bytes": 2586694,
+      "sha256": "001429b8c96d8addb3f76ffbc5c448353a65ebe7ae988626dbcc7d5a03bbe7d8",
+      "git_blob": "9ff453735f7401ebc22f156f1db3546045b13336"
+    },
+    {
+      "path": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_a.png",
+      "bytes": 2545780,
+      "sha256": "c7a347a9b33a9e0b58bf92e13295af3acf8f3e102b226d1ecdaf1a76f8d9cef4",
+      "git_blob": "541ba6de51e5169edcbd6d0e6c2515deebb7d281"
+    },
+    {
+      "path": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_b.png",
+      "bytes": 2811767,
+      "sha256": "62f6d89fc81c4e707fbc5028978ebad05d5c2cea7f02d86480cc2bd3acd5fa71",
+      "git_blob": "5239605db9e5f8b21e3708a49cbc671b7f6dc706"
+    },
+    {
+      "path": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_c.png",
+      "bytes": 2653756,
+      "sha256": "83eb80c4fef6c7506764f5a91d2b076f6edaf1eb2f63b8be93c52aa65569856a",
+      "git_blob": "615b3b30c7463914bd39978ca48569eb1b359473"
+    },
+    {
+      "path": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_a.png",
+      "bytes": 2345708,
+      "sha256": "8138cdc45aa040253d2d0b4e6f2f5d4c14b904cef82c35e459026e98150b4983",
+      "git_blob": "0e7374b9b0309b586539f533cc56aa681e153fd8"
+    },
+    {
+      "path": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_b.png",
+      "bytes": 2464066,
+      "sha256": "1cfd4743fce71206e992c0974caf7aa1530eae0f10e14d138dd0b0c9e3545f58",
+      "git_blob": "9b4274a885241e61523f5537b134c61a8e798026"
+    },
+    {
+      "path": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_c.png",
+      "bytes": 2665631,
+      "sha256": "12c554c0328da38e181f7fd3cb16c883dd5cdda2c171d525d4c216e1d5626b8a",
+      "git_blob": "16cb3aaeffb77b4df070ab4c4036463f8f5b954c"
+    },
+    {
+      "path": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_a.png",
+      "bytes": 2511792,
+      "sha256": "6ad500cfc2b19b4a150e693ee80e579a160e93d8f688a877fa2840fe8a24a05c",
+      "git_blob": "d2b8b7e1875220ad20225087fc50742d8d328919"
+    },
+    {
+      "path": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_b.png",
+      "bytes": 2649363,
+      "sha256": "efb3392ad706e416a2622b8d7cc44322d15b6d66ca34201ba8d961eaaf0fdcff",
+      "git_blob": "3a3927689383f4dfc34cb2d4d17226e1366685a3"
+    },
+    {
+      "path": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_c.png",
+      "bytes": 2457492,
+      "sha256": "61b0521215861f2662816043c4d6ed822ebec885e866a4508c48ce70e71c3cb7",
+      "git_blob": "b30f35904833fb0b146e788fb251f2e8997dd2a6"
+    },
+    {
+      "path": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_a.png",
+      "bytes": 2543079,
+      "sha256": "5d580ee76b49b742eb46bbd7645904dc7efb956a9ac7f8bdee53694d9693c210",
+      "git_blob": "8749344917f08b3f6452f23bbdda0ad8be33e9ed"
+    },
+    {
+      "path": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_b.png",
+      "bytes": 2542295,
+      "sha256": "0e5a75f0b827038fc0b53c44dea75b9ad10855d29162439c745ff76ce386330c",
+      "git_blob": "7f05cc433dc5d1864a2c4f566c3d2f2798f246f8"
+    },
+    {
+      "path": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_c.png",
+      "bytes": 2871315,
+      "sha256": "2e0faecac3fc0635e8270814c90e2c9af94dbd14e130b26942e715e36972d5a9",
+      "git_blob": "76534f02d923d754f821d3e5a997682010f58cb1"
+    },
+    {
+      "path": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_a.png",
+      "bytes": 2589529,
+      "sha256": "27d5252462ad58df983a1f15a6410b92cb5e7f17e3c82bd4377c7589ae94c280",
+      "git_blob": "1dc9a5dc40d6a7d48965f21450a77951acc6afe6"
+    },
+    {
+      "path": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_b.png",
+      "bytes": 2665627,
+      "sha256": "3ead27d02dc330f54fcf683414125dbcdb6c56025facd08732d44caeff32aa82",
+      "git_blob": "b902c2ae1b5a249b76cb07c96072a05de7fa20d1"
+    },
+    {
+      "path": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_c.png",
+      "bytes": 2778262,
+      "sha256": "32a1b57bce8f7e6781b6998448b53f27e42be42f4707c9a52822f0395dbc8584",
+      "git_blob": "4f22d2a522a05188796a98e1e684d3e59cc26d64"
+    },
+    {
+      "path": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_a.png",
+      "bytes": 2395767,
+      "sha256": "ffc3fc4d8fa66ffd26753bff4fdb89983004e6fd2ae1d16cd1c994650f42a4c6",
+      "git_blob": "12b5cc7d51bcd607b11d957981ff327a396ecb12"
+    },
+    {
+      "path": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_b.png",
+      "bytes": 2404857,
+      "sha256": "d32f88a6ec0762a186d6243d590ca23330e453f9a42d7e1f2500d9f2e3b107f3",
+      "git_blob": "5918136568bdcc5061d42630fcf95d4709de5942"
+    },
+    {
+      "path": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_c.png",
+      "bytes": 2604504,
+      "sha256": "7f26627a2a77171753b24455420b14ead28d7eedecc3c5134a52725eb0321682",
+      "git_blob": "72fdabac6d1462985ab6071ce489465316468d58"
+    },
+    {
+      "path": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_a.png",
+      "bytes": 2734040,
+      "sha256": "bf081d0b6c7726761a2670e3df7e1d7eec1c4b123483a58064d557ce2541e06e",
+      "git_blob": "4a64929a5e02d05d4443b3d1426e944e8622d0b8"
+    },
+    {
+      "path": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_b.png",
+      "bytes": 2823165,
+      "sha256": "279f3d58dd496a188e8a51b1f58f1fcd796bf55f81e8bd215f0aec002b659333",
+      "git_blob": "f34f451ab13191dcc7fe100a470e57b52604643f"
+    },
+    {
+      "path": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_c.png",
+      "bytes": 2714088,
+      "sha256": "e353717ca2bdba96244ab81cc656c93e3c02f8105262f3b6c89aba14d85f2759",
+      "git_blob": "06dc972c186d1d49f1fbc49e9858fdaf113eea9d"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_a.png",
+      "bytes": 1477177,
+      "sha256": "4134f1969f911d95c2ca97555539e4a5fa7cc6c863b8271e609206c325119725",
+      "git_blob": "a7f8378ab1d3b2d949c83e94b8fd530344ba5c4d"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_b.png",
+      "bytes": 1412418,
+      "sha256": "257a865bc846a098298bbe878ef78494da8c087d3b542d6451a138eb9f2c61e0",
+      "git_blob": "b6f3924a08c5874dd94b05bb123a421e764d9f8f"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_c.png",
+      "bytes": 1257479,
+      "sha256": "9e64ef9a4558e18816b029be92e8e9b29a0ca02f32dbe1f4540b5347a179532e",
+      "git_blob": "9947df00ebe32ccf6b7e5f60a9016c5077c168a3"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_a.png",
+      "bytes": 1451949,
+      "sha256": "e3b421d4b71994bf8c0fbd5da3de1df99ed2df6040cda0c4155f9bb0cc86a2ea",
+      "git_blob": "10f5db4a572886a78928b456387830dbc5b04584"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_b.png",
+      "bytes": 1384419,
+      "sha256": "9edfda6b6e6310c41e7c8719fa2602bcdc6048ee5e0a7a5ef52f816fd16db3f1",
+      "git_blob": "6197474d390b7745d8b982a115a9b58c6e0f2ef8"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_c.png",
+      "bytes": 1242388,
+      "sha256": "c6f2129704c782acfc37a954f36f617cf04bd59770fdfb5cfe42255604a8620e",
+      "git_blob": "2c576fc0bf01c3afc998527345669f924c7de7e3"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_a.png",
+      "bytes": 2885061,
+      "sha256": "d97f3b55c705f33b40443ef00c4995a408b322b91cb62c97757b3301f6aa6cd9",
+      "git_blob": "55960590a8597c8ae35117463c73db1be77f469b"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_b.png",
+      "bytes": 2504988,
+      "sha256": "a12643cdc4fac914980b0785e40ed07f091fcf01e365daa32734d9a786bbc588",
+      "git_blob": "54fc4a1f3dc1bd2f489489aecfaabe87f60b1aa8"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_c.png",
+      "bytes": 2516127,
+      "sha256": "b9fdefa52b11d7a503504ef283cfe723c0586a636c6489ed43a7e46383f19589",
+      "git_blob": "6b227edbe1a6e6c13f74207a65508425bd157f94"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_a.png",
+      "bytes": 2561413,
+      "sha256": "a43c7ea55728315f698ba3d1c19a35fc77f405be5892e36403d86b37ba9266f4",
+      "git_blob": "9daadc248bdf9ec2f7e956a5e6bdd0a8e7de2807"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_b.png",
+      "bytes": 2397281,
+      "sha256": "a3e25ad711b8d171a8f0e7b6ea287a367248a5a8145ea77f670141ccad242733",
+      "git_blob": "c07862fb3337620b4400b09b2c9f5ddeb84f3171"
+    },
+    {
+      "path": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_c.png",
+      "bytes": 2280700,
+      "sha256": "1b92c1da7defa9a0fd76177980ef1a97bb6c6a5500f69a283e1fe8218844fde5",
+      "git_blob": "51ab6940686bb3b44e276e8398c76f5ccecd3736"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Egg_v2_angle_a.png",
+      "bytes": 2418556,
+      "sha256": "b932d7564c5a19ba7f29704abd39a25c62c96f6346200412578b854370fb3241",
+      "git_blob": "db2be587db7bfad655efe62fb763974792700d4d"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Egg_v2_angle_b.png",
+      "bytes": 2363030,
+      "sha256": "6a0e77c4efefe64a231b887e6102f13f14d6bca4fd09ad91af895e95e1fa8e49",
+      "git_blob": "979d144fcf24c28bfac45765facff18a73d1db48"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Egg_v2_angle_c.png",
+      "bytes": 2497248,
+      "sha256": "4d17dd5f2ee5b82cd506d3790ff584f51b1fa31f1afaf9d228450e33ff3fc593",
+      "git_blob": "2b1a43a9cfb3314c266fc97f17dc5ee8e18ae3da"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_a.png",
+      "bytes": 2657978,
+      "sha256": "c8d006e6b4f57b1041c0bad4f46d9ac9c947502594fea95e6cb2d3bdf63c8dad",
+      "git_blob": "1982d31d94d4070c5aea95d7f56443852f89b6d3"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_b.png",
+      "bytes": 2757172,
+      "sha256": "8a4e50dc3c5050dae4a367a2718ae607cc5ef9a6590c5df3f54f7629138c4394",
+      "git_blob": "eb42ffff02c00d25c77c0d9431209346960b5440"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_c.png",
+      "bytes": 2802450,
+      "sha256": "a4667b6299b23353fbfa4e41110aa3be3421fed760b378d9ba6118123e9fae46",
+      "git_blob": "d0ffac4b57d85fd9c399e9ed360cadddeeaa1796"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_a.png",
+      "bytes": 2336660,
+      "sha256": "6d29bd38c2466f08f8fa9da2953b2a9ad26ed3dc7482f581fe6e7e7ca8a62a0d",
+      "git_blob": "35873644688051c5426535d0ef4e6a0ad94656e8"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_b.png",
+      "bytes": 2448671,
+      "sha256": "40756dd7b0d70a354c640368452fcab4e744d65ab6a0ed9d0d763f6b0738eb31",
+      "git_blob": "92380fff057b9ea0e34f8412ff8fe9219e986ba0"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_c.png",
+      "bytes": 2476178,
+      "sha256": "9c6d1c0e989a083958ab97e2c673131c292a130bffc538a1cced6dfad0349fbb",
+      "git_blob": "10c9b0b8308dc6661464916a00c07fdd3298f463"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_a.png",
+      "bytes": 2858827,
+      "sha256": "e73d1987f97d57f9402b08286751725cbf924c20e614d09a1a23e64a4d6753dc",
+      "git_blob": "accbf317c9a4510dca72f522b3809fb5c957ff7f"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_b.png",
+      "bytes": 2889579,
+      "sha256": "d4cc3f496f7589fba8355eac06bba718fd13ec5f4869d10d4a854db785f3ef10",
+      "git_blob": "8e2481d73af7006cd26315859dc49c02257d3ef5"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_c.png",
+      "bytes": 2662103,
+      "sha256": "c5beae30da0d4df4f05b70b22649c14419d8bd79f67edf586e8e1dc6dff4784c",
+      "git_blob": "5e8fd545572751fffed37aa99daa2315a698c3fc"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_a.png",
+      "bytes": 2879156,
+      "sha256": "88b58e3cec18f3124ccae0e1720bcda3c89084532693a6a1f5cff9bdd94e4b39",
+      "git_blob": "e29e5f29e195b44e743e9f8a1a0f0e99cc5a5da4"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_b.png",
+      "bytes": 2519095,
+      "sha256": "ac5ca980f7c022278c873ca5539997d0934edd236f4d9e5376634e967d87ac9c",
+      "git_blob": "65476e82bc7579dd8690b18d7f7040879df77187"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_c.png",
+      "bytes": 2839806,
+      "sha256": "e5a4bc2acb8e6aa04dbc6bbe282534c5ba7355ad4266a3fb0a4d6fd4b8f7a9d4",
+      "git_blob": "9b875f67dc6a384f709ddd29437336ec7964e29c"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_a.png",
+      "bytes": 2928771,
+      "sha256": "e0c2a94456b166360622705f90e63eb0ed8e39c4355fd39cb2ccfe8591792580",
+      "git_blob": "3436e46f8e909ef0bcd0f3b750b57dd22c44ae54"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_b.png",
+      "bytes": 2661420,
+      "sha256": "e1de2b6adbfbc4f1bf95ffaa65eb41ed7bf901abbeaba09a434b56961582b9a9",
+      "git_blob": "f418c308579ea3e073d70b462fb10a71e86be18f"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_c.png",
+      "bytes": 2942080,
+      "sha256": "da7eda05b2612504456f8b24a5de8e32f6002be9e2060869cd103e4c6236922d",
+      "git_blob": "eb290e571a4117f1c86e8e9c27a465954f9de9c4"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_a.png",
+      "bytes": 2570723,
+      "sha256": "9b221120ebc6bbbde7b830314ee9aaa21a709a75c1ba99584d628add51525ebb",
+      "git_blob": "9c30fca61e6ffd989617d808cec07e4c2a9ce08a"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_b.png",
+      "bytes": 2630031,
+      "sha256": "5480a8c1491f0c16c8b34ce49a3f36f87021532de3983226dee1799ffdc337b3",
+      "git_blob": "2c0e3e3aa228128ffd47e825b1ce4ed1c386b8ae"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_c.png",
+      "bytes": 2730624,
+      "sha256": "0d87254b46ca4b24208c39a4b54bbf3ab4ccd0f3e60951e701f4018c6cb14e50",
+      "git_blob": "ac0dcfaaf66323c822bd3036e261ce3942af237d"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_a.png",
+      "bytes": 2598252,
+      "sha256": "f33f0ab775a59e61cf76517a2e3450db1e5f2aab06589c629750f49322675f5d",
+      "git_blob": "1c12371ad10af11b3a5f703d255512e8ac2380fb"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_b.png",
+      "bytes": 2429624,
+      "sha256": "2c23788c5842ad48f4f1787d4b29afbb35d477cd41f85a453a6a5755b1a391bb",
+      "git_blob": "04b11c2b717c0ebf73fc5a2f84a273821dca52aa"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_c.png",
+      "bytes": 2701974,
+      "sha256": "7c852aa6bbe90cfba4ae340772797db9a931b26c2390b40e4329d7edb3d00443",
+      "git_blob": "51c209f6a7b96cf51ad042cd2a84b99f7b0f6f62"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_a.png",
+      "bytes": 2553221,
+      "sha256": "717614b65d75824e82c105dccd10ab2ba708a2ebb88fe0fd59d5f18ba0b8fee4",
+      "git_blob": "363bac8175dfc8381923bea44bb15fae924d66b7"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_b.png",
+      "bytes": 2642868,
+      "sha256": "c1f61c74ac6da88a7b5409c934f6ba727ba06bff3373b136c73823e57533fbb7",
+      "git_blob": "84b6b2d93d6a96bf2ccfe96210edede31392cce2"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_c.png",
+      "bytes": 2405845,
+      "sha256": "7384eb9d64896db957cda71391e096485486853a9d35dfdcd1ba4c27182d2547",
+      "git_blob": "878161e5950f0fa126196d2be51fa7d3408b3d91"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_a.png",
+      "bytes": 2338580,
+      "sha256": "927548c69e6e89c14455f0b1695208d1033c85760913d9f9b0e1f0d426ad7b84",
+      "git_blob": "df15f0a10241ee812ada917436bb4861a20fd4ae"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_b.png",
+      "bytes": 2317378,
+      "sha256": "03d28c1d4c828ccbfbcbe147aba2fc57623c81e6eaca714f639d71848f96bd3f",
+      "git_blob": "bc0fbee857f55fb80f080ec1fb74e38cb11ed53f"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_c.png",
+      "bytes": 2357014,
+      "sha256": "57bb918aa72cae6bdfbb46e254a27cc9a16cd61c1b87f46b3364631254d6e528",
+      "git_blob": "193aa7649d2df1325a5eb98c9139ee2b7485b952"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_a.png",
+      "bytes": 2537607,
+      "sha256": "b1811b9d8c95fa2d3c387aeb18d6bb451f2d4e134daeb94ed7485e0a7a706107",
+      "git_blob": "da771622e8d36942e2032a51bbbe28ed1a1b2f1b"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_b.png",
+      "bytes": 2449211,
+      "sha256": "39704b081f296dd75580f3821b3d33c9564dec41290e9dd7c93470df508dc999",
+      "git_blob": "65ac596d13c459ae385a0ff4a33aa7cd18602428"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_c.png",
+      "bytes": 2564313,
+      "sha256": "fdbb9a220ce19593ecbb037ddcc5ea1286040079ebb76e95a48939f23ce3c1de",
+      "git_blob": "540fe77b70c36a75c62b777ac7a754f5dd1c6a7b"
+    },
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_a.png",
+      "bytes": 2336259,
+      "sha256": "a14c9bfadf4d9f4c49168b8f71ece04308fe989945eb290e8bcc75a8fb34f7d1",
+      "git_blob": "1d458ff122c5b901d31d2feefcdbeb0d20b5a74a"
+    },
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_b.png",
+      "bytes": 2608952,
+      "sha256": "b2939f105a97f6a6421cf2fc84bba543550af06daf669e788bcdb976d47d4f29",
+      "git_blob": "6e65e01284b7364b8020cecca69145bdb070d792"
+    },
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_c.png",
+      "bytes": 2420674,
+      "sha256": "7a18f5fcc6bebbffbea672f5779b6aa59b4bc1b20dc1fe954143e97de57ecd9e",
+      "git_blob": "dddcbbdbe131a411317ac7bece626c495d2ebf0f"
+    },
+    {
+      "path": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/mi_002.png",
+      "bytes": 2424164,
+      "sha256": "3749c54130f6fb93a9adc44f4568608d9581af66fc3373dfb7c73e89771a085d",
+      "git_blob": "b29bb15c1cb7fd229f67a36cf894efdb86a0d09c"
+    },
+    {
+      "path": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_a.png",
+      "bytes": 2694967,
+      "sha256": "27314625c47ba897a7bbe5a4f9b17bf00124699067783cb3ea843809e0cd6512",
+      "git_blob": "6ffd78b6f03b3c7efefc025cb952b89d54a09e47"
+    },
+    {
+      "path": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_b.png",
+      "bytes": 2514376,
+      "sha256": "9d6062c0a87e43eaee07fe2690f1f35ebb88529fdd329cc4fc9f96dc3aa839b9",
+      "git_blob": "e783437ef0f2763acad7c1efd92b4ac8dfe3c5bc"
+    },
+    {
+      "path": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_c.png",
+      "bytes": 2691138,
+      "sha256": "bc2876705d6d3e9fed5386f41a4de5fe5ef985a52885f81db49d32c9cb02881f",
+      "git_blob": "a705b7f79be2673f25ec10eb715d7906a1443867"
+    },
+    {
+      "path": "assets/concept_art/memories/s04_first_meeting/Key art/mi_001.png",
+      "bytes": 2478519,
+      "sha256": "7bf10645b334d7b2de53900968208e6abd0238f55c7eb8c315e43a0533fa3fa0",
+      "git_blob": "ef6671fe534f2cea284d4142d1bf4918e72bae88"
+    },
+    {
+      "path": "assets/concept_art/memories/s04_first_meeting/pair_keyframe.png",
+      "bytes": 2188988,
+      "sha256": "cdcda64cb10f22244f0e010e536ce6efcd3f5b58c2102f37e707207b6a4d5b8f",
+      "git_blob": "46c16b5c0e6da40667ea9372560c3be816ba3567"
+    },
+    {
+      "path": "assets/concept_art/memories/s06_egg/egg_rescue.png",
+      "bytes": 2577426,
+      "sha256": "fc5cf2e44c18ed2387855b7bfa4b242b742a3eaa3866869a6f20f3b781c54991",
+      "git_blob": "fbef3e44895ccb1b3e2846725c509eb7b285af7f"
+    },
+    {
+      "path": "assets/concept_art/memories/s06_egg/egg_theft_v01.png",
+      "bytes": 2515342,
+      "sha256": "30158beabfc062c8af3847108ebaac77bd2b406c8361e70486616dc717573756",
+      "git_blob": "34afef8d775c0ddad1393fcb3efe17a654e878fe"
+    },
+    {
+      "path": "assets/concept_art/memories/s06_egg/zone_environment_a.png",
+      "bytes": 2492691,
+      "sha256": "f3e95435984e28f4d53f5aea7a54efae268281efcf63bd3cb6c2531c24ce292d",
+      "git_blob": "7d32e84a02f18d6746dde8acf906300eab5d9751"
+    },
+    {
+      "path": "assets/concept_art/memories/s06_egg/zone_environment_b.png",
+      "bytes": 2771936,
+      "sha256": "7b34657d5ae0b071990875e1f860daefcf31fc61739e94c4aed2d143019bbae5",
+      "git_blob": "78b613ab1baf8fa5dd50f089342a8744d317952f"
+    },
+    {
+      "path": "assets/concept_art/memories/s06_egg/zone_environment_c.png",
+      "bytes": 2719663,
+      "sha256": "8566241b136247110a850470233b2e402c37a8ef4582abc0691fd468ea4c364a",
+      "git_blob": "b2bdd383d4b3807ca3409d3132e7005dcc78f9c4"
+    },
+    {
+      "path": "assets/concept_art/memories/s09_future/Gameplay - memory view/miii_002.png",
+      "bytes": 2502822,
+      "sha256": "75d44c61fa0b77ded43073fff796490e85c269f00dfab16a96aaf2d80bd3653d",
+      "git_blob": "049f0f72c781bdaae267a59abca4ffd60dbed2db"
+    },
+    {
+      "path": "assets/concept_art/memories/s09_future/Key art/miii_001.png",
+      "bytes": 2684639,
+      "sha256": "ab6f8fe2f11cd2ecec6db170eaf7eac2d429d8cb1a31fe6daa526c0313dcc5c8",
+      "git_blob": "40f85280b02c15bc9da76de68939c2a0fec4c0f7"
+    },
+    {
+      "path": "assets/concept_art/memories/s09_future/pair_keyframe.png",
+      "bytes": 2641330,
+      "sha256": "2c3327d45a7282163f71f9dfebc2de3ae5a7be8b6272ad28e6269330c0a5efbf",
+      "git_blob": "14af23195a0c3539489f65fb6054db72c891f975"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_a.png",
+      "bytes": 2530106,
+      "sha256": "f2dc7e997399a77ebb8403c2fccaacc102bc32b5666b43c851c2fc41f872bc28",
+      "git_blob": "e24773d66b2debded3ac8559f6c8d730501c4e2d"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_b.png",
+      "bytes": 2761924,
+      "sha256": "f8f2d63d51dfe69eba42e9082b0a483ba610fcb2ba0d127eadb8d7618d80dc3e",
+      "git_blob": "01409c5e1e5a072712ca0586b83a760ea810b86a"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_c.png",
+      "bytes": 2403908,
+      "sha256": "3e0c6dc0ab93fd501e190b37c868203dd61c624aaa93a7c2e3288d0fbaf29d9a",
+      "git_blob": "46e7fdc2af63780c3cea0da7373855e4369b1d2b"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_a.png",
+      "bytes": 2590928,
+      "sha256": "377e061e4aa464875bf366fcd53728364f55b6ef053bcb00f7e661c9c039e363",
+      "git_blob": "6857b28aed1cb776a68703d31dbbd036a74f6799"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_b.png",
+      "bytes": 2511667,
+      "sha256": "e8648991575530ce66627ac16c67475769d2d0ee88b77c6404832c1c10258a70",
+      "git_blob": "34cc426f75185faf3dfff1c788a35d9296b2bb4a"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_c.png",
+      "bytes": 2394625,
+      "sha256": "e67f387aae2dd20eccb3951b11d73b15e20a019009d43c099182b72ac76be833",
+      "git_blob": "8738498f80c493f83b6c3fc0901e03d1719500c0"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Material sheet_v2_angle_a.png",
+      "bytes": 2757559,
+      "sha256": "8b8dc0e008b6cfb376ea215dd6a9e71bf39f39a9709edeeadd2d56b98dbe7fa1",
+      "git_blob": "888a7523100a3ba1bee9eec97956a1c200c584b7"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Material sheet_v2_angle_b.png",
+      "bytes": 2618652,
+      "sha256": "5c7da428f34bd05bd89d18959b625635d7a1e472fc01062cb59ddf5f423ac722",
+      "git_blob": "8223bd5d589c3a2097863b25366874f4b580f57e"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Material sheet_v2_angle_c.png",
+      "bytes": 2432510,
+      "sha256": "b8a3de0288f885a2281f5703e5042f4339015f9756c1eaee50d1260325ec05ea",
+      "git_blob": "60f956c85b7288f5892adf3534ce4e0d2cb315f7"
+    },
+    {
+      "path": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_a.png",
+      "bytes": 508349,
+      "sha256": "029c7f0d5bba2d8dfc6ce7e7ab99b8c6af15c82133a205ce1295c863455f36e2",
+      "git_blob": "ad084969691d4cc8440706781181eac5c0e85870"
+    },
+    {
+      "path": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_b.png",
+      "bytes": 310378,
+      "sha256": "3bd966dca948e97bc44311aa63b6519b1863818ed0722ea7678db4141614dbf3",
+      "git_blob": "96a5a017386766041f40441510be9ca4482a17a6"
+    },
+    {
+      "path": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_c.png",
+      "bytes": 1190646,
+      "sha256": "f87ea416c9d7c18d98d1a95813da1d02e536c0de7c136f62400a2cf1f5908140",
+      "git_blob": "60784ad574cb8e4b8033a45e9087845f50760756"
+    },
+    {
+      "path": "assets/concept_art/ui/Final assembly screen_v2_angle_a.png",
+      "bytes": 2353980,
+      "sha256": "f87c90379783ab20def570acc02154a0d70d6c005515b3758a750da4bf0eca03",
+      "git_blob": "2c7dd915a050e69707aad62aea75157c1feb5ffb"
+    },
+    {
+      "path": "assets/concept_art/ui/Final assembly screen_v2_angle_b.png",
+      "bytes": 2404257,
+      "sha256": "00287bc34f6325dc15a3492e002bd525e1fdac8027c170fa878912996d9b8c86",
+      "git_blob": "b7069595bf8b8ce9484d53bdc47bcade1c645844"
+    },
+    {
+      "path": "assets/concept_art/ui/Final assembly screen_v2_angle_c.png",
+      "bytes": 2491055,
+      "sha256": "76513fe30d286b99038a124775d70a557aaffa8fb9471b440c195bf113fd95e8",
+      "git_blob": "d6d4397e60a7331b811ba4850f7cd32f4aef81cf"
+    },
+    {
+      "path": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_a.png",
+      "bytes": 2316364,
+      "sha256": "19287099c1545537cfe61562148bcad6f254d6a1955c25a37aeb105b0b3f9b06",
+      "git_blob": "b22377f6e05f624e774491137d34ddc553ee3d3b"
+    },
+    {
+      "path": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_b.png",
+      "bytes": 2288209,
+      "sha256": "b73387030d24e4d2e6b34c59af15e9b97beb4bc860cde0eefcb9a469c7537bc6",
+      "git_blob": "8b888f9578620393387e632db7360d557b5943dc"
+    },
+    {
+      "path": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_c.png",
+      "bytes": 2287754,
+      "sha256": "e2d8da1c4555bb8932e0ad762e36505bfc755c16f4d7b48dab0cc3f3163ebedd",
+      "git_blob": "fe43502122c7c02d2d66681bf0f63b6616175b3e"
+    },
+    {
+      "path": "assets/concept_art/ui/Main Menu_v2_angle_a.png",
+      "bytes": 1993392,
+      "sha256": "dfeb61ac5789f8da2d82fc21846cf0889a8990866f931485891d3156f6736c43",
+      "git_blob": "4a4c7c81583e11c540bc23075906c0c01b196fed"
+    },
+    {
+      "path": "assets/concept_art/ui/Main Menu_v2_angle_b.png",
+      "bytes": 2176520,
+      "sha256": "f3bb7561b555982cdd551cbc39afc3ee60399fad3bfb7b76992b43263129a924",
+      "git_blob": "fe14d3a2a186918104172cd3e2ae7cb0233697a7"
+    },
+    {
+      "path": "assets/concept_art/ui/Main Menu_v2_angle_c.png",
+      "bytes": 2123915,
+      "sha256": "7b61b5e8f4c999bda92f6c4539335489b045879803a8cfa055f911f2b82a6148",
+      "git_blob": "816996efc298d59596180d651d016c4326b80b00"
+    },
+    {
+      "path": "assets/concept_art/ui/Pause-Settings_v2_angle_a.png",
+      "bytes": 1825726,
+      "sha256": "750a296af50e2c692143c5f79ead2571956bafcad586af6667db69bcfbdedabe",
+      "git_blob": "93bc6a03d3b3a8c20bcdad8202d66e0a3aab1e8b"
+    },
+    {
+      "path": "assets/concept_art/ui/Pause-Settings_v2_angle_b.png",
+      "bytes": 1793344,
+      "sha256": "33c40eee4430a4fa69da480607ab14da254b83f5c20d7f2b6077b69266683655",
+      "git_blob": "d639e63fb5aaa26573a97210bada3a0d94244930"
+    },
+    {
+      "path": "assets/concept_art/ui/Pause-Settings_v2_angle_c.png",
+      "bytes": 1758236,
+      "sha256": "250b4f8d8e8c2829c224c4d96834f071f9c66d98a4b453124db469f75fb2c187",
+      "git_blob": "2978599c5acb114ac770b8ad194f0146206fd383"
+    },
+    {
+      "path": "assets/concept_art/ui/Secrets-Achievements screen_v2_angle_a.png",
+      "bytes": 2224931,
+      "sha256": "251088b5f7b222d78cf84fcd2da0ccebd566e84f3d2cc8c95ca0d96a65287577",
+      "git_blob": "f4c42295c63be9d479e039c4560d7db6eecb49c5"
+    },
+    {
+      "path": "assets/concept_art/ui/Secrets-Achievements screen_v2_angle_b.png",
+      "bytes": 2252666,
+      "sha256": "3899eeeb405b191385b245dbebc97bbb5bde9276fdf90529820b88555fbc64bb",
+      "git_blob": "8f1da15e4c91e7ab73b293b5642c0201bc0924e3"
+    }
+  ],
+  "slots": {
+    "assets/concept_art/environments/s00_prologue/p_001": {
+      "a": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s00_prologue/p_001_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s00_prologue/p_002": {
+      "a": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s00_prologue/p_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s00_prologue/p_003": {
+      "a": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s00_prologue/p_003_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s00_prologue/p_004": {
+      "a": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004": {
+      "a": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s01_observatory/Key art/ca_002": {
+      "a": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s01_observatory/Key art/ca_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002": {
+      "a": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s02_wing_light/Key art/wi_001": {
+      "a": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002": {
+      "a": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s03_wing_voice/Key art/wii_001": {
+      "a": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002": {
+      "a": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001": {
+      "a": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002": {
+      "a": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001": {
+      "a": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002": {
+      "a": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001": {
+      "a": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s10_return/Gameplay view/r_002": {
+      "a": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s10_return/Gameplay view/r_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s10_return/Key art/r_001": {
+      "a": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s10_return/Key art/r_001_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002": {
+      "a": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s11_final_puzzle/Key art/f_001": {
+      "a": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s12_s15_finale/Acrostic reveal": {
+      "a": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s12_s15_finale/Confession": {
+      "a": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s12_s15_finale/Confession_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s12_s15_finale/Dawn epilogue": {
+      "a": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue_v2_angle_c.png"
+    },
+    "assets/concept_art/environments/s12_s15_finale/Poem assembly": {
+      "a": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_a.png",
+      "b": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_b.png",
+      "c": "assets/concept_art/environments/s12_s15_finale/Poem assembly_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/Egg": {
+      "a": "assets/concept_art/hero_props/Egg_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/Egg_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/Egg_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/Final table-puzzle board": {
+      "a": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/Final table-puzzle board_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/Future Record-symbolic future object": {
+      "a": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/Future Record-symbolic future object_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/Generic modular observatory kit": {
+      "a": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/Sheet of all sigils": {
+      "a": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/Sheet of all sigils_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/Sigil close-up style test": {
+      "a": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/Sigil close-up style test_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/The Archive’s Central Mechanism": {
+      "a": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device": {
+      "a": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/The ‘Life-Voice’ device": {
+      "a": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/The ‘Life-Voice’ device_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/The ‘Serious-Smile’ device": {
+      "a": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/The ‘Serious-Smile’ device_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism": {
+      "a": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism_v2_angle_c.png"
+    },
+    "assets/concept_art/hero_props/‘Heat-Light’ device": {
+      "a": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_a.png",
+      "b": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_b.png",
+      "c": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_c.png"
+    },
+    "assets/concept_art/production_sheets/Architectural shape language sheet": {
+      "a": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_a.png",
+      "b": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_b.png",
+      "c": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_c.png"
+    },
+    "assets/concept_art/production_sheets/Lighting guide sheet": {
+      "a": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_a.png",
+      "b": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_b.png",
+      "c": "assets/concept_art/production_sheets/Lighting guide sheet_v2_angle_c.png"
+    },
+    "assets/concept_art/production_sheets/Material sheet": {
+      "a": "assets/concept_art/production_sheets/Material sheet_v2_angle_a.png",
+      "b": "assets/concept_art/production_sheets/Material sheet_v2_angle_b.png",
+      "c": "assets/concept_art/production_sheets/Material sheet_v2_angle_c.png"
+    },
+    "assets/concept_art/ui/A screen featuring a collection of couplets": {
+      "a": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_a.png",
+      "b": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_b.png",
+      "c": "assets/concept_art/ui/A screen featuring a collection of couplets_v2_angle_c.png"
+    },
+    "assets/concept_art/ui/Final assembly screen": {
+      "a": "assets/concept_art/ui/Final assembly screen_v2_angle_a.png",
+      "b": "assets/concept_art/ui/Final assembly screen_v2_angle_b.png",
+      "c": "assets/concept_art/ui/Final assembly screen_v2_angle_c.png"
+    },
+    "assets/concept_art/ui/Final end screen-epilogue card": {
+      "a": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_a.png",
+      "b": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_b.png",
+      "c": "assets/concept_art/ui/Final end screen-epilogue card_v2_angle_c.png"
+    },
+    "assets/concept_art/ui/Main Menu": {
+      "a": "assets/concept_art/ui/Main Menu_v2_angle_a.png",
+      "b": "assets/concept_art/ui/Main Menu_v2_angle_b.png",
+      "c": "assets/concept_art/ui/Main Menu_v2_angle_c.png"
+    },
+    "assets/concept_art/ui/Pause-Settings": {
+      "a": "assets/concept_art/ui/Pause-Settings_v2_angle_a.png",
+      "b": "assets/concept_art/ui/Pause-Settings_v2_angle_b.png",
+      "c": "assets/concept_art/ui/Pause-Settings_v2_angle_c.png"
+    },
+    "assets/concept_art/ui/Secrets-Achievements screen": {
+      "a": "assets/concept_art/ui/Secrets-Achievements screen_v2_angle_a.png",
+      "b": "assets/concept_art/ui/Secrets-Achievements screen_v2_angle_b.png"
+    }
+  }
+}

@@ -2,9 +2,20 @@
 
 Status: **implementation mapping for selected repository assets**.
 
-Rule: every file inside a package listed as `CANONICAL` inherits that package's stage/role mapping unless a row explicitly marks it secondary/noncanonical. Concept art is visual reference only and never overrides the master mechanics/narrative.
+Rule: current visual authority is explicitly enumerated in `VISUAL_REBASELINE_V2.md` / `visual_rebaseline_v2.json`. Folder-wide labels below are historical stage/role mappings, not approval of legacy images or additional candidates. Concept art never overrides canonical mechanics/narrative.
 
-## Concept art — environments
+## Visual rebaseline v2 — current authority
+
+Incoming pack `cabe792`: 45 named v2 slots (134 images) + two zone A/B/C sets.
+Complete old→new runtime/requirements mapping and limitations: [VISUAL_REBASELINE_V2.md](VISUAL_REBASELINE_V2.md).
+All 167 incoming images and 62 old images inspected; old payloads retained as
+SUPERSEDED / LEGACY. Additional review: 0 promoted, 3 supporting exact duplicates,
+6 UNMATCHED; [ADDITIONAL_CONCEPTS_REVIEW.md](ADDITIONAL_CONCEPTS_REVIEW.md).
+Secrets-Achievements angle C is missing; pause only dependent acceptance.
+New/changed character sheets are candidates, not final casting/rig acceptance.
+S09 pair pose remains noncanonical narrative staging.
+
+## Concept art — environments (stage mapping; use explicit v2 images)
 
 | Repository package | Stage | Primary manifest relation | Role | Status |
 |---|---:|---|---|---|
@@ -23,25 +34,29 @@ Rule: every file inside a package listed as `CANONICAL` inherits that package's 
 
 | Path | Stage | Role | Status |
 |---|---:|---|---|
-| `assets/concept_art/memories/s04_first_meeting/**` | 4 | raid-memory space, two-character/rune framing | CANONICAL reference; no combat/romance swell |
-| `assets/concept_art/memories/s06_egg/egg_theft_v01.png` | 6 | stealth/egg framing alt A | CANONICAL candidate |
-| `assets/concept_art/memories/s06_egg/egg_theft_v02.png` | 6 | stealth/egg framing alt B | CANONICAL candidate |
-| `assets/concept_art/memories/s06_egg/egg_rescue.png` | 6 | scripted ledge/rescue framing | CANONICAL reference |
-| `assets/concept_art/memories/s09_future/**` | 9 | fantasy→real possibility framing | CANONICAL reference; no promise/mutual outcome |
+| `assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/zone_environment_a/b/c.png` | 4 | current raid-memory shell | V2 visual reference; canonical noncombat mechanics unchanged |
+| `assets/concept_art/memories/s04_first_meeting/` old nonsuffixed images | 4 | historical pair/rune framing | LEGACY supporting only; no final casting |
+| `assets/concept_art/memories/s06_egg/egg_theft_v01.png` | 6 | updated theft action mood | Current single supporting reference; canon controls staging/mechanics |
+| `assets/concept_art/memories/s06_egg/egg_theft_v02.png` | 6 | old alternate theft framing | SUPERSEDED / LEGACY; current v01 supplies broad mood |
+| `assets/concept_art/memories/s06_egg/egg_rescue.png` | 6 | updated ledge/rescue action mood | Current single supporting reference; no character/rig acceptance |
+| `assets/concept_art/memories/s06_egg/zone_environment_a/b/c.png` | 6 | current Egg-memory shell | V2 visual reference; canonical stealth/chase/rescue mechanics unchanged |
+| `assets/concept_art/memories/s09_future/pair_keyframe.png` | 9 | palette/costume support only | Updated reference; seated couple pose NONCANONICAL narrative staging |
+| `assets/concept_art/memories/s09_future/` old key/gameplay art | 9 | historical future framing | LEGACY supporting; no new environment triplet or approved mutual outcome |
 | `assets/concept_art/characters/char_a.png` | 4/9 | character reference option | REFERENCE |
 | `assets/concept_art/characters/char_b.png` | 4/6/9 | character reference option | REFERENCE |
 | `assets/concept_art/characters/char_c.png` | 4/9 | character reference option | REFERENCE |
 | `assets/concept_art/characters/char_d.png` | 4/6/9 | character reference option | REFERENCE |
+| `assets/concept_art/characters/char_e.png`, `char_f.png`, `char_g.png`, `char_j.png` | unresolved | new character reference options | REFERENCE candidates; exact casting/rig requires owner input |
 | `assets/concept_art/characters/pair_character_mood_sheet.png` | 4/9 | pair staging/mood | REFERENCE, not reciprocity evidence |
 | `assets/concept_art/_secondary/noncanonical_final_pair_scene.png` | — | retained mood artifact only | **NONCANONICAL — never use as ending outcome** |
 
 ## Concept art — hero props / UI / production sheets
 
-All files under `assets/concept_art/hero_props/**` are approved modeling/shape references for the related central mechanism, five wing mechanisms, Egg, sigils, Future Record, modular kit and final table. Exact mechanics remain defined by `NARRATIVE_CANON.md` / master Level & Puzzle Design.
+Explicit v2 files under `assets/concept_art/hero_props/**` are visual modeling/shape references for the related central mechanism, five wing mechanisms, Egg, sigils, Future Record, modular kit and final table. Exact mechanics remain defined by `NARRATIVE_CANON.md` / master Level & Puzzle Design.
 
-All files under `assets/concept_art/ui/**` are style/layout references only. Runtime UI must keep Cyrillic readability, accessibility, no-response final semantics and the master Text Package copy.
+Explicit v2 files under `assets/concept_art/ui/**` are style/layout references only; old nonsuffixed files are LEGACY. Runtime UI must keep Cyrillic readability, accessibility, no-response final semantics and the master Text Package copy.
 
-All files under `assets/concept_art/production_sheets/**` are global Art Bible references for material language, architectural shapes and lighting consistency.
+Explicit v2 sets under `assets/concept_art/production_sheets/**` are global visual references; nonsuffixed sheets are LEGACY references for material language, architectural shapes and lighting consistency.
 
 ## Music source masters
 
@@ -116,3 +131,25 @@ They identify the canonical image blobs, planned source/runtime paths, shared
 materials, snapping/collision rules and pending acceptance gates. The dimensioned
 drawing is a design artifact. These planned meshes are not yet runtime assets;
 the four ARCH inventory rows remain unaccepted.
+
+## V2 material migration — current runtime resources
+
+The existing wood resource and its roughness map are rematerialized; five
+compatible originals and the export fixture are kept. Shared library now has
+12 resources and 20 maps. Six additions are owner-approved visual families,
+not a change to the 185-row master inventory or global performance budget.
+
+| Inventory / owner scope | Runtime resource | Status |
+|---|---|---|
+| Owner v2 dark iron | `game/art/materials/m_dark_iron.tres` | Shared foundation; actual hardware/prop integration pending |
+| Owner v2 aged leather | `game/art/materials/m_aged_leather.tres` | Shared foundation; book/seating integration pending |
+| MAT-010 / owner crimson | `game/art/materials/m_crimson_textile.tres` | Shared weave/tint; original glyph/decor integration pending |
+| Owner v2 deep navy | `game/art/materials/m_navy_textile.tres` | Same maps as crimson; no unique prop set |
+| MAT-006 | `game/art/materials/m_clear_glass.tres` | Clear substrate; real overlapping optics/Low tiers pending |
+| MAT-015 | `game/art/materials/m_resonance_teal.tres` | Emission family variant; pulse/feedback gameplay pending |
+
+No production `.blend`/GLB, hero/world scene or shipping UI screen was created or
+replaced by this migration. The technical cube remains validation-only. Actual
+validation and limitations: `VISUAL_REBASELINE_V2.md` / `MATERIAL_PREFLIGHT.md`.
+The modular brief now points to all three current kit/shape/hub views; technical
+interfaces and sample ceilings remain unchanged.

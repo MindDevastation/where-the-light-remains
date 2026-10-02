@@ -1,0 +1,5 @@
+CONCEPT_INTEGRITY PASS: 167 incoming PNGs decoded/hash-verified; 62 old payloads retained
+RUNTIME_CONTRACTS PASS: 14 unchanged source/configuration fingerprints
+ADDITIONAL_REVIEW: 9 inspected; PROMOTE_CANONICAL=0, SUPPORTING_REFERENCE=3, REJECT=0, UNMATCHED=6
+REFERENCE_COMPLETENESS PARTIAL: missing assets/concept_art/ui/Secrets-Achievements screen_v2_angle_c.png; dependent acceptance only
+SCOPE: integrity/contracts, not semantic/visual acceptance or target-GPU profiling
