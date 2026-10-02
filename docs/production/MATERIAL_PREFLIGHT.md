@@ -1,6 +1,6 @@
 # Material library preflight
 
-Status: **PASS — graphical environment and authored six-family baseline** (2026-10-02).
+Status: **PASS — graphical environment and authored twelve-resource v2 foundation** (2026-10-02).
 
 Recovery feature: `feature/03-art-foundation/graphics-preflight`.
 Production feature: `feature/03-art-foundation/material-library`.
@@ -8,6 +8,7 @@ The original 2026-09-23 preflight below used isolated procedural test specimens
 under `game/tests/`. The authored shared baseline is now implemented and checked
 separately; see the 2026-10-02 result at the end and [MATERIAL_LIBRARY.md](MATERIAL_LIBRARY.md).
 Full inventory and target-hardware acceptance remain pending.
+The current v2 results follow the historical six-family results at the end.
 
 ## Corrected diagnosis
 
@@ -133,3 +134,53 @@ Accepted scope is the reusable baseline for sample asset integration. Stone
 variants, memory text/imprints, crystal quality tiers, gameplay emission feedback,
 transparent-surface overlap on real meshes and representative GTX 1060-class
 1080p/60 Medium profiling remain open. No shipping-wide performance PASS is claimed.
+
+## Hybrid Warcraft Observatory v2 validation — 2026-10-02
+
+Feature: `feature/03-art-foundation/visual-rebaseline-v2`, pack `cabe792`, audit
+checkpoint `92fa0f2`. Final implementation fingerprints and screenshot hashes:
+[validation manifest](evidence/visual_rebaseline_v2/validation_manifest.json).
+Reused the verified local toolchain and authenticated TCP workaround above.
+Godot 4.7.2 / X11 / Vulkan 1.4.318 / Forward+ / llvmpipe LLVM 20.1.2 passed.
+
+| Check | Actual result / scope |
+|---|---|
+| GitHub identity / origin Git and LFS access | PASS; MindDevastation, read/write permission, fetch/push, authenticated batch download and exact fixture hashes |
+| Toolchain recovery / minimal capability smoke | PASS; verified local gh/Blender recovery, real source reopen, X11 cookie accepted and unauthenticated connection rejected, graphical GameRoot/eight-autoload startup/safe exit |
+| Shared material implementation | PASS; 12 resources and 20 original 1024² PNG maps; five old resources unchanged, wood rematerialized, six shared resources added |
+| Deterministic regeneration | PASS; all 20 maps and texture manifest reproduced byte-for-byte; 13,176,703 source PNG bytes |
+| Godot editor import / script parse | PASS; exit 0, no script/resource errors |
+| Unchanged source / GLB regression | PASS; meters, transforms, Y-up, bottom-center pivot, normals, UV, one material and script-free wrapper |
+| Graphical review | PASS; all 12 resources in neutral/warm/cool, plus seven opaque 4×4 tile instances; four 1920×1080 final PNGs inspected |
+| Framebuffer contribution | PASS; mean RGB delta 0.039619–0.816702 across 43 sample observations, threshold 0.015 |
+| Russian labels / tile inspection | PASS; Cyrillic glyph checks and actual images legible, material families distinct, no visible tile boundary discontinuity |
+| Existing runtime contracts | PASS; 14 source/configuration fingerprints unchanged; modular dimensions/physics/material ceilings unchanged |
+| Actual puzzle interaction / save/load | N/A; production controllers/worlds are unbuilt, startup is not a puzzle smoke test |
+| Target-class 1080p60 performance | BLOCKER for hardware certification only; no physical GPU exposed, software Vulkan cannot certify the target |
+
+The sphere board reports **38 draw calls / 137,058,176 texture bytes**; tiles
+report **9 / 128,763,776**. These are total isolated preview counters including
+environment/framebuffer. They do not prove a shipping scene remains within its
+budget or establish a new budget. No production scene/light/UI or Blender/GLB
+payload changed. No LFS history migration or new LFS object was required.
+
+Wood retains grain/color/normal/UV and its resource path, disables clearcoat and
+raises ORM roughness toward aged timber. Iron/leather/woven textiles provide the
+new reusable families; crimson/navy share the same weave maps. Clear glass and
+teal emission remain compact substrates, with actual mesh sorting, gameplay
+feedback and quality tiers deferred to their asset briefs.
+
+Evidence and reproduction commands:
+[index](evidence/visual_rebaseline_v2/README.md),
+[preflight](evidence/visual_rebaseline_v2/preflight.log),
+[import/export/startup](evidence/visual_rebaseline_v2/runtime_import.log),
+[regeneration](evidence/visual_rebaseline_v2/material_reproduction.log),
+[neutral](evidence/visual_rebaseline_v2/materials_neutral.png),
+[warm](evidence/visual_rebaseline_v2/materials_warm.png),
+[cool](evidence/visual_rebaseline_v2/materials_cool.png),
+[tiles](evidence/visual_rebaseline_v2/materials_tiles.png),
+[hardware scope](evidence/visual_rebaseline_v2/hardware_scope.log).
+
+This is technical and surface/palette acceptance for the existing foundation.
+Full Warcraft-inspired geometry, hero readability, environment art acceptance
+and target-hardware performance remain open; overall rebaseline is PARTIAL.

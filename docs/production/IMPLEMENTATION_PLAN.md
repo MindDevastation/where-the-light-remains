@@ -223,8 +223,8 @@ starts from synchronized Art Foundation/main `cabe792717828dfe54009219a7f6cc4e0f
 - [x] Record 45 named v2 slots and two nonstandard zone A/B/C sets; retain old payloads as explicit LEGACY.
 - [x] Audit 9 additional concepts: 0 promoted, 3 exact-duplicate supporting, 6 UNMATCHED pending exact owner assignment.
 - [x] Inspect actual implementation: six materials and technical cube; no production worlds, hero props or shipping UI screens yet.
-- [ ] Complete safe P0 wood/material-family/review-light migration and validation.
-- [ ] Rebaseline existing modular brief visual refs without changing dimensions/physics/budgets.
+- [x] Complete safe P0 wood/material-family/review-light migration and validation: one existing wood resource rematerialized, six shared resources added, 12 resources / 20 reproducible 1K maps; four actual Forward+ graphical reviews PASS.
+- [x] Rebaseline existing modular brief visual refs without changing dimensions/physics/budgets; exact technical JSON contract retained.
 - [ ] Supply Secrets-Achievements C before that slot's full-reference acceptance.
 - [ ] Assign exact slots for unmatched additional 1/5/6/7/8/9 before production use.
 
@@ -233,3 +233,13 @@ records every additional decision. Do not continue the old visual baseline or
 manufacture missing stage scenes merely to claim migration completion. Return
 to bounded modular sample after the safe foundation slice; representative target
 hardware profiling still precedes bulk production.
+
+Bounded foundation gate PASS: Blender/source reopen, GLB technical regression,
+Godot import/parse, minimal graphical startup/safe exit, 14 unchanged runtime
+fingerprints, material/framebuffer/Cyrillic/4×4 tile review and map reproduction.
+Actual evidence and source hashes: `evidence/visual_rebaseline_v2/README.md`.
+No production worlds, hero mechanisms, shipping UI or gameplay interactions
+exist to migrate/test; no such acceptance is claimed. Physical GTX1060-class
+performance is BLOCKER for target certification only. Overall visual rebaseline
+remains PARTIAL. The next safe feature is the already specified five-module
+Archive sample under the v2 references, with its normal asset acceptance gates.

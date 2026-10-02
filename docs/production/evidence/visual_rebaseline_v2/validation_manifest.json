@@ -1,0 +1,108 @@
+{
+  "source_base": "92fa0f29e5156a5926c44ad24696a49e3d1137ca",
+  "files": [
+    {
+      "path": "game/tests/material_library_smoke.gd",
+      "sha256": "55197ea6279b13f47b4000b6bfc819696bb7a510f3ef7c41abc4f9d26ac3a1ec",
+      "bytes": 11191
+    },
+    {
+      "path": "tools/generate_material_maps.py",
+      "sha256": "beff054a7dc882ebcc3b3aed79360ebd9d7679b1cefdc94a79224442a701bf85",
+      "bytes": 6750
+    },
+    {
+      "path": "game/art/textures/material_library/texture_manifest.json",
+      "sha256": "aadaad2f185bcad7195683b8d15116c9067ee05d29e816a4a011671520540ae9",
+      "bytes": 4754
+    },
+    {
+      "path": "docs/production/modular_archive_kit_v1.json",
+      "sha256": "1418840cfe45aac2b3e5fca217f47f11ab892eefad288d0646bb840eacf37aab",
+      "bytes": 8295
+    },
+    {
+      "path": "game/art/materials/m_aged_brass.tres",
+      "sha256": "9cea370c0aaf299bdfdf4bb29867194a8fd13d7b4b1d5a2877a1730a358e134c",
+      "bytes": 711
+    },
+    {
+      "path": "game/art/materials/m_aged_leather.tres",
+      "sha256": "71ca371edd03b1062fcd6e42dd9ae1fa54557a678d39be358ec6db3455e228cb",
+      "bytes": 639
+    },
+    {
+      "path": "game/art/materials/m_archive_emissive_gold.tres",
+      "sha256": "d81e1f39c7cc7397823eae630c4d76f734cd19997581042fa55a5b900b00959a",
+      "bytes": 252
+    },
+    {
+      "path": "game/art/materials/m_clear_glass.tres",
+      "sha256": "42d7964b6db1f86666d06ffcefed6603524a319739dc9574f66ad6f0573989cc",
+      "bytes": 245
+    },
+    {
+      "path": "game/art/materials/m_crimson_textile.tres",
+      "sha256": "eaa353a11b5bf0c2282af05bfe567ed99e708a42e96e25a3deb04d4d34eb128b",
+      "bytes": 688
+    },
+    {
+      "path": "game/art/materials/m_crystal_glass.tres",
+      "sha256": "f0a3f957b1eadebc42adb65122f95ea7b4f7703658a1a7406e40a5e249c22858",
+      "bytes": 471
+    },
+    {
+      "path": "game/art/materials/m_dark_iron.tres",
+      "sha256": "cd98d082db10f52a9f8c8dde2618a4cc8de59ce863f39ed9d849d50893d9feff",
+      "bytes": 707
+    },
+    {
+      "path": "game/art/materials/m_dark_walnut.tres",
+      "sha256": "f5e2de68b1ababca7df2246ad953eea5a5fed0a5ab117e436aa57bd84048034f",
+      "bytes": 661
+    },
+    {
+      "path": "game/art/materials/m_memory_glass.tres",
+      "sha256": "ee3f78e846ce8f0ab79fc6f080bee9a75a0594ed1b629e26cbf9ea40adc7ec3e",
+      "bytes": 610
+    },
+    {
+      "path": "game/art/materials/m_navy_textile.tres",
+      "sha256": "21f4d6f05f4fdc3aa9317f640b297fc2b62522bd44da5c6313ed6cc8b2493f60",
+      "bytes": 685
+    },
+    {
+      "path": "game/art/materials/m_observatory_stone.tres",
+      "sha256": "7198490b91e871a015e02ce2bf4ce1bed240d3db4391c6aa42145cf82d368d5d",
+      "bytes": 659
+    },
+    {
+      "path": "game/art/materials/m_resonance_teal.tres",
+      "sha256": "5bbcae0ff5d59565785d2cf1c1987c83b053c64f6588cc76dced902c01a090b2",
+      "bytes": 247
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/production/evidence/visual_rebaseline_v2/materials_neutral.png",
+      "sha256": "536504464e0e1a34e31103a8b0f3918e6eccd190b06a369e9b41b486b4e1556a",
+      "bytes": 507570
+    },
+    {
+      "path": "docs/production/evidence/visual_rebaseline_v2/materials_warm.png",
+      "sha256": "e0a986869ca44f9c67751fa2b404a36d30aa2a426da0c2eb2e1b8f5eff568047",
+      "bytes": 489824
+    },
+    {
+      "path": "docs/production/evidence/visual_rebaseline_v2/materials_cool.png",
+      "sha256": "d63e6a616ecfa1f54a578f2f42988e682d7987917dac17c6ea459a512724905f",
+      "bytes": 478758
+    },
+    {
+      "path": "docs/production/evidence/visual_rebaseline_v2/materials_tiles.png",
+      "sha256": "49fca261ad180f44584dc8955c472bfa7d451307da3767aafcd5ec2bfe90dd4d",
+      "bytes": 917350
+    }
+  ],
+  "scope": "Final authored source snapshot; neutral/warm/cool precede a tile-only layout refinement, with sphere/material/light behavior unchanged. Final tile screenshot was regenerated and inspected after refinement."
+}

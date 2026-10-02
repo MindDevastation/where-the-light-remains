@@ -1,6 +1,6 @@
 # Shared material library
 
-Scope: the six-family Art Foundation baseline. These are reusable runtime
+Scope: the six-family historical Art Foundation baseline plus the v2 shared extension below. These are reusable runtime
 resources, separate from the earlier capability-only specimens.
 Full inventory acceptance, representative scene performance and crystal quality
 tiers remain open; this slice does not mark every MAT requirement complete.
@@ -13,7 +13,7 @@ All paths below are relative to `game/art/materials/`.
 |---|---|---|
 | MAT-004 | `m_observatory_stone.tres` | Pale warm stone, subtle pores/veins, rough dielectric |
 | MAT-001 | `m_aged_brass.tres` | Warm metal with smooth aging, brushed detail and varied roughness |
-| MAT-003 | `m_dark_walnut.tres` | Dark brown grain, polished surface and restrained clearcoat |
+| MAT-003 | `m_dark_walnut.tres` | Aged dark brown grain; v2 disables clearcoat and increases roughness |
 | MAT-007 | `m_memory_glass.tres` | Cool frosted substrate, fine normal/roughness maps, screen-space refraction |
 | MAT-008 | `m_crystal_glass.tres` | Blue/violet glass, clearer refraction, rim and weak emission |
 | MAT-014 | `m_archive_emissive_gold.tres` | Warm gold emission; glow supplied by the scene environment |
@@ -38,7 +38,8 @@ Pillow 12.3.0. From the repository root:
 python tools/generate_material_maps.py
 ```
 
-The eleven 1024x1024 PNGs and SHA-256/provenance/edge metrics are in
+The historical six-family baseline had eleven 1024x1024 PNGs; the current v2
+extension has twenty. SHA-256/provenance/edge metrics are in
 `game/art/textures/material_library/texture_manifest.json`. PNGs use ordinary
 Git under the forward-only LFS policy. The generator publishes each PNG
 atomically so interrupted encoding does not replace a complete map.
@@ -105,3 +106,53 @@ For new visual work use `VISUAL_REBASELINE_V2.md`, its explicit current referenc
 and `assets/concept_art/README.md`. Nonsuffixed v1 sheets/images referenced above
 are historical/LEGACY; technical validation stays valid in its recorded scope.
 Canonical mechanics and global budgets remain unchanged.
+
+## V2 shared extension — Hybrid Warcraft Observatory
+
+Owner baseline references: `production_sheets/Material sheet_v2_angle_a/b/c.png`
+and `Lighting guide sheet_v2_angle_a/b/c.png` under `assets/concept_art/`, pinned
+at `cabe792`. Exact image blobs/hash inventory and interpretation are in
+`VISUAL_REBASELINE_V2.md`. No concept pixels are used as runtime textures.
+
+The five compatible original families stay unchanged. `m_dark_walnut.tres`
+keeps its path, color/grain/normal/UV identity; clearcoat is disabled and the ORM
+roughness is increased from polished ~0.25 to aged ~0.58. This is
+KEEP_AND_REMATERIAL, not a mesh or color/UV rebuild. Carved timber uses the same
+material with authored geometry/trim in its eventual asset brief.
+
+| Resource under `game/art/materials/` | Relation / use |
+|---|---|
+| `m_dark_iron.tres` | Owner v2 family; forged dark metallic hardware with restrained varied roughness |
+| `m_aged_leather.tres` | Owner v2 family; rough brown leather for books/seating/straps; seams belong to meshes |
+| `m_crimson_textile.tres` | MAT-010 palette refinement; restrained crimson dyed woven textile |
+| `m_navy_textile.tres` | Owner v2 deep-navy counterpart; shares exactly the same three weave maps with crimson |
+| `m_clear_glass.tres` | MAT-006 clear optics substrate, built-in approximation, not ray tracing |
+| `m_resonance_teal.tres` | MAT-015 family emission variant; same StandardMaterial3D approach as gold, lower authored energy |
+
+Total library: **12 shared resources / 20 original 1024² maps**; no per-prop
+unique materials. New iron/leather/weave use albedo, +Y normal and ORM. Both
+textile resources share the three neutral maps and vary resource tint. Existing
+texture/filter/channel/mipmap rules apply; iron albedo/ORM use high-quality
+compression. New source PNG payloads plus originals total **13,176,703 bytes**.
+Generator dependencies remain NumPy 2.3.5 / Pillow 12.3.0. Repeatable regeneration
+checks all maps and manifest; no new Blender/GLB/LFS payload is needed.
+
+Use existing runtime resources directly; keep resource_local_to_scene disabled.
+Do not mutate shared materials for local puzzle states. Transparent surfaces need
+actual asset sorting/backface/overlap/readability review; clear glass does not
+complete all lenses/window acceptance. Stage feedback and quality tiers are still
+unbuilt. No new global texture/shader budget is introduced.
+
+Review through the existing authenticated graphical runner with `--v2` after the
+script's user-argument separator. It renders all twelve resources in neutral,
+warm or cool light; `--v2 --tiles` shows seven opaque instances in 4×4 repetition.
+The cyan/amber split is an isolated review setup, not a shipped world lighting
+state. Cyrillic labels, shared map identity and real framebuffer contribution
+are checked in Vulkan Forward+. Logs/screenshots are under
+`evidence/visual_rebaseline_v2/`; all four reviews and deterministic regeneration
+PASS. Current results and scope are in `MATERIAL_PREFLIGHT.md` and the evidence
+README. Historical six-family logs above retain their original scope.
+
+The material board establishes surface behavior and palette. It cannot establish
+Warcraft geometry/craftsmanship, navigation, puzzle readability, collision or
+representative GTX1060 performance in unbuilt environments.

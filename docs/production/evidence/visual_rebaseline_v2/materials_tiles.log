@@ -1,0 +1,43 @@
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/bin/Xvfb :100 -screen 0 1920x1080x24 -listen tcp -nolisten unix -nolisten local -noreset -auth /tmp/wlr-x11-w8omd3d3/Xauthority
+DISPLAY=127.0.0.1:100; VK_ICD_FILENAMES=/workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/share/vulkan/icd.d/lvp_icd.json
+X11_TCP_AUTH PASS: valid cookie accepted; unauthenticated client rejected
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --display-driver x11 --rendering-driver vulkan --rendering-method forward_plus --audio-driver Dummy --path game --resolution 1920x1080 --script res://tests/material_library_smoke.gd -- --v2 --tiles --screenshot=/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/docs/production/evidence/visual_rebaseline_v2/materials_tiles.png --light=neutral
+GRAPHICAL_RUN PASS: exit=0
+
+Godot stdout/stderr:
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.318 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 20.1.2, 256 bits)
+
+MATERIAL_LIBRARY rendered: observatory_stone; rgb_delta=0.81670241453685
+MATERIAL_LIBRARY rendered: aged_brass; rgb_delta=0.47769098548451
+MATERIAL_LIBRARY rendered: dark_walnut; rgb_delta=0.19156454470552
+MATERIAL_LIBRARY rendered: dark_iron; rgb_delta=0.044638483106
+MATERIAL_LIBRARY rendered: aged_leather; rgb_delta=0.25366115515741
+MATERIAL_LIBRARY rendered: crimson_textile; rgb_delta=0.18558006516347
+MATERIAL_LIBRARY rendered: navy_textile; rgb_delta=0.10471303072215
+MATERIAL_LIBRARY counters (preview only): draw_calls=9; texture_bytes=128763776
+MATERIAL_LIBRARY PASS: shared resources=12; rendered=7; authored maps; actual X11/Vulkan/Forward+; Cyrillic; light=neutral; tiles=true; image=(1920, 1080); screenshot=/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/docs/production/evidence/visual_rebaseline_v2/materials_tiles.png
+
+
+Xvfb stdout/stderr:
+Warning: getifaddrs returns Operation not permitted
+Warning: getifaddrs returns Operation not permitted
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Could not resolve keysym XF86CameraAccessEnable
+> Warning:          Could not resolve keysym XF86CameraAccessDisable
+> Warning:          Could not resolve keysym XF86CameraAccessToggle
+> Warning:          Could not resolve keysym XF86NextElement
+> Warning:          Could not resolve keysym XF86PreviousElement
+> Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+> Warning:          Could not resolve keysym XF86MarkWaypoint
+> Warning:          Could not resolve keysym XF86Sos
+> Warning:          Could not resolve keysym XF86NavChart
+> Warning:          Could not resolve keysym XF86FishingChart
+> Warning:          Could not resolve keysym XF86SingleRangeRadar
+> Warning:          Could not resolve keysym XF86DualRangeRadar
+> Warning:          Could not resolve keysym XF86RadarOverlay
+> Warning:          Could not resolve keysym XF86TraditionalSonar
+> Warning:          Could not resolve keysym XF86ClearvuSonar
+> Warning:          Could not resolve keysym XF86SidevuSonar
+> Warning:          Could not resolve keysym XF86NavInfo
+Errors from xkbcomp are not fatal to the X server

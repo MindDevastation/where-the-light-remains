@@ -61,10 +61,73 @@
     },
     {
       "file": "t_dark_walnut_orm.png",
-      "sha256": "b26872206568f117e9cc4a7029fe8007c1c346d17c144a3a59cc2467bcbc8f48",
-      "bytes": 186816,
-      "wrap_mean_8bit": 0.1772,
-      "adjacent_mean_8bit": 0.1432
+      "sha256": "e361bdbd22506c2cf5d7fb476b971e18da8b37c99ac73ef6f899fb0a83332dc6",
+      "bytes": 228962,
+      "wrap_mean_8bit": 0.2365,
+      "adjacent_mean_8bit": 0.1931
+    },
+    {
+      "file": "t_dark_iron_albedo.png",
+      "sha256": "b09dcca7d1ccf1437db82ea1d488d8d2593cd08c5eb8800b98d1ca39420b080a",
+      "bytes": 578719,
+      "wrap_mean_8bit": 0.4494,
+      "adjacent_mean_8bit": 0.4409
+    },
+    {
+      "file": "t_dark_iron_normal.png",
+      "sha256": "01448a91b4f5dfff5b19035a2b787e1e20ecfe9ec23bae45c0ece6d006d10eef",
+      "bytes": 706092,
+      "wrap_mean_8bit": 0.5796,
+      "adjacent_mean_8bit": 0.5953
+    },
+    {
+      "file": "t_dark_iron_orm.png",
+      "sha256": "52faf7f2632f728d87733bf683073beb26c90f44bc0133ce00d205bcb3a2a80a",
+      "bytes": 493937,
+      "wrap_mean_8bit": 0.5496,
+      "adjacent_mean_8bit": 0.5333
+    },
+    {
+      "file": "t_aged_leather_albedo.png",
+      "sha256": "113c3a9022a3971c9a3fe40beaebbe8332e4be3560a14785829978a8364f50b3",
+      "bytes": 731121,
+      "wrap_mean_8bit": 0.8044,
+      "adjacent_mean_8bit": 0.7851
+    },
+    {
+      "file": "t_aged_leather_normal.png",
+      "sha256": "66b55a9bf2397e57a9afec6ce9ac4ae62e81389fd2b77a0468c29b48525357ef",
+      "bytes": 1362081,
+      "wrap_mean_8bit": 2.5055,
+      "adjacent_mean_8bit": 2.4373
+    },
+    {
+      "file": "t_aged_leather_orm.png",
+      "sha256": "f2db50ef558c832612b295ac3a08e0b1d60ba79e59df57e95ad2b5db5113fc25",
+      "bytes": 581250,
+      "wrap_mean_8bit": 0.7699,
+      "adjacent_mean_8bit": 0.76
+    },
+    {
+      "file": "t_woven_textile_albedo.png",
+      "sha256": "b12cf22e086b5f74f9bf0c888bdcafa792f904c4b87c2b5cef7a3ffc5e249be8",
+      "bytes": 851659,
+      "wrap_mean_8bit": 1.0641,
+      "adjacent_mean_8bit": 1.667
+    },
+    {
+      "file": "t_woven_textile_normal.png",
+      "sha256": "b140bff4e4e5e62bdea0db9592a261a4c16abad31746e42dc35825f02742a840",
+      "bytes": 491470,
+      "wrap_mean_8bit": 0.9364,
+      "adjacent_mean_8bit": 0.6893
+    },
+    {
+      "file": "t_woven_textile_orm.png",
+      "sha256": "8b7b36ae2e28f1bd06b5a8aa144c8e552c69b2bc36dc24864250eb812a1a783d",
+      "bytes": 484264,
+      "wrap_mean_8bit": 0.4717,
+      "adjacent_mean_8bit": 0.6264
     },
     {
       "file": "t_memory_glass_normal.png",

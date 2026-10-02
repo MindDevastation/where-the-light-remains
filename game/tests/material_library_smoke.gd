@@ -11,6 +11,9 @@ var tiles := false
 var lighting := "neutral"
 var output := ""
 var hold := false
+var v2 := false
+var families := FAMILIES.duplicate()
+var titles := TITLES.duplicate()
 
 
 func _initialize() -> void:
@@ -66,9 +69,14 @@ func _run() -> void:
             tiles = true
         elif arg == "--hold":
             hold = true
+        elif arg == "--v2":
+            v2 = true
     if not _check(not output.is_empty() and lighting in ["neutral", "warm", "cool"], "Expected screenshot path and valid light preset"):
         return
-    for family in FAMILIES:
+    if v2:
+        families.append_array(["dark_iron", "aged_leather", "crimson_textile", "navy_textile", "clear_glass", "resonance_teal"])
+        titles.append_array(["Тёмное железо", "Состаренная кожа", "Багряная ткань", "Синяя ткань", "Прозрачное стекло", "Бирюзовое свечение"])
+    for family in families:
         var path: String = "res://art/materials/m_" + family + ".tres"
         var material: StandardMaterial3D = load(path)
         if not _check(material != null and not material.resource_local_to_scene and load(path) == material, "Shared resource failed: " + path):
@@ -79,13 +87,21 @@ func _run() -> void:
             return
     if not _check(materials[3].refraction_enabled and materials[4].refraction_enabled and materials[5].emission_enabled, "Missing optical/emission capability"):
         return
+    if v2:
+        for index in [6, 7, 8, 9]:
+            if not _check(materials[index].albedo_texture != null and materials[index].normal_texture != null and materials[index].roughness_texture != null, "Missing v2 authored maps"):
+                return
+        if not _check(materials[8].albedo_texture == materials[9].albedo_texture and materials[8].normal_texture == materials[9].normal_texture and materials[8].roughness_texture == materials[9].roughness_texture, "Textile variants must share maps"):
+            return
+        if not _check(not materials[2].clearcoat_enabled and materials[10].refraction_enabled and materials[11].emission_enabled, "V2 aged wood/clear glass/teal behavior missing"):
+            return
     var stage := Node3D.new()
     root.add_child(stage)
     var world := WorldEnvironment.new()
     var environment := Environment.new()
     world.environment = environment
     environment.background_mode = Environment.BG_COLOR
-    environment.background_color = Color("141b24")
+    environment.background_color = Color("0d172e") if v2 else Color("141b24")
     environment.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
     environment.ambient_light_energy = 0.55
     environment.reflected_light_source = Environment.REFLECTION_SOURCE_SKY
@@ -94,7 +110,7 @@ func _run() -> void:
     environment.glow_intensity = 0.45
     var sky := Sky.new()
     var sky_material := ProceduralSkyMaterial.new()
-    sky_material.sky_top_color = Color("374456")
+    sky_material.sky_top_color = Color("172d60") if v2 else Color("374456")
     sky_material.sky_horizon_color = Color("b8c1ce")
     sky_material.ground_bottom_color = Color("25232b")
     sky_material.ground_horizon_color = Color("8a8583")
@@ -117,7 +133,7 @@ func _run() -> void:
     stage.add_child(fill)
     camera = Camera3D.new()
     camera.projection = Camera3D.PROJECTION_ORTHOGONAL
-    camera.size = 7.4
+    camera.size = 8.7 if v2 and not tiles else 7.4
     camera.position = Vector3(0, 0, 12)
     stage.add_child(camera)
     camera.current = true
@@ -126,15 +142,25 @@ func _run() -> void:
     var header: String = "БИБЛИОТЕКА МАТЕРИАЛОВ · " + {"neutral": "НЕЙТРАЛЬНЫЙ СВЕТ", "warm": "ТЁПЛЫЙ СВЕТ", "cool": "ХОЛОДНЫЙ СВЕТ"}[lighting]
     if tiles:
         header = "ПОВТОРЕНИЕ КАРТ · 4 × 4 · ОБЩИЕ МАТЕРИАЛЫ"
+    if v2:
+        header = "АРХИВ · МАТЕРИАЛЫ V2 · " + {"neutral": "НЕЙТРАЛЬНЫЙ СВЕТ", "warm": "ТЁПЛЫЙ СВЕТ", "cool": "ХОЛОДНЫЙ СВЕТ"}[lighting]
+        if tiles:
+            header = "АРХИВ · КАРТЫ V2 · ПОВТОРЕНИЕ 4 × 4"
     _label(canvas, header, Vector2(root.size.x / 2.0, 32), root.size.x, 26)
-    var count := 3 if tiles else 6
-    for index in count:
-        var center := Vector3(float(index % 3 - 1) * 3.5, 0.0 if tiles else (1.6 if index < 3 else -1.5), 0)
+    var indices: Array = [0, 1, 2] if tiles else range(families.size())
+    if v2 and tiles:
+        indices = [0, 1, 2, 6, 7, 8, 9]
+    var count := indices.size()
+    for sample in count:
+        var index: int = indices[sample]
+        var center := Vector3(float(sample % 3 - 1) * 3.5, 0.0 if tiles else (1.6 if sample < 3 else -1.5), 0)
+        if v2:
+            center = Vector3((float(sample % 4) - 1.5) * 3.3, (1.0 - floorf(float(sample) / 4.0)) * 2.45 if not tiles else (1.5 if sample < 4 else -1.5), 0)
         centers.append(center)
         var instance := MeshInstance3D.new()
         if tiles:
             var quad := QuadMesh.new()
-            quad.size = Vector2(3.0, 3.0)
+            quad.size = Vector2(2.4, 2.4) if v2 else Vector2(3.0, 3.0)
             var arrays := quad.get_mesh_arrays()
             var uv: PackedVector2Array = arrays[Mesh.ARRAY_TEX_UV]
             for i in uv.size():
@@ -154,7 +180,7 @@ func _run() -> void:
         instance.material_override = materials[index]
         stage.add_child(instance)
         meshes.append(instance)
-        if index == 3 or index == 4:
+        if index == 3 or index == 4 or (v2 and index == 10):
             instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
             for stripe in 8:
                 var card := MeshInstance3D.new()
@@ -167,7 +193,8 @@ func _run() -> void:
                 backing.albedo_color = Color("cad7e4") if stripe % 2 == 0 else Color("24364b")
                 card.material_override = backing
                 stage.add_child(card)
-        var label := _label(canvas, TITLES[index], camera.unproject_position(center + Vector3(0, -1.9 if tiles else -1.12, 0)), 500, 28)
+        var label_offset := -1.32 if v2 and tiles else (-1.9 if tiles else -1.12)
+        var label := _label(canvas, titles[index], camera.unproject_position(center + Vector3(0, label_offset, 0)), 355 if v2 else 500, 23 if v2 else 28)
         for character in label.text:
             if not _check(label.get_theme_font("font").has_char(character.unicode_at(0)), "Missing Cyrillic glyph"):
                 return
@@ -180,15 +207,16 @@ func _run() -> void:
     var without: Image = await _frame()
     for index in count:
         var delta := _mean_delta(full, without, camera.unproject_position(centers[index]))
-        if not _check(delta > 0.015, "No rendered contribution: " + FAMILIES[index]):
+        var family: String = families[indices[index]]
+        if not _check(delta > 0.015, "No rendered contribution: " + family):
             return
-        print("MATERIAL_LIBRARY rendered: ", FAMILIES[index], "; rgb_delta=", delta)
+        print("MATERIAL_LIBRARY rendered: ", family, "; rgb_delta=", delta)
     for mesh in meshes:
         mesh.visible = true
     var final_image: Image = await _frame()
     if not _check(final_image.save_png(output) == OK, "Screenshot save failed"):
         return
     print("MATERIAL_LIBRARY counters (preview only): draw_calls=", RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TOTAL_DRAW_CALLS_IN_FRAME), "; texture_bytes=", RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TEXTURE_MEM_USED))
-    print("MATERIAL_LIBRARY PASS: six shared resources; authored maps; actual X11/Vulkan/Forward+; Cyrillic; light=", lighting, "; tiles=", tiles, "; image=", final_image.get_size(), "; screenshot=", output)
+    print("MATERIAL_LIBRARY PASS: shared resources=", families.size(), "; rendered=", count, "; authored maps; actual X11/Vulkan/Forward+; Cyrillic; light=", lighting, "; tiles=", tiles, "; image=", final_image.get_size(), "; screenshot=", output)
     if not hold:
         root.get_node("App").call("request_safe_exit")

@@ -1,6 +1,6 @@
 # Visual rebaseline v2 — Hybrid Warcraft Observatory
 
-Status: **PARTIAL — reference audit complete; safe foundation migration in progress**.
+Status: **PARTIAL — audit complete and bounded material/reference foundation validated; unbuilt content and dependent inputs remain open**.
 Owner task: uploaded instructions, 2026-10-02 UTC / 2026-10-03 Moscow.
 Pack source: `cabe792717828dfe54009219a7f6cc4e0fb5e5e6` (`recreated concept art design`).
 Feature: `feature/03-art-foundation/visual-rebaseline-v2`, existing Art Foundation epic.
@@ -194,6 +194,70 @@ No mesh-source replacement is required; Blender/GLB regression applies to unchan
 
 ## Validation and next safe step
 
-Actual commands/stdout/stderr, source/screenshot hashes and limitations are saved under `evidence/visual_rebaseline_v2/`. Completion checkpoint is updated after tests. Only independent, validated foundation work may merge; no overall visual/gameplay/performance acceptance is claimed.
+Actual commands/stdout/stderr, source/screenshot hashes and limitations are saved under [evidence/visual_rebaseline_v2/README.md](evidence/visual_rebaseline_v2/README.md). The independent material/reference foundation is validated and may integrate. No overall visual/gameplay/performance acceptance is claimed.
 
 After this bounded rebaseline, resume the five-module sample with the updated brief/references, then Wing I and the playable/save slice. Still no mass asset production before representative hardware profiling. Supply Secrets/Achievements C and explicit exact-slot assignments for the six unmatched additional images before their dependent acceptance/promotion; no guessing.
+
+## Per-asset visual/technical audit detail
+
+Criteria: silhouette, scale, proportions, material response, Warcraft craft,
+celestial identity, furniture/prop language, decoration density, lighting,
+warm/cool balance, interactable readability, modularity, pivots, collision,
+performance. Material resources do not own geometry: N/A geometry entries are
+explicit and must not be converted to art/physics PASS. Review spheres are not
+production props. All six keep shared resource identity; future meshes own
+scale/UV/pivot/collision and localized decoration.
+
+| Existing unit | Silhouette / scale / proportions | Materials / craft / archive identity | Furniture / decor | Lighting / warm-cool | Interactable | Modularity / pivots / collision | Performance | Action |
+|---|---|---|---|---|---|---|---|---|
+| M01 stone | N/A surface | Pale rough warm stone fits; chunky stone silhouette must be modeled later | N/A; no floral source detail baked | Neutral/warm/cool review required | Clues not implemented | Shared tileable; pivot/collision N/A | 3 shared 1K maps; actual world unmeasured | KEEP |
+| M02 brass | N/A surface | Smooth aged metallic craft fits; celestial engraving not supplied by map | N/A; no icons copied | Three light presets required | No controls/states implemented | Shared tileable; pivot/collision N/A | 3 shared 1K maps, BC7 where required | KEEP |
+| M03 wood | N/A surface | Grain/color fit; polished gloss does not fit worn timber, increase roughness/remove coat | Supports eventual timber furniture; carving not a new material | Aged response under amber/cobalt review | No controls/states implemented | Existing UV/maps/path preserved; pivots/collision N/A | Same map count; lower coat complexity; target unmeasured | KEEP_AND_REMATERIAL |
+| M04 memory glass | N/A surface | Frosted optical substrate fits archive | No imprints/text yet | Three light presets, backing visible | Real text/disc clues unbuilt | Shared substrate; pivots/collision N/A | Alpha/refraction cost and overlap remain actual-asset gates | KEEP |
+| M05 crystal | N/A surface | Restrained blue optical/emissive approximation fits | No unique ornaments | Three presets and visible backing | Actual filter/constellation readability unbuilt | Shared substrate; pivots/collision N/A | Real mesh sorting and quality tiers open | KEEP |
+| M06 gold | N/A surface | Gold feedback family fits original celestial identity | No festive string lights | Restrained glow; no extra real light required | Logical feedback unbuilt | Shared resource; pivots/collision N/A | Preview counters only; actual scene unmeasured | KEEP |
+| Technical cube family | 1m technical cube; correct transforms/bottom pivot | Neutral transport material; no art match required | N/A fixture | N/A art-light approval | No interaction/Area/state/animation | Reopen/import normals/UV/Y-up/pivot checks; no gameplay collider required | Not production budget evidence | KEEP |
+
+New shared iron/leather/crimson/navy/clear/teal additions complete the owner's
+compact family palette, not the full 185 required asset groups. Foundation
+migration counts are 1 existing art unit rematerialized + 6 new shared resources;
+0 production world/puzzle/UI scene replacements and 0 Blender/GLB modifications.
+
+## Final bounded migration result
+
+| Requested count | Actual result |
+|---|---|
+| New named canonical slots | 45; 44 complete A/B/C and one A/B-only; two additional zone A/B/C sets bring the reference-set count to 47 |
+| Additional reviewed / promoted / supporting / rejected / unmatched | 9 / 0 / 3 / 0 / 6 |
+| Existing art units inspected | 7: six materials plus one technical cube family |
+| KEEP / REMATERIAL / RELIGHT / MODIFY / REMODEL / REBUILD | 6 / 1 / 0 / 0 / 0 / 0; modular brief separately MODIFY, not a mesh |
+| Existing art units migrated | 1 wood material; five compatible materials and technical cube preserved |
+| Material resources updated / added / total | 1 / 6 / 12; 20 original 1K maps, including nine new maps and one modified wood ORM |
+| Godot production scenes updated | 0; one isolated review script updated |
+| Lighting setups updated | 0 production; one isolated review setup with neutral/warm/cool presets |
+| Shipping UI screens updated | 0; no such screens exist |
+| Blender / GLB payloads changed | 0 / 0 |
+
+| Validation | Actual result |
+|---|---|
+| Blender / source | PASS; verified 4.5.14 LTS CLI and unchanged source reopened; meter/pivot/transform/UV/normals/material checks |
+| GLB / wrapper | PASS; existing technical export/import regression, Y-up/pivot/UV/normals/material and script-free wrapper |
+| Godot import / script parse | PASS; final editor import exit 0, no resource/script errors |
+| Existing startup / contracts | PASS; graphical GameRoot/eight-autoload/safe exit, 14 source fingerprints and modular technical contract preserved |
+| Gameplay puzzle interaction / saves | N/A — unimplemented, not a claimed PASS |
+| Graphical materials | PASS; real authenticated X11 TCP / Vulkan Forward+, 12 materials in three presets plus seven 4×4 tiles; four final PNGs inspected |
+| Map regeneration / performance sanity | PASS; 20 maps + manifest byte-identical, 13,176,703 PNG bytes; sphere preview 38 draw calls / 137,058,176 texture bytes, tiles 9 / 128,763,776 |
+| Target-class performance | BLOCKER only for hardware certification; no physical GPU exposed, llvmpipe cannot certify 1080p60/VRAM budgets |
+
+RGB contribution across 43 observations is 0.039619–0.816702, threshold 0.015.
+Cyrillic labels are checked and legible; textile map sharing is verified. These
+isolated surface/technical results cannot certify Warcraft geometry, navigation,
+hero puzzle readability, transparent overlap on real assets or full-game budgets.
+No canonical text, mechanics, save/state, accessibility or global budget changed.
+
+**FINAL STATUS: PARTIAL.** Missing Secrets-Achievements C, six unmatched exact
+assignments and production casting/asset inputs pause their dependent work only.
+**NEXT SAFE DEVELOPMENT STEP:** return to the ordinary roadmap's bounded
+five-module Archive sample with the current v2 kit/shape/hub references, retaining
+the approved technical contract. Author and validate that coherent family before
+Wing I/playable slice; no bulk distant-stage production before hardware profiling.

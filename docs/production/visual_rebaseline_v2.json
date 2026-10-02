@@ -1038,7 +1038,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Explicitly noncanonical ending image; retained historically, never shipping outcome."
+      "reason": "Explicitly noncanonical ending image; retained historically, never shipping outcome.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/characters/char_a.png",
@@ -1060,7 +1061,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred."
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/characters/char_b.png",
@@ -1082,7 +1084,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred."
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/characters/char_c.png",
@@ -1104,7 +1107,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred."
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/characters/char_d.png",
@@ -1126,7 +1130,10 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred."
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": [
+        "assets/concept_art/characters/char_d.png"
+      ]
     },
     {
       "old_path": "assets/concept_art/characters/pair_character_mood_sheet.png",
@@ -1148,7 +1155,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred."
+      "reason": "No v2 triplet/rig; current char_d changed identity, char_e/f/g/j are additional candidates. Owner casting not inferred.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s00_prologue/p_001.png",
@@ -1174,7 +1182,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s00_prologue/p_002.png",
@@ -1200,7 +1209,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s00_prologue/p_003.png",
@@ -1226,7 +1236,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s00_prologue/p_004.png",
@@ -1252,7 +1263,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_003.png",
@@ -1278,7 +1290,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Semantic many-to-one hub consolidation: establishing ca_001→ca_002, gameplay ca_003→ca_004; not a fabricated missing triplet."
+      "reason": "Semantic many-to-one hub consolidation: establishing ca_001→ca_002, gameplay ca_003→ca_004; not a fabricated missing triplet.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004.png",
@@ -1304,7 +1317,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s01_observatory/Key art/ca_001.png",
@@ -1330,7 +1344,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Semantic many-to-one hub consolidation: establishing ca_001→ca_002, gameplay ca_003→ca_004; not a fabricated missing triplet."
+      "reason": "Semantic many-to-one hub consolidation: establishing ca_001→ca_002, gameplay ca_003→ca_004; not a fabricated missing triplet.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s01_observatory/Key art/ca_002.png",
@@ -1356,7 +1371,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002.png",
@@ -1382,7 +1398,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001.png",
@@ -1408,7 +1425,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s03_wing_voice/Gameplay view/wii_002.png",
@@ -1434,7 +1452,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s03_wing_voice/Key art/wii_001.png",
@@ -1460,7 +1479,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s05_wing_lightness/Gameplay view/wiii_002.png",
@@ -1486,7 +1506,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s05_wing_lightness/Key art/wiii_001.png",
@@ -1512,7 +1533,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s07_wing_reflection/Gameplay view/wiv_002.png",
@@ -1538,7 +1560,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s07_wing_reflection/Key art/wiv_001.png",
@@ -1564,7 +1587,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s08_wing_sincerity/Gameplay view/wv_002.png",
@@ -1590,7 +1614,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s08_wing_sincerity/Key art/wv_001.png",
@@ -1616,7 +1641,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s10_return/Gameplay view/r_002.png",
@@ -1642,7 +1668,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s10_return/Key art/r_001.png",
@@ -1668,7 +1695,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s11_final_puzzle/Gameplay view/f_002.png",
@@ -1694,7 +1722,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s11_final_puzzle/Key art/f_001.png",
@@ -1720,7 +1749,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s12_s15_finale/Acrostic reveal.png",
@@ -1746,7 +1776,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s12_s15_finale/Confession.png",
@@ -1772,7 +1803,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s12_s15_finale/Dawn epilogue.png",
@@ -1798,7 +1830,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/environments/s12_s15_finale/Poem assembly.png",
@@ -1824,7 +1857,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/Egg.png",
@@ -1850,7 +1884,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/Final table-puzzle board.png",
@@ -1876,7 +1911,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/Future Record-symbolic future object.png",
@@ -1902,7 +1938,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/Generic modular observatory kit.png",
@@ -1928,7 +1965,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/Sheet of all sigils.png",
@@ -1954,7 +1992,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/Sigil close-up style test.png",
@@ -1980,7 +2019,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/The Archive’s Central Mechanism.png",
@@ -2006,7 +2046,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/The ‘Laughter-Lightness’ Device.png",
@@ -2032,7 +2073,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/The ‘Life-Voice’ device.png",
@@ -2058,7 +2100,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/The ‘Serious-Smile’ device.png",
@@ -2084,7 +2127,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/The ‘Sincerity–Admiration’ Mechanism.png",
@@ -2110,7 +2154,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/hero_props/‘Heat-Light’ device.png",
@@ -2136,7 +2181,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/memories/s04_first_meeting/Gameplay-memory space/mi_002.png",
@@ -2162,7 +2208,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement."
+      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/memories/s04_first_meeting/Key art/mi_001.png",
@@ -2184,7 +2231,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement."
+      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/memories/s04_first_meeting/pair_keyframe.png",
@@ -2206,7 +2254,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement."
+      "reason": "New environment ABC supports raid shell; old character/pair imagery stays legacy supporting only, no approved casting replacement.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/memories/s06_egg/egg_rescue.png",
@@ -2228,7 +2277,10 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only."
+      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only.",
+      "new_single_supporting_references": [
+        "assets/concept_art/memories/s06_egg/egg_rescue.png"
+      ]
     },
     {
       "old_path": "assets/concept_art/memories/s06_egg/egg_theft_v01.png",
@@ -2250,7 +2302,10 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only."
+      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only.",
+      "new_single_supporting_references": [
+        "assets/concept_art/memories/s06_egg/egg_theft_v01.png"
+      ]
     },
     {
       "old_path": "assets/concept_art/memories/s06_egg/egg_theft_v02.png",
@@ -2272,7 +2327,10 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only."
+      "reason": "Updated egg_theft_v01 / egg_rescue are single references, not A/B/C. egg_theft_v02 superseded by v01 for broad action mood; new zone_environment ABC supports shell only.",
+      "new_single_supporting_references": [
+        "assets/concept_art/memories/s06_egg/egg_theft_v01.png"
+      ]
     },
     {
       "old_path": "assets/concept_art/memories/s09_future/Gameplay - memory view/miii_002.png",
@@ -2294,7 +2352,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending."
+      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/memories/s09_future/Key art/miii_001.png",
@@ -2316,7 +2375,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending."
+      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending.",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/memories/s09_future/pair_keyframe.png",
@@ -2338,7 +2398,10 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending."
+      "reason": "No new environment triplet. Updated pair_keyframe is palette/character support only; seated couple pose is noncanonical for unresolved future and ending.",
+      "new_single_supporting_references": [
+        "assets/concept_art/memories/s09_future/pair_keyframe.png"
+      ]
     },
     {
       "old_path": "assets/concept_art/production_sheets/Architectural shape language sheet.png",
@@ -2364,7 +2427,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/production_sheets/Lighting guide sheet.png",
@@ -2390,7 +2454,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/production_sheets/Material sheet.png",
@@ -2416,7 +2481,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/ui/A screen featuring a collection of couplets.png",
@@ -2442,7 +2508,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/ui/Final assembly screen.png",
@@ -2468,7 +2535,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/ui/Final end screen-epilogue card.png",
@@ -2494,7 +2562,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/ui/Main Menu.png",
@@ -2520,7 +2589,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/ui/Pause-Settings.png",
@@ -2546,7 +2616,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     },
     {
       "old_path": "assets/concept_art/ui/Secrets-Achievements screen.png",
@@ -2571,7 +2642,8 @@
         "game/art/materials/m_archive_emissive_gold.tres"
       ],
       "related_scripts": "No implemented stage scripts; narrative/mechanics remain canonical",
-      "reason": "Direct identity + inspected subject/function"
+      "reason": "Direct identity + inspected subject/function",
+      "new_single_supporting_references": []
     }
   ],
   "preserved_contracts": [
