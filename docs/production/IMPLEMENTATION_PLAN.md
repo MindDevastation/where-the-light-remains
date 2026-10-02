@@ -177,3 +177,10 @@ target-hardware performance remains unmeasured. The next planned feature is
 `feature/03-art-foundation/modular-archive-kit`: begin with its asset brief and
 cross-stage modular architecture review under `ASTRA_WORKFLOW.md` section 9,
 before producing the sample. No bulk modeling is authorized by this checkpoint.
+
+Merged through PR #19 into Art Foundation at
+`16ba54f2acdc2fed5ea41ea6cfae112e8b7cf983`. The merged tree exactly matched the
+validated feature. Graphical engine startup/eight-autoload/safe-exit smoke passed
+again on that epic; actual output: `evidence/material_epic_smoke_2026-10-02.log`.
+This stable slice follows the normal epic-to-main PR route; Git merge history
+records the final integration SHA.
