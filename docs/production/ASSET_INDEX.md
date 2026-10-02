@@ -87,3 +87,23 @@ Before any source master/reference is promoted to a shipping runtime asset:
 4. for audio: remove artifacts/pseudovocal, edit loop/stem boundaries, loudness/mix pass, compressed runtime export;
 5. for 3D/art: validate material/texture/LOD/performance budgets;
 6. update this index with the final runtime path and version.
+
+## Shared material baseline — 2026-10-02
+
+Authored runtime baseline v1, feature `feature/03-art-foundation/material-library`.
+Provenance, import settings, reuse contract and limitations: [MATERIAL_LIBRARY.md](MATERIAL_LIBRARY.md).
+Original generated maps are tracked with their source and SHA-256 manifest;
+the production sheet is a visual reference, not a texture source.
+
+| Inventory | Runtime resource | Status |
+|---|---|---|
+| MAT-004 | `game/art/materials/m_observatory_stone.tres` | Shared base; further stone variation pending |
+| MAT-001 | `game/art/materials/m_aged_brass.tres` | Shared aged brass base |
+| MAT-003 | `game/art/materials/m_dark_walnut.tres` | One shared tileable wood set |
+| MAT-007 | `game/art/materials/m_memory_glass.tres` | Frosted substrate; text/imprint integration pending |
+| MAT-008 | `game/art/materials/m_crystal_glass.tres` | Built-in fake refraction; quality tiers pending |
+| MAT-014 | `game/art/materials/m_archive_emissive_gold.tres` | Emission base; gameplay feedback integration pending |
+
+All six are available for sample asset integration. Representative scene and
+target-hardware acceptance remain open; these statuses do not promote the full
+MAT inventory to final shipping acceptance.

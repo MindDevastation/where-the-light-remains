@@ -75,7 +75,7 @@ Foundation acceptance:
 - [x] Validate the first real LFS-backed 3D binary end-to-end: pointer, payload upload, independent retrieval, manifest hashes and producing/fresh-clone fsck PASS. See `LFS_POLICY.md`.
 - [x] Validate the approved Blender→GLB→Godot static export contract with a minimal one-meter fixture: scale/Y-up, transforms, pivot, normals, UV, material and separate script-free wrapper. See `EXPORT_SAMPLE.md`; production art/performance acceptance remains separate.
 - [x] Restore authenticated Xvfb TCP / Godot X11 / Vulkan Forward+ graphical preflight, with pinned local packages and repeatable runner. Engine and six-specimen material capability tests PASS; see `MATERIAL_PREFLIGHT.md` and 2026-09-23 evidence. The previous AF_UNIX-based environment blocker was an incorrect inference from a TCP-disabled invocation.
-- [ ] Create compact shared material library baseline. Graphical environment gate PASS; authored production materials and their visual acceptance remain pending.
+- [x] Create compact shared material library baseline: six shared resources, eleven original 1K maps, neutral/warm/cool graphical review and 4x4 tiling PASS. See `MATERIAL_LIBRARY.md`, `MATERIAL_PREFLIGHT.md` and 2026-10-02 evidence. Full MAT inventory variants/quality tiers and representative target-hardware acceptance remain open.
 - [ ] Produce one modular Archive kit sample.
 - [ ] Produce one Wing I hero mechanism sample with gameplay pivots.
 - [ ] Import samples in Godot and validate scale, orientation, pivots, materials, collision and warnings.
@@ -156,3 +156,24 @@ feature; graphical engine startup/eight-autoload/safe-exit smoke passed again
 on the merged epic. Actual output: `evidence/graphics_epic_smoke_2026-09-23.log`.
 The stable slice integrates through the normal epic-to-main PR route; merge
 commits in Git identify the final integration SHA.
+
+## Shared material checkpoint — 2026-10-02
+
+Feature: `feature/03-art-foundation/material-library`, based on synchronized
+Art Foundation/main `28198315e0ae1d50a4e08b150a7dc2c7b03c8c28`.
+Implemented the approved six-family baseline under `game/art/materials/` with
+original periodic maps, tracked import settings and an isolated Russian review
+script. Source and usage contract: `MATERIAL_LIBRARY.md`; runtime mapping:
+`ASSET_INDEX.md`. Existing startup/autoload/gameplay behavior is unchanged.
+
+Actual validation: deterministic map regeneration, import/parse, authenticated
+Xvfb TCP engine smoke, X11/Vulkan/Forward+ material contribution/Cyrillic checks,
+three light presets and 4x4 tile inspection PASS. Final source revision and
+actual output are in `evidence/material_library_2026-10-02.log`.
+
+This closes the shared baseline task only. Stone variation, memory text/imprints,
+crystal quality tiers and gameplay feedback integration remain inventory work;
+target-hardware performance remains unmeasured. The next planned feature is
+`feature/03-art-foundation/modular-archive-kit`: begin with its asset brief and
+cross-stage modular architecture review under `ASTRA_WORKFLOW.md` section 9,
+before producing the sample. No bulk modeling is authorized by this checkpoint.
