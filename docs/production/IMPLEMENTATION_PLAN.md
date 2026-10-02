@@ -203,3 +203,10 @@ profiling. Next executable work is the bounded five-part sample in
 `feature/03-art-foundation/modular-archive-kit`, following the acceptance sequence
 in `MODULAR_ARCHIVE_KIT.md`. The same contract supplies its dimensions and paths;
 do not redesign the grid or repeat solved environment investigations from zero.
+
+Contract merged through PR #21 into Art Foundation at
+`e1f0e0e19d2f0dde91192296a7ffa02539e43119`. The merged tree exactly matched the
+validated feature. Authenticated X11 TCP / Vulkan Forward+ engine startup,
+eight-autoload and safe-exit smoke passed on the merged epic; actual output:
+`evidence/modular_contract_epic_smoke_2026-10-02.log`. The contract follows the
+normal epic-to-main integration route; Git merge history records its final SHA.
