@@ -98,3 +98,10 @@ cool and tiles PNGs. The renderer is llvmpipe software Vulkan. Preview counters
 include the environment and framebuffer; they are not a per-material budget
 or proof of GTX 1060-class 1080p/60 Medium performance. Representative scene
 profiling remains mandatory before mass production.
+
+## Current visual authority — v2 owner rebaseline
+
+For new visual work use `VISUAL_REBASELINE_V2.md`, its explicit current references
+and `assets/concept_art/README.md`. Nonsuffixed v1 sheets/images referenced above
+are historical/LEGACY; technical validation stays valid in its recorded scope.
+Canonical mechanics and global budgets remain unchanged.

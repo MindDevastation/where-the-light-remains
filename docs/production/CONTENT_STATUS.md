@@ -37,3 +37,18 @@
 ## Implementation status
 
 Implementation is **GO for preflight and vertical-slice work**. Do not treat concept art as gameplay authority; use the canonical design splits/master. First technical milestone remains Hub → Wing I → fragment → save/load → return, then profile on GTX 1060-class hardware.
+
+## Visual rebaseline v2 — 2026-10-02 UTC / 2026-10-03 Moscow
+
+**PARTIAL.** Owner-approved visual direction: Hybrid Warcraft Observatory;
+mechanics/narrative/accessibility/performance authority unchanged. Pack `cabe792`
+contains 45 named v2 slots + two zone A/B/C sets. All 167 incoming PNGs and all
+62 legacy PNGs inspected; exact mappings/hash inventory retained in
+`VISUAL_REBASELINE_V2.md` and its JSON. Legacy references are explicitly superseded.
+
+Actual art is six shared materials and one technical .blend/GLB cube family.
+Worlds/puzzles/characters/shipping UI are unimplemented, not assets to rebuild.
+Safe shared-material/reference migration continues; it cannot certify the full
+visual game or GTX1060 performance. Missing Secrets-Achievements C and exact
+assignments for six unmatched additional concepts block only dependent work.
+Final avatar/casting, gameplay briefs and target hardware remain open inputs.

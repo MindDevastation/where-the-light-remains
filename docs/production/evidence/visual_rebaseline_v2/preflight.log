@@ -1,0 +1,123 @@
+Visual rebaseline preflight, 2026-10-02 UTC; source main cabe792717828dfe54009219a7f6cc4e0fb5e5e6
+AUTH: test -n "$GH_TOKEN" exit 0; gh auth status exit 0 (MindDevastation); gh api user --jq .login exit 0 MindDevastation; git ls-remote origin exit 0 main cabe792; gh auth setup-git exit 0; git lfs version 3.4.1; repository admin/maintain/pull/push/triage=true; git fetch origin --prune exit 0; feature git push --dry-run exit 0. Credential value never retained.
+LFS_AUTH_READ: batch download HTTP 200; remote 1992-byte GLB SHA256 245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893 PASS. Source smudge 449887 bytes SHA256 1e6f85d79fe56dd72d16427b86f750620fa03754515f5cebdffd7329246548cb PASS. No new binary/history migration.
+REF_SAFETY: clean Art Foundation 4fe418d; ancestor of remote main cabe792; ff-only sync before feature creation. Disk ~30 GiB available.
+INITIAL gh auth status terminated by SIGSEGV (-11). Existing gh binary 23 MiB, ELF section offset outside file. Checksum-verified gh archive; atomically re-extracted exact 41971872 bytes; gh --version/auth/API/Git PASS.
+Blender archive SHA256 matched existing pin. Below: actual failed stream extraction and successful seekable/atomic restore; no capability blocker inferred.
+
+$ python tools/setup_linux_toolchain.py --prefix ../toolchain (original)
+4.7.2.stable.official.ed1daf0bf
+godot: verified and installed at /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64
+Traceback (most recent call last):
+  File "/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/tools/setup_linux_toolchain.py", line 79, in <module>
+    raise RuntimeError(f'Incomplete extracted file: {member.name}')
+RuntimeError: Incomplete extracted file: blender-4.5.14-linux-x64/blender
+
+$ python tools/setup_linux_toolchain.py --prefix ../toolchain (write loop, stream reader)
+4.7.2.stable.official.ed1daf0bf
+godot: verified and installed at /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64
+Traceback (most recent call last):
+  File "/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/tools/setup_linux_toolchain.py", line 87, in <module>
+    raise RuntimeError(f'Incomplete extracted file: {member.name}')
+RuntimeError: Incomplete extracted file: blender-4.5.14-linux-x64/blender
+
+$ python tools/setup_linux_toolchain.py --prefix ../toolchain (seekable fix)
+4.7.2.stable.official.ed1daf0bf
+godot: verified and installed at /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64
+Blender 4.5.14 LTS
+	build date: 2026-09-15
+	build time: 01:31:19
+	build commit date: 2026-09-14
+	build commit time: 14:54
+	build hash: 62c1db4208e8
+	build branch: blender-v4.5-release
+	build platform: Linux
+	build type: Release
+	build c flags:  -Wall -Werror=implicit-function-declaration -Wstrict-prototypes -Werror=return-type -Werror=vla -Wmissing-prototypes -Wno-char-subscripts -Wno-unknown-pragmas -Wpointer-arith -Wunused-parameter -Wwrite-strings -Wlogical-op -Wundef -Winit-self -Wmissing-include-dirs -Wno-div-by-zero -Wtype-limits -Wformat-signedness -Wrestrict -Wno-stringop-overread -Wno-stringop-overflow -Wnonnull -Wabsolute-value -Wuninitialized -Wredundant-decls -Wshadow -Wimplicit-fallthrough=5 -Wno-error=unused-but-set-variable  -march=x86-64-v2 -std=gnu11 -pipe -fPIC -funsigned-char -fno-strict-aliasing -ffp-contract=off  
+	build c++ flags:  -Wuninitialized -Wredundant-decls -Wall -Wno-invalid-offsetof -Wno-sign-compare -Wlogical-op -Winit-self -Wmissing-include-dirs -Wno-div-by-zero -Wtype-limits -Werror=return-type -Wno-char-subscripts -Wno-unknown-pragmas -Wpointer-arith -Wunused-parameter -Wwrite-strings -Wundef -Wcomma-subscript -Wformat-signedness -Wrestrict -Wno-suggest-override -Wuninitialized -Wno-stringop-overread -Wno-stringop-overflow -Wimplicit-fallthrough=5 -Wundef -Wmissing-declarations  -march=x86-64-v2 -pipe -fPIC -funsigned-char -fno-strict-aliasing -ffp-contract=off  
+	build link flags:  -Wl,--version-script='/home/blender/git/blender-v450/blender.git/source/creator/symbols_unix.map'
+	build system: CMake
+blender: verified and installed at /workspace/scratch/4f0b36b4bb0e/toolchain/blender-4.5.14-linux-x64/blender
+gh version 2.101.0 (2026-09-15)
+https://github.com/cli/cli/releases/tag/v2.101.0
+gh: verified and installed at /workspace/scratch/4f0b36b4bb0e/toolchain/gh_2.101.0_linux_amd64/bin/gh
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+Add this directory to PATH for the current shell: /workspace/scratch/4f0b36b4bb0e/toolchain/bin
+
+$ blender --background --factory-startup --python-exit-code 1 --python tools/blender_cli_probe.py -- ../toolchain/v2-blender-capability
+Info: Saved as "cli_probe.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/4f0b36b4bb0e/toolchain/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+15:45:10 | INFO: Starting glTF 2.0 export
+15:45:10 | INFO: Extracting primitive: Cube.001
+15:45:10 | INFO: Primitives created: 1
+15:45:10 | INFO: Finished glTF 2.0 export in 0.015440702438354492 s
+
+BLENDER_CLI_PROBE PASS: 4.5.14 LTS one-meter mesh, UV, normals, one material, source saved, GLB 2.0 exported
+Disposable output: /workspace/scratch/4f0b36b4bb0e/toolchain/v2-blender-capability
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+
+Blender quit
+
+$ blender --background assets/3d/blender/validation/sm_pipeline_meter_cube.blend --python-exit-code 1 --python tools/verify_export_source.py
+BLENDER_SOURCE PASS: meters; unit transforms; bottom-center pivot; outward normals; UV; one material
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/assets/3d/blender/validation/sm_pipeline_meter_cube.blend"
+
+Blender quit
+
+$ python tools/setup_linux_graphics.py --prefix ../toolchain/graphics
+xvfb 2:21.1.12-1ubuntu1.6: checksum/extraction PASS
+xserver-common 2:21.1.12-1ubuntu1.6: checksum/extraction PASS
+x11-xkb-utils 7.7+8build2: checksum/extraction PASS
+libxkbfile1 1:1.1.0-1build4: checksum/extraction PASS
+libxfont2 1:2.0.6-1+deb13u1build0.24.04.2: checksum/extraction PASS
+xauth 1:1.1.2-1build1: checksum/extraction PASS
+libxmuu1 2:1.1.3-3build2: checksum/extraction PASS
+mesa-vulkan-drivers 25.2.8-0ubuntu0.24.04.2: checksum/extraction PASS
+libllvm20 1:20.1.2-0ubuntu1~24.04.3: verified system package
+libdrm2 2.4.125-1ubuntu0.1~24.04.2: verified system package
+libdrm-amdgpu1 2.4.125-1ubuntu0.1~24.04.2: verified system package
+libdrm-common 2.4.125-1ubuntu0.1~24.04.2: verified system package
+libvulkan1 1.3.275.0-1build1: verified system package
+GRAPHICS_SETUP PASS: local packages; lavapipe ICD; xkbcomp=/workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/bin/xkbcomp
+
+$ python tools/run_graphical.py --graphics-prefix ../toolchain/graphics --godot ../toolchain/bin/godot --expect ENGINE_PREFLIGHT_PASS -- --path game --script res://tests/engine_preflight.gd
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/bin/Xvfb :100 -screen 0 1920x1080x24 -listen tcp -nolisten unix -nolisten local -noreset -auth /tmp/wlr-x11-vy1eu0za/Xauthority
+DISPLAY=127.0.0.1:100; VK_ICD_FILENAMES=/workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/share/vulkan/icd.d/lvp_icd.json
+X11_TCP_AUTH PASS: valid cookie accepted; unauthenticated client rejected
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --display-driver x11 --rendering-driver vulkan --rendering-method forward_plus --audio-driver Dummy --path game --script res://tests/engine_preflight.gd
+GRAPHICAL_RUN PASS: exit=0
+
+Godot stdout/stderr:
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.318 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 20.1.2, 256 bits)
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"X11","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+
+
+Xvfb stdout/stderr:
+Warning: getifaddrs returns Operation not permitted
+Warning: getifaddrs returns Operation not permitted
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Could not resolve keysym XF86CameraAccessEnable
+> Warning:          Could not resolve keysym XF86CameraAccessDisable
+> Warning:          Could not resolve keysym XF86CameraAccessToggle
+> Warning:          Could not resolve keysym XF86NextElement
+> Warning:          Could not resolve keysym XF86PreviousElement
+> Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+> Warning:          Could not resolve keysym XF86MarkWaypoint
+> Warning:          Could not resolve keysym XF86Sos
+> Warning:          Could not resolve keysym XF86NavChart
+> Warning:          Could not resolve keysym XF86FishingChart
+> Warning:          Could not resolve keysym XF86SingleRangeRadar
+> Warning:          Could not resolve keysym XF86DualRangeRadar
+> Warning:          Could not resolve keysym XF86RadarOverlay
+> Warning:          Could not resolve keysym XF86TraditionalSonar
+> Warning:          Could not resolve keysym XF86ClearvuSonar
+> Warning:          Could not resolve keysym XF86SidevuSonar
+> Warning:          Could not resolve keysym XF86NavInfo
+Errors from xkbcomp are not fatal to the X server
+
+
+SCOPE: existing cube CLI validation + graphics capability. Production geometry and target GPU not accepted.

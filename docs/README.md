@@ -13,10 +13,13 @@ Implementation-facing documentation for **Where the Light Remains**.
 
 ## Concept art
 
-- `concept_art/CONCEPT_ART_PROMPTS_v1.1.md` — current canonical generation/production prompts.
+- `concept_art/CONCEPT_ART_PROMPTS_v1.1.md` — canonical mechanics correction; visual palette superseded by v2 owner rebaseline.
 - `concept_art/CONCEPT_ART_PROMPTS_v1.0.md` — historical prompt pack; do not use where it conflicts with v1.1/master.
 
-Selected reference images live under `assets/concept_art/`.
+Selected reference images live under `assets/concept_art/`; its README explicitly identifies v2 authority and LEGACY/supporting exclusions.
+
+- `production/VISUAL_REBASELINE_V2.md` — complete concept mapping, existing implementation audit, current visual rules and migration status.
+- `production/ADDITIONAL_CONCEPTS_REVIEW.md` — every additional candidate and exact promotion/support/unmatched decision.
 
 ## Production
 

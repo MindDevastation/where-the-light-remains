@@ -1,6 +1,6 @@
 # Modular Archive kit — sample contract v1
 
-Status: **brief and assembly contract defined; meshes not produced or accepted**.
+Status: **brief/assembly contract defined; visual references rebaselined to v2; meshes not produced or accepted**.
 Feature: `feature/03-art-foundation/modular-kit-contract`.
 Baseline: main `1a7171cb756cfc0e208312ebbf9257af634a898a`.
 
@@ -10,7 +10,31 @@ reusable Archive architecture. The actual sample, Blender source, LFS transfer,
 Godot import, collision, visual acceptance and representative performance remain
 separate pending gates. No existing gameplay world is replaced.
 
-## Authority and reference breakdown
+## Visual revision 2 — current production references
+
+Owner visual migration instruction supersedes the v1 image language below.
+Technical contract v1 stays intact: dimensions, grid, anchors, UV, passage,
+collision plan, sample placements, triangle/material ceilings and file ownership.
+No mesh exists to rebuild. The versioned JSON now records visual_revision=2 and
+exact blobs for A/B/C of **Generic modular observatory kit**, **Architectural
+shape language sheet**, and hub **Gameplay view/ca_004**, from pack `cabe792`.
+Historical source/ref metadata is retained in legacy fields and the section below.
+
+Use the kit's lower architecture panels and shape-sheet supports: layered warm
+stone portals, square stepped bases/capitals, broad readable trim. Keep stone/brass
+structural sample surfaces within existing ceilings. Heavy aged timber, dark iron
+brackets, crimson/navy furnishings and original celestial details form the later
+bounded reusable detail family; they do not expand this five-part structural test.
+Warm craft comes from proportion, layered edges, restrained aging and shared
+material response, not holiday ornament. No copied faction sigils, pseudo-writing,
+flowers/ivy walls/candle overload. This brief is not final full-world style acceptance.
+
+The reference set has perspective/detail drift, not permission for three designs.
+See `VISUAL_REBASELINE_V2.md` for interpretation and constraints. A front/reverse/
+corner runtime review must compare the actual sample against all three current
+views; the old dimension drawing remains geometry evidence only.
+
+## Historical v1 authority and reference breakdown (SUPERSEDED visual language)
 
 Read in precedence order: `ASTRA_WORKFLOW.md`, `THREE_D_PRODUCTION_PIPELINE.md`,
 `docs/design/TECHNICAL_BASELINE.md`, `REQUIRED_ASSET_TABLE.md`, `NARRATIVE_CANON.md`,

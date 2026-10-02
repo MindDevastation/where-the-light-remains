@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "sample_contract_no_meshes_yet",
-  "source_commit": "1a7171cb756cfc0e208312ebbf9257af634a898a",
+  "source_commit": "cabe792717828dfe54009219a7f6cc4e0fb5e5e6",
   "units": "meters",
   "axes": {
     "godot_up": "+Y",
@@ -40,16 +40,40 @@
   },
   "references": [
     {
-      "path": "assets/concept_art/hero_props/Generic modular observatory kit.png",
-      "git_blob": "b9fd99c2ca63a4f38e198a10d1f3ddd40e3061f3"
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_a.png",
+      "git_blob": "30e54185412a8103b1fc2a02a0ec8b974e239727"
     },
     {
-      "path": "assets/concept_art/production_sheets/Architectural shape language sheet.png",
-      "git_blob": "698918356a29885e727c59fc826ad858b979f916"
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_b.png",
+      "git_blob": "8bd44e2745982beac1403321642a22f2078adce7"
     },
     {
-      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_003.png",
-      "git_blob": "9e1bfb71e3fb82b802909e8b673c8ffb6d5142a1"
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_c.png",
+      "git_blob": "11d27ed3f654c6bf30e8a8d84abf56b7ebba22ce"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_a.png",
+      "git_blob": "accbf317c9a4510dca72f522b3809fb5c957ff7f"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_b.png",
+      "git_blob": "8e2481d73af7006cd26315859dc49c02257d3ef5"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_c.png",
+      "git_blob": "5e8fd545572751fffed37aa99daa2315a698c3fc"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_a.png",
+      "git_blob": "e24773d66b2debded3ac8559f6c8d730501c4e2d"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_b.png",
+      "git_blob": "01409c5e1e5a072712ca0586b83a760ea810b86a"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_c.png",
+      "git_blob": "46e7fdc2af63780c3cea0da7373855e4369b1d2b"
     }
   ],
   "modules": [
@@ -372,5 +396,21 @@
       "minimum_side_clearance_m": 0.1,
       "minimum_head_clearance_m": 0.2
     }
-  }
+  },
+  "legacy_source_commit": "1a7171cb756cfc0e208312ebbf9257af634a898a",
+  "visual_revision": 2,
+  "legacy_references": [
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit.png",
+      "git_blob": "b9fd99c2ca63a4f38e198a10d1f3ddd40e3061f3"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet.png",
+      "git_blob": "698918356a29885e727c59fc826ad858b979f916"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_003.png",
+      "git_blob": "9e1bfb71e3fb82b802909e8b673c8ffb6d5142a1"
+    }
+  ]
 }

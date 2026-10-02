@@ -2,9 +2,20 @@
 
 Status: **implementation mapping for selected repository assets**.
 
-Rule: every file inside a package listed as `CANONICAL` inherits that package's stage/role mapping unless a row explicitly marks it secondary/noncanonical. Concept art is visual reference only and never overrides the master mechanics/narrative.
+Rule: current visual authority is explicitly enumerated in `VISUAL_REBASELINE_V2.md` / `visual_rebaseline_v2.json`. Folder-wide labels below are historical stage/role mappings, not approval of legacy images or additional candidates. Concept art never overrides canonical mechanics/narrative.
 
-## Concept art — environments
+## Visual rebaseline v2 — current authority
+
+Incoming pack `cabe792`: 45 named v2 slots (134 images) + two zone A/B/C sets.
+Complete old→new runtime/requirements mapping and limitations: [VISUAL_REBASELINE_V2.md](VISUAL_REBASELINE_V2.md).
+All 167 incoming images and 62 old images inspected; old payloads retained as
+SUPERSEDED / LEGACY. Additional review: 0 promoted, 3 supporting exact duplicates,
+6 UNMATCHED; [ADDITIONAL_CONCEPTS_REVIEW.md](ADDITIONAL_CONCEPTS_REVIEW.md).
+Secrets-Achievements angle C is missing; pause only dependent acceptance.
+New/changed character sheets are candidates, not final casting/rig acceptance.
+S09 pair pose remains noncanonical narrative staging.
+
+## Concept art — environments (stage mapping; use explicit v2 images)
 
 | Repository package | Stage | Primary manifest relation | Role | Status |
 |---|---:|---|---|---|
@@ -37,11 +48,11 @@ Rule: every file inside a package listed as `CANONICAL` inherits that package's 
 
 ## Concept art — hero props / UI / production sheets
 
-All files under `assets/concept_art/hero_props/**` are approved modeling/shape references for the related central mechanism, five wing mechanisms, Egg, sigils, Future Record, modular kit and final table. Exact mechanics remain defined by `NARRATIVE_CANON.md` / master Level & Puzzle Design.
+Explicit v2 files under `assets/concept_art/hero_props/**` are visual modeling/shape references for the related central mechanism, five wing mechanisms, Egg, sigils, Future Record, modular kit and final table. Exact mechanics remain defined by `NARRATIVE_CANON.md` / master Level & Puzzle Design.
 
-All files under `assets/concept_art/ui/**` are style/layout references only. Runtime UI must keep Cyrillic readability, accessibility, no-response final semantics and the master Text Package copy.
+Explicit v2 files under `assets/concept_art/ui/**` are style/layout references only; old nonsuffixed files are LEGACY. Runtime UI must keep Cyrillic readability, accessibility, no-response final semantics and the master Text Package copy.
 
-All files under `assets/concept_art/production_sheets/**` are global Art Bible references for material language, architectural shapes and lighting consistency.
+Explicit v2 sets under `assets/concept_art/production_sheets/**` are global visual references; nonsuffixed sheets are LEGACY references for material language, architectural shapes and lighting consistency.
 
 ## Music source masters
 
