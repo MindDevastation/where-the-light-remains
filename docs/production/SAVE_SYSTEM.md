@@ -59,3 +59,25 @@ decimal float literal parsing otherwise rounds that boundary down by one.
 Atomic write/backup/recovery and safe-exit failure handling remain the next slice;
 Boot/Continue/world-domain validation follows routing. No disk-persistence PASS
 is implied by this DTO acceptance.
+
+## Atomic persistence brief — 2026-10-03 UTC
+
+Read the accepted DTO, settings and pause evidence and technical/QA save contract.
+Implement bounded UTF-8 JSON reads, primary/backup results without state mutation,
+same-directory temp write/flush/validated readback/backup/replace, and dirty flush
+that clears only after success. Preserve the last valid primary as backup; first
+save creates a valid backup too. Corrupt primary may recover from a valid backup,
+but future schemas and actual IO permission errors must not be bypassed. Both
+invalid files are preserved and reported as an explicit new-game decision for
+the future Boot UI. No automatic deletion, reset, startup apply or v0 migration.
+
+App must quit only after successful flush. Failed exit remains alive and presents
+a Russian retry/stay dialog; native close uses the same path. InputManager owns
+modal pause/capture. Tests use unique fixture directories and injected replacement
+failures, plus actual IO failure and graphical dialog/startup regressions. Existing
+production files and eight-autoload contract remain intact.
+
+This uses Godot flush and same-directory rename with verified bytes, not a claim
+of platform-independent power-loss durability or multi-process save locking.
+Windows rename/physical-close certification remains target-runtime validation.
+Acceptance pending; Boot/Continue/routing and authored checkpoints remain later.
