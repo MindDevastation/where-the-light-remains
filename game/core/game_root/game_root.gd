@@ -4,6 +4,7 @@ extends Node
 
 func _ready() -> void:
     SceneRouter.bind_world_slot(world_slot)
+    $UILayer/PauseMenu.exit_requested.connect(App.request_safe_exit)
     EventBus.stage_changed.emit(GameState.current_stage_id)
     # No preload/type dependency on development resources in the shipping path.
     if OS.is_debug_build() and App.BUILD_FLAVOR == "development" and OS.get_cmdline_user_args().has("--dev-tools"):
