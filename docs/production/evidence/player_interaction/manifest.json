@@ -1,0 +1,18 @@
+{
+  "source": "908f480b6caeb81adff5a7df33fc439cfd2d94e7",
+  "files": {
+    "game/core/game_root/game_root.tscn": "bfda4dd7bd719ab919303348dfc1140db47999af56e217bda46e04b000ecabc2",
+    "game/core/interaction/interaction_hud.gd": "92c8f39c7753ba3ffb39aae4111583a8cf3a22a61a24004d8c17ce09b74cbd25",
+    "game/core/interaction/interaction_hud.gd.uid": "eb304b9a9260eb7134f742bc174b1a5586d84f408679e07b9ae0b143e3231873",
+    "game/core/interaction/interaction_hud.tscn": "a571580ac67a86c5f94440804eeaafda4aade63a0f667aeb4828ad4309aab26e",
+    "game/core/interaction/interaction_target.gd": "047c544555db7a8a8a461746c0c50afafa7cc417028cfcbf8fa709677a9eaad1",
+    "game/core/interaction/interaction_target.gd.uid": "15fc3ba65a6c4a55acfde8ada3872a7c252540d246483ac4d55ba18c9e8c19d2",
+    "game/core/player/player.gd": "ab7c871cd58cddacc6c371113d3c8442c458708d7a7b8faa2ef7e13b55c4040a",
+    "game/core/player/player.gd.uid": "0a036dab39b29cd85dfbb054a64532ea7184bf1c56cf66892074c70e6c59c6ad",
+    "game/core/player/player.tscn": "8757c0216146778fef0a29f8fb170228f4a647df74f9739f70faae9f4f8c4954",
+    "game/tests/player_interaction_smoke.gd": "e0356a0dd4c80b799053a33f895ab035b1c1e63ccb6038807c8c2a2e6e305e81",
+    "game/tests/player_interaction_smoke.gd.uid": "af9445f74970055e533c1652eeea6ae34a3bc057ce067b8c0fe7e43c43ae9106",
+    "game/tests/player_interaction_smoke.tscn": "ba0c8da33fab6c0c70e2b77afc7bbdaa366ed8c116af34276e79792078b5c05a"
+  },
+  "image_sha256": "46d7627fe0d47da869e191ef437ea15756048e2c26c239abd9e2a0d4717b9ff8"
+}
