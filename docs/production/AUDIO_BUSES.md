@@ -106,3 +106,12 @@ Engine references:
 [AudioEffectCapture](https://docs.godotengine.org/en/4.7/classes/class_audioeffectcapture.html).
 
 Next foundation feature: `feature/00-foundation/debug-tools`.
+
+## Runtime preference checkpoint — 2026-10-03 UTC
+
+The serialized neutral layout above remains unchanged. SettingsManager now applies
+Master/Music/SFX preference gains at startup (.8 Music/.9 SFX by default) and zero
+volume mute. The CLI mixer validates these startup preferences, uses a neutral
+in-memory test fixture for exact route/half-gain checks, then restores and verifies
+the original preference state. See `SETTINGS.md` and `evidence/settings/player_mixer.log`.
+Semantic playback/silence/crossfade ownership remains AudioDirector.

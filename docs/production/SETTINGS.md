@@ -34,4 +34,42 @@ write-failure persistence cases; actual bus gains/mutes; profile/author-state
 restoration and future world attachment; draft/Apply/Cancel ownership; actual
 Forward+ Russian interface at 1280×720 and 1920×1080; existing startup/input/player/
 read-only-debug/mixer regressions. Main-menu and pause entry points are subsequent
-features. Acceptance is pending until actual evidence is retained.
+features. Actual acceptance evidence and scope follow.
+
+## Accepted implementation — 2026-10-03 UTC
+
+**PASS** on clean committed source; see `evidence/settings/README.md` and its
+source/hash manifest. Exactly eight autoloads remain. `snapshot()`, `validate()`,
+`load_settings()`, `apply_settings()` and `save_settings()` are the service API.
+Only explicit Apply writes; failures return an Error and preserve current state.
+Version 1 ConfigFile fields are typed; absent fields use defaults, future versions
+are rejected, finite numeric values are clamped, and files over 64 KiB are rejected.
+Atomic temporary write/flush/rename is tested on this Linux filesystem. Windows
+replacement and power-loss durability are not certified by this check.
+
+GameRoot owns a hidden `SettingsMenu`; callers invoke `open()`. Draft, defaults,
+Cancel/Esc and Apply are tested through actual Godot GUI mouse/key dispatch,
+including numeric text without Enter. Closing does not override a later DISABLED
+lock. The modal itself does not pause or route worlds; main-menu/pause entry points
+are next. Error text is Russian. Both actual screenshot resolutions were inspected;
+this initial shell layout does not imply final game UI art approval.
+
+Settings own Master/Music/SFX preference gains/mutes; semantic music/ambience and
+silence remain AudioDirector responsibilities. The serialized neutral bus resource
+is unchanged. The mixer regression normalizes only its test signal fixture, then
+restores and rechecks actual startup preferences.
+
+Runtime environment copies preserve authored resources/effect flags. New attached
+WorldEnvironment/Light3D nodes receive current settings; deliberate environment
+replacement is observed on the next `apply_scene_graphics()` / preference Apply.
+Light shadow restoration preserves the authored flag at first attachment. Future
+world controllers changing these flags must coordinate with this preference owner.
+Geometry/emission/ordinary fog and puzzle parameters are unchanged. Profiles are
+initial technical mappings, not GTX1060 performance certification.
+
+Resolved findings retained in evidence: Godot consumes engine display flags, so
+the launcher forwards `--preserve-display`; numeric Apply must call SpinBox.apply()
+before reading its value. Headless GUI tests explicitly size their virtual Window.
+Malformed ConfigFile input produces one expected parser ERROR in the isolated
+headless negative case; graphical tests exclude that case and retain strict
+zero-ERROR runner acceptance.
