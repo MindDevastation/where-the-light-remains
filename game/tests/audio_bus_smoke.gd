@@ -34,7 +34,7 @@ func _check(condition: bool, message: String) -> void:
         push_error("AUDIO_BUS FAIL: " + message)
 
 
-func _check_layout() -> void:
+func _check_layout(preferences: bool = true) -> void:
     _check(ProjectSettings.get_setting("audio/buses/default_bus_layout") == LAYOUT_PATH, "Project default layout is not configured")
     _check(ResourceLoader.exists(LAYOUT_PATH, "AudioBusLayout"), "Missing AudioBusLayout resource")
     _check(AudioServer.bus_count == BUS_NAMES.size(), "Expected 10 automatically loaded buses, got %d" % AudioServer.bus_count)
@@ -44,8 +44,11 @@ func _check_layout() -> void:
         _check(actual == index, "Missing or misplaced bus: " + bus)
         if actual < 0:
             continue
-        _check(is_zero_approx(AudioServer.get_bus_volume_db(actual)), "Non-neutral default gain: " + bus)
-        _check(not AudioServer.is_bus_mute(actual), "Unexpected default mute: " + bus)
+        var settings := root.get_node("SettingsManager")
+        var preferred: Dictionary = {&"Master": settings.master_volume, &"Music": settings.music_volume, &"SFX": settings.sfx_volume}
+        var gain: float = preferred.get(bus, 1.0) if preferences else 1.0
+        _check(absf(AudioServer.get_bus_volume_linear(actual) - maxf(gain, 0.000001)) < 0.0001, "Wrong startup/restored preference gain: " + bus)
+        _check(AudioServer.is_bus_mute(actual) == is_zero_approx(gain), "Wrong preference mute: " + bus)
         _check(not AudioServer.is_bus_solo(actual), "Unexpected default solo: " + bus)
         _check(not AudioServer.is_bus_bypassing_effects(actual), "Unexpected effect bypass: " + bus)
         _check(AudioServer.get_bus_effect_count(actual) == 0, "Unexpected production effect: " + bus)
@@ -98,6 +101,11 @@ func _run() -> void:
         quit(1)
         return
     var original := AudioServer.generate_bus_layout()
+    # Test signal ratios use a neutral fixture, then restore actual preferences.
+    for bus in [&"Master", &"Music", &"SFX"]:
+        AudioServer.set_bus_volume_db(AudioServer.get_bus_index(bus), 0.0)
+        AudioServer.set_bus_mute(AudioServer.get_bus_index(bus), false)
+    _check_layout(false)
     for bus in [&"Master", &"Music", &"SFX"]:
         var capture := AudioEffectCapture.new()
         capture.buffer_length = 0.5
@@ -154,7 +162,7 @@ func _run() -> void:
     _captures.clear()
     _check_layout()
     if _failures.is_empty():
-        print("AUDIO_BUS PASS: automatic layout, all routes, parent gain/mute and restored neutral state")
+        print("AUDIO_BUS PASS: automatic layout, startup preferences, all routes, parent gain/mute and restored preference state")
         quit()
     else:
         quit(1)

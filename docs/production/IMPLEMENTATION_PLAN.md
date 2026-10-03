@@ -37,7 +37,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 ## Milestone 1 — boot / shell
 
 - [ ] Boot/Main Menu in Russian.
-- [ ] SettingsManager full ConfigFile read/write with Russian UI labels.
+- [x] SettingsManager validated ConfigFile preferences, atomic replacement and Russian draft/Apply/Cancel modal. Clean import, corrupt/type/range/version/write-failure cases, real bus gains, author-preserving graphics switches, native display modes and inspected 1280×720/1920×1080 Forward+ UI PASS; see `SETTINGS.md` and `evidence/settings/`. Main-menu/pause entry points and target-GPU profiling remain subsequent work.
 - [x] InputManager focus/pause/capture handling: requested mode survives pause/focus; visible startup UI cursor, immediate gates, held/echo movement suppression and recapture-motion guard. Clean import and actual authenticated TCP X11 focus/capture checks PASS; see `INPUT_FOCUS.md` and `evidence/input_focus/`. Esc/pause UI and repeat-skip consumers remain separate work.
 - [ ] Pause/Fade UI in Russian.
 - [x] Basic Player CharacterBody3D + interaction ray: inactive persistent player, gated walk/look, physics-revalidated E, explicit collider component and Russian focus prompt. Clean import, actual Archive traversal/wall stopping, input/target race checks, Wing I grip dispatch and actual Forward+ screenshot PASS; see `PLAYER_INTERACTION.md`. Playable story worlds, canonical puzzle controllers and scene-router spawn pipeline remain later work.

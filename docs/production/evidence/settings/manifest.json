@@ -1,0 +1,18 @@
+{
+  "source": "ea78c151d62cdf4d0c3fe573e6016d794bf55327",
+  "clean_tracked_files_unchanged": 174,
+  "files": {
+    "game/autoload/settings_manager.gd": "17c1499f08bcedca5778060102c316428d9ba363d73e4cea7b603ed90ac1fd44",
+    "game/core/ui/settings_menu.gd": "ad48560e6b54040dc8177db293163605da2f4e03610ab3b22f0275f78e212736",
+    "game/core/ui/settings_menu.tscn": "cc162a788ee71d2f396626e5a1a6c7aea83c953a630dd7645df350d327ba3f42",
+    "game/core/game_root/game_root.tscn": "846254eb0b7c4acb36ae649190c68a3aec58464fa9a7babc1033db6d24505ec4",
+    "game/tests/settings_smoke.gd": "9bf4804e26fa359a6900a4941a28432ba87542be2628310b288f76189bf408b1",
+    "game/tests/audio_bus_smoke.gd": "135b97c7529ff312f49cec24d49fceb707a44c5e9cb5c3f1f17d4b03f5e31214",
+    "game/tests/player_interaction_smoke.gd": "4cd9443488d92cb0d95c52525db6fc93c375642603bc60b1e4138ee1707c29f6",
+    "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205"
+  },
+  "images": {
+    "settings_1280.png": "8e2a9de1b0b2a22c22169f654ffee1a32b40a737199f2ef150c733ab8654e7ec",
+    "settings_1920.png": "c76f183a043f0e89b6ebd3a8b20fd44dae17ee7efeeb8f910d224253e55d3477"
+  }
+}

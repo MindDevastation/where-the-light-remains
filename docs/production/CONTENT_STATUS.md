@@ -70,6 +70,18 @@ root does not activate player/capture; the later router supplies a real world
 and spawn. This completes another shell foundation step, not a playable Hub or
 Wing I solution. Next: settings persistence/UI, then pause/transition UI.
 
+## Settings foundation — 2026-10-03 UTC
+
+**PASS for preferences and the reusable modal.** Typed ConfigFile load/atomic
+replacement, preserved corrupt files and failed writes, actual Master/Music/SFX
+gains, initial quality mappings and author-preserving graphics switches pass.
+Russian Apply/Cancel/defaults/Esc and typed numeric input pass; actual 1280×720 and
+1920×1080 TCP X11/Forward+ forms were inspected. Clean source import, player,
+input, read-only debug, mixer and engine regressions pass. See `SETTINGS.md` and
+`evidence/settings/`. The hidden production modal awaits main-menu/pause entry
+points; no story, puzzle, art budget or target-hardware certification changed.
+Next: pause UI and a reusable fade overlay for the later scene router.
+
 ## Visual rebaseline v2 — 2026-10-02 UTC / 2026-10-03 Moscow
 
 **PARTIAL.** Owner-approved visual direction: Hybrid Warcraft Observatory;

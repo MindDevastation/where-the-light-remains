@@ -110,6 +110,13 @@ def main():
                 print('X11_TCP_AUTH PASS: valid cookie accepted; unauthenticated client rejected', flush=True)
                 atom_code = "import ctypes; x=ctypes.CDLL('libX11.so.6'); x.XOpenDisplay.restype=ctypes.c_void_p; x.XInternAtom.argtypes=[ctypes.c_void_p,ctypes.c_char_p,ctypes.c_int]; x.XCloseDisplay.argtypes=[ctypes.c_void_p]; d=x.XOpenDisplay(None); assert d; assert x.XInternAtom(d,b'WM_DELETE_WINDOW',0); x.XCloseDisplay(d)"
                 subprocess.run([sys.executable, '-c', atom_code], env=env, check=True, timeout=10)
+                if any(flag in godot_args for flag in ('--resolution', '--fullscreen', '--windowed', '--maximized')):
+                    # Godot removes engine flags from OS.get_cmdline_args().
+                    # Tell SettingsManager to preserve the native launch window.
+                    if '--' not in godot_args:
+                        godot_args += ['--']
+                    if '--preserve-display' not in godot_args:
+                        godot_args += ['--preserve-display']
                 command = [str(args.godot.resolve()), '--display-driver', 'x11', '--rendering-driver', 'vulkan', '--rendering-method', 'forward_plus', '--audio-driver', 'Dummy'] + godot_args
                 print('$ ' + shlex.join(command), flush=True)
                 game = subprocess.Popen(command, env=env, stdout=game_log, stderr=subprocess.STDOUT, start_new_session=True)

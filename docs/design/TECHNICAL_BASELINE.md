@@ -173,3 +173,13 @@ Reference: GTX 1060 6GB-class, 1920×1080/60 Medium. Exact minimum CPU/RAM remai
 Low preset may reduce volumetrics, SSR/refraction, particles, decorative VFX, local shadow lights and render scale, but cannot remove gameplay clues or narrative information.
 
 Profiling, not polycount alone, decides acceptance. Minimum three full profiler-assisted runs before release candidate.
+
+## Implemented settings service checkpoint
+
+`SettingsManager` stores typed version-1 ConfigFile preferences separately from
+SaveGame. UI edits a draft; `apply_settings(values)` validates and atomically writes
+before applying live values. `snapshot()` supplies an independent dictionary;
+`load_settings()` preserves invalid files/current values and returns an Error.
+The Russian reusable modal delegates capture to InputManager. See production
+`SETTINGS.md` for initial bounds, graphics mappings, launcher override flag and
+actual acceptance evidence. No global performance budget changes are implied.
