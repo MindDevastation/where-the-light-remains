@@ -174,16 +174,21 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         return _complete_route(ERR_INVALID_DATA)
     if not await _fade.fade_to(1.0, fade_duration) or not _route_owned():
         return _complete_route(ERR_SKIP)
-    _route["candidate_process"] = candidate.process_mode
-    candidate.process_mode = Node.PROCESS_MODE_DISABLED
+    _route["process_modes"] = {}
+    _route["collision_disable_modes"] = {}
+    _freeze_candidate(candidate)
     candidate.hide()
     for old in _route["old_worlds"]:
         _world_slot.remove_child(old)
     _route["detached"] = true
     _world_slot.add_child(candidate)
-    await get_tree().process_frame
+    _freeze_candidate(candidate)
+    await get_tree().physics_frame
+    await get_tree().physics_frame
     if not _route_owned():
         return _complete_route(ERR_SKIP)
+    if definition.player_active and not _spawn_clear(spawn):
+        return _complete_route(ERR_INVALID_DATA)
     var apply_error := candidate.apply_logical_state(prepared["state"])
     if apply_error != OK:
         return _complete_route(apply_error)
@@ -195,7 +200,12 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
     candidate.show()
     if not await _fade.fade_to(0.0, fade_duration) or not _route_owned():
         return _complete_route(ERR_SKIP)
-    candidate.process_mode = _route["candidate_process"]
+    for child in _route["process_modes"]:
+        if is_instance_valid(child) and (child == candidate or candidate.is_ancestor_of(child)):
+            child.process_mode = _route["process_modes"][child]
+    for collider_node in _route["collision_disable_modes"]:
+        if is_instance_valid(collider_node) and candidate.is_ancestor_of(collider_node):
+            collider_node.disable_mode = _route["collision_disable_modes"][collider_node]
     _player.set_active(definition.player_active)
     if saved == null:
         SaveManager.mark_dirty()
@@ -206,6 +216,41 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
 
 func _flush_checkpoint() -> Error:
     return SaveManager.flush_if_dirty()
+
+
+func _freeze_candidate(candidate: WorldScene) -> void:
+    var pending: Array = [candidate]
+    while not pending.is_empty():
+        var child: Variant = pending.pop_back()
+        if not is_instance_valid(child):
+            continue
+        if not _route["process_modes"].has(child) or child.process_mode != Node.PROCESS_MODE_DISABLED:
+            _route["process_modes"][child] = child.process_mode
+        if child is CollisionObject3D:
+            if not _route["collision_disable_modes"].has(child):
+                _route["collision_disable_modes"][child] = child.disable_mode
+            child.disable_mode = CollisionObject3D.DISABLE_MODE_MAKE_STATIC if child is RigidBody3D else CollisionObject3D.DISABLE_MODE_KEEP_ACTIVE
+        child.process_mode = Node.PROCESS_MODE_DISABLED
+        pending.append_array(child.get_children())
+
+
+func _spawn_clear(spawn: Transform3D) -> bool:
+    var collider: CollisionShape3D = _player.get_node("CollisionShape3D")
+    if collider.shape == null:
+        return false
+    var query := PhysicsShapeQueryParameters3D.new()
+    query.shape = collider.shape
+    query.transform = spawn * collider.transform
+    query.collision_mask = _player.collision_mask
+    query.exclude = [_player.get_rid()]
+    var space := _player.get_world_3d().direct_space_state
+    var overlaps := space.intersect_shape(query, 1)
+    if not overlaps.is_empty():
+        return false
+    var ground := PhysicsRayQueryParameters3D.create(spawn.origin + Vector3.UP * .02, spawn.origin - Vector3.UP * _player.floor_snap_length, _player.collision_mask, [_player.get_rid()])
+    ground.hit_from_inside = true
+    var hit := space.intersect_ray(ground)
+    return not hit.is_empty() and hit["normal"].dot(Vector3.UP) >= cos(_player.floor_max_angle)
 
 
 func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.Mode.UI) -> Error:
@@ -251,17 +296,8 @@ func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.
         InputManager.set_mode(final_mode)
     return error
 
-func request_world_scene(scene: PackedScene, stage_id: StringName) -> void:
-    if _transition_in_progress or _world_slot == null:
-        return
-    _transition_in_progress = true
-    InputManager.set_mode(InputManager.Mode.DISABLED)
-    for child in _world_slot.get_children():
-        child.queue_free()
-    var instance := scene.instantiate()
-    _world_slot.add_child(instance)
-    GameState.current_stage_id = stage_id
-    AudioDirector.set_stage_audio(stage_id)
-    EventBus.stage_changed.emit(stage_id)
-    InputManager.set_mode(InputManager.Mode.GAMEPLAY)
-    _transition_in_progress = false
+func request_world_scene(scene: PackedScene, stage_id: StringName) -> Error:
+    var definition := stage_definition(stage_id)
+    if scene == null or definition == null or scene.resource_path != definition.scene_path:
+        return ERR_INVALID_DATA
+    return await request_registered_stage(stage_id)

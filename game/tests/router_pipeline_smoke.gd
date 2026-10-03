@@ -47,7 +47,7 @@ func _run() -> void:
     var audio := [AudioDirector.current_stage, AudioDirector.current_state]
     var duration: float = SceneRouter.fade_duration
     SceneRouter.fade_duration = .04
-    for spec in [[&"s01_fixture", "res://tests/fixtures/route_world_a.tscn"], [&"s02_fixture", "res://tests/fixtures/route_world_b.tscn"], [&"s03_fixture", "res://tests/fixtures/route_world_failed.tscn"]]:
+    for spec in [[&"s01_fixture", "res://tests/fixtures/route_world_a.tscn"], [&"s02_fixture", "res://tests/fixtures/route_world_b.tscn"], [&"s03_fixture", "res://tests/fixtures/route_world_failed.tscn"], [&"s04_fixture", "res://tests/fixtures/route_world_blocked.tscn"]]:
         var definition := StageDefinition.new()
         definition.stage_id = spec[0]
         definition.scene_path = spec[1]
@@ -62,6 +62,9 @@ func _run() -> void:
     _check(SceneRouter.unregister_stage(&"s01_fixture") == ERR_BUSY, "Registry stable during route")
     await _wait_route()
     _check(_last_error == OK and slot.get_child_count() == 1 and GameState.current_stage_id == &"s01_fixture" and player.active and InputManager.mode == InputManager.Mode.GAMEPLAY, "First world/state/player/fade/input commit")
+    if _last_error != OK or slot.get_child_count() != 1:
+        get_tree().quit(1)
+        return
     var first := slot.get_child(0)
     var target := SaveGame.new()
     target.stage_id = &"s02_fixture"
@@ -74,6 +77,7 @@ func _run() -> void:
     _check(second.applied_counter == 2 and GameState.capture_save().to_dict() == target.to_dict() and player.global_position.is_equal_approx(Vector3(1, .004, 1.5)), "Exact domain/state/feet spawn commit")
     var before := GameState.capture_save().to_dict()
     _check(await SceneRouter.request_registered_stage(&"s03_fixture") == FAILED and slot.get_child(0) == second and GameState.capture_save().to_dict() == before and player.active, "Apply failure restores old world/state/player")
+    _check(await SceneRouter.request_registered_stage(&"s04_fixture") == ERR_INVALID_DATA and slot.get_child(0) == second and GameState.capture_save().to_dict() == before, "Actual capsule overlap rejects blocked spawn and restores previous world")
     _launch(&"s01_fixture")
     InputManager.set_mode(InputManager.Mode.DISABLED)
     await _wait_route()
@@ -88,7 +92,7 @@ func _run() -> void:
     AudioDirector.current_stage = audio[0]
     AudioDirector.current_state = audio[1]
     SceneRouter.fade_duration = duration
-    for id in [&"s01_fixture", &"s02_fixture", &"s03_fixture"]:
+    for id in [&"s01_fixture", &"s02_fixture", &"s03_fixture", &"s04_fixture"]:
         _check(SceneRouter.unregister_stage(id) == OK, "Fixture unregister")
     _check(_files() == hashes, "No production save/settings writes")
     if _failures.is_empty():
