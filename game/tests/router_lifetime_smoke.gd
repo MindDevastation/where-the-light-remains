@@ -59,7 +59,10 @@ func _wait_phase(phase: String) -> void:
             return
         if phase == "fade_out" and route.get("committed", false):
             return
-        await get_tree().process_frame
+        if phase == "physics":
+            await get_tree().physics_frame
+        else:
+            await get_tree().process_frame
     _check(false, "Missed active phase: " + phase)
 
 func _drain() -> void:
