@@ -124,6 +124,14 @@ forward is negative Y and diagonal length is capped at one. Mouse look consumes
 `InputEventMouseMotion` in the future player controller, with capture still
 owned exclusively by `InputManager`. It has no digital InputMap action.
 
+The shell InputManager now exposes `get_movement_vector()` with that same
+deadzone/direction/diagonal contract and an additional focus/pause/held-key
+filter. Player consumers use this wrapper and `can_look()` / `can_interact()`.
+Startup mode is UI; gameplay explicitly requests capture. Pause and focus do
+not overwrite the requested mode. See `docs/production/INPUT_FOCUS.md` for the
+ownership and recapture contract; direct mouse-mode writes are forbidden in
+other production systems.
+
 `pause` and `skip_sequence` expose the same raw Esc state. InputMap does not
 decide between a pause request and a skip. Future pause/sequence consumers must
 coordinate that decision, gate skipping to the approved repeat-playthrough
