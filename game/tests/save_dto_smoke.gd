@@ -6,6 +6,10 @@ var _events := 0
 
 
 func _ready() -> void:
+    get_tree().create_timer(20.0).timeout.connect(func() -> void:
+        push_error("SAVE_DTO FAIL: timeout")
+        get_tree().quit(1)
+    )
     _run.call_deferred()
 
 
@@ -50,6 +54,10 @@ func _run() -> void:
     partial.milestones = {&"fixture_seen": true}
     partial.achievement_ids = [&"fixture_optional"]
     var complete := partial.copy_validated()
+    if complete == null:
+        _check(false, "Partial fixture failed validation before round trip")
+        get_tree().quit(1)
+        return
     complete.stage_id = &"s15_dawn"
     complete.collected_fragments = SaveGame.FOUND_ORDER.duplicate()
     complete.game_completed = true

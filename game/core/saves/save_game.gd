@@ -6,7 +6,8 @@ const VERSION := 1
 const MAX_SERIALIZED_BYTES := 262144
 const MAX_JSON_NODES := 4096
 const MAX_JSON_DEPTH := 8
-const MAX_SAFE_NUMBER := 9007199254740991.0
+const MAX_SAFE_INTEGER: int = 9007199254740991
+const MAX_SAFE_NUMBER := float(MAX_SAFE_INTEGER)
 const FOUND_ORDER: Array[StringName] = [
     &"star", &"hearth", &"echo", &"sprout", &"feather", &"bell",
     &"sun_glint", &"double_moon", &"constellation", &"clear_crystal",
