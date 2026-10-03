@@ -208,6 +208,14 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         target.checkpoint_id = &""
     if target.stage_id != stage_id or target.copy_validated() == null:
         return ERR_INVALID_DATA
+    var in_place := definition.presentation == StageDefinition.Presentation.IN_PLACE or (String(original.stage_id).begins_with("s14_") and String(stage_id).begins_with("s15_"))
+    if in_place:
+        if saved != null or _world_slot.get_child_count() != 1:
+            return ERR_UNAVAILABLE
+        var existing := _world_slot.get_child(0) as WorldScene
+        if existing == null or existing.scene_file_path != definition.scene_path or not existing.supports_stage(stage_id):
+            # Never hide a missing shared-world contract behind a black cut.
+            return ERR_UNAVAILABLE
     _route = {"slot": _world_slot, "player": _player, "fade": _fade,
         "slot_transform": _world_slot.global_transform,
         "binding": _binding_revision, "cancelled": false, "state": original,
@@ -216,7 +224,8 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         "player_active": _player.active, "player_transform": _player.global_transform,
         "head_rotation": _player.head.rotation, "audio_stage": AudioDirector.current_stage,
         "audio_state": AudioDirector.current_state, "fade_revision": _fade.request_revision,
-        "process_modes": {}, "collision_disable_modes": {}, "cleaning": false}
+        "process_modes": {}, "collision_disable_modes": {}, "cleaning": false,
+        "in_place": in_place, "world_applied": false}
     _transition_in_progress = true
     _route["input_revision"] = InputManager.mode_revision + 1
     InputManager.set_mode(InputManager.Mode.DISABLED)
@@ -229,6 +238,31 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         var checkpoint_error := _flush_checkpoint()
         if checkpoint_error != OK:
             return await _complete_route(checkpoint_error)
+    if in_place:
+        var existing: WorldScene = _world_slot.get_child(0)
+        var prepared := existing.prepare_state(target)
+        if prepared["error"] != OK:
+            return await _complete_route(prepared["error"])
+        if not _route_owned():
+            return await _complete_route(ERR_SKIP)
+        var apply_error := existing.apply_stage_state(stage_id, prepared["state"])
+        if apply_error != OK:
+            return await _complete_route(apply_error)
+        _route["world_applied"] = true
+        if not _route_owned():
+            return await _complete_route(ERR_SKIP)
+        if GameState.apply_save(target) != OK:
+            return await _complete_route(ERR_INVALID_DATA)
+        _route["committed"] = true
+        AudioDirector.set_stage_audio(stage_id)
+        _restore_world(existing)
+        _player.set_active(definition.player_active)
+        if not _route_owned():
+            return await _complete_route(ERR_SKIP)
+        SaveManager.mark_dirty()
+        var error := await _complete_route(OK, definition.input_mode)
+        EventBus.stage_changed.emit(stage_id)
+        return error
     var preloaded := await _preload_definition(definition)
     if not _route_owned():
         return await _complete_route(ERR_SKIP)
@@ -260,7 +294,7 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         return await _complete_route(ERR_SKIP)
     if definition.player_active and not _spawn_clear(spawn):
         return await _complete_route(ERR_INVALID_DATA)
-    var apply_error := candidate.apply_logical_state(prepared["state"])
+    var apply_error := candidate.apply_stage_state(stage_id, prepared["state"])
     if apply_error != OK:
         return await _complete_route(apply_error)
     if GameState.apply_save(target) != OK:
@@ -273,6 +307,8 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         return await _complete_route(ERR_SKIP)
     _restore_world(candidate)
     _player.set_active(definition.player_active)
+    if not _route_owned():
+        return await _complete_route(ERR_SKIP)
     if saved == null:
         SaveManager.mark_dirty()
     var error := await _complete_route(OK, definition.input_mode)
@@ -367,6 +403,13 @@ func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.
                     slot.add_child(old)
                 else:
                     old.queue_free()
+        if route["in_place"] and route["world_applied"]:
+            var old: Variant = route["old_worlds"][0]
+            if is_instance_valid(old):
+                var previous: SaveGame = route["state"]
+                var restore_error: Error = old.apply_stage_state(previous.stage_id, previous.world_states.get(previous.stage_id, {}))
+                if restore_error != OK:
+                    error = restore_error
         if route["committed"]:
             GameState.apply_save(route["state"])
             AudioDirector.current_stage = route["audio_stage"]
@@ -388,9 +431,10 @@ func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.
             context_alive = context_alive and is_instance_valid(original_node) and original_node.is_inside_tree()
         final_mode = route["mode"] if context_alive else InputManager.Mode.UI
     else:
-        for old in route["old_worlds"]:
-            if is_instance_valid(old):
-                old.queue_free()
+        if not route["in_place"]:
+            for old in route["old_worlds"]:
+                if is_instance_valid(old):
+                    old.queue_free()
     if is_instance_valid(fade) and fade.request_revision == route["fade_revision"]:
         fade.clear()
     _route = {}

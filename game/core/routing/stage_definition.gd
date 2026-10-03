@@ -6,6 +6,8 @@ extends Resource
 @export_file("*.tscn") var scene_path := ""
 @export var player_active := true
 @export var input_mode: InputManager.Mode = InputManager.Mode.GAMEPLAY
+enum Presentation { FADE, IN_PLACE }
+@export var presentation: Presentation = Presentation.FADE
 
 
 func copy_validated() -> StageDefinition:
@@ -17,6 +19,8 @@ func copy_validated() -> StageDefinition:
         return null
     if not player_active and input_mode in [InputManager.Mode.GAMEPLAY, InputManager.Mode.LIMITED_LOOK]:
         return null
+    if presentation not in [Presentation.FADE, Presentation.IN_PLACE]:
+        return null
     if not ResourceLoader.exists(scene_path, "PackedScene"):
         return null
     var definition := StageDefinition.new()
@@ -24,4 +28,5 @@ func copy_validated() -> StageDefinition:
     definition.scene_path = scene_path
     definition.player_active = player_active
     definition.input_mode = input_mode
+    definition.presentation = presentation
     return definition

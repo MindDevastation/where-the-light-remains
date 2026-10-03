@@ -3,6 +3,7 @@ extends Node3D
 ## Quiet world root: controllers validate/apply only their own approved namespace.
 
 @export var stage_id: StringName = &""
+@export var supported_stages: Array[StringName] = []
 @export var default_spawn: NodePath
 @export var checkpoint_spawns: Dictionary = {}
 
@@ -12,7 +13,7 @@ func prepare_state(saved: SaveGame) -> Dictionary:
     if saved == null:
         return failure
     var validated := saved.copy_validated()
-    if validated == null or validated.stage_id != stage_id:
+    if validated == null or not supports_stage(validated.stage_id):
         return failure
     var default_marker := _spawn_marker(default_spawn)
     if default_marker == null or not valid_spawn_transform(_marker_transform(default_marker)):
@@ -37,12 +38,43 @@ func prepare_state(saved: SaveGame) -> Dictionary:
     var spawn := _marker_transform(marker)
     if not valid_spawn_transform(spawn):
         return failure
-    var state: Dictionary = validated.world_states.get(stage_id, {})
-    var error := validate_logical_state(state.duplicate(true))
+    var state: Dictionary = validated.world_states.get(validated.stage_id, {})
+    var error := validate_stage_state(validated.stage_id, state.duplicate(true))
     if error != OK:
         failure["error"] = error
         return failure
     return {"error": OK, "state": state.duplicate(true), "spawn": spawn}
+
+
+func supports_stage(id: StringName) -> bool:
+    if supported_stages.is_empty():
+        return id == stage_id
+    var seen := {}
+    for supported in supported_stages:
+        var probe := SaveGame.new()
+        probe.stage_id = supported
+        if seen.has(supported) or probe.copy_validated() == null:
+            return false
+        seen[supported] = true
+    return seen.has(stage_id) and seen.has(id)
+
+
+func validate_stage_state(_id: StringName, state: Dictionary) -> Error:
+    return validate_logical_state(state)
+
+
+func apply_stage_state(id: StringName, state: Dictionary) -> Error:
+    if not supports_stage(id):
+        return ERR_INVALID_DATA
+    var error := validate_stage_state(id, state.duplicate(true))
+    if error != OK:
+        return error
+    var previous := stage_id
+    stage_id = id
+    error = apply_logical_state(state.duplicate(true))
+    if error != OK:
+        stage_id = previous
+    return error
 
 
 func _marker_transform(marker: Marker3D) -> Transform3D:
