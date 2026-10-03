@@ -1,0 +1,11 @@
+Source: 1b30a7af44469e141c0fa63eba29b2822916b424
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/toolchain/router-clean-accepted/game --audio-driver Dummy res://tests/save_dto_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SAVE_DTO runtime: 4.7.2-stable (official)
+SAVE_DTO checked: fresh/partial/complete JSON round trips, StringName normalization, optional flags and nested copy isolation
+SAVE_DTO checked: required/unknown fields, supported/future schema, identifiers/types/found order/completion, objects/resources/vectors, nonfinite/unsafe numbers, depth/nodes/UTF-8 size and cycles
+SAVE_DTO checked: transactional GameState apply/capture, invalid-state preservation, reset and production file/service integrity
+SAVE_DTO PASS: typed v1 logical state, strict bounded validation, JSON round trips and isolated transactional capture/apply
+
+Exit: 0

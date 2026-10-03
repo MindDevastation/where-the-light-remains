@@ -1,0 +1,7 @@
+Source: 1b30a7af44469e141c0fa63eba29b2822916b424
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/toolchain/router-clean-accepted/game --audio-driver Dummy res://tests/router_pipeline_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ROUTER_PIPELINE PASS: preload/replace/state/spawn/fade, overlap, checkpoint/apply rejection, same-mode cancellation, removed root and pending preload drain
+
+Exit: 0

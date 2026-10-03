@@ -33,7 +33,7 @@ pause any unfinished implementation/acceptance; do not merge unfinished work.
 The owner renewed development for 13:19:55–16:19:55 UTC. See
 `SESSION_2026-10-03_13-19.md`; the earlier deadline above is historical.
 
-## Current checkpoint — acceptance remains open
+## Historical prototype checkpoint
 
 Feature `feature/02-state-saves/scene-router`. Contract source and latest prototype
 identities and actual logs: `evidence/scene_router/manifest.json` and README.
@@ -73,3 +73,67 @@ features. Prototype tests use engineering IDs/counters; none are story content.
 The full SceneRouter implementation-plan checkbox stays open. No merge is planned
 until these criteria pass. Resume from this checkpoint, using the verified local
 toolchain and TCP X11 path; do not repeat solved environment work.
+
+## Accepted core — renewed window, 2026-10-03 UTC
+
+**PASS** on source `1b30a7af44469e141c0fa63eba29b2822916b424`.
+Fresh archive, 242 unchanged game/tools/required art-contract files and fourteen
+existing LFS identities verified. Eighteen headless fixtures, eleven authenticated
+TCP X11/Forward+ fixtures and five isolated real exit processes pass. Graphics
+source `a1aedb9d21a37efeafbaffd53e1f8e1dfa1f839d` has the exact accepted production
+and tools trees; only a cleanup smoke changed afterward and reran graphically.
+Exact commands/source hashes/results are retained in `evidence/scene_router/`.
+The established headless malformed ConfigFile case emits its one expected parser
+diagnostic; every graphical run and all other accepted checks have no errors.
+
+`register_stage(StageDefinition)` stores an isolated authored path/mode/player/
+presentation definition. Save data cannot choose paths. `WorldScene` validates
+full stage identity, every declared spawn/checkpoint transform and its own logical
+namespace before application. Derived validators must be pure; failure must leave
+logical state unchanged and previously valid state must remain restorable. `_ready`
+may construct presentation, but must not advance progression or write global
+state/save/audio. Processing/physics callbacks, including ALWAYS children, freeze
+during preparation; this is not a sandbox for arbitrary signal/timer side effects.
+
+`request_registered_stage(id, saved = null, checkpoint_before = false)` serializes
+input lock, requested dirty checkpoint, threaded preload, fade, physical world
+replacement, logical state, exact feet spawn, audio stage and input release.
+Requested checkpoint writes the old accepted state before preload. Failed writes
+preserve the world, dirty state and files; successful writes retain the prior valid
+backup. Loaded DTOs do not automatically mark dirty; accepted normal progression
+does. There is exactly one target stage event after acceptance.
+
+Old worlds stay available for rollback and their callbacks stay disabled. Candidate
+callbacks freeze after `_ready`, while authored active colliders retain query
+presence and rigid bodies become static. Authored disabled REMOVE colliders stay
+absent. Spawn requires an unobstructed capsule and valid floor support. Reattached
+physics settles before the player resumes; exact authored process/disable modes
+restore. Nested world/slot transforms, absent/steep support, blocked capsule,
+apply failures and rollback are checked in the real physics engine.
+
+Input mode revisions and fade request revisions protect later owners. Removal,
+rebind and freed player at preload/fade-in/physics/fade-out cancel safely. A changed
+binding or dead context releases owned capture to UI. `App.request_safe_exit()`
+first cancels/awaits the route before flushing: an unaccepted target can never be
+saved by native close. Real IO failure leaves the Russian dialog usable; Stay
+restores accepted gameplay. Pending worker completion is tracked and collected
+nonblockingly, including FAILED engine tokens. Godot exposes no worker cancellation
+API; canceled/timed-out callers return promptly and new loads/registry mutations
+remain busy until the tracked worker reaches a terminal result.
+
+Presentation defaults to the existing technical fade API; durations are not
+authored narrative timings. Explicit IN_PLACE and the mandatory S14→15 path require
+the same registered scene and declared supported stages on the current world.
+They apply the next namespace/stage on the same instance, preserving player
+feet/head/camera without preload, frame yield, fade or loading overlay. A missing
+shared-world contract returns ERR_UNAVAILABLE before locking or replacing anything.
+IN_PLACE is progression only; an explicit saved DTO is rejected instead of ignoring
+its spawn/checkpoint. Boot/load uses an authored ordinary entry definition.
+The engineering S14→15 before/after Forward+ framebuffers are byte-identical.
+
+No shipping stage registry, automatic world, Boot/Main Menu, story/puzzle parameter,
+credits choreography, music silence implementation or new 3D binary was invented.
+Authored content and AudioDirector silence/chains remain separate. Linux llvmpipe
+acceptance does not certify Windows, physical GPU frame budgets, power-loss saves
+or permanently stalled engine workers. The earlier prototype/open-task paragraphs
+above remain historical and are superseded by this accepted core section.
