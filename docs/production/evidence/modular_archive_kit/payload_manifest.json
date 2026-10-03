@@ -1,0 +1,103 @@
+{
+  "contract_version": 1,
+  "visual_revision": 2,
+  "recipe_sha256": "637ae6fc10cf5fb8f3bcfb685c054e687ef674b6d44753bb3f5a3975ce78f3a0",
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/archive_kit_sample.blend",
+      "sha256": "1c437526b28489041821411a558837e302b64cee86e90583a29d49bbc8de2975",
+      "bytes": 659164,
+      "role": "editable Blender source, five module collections"
+    },
+    {
+      "module": "wall_2m",
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_2m.glb",
+      "sha256": "0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612",
+      "bytes": 10708,
+      "triangles": 108,
+      "surfaces": 1,
+      "bounds_min": [
+        -1,
+        0,
+        -0.2
+      ],
+      "bounds_max": [
+        1,
+        4,
+        0.2
+      ]
+    },
+    {
+      "module": "wall_4m",
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_4m.glb",
+      "sha256": "e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be",
+      "bytes": 19496,
+      "triangles": 212,
+      "surfaces": 1,
+      "bounds_min": [
+        -2,
+        0,
+        -0.2
+      ],
+      "bounds_max": [
+        2,
+        4,
+        0.2
+      ]
+    },
+    {
+      "module": "arch_4m",
+      "path": "game/art/meshes/archive_kit/sm_archive_arch_4m.glb",
+      "sha256": "92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8",
+      "bytes": 159160,
+      "triangles": 1412,
+      "surfaces": 2,
+      "bounds_min": [
+        -2,
+        0,
+        -0.2
+      ],
+      "bounds_max": [
+        2,
+        4,
+        0.2
+      ]
+    },
+    {
+      "module": "floor_1m",
+      "path": "game/art/meshes/archive_kit/sm_archive_floor_1m.glb",
+      "sha256": "76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8",
+      "bytes": 3344,
+      "triangles": 20,
+      "surfaces": 1,
+      "bounds_min": [
+        -0.5,
+        -0.2,
+        -0.5
+      ],
+      "bounds_max": [
+        0.5,
+        0,
+        0.5
+      ]
+    },
+    {
+      "module": "pier_4m",
+      "path": "game/art/meshes/archive_kit/sm_archive_pier_4m.glb",
+      "sha256": "fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0",
+      "bytes": 36280,
+      "triangles": 332,
+      "surfaces": 2,
+      "bounds_min": [
+        -0.3,
+        0,
+        -0.3
+      ],
+      "bounds_max": [
+        0.3,
+        4.12,
+        0.3
+      ]
+    }
+  ]
+}

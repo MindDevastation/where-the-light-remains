@@ -7,6 +7,12 @@ Feature: `feature/03-art-foundation/visual-rebaseline-v2`, existing Art Foundati
 
 The owner's standing Extra High/highest available request applies; no agent-side model-setting switch is claimed. Before edits, workflow/pipeline/plan/status, Bible/index/required assets, narrative/technical/QA, source/runtime trees and successful engine/Blender/LFS/material/modular evidence were reviewed. Authenticated origin read/write permission and real LFS read passed; graphics use the proven TCP cookie path. No LFS history migration.
 
+Current follow-up: the five-module Archive structural sample is validated as
+of 2026-10-03; actual source/runtime paths and evidence are in
+`MODULAR_ARCHIVE_KIT.md` / `evidence/modular_archive_kit/README.md`. The audit
+counts and absence-of-worlds findings below describe the original pack/audit
+revision, not the later sample. Whole-game migration remains PARTIAL.
+
 ## Source of truth and inspection coverage
 
 Latest owner instruction → canonical game/design → mechanics → inventory/index → runtime policies → approved v2 images → explicitly promoted additional images → legacy → history. New images control visual direction; they cannot change progression, text, accessibility, saves, interaction or performance budgets.
@@ -257,7 +263,7 @@ No canonical text, mechanics, save/state, accessibility or global budget changed
 
 **FINAL STATUS: PARTIAL.** Missing Secrets-Achievements C, six unmatched exact
 assignments and production casting/asset inputs pause their dependent work only.
-**NEXT SAFE DEVELOPMENT STEP:** return to the ordinary roadmap's bounded
-five-module Archive sample with the current v2 kit/shape/hub references, retaining
-the approved technical contract. Author and validate that coherent family before
-Wing I/playable slice; no bulk distant-stage production before hardware profiling.
+**NEXT SAFE DEVELOPMENT STEP (updated 2026-10-03):** the five-module Archive
+sample is now validated under the current v2 references and unchanged technical
+contract. Proceed to the bounded Wing I hero mechanism brief/sample and playable
+slice; no bulk distant-stage production before hardware profiling.

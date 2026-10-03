@@ -1,0 +1,131 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_floor_1m.tscn" id="floor_1m"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_pier_4m.tscn" id="pier_4m"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_4m.tscn" id="wall_4m"]
+
+[node name="ArchiveKitSample" type="Node3D"]
+
+[node name="Floors" type="Node3D" parent="."]
+
+[node name="Floor00" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-4.5, 0, -0.5)
+
+[node name="Floor01" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-4.5, 0, 0.5)
+
+[node name="Floor02" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-4.5, 0, 1.5)
+
+[node name="Floor03" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-4.5, 0, 2.5)
+
+[node name="Floor04" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-4.5, 0, 3.5)
+
+[node name="Floor05" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-4.5, 0, 4.5)
+
+[node name="Floor06" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-3.5, 0, -0.5)
+
+[node name="Floor07" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-3.5, 0, 0.5)
+
+[node name="Floor08" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-3.5, 0, 1.5)
+
+[node name="Floor09" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-3.5, 0, 2.5)
+
+[node name="Floor10" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-3.5, 0, 3.5)
+
+[node name="Floor11" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-3.5, 0, 4.5)
+
+[node name="Floor12" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-2.5, 0, -0.5)
+
+[node name="Floor13" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-2.5, 0, 0.5)
+
+[node name="Floor14" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-2.5, 0, 1.5)
+
+[node name="Floor15" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-2.5, 0, 2.5)
+
+[node name="Floor16" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-2.5, 0, 3.5)
+
+[node name="Floor17" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-2.5, 0, 4.5)
+
+[node name="Floor18" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-1.5, 0, -0.5)
+
+[node name="Floor19" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-1.5, 0, 0.5)
+
+[node name="Floor20" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-1.5, 0, 1.5)
+
+[node name="Floor21" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-1.5, 0, 2.5)
+
+[node name="Floor22" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-1.5, 0, 3.5)
+
+[node name="Floor23" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-1.5, 0, 4.5)
+
+[node name="Floor24" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-0.5, 0, -0.5)
+
+[node name="Floor25" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-0.5, 0, 0.5)
+
+[node name="Floor26" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-0.5, 0, 1.5)
+
+[node name="Floor27" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-0.5, 0, 2.5)
+
+[node name="Floor28" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-0.5, 0, 3.5)
+
+[node name="Floor29" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(-0.5, 0, 4.5)
+
+[node name="Floor30" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(0.5, 0, -0.5)
+
+[node name="Floor31" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(0.5, 0, 0.5)
+
+[node name="Floor32" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(0.5, 0, 1.5)
+
+[node name="Floor33" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(0.5, 0, 2.5)
+
+[node name="Floor34" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(0.5, 0, 3.5)
+
+[node name="Floor35" parent="Floors" instance=ExtResource("floor_1m")]
+position = Vector3(0.5, 0, 4.5)
+
+[node name="Facade" type="Node3D" parent="."]
+
+[node name="Bay0" parent="Facade" instance=ExtResource("wall_4m")]
+position = Vector3(-2, 0, 0)
+
+[node name="Bay1" parent="Facade" instance=ExtResource("wall_4m")]
+position = Vector3(0, 0, 2)
+rotation = Vector3(0, 1.570796327, 0)
+
+[node name="Piers" type="Node3D" parent="."]
+
+[node name="Pier0" parent="Piers" instance=ExtResource("pier_4m")]
+position = Vector3(0, 0, 0)

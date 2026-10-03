@@ -1,0 +1,147 @@
+$ gh pr view 25 --json state,isDraft,baseRefName,baseRefOid,headRefOid,mergeable,mergeStateStatus,statusCheckRollup,reviewDecision,url
+{"baseRefName":"epic/03-art-foundation","baseRefOid":"c6773f203717b0058a3ec3aee4a3e26bb1190f1f","headRefOid":"774b50c52c062173d36a5f37f8ea07c05f393b16","isDraft":false,"mergeStateStatus":"CLEAN","mergeable":"MERGEABLE","reviewDecision":"","state":"OPEN","statusCheckRollup":[],"url":"https://github.com/MindDevastation/where-the-light-remains/pull/25"}
+exit=0
+$ gh pr merge 25 --merge --match-head-commit 774b50c52c062173d36a5f37f8ea07c05f393b16
+
+exit=0
+$ gh pr view 25 --json state,mergeCommit,mergedAt,url
+{"mergeCommit":{"oid":"9f95ed22b97a9e732d0a8f2adb5e352e3f5d034b"},"mergedAt":"2026-10-03T00:39:38Z","state":"MERGED","url":"https://github.com/MindDevastation/where-the-light-remains/pull/25"}
+exit=0
+$ git fetch origin
+From https://github.com/MindDevastation/where-the-light-remains
+   c6773f2..9f95ed2  epic/03-art-foundation -> origin/epic/03-art-foundation
+exit=0
+$ git switch epic/03-art-foundation
+Switched to branch 'epic/03-art-foundation'
+Your branch is behind 'origin/epic/03-art-foundation' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+exit=0
+$ git merge --ff-only origin/epic/03-art-foundation
+Updating c6773f2..9f95ed2
+Fast-forward
+ .../blender/archive_kit/archive_kit_sample.blend   |   3 +
+ docs/production/ASSET_INDEX.md                     |  30 +-
+ docs/production/CONTENT_STATUS.md                  |  29 +-
+ docs/production/IMPLEMENTATION_PLAN.md             |  33 +-
+ docs/production/MATERIAL_PREFLIGHT.md              |  16 +
+ docs/production/MODULAR_ARCHIVE_KIT.md             |  36 +-
+ docs/production/VISUAL_REBASELINE_V2.md            |  14 +-
+ .../evidence/modular_archive_kit/README.md         | 124 +++++++
+ .../modular_archive_kit/auth_preflight.log         | 102 ++++++
+ .../evidence/modular_archive_kit/authoring.log     |  56 ++++
+ .../evidence/modular_archive_kit/capability.log    |  82 +++++
+ .../modular_archive_kit/contract_preservation.log  |   4 +
+ .../evidence/modular_archive_kit/corner.log        |  37 +++
+ .../evidence/modular_archive_kit/corner.png        | Bin 0 -> 775961 bytes
+ .../evidence/modular_archive_kit/fresh_clone.log   |   7 +
+ .../evidence/modular_archive_kit/fresh_hydrate.log | 362 +++++++++++++++++++++
+ .../modular_archive_kit/fresh_hydrate_timeout.log  |   4 +
+ .../modular_archive_kit/fresh_producer_hydrate.log |  45 +++
+ .../fresh_relative_path_review.log                 | 272 ++++++++++++++++
+ .../modular_archive_kit/fresh_retrieve.log         |  58 ++++
+ .../evidence/modular_archive_kit/fresh_verify.log  | 117 +++++++
+ .../evidence/modular_archive_kit/front.log         |  41 +++
+ .../evidence/modular_archive_kit/front.png         | Bin 0 -> 874910 bytes
+ .../evidence/modular_archive_kit/import_final.log  |  25 ++
+ .../evidence/modular_archive_kit/lfs_upload.log    |  10 +
+ .../modular_archive_kit/payload_manifest.json      | 103 ++++++
+ .../modular_archive_kit/physics_diagnostic.log     |  17 +
+ .../evidence/modular_archive_kit/physics_final.log |  38 +++
+ .../evidence/modular_archive_kit/producer_fsck.log |  14 +
+ .../producer_fsck_diagnostic.log                   |  41 +++
+ .../evidence/modular_archive_kit/reverse.log       |  41 +++
+ .../evidence/modular_archive_kit/reverse.png       | Bin 0 -> 846359 bytes
+ .../evidence/modular_archive_kit/source_final.log  |  16 +
+ .../source_visibility_diagnostic.log               |  23 ++
+ .../modular_archive_kit/validation_manifest.json   | 217 ++++++++++++
+ docs/production/modular_archive_kit_v1.json        |  21 +-
+ docs/production/visual_rebaseline_v2.json          |  63 +++-
+ game/art/meshes/archive_kit/sm_archive_arch_4m.glb |   3 +
+ .../archive_kit/sm_archive_arch_4m.glb.import      |  58 ++++
+ .../art/meshes/archive_kit/sm_archive_floor_1m.glb |   3 +
+ .../archive_kit/sm_archive_floor_1m.glb.import     |  53 +++
+ game/art/meshes/archive_kit/sm_archive_pier_4m.glb |   3 +
+ .../archive_kit/sm_archive_pier_4m.glb.import      |  58 ++++
+ game/art/meshes/archive_kit/sm_archive_wall_2m.glb |   3 +
+ .../archive_kit/sm_archive_wall_2m.glb.import      |  53 +++
+ game/art/meshes/archive_kit/sm_archive_wall_4m.glb |   3 +
+ .../archive_kit/sm_archive_wall_4m.glb.import      |  53 +++
+ game/tests/archive_kit_review.gd                   | 138 ++++++++
+ game/tests/archive_kit_review.gd.uid               |   1 +
+ game/tests/archive_kit_smoke.gd                    | 289 ++++++++++++++++
+ game/tests/archive_kit_smoke.gd.uid                |   1 +
+ game/tests/fixtures/archive_kit_corner.tscn        | 131 ++++++++
+ game/tests/fixtures/archive_kit_sample.tscn        | 203 ++++++++++++
+ game/worlds/archive/modules/archive_arch_4m.tscn   | 224 +++++++++++++
+ game/worlds/archive/modules/archive_floor_1m.tscn  |  31 ++
+ game/worlds/archive/modules/archive_pier_4m.tscn   |  22 ++
+ game/worlds/archive/modules/archive_wall_2m.tscn   |  25 ++
+ game/worlds/archive/modules/archive_wall_4m.tscn   |  25 ++
+ tools/assemble_archive_kit.py                      | 131 ++++++++
+ tools/create_archive_kit.py                        | 288 ++++++++++++++++
+ tools/verify_archive_kit_source.py                 |  91 ++++++
+ 61 files changed, 3944 insertions(+), 47 deletions(-)
+ create mode 100644 assets/3d/blender/archive_kit/archive_kit_sample.blend
+ create mode 100644 docs/production/evidence/modular_archive_kit/README.md
+ create mode 100644 docs/production/evidence/modular_archive_kit/auth_preflight.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/authoring.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/capability.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/contract_preservation.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/corner.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/corner.png
+ create mode 100644 docs/production/evidence/modular_archive_kit/fresh_clone.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/fresh_hydrate.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/fresh_hydrate_timeout.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/fresh_producer_hydrate.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/fresh_relative_path_review.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/fresh_retrieve.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/fresh_verify.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/front.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/front.png
+ create mode 100644 docs/production/evidence/modular_archive_kit/import_final.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/lfs_upload.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/payload_manifest.json
+ create mode 100644 docs/production/evidence/modular_archive_kit/physics_diagnostic.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/physics_final.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/producer_fsck.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/producer_fsck_diagnostic.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/reverse.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/reverse.png
+ create mode 100644 docs/production/evidence/modular_archive_kit/source_final.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/source_visibility_diagnostic.log
+ create mode 100644 docs/production/evidence/modular_archive_kit/validation_manifest.json
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_arch_4m.glb
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_arch_4m.glb.import
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_floor_1m.glb
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_floor_1m.glb.import
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_pier_4m.glb
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_pier_4m.glb.import
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_wall_2m.glb
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_wall_2m.glb.import
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_wall_4m.glb
+ create mode 100644 game/art/meshes/archive_kit/sm_archive_wall_4m.glb.import
+ create mode 100644 game/tests/archive_kit_review.gd
+ create mode 100644 game/tests/archive_kit_review.gd.uid
+ create mode 100644 game/tests/archive_kit_smoke.gd
+ create mode 100644 game/tests/archive_kit_smoke.gd.uid
+ create mode 100644 game/tests/fixtures/archive_kit_corner.tscn
+ create mode 100644 game/tests/fixtures/archive_kit_sample.tscn
+ create mode 100644 game/worlds/archive/modules/archive_arch_4m.tscn
+ create mode 100644 game/worlds/archive/modules/archive_floor_1m.tscn
+ create mode 100644 game/worlds/archive/modules/archive_pier_4m.tscn
+ create mode 100644 game/worlds/archive/modules/archive_wall_2m.tscn
+ create mode 100644 game/worlds/archive/modules/archive_wall_4m.tscn
+ create mode 100644 tools/assemble_archive_kit.py
+ create mode 100644 tools/create_archive_kit.py
+ create mode 100644 tools/verify_archive_kit_source.py
+exit=0
+$ git rev-parse HEAD
+9f95ed22b97a9e732d0a8f2adb5e352e3f5d034b
+exit=0
+$ git rev-parse '774b50c52c062173d36a5f37f8ea07c05f393b16^{tree}'
+5fa7524f1b5396395ae492dfee77fc0724dc32df
+exit=0
+$ git rev-parse 'HEAD^{tree}'
+5fa7524f1b5396395ae492dfee77fc0724dc32df
+exit=0
+MERGED_EPIC_TREE PASS: exactly equals validated feature 774b50c52c062173d36a5f37f8ea07c05f393b16; merged epic=9f95ed22b97a9e732d0a8f2adb5e352e3f5d034b

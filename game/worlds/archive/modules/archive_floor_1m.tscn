@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_archive_floor_1m.glb" id="Art"]
+
+[sub_resource type="BoxShape3D" id="Solid"]
+size = Vector3(1, 0.2, 1)
+
+[node name="ArchiveFloor1m" type="Node3D"]
+metadata/module_id = "floor_1m"
+
+[node name="Art" parent="." instance=ExtResource("Art")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 1
+collision_mask = 1
+
+[node name="Solid" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0, -0.1, 0)
+shape = SubResource("Solid")
+
+[node name="Left" type="Marker3D" parent="."]
+position = Vector3(-0.5, 0, 0)
+
+[node name="Right" type="Marker3D" parent="."]
+position = Vector3(0.5, 0, 0)
+
+[node name="Front" type="Marker3D" parent="."]
+position = Vector3(0, 0, -0.5)
+
+[node name="Back" type="Marker3D" parent="."]
+position = Vector3(0, 0, 0.5)

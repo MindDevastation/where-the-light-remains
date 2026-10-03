@@ -184,3 +184,19 @@ Evidence and reproduction commands:
 This is technical and surface/palette acceptance for the existing foundation.
 Full Warcraft-inspired geometry, hero readability, environment art acceptance
 and target-hardware performance remain open; overall rebaseline is PARTIAL.
+
+## Archive structural material integration — 2026-10-03 UTC
+
+Existing shared stone/brass resources now pass actual imported-mesh resource
+identity and three-view graphical review on the five-module Archive sample.
+Front/reverse/right-angle views use authenticated Xvfb TCP, X11, Vulkan Forward+
+on software llvmpipe; final screenshots were inspected. No material/map change
+or per-instance duplication. Primary: 63 instances, 4,284 triangles; isolated
+preview draw calls 25/27/18 and 120,224,512 total texture bytes including the
+environment/framebuffer. Independent LFS retrieval, explicit retrieved-source
+opening, fresh import/physics and graphical startup PASS. Exact commands/hashes:
+[sample evidence](evidence/modular_archive_kit/README.md).
+
+This accepts stone/brass integration for this bounded structural family. Other
+material families, full environment/hero art, gameplay integration and physical
+GTX1060-class profiling retain their separate gates.

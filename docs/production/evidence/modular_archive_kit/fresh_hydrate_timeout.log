@@ -1,0 +1,4 @@
+$ python tools/hydrate_head_blobs.py --repo ../wlr-archive-kit-fresh --scratch ../toolchain/archive-kit/git-hydration --jobs 4
+Parent verification wrapper stopped this command after 215 seconds (subprocess.TimeoutExpired).
+Captured child stdout was not retained by that wrapper. Already verified remote Git blobs remain in the clone.
+No LFS payload download was started; retrieval/merge gate remains pending.

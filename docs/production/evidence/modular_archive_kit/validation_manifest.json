@@ -1,0 +1,220 @@
+{
+  "base_commit": "c6773f203717b0058a3ec3aee4a3e26bb1190f1f",
+  "technical_contract_keys": [
+    "version",
+    "units",
+    "axes",
+    "placement",
+    "uv",
+    "materials",
+    "modules",
+    "sample"
+  ],
+  "references": [
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_a.png",
+      "git_blob": "30e54185412a8103b1fc2a02a0ec8b974e239727"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_b.png",
+      "git_blob": "8bd44e2745982beac1403321642a22f2078adce7"
+    },
+    {
+      "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_004_v2_angle_c.png",
+      "git_blob": "11d27ed3f654c6bf30e8a8d84abf56b7ebba22ce"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_a.png",
+      "git_blob": "accbf317c9a4510dca72f522b3809fb5c957ff7f"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_b.png",
+      "git_blob": "8e2481d73af7006cd26315859dc49c02257d3ef5"
+    },
+    {
+      "path": "assets/concept_art/hero_props/Generic modular observatory kit_v2_angle_c.png",
+      "git_blob": "5e8fd545572751fffed37aa99daa2315a698c3fc"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_a.png",
+      "git_blob": "e24773d66b2debded3ac8559f6c8d730501c4e2d"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_b.png",
+      "git_blob": "01409c5e1e5a072712ca0586b83a760ea810b86a"
+    },
+    {
+      "path": "assets/concept_art/production_sheets/Architectural shape language sheet_v2_angle_c.png",
+      "git_blob": "46e7fdc2af63780c3cea0da7373855e4369b1d2b"
+    }
+  ],
+  "preserved_contracts": [
+    {
+      "path": "game/autoload/app.gd",
+      "sha256": "41177f7843d1f7cd1c07a2828edd2f0be03eef8331be5cd62689cc903f067b0d"
+    },
+    {
+      "path": "game/autoload/audio_director.gd",
+      "sha256": "fdbc9df6d5e0c8bba43165278d1718cf856a043286375627531f46c009a10f54"
+    },
+    {
+      "path": "game/autoload/event_bus.gd",
+      "sha256": "2a575ae11ad09672a2d96019b7c8c0c72474eb86b290ede99361f2132335936d"
+    },
+    {
+      "path": "game/autoload/game_state.gd",
+      "sha256": "da5290dad9dfe6f1d39ad73f8c4004fa070cc02a5b6a3e1c9626bf709bb1f4c4"
+    },
+    {
+      "path": "game/autoload/input_manager.gd",
+      "sha256": "0c8728417e4f2118ddcb713a351e05e690b759c9cee0191e56399685953f3745"
+    },
+    {
+      "path": "game/autoload/save_manager.gd",
+      "sha256": "d8a426225f09925dfea04698633744fa82de06a1721a45d2ccedd3134b5acb62"
+    },
+    {
+      "path": "game/autoload/scene_router.gd",
+      "sha256": "8d4d31635b16918bea159470ef1de78243b61adc8e0dd4c00b4de6009552b92b"
+    },
+    {
+      "path": "game/autoload/settings_manager.gd",
+      "sha256": "dd185890070b99d420b4e1a0012862ac43f8f492888adec20f19abfc381f08db"
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "sha256": "02b8d78256448eb3aaf247ce337cc4de13167125f2a89a79ec683029746b1bf7"
+    },
+    {
+      "path": "game/core/debug/debug_snapshot.gd",
+      "sha256": "9387d1a7b483210df15fa79605aa5afc1f653924223bbae7c79e81f0e6458a44"
+    },
+    {
+      "path": "game/core/game_root/game_root.gd",
+      "sha256": "7a88fd643934a4cc25d89a27d845d670de4a63e5393b764c78dc3644d29daaa1"
+    },
+    {
+      "path": "game/core/game_root/game_root.tscn",
+      "sha256": "e131c8044e7d903da3d7443bd8c913f463e9f5b09ea3db2077210963fb2a82d0"
+    },
+    {
+      "path": "game/project.godot",
+      "sha256": "ffaf5dafee34979d3c3c0077aa64ab1455c2c7582ffd35428bdfe9bb0cca3a68"
+    },
+    {
+      "path": "game/tests/fixtures/lfs_export_sample.tscn",
+      "sha256": "79c00e6a06dc98b80562880e2b93caebf7f3d47d8b7651f67eed9765bdac9ef7"
+    }
+  ],
+  "files": [
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_arch_4m.glb.import",
+      "sha256": "541d84ec2c20c3227107206dfe424603ea684b5686c6172f631df6f193012ced",
+      "bytes": 1597
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_floor_1m.glb.import",
+      "sha256": "5570f094e6cedc50731c7e5d94457b7f39cebc2c5ac53de496beb550cc807e92",
+      "bytes": 1416
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_pier_4m.glb.import",
+      "sha256": "29bda80941dc95e3be2a54f55d272b6a7cb722ce056a115e3242638019198984",
+      "bytes": 1597
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_2m.glb.import",
+      "sha256": "18cf42a6b0bd0ef8d3e7473af445522c0622f0105a45a67b6dda660b0c09bb85",
+      "bytes": 1414
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_4m.glb.import",
+      "sha256": "3252123e985db498384a8c664f911d4a12bb6ad4f4eeb1c639cd2db7e2575a7f",
+      "bytes": 1414
+    },
+    {
+      "path": "game/tests/archive_kit_review.gd",
+      "sha256": "925a9acb8161ec5458a63731a4caf602e6f64a6271737142afa26eed1ab1cc5b",
+      "bytes": 6158
+    },
+    {
+      "path": "game/tests/archive_kit_smoke.gd",
+      "sha256": "1619b428c1710854bbb1ce73feb8782ca2164515a702fcb499b3e2d0a1a7893f",
+      "bytes": 15480
+    },
+    {
+      "path": "game/tests/fixtures/archive_kit_corner.tscn",
+      "sha256": "99770057e582720c1e6f185938e70546ba72b9f9d968405b6c99b87cf9a0f15e",
+      "bytes": 4641
+    },
+    {
+      "path": "game/tests/fixtures/archive_kit_sample.tscn",
+      "sha256": "ad25638463f08da3a11ceb9940ad413bf3cdcabdddd01c04752a696d425e9ebd",
+      "bytes": 7193
+    },
+    {
+      "path": "game/worlds/archive/modules/archive_arch_4m.tscn",
+      "sha256": "42b2b827a1afcc3171292df84dba4ddc7bf480bc34c8de1fddf86c9f0590a1df",
+      "bytes": 13346
+    },
+    {
+      "path": "game/worlds/archive/modules/archive_floor_1m.tscn",
+      "sha256": "f1fc85e772e3b6c58c58c4ba5827821c071b3326f042a9373ea01355b1095e01",
+      "bytes": 873
+    },
+    {
+      "path": "game/worlds/archive/modules/archive_pier_4m.tscn",
+      "sha256": "57af190b3f65659f17be91635912d71e53d3f13d8c3b41010429fa6b30608638",
+      "bytes": 642
+    },
+    {
+      "path": "game/worlds/archive/modules/archive_wall_2m.tscn",
+      "sha256": "19b825d768f1c8c4a364256bac83aa3e188afa11b8537ef3f6a45f2df6d80fb6",
+      "bytes": 707
+    },
+    {
+      "path": "game/worlds/archive/modules/archive_wall_4m.tscn",
+      "sha256": "333d364b9bd5da8f58dcbe45a280dffc6f8d001d51ad45ae6770856b197349d2",
+      "bytes": 707
+    },
+    {
+      "path": "tools/assemble_archive_kit.py",
+      "sha256": "6812d3f4ddf3c08836f4d2391a8e024a05a0ec547e601461b4f6c9d904916b1c",
+      "bytes": 7504
+    },
+    {
+      "path": "tools/create_archive_kit.py",
+      "sha256": "637ae6fc10cf5fb8f3bcfb685c054e687ef674b6d44753bb3f5a3975ce78f3a0",
+      "bytes": 13128
+    },
+    {
+      "path": "tools/verify_archive_kit_source.py",
+      "sha256": "77c71e2b2106da11824ce94f6821b81a082b678c7946a0e6d982f272c320fca0",
+      "bytes": 5245
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/production/evidence/modular_archive_kit/front.png",
+      "sha256": "f1f1cac4868368deb83ea6fe21c457f5ced62746a5a48ad2957b1b7e1ee6cd42",
+      "bytes": 874910
+    },
+    {
+      "path": "docs/production/evidence/modular_archive_kit/reverse.png",
+      "sha256": "55cd7ec3e1c60db23dd4a4bd7f9bbad47612e5e591644f20030240b632afbd53",
+      "bytes": 846359
+    },
+    {
+      "path": "docs/production/evidence/modular_archive_kit/corner.png",
+      "sha256": "c367568f8101d42a8688f045d0d91c5189a02f57549fb5cd2326df55b268431b",
+      "bytes": 775961
+    }
+  ],
+  "scope": "Final source snapshot. Front/reverse final frames precede a corner-only camera adjustment; their own paths/light/materials are unchanged. Corner regenerated and inspected after final framing.",
+  "validated_implementation_commit": "1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b",
+  "independent_retrieved_commit": "1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b",
+  "technical_contract_sha256": "32005ae5d8723adc9bc8e7c77390cdf2a96cd41480c3d6de60633098e2776b04",
+  "validated_feature_commit": "774b50c52c062173d36a5f37f8ea07c05f393b16",
+  "validated_feature_tree": "5fa7524f1b5396395ae492dfee77fc0724dc32df",
+  "merged_epic_commit": "9f95ed22b97a9e732d0a8f2adb5e352e3f5d034b"
+}

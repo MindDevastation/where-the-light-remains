@@ -1,0 +1,7 @@
+$ git clone --depth 1 --filter=blob:none --no-checkout --branch feature/03-art-foundation/modular-archive-kit https://github.com/MindDevastation/where-the-light-remains.git /workspace/scratch/4f0b36b4bb0e/wlr-archive-kit-fresh
+Cloning into '/workspace/scratch/4f0b36b4bb0e/wlr-archive-kit-fresh'...
+exit=0
+$ git rev-parse HEAD
+1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b
+exit=0
+FRESH_ISOLATION PASS: shallow remote clone; no alternates/shared common dir; initially empty local LFS store; HEAD=1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b
