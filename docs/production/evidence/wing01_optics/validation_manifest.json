@@ -1,0 +1,179 @@
+{
+  "base_commit": "e978c0d813b94d1299d8376879c75ec309012d3c",
+  "preserved_contracts": [
+    {
+      "path": "game/autoload/app.gd",
+      "sha256": "41177f7843d1f7cd1c07a2828edd2f0be03eef8331be5cd62689cc903f067b0d"
+    },
+    {
+      "path": "game/autoload/audio_director.gd",
+      "sha256": "fdbc9df6d5e0c8bba43165278d1718cf856a043286375627531f46c009a10f54"
+    },
+    {
+      "path": "game/autoload/event_bus.gd",
+      "sha256": "2a575ae11ad09672a2d96019b7c8c0c72474eb86b290ede99361f2132335936d"
+    },
+    {
+      "path": "game/autoload/game_state.gd",
+      "sha256": "da5290dad9dfe6f1d39ad73f8c4004fa070cc02a5b6a3e1c9626bf709bb1f4c4"
+    },
+    {
+      "path": "game/autoload/input_manager.gd",
+      "sha256": "0c8728417e4f2118ddcb713a351e05e690b759c9cee0191e56399685953f3745"
+    },
+    {
+      "path": "game/autoload/save_manager.gd",
+      "sha256": "d8a426225f09925dfea04698633744fa82de06a1721a45d2ccedd3134b5acb62"
+    },
+    {
+      "path": "game/autoload/scene_router.gd",
+      "sha256": "8d4d31635b16918bea159470ef1de78243b61adc8e0dd4c00b4de6009552b92b"
+    },
+    {
+      "path": "game/autoload/settings_manager.gd",
+      "sha256": "dd185890070b99d420b4e1a0012862ac43f8f492888adec20f19abfc381f08db"
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "sha256": "02b8d78256448eb3aaf247ce337cc4de13167125f2a89a79ec683029746b1bf7"
+    },
+    {
+      "path": "game/core/debug/debug_snapshot.gd",
+      "sha256": "9387d1a7b483210df15fa79605aa5afc1f653924223bbae7c79e81f0e6458a44"
+    },
+    {
+      "path": "game/core/game_root/game_root.gd",
+      "sha256": "7a88fd643934a4cc25d89a27d845d670de4a63e5393b764c78dc3644d29daaa1"
+    },
+    {
+      "path": "game/core/game_root/game_root.tscn",
+      "sha256": "e131c8044e7d903da3d7443bd8c913f463e9f5b09ea3db2077210963fb2a82d0"
+    },
+    {
+      "path": "game/project.godot",
+      "sha256": "ffaf5dafee34979d3c3c0077aa64ab1455c2c7582ffd35428bdfe9bb0cca3a68"
+    },
+    {
+      "path": "game/tests/fixtures/lfs_export_sample.tscn",
+      "sha256": "79c00e6a06dc98b80562880e2b93caebf7f3d47d8b7651f67eed9765bdac9ef7"
+    }
+  ],
+  "references": [
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_a.png",
+      "sha256": "a14c9bfadf4d9f4c49168b8f71ece04308fe989945eb290e8bcc75a8fb34f7d1",
+      "git_blob": "1d458ff122c5b901d31d2feefcdbeb0d20b5a74a"
+    },
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_b.png",
+      "sha256": "b2939f105a97f6a6421cf2fc84bba543550af06daf669e788bcdb976d47d4f29",
+      "git_blob": "6e65e01284b7364b8020cecca69145bdb070d792"
+    },
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_c.png",
+      "sha256": "7a18f5fcc6bebbffbea672f5779b6aa59b4bc1b20dc1fe954143e97de57ecd9e",
+      "git_blob": "dddcbbdbe131a411317ac7bece626c495d2ebf0f"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_a.png",
+      "sha256": "fd48d679468af3eec489d6f0cdd36934e573fba1b3332395bc9a2a7c517c283e",
+      "git_blob": "aa725d266cdaa5528abd1a5ee4b121f5ca6ab42f"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_b.png",
+      "sha256": "5c74210307c9c4c1c107b27864d60957c39c91c9721c8441110a18c810c8c47f",
+      "git_blob": "bba1ce619c580dc931e1ff287ff057f85bb6a403"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_c.png",
+      "sha256": "b90c07718e4ef845fe6e51c5847c863d2bc7e7071fb067212293ef35fda3dcf5",
+      "git_blob": "2f5930c2642b196ee64ca7a59d15bfed9a20afec"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_a.png",
+      "sha256": "42a374179355f8a538b8645552867918e14ebe7b752ec6eac8a1b548e834d6ee",
+      "git_blob": "f5ef9b0cbfa0c757290eb2870320fadf84bc90c0"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_b.png",
+      "sha256": "07ebdbc5099c57e7e04b07629e8c59590e403c354c329c05c4c79229f3321e03",
+      "git_blob": "c069fb7c0df7d25c1da482b26e8bc706acc94b46"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_c.png",
+      "sha256": "ded04ed38a910bbadddaec4762463a84d0cf6d4046852090226c53df18130d78",
+      "git_blob": "23fd00472de93e20e93289839e75dc067afb316b"
+    }
+  ],
+  "scope": "Bounded S02-001/S02-003 art carrier; no solver or target GPU claim",
+  "files": [
+    {
+      "path": "tools/create_wing01_optics.py",
+      "bytes": 10355,
+      "sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+    },
+    {
+      "path": "tools/assemble_wing01_optics.py",
+      "bytes": 3613,
+      "sha256": "49ce05c6c624dad31cb9cb840f5d8e59a442da52a862c7baac677f41a9956bd5"
+    },
+    {
+      "path": "tools/verify_wing01_optics_source.py",
+      "bytes": 5510,
+      "sha256": "7450f660b38168a39d3e3f0a228e102968247ff03fbe720631566ae34c235b91"
+    },
+    {
+      "path": "game/tests/wing01_optics_smoke.gd",
+      "bytes": 7419,
+      "sha256": "f033719f638af58d3d60e3596a5b430016630f8739db7ec0f6e80bdd49170ff8"
+    },
+    {
+      "path": "game/tests/wing01_optics_review.gd",
+      "bytes": 6974,
+      "sha256": "b528dc9a4fc5a3b92f9e118012e456ed4bdeeeab77bf438551be931d9caa0662"
+    },
+    {
+      "path": "game/gameplay/puzzles/wing01/wing01_optics_sample.tscn",
+      "bytes": 3781,
+      "sha256": "dec0e306aa2055618b4154ce5b862d870a3a6dd5894bf25d94fcb6e8eb954732"
+    },
+    {
+      "path": "docs/production/wing01_optics_v1.json",
+      "bytes": 4834,
+      "sha256": "866ad89a6b6dcfe95dbe6388c7ee453e19951332d0cb16c957470e910d628a62"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/production/evidence/wing01_optics/front.png",
+      "sha256": "2bfe38dd3b42ce1643e5a78b235d6e0efac25d03ea4b6851646a43f7ebc2f2ad",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/wing01_optics/reverse.png",
+      "sha256": "eafe7d43a8a84ff8678c6db71264000db4a8032cb29374f7d2c87392df629a69",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/wing01_optics/focus.png",
+      "sha256": "94afc3b555564bcc5d65bdf0d4b054bd6d82104deccaa7dc9b02e1270d1fd43f",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    }
+  ],
+  "validated_implementation_commit": "a3c11209d7218fe2ba08b402bac054d6d49f7cc8",
+  "independent_retrieved_commit": "a3c11209d7218fe2ba08b402bac054d6d49f7cc8",
+  "independent_isolation": "shallow remote clone; no alternates; private empty LFS store before pull; all fourteen HEAD payloads retrieved",
+  "acceptance": "PASS for bounded carrier; full S02/gameplay/target hardware remain open"
+}

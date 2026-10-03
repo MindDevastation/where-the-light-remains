@@ -1,0 +1,24 @@
+$ env GIT_LFS_SKIP_SMUDGE=1 git sparse-checkout init --cone
+
+exit=0
+$ env GIT_LFS_SKIP_SMUDGE=1 git sparse-checkout set docs/production tools game assets/3d/blender
+
+exit=0
+$ env GIT_LFS_SKIP_SMUDGE=1 git checkout HEAD
+Your branch is up to date with 'origin/feature/03-art-foundation/wing01-optics-sample'.
+exit=0
+$ git lfs install --local
+Updated Git hooks.
+Git LFS initialized.
+exit=0
+$ python -c 'from pathlib import Path;import json,subprocess
+r=Path.cwd();m=json.loads((r/'"'"'docs/production/evidence/wing01_optics/payload_manifest.json'"'"').read_text())
+for row in m:
+ expected=('"'"'version https://git-lfs.github.com/spec/v1\noid sha256:'"'"'+row['"'"'sha256'"'"']+'"'"'\nsize '"'"'+str(row['"'"'bytes'"'"'])+'"'"'\n'"'"').encode();assert (r/row['"'"'path'"'"']).read_bytes()==expected,row['"'"'path'"'"']
+assert not list((r/'"'"'.git/lfs/objects'"'"').rglob('"'"'*'"'"')) if (r/'"'"'.git/lfs/objects'"'"').exists() else True
+e=subprocess.check_output(['"'"'git'"'"','"'"'lfs'"'"','"'"'env'"'"'],text=True);assert '"'"'LocalMediaDir='"'"'+str(r/'"'"'.git/lfs/objects'"'"') in e;assert '"'"'LocalReferenceDirs=\n'"'"' in e
+print('"'"'POINTER_ONLY PASS: six exact committed pointers; empty independent LFS store; no LFS reference directory'"'"')'
+Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+AssertionError
+exit=1

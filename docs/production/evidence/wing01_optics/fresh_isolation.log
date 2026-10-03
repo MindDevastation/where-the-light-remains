@@ -1,0 +1,9 @@
+$ python -c 'from pathlib import Path;import subprocess
+r=Path.cwd();head=subprocess.check_output(['"'"'git'"'"','"'"'rev-parse'"'"','"'"'HEAD'"'"'],text=True).strip();assert head=='"'"'a3c11209d7218fe2ba08b402bac054d6d49f7cc8'"'"'
+assert subprocess.check_output(['"'"'git'"'"','"'"'rev-parse'"'"','"'"'--is-shallow-repository'"'"'],text=True).strip()=='"'"'true'"'"'
+common=(r/subprocess.check_output(['"'"'git'"'"','"'"'rev-parse'"'"','"'"'--git-common-dir'"'"'],text=True).strip()).resolve();assert common==r/'"'"'.git'"'"'
+assert not (common/'"'"'objects/info/alternates'"'"').exists()
+assert not list((common/'"'"'lfs/objects'"'"').rglob('"'"'*'"'"')) if (common/'"'"'lfs/objects'"'"').exists() else True
+print('"'"'FRESH_ISOLATION PASS: remote shallow clone; private Git store; no alternates; initially empty private LFS store; HEAD='"'"'+head)'
+FRESH_ISOLATION PASS: remote shallow clone; private Git store; no alternates; initially empty private LFS store; HEAD=a3c11209d7218fe2ba08b402bac054d6d49f7cc8
+exit=0

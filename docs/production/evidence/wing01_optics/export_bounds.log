@@ -1,0 +1,22 @@
+$ ../toolchain/bin/blender --background /workspace/scratch/4f0b36b4bb0e/wlr-art-integration/assets/3d/blender/wing01/wing01_optics_sample.blend --python-exit-code 1 --python-expr 'import bpy,json,struct;from pathlib import Path
+r=Path(bpy.data.filepath).resolve().parents[4];c=json.loads((r/'"'"'docs/production/wing01_optics_v1.json'"'"').read_text())
+for part in c['"'"'parts'"'"']:
+ obj=bpy.context.scene.objects[part['"'"'stem'"'"']]
+ coords=[(v.co.x,v.co.z,-v.co.y) for v in obj.data.vertices]
+ raw=(r/('"'"'game/art/meshes/wing01/'"'"'+part['"'"'stem'"'"']+'"'"'.glb'"'"')).read_bytes();size=struct.unpack_from('"'"'<I'"'"',raw,12)[0];d=json.loads(raw[20:20+size])
+ a=[d['"'"'accessors'"'"'][p['"'"'attributes'"'"']['"'"'POSITION'"'"']] for p in d['"'"'meshes'"'"'][0]['"'"'primitives'"'"']]
+ for axis in range(3):
+  assert abs(min(x[axis] for x in coords)-min(x['"'"'min'"'"'][axis] for x in a))<2e-6,part['"'"'id'"'"']
+  assert abs(max(x[axis] for x in coords)-max(x['"'"'max'"'"'][axis] for x in a))<2e-6,part['"'"'id'"'"']
+ print('"'"'WING01_METERS PASS:'"'"',part['"'"'id'"'"'],'"'"'source/GLB local bounds agree on all axes within 2 micrometers'"'"')
+'
+WING01_METERS PASS: frame source/GLB local bounds agree on all axes within 2 micrometers
+WING01_METERS PASS: outer source/GLB local bounds agree on all axes within 2 micrometers
+WING01_METERS PASS: middle source/GLB local bounds agree on all axes within 2 micrometers
+WING01_METERS PASS: inner source/GLB local bounds agree on all axes within 2 micrometers
+WING01_METERS PASS: focus source/GLB local bounds agree on all axes within 2 micrometers
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/assets/3d/blender/wing01/wing01_optics_sample.blend"
+
+Blender quit
+exit=0

@@ -1,0 +1,13 @@
+$ ../toolchain/bin/blender --background /workspace/scratch/4f0b36b4bb0e/wlr-art-integration/assets/3d/blender/wing01/wing01_optics_sample.blend --python-exit-code 1 --python /workspace/scratch/4f0b36b4bb0e/wlr-art-integration/tools/verify_wing01_optics_source.py
+WING01_FOCUS_MARKERS PASS: five actual raised stop centers and five empty intervals, stored triangle rays
+WING01_SOURCE_PART PASS: frame 2764 triangles; 37 outward closed solids; joint/identity export; metric UVs/normals/tangents
+WING01_SOURCE_PART PASS: outer 1588 triangles; 4 outward closed solids; joint/identity export; metric UVs/normals/tangents
+WING01_SOURCE_PART PASS: middle 1588 triangles; 4 outward closed solids; joint/identity export; metric UVs/normals/tangents
+WING01_SOURCE_PART PASS: inner 1588 triangles; 4 outward closed solids; joint/identity export; metric UVs/normals/tangents
+WING01_SOURCE_PART PASS: focus 1108 triangles; 8 outward closed solids; joint/identity export; metric UVs/normals/tangents
+WING01_SOURCE PASS: /workspace/scratch/4f0b36b4bb0e/wlr-art-integration/assets/3d/blender/wing01/wing01_optics_sample.blend ; 5 parts; 8636 triangles; six payload hashes match
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/assets/3d/blender/wing01/wing01_optics_sample.blend"
+
+Blender quit
+exit=0
