@@ -1,0 +1,19 @@
+{
+  "source": "5d31141dce857cd551acf3084edcf198d8844322",
+  "clean_tracked_files_unchanged": 183,
+  "files": {
+    "game/core/ui/pause_menu.gd": "86c0146d9674bd2b58b33f4e4f1ed3687d6c911fd54218b6dd75f191b71d7ae6",
+    "game/core/ui/pause_menu.tscn": "b02a3884159df6527d3305fdde0fcf36473e4d5f944e906643d5bfbbede6d641",
+    "game/core/ui/settings_menu.gd": "d86a04c14652307d3cc3654360d413443ced5e50d528ac8a03d9cdac41ce1fa9",
+    "game/core/transitions/fade_overlay.gd": "a21859f019b39371cdbb72fb129ca03ad33fe983211a1cd1fb9b2f84afb719fb",
+    "game/core/transitions/fade_overlay.tscn": "558f6b4deefe985e2f84a0be3a0ad84340377ad7e41316556772478537864d5b",
+    "game/core/game_root/game_root.gd": "e06e87d9e6f2d98466b621375e43c7cd2ab487cfa84e4156761bd71a39e9a0cd",
+    "game/core/game_root/game_root.tscn": "520f836cb8c6e4b73580ae6cdd7a6f8da188f14c37583383e86edfb8c8069860",
+    "game/tests/pause_fade_smoke.gd": "2607497af18900cebca6740cbc6ab92093e09ca2863b7daf5a4e1608db4c5a56",
+    "game/tests/settings_smoke.gd": "350417502202449083b0f4c507418b77df3421194a6ec790103faac4b12d82a1"
+  },
+  "images": {
+    "pause_1920.png": "ac670be29262b79a2ecc96609c121670a7fbf9c0175d28abc8384911b7c261df",
+    "loading_1280.png": "b1e90fbb17c5c72fb814513f650b48af22efbe98e6c8994db5e241d52524107b"
+  }
+}

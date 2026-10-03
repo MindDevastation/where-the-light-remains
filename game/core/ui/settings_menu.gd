@@ -161,6 +161,9 @@ func _set_draft(values: Dictionary) -> void:
             field.text = "Включено" if values[key] else "Выключено"
         else:
             field.set_value_no_signal(values[key])
+            # SpinBox may defer its displayed text update. Reset/open must also
+            # replace unsubmitted text before a same-frame Apply or draft read.
+            field.get_line_edit().text = str(values[key])
 
 
 func draft() -> Dictionary:

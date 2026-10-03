@@ -1,0 +1,16 @@
+$ ../toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-art-integration/../toolchain/shell/pause-final/game res://tests/player_interaction_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PLAYER_INTERACTION runtime: 4.7.2-stable (official); display=headless
+PLAYER_ARCHIVE_WALK: yaw=0.0; lane=-0.75; feet=(-0.75, 0.000338, -1.533334); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=0.0; lane=0.0; feet=(0.0, 0.000338, -1.533333); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=0.0; lane=0.75; feet=(0.75, 0.000338, -1.533334); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=1.5707963267949; lane=-0.75; feet=(-0.75, 0.000338, -1.533334); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=1.5707963267949; lane=0.0; feet=(-0.0, 0.000338, -1.533333); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=1.5707963267949; lane=0.75; feet=(0.75, 0.000338, -1.533334); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE PASS: six actual controller traversals at two yaws; world wall stopping
+PLAYER_MOVE_LOOK PASS: normalized speed, heading, pause/focus/held key, unscaled sensitivity, pitch, invert-Y, FOV and LIMITED_LOOK
+PLAYER_INTERACTION_RAY PASS: range, nearest solid, single E/echo, disable/delete/move/pause races, inside-solid occlusion
+PLAYER_INTERACTION PASS: actual player traversal, walk/look gates, physics picks/occlusion/races, Russian HUD
+
+exit=0
