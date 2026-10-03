@@ -323,3 +323,11 @@ the sequence/count but not ring detent counts/solve angles/focal distances;
 those dependent controller inputs remain open. Next safe work: canonical
 interaction/controller brief and the representative playable slice. Physical
 target-GPU profiling continues to gate bulk production.
+
+Wing I sample integration: [PR #27](https://github.com/MindDevastation/where-the-light-remains/pull/27)
+merged validated feature `d799a3e4009c4f1700df66acddb7102b18f75758` into Art
+Foundation at `aae7cc58b25c36bc6517217641cfba4627e6a50f`, with exact tree equality.
+Merged-epic graphical GameRoot startup/safe exit and the previous Archive
+physics/material baseline pass; evidence is under `evidence/wing01_optics/`.
+The final documentation-only checkpoint follows the standing ordinary
+epic→main integration policy; it changes no accepted runtime or payload.

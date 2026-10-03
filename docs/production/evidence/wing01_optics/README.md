@@ -87,3 +87,18 @@ refuses to overwrite authored binaries. `assemble_wing01_optics.py` builds the
 wrapper; after the first Godot import, `--configure-imports` remaps shared
 materials and disables sample-local automatic LOD/compression/animation import.
 Then reimport and verify exact resource identity. Forward-only LFS applies.
+
+## Integration checkpoint
+
+[PR #27](https://github.com/MindDevastation/where-the-light-remains/pull/27):
+validated feature `d799a3e4009c4f1700df66acddb7102b18f75758` merged into Art
+Foundation at `aae7cc58b25c36bc6517217641cfba4627e6a50f`.
+[integration creation](integration_feature_create.log) and
+[matching-head merge / epic smoke](integration_feature_epic_smoke.log) record
+actual base/head, MERGEABLE/CLEAN state, no configured remote checks (not a CI
+PASS claim), ordinary merge and exact validated-tree equality. Authenticated
+TCP X11/Vulkan Forward+ GameRoot/eight-autoload/safe exit passes on the merged
+epic. The previously completed [Archive baseline](integration_archive_baseline.log)
+also passes: five modules, 15 capsule passages, floor continuity, yaws and corner.
+A documentation-only checkpoint records these results before regular main
+integration; validated code, binaries and preserved contracts stay unchanged.

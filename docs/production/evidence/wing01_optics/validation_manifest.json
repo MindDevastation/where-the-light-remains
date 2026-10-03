@@ -175,5 +175,9 @@
   "validated_implementation_commit": "a3c11209d7218fe2ba08b402bac054d6d49f7cc8",
   "independent_retrieved_commit": "a3c11209d7218fe2ba08b402bac054d6d49f7cc8",
   "independent_isolation": "shallow remote clone; no alternates; private empty LFS store before pull; all fourteen HEAD payloads retrieved",
-  "acceptance": "PASS for bounded carrier; full S02/gameplay/target hardware remain open"
+  "acceptance": "PASS for bounded carrier; full S02/gameplay/target hardware remain open",
+  "validated_feature_commit": "d799a3e4009c4f1700df66acddb7102b18f75758",
+  "validated_feature_tree": "4621f3c6d629ea11ee8090a5c9f2d0bba90b894b",
+  "merged_epic_commit": "aae7cc58b25c36bc6517217641cfba4627e6a50f",
+  "feature_pr": "https://github.com/MindDevastation/where-the-light-remains/pull/27"
 }

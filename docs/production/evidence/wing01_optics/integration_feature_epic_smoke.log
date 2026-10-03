@@ -1,0 +1,183 @@
+$ python -c 'import json,subprocess
+d=json.loads(subprocess.check_output(['"'"'gh'"'"','"'"'pr'"'"','"'"'view'"'"','"'"'27'"'"','"'"'--repo'"'"','"'"'MindDevastation/where-the-light-remains'"'"','"'"'--json'"'"','"'"'state,isDraft,baseRefName,baseRefOid,headRefName,headRefOid,mergeable,mergeStateStatus,statusCheckRollup'"'"'],text=True))
+assert d['"'"'state'"'"']=='"'"'OPEN'"'"' and not d['"'"'isDraft'"'"'] and d['"'"'baseRefName'"'"']=='"'"'epic/03-art-foundation'"'"' and d['"'"'baseRefOid'"'"']=='"'"'e978c0d813b94d1299d8376879c75ec309012d3c'"'"'
+assert d['"'"'headRefName'"'"']=='"'"'feature/03-art-foundation/wing01-optics-sample'"'"' and d['"'"'headRefOid'"'"']=='"'"'d799a3e4009c4f1700df66acddb7102b18f75758'"'"'
+assert d['"'"'mergeable'"'"']=='"'"'MERGEABLE'"'"' and d['"'"'mergeStateStatus'"'"']=='"'"'CLEAN'"'"' and d['"'"'statusCheckRollup'"'"']==[]
+print('"'"'PR27_PREMERGE PASS:'"'"',json.dumps(d))
+subprocess.run(['"'"'gh'"'"','"'"'pr'"'"','"'"'merge'"'"','"'"'27'"'"','"'"'--repo'"'"','"'"'MindDevastation/where-the-light-remains'"'"','"'"'--merge'"'"','"'"'--match-head-commit'"'"',d['"'"'headRefOid'"'"']],check=True)'
+PR27_PREMERGE PASS: {"baseRefName": "epic/03-art-foundation", "baseRefOid": "e978c0d813b94d1299d8376879c75ec309012d3c", "headRefName": "feature/03-art-foundation/wing01-optics-sample", "headRefOid": "d799a3e4009c4f1700df66acddb7102b18f75758", "isDraft": false, "mergeStateStatus": "CLEAN", "mergeable": "MERGEABLE", "state": "OPEN", "statusCheckRollup": []}
+exit=0
+$ gh pr view 27 --repo MindDevastation/where-the-light-remains --json state,mergeCommit,headRefOid,baseRefName,url
+{"baseRefName":"epic/03-art-foundation","headRefOid":"d799a3e4009c4f1700df66acddb7102b18f75758","mergeCommit":{"oid":"aae7cc58b25c36bc6517217641cfba4627e6a50f"},"state":"MERGED","url":"https://github.com/MindDevastation/where-the-light-remains/pull/27"}
+exit=0
+$ git fetch origin
+From https://github.com/MindDevastation/where-the-light-remains
+   e978c0d..aae7cc5  epic/03-art-foundation -> origin/epic/03-art-foundation
+exit=0
+$ git switch epic/03-art-foundation
+Switched to branch 'epic/03-art-foundation'
+Your branch is behind 'origin/epic/03-art-foundation' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+exit=0
+$ git merge --ff-only origin/epic/03-art-foundation
+Updating e978c0d..aae7cc5
+Fast-forward
+ .../3d/blender/wing01/wing01_optics_sample.blend   |   3 +
+ docs/production/ASSET_INDEX.md                     |  22 +-
+ docs/production/CONTENT_STATUS.md                  |  31 +-
+ docs/production/IMPLEMENTATION_PLAN.md             |  37 +-
+ docs/production/MATERIAL_PREFLIGHT.md              |  21 +
+ docs/production/MODULAR_ARCHIVE_KIT.md             |   4 +-
+ docs/production/VISUAL_REBASELINE_V2.md            |  20 +-
+ docs/production/WING01_OPTICS_SAMPLE.md            |  83 +++
+ docs/production/evidence/wing01_optics/README.md   |  89 ++++
+ .../evidence/wing01_optics/auth_preflight.log      |  85 ++++
+ .../evidence/wing01_optics/authoring.log           |  38 ++
+ .../evidence/wing01_optics/authoring_final.log     |  38 ++
+ .../evidence/wing01_optics/capability.log          |  70 +++
+ .../wing01_optics/contract_preservation.log        |   3 +
+ .../evidence/wing01_optics/export_bounds.log       |  22 +
+ docs/production/evidence/wing01_optics/focus.log   |  37 ++
+ docs/production/evidence/wing01_optics/focus.png   | Bin 0 -> 1900580 bytes
+ .../wing01_optics/focus_framing_diagnostic.log     |  37 ++
+ .../evidence/wing01_optics/fresh_clone.log         |   3 +
+ .../evidence/wing01_optics/fresh_hydration.log     | 559 +++++++++++++++++++++
+ .../evidence/wing01_optics/fresh_isolation.log     |   9 +
+ .../evidence/wing01_optics/fresh_retrieval.log     |  26 +
+ .../wing01_optics/fresh_store_diagnostic.log       |  24 +
+ .../evidence/wing01_optics/fresh_verify.log        | 318 ++++++++++++
+ docs/production/evidence/wing01_optics/front.log   |  41 ++
+ docs/production/evidence/wing01_optics/front.png   | Bin 0 -> 979779 bytes
+ .../wing01_optics/front_framing_diagnostic.log     |  41 ++
+ .../wing01_optics/front_resolution_diagnostic.log  |  48 ++
+ .../wing01_optics/import_physics_initial.log       | 106 ++++
+ .../evidence/wing01_optics/payload_manifest.json   |  32 ++
+ .../evidence/wing01_optics/pointer_commit.log      |  54 ++
+ .../evidence/wing01_optics/premerge_validation.log |  19 +
+ .../evidence/wing01_optics/ref_disk_preflight.log  |  76 +++
+ docs/production/evidence/wing01_optics/reverse.log |  37 ++
+ docs/production/evidence/wing01_optics/reverse.png | Bin 0 -> 946972 bytes
+ .../evidence/wing01_optics/source_final.log        |  13 +
+ .../wing01_optics/source_import_initial.log        | 100 ++++
+ .../wing01_optics/source_import_physics_final.log  |  78 +++
+ .../wing01_optics/upload_producer_fsck.log         |  25 +
+ .../wing01_optics/validation_manifest.json         | 179 +++++++
+ docs/production/wing01_optics_v1.json              | 190 +++++++
+ game/art/meshes/wing01/sm_wing01_focus.glb         |   3 +
+ game/art/meshes/wing01/sm_wing01_focus.glb.import  |  63 +++
+ game/art/meshes/wing01/sm_wing01_frame.glb         |   3 +
+ game/art/meshes/wing01/sm_wing01_frame.glb.import  |  68 +++
+ game/art/meshes/wing01/sm_wing01_ring_inner.glb    |   3 +
+ .../meshes/wing01/sm_wing01_ring_inner.glb.import  |  63 +++
+ game/art/meshes/wing01/sm_wing01_ring_middle.glb   |   3 +
+ .../meshes/wing01/sm_wing01_ring_middle.glb.import |  63 +++
+ game/art/meshes/wing01/sm_wing01_ring_outer.glb    |   3 +
+ .../meshes/wing01/sm_wing01_ring_outer.glb.import  |  63 +++
+ .../puzzles/wing01/wing01_optics_sample.tscn       | 122 +++++
+ game/tests/wing01_optics_review.gd                 | 165 ++++++
+ game/tests/wing01_optics_review.gd.uid             |   1 +
+ game/tests/wing01_optics_smoke.gd                  | 138 +++++
+ game/tests/wing01_optics_smoke.gd.uid              |   1 +
+ tools/assemble_wing01_optics.py                    |  56 +++
+ tools/create_wing01_optics.py                      | 223 ++++++++
+ tools/verify_wing01_optics_source.py               | 109 ++++
+ 59 files changed, 3757 insertions(+), 11 deletions(-)
+ create mode 100644 assets/3d/blender/wing01/wing01_optics_sample.blend
+ create mode 100644 docs/production/WING01_OPTICS_SAMPLE.md
+ create mode 100644 docs/production/evidence/wing01_optics/README.md
+ create mode 100644 docs/production/evidence/wing01_optics/auth_preflight.log
+ create mode 100644 docs/production/evidence/wing01_optics/authoring.log
+ create mode 100644 docs/production/evidence/wing01_optics/authoring_final.log
+ create mode 100644 docs/production/evidence/wing01_optics/capability.log
+ create mode 100644 docs/production/evidence/wing01_optics/contract_preservation.log
+ create mode 100644 docs/production/evidence/wing01_optics/export_bounds.log
+ create mode 100644 docs/production/evidence/wing01_optics/focus.log
+ create mode 100644 docs/production/evidence/wing01_optics/focus.png
+ create mode 100644 docs/production/evidence/wing01_optics/focus_framing_diagnostic.log
+ create mode 100644 docs/production/evidence/wing01_optics/fresh_clone.log
+ create mode 100644 docs/production/evidence/wing01_optics/fresh_hydration.log
+ create mode 100644 docs/production/evidence/wing01_optics/fresh_isolation.log
+ create mode 100644 docs/production/evidence/wing01_optics/fresh_retrieval.log
+ create mode 100644 docs/production/evidence/wing01_optics/fresh_store_diagnostic.log
+ create mode 100644 docs/production/evidence/wing01_optics/fresh_verify.log
+ create mode 100644 docs/production/evidence/wing01_optics/front.log
+ create mode 100644 docs/production/evidence/wing01_optics/front.png
+ create mode 100644 docs/production/evidence/wing01_optics/front_framing_diagnostic.log
+ create mode 100644 docs/production/evidence/wing01_optics/front_resolution_diagnostic.log
+ create mode 100644 docs/production/evidence/wing01_optics/import_physics_initial.log
+ create mode 100644 docs/production/evidence/wing01_optics/payload_manifest.json
+ create mode 100644 docs/production/evidence/wing01_optics/pointer_commit.log
+ create mode 100644 docs/production/evidence/wing01_optics/premerge_validation.log
+ create mode 100644 docs/production/evidence/wing01_optics/ref_disk_preflight.log
+ create mode 100644 docs/production/evidence/wing01_optics/reverse.log
+ create mode 100644 docs/production/evidence/wing01_optics/reverse.png
+ create mode 100644 docs/production/evidence/wing01_optics/source_final.log
+ create mode 100644 docs/production/evidence/wing01_optics/source_import_initial.log
+ create mode 100644 docs/production/evidence/wing01_optics/source_import_physics_final.log
+ create mode 100644 docs/production/evidence/wing01_optics/upload_producer_fsck.log
+ create mode 100644 docs/production/evidence/wing01_optics/validation_manifest.json
+ create mode 100644 docs/production/wing01_optics_v1.json
+ create mode 100644 game/art/meshes/wing01/sm_wing01_focus.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_focus.glb.import
+ create mode 100644 game/art/meshes/wing01/sm_wing01_frame.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_frame.glb.import
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_inner.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_inner.glb.import
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_middle.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_middle.glb.import
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_outer.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_outer.glb.import
+ create mode 100644 game/gameplay/puzzles/wing01/wing01_optics_sample.tscn
+ create mode 100644 game/tests/wing01_optics_review.gd
+ create mode 100644 game/tests/wing01_optics_review.gd.uid
+ create mode 100644 game/tests/wing01_optics_smoke.gd
+ create mode 100644 game/tests/wing01_optics_smoke.gd.uid
+ create mode 100644 tools/assemble_wing01_optics.py
+ create mode 100644 tools/create_wing01_optics.py
+ create mode 100644 tools/verify_wing01_optics_source.py
+exit=0
+$ python -c 'import subprocess
+g=lambda *a:subprocess.check_output(['"'"'git'"'"',*a],text=True).strip()
+assert g('"'"'rev-parse'"'"','"'"'HEAD^{tree}'"'"')==g('"'"'rev-parse'"'"','"'"'d799a3e4009c4f1700df66acddb7102b18f75758^{tree}'"'"')
+assert not g('"'"'status'"'"','"'"'--porcelain'"'"')
+print('"'"'EPIC_TREE PASS: merged tree equals validated feature; clean; epic='"'"'+g('"'"'rev-parse'"'"','"'"'HEAD'"'"'))'
+EPIC_TREE PASS: merged tree equals validated feature; clean; epic=aae7cc58b25c36bc6517217641cfba4627e6a50f
+exit=0
+$ python tools/run_graphical.py --graphics-prefix ../toolchain/graphics --godot ../toolchain/bin/godot --timeout 90 --expect 'ENGINE_PREFLIGHT PASS' -- --path game --max-fps 30 --quit-after 1200 --script res://tests/engine_preflight.gd
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/bin/Xvfb :100 -screen 0 1920x1080x24 -listen tcp -nolisten unix -nolisten local -noreset -auth /tmp/wlr-x11-zogvbxus/Xauthority
+DISPLAY=127.0.0.1:100; VK_ICD_FILENAMES=/workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/share/vulkan/icd.d/lvp_icd.json
+X11_TCP_AUTH PASS: valid cookie accepted; unauthenticated client rejected
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --display-driver x11 --rendering-driver vulkan --rendering-method forward_plus --audio-driver Dummy --path game --max-fps 30 --quit-after 1200 --script res://tests/engine_preflight.gd
+GRAPHICAL_RUN PASS: exit=0
+
+Godot stdout/stderr:
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.318 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 20.1.2, 256 bits)
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"X11","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+
+
+Xvfb stdout/stderr:
+Warning: getifaddrs returns Operation not permitted
+Warning: getifaddrs returns Operation not permitted
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Could not resolve keysym XF86CameraAccessEnable
+> Warning:          Could not resolve keysym XF86CameraAccessDisable
+> Warning:          Could not resolve keysym XF86CameraAccessToggle
+> Warning:          Could not resolve keysym XF86NextElement
+> Warning:          Could not resolve keysym XF86PreviousElement
+> Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+> Warning:          Could not resolve keysym XF86MarkWaypoint
+> Warning:          Could not resolve keysym XF86Sos
+> Warning:          Could not resolve keysym XF86NavChart
+> Warning:          Could not resolve keysym XF86FishingChart
+> Warning:          Could not resolve keysym XF86SingleRangeRadar
+> Warning:          Could not resolve keysym XF86DualRangeRadar
+> Warning:          Could not resolve keysym XF86RadarOverlay
+> Warning:          Could not resolve keysym XF86TraditionalSonar
+> Warning:          Could not resolve keysym XF86ClearvuSonar
+> Warning:          Could not resolve keysym XF86SidevuSonar
+> Warning:          Could not resolve keysym XF86NavInfo
+Errors from xkbcomp are not fatal to the X server
+exit=0
