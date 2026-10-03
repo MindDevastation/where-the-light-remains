@@ -4,6 +4,9 @@ var _world_slot: Node3D
 var _transition_in_progress := false
 var _stage_definitions: Dictionary = {}
 var _preload_in_progress := false
+var _preload_path := ""
+var _preload_cancelled := false
+var _preload_abandoned := false
 var _player: FirstPersonPlayer
 var _fade: FadeOverlay
 var _binding_revision := 0
@@ -16,6 +19,8 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
+    if _preload_abandoned:
+        _drain_preload()
     if _transition_in_progress and not _route.is_empty() and not _route_owned():
         cancel_transition()
 
@@ -59,29 +64,80 @@ func preload_stage(stage_id: StringName) -> Dictionary:
 func _preload_definition(definition: StageDefinition) -> Dictionary:
     var failure := {"error": ERR_INVALID_DATA, "scene": null}
     _preload_in_progress = true
-    var error := ResourceLoader.load_threaded_request(definition.scene_path, "PackedScene", false, ResourceLoader.CACHE_MODE_REUSE)
+    _preload_cancelled = false
+    _preload_abandoned = false
+    var error := _thread_request(definition.scene_path)
     if error != OK:
-        _preload_in_progress = false
+        _clear_preload()
         failure["error"] = error
         return failure
-    var deadline := Time.get_ticks_msec() + 15000
+    _preload_path = definition.scene_path
+    var deadline := Time.get_ticks_msec() + _preload_timeout_msec()
     while true:
-        var status := ResourceLoader.load_threaded_get_status(definition.scene_path)
+        # Godot has no public threaded-load cancellation API. Release the
+        # caller promptly, retain ownership and collect the terminal result
+        # from _process without ever blocking on an in-progress request.
+        if _preload_cancelled or (not _route.is_empty() and not _route_owned()):
+            _preload_abandoned = true
+            _drain_preload()
+            failure["error"] = ERR_SKIP
+            return failure
+        var status := _thread_status(_preload_path)
         if status == ResourceLoader.THREAD_LOAD_LOADED:
-            var scene := ResourceLoader.load_threaded_get(definition.scene_path) as PackedScene
-            _preload_in_progress = false
+            var scene := _thread_get(_preload_path) as PackedScene
+            _clear_preload()
             return {"error": OK if scene != null else ERR_INVALID_DATA, "scene": scene}
-        if status != ResourceLoader.THREAD_LOAD_IN_PROGRESS or Time.get_ticks_msec() >= deadline:
-            _preload_in_progress = false
-            failure["error"] = ERR_TIMEOUT if status == ResourceLoader.THREAD_LOAD_IN_PROGRESS else ERR_CANT_OPEN
+        if status != ResourceLoader.THREAD_LOAD_IN_PROGRESS:
+            _drain_preload()
+            failure["error"] = ERR_CANT_OPEN
+            return failure
+        if Time.get_ticks_msec() >= deadline:
+            _preload_abandoned = true
+            failure["error"] = ERR_TIMEOUT
             return failure
         await get_tree().process_frame
     return failure
 
 
+func _drain_preload() -> void:
+    if _preload_path.is_empty():
+        return
+    var status := _thread_status(_preload_path)
+    if status == ResourceLoader.THREAD_LOAD_IN_PROGRESS:
+        return
+    if status in [ResourceLoader.THREAD_LOAD_LOADED, ResourceLoader.THREAD_LOAD_FAILED]:
+        # FAILED also owns a user load token in the verified 4.7.2 engine.
+        _thread_get(_preload_path)
+    _clear_preload()
+
+
+func _clear_preload() -> void:
+    _preload_path = ""
+    _preload_in_progress = false
+    _preload_cancelled = false
+    _preload_abandoned = false
+
+
+func _thread_request(path: String) -> Error:
+    return ResourceLoader.load_threaded_request(path, "PackedScene", false, ResourceLoader.CACHE_MODE_REUSE)
+
+
+func _thread_status(path: String) -> ResourceLoader.ThreadLoadStatus:
+    return ResourceLoader.load_threaded_get_status(path)
+
+
+func _thread_get(path: String) -> Resource:
+    return ResourceLoader.load_threaded_get(path)
+
+
+func _preload_timeout_msec() -> int:
+    return 15000
+
+
 func bind_world_slot(slot: Node3D, player: FirstPersonPlayer = null, fade: FadeOverlay = null) -> void:
-    if slot != _world_slot:
+    if slot != _world_slot or (player != null and player != _player) or (fade != null and fade != _fade):
         _binding_revision += 1
+        cancel_transition()
     _world_slot = slot
     if player != null:
         _player = player
@@ -99,6 +155,8 @@ func unbind_world_slot(slot: Node3D) -> void:
 
 
 func cancel_transition() -> void:
+    if _preload_in_progress:
+        _preload_cancelled = true
     if _route.is_empty():
         return
     _route["cancelled"] = true
