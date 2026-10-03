@@ -47,20 +47,20 @@ func copy_validated() -> MusicStage:
     copy.stage_crossfade_seconds = stage_crossfade_seconds
     if unique_cue != null:
         copy.unique_cue = unique_cue.copy_validated()
-        if copy.unique_cue == null or (not copy.scripted_only and copy.unique_cue.is_looping()):
+        if copy.unique_cue == null or (not copy.scripted_only and copy.unique_cue.is_looping()) or (copy.unique_cue.vocal and not String(stage_id).begins_with("s15_")):
             return null
     var seen := {}
     if copy.unique_cue != null: seen[copy.unique_cue.cue_id] = true
     for cue in shared_pool:
         if cue == null: return null
         var validated := cue.copy_validated()
-        if validated == null or validated.is_looping() or seen.has(validated.cue_id): return null
+        if validated == null or validated.is_looping() or seen.has(validated.cue_id) or (validated.vocal and not String(stage_id).begins_with("s15_")): return null
         seen[validated.cue_id] = true
         copy.shared_pool.append(validated)
     for state in authored_states:
         if not SaveGame.identifier(state) or authored_states[state] == null: return null
         var cue := authored_states[state].copy_validated()
-        if cue == null: return null
+        if cue == null or (cue.vocal and not String(stage_id).begins_with("s15_")): return null
         copy.authored_states[state] = cue
     for id in playlist_exclusions:
         if not SaveGame.identifier(id) or copy.playlist_exclusions.has(id): return null

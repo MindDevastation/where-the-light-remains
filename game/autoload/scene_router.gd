@@ -183,6 +183,8 @@ func _route_owned() -> bool:
         return false
     if _route["fade"].request_revision != _route["fade_revision"]:
         return false
+    if _route["audio_token"] > 0 and not AudioDirector.owns_stage_audio(_route["audio_token"]):
+        return false
     return true
 
 
@@ -222,8 +224,7 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         "old_worlds": _world_slot.get_children(), "candidate": null,
         "committed": false, "detached": false, "mode": InputManager.mode,
         "player_active": _player.active, "player_transform": _player.global_transform,
-        "head_rotation": _player.head.rotation, "audio_stage": AudioDirector.current_stage,
-        "audio_state": AudioDirector.current_state, "fade_revision": _fade.request_revision,
+        "head_rotation": _player.head.rotation, "audio_token": 0, "fade_revision": _fade.request_revision,
         "process_modes": {}, "collision_disable_modes": {}, "cleaning": false,
         "in_place": in_place, "world_applied": false}
     _transition_in_progress = true
@@ -254,10 +255,14 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         if GameState.apply_save(target) != OK:
             return await _complete_route(ERR_INVALID_DATA)
         _route["committed"] = true
-        AudioDirector.set_stage_audio(stage_id)
+        _route["audio_token"] = AudioDirector.begin_stage_audio(stage_id)
+        if _route["audio_token"] == 0:
+            return await _complete_route(ERR_SKIP)
         _restore_world(existing)
         _player.set_active(definition.player_active)
         if not _route_owned():
+            return await _complete_route(ERR_SKIP)
+        if AudioDirector.commit_stage_audio(_route["audio_token"]) != OK:
             return await _complete_route(ERR_SKIP)
         SaveManager.mark_dirty()
         var error := await _complete_route(OK, definition.input_mode)
@@ -301,13 +306,17 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
         return await _complete_route(ERR_INVALID_DATA)
     _route["committed"] = true
     _player.spawn_at(spawn)
-    AudioDirector.set_stage_audio(stage_id)
+    _route["audio_token"] = AudioDirector.begin_stage_audio(stage_id)
+    if _route["audio_token"] == 0:
+        return await _complete_route(ERR_SKIP)
     candidate.show()
     if not await _route_fade(0.0) or not _route_owned():
         return await _complete_route(ERR_SKIP)
     _restore_world(candidate)
     _player.set_active(definition.player_active)
     if not _route_owned():
+        return await _complete_route(ERR_SKIP)
+    if AudioDirector.commit_stage_audio(_route["audio_token"]) != OK:
         return await _complete_route(ERR_SKIP)
     if saved == null:
         SaveManager.mark_dirty()
@@ -393,6 +402,7 @@ func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.
     var fade: Variant = route["fade"]
     var candidate: Variant = route["candidate"]
     if error != OK:
+        AudioDirector.cancel_stage_audio(route["audio_token"])
         if is_instance_valid(candidate):
             if candidate.get_parent() != null:
                 candidate.get_parent().remove_child(candidate)
@@ -412,8 +422,6 @@ func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.
                     error = restore_error
         if route["committed"]:
             GameState.apply_save(route["state"])
-            AudioDirector.current_stage = route["audio_stage"]
-            AudioDirector.current_state = route["audio_state"]
         # Reattached physics bodies must be in the space before the player
         # resumes. Keep old controller callbacks frozen during this wait.
         if route["detached"] and is_instance_valid(slot) and slot.is_inside_tree():

@@ -30,4 +30,6 @@ func copy_validated() -> MusicCue:
 func is_looping() -> bool:
     if stream is AudioStreamWAV:
         return stream.loop_mode != AudioStreamWAV.LOOP_DISABLED
-    return stream.loop if stream is AudioStreamOggVorbis or stream is AudioStreamMP3 else false
+    if stream is AudioStreamOggVorbis:
+        return (stream as AudioStreamOggVorbis).loop
+    return (stream as AudioStreamMP3).loop if stream is AudioStreamMP3 else false
