@@ -97,7 +97,7 @@ func _run() -> void:
     _check(SettingsManager.apply_settings(chosen, directory) != OK, "Directory replaced by configuration")
     _check(SettingsManager.snapshot() == before and DirAccess.dir_exists_absolute(directory), "Rename failure did not preserve destination/live values")
     DirAccess.remove_absolute(directory)
-    print("SETTINGS checked: missing, typed round-trip/replacement, clamps, invalid types/nonfinite/resolution/preset, versions, missing fields, oversize/parser, write/rename failure")
+    print("SETTINGS checked: missing, typed round-trip/replacement, clamps, invalid types/nonfinite/resolution/preset, versions, missing fields, oversize, write/rename failure; malformed parser case=headless only")
     await _graphics()
     if DisplayServer.get_name() != "headless":
         SettingsManager.fullscreen = true
@@ -225,10 +225,10 @@ func _ui() -> void:
     # A typed SpinBox value must commit on the real Apply click's focus change.
     var line: LineEdit = _menu.fields["fov"].get_line_edit()
     line.grab_focus()
-    line.text = "103"
+    line.text = "97"
     _click(_menu.apply_button)
     await _frames()
-    _check(not _menu.visible and SettingsManager.fov == 103.0 and InputManager.mode == InputManager.Mode.GAMEPLAY, "Actual Apply did not commit text/persist/close/restore")
+    _check(not _menu.visible and SettingsManager.fov == 97.0 and InputManager.mode == InputManager.Mode.GAMEPLAY, "Actual Apply did not commit text/persist/close/restore")
     _menu.open()
     var escape := InputEventKey.new()
     escape.keycode = KEY_ESCAPE
