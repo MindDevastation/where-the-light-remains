@@ -31,3 +31,8 @@ Cinematic pause/hold-to-skip arbitration, main menu, world routing/checkpoints,
 logical saves and semantic audio playback remain later work. No automatic fade
 is attached to any authored scene transition, including Stage 14→15. Canonical
 story/puzzle values, existing art binaries and global budgets are unchanged.
+
+Integration: PR #35 merged as `eef002cf498ae7cad737f7ef0f05f5b9bc001d41`; tree `b6e32489ba0f0a35f66a18276efe42f62d5f2677` matches
+the accepted feature. `epic_engine.log` confirms merged graphical startup.
+GitHub reports MERGEABLE/CLEAN, with no configured CI checks; CI execution is
+not claimed.
