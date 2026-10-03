@@ -1,0 +1,72 @@
+{
+  "assets/3d/blender/archive_kit/archive_kit_sample.blend": {
+    "sha256": "1c437526b28489041821411a558837e302b64cee86e90583a29d49bbc8de2975",
+    "size": 659164,
+    "clean_runtime_copy": false
+  },
+  "assets/3d/blender/validation/sm_pipeline_meter_cube.blend": {
+    "sha256": "1e6f85d79fe56dd72d16427b86f750620fa03754515f5cebdffd7329246548cb",
+    "size": 449887,
+    "clean_runtime_copy": false
+  },
+  "assets/3d/blender/wing01/wing01_optics_sample.blend": {
+    "sha256": "421274ae1aadbad4f14f6d11c3d52b228c862a809bd9d71e43475432996bf3d0",
+    "size": 1210660,
+    "clean_runtime_copy": false
+  },
+  "game/art/meshes/archive_kit/sm_archive_arch_4m.glb": {
+    "sha256": "92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8",
+    "size": 159160,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/archive_kit/sm_archive_floor_1m.glb": {
+    "sha256": "76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8",
+    "size": 3344,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/archive_kit/sm_archive_pier_4m.glb": {
+    "sha256": "fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0",
+    "size": 36280,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/archive_kit/sm_archive_wall_2m.glb": {
+    "sha256": "0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612",
+    "size": 10708,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/archive_kit/sm_archive_wall_4m.glb": {
+    "sha256": "e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be",
+    "size": 19496,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/validation/sm_pipeline_meter_cube.glb": {
+    "sha256": "245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893",
+    "size": 1992,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/wing01/sm_wing01_focus.glb": {
+    "sha256": "da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7",
+    "size": 128240,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/wing01/sm_wing01_frame.glb": {
+    "sha256": "90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01",
+    "size": 322060,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/wing01/sm_wing01_ring_inner.glb": {
+    "sha256": "e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c",
+    "size": 184740,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/wing01/sm_wing01_ring_middle.glb": {
+    "sha256": "845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352",
+    "size": 185080,
+    "clean_runtime_copy": true
+  },
+  "game/art/meshes/wing01/sm_wing01_ring_outer.glb": {
+    "sha256": "14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212",
+    "size": 185028,
+    "clean_runtime_copy": true
+  }
+}

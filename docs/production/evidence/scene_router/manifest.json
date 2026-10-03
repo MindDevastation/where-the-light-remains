@@ -1,0 +1,17 @@
+{
+  "contract_source": "a60bdd502f537c6180483133a5cbef59e46310e5",
+  "contract_clean_tracked_files_unchanged": 206,
+  "prototype_source": "ef69c77d3be33118ef48a07f2b2130c516740185",
+  "prototype_full_acceptance": false,
+  "evidence": {
+    "contract_input.log": "b51e9f3b5a3e446e48b92097d34380623650e89884361496e95da333074344b2",
+    "prototype_engine.log": "d2b4a63d2a0c5fdb4f932ebd7aa61e77e061ba8120dac40886ae2fcaec668f70",
+    "contract_clean_engine.log": "072c3e161cdfe40f0e26fdf0afe315c3aa0efb6270fc254843b647dab8b929a0",
+    "physics_development.log": "078b0b401c7706e753626ad820bb6c78f13ce90ee587800c70a66749a1730595",
+    "contract_clean_test.log": "0f04a9f74e62601a1bbd80071cac04f46f2b524efe1a2348e166152b317303bb",
+    "prototype_import.log": "7b2a9edbbe3f9e28ab293721aa90bfa96e0df03eecbd9599f99bba9e1135686e",
+    "contract_clean_import.log": "61963e4a54a2a531056f9b83888b428c386dcfc3e9d82da0d23aa510131b0552",
+    "contract_pause.log": "9e37b3d382b0ad6213bdf8a79c9058740ca16db6372f11b87e7180179dfaf715",
+    "prototype_graphical.log": "73651ea535f45ee96431ccb564c6999ace7824a6b7bdb6588c996bb95055d24c"
+  }
+}
