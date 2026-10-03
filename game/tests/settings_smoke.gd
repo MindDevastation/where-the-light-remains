@@ -216,6 +216,7 @@ func _ui() -> void:
     _check(not _menu.visible and SettingsManager.snapshot() == before and InputManager.mode == InputManager.Mode.GAMEPLAY, "Actual mouse Cancel failed preservation/restore")
     _menu.open()
     _menu.fields["fov"].value = 102.0
+    _menu.fields["fov"].get_line_edit().text = "99"
     _menu.defaults_button.pressed.emit()
     _check(_menu.draft() == SettingsManager.DEFAULTS and SettingsManager.snapshot() == before, "Defaults applied before Apply")
     _menu.fields["fov"].value = 103.0
