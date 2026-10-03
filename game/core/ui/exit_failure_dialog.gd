@@ -83,6 +83,8 @@ func _input(event: InputEvent) -> void:
 func _exit_tree() -> void:
     if visible:
         hide()
+        if InputManager.mode == InputManager.Mode.UI:
+            InputManager.set_mode(_previous_mode)
         if _owned_pause:
             _owned_pause = false
             InputManager.set_paused(false)

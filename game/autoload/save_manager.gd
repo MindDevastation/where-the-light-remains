@@ -68,6 +68,10 @@ func write_save(saved: SaveGame) -> Error:
         return ERR_INVALID_DATA
     var bytes := JSON.stringify(validated.to_dict(), "", true, true).to_utf8_buffer()
     _writing = true
+    var prepared := _prepare_file(primary_path, bytes)
+    if prepared["error"] != OK:
+        _writing = false
+        return prepared["error"]
     # Preserve last valid primary, never copy corruption over a valid backup.
     var error: Error = OK
     if primary["error"] == OK:
@@ -75,7 +79,10 @@ func write_save(saved: SaveGame) -> Error:
     elif backup["error"] == ERR_FILE_NOT_FOUND:
         error = _atomic_replace(backup_path, bytes)
     if error == OK:
-        error = _atomic_replace(primary_path, bytes)
+        error = _replace_file(prepared["path"], primary_path)
+    var cleanup := _remove_temporary(prepared["path"])
+    if cleanup != OK and error == OK:
+        error = cleanup
     _writing = false
     return error
 
@@ -105,6 +112,9 @@ func _read_file(path: String) -> Dictionary:
     if bytes.size() != length or error not in [OK, ERR_FILE_EOF]:
         result["error"] = error if error not in [OK, ERR_FILE_EOF] else ERR_FILE_CANT_READ
         return result
+    if not _valid_utf8(bytes):
+        result["error"] = ERR_INVALID_DATA
+        return result
     var text := bytes.get_string_from_utf8()
     if text.to_utf8_buffer() != bytes:
         result["error"] = ERR_INVALID_DATA
@@ -122,10 +132,19 @@ func _read_file(path: String) -> Dictionary:
 
 
 func _atomic_replace(path: String, bytes: PackedByteArray) -> Error:
+    var prepared := _prepare_file(path, bytes)
+    if prepared["error"] != OK:
+        return prepared["error"]
+    var error := _replace_file(prepared["path"], path)
+    var cleanup := _remove_temporary(prepared["path"])
+    return cleanup if cleanup != OK and error == OK else error
+
+
+func _prepare_file(path: String, bytes: PackedByteArray) -> Dictionary:
     var temporary := path + ".tmp_" + str(OS.get_process_id()) + "_" + str(Time.get_ticks_usec())
     var file := FileAccess.open(temporary, FileAccess.WRITE)
     if file == null:
-        return FileAccess.get_open_error()
+        return {"error": FileAccess.get_open_error(), "path": ""}
     file.store_buffer(bytes)
     file.flush()
     var error := file.get_error()
@@ -135,13 +154,37 @@ func _atomic_replace(path: String, bytes: PackedByteArray) -> Error:
         var verified := _read_file(temporary)
         if verified["error"] != OK or verified["bytes"] != bytes:
             error = ERR_FILE_CANT_WRITE
-    if error == OK:
-        error = _replace_file(temporary, path)
-    if FileAccess.file_exists(temporary):
-        var cleanup := DirAccess.remove_absolute(ProjectSettings.globalize_path(temporary))
-        if cleanup != OK and error == OK:
-            error = cleanup
-    return error
+    if error != OK:
+        _remove_temporary(temporary)
+        return {"error": error, "path": ""}
+    return {"error": OK, "path": temporary}
+
+
+func _remove_temporary(path: String) -> Error:
+    if not path.is_empty() and FileAccess.file_exists(path):
+        return DirAccess.remove_absolute(ProjectSettings.globalize_path(path))
+    return OK
+
+
+func _valid_utf8(bytes: PackedByteArray) -> bool:
+    # Reject malformed UTF-8 before conversion, avoiding lossy replacement text.
+    var index := 0
+    while index < bytes.size():
+        var lead := int(bytes[index])
+        if lead < 128:
+            index += 1
+            continue
+        var count := 1 if lead >= 0xc2 and lead <= 0xdf else 2 if lead >= 0xe0 and lead <= 0xef else 3 if lead >= 0xf0 and lead <= 0xf4 else -1
+        if count < 0 or index + count >= bytes.size():
+            return false
+        for offset in range(1, count + 1):
+            if bytes[index + offset] & 0xc0 != 0x80:
+                return false
+        var second := int(bytes[index + 1])
+        if (lead == 0xe0 and second < 0xa0) or (lead == 0xed and second >= 0xa0) or (lead == 0xf0 and second < 0x90) or (lead == 0xf4 and second >= 0x90):
+            return false
+        index += count + 1
+    return true
 
 
 func _replace_file(temporary: String, destination: String) -> Error:
