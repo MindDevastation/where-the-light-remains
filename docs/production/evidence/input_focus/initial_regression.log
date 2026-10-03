@@ -1,0 +1,53 @@
+$ bash -c '../toolchain/bin/godot --headless --path game --script res://tests/input_map_smoke.gd && ../toolchain/bin/godot --headless --path game --script res://tests/audio_bus_smoke.gd && ../toolchain/bin/godot --headless --path game res://tests/debug_tools_smoke.tscn -- --dev-tools --expect-overlay'
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INPUT_MAP runtime: 4.7.2-stable (official); display=headless
+INPUT_MAP source: project.godot; injected keyboard events, not OS keyboard input
+INPUT_MAP checked: W/S/A/D/E/H press and release with Latin and Cyrillic labels
+INPUT_MAP checked: physical/logical mismatch and release after modifier change
+INPUT_MAP checked: forward direction, normalized diagonal, opposite keys and release
+INPUT_MAP checked: shared Esc, repeat events, ui_cancel and ui_accept
+INPUT_MAP PASS: persisted bindings, layout-independent matching and input lifecycle
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_BUS runtime: 4.7.2-stable (official); display=headless; audio=Dummy
+AUDIO_BUS source: project default layout; generated PCM through the real mixer; no speaker test
+AUDIO_BUS route: Master -> output; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: Music -> Master; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Main -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Stems -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: SFX -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_Critical -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_World -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: Ambience -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: UI -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: VO_RESERVED -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS gain: Music_Main; half-gain ratio=0.5
+AUDIO_BUS gain: Music_Stems; half-gain ratio=0.5
+AUDIO_BUS mute: Music_Main; Master peak=0.0
+AUDIO_BUS mute: Music_Stems; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: Music
+AUDIO_BUS gain: SFX_Critical; half-gain ratio=0.5
+AUDIO_BUS gain: SFX_World; half-gain ratio=0.5
+AUDIO_BUS mute: SFX_Critical; Master peak=0.0
+AUDIO_BUS mute: SFX_World; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: SFX
+AUDIO_BUS PASS: automatic layout, all routes, parent gain/mute and restored neutral state
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=true; display=headless; expected_overlay=true
+ERROR: DEBUG_TOOLS FAIL: Read-only overlay changed state during toggles
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/debug_tools_smoke.gd:20)
+       [1] _check_overlay (res://tests/debug_tools_smoke.gd:156)
+DEBUG_TOOLS checked: missing/valid/malformed/oversize save preview without modifying source files
+DEBUG_TOOLS checked: live stage/save/audio, deep-copy snapshot, F3/echo/pause, input/capture, Cyrillic glyphs
+ERROR: DEBUG_TOOLS FAIL: Test did not restore its fixtures or inspection changed state
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/debug_tools_smoke.gd:20)
+       [1] _run (res://tests/debug_tools_smoke.gd:79)
+       [2] _check_overlay (res://tests/debug_tools_smoke.gd:160)
+
+exit=1

@@ -38,6 +38,22 @@
 
 Implementation is **GO for preflight and vertical-slice work**. Do not treat concept art as gameplay authority; use the canonical design splits/master. First technical milestone remains Hub → Wing I → fragment → save/load → return, then profile on GTX 1060-class hardware.
 
+## Input focus / pause foundation — 2026-10-03 UTC
+
+**PASS for the input service.** InputManager preserves requested mode across
+focus/pause, releases capture and gameplay actions at boundaries, filters held
+key repeats, and discards the first recapture motion. UI cursor starts visible.
+Clean committed-source import, synthetic mode matrix and actual native X11
+focus/capture checks pass. InputMap, mixer, read-only inspector, Archive and
+Wing I geometry/physics regressions pass. See `INPUT_FOCUS.md` and
+`evidence/input_focus/README.md`.
+
+Exactly eight autoloads/actions remain; no puzzle states, skip timing, narrative,
+art payloads or global budgets changed. Pause UI, player and playable world
+routing remain later features. Windows/hardware input and target GPU acceptance
+are still open. The next foundation feature is the basic player and interaction
+ray, using the accepted collision envelope and the input owner's gate API.
+
 ## Visual rebaseline v2 — 2026-10-02 UTC / 2026-10-03 Moscow
 
 **PARTIAL.** Owner-approved visual direction: Hybrid Warcraft Observatory;
