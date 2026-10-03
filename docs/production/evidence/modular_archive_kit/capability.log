@@ -1,0 +1,82 @@
+$ ../toolchain/bin/blender --version
+Blender 4.5.14 LTS
+	build date: 2026-09-15
+	build time: 01:31:19
+	build commit date: 2026-09-14
+	build commit time: 14:54
+	build hash: 62c1db4208e8
+	build branch: blender-v4.5-release
+	build platform: Linux
+	build type: Release
+	build c flags:  -Wall -Werror=implicit-function-declaration -Wstrict-prototypes -Werror=return-type -Werror=vla -Wmissing-prototypes -Wno-char-subscripts -Wno-unknown-pragmas -Wpointer-arith -Wunused-parameter -Wwrite-strings -Wlogical-op -Wundef -Winit-self -Wmissing-include-dirs -Wno-div-by-zero -Wtype-limits -Wformat-signedness -Wrestrict -Wno-stringop-overread -Wno-stringop-overflow -Wnonnull -Wabsolute-value -Wuninitialized -Wredundant-decls -Wshadow -Wimplicit-fallthrough=5 -Wno-error=unused-but-set-variable  -march=x86-64-v2 -std=gnu11 -pipe -fPIC -funsigned-char -fno-strict-aliasing -ffp-contract=off
+	build c++ flags:  -Wuninitialized -Wredundant-decls -Wall -Wno-invalid-offsetof -Wno-sign-compare -Wlogical-op -Winit-self -Wmissing-include-dirs -Wno-div-by-zero -Wtype-limits -Werror=return-type -Wno-char-subscripts -Wno-unknown-pragmas -Wpointer-arith -Wunused-parameter -Wwrite-strings -Wundef -Wcomma-subscript -Wformat-signedness -Wrestrict -Wno-suggest-override -Wuninitialized -Wno-stringop-overread -Wno-stringop-overflow -Wimplicit-fallthrough=5 -Wundef -Wmissing-declarations  -march=x86-64-v2 -pipe -fPIC -funsigned-char -fno-strict-aliasing -ffp-contract=off
+	build link flags:  -Wl,--version-script='/home/blender/git/blender-v450/blender.git/source/creator/symbols_unix.map'
+	build system: CMake
+
+
+exit=0
+
+$ ../toolchain/bin/godot --version
+4.7.2.stable.official.ed1daf0bf
+
+
+exit=0
+
+$ ../toolchain/bin/blender --background --factory-startup --python-exit-code 1 --python tools/blender_cli_probe.py -- /workspace/scratch/4f0b36b4bb0e/toolchain/archive-kit/capability-probe
+Info: Saved as "cli_probe.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/4f0b36b4bb0e/toolchain/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+16:34:16 | INFO: Starting glTF 2.0 export
+16:34:16 | INFO: Extracting primitive: Cube.001
+16:34:16 | INFO: Primitives created: 1
+16:34:16 | INFO: Finished glTF 2.0 export in 0.01136326789855957 s
+
+BLENDER_CLI_PROBE PASS: 4.5.14 LTS one-meter mesh, UV, normals, one material, source saved, GLB 2.0 exported
+Disposable output: /workspace/scratch/4f0b36b4bb0e/toolchain/archive-kit/capability-probe
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+
+Blender quit
+
+
+exit=0
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python tools/run_graphical.py --graphics-prefix ../toolchain/graphics --godot ../toolchain/bin/godot --timeout 120 --expect 'ENGINE_PREFLIGHT PASS' -- --path game --script res://tests/engine_preflight.gd
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/bin/Xvfb :100 -screen 0 1920x1080x24 -listen tcp -nolisten unix -nolisten local -noreset -auth /tmp/wlr-x11-ugi_wt7v/Xauthority
+DISPLAY=127.0.0.1:100; VK_ICD_FILENAMES=/workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/share/vulkan/icd.d/lvp_icd.json
+X11_TCP_AUTH PASS: valid cookie accepted; unauthenticated client rejected
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --display-driver x11 --rendering-driver vulkan --rendering-method forward_plus --audio-driver Dummy --path game --script res://tests/engine_preflight.gd
+GRAPHICAL_RUN PASS: exit=0
+
+Godot stdout/stderr:
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.318 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 20.1.2, 256 bits)
+
+ENGINE_PREFLIGHT runtime: {"csharp":false,"display":"X11","driver":"vulkan","executable":"/workspace/scratch/4f0b36b4bb0e/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64","platform":"Linux","renderer":"forward_plus","version":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0}}
+ENGINE_PREFLIGHT PASS: GameRoot ready; 8 autoloads; baseline settings; requesting App safe exit
+
+
+Xvfb stdout/stderr:
+Warning: getifaddrs returns Operation not permitted
+Warning: getifaddrs returns Operation not permitted
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Could not resolve keysym XF86CameraAccessEnable
+> Warning:          Could not resolve keysym XF86CameraAccessDisable
+> Warning:          Could not resolve keysym XF86CameraAccessToggle
+> Warning:          Could not resolve keysym XF86NextElement
+> Warning:          Could not resolve keysym XF86PreviousElement
+> Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+> Warning:          Could not resolve keysym XF86MarkWaypoint
+> Warning:          Could not resolve keysym XF86Sos
+> Warning:          Could not resolve keysym XF86NavChart
+> Warning:          Could not resolve keysym XF86FishingChart
+> Warning:          Could not resolve keysym XF86SingleRangeRadar
+> Warning:          Could not resolve keysym XF86DualRangeRadar
+> Warning:          Could not resolve keysym XF86RadarOverlay
+> Warning:          Could not resolve keysym XF86TraditionalSonar
+> Warning:          Could not resolve keysym XF86ClearvuSonar
+> Warning:          Could not resolve keysym XF86SidevuSonar
+> Warning:          Could not resolve keysym XF86NavInfo
+Errors from xkbcomp are not fatal to the X server
+
+
+
+exit=0

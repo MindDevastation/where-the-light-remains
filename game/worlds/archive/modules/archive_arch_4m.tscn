@@ -1,0 +1,224 @@
+[gd_scene load_steps=35 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_archive_arch_4m.glb" id="Art"]
+
+[sub_resource type="BoxShape3D" id="Jamb"]
+size = Vector3(0.8, 4, 0.4)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown00"]
+points = PackedVector3Array(-1.2, 2, -0.2, -1.194611062, 2.133918209, -0.2, -1.194611062, 4, -0.2, -1.2, 4, -0.2, -1.2, 2, 0.2, -1.194611062, 2.133918209, 0.2, -1.194611062, 4, 0.2, -1.2, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown01"]
+points = PackedVector3Array(-1.194611062, 2.133918209, -0.2, -1.178479096, 2.266970405, -0.2, -1.178479096, 4, -0.2, -1.194611062, 4, -0.2, -1.194611062, 2.133918209, 0.2, -1.178479096, 2.266970405, 0.2, -1.178479096, 4, 0.2, -1.194611062, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown02"]
+points = PackedVector3Array(-1.178479096, 2.266970405, -0.2, -1.151708424, 2.398296177, -0.2, -1.151708424, 4, -0.2, -1.178479096, 4, -0.2, -1.178479096, 2.266970405, 0.2, -1.151708424, 2.398296177, 0.2, -1.151708424, 4, 0.2, -1.178479096, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown03"]
+points = PackedVector3Array(-1.151708424, 2.398296177, -0.2, -1.114472163, 2.527046277, -0.2, -1.114472163, 4, -0.2, -1.151708424, 4, -0.2, -1.151708424, 2.398296177, 0.2, -1.114472163, 2.527046277, 0.2, -1.114472163, 4, 0.2, -1.151708424, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown04"]
+points = PackedVector3Array(-1.114472163, 2.527046277, -0.2, -1.067011112, 2.652388113, -0.2, -1.067011112, 4, -0.2, -1.114472163, 4, -0.2, -1.114472163, 2.527046277, 0.2, -1.067011112, 2.652388113, 0.2, -1.067011112, 4, 0.2, -1.114472163, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown05"]
+points = PackedVector3Array(-1.067011112, 2.652388113, -0.2, -1.009632187, 2.773511134, -0.2, -1.009632187, 4, -0.2, -1.067011112, 4, -0.2, -1.067011112, 2.652388113, 0.2, -1.009632187, 2.773511134, 0.2, -1.009632187, 4, 0.2, -1.067011112, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown06"]
+points = PackedVector3Array(-1.009632187, 2.773511134, -0.2, -0.942706441, 2.88963207, -0.2, -0.942706441, 4, -0.2, -1.009632187, 4, -0.2, -1.009632187, 2.773511134, 0.2, -0.942706441, 2.88963207, 0.2, -0.942706441, 4, 0.2, -1.009632187, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown07"]
+points = PackedVector3Array(-0.942706441, 2.88963207, -0.2, -0.866666667, 3, -0.2, -0.866666667, 4, -0.2, -0.942706441, 4, -0.2, -0.942706441, 2.88963207, 0.2, -0.866666667, 3, 0.2, -0.866666667, 4, 0.2, -0.942706441, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown08"]
+points = PackedVector3Array(-0.866666667, 3, -0.2, -0.782004591, 3.103901204, -0.2, -0.782004591, 4, -0.2, -0.866666667, 4, -0.2, -0.866666667, 3, 0.2, -0.782004591, 3.103901204, 0.2, -0.782004591, 4, 0.2, -0.866666667, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown09"]
+points = PackedVector3Array(-0.782004591, 3.103901204, -0.2, -0.689267701, 3.200663782, -0.2, -0.689267701, 4, -0.2, -0.782004591, 4, -0.2, -0.782004591, 3.103901204, 0.2, -0.689267701, 3.200663782, 0.2, -0.689267701, 4, 0.2, -0.782004591, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown10"]
+points = PackedVector3Array(-0.689267701, 3.200663782, -0.2, -0.589055699, 3.289661996, -0.2, -0.589055699, 4, -0.2, -0.689267701, 4, -0.2, -0.689267701, 3.200663782, 0.2, -0.589055699, 3.289661996, 0.2, -0.589055699, 4, 0.2, -0.689267701, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown11"]
+points = PackedVector3Array(-0.589055699, 3.289661996, -0.2, -0.482016631, 3.370320319, -0.2, -0.482016631, 4, -0.2, -0.589055699, 4, -0.2, -0.589055699, 3.289661996, 0.2, -0.482016631, 3.370320319, 0.2, -0.482016631, 4, 0.2, -0.589055699, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown12"]
+points = PackedVector3Array(-0.482016631, 3.370320319, -0.2, -0.368842689, 3.442117157, -0.2, -0.368842689, 4, -0.2, -0.482016631, 4, -0.2, -0.482016631, 3.370320319, 0.2, -0.368842689, 3.442117157, 0.2, -0.368842689, 4, 0.2, -0.482016631, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown13"]
+points = PackedVector3Array(-0.368842689, 3.442117157, -0.2, -0.250265736, 3.504588219, -0.2, -0.250265736, 4, -0.2, -0.368842689, 4, -0.2, -0.368842689, 3.442117157, 0.2, -0.250265736, 3.504588219, 0.2, -0.250265736, 4, 0.2, -0.368842689, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown14"]
+points = PackedVector3Array(-0.250265736, 3.504588219, -0.2, -0.127052578, 3.557329521, -0.2, -0.127052578, 4, -0.2, -0.250265736, 4, -0.2, -0.250265736, 3.504588219, 0.2, -0.127052578, 3.557329521, 0.2, -0.127052578, 4, 0.2, -0.250265736, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown15"]
+points = PackedVector3Array(-0.127052578, 3.557329521, -0.2, 0, 3.6, -0.2, 0, 4, -0.2, -0.127052578, 4, -0.2, -0.127052578, 3.557329521, 0.2, 0, 3.6, 0.2, 0, 4, 0.2, -0.127052578, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown16"]
+points = PackedVector3Array(0, 3.6, -0.2, 0.127052578, 3.557329521, -0.2, 0.127052578, 4, -0.2, 0, 4, -0.2, 0, 3.6, 0.2, 0.127052578, 3.557329521, 0.2, 0.127052578, 4, 0.2, 0, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown17"]
+points = PackedVector3Array(0.127052578, 3.557329521, -0.2, 0.250265736, 3.504588219, -0.2, 0.250265736, 4, -0.2, 0.127052578, 4, -0.2, 0.127052578, 3.557329521, 0.2, 0.250265736, 3.504588219, 0.2, 0.250265736, 4, 0.2, 0.127052578, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown18"]
+points = PackedVector3Array(0.250265736, 3.504588219, -0.2, 0.368842689, 3.442117157, -0.2, 0.368842689, 4, -0.2, 0.250265736, 4, -0.2, 0.250265736, 3.504588219, 0.2, 0.368842689, 3.442117157, 0.2, 0.368842689, 4, 0.2, 0.250265736, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown19"]
+points = PackedVector3Array(0.368842689, 3.442117157, -0.2, 0.482016631, 3.370320319, -0.2, 0.482016631, 4, -0.2, 0.368842689, 4, -0.2, 0.368842689, 3.442117157, 0.2, 0.482016631, 3.370320319, 0.2, 0.482016631, 4, 0.2, 0.368842689, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown20"]
+points = PackedVector3Array(0.482016631, 3.370320319, -0.2, 0.589055699, 3.289661996, -0.2, 0.589055699, 4, -0.2, 0.482016631, 4, -0.2, 0.482016631, 3.370320319, 0.2, 0.589055699, 3.289661996, 0.2, 0.589055699, 4, 0.2, 0.482016631, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown21"]
+points = PackedVector3Array(0.589055699, 3.289661996, -0.2, 0.689267701, 3.200663782, -0.2, 0.689267701, 4, -0.2, 0.589055699, 4, -0.2, 0.589055699, 3.289661996, 0.2, 0.689267701, 3.200663782, 0.2, 0.689267701, 4, 0.2, 0.589055699, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown22"]
+points = PackedVector3Array(0.689267701, 3.200663782, -0.2, 0.782004591, 3.103901204, -0.2, 0.782004591, 4, -0.2, 0.689267701, 4, -0.2, 0.689267701, 3.200663782, 0.2, 0.782004591, 3.103901204, 0.2, 0.782004591, 4, 0.2, 0.689267701, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown23"]
+points = PackedVector3Array(0.782004591, 3.103901204, -0.2, 0.866666667, 3, -0.2, 0.866666667, 4, -0.2, 0.782004591, 4, -0.2, 0.782004591, 3.103901204, 0.2, 0.866666667, 3, 0.2, 0.866666667, 4, 0.2, 0.782004591, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown24"]
+points = PackedVector3Array(0.866666667, 3, -0.2, 0.942706441, 2.88963207, -0.2, 0.942706441, 4, -0.2, 0.866666667, 4, -0.2, 0.866666667, 3, 0.2, 0.942706441, 2.88963207, 0.2, 0.942706441, 4, 0.2, 0.866666667, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown25"]
+points = PackedVector3Array(0.942706441, 2.88963207, -0.2, 1.009632187, 2.773511134, -0.2, 1.009632187, 4, -0.2, 0.942706441, 4, -0.2, 0.942706441, 2.88963207, 0.2, 1.009632187, 2.773511134, 0.2, 1.009632187, 4, 0.2, 0.942706441, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown26"]
+points = PackedVector3Array(1.009632187, 2.773511134, -0.2, 1.067011112, 2.652388113, -0.2, 1.067011112, 4, -0.2, 1.009632187, 4, -0.2, 1.009632187, 2.773511134, 0.2, 1.067011112, 2.652388113, 0.2, 1.067011112, 4, 0.2, 1.009632187, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown27"]
+points = PackedVector3Array(1.067011112, 2.652388113, -0.2, 1.114472163, 2.527046277, -0.2, 1.114472163, 4, -0.2, 1.067011112, 4, -0.2, 1.067011112, 2.652388113, 0.2, 1.114472163, 2.527046277, 0.2, 1.114472163, 4, 0.2, 1.067011112, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown28"]
+points = PackedVector3Array(1.114472163, 2.527046277, -0.2, 1.151708424, 2.398296177, -0.2, 1.151708424, 4, -0.2, 1.114472163, 4, -0.2, 1.114472163, 2.527046277, 0.2, 1.151708424, 2.398296177, 0.2, 1.151708424, 4, 0.2, 1.114472163, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown29"]
+points = PackedVector3Array(1.151708424, 2.398296177, -0.2, 1.178479096, 2.266970405, -0.2, 1.178479096, 4, -0.2, 1.151708424, 4, -0.2, 1.151708424, 2.398296177, 0.2, 1.178479096, 2.266970405, 0.2, 1.178479096, 4, 0.2, 1.151708424, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown30"]
+points = PackedVector3Array(1.178479096, 2.266970405, -0.2, 1.194611062, 2.133918209, -0.2, 1.194611062, 4, -0.2, 1.178479096, 4, -0.2, 1.178479096, 2.266970405, 0.2, 1.194611062, 2.133918209, 0.2, 1.194611062, 4, 0.2, 1.178479096, 4, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="Crown31"]
+points = PackedVector3Array(1.194611062, 2.133918209, -0.2, 1.2, 2, -0.2, 1.2, 4, -0.2, 1.194611062, 4, -0.2, 1.194611062, 2.133918209, 0.2, 1.2, 2, 0.2, 1.2, 4, 0.2, 1.194611062, 4, 0.2)
+
+[node name="ArchiveArch4m" type="Node3D"]
+metadata/module_id = "arch_4m"
+
+[node name="Art" parent="." instance=ExtResource("Art")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 1
+collision_mask = 1
+
+[node name="LeftJamb" type="CollisionShape3D" parent="Collision"]
+position = Vector3(-1.6, 2, 0)
+shape = SubResource("Jamb")
+
+[node name="RightJamb" type="CollisionShape3D" parent="Collision"]
+position = Vector3(1.6, 2, 0)
+shape = SubResource("Jamb")
+
+[node name="Crown00" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown00")
+
+[node name="Crown01" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown01")
+
+[node name="Crown02" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown02")
+
+[node name="Crown03" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown03")
+
+[node name="Crown04" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown04")
+
+[node name="Crown05" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown05")
+
+[node name="Crown06" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown06")
+
+[node name="Crown07" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown07")
+
+[node name="Crown08" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown08")
+
+[node name="Crown09" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown09")
+
+[node name="Crown10" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown10")
+
+[node name="Crown11" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown11")
+
+[node name="Crown12" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown12")
+
+[node name="Crown13" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown13")
+
+[node name="Crown14" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown14")
+
+[node name="Crown15" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown15")
+
+[node name="Crown16" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown16")
+
+[node name="Crown17" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown17")
+
+[node name="Crown18" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown18")
+
+[node name="Crown19" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown19")
+
+[node name="Crown20" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown20")
+
+[node name="Crown21" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown21")
+
+[node name="Crown22" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown22")
+
+[node name="Crown23" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown23")
+
+[node name="Crown24" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown24")
+
+[node name="Crown25" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown25")
+
+[node name="Crown26" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown26")
+
+[node name="Crown27" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown27")
+
+[node name="Crown28" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown28")
+
+[node name="Crown29" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown29")
+
+[node name="Crown30" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown30")
+
+[node name="Crown31" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Crown31")
+
+[node name="Left" type="Marker3D" parent="."]
+position = Vector3(-2, 0, 0)
+
+[node name="Right" type="Marker3D" parent="."]
+position = Vector3(2, 0, 0)
+
+[node name="Passage" type="Marker3D" parent="."]
+position = Vector3(0, 0, 0)

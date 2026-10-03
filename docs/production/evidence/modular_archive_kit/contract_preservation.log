@@ -1,0 +1,4 @@
+PASS: eight technical JSON keys exactly match main c6773f203717b0058a3ec3aee4a3e26bb1190f1f.
+PASS: nine current reference files match pinned Git blobs; A/B/C kit, shape and hub reference sets visually inspected.
+PASS: all fourteen preexisting runtime/config/export-fixture SHA-256 fingerprints unchanged.
+PASS: shared material resources and 1K texture maps unchanged from main.
