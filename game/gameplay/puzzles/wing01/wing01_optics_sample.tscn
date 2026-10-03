@@ -1,0 +1,122 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/wing01/sm_wing01_frame.glb" id="frame"]
+[ext_resource type="PackedScene" path="res://art/meshes/wing01/sm_wing01_ring_outer.glb" id="outer"]
+[ext_resource type="PackedScene" path="res://art/meshes/wing01/sm_wing01_ring_middle.glb" id="middle"]
+[ext_resource type="PackedScene" path="res://art/meshes/wing01/sm_wing01_ring_inner.glb" id="inner"]
+[ext_resource type="PackedScene" path="res://art/meshes/wing01/sm_wing01_focus.glb" id="focus"]
+
+[sub_resource type="SphereShape3D" id="Pick_outer"]
+radius = 0.078
+
+[sub_resource type="SphereShape3D" id="Pick_middle"]
+radius = 0.078
+
+[sub_resource type="SphereShape3D" id="Pick_inner"]
+radius = 0.078
+
+[sub_resource type="SphereShape3D" id="Pick_focus"]
+radius = 0.09
+
+[sub_resource type="BoxShape3D" id="Base"]
+size = Vector3(1.92, 0.64, 0.98)
+
+[sub_resource type="BoxShape3D" id="Support"]
+size = Vector3(0.19, 1.24, 0.27)
+
+[node name="Wing01OpticsSample" type="Node3D"]
+metadata/brief = "S02-001/S02-003 articulation carrier; no solver"
+
+[node name="Frame" type="Node3D" parent="."]
+position = Vector3(0, 0, 0)
+metadata/component = "frame"
+
+[node name="Art" parent="Frame" instance=ExtResource("frame")]
+
+[node name="Outer" type="Node3D" parent="."]
+position = Vector3(0, 1.72, 0)
+metadata/component = "outer"
+
+[node name="Art" parent="Outer" instance=ExtResource("outer")]
+
+[node name="Grip" type="Area3D" parent="Outer"]
+position = Vector3(-0.681779554, -0.572080973, -0.095)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+metadata/component = "outer"
+
+[node name="Shape" type="CollisionShape3D" parent="Outer/Grip"]
+shape = SubResource("Pick_outer")
+
+[node name="Axis" type="Marker3D" parent="Outer"]
+
+[node name="Middle" type="Node3D" parent="."]
+position = Vector3(0, 1.72, 0)
+metadata/component = "middle"
+
+[node name="Art" parent="Middle" instance=ExtResource("middle")]
+
+[node name="Grip" type="Area3D" parent="Middle"]
+position = Vector3(0.401503505, -0.573406431, -0.095)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+metadata/component = "middle"
+
+[node name="Shape" type="CollisionShape3D" parent="Middle/Grip"]
+shape = SubResource("Pick_middle")
+
+[node name="Axis" type="Marker3D" parent="Middle"]
+
+[node name="Inner" type="Node3D" parent="."]
+position = Vector3(0, 1.72, 0)
+metadata/component = "inner"
+
+[node name="Art" parent="Inner" instance=ExtResource("inner")]
+
+[node name="Grip" type="Area3D" parent="Inner"]
+position = Vector3(0.327821681, 0.390682666, -0.095)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+metadata/component = "inner"
+
+[node name="Shape" type="CollisionShape3D" parent="Inner/Grip"]
+shape = SubResource("Pick_inner")
+
+[node name="Axis" type="Marker3D" parent="Inner"]
+
+[node name="Focus" type="Node3D" parent="."]
+position = Vector3(0.68, 0.59, -0.56)
+metadata/component = "focus"
+
+[node name="Art" parent="Focus" instance=ExtResource("focus")]
+
+[node name="Grip" type="Area3D" parent="Focus"]
+position = Vector3(0, 0, -0.085)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+metadata/component = "focus"
+
+[node name="Shape" type="CollisionShape3D" parent="Focus/Grip"]
+shape = SubResource("Pick_focus")
+
+[node name="Axis" type="Marker3D" parent="Focus"]
+
+[node name="Collision" type="StaticBody3D" parent="Frame"]
+collision_layer = 1
+collision_mask = 1
+
+[node name="Base" type="CollisionShape3D" parent="Frame/Collision"]
+position = Vector3(0, 0.32, 0)
+shape = SubResource("Base")
+
+[node name="Left" type="CollisionShape3D" parent="Frame/Collision"]
+position = Vector3(-0.96, 1.26, 0.13)
+shape = SubResource("Support")
+
+[node name="Right" type="CollisionShape3D" parent="Frame/Collision"]
+position = Vector3(0.96, 1.26, 0.13)
+shape = SubResource("Support")

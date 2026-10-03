@@ -1,0 +1,38 @@
+$ ../toolchain/bin/blender --background --factory-startup --python-exit-code 1 --python tools/create_wing01_optics.py -- /workspace/scratch/4f0b36b4bb0e/toolchain/wing01/track-shoes
+Info: Saved as "wing01_optics_sample.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/4f0b36b4bb0e/toolchain/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+18:07:37 | INFO: Starting glTF 2.0 export
+18:07:37 | INFO: Extracting primitive: sm_wing01_frame
+18:07:37 | INFO: Primitives created: 4
+18:07:37 | INFO: Finished glTF 2.0 export in 0.01760125160217285 s
+
+WING01_AUTHORED: frame triangles= 2764 surfaces= 4
+18:07:37 | INFO: Starting glTF 2.0 export
+18:07:37 | INFO: Extracting primitive: sm_wing01_ring_outer
+18:07:37 | INFO: Primitives created: 3
+18:07:37 | INFO: Finished glTF 2.0 export in 0.010414838790893555 s
+
+WING01_AUTHORED: outer triangles= 1588 surfaces= 3
+18:07:37 | INFO: Starting glTF 2.0 export
+18:07:37 | INFO: Extracting primitive: sm_wing01_ring_middle
+18:07:37 | INFO: Primitives created: 3
+18:07:37 | INFO: Finished glTF 2.0 export in 0.01053619384765625 s
+
+WING01_AUTHORED: middle triangles= 1588 surfaces= 3
+18:07:37 | INFO: Starting glTF 2.0 export
+18:07:37 | INFO: Extracting primitive: sm_wing01_ring_inner
+18:07:37 | INFO: Primitives created: 3
+18:07:37 | INFO: Finished glTF 2.0 export in 0.010015249252319336 s
+
+WING01_AUTHORED: inner triangles= 1588 surfaces= 3
+18:07:37 | INFO: Starting glTF 2.0 export
+18:07:37 | INFO: Extracting primitive: sm_wing01_focus
+18:07:37 | INFO: Primitives created: 3
+18:07:37 | INFO: Finished glTF 2.0 export in 0.009116411209106445 s
+
+WING01_AUTHORED: focus triangles= 1108 surfaces= 3
+WING01_AUTHORING PASS: original five-part source; local identity exports; six payload hashes
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+
+Blender quit
+exit=0

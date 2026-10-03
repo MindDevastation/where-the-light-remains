@@ -1,0 +1,19 @@
+$ git fetch origin
+
+exit=0
+$ python -c 'from pathlib import Path;import json,hashlib,subprocess,os
+r=Path.cwd();m=json.loads((r/'"'"'docs/production/evidence/wing01_optics/payload_manifest.json'"'"').read_text())
+for row in m:
+ p=subprocess.check_output(['"'"'git'"'"','"'"'show'"'"','"'"'HEAD:'"'"'+row['"'"'path'"'"']]);expect=('"'"'version https://git-lfs.github.com/spec/v1\noid sha256:'"'"'+row['"'"'sha256'"'"']+'"'"'\nsize '"'"'+str(row['"'"'bytes'"'"'])+'"'"'\n'"'"').encode();assert p==expect
+ data=(r/row['"'"'path'"'"']).read_bytes();assert len(data)==row['"'"'bytes'"'"'] and hashlib.sha256(data).hexdigest()==row['"'"'sha256'"'"']
+for ref,expected in [('"'"'origin/main'"'"','"'"'e978c0d813b94d1299d8376879c75ec309012d3c'"'"'),('"'"'origin/epic/03-art-foundation'"'"','"'"'9969556897e2eddc1928b2209a30ee557b337f9d'"'"'),('"'"'origin/feature/03-art-foundation/wing01-optics-sample'"'"','"'"'a3c11209d7218fe2ba08b402bac054d6d49f7cc8'"'"')]:
+ assert subprocess.check_output(['"'"'git'"'"','"'"'rev-parse'"'"',ref],text=True).strip()==expected,ref
+v=json.loads((r/'"'"'docs/production/evidence/wing01_optics/validation_manifest.json'"'"').read_text())
+for row in v['"'"'files'"'"']+v['"'"'screenshots'"'"']+v['"'"'preserved_contracts'"'"']:
+ assert hashlib.sha256((r/row['"'"'path'"'"']).read_bytes()).hexdigest()==row['"'"'sha256'"'"'],row['"'"'path'"'"']
+secret=os.environ['"'"'GH_TOKEN'"'"'].encode()
+for p in (r/'"'"'docs/production/evidence/wing01_optics'"'"').rglob('"'"'*'"'"'):
+ if p.is_file(): assert secret not in p.read_bytes(),'"'"'Secret present in evidence'"'"'
+print('"'"'PREMERGE PASS: expected origin refs; six pointers/payloads; final code/images/fourteen contracts; no token in evidence'"'"')'
+PREMERGE PASS: expected origin refs; six pointers/payloads; final code/images/fourteen contracts; no token in evidence
+exit=0

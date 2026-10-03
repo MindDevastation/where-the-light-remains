@@ -1,0 +1,25 @@
+$ git push --set-upstream origin feature/03-art-foundation/wing01-optics-sample
+Uploading LFS objects: 100% (6/6), 2.2 MB | 0 B/s, done.
+remote:
+remote: Create a pull request for 'feature/03-art-foundation/wing01-optics-sample' on GitHub by visiting:
+remote:      https://github.com/MindDevastation/where-the-light-remains/pull/new/feature/03-art-foundation/wing01-optics-sample
+remote:
+To https://github.com/MindDevastation/where-the-light-remains.git
+ * [new branch]      feature/03-art-foundation/wing01-optics-sample -> feature/03-art-foundation/wing01-optics-sample
+branch 'feature/03-art-foundation/wing01-optics-sample' set up to track 'origin/feature/03-art-foundation/wing01-optics-sample'.
+exit=0
+$ git lfs fsck
+Git LFS fsck OK
+exit=0
+$ git fsck --full
+dangling blob 212036e3b854bbe967d47717dc9d9156889f3c53
+dangling blob 72c040c210b2f9747e09f3d2f4db21e276acdd5c
+dangling blob ec91e0fc92f90903ff8f2864295662084237ce74
+dangling blob 4c23fba2ff1ffcdf47f2f5c095e9dbb744184c2a
+dangling blob 0f48d9539a217d76edcfe9a29f52e415eb960ea5
+dangling blob 3a986ff5e5732b37be7040515358ee90b1b9cc7a
+dangling blob d6191bdadf3442c673fa535c615a468ee7d7a6f9
+dangling blob e019e46687580658a9be8e5c1bb69002bee8f4e5
+dangling blob ae0afb79a74a543e0351aa0b2df5476e4a1fb686
+dangling blob 2f2bf5cfa3182fbe1f4e0b3ed80dcee7f8460452
+exit=0

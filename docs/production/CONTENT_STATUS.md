@@ -63,9 +63,10 @@ assignments for six unmatched additional concepts block only dependent work.
 Final avatar/casting, gameplay briefs and target hardware remain open inputs.
 Target hardware is BLOCKER only for physical-GPU certification; the software
 renderer passes the graphical capability/material gate. The subsequent bounded
-Archive sample now passes its mesh/collision/visual/LFS gates. Next safe roadmap
-step: Wing I hero mechanism brief/sample. Representative target performance
-still precedes bulk production.
+Archive structure and the subsequent Wing I mechanical carrier below pass their
+bounded sample gates. Next roadmap work is the interaction/controller brief and
+representative playable slice. Exact solve parameters remain an open dependent
+input; representative target performance still precedes bulk production.
 
 ## Modular Archive sample — 2026-10-03 UTC
 
@@ -82,5 +83,25 @@ Blender/Godot/physics/startup and Git/LFS fsck pass. Evidence:
 The primary pad is 4,284 triangles, 63 instances and 68 authored surfaces. This
 is reusable architecture foundation, not a playable Hub or final whole-world
 visual approval. GameRoot, services, controls, saves and canonical text remain
-unchanged. Wing I hero brief/sample and gameplay vertical slice are next;
-representative physical-GPU profiling remains open.
+unchanged. The Wing I carrier below completes the next bounded art step;
+gameplay vertical slice and representative physical-GPU profiling remain open.
+
+## Wing I optical carrier — 2026-10-03 UTC
+
+**PASS for the bounded sample; S02 inventory PARTIAL.** Editable Blender source,
+five GLBs and a script-free Godot carrier: fixed frame, three independent
+concentric rings and a five-stop focus wheel. 8,636 triangles / 16 shared surfaces;
+stone/brass/walnut/iron resources reused. Source/GLB meter bounds, topology/UVs,
+40 independent poses, 48 actual grip rays and primitive blocking pass. Three
+real 1920×1080 Forward+ views inspected; six LFS payloads uploaded and independently
+retrieved/hash-checked. Retrieved Blender/import/physics/graphical startup and
+Git/LFS fsck pass. Evidence: `evidence/wing01_optics/README.md`; source checkpoint
+`a3c11209d7218fe2ba08b402bac054d6d49f7cc8`.
+
+This supplies the mechanical carriers for S02-001/S02-003. Emitter/star target,
+Hearth activation, fragments, cold-to-warm room state and playable interaction /
+save restoration remain unimplemented. Exact ring states/solve angles/focus
+distances require canonical controller inputs; test poses assign none of them.
+No shipping input/UI, GameRoot/service/save contract, shared map or global budget
+changed. Next: canonical interaction/controller brief and the playable slice;
+physical target-GPU profiling still gates bulk production.

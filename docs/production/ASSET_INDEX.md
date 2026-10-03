@@ -155,7 +155,7 @@ not a change to the 185-row master inventory or global performance budget.
 
 | Inventory / owner scope | Runtime resource | Status |
 |---|---|---|
-| Owner v2 dark iron | `game/art/materials/m_dark_iron.tres` | Shared foundation; actual hardware/prop integration pending |
+| Owner v2 dark iron | `game/art/materials/m_dark_iron.tres` | Shared foundation; bounded Wing I hardware integration PASS; full prop family pending |
 | Owner v2 aged leather | `game/art/materials/m_aged_leather.tres` | Shared foundation; book/seating integration pending |
 | MAT-010 / owner crimson | `game/art/materials/m_crimson_textile.tres` | Shared weave/tint; original glyph/decor integration pending |
 | Owner v2 deep navy | `game/art/materials/m_navy_textile.tres` | Same maps as crimson; no unique prop set |
@@ -167,3 +167,23 @@ replaced by this migration. The technical cube remains validation-only. Actual
 validation and limitations: `VISUAL_REBASELINE_V2.md` / `MATERIAL_PREFLIGHT.md`.
 The modular brief now points to all three current kit/shape/hub views; technical
 interfaces and sample ceilings remain unchanged.
+
+## Wing I optical carrier — 2026-10-03
+
+| Inventory | Source / runtime | Coverage |
+|---|---|---|
+| S02-001 | `assets/3d/blender/wing01/wing01_optics_sample.blend`; `game/art/meshes/wing01/sm_wing01_ring_outer.glb`, `sm_wing01_ring_middle.glb`, `sm_wing01_ring_inner.glb`, `sm_wing01_frame.glb` | Three original concentric rings and fixed mount; mechanical sample PASS; functional optical mechanism PARTIAL |
+| S02-003 | Same source; `game/art/meshes/wing01/sm_wing01_focus.glb` | Five-stop wheel geometry/joint/raised markers PASS; focal distances and shipping controller pending |
+
+Script-free reusable carrier:
+`game/gameplay/puzzles/wing01/wing01_optics_sample.tscn`. Four independent +Z
+pivots, moving grip Areas and authored primitive blocking collision; no solver,
+fragment reward, shipping input or save state. Stone/brass/walnut/iron reuse the
+exact existing resources. No new textures or imported animations. Nine pinned
+v2 Heat-Light/S02 room A/B/C references inform shape/material context; the canon
+still requires rings → emitter/star → five-position focus → Hearth.
+
+Actual source/export/import/physics, three-view Forward+ review and independent
+LFS upload/retrieval PASS: `WING01_OPTICS_SAMPLE.md` and
+`evidence/wing01_optics/README.md`. S02-002/004/005/006/007, full room/gameplay and
+physical target-GPU profiling remain open. This is not complete S02 inventory.

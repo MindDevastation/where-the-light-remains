@@ -1,0 +1,54 @@
+$ python -c 'import os,json,subprocess,hashlib;from pathlib import Path
+m=json.loads(Path('"'"'docs/production/evidence/wing01_optics/payload_manifest.json'"'"').read_text())
+for row in m:
+ p=subprocess.check_output(['"'"'git'"'"','"'"'show'"'"','"'"':'"'"'+row['"'"'path'"'"']]);expect=('"'"'version https://git-lfs.github.com/spec/v1\noid sha256:'"'"'+row['"'"'sha256'"'"']+'"'"'\nsize '"'"'+str(row['"'"'bytes'"'"'])+'"'"'\n'"'"').encode();assert p==expect,row['"'"'path'"'"']
+names=subprocess.check_output(['"'"'git'"'"','"'"'diff'"'"','"'"'--cached'"'"','"'"'--name-only'"'"','"'"'-z'"'"']).split(b'"'"'\0'"'"')
+secret=os.environ['"'"'GH_TOKEN'"'"'].encode()
+for n in names:
+ if n: assert secret not in subprocess.check_output(['"'"'git'"'"','"'"'show'"'"','"'"':'"'"'+n.decode()]),'"'"'Secret found in staged file'"'"'
+print('"'"'POINTER/SECRET PASS: six exact SHA-256/size pointers; no GH_TOKEN in staged blobs'"'"')'
+POINTER/SECRET PASS: six exact SHA-256/size pointers; no GH_TOKEN in staged blobs
+exit=0
+$ git commit -m 'feat(art): add Wing I rings and five-stop focus articulation carrier'
+[feature/03-art-foundation/wing01-optics-sample a3c1120] feat(art): add Wing I rings and five-stop focus articulation carrier
+ 39 files changed, 2128 insertions(+)
+ create mode 100644 assets/3d/blender/wing01/wing01_optics_sample.blend
+ create mode 100644 docs/production/evidence/wing01_optics/README.md
+ create mode 100644 docs/production/evidence/wing01_optics/authoring.log
+ create mode 100644 docs/production/evidence/wing01_optics/authoring_final.log
+ create mode 100644 docs/production/evidence/wing01_optics/contract_preservation.log
+ create mode 100644 docs/production/evidence/wing01_optics/focus.log
+ create mode 100644 docs/production/evidence/wing01_optics/focus.png
+ create mode 100644 docs/production/evidence/wing01_optics/focus_framing_diagnostic.log
+ create mode 100644 docs/production/evidence/wing01_optics/front.log
+ create mode 100644 docs/production/evidence/wing01_optics/front.png
+ create mode 100644 docs/production/evidence/wing01_optics/front_framing_diagnostic.log
+ create mode 100644 docs/production/evidence/wing01_optics/front_resolution_diagnostic.log
+ create mode 100644 docs/production/evidence/wing01_optics/import_physics_initial.log
+ create mode 100644 docs/production/evidence/wing01_optics/payload_manifest.json
+ create mode 100644 docs/production/evidence/wing01_optics/ref_disk_preflight.log
+ create mode 100644 docs/production/evidence/wing01_optics/reverse.log
+ create mode 100644 docs/production/evidence/wing01_optics/reverse.png
+ create mode 100644 docs/production/evidence/wing01_optics/source_final.log
+ create mode 100644 docs/production/evidence/wing01_optics/source_import_initial.log
+ create mode 100644 docs/production/evidence/wing01_optics/source_import_physics_final.log
+ create mode 100644 docs/production/evidence/wing01_optics/validation_manifest.json
+ create mode 100644 game/art/meshes/wing01/sm_wing01_focus.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_focus.glb.import
+ create mode 100644 game/art/meshes/wing01/sm_wing01_frame.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_frame.glb.import
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_inner.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_inner.glb.import
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_middle.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_middle.glb.import
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_outer.glb
+ create mode 100644 game/art/meshes/wing01/sm_wing01_ring_outer.glb.import
+ create mode 100644 game/gameplay/puzzles/wing01/wing01_optics_sample.tscn
+ create mode 100644 game/tests/wing01_optics_review.gd
+ create mode 100644 game/tests/wing01_optics_review.gd.uid
+ create mode 100644 game/tests/wing01_optics_smoke.gd
+ create mode 100644 game/tests/wing01_optics_smoke.gd.uid
+ create mode 100644 tools/assemble_wing01_optics.py
+ create mode 100644 tools/create_wing01_optics.py
+ create mode 100644 tools/verify_wing01_optics_source.py
+exit=0

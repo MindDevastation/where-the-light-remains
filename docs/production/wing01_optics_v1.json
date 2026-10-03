@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "base_main": "e978c0d813b94d1299d8376879c75ec309012d3c",
+  "source": "assets/3d/blender/wing01/wing01_optics_sample.blend",
+  "wrapper": "game/gameplay/puzzles/wing01/wing01_optics_sample.tscn",
+  "parts": [
+    {
+      "id": "frame",
+      "stem": "sm_wing01_frame",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "materials": [
+        "stone",
+        "brass",
+        "walnut",
+        "iron"
+      ],
+      "triangle_ceiling": 4500
+    },
+    {
+      "id": "outer",
+      "stem": "sm_wing01_ring_outer",
+      "joint": [
+        0,
+        1.72,
+        0
+      ],
+      "materials": [
+        "brass",
+        "walnut",
+        "iron"
+      ],
+      "triangle_ceiling": 2200,
+      "radius_m": 0.89,
+      "width_m": 0.07,
+      "segments": 80,
+      "grip": [
+        -0.681779554,
+        -0.572080973,
+        -0.095
+      ],
+      "pick_radius_m": 0.078
+    },
+    {
+      "id": "middle",
+      "stem": "sm_wing01_ring_middle",
+      "joint": [
+        0,
+        1.72,
+        0
+      ],
+      "materials": [
+        "brass",
+        "walnut",
+        "iron"
+      ],
+      "triangle_ceiling": 2200,
+      "radius_m": 0.7,
+      "width_m": 0.07,
+      "segments": 80,
+      "grip": [
+        0.401503505,
+        -0.573406431,
+        -0.095
+      ],
+      "pick_radius_m": 0.078
+    },
+    {
+      "id": "inner",
+      "stem": "sm_wing01_ring_inner",
+      "joint": [
+        0,
+        1.72,
+        0
+      ],
+      "materials": [
+        "brass",
+        "walnut",
+        "iron"
+      ],
+      "triangle_ceiling": 2200,
+      "radius_m": 0.51,
+      "width_m": 0.07,
+      "segments": 80,
+      "grip": [
+        0.327821681,
+        0.390682666,
+        -0.095
+      ],
+      "pick_radius_m": 0.078
+    },
+    {
+      "id": "focus",
+      "stem": "sm_wing01_focus",
+      "joint": [
+        0.68,
+        0.59,
+        -0.56
+      ],
+      "materials": [
+        "brass",
+        "walnut",
+        "iron"
+      ],
+      "triangle_ceiling": 1500,
+      "radius_m": 0.19,
+      "pick": [
+        0,
+        0,
+        -0.085
+      ],
+      "pick_radius_m": 0.09
+    }
+  ],
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "walnut": "res://art/materials/m_dark_walnut.tres",
+    "iron": "res://art/materials/m_dark_iron.tres"
+  },
+  "axis": [
+    0,
+    0,
+    1
+  ],
+  "focus_test_degrees": [
+    0,
+    72,
+    144,
+    216,
+    288
+  ],
+  "ring_test_degrees": [
+    0,
+    37,
+    121,
+    239,
+    360
+  ],
+  "references": [
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_a.png",
+      "sha256": "a14c9bfadf4d9f4c49168b8f71ece04308fe989945eb290e8bcc75a8fb34f7d1",
+      "git_blob": "1d458ff122c5b901d31d2feefcdbeb0d20b5a74a"
+    },
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_b.png",
+      "sha256": "b2939f105a97f6a6421cf2fc84bba543550af06daf669e788bcdb976d47d4f29",
+      "git_blob": "6e65e01284b7364b8020cecca69145bdb070d792"
+    },
+    {
+      "path": "assets/concept_art/hero_props/‘Heat-Light’ device_v2_angle_c.png",
+      "sha256": "7a18f5fcc6bebbffbea672f5779b6aa59b4bc1b20dc1fe954143e97de57ecd9e",
+      "git_blob": "dddcbbdbe131a411317ac7bece626c495d2ebf0f"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_a.png",
+      "sha256": "fd48d679468af3eec489d6f0cdd36934e573fba1b3332395bc9a2a7c517c283e",
+      "git_blob": "aa725d266cdaa5528abd1a5ee4b121f5ca6ab42f"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_b.png",
+      "sha256": "5c74210307c9c4c1c107b27864d60957c39c91c9721c8441110a18c810c8c47f",
+      "git_blob": "bba1ce619c580dc931e1ff287ff057f85bb6a403"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_c.png",
+      "sha256": "b90c07718e4ef845fe6e51c5847c863d2bc7e7071fb067212293ef35fda3dcf5",
+      "git_blob": "2f5930c2642b196ee64ca7a59d15bfed9a20afec"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_a.png",
+      "sha256": "42a374179355f8a538b8645552867918e14ebe7b752ec6eac8a1b548e834d6ee",
+      "git_blob": "f5ef9b0cbfa0c757290eb2870320fadf84bc90c0"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_b.png",
+      "sha256": "07ebdbc5099c57e7e04b07629e8c59590e403c354c329c05c4c79229f3321e03",
+      "git_blob": "c069fb7c0df7d25c1da482b26e8bc706acc94b46"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_c.png",
+      "sha256": "ded04ed38a910bbadddaec4762463a84d0cf6d4046852090226c53df18130d78",
+      "git_blob": "23fd00472de93e20e93289839e75dc067afb316b"
+    }
+  ]
+}

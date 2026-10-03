@@ -265,5 +265,23 @@ No canonical text, mechanics, save/state, accessibility or global budget changed
 assignments and production casting/asset inputs pause their dependent work only.
 **NEXT SAFE DEVELOPMENT STEP (updated 2026-10-03):** the five-module Archive
 sample is now validated under the current v2 references and unchanged technical
-contract. Proceed to the bounded Wing I hero mechanism brief/sample and playable
+contract. The subsequent Wing I mechanical carrier below passes its bounded
+sample gates. Proceed to the canonical interaction/controller brief and playable
 slice; no bulk distant-stage production before hardware profiling.
+
+## Subsequent Wing I carrier — 2026-10-03 UTC
+
+The initial audit matrix above records the original v2 rebaseline snapshot.
+The Heat-Light slot now has a bounded original S02-001/S02-003 mechanical sample:
+`assets/3d/blender/wing01/wing01_optics_sample.blend`, five GLBs under
+`game/art/meshes/wing01/`, and
+`game/gameplay/puzzles/wing01/wing01_optics_sample.tscn`. Current A/B/C hero and
+S02 room hashes are pinned in `wing01_optics_v1.json`. Three independent rings
+and a five-stop focus wheel retain canonical structure; the pictured crystal
+does not replace them. Source/import/physics/three real Forward+ views and
+independent LFS retrieval PASS: `evidence/wing01_optics/README.md`.
+
+Heat-Light / S02 remains **PARTIAL**: emitter/star/Hearth, rewards, room state,
+shipping controller and physical target performance remain unimplemented or
+unmeasured. This sample accepts stone/brass/walnut/iron integration only; the
+historical matrix is not rewritten to imply full-stage visual acceptance.
