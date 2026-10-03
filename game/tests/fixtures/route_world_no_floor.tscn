@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://tests/fixtures/route_world.gd" id="1"]
+[node name="NoFloorWorld" type="Node3D"]
+script = ExtResource("1")
+stage_id = &"s06_fixture"
+default_spawn = NodePath("Entry")
+[node name="Entry" type="Marker3D" parent="."]
+position = Vector3(0, 0.004, 1.5)

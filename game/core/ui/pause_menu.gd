@@ -71,7 +71,7 @@ func _button(parent: Node, text: String) -> Button:
 
 
 func open() -> bool:
-    if visible or not _player.active or get_tree().paused or not InputManager.can_look():
+    if visible or not is_instance_valid(_player) or not _player.active or get_tree().paused or not InputManager.can_look():
         return false
     if InputManager.mode not in [InputManager.Mode.GAMEPLAY, InputManager.Mode.LIMITED_LOOK]:
         return false

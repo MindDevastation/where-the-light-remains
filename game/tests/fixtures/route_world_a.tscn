@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="res://tests/fixtures/route_world.gd" id="1"]
+[ext_resource type="PackedScene" path="res://tests/fixtures/archive_kit_sample.tscn" id="2"]
+[node name="RouteWorldA" type="Node3D"]
+script = ExtResource("1")
+stage_id = &"s01_fixture"
+default_spawn = NodePath("Entry")
+checkpoint_spawns = {&"fixture_checkpoint": NodePath("Entry")}
+[node name="Archive" parent="." instance=ExtResource("2")]
+[node name="Entry" type="Marker3D" parent="."]
+position = Vector3(0, 0.004, 1.5)

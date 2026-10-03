@@ -1,0 +1,11 @@
+Source: 1b30a7af44469e141c0fa63eba29b2822916b424
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/toolchain/router-clean-accepted/game --audio-driver Dummy res://tests/pause_fade_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PAUSE_FADE runtime: 4.7.2-stable (official); display=headless
+PAUSE settings return: modal=false; pause=true; tree_paused=true; settings_fov=96.0; camera_fov=96.0; message=
+PAUSE checked: inactive/unsupported/focus gates, physical controller stop, echo, settings Esc/Apply nesting, mouse/Esc resume, held W/recapture, LIMITED_LOOK and external lock/release
+FADE checked: pause-independent animation, awaited completion, overlap/invalid rejection, clear/free cancellation and actual GUI/key blocking
+PAUSE_FADE PASS: controller pause/resume, nested Russian settings, locks, awaited fade/cancel/input blocking and App safe-exit dispatch
+
+Exit: 0

@@ -1,0 +1,13 @@
+Source: 1b30a7af44469e141c0fa63eba29b2822916b424
+Fresh HEAD archive initially without .godot, game/tools and two immutable JSON art contracts.
+14 LFS SHA-256/size identities verified; 11 existing runtime copies reused.
+$ python3 ../toolchain/clean_runtime_archive.py . ../toolchain/router-clean-accepted --verify
+CLEAN_RUNTIME_FILES PASS: 1b30a7af44469e141c0fa63eba29b2822916b424; unchanged tracked=242
+Exit: 0
+$ git diff --exit-code a1aedb9d21a37efeafbaffd53e1f8e1dfa1f839d 1b30a7af44469e141c0fa63eba29b2822916b424 -- game/autoload game/core game/worlds game/art tools
+Exit: 0; production/runtime/tool trees identical. Only the cleanup smoke fixture changed; its headless and graphical checks reran at final source.
+$ git fsck --full --strict
+Exit: 0; no diagnostics.
+$ git lfs fsck
+Git LFS fsck OK
+Exit: 0

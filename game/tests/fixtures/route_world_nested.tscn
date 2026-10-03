@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://tests/fixtures/route_world_a.tscn" id="1"]
+[node name="NestedWorld" instance=ExtResource("1")]
+stage_id = &"s08_fixture"
+default_spawn = NodePath("Spawns/Nested")
+checkpoint_spawns = {&"fixture_checkpoint": NodePath("Spawns/Nested")}
+position = Vector3(2, 0, 3)
+rotation = Vector3(0, 1.5707963, 0)
+[node name="Spawns" type="Node3D" parent="."]
+position = Vector3(1, 0, 0)
+[node name="Nested" type="Marker3D" parent="Spawns"]
+position = Vector3(-1, 0.004, 1.5)
+rotation = Vector3(0, -1.5707963, 0)

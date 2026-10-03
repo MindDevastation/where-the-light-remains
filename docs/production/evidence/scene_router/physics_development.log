@@ -1,0 +1,67 @@
+$ ../toolchain/bin/godot --headless --path game --audio-driver Dummy res://tests/router_pipeline_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: ROUTER_PIPELINE FAIL: First world/state/player/fade/input commit
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/router_pipeline_smoke.gd:20)
+       [1] _run (res://tests/router_pipeline_smoke.gd:64)
+       [2] _wait_route (res://tests/router_pipeline_smoke.gd:31)
+ERROR: Index p_index = 0 is out of bounds ((int)data.children_cache.size() - data.internal_children_front_count_cache - data.internal_children_back_count_cache = 0).
+   at: get_child (scene/main/node.cpp:1861)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://tests/router_pipeline_smoke.gd:65)
+       [1] _wait_route (res://tests/router_pipeline_smoke.gd:31)
+ERROR: Index p_index = 0 is out of bounds ((int)data.children_cache.size() - data.internal_children_front_count_cache - data.internal_children_back_count_cache = 0).
+   at: get_child (scene/main/node.cpp:1861)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://tests/router_pipeline_smoke.gd:69)
+       [1] request_registered_stage (res://autoload/scene_router.gd:171)
+       [2] _preload_definition (res://autoload/scene_router.gd:73)
+ERROR: ROUTER_PIPELINE FAIL: Invalid checkpoint preserves original world
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/router_pipeline_smoke.gd:20)
+       [1] _run (res://tests/router_pipeline_smoke.gd:69)
+       [2] request_registered_stage (res://autoload/scene_router.gd:171)
+       [3] _preload_definition (res://autoload/scene_router.gd:73)
+ERROR: ROUTER_PIPELINE FAIL: Validated saved-state route
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/router_pipeline_smoke.gd:20)
+       [1] _run (res://tests/router_pipeline_smoke.gd:72)
+       [2] request_registered_stage (res://autoload/scene_router.gd:190)
+ERROR: Index p_index = 0 is out of bounds ((int)data.children_cache.size() - data.internal_children_front_count_cache - data.internal_children_back_count_cache = 0).
+   at: get_child (scene/main/node.cpp:1861)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://tests/router_pipeline_smoke.gd:73)
+       [1] request_registered_stage (res://autoload/scene_router.gd:190)
+SCRIPT ERROR: Invalid access to property or key 'applied_counter' on a base object of type 'null instance'.
+          at: _run (res://tests/router_pipeline_smoke.gd:74)
+          GDScript backtrace (most recent call first):
+              [0] _run (res://tests/router_pipeline_smoke.gd:74)
+              [1] request_registered_stage (res://autoload/scene_router.gd:190)
+ERROR: ROUTER_PIPELINE FAIL: timeout
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] <anonymous lambda> (res://tests/router_pipeline_smoke.gd:11)
+
+exit=1
+$ ../toolchain/bin/godot --headless --path game --audio-driver Dummy res://tests/router_pipeline_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ROUTE_SPAWN diagnostic ground: feet=(0.0, 0.004, 1.5); hit={  }
+ERROR: ROUTER_PIPELINE FAIL: First world/state/player/fade/input commit
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/router_pipeline_smoke.gd:20)
+       [1] _run (res://tests/router_pipeline_smoke.gd:64)
+       [2] _wait_route (res://tests/router_pipeline_smoke.gd:31)
+
+exit=1
+$ ../toolchain/bin/godot --headless --path game --audio-driver Dummy res://tests/router_pipeline_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ROUTER_PIPELINE PASS: initial preload/replace/state/spawn/fade, overlap, checkpoint/apply rejection, same-mode cancellation and removed root; full physical/checkpoint/rollback acceptance pending
+
+exit=0

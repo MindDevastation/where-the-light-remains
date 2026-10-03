@@ -1,0 +1,7 @@
+Committed source: 8148090fd22a459e526d5fb7e635d7e843cfb597
+$ ../toolchain/bin/godot --headless --path game --audio-driver Dummy res://tests/router_preload_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ROUTER_PRELOAD PASS: real pending threaded cancellation/timeout, caller release, serialized drain and engine token collection; request/terminal failures; globals preserved
+
+Exit: 0

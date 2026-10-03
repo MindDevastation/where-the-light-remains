@@ -3,7 +3,7 @@ extends Node
 @onready var world_slot: Node3D = $WorldSlot
 
 func _ready() -> void:
-    SceneRouter.bind_world_slot(world_slot)
+    SceneRouter.bind_world_slot(world_slot, $PlayerContainer/Player, $TransitionLayer/FadeOverlay)
     $UILayer/PauseMenu.exit_requested.connect(App.request_safe_exit)
     App.exit_failed.connect(_on_exit_failed)
     EventBus.stage_changed.emit(GameState.current_stage_id)
@@ -22,3 +22,7 @@ func _on_exit_failed(error: Error) -> void:
     # A loading/fade blocker must not hide the recovery choices or consume clicks.
     $TransitionLayer/FadeOverlay.clear()
     $UILayer/ExitFailureDialog.open(error)
+
+
+func _exit_tree() -> void:
+    SceneRouter.unbind_world_slot(world_slot)

@@ -28,6 +28,11 @@ func _on_mode_changed(_mode: InputManager.Mode) -> void:
 
 
 func _refresh() -> void:
+    if not is_instance_valid(_player):
+        hide()
+        _prompt.text = ""
+        _prompt.hide()
+        return
     visible = _player.active and InputManager.can_interact()
     var target := _player.focused_target
     _prompt.text = "E · " + target.prompt if is_instance_valid(target) else ""
