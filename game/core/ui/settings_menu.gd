@@ -172,6 +172,8 @@ func draft() -> Dictionary:
         elif field is CheckButton:
             values[key] = field.button_pressed
         else:
+            # Button presses can precede the SpinBox focus-exit text commit.
+            field.apply()
             values[key] = field.value
     return values
 

@@ -65,6 +65,7 @@ func _run() -> void:
     chosen["fov"] = 91.0
     _check(SettingsManager.apply_settings(chosen, _path) == OK, "Atomic replacement of existing file")
     _check(FileAccess.get_sha256(_path) != first_hash, "Replacement did not change file")
+    SettingsManager._assign(SettingsManager.DEFAULTS)
     _check(SettingsManager.load_settings(_path) == OK and SettingsManager.snapshot() == chosen, "Typed ConfigFile round trip")
     for pair in [["Master", .4], ["Music", .3], ["SFX", 0.0]]:
         var index := AudioServer.get_bus_index(pair[0])
