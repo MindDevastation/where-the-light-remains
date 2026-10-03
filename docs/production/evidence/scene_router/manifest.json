@@ -12,6 +12,8 @@
     "prototype_import.log": "7b2a9edbbe3f9e28ab293721aa90bfa96e0df03eecbd9599f99bba9e1135686e",
     "contract_clean_import.log": "61963e4a54a2a531056f9b83888b428c386dcfc3e9d82da0d23aa510131b0552",
     "contract_pause.log": "9e37b3d382b0ad6213bdf8a79c9058740ca16db6372f11b87e7180179dfaf715",
-    "prototype_graphical.log": "73651ea535f45ee96431ccb564c6999ace7824a6b7bdb6588c996bb95055d24c"
-  }
+    "prototype_graphical.log": "73651ea535f45ee96431ccb564c6999ace7824a6b7bdb6588c996bb95055d24c",
+    "preload_cleanup.log": "9a6222a00903e0a24b4a5c8d85f3af6d7bd83cacf1c3944100f67f37865e9816"
+  },
+  "preload_cleanup_source": "8148090fd22a459e526d5fb7e635d7e843cfb597"
 }

@@ -30,6 +30,9 @@ spawn/rollback/ownership and authenticated graphical transition checks pass.
 At the owner's 06:32:55 UTC deadline preserve the active feature checkpoint and
 pause any unfinished implementation/acceptance; do not merge unfinished work.
 
+The owner renewed development for 13:19:55–16:19:55 UTC. See
+`SESSION_2026-10-03_13-19.md`; the earlier deadline above is historical.
+
 ## Current checkpoint — acceptance remains open
 
 Feature `feature/02-state-saves/scene-router`. Contract source and latest prototype
@@ -51,8 +54,11 @@ Remaining before feature acceptance/merge:
 
 - Checkpoint write failure injection and real isolated successful checkpoint
   transition, including dirty/backup/state ordering.
-- Preload cancellation/timeout resource cleanup and explicit failure coverage;
-  no leaked outstanding threaded request when cancellation happens early.
+- Preload cancellation/timeout cleanup now passes real delayed engine-loader
+  tests. Caller cancellation is prompt; engine worker cancellation is not
+  available through Godot's public API. Retain and nonblockingly collect its
+  terminal result, including failed requests, before accepting another load.
+  See `preload_cleanup.log` and its committed source in the manifest.
 - Cancellation after GameState commit/during fade-out, App exit failure during
   transition, rebind/root removal at each phase and exact event/audio/dirty rollback.
 - Physics settling on rollback, absent/sloped support, nested/transformed spawn,
