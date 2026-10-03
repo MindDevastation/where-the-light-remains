@@ -282,3 +282,11 @@ The four ARCH inventory rows remain PARTIAL; no Hub layout, player, puzzle or
 shipping UI is invented. Next safe feature is the bounded Wing I hero mechanism
 brief/sample with canonical gameplay pivots, then the representative playable
 vertical slice. Physical target-GPU profiling still gates bulk modeling.
+
+Archive sample integration: [PR #25](https://github.com/MindDevastation/where-the-light-remains/pull/25)
+merged the validated feature `774b50c52c062173d36a5f37f8ea07c05f393b16` into
+Art Foundation at `9f95ed22b97a9e732d0a8f2adb5e352e3f5d034b`. Trees match exactly.
+Authenticated X11 TCP/Vulkan Forward+ GameRoot/eight-autoload/safe-exit smoke
+PASS on that merged epic; actual output is
+`evidence/modular_archive_kit/integration_epic_smoke.log`. The stable slice follows
+the normal epic-to-main route; Git merge history retains the final integration SHA.

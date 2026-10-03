@@ -122,3 +122,15 @@ superseded: [fresh_relative_path_review.log](fresh_relative_path_review.log).
 Final fresh validation uses absolute source/script/project paths, synchronizes
 PWD and asserts the actual opened source filepath. Only that final run establishes
 the retrieved-copy source/import/physics/startup gate.
+
+## Integration
+
+[PR #25](https://github.com/MindDevastation/where-the-light-remains/pull/25):
+validated feature `774b50c52c062173d36a5f37f8ea07c05f393b16` merged into Art
+Foundation at `9f95ed22b97a9e732d0a8f2adb5e352e3f5d034b`. Actual premerge
+base/head/clean status, matching-head merge and tree equality are recorded in
+[integration_feature.log](integration_feature.log). The merged tree exactly
+matches the validated feature. [integration_epic_smoke.log](integration_epic_smoke.log)
+records the subsequent authenticated X11 TCP/Vulkan Forward+ GameRoot startup,
+eight autoloads and safe exit PASS. A final documentation-only checkpoint records
+these results before the ordinary epic-to-main PR; no runtime/payload changes.
