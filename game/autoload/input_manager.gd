@@ -13,8 +13,11 @@ const GAMEPLAY_ACTIONS: Array[StringName] = [
 
 var mode: Mode:
     get: return _mode
+var mode_revision: int:
+    get: return _mode_revision
 
 var _mode: Mode = Mode.UI
+var _mode_revision := 0
 var _focused := true
 var _was_paused := false
 var _available := false
@@ -32,6 +35,8 @@ func _ready() -> void:
 
 
 func set_mode(new_mode: Mode) -> void:
+    # Every explicit request transfers ownership, including the same enum value.
+    _mode_revision += 1
     if new_mode == _mode:
         _refresh()
         return

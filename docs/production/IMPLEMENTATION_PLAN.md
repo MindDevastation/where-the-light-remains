@@ -46,7 +46,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 
 - [x] Typed SaveGame v1 DTO/resource with bounded JSON-only state, exact numeric round trips and validated isolated GameState capture/apply. Clean import, invalid/version/order/resource/cycle cases, state/file integrity, prior shell/player/input and Forward+ startup PASS; see `SAVE_SYSTEM.md` and `evidence/save_dto/`. Disk persistence and registered-world validation remain later tasks.
 - [x] Atomic validated JSON write/read + last-valid backup + read-only corruption fallback. Failed writes retain dirty/state/files; future schemas are protected; Russian retry/stay guards App and actual native close. Clean import, physical file/failure/recovery tests, successful dirty exits, GUI and Forward+ regressions PASS; see `SAVE_SYSTEM.md` and `evidence/atomic_save/`. Both-corrupt New Game choice UI and authored checkpoint triggers belong to Boot/world integration.
-- [ ] SceneRouter preload/fade/input-lock/apply-state pipeline.
+- [x] SceneRouter registered preload/checkpoint/fade/input/state/spawn pipeline. Clean acceptance passes actual checkpoint files, transactional cancellation/rollback, physics/callback restoration, native close recovery and same-world S14→15 presentation; see `SCENE_ROUTER.md` and `evidence/scene_router/`. Shipping worlds/registry, Boot/Continue and authored final choreography remain their own features. PR #41 is merged into the epic; its exact accepted tree and merged-epic startup/safe-exit gate pass. Integration follows the normal epic → main PR route.
 - [ ] ArchiveMain graybox + spawn/state restoration.
 - [ ] AudioDirector dual-player crossfade + group/unique playlist skeleton + silence locks.
 
@@ -331,3 +331,28 @@ Merged-epic graphical GameRoot startup/safe exit and the previous Archive
 physics/material baseline pass; evidence is under `evidence/wing01_optics/`.
 The final documentation-only checkpoint follows the standing ordinary
 epic→main integration policy; it changes no accepted runtime or payload.
+
+## SceneRouter integration recovery — 2026-10-03 UTC
+
+Feature [PR #41](https://github.com/MindDevastation/where-the-light-remains/pull/41)
+merged accepted checkpoint `c050d9f7a6f02a0b2be5f5497264ee8d0171c226` into
+`epic/02-state-saves` at `1bbd933b10f6cc7bbb7b946e75b53170f763c13a` before the
+environment disconnected. The recovered remote merge tree equals the feature
+exactly. All 55 accepted evidence hashes match. The real native X11 close test,
+including failed-write GUI recovery and primary/backup verification, had already
+passed and was reused, together with the accepted 18 headless / 11 graphical /
+5 isolated exit results. No acceptance suite was restarted.
+
+The recreated workspace contained an older snapshot and no surviving Godot/Xvfb
+process. Recovery restored the branch, existing credential helper, xkbcomp link
+and ten missing runtime payloads using their recorded SHA-256/size identities.
+Fresh import and the required merged-epic GameRoot/eight-autoload/safe-exit smoke
+pass on authenticated TCP X11/Vulkan Forward+. All 242 archived tracked files
+remain unchanged, with eleven exact runtime payloads. Actual recovery and merge
+gate evidence: `evidence/scene_router/resume_manifest.json`,
+`integration_epic_smoke.log`; session: `SESSION_2026-10-03_16-40.md`.
+
+Main integration is tracked in
+[PR #42](https://github.com/MindDevastation/where-the-light-remains/pull/42);
+Git merge history records its final SHA. AudioDirector is the next independent
+implementation task.

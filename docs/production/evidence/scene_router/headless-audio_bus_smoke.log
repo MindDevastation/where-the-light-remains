@@ -1,0 +1,29 @@
+Source: 1b30a7af44469e141c0fa63eba29b2822916b424
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/toolchain/router-clean-accepted/game --audio-driver Dummy --script res://tests/audio_bus_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_BUS runtime: 4.7.2-stable (official); display=headless; audio=Dummy
+AUDIO_BUS source: project default layout; generated PCM through the real mixer; no speaker test
+AUDIO_BUS route: Master -> output; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: Music -> Master; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Main -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: Music_Stems -> Music; peaks={"Master":0.0999786406755447,"Music":0.0999786406755447,"SFX":0.0}
+AUDIO_BUS route: SFX -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_Critical -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: SFX_World -> SFX; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0999786406755447}
+AUDIO_BUS route: Ambience -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: UI -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS route: VO_RESERVED -> Master; peaks={"Master":0.0999786406755447,"Music":0.0,"SFX":0.0}
+AUDIO_BUS gain: Music_Main; half-gain ratio=0.5
+AUDIO_BUS gain: Music_Stems; half-gain ratio=0.5
+AUDIO_BUS mute: Music_Main; Master peak=0.0
+AUDIO_BUS mute: Music_Stems; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: Music
+AUDIO_BUS gain: SFX_Critical; half-gain ratio=0.5
+AUDIO_BUS gain: SFX_World; half-gain ratio=0.5
+AUDIO_BUS mute: SFX_Critical; Master peak=0.0
+AUDIO_BUS mute: SFX_World; Master peak=0.0
+AUDIO_BUS checked parent gain/mute and branch independence: SFX
+AUDIO_BUS PASS: automatic layout, startup preferences, all routes, parent gain/mute and restored preference state
+
+Exit: 0

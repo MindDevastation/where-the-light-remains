@@ -1,0 +1,28 @@
+Source: 1bbd933b10f6cc7bbb7b946e75b53170f763c13a
+$ python3 ../toolchain/resume_scene_router.py
+SAVED_EVIDENCE_INTEGRITY PASS: 55 files; accepted feature equals merged epic
+$ git lfs smudge -- game/art/meshes/archive_kit/sm_archive_arch_4m.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/archive_kit/sm_archive_arch_4m.glb
+$ git lfs smudge -- game/art/meshes/archive_kit/sm_archive_floor_1m.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/archive_kit/sm_archive_floor_1m.glb
+$ git lfs smudge -- game/art/meshes/archive_kit/sm_archive_pier_4m.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/archive_kit/sm_archive_pier_4m.glb
+$ git lfs smudge -- game/art/meshes/archive_kit/sm_archive_wall_2m.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/archive_kit/sm_archive_wall_2m.glb
+$ git lfs smudge -- game/art/meshes/archive_kit/sm_archive_wall_4m.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/archive_kit/sm_archive_wall_4m.glb
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/validation/sm_pipeline_meter_cube.glb
+$ git lfs smudge -- game/art/meshes/wing01/sm_wing01_focus.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/wing01/sm_wing01_focus.glb
+$ git lfs smudge -- game/art/meshes/wing01/sm_wing01_frame.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/wing01/sm_wing01_frame.glb
+$ git lfs smudge -- game/art/meshes/wing01/sm_wing01_ring_inner.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/wing01/sm_wing01_ring_inner.glb
+$ git lfs smudge -- game/art/meshes/wing01/sm_wing01_ring_middle.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/wing01/sm_wing01_ring_middle.glb
+$ git lfs smudge -- game/art/meshes/wing01/sm_wing01_ring_outer.glb < tracked-pointer > verified-runtime-copy
+RUNTIME_PAYLOAD_RESTORED: game/art/meshes/wing01/sm_wing01_ring_outer.glb
+RECOVERY PASS: accepted tracked tree preserved; 11 runtime payloads; newly retrieved=10
+Existing X11 TCP toolchain restored; source=1bbd933b10f6cc7bbb7b946e75b53170f763c13a
+
+Exit: 0

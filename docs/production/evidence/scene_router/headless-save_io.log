@@ -1,0 +1,9 @@
+Source: 1b30a7af44469e141c0fa63eba29b2822916b424
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/toolchain/router-clean-accepted/game --audio-driver Dummy res://tests/save_io_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SAVE_IO runtime: 4.7.2-stable (official); display=headless
+SAVE_IO checked: first/previous backup, real JSON round trips, corruption fallback/read-only decisions, future-schema protection, backup/primary replacement failures, no temp leaks, bounded reads and dirty commit
+SAVE_IO PASS: actual atomic files/backup/recovery/dirty and failed App exit, Russian retry/stay, close guard; production files preserved
+
+Exit: 0

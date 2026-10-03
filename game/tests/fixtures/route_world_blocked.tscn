@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://tests/fixtures/route_world_a.tscn" id="1"]
+[sub_resource type="BoxShape3D" id="Blocked"]
+size = Vector3(1, 1.8, 1)
+[node name="RouteWorldBlocked" instance=ExtResource("1")]
+stage_id = &"s04_fixture"
+[node name="Blocker" type="StaticBody3D" parent="."]
+position = Vector3(0, 0.9, 1.5)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blocker"]
+shape = SubResource("Blocked")

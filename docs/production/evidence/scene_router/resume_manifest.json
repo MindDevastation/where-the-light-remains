@@ -1,0 +1,28 @@
+{
+  "resume_source": "1bbd933b10f6cc7bbb7b946e75b53170f763c13a",
+  "accepted_feature": "c050d9f7a6f02a0b2be5f5497264ee8d0171c226",
+  "main_before_integration": "2e4531e154707db1020412e7643d2b8e27c9c0c3",
+  "feature_pr": 41,
+  "feature_pr_merged_at": "2026-10-03T14:25:15Z",
+  "accepted_evidence_files_verified": 55,
+  "accepted_manifest_sha256": "570c76222d1558024d06b3267e4c1b6d4f685de7c4aabd9bc682da1bbc90fa09",
+  "reused_completed_results": {
+    "exit-native.log": "ba5d8d0cf0dced2df5ad5dc09dae5d1ba066784f395ed115cdce1f057134e8d9",
+    "baseline-exit-native.log": "fda63ed194af035aae0c10a730340a18ba51ee42cfa9b90b5326d37e453e417b",
+    "graphics-router_seamless.log": "cd60d790002003432237aacb79ea4b779a05bfbb318699a833864709a50512d1"
+  },
+  "repeated_feature_acceptance_suites": 0,
+  "stale_graphical_processes_found": 0,
+  "processes_terminated_on_resume": 0,
+  "merged_epic_runtime_files_unchanged": 242,
+  "runtime_payloads_verified": 11,
+  "runtime_payloads_restored": 10,
+  "integration_startup_pass": true,
+  "evidence": {
+    "resume_credential_failure.log": "6533f34e040be8896feee5c30dc289eb381257f1a3d6d133ab6fbdc04105bdf9",
+    "resume_credential_restore.log": "9159450387b48f5aeec77db108cc8dbe19cbb0fbcd133c783d73109573ac6ad2",
+    "resume_recovery.log": "e2b4baecbae487855eb050d554d9113e8b8b7908843c13a66c324650cf27c7d6",
+    "integration_import.log": "2af5cf77e176cd6e9488df55efc07c01f0699548fc680e53689691acb153f312",
+    "integration_epic_smoke.log": "a5e8d0eca2e98c34742b077dda0b9d2dad401d44461879cd922146aa26531b71"
+  }
+}

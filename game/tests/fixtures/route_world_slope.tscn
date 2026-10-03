@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="res://tests/fixtures/route_world.gd" id="1"]
+[sub_resource type="BoxShape3D" id="Floor"]
+size = Vector3(8, 0.1, 8)
+[node name="SlopeWorld" type="Node3D"]
+script = ExtResource("1")
+stage_id = &"s07_fixture"
+default_spawn = NodePath("Entry")
+[node name="Floor" type="StaticBody3D" parent="."]
+position = Vector3(0, -0.1, 0)
+rotation = Vector3(0, 0, 1.0471976)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="Entry" type="Marker3D" parent="."]
+position = Vector3(0, 0.15, 0)

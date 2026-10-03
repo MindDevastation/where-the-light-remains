@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://tests/fixtures/route_world_a.tscn" id="1"]
+[node name="SharedWorld" instance=ExtResource("1")]
+stage_id = &"s14_fixture"
+supported_stages = Array[StringName]([&"s14_fixture", &"s15_fixture"])

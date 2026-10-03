@@ -1,0 +1,10 @@
+Source: 1b30a7af44469e141c0fa63eba29b2822916b424
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/toolchain/router-clean-accepted/game --audio-driver Dummy res://tests/debug_tools_smoke.tscn -- --dev-tools --expect-overlay
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=true; display=headless; expected_overlay=true
+DEBUG_TOOLS checked: missing/valid/malformed/oversize save preview without modifying source files
+DEBUG_TOOLS checked: live stage/save/audio, deep-copy snapshot, F3/echo/pause, input/capture, Cyrillic glyphs
+DEBUG_TOOLS PASS: gate, state/file integrity, autoloads; requesting App safe exit
+
+Exit: 0

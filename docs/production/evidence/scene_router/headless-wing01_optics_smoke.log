@@ -1,0 +1,20 @@
+Source: 1b30a7af44469e141c0fa63eba29b2822916b424
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/toolchain/router-clean-accepted/game --audio-driver Dummy --script res://tests/wing01_optics_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WING01_IMPORT PASS: frame; triangles=2764; shared surfaces=4
+WING01_IMPORT PASS: outer; triangles=1588; shared surfaces=3
+WING01_IMPORT PASS: middle; triangles=1588; shared surfaces=3
+WING01_IMPORT PASS: inner; triangles=1588; shared surfaces=3
+WING01_IMPORT PASS: focus; triangles=1108; shared surfaces=3
+WING01_ARTICULATION PASS: outer; yaw=0.0; independent poses=5
+WING01_ARTICULATION PASS: middle; yaw=0.0; independent poses=5
+WING01_ARTICULATION PASS: inner; yaw=0.0; independent poses=5
+WING01_ARTICULATION PASS: focus; yaw=0.0; independent poses=5
+WING01_ARTICULATION PASS: outer; yaw=1.5707963267949; independent poses=5
+WING01_ARTICULATION PASS: middle; yaw=1.5707963267949; independent poses=5
+WING01_ARTICULATION PASS: inner; yaw=1.5707963267949; independent poses=5
+WING01_ARTICULATION PASS: focus; yaw=1.5707963267949; independent poses=5
+WING01_SMOKE PASS: 8636 triangles / 16 shared surfaces; 40 independent poses; 48 actual Area rays; five focus stops; two assembly yaws; primitive blocking
+
+Exit: 0

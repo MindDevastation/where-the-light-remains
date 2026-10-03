@@ -1,0 +1,6 @@
+$ ../toolchain/bin/godot --headless --path /workspace/scratch/4f0b36b4bb0e/wlr-art-integration/../toolchain/shell/router-contract/game --audio-driver Dummy res://tests/world_contract_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WORLD_CONTRACT PASS: isolated registered definitions and actual threaded preload, full stage/checkpoint/domain validation, offline upright spawn and state; no production routing or save IO
+
+exit=0
