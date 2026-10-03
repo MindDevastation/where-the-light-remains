@@ -352,5 +352,7 @@ remain unchanged, with eleven exact runtime payloads. Actual recovery and merge
 gate evidence: `evidence/scene_router/resume_manifest.json`,
 `integration_epic_smoke.log`; session: `SESSION_2026-10-03_16-40.md`.
 
-This stable slice uses the normal epic-to-main integration; Git merge history
-records its final SHA. AudioDirector is the next independent implementation task.
+Main integration is tracked in
+[PR #42](https://github.com/MindDevastation/where-the-light-remains/pull/42);
+Git merge history records its final SHA. AudioDirector is the next independent
+implementation task.

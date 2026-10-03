@@ -151,5 +151,6 @@ The merged-epic startup gate now also passes in a fresh immutable runtime
 archive, using the established authenticated TCP X11/Vulkan Forward+ toolchain.
 Its 242 tracked files and eleven runtime payloads remain exact. Evidence:
 `evidence/scene_router/integration_epic_smoke.log` and `resume_manifest.json`.
-The stable slice proceeds through the ordinary epic-to-main PR; shipping story
-content, Boot and AudioDirector remain separate work.
+Main integration is tracked in
+[PR #42](https://github.com/MindDevastation/where-the-light-remains/pull/42).
+Shipping story content, Boot and AudioDirector remain separate work.
