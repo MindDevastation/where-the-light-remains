@@ -1,0 +1,32 @@
+[
+  {
+    "path": "assets/3d/blender/wing01/wing01_optics_sample.blend",
+    "bytes": 1210660,
+    "sha256": "421274ae1aadbad4f14f6d11c3d52b228c862a809bd9d71e43475432996bf3d0"
+  },
+  {
+    "path": "game/art/meshes/wing01/sm_wing01_frame.glb",
+    "bytes": 322060,
+    "sha256": "90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01"
+  },
+  {
+    "path": "game/art/meshes/wing01/sm_wing01_ring_outer.glb",
+    "bytes": 185028,
+    "sha256": "14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212"
+  },
+  {
+    "path": "game/art/meshes/wing01/sm_wing01_ring_middle.glb",
+    "bytes": 185080,
+    "sha256": "845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352"
+  },
+  {
+    "path": "game/art/meshes/wing01/sm_wing01_ring_inner.glb",
+    "bytes": 184740,
+    "sha256": "e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c"
+  },
+  {
+    "path": "game/art/meshes/wing01/sm_wing01_focus.glb",
+    "bytes": 128240,
+    "sha256": "da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7"
+  }
+]
