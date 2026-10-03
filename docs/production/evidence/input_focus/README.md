@@ -17,7 +17,7 @@ after the clean archive check. Feature follows normal feature → epic → main.
 | Native focus / capture | PASS, actual XSetInputFocus on authenticated Xvfb, queried native focus/mouse mode, UI/paused/DISABLED return; `clean_native.log` |
 | Native return / echo | PASS, additional real focus return then injected W echo does not move; fresh press rearms; `native_echo.log` |
 | Clean startup regression | PASS, GameRoot/eight autoloads/safe exit under X11/Vulkan Forward+; `clean_engine.log` |
-| Previous feature paths | PASS, InputMap on clean archive; actual mixer routing/gain/mute during preflight; debug state/file integrity, Archive 15 capsule traversals and Wing I 40 poses / 48 rays; `regression.log` |
+| Previous feature paths | PASS, InputMap on clean archive; actual mixer routing/gain/mute in `initial_regression.log`; debug state/file integrity, Archive 15 capsule traversals and Wing I 40 poses / 48 rays in `regression.log` |
 
 The native test changes real window focus; keyboard events remain injected
 Godot events. Windows/native physical keyboard, target GPU and audible output
@@ -29,3 +29,13 @@ Review corrected the first draft's UI motion interception before acceptance.
 An old debug test fixture restored only mouse mode and retained GAMEPLAY even
 though startup now uses UI; restoring through InputManager fixed the fixture,
 with all state/file equality assertions preserved. No inspector behavior changed.
+`initial_regression.log` retains that initial fixture failure and the preceding
+successful mixer check; `regression.log` records the corrected final PASS.
+
+Feature merged through PR #29 into Shell at
+`836bfa1f5a8c2f8daae93bcd89993066bf9e93ae`.
+The merged tree is exactly `76035d6f6f0de5d61bad5eb1c5668ba9f3c453d7`, equal
+to the validated feature. `epic_smoke.log` records actual authenticated TCP
+X11/Vulkan/Forward+ GameRoot/eight-autoload/safe-exit PASS on the merged epic.
+GitHub reports MERGEABLE/CLEAN; no remote checks are configured, so no CI PASS
+is claimed. A documentation-only checkpoint precedes normal main integration.
