@@ -1,0 +1,11 @@
+{
+  "implementation_source": "c6aa035acbe8efdec725fe9621c34addd042c379",
+  "native_echo_test_revision": "2a47f5e32325a4d2745481c245e62de201214f53",
+  "files": {
+    "game/autoload/input_manager.gd": "a09a7916da21b99189d865fc1b0c16e196af6c09867249684a525a19bea8c712",
+    "game/tests/input_focus_smoke.gd": "0cb85029fbc4ad81994a98c71187c0695b998f638e238041c566c94d1214ccc6",
+    "game/tests/input_focus_smoke.tscn": "7563df795208395675b9425c78b19d253a65fda8ed9393526d42a35424aca8e4",
+    "game/tests/debug_tools_smoke.gd": "32f910c27f180311edef74fdff7a427d9de06c0bd9dabf037b2209fdffcf7a50",
+    "tools/x11_focus_driver.py": "9eb1f096b45e2b0cc0193eb11320f802ee3cf22a755354396242d79cd107c5cf"
+  }
+}
