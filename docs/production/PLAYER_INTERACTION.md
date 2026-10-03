@@ -1,7 +1,8 @@
 # First-person player / interaction foundation
 
 Epic: `epic/01-shell`; feature: `feature/01-shell/player-interaction`.
-Status: implementation in progress; no gameplay puzzle or final UI art approval.
+Status: **PASS for the bounded controller/interaction foundation, 2026-10-03 UTC**;
+no gameplay puzzle or final UI art approval.
 
 ## Bounded implementation brief
 
@@ -57,3 +58,35 @@ existing LFS payload copies are sufficient for code-only import isolation.
 Source API references: [CharacterBody3D](https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html),
 [PhysicsRayQueryParameters3D](https://docs.godotengine.org/en/stable/classes/class_physicsrayqueryparameters3d.html),
 [unscaled mouse motion](https://docs.godotengine.org/en/stable/classes/class_inputeventmousemotion.html).
+
+## Actual acceptance
+
+Committed source `908f480b6caeb81adff5a7df33fc439cfd2d94e7`: fresh game/tools
+archive with no initial import cache, 14 existing LFS payloads verified against
+HEAD pointers (runtime copies only), all 168 tracked files unchanged after tests.
+Godot 4.7.2 clean import, six production-player Archive traversals at 0/90 degree
+assembly yaws, wall stopping, normalized/heading-relative movement, look/setting
+and pause/focus boundaries pass. Physics queries enforce reach/nearest blocker
+and recheck E after target disable, deletion, movement or pause. Camera-inside
+solid, disabled nearer target and queued collider cases pass.
+
+Actual TCP/cookie X11/Vulkan Forward+ run passes the same controller tests and
+selects/dispatches E through a temporary component on the existing Middle grip.
+The existing script-free carrier, all art/materials/maps/LFS files and puzzle
+solve parameters are unchanged. The real 1920×1080 focus-dot/Russian prompt PNG
+was inspected; accepted Wing I review sky/key/fill lighting was reused after
+the first preview exposed insufficient metal reflection. No final world art
+or target GPU performance is certified.
+
+Evidence: `evidence/player_interaction/README.md`. CLI scene:
+`tests/player_interaction_smoke.tscn`, not a production world. GameRoot startup,
+InputMap, InputManager and debug state/file integrity regressions also pass.
+An initial inside-solid probe triggered capsule depenetration and moved the
+camera out of the test box; placing the probe on the ray-only layer fixed its
+setup and the corrected actual query passes. A concurrent graphical runner
+attempt collided on Xvfb display 100; serial graphical checks pass. Use the
+runner serially for these tests. These were harness issues, not missing runtime
+capabilities.
+
+Next shell work: SettingsManager persistence and Russian settings UI; pause/
+transition UI and SceneRouter spawning remain their respective features.

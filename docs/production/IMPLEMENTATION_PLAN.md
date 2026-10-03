@@ -40,7 +40,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [ ] SettingsManager full ConfigFile read/write with Russian UI labels.
 - [x] InputManager focus/pause/capture handling: requested mode survives pause/focus; visible startup UI cursor, immediate gates, held/echo movement suppression and recapture-motion guard. Clean import and actual authenticated TCP X11 focus/capture checks PASS; see `INPUT_FOCUS.md` and `evidence/input_focus/`. Esc/pause UI and repeat-skip consumers remain separate work.
 - [ ] Pause/Fade UI in Russian.
-- [ ] Basic Player CharacterBody3D + interaction ray.
+- [x] Basic Player CharacterBody3D + interaction ray: inactive persistent player, gated walk/look, physics-revalidated E, explicit collider component and Russian focus prompt. Clean import, actual Archive traversal/wall stopping, input/target race checks, Wing I grip dispatch and actual Forward+ screenshot PASS; see `PLAYER_INTERACTION.md`. Playable story worlds, canonical puzzle controllers and scene-router spawn pipeline remain later work.
 
 ## Milestone 2 — state / saves / routing
 

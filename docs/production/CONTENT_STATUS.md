@@ -54,6 +54,22 @@ routing remain later features. Windows/hardware input and target GPU acceptance
 are still open. The next foundation feature is the basic player and interaction
 ray, using the accepted collision envelope and the input owner's gate API.
 
+## Player / interaction foundation — 2026-10-03 UTC
+
+**PASS for the bounded controller.** GameRoot now owns an inactive first-person
+player and minimal Russian reticle/E prompt. Explicit activation enables walk/
+look; the next physics tick rechecks E range, nearest blocker and target state.
+Six actual Archive passages at two yaws, wall stopping, heading/diagonal speed,
+look/FOV/inversion, pause/focus gates and target races pass on clean committed
+source. Actual Wing I grip selection/dispatch and 1920×1080 Forward+ prompt
+review pass. See `PLAYER_INTERACTION.md` and `evidence/player_interaction/`.
+
+Existing art binaries, shared maps and solve parameters stay unchanged. Initial
+movement/capsule/reach numbers are explicit technical tuning values. The empty
+root does not activate player/capture; the later router supplies a real world
+and spawn. This completes another shell foundation step, not a playable Hub or
+Wing I solution. Next: settings persistence/UI, then pause/transition UI.
+
 ## Visual rebaseline v2 — 2026-10-02 UTC / 2026-10-03 Moscow
 
 **PARTIAL.** Owner-approved visual direction: Hybrid Warcraft Observatory;
