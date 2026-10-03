@@ -1,0 +1,16 @@
+$ ../toolchain/bin/blender --background assets/3d/blender/archive_kit/archive_kit_sample.blend --python-exit-code 1 --python tools/verify_archive_kit_source.py
+Combined stdout/stderr:
+BLENDER_KIT_MODULE PASS: wall_2m triangles= 108 surfaces= 1 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_MODULE PASS: wall_4m triangles= 212 surfaces= 1 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_MODULE PASS: arch_4m triangles= 1412 surfaces= 2 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_APERTURE PASS: real passage/blocker rays; all 32 contract crown segments present
+BLENDER_KIT_MODULE PASS: floor_1m triangles= 20 surfaces= 1 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_MODULE PASS: pier_4m triangles= 332 surfaces= 2 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_JUNCTION_COVER PASS: actual shaft/base/cap mesh covers wall overlap at 20 section rays
+BLENDER_ARCHIVE_KIT PASS: reopened five original modules; actual topology, aperture, UV density, normals, pivots and envelopes
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/assets/3d/blender/archive_kit/archive_kit_sample.blend"
+
+Blender quit
+
+exit=0

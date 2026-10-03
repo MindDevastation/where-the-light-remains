@@ -1,0 +1,41 @@
+$ git lfs fsck
+exit=1
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+git version 2.51.1
+
+$ git-lfs fsck
+Error checking Git LFS files
+
+missing object: 86bdef5def20d70547f4db622f41f071476c7d49
+
+Current time in UTC:
+2026-10-03 00:24:08
+
+Environment:
+LocalWorkingDir=/workspace/scratch/4f0b36b4bb0e/wlr-art-integration
+LocalGitDir=/workspace/scratch/4f0b36b4bb0e/where-the-light-remains/.git/worktrees/wlr-art-integration
+LocalGitStorageDir=/workspace/scratch/4f0b36b4bb0e/where-the-light-remains/.git
+LocalMediaDir=/workspace/scratch/4f0b36b4bb0e/where-the-light-remains/.git/lfs/objects
+LocalReferenceDirs=
+TempDir=/workspace/scratch/4f0b36b4bb0e/where-the-light-remains/.git/lfs/tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneRemoteName=origin
+LfsStorageDir=/workspace/scratch/4f0b36b4bb0e/where-the-light-remains/.git/lfs
+AccessDownload=basic
+AccessUpload=basic
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_EXEC_PATH=/usr/local/libexec/git-core
+GIT_PAGER=cat
+
+Client IP addresses:
+Error getting network interface: route ip+net: netlinkrib: operation not permitted

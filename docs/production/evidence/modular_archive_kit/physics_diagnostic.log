@@ -1,0 +1,17 @@
+$ ../toolchain/bin/godot --headless --path game --max-fps 60 --quit-after 120 --script res://tests/archive_kit_smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ARCHIVE_KIT_GEOMETRY PASS: wall_2m; triangles=108; surfaces=1; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_GEOMETRY PASS: wall_4m; triangles=212; surfaces=1; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_GEOMETRY PASS: arch_4m; triangles=1412; surfaces=2; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_GEOMETRY PASS: floor_1m; triangles=20; surfaces=1; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_GEOMETRY PASS: pier_4m; triangles=332; surfaces=2; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+
+SCRIPT ERROR: Trying to assign an array of type "Array" to a variable of type "Array[String]".
+          at: _anchors (res://tests/archive_kit_smoke.gd:122)
+          GDScript backtrace (most recent call first):
+              [0] _anchors (res://tests/archive_kit_smoke.gd:122)
+              [1] _run (res://tests/archive_kit_smoke.gd:233)
+
+exit=0
+Diagnostic bounded to 120 frames; final acceptance marker required separately.

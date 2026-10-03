@@ -631,17 +631,31 @@
       },
       "stage": "S01–09",
       "inventory": "ARCH-004/005/006/009 sample; full ARCH kit",
-      "current_blender": [],
-      "current_glb": [],
-      "current_godot_scenes": [],
+      "current_blender": [
+        "assets/3d/blender/archive_kit/archive_kit_sample.blend"
+      ],
+      "current_glb": [
+        "game/art/meshes/archive_kit/sm_archive_wall_2m.glb",
+        "game/art/meshes/archive_kit/sm_archive_wall_4m.glb",
+        "game/art/meshes/archive_kit/sm_archive_arch_4m.glb",
+        "game/art/meshes/archive_kit/sm_archive_floor_1m.glb",
+        "game/art/meshes/archive_kit/sm_archive_pier_4m.glb"
+      ],
+      "current_godot_scenes": [
+        "game/worlds/archive/modules/archive_wall_2m.tscn",
+        "game/worlds/archive/modules/archive_wall_4m.tscn",
+        "game/worlds/archive/modules/archive_arch_4m.tscn",
+        "game/worlds/archive/modules/archive_floor_1m.tscn",
+        "game/worlds/archive/modules/archive_pier_4m.tscn"
+      ],
       "current_materials": "M01/M02",
       "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
-      "current_visual_status": "BRIEF_ONLY",
-      "required_action": "MODIFY (brief only)",
+      "current_visual_status": "BOUNDED_STRUCTURAL_SAMPLE_VALIDATED_FULL_KIT_PARTIAL",
+      "required_action": "KEEP validated structural sample; DEFER reusable timber/iron/detail family until its brief",
       "severity": "ARCHITECTURE_REWORK",
       "gameplay_risk": "Preserve canonical stage/controls; see notes",
       "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
-      "notes": "Composite sheet includes sigils and kit: only lower architecture panels drive modules. Thick timber/stone, metal brackets, stepped supports; maintain existing metric interfaces."
+      "notes": "Composite sheet includes sigils and kit: only lower architecture panels drive modules. Thick timber/stone, metal brackets, stepped supports; maintain existing metric interfaces. Follow-up 2026-10-03: bounded five-module stone/brass sample validated; no full Hub, furniture or ornament acceptance. See modular_archive_kit evidence."
     },
     {
       "slot": "assets/concept_art/hero_props/Sheet of all sigils",
@@ -829,17 +843,31 @@
       },
       "stage": "S01–09",
       "inventory": "ARCH-004/005/006/009 sample; full ARCH kit",
-      "current_blender": [],
-      "current_glb": [],
-      "current_godot_scenes": [],
+      "current_blender": [
+        "assets/3d/blender/archive_kit/archive_kit_sample.blend"
+      ],
+      "current_glb": [
+        "game/art/meshes/archive_kit/sm_archive_wall_2m.glb",
+        "game/art/meshes/archive_kit/sm_archive_wall_4m.glb",
+        "game/art/meshes/archive_kit/sm_archive_arch_4m.glb",
+        "game/art/meshes/archive_kit/sm_archive_floor_1m.glb",
+        "game/art/meshes/archive_kit/sm_archive_pier_4m.glb"
+      ],
+      "current_godot_scenes": [
+        "game/worlds/archive/modules/archive_wall_2m.tscn",
+        "game/worlds/archive/modules/archive_wall_4m.tscn",
+        "game/worlds/archive/modules/archive_arch_4m.tscn",
+        "game/worlds/archive/modules/archive_floor_1m.tscn",
+        "game/worlds/archive/modules/archive_pier_4m.tscn"
+      ],
       "current_materials": "M01/M02",
       "current_scripts_mechanics": "No stage/puzzle controller implemented; contract in NARRATIVE_CANON and REQUIRED_ASSET_TABLE",
-      "current_visual_status": "BRIEF_ONLY",
-      "required_action": "MODIFY (brief only)",
+      "current_visual_status": "BOUNDED_STRUCTURAL_SAMPLE_VALIDATED_FULL_KIT_PARTIAL",
+      "required_action": "KEEP validated structural sample; DEFER reusable timber/iron/detail family until its brief",
       "severity": "ARCHITECTURE_REWORK",
       "gameplay_risk": "Preserve canonical stage/controls; see notes",
       "performance_risk": "Target GPU unmeasured; cap shadows, alpha layers, VFX",
-      "notes": "Layered pointed/round arches, square stepped piers, chunky timber brackets and repeated shelves. Keep existing dimensions/pivots/collision; original celestial details only."
+      "notes": "Layered pointed/round arches, square stepped piers, chunky timber brackets and repeated shelves. Keep existing dimensions/pivots/collision; original celestial details only. Follow-up 2026-10-03: bounded five-module stone/brass sample validated; no full Hub, furniture or ornament acceptance. See modular_archive_kit evidence."
     },
     {
       "slot": "assets/concept_art/production_sheets/Lighting guide sheet",
@@ -2705,5 +2733,14 @@
     }
   ],
   "missing_angle_c": null,
-  "review_method": "Every 167 pack PNG inspected in labeled contact sheets; all 62 legacy PNG inspected. Full PNG decode/hash verification; scores are qualitative agent review, not owner art acceptance."
+  "review_method": "Every 167 pack PNG inspected in labeled contact sheets; all 62 legacy PNG inspected. Full PNG decode/hash verification; scores are qualitative agent review, not owner art acceptance.",
+  "followup_samples": [
+    {
+      "date_utc": "2026-10-03",
+      "source_commit": "1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b",
+      "contract": "docs/production/modular_archive_kit_v1.json",
+      "evidence": "docs/production/evidence/modular_archive_kit/README.md",
+      "scope": "Five structural modules; full game/ARCH inventory and physical target performance remain open"
+    }
+  ]
 }

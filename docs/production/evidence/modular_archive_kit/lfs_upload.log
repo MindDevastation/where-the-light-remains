@@ -1,0 +1,10 @@
+$ git push --set-upstream origin feature/03-art-foundation/modular-archive-kit
+Uploading LFS objects: 100% (6/6), 888 KB | 0 B/s, done.
+remote:
+remote: Create a pull request for 'feature/03-art-foundation/modular-archive-kit' on GitHub by visiting:
+remote:      https://github.com/MindDevastation/where-the-light-remains/pull/new/feature/03-art-foundation/modular-archive-kit
+remote:
+To https://github.com/MindDevastation/where-the-light-remains.git
+ * [new branch]      feature/03-art-foundation/modular-archive-kit -> feature/03-art-foundation/modular-archive-kit
+branch 'feature/03-art-foundation/modular-archive-kit' set up to track 'origin/feature/03-art-foundation/modular-archive-kit'.
+exit=0

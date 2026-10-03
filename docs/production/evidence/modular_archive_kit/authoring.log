@@ -1,0 +1,56 @@
+$ ../toolchain/bin/blender --background --factory-startup --python-exit-code 1 --python tools/create_archive_kit.py -- /workspace/scratch/4f0b36b4bb0e/wlr-art-integration
+AUTHORED wall_2m triangles= 108 surfaces= 1 dimensions= (2.0, 0.4, 4.0)
+AUTHORED wall_4m triangles= 212 surfaces= 1 dimensions= (4.0, 0.4, 4.0)
+AUTHORED arch_4m triangles= 1412 surfaces= 2 dimensions= (4.0, 0.4, 4.0)
+AUTHORED floor_1m triangles= 20 surfaces= 1 dimensions= (1.0, 1.0, 0.2)
+AUTHORED pier_4m triangles= 332 surfaces= 2 dimensions= (0.6, 0.6, 4.12)
+Info: Saved as "archive_kit_sample.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/4f0b36b4bb0e/toolchain/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+16:40:03 | INFO: Starting glTF 2.0 export
+16:40:03 | INFO: Extracting primitive: sm_archive_wall_2m
+16:40:03 | INFO: Primitives created: 1
+16:40:03 | INFO: Finished glTF 2.0 export in 0.0070514678955078125 s
+
+16:40:03 | INFO: Starting glTF 2.0 export
+16:40:03 | INFO: Extracting primitive: sm_archive_wall_4m
+16:40:03 | INFO: Primitives created: 1
+16:40:03 | INFO: Finished glTF 2.0 export in 0.0070950984954833984 s
+
+16:40:03 | INFO: Starting glTF 2.0 export
+16:40:03 | INFO: Extracting primitive: sm_archive_arch_4m
+16:40:03 | INFO: Primitives created: 2
+16:40:03 | INFO: Finished glTF 2.0 export in 0.009694099426269531 s
+
+16:40:03 | INFO: Starting glTF 2.0 export
+16:40:03 | INFO: Extracting primitive: sm_archive_floor_1m
+16:40:03 | INFO: Primitives created: 1
+16:40:03 | INFO: Finished glTF 2.0 export in 0.0043430328369140625 s
+
+16:40:03 | INFO: Starting glTF 2.0 export
+16:40:03 | INFO: Extracting primitive: sm_archive_pier_4m
+16:40:03 | INFO: Primitives created: 2
+16:40:03 | INFO: Finished glTF 2.0 export in 0.00708460807800293 s
+
+ARCHIVE_KIT_CREATED PASS: five original watertight static meshes; unit transforms; metric UVs; normals/tangents; one source + five GLBs
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+
+Blender quit
+
+
+exit=0
+
+$ ../toolchain/bin/blender --background assets/3d/blender/archive_kit/archive_kit_sample.blend --python-exit-code 1 --python tools/verify_archive_kit_source.py
+BLENDER_KIT_MODULE PASS: wall_2m triangles= 108 surfaces= 1 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_MODULE PASS: wall_4m triangles= 212 surfaces= 1 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_MODULE PASS: arch_4m triangles= 1412 surfaces= 2 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_APERTURE PASS: real passage/blocker rays; all 32 contract crown segments present
+BLENDER_KIT_MODULE PASS: floor_1m triangles= 20 surfaces= 1 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_KIT_MODULE PASS: pier_4m triangles= 332 surfaces= 2 closed positive volume; metric UVs; unit normals/tangents; pivot/transforms/bounds
+BLENDER_ARCHIVE_KIT PASS: reopened five original modules; actual topology, aperture, UV density, normals, pivots and envelopes
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/4f0b36b4bb0e/wlr-art-integration/assets/3d/blender/archive_kit/archive_kit_sample.blend"
+
+Blender quit
+
+
+exit=0

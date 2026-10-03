@@ -1,0 +1,14 @@
+$ git lfs fsck
+Git LFS fsck OK
+exit=0
+$ git fsck --full --strict
+dangling blob 212036e3b854bbe967d47717dc9d9156889f3c53
+dangling blob 72c040c210b2f9747e09f3d2f4db21e276acdd5c
+dangling blob ec91e0fc92f90903ff8f2864295662084237ce74
+dangling blob 0f48d9539a217d76edcfe9a29f52e415eb960ea5
+dangling blob 3a986ff5e5732b37be7040515358ee90b1b9cc7a
+dangling blob d6191bdadf3442c673fa535c615a468ee7d7a6f9
+dangling blob e019e46687580658a9be8e5c1bb69002bee8f4e5
+dangling blob ae0afb79a74a543e0351aa0b2df5476e4a1fb686
+exit=0
+PRODUCER_GIT_LFS_FSCK PASS

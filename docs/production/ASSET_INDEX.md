@@ -123,14 +123,28 @@ All six are available for sample asset integration. Representative scene and
 target-hardware acceptance remain open; these statuses do not promote the full
 MAT inventory to final shipping acceptance.
 
-## Modular sample design contract — 2026-10-02
+## Modular Archive sample — 2026-10-03
 
-`MODULAR_ARCHIVE_KIT.md` and `modular_archive_kit_v1.json` define the next bounded
-sample: ARCH-004 walls (2/4 m), ARCH-005 arch, ARCH-006 floor and ARCH-009 pier.
-They identify the canonical image blobs, planned source/runtime paths, shared
-materials, snapping/collision rules and pending acceptance gates. The dimensioned
-drawing is a design artifact. These planned meshes are not yet runtime assets;
-the four ARCH inventory rows remain unaccepted.
+Five original modules are available as validated sample assets. Shared editable
+source: `assets/3d/blender/archive_kit/archive_kit_sample.blend`. Runtime exports
+are under `game/art/meshes/archive_kit/`; script-free wrappers under
+`game/worlds/archive/modules/`. No GameRoot/ArchiveMain instance is added.
+
+| Inventory | GLB | Wrapper | Coverage |
+|---|---|---|---|
+| ARCH-004 | `sm_archive_wall_2m.glb`, `sm_archive_wall_4m.glb` | `archive_wall_2m.tscn`, `archive_wall_4m.tscn` | Two sample widths; full wall family PARTIAL |
+| ARCH-005 | `sm_archive_arch_4m.glb` | `archive_arch_4m.tscn` | One arch variant; PARTIAL |
+| ARCH-006 | `sm_archive_floor_1m.glb` | `archive_floor_1m.tscn` | One floor variant; PARTIAL |
+| ARCH-009 | `sm_archive_pier_4m.glb` | `archive_pier_4m.tscn` | One pier variant; PARTIAL |
+
+Original project geometry; existing `m_observatory_stone.tres` and
+`m_aged_brass.tres` reused without unique maps/material copies. Actual source,
+GLB/import, dimensions/anchors, UVs, collision, three-view Forward+ review and
+independent authenticated LFS upload/retrieval PASS. Primary: 63 instances,
+4,284 triangles, 68 surfaces. The dimensioned drawing remains a design artifact;
+real sample/evidence are separate. Full inventory, representative gameplay and
+target performance remain open. See `MODULAR_ARCHIVE_KIT.md` and
+`evidence/modular_archive_kit/README.md`.
 
 ## V2 material migration — current runtime resources
 

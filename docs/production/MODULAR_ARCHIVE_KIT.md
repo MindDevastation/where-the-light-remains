@@ -1,21 +1,24 @@
 # Modular Archive kit — sample contract v1
 
-Status: **brief/assembly contract defined; visual references rebaselined to v2; meshes not produced or accepted**.
-Feature: `feature/03-art-foundation/modular-kit-contract`.
-Baseline: main `1a7171cb756cfc0e208312ebbf9257af634a898a`.
+Status: **bounded five-module sample validated, 2026-10-03 UTC; full ARCH inventory and representative target performance remain open**.
+Feature: `feature/03-art-foundation/modular-archive-kit`.
+Implementation base: main `c6773f203717b0058a3ec3aee4a3e26bb1190f1f`.
+Original contract feature: `feature/03-art-foundation/modular-kit-contract`,
+base `1a7171cb756cfc0e208312ebbf9257af634a898a`.
 
-This is the architecture/brief step preceding
-`feature/03-art-foundation/modular-archive-kit`. It defines a bounded sample for
-reusable Archive architecture. The actual sample, Blender source, LFS transfer,
-Godot import, collision, visual acceptance and representative performance remain
-separate pending gates. No existing gameplay world is replaced.
+This defines the approved bounded reusable Archive sample and its measured
+implementation. Original Blender source, five GLBs, shared-material import,
+Godot wrappers, assembly/collision tests, three actual Forward+ views and
+independent LFS retrieval pass. Evidence: [modular_archive_kit/README.md](evidence/modular_archive_kit/README.md).
+No production gameplay world or global budget is replaced. This sample does not
+complete the architecture inventory or certify physical-GPU performance.
 
 ## Visual revision 2 — current production references
 
 Owner visual migration instruction supersedes the v1 image language below.
 Technical contract v1 stays intact: dimensions, grid, anchors, UV, passage,
 collision plan, sample placements, triangle/material ceilings and file ownership.
-No mesh exists to rebuild. The versioned JSON now records visual_revision=2 and
+The new meshes implement this direction. The versioned JSON records visual_revision=2 and
 exact blobs for A/B/C of **Generic modular observatory kit**, **Architectural
 shape language sheet**, and hub **Gameplay view/ca_004**, from pack `cabe792`.
 Historical source/ref metadata is retained in legacy fields and the section below.
@@ -224,7 +227,12 @@ Production order and gates:
    Target-class representative scene profiling remains a separate gate before
    bulk production, with no FPS claim from software Vulkan.
 
-All seven production steps are pending as of this contract. Do not mark the
-modular sample, full architecture inventory or target performance accepted from
-this design document. After the sample is accepted, proceed to the Wing I hero
-mechanism and representative art vertical slice in the established plan.
+The seven bounded sample steps now PASS with actual evidence. The source and
+five exports were uploaded from `1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b` and independently
+retrieved into an empty separate LFS store; retrieved source/import/physics and
+graphical startup pass, as do Git/LFS fsck. Measured primary assembly: 4,284
+triangles / 68 authored surfaces / 63 instances; substituted walls: 4,288.
+Front/reverse/corner preview draw calls: 25/27/18 under software Vulkan.
+Full ARCH inventory, owner full-world art review and target performance remain
+open. Next: Wing I hero mechanism brief/sample, then the representative vertical
+slice under the established plan. Do not begin bulk modeling from this sample.
