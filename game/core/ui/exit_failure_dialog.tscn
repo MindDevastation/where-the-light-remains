@@ -1,0 +1,4 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://core/ui/exit_failure_dialog.gd" id="1"]
+[node name="ExitFailureDialog" type="Control"]
+script = ExtResource("1")
