@@ -161,23 +161,33 @@ func cancel_transition() -> void:
         return
     _route["cancelled"] = true
     var fade: Variant = _route["fade"]
-    if is_instance_valid(fade) and fade.busy:
-        fade.cancel()
+    if is_instance_valid(fade) and fade.busy and fade.request_revision == _route["fade_revision"]:
+        fade.clear()
+
+
+func cancel_and_wait() -> void:
+    cancel_transition()
+    while _transition_in_progress:
+        await get_tree().process_frame
 
 
 func _route_owned() -> bool:
-    if _route.is_empty() or _route["cancelled"] or _route["binding"] != _binding_revision:
+    if _route.is_empty() or _route["cancelled"] or _route["binding"] != _binding_revision or get_tree().paused:
         return false
     if InputManager.mode != InputManager.Mode.DISABLED or InputManager.mode_revision != _route["input_revision"]:
         return false
     for node in [_route["slot"], _route["player"], _route["fade"]]:
         if not is_instance_valid(node) or not node.is_inside_tree():
             return false
+    if not _route["slot"].global_transform.is_equal_approx(_route["slot_transform"]):
+        return false
+    if _route["fade"].request_revision != _route["fade_revision"]:
+        return false
     return true
 
 
 func request_registered_stage(stage_id: StringName, saved: SaveGame = null, checkpoint_before: bool = false) -> Error:
-    # Runtime prototype. Full rollback/physics/lifetime acceptance remains open.
+    # Serialized transaction; old callbacks stay frozen until commit/rollback.
     if _transition_in_progress or _preload_in_progress or get_tree().paused:
         return ERR_BUSY
     if not is_instance_valid(_world_slot) or not is_instance_valid(_player) or not is_instance_valid(_fade):
@@ -199,75 +209,73 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
     if target.stage_id != stage_id or target.copy_validated() == null:
         return ERR_INVALID_DATA
     _route = {"slot": _world_slot, "player": _player, "fade": _fade,
+        "slot_transform": _world_slot.global_transform,
         "binding": _binding_revision, "cancelled": false, "state": original,
         "old_worlds": _world_slot.get_children(), "candidate": null,
         "committed": false, "detached": false, "mode": InputManager.mode,
         "player_active": _player.active, "player_transform": _player.global_transform,
         "head_rotation": _player.head.rotation, "audio_stage": AudioDirector.current_stage,
-        "audio_state": AudioDirector.current_state}
+        "audio_state": AudioDirector.current_state, "fade_revision": _fade.request_revision,
+        "process_modes": {}, "collision_disable_modes": {}, "cleaning": false}
     _transition_in_progress = true
+    _route["input_revision"] = InputManager.mode_revision + 1
     InputManager.set_mode(InputManager.Mode.DISABLED)
-    _route["input_revision"] = InputManager.mode_revision
     _player.set_active(false)
+    if not _route_owned():
+        return await _complete_route(ERR_SKIP)
+    for old in _route["old_worlds"]:
+        _freeze_world(old)
     if checkpoint_before:
         var checkpoint_error := _flush_checkpoint()
         if checkpoint_error != OK:
-            return _complete_route(checkpoint_error)
+            return await _complete_route(checkpoint_error)
     var preloaded := await _preload_definition(definition)
     if not _route_owned():
-        return _complete_route(ERR_SKIP)
+        return await _complete_route(ERR_SKIP)
     if preloaded["error"] != OK:
-        return _complete_route(preloaded["error"])
+        return await _complete_route(preloaded["error"])
     var node: Node = preloaded["scene"].instantiate()
     var candidate := node as WorldScene
     if candidate == null:
         node.free()
-        return _complete_route(ERR_INVALID_DATA)
+        return await _complete_route(ERR_INVALID_DATA)
     _route["candidate"] = candidate
     var prepared := candidate.prepare_state(target)
     if prepared["error"] != OK:
-        return _complete_route(prepared["error"])
+        return await _complete_route(prepared["error"])
     var spawn: Transform3D = _world_slot.global_transform * prepared["spawn"]
     if not WorldScene.valid_spawn_transform(spawn):
-        return _complete_route(ERR_INVALID_DATA)
-    if not await _fade.fade_to(1.0, fade_duration) or not _route_owned():
-        return _complete_route(ERR_SKIP)
-    _route["process_modes"] = {}
-    _route["collision_disable_modes"] = {}
-    _freeze_candidate(candidate)
+        return await _complete_route(ERR_INVALID_DATA)
+    if not await _route_fade(1.0) or not _route_owned():
+        return await _complete_route(ERR_SKIP)
     candidate.hide()
     for old in _route["old_worlds"]:
         _world_slot.remove_child(old)
     _route["detached"] = true
     _world_slot.add_child(candidate)
-    _freeze_candidate(candidate)
+    _freeze_world(candidate)
     await get_tree().physics_frame
     await get_tree().physics_frame
     if not _route_owned():
-        return _complete_route(ERR_SKIP)
+        return await _complete_route(ERR_SKIP)
     if definition.player_active and not _spawn_clear(spawn):
-        return _complete_route(ERR_INVALID_DATA)
+        return await _complete_route(ERR_INVALID_DATA)
     var apply_error := candidate.apply_logical_state(prepared["state"])
     if apply_error != OK:
-        return _complete_route(apply_error)
+        return await _complete_route(apply_error)
     if GameState.apply_save(target) != OK:
-        return _complete_route(ERR_INVALID_DATA)
+        return await _complete_route(ERR_INVALID_DATA)
     _route["committed"] = true
     _player.spawn_at(spawn)
     AudioDirector.set_stage_audio(stage_id)
     candidate.show()
-    if not await _fade.fade_to(0.0, fade_duration) or not _route_owned():
-        return _complete_route(ERR_SKIP)
-    for child in _route["process_modes"]:
-        if is_instance_valid(child) and (child == candidate or candidate.is_ancestor_of(child)):
-            child.process_mode = _route["process_modes"][child]
-    for collider_node in _route["collision_disable_modes"]:
-        if is_instance_valid(collider_node) and candidate.is_ancestor_of(collider_node):
-            collider_node.disable_mode = _route["collision_disable_modes"][collider_node]
+    if not await _route_fade(0.0) or not _route_owned():
+        return await _complete_route(ERR_SKIP)
+    _restore_world(candidate)
     _player.set_active(definition.player_active)
     if saved == null:
         SaveManager.mark_dirty()
-    var error := _complete_route(OK, definition.input_mode)
+    var error := await _complete_route(OK, definition.input_mode)
     EventBus.stage_changed.emit(stage_id)
     return error
 
@@ -276,20 +284,45 @@ func _flush_checkpoint() -> Error:
     return SaveManager.flush_if_dirty()
 
 
-func _freeze_candidate(candidate: WorldScene) -> void:
-    var pending: Array = [candidate]
+func _route_fade(alpha: float) -> bool:
+    if not _route_owned():
+        return false
+    _route["fade_revision"] = _fade.request_revision + 1
+    return await _fade.fade_to(alpha, fade_duration)
+
+
+func _freeze_world(world: Node) -> void:
+    var pending: Array = [[world, true]]
     while not pending.is_empty():
-        var child: Variant = pending.pop_back()
+        var entry: Array = pending.pop_back()
+        var child: Variant = entry[0]
         if not is_instance_valid(child):
             continue
-        if not _route["process_modes"].has(child) or child.process_mode != Node.PROCESS_MODE_DISABLED:
-            _route["process_modes"][child] = child.process_mode
+        _route["process_modes"][child] = child.process_mode
+        var enabled: bool = entry[1]
+        match child.process_mode:
+            Node.PROCESS_MODE_DISABLED, Node.PROCESS_MODE_WHEN_PAUSED:
+                enabled = false
+            Node.PROCESS_MODE_ALWAYS, Node.PROCESS_MODE_PAUSABLE:
+                enabled = true
         if child is CollisionObject3D:
-            if not _route["collision_disable_modes"].has(child):
-                _route["collision_disable_modes"][child] = child.disable_mode
-            child.disable_mode = CollisionObject3D.DISABLE_MODE_MAKE_STATIC if child is RigidBody3D else CollisionObject3D.DISABLE_MODE_KEEP_ACTIVE
+            _route["collision_disable_modes"][child] = child.disable_mode
+            if enabled or child.disable_mode != CollisionObject3D.DISABLE_MODE_REMOVE:
+                child.disable_mode = CollisionObject3D.DISABLE_MODE_MAKE_STATIC if child is RigidBody3D else CollisionObject3D.DISABLE_MODE_KEEP_ACTIVE
         child.process_mode = Node.PROCESS_MODE_DISABLED
-        pending.append_array(child.get_children())
+        for descendant in child.get_children():
+            pending.append([descendant, enabled])
+
+
+func _restore_world(world: Node) -> void:
+    # Restore processing before REMOVE policies, avoiding an intermediate
+    # physics removal for colliders that were authored active.
+    for child in _route["process_modes"]:
+        if is_instance_valid(child) and (child == world or world.is_ancestor_of(child)):
+            child.process_mode = _route["process_modes"][child]
+    for child in _route["collision_disable_modes"]:
+        if is_instance_valid(child) and (child == world or world.is_ancestor_of(child)):
+            child.disable_mode = _route["collision_disable_modes"][child]
 
 
 func _spawn_clear(spawn: Transform3D) -> bool:
@@ -316,6 +349,7 @@ func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.
     if route.is_empty():
         _transition_in_progress = false
         return error
+    route["cleaning"] = true
     # Keep potentially freed references as Variants until is_instance_valid;
     # typed assignment itself raises before the lifetime guard can run.
     var slot: Variant = route["slot"]
@@ -337,16 +371,27 @@ func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.
             GameState.apply_save(route["state"])
             AudioDirector.current_stage = route["audio_stage"]
             AudioDirector.current_state = route["audio_state"]
-        if is_instance_valid(player) and player.is_inside_tree():
+        # Reattached physics bodies must be in the space before the player
+        # resumes. Keep old controller callbacks frozen during this wait.
+        if route["detached"] and is_instance_valid(slot) and slot.is_inside_tree():
+            await get_tree().physics_frame
+            await get_tree().physics_frame
+        for old in route["old_worlds"]:
+            if is_instance_valid(old) and old.is_inside_tree():
+                _restore_world(old)
+        if is_instance_valid(player) and player.is_inside_tree() and is_instance_valid(slot) and slot.is_inside_tree():
             player.spawn_at(route["player_transform"])
             player.head.rotation = route["head_rotation"]
             player.set_active(route["player_active"])
-        final_mode = route["mode"] if is_instance_valid(slot) and slot.is_inside_tree() else InputManager.Mode.UI
+        var context_alive: bool = route["binding"] == _binding_revision
+        for original_node in [slot, player, fade]:
+            context_alive = context_alive and is_instance_valid(original_node) and original_node.is_inside_tree()
+        final_mode = route["mode"] if context_alive else InputManager.Mode.UI
     else:
         for old in route["old_worlds"]:
             if is_instance_valid(old):
                 old.queue_free()
-    if is_instance_valid(fade):
+    if is_instance_valid(fade) and fade.request_revision == route["fade_revision"]:
         fade.clear()
     _route = {}
     _transition_in_progress = false

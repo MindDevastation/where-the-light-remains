@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3]
+[ext_resource type="PackedScene" path="res://tests/fixtures/route_world_a.tscn" id="1"]
+[ext_resource type="Script" path="res://tests/fixtures/route_callback.gd" id="2"]
+[sub_resource type="BoxShape3D" id="Box"]
+size = Vector3(1, 1.8, 1)
+[sub_resource type="SphereShape3D" id="Ball"]
+radius = 0.2
+[node name="RouteWorldModes" instance=ExtResource("1")]
+stage_id = &"s05_fixture"
+[node name="Callback" type="Node3D" parent="."]
+process_mode = 3
+script = ExtResource("2")
+[node name="InheritedCallback" type="Node3D" parent="Callback"]
+script = ExtResource("2")
+[node name="DisabledBlocker" type="StaticBody3D" parent="."]
+process_mode = 4
+position = Vector3(0, 0.9, 1.5)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DisabledBlocker"]
+shape = SubResource("Box")
+[node name="DisabledGroup" type="Node3D" parent="."]
+process_mode = 4
+[node name="InheritedBlocker" type="StaticBody3D" parent="DisabledGroup"]
+position = Vector3(0, 0.9, 1.5)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DisabledGroup/InheritedBlocker"]
+shape = SubResource("Box")
+[node name="Rigid" type="RigidBody3D" parent="."]
+position = Vector3(4, 2, 1.5)
+collision_layer = 1
+collision_mask = 1
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Rigid"]
+shape = SubResource("Ball")

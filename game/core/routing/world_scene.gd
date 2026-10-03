@@ -14,7 +14,8 @@ func prepare_state(saved: SaveGame) -> Dictionary:
     var validated := saved.copy_validated()
     if validated == null or validated.stage_id != stage_id:
         return failure
-    if _spawn_marker(default_spawn) == null:
+    var default_marker := _spawn_marker(default_spawn)
+    if default_marker == null or not valid_spawn_transform(_marker_transform(default_marker)):
         return failure
     # Validate every declared checkpoint, not only the requested one.
     var seen := {}
@@ -22,7 +23,8 @@ func prepare_state(saved: SaveGame) -> Dictionary:
         if not SaveGame.identifier(checkpoint) or seen.has(String(checkpoint)) or typeof(checkpoint_spawns[checkpoint]) != TYPE_NODE_PATH:
             return failure
         seen[String(checkpoint)] = true
-        if _spawn_marker(checkpoint_spawns[checkpoint]) == null:
+        var checkpoint_marker := _spawn_marker(checkpoint_spawns[checkpoint])
+        if checkpoint_marker == null or not valid_spawn_transform(_marker_transform(checkpoint_marker)):
             return failure
     var path := default_spawn
     if not validated.checkpoint_id.is_empty():
@@ -32,23 +34,27 @@ func prepare_state(saved: SaveGame) -> Dictionary:
     var marker := _spawn_marker(path)
     if marker == null:
         return failure
-    var spawn := marker.transform
-    var ancestor := marker.get_parent()
-    while ancestor != self:
-        if not ancestor is Node3D:
-            return failure
-        spawn = ancestor.transform * spawn
-        ancestor = ancestor.get_parent()
-    # Relative to WorldSlot, works before the candidate enters SceneTree.
-    spawn = transform * spawn
+    var spawn := _marker_transform(marker)
     if not valid_spawn_transform(spawn):
         return failure
     var state: Dictionary = validated.world_states.get(stage_id, {})
-    var error := validate_logical_state(state)
+    var error := validate_logical_state(state.duplicate(true))
     if error != OK:
         failure["error"] = error
         return failure
     return {"error": OK, "state": state.duplicate(true), "spawn": spawn}
+
+
+func _marker_transform(marker: Marker3D) -> Transform3D:
+    var spawn := marker.transform
+    var ancestor := marker.get_parent()
+    while ancestor != self:
+        if not ancestor is Node3D:
+            return Transform3D(Basis.IDENTITY, Vector3(NAN, NAN, NAN))
+        spawn = ancestor.transform * spawn
+        ancestor = ancestor.get_parent()
+    # Relative to WorldSlot, works before the candidate enters SceneTree.
+    return transform * spawn
 
 
 func validate_logical_state(state: Dictionary) -> Error:

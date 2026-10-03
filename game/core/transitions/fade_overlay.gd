@@ -5,6 +5,9 @@ extends Control
 signal fade_finished(completed: bool)
 
 var busy := false
+var request_revision: int:
+    get: return _request_revision
+var _request_revision := 0
 var shade: ColorRect
 var loading: Label
 var _from := 0.0
@@ -42,6 +45,7 @@ func _ready() -> void:
 func fade_to(alpha: float, duration: float = .25) -> bool:
     if busy or _exiting or is_queued_for_deletion() or shade == null or not is_inside_tree() or not is_finite(alpha) or not is_finite(duration) or duration < 0:
         return false
+    _request_revision += 1
     _target = clampf(alpha, 0.0, 1.0)
     if is_zero_approx(duration):
         _set_alpha(_target)

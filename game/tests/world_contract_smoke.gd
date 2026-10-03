@@ -65,6 +65,13 @@ func _run() -> void:
     world.checkpoint_spawns[&"bad_checkpoint"] = NodePath("Absent")
     _check(world.prepare_state(saved)["error"] == ERR_INVALID_DATA, "Unused invalid checkpoint rejected")
     world.checkpoint_spawns.erase(&"bad_checkpoint")
+    var bad_marker := Marker3D.new()
+    bad_marker.name = "TiltedUnused"
+    bad_marker.rotation.x = .1
+    world.add_child(bad_marker)
+    world.checkpoint_spawns[&"unused_checkpoint"] = NodePath("TiltedUnused")
+    _check(world.prepare_state(saved)["error"] == ERR_INVALID_DATA, "Unused checkpoint transform validated too")
+    world.checkpoint_spawns.erase(&"unused_checkpoint")
     for bad in [Transform3D(Basis.from_scale(Vector3(2, 1, 1)), Vector3.ZERO), Transform3D(Basis(Vector3.RIGHT, .1), Vector3.ZERO), Transform3D(Basis.from_scale(Vector3(-1, 1, 1)), Vector3.ZERO), Transform3D(Basis.IDENTITY, Vector3(NAN, 0, 0))]:
         _check(not WorldScene.valid_spawn_transform(bad), "Nonfinite/scale/tilt/mirror spawn rejected")
     _check(WorldScene.valid_spawn_transform(Transform3D(Basis(Vector3.UP, PI), Vector3.ZERO)), "Yaw-only spawn accepted")
