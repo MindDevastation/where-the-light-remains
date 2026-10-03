@@ -24,7 +24,10 @@ volumetric fog without enabling anything the author disabled. Original environme
 resources are not edited. Gameplay geometry, emission, cues and ordinary fog stay.
 Fullscreen uses desktop size and selected resolution as an upper render-height
 target; UI remains at native size. Windowed uses the selected window size.
-Startup command-line display overrides take precedence until explicit Apply.
+The graphical launcher forwards `-- --preserve-display` for command-line display
+overrides, preserving the native startup window until explicit Apply. Direct
+launches requiring an engine display override must include this user flag too:
+Godot consumes `--resolution`/`--fullscreen` before exposing its argument list.
 
 Acceptance: clean source import; missing/round-trip/malformed/type/range/version/
 write-failure persistence cases; actual bus gains/mutes; profile/author-state

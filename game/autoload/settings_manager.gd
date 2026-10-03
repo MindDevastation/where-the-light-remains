@@ -165,7 +165,8 @@ func _apply_viewport() -> void:
     var viewport := get_tree().root
     var profile := PRESETS.find(graphics_preset)
     var scale := 0.75 if profile == 0 else 1.0
-    if fullscreen and viewport.size.y > 0:
+    var native_fullscreen := DisplayServer.get_name() != "headless" and DisplayServer.window_get_mode() in [DisplayServer.WINDOW_MODE_FULLSCREEN, DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN]
+    if native_fullscreen and viewport.size.y > 0:
         scale *= minf(1.0, float(resolution.y) / viewport.size.y)
     viewport.scaling_3d_scale = scale
     viewport.msaa_3d = Viewport.MSAA_2X if profile == 2 else Viewport.MSAA_DISABLED
@@ -209,10 +210,9 @@ func apply_scene_graphics() -> void:
 
 
 func _has_display_override() -> bool:
-    for argument in OS.get_cmdline_args():
-        if argument in ["--resolution", "--fullscreen", "--windowed", "--maximized"]:
-            return true
-    return false
+    # Godot consumes its display flags before exposing command-line arguments.
+    # Launchers forward this explicit user flag instead of platform argv hacks.
+    return OS.get_cmdline_user_args().has("--preserve-display")
 
 
 func _notify_changed() -> void:

@@ -46,6 +46,7 @@ func _config(values: Dictionary, version: Variant = 1) -> void:
 
 func _run() -> void:
     print("SETTINGS runtime: ", Engine.get_version_info()["string"], "; display=", DisplayServer.get_name())
+    await _frames()
     _original = SettingsManager.snapshot()
     _startup_window_size = get_window().size
     _files_before = _production_files()
@@ -235,8 +236,9 @@ func _ui() -> void:
     Input.parse_input_event(escape)
     Input.flush_buffered_events()
     _check(not _menu.visible and InputManager.mode == InputManager.Mode.GAMEPLAY, "Esc Cancel did not close/restore")
-    escape.pressed = false
-    Input.parse_input_event(escape)
+    var escape_release := escape.duplicate() as InputEventKey
+    escape_release.pressed = false
+    Input.parse_input_event(escape_release)
     Input.flush_buffered_events()
     InputManager.set_paused(true)
     _menu.open()
