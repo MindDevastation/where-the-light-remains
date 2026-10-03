@@ -31,3 +31,5 @@ real schema, Windows/hardware and power-loss durability remain separate work.
 Godot flush/readback/same-directory rename is tested; fsync/directory durability
 and multiple simultaneous game processes are not certified. No puzzle/story or
 art budget changed; no physical GPU performance claim.
+
+Integration: PR #39 merged as `bffdc33e29e3b9a1286cfbf7feaaebd479c84594`; tree `cc711f7dcf0a59c9a2bd1b86afcafe540aaf1604` matches the accepted feature. `epic_engine.log` confirms merged graphical startup. GitHub reports MERGEABLE/CLEAN and no configured CI checks; CI execution is not claimed.
