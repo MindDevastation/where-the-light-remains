@@ -25,3 +25,5 @@ Full stage/checkpoint registry and each world's domain validation belong to the
 future scene router/controllers. No canonical puzzle counts/angles/solutions were
 invented. Atomic IO/backup/recovery, App error handling and Boot/Continue are
 subsequent features. Existing SaveManager still has scaffold IO behavior.
+
+Integration: PR #37 merged as `753f306b6e5fb6f80092833de5325b67e5ef1e31`; tree `b582eafda66fbf71f649ee715d43acb48706742a` matches the accepted feature. `epic_engine.log` confirms merged graphical startup. GitHub reported MERGEABLE/CLEAN and no configured CI checks; no CI execution is claimed.
