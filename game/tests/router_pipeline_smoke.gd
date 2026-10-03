@@ -87,6 +87,8 @@ func _run() -> void:
     game.queue_free()
     await _wait_route()
     _check(_last_error == ERR_SKIP and not SceneRouter.get("_transition_in_progress") and InputManager.mode == InputManager.Mode.UI, "Removed root cancels route and releases capture to empty UI")
+    while SceneRouter.get("_preload_in_progress"):
+        await get_tree().process_frame
     GameState.apply_save(original)
     SaveManager.set("_dirty", dirty)
     AudioDirector.current_stage = audio[0]
@@ -96,5 +98,5 @@ func _run() -> void:
         _check(SceneRouter.unregister_stage(id) == OK, "Fixture unregister")
     _check(_files() == hashes, "No production save/settings writes")
     if _failures.is_empty():
-        print("ROUTER_PIPELINE PASS: initial preload/replace/state/spawn/fade, overlap, checkpoint/apply rejection, same-mode cancellation and removed root; full physical/checkpoint/rollback acceptance pending")
+        print("ROUTER_PIPELINE PASS: preload/replace/state/spawn/fade, overlap, checkpoint/apply rejection, same-mode cancellation, removed root and pending preload drain")
     get_tree().quit(0 if _failures.is_empty() else 1)
