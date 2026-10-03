@@ -7,6 +7,7 @@ var _player: FirstPersonPlayer
 var _world: Node3D
 var _hud: InteractionHUD
 var _interactions := 0
+var _settings_before: Dictionary
 
 
 func _ready() -> void:
@@ -54,6 +55,9 @@ func _spawn(position: Vector3, yaw: float = 0.0) -> void:
 
 func _run() -> void:
     print("PLAYER_INTERACTION runtime: ", Engine.get_version_info()["string"], "; display=", DisplayServer.get_name())
+    _settings_before = SettingsManager.snapshot()
+    SettingsManager._assign(SettingsManager.DEFAULTS)
+    SettingsManager.apply_runtime(false)
     var scene: PackedScene = load("res://core/game_root/game_root.tscn")
     _game = scene.instantiate()
     add_child(_game)
@@ -79,6 +83,8 @@ func _run() -> void:
     _player.set_active(false)
     InputManager.set_paused(false)
     InputManager.set_mode(InputManager.Mode.UI)
+    SettingsManager._assign(_settings_before)
+    SettingsManager.apply_runtime(false)
     if _failures.is_empty():
         print("PLAYER_INTERACTION PASS: actual player traversal, walk/look gates, physics picks/occlusion/races, Russian HUD")
     get_tree().quit(0 if _failures.is_empty() else 1)
