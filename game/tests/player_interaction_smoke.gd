@@ -304,11 +304,15 @@ func _review() -> void:
         return
     var assembly: Node3D = (load("res://gameplay/puzzles/wing01/wing01_optics_sample.tscn") as PackedScene).instantiate()
     _world.add_child(assembly)
-    var grip: Area3D = assembly.get_node("Inner/Grip")
+    var grip: Area3D = assembly.get_node("Middle/Grip")
     var target := InteractionTarget.new()
     target.name = "InteractionTarget"
+    target.interacted.connect(func(actor: Node3D) -> void:
+        _check(actor == _player, "Wing I grip actor mismatch")
+        _interactions += 1
+    )
     grip.add_child(target)
-    _spawn(Vector3(0, .004, -2.0), PI)
+    _spawn(Vector3(0, .004, -2.4), PI)
     _player.camera.look_at(grip.global_position, Vector3.UP)
     var floor_mesh := MeshInstance3D.new()
     var plane := PlaneMesh.new()
@@ -317,20 +321,39 @@ func _review() -> void:
     floor_mesh.material_override = load("res://art/materials/m_observatory_stone.tres")
     _world.add_child(floor_mesh)
     var light := DirectionalLight3D.new()
-    light.rotation_degrees = Vector3(-48, -30, 0)
-    light.light_energy = 1.4
+    # Reuse accepted Wing I review lighting, including sky specular for brass.
+    light.rotation_degrees = Vector3(-50, 150, 0)
+    light.light_color = Color("ffddb0")
+    light.light_energy = 1.3
+    light.shadow_enabled = true
     _world.add_child(light)
+    var fill := DirectionalLight3D.new()
+    fill.rotation_degrees = Vector3(-35, -20, 0)
+    fill.light_color = Color("719be4")
+    fill.light_energy = .75
+    _world.add_child(fill)
     var environment := WorldEnvironment.new()
     var env := Environment.new()
     env.background_mode = Environment.BG_COLOR
-    env.background_color = Color(.08, .10, .15)
-    env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
-    env.ambient_light_color = Color(.55, .63, .8)
-    env.ambient_light_energy = .7
+    env.background_color = Color("0d172e")
+    env.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
+    env.ambient_light_energy = .4
+    env.reflected_light_source = Environment.REFLECTION_SOURCE_SKY
+    env.tonemap_mode = Environment.TONE_MAPPER_ACES
+    var sky := Sky.new()
+    var sky_material := ProceduralSkyMaterial.new()
+    sky_material.sky_top_color = Color("172d60")
+    sky_material.sky_horizon_color = Color("837666")
+    sky_material.ground_bottom_color = Color("171e2d")
+    sky_material.ground_horizon_color = Color("665b4c")
+    sky.sky_material = sky_material
+    env.sky = sky
     environment.environment = env
     _world.add_child(environment)
     await _ticks(6)
     _check(_player.focused_target == target, "Actual Wing I grip adapter was not picked")
+    await _press_interact()
+    _check(_interactions == 2, "E did not dispatch through the actual Wing I grip component")
     await RenderingServer.frame_post_draw
     for argument in OS.get_cmdline_user_args():
         if argument.begins_with("--screenshot="):
