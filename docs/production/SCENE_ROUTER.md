@@ -137,3 +137,19 @@ Authored content and AudioDirector silence/chains remain separate. Linux llvmpip
 acceptance does not certify Windows, physical GPU frame budgets, power-loss saves
 or permanently stalled engine workers. The earlier prototype/open-task paragraphs
 above remain historical and are superseded by this accepted core section.
+
+## Integration after the interrupted connection
+
+[PR #41](https://github.com/MindDevastation/where-the-light-remains/pull/41) was
+already merged at `1bbd933b10f6cc7bbb7b946e75b53170f763c13a` before the outage.
+Recovery verified exact tree equality to accepted feature `c050d9f` and all 55
+saved evidence hashes. The native X11 exit result was complete (exit 0, failed
+flush recovery and original-state primary/backup checks PASS), so it was reused.
+No old graphical process survived the recreated workspace.
+
+The merged-epic startup gate now also passes in a fresh immutable runtime
+archive, using the established authenticated TCP X11/Vulkan Forward+ toolchain.
+Its 242 tracked files and eleven runtime payloads remain exact. Evidence:
+`evidence/scene_router/integration_epic_smoke.log` and `resume_manifest.json`.
+The stable slice proceeds through the ordinary epic-to-main PR; shipping story
+content, Boot and AudioDirector remain separate work.

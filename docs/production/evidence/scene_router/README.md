@@ -56,3 +56,18 @@ them restored the old art checks. No environment blocker or production asset cha
 Shipping story controllers/registry, Boot, authored final choreography, audio mix/
 silence, target hardware and Windows remain separate. The partial-checkpoint prose
 above records earlier history, not the current core acceptance status.
+
+## Connection recovery and integration gate
+
+The accepted manifest and its 55 files are unchanged. PR #41 was already merged
+before the outage; its epic tree equals accepted feature `c050d9f`. The native
+close and seamless results above were complete and reused. No test process
+survived the recreated workspace, so none needed termination.
+
+`resume_manifest.json` records the accepted hashes, recovered source and new
+integration logs. `resume_credential_failure.log` is a resolved loss of the
+credential helper in the snapshot; `resume_credential_restore.log` and
+`resume_recovery.log` retain the working restoration. `integration_import.log`
+and `integration_epic_smoke.log` are the fresh merged-epic startup/safe-exit gate,
+not a repeated feature acceptance suite. The 242 tracked runtime/archive files
+remain exact and eleven runtime payloads match. Existing acceptance is preserved.
