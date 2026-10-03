@@ -33,3 +33,8 @@ points, complete world content, authored finale transitions, physical Windows
 behavior and target-GPU profiling remain separate work. No art/puzzle/canon or
 performance budget was changed. Atomic rename was tested on this Linux filesystem;
 it does not certify power-loss behavior or Windows filesystem replacement.
+
+Integration: PR #33 merged into epic as `d4c5f5e756445b3daf0aea29f319f1005db34722`; tree `82d91c036e6f5fa972da1a712e9a4041d3291b00`
+matches the accepted feature. `epic_engine.log` confirms the merged graphical
+startup. GitHub reports MERGEABLE/CLEAN; no CI checks are configured, so no CI
+execution is claimed.
