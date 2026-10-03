@@ -152,7 +152,8 @@ func _check_overlay(overlay: Node) -> void:
     _check(overlay.visible and get_tree().paused, "F3 changed pause state")
     _key(KEY_F3, false)
     get_tree().paused = false
-    Input.mouse_mode = before["mouse"]
+    # Restore through the capture owner: the shell now starts in UI mode.
+    InputManager.set_mode(before["input"])
     _check(_state() == before, "Read-only overlay changed state during toggles")
     _check_save_preview(snapshot)
     print("DEBUG_TOOLS checked: live stage/save/audio, deep-copy snapshot, F3/echo/pause, input/capture, Cyrillic glyphs")

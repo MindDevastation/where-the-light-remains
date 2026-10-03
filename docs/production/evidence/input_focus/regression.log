@@ -1,0 +1,59 @@
+$ bash -c '../toolchain/bin/godot --headless --path game res://tests/debug_tools_smoke.tscn -- --dev-tools --expect-overlay && ../toolchain/bin/godot --headless --path game --script res://tests/archive_kit_smoke.gd && ../toolchain/bin/godot --headless --path game --script res://tests/wing01_optics_smoke.gd'
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=true; display=headless; expected_overlay=true
+DEBUG_TOOLS checked: missing/valid/malformed/oversize save preview without modifying source files
+DEBUG_TOOLS checked: live stage/save/audio, deep-copy snapshot, F3/echo/pause, input/capture, Cyrillic glyphs
+DEBUG_TOOLS PASS: gate, state/file integrity, autoloads; requesting App safe exit
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ARCHIVE_KIT_GEOMETRY PASS: wall_2m; triangles=108; surfaces=1; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_GEOMETRY PASS: wall_4m; triangles=212; surfaces=1; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_GEOMETRY PASS: arch_4m; triangles=1412; surfaces=2; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_GEOMETRY PASS: floor_1m; triangles=20; surfaces=1; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_GEOMETRY PASS: pier_4m; triangles=332; surfaces=2; external materials; metric UVs; normals/tangents; bounds/pivots/anchors/yaws; script-free
+ARCHIVE_KIT_FLOOR PASS: 162 actual top/seam rays, continuous Y=0
+ARCHIVE_KIT_BLOCKERS PASS: six actual capsule sweeps + crown ray; aperture stays open
+ARCHIVE_KIT_WALK PASS: yaw=0.0; lane=-0.75; final=(-0.75, 0.000839, 1.549996); feet_y_range=-0.00016602571122..0.00092893448891
+ARCHIVE_KIT_WALK PASS: yaw=0.0; lane=0.0; final=(0.0, 0.000936, 1.55); feet_y_range=0.00008764764061..0.00094133085804
+ARCHIVE_KIT_WALK PASS: yaw=0.0; lane=0.75; final=(0.75, 0.00084, 1.550001); feet_y_range=0.00001699413406..0.0009277825593
+ARCHIVE_KIT_FLOOR PASS: 162 actual top/seam rays, continuous Y=0
+ARCHIVE_KIT_BLOCKERS PASS: six actual capsule sweeps + crown ray; aperture stays open
+ARCHIVE_KIT_WALK PASS: yaw=90.0000025044782; lane=-0.75; final=(-0.75, 0.00084, 1.550001); feet_y_range=-0.00000647926936..0.00093221617863
+ARCHIVE_KIT_WALK PASS: yaw=90.0000025044782; lane=0.0; final=(0.0, 0.000109, 1.550106); feet_y_range=0.00008764065569..0.00093617924722
+ARCHIVE_KIT_WALK PASS: yaw=90.0000025044782; lane=0.75; final=(0.75, 0.00084, 1.549995); feet_y_range=-0.00000563816866..0.00093356886646
+ARCHIVE_KIT_FLOOR PASS: 162 actual top/seam rays, continuous Y=0
+ARCHIVE_KIT_BLOCKERS PASS: six actual capsule sweeps + crown ray; aperture stays open
+ARCHIVE_KIT_WALK PASS: yaw=180.000005008956; lane=-0.75; final=(-0.75, 0.000835, 1.55); feet_y_range=-0.00021010369528..0.00093391345581
+ARCHIVE_KIT_WALK PASS: yaw=180.000005008956; lane=0.0; final=(0.0, 0.000936, 1.55); feet_y_range=0.00009769253666..0.00094134989195
+ARCHIVE_KIT_WALK PASS: yaw=180.000005008956; lane=0.75; final=(0.75, 0.00084, 1.55); feet_y_range=-0.00000578560866..0.00093422661303
+ARCHIVE_KIT_FLOOR PASS: 162 actual top/seam rays, continuous Y=0
+ARCHIVE_KIT_BLOCKERS PASS: six actual capsule sweeps + crown ray; aperture stays open
+ARCHIVE_KIT_WALK PASS: yaw=270.000000683245; lane=-0.75; final=(-0.75, 0.000108, 1.55); feet_y_range=-0.00000586902024..0.00093153357739
+ARCHIVE_KIT_WALK PASS: yaw=270.000000683245; lane=0.0; final=(0.0, 0.000109, 1.550035); feet_y_range=0.00010234850924..0.00094135967083
+ARCHIVE_KIT_WALK PASS: yaw=270.000000683245; lane=0.75; final=(0.75, 0.000045, 1.55); feet_y_range=-0.00000569614349..0.00093356036814
+ARCHIVE_KIT_FLOOR PASS: 162 actual top/seam rays, continuous Y=0
+ARCHIVE_KIT_BLOCKERS PASS: six actual capsule sweeps + crown ray; aperture stays open
+ARCHIVE_KIT_WALK PASS: yaw=0.0; lane=-0.75; final=(-0.75, 0.000839, 1.549996); feet_y_range=-0.00016602571122..0.00092893448891
+ARCHIVE_KIT_WALK PASS: yaw=0.0; lane=0.0; final=(0.0, 0.000128, 1.549995); feet_y_range=0.00008764764061..0.00094140099827
+ARCHIVE_KIT_WALK PASS: yaw=0.0; lane=0.75; final=(0.75, 0.00084, 1.550001); feet_y_range=0.00001699413406..0.0009277825593
+ARCHIVE_KIT_CORNER PASS: one pier owns actual right-angle join; anchors and isolated pier capsule sweeps pass at four yaws
+ARCHIVE_KIT PASS: five imported modules; primary instances=63; triangles=4284; authored_surfaces=68; replacement_triangles=4288; 15 real capsule traversals; floor continuity; blockers; yaws; material reuse; script-free
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WING01_IMPORT PASS: frame; triangles=2764; shared surfaces=4
+WING01_IMPORT PASS: outer; triangles=1588; shared surfaces=3
+WING01_IMPORT PASS: middle; triangles=1588; shared surfaces=3
+WING01_IMPORT PASS: inner; triangles=1588; shared surfaces=3
+WING01_IMPORT PASS: focus; triangles=1108; shared surfaces=3
+WING01_ARTICULATION PASS: outer; yaw=0.0; independent poses=5
+WING01_ARTICULATION PASS: middle; yaw=0.0; independent poses=5
+WING01_ARTICULATION PASS: inner; yaw=0.0; independent poses=5
+WING01_ARTICULATION PASS: focus; yaw=0.0; independent poses=5
+WING01_ARTICULATION PASS: outer; yaw=1.5707963267949; independent poses=5
+WING01_ARTICULATION PASS: middle; yaw=1.5707963267949; independent poses=5
+WING01_ARTICULATION PASS: inner; yaw=1.5707963267949; independent poses=5
+WING01_ARTICULATION PASS: focus; yaw=1.5707963267949; independent poses=5
+WING01_SMOKE PASS: 8636 triangles / 16 shared surfaces; 40 independent poses; 48 actual Area rays; five focus stops; two assembly yaws; primitive blocking
+
+exit=0

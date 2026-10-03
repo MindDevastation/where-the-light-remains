@@ -38,7 +38,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 
 - [ ] Boot/Main Menu in Russian.
 - [ ] SettingsManager full ConfigFile read/write with Russian UI labels.
-- [ ] InputManager focus/pause/capture handling.
+- [x] InputManager focus/pause/capture handling: requested mode survives pause/focus; visible startup UI cursor, immediate gates, held/echo movement suppression and recapture-motion guard. Clean import and actual authenticated TCP X11 focus/capture checks PASS; see `INPUT_FOCUS.md` and `evidence/input_focus/`. Esc/pause UI and repeat-skip consumers remain separate work.
 - [ ] Pause/Fade UI in Russian.
 - [ ] Basic Player CharacterBody3D + interaction ray.
 

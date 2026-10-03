@@ -1,0 +1,30 @@
+$ bash -c 'gh api repos/MindDevastation/where-the-light-remains --jq '"'"'{permissions,default_branch}'"'"' && git fetch origin main epic/03-art-foundation && git status --porcelain && git log -4 origin/main --oneline'
+{"default_branch":"main","permissions":{"admin":true,"maintain":true,"pull":true,"push":true,"triage":true}}
+From https://github.com/MindDevastation/where-the-light-remains
+ * branch            main                   -> FETCH_HEAD
+ * branch            epic/03-art-foundation -> FETCH_HEAD
+   75f3a04..2613bce  main                   -> origin/main
+   4fe418d..d21ee00  epic/03-art-foundation -> origin/epic/03-art-foundation
+2613bce Merge pull request #28 from MindDevastation/epic/03-art-foundation
+d21ee00 docs(art): record merged Wing I and Archive regression gates
+aae7cc5 Merge pull request #27 from MindDevastation/feature/03-art-foundation/wing01-optics-sample
+d799a3e docs(art): accept independently retrieved Wing I mechanical sample
+
+exit=0
+$ bash -c 'test -n "$GH_TOKEN" && echo '"'"'GH_TOKEN presence PASS'"'"'
+gh auth status && gh api user --jq .login && git ls-remote origin refs/heads/main refs/heads/epic/03-art-foundation && gh auth setup-git && git lfs version && python3 ../toolchain/check_material_lfs.py && df -h . && git status --porcelain'
+GH_TOKEN presence PASS
+github.com
+  ✓ Logged in to github.com account MindDevastation (GH_TOKEN)
+  - Active account: true
+  - Git operations protocol: https
+  - Token: github_pat_**********************************************************************************
+MindDevastation
+d21ee0077d8c34b693b540c44210c1801a72bd31	refs/heads/epic/03-art-foundation
+2613bcef0b320ed66b2076ba6f538c207a48b1b9	refs/heads/main
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+LFS_AUTH PASS: authenticated origin batch HTTP 200; remote payload 1992 bytes; SHA-256 matched
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          32G  542M   30G   2% /
+
+exit=0
