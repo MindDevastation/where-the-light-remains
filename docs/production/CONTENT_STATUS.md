@@ -82,6 +82,17 @@ input, read-only debug, mixer and engine regressions pass. See `SETTINGS.md` and
 points; no story, puzzle, art budget or target-hardware certification changed.
 Next: pause UI and a reusable fade overlay for the later scene router.
 
+## Pause / fade foundation — 2026-10-03 UTC
+
+**PASS for the bounded shell.** Russian pause/settings nesting physically freezes
+the player and preserves audio/files, held-key/recapture and requested modes.
+Later input locks and removed pause scenes do not strand simulation. Explicit
+awaited fade completes/cancels while paused and blocks GUI/key input. Actual
+Forward+ pause/loading views inspected; clean source and previous input/player/
+settings/debug/startup paths pass. See `PAUSE_FADE.md` and `evidence/pause_fade/`.
+No automatic story transition/skip timing added. Next: typed SaveGame and validated
+atomic JSON/backup/recovery, then scene routing and authored playable worlds.
+
 ## Visual rebaseline v2 — 2026-10-02 UTC / 2026-10-03 Moscow
 
 **PARTIAL.** Owner-approved visual direction: Hybrid Warcraft Observatory;

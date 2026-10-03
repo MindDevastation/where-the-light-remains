@@ -79,3 +79,11 @@ and test scene are not attached to a production scene or autoload. Do not use
 Engine API references: [Input](https://docs.godotengine.org/en/stable/classes/class_input.html),
 [Window focus signals](https://docs.godotengine.org/en/stable/classes/class_window.html),
 [Node process modes](https://docs.godotengine.org/en/stable/classes/class_node.html).
+
+## Pause consumer checkpoint — 2026-10-03 UTC
+
+The later Russian PauseMenu now consumes fresh Esc for active GAMEPLAY/LIMITED_LOOK
+players and delegates mode/pause/capture to this service. Empty UI, DISABLED and
+CINEMATIC leave raw Esc available; sequence arbitration remains later work. Nested
+settings, held-key/recapture, later locks and removed pause scenes are validated in
+`PAUSE_FADE.md` and `evidence/pause_fade/`. InputManager ownership is unchanged.
