@@ -1,0 +1,26 @@
+{
+  "source": "dd3068e8dabc07b71b17c128c21ddda86b33c186",
+  "clean_tracked_files_unchanged": 199,
+  "files": {
+    "game/autoload/save_manager.gd": "b3884a5dafae237f59b7c631a7950a83d9ab655c3db275c203c593d46540bb44",
+    "game/autoload/app.gd": "a730dff15cf8b0748443e17153c35900c1acd14bb251696675f961193969f227",
+    "game/core/game_root/game_root.gd": "794e0f2d38b0efe693e58aa32acb3c460fb5189f29f7d320af84f9a4972be9b1",
+    "game/core/game_root/game_root.tscn": "0434312592761d20f74331a9d453972ef69f80aa4eaff957c99990f575ab3f96",
+    "game/core/ui/exit_failure_dialog.gd": "d0839d59e5b066cf0910ae5ce2b4853008d7d70c49b9a797eb9b9911f49c31d8",
+    "game/core/ui/exit_failure_dialog.tscn": "cb18b2d2cc792124c01d83b3fdc0d0b12daf6fe98bda8a3083660a0cc4fe1ada",
+    "game/tests/save_io_smoke.gd": "b3959b5823462a92e35417983e533da13f52b46766a7851202cba6ed32cb5268",
+    "game/tests/app_save_exit_smoke.gd": "f7d4326b5358c2600f9d329e0d2bfe5258137d90190e04ad0e0d1bc8b3ba681d",
+    "tools/x11_close_driver.py": "7129dabc13d9936546265a19aca1e609b9bda972625aec2bbbbf1904e31112a4",
+    "tools/verify_app_save_exit.py": "ef2ba0e9a23477234148783c819ec0faa315494496528869eb229822dd8b39a5"
+  },
+  "evidence": {
+    "app_dirty_exit.log": "2fae32aef64fe2698391a28df0623c2d17626bf58efe8221849f521ef77afc92",
+    "graphical_engine.log": "702f6baf232b501d26430be8d4a7821c571119a902932023193efb1c328edf4b",
+    "clean_import.log": "bdac8e77fd505789812ce87e67f84124ab97ec97136457e69b80661410cabf58",
+    "save_failure_1280.png": "fb4b7b783efd539bab74e142e6516940ddaf92fb6923fdb936d24d3fdaa7b329",
+    "regressions.log": "b0f77dc2b05381f9d5a1dc8cc5736071ec8431afa141c9d49ff12bc79d062854",
+    "native_dirty_exit.log": "26a8b54562fac916e31b3a1583d55c2caf766fd715c5805fcaf426ae8244f459",
+    "payloads.json": "f87155c26406a5074cad0dbdfac3b2ce730d960a6480c5f7e48c67f9d83b8f83",
+    "graphical_dialog.log": "9b00ae89bc76e89dbe09622813ed3619275ede288981d1d63b8a4e4e66e0a156"
+  }
+}

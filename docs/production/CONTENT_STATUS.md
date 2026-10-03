@@ -104,6 +104,18 @@ pause/read-only inspector and TCP X11/Forward+ startup regressions pass. See
 parameters are introduced. Next: atomic disk write, backup/corruption recovery
 and safe-exit error handling; Boot/Continue and world-domain validation follow.
 
+## Atomic saves / safe exit — 2026-10-03 UTC
+
+**PASS for the bounded persistence service.** Validated temp/flush/readback/
+backup/replace, read-only corruption recovery, future-schema protection and dirty
+failure semantics pass against actual files. App and real X11 native close commit
+before successful quit; save failure leaves a Russian retry/stay modal and intact
+state. Actual Forward+ view inspected, 199 clean tracked files unchanged and prior
+DTO/input/player/pause/debug/startup regressions pass. See `SAVE_SYSTEM.md` and
+`evidence/atomic_save/`. Boot/Continue, explicit both-corrupt New Game UI/policy,
+world checkpoints, routing and Windows/physical hardware remain later work.
+Next: bounded SceneRouter preload/state/spawn/fade pipeline.
+
 ## Visual rebaseline v2 — 2026-10-02 UTC / 2026-10-03 Moscow
 
 **PARTIAL.** Owner-approved visual direction: Hybrid Warcraft Observatory;
