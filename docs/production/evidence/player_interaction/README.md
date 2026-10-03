@@ -27,3 +27,8 @@ capsule before the ray; isolated ray-only probe passes. First preview lacked
 sky reflection; accepted Wing I lighting fixed visibility. Concurrent runners
 selected the same X display; serial runner checks pass. Reuse the existing
 TCP/cookie path and run these graphical checks serially.
+
+Integration: PR #31 merged as `3db061d38c80e4695547aa800643d7cd2650f4aa` (tree `72c824b49cdfff9df01ed3879e61e5b2e3e3e213`).
+`epic_engine.log` confirms graphical engine smoke on this merged epic.
+GitHub reported MERGEABLE/CLEAN; the repository has no configured CI checks,
+so an empty check list is not recorded as CI execution.
