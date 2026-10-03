@@ -80,11 +80,14 @@ func _run() -> void:
     file.store_string("x".repeat(SettingsManager.MAX_FILE_BYTES + 1))
     file.close()
     _reject_file("oversize")
-    file = FileAccess.open(_path, FileAccess.WRITE)
-    file.store_string("[settings\nfov=oops")
-    file.close()
-    print("SETTINGS expected parser diagnostic follows (malformed isolated fixture)")
-    _reject_file("malformed")
+    # ConfigFile logs ERROR for expected malformed input. Keep this negative
+    # case in headless coverage; the graphical runner rejects every ERROR.
+    if DisplayServer.get_name() == "headless":
+        file = FileAccess.open(_path, FileAccess.WRITE)
+        file.store_string("[settings\nfov=oops")
+        file.close()
+        print("SETTINGS expected parser diagnostic follows (malformed isolated fixture)")
+        _reject_file("malformed")
     var before := SettingsManager.snapshot()
     _check(SettingsManager.apply_settings(chosen, _path + "/absent/settings.cfg") != OK, "Unwritable path accepted")
     _check(SettingsManager.snapshot() == before, "Write failure changed live state")
@@ -218,8 +221,23 @@ func _ui() -> void:
     _menu.apply_button.pressed.emit()
     _check(_menu.visible and _menu.error_label.text.contains("Не удалось") and SettingsManager.snapshot() == before, "Failed Apply state/message")
     _menu.storage_path = _path
-    _menu.apply_button.pressed.emit()
-    _check(not _menu.visible and SettingsManager.fov == 103.0 and InputManager.mode == InputManager.Mode.GAMEPLAY, "Apply did not persist/close/restore")
+    # A typed SpinBox value must commit on the real Apply click's focus change.
+    var line: LineEdit = _menu.fields["fov"].get_line_edit()
+    line.grab_focus()
+    line.text = "103"
+    _click(_menu.apply_button)
+    await _frames()
+    _check(not _menu.visible and SettingsManager.fov == 103.0 and InputManager.mode == InputManager.Mode.GAMEPLAY, "Actual Apply did not commit text/persist/close/restore")
+    _menu.open()
+    var escape := InputEventKey.new()
+    escape.keycode = KEY_ESCAPE
+    escape.pressed = true
+    Input.parse_input_event(escape)
+    Input.flush_buffered_events()
+    _check(not _menu.visible and InputManager.mode == InputManager.Mode.GAMEPLAY, "Esc Cancel did not close/restore")
+    escape.pressed = false
+    Input.parse_input_event(escape)
+    Input.flush_buffered_events()
     InputManager.set_paused(true)
     _menu.open()
     _check(InputManager.mode == InputManager.Mode.UI and get_tree().paused, "Paused modal state")

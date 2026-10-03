@@ -48,7 +48,7 @@ func _ready() -> void:
     grid.columns = 2
     grid.size_flags_horizontal = Control.SIZE_EXPAND_FILL
     grid.add_theme_constant_override("h_separation", 24)
-    grid.add_theme_constant_override("v_separation", 14)
+    grid.add_theme_constant_override("v_separation", 10)
     scroll.add_child(grid)
     _option(grid, "Разрешение", "resolution", ["1280 × 720", "1600 × 900", "1920 × 1080"])
     _toggle(grid, "Полный экран", "fullscreen")
@@ -99,7 +99,8 @@ func _option(grid: GridContainer, label: String, key: String, options: Array) ->
 func _toggle(grid: GridContainer, label: String, key: String) -> void:
     _label(grid, label)
     var field := CheckButton.new()
-    field.text = "Включено"
+    field.text = "Выключено"
+    field.toggled.connect(func(pressed: bool) -> void: field.text = "Включено" if pressed else "Выключено")
     grid.add_child(field)
     fields[key] = field
 
@@ -157,6 +158,7 @@ func _set_draft(values: Dictionary) -> void:
             field.select(SettingsManager.RESOLUTIONS.find(values[key]) if key == "resolution" else SettingsManager.PRESETS.find(values[key]))
         elif field is CheckButton:
             field.set_pressed_no_signal(values[key])
+            field.text = "Включено" if values[key] else "Выключено"
         else:
             field.set_value_no_signal(values[key])
 
