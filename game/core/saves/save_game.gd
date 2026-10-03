@@ -42,7 +42,7 @@ func to_dict() -> Dictionary:
     return {
         "save_version": VERSION, "stage_id": String(stage_id),
         "checkpoint_id": String(checkpoint_id), "collected_fragments": fragments,
-        "world_states": world_states.duplicate(true), "milestones": milestones.duplicate(true),
+        "world_states": _clone_json(world_states), "milestones": _clone_json(milestones),
         "achievement_ids": achievements, "game_completed": game_completed,
     }
 
