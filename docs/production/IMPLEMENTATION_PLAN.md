@@ -44,7 +44,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 
 ## Milestone 2 — state / saves / routing
 
-- [ ] Typed SaveGame v1 DTO/resource.
+- [x] Typed SaveGame v1 DTO/resource with bounded JSON-only state, exact numeric round trips and validated isolated GameState capture/apply. Clean import, invalid/version/order/resource/cycle cases, state/file integrity, prior shell/player/input and Forward+ startup PASS; see `SAVE_SYSTEM.md` and `evidence/save_dto/`. Disk persistence and registered-world validation remain later tasks.
 - [ ] Atomic JSON write + backup + validation + corruption fallback.
 - [ ] SceneRouter preload/fade/input-lock/apply-state pipeline.
 - [ ] ArchiveMain graybox + spawn/state restoration.

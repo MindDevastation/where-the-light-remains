@@ -1,0 +1,17 @@
+{
+  "source": "2006a7691f0b05d506e8ea2f58be799ec7a9e026",
+  "clean_tracked_files_unchanged": 188,
+  "files": {
+    "game/core/saves/save_game.gd": "549799c0cfc1363ce50e75cde09d3e9312ec09eef05a77c721763c4e071984f5",
+    "game/core/saves/save_game.gd.uid": "8902071b82c06e72499882eb9f637ec379bf26f849e59f2c9fc70177fb6210b9",
+    "game/autoload/game_state.gd": "b961e009ec86f1cb15d72ffcad9a8004b15f6719eadfdaa8f3e9bf1c32ca6841",
+    "game/tests/save_dto_smoke.gd": "72dc13bc0ec0c4a39aa8558e06ef1bd7402001d144031bd3274a794dc1b032ad",
+    "game/tests/save_dto_smoke.tscn": "38387cd8419349bb4c041190408ab85ace48d66fbe48e286914e5bdc60767a7c",
+    "game/tests/save_dto_smoke.gd.uid": "3ea14831dbcb8199725ff2ab92767cfa2e73b8cada7d599302b3272815184492"
+  },
+  "logs": {
+    "clean_import_tests.log": "e5dd5fafa3296147dd4f495e1e1e7065eec8ffd0bd3d8a6b65115b98d55e0722",
+    "graphical_engine.log": "7720f86534beee756b79f39c12d3322c5847ff0466e27bd2581229700488335a",
+    "player_input.log": "f0e1269fb338e97dfa3830e1fe356768b7b39db756e206234bd3f2169b838800"
+  }
+}
