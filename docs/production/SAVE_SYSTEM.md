@@ -31,7 +31,9 @@ empty with no automatic awards. Defaults represent a fresh S00 logical state.
 
 Reject wrong/missing/unknown fields, invalid identifiers/order, nonfinite/unsafe
 JSON numbers, Objects/Resources/vectors, excessive depth/nodes/text/serialized size.
-JSON-only copies normalize StringName keys/values to strings. Schema v1 is the first
+JSON-only copies normalize StringName keys/values to strings and exact integral
+JSON numbers to integers (fractional finite values remain floats). Integers are
+limited to the exact JSON double range ±(2^53−1). Schema v1 is the first
 disk schema: unsupported versions return an explicit error; no predecessor
 migration is invented. Future-version data must not be treated as corruption.
 

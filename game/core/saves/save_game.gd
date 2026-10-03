@@ -150,6 +150,10 @@ static func _valid_json(value: Variant, depth: int, budget: Array) -> bool:
 
 
 static func _clone_json(value: Variant) -> Variant:
+    # JSON.parse returns floats for integers. Normalize exact integral numbers
+    # so discrete logical states keep a stable representation across disk IO.
+    if typeof(value) == TYPE_FLOAT and is_finite(value) and value == floorf(value):
+        return int(value)
     if value is Dictionary:
         var copy := {}
         for key in value:

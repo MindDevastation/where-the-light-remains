@@ -46,7 +46,7 @@ func _run() -> void:
     partial.stage_id = &"s02_warmth_light"
     partial.checkpoint_id = &"fixture_checkpoint"
     partial.collected_fragments = [&"star", &"hearth"]
-    partial.world_states = {&"fixture": {&"flags": [true, false, null], &"counter": 3, &"state": &"idle", &"nested": {&"enabled": false}}}
+    partial.world_states = {&"fixture": {&"flags": [true, false, null], &"counter": 3, &"fraction": .1, &"safe_integer": 9007199254740991, &"state": &"idle", &"nested": {&"enabled": false}}}
     partial.milestones = {&"fixture_seen": true}
     partial.achievement_ids = [&"fixture_optional"]
     var complete := partial.copy_validated()
