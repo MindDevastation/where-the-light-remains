@@ -92,7 +92,8 @@ func _dismiss(restore_mode: bool, release_pause: bool) -> void:
     if not visible:
         return
     hide()
-    _settings.close()
+    if is_instance_valid(_settings):
+        _settings.close()
     if restore_mode and InputManager.mode == InputManager.Mode.UI:
         InputManager.set_mode(_previous_mode)
     if release_pause:

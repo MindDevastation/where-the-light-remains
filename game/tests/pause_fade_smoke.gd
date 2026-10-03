@@ -11,6 +11,7 @@ var _fade_results: Array[bool] = []
 var _settings_before: Dictionary
 var _file_hashes: Dictionary
 var _buses_before: Array
+var _buses_original: Array
 var _path := ""
 
 
@@ -86,11 +87,12 @@ func _run() -> void:
         get_tree().root.size = Vector2i(1280, 720)
     _settings_before = SettingsManager.snapshot()
     _file_hashes = _files()
-    _buses_before = _buses()
+    _buses_original = _buses()
     var stage_before := GameState.current_stage_id
     var audio_before := AudioDirector.current_state
     SettingsManager._assign(SettingsManager.DEFAULTS)
     SettingsManager.apply_runtime(false)
+    _buses_before = _buses()
     _game = (load("res://core/game_root/game_root.tscn") as PackedScene).instantiate()
     add_child(_game)
     _player = _game.get_node("PlayerContainer/Player")
@@ -175,6 +177,16 @@ func _run() -> void:
     _check(_pause.open(), "External release test pause")
     InputManager.set_paused(false)
     _check(not _pause.visible and InputManager.mode == InputManager.Mode.GAMEPLAY, "External resume stranded UI")
+    var detached := (load("res://core/game_root/game_root.tscn") as PackedScene).instantiate()
+    add_child(detached)
+    var detached_player: FirstPersonPlayer = detached.get_node("PlayerContainer/Player")
+    var detached_pause: PauseMenu = detached.get_node("UILayer/PauseMenu")
+    detached_player.set_active(true)
+    _check(detached_pause.open(), "Removed-root pause fixture")
+    detached.free()
+    _check(not get_tree().paused, "Removed owned pause stranded simulation")
+    SceneRouter.bind_world_slot(_game.get_node("WorldSlot"))
+    _player.camera.make_current()
     print("PAUSE checked: inactive/unsupported/focus gates, physical controller stop, echo, settings Esc/Apply nesting, mouse/Esc resume, held W/recapture, LIMITED_LOOK and external lock/release")
     await _fade_checks()
     _player.set_active(false)
@@ -184,7 +196,7 @@ func _run() -> void:
     DirAccess.remove_absolute(ProjectSettings.globalize_path(_path))
     SettingsManager._assign(_settings_before)
     SettingsManager.apply_runtime(false)
-    _check(_buses() == _buses_before, "Preferences/audio not restored")
+    _check(_buses() == _buses_original, "Preferences/audio not restored")
     if not _failures.is_empty():
         get_tree().quit(1)
         return
@@ -224,14 +236,20 @@ func _fade_checks() -> void:
     _check(_fade_results == [true] and not _fade.visible and not _fade.busy, "Awaited fade did not complete")
     _start_fade(_fade, 1.0, .5)
     await get_tree().create_timer(.03).timeout
+    _fade.fade_finished.connect(func(_completed: bool) -> void:
+        _check(not _fade.visible and not _fade.busy, "Clear emitted before visual cleanup")
+    , CONNECT_ONE_SHOT)
     _fade.clear()
     _check(_fade_results == [true, false] and not _fade.visible and not _fade.busy, "Clear stranded cancelled awaiter")
+    _start_fade(_fade, 1.0, .5)
+    _fade.cancel()
+    _check(_fade_results == [true, false, false] and not _fade.visible, "Immediate cancel left transparent input blocker")
     _check(not await _fade.fade_to(NAN) and not await _fade.fade_to(.5, -1.0), "Invalid fade arguments accepted")
     var disposable := (load("res://core/transitions/fade_overlay.tscn") as PackedScene).instantiate() as FadeOverlay
     _game.get_node("TransitionLayer").add_child(disposable)
     _start_fade(disposable, 1.0, .5)
     disposable.free()
-    _check(_fade_results == [true, false, false], "Free stranded cancelled awaiter")
+    _check(_fade_results == [true, false, false, false], "Free stranded cancelled awaiter")
     _check(InputManager.mode == requested_mode and get_tree().paused, "Fade mutated requested mode/pause")
     _pause.resume()
     print("FADE checked: pause-independent animation, awaited completion, overlap/invalid rejection, clear/free cancellation and actual GUI/key blocking")

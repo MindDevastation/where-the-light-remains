@@ -11,6 +11,11 @@ var _from := 0.0
 var _target := 0.0
 var _duration := 0.0
 var _elapsed := 0.0
+var _exiting := false
+
+
+func _enter_tree() -> void:
+    _exiting = false
 
 
 func _ready() -> void:
@@ -35,7 +40,7 @@ func _ready() -> void:
 
 
 func fade_to(alpha: float, duration: float = .25) -> bool:
-    if busy or not is_inside_tree() or not is_finite(alpha) or not is_finite(duration) or duration < 0:
+    if busy or _exiting or is_queued_for_deletion() or shade == null or not is_inside_tree() or not is_finite(alpha) or not is_finite(duration) or duration < 0:
         return false
     _target = clampf(alpha, 0.0, 1.0)
     if is_zero_approx(duration):
@@ -67,15 +72,20 @@ func _set_alpha(alpha: float) -> void:
 
 
 func clear() -> void:
-    cancel()
+    var was_busy := busy
+    busy = false
+    set_process(false)
     _set_alpha(0.0)
     loading.hide()
+    if was_busy:
+        fade_finished.emit(false)
 
 
 func cancel() -> void:
     if busy:
         busy = false
         set_process(false)
+        _set_alpha(shade.color.a)
         fade_finished.emit(false)
 
 
@@ -89,4 +99,5 @@ func _input(_event: InputEvent) -> void:
 
 
 func _exit_tree() -> void:
+    _exiting = true
     cancel()
