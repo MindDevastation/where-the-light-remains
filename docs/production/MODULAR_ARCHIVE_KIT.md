@@ -177,10 +177,10 @@ valid tangents and outward normals. This density is local to the sample and may
 be revised with the actual viewing-distance review; it is not a project-wide
 texture or memory budget. No unique lightmap/trim requirement is introduced.
 
-Planned files, **not present yet**:
+Accepted bounded sample files (see the actual evidence linked above):
 
 - Source: `assets/3d/blender/archive_kit/archive_kit_sample.blend`, with one named
-  collection per module and source-only guides excluded from export.
+  collection per module.
 - Five GLBs: `game/art/meshes/archive_kit/<stem>.glb`, with `stem` values in JSON.
 - Five script-free wrappers: `game/worlds/archive/modules/archive_<id>.tscn`.
   Each has an identity Node3D root, imported visual child, separate StaticBody3D

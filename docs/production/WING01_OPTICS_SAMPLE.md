@@ -1,7 +1,8 @@
 # Wing I optical articulation sample
 
-Status: **brief approved for bounded production under the existing roadmap;
-acceptance pending actual source/runtime/visual/LFS checks**.
+Status: **PASS for the bounded S02-001/S02-003 mechanical carrier**. Full S02
+inventory/gameplay and physical-GPU performance remain open. Actual acceptance:
+[`evidence/wing01_optics/README.md`](evidence/wing01_optics/README.md).
 
 ## Authority and scope
 
@@ -33,7 +34,8 @@ is (0, 1.72, 0), axis local +Z; outer/middle/inner radii .89/.70/.51 m, radial
 width .07 m. Grip centers and the focus joint are pinned in the JSON contract.
 The base is 1.92 m wide, .98 m deep; side supports reach 1.88 m. The assembled
 ring crown reaches 2.645 m. Focus wheel radius .19 m, axis local +Z, joint
-(.68, .59, -.56). The sample is a freestanding mechanism, not a room layout.
+(.68, .59, -.56). The .19 m wheel radius is its rim centerline; outside rim
+radius is .2175 m. The sample is a freestanding mechanism, not a room layout.
 
 ## Ownership and export
 

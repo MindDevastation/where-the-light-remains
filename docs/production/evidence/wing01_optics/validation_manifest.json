@@ -171,5 +171,9 @@
       ],
       "inspected": true
     }
-  ]
+  ],
+  "validated_implementation_commit": "a3c11209d7218fe2ba08b402bac054d6d49f7cc8",
+  "independent_retrieved_commit": "a3c11209d7218fe2ba08b402bac054d6d49f7cc8",
+  "independent_isolation": "shallow remote clone; no alternates; private empty LFS store before pull; all fourteen HEAD payloads retrieved",
+  "acceptance": "PASS for bounded carrier; full S02/gameplay/target hardware remain open"
 }

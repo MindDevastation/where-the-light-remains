@@ -1,7 +1,7 @@
 # Wing I optical carrier evidence — 2026-10-03 UTC
 
-Producer source/import/physics/three-view gates: **PASS**. Independent upload /
-retrieval / fresh verification: **pending**, so integration is not yet accepted.
+Producer source/import/physics/three-view gates and independent upload /
+retrieval / fresh verification: **PASS for the bounded carrier**.
 Scope is the bounded S02-001/S02-003 art carrier in
 [`WING01_OPTICS_SAMPLE.md`](../../WING01_OPTICS_SAMPLE.md), not the playable puzzle.
 
@@ -23,6 +23,11 @@ and disk checks: [auth](auth_preflight.log), [refs/disk](ref_disk_preflight.log)
 | Actual graphical review | [front](front.log), [reverse](reverse.log), [focus](focus.log); actual 1920×1080 PNGs manually inspected; three rings/grips, stepped base, rear support and all five focus markers readable |
 | Moving parts render | Front review isolates each part against a blank frame; ring/focus pose changes exceed the pixel threshold; all five parts contribute to the framebuffer |
 | Existing contracts | [preservation](contract_preservation.log); fourteen fingerprints, Archive technical JSON, shared material/map resources, architecture, GameRoot/services unchanged |
+| Export meter bounds | [bounds](export_bounds.log); reopened source and GLB accessor envelopes agree on all three axes within 2 micrometers for all five parts |
+| LFS pointers / real upload | [pointer checkpoint](pointer_commit.log), [upload/producer fsck](upload_producer_fsck.log); six exact committed SHA-256/size pointers, six real uploads, producing Git/LFS fsck PASS |
+| Independent clone / ordinary Git | [clone](fresh_clone.log), [isolation](fresh_isolation.log), [hydration](fresh_hydration.log); remote shallow HEAD `a3c11209d7218fe2ba08b402bac054d6d49f7cc8`, no alternates/shared store; all 555 immutable HEAD blobs / 1,519,958,847 bytes restored with Git hash/size checks, refs unchanged |
+| Independent LFS download | [retrieval](fresh_retrieval.log); six pointer-only new files and zero private payloads before actual pull; six hashes/sizes match, fourteen total HEAD payloads in private store |
+| Retrieved copy opens/runs | [fresh verification](fresh_verify.log); absolute fresh .blend/script/project paths and synchronized PWD; actual opened filepath asserted; source/topology/UV/stop/bounds, import/physics, authenticated graphical GameRoot startup and full Git/LFS fsck PASS; clean fresh working tree |
 
 ![Front](front.png)
 ![Rear support](reverse.png)
@@ -55,6 +60,15 @@ cropped the crown/base or focus markers: [front](front_framing_diagnostic.log),
 [focus](focus_framing_diagnostic.log). Cameras were moved/retargeted and the final
 PNGs recaptured and inspected. No environment blocker was inferred. Logs preserve
 commands/stdout/stderr; ANSI colors and trailing whitespace are normalized.
+
+`fresh_store_diagnostic.log` records a checker that counted Git LFS's empty
+directory scaffolding as payloads. Inspection found 28 directories and **zero
+files**, with the correct private LocalMediaDir and empty LocalReferenceDirs.
+The corrected file-only check passes before download in `fresh_retrieval.log`.
+No previous payload, alternate store, auth or permission failure occurred.
+Ordinary-Git hydration reused the confirmed eight-worker path with a finite
+780 s command bound; it completed on the first run without ref changes. Producer
+fsck's dangling blobs are informational, not missing/corrupt reachable objects.
 
 ## Reproduction
 

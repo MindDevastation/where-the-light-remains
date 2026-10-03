@@ -200,3 +200,24 @@ opening, fresh import/physics and graphical startup PASS. Exact commands/hashes:
 This accepts stone/brass integration for this bounded structural family. Other
 material families, full environment/hero art, gameplay integration and physical
 GTX1060-class profiling retain their separate gates.
+
+## Wing I mechanical material integration — 2026-10-03 UTC
+
+**PASS for this bounded carrier.** Shared stone, aged brass, dark walnut and
+dark iron pass exact imported-resource identity and actual three-view graphical
+review on the five-part Wing I sample. Four moving parts also pass isolated
+framebuffer contribution and pose-change checks. Final front/reverse/focus PNGs
+are real 1920×1080 authenticated X11 TCP/Vulkan Forward+ renders and were
+inspected; all three rings/grips and five raised focus markers remain readable.
+No shared resource/map change or per-instance material duplication.
+
+Carrier: 8,636 triangles / 16 surfaces. Isolated carrier plus thirty existing
+floor tiles: 56/42/38 draw calls; 127,216,128 total texture bytes including
+sky/framebuffer, on llvmpipe. Independent LFS retrieval and retrieved
+Blender/import/physics/graphical startup pass. Exact evidence:
+[`wing01_optics/README.md`](evidence/wing01_optics/README.md).
+
+This does not validate transparent optical surfaces, emitter/star/Hearth VFX,
+full room lighting, shipping interaction/accessibility or physical GTX1060-class
+performance. Those dependent gates and the overall visual rebaseline remain
+PARTIAL; no global texture/material/performance budget changes.

@@ -78,8 +78,8 @@ Foundation acceptance:
 - [x] Create compact shared material library baseline: six shared resources, eleven original 1K maps, neutral/warm/cool graphical review and 4x4 tiling PASS. See `MATERIAL_LIBRARY.md`, `MATERIAL_PREFLIGHT.md` and 2026-10-02 evidence. Full MAT inventory variants/quality tiers and representative target-hardware acceptance remain open.
 - [x] Define the modular Archive sample brief and assembly contract: five module types, grid/pivots, passage/collision/UV rules, file ownership and acceptance sequence. See `MODULAR_ARCHIVE_KIT.md`, the versioned JSON and dimensioned drawing. Analytical compatibility is checked; no mesh/physics/art acceptance is implied.
 - [x] Produce the bounded five-module Archive sample: editable source, five GLBs/wrappers, isolated primary/corner fixtures; actual source/import/physics/three-view Forward+/independent LFS retrieval PASS. See `evidence/modular_archive_kit/README.md`. Full ARCH inventory and target performance remain open.
-- [ ] Produce one Wing I hero mechanism sample with gameplay pivots.
-- [x] Import the Archive structural sample and validate scale, orientation, pivots, shared materials, collision and warnings. The later Wing I hero sample retains its separate import/interaction gates.
+- [x] Produce the bounded Wing I optical carrier with three separate ring pivots and a five-stop focus wheel. Source/import/physics, three actual Forward+ views and independent six-file LFS retrieval PASS; S02-001/S02-003 mechanical sample only. See `WING01_OPTICS_SAMPLE.md` and `evidence/wing01_optics/README.md`.
+- [x] Import Archive structure and the Wing I carrier: scale, orientation, pivots, shared materials, authored collision and warnings verified. Wing I grip ray selection/joint following pass; shipping interaction and puzzle rules remain separate work.
 - [ ] Run representative performance check before mass asset production.
 
 No bulk modeling starts before the export/import sample and first real LFS object are accepted.
@@ -290,3 +290,36 @@ Authenticated X11 TCP/Vulkan Forward+ GameRoot/eight-autoload/safe-exit smoke
 PASS on that merged epic; actual output is
 `evidence/modular_archive_kit/integration_epic_smoke.log`. The stable slice follows
 the normal epic-to-main route; Git merge history retains the final integration SHA.
+
+## Wing I optical articulation sample — 2026-10-03 UTC
+
+Feature: `feature/03-art-foundation/wing01-optics-sample`, from synchronized
+main/Art Foundation `e978c0d813b94d1299d8376879c75ec309012d3c`. Existing production
+docs, canonical S02 sequence and successful evidence were read first. Confirmed
+Blender and authenticated Xvfb TCP/MIT-MAGIC-COOKIE/X11/Vulkan Forward+ were
+reused; minimum capability probes passed before target checks. Standing Extra
+High / highest available request applies; no agent-side model switch is claimed.
+
+Bounded carrier implements separate mechanical S02-001/S02-003 parts: editable
+source, fixed frame, three concentric ring GLBs and five-stop wheel, script-free
+Godot wrapper with independent joints, moving grip Areas and simple blocking
+shapes. Source checkpoint `a3c11209d7218fe2ba08b402bac054d6d49f7cc8`.
+Actual source topology/UV/normals/pivots and source/GLB meter bounds pass. Runtime:
+8,636 triangles / 16 shared surfaces, 40 independent poses, 48 real selection
+rays, five distinct focus positions and two whole-assembly yaws. Three real
+1920×1080 Forward+ views inspected; isolated rendered parts/pose changes pass.
+
+Six exact LFS pointers/payloads uploaded, independently retrieved and hash-checked
+in a remote shallow clone with no alternates/shared LFS store. The confirmed
+ordinary-Git hydration path restored all 555 HEAD blobs before LFS scanning.
+Actual retrieved Blender/Godot/import/physics/graphical GameRoot startup and
+Git/LFS fsck pass. Core fourteen fingerprints, existing architecture contract,
+all shared material/map resources and global budgets remain unchanged. Evidence:
+`evidence/wing01_optics/README.md`.
+
+S02 remains PARTIAL. No emitter/star/Hearth optical response, solve rules, rewards,
+shipping interaction/UI or save state is invented. The canonical split defines
+the sequence/count but not ring detent counts/solve angles/focal distances;
+those dependent controller inputs remain open. Next safe work: canonical
+interaction/controller brief and the representative playable slice. Physical
+target-GPU profiling continues to gate bulk production.

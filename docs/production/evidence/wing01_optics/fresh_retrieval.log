@@ -1,0 +1,26 @@
+$ python -c 'from pathlib import Path;import json,subprocess
+r=Path.cwd();m=json.loads((r/'"'"'docs/production/evidence/wing01_optics/payload_manifest.json'"'"').read_text())
+for row in m:
+ expected=('"'"'version https://git-lfs.github.com/spec/v1\noid sha256:'"'"'+row['"'"'sha256'"'"']+'"'"'\nsize '"'"'+str(row['"'"'bytes'"'"'])+'"'"'\n'"'"').encode();assert (r/row['"'"'path'"'"']).read_bytes()==expected,row['"'"'path'"'"']
+assert not [p for p in (r/'"'"'.git/lfs/objects'"'"').rglob('"'"'*'"'"') if p.is_file()]
+e=subprocess.check_output(['"'"'git'"'"','"'"'lfs'"'"','"'"'env'"'"'],text=True);assert '"'"'LocalMediaDir='"'"'+str(r/'"'"'.git/lfs/objects'"'"') in e;assert '"'"'LocalReferenceDirs=\n'"'"' in e
+print('"'"'POINTER_ONLY PASS: six exact committed pointers; zero payload files in private LFS store (empty directory scaffolding allowed); no LFS reference directory'"'"')'
+POINTER_ONLY PASS: six exact committed pointers; zero payload files in private LFS store (empty directory scaffolding allowed); no LFS reference directory
+exit=0
+$ git lfs pull origin
+
+exit=0
+$ python -c 'from pathlib import Path;import json,hashlib
+r=Path.cwd();m=json.loads((r/'"'"'docs/production/evidence/wing01_optics/payload_manifest.json'"'"').read_text())
+for row in m:
+ d=(r/row['"'"'path'"'"']).read_bytes();assert len(d)==row['"'"'bytes'"'"'] and hashlib.sha256(d).hexdigest()==row['"'"'sha256'"'"'];print('"'"'RETRIEVED_HASH PASS:'"'"',row['"'"'path'"'"'],row['"'"'sha256'"'"'],len(d))
+assert len([p for p in (r/'"'"'.git/lfs/objects'"'"').rglob('"'"'*'"'"') if p.is_file() and len(p.name)==64])==14
+print('"'"'FRESH_RETRIEVAL PASS: six new payload hashes match; private LFS store contains all fourteen HEAD objects'"'"')'
+RETRIEVED_HASH PASS: assets/3d/blender/wing01/wing01_optics_sample.blend 421274ae1aadbad4f14f6d11c3d52b228c862a809bd9d71e43475432996bf3d0 1210660
+RETRIEVED_HASH PASS: game/art/meshes/wing01/sm_wing01_frame.glb 90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01 322060
+RETRIEVED_HASH PASS: game/art/meshes/wing01/sm_wing01_ring_outer.glb 14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212 185028
+RETRIEVED_HASH PASS: game/art/meshes/wing01/sm_wing01_ring_middle.glb 845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352 185080
+RETRIEVED_HASH PASS: game/art/meshes/wing01/sm_wing01_ring_inner.glb e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c 184740
+RETRIEVED_HASH PASS: game/art/meshes/wing01/sm_wing01_focus.glb da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7 128240
+FRESH_RETRIEVAL PASS: six new payload hashes match; private LFS store contains all fourteen HEAD objects
+exit=0
