@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "sample_contract_no_meshes_yet",
+  "status": "bounded_sample_validated_full_inventory_and_target_performance_open",
   "source_commit": "cabe792717828dfe54009219a7f6cc4e0fb5e5e6",
   "units": "meters",
   "axes": {
@@ -412,5 +412,22 @@
       "path": "assets/concept_art/environments/s01_observatory/Gameplay view/ca_003.png",
       "git_blob": "9e1bfb71e3fb82b802909e8b673c8ffb6d5142a1"
     }
-  ]
+  ],
+  "implementation": {
+    "date_utc": "2026-10-03",
+    "source_commit": "1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b",
+    "feature": "feature/03-art-foundation/modular-archive-kit",
+    "evidence": "docs/production/evidence/modular_archive_kit/README.md",
+    "primary_instances": 63,
+    "primary_triangles": 4284,
+    "primary_authored_surfaces": 68,
+    "replacement_triangles": 4288,
+    "corner_instances": 39,
+    "corner_triangles": 1476,
+    "remote_payloads": 6,
+    "remote_payload_bytes": 888152,
+    "bounded_gates": "PASS",
+    "target_performance": "OPEN; no physical target GPU",
+    "full_arch_inventory": "PARTIAL"
+  }
 }

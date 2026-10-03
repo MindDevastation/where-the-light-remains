@@ -1,0 +1,58 @@
+$ git sparse-checkout init --cone
+
+exit=0
+$ git sparse-checkout set docs/production tools game assets/3d/blender
+
+exit=0
+$ git checkout HEAD
+Your branch is up to date with 'origin/feature/03-art-foundation/modular-archive-kit'.
+exit=0
+$ git lfs install --local
+Updated Git hooks.
+Git LFS initialized.
+exit=0
+POINTER_ONLY PASS: all six kit files are exact committed pointers before retrieval; LFS store is empty
+$ git lfs env
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+git version 2.51.1
+
+Endpoint=https://github.com/MindDevastation/where-the-light-remains.git/info/lfs (auth=none)
+LocalWorkingDir=/workspace/scratch/4f0b36b4bb0e/wlr-archive-kit-fresh
+LocalGitDir=/workspace/scratch/4f0b36b4bb0e/wlr-archive-kit-fresh/.git
+LocalGitStorageDir=/workspace/scratch/4f0b36b4bb0e/wlr-archive-kit-fresh/.git
+LocalMediaDir=/workspace/scratch/4f0b36b4bb0e/wlr-archive-kit-fresh/.git/lfs/objects
+LocalReferenceDirs=
+TempDir=/workspace/scratch/4f0b36b4bb0e/wlr-archive-kit-fresh/.git/lfs/tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneRemoteName=origin
+LfsStorageDir=/workspace/scratch/4f0b36b4bb0e/wlr-archive-kit-fresh/.git/lfs
+AccessDownload=none
+AccessUpload=none
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_EXEC_PATH=/usr/local/libexec/git-core
+GIT_PAGER=cat
+GIT_TERMINAL_PROMPT=0
+git config filter.lfs.process = "git-lfs filter-process"
+git config filter.lfs.smudge = "git-lfs smudge -- %f"
+git config filter.lfs.clean = "git-lfs clean -- %f"
+exit=0
+$ git lfs pull origin
+
+exit=0
+RETRIEVED_HASH PASS: assets/3d/blender/archive_kit/archive_kit_sample.blend; bytes=659164; SHA-256=1c437526b28489041821411a558837e302b64cee86e90583a29d49bbc8de2975
+RETRIEVED_HASH PASS: game/art/meshes/archive_kit/sm_archive_wall_2m.glb; bytes=10708; SHA-256=0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612
+RETRIEVED_HASH PASS: game/art/meshes/archive_kit/sm_archive_wall_4m.glb; bytes=19496; SHA-256=e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be
+RETRIEVED_HASH PASS: game/art/meshes/archive_kit/sm_archive_arch_4m.glb; bytes=159160; SHA-256=92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8
+RETRIEVED_HASH PASS: game/art/meshes/archive_kit/sm_archive_floor_1m.glb; bytes=3344; SHA-256=76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8
+RETRIEVED_HASH PASS: game/art/meshes/archive_kit/sm_archive_pier_4m.glb; bytes=36280; SHA-256=fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0
+LFS_INDEPENDENT_RETRIEVAL PASS: six kit payloads plus two existing fixtures; isolated store; exact payload hashes

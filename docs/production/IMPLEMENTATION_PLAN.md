@@ -77,9 +77,9 @@ Foundation acceptance:
 - [x] Restore authenticated Xvfb TCP / Godot X11 / Vulkan Forward+ graphical preflight, with pinned local packages and repeatable runner. Engine and six-specimen material capability tests PASS; see `MATERIAL_PREFLIGHT.md` and 2026-09-23 evidence. The previous AF_UNIX-based environment blocker was an incorrect inference from a TCP-disabled invocation.
 - [x] Create compact shared material library baseline: six shared resources, eleven original 1K maps, neutral/warm/cool graphical review and 4x4 tiling PASS. See `MATERIAL_LIBRARY.md`, `MATERIAL_PREFLIGHT.md` and 2026-10-02 evidence. Full MAT inventory variants/quality tiers and representative target-hardware acceptance remain open.
 - [x] Define the modular Archive sample brief and assembly contract: five module types, grid/pivots, passage/collision/UV rules, file ownership and acceptance sequence. See `MODULAR_ARCHIVE_KIT.md`, the versioned JSON and dimensioned drawing. Analytical compatibility is checked; no mesh/physics/art acceptance is implied.
-- [ ] Produce one modular Archive kit sample using `MODULAR_ARCHIVE_KIT.md`; author the five meshes, wrappers and isolated assembly, then execute its actual import/collision/visual/LFS gates.
+- [x] Produce the bounded five-module Archive sample: editable source, five GLBs/wrappers, isolated primary/corner fixtures; actual source/import/physics/three-view Forward+/independent LFS retrieval PASS. See `evidence/modular_archive_kit/README.md`. Full ARCH inventory and target performance remain open.
 - [ ] Produce one Wing I hero mechanism sample with gameplay pivots.
-- [ ] Import samples in Godot and validate scale, orientation, pivots, materials, collision and warnings.
+- [x] Import the Archive structural sample and validate scale, orientation, pivots, shared materials, collision and warnings. The later Wing I hero sample retains its separate import/interaction gates.
 - [ ] Run representative performance check before mass asset production.
 
 No bulk modeling starts before the export/import sample and first real LFS object are accepted.
@@ -253,3 +253,32 @@ Vulkan Forward+ GameRoot/eight-autoload/safe-exit smoke passed again on that
 merged epic; actual output: `evidence/visual_rebaseline_v2/integration_epic_smoke.log`.
 The stable slice follows the normal epic-to-main route; Git merge history records
 the final integration SHA. Unbuilt art and target-hardware gates remain open.
+
+## Modular sample checkpoint — 2026-10-03 UTC
+
+Feature: `feature/03-art-foundation/modular-archive-kit`, base main/Art Foundation
+`c6773f203717b0058a3ec3aee4a3e26bb1190f1f`. Existing production docs and successful
+preflights were read first; the confirmed local Blender and authenticated Xvfb
+TCP/MIT-MAGIC-COOKIE/X11/Vulkan Forward+ paths were reused. Standing Extra High /
+highest available request applies; no agent-side model switch is claimed.
+
+Five original structural parts implement the current v2 kit/shape/hub A/B/C
+direction while preserving all eight technical JSON keys and fourteen prior
+runtime/config fingerprints. Source/export checkpoint: `1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b`.
+Actual source reopen, import/material identity, 15 capsule traversals, 810 floor
+rays, solid blockers, four yaws, wall replacement and covered corner PASS.
+Three final actual views were inspected: front, reverse, right-angle close view.
+The 63-part primary pad is 4,284 triangles against 23,568; counters 25/27/18 draw
+calls are software previews, not target performance acceptance.
+
+Six new LFS payloads uploaded, then independently retrieved from GitHub into a
+fresh remote shallow clone with no alternates/shared LFS store. All hashes and
+sizes match; retrieved Blender/import/physics/authenticated graphical startup
+and full Git/LFS fsck PASS. Previous ordinary-Git HEAD hydration workaround was
+applied before LFS scanning, without rewriting refs. Evidence and commands:
+`evidence/modular_archive_kit/README.md`.
+
+The four ARCH inventory rows remain PARTIAL; no Hub layout, player, puzzle or
+shipping UI is invented. Next safe feature is the bounded Wing I hero mechanism
+brief/sample with canonical gameplay pivots, then the representative playable
+vertical slice. Physical target-GPU profiling still gates bulk modeling.

@@ -4,8 +4,12 @@ Date: 2026-10-03 UTC. Feature: `feature/03-art-foundation/modular-archive-kit`.
 Base: `c6773f203717b0058a3ec3aee4a3e26bb1190f1f`.
 Standing owner reasoning request: Extra High / highest available; no agent-side setting switch claimed.
 
-**Source, export, import, assembly/physics and bounded visual review: PASS.
-Remote payload upload/independent retrieval: pending until the feature is pushed.**
+**Bounded source/export/import/physics/visual/remote-LFS/startup gates: PASS.**
+Source/export checkpoint: `1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b`. Actual upload: 6/6 objects,
+888 KB. Independent remote clone initially held only pointers and an empty
+separate LFS store. All six kit payload hashes/sizes match after retrieval;
+retrieved Blender/source, editor import, complete physics test, authenticated
+graphical startup and Git/LFS fsck PASS.
 This original five-module structural family follows the approved v1 technical
 contract and current v2 kit/shape/hub A/B/C references. It is not the full Hub,
 ARCH inventory, shipping gameplay scene or physical-GPU performance acceptance.
@@ -61,6 +65,15 @@ are the existing shared Godot resources, with no per-instance copies.
 Arch collision is two jamb boxes plus 32 crown convex strips; the opening stays
 empty. Other colliders are separately authored boxes; no gameplay scripts on art.
 
+## Remote retrieval evidence
+
+- [lfs_upload.log](lfs_upload.log): real payload upload and feature push.
+- [fresh_clone.log](fresh_clone.log): immutable source commit and independent store.
+- [fresh_hydrate.log](fresh_hydrate.log): all ordinary-Git HEAD blobs verified before LFS scanning; refs unchanged.
+- [fresh_retrieve.log](fresh_retrieve.log): six initial pointers, isolated store, eight retrieved objects (six new plus two old), exact new payload hashes.
+- [fresh_verify.log](fresh_verify.log): absolute retrieved paths and asserted opened `.blend`; actual import/15 passages/graphical startup, full Git/LFS fsck and clean checkout.
+- [fresh_producer_hydrate.log](fresh_producer_hydrate.log) / [producer_fsck.log](producer_fsck.log): working-checkout HEAD hydration and successful full Git/LFS fsck; nonfatal dangling blobs in the shared Git store are not corruption.
+
 ## Reproduction
 
 Read prior successful preflight evidence first. Reuse the recovered local tools.
@@ -94,3 +107,18 @@ not retained; the bounded diagnostic and successful final log are retained.
 Initial views exposed crop/bright lighting; final framing and review-only light
 energy were corrected, recaptured and inspected. These are resolved test/review
 defects, not permission or environment blockers.
+
+The initial producer fsck reported missing ordinary-Git blob
+`86bdef5def20d70547f4db622f41f071476c7d49` (`assets/audio/README.md`), not
+missing LFS payloads: [producer_fsck_diagnostic.log](producer_fsck_diagnostic.log).
+The previously successful HEAD hydration path restored the producing tree.
+A fresh hydration wrapper first reached its 215 s total bound:
+[fresh_hydrate_timeout.log](fresh_hydrate_timeout.log). Resume retained verified
+objects with the historical eight-worker path and a finite 780 s total bound;
+[fresh_hydrate.log](fresh_hydrate.log) proves all 500 HEAD blobs available.
+No network/permission limitation was inferred from that wrapper timeout.
+Initial relative-path validation printed the original source location and is
+superseded: [fresh_relative_path_review.log](fresh_relative_path_review.log).
+Final fresh validation uses absolute source/script/project paths, synchronizes
+PWD and asserts the actual opened source filepath. Only that final run establishes
+the retrieved-copy source/import/physics/startup gate.

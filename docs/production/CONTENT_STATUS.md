@@ -54,12 +54,33 @@ Blender/GLB regression, editor import, startup/contracts, deterministic maps and
 four real X11/Vulkan/Forward+ graphical reviews PASS. Evidence:
 `evidence/visual_rebaseline_v2/README.md` and `MATERIAL_PREFLIGHT.md`.
 
-Worlds/puzzles/characters/shipping UI are unimplemented, not assets to rebuild.
+At the v2 audit revision, worlds/puzzles/characters/shipping UI were unimplemented.
+The subsequent bounded architecture sample below adds reusable modules; full
+stage worlds, puzzles, characters and shipping UI remain unimplemented.
 No production scene/light/UI or gameplay/save contract was replaced. This cannot
 certify the full visual game or GTX1060 performance. Missing Secrets-Achievements C and exact
 assignments for six unmatched additional concepts block only dependent work.
 Final avatar/casting, gameplay briefs and target hardware remain open inputs.
 Target hardware is BLOCKER only for physical-GPU certification; the software
-renderer passes the graphical capability/material gate. Next safe roadmap step:
-the bounded five-module Archive sample using the updated v2 brief. Its actual
-mesh/collision/art/LFS gates and representative performance gate still apply.
+renderer passes the graphical capability/material gate. The subsequent bounded
+Archive sample now passes its mesh/collision/visual/LFS gates. Next safe roadmap
+step: Wing I hero mechanism brief/sample. Representative target performance
+still precedes bulk production.
+
+## Modular Archive sample — 2026-10-03 UTC
+
+**PASS for the bounded sample; ARCH inventory PARTIAL.** One editable Blender
+source, five GLBs, five script-free Godot wrappers and two isolated fixtures:
+2 m/4 m wall, pointed arch, 1 m floor, stepped pier. Actual mesh/UV/material
+identity checks, 15 capsule passages, floor continuity, wall replacement, four
+yaws and right-angle junction pass. Three real Forward+ views inspected; six
+LFS payloads uploaded and independently retrieved with exact hashes. Retrieved
+Blender/Godot/physics/startup and Git/LFS fsck pass. Evidence:
+`evidence/modular_archive_kit/README.md`; source checkpoint
+`1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b`.
+
+The primary pad is 4,284 triangles, 63 instances and 68 authored surfaces. This
+is reusable architecture foundation, not a playable Hub or final whole-world
+visual approval. GameRoot, services, controls, saves and canonical text remain
+unchanged. Wing I hero brief/sample and gameplay vertical slice are next;
+representative physical-GPU profiling remains open.

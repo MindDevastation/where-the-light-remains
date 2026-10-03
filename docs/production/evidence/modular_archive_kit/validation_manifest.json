@@ -210,5 +210,8 @@
       "bytes": 775961
     }
   ],
-  "scope": "Final source snapshot. Front/reverse final frames precede a corner-only camera adjustment; their own paths/light/materials are unchanged. Corner regenerated and inspected after final framing."
+  "scope": "Final source snapshot. Front/reverse final frames precede a corner-only camera adjustment; their own paths/light/materials are unchanged. Corner regenerated and inspected after final framing.",
+  "validated_implementation_commit": "1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b",
+  "independent_retrieved_commit": "1e3adf1a500c9fbf7a5ad1497588e7df1dd1015b",
+  "technical_contract_sha256": "32005ae5d8723adc9bc8e7c77390cdf2a96cd41480c3d6de60633098e2776b04"
 }
