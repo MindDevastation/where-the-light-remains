@@ -4,6 +4,20 @@ var _world_slot: Node3D
 var _transition_in_progress := false
 var _stage_definitions: Dictionary = {}
 var _preload_in_progress := false
+var _player: FirstPersonPlayer
+var _fade: FadeOverlay
+var _binding_revision := 0
+var _route: Dictionary = {}
+var fade_duration := .25
+
+
+func _ready() -> void:
+    process_mode = Node.PROCESS_MODE_ALWAYS
+
+
+func _process(_delta: float) -> void:
+    if _transition_in_progress and not _route.is_empty() and not _route_owned():
+        cancel_transition()
 
 
 func register_stage(definition: StageDefinition) -> Error:
@@ -39,6 +53,11 @@ func preload_stage(stage_id: StringName) -> Dictionary:
     var definition := stage_definition(stage_id)
     if definition == null:
         return failure
+    return await _preload_definition(definition)
+
+
+func _preload_definition(definition: StageDefinition) -> Dictionary:
+    var failure := {"error": ERR_INVALID_DATA, "scene": null}
     _preload_in_progress = true
     var error := ResourceLoader.load_threaded_request(definition.scene_path, "PackedScene", false, ResourceLoader.CACHE_MODE_REUSE)
     if error != OK:
@@ -59,8 +78,178 @@ func preload_stage(stage_id: StringName) -> Dictionary:
         await get_tree().process_frame
     return failure
 
-func bind_world_slot(slot: Node3D) -> void:
+
+func bind_world_slot(slot: Node3D, player: FirstPersonPlayer = null, fade: FadeOverlay = null) -> void:
+    if slot != _world_slot:
+        _binding_revision += 1
     _world_slot = slot
+    if player != null:
+        _player = player
+    if fade != null:
+        _fade = fade
+
+
+func unbind_world_slot(slot: Node3D) -> void:
+    if slot == _world_slot:
+        _binding_revision += 1
+        cancel_transition()
+        _world_slot = null
+        _player = null
+        _fade = null
+
+
+func cancel_transition() -> void:
+    if _route.is_empty():
+        return
+    _route["cancelled"] = true
+    var fade: Variant = _route["fade"]
+    if is_instance_valid(fade) and fade.busy:
+        fade.cancel()
+
+
+func _route_owned() -> bool:
+    if _route.is_empty() or _route["cancelled"] or _route["binding"] != _binding_revision:
+        return false
+    if InputManager.mode != InputManager.Mode.DISABLED or InputManager.mode_revision != _route["input_revision"]:
+        return false
+    for node in [_route["slot"], _route["player"], _route["fade"]]:
+        if not is_instance_valid(node) or not node.is_inside_tree():
+            return false
+    return true
+
+
+func request_registered_stage(stage_id: StringName, saved: SaveGame = null, checkpoint_before: bool = false) -> Error:
+    # Runtime prototype. Full rollback/physics/lifetime acceptance remains open.
+    if _transition_in_progress or _preload_in_progress or get_tree().paused:
+        return ERR_BUSY
+    if not is_instance_valid(_world_slot) or not is_instance_valid(_player) or not is_instance_valid(_fade):
+        return ERR_UNCONFIGURED
+    if not _world_slot.is_inside_tree() or not _player.is_inside_tree() or not _fade.is_inside_tree():
+        return ERR_UNCONFIGURED
+    if _fade.busy or _world_slot.get_child_count() > 1 or not is_finite(fade_duration) or fade_duration < 0:
+        return ERR_BUSY
+    var definition := stage_definition(stage_id)
+    var original := GameState.capture_save()
+    if definition == null or original == null:
+        return ERR_INVALID_DATA
+    var target := original.copy_validated() if saved == null else saved.copy_validated()
+    if target == null:
+        return ERR_INVALID_DATA
+    if saved == null:
+        target.stage_id = stage_id
+        target.checkpoint_id = &""
+    if target.stage_id != stage_id or target.copy_validated() == null:
+        return ERR_INVALID_DATA
+    _route = {"slot": _world_slot, "player": _player, "fade": _fade,
+        "binding": _binding_revision, "cancelled": false, "state": original,
+        "old_worlds": _world_slot.get_children(), "candidate": null,
+        "committed": false, "detached": false, "mode": InputManager.mode,
+        "player_active": _player.active, "player_transform": _player.global_transform,
+        "head_rotation": _player.head.rotation, "audio_stage": AudioDirector.current_stage,
+        "audio_state": AudioDirector.current_state}
+    _transition_in_progress = true
+    InputManager.set_mode(InputManager.Mode.DISABLED)
+    _route["input_revision"] = InputManager.mode_revision
+    _player.set_active(false)
+    if checkpoint_before:
+        var checkpoint_error := _flush_checkpoint()
+        if checkpoint_error != OK:
+            return _complete_route(checkpoint_error)
+    var preloaded := await _preload_definition(definition)
+    if not _route_owned():
+        return _complete_route(ERR_SKIP)
+    if preloaded["error"] != OK:
+        return _complete_route(preloaded["error"])
+    var node: Node = preloaded["scene"].instantiate()
+    var candidate := node as WorldScene
+    if candidate == null:
+        node.free()
+        return _complete_route(ERR_INVALID_DATA)
+    _route["candidate"] = candidate
+    var prepared := candidate.prepare_state(target)
+    if prepared["error"] != OK:
+        return _complete_route(prepared["error"])
+    var spawn: Transform3D = _world_slot.global_transform * prepared["spawn"]
+    if not WorldScene.valid_spawn_transform(spawn):
+        return _complete_route(ERR_INVALID_DATA)
+    if not await _fade.fade_to(1.0, fade_duration) or not _route_owned():
+        return _complete_route(ERR_SKIP)
+    _route["candidate_process"] = candidate.process_mode
+    candidate.process_mode = Node.PROCESS_MODE_DISABLED
+    candidate.hide()
+    for old in _route["old_worlds"]:
+        _world_slot.remove_child(old)
+    _route["detached"] = true
+    _world_slot.add_child(candidate)
+    await get_tree().process_frame
+    if not _route_owned():
+        return _complete_route(ERR_SKIP)
+    var apply_error := candidate.apply_logical_state(prepared["state"])
+    if apply_error != OK:
+        return _complete_route(apply_error)
+    if GameState.apply_save(target) != OK:
+        return _complete_route(ERR_INVALID_DATA)
+    _route["committed"] = true
+    _player.spawn_at(spawn)
+    AudioDirector.set_stage_audio(stage_id)
+    candidate.show()
+    if not await _fade.fade_to(0.0, fade_duration) or not _route_owned():
+        return _complete_route(ERR_SKIP)
+    candidate.process_mode = _route["candidate_process"]
+    _player.set_active(definition.player_active)
+    if saved == null:
+        SaveManager.mark_dirty()
+    var error := _complete_route(OK, definition.input_mode)
+    EventBus.stage_changed.emit(stage_id)
+    return error
+
+
+func _flush_checkpoint() -> Error:
+    return SaveManager.flush_if_dirty()
+
+
+func _complete_route(error: Error, final_mode: InputManager.Mode = InputManager.Mode.UI) -> Error:
+    var route := _route
+    if route.is_empty():
+        _transition_in_progress = false
+        return error
+    # Keep potentially freed references as Variants until is_instance_valid;
+    # typed assignment itself raises before the lifetime guard can run.
+    var slot: Variant = route["slot"]
+    var player: Variant = route["player"]
+    var fade: Variant = route["fade"]
+    var candidate: Variant = route["candidate"]
+    if error != OK:
+        if is_instance_valid(candidate):
+            if candidate.get_parent() != null:
+                candidate.get_parent().remove_child(candidate)
+            candidate.queue_free()
+        for old in route["old_worlds"]:
+            if is_instance_valid(old) and old.get_parent() == null:
+                if is_instance_valid(slot) and slot.is_inside_tree():
+                    slot.add_child(old)
+                else:
+                    old.queue_free()
+        if route["committed"]:
+            GameState.apply_save(route["state"])
+            AudioDirector.current_stage = route["audio_stage"]
+            AudioDirector.current_state = route["audio_state"]
+        if is_instance_valid(player) and player.is_inside_tree():
+            player.spawn_at(route["player_transform"])
+            player.head.rotation = route["head_rotation"]
+            player.set_active(route["player_active"])
+        final_mode = route["mode"] if is_instance_valid(slot) and slot.is_inside_tree() else InputManager.Mode.UI
+    else:
+        for old in route["old_worlds"]:
+            if is_instance_valid(old):
+                old.queue_free()
+    if is_instance_valid(fade):
+        fade.clear()
+    _route = {}
+    _transition_in_progress = false
+    if InputManager.mode == InputManager.Mode.DISABLED and InputManager.mode_revision == route["input_revision"]:
+        InputManager.set_mode(final_mode)
+    return error
 
 func request_world_scene(scene: PackedScene, stage_id: StringName) -> void:
     if _transition_in_progress or _world_slot == null:
