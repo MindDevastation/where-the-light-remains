@@ -41,5 +41,21 @@ Acceptance: default/partial/complete and actual JSON round trips; corrupt/type/
 version/order/depth/size/resource cases; deep-copy isolation and all-or-nothing
 GameState apply; production settings/save hashes unchanged; clean source import,
 previous input/player/settings/pause/debug/startup paths and graphical smoke.
-Acceptance pending. Atomic write/backup/recovery and safe-exit failure handling
-remain the next slice; Boot/Continue/world-domain validation follows routing.
+Acceptance PASS on source `2006a7691f0b05d506e8ea2f58be799ec7a9e026`.
+Actual output and identities: `evidence/save_dto/README.md`. Fresh editor import,
+DTO and GameState isolation/type/order/size/cycle checks, prior player/input/pause/
+read-only inspector and authenticated TCP X11/Forward+ startup pass. All 188
+tracked game/tools files in the clean fixture remain identical after checks;
+existing fourteen LFS payload identities verified, eleven runtime copies reused.
+
+`GameState.capture_save()` returns a validated isolated snapshot or null;
+`apply_save()` validates a full copy before changing any logical state. Neither
+method writes files, marks dirty, emits gameplay events, routes scenes or applies
+settings. Integral JSON values normalize to integers, including the exact maximum
+safe integer 9007199254740991; fractional values retain their numeric value.
+The numeric bound is derived from an integer constant because this engine's
+decimal float literal parsing otherwise rounds that boundary down by one.
+
+Atomic write/backup/recovery and safe-exit failure handling remain the next slice;
+Boot/Continue/world-domain validation follows routing. No disk-persistence PASS
+is implied by this DTO acceptance.

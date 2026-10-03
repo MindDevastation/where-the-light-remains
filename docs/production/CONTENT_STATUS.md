@@ -93,6 +93,17 @@ settings/debug/startup paths pass. See `PAUSE_FADE.md` and `evidence/pause_fade/
 No automatic story transition/skip timing added. Next: typed SaveGame and validated
 atomic JSON/backup/recovery, then scene routing and authored playable worlds.
 
+## Logical SaveGame DTO — 2026-10-03 UTC
+
+**PASS for the typed v1 format and isolated GameState transfer.** Actual JSON
+round trips preserve exact discrete numbers and reject invalid field/order/type/
+version/resource/cycle/size data. Applying invalid state changes nothing; valid
+copies share no mutable nested containers. Clean import, existing player/input/
+pause/read-only inspector and TCP X11/Forward+ startup regressions pass. See
+`SAVE_SYSTEM.md` and `evidence/save_dto/`. No save files, settings or puzzle
+parameters are introduced. Next: atomic disk write, backup/corruption recovery
+and safe-exit error handling; Boot/Continue and world-domain validation follow.
+
 ## Visual rebaseline v2 — 2026-10-02 UTC / 2026-10-03 Moscow
 
 **PARTIAL.** Owner-approved visual direction: Hybrid Warcraft Observatory;
