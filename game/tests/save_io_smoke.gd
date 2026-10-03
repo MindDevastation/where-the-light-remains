@@ -219,7 +219,19 @@ func _run() -> void:
     _check(dialog._message.get_theme_font("font").has_char("Н".unicode_at(0)), "Dialog Cyrillic glyph")
     await _click(dialog.retry_button)
     _check(_exit_errors == 2 and dialog.visible, "Retry repeats safe exit and retains ownership")
-    get_tree().root.close_requested.emit()
+    if DisplayServer.get_name() == "X11":
+        var window := DisplayServer.window_get_native_handle(DisplayServer.WINDOW_HANDLE)
+        var driver := ProjectSettings.globalize_path("res://../tools/x11_close_driver.py")
+        var output: Array = []
+        _check(OS.execute("/usr/bin/python3", [driver, "--window", str(window)], output, true) == 0, "Native close driver")
+        for item in output:
+            print(String(item).strip_edges())
+        for frame in 30:
+            await get_tree().process_frame
+            if _exit_errors >= 3:
+                break
+    else:
+        get_tree().root.close_requested.emit()
     _check(_exit_errors == 3 and dialog.visible and not get_tree().auto_accept_quit, "Native close signal uses safe-exit guard")
     if DisplayServer.get_name() != "headless":
         await RenderingServer.frame_post_draw
