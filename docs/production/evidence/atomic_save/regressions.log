@@ -1,0 +1,76 @@
+$ python3 -c 'import subprocess,sys
+godot='"'"'../toolchain/bin/godot'"'"'; project='"'"'../toolchain/shell/atomic-verified/game'"'"'
+commands=[
+[godot,'"'"'--headless'"'"','"'"'--path'"'"',project,'"'"'--audio-driver'"'"','"'"'Dummy'"'"','"'"'res://tests/save_io_smoke.tscn'"'"'],
+[godot,'"'"'--headless'"'"','"'"'--path'"'"',project,'"'"'--audio-driver'"'"','"'"'Dummy'"'"','"'"'res://tests/save_dto_smoke.tscn'"'"'],
+[godot,'"'"'--headless'"'"','"'"'--path'"'"',project,'"'"'--audio-driver'"'"','"'"'Dummy'"'"','"'"'res://tests/pause_fade_smoke.tscn'"'"'],
+[godot,'"'"'--headless'"'"','"'"'--path'"'"',project,'"'"'--audio-driver'"'"','"'"'Dummy'"'"','"'"'res://tests/debug_tools_smoke.tscn'"'"','"'"'--'"'"','"'"'--dev-tools'"'"','"'"'--expect-overlay'"'"'],
+[godot,'"'"'--headless'"'"','"'"'--path'"'"',project,'"'"'--audio-driver'"'"','"'"'Dummy'"'"','"'"'res://tests/input_focus_smoke.tscn'"'"'],
+[godot,'"'"'--headless'"'"','"'"'--path'"'"',project,'"'"'--audio-driver'"'"','"'"'Dummy'"'"','"'"'res://tests/player_interaction_smoke.tscn'"'"']]
+for command in commands:
+ print('"'"'$ '"'"'+'"'"' '"'"'.join(command),flush=True)
+ result=subprocess.run(command,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=45)
+ print(result.stdout,flush=True)
+ if result.returncode or any(marker in result.stdout for marker in ('"'"'SCRIPT ERROR'"'"','"'"'Parse Error'"'"','"'"'ERROR:'"'"')):
+  sys.exit(result.returncode or 1)
+print('"'"'CLEAN_ATOMIC_REGRESSIONS PASS'"'"')
+'
+$ ../toolchain/bin/godot --headless --path ../toolchain/shell/atomic-verified/game --audio-driver Dummy res://tests/save_io_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SAVE_IO runtime: 4.7.2-stable (official); display=headless
+SAVE_IO checked: first/previous backup, real JSON round trips, corruption fallback/read-only decisions, future-schema protection, backup/primary replacement failures, no temp leaks, bounded reads and dirty commit
+SAVE_IO PASS: actual atomic files/backup/recovery/dirty and failed App exit, Russian retry/stay, close guard; production files preserved
+
+$ ../toolchain/bin/godot --headless --path ../toolchain/shell/atomic-verified/game --audio-driver Dummy res://tests/save_dto_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SAVE_DTO runtime: 4.7.2-stable (official)
+SAVE_DTO checked: fresh/partial/complete JSON round trips, StringName normalization, optional flags and nested copy isolation
+SAVE_DTO checked: required/unknown fields, supported/future schema, identifiers/types/found order/completion, objects/resources/vectors, nonfinite/unsafe numbers, depth/nodes/UTF-8 size and cycles
+SAVE_DTO checked: transactional GameState apply/capture, invalid-state preservation, reset and production file/service integrity
+SAVE_DTO PASS: typed v1 logical state, strict bounded validation, JSON round trips and isolated transactional capture/apply
+
+$ ../toolchain/bin/godot --headless --path ../toolchain/shell/atomic-verified/game --audio-driver Dummy res://tests/pause_fade_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PAUSE_FADE runtime: 4.7.2-stable (official); display=headless
+PAUSE settings return: modal=false; pause=true; tree_paused=true; settings_fov=96.0; camera_fov=96.0; message=
+PAUSE checked: inactive/unsupported/focus gates, physical controller stop, echo, settings Esc/Apply nesting, mouse/Esc resume, held W/recapture, LIMITED_LOOK and external lock/release
+FADE checked: pause-independent animation, awaited completion, overlap/invalid rejection, clear/free cancellation and actual GUI/key blocking
+PAUSE_FADE PASS: controller pause/resume, nested Russian settings, locks, awaited fade/cancel/input blocking and App safe-exit dispatch
+
+$ ../toolchain/bin/godot --headless --path ../toolchain/shell/atomic-verified/game --audio-driver Dummy res://tests/debug_tools_smoke.tscn -- --dev-tools --expect-overlay
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+DEBUG_TOOLS runtime: 4.7.2-stable (official); debug=true; display=headless; expected_overlay=true
+DEBUG_TOOLS checked: missing/valid/malformed/oversize save preview without modifying source files
+DEBUG_TOOLS checked: live stage/save/audio, deep-copy snapshot, F3/echo/pause, input/capture, Cyrillic glyphs
+DEBUG_TOOLS PASS: gate, state/file integrity, autoloads; requesting App safe exit
+
+$ ../toolchain/bin/godot --headless --path ../toolchain/shell/atomic-verified/game --audio-driver Dummy res://tests/input_focus_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INPUT_FOCUS runtime: 4.7.2-stable (official); display=headless
+INPUT_FOCUS checked: 20 requested-mode/focus/pause combinations (synthetic Window signals)
+INPUT_FOCUS checked: normalized movement, held/echo suppression, UI/escape baseline, direct pause, first-motion guard
+INPUT_FOCUS PASS: mode/focus/pause/capture and input boundary checks
+
+$ ../toolchain/bin/godot --headless --path ../toolchain/shell/atomic-verified/game --audio-driver Dummy res://tests/player_interaction_smoke.tscn
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PLAYER_INTERACTION runtime: 4.7.2-stable (official); display=headless
+PLAYER_ARCHIVE_WALK: yaw=0.0; lane=-0.75; feet=(-0.75, 0.000338, -1.533334); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=0.0; lane=0.0; feet=(0.0, 0.000338, -1.533333); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=0.0; lane=0.75; feet=(0.75, 0.000338, -1.533334); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=1.5707963267949; lane=-0.75; feet=(-0.75, 0.000338, -1.533334); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=1.5707963267949; lane=0.0; feet=(-0.0, 0.000338, -1.533333); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE_WALK: yaw=1.5707963267949; lane=0.75; feet=(0.75, 0.000338, -1.533334); height=0.00033789058216..0.00033789058216
+PLAYER_ARCHIVE PASS: six actual controller traversals at two yaws; world wall stopping
+PLAYER_MOVE_LOOK PASS: normalized speed, heading, pause/focus/held key, unscaled sensitivity, pitch, invert-Y, FOV and LIMITED_LOOK
+PLAYER_INTERACTION_RAY PASS: range, nearest solid, single E/echo, disable/delete/move/pause races, inside-solid occlusion
+PLAYER_INTERACTION PASS: actual player traversal, walk/look gates, physics picks/occlusion/races, Russian HUD
+
+CLEAN_ATOMIC_REGRESSIONS PASS
+
+exit=0

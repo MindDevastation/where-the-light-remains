@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource path="res://core/game_root/game_root.gd" type="Script" id="1"]
 [ext_resource path="res://core/player/player.tscn" type="PackedScene" id="2"]
@@ -6,6 +6,7 @@
 [ext_resource path="res://core/ui/settings_menu.tscn" type="PackedScene" id="4"]
 [ext_resource path="res://core/ui/pause_menu.tscn" type="PackedScene" id="5"]
 [ext_resource path="res://core/transitions/fade_overlay.tscn" type="PackedScene" id="6"]
+[ext_resource path="res://core/ui/exit_failure_dialog.tscn" type="PackedScene" id="7"]
 
 [node name="GameRoot" type="Node"]
 script = ExtResource("1")
@@ -24,6 +25,8 @@ player_path = NodePath("../../PlayerContainer/Player")
 settings_path = NodePath("../SettingsMenu")
 
 [node name="SettingsMenu" parent="UILayer" instance=ExtResource("4")]
+
+[node name="ExitFailureDialog" parent="UILayer" instance=ExtResource("7")]
 
 [node name="TransitionLayer" type="CanvasLayer" parent="."]
 layer = 100

@@ -59,3 +59,62 @@ decimal float literal parsing otherwise rounds that boundary down by one.
 Atomic write/backup/recovery and safe-exit failure handling remain the next slice;
 Boot/Continue/world-domain validation follows routing. No disk-persistence PASS
 is implied by this DTO acceptance.
+
+## Atomic persistence brief — 2026-10-03 UTC
+
+Read the accepted DTO, settings and pause evidence and technical/QA save contract.
+Implement bounded UTF-8 JSON reads, primary/backup results without state mutation,
+same-directory temp write/flush/validated readback/backup/replace, and dirty flush
+that clears only after success. Preserve the last valid primary as backup; first
+save creates a valid backup too. Corrupt primary may recover from a valid backup,
+but future schemas and actual IO permission errors must not be bypassed. Both
+invalid files are preserved and reported as an explicit new-game decision for
+the future Boot UI. No automatic deletion, reset, startup apply or v0 migration.
+
+App must quit only after successful flush. Failed exit remains alive and presents
+a Russian retry/stay dialog; native close uses the same path. InputManager owns
+modal pause/capture. Tests use unique fixture directories and injected replacement
+failures, plus actual IO failure and graphical dialog/startup regressions. Existing
+production files and eight-autoload contract remain intact.
+
+This uses Godot flush and same-directory rename with verified bytes, not a claim
+of platform-independent power-loss durability or multi-process save locking.
+Windows rename/physical-close certification remains target-runtime validation.
+Acceptance PASS on source `dd3068e8dabc07b71b17c128c21ddda86b33c186`;
+actual output and identities in `evidence/atomic_save/README.md`. Clean import,
+199 unchanged tracked files, real file/backup/corruption/schema/UTF-8/error/dirty
+tests, actual GUI retry/stay and real X11 close on failed and successful save,
+prior shell/player/input/DTO/debug and graphical startup PASS.
+
+### API and failure semantics
+
+- `read_save()` returns `error`, isolated `data`, `source` (`primary`, `backup`,
+  `none`), per-file errors and `needs_new_game`; it never applies/repairs state.
+  Missing or corrupt primary may use valid backup. Future schema or IO obstacle
+  stops fallback. Both invalid files remain untouched and signal the future Boot
+  UI to offer an explicit New Game decision; that UI/reset operation is not here.
+- `write_save(saved)` validates a copy, prepares/flushed/readback-checks a new
+  same-directory primary temp, atomically updates backup from the last valid
+  primary, then replaces primary. First save also creates a valid backup. Backup
+  recovery never copies corrupt primary over the valid backup. Existing unknown
+  schemas in either file and real IO errors block writes; both corrupt files
+  cannot be silently overwritten. Only this operation's exact temps are removed.
+- `flush_if_dirty()` returns Error and clears dirty only after a successful write;
+  clean flush performs no IO. GameState capture/apply still do not mark dirty.
+  Future checkpoint/collection owners explicitly call `mark_dirty()`.
+- App disables automatic native quit and routes window close through the same
+  flush. Failure emits local `exit_failed`, keeps the app/state alive, cancels an
+  active fade and opens Russian retry/stay choices. Stay/Esc restores only modal
+  ownership; existing pause and later locks survive. Removed modal releases its
+  own pause. Successful dirty exit and native close commit before quitting.
+
+Read limits apply before parsing; malformed/overlong/surrogate/out-of-range UTF-8
+is rejected before string conversion. Fixture directories are unique. Real App
+success tests use guarded fresh `XDG_DATA_HOME`; production user data/settings are
+unchanged. Graphical input is injected through Godot, while window-close requests
+are actual `WM_DELETE_WINDOW` messages. Eight autoloads remain unchanged.
+
+Boot/Continue, explicit corrupt-save New Game UI/overwrite policy, sequential
+migrations when a real next schema exists, registered stage/checkpoint/world
+validation, authored checkpoint triggers and target Windows/hardware acceptance
+remain later work. No invented stage paths or puzzle parameters were added.
