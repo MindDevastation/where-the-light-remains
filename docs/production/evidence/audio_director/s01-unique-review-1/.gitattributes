@@ -1,0 +1,2 @@
+# Preserve exact FFmpeg final progress lines in immutable process logs.
+*.log whitespace=-blank-at-eof,-blank-at-eol

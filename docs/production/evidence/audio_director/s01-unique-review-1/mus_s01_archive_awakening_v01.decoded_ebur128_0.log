@@ -1,0 +1,29 @@
+Input #0, ogg, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/audio_director/s01-unique-review-1/mus_s01_archive_awakening_v01.attempt0.ogg':
+  Duration: 00:02:09.72, start: 0.000000, bitrate: 146 kb/s
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+Stream mapping:
+  Stream #0:0 -> #0:0 (vorbis (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+[out#0/null @ 0x55a57c1ccac0] video:0kB audio:24322kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:02:09.70 bitrate=N/A speed= 138x    
+[Parsed_ebur128_0 @ 0x55a57c1f9580] Summary:
+
+  Integrated loudness:
+    I:         -15.9 LUFS
+    Threshold: -26.0 LUFS
+
+  Loudness range:
+    LRA:         8.0 LU
+    Threshold: -36.0 LUFS
+    LRA low:   -21.5 LUFS
+    LRA high:  -13.5 LUFS
+
+  True peak:
+    Peak:       -3.1 dBFS

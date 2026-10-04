@@ -6,7 +6,7 @@ Fetch its newest verified checkpoint before continuing; do not overlay old local
 snapshots. Current audio source processing progress is recorded below; fetch
 the newest remote checkpoint/receipt rather than assuming a closing SHA.
 
-Latest completed implementation checkpoint:
+Last gameplay/audio foundation implementation checkpoint:
 `b9236b96d4560391e3b0a519b18757b4c888f369`.
 Commit timestamp: 2026-10-04 21:32:03 UTC.
 Independent fetch/ls-remote/parent/tree verification:
@@ -34,6 +34,9 @@ publication SHA is recorded in the remote commit/receipt, not predicted here.
   envelopes pass with unchanged source hashes and five actual boundary guards.
   Ten finite full-take S01/S02 review intervals; both S00 seed intervals unset.
   `tools/audio_slice.py` writes only unbound review evidence, never shipping audio.
+- First S01 unique finite Vorbis review derivative passes: 129.72 s, stereo
+  48 kHz, 2,369,745 bytes, -15.9 LUFS / -3.1 dBTP, seven boundary guards.
+  Exact recipe/command logs/hashes are in `s01-unique-review-1/`; no binding.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -47,10 +50,10 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: follow `audio/README.md` to export `mus_s01_archive_awakening_v01` into a
-new review evidence family; verify compressed decode/duration/true peak and
-source protection, then checkpoint immediately. Continue one candidate family
-at a time. Actual S00 first-note/common motif selection and listening/scene mix
+Next: export `mus_s02_cold_to_warm_v01` into a new review evidence family and
+checkpoint, then privately cache-free import/mixer-test the two exact unique
+OGGs in Godot. Continue one candidate family at a time. Actual S00
+first-note/common motif selection and listening/scene mix
 remain pending; do not bind unaccepted candidates to shipping scenes. There are
 currently no runtime music derivatives and no ambience/SFX media. Existing
 source WAVs and their hashes remain intact. Full manifest and measured inputs

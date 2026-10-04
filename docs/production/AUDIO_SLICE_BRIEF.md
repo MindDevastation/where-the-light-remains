@@ -42,9 +42,15 @@ LRA 5.2–16.5 LU, no full-scale PCM samples. These are measured source properti
 not final mix targets or musical acceptance. Five source/output safety guards
 pass; see `audio/README.md` for reproducible commands.
 
-Next export only `mus_s01_archive_awakening_v01` into a new review evidence
-family, verify compressed decode/duration/true peak/source protection, then
-checkpoint. Listening/scene-mix/motif acceptance remains pending. Identify the
+The first finite review derivative, `mus_s01_archive_awakening_v01`, now passes
+compressed format/decode/duration/true-peak/source protection in
+`evidence/audio_director/s01-unique-review-1/`: 129.72 s, 2,369,745 bytes,
+-15.9 LUFS / 8.0 LU LRA / -3.1 dBTP, no gain adjustment. Seven export guards pass.
+It remains unbound; no Godot import or musical acceptance is claimed yet.
+
+Next export `mus_s02_cold_to_warm_v01` into a new review family and checkpoint,
+then validate both exact OGGs with a private cache-free Godot import/mixer run.
+Listening/scene-mix/motif acceptance remains pending. Identify the
 actual S00 first-note excerpt and common Archive motif from the source material;
 do not infer identical motifs across generated takes.
 

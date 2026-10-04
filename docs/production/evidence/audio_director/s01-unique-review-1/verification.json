@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "One unbound finite review cue, Vorbis decode/format/duration/true peak, seven export guards and command-log hashes. Godot/listening/mix acceptance not claimed.",
+  "guard_count": 7,
+  "source_hashes": {
+    "tools/audio_slice.py": "ed36a40d054e2e95220c514913c1e08b7e9c67ba5b2085d68c03584655d2cc33",
+    "tools/test_audio_slice.py": "7f3b9c2db7f302d1c7a4703d0d616d5b05e2ee3f910d835aa448b1cf0603bf1c",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/A_Archive/stages/S01_Hub/unique/Archive Awakening.wav": "0eeaafefb8a2f14f4d167a8638c2625ac278a447eb02d5a98e104348614fb0b3",
+    "docs/production/evidence/audio_director/s01-unique-review-1/mus_s01_archive_awakening_v01.ogg": "dc009157e548adb09e99de3b367261f48837de6db3b8048b982f08c272e8ba09"
+  }
+}

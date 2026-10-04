@@ -9,6 +9,15 @@ import audio_slice as audio
 
 
 class ExportProtection(unittest.TestCase):
+    def _reject_manifest_edit(self, edit, error):
+        original = audio.json.loads(audio.MANIFEST.read_text())
+        edit(original)
+        raw = audio.json.dumps(original)
+        read = audio.Path.read_text
+        with patch.object(audio.Path, 'read_text', lambda p, *a, **kw: raw if p == audio.MANIFEST else read(p, *a, **kw)):
+            with self.assertRaisesRegex(ValueError, error):
+                audio.load_manifest()
+
     def test_sealed_twelve_sources_are_current(self):
         manifest = audio.load_manifest()
         self.assertEqual(len(manifest['entries']), 12)
@@ -42,6 +51,14 @@ class ExportProtection(unittest.TestCase):
             with self.assertRaises(FileExistsError):
                 audio.execute(args)
             self.assertEqual(sentinel.read_bytes(), b'owner evidence')
+
+    def test_manifest_cannot_misstate_recipe_or_source_duration(self):
+        self._reject_manifest_edit(lambda m: m['entries'][0]['compression'].update(quality=0), 'encoding recipe')
+        self._reject_manifest_edit(lambda m: m['entries'][0].update(source_duration_seconds=1), 'duration differs')
+
+    def test_non_finite_or_unsafe_peak_ceiling_is_rejected(self):
+        for value in [float('nan'), float('inf'), 0]:
+            self._reject_manifest_edit(lambda m: m.update(candidate_true_peak_ceiling_dbtp=value), 'safety ceiling')
 
 
 if __name__ == '__main__':

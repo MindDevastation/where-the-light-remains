@@ -31,9 +31,14 @@ def stamp():
 
 
 def command(args, output, timeout=45):
+    started = stamp()
     result = subprocess.run(args, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
                             stderr=subprocess.STDOUT, timeout=timeout, check=False)
     output.write_bytes(result.stdout)
+    with (output.parent / 'commands.jsonl').open('a') as record:
+        record.write(json.dumps({'command': args, 'started_at': started, 'finished_at': stamp(),
+                                'timeout_seconds': timeout, 'exit_code': result.returncode,
+                                'stdout_file': output.name, 'stdout_sha256': digest(output)}) + '\n')
     if result.returncode:
         raise RuntimeError(f'Command failed ({result.returncode}): {args[0]}; see {output}')
     return result.stdout.decode('utf-8', errors='replace')
@@ -46,6 +51,9 @@ def load_manifest():
     ids, paths = set(), set()
     inventory = json.loads((ROOT / manifest['inventory']).read_text())
     sealed = {s['path']: s for s in inventory['sources']}
+    ceiling = manifest['candidate_true_peak_ceiling_dbtp']
+    if not isinstance(ceiling, (int, float)) or not math.isfinite(ceiling) or not -12 <= ceiling <= -1:
+        raise ValueError('Review safety ceiling must be finite and at/below -1 dBTP')
     for entry in manifest['entries']:
         name, path = entry['cue_id'], entry['source_path']
         if not re.fullmatch(r'mus_s0[012]_[a-z0-9_]+_v\d{2}', name) or name in ids or path in paths:
@@ -61,6 +69,10 @@ def load_manifest():
             raise ValueError('Source master SHA mismatch: ' + path)
         if entry['stage'] != sealed[path]['stage'] or name[4:7].upper() != entry['stage']:
             raise ValueError('Source/stage identity mismatch')
+        if entry['source_duration_seconds'] != float(sealed[path]['probe']['format']['duration']):
+            raise ValueError('Source duration differs from sealed inventory')
+        if entry['compression'] != {'codec': 'libvorbis', 'quality': 5, 'sample_rate': 48000, 'channels': 2}:
+            raise ValueError('Unsupported review encoding recipe')
         if entry['playback'] != 'finite' or entry['loop_points'] is not None:
             raise ValueError('This exporter implements finite review edits only')
     if paths != set(sealed):
@@ -86,7 +98,7 @@ def interval(entry):
 
 
 def measure(path, log):
-    text = command(['ffmpeg', '-hide_banner', '-nostdin', '-i', str(path),
+    text = command(['ffmpeg', '-hide_banner', '-nostats', '-nostdin', '-i', str(path),
                     '-map', '0:a:0', '-af', 'ebur128=peak=true:framelog=verbose', '-f', 'null', '-'], log)
     summary = text.rsplit('Summary:', 1)[-1]
     patterns = {'integrated_lufs': r'I:\s+(-?\d+(?:\.\d+)?) LUFS',
@@ -156,7 +168,7 @@ def execute(args):
                     trial = output / f'{name}.attempt{attempt}.ogg'
                     filters = (f'volume={gain:.6f}dB,afade=t=in:d={entry["fade_in_seconds"]:.6f},'
                                f'afade=t=out:st={duration-entry["fade_out_seconds"]:.6f}:d={entry["fade_out_seconds"]:.6f}')
-                    command(['ffmpeg', '-hide_banner', '-nostdin', '-n', '-ss', str(start), '-i', str(source),
+                    command(['ffmpeg', '-hide_banner', '-nostats', '-nostdin', '-n', '-ss', str(start), '-i', str(source),
                              '-t', str(duration), '-map', '0:a:0', '-map_metadata', '-1', '-af', filters,
                              '-ar', '48000', '-ac', '2', '-c:a', 'libvorbis', '-q:a', '5', str(trial)],
                             output / f'{name}.encode{attempt}.log')
