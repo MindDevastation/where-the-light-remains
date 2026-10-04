@@ -76,3 +76,24 @@ This accepts the bounded mixer/lock component only, without a speaker check or
 shipping music bindings. Next: unique/bag selection, bounded crossfade queue,
 vocal/semantic guards and actual transactional router cancellation. Runtime
 OGG/stem exports, authored scene events and target-hardware audio/art remain open.
+
+## Playlist / crossfade component acceptance
+
+`playlist-validation-1` retains a cold-mixer first-position assertion failure.
+The fixture now waits for actual playback advancement with a one-second deadline.
+`playlist-validation-2` passes its 56 assertions but retains five teardown-leak
+warnings. The verbose diagnostic identifies AudioStreamWAV/AudioStreamPlaybackWAV
+references following rapid test vocal revocations. A bounded 0.2-second audio
+thread drain after fixture stop resolves teardown. `playlist-validation-3` passes
+56 playlist and 29 mixer assertions with no runtime errors or warnings, preserving
+both protected slot hashes. Production Director source is unchanged in this block.
+
+Actual PCM players prove unique-first finite rotation, no immediate repeat,
+exclusions/single-cue exhaustion, two-player overlap with bounded gains, latest
+queued intent and complete fade/queue cancellation by owned silence. A stage
+lease retains advancing playback and rollback restores metadata without restart.
+Scripted S00 never rotates shared tracks, S07 reflection rejects the forbidden
+source title, and S15 voice needs both actual completion and explicit wide shot;
+revoking either stops playback. Later-stage IDs here are isolated audio-policy
+fixtures; no later shipping world, narrative or timing has been implemented.
+Next: actual SceneRouter fade/rollback and successful/failed App exit with playback.

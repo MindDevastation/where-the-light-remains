@@ -1,0 +1,36 @@
+WorkerThreadPool: 9 threads, 2 max low-priority.
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+SDL: Init OK!
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+Loading resource: res://audio/default_bus_layout.tres remapped: res://audio/default_bus_layout.tres
+Completed load for: 'res://audio/default_bus_layout.tres' remapped 'res://audio/default_bus_layout.tres' at thread -1
+CORE API HASH: 2004498165
+EDITOR API HASH: 1696660745
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://autoload/app.gd remapped: res://autoload/app.gd
+Completed load for: 'res://autoload/app.gd' remapped 'res://autoload/app.gd' at thread -1
+Loaded system CA certificates
+Loading resource: res://tests/audio_playlist_smoke.tscn remapped: res://tests/audio_playlist_smoke.tscn
+Loading resource: res://tests/audio_playlist_smoke.gd remapped: res://tests/audio_playlist_smoke.gd
+Completed load for: 'res://tests/audio_playlist_smoke.gd' remapped 'res://tests/audio_playlist_smoke.gd' at thread -1
+Completed load for: 'res://tests/audio_playlist_smoke.tscn' remapped 'res://tests/audio_playlist_smoke.tscn' at thread -1
+AUDIO_PLAYLIST initial playback: {"automatic":false,"duck_locks":0,"group":"B","pending_stage":false,"players":[{"cue":"queue_a","gain":1.0,"playing":true,"position":0.096000000834465},{"cue":"","gain":0.0,"playing":false,"position":0.0}],"queued":false,"revision":2,"silence_latched":false,"silence_locks":0,"stage":"s02_queue_fixture","state":"fixture_a"}
+AUDIO_PLAYLIST selected: [&"bag_unique", &"bag_shared", &"bag_unique", &"bag_shared", &"bag_unique", &"bag_shared", &"bag_unique", &"bag_shared", &"bag_unique"]
+AUDIO_PLAYLIST PASS: 56 assertions; actual finite playback, unique/no-repeat bag, bounded latest crossfade, leases and canonical semantic/vocal guards
+WARNING: 5 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Leaked instance: AudioStreamPlaybackWAV:9223372084636288540 - Reference count: 1
+Leaked instance: AudioStreamWAV:9223372083864536607 - Reference count: 1
+Leaked instance: AudioStreamWAV:9223372085911356970 - Reference count: 2
+Leaked instance: AudioStreamPlaybackWAV:9223372086129460782 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372086381119024 - Reference count: 1
+Hint: Leaked instances typically happen when nodes are removed from the scene tree (with `remove_child()`) but not freed (with `free()` or `queue_free()`).
+Orphan StringName: Music_Main (static: 0, total: 3)
+StringName: 1 unclaimed string names at exit.
