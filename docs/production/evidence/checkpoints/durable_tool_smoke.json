@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-04T17:31:32.978183+00:00",
+  "scope": "New durable checkpoint coordinator fixture; real temporary bare Git remote and real archive restoration verification.",
+  "checks": [
+    "real snapshot verification",
+    "WIP source and receipt push",
+    "exact remote content",
+    "clean source worktree",
+    "credential refusal without ref mutation",
+    "main refusal"
+  ],
+  "source_hashes": {
+    "tools/durable_checkpoint.py": "ab1d186353b9a441d635ad248659ccc4f93f58e1bb70784e961874ff7b436b34",
+    "tools/session_snapshot.py": "1206fdf1b47401359bcbd0761410a1f84905bb15811794f51ee0c870d09f1cab",
+    "tools/verify_session_snapshot.py": "73f9de8726888a56d56ebeef1fdb4ce0a85f075f4d4ed8dfdd5bc6bfa2ad3bed"
+  },
+  "live_timer_status": "Starting; first real remote checkpoint will be recorded separately.",
+  "initial_remote_verified_checkpoint": "00b0381e56998fb00ce7c8adf6f035fb586ec1c2",
+  "initial_remote_verified_utc": "2026-10-04T17:14:28.525102+00:00"
+}
