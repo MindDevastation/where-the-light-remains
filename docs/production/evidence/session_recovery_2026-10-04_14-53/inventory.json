@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-10-04T14:57:13.776357+00:00",
+  "snapshot": "/workspace/scratch/4f0b36b4bb0e/wlr-session-snapshots-2026-10-04/wlr-snapshot-20261003T232304708406Z.tar.gz",
+  "filesystem_lost": [
+    "wlr-reconstruction",
+    "wlr-reconstruction-snapshots"
+  ],
+  "last_historical_accepted": {
+    "source": "cc63a5f9e14917f271941f2afff8d42162a00a38",
+    "integration": "99bcfa3",
+    "commands": 24,
+    "source_files": 208,
+    "evidence_available_now": false
+  },
+  "unfinished_command": "apply_patch for ArchiveGate, ArchiveLightChannel and contract; completion unknown; files not materialized here",
+  "target_processes": [],
+  "no_process_signaled": true,
+  "snapshot_started": "2026-10-03T23:23:04.127057+00:00",
+  "snapshot_finished": "2026-10-03T23:23:04.584061+00:00",
+  "worktrees": [
+    {
+      "path": "/workspace/scratch/4f0b36b4bb0e/where-the-light-remains",
+      "snapshot_head": "9e4a45b57e73f8757d707cbce5be0066186b24f3",
+      "files_compared": 58,
+      "changed": [],
+      "missing": [],
+      "git_status_exit": 0,
+      "git_status": ""
+    },
+    {
+      "path": "/workspace/scratch/4f0b36b4bb0e/wlr-art-integration",
+      "snapshot_head": "9ad6867a77bf68872651ad2362c5f7098c9404fb",
+      "files_compared": 167,
+      "changed": [],
+      "missing": [],
+      "git_status_exit": 0,
+      "git_status": ""
+    }
+  ]
+}
