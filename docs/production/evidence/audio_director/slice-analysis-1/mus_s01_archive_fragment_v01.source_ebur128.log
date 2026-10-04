@@ -1,0 +1,32 @@
+[aist#0:0/pcm_s16le @ 0x562ceda90f40] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/assets/audio/music/A_Archive/shared/Archive Fragment.wav':
+  Metadata:
+    comment         : made with suno; created=2026-09-18T13:20:53Z; id=4a1b7f19-3043-43fc-960b-079af7e9d788
+    encoder         : Lavf60.16.100
+  Duration: 00:02:53.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    comment         : made with suno; created=2026-09-18T13:20:53Z; id=4a1b7f19-3043-43fc-960b-079af7e9d788
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    size=N/A time=00:01:16.50 bitrate=N/A speed= 152x    size=N/A time=00:02:38.20 bitrate=N/A speed= 158x    [out#0/null @ 0x562cedaa1bc0] video:0kB audio:32438kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:02:52.90 bitrate=N/A speed= 157x    
+[Parsed_ebur128_0 @ 0x562cedad4d80] Summary:
+
+  Integrated loudness:
+    I:         -16.5 LUFS
+    Threshold: -26.7 LUFS
+
+  Loudness range:
+    LRA:         5.2 LU
+    Threshold: -36.7 LUFS
+    LRA low:   -20.1 LUFS
+    LRA high:  -14.9 LUFS
+
+  True peak:
+    Peak:       -4.2 dBFS

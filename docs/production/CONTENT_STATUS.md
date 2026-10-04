@@ -19,6 +19,10 @@ finite playlists/two-player crossfade, transactional route intent and safe exit
 with playing score. Two reproduced routing/teardown defects are fixed; see
 `AUDIO_DIRECTOR.md` and its clean-copy/native receipts. Shipping authored audio
 bindings and full VS1 art/audio/hardware acceptance remain separate work.
+The S00/S01/S02 twelve-source edit/export manifest and measured loudness/PCM
+envelopes are now recorded; five export boundary guards pass. S00 motif interval
+selection and ten finite S01/S02 review exports/acceptance remain open. See
+`audio/README.md` and `AUDIO_SLICE_BRIEF.md`.
 See `ARCHIVE_RECONSTRUCTION.md` and its current receipts.
 
 **Playable graybox implementation; authored VS1 art/audio acceptance remains open.**

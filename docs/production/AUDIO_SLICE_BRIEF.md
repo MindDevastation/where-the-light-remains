@@ -1,6 +1,7 @@
 # S00 / S01 / S02 authored audio slice
 
-Status: source inputs inventoried; authored derivatives/bindings remain unfinished.
+Status: twelve-source edit/export manifest and source measurements completed;
+authored derivatives/bindings remain unfinished.
 Continue from the existing accepted AudioDirector and fragment duck integration.
 Do not rebuild their foundation or start S03 while GATE-VS1 is open.
 
@@ -29,12 +30,23 @@ instrumental content, approved loudness, provenance or final mix quality.
 
 ## Exact next block
 
-Prepare a small source edit/export manifest for S00/S01/S02 before importing
-audio into the shipping game. Preserve each source WAV and its sealed hash.
-Record the selected source interval, intended semantic state, whether the cue
-is finite/looped, required stems and the original-to-runtime filename mapping.
-Identify the actual S00 first-note excerpt and common Archive motif from the
-source material; do not infer identical motifs across generated takes.
+The manifest is now `audio/slice_edit_manifest.json`. Ten S01/S02 rows use full
+source intervals as finite **review candidates**, with 20 ms / 250 ms edge
+fades; no loops or invented separated stems. Both S00 intervals remain unset:
+the actual first note/common four-note motif has not been selected by listening.
+The exporter rejects them before writing files.
+
+`evidence/audio_director/slice-analysis-1/` seals measurements of all twelve
+unchanged masters: integrated -17.3 to -13.7 LUFS, true peak -4.2 to -2.7 dBTP,
+LRA 5.2–16.5 LU, no full-scale PCM samples. These are measured source properties,
+not final mix targets or musical acceptance. Five source/output safety guards
+pass; see `audio/README.md` for reproducible commands.
+
+Next export only `mus_s01_archive_awakening_v01` into a new review evidence
+family, verify compressed decode/duration/true peak/source protection, then
+checkpoint. Listening/scene-mix/motif acceptance remains pending. Identify the
+actual S00 first-note excerpt and common Archive motif from the source material;
+do not infer identical motifs across generated takes.
 
 Then produce one bounded derivative family at a time using canonical
 `mus_s##_name_v##` names. Perform the source edit, loop/stem, loudness and

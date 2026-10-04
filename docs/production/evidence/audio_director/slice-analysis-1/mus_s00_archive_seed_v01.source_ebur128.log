@@ -1,0 +1,32 @@
+[aist#0:0/pcm_s16le @ 0x55f75bc62ec0] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/assets/audio/music/A_Archive/stages/S00_Prologue/unique/Sparse Awakening vol.2.wav':
+  Metadata:
+    comment         : made with suno; created=2026-09-19T16:14:42Z; id=3a206b84-78f6-41b8-9c26-575f7cc849ec
+    encoder         : Lavf60.16.100
+  Duration: 00:02:48.16, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    comment         : made with suno; created=2026-09-19T16:14:42Z; id=3a206b84-78f6-41b8-9c26-575f7cc849ec
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    size=N/A time=00:01:24.80 bitrate=N/A speed= 168x    [out#0/null @ 0x55f75bc73b40] video:0kB audio:31530kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:02:48.10 bitrate=N/A speed= 170x    
+[Parsed_ebur128_0 @ 0x55f75bca6d00] Summary:
+
+  Integrated loudness:
+    I:         -16.8 LUFS
+    Threshold: -27.2 LUFS
+
+  Loudness range:
+    LRA:        11.3 LU
+    Threshold: -37.1 LUFS
+    LRA low:   -23.9 LUFS
+    LRA high:  -12.6 LUFS
+
+  True peak:
+    Peak:       -3.5 dBFS

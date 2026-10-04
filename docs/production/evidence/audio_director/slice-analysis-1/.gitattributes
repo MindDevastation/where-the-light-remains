@@ -1,0 +1,2 @@
+# Keep original FFmpeg progress whitespace; do not normalize measurement logs.
+*.source_ebur128.log whitespace=-blank-at-eof,-blank-at-eol

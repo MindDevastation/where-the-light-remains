@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "Twelve sealed masters, measured source duration/EBU R128/PCM envelope and five export boundary guards. No musical/shipping acceptance.",
+  "guard_count": 5,
+  "guard_log_sha256": "f9b61b7710a3feb4874a3df5e6f56019b84457a4d2feb6a645293def7e75cbe5",
+  "source_hashes": {
+    "tools/audio_slice.py": "d2901dd79f7f2fceeb0ac2cbf029964860a5d31758ab99bd9c3e6298eb5cfeb1",
+    "tools/test_audio_slice.py": "edb9ff9e370f8b483c9e6e75632b729393fbb5f6fc0a1016c21a159bd3cabd99",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010"
+  }
+}

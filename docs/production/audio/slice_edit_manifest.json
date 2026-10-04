@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "status": "REVIEW_ONLY_UNBOUND",
+  "authority": [
+    "docs/design/AUDIO_BASELINE.md",
+    "assets/audio/music/MUSIC_RUNTIME_POLICY.md",
+    "assets/audio/README.md"
+  ],
+  "inventory": "docs/production/evidence/audio_director/slice-input-inventory-1/results.json",
+  "scope": "S00/S01/S02 only. Candidate edits are not approved shipping audio. Existing masters are immutable.",
+  "candidate_true_peak_ceiling_dbtp": -1.0,
+  "peak_ceiling_status": "Engineering safety ceiling for review derivatives, not an approved final mix/loudness target.",
+  "runtime_binding": "NONE; game/audio contains no music media. Export only to docs/production/evidence/audio_director review families.",
+  "motif_status": "UNRESOLVED: actual seed note and common four-note identity must be selected from source listening/editing; names/headers/envelopes do not identify it.",
+  "entries": [
+    {
+      "cue_id": "mus_s00_archive_seed_v01",
+      "stage": "S00",
+      "source_path": "assets/audio/music/A_Archive/stages/S00_Prologue/unique/Sparse Awakening vol.2.wav",
+      "source_sha256": "4bb445fdf9c9187c00ddaf4c016860ab775532b666916b15e8fbf1d11a41953b",
+      "source_duration_seconds": 168.16,
+      "role": "scripted seed source",
+      "semantic_intent": "spark_first_note",
+      "interval_seconds": null,
+      "interval_status": "BLOCKED_FIRST_NOTE_AND_MOTIF_SELECTION",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": null,
+      "fade_out_seconds": null,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s00_archive_seed_alternate_v01",
+      "stage": "S00",
+      "source_path": "assets/audio/music/A_Archive/stages/S00_Prologue/supplemental/Sparse Awakening.wav",
+      "source_sha256": "cb27c6512d710497b058d94eb74004b510c7b50f001f16e712ab7cf180e015ad",
+      "source_duration_seconds": 164.0,
+      "role": "scripted supplemental source",
+      "semantic_intent": "spark_first_note",
+      "interval_seconds": null,
+      "interval_status": "BLOCKED_FIRST_NOTE_AND_MOTIF_SELECTION",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": null,
+      "fade_out_seconds": null,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s01_archive_awakening_v01",
+      "stage": "S01",
+      "source_path": "assets/audio/music/A_Archive/stages/S01_Hub/unique/Archive Awakening.wav",
+      "source_sha256": "0eeaafefb8a2f14f4d167a8638c2625ac278a447eb02d5a98e104348614fb0b3",
+      "source_duration_seconds": 129.72,
+      "role": "unique first",
+      "semantic_intent": "finite_exploration_unique",
+      "interval_seconds": [
+        0.0,
+        129.72
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s02_cold_to_warm_v01",
+      "stage": "S02",
+      "source_path": "assets/audio/music/B_Wings/stages/S02_Warmth_Light/unique/Cold to Warm.wav",
+      "source_sha256": "ccbf2c5fbc700df6f077863c11c37fb7a962f7efd95d793b51dbce4951a96a39",
+      "source_duration_seconds": 127.96,
+      "role": "unique first",
+      "semantic_intent": "finite_exploration_unique",
+      "interval_seconds": [
+        0.0,
+        127.96
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s01_activation_sequence_v01",
+      "stage": "S01",
+      "source_path": "assets/audio/music/A_Archive/shared/Activation Sequence.wav",
+      "source_sha256": "7e7a680588fd3257a340853054960b21609fd83ce7280651f41a0c6ee331cf3a",
+      "source_duration_seconds": 117.4,
+      "role": "group A shared source",
+      "semantic_intent": "finite_exploration_shared",
+      "interval_seconds": [
+        0.0,
+        117.4
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s01_archive_fragment_v01",
+      "stage": "S01",
+      "source_path": "assets/audio/music/A_Archive/shared/Archive Fragment.wav",
+      "source_sha256": "67bc63793e27c7734719c5aa4c0ac4780621a0fb4e338b7567d25af4664a9da0",
+      "source_duration_seconds": 173.0,
+      "role": "group A shared source",
+      "semantic_intent": "finite_exploration_shared",
+      "interval_seconds": [
+        0.0,
+        173.0
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s01_hub_motif_v01",
+      "stage": "S01",
+      "source_path": "assets/audio/music/A_Archive/shared/Hub Motif.wav",
+      "source_sha256": "737cea8ee38fdf0d9819515f8f4d4dfbec0376fc3d80cbf76d69cd1049b3fec6",
+      "source_duration_seconds": 118.0,
+      "role": "group A shared source",
+      "semantic_intent": "finite_exploration_shared",
+      "interval_seconds": [
+        0.0,
+        118.0
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s01_mechanism_light_v01",
+      "stage": "S01",
+      "source_path": "assets/audio/music/A_Archive/shared/Mechanism Light.wav",
+      "source_sha256": "67a7ebe4802b710a82d0fe2b0fa18dc087bc3d0b60d97a31ad0690bb79e73b82",
+      "source_duration_seconds": 132.76,
+      "role": "group A shared source",
+      "semantic_intent": "finite_exploration_shared",
+      "interval_seconds": [
+        0.0,
+        132.76
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s01_resonant_puzzle_v01",
+      "stage": "S01",
+      "source_path": "assets/audio/music/A_Archive/shared/Resonant Puzzle.wav",
+      "source_sha256": "4efb020e0ee524b940124079c31d468541dd6e1b14170c38d38bbc76efe2d875",
+      "source_duration_seconds": 178.4,
+      "role": "group A shared source",
+      "semantic_intent": "finite_exploration_shared",
+      "interval_seconds": [
+        0.0,
+        178.4
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s02_silent_roads_v01",
+      "stage": "S02",
+      "source_path": "assets/audio/music/B_Wings/shared/024_Silent Roads Beneath the Frost.wav",
+      "source_sha256": "f653a468b5aad5cbd97b2bb88d69b27a563cab91036103dbc6b23b2aea992337",
+      "source_duration_seconds": 119.959979,
+      "role": "group B shared source",
+      "semantic_intent": "finite_exploration_shared",
+      "interval_seconds": [
+        0.0,
+        119.959979
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s02_muted_pulse_v01",
+      "stage": "S02",
+      "source_path": "assets/audio/music/B_Wings/shared/034_Muted Pulse Under Falling White.wav",
+      "source_sha256": "1cbcaa01aa3fee728d9ffd382e3ea07c048cddfae9c443757c45127bc2c414af",
+      "source_duration_seconds": 79.839979,
+      "role": "group B shared source",
+      "semantic_intent": "finite_exploration_shared",
+      "interval_seconds": [
+        0.0,
+        79.839979
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    },
+    {
+      "cue_id": "mus_s02_quiet_exhale_v01",
+      "stage": "S02",
+      "source_path": "assets/audio/music/B_Wings/shared/080_Quiet Exhale Through Evergreens.wav",
+      "source_sha256": "70688672fb4e78ef67139539f2b602271fc03716f56432c575f7eef234c1153b",
+      "source_duration_seconds": 128.559979,
+      "role": "group B shared source",
+      "semantic_intent": "finite_exploration_shared",
+      "interval_seconds": [
+        0.0,
+        128.559979
+      ],
+      "interval_status": "FULL_TAKE_REVIEW_CANDIDATE",
+      "playback": "finite",
+      "loop_points": null,
+      "stem_plan": "Original stereo mix only; no supplied stems. No automatic separation. Authored layers remain pending.",
+      "fade_in_seconds": 0.02,
+      "fade_out_seconds": 0.25,
+      "loudness_policy": "Measure integrated LUFS, LRA and true peak. Preserve dynamics; attenuation only for candidate safety. No approved LUFS target.",
+      "compression": {
+        "codec": "libvorbis",
+        "quality": 5,
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "acceptance": "REVIEW_ONLY_UNBOUND",
+      "pending_review": [
+        "instrumental/no phonemes",
+        "palette and early emotional restraint",
+        "four-note Archive motif identity/editing",
+        "cadence and finite tail",
+        "loudness in actual scene mix",
+        "source license metadata before RC"
+      ]
+    }
+  ]
+}

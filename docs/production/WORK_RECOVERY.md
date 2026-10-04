@@ -3,14 +3,17 @@
 Durable source of truth: GitHub working branch
 `feature/04-archive-gameplay/checkpoints-2026-10-04`.
 Fetch its newest verified checkpoint before continuing; do not overlay old local
-snapshots. This document is a closing status update, not a new implementation.
+snapshots. Current audio source processing progress is recorded below; fetch
+the newest remote checkpoint/receipt rather than assuming a closing SHA.
 
 Latest completed implementation checkpoint:
 `b9236b96d4560391e3b0a519b18757b4c888f369`.
 Commit timestamp: 2026-10-04 21:32:03 UTC.
 Independent fetch/ls-remote/parent/tree verification:
 2026-10-04 21:32:20.573621 UTC. See the publication receipt log.
-Subsequent closing commits contain documentation/receipt changes only.
+The following 4eee9058 closing commit contains documentation only. The next
+session continues with the bounded audio edit/export tool and manifest; its
+publication SHA is recorded in the remote commit/receipt, not predicted here.
 
 ## Completed and verified
 
@@ -27,6 +30,10 @@ Subsequent closing commits contain documentation/receipt changes only.
   lease order and successful-exit audio teardown defects are fixed.
 - Fragment windows own one -4 dB score duck, safely release only their own
   input/audio ownership and keep quiet restore/duplicate suppression.
+- Twelve-master audio edit/export manifest, EBU R128 measurements and PCM energy
+  envelopes pass with unchanged source hashes and five actual boundary guards.
+  Ten finite full-take S01/S02 review intervals; both S00 seed intervals unset.
+  `tools/audio_slice.py` writes only unbound review evidence, never shipping audio.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -40,13 +47,14 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: follow `AUDIO_SLICE_BRIEF.md` to prepare the source edit/export manifest for
-the existing twelve S00/S01/S02 source masters. Identify the actual S00 first-note
-excerpt/common motif; record source intervals, finite/loop/stem intent and
-canonical runtime names. Then edit/export/validate one derivative family per
-durable checkpoint. There are currently no runtime music derivatives and no
-ambience/SFX media; do not mark headers, source titles or placeholder folders as
-authored mix acceptance. Existing source WAVs and their hashes remain intact.
+Next: follow `audio/README.md` to export `mus_s01_archive_awakening_v01` into a
+new review evidence family; verify compressed decode/duration/true peak and
+source protection, then checkpoint immediately. Continue one candidate family
+at a time. Actual S00 first-note/common motif selection and listening/scene mix
+remain pending; do not bind unaccepted candidates to shipping scenes. There are
+currently no runtime music derivatives and no ambience/SFX media. Existing
+source WAVs and their hashes remain intact. Full manifest and measured inputs
+are in `audio/slice_edit_manifest.json` and `slice-analysis-1/results.json`.
 
 ## Operational evidence
 

@@ -1,0 +1,32 @@
+[aist#0:0/pcm_s16le @ 0x55e67d42cf00] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/assets/audio/music/B_Wings/stages/S02_Warmth_Light/unique/Cold to Warm.wav':
+  Metadata:
+    comment         : made with suno; created=2026-09-18T12:47:36Z; id=c80909ef-fdfd-4436-b0ee-4ed396efa040
+    encoder         : Lavf60.16.100
+  Duration: 00:02:07.96, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    comment         : made with suno; created=2026-09-18T12:47:36Z; id=c80909ef-fdfd-4436-b0ee-4ed396efa040
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    size=N/A time=00:01:15.90 bitrate=N/A speed= 151x    [out#0/null @ 0x55e67d43db80] video:0kB audio:23992kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:02:07.90 bitrate=N/A speed= 155x    
+[Parsed_ebur128_0 @ 0x55e67d470d40] Summary:
+
+  Integrated loudness:
+    I:         -16.5 LUFS
+    Threshold: -26.7 LUFS
+
+  Loudness range:
+    LRA:         9.2 LU
+    Threshold: -36.6 LUFS
+    LRA low:   -22.6 LUFS
+    LRA high:  -13.4 LUFS
+
+  True peak:
+    Peak:       -3.7 dBFS
