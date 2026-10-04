@@ -28,15 +28,21 @@ def validate(args):
                    for p in (source / folder).rglob("*") if p.is_file() and not p.is_symlink()
                    and not any(part in {".godot", ".import", "__pycache__"} for part in p.parts))
     review_copies = {}
+    review_windows = {}
     for family in args.review_family:
         folder = family.resolve()
         if not folder.is_relative_to(source / 'docs/production/evidence/audio_director'):
             raise ValueError('Review family is outside repository evidence')
         receipt_path = folder / 'results.json'
         receipt_data = json.loads(receipt_path.read_text())
+        verification_path = folder / 'verification.json'
+        verification_data = json.loads(verification_path.read_text())
+        if verification_data.get('status') != 'PASS':
+            raise ValueError('Unverified review family')
         if receipt_data.get('status') != 'PASS' or receipt_data.get('acceptance') != 'TECHNICAL_REVIEW_ONLY_UNBOUND':
             raise ValueError('Review export does not have a technical PASS receipt')
         paths.append(receipt_path.relative_to(source).as_posix())
+        paths.append(verification_path.relative_to(source).as_posix())
         for record in receipt_data['records']:
             cue = record['cue_id']
             if not re.fullmatch(r'mus_s0[12]_[a-z0-9_]+_v\d{2}', cue) or record.get('shipping_binding') is not False:
@@ -46,16 +52,28 @@ def validate(args):
                     digest(media) != record['derivative_sha256']:
                 raise ValueError('Review media path/hash mismatch')
             name = media.relative_to(source).as_posix()
+            if verification_data['source_hashes'].get(name) != record['derivative_sha256']:
+                raise ValueError('Review verification does not seal this derivative')
             target = 'game/audio/review/' + media.name
             if target in review_copies.values() or (source / target).exists():
                 raise ValueError('Duplicate review cue or existing shipping path')
             paths.append(name)
             review_copies[name] = target
+            duration = float(record['probe']['format']['duration'])
+            energy = record['source_envelope']['one_second_rms_dbfs']
+            start, end = record['interval_seconds']
+            available = [i for i in range(len(energy)) if start <= i + .1 <= end - 8.0]
+            loudest = max(available or [0], key=energy.__getitem__)
+            # Stay before the six-second automatic crossfade while measuring.
+            position = max(0.0, min(duration - 8.0, loudest + .1 - start))
+            review_windows[cue] = {'duration': duration, 'position': position,
+                                   'scope': 'Source energy window for decoder testing, not musical onset/motif selection.'}
     paths = sorted(set(paths))
     hashes = {p: digest(source / p) for p in paths}
     result = {"status": "RUNNING", "started_at": stamp(), "source_hashes": hashes,
               "scope": args.tests, "save_mode": args.save_mode, "records": [],
               "private_review_copies": review_copies,
+              "private_review_windows": review_windows,
               "review_acceptance": "Technical import/mixer only; no shipping/listening/motif acceptance." if review_copies else None}
     receipt = output / "results.json"
     receipt.write_text(json.dumps(result, indent=2) + "\n")
@@ -75,6 +93,8 @@ def validate(args):
                 shutil.copyfile(source / name, target)
                 if digest(target) != hashes[name]:
                     raise RuntimeError('Private review copy hash mismatch')
+            if review_windows:
+                (clean / 'game/audio/review/test_windows.json').write_text(json.dumps(review_windows) + '\n')
             def run(name, command, marker="", timeout=90):
                 data = scratch / ("userdata-" + name)
                 slots = data / "godot/app_userdata/Where the Light Remains"

@@ -20,10 +20,11 @@ with playing score. Two reproduced routing/teardown defects are fixed; see
 `AUDIO_DIRECTOR.md` and its clean-copy/native receipts. Shipping authored audio
 bindings and full VS1 art/audio/hardware acceptance remain separate work.
 The S00/S01/S02 twelve-source edit/export manifest and measured loudness/PCM
-envelopes are now recorded; five export boundary guards pass. S00 motif interval
-selection and 0 shared S01/S02 review exports/acceptance remain open. Two
-unique review OGGs pass decode measurements and a private cache-free Godot
-import/mixer test (30 assertions), protected saves and main-entry regressions. See
+envelopes are recorded. Ten finite review OGGs pass source protection/decode/
+format/duration/true peak and a private cache-free Godot import/mixer run:
+93 complete-pool plus 30 unique-cue assertions, protected saves and main-entry
+regressions. Twelve export/evidence guards pass. S00 first-note/common-motif
+selection, listening/scene mix, shipping bindings and full VS1 remain open. See
 `audio/README.md` and `AUDIO_SLICE_BRIEF.md`.
 See `ARCHIVE_RECONSTRUCTION.md` and its current receipts.
 

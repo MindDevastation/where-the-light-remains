@@ -42,6 +42,12 @@ publication SHA is recorded in the remote commit/receipt, not predicted here.
   protected save hashes, 17 main-entry checks and normal startup pass.
   `unique-godot-review-2/` is current; initial test typing failure is retained
   in `unique-godot-review-1/`. No shipping music/media bindings were added.
+- All ten finite S01/S02 source-derived review OGGs now pass complete private
+  cache-free Godot import/mixer validation: 93 pool + 30 unique-cue assertions,
+  17 main-entry checks and actual normal startup; no errors/warnings and exact
+  protected save hashes. Current receipt: `full-pools-godot-review-1/`.
+  Twelve source/output/evidence guards pass; all temporary test/encoder media
+  are outside Git. Failed Muted Pulse trace/cleanup diagnostics are retained.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -55,14 +61,14 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: privately cache-free import/mixer/finite-pool test all ten review OGGs,
-then finish the listening/edit review package and checkpoint.
-10/10 finite S01/S02 candidates pass technical export/decode/source
-checks; 0 remain. See `audio/REVIEW_INDEX.md` for exact files/proof.
-
-Actual S00
-first-note/common motif selection and listening/scene mix
-remain pending; do not bind unaccepted candidates to shipping scenes. There are
+Next: select an actual first-note S00 source interval/common four-note motif
+through source listening/editing; fill only the selected S00 manifest row,
+export/verify that seed in a new review family and checkpoint immediately.
+`audio/REVIEW_INDEX.md` links both original S00 WAVs and all ten complete finite
+S01/S02 technical candidates. Instrumentality/palette/motif/cadence/scene mix
+and per-source release provenance remain pending. No authoring acceptance is
+inferred from energy windows/headers or Dummy mixer output.
+Do not bind unaccepted candidates to shipping scenes. There are
 currently no runtime music derivatives and no ambience/SFX media. Existing
 source WAVs and their hashes remain intact. Full manifest and measured inputs
 are in `audio/slice_edit_manifest.json` and `slice-analysis-1/results.json`.

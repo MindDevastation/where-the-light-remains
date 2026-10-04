@@ -6,8 +6,8 @@
 
 | Cue | Этап / роль | OGG / evidence | Длительность, с | LUFS / dBTP | Статус |
 | --- | --- | --- | ---: | --- | --- |
-| mus_s00_archive_seed_v01 | S00 / scripted seed source | — | — | — | First-note selection pending |
-| mus_s00_archive_seed_alternate_v01 | S00 / scripted supplemental source | — | — | — | First-note selection pending |
+| mus_s00_archive_seed_v01 | S00 / scripted seed source | [Source WAV (not runtime cue)](../../../assets/audio/music/A_Archive/stages/S00_Prologue/unique/Sparse%20Awakening%20vol.2.wav) | 168.16 source | — | First-note selection pending |
+| mus_s00_archive_seed_alternate_v01 | S00 / scripted supplemental source | [Source WAV (not runtime cue)](../../../assets/audio/music/A_Archive/stages/S00_Prologue/supplemental/Sparse%20Awakening.wav) | 164.00 source | — | First-note selection pending |
 | mus_s01_archive_awakening_v01 | S01 / unique first | [OGG](../evidence/audio_director/s01-unique-review-1/mus_s01_archive_awakening_v01.ogg) · [proof](../evidence/audio_director/s01-unique-review-1/verification.json) | 129.72 | -15.9 / -3.1 | Technical PASS; musical pending |
 | mus_s02_cold_to_warm_v01 | S02 / unique first | [OGG](../evidence/audio_director/s02-unique-review-1/mus_s02_cold_to_warm_v01.ogg) · [proof](../evidence/audio_director/s02-unique-review-1/verification.json) | 127.96 | -16.5 / -3.6 | Technical PASS; musical pending |
 | mus_s01_activation_sequence_v01 | S01 / group A shared source | [OGG](../evidence/audio_director/s01-activation-review-1/mus_s01_activation_sequence_v01.ogg) · [proof](../evidence/audio_director/s01-activation-review-1/verification.json) | 117.40 | -16.2 / -3.1 | Technical PASS; musical pending |
@@ -22,4 +22,4 @@
 Готово 10 из 10 конечных кандидатов S01/S02. S00 в этот счет не входит.
 
 30 проверок Godot для двух уникальных OGG: ../evidence/audio_director/unique-godot-review-2/.
-Shared OGGs currently have compressed decode/probe/peak/source proof; full pool Godot validation remains the next acceptance step.
+Полный private cache-free Godot прогон: [93 pool + 30 unique-cue assertions, защищенные save-файлы и вход в игру](../evidence/audio_director/full-pools-godot-review-1/results.json). Все десять OGG дали реальный PCM; музыкальная приемка остается открытой.

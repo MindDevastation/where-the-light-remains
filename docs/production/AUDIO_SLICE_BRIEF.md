@@ -68,15 +68,30 @@ a previous immutable receipt.
 `s01-fragment-review-1/`, with eleven guards. Unfinished encoder files now live
 outside Git; verification rejects any leftover intermediate inside evidence.
 
-All ten finite S01/S02 exports now pass. Next privately cache-free import/mixer
-validate the complete pools and finish the listening/edit review package.
-Current 10/10 technical candidates and their exact evidence are indexed
-in `audio/REVIEW_INDEX.md`. After all derivatives exist,
-prepare a compact listening/edit review index; actual source-motif selection
-and scene-mix acceptance remain open.
-Listening/scene-mix/motif acceptance remains pending. Identify the
-actual S00 first-note excerpt and common Archive motif from the source material;
-do not infer identical motifs across generated takes.
+All ten finite S01/S02 exports now pass. Their complete private cache-free Godot
+import/mixer run passes 93 actual pool assertions plus the 30 unique-cue checks,
+17 main-entry checks and normal startup. Every OGG produces actual captured
+PCM, unique-first/group/no-immediate-repeat selection and two-decoder bounds
+pass, protected physical save hashes stay unchanged. See
+`evidence/audio_director/full-pools-godot-review-1/`; no runtime warnings/errors.
+`audio/REVIEW_INDEX.md` links the exact accepted technical candidates and the
+two original S00 sources. No shipping music binding was added.
+
+The first Muted Pulse verification failed with a truncated 3/5 command trace;
+its diagnostics remain in `s02-muted-pulse-review-1/`. The accepted rerun is
+`s02-muted-pulse-review-2/`. Commands now persist cumulative memory/final trace;
+12 guards include stale-file replacement, altered media and immutable receipts.
+Late owned test-fixture residue was removed and all test/encoder temporary
+media moved outside Git. The source-preserving cleanup/publication recheck is
+recorded, rather than treating the first clean-status abort as a PASS.
+
+Next: select the actual S00 first-note interval and common four-note Archive
+identity by listening/editing the supplied sources, then export only that seed
+and checkpoint. Review all ten finite candidates for instrumental/no-phoneme
+content, approved palette, cadence/tail, motif consistency and actual scene mix.
+Those checks are pending; byte/header/mixer proof does not establish them.
+Do not bind unaccepted full takes to shipping scenes or infer motif identity
+across generated tracks. Ambience/SFX/art/target-GPU requirements remain open.
 
 Then produce one bounded derivative family at a time using canonical
 `mus_s##_name_v##` names. Perform the source edit, loop/stem, loudness and

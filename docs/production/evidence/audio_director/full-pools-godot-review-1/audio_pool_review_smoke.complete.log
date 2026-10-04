@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s01_archive_awakening_v01","frames":8192,"position":28.1,"rms":0.223783029877288}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s01_resonant_puzzle_v01","frames":8192,"position":119.1,"rms":0.17667039868078}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s01_archive_awakening_v01","frames":12288,"position":28.1,"rms":0.221925474252369}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s01_activation_sequence_v01","frames":8192,"position":34.1,"rms":0.248847753281834}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s01_archive_awakening_v01","frames":8192,"position":28.1,"rms":0.223783029877288}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s01_mechanism_light_v01","frames":8192,"position":87.1,"rms":0.227836577038759}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s01_hub_motif_v01","frames":12288,"position":85.1,"rms":0.186182234401703}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s01_archive_fragment_v01","frames":12288,"position":57.1,"rms":0.189326798474347}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s02_cold_to_warm_v01","frames":8192,"position":105.1,"rms":0.217963257795735}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s02_muted_pulse_v01","frames":12288,"position":66.1,"rms":0.248620444537872}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s02_cold_to_warm_v01","frames":12288,"position":105.1,"rms":0.219575981418357}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s02_silent_roads_v01","frames":8192,"position":72.1,"rms":0.301941580552932}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s02_quiet_exhale_v01","frames":8192,"position":93.1,"rms":0.36117363646994}
+AUDIO_POOL_REVIEW PCM: {"cue":"mus_s02_cold_to_warm_v01","frames":8192,"position":105.1,"rms":0.212938662897734}
+AUDIO_POOL_REVIEW PASS: 93 assertions; ten real source-derived OGGs, complete unique-first/no-repeat pools and bounded decoders; technical review only

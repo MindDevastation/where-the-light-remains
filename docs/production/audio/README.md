@@ -61,3 +61,12 @@ these media/bindings. `audio_review_smoke` expects the two exact unique cues;
 running that test without private review media intentionally fails. Accepted
 technical evidence is `unique-godot-review-2/` (30 assertions plus main-entry
 regressions); listening/edit/motif and actual speaker/scene-mix remain unverified.
+
+All ten current technical candidates are linked in `REVIEW_INDEX.md`.
+`full-pools-godot-review-1/` passes initially cache-free import, 93 actual
+complete-pool assertions, the existing 30 unique-cue checks and main-entry
+regressions. Pass all ten verified family paths to `--review-family`, and add
+`audio_pool_review_smoke` to `--tests` for reproduction. The harness requires
+each derivative's PASS verification/hash and builds energy test windows only
+in the private copy. They stay before automatic crossfade and do not identify
+notes, vocals or approved musical edits. Current boundary suite: 12 guards.

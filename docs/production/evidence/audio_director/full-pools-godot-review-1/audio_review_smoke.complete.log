@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_REVIEW runtime: 4.7.2-stable (official); display=headless; audio=Dummy
+AUDIO_REVIEW PCM: {"frames":16384,"label":"s01_baseline","rms":0.0435939493784442}
+AUDIO_REVIEW PCM: {"frames":16384,"label":"s01_duck","rms":0.0286678049187218}
+AUDIO_REVIEW PCM: {"frames":20480,"label":"s01_restored","rms":0.0456243521982743}
+AUDIO_REVIEW PCM: {"frames":20480,"label":"s02_baseline","rms":0.0895290752405591}
+AUDIO_REVIEW PCM: {"frames":16384,"label":"finite_end","rms":0.0}
+AUDIO_REVIEW PASS: 30 assertions; exact private source-derived Vorbis import, mixer, duck, crossfade and finite end; no musical acceptance
