@@ -111,6 +111,12 @@ openings are linked in REVIEW_INDEX.md, still with null note/motif identity.
 Alternate family 1 is excluded because its final receipt remained RUNNING after
 CLI completion; the preserved diagnosis and atomic/read-back receipt fix precede
 the accepted new family. Only actual listening/edit selection can select a seed.
+The exact final S00 event/PCM source additionally passes its 41 checks with
+physically existing read-only primary/backup fixtures in
+`prologue-pcm-protected-saves-1/`; both SHA values remain unchanged, cache-free
+import passes, and there are no runtime errors/warnings. No speaker check or
+musical approval is implied. The actual next task is now the listening/edit
+selection below, without repeating completed technical exports or event tests.
 
 Authored next step: select the actual S00 first-note interval and common four-note Archive
 identity by listening/editing the supplied sources, then export only that seed

@@ -194,3 +194,12 @@ Newer semantic PCM survives old scene removal, a pending route lease survives
 stale cancellation, and both physical save hashes remain unchanged in the
 PCM test. Synthetic PCM is explicitly not the Archive motif or shipping score.
 Authored note selection/listening/mix and target hardware remain open.
+
+S00 final protected-file check, 2026-10-04 23:47 UTC:
+`evidence/audio_director/prologue-pcm-protected-saves-1/` passes cache-free import
+and 41 actual event/PCM/ownership/quiet-load checks on the current source with
+two existing read-only save fixtures. Both primary/backup SHA values remain
+`a8f464dc403b93c60fb7fd60a658335505e4506c5344ec05f1f487120372d757`.
+No runtime errors/warnings or shipping source-audio bindings. The two S00
+opening proposals in `audio/REVIEW_INDEX.md` are ready for listening; first-note
+and common motif selection remain pending, so GATE-VS1 stays open.

@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-04 23:41 UTC
+# Current Work recovery boundary — 2026-10-04 23:47 UTC
 
 Durable source of truth: GitHub working branch
 `feature/04-archive-gameplay/checkpoints-2026-10-04`.
@@ -15,6 +15,12 @@ fetch the newest checkpoint/publication receipt for its exact current SHA.
 First hook checkpoint `e4a12b15f726a04e46c36f0d19b12bacbbab0bae` was independently
 verified 2026-10-04 23:22:24.341057 UTC. The next exact-source PCM block below
 adds revision-guarded request cancellation and explicit paused-tree protection.
+Latest implementation/tool checkpoint is
+`f39dc3c2bb3ab5bf32d7662942764291ee749ef8`, independently verified with clean
+checkout at 2026-10-04 23:43:19.284852 UTC. It includes both listening proposals,
+the receipt fix and intermediate acceptance diagnostics. The final targeted
+protected-save run below uses its exact current source. Subsequent closing
+checkpoint updates documentation/evidence only; fetch newest remote SHA.
 
 Previously completed audio export/pool implementation/validation checkpoint:
 `9e0a27ba219fe39478634f9d177872f8ed28e07c`.
@@ -93,6 +99,11 @@ all current implementation/evidence is now on the same remote working branch.
   excluded. The tool now fsyncs/atomically replaces/read-backs receipts before
   printing PASS. Audition proposals cannot receive normal seed verification or
   unlock the blocked exporter. Both listening links are in REVIEW_INDEX.md.
+- `prologue-pcm-protected-saves-1/` passes cache-free import and the 41 actual
+  S00 event/PCM/lifetime checks with two physically existing read-only save
+  fixtures. Both primary and backup keep SHA
+  `a8f464dc403b93c60fb7fd60a658335505e4506c5344ec05f1f487120372d757`.
+  No errors/warnings or source changes; private project is removed afterward.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -106,11 +117,12 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next safety check: run only the actual S00 event/PCM scenario with the validator's
-read-only, physically existing primary/backup fixtures. The earlier 193-check
-test-owned suite protected their absence in this one scenario; its full timeline
-test intentionally writes its isolated checkpoint. Do not conflate that with
-testing two pre-existing protected files, or rerun unrelated finished exports.
+All independent S00 event/PCM/lifetime, source-audition tooling and protected-save
+checks above are complete. Do not repeat them or the ten completed S01/S02 exports.
+Continue with listening/edit selection below. The earlier 193-check test-owned
+suite preserved empty slots in the PCM scenario; the final read-only run now
+proves preservation of two existing physical files. No GUI/speaker acceptance
+was performed in this session; actual PCM was captured with the Dummy mixer.
 
 Authored next step remains: select an actual first-note S00 source interval/common four-note motif
 through source listening/editing; fill only the selected S00 manifest row,
@@ -145,3 +157,7 @@ the next block began while independent acceptance was still running. The remote
 SHA/parent/tree and exact index tree were verified; only the reviewed next-block
 delta remained. No clean checkout is claimed for that intermediate acceptance.
 Complete each acceptance process before starting mutations in its next block.
+`evidence/audio_director/prologue_session_close_20261004.json` records current
+master/manifest/source checks, zero shipping music media, absence of owned
+Godot/Xvfb/FFmpeg processes and verified checkpoint intervals. Later clean
+acceptance at f39dc3c closes the intermediate local-status issue.
