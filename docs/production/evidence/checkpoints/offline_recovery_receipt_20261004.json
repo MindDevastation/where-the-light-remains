@@ -1,0 +1,18 @@
+{
+  "status": "REMOTE_WIP_RECOVERY_PASS",
+  "checkpoint_commit": "0d6e79202f00446604f48e04086cfd3588b0af15",
+  "verified_at": "2026-10-04T18:23:40.927Z",
+  "branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+  "transport": "GitHub connector Git-data API; existing exec-server unavailable",
+  "verification": [
+    "Independent branch ref SHA equals checkpoint commit",
+    "Independent immutable blob read equals saved recovery patch text"
+  ],
+  "saved_patch_blob": "d1624f85064870d4ad7f613c11b75cda77a70580",
+  "saved_patch_characters": 8884,
+  "source_files_preserved": 7,
+  "local_snapshot": "UNAVAILABLE: environment_offline; patch backup is not a filesystem snapshot",
+  "main_modified": false,
+  "force": false,
+  "next": "Recover actual local state first; reconcile remote receipt without resetting surviving delta; resume S02 bindings/scene/targeted validation."
+}

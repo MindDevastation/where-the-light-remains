@@ -17,14 +17,14 @@
   "environment_errors": [
     {
       "operation": "exec_command",
-      "command": "date -u +%FT%TZ; git status --short; rg -n ...; ps -eo pid,ppid,etime,stat,comm",
-      "error": "failed to query exec-server capabilities: exec-server connection attempt failed: environment registry request failed (409 Conflict, environment_offline): Environment is not connected."
+      "command": "date -u +%FT%TZ; git status --short; rg -n 'pending_fragment|collect_fragment|restore_slice|script|Data|couplet_label' game/worlds/archive/archive_main.gd game/gameplay/collectibles/fragment_presenter.gd game/gameplay/collectibles/fragment_presenter.tscn; ps -eo pid,ppid,etime,stat,comm",
+      "error": "exec_command failed: CreateProcess { message: \"Io(Custom { kind: Other, error: \\\"failed to query exec-server capabilities: exec-server connection attempt failed: environment registry request failed (409 Conflict, environment_offline): Environment is not connected.\\\" })\" }"
     },
     {
       "operation": "write_stdin",
       "session_id": 16547,
       "chars": "empty read",
-      "error": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 25s"
+      "error": "write_stdin failed: Unified exec process failed: exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 25s"
     }
   ],
   "paths": {
