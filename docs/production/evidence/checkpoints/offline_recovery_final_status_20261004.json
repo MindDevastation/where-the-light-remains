@@ -1,0 +1,26 @@
+{
+  "status": "BLOCKER_EXECUTION_ENVIRONMENT_OFFLINE",
+  "utc": "2026-10-04T18:29:57.100Z",
+  "last_stable_remote": "9a4a5a57f3c8ab1b18c4260192a6afe4ff42ce9d",
+  "durable_wip_checkpoint": "0d6e79202f00446604f48e04086cfd3588b0af15",
+  "durable_wip_receipt": "6f08008a1fd63f5309bbd70c46216c498d313946",
+  "repeated_capability_check": {
+    "command": "date -u +%FT%TZ; git status --short --branch; git rev-parse HEAD",
+    "cwd": "/workspace/scratch/4f0b36b4bb0e/wlr-reconstruction",
+    "stdout": "none; command could not start",
+    "error": "exec_command failed: CreateProcess { message: \"Io(Custom { kind: Other, error: \\\"failed to query exec-server capabilities: exec-server connection attempt failed: environment registry request failed (409 Conflict, environment_offline): Environment is not connected.\\\" })\" }"
+  },
+  "coordinator_stop": {
+    "utc": "2026-10-04T18:29:03.656Z",
+    "status": "UNCONFIRMED",
+    "operation": "write_stdin session 16547 JSON stop",
+    "error": "write_stdin failed: Unknown process id 16547"
+  },
+  "completed": "ArchiveMain state/world and S01 reconstruction: clean-copy import, 101+109 actual assertions, normal remote push verified",
+  "interrupted": "S02 binding apply_patch outcome unknown; seven untested fragment source files and pending binding draft preserved in remote recovery patches",
+  "no_test_running_at_last_confirmed_step": true,
+  "local_runtime_fallbacks": "No callable environment reconnect/create/alternate shell runtime exposed. Existing local-prefix Godot/Xvfb TCP workaround cannot run before exec-server connects. No missing-package, AF_UNIX, auth, or LFS blocker is inferred.",
+  "available_transport": "GitHub Git-data connector provided durable backup with force=false and independent ref/blob verification; it cannot execute Godot or inspect local processes.",
+  "next": "Restore actual environment connection; compare newest remote receipt with surviving local files/logs/processes. Preserve newer local delta, reconcile working branch normally, reconstruct only missing source, resume S02 scene/fragment/checkpoint validation. Do not repeat accepted S01/T019/preflights.",
+  "acceptance": "No full S02, Boot, authored art/audio, graphical slice or GATE-VS1 PASS is claimed."
+}
