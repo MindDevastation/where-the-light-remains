@@ -269,6 +269,9 @@ func _request_stage(stage_id: StringName, saved: SaveGame, checkpoint_before: bo
             return await _complete_route(prepared["error"])
         if not _route_owned():
             return await _complete_route(ERR_SKIP)
+        _route["audio_token"] = AudioDirector.begin_stage_audio(stage_id)
+        if _route["audio_token"] == 0:
+            return await _complete_route(ERR_SKIP)
         var apply_error := existing.apply_stage_state(stage_id, prepared["state"])
         if apply_error != OK:
             return await _complete_route(apply_error)
@@ -278,9 +281,6 @@ func _request_stage(stage_id: StringName, saved: SaveGame, checkpoint_before: bo
         if GameState.apply_save(target) != OK:
             return await _complete_route(ERR_INVALID_DATA)
         _route["committed"] = true
-        _route["audio_token"] = AudioDirector.begin_stage_audio(stage_id)
-        if _route["audio_token"] == 0:
-            return await _complete_route(ERR_SKIP)
         _restore_world(existing)
         _player.set_active(definition.player_active)
         if not _route_owned():
@@ -308,6 +308,11 @@ func _request_stage(stage_id: StringName, saved: SaveGame, checkpoint_before: bo
     var spawn: Transform3D = _world_slot.global_transform * prepared["spawn"]
     if not WorldScene.valid_spawn_transform(spawn):
         return await _complete_route(ERR_INVALID_DATA)
+    # Hold old playlist selection during both fades without restarting its
+    # actual playback. A newer semantic/silence owner can cancel this lease.
+    _route["audio_token"] = AudioDirector.begin_stage_audio(stage_id)
+    if _route["audio_token"] == 0:
+        return await _complete_route(ERR_SKIP)
     if not await _route_fade(1.0) or not _route_owned():
         return await _complete_route(ERR_SKIP)
     candidate.hide()
@@ -329,9 +334,6 @@ func _request_stage(stage_id: StringName, saved: SaveGame, checkpoint_before: bo
         return await _complete_route(ERR_INVALID_DATA)
     _route["committed"] = true
     _player.spawn_at(spawn)
-    _route["audio_token"] = AudioDirector.begin_stage_audio(stage_id)
-    if _route["audio_token"] == 0:
-        return await _complete_route(ERR_SKIP)
     candidate.show()
     if not await _route_fade(0.0) or not _route_owned():
         return await _complete_route(ERR_SKIP)

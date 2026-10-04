@@ -1,0 +1,3 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_ROUTE PASS: 18 assertions; actual fade/commit/rollback playback and later silence ownership

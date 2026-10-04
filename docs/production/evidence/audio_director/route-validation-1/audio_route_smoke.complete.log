@@ -1,0 +1,25 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: AUDIO_ROUTE FAIL: Audio lease is held before initial fade-out
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_route_smoke.gd:30)
+       [1] _run (res://tests/audio_route_smoke.gd:106)
+       [2] request_resume_stage (res://autoload/scene_router.gd:201)
+       [3] _request_stage (res://autoload/scene_router.gd:348)
+       [4] _route_fade (res://tests/audio_route_smoke.gd:10)
+       [5] _route_fade (res://autoload/scene_router.gd:359)
+       [6] fade_to (res://core/transitions/fade_overlay.gd:60)
+       [7] _process (res://core/transitions/fade_overlay.gd:70)
+ERROR: AUDIO_ROUTE FAIL: Known transition holds playlist selection before fade-out while old cue remains actual playback
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_route_smoke.gd:30)
+       [1] _run (res://tests/audio_route_smoke.gd:115)
+       [2] _wait_fade (res://tests/audio_route_smoke.gd:70)
+ERROR: AUDIO_ROUTE FAIL: Newer silence supersedes actual pending route and rolls back its world
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/audio_route_smoke.gd:30)
+       [1] _run (res://tests/audio_route_smoke.gd:140)
+       [2] _wait_done (res://tests/audio_route_smoke.gd:75)

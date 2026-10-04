@@ -1,0 +1,5 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_PLAYLIST initial playback: {"automatic":false,"duck_locks":0,"group":"B","pending_stage":false,"players":[{"cue":"queue_a","gain":1.0,"playing":true,"position":0.096000000834465},{"cue":"","gain":0.0,"playing":false,"position":0.0}],"queued":false,"revision":2,"silence_latched":false,"silence_locks":0,"stage":"s02_queue_fixture","state":"fixture_a"}
+AUDIO_PLAYLIST selected: [&"bag_unique", &"bag_shared", &"bag_unique", &"bag_shared", &"bag_unique", &"bag_shared", &"bag_unique", &"bag_shared", &"bag_unique"]
+AUDIO_PLAYLIST PASS: 56 assertions; actual finite playback, unique/no-repeat bag, bounded latest crossfade, leases and canonical semantic/vocal guards

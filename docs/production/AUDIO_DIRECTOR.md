@@ -97,3 +97,25 @@ source title, and S15 voice needs both actual completion and explicit wide shot;
 revoking either stops playback. Later-stage IDs here are isolated audio-policy
 fixtures; no later shipping world, narrative or timing has been implemented.
 Next: actual SceneRouter fade/rollback and successful/failed App exit with playback.
+
+## Actual router lease correction
+
+`route-validation-1` reproduces three contract failures: the audio lease was
+acquired after fade-out, playlist intent was not held during the known transition,
+and a newer silence before world commit did not cancel that transition.
+SceneRouter now begins the lease after valid domain/spawn preparation and before
+fade-out (before world apply on IN_PLACE). Actual incoming playback still commits
+only after the last route acceptance guard. Cancellation restores metadata and
+retains advancing outgoing PCM; stale cleanup cannot release newer silence.
+
+`route-validation-2` passes 18 actual audio-route assertions plus transactional
+and seamless router, 56 playlist, 29 mixer and 17 shipping-entry assertions.
+`archive-regression-1` passes 33 Boot, 25 S00, 101 state, 110 S01 and 60 S02
+assertions after the routing fix. `route-native-1` passes the actual TCP X11 /
+Vulkan Forward+ audio route and the seamless fixture's framebuffer equality.
+All Godot runtime logs are free of errors/warnings; the X server's nonfatal
+optional keysym warnings are retained. Software GPU and generated Dummy-mixer
+PCM do not certify physical target hardware or a speaker mix.
+
+Next: actual failed/successful App exit with score playback, then close the
+bounded Director foundation acceptance. Shipping OGG/stem bindings stay separate.

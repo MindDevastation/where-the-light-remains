@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-04T21:04:10.989927+00:00",
+  "scope": "Actual TCP X11 / Vulkan Forward+ route rollback and same-framebuffer seamless transition; generated PCM through Dummy mixer; software llvmpipe, no speaker or target-hardware certification.",
+  "records": [
+    {
+      "name": "audio_route_smoke",
+      "passed": true,
+      "exit_code": 0,
+      "command": [
+        "python",
+        "-B",
+        "tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/af1393cbbc18/wlr-tools/graphics",
+        "--godot",
+        "/workspace/scratch/af1393cbbc18/wlr-tools/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "35",
+        "--expect",
+        "AUDIO_ROUTE PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "1920x1080",
+        "--audio-driver",
+        "Dummy",
+        "res://tests/audio_route_smoke.tscn"
+      ],
+      "raw_output_sha256": "c6a2adb56a625c4190567922fea7e22324e490564a838723d0f2bcb8b7800533",
+      "stored_log_sha256": "11faa3923f4a1f8c1e39c11036bddc0e60641f701ecfd530fe52b9b36a3bf2b5",
+      "raw_bytes": 2291,
+      "stored_bytes": 2290
+    },
+    {
+      "name": "router_seamless_smoke",
+      "passed": true,
+      "exit_code": 0,
+      "command": [
+        "python",
+        "-B",
+        "tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/af1393cbbc18/wlr-tools/graphics",
+        "--godot",
+        "/workspace/scratch/af1393cbbc18/wlr-tools/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "35",
+        "--expect",
+        "ROUTER_SEAMLESS PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "1920x1080",
+        "--audio-driver",
+        "Dummy",
+        "res://tests/router_seamless_smoke.tscn"
+      ],
+      "raw_output_sha256": "46edfe119049e5b299289751b345cc8ed98de098b13e3d13503c8845e4c35b5c",
+      "stored_log_sha256": "8f9c5e387d7d818b382f5035c26a1ebad666e284fb064a4beeb9f8c6a2597666",
+      "raw_bytes": 2386,
+      "stored_bytes": 2385
+    }
+  ],
+  "log_storage": "Trailing empty lines normalized to one LF; all nonempty process output and diagnostic lines retained."
+}
