@@ -170,3 +170,24 @@ isolated-root CLI argument and fails its guard. The delta runner now supplies
 that argument. `new-game-validation-2` is the exact-source targeted receipt for
 New Game, ordinary Save IO and actual dirty App exit. Boot UI is still next; no
 automatic reset or deletion on startup is introduced.
+
+## Boot component integration
+
+`core/boot/boot.tscn` supplies a Russian menu around the persistent GameRoot and
+the owned S00/S01/S02 registry. Startup reads/prepares domain state without
+applying saves or touching their bytes. Continue loads the registered safe spawn;
+backup use is visible. Existing valid/corrupt progress requires a cancelable New
+Game confirmation; a fresh empty slot starts directly from the New Game button.
+Unknown schemas/IO obstacles block reset. S00 opts into the shared Esc pause and
+nested Settings; the cinematic/player cameras share live configured FOV. Known
+checkpoint IDs inconsistent with their stage/fragments cannot load into a locked
+wing. Boot frees its registry entries with its root.
+
+`boot-validation-1` retains a typed-variable parse failure, corrected by explicit
+bool annotation and early fixture cleanup. `boot-validation-2` runs the menu but
+its same-frame SpinBox value assignment leaves the old editable text; the test
+now enters text in the actual FOV editor before Apply. `boot-validation-3` is the
+current targeted Boot/S00/state/S01/S02/pause receipt. The shipping main scene is
+still the old shell in this component checkpoint. Next: native menu/S00 review,
+then enable Boot as the main scene and verify actual startup/exit. Full VS1 and
+authored room art/audio/hardware acceptance remain open.

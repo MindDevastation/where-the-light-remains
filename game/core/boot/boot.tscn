@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="res://core/boot/boot.gd" id="Script"]
+[ext_resource type="PackedScene" path="res://core/game_root/game_root.tscn" id="GameRoot"]
+
+[node name="Boot" type="Node"]
+script = ExtResource("Script")
+
+[node name="MainMenu" type="Node" parent="."]
+
+[node name="GameRoot" parent="MainMenu" instance=ExtResource("GameRoot")]
+
+[node name="MenuLayer" type="CanvasLayer" parent="MainMenu"]
+layer = -1
+
+[node name="Menu" type="Control" parent="MainMenu/MenuLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

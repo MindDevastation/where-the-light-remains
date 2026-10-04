@@ -18,6 +18,7 @@ var _paused_owned := false
 
 func _ready() -> void:
     InputManager.pause_changed.connect(_on_pause_changed)
+    EventBus.settings_changed.connect(_apply_camera_settings)
     restore(true)
 
 
@@ -32,8 +33,15 @@ func restore(completed: bool) -> void:
     _set_door(1.0 if completed else 0.0)
     camera.position = Vector3(0, 1.624, 15)
     camera.rotation = Vector3.ZERO
-    if camera.is_current():
+    _apply_camera_settings()
+    if completed and camera.is_current():
         camera.clear_current(false)
+    elif not completed and is_inside_tree():
+        camera.make_current()
+
+
+func _apply_camera_settings() -> void:
+    camera.fov = SettingsManager.fov
 
 
 func _set_door(amount: float) -> void:

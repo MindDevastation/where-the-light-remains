@@ -88,6 +88,8 @@ def validate(args):
             for test in args.tests:
                 if not test.replace("_", "").isalnum():
                     raise ValueError("Invalid test name")
+                if not (clean / "game/tests" / (test + ".tscn")).is_file():
+                    raise ValueError("Test scene does not exist: " + test)
                 run(test, [godot, "--headless", "--path", "game", "res://tests/" + test + ".tscn"],
                     test.removesuffix("_smoke").upper() + " PASS", 60)
             if any(digest(source / p) != h for p, h in hashes.items()):

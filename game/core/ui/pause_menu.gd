@@ -5,6 +5,7 @@ signal exit_requested
 
 @export var player_path: NodePath
 @export var settings_path: NodePath
+@export var allow_cinematic := false
 @onready var _player: FirstPersonPlayer = get_node(player_path)
 @onready var _settings: SettingsMenu = get_node(settings_path)
 var resume_button: Button
@@ -71,9 +72,14 @@ func _button(parent: Node, text: String) -> Button:
 
 
 func open() -> bool:
-    if visible or not is_instance_valid(_player) or not _player.active or get_tree().paused or not InputManager.can_look():
+    var cinematic := allow_cinematic and InputManager.mode == InputManager.Mode.CINEMATIC
+    if visible or not is_instance_valid(_player) or get_tree().paused:
         return false
-    if InputManager.mode not in [InputManager.Mode.GAMEPLAY, InputManager.Mode.LIMITED_LOOK]:
+    if not cinematic and (not _player.active or not InputManager.can_look()):
+        return false
+    if cinematic and DisplayServer.get_name() != "headless" and not get_window().has_focus():
+        return false
+    if InputManager.mode not in [InputManager.Mode.GAMEPLAY, InputManager.Mode.LIMITED_LOOK] and not cinematic:
         return false
     _previous_mode = InputManager.mode
     show()

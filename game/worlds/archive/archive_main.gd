@@ -197,6 +197,17 @@ func prepare_state(saved: SaveGame) -> Dictionary:
     var projected := ArchiveProgress.from_save(copy)
     if projected["error"] != OK or copy == null:
         return failure
+    var checkpoint := copy.checkpoint_id
+    if copy.stage_id == ArchiveProgress.PROLOGUE and not checkpoint.is_empty():
+        return failure
+    if copy.stage_id == ArchiveProgress.INTRO and checkpoint not in [&"", &"prologue_completed"]:
+        return failure
+    if copy.stage_id == ArchiveProgress.WING_ONE and checkpoint not in [&"", &"archive_awakened", &"star_collected", &"hearth_collected"]:
+        return failure
+    if checkpoint == &"prologue_completed" and not copy.milestones.get("prologue_completed", false):
+        return failure
+    if checkpoint == &"star_collected" and not projected["state"]["star_collected"] or checkpoint == &"hearth_collected" and not projected["state"]["hearth_collected"]:
+        return failure
     copy.world_states[copy.stage_id] = projected["state"]
     return super.prepare_state(copy)
 
