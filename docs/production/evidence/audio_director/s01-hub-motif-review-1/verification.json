@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "guard_count": 11,
+  "utc": "2026-10-04T22:27:42.088222+00:00",
+  "scope": "One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.",
+  "guard_log_sha256": "bd9f8c2e464765c321582dec282803ca21e8ac57ce808c1d21ae6ad3c55b8959",
+  "source_hashes": {
+    "tools/audio_slice.py": "582cac52c7ac5edce4b50647dcea13e41e80174a757fa2668be9ef5376a647c6",
+    "tools/test_audio_slice.py": "63569aec50ec802ee306a8ce140f878bf469dc23e66874bdd959dff35fa0bec3",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/A_Archive/shared/Hub Motif.wav": "737cea8ee38fdf0d9819515f8f4d4dfbec0376fc3d80cbf76d69cd1049b3fec6",
+    "docs/production/evidence/audio_director/s01-hub-motif-review-1/mus_s01_hub_motif_v01.ogg": "bc25a9754ae51a7bf2143bacc41fc95e20c17ba801a39d215a4ef62648c42787"
+  }
+}

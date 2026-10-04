@@ -68,8 +68,9 @@ a previous immutable receipt.
 `s01-fragment-review-1/`, with eleven guards. Unfinished encoder files now live
 outside Git; verification rejects any leftover intermediate inside evidence.
 
-Next export `mus_s01_hub_motif_v01`, then the remaining two Group A
-and three Group B shared sources, checkpointing each family. After all derivatives exist,
+Next export `mus_s01_mechanism_light_v01` and checkpoint, continuing one finite family at a time.
+Current 5/10 technical candidates and their exact evidence are indexed
+in `audio/REVIEW_INDEX.md`. After all derivatives exist,
 prepare a compact listening/edit review index; actual source-motif selection
 and scene-mix acceptance remain open.
 Listening/scene-mix/motif acceptance remains pending. Identify the

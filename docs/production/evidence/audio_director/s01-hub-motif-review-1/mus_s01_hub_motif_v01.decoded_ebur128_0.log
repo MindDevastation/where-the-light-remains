@@ -1,0 +1,29 @@
+Input #0, ogg, from '/tmp/wlr-audio-encode-m58sbtbc/mus_s01_hub_motif_v01.attempt0.ogg':
+  Duration: 00:01:58.00, start: 0.000000, bitrate: 144 kb/s
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+Stream mapping:
+  Stream #0:0 -> #0:0 (vorbis (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+[out#0/null @ 0x55dcad011a80] video:0kB audio:22125kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:01:57.90 bitrate=N/A speed= 132x    
+[Parsed_ebur128_0 @ 0x55dcad03e540] Summary:
+
+  Integrated loudness:
+    I:         -15.6 LUFS
+    Threshold: -25.6 LUFS
+
+  Loudness range:
+    LRA:         7.8 LU
+    Threshold: -35.5 LUFS
+    LRA low:   -20.6 LUFS
+    LRA high:  -12.8 LUFS
+
+  True peak:
+    Peak:       -2.6 dBFS

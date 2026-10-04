@@ -1,0 +1,17 @@
+[aist#0:0/pcm_s16le @ 0x55a47f409c80] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/assets/audio/music/A_Archive/shared/Hub Motif.wav':
+  Metadata:
+    comment         : made with suno; created=2026-09-18T12:29:08Z; id=422d00b1-0d47-40a4-885d-44522f1dedff
+    encoder         : Lavf60.16.100
+  Duration: 00:01:58.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Output #0, ogg, to '/tmp/wlr-audio-encode-m58sbtbc/mus_s01_hub_motif_v01.attempt0.ogg':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+[out#0/ogg @ 0x55a47f4093c0] video:0kB audio:2068kB subtitle:0kB other streams:0kB global headers:4kB muxing overhead: 0.901961%
+size=    2087kB time=00:01:57.98 bitrate= 144.9kbits/s speed=69.9x    

@@ -55,14 +55,10 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: export `mus_s01_hub_motif_v01`, then the two remaining Group A
-and three Group B shared candidates, one finite family/checkpoint at a time.
-Archive Fragment now passes in `s01-fragment-review-1/` with eleven guards;
-encoder intermediates are private scratch and cannot enter stable evidence.
-The Activation Sequence review derivative passes in `s01-activation-review-1/`
-with ten guards, including altered media and immutable receipt protection.
-Verify decode/format/duration/true peak/source hashes and preserve review-only
-status. Both unique exports and their private Godot import/mixer pass are complete.
+Next: export `mus_s01_mechanism_light_v01` as one bounded review family, then checkpoint.
+5/10 finite S01/S02 candidates pass technical export/decode/source
+checks; 5 remain. See `audio/REVIEW_INDEX.md` for exact files/proof.
+
 Actual S00
 first-note/common motif selection and listening/scene mix
 remain pending; do not bind unaccepted candidates to shipping scenes. There are
