@@ -1,0 +1,586 @@
+[gd_scene load_steps=51 format=3]
+
+[ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
+[ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
+[ext_resource type="PackedScene" path="res://worlds/archive/common/archive_gate.tscn" id="Gate"]
+[ext_resource type="PackedScene" path="res://worlds/archive/common/archive_light_channel.tscn" id="Channel"]
+
+[sub_resource type="StandardMaterial3D" id="Stone"]
+albedo_color = Color(0.13, 0.18, 0.24, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="Metal"]
+albedo_color = Color(0.28, 0.24, 0.16, 1)
+metallic = 0.65
+roughness = 0.45
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 1
+background_color = Color(0.025, 0.04, 0.065, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.5, 0.64, 0.8, 1)
+ambient_light_energy = 0.65
+tonemap_mode = 2
+
+[sub_resource type="CylinderMesh" id="HubFloor"]
+top_radius = 10.0
+bottom_radius = 10.0
+height = 0.3
+radial_segments = 40
+
+[sub_resource type="CylinderShape3D" id="HubShape"]
+radius = 10.0
+height = 0.3
+
+[sub_resource type="CylinderMesh" id="CoreMesh"]
+top_radius = 0.8
+bottom_radius = 1.0
+height = 1.4
+
+[sub_resource type="BoxMesh" id="FinaleMesh"]
+size = Vector3(2, 0.25, 1.2)
+
+
+[sub_resource type="BoxMesh" id="M_Wall0L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall0L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall0R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall0R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall1L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall1L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall1R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall1R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall2L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall2L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall2R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall2R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall3L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall3L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall3R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall3R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall4L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall4L"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_Wall4R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxShape3D" id="S_Wall4R"]
+size = Vector3(5.8, 4.8, 0.35)
+
+[sub_resource type="BoxMesh" id="M_CorridorFloor"]
+size = Vector3(4, 0.3, 7)
+
+[sub_resource type="BoxShape3D" id="S_CorridorFloor"]
+size = Vector3(4, 0.3, 7)
+
+[sub_resource type="BoxMesh" id="M_CorridorWallL"]
+size = Vector3(0.3, 4.8, 7.4)
+
+[sub_resource type="BoxShape3D" id="S_CorridorWallL"]
+size = Vector3(0.3, 4.8, 7.4)
+
+[sub_resource type="BoxMesh" id="M_CorridorWallR"]
+size = Vector3(0.3, 4.8, 7.4)
+
+[sub_resource type="BoxShape3D" id="S_CorridorWallR"]
+size = Vector3(0.3, 4.8, 7.4)
+
+[sub_resource type="BoxMesh" id="M_RoomFloor"]
+size = Vector3(10, 0.3, 12)
+
+[sub_resource type="BoxShape3D" id="S_RoomFloor"]
+size = Vector3(10, 0.3, 12)
+
+[sub_resource type="BoxMesh" id="M_RoomWallL"]
+size = Vector3(0.3, 5.5, 12.3)
+
+[sub_resource type="BoxShape3D" id="S_RoomWallL"]
+size = Vector3(0.3, 5.5, 12.3)
+
+[sub_resource type="BoxMesh" id="M_RoomWallR"]
+size = Vector3(0.3, 5.5, 12.3)
+
+[sub_resource type="BoxShape3D" id="S_RoomWallR"]
+size = Vector3(0.3, 5.5, 12.3)
+
+[sub_resource type="BoxMesh" id="M_RoomBack"]
+size = Vector3(10.6, 5.5, 0.3)
+
+[sub_resource type="BoxShape3D" id="S_RoomBack"]
+size = Vector3(10.6, 5.5, 0.3)
+
+[sub_resource type="BoxMesh" id="M_RoomFrontL"]
+size = Vector3(3, 5.5, 0.3)
+
+[sub_resource type="BoxShape3D" id="S_RoomFrontL"]
+size = Vector3(3, 5.5, 0.3)
+
+[sub_resource type="BoxMesh" id="M_RoomFrontR"]
+size = Vector3(3, 5.5, 0.3)
+
+[sub_resource type="BoxShape3D" id="S_RoomFrontR"]
+size = Vector3(3, 5.5, 0.3)
+
+[sub_resource type="BoxShape3D" id="ApproachShape"]
+size = Vector3(4.6, 3, 3.2)
+
+[node name="ArchiveMain" type="Node3D"]
+script = ExtResource("World")
+stage_id = &"s01_observatory"
+supported_stages = Array[StringName]([&"s01_observatory", &"s02_wing_01"])
+default_spawn = NodePath("Spawns/Intro")
+checkpoint_spawns = {&"archive_awakened": NodePath("Spawns/Awakened"), &"star_collected": NodePath("Spawns/Star"), &"hearth_collected": NodePath("Spawns/Hearth")}
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment")
+
+[node name="MoonLight" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-65, -25, 0)
+light_color = Color(0.55, 0.7, 0.9, 1)
+light_energy = 0.7
+
+[node name="Hub" type="Node3D" parent="."]
+
+[node name="Floor" type="StaticBody3D" parent="Hub"]
+position = Vector3(0, -0.15, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Floor"]
+mesh = SubResource("HubFloor")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Floor"]
+shape = SubResource("HubShape")
+
+[node name="Mechanism" type="MeshInstance3D" parent="Hub"]
+position = Vector3(0, 0.7, 0)
+mesh = SubResource("CoreMesh")
+material_override = SubResource("Metal")
+
+[node name="Finale" type="Node3D" parent="Hub"]
+position = Vector3(0, 0.95, 3)
+visible = false
+
+[node name="Table" type="MeshInstance3D" parent="Hub/Finale"]
+mesh = SubResource("FinaleMesh")
+material_override = SubResource("Metal")
+
+[node name="Routes" type="Node3D" parent="."]
+
+[node name="Wing01" type="Node3D" parent="Routes"]
+rotation = Vector3(0, 0.000000000, 0)
+
+[node name="Gate" parent="Routes/Wing01" instance=ExtResource("Gate")]
+position = Vector3(0, 0, -8)
+
+[node name="Approach" type="Area3D" parent="Routes/Wing01"]
+position = Vector3(0, 1.5, -8)
+collision_layer = 0
+collision_mask = 4
+
+[node name="Channel" parent="Routes/Wing01" instance=ExtResource("Channel")]
+position = Vector3(0, 0, -4.6)
+scale = Vector3(1, 1, 1.38)
+
+[node name="Wing02" type="Node3D" parent="Routes"]
+rotation = Vector3(0, 1.256637061, 0)
+
+[node name="Gate" parent="Routes/Wing02" instance=ExtResource("Gate")]
+position = Vector3(0, 0, -8)
+
+[node name="Approach" type="Area3D" parent="Routes/Wing02"]
+position = Vector3(0, 1.5, -8)
+collision_layer = 0
+collision_mask = 4
+
+[node name="Channel" parent="Routes/Wing02" instance=ExtResource("Channel")]
+position = Vector3(0, 0, -4.6)
+scale = Vector3(1, 1, 1.38)
+
+[node name="Wing03" type="Node3D" parent="Routes"]
+rotation = Vector3(0, 2.513274123, 0)
+
+[node name="Gate" parent="Routes/Wing03" instance=ExtResource("Gate")]
+position = Vector3(0, 0, -8)
+
+[node name="Approach" type="Area3D" parent="Routes/Wing03"]
+position = Vector3(0, 1.5, -8)
+collision_layer = 0
+collision_mask = 4
+
+[node name="Channel" parent="Routes/Wing03" instance=ExtResource("Channel")]
+position = Vector3(0, 0, -4.6)
+scale = Vector3(1, 1, 1.38)
+
+[node name="Wing04" type="Node3D" parent="Routes"]
+rotation = Vector3(0, 3.769911184, 0)
+
+[node name="Gate" parent="Routes/Wing04" instance=ExtResource("Gate")]
+position = Vector3(0, 0, -8)
+
+[node name="Approach" type="Area3D" parent="Routes/Wing04"]
+position = Vector3(0, 1.5, -8)
+collision_layer = 0
+collision_mask = 4
+
+[node name="Channel" parent="Routes/Wing04" instance=ExtResource("Channel")]
+position = Vector3(0, 0, -4.6)
+scale = Vector3(1, 1, 1.38)
+
+[node name="Wing05" type="Node3D" parent="Routes"]
+rotation = Vector3(0, 5.026548246, 0)
+
+[node name="Gate" parent="Routes/Wing05" instance=ExtResource("Gate")]
+position = Vector3(0, 0, -8)
+
+[node name="Approach" type="Area3D" parent="Routes/Wing05"]
+position = Vector3(0, 1.5, -8)
+collision_layer = 0
+collision_mask = 4
+
+[node name="Channel" parent="Routes/Wing05" instance=ExtResource("Channel")]
+position = Vector3(0, 0, -4.6)
+scale = Vector3(1, 1, 1.38)
+
+[node name="Wing01" type="Node3D" parent="."]
+
+[node name="Corridor" type="Node3D" parent="Wing01"]
+
+[node name="Room" type="Node3D" parent="Wing01"]
+
+[node name="Spawns" type="Node3D" parent="."]
+
+[node name="Intro" type="Marker3D" parent="Spawns"]
+position = Vector3(0, 0.004, 4)
+
+[node name="Awakened" type="Marker3D" parent="Spawns"]
+position = Vector3(0, 0.004, 3)
+
+[node name="Star" type="Marker3D" parent="Spawns"]
+position = Vector3(0, 0.004, -17)
+
+[node name="Hearth" type="Marker3D" parent="Spawns"]
+position = Vector3(0, 0.004, -19)
+
+[node name="StageController" type="Node" parent="."]
+script = ExtResource("Controller")
+gates = Array[NodePath]([NodePath("../Routes/Wing01/Gate"), NodePath("../Routes/Wing02/Gate"), NodePath("../Routes/Wing03/Gate"), NodePath("../Routes/Wing04/Gate"), NodePath("../Routes/Wing05/Gate")])
+channels = Array[NodePath]([NodePath("../Routes/Wing01/Channel"), NodePath("../Routes/Wing02/Channel"), NodePath("../Routes/Wing03/Channel"), NodePath("../Routes/Wing04/Channel"), NodePath("../Routes/Wing05/Channel")])
+finale_path = NodePath("../Hub/Finale")
+
+[node name="Wall0L" type="StaticBody3D" parent="Hub"]
+position = Vector3(-4.6, 2.4, -8.0)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall0L"]
+mesh = SubResource("M_Wall0L")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall0L"]
+shape = SubResource("S_Wall0L")
+
+[node name="Wall0R" type="StaticBody3D" parent="Hub"]
+position = Vector3(4.6, 2.4, -8.0)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall0R"]
+mesh = SubResource("M_Wall0R")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall0R"]
+shape = SubResource("S_Wall0R")
+
+[node name="Wall1L" type="StaticBody3D" parent="Hub"]
+position = Vector3(-9.029930304485987, 2.4, 1.902724019958126)
+rotation = Vector3(0, 1.256637061, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall1L"]
+mesh = SubResource("M_Wall1L")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall1L"]
+shape = SubResource("S_Wall1L")
+
+[node name="Wall1R" type="StaticBody3D" parent="Hub"]
+position = Vector3(-6.18697395623647, 2.4, -6.846995929957285)
+rotation = Vector3(0, 1.256637061, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall1R"]
+mesh = SubResource("M_Wall1R")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall1R"]
+shape = SubResource("S_Wall1R")
+
+[node name="Wall2L" type="StaticBody3D" parent="Hub"]
+position = Vector3(-0.9808038442150284, 2.4, 9.175948115544955)
+rotation = Vector3(0, 2.513274123, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall2L"]
+mesh = SubResource("M_Wall2L")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall2L"]
+shape = SubResource("S_Wall2L")
+
+[node name="Wall2R" type="StaticBody3D" parent="Hub"]
+position = Vector3(-8.423760192464544, 2.4, 3.768323794454202)
+rotation = Vector3(0, 2.513274123, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall2R"]
+mesh = SubResource("M_Wall2R")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall2R"]
+shape = SubResource("S_Wall2R")
+
+[node name="Wall3L" type="StaticBody3D" parent="Hub"]
+position = Vector3(8.423760192464542, 2.4, 3.7683237944542047)
+rotation = Vector3(0, 3.769911184, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall3L"]
+mesh = SubResource("M_Wall3L")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall3L"]
+shape = SubResource("S_Wall3L")
+
+[node name="Wall3R" type="StaticBody3D" parent="Hub"]
+position = Vector3(0.9808038442150258, 2.4, 9.175948115544957)
+rotation = Vector3(0, 3.769911184, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall3R"]
+mesh = SubResource("M_Wall3R")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall3R"]
+shape = SubResource("S_Wall3R")
+
+[node name="Wall4L" type="StaticBody3D" parent="Hub"]
+position = Vector3(6.186973956236472, 2.4, -6.846995929957284)
+rotation = Vector3(0, 5.026548246, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall4L"]
+mesh = SubResource("M_Wall4L")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall4L"]
+shape = SubResource("S_Wall4L")
+
+[node name="Wall4R" type="StaticBody3D" parent="Hub"]
+position = Vector3(9.029930304485987, 2.4, 1.9027240199581286)
+rotation = Vector3(0, 5.026548246, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall4R"]
+mesh = SubResource("M_Wall4R")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall4R"]
+shape = SubResource("S_Wall4R")
+
+[node name="CorridorFloor" type="StaticBody3D" parent="Wing01/Corridor"]
+position = Vector3(0, -0.15, -11.5)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Corridor/CorridorFloor"]
+mesh = SubResource("M_CorridorFloor")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Corridor/CorridorFloor"]
+shape = SubResource("S_CorridorFloor")
+
+[node name="CorridorWallL" type="StaticBody3D" parent="Wing01/Corridor"]
+position = Vector3(-2.1, 2.4, -11.7)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Corridor/CorridorWallL"]
+mesh = SubResource("M_CorridorWallL")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Corridor/CorridorWallL"]
+shape = SubResource("S_CorridorWallL")
+
+[node name="CorridorWallR" type="StaticBody3D" parent="Wing01/Corridor"]
+position = Vector3(2.1, 2.4, -11.7)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Corridor/CorridorWallR"]
+mesh = SubResource("M_CorridorWallR")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Corridor/CorridorWallR"]
+shape = SubResource("S_CorridorWallR")
+
+[node name="RoomFloor" type="StaticBody3D" parent="Wing01/Room"]
+position = Vector3(0, -0.15, -21)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomFloor"]
+mesh = SubResource("M_RoomFloor")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/RoomFloor"]
+shape = SubResource("S_RoomFloor")
+
+[node name="RoomWallL" type="StaticBody3D" parent="Wing01/Room"]
+position = Vector3(-5.15, 2.75, -21)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomWallL"]
+mesh = SubResource("M_RoomWallL")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/RoomWallL"]
+shape = SubResource("S_RoomWallL")
+
+[node name="RoomWallR" type="StaticBody3D" parent="Wing01/Room"]
+position = Vector3(5.15, 2.75, -21)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomWallR"]
+mesh = SubResource("M_RoomWallR")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/RoomWallR"]
+shape = SubResource("S_RoomWallR")
+
+[node name="RoomBack" type="StaticBody3D" parent="Wing01/Room"]
+position = Vector3(0, 2.75, -27.15)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomBack"]
+mesh = SubResource("M_RoomBack")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/RoomBack"]
+shape = SubResource("S_RoomBack")
+
+[node name="RoomFrontL" type="StaticBody3D" parent="Wing01/Room"]
+position = Vector3(-3.5, 2.75, -14.85)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomFrontL"]
+mesh = SubResource("M_RoomFrontL")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/RoomFrontL"]
+shape = SubResource("S_RoomFrontL")
+
+[node name="RoomFrontR" type="StaticBody3D" parent="Wing01/Room"]
+position = Vector3(3.5, 2.75, -14.85)
+rotation = Vector3(0, 0.000000000, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomFrontR"]
+mesh = SubResource("M_RoomFrontR")
+material_override = SubResource("Stone")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/RoomFrontR"]
+shape = SubResource("S_RoomFrontR")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Routes/Wing01/Approach"]
+shape = SubResource("ApproachShape")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Routes/Wing02/Approach"]
+shape = SubResource("ApproachShape")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Routes/Wing03/Approach"]
+shape = SubResource("ApproachShape")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Routes/Wing04/Approach"]
+shape = SubResource("ApproachShape")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Routes/Wing05/Approach"]
+shape = SubResource("ApproachShape")
