@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "guard_count": 11,
+  "utc": "2026-10-04T22:32:22.928345+00:00",
+  "scope": "One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.",
+  "guard_log_sha256": "0c2d69a6dba4cc6d17f01c2644b05f0fea602bd76df11667a37af97a88bcd654",
+  "source_hashes": {
+    "tools/audio_slice.py": "582cac52c7ac5edce4b50647dcea13e41e80174a757fa2668be9ef5376a647c6",
+    "tools/test_audio_slice.py": "63569aec50ec802ee306a8ce140f878bf469dc23e66874bdd959dff35fa0bec3",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/B_Wings/shared/024_Silent Roads Beneath the Frost.wav": "f653a468b5aad5cbd97b2bb88d69b27a563cab91036103dbc6b23b2aea992337",
+    "docs/production/evidence/audio_director/s02-silent-roads-review-1/mus_s02_silent_roads_v01.ogg": "e3b6a9bac7c84770398277b5f2c21e8014c16e13bc25fc28987c6bd9d8dec540"
+  }
+}

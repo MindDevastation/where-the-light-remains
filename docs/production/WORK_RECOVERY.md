@@ -55,9 +55,9 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: export `mus_s02_silent_roads_v01` as one bounded review family, then checkpoint.
-7/10 finite S01/S02 candidates pass technical export/decode/source
-checks; 3 remain. See `audio/REVIEW_INDEX.md` for exact files/proof.
+Next: export `mus_s02_muted_pulse_v01` as one bounded review family, then checkpoint.
+8/10 finite S01/S02 candidates pass technical export/decode/source
+checks; 2 remain. See `audio/REVIEW_INDEX.md` for exact files/proof.
 
 Actual S00
 first-note/common motif selection and listening/scene mix
