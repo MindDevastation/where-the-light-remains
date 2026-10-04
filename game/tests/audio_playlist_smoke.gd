@@ -161,11 +161,22 @@ func _run() -> void:
     prologue.stage_id = &"s00_policy_fixture"
     prologue.unique_cue = unique
     prologue.shared_pool.assign([shared])
+    prologue.initial_state = &"fixture_spark"
     prologue.authored_states[&"fixture_spark"] = shared
+    var looping := _cue(&"looping_seed", .4)
+    (looping.stream as AudioStreamWAV).loop_mode = AudioStreamWAV.LOOP_FORWARD
+    (looping.stream as AudioStreamWAV).loop_end = 3200
+    prologue.authored_states[&"looping_fixture"] = looping
+    _check(prologue.copy_validated() == null, "S00 rejects looping authored seeds")
+    prologue.authored_states.erase(&"looping_fixture")
+    prologue.unique_cue = looping
+    _check(prologue.copy_validated() == null, "S00 rejects looping unique fallback")
+    prologue.unique_cue = unique
     _register(prologue)
     AudioDirector.set_stage_audio(prologue.stage_id)
     await get_tree().create_timer(.1).timeout
     _check(_playing().is_empty() and not AudioDirector.playback_snapshot()["automatic"] and AudioDirector.stage_profile(prologue.stage_id).scripted_only, "Canonical S00 policy disallows automatic shared/unique score")
+    _check(AudioDirector.current_state == &"silence" and AudioDirector.stage_profile(prologue.stage_id).initial_state == &"silence", "S00 forces scoreless entry despite an authored non-silent initial state")
     _check(AudioDirector.set_music_state(&"fixture_spark", 0.0) == OK and _playing().size() == 1, "Explicit authored S00 semantic cue can play")
     _stop()
 

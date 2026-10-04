@@ -3,6 +3,8 @@ extends Node3D
 ## Graybox S00 in the persistent Archive. Timings are engineering parameters.
 
 signal finished(error: Error)
+signal spark_ignited(audio_error: Error)
+const SPARK_MUSIC_STATE: StringName = &"spark_first_note"
 @export_range(6.0, 20.0, .5) var duration := 8.0
 @onready var camera: Camera3D = $Camera3D
 @onready var spark: MeshInstance3D = $Spark
@@ -14,6 +16,7 @@ var _completed := true
 var _finishing := false
 var _mode_revision := -1
 var _paused_owned := false
+var _spark_ignited := false
 
 
 func _ready() -> void:
@@ -29,6 +32,7 @@ func restore(completed: bool) -> void:
     elapsed = 0.0
     _mode_revision = -1
     _paused_owned = false
+    _spark_ignited = completed
     spark.visible = completed
     _set_door(1.0 if completed else 0.0)
     camera.position = Vector3(0, 1.624, 15)
@@ -77,12 +81,27 @@ func _process(delta: float) -> void:
     if DisplayServer.get_name() != "headless" and not get_window().has_focus():
         return
     elapsed = minf(duration, elapsed + delta)
-    spark.visible = elapsed >= 1.0
+    if elapsed >= 1.0 and not _spark_ignited:
+        _ignite_spark()
     _set_door(clampf((elapsed - 2.0) / 1.5, 0.0, 1.0))
     var travel := clampf((elapsed - 3.5) / (duration - 3.5), 0.0, 1.0)
     camera.position.z = lerpf(15.0, 4.0, smoothstep(0.0, 1.0, travel))
     if elapsed >= duration:
         _finish()
+
+
+func _ignite_spark() -> void:
+    _spark_ignited = true
+    spark.visible = true
+    # The Director owns all global players. An absent approved binding remains
+    # silent; never substitute a full source take or retry the event every frame.
+    var error: Error = ERR_UNCONFIGURED
+    if AudioDirector.current_stage == ArchiveProgress.PROLOGUE:
+        if AudioDirector.playback_snapshot()["pending_stage"]:
+            error = ERR_BUSY
+        else:
+            error = AudioDirector.set_music_state(SPARK_MUSIC_STATE, 0.0)
+    spark_ignited.emit(error)
 
 
 func _finish() -> void:

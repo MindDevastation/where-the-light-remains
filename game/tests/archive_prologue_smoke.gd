@@ -5,6 +5,7 @@ var _failures: Array[String] = []
 var _checks := 0
 var _stages: Array[StringName] = []
 var _checkpoints: Array[StringName] = []
+var _sparks: Array[Error] = []
 
 
 func _ready() -> void:
@@ -55,10 +56,12 @@ func _run() -> void:
     var world := slot.get_child(0) as ArchiveMain
     var world_id := world.get_instance_id()
     var prologue := world.get_node("Prologue") as ArchivePrologue
+    prologue.spark_ignited.connect(func(error: Error) -> void: _sparks.append(error))
     _check(not player.active and InputManager.mode == InputManager.Mode.CINEMATIC and not InputManager.can_move(), "S00 starts with disabled first-person gameplay")
     await get_tree().process_frame
     await get_tree().physics_frame
     _check(prologue.camera.is_current() and not prologue.spark.visible, "Actual exterior camera precedes first spark")
+    _check(_sparks.is_empty() and AudioDirector.playback_snapshot()["players"].all(func(p: Dictionary) -> bool: return not p["playing"]), "Unbound shipping prologue remains scoreless before the spark")
     _check(is_equal_approx(prologue.camera.fov, player.camera.fov) and is_equal_approx(player.camera.fov, 95.0), "Cinematic and player use the same configured FOV")
     for edge in [Vector3(3, .6, 15), Vector3(0, .6, 18)]:
         var guard_ray := PhysicsRayQueryParameters3D.create(Vector3(0, .6, 15), edge, 1)
@@ -68,6 +71,7 @@ func _run() -> void:
     while prologue.elapsed < 1.2:
         await get_tree().process_frame
     _check(prologue.spark.visible and world.get_node("Routes/Wing01/Gate").status == ArchiveGate.Status.DORMANT, "First spark appears without awakening the Archive")
+    _check(_sparks == [ERR_UNCONFIGURED] and AudioDirector.current_state == ArchivePrologue.SPARK_MUSIC_STATE, "Unbound first spark emits exactly one silent semantic request")
     var paused_at := prologue.elapsed
     var paused_camera := prologue.camera.global_transform
     InputManager.set_paused(true)
@@ -88,6 +92,7 @@ func _run() -> void:
         await get_tree().process_frame
         loading_frame = loading_frame or fade.busy or fade.visible
     _check(slot.get_child(0).get_instance_id() == world_id and world.stage_id == ArchiveProgress.INTRO, "S00 hands off to S01 in the same Archive instance")
+    _check(_sparks == [ERR_UNCONFIGURED], "Pause/resume and subsequent cinematic frames never repeat the seed request")
     _check(not loading_frame and not fade.busy and not fade.visible, "No loading/fade/black frame during cinematic handoff")
     _check(player.active and player.camera.is_current() and InputManager.mode == InputManager.Mode.GAMEPLAY, "Persistent player camera and gameplay receive control")
     _check(player.camera.global_position.distance_to(before_camera.origin) < .03 and player.camera.global_basis.is_equal_approx(before_camera.basis), "Player camera matches terminal cinematic position and look")
@@ -100,6 +105,10 @@ func _run() -> void:
     _check(await SceneRouter.request_resume_stage(checkpoint) == OK, "Resume the actual S01 checkpoint through its IN_PLACE registry")
     world = slot.get_child(0) as ArchiveMain
     _check(not world.get_node("Prologue/Camera3D").is_current() and player.active and _checkpoints.size() == 1, "Quiet S01 load does not replay S00")
+    var resumed_prologue := world.get_node("Prologue") as ArchivePrologue
+    resumed_prologue.spark_ignited.connect(func(error: Error) -> void: _sparks.append(error))
+    await get_tree().process_frame
+    _check(_sparks == [ERR_UNCONFIGURED] and AudioDirector.current_stage == ArchiveProgress.INTRO, "Restored completed prologue never requests a new seed")
     game.queue_free()
     await get_tree().process_frame
     for id in [ArchiveProgress.PROLOGUE, ArchiveProgress.INTRO]:

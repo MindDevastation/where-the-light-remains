@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-04 22:49 UTC
+# Current Work recovery boundary — 2026-10-04 23:21 UTC
 
 Durable source of truth: GitHub working branch
 `feature/04-archive-gameplay/checkpoints-2026-10-04`.
@@ -6,7 +6,14 @@ Fetch its newest verified checkpoint before continuing; do not overlay old local
 snapshots. Current audio source processing progress is recorded below; fetch
 the newest remote checkpoint/receipt rather than assuming a closing SHA.
 
-Latest completed audio implementation/validation checkpoint:
+This session recovered the independently fetched newest remote checkpoint
+`a81cce287a2df4996f87630b6b9364035eb4be77` (2026-10-04 22:53:03 UTC),
+with a clean matching checkout. No newer remote working branch was found.
+Its next authored S00 note/motif selection still lacks listening acceptance.
+Independent engineering work now adds the actual spark-to-Director event;
+fetch the newest checkpoint/publication receipt for its exact current SHA.
+
+Previously completed audio export/pool implementation/validation checkpoint:
 `9e0a27ba219fe39478634f9d177872f8ed28e07c`.
 Independent remote/parent/tree/clean fast-forward verified
 2026-10-04 22:49:32.703118 UTC. It seals all ten review OGGs' current Godot
@@ -55,6 +62,12 @@ all current implementation/evidence is now on the same remote working branch.
   protected save hashes. Current receipt: `full-pools-godot-review-1/`.
   Twelve source/output/evidence guards pass; all temporary test/encoder media
   are outside Git. Failed Muted Pulse trace/cleanup diagnostics are retained.
+- S00 now requests `spark_first_note` exactly once when its actual spark becomes
+  visible. Missing bindings remain silent; pause/resume and completed S01
+  restoration do not repeat the event. S00 profiles enforce silent entry and
+  reject looping seeds. Cache-free `prologue-spark-hook-1/` passes 29 actual
+  prologue, 59 playlist/policy, 18 transactional route and 17 entry assertions
+  plus normal startup. No shipping audio resource/media binding was introduced.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -68,7 +81,12 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: select an actual first-note S00 source interval/common four-note motif
+Next independent block: exercise the actual spark event with an explicitly
+synthetic finite PCM test fixture, including paused pre-spark silence, finite
+end, external silence ownership, scene removal and quiet completed restore.
+This fixture must not become a musical asset or imply source-note acceptance.
+
+Authored next step remains: select an actual first-note S00 source interval/common four-note motif
 through source listening/editing; fill only the selected S00 manifest row,
 export/verify that seed in a new review family and checkpoint immediately.
 `audio/REVIEW_INDEX.md` links both original S00 WAVs and all ten complete finite

@@ -85,7 +85,16 @@ Late owned test-fixture residue was removed and all test/encoder temporary
 media moved outside Git. The source-preserving cleanup/publication recheck is
 recorded, rather than treating the first clean-status abort as a PASS.
 
-Next: select the actual S00 first-note interval and common four-note Archive
+The independent S00 semantic hook is implemented: the actual spark becoming
+visible dispatches `spark_first_note` once through AudioDirector, with no local
+player or source fallback. S00 profiles force silent entry and finite seeds.
+Unbound shipping, pause/resume, continuous S01 handoff and quiet completed
+restore pass in `prologue-spark-hook-1/`: 29 prologue + 59 playlist + 18 route +
+17 exact-entry assertions and normal startup, initially cache-free, no errors.
+Next engineering block captures actual finite synthetic fixture PCM at the
+spark and verifies owned-silence/removal boundaries; it cannot select music.
+
+Authored next step: select the actual S00 first-note interval and common four-note Archive
 identity by listening/editing the supplied sources, then export only that seed
 and checkpoint. Review all ten finite candidates for instrumental/no-phoneme
 content, approved palette, cadence/tail, motif consistency and actual scene mix.
