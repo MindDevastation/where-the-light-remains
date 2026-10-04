@@ -1,0 +1,64 @@
+{
+  "captures": [
+    {
+      "height": 1080,
+      "input_mode": 1,
+      "name": "main_menu",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/boot-graphical-1/main_menu_medium.png",
+      "stage": "s00_prologue",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "input_mode": 1,
+      "name": "menu_settings",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/boot-graphical-1/menu_settings_medium.png",
+      "stage": "s00_prologue",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "input_mode": 1,
+      "name": "new_game_choice",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/boot-graphical-1/new_game_choice_medium.png",
+      "stage": "s00_prologue",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "input_mode": 2,
+      "name": "s00_exterior",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_exterior_medium.png",
+      "stage": "s00_prologue",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "input_mode": 2,
+      "name": "s00_spark",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_spark_medium.png",
+      "stage": "s00_prologue",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "input_mode": 2,
+      "name": "s00_entry",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_entry_medium.png",
+      "stage": "s00_prologue",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "input_mode": 0,
+      "name": "s01_handoff",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/boot-graphical-1/s01_handoff_medium.png",
+      "stage": "s01_observatory",
+      "width": 1920
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "status": "CAPTURED_FOR_REVIEW"
+}

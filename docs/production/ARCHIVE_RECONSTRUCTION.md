@@ -191,3 +191,15 @@ current targeted Boot/S00/state/S01/S02/pause receipt. The shipping main scene i
 still the old shell in this component checkpoint. Next: native menu/S00 review,
 then enable Boot as the main scene and verify actual startup/exit. Full VS1 and
 authored room art/audio/hardware acceptance remain open.
+
+
+## Boot native component review
+
+`boot-review-validation-1` passes the exact-source Boot and S00 targeted cases.
+`boot-graphical-1/visual_review.json` accepts fourteen actual 1920x1080 views
+(seven each at Low/Medium) for menu layout, New Game confirmation and graybox
+S00 exterior/spark/doorway/S01 handoff. Both bounded software Vulkan processes
+exit successfully with no runtime errors or warnings. The graybox camera path
+and menu are visible; authored observatory art/audio and physical GPU/FPS
+acceptance remain open. Next: enable Boot as the shipping main scene and verify
+normal startup and the actual safe exit path.

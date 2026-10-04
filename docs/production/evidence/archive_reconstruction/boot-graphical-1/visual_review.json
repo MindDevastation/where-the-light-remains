@@ -1,0 +1,121 @@
+{
+  "status": "PASS_COMPONENT_GRAYBOX_VISUAL_REVIEW",
+  "reviewed_at": "2026-10-04T20:38:52.640112+00:00",
+  "validation": "docs/production/evidence/archive_reconstruction/boot-review-validation-1/results.json",
+  "inspection": "All fourteen views inspected in per-quality contact sheets; Low settings panel also inspected at original 1920x1080. Menu labels/buttons and New Game confirmation fit; spark, opening doorway, camera entry and first-person handoff are visible.",
+  "scope": "Boot component at Low and Medium with software Vulkan llvmpipe. Shipping main remains the previous shell until the next block. This does not accept authored art/audio, physical target GPU, FPS or full GATE-VS1.",
+  "records": [
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/main_menu_low.png",
+      "sha256": "df752ef9b9b93c6797d8170603e6f0389d73d0b70041152bd6bd5cb13b7f1c40",
+      "quality": "low",
+      "view": "main_menu",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/menu_settings_low.png",
+      "sha256": "cf358b1c6368d20e69577827d8036b15be9696c0f2f98b94de46e0bcd16948e2",
+      "quality": "low",
+      "view": "menu_settings",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/new_game_choice_low.png",
+      "sha256": "1e078d01e6f2c208c554a7d4c7a662160bfaaed92d34a8811ebcfa556efd1747",
+      "quality": "low",
+      "view": "new_game_choice",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_exterior_low.png",
+      "sha256": "ebc245dd0cf7a3aae20d9b69aaa3b08641e3da8f994208a01146e512a18ee53b",
+      "quality": "low",
+      "view": "s00_exterior",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_spark_low.png",
+      "sha256": "41a151cd9806d74fb4dac692cfdc4ca9ac1793d8a8db9802ab1165e0bd07a11d",
+      "quality": "low",
+      "view": "s00_spark",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_entry_low.png",
+      "sha256": "6a76b289e52ffc280bca5979fe78149f340ad570fc895a8ce0209d9e92a0753e",
+      "quality": "low",
+      "view": "s00_entry",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/s01_handoff_low.png",
+      "sha256": "da32578f555e384d626de794664e8cf9615fd6bd556f92c60104faed0e6d1b36",
+      "quality": "low",
+      "view": "s01_handoff",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/main_menu_medium.png",
+      "sha256": "df752ef9b9b93c6797d8170603e6f0389d73d0b70041152bd6bd5cb13b7f1c40",
+      "quality": "medium",
+      "view": "main_menu",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/menu_settings_medium.png",
+      "sha256": "0d20e45b23c6d36927c9082b375d8a72488e3fd9201a375338d180a02c4a2bfd",
+      "quality": "medium",
+      "view": "menu_settings",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/new_game_choice_medium.png",
+      "sha256": "1e078d01e6f2c208c554a7d4c7a662160bfaaed92d34a8811ebcfa556efd1747",
+      "quality": "medium",
+      "view": "new_game_choice",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_exterior_medium.png",
+      "sha256": "a06d202eaef311f0dd484fd1236ca5d8381ad7227c312477bc77cacf8f171705",
+      "quality": "medium",
+      "view": "s00_exterior",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_spark_medium.png",
+      "sha256": "ec067d8d026f2b3bcc4024164ecb94fe2dbe0630488ded57e7fc09440119b3fb",
+      "quality": "medium",
+      "view": "s00_spark",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/s00_entry_medium.png",
+      "sha256": "45d5d1841b1526df283a327841fcaa8200e0ca0ee4a23a0c594f9eed32ecd209",
+      "quality": "medium",
+      "view": "s00_entry",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/boot-graphical-1/s01_handoff_medium.png",
+      "sha256": "785d07f088f8595ea13bba1f5465236b7b4876cefc87089f699ad6a36eb054f7",
+      "quality": "medium",
+      "view": "s01_handoff",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}
