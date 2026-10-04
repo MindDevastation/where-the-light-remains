@@ -33,3 +33,35 @@ actual checkpoint writes and reload, corridor/return interaction integration,
 Boot/Continue, graphical scene review and authored art/audio/VS1 acceptance.
 Current project entry remains the accepted shell; this state checkpoint does
 not claim a complete playable slice. No S03 gameplay is registered.
+
+## S01 interaction/progression checkpoint
+
+`progression-validation-3/results.json`: PASS, clean-copy import, 109 S01/puzzle
+and narrow-router assertions plus 101 state/world assertions on current bytes.
+S01 uses actual ray-picked InteractionTargets and dispatched E events for panel,
+quest lens, snap installation and activation. A seven-second, pauseable sequence
+rotates the graybox astrolabe, briefly activates five channels, dims four and
+commits S02 on the same world instance without a loading frame/fade/teleport.
+An actual `archive_awakened` primary/backup checkpoint is written before entry.
+Physical proximity opens the eligible Wing I gate. Invalid progression and a
+later input owner preserve original state/world/player; the load API still
+refuses a saved DTO for IN_PLACE.
+
+The narrow `request_progression_stage` method is required because committing a
+prepared milestone before the old router transaction would expose unaccepted
+state to save/exit. It uses the existing transaction instead. No new autoload,
+save version or global story logic was introduced.
+
+`progression-validation-2` retains an attempted old seamless-fixture regression
+failure: published `archive_kit_sample.tscn` is not materialized in this partial
+checkout. S01 and state checks passed in that attempt. The same-instance,
+no-loading-frame, camera/feet, saved-DTO refusal and cancellation contracts are
+now tested on the actual reconstructed Archive in validation 3; that missing
+engineering fixture is not labelled a runtime regression or a new PASS.
+
+Ring/focus state modules cover all 64 ring combinations, a unique full
+connection, reversible discrete steps, locked completion, five focus stops and
+Star-before-focus gating. Their scene target choices (rings 1/2/3, focus 2) are
+new reconstructed graybox authoring parameters, not recovered historical bytes.
+They are not yet connected to the S02 room or fragment window. Graphical review,
+authored art/audio, hints, full S00/Boot and VS1 acceptance remain open.

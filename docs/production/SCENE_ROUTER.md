@@ -131,6 +131,15 @@ IN_PLACE is progression only; an explicit saved DTO is rejected instead of ignor
 its spawn/checkpoint. Boot/load uses an authored ordinary entry definition.
 The engineering S14→15 before/after Forward+ framebuffers are byte-identical.
 
+The resumed Archive needs a prepared milestone DTO when S01 awakens into S02.
+`request_progression_stage(id, target, checkpoint_before)` is a separate live
+progression entry: it requires IN_PLACE/shared-world identity, validates the full
+DTO/checkpoint/domain and retains the existing transaction/rollback ownership.
+It preserves physical feet/camera while recording the target checkpoint for a
+future load. It cannot replace a normal world. The existing explicit-save load
+entry continues to reject IN_PLACE. This narrow extension avoids publishing new
+milestones to GameState before the router has accepted the shared-world target.
+
 No shipping stage registry, automatic world, Boot/Main Menu, story/puzzle parameter,
 credits choreography, music silence implementation or new 3D binary was invented.
 Authored content and AudioDirector silence/chains remain separate. Linux llvmpipe

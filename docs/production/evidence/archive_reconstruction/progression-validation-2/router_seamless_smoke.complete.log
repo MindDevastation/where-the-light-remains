@@ -1,0 +1,36 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Cannot open file 'res://tests/fixtures/archive_kit_sample.tscn'.
+   at: load (scene/resources/resource_format_text.cpp:1442)
+ERROR: Failed loading resource: res://tests/fixtures/archive_kit_sample.tscn.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: res://tests/fixtures/route_world_a.tscn:9 - Parse Error: [ext_resource] referenced non-existent resource at: res://tests/fixtures/archive_kit_sample.tscn.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+WARNING: Node './Archive' was modified from inside an instance, but it has vanished.
+     at: instantiate (scene/resources/packed_scene.cpp:312)
+     GDScript backtrace (most recent call first):
+         [0] _request_stage (res://autoload/scene_router.gd:290)
+         [1] _preload_definition (res://autoload/scene_router.gd:89)
+ERROR: ROUTER_SEAMLESS FAIL: Shared S14 world entry
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/router_seamless_smoke.gd:16)
+       [1] _run (res://tests/router_seamless_smoke.gd:50)
+       [2] request_registered_stage (res://autoload/scene_router.gd:192)
+       [3] _request_stage (res://autoload/scene_router.gd:298)
+       [4] _preload_definition (res://autoload/scene_router.gd:89)
+ERROR: Index p_index = 0 is out of bounds ((int)data.children_cache.size() - data.internal_children_front_count_cache - data.internal_children_back_count_cache = 0).
+   at: get_child (scene/main/node.cpp:1861)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://tests/router_seamless_smoke.gd:51)
+       [1] request_registered_stage (res://autoload/scene_router.gd:192)
+       [2] _request_stage (res://autoload/scene_router.gd:298)
+       [3] _preload_definition (res://autoload/scene_router.gd:89)
+SCRIPT ERROR: Cannot call method 'get_instance_id' on a null value.
+          at: _run (res://tests/router_seamless_smoke.gd:59)
+          GDScript backtrace (most recent call first):
+              [0] _run (res://tests/router_seamless_smoke.gd:59)
+ERROR: ROUTER_SEAMLESS FAIL: timeout
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] <anonymous lambda> (res://tests/router_seamless_smoke.gd:8)

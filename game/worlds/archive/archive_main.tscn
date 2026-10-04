@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3]
+[gd_scene load_steps=59 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -175,6 +175,16 @@ size = Vector3(0.45, 0.45, 0.3)
 
 [sub_resource type="BoxMesh" id="HubTargetMesh"]
 size = Vector3(0.38, 0.38, 0.2)
+
+[sub_resource type="CylinderShape3D" id="CoreShape"]
+radius = 1.0
+height = 1.4
+
+[sub_resource type="TorusMesh" id="AstrolabeRing"]
+inner_radius = 0.9
+outer_radius = 0.97
+rings = 32
+ring_segments = 12
 
 [node name="ArchiveMain" type="Node3D"]
 script = ExtResource("World")
@@ -682,3 +692,32 @@ material_override = SubResource("Metal")
 script = ExtResource("Target")
 prompt = "Активировать"
 enabled = false
+
+[node name="CoreBody" type="StaticBody3D" parent="Hub"]
+position = Vector3(0, 0.7, 0)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/CoreBody"]
+shape = SubResource("CoreShape")
+
+[node name="Astrolabe" type="Node3D" parent="Hub"]
+position = Vector3(0, 1.8, 0)
+
+[node name="OuterRing" type="MeshInstance3D" parent="Hub/Astrolabe"]
+rotation_degrees = Vector3(55, 0, 25)
+mesh = SubResource("AstrolabeRing")
+material_override = SubResource("Metal")
+
+[node name="InnerRing" type="MeshInstance3D" parent="Hub/Astrolabe"]
+rotation_degrees = Vector3(-30, 0, -20)
+scale = Vector3(0.8, 0.8, 0.8)
+mesh = SubResource("AstrolabeRing")
+material_override = SubResource("Metal")
+
+[node name="LightMarker" type="MeshInstance3D" parent="Hub/Astrolabe"]
+position = Vector3(0.85, 0.15, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+mesh = SubResource("LensMesh")
+material_override = SubResource("LensMaterial")

@@ -10,6 +10,8 @@ var _sequence_mode_revision := -1
 var _previous_mode := InputManager.Mode.GAMEPLAY
 var _pending_checkpoint: StringName = &""
 var _sequence_paused := false
+var _channels_flashed := false
+var _other_channels_dimmed := false
 
 
 func _ready() -> void:
@@ -48,6 +50,8 @@ func _on_activation_requested() -> void:
         return
     _busy = true
     _awakening_elapsed = 0.0
+    _channels_flashed = false
+    _other_channels_dimmed = false
     _previous_mode = InputManager.mode
     InputManager.set_mode(InputManager.Mode.LIMITED_LOOK)
     _sequence_mode_revision = InputManager.mode_revision
@@ -70,9 +74,19 @@ func _process(delta: float) -> void:
         _cancel_awakening()
         return
     _awakening_elapsed += delta
-    var mechanism := get_node_or_null("Hub/Mechanism") as Node3D
+    var mechanism := get_node_or_null("Hub/Astrolabe") as Node3D
     if mechanism != null and _awakening_elapsed >= 2.0:
         mechanism.rotation.y += delta * 0.35
+    if _awakening_elapsed >= 4.0 and not _channels_flashed:
+        _channels_flashed = true
+        for index in 5:
+            var channel := get_node("Routes/Wing%02d/Channel" % (index + 1)) as ArchiveLightChannel
+            channel.apply_state(ArchiveLightChannel.Status.ACTIVE, true)
+    if _awakening_elapsed >= 5.0 and not _other_channels_dimmed:
+        _other_channels_dimmed = true
+        for index in range(1, 5):
+            var channel := get_node("Routes/Wing%02d/Channel" % (index + 1)) as ArchiveLightChannel
+            channel.apply_state(ArchiveLightChannel.Status.DORMANT)
     if _awakening_elapsed >= awakening_duration:
         _awakening_elapsed = -1.0
         _commit_awakening()
@@ -109,6 +123,9 @@ func _cancel_awakening() -> void:
     var onboarding := get_node_or_null("Hub/Onboarding") as ArchiveOnboarding
     if onboarding != null:
         onboarding.retry_activation()
+    var controller := get_node_or_null("StageController") as ArchiveStageController
+    if controller != null and controller.is_inside_tree():
+        controller.apply_state(controller.capture_presentation())
 
 
 func _flush_checkpoint(checkpoint: StringName) -> Error:

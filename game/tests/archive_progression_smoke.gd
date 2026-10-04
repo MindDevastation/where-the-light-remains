@@ -97,6 +97,22 @@ func _run() -> void:
     ArchiveProgress.write_projection(target)
     _check(await SceneRouter.request_registered_stage(ArchiveProgress.WING_ONE, target) == ERR_UNAVAILABLE, "Existing load API still rejects IN_PLACE saved DTO")
     _check(await SceneRouter.request_progression_stage(ArchiveProgress.INTRO, initial) == ERR_UNAVAILABLE, "Progression API cannot replace a normal world")
+    var interrupt := func(active: bool) -> void:
+        if not active:
+            InputManager.set_mode(InputManager.Mode.UI)
+    player.active_changed.connect(interrupt, CONNECT_ONE_SHOT)
+    _check(await SceneRouter.request_progression_stage(ArchiveProgress.WING_ONE, target) == ERR_SKIP, "Later input owner cancels prepared progression before commit")
+    _check(GameState.capture_save().to_dict() == before and world.stage_id == ArchiveProgress.INTRO and world.get_instance_id() == id and player.active and InputManager.mode == InputManager.Mode.UI, "Canceled progression restores original world/player and preserves later input owner")
+    InputManager.set_mode(InputManager.Mode.GAMEPLAY)
+    var route_frames := [-1, -1]
+    player.active_changed.connect(func(active: bool) -> void:
+        if not active:
+            route_frames[0] = Engine.get_process_frames()
+    )
+    EventBus.stage_changed.connect(func(stage: StringName) -> void:
+        if stage == ArchiveProgress.WING_ONE:
+            route_frames[1] = Engine.get_process_frames()
+    )
     var onboarding := world.get_node("Hub/Onboarding") as ArchiveOnboarding
     _check(onboarding.advance(ArchiveOnboarding.Step.INSTALL_LENS) == ERR_UNAUTHORIZED, "No out-of-order installation")
     for index in 4:
@@ -107,7 +123,7 @@ func _run() -> void:
         player.head.rotation.x = -atan2(player.camera.global_position.y - area.global_position.y, 1.8)
         await get_tree().physics_frame
         await get_tree().physics_frame
-        _check(player.get("_pick_target").is_null() if false else player.call("_pick_target") == component, "Actual interaction ray reaches the authored S01 target")
+        _check(player.call("_pick_target") == component, "Actual interaction ray reaches the authored S01 target")
         await _press_interact()
         _check(int(onboarding.phase) == index + 1, "Real E advances exactly one onboarding step")
         await _press_interact()
@@ -128,6 +144,7 @@ func _run() -> void:
         await get_tree().process_frame
     _check(GameState.current_stage_id == ArchiveProgress.WING_ONE and onboarding.phase == ArchiveOnboarding.Phase.AWAKENED, "Actual seven-second awakening commits the next stage")
     _check(slot.get_child_count() == 1 and world.get_instance_id() == id and slot.get_child(0) == world, "ArchiveMain remains the same instance")
+    _check(route_frames[0] == route_frames[1] and route_frames[0] > 0, "Actual progression commits without yielding a loading frame")
     _check(player.global_transform.origin.distance_to(feet.origin) < .02 and player.head.rotation == look and fade.request_revision == fade_revision, "No teleport, camera reset or fade at awakening")
     var saved := SaveManager.read_save()
     _check(saved["error"] == OK and saved["data"].stage_id == ArchiveProgress.WING_ONE and saved["data"].checkpoint_id == &"archive_awakened", "Actual disk checkpoint written before first-wing entry")
