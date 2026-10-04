@@ -69,7 +69,7 @@ func apply_state(next: Status, animated: bool = false) -> Error:
     return OK
 
 
-func pulse() -> Error:
+func pulse(reverse: bool = false) -> Error:
     if not is_inside_tree() or not bindings_valid():
         _stop_pulse()
         return ERR_UNCONFIGURED
@@ -88,10 +88,12 @@ func pulse() -> Error:
     sphere.rings = 6
     marker.mesh = sphere
     marker.material_override = visual.material_override
-    marker.position = visual.transform * Vector3(center.x, bounds.end.y + 0.09, bounds.end.z)
+    var start := visual.transform * Vector3(center.x, bounds.end.y + 0.09, bounds.end.z)
+    var finish := visual.transform * Vector3(center.x, bounds.end.y + 0.09, bounds.position.z)
+    marker.position = finish if reverse else start
     add_child(marker)
     _pulse = marker
-    var destination := visual.transform * Vector3(center.x, bounds.end.y + 0.09, bounds.position.z)
+    var destination := start if reverse else finish
     var revision := _revision
     _animation = create_tween()
     _animation.tween_property(marker, "position", destination, pulse_duration)

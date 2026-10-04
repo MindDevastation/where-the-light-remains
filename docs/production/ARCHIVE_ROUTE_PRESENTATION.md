@@ -20,10 +20,13 @@ the opening Tween moves only a temporary mesh, never the blocking body. A world
 may bind the local signal to authored audio; these components play no audio.
 
 Channel states: dormant hides the route, active uses the authored active material,
-completed uses its warm completion material. Explicit `pulse()` or a changed
+completed uses its warm completion material. Explicit `pulse(reverse = false)` or a changed
 animated state runs one local marker along the authored mesh bounds. Emissive
 geometry remains visible with glow and volumetrics off. Same-state assignment
 and instant restoration never restart the pulse or play completion signals.
+The reverse argument lets the same route carry a completion impulse back toward
+the hub without altering geometry or the logical route state. Bounds are mapped
+through the authored mesh transform, including offset, yaw and scale.
 
 Any state replacement, detach or invalid/queued/replaced binding cancels the
 component's own pending animation. Reparented visual nodes are not deleted or
