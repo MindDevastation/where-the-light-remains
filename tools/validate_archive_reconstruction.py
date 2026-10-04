@@ -88,6 +88,9 @@ def validate(args):
             for test in args.tests:
                 if not test.replace("_", "").isalnum():
                     raise ValueError("Invalid test name")
+                if test == "normal_startup":
+                    run(test, [godot, "--headless", "--path", "game", "--quit-after", "8"], timeout=30)
+                    continue
                 if not (clean / "game/tests" / (test + ".tscn")).is_file():
                     raise ValueError("Test scene does not exist: " + test)
                 run(test, [godot, "--headless", "--path", "game", "res://tests/" + test + ".tscn"],

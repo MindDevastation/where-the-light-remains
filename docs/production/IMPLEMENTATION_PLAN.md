@@ -19,13 +19,18 @@ physical save retry, quiet restore and continuous return walking. See
   four inspected 1920×1080 views and exact protected-file/source hashes. See
   `ARCHIVE_ROUTE_PRESENTATION.md` and `evidence/archive_route/README.md`.
 - [x] Reconstruct ArchiveMain/S01/S02 logic and connect T019. Current clean-copy
-  checks: 101 state assertions, 109 S01 assertions and 57 S02 assertions including
+  checks: 101 state assertions, 110 S01 assertions and 60 S02 assertions including
   actual E rays, directory IO failure/retry, primary/backup, quiet reload and
   physical corridor/Hub return. Eight native Low/Medium views confirm the reused
   optics carrier, cold/warm response and readable complete Cyrillic modals;
   Continue text is also asserted in the captured pixels. Missing later
   wing ground stays blocked despite the logical next-route indication.
-  Boot/S00, authored room art/audio and full VS1 remain open.
+  Authored room art/audio and full VS1 remain open.
+- [x] Shipping Boot/Main Menu and S00 graybox timeline: explicit protected New
+  Game, read-only Continue, Settings/Exit, registered checkpoint resume, actual
+  spark/door/camera handoff and opted-in cinematic pause. 33 Boot, 25 S00 and 17
+  exact-entry/safe-Exit assertions pass. Fourteen native Low/Medium views and
+  configured-main startup pass; authored prologue art/audio remain open.
 - [ ] `GATE-VS1`: full S00→S01→S02, authored art/audio and target-hardware profile.
   S03 remains gated; no later-wing implementation starts from this component proof.
 
@@ -68,7 +73,10 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 
 ## Milestone 1 — boot / shell
 
-- [ ] Boot/Main Menu in Russian.
+- [x] Boot/Main Menu in Russian, shipping main entry, protected New Game history,
+  Continue/Settings/Exit and registered S00/S01/S02 resume. See
+  `ARCHIVE_RECONSTRUCTION.md`, `boot-main-readonly-1`, `boot-main-regression-1`
+  and the bounded native component/main receipts.
 - [x] SettingsManager validated ConfigFile preferences, atomic replacement and Russian draft/Apply/Cancel modal. Clean import, corrupt/type/range/version/write-failure cases, real bus gains, author-preserving graphics switches, native display modes and inspected 1280×720/1920×1080 Forward+ UI PASS; see `SETTINGS.md` and `evidence/settings/`. Main-menu/pause entry points and target-GPU profiling remain subsequent work.
 - [x] InputManager focus/pause/capture handling: requested mode survives pause/focus; visible startup UI cursor, immediate gates, held/echo movement suppression and recapture-motion guard. Clean import and actual authenticated TCP X11 focus/capture checks PASS; see `INPUT_FOCUS.md` and `evidence/input_focus/`. Esc/pause UI and repeat-skip consumers remain separate work.
 - [x] Russian pause panel with nested settings, gated fresh Esc, mode/lock restoration and explicit awaited/cancellable fade/loading overlay. Actual controller pause/held-key/recapture, GUI nesting/blocking, clear/free/removed-root cases and inspected Forward+ UI PASS; see `PAUSE_FADE.md` and `evidence/pause_fade/`. Cinematic pause/skip arbitration and scene-router transitions remain their own later systems.
@@ -79,7 +87,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [x] Typed SaveGame v1 DTO/resource with bounded JSON-only state, exact numeric round trips and validated isolated GameState capture/apply. Clean import, invalid/version/order/resource/cycle cases, state/file integrity, prior shell/player/input and Forward+ startup PASS; see `SAVE_SYSTEM.md` and `evidence/save_dto/`. Disk persistence and registered-world validation remain later tasks.
 - [x] Atomic validated JSON write/read + last-valid backup + read-only corruption fallback. Failed writes retain dirty/state/files; future schemas are protected; Russian retry/stay guards App and actual native close. Clean import, physical file/failure/recovery tests, successful dirty exits, GUI and Forward+ regressions PASS; see `SAVE_SYSTEM.md` and `evidence/atomic_save/`. Both-corrupt New Game choice UI and authored checkpoint triggers belong to Boot/world integration.
 - [x] SceneRouter registered preload/checkpoint/fade/input/state/spawn pipeline. Clean acceptance passes actual checkpoint files, transactional cancellation/rollback, physics/callback restoration, native close recovery and same-world S14→15 presentation; see `SCENE_ROUTER.md` and `evidence/scene_router/`. Shipping worlds/registry, Boot/Continue and authored final choreography remain their own features. PR #41 is merged into the epic; its exact accepted tree and merged-epic startup/safe-exit gate pass. Integration follows the normal epic → main PR route.
-- [x] ArchiveMain graybox + spawn/state restoration, S01/S02 controls and fragment checkpoints. Current clean runtime and graphical evidence: `ARCHIVE_RECONSTRUCTION.md`. Boot/S00 and authored art/audio remain separate acceptance.
+- [x] ArchiveMain graybox + spawn/state restoration, S00/S01/S02 controls and fragment checkpoints. Current clean runtime and graphical evidence: `ARCHIVE_RECONSTRUCTION.md`. Authored art/audio and full VS1 remain separate acceptance.
 - [ ] AudioDirector dual-player crossfade + group/unique playlist skeleton + silence locks.
 
 ## Milestone 3 — vertical slice

@@ -203,3 +203,21 @@ exit successfully with no runtime errors or warnings. The graybox camera path
 and menu are visible; authored observatory art/audio and physical GPU/FPS
 acceptance remain open. Next: enable Boot as the shipping main scene and verify
 normal startup and the actual safe exit path.
+
+## Shipping Boot entry acceptance
+
+`project.godot` now selects `core/boot/boot.tscn`. `boot-main-readonly-1`
+passes normal configured-main startup plus 17 exact-entry/menu/safe-Exit
+assertions with protected existing slot hashes unchanged. It opens the menu,
+keeps the player inactive and has exactly one of each of the eight autoloads.
+The actual Russian Exit button invokes App's safe exit without rewriting clean
+saves. `boot-main-native-1` starts the actual configured main for eight rendered
+frames and preserves both fixture slot hashes; the fourteen-view component
+receipt supplies layout/S00 visual review.
+
+`boot-main-regression-1` passes 33 Boot, 25 S00, 110 S01 and 60 S02 assertions
+from an initially cache-free exact-source copy. No runtime errors/warnings.
+Boot/S00 graybox shell integration is complete. Full GATE-VS1 remains open for
+authored art/audio and target hardware; S03 remains gated. Next independent
+implementation task: inspect the existing AudioDirector in-progress source and
+receipts and continue its unfinished mixer/route acceptance rather than rebuild it.

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-04T20:42:25.029625+00:00",
+  "command": [
+    "python",
+    "-B",
+    "tools/run_graphical.py",
+    "--graphics-prefix",
+    "/workspace/scratch/af1393cbbc18/wlr-tools/graphics",
+    "--godot",
+    "/workspace/scratch/af1393cbbc18/wlr-tools/godot/Godot_v4.7.2-stable_linux.x86_64",
+    "--timeout",
+    "30",
+    "--expect",
+    "Godot Engine",
+    "--",
+    "--path",
+    "game",
+    "--resolution",
+    "1920x1080",
+    "--quit-after",
+    "8"
+  ],
+  "exit_code": 0,
+  "main_scene": "res://core/boot/boot.tscn",
+  "slots_before": {
+    "savegame.json": "b10fb6cf17e819916398dc12cddb1e367d3e034a5882de912be1901616ee9093",
+    "savegame.backup.json": "b10fb6cf17e819916398dc12cddb1e367d3e034a5882de912be1901616ee9093"
+  },
+  "slots_after": {
+    "savegame.json": "b10fb6cf17e819916398dc12cddb1e367d3e034a5882de912be1901616ee9093",
+    "savegame.backup.json": "b10fb6cf17e819916398dc12cddb1e367d3e034a5882de912be1901616ee9093"
+  },
+  "scope": "Actual configured main native startup for eight rendered frames; visual UI review is the fourteen-view component receipt; safe menu Exit is verified by boot_startup_smoke. Software Vulkan only; no physical target GPU/FPS acceptance."
+}

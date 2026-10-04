@@ -3,12 +3,18 @@
 ## Current phase
 
 Fresh-session remote recovery, 2026-10-04: ArchiveMain and S01 resumed from the
-verified working branch. Connected S02 now passes 57 real controls/save/return
-assertions, with 101 state and 109 S01 regressions. Eight native Low/Medium views
+verified working branch. Connected S02 now passes 60 real controls/save/return
+assertions, with 101 state and 110 S01 regressions. Eight native Low/Medium views
 confirm the reused optical model, cold/warm room response and complete readable
 Cyrillic modals, with rendered Continue text assertions. Source/evidence are durably published
-on the working branch; `main` is unchanged. Boot/S00, final room art/audio and
-GATE-VS1 remain open. See `ARCHIVE_RECONSTRUCTION.md` and its current receipts.
+on the working branch; `main` is unchanged. Boot is now the shipping main scene:
+Russian Continue/New Game/Settings/Exit, protected history-preserving New Game,
+registered S00/S01/S02 resume and an eight-second realtime S00 graybox handoff.
+Boot/S00 pass 33/25 assertions; the exact main entry and actual safe menu Exit
+pass 17 read-only assertions. Fourteen native Low/Medium component views and the
+actual configured main startup pass. Authored room/prologue art/audio, physical
+target GPU/FPS and full GATE-VS1 remain open; S03 is gated.
+See `ARCHIVE_RECONSTRUCTION.md` and its current receipts.
 
 **Implementation preflight / initial implementation.**
 
