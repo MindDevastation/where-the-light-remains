@@ -1,0 +1,17 @@
+[aist#0:0/pcm_s16le @ 0x55b6896e7c40] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/assets/audio/music/B_Wings/shared/034_Muted Pulse Under Falling White.wav':
+  Metadata:
+    comment         : made with suno; created=2026-02-07T06:05:19Z; id=c1414b7b-2405-4044-82bd-072c51e3630b
+    encoder         : Lavf60.16.100
+  Duration: 00:01:19.84, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Output #0, ogg, to '/tmp/wlr-audio-encode-focl127_/mus_s02_muted_pulse_v01.attempt0.ogg':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+[out#0/ogg @ 0x55b6896e7380] video:0kB audio:1311kB subtitle:0kB other streams:0kB global headers:4kB muxing overhead: 1.045418%
+size=    1325kB time=00:01:19.82 bitrate= 136.0kbits/s speed=75.6x    

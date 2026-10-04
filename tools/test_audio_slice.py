@@ -30,10 +30,10 @@ class ExportProtection(unittest.TestCase):
                 audio.load_manifest()
 
     def test_unselected_s00_creates_no_output(self):
-        with tempfile.TemporaryDirectory(dir=audio.REVIEW) as parent:
+        with tempfile.TemporaryDirectory() as parent:
             destination = audio.Path(parent) / 'not_created'
             args = argparse.Namespace(operation='export', cue='mus_s00_archive_seed_v01', output=destination)
-            with self.assertRaisesRegex(ValueError, 'selection is pending'):
+            with patch.object(audio, 'REVIEW', audio.Path(parent)), self.assertRaisesRegex(ValueError, 'selection is pending'):
                 audio.execute(args)
             self.assertFalse(destination.exists())
 
@@ -45,11 +45,13 @@ class ExportProtection(unittest.TestCase):
             self.assertFalse(destination.exists())
 
     def test_existing_review_folder_is_never_overwritten(self):
-        with tempfile.TemporaryDirectory(dir=audio.REVIEW) as parent:
-            sentinel = audio.Path(parent) / 'keep.txt'
+        with tempfile.TemporaryDirectory() as parent:
+            folder = audio.Path(parent) / 'family'
+            folder.mkdir()
+            sentinel = folder / 'keep.txt'
             sentinel.write_bytes(b'owner evidence')
-            args = argparse.Namespace(operation='export', cue='mus_s01_archive_awakening_v01', output=audio.Path(parent))
-            with self.assertRaises(FileExistsError):
+            args = argparse.Namespace(operation='export', cue='mus_s01_archive_awakening_v01', output=folder)
+            with patch.object(audio, 'REVIEW', audio.Path(parent)), self.assertRaises(FileExistsError):
                 audio.execute(args)
             self.assertEqual(sentinel.read_bytes(), b'owner evidence')
 
@@ -75,17 +77,18 @@ class ExportProtection(unittest.TestCase):
 
     def test_tampered_derivative_cannot_receive_verification(self):
         original = audio.json.loads((audio.REVIEW / 's02-unique-review-1/results.json').read_text())
-        with tempfile.TemporaryDirectory(dir=audio.REVIEW) as parent:
+        manifest = audio.load_manifest()
+        with tempfile.TemporaryDirectory() as parent:
             folder = audio.Path(parent).resolve()
             result = copy.deepcopy(original)
             record = result['records'][0]
             media = folder / (record['cue_id'] + '.ogg')
             media.write_bytes((audio.ROOT / record['derivative_path']).read_bytes() + b'tampered')
-            record['derivative_path'] = media.relative_to(audio.ROOT).as_posix()
+            record['derivative_path'] = media.name
             result['tool_sha256'] = audio.digest(audio.Path(audio.__file__))
             (folder / 'results.json').write_text(audio.json.dumps(result))
-            with self.assertRaisesRegex(ValueError, 'Derivative path/SHA'):
-                audio.verify_family(folder, audio.load_manifest())
+            with patch.object(audio, 'ROOT', folder), self.assertRaisesRegex(ValueError, 'Derivative path/SHA'):
+                audio.verify_family(folder, manifest)
             self.assertFalse((folder / 'verification.json').exists())
 
     def test_existing_verification_receipt_remains_immutable(self):
@@ -97,12 +100,25 @@ class ExportProtection(unittest.TestCase):
         self.assertEqual(receipt.read_bytes(), before)
 
     def test_intermediate_media_cannot_receive_verification(self):
-        with tempfile.TemporaryDirectory(dir=audio.REVIEW) as parent:
+        with tempfile.TemporaryDirectory() as parent:
             folder = audio.Path(parent).resolve()
             (folder / 'mus_s01_fixture_v01.attempt0.ogg').write_bytes(b'unaccepted partial')
             with self.assertRaisesRegex(ValueError, 'intermediate media'):
                 audio.verify_family(folder, audio.load_manifest())
             self.assertFalse((folder / 'verification.json').exists())
+
+    def test_command_trace_recovers_from_stale_file_replacement(self):
+        with tempfile.TemporaryDirectory() as parent:
+            folder = audio.Path(parent)
+            completed = audio.subprocess.CompletedProcess(['fixture'], 0, b'actual stdout\n')
+            with patch.object(audio.subprocess, 'run', return_value=completed):
+                audio.command(['fixture', 'first'], folder / 'first.log')
+                (folder / 'commands.jsonl').write_text('')
+                audio.command(['fixture', 'second'], folder / 'second.log')
+            records = [audio.json.loads(r) for r in (folder / 'commands.jsonl').read_text().splitlines()]
+            self.assertEqual([r['command'][-1] for r in records], ['first', 'second'])
+            for record in records:
+                self.assertEqual(record['stdout_sha256'], audio.digest(folder / record['stdout_file']))
 
 
 if __name__ == '__main__':

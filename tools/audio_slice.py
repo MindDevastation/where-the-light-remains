@@ -21,6 +21,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'docs/production/audio/slice_edit_manifest.json'
 REVIEW = ROOT / 'docs/production/evidence/audio_director'
+COMMANDS = {}
 
 
 def digest(path):
@@ -43,11 +44,14 @@ def command(args, output, timeout=45):
         # subprocess.run already kills/reaps this exact child. Preserve its output.
         result = subprocess.CompletedProcess(args, -1, error.stdout or b'')
     output.write_bytes(result.stdout)
-    with (output.parent / 'commands.jsonl').open('a') as record:
-        record.write(json.dumps({'command': args, 'started_at': started, 'finished_at': stamp(),
-                                'timeout_seconds': timeout, 'exit_code': result.returncode,
-                                'timed_out': timed_out,
-                                'stdout_file': output.name, 'stdout_sha256': digest(output)}) + '\n')
+    records = COMMANDS.setdefault(output.parent.resolve(), [])
+    records.append({'command': args, 'started_at': started, 'finished_at': stamp(),
+                    'timeout_seconds': timeout, 'exit_code': result.returncode,
+                    'timed_out': timed_out,
+                    'stdout_file': output.name, 'stdout_sha256': digest(output)})
+    # Re-write the cumulative in-memory trace. A stale/externally replaced file
+    # must not truncate the next command's evidence as append-only writes can.
+    (output.parent / 'commands.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in records))
     if result.returncode:
         raise RuntimeError(f'Command failed ({result.returncode}): {args[0]}; see {output}')
     return result.stdout.decode('utf-8', errors='replace')
@@ -167,7 +171,7 @@ def verify_family(output, manifest):
     if record['interval_seconds'] != [start, end] or abs(float(record['probe']['format']['duration']) - (end - start)) > .02:
         raise ValueError('Export interval/duration mismatch')
     logs = [json.loads(line) for line in (output / 'commands.jsonl').read_text().splitlines()]
-    if len(logs) < 5:
+    if len(logs) < 5 or result.get('command_count', len(logs)) != len(logs):
         raise ValueError('Incomplete FFmpeg/probe command evidence')
     for command_record in logs:
         name = command_record['stdout_file']
@@ -272,6 +276,9 @@ def execute(args):
         raise
     finally:
         result['finished_at'] = stamp()
+        records = COMMANDS.get(output, [])
+        result['command_count'] = len(records)
+        (output / 'commands.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in records))
         receipt.write_text(json.dumps(result, indent=2) + '\n')
 
 

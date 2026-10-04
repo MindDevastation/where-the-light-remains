@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "guard_count": 12,
+  "utc": "2026-10-04T22:39:32.041660+00:00",
+  "scope": "One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.",
+  "guard_log_sha256": "f8eeb101cb36916fb4f168f81edb8a2d070a19ab4e9bbcbd014188a7f93a47fb",
+  "source_hashes": {
+    "tools/audio_slice.py": "d7e298978d044fb7bfb0ecf2762ffc0dabf4a6fc04b1993d9cfb429261b368a0",
+    "tools/test_audio_slice.py": "6b82917aece26921c4bad1f59b3e8f58a9a5d8891ed0f9bd9ee3d674d17c81c1",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/B_Wings/shared/034_Muted Pulse Under Falling White.wav": "1cbcaa01aa3fee728d9ffd382e3ea07c048cddfae9c443757c45127bc2c414af",
+    "docs/production/evidence/audio_director/s02-muted-pulse-review-2/mus_s02_muted_pulse_v01.ogg": "c7a731009e7f02d213f9c71f85caa234fa3c0647c4a549be0cc508d489fcdee3"
+  }
+}

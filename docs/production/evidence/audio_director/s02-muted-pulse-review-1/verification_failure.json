@@ -1,0 +1,7 @@
+{
+  "status": "VERIFICATION_FAIL",
+  "utc": "2026-10-04T22:38:51.159537+00:00",
+  "reason": "Command trace incomplete: 3 of at least 5 records remained. Export headers/decoded metrics alone do not accept this family.",
+  "tool_sha256": "582cac52c7ac5edce4b50647dcea13e41e80174a757fa2668be9ef5376a647c6",
+  "retry": "s02-muted-pulse-review-2; cumulative in-memory command trace/full final snapshot and regression guard"
+}

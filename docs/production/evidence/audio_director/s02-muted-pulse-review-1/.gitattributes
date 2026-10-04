@@ -1,0 +1,2 @@
+# Preserve exact FFmpeg process log whitespace.
+*.log whitespace=-blank-at-eof,-blank-at-eol

@@ -1,0 +1,15 @@
+.E.........
+======================================================================
+ERROR: test_existing_review_folder_is_never_overwritten (__main__.ExportProtection.test_existing_review_folder_is_never_overwritten)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/af1393cbbc18/where-the-light-remains/tools/test_audio_slice.py", line 53, in test_existing_review_folder_is_never_overwritten
+    audio.execute(args)
+  File "/workspace/scratch/af1393cbbc18/where-the-light-remains/tools/audio_slice.py", line 196, in execute
+    raise ValueError('Exports must be an isolated review family outside shipping game/assets')
+ValueError: Exports must be an isolated review family outside shipping game/assets
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.758s
+
+FAILED (errors=1)

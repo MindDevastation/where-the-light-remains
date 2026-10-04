@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/af1393cbbc18/where-the-light-remains/tools/audio_slice.py", line 283, in <module>
+    execute(parser.parse_args())
+  File "/workspace/scratch/af1393cbbc18/where-the-light-remains/tools/audio_slice.py", line 198, in execute
+    return verify_family(output, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/af1393cbbc18/where-the-light-remains/tools/audio_slice.py", line 171, in verify_family
+    raise ValueError('Incomplete FFmpeg/probe command evidence')
+ValueError: Incomplete FFmpeg/probe command evidence

@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-04T22:34:46.193365+00:00",
+  "path": "docs/production/evidence/audio_director/tmplinm_ywz/mus_s01_fixture_v01.attempt0.ogg",
+  "bytes": 18,
+  "sha256": "d647886ed845d765e1dd4c7cf7f910d3b5b802d84ae27e956188f276780ae97c",
+  "origin": "Owned test_intermediate_media_cannot_receive_verification temporary fixture; late residual despite TemporaryDirectory cleanup",
+  "action": "Remove only owned fixture; move all test temporary media outside Git next block."
+}
