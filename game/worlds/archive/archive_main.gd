@@ -204,14 +204,14 @@ func prepare_state(saved: SaveGame) -> Dictionary:
 func validate_stage_state(id: StringName, state: Dictionary) -> Error:
     if not supports_stage(id) or not ArchiveProgress.valid(state):
         return ERR_INVALID_DATA
-    if id == ArchiveProgress.INTRO and state["awakened"] or id == ArchiveProgress.WING_ONE and not state["awakened"]:
+    if id in [ArchiveProgress.PROLOGUE, ArchiveProgress.INTRO] and state["awakened"] or id == ArchiveProgress.WING_ONE and not state["awakened"]:
         return ERR_INVALID_DATA
     return OK
 
 
 func apply_stage_state(id: StringName, state: Dictionary) -> Error:
     # Router rollback of a pristine intro has an empty owned namespace.
-    var projected := ArchiveProgress.fresh() if state.is_empty() and id == ArchiveProgress.INTRO else state
+    var projected := ArchiveProgress.fresh() if state.is_empty() and id in [ArchiveProgress.PROLOGUE, ArchiveProgress.INTRO] else state
     var error := validate_stage_state(id, projected)
     if error != OK:
         return error
@@ -225,7 +225,25 @@ func apply_stage_state(id: StringName, state: Dictionary) -> Error:
         if onboarding != null:
             onboarding.restore_awakened(projected["awakened"])
         _restore_slice(projected, true)
+        var prologue := get_node_or_null("Prologue") as ArchivePrologue
+        if prologue != null:
+            prologue.restore(id != ArchiveProgress.PROLOGUE)
     return error
+
+
+func complete_prologue() -> Error:
+    if stage_id != ArchiveProgress.PROLOGUE or GameState.current_stage_id != ArchiveProgress.PROLOGUE:
+        return ERR_UNAUTHORIZED
+    var target := GameState.capture_save()
+    if target == null:
+        return ERR_INVALID_DATA
+    target.stage_id = ArchiveProgress.INTRO
+    target.checkpoint_id = &"prologue_completed"
+    target.milestones["prologue_completed"] = true
+    var error := ArchiveProgress.write_projection(target)
+    if error == OK:
+        error = await SceneRouter.request_progression_stage(ArchiveProgress.INTRO, target)
+    return _flush_checkpoint(&"prologue_completed") if error == OK else error
 
 
 func _actor_can_interact(actor: Node3D) -> bool:

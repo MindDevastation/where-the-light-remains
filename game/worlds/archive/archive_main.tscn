@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3]
+[gd_scene load_steps=74 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" path="res://gameplay/collectibles/fragment_presenter.tscn" id="Fragments"]
 [ext_resource type="Script" path="res://core/ui/checkpoint_notice.gd" id="Notice"]
 [ext_resource type="Texture2D" path="res://art/sigils/star.svg" id="StarSigil"]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/archive_prologue.tscn" id="Prologue"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -75,10 +77,10 @@ size = Vector3(5.8, 4.8, 0.35)
 size = Vector3(5.8, 4.8, 0.35)
 
 [sub_resource type="BoxMesh" id="M_Wall2L"]
-size = Vector3(5.8, 4.8, 0.35)
+size = Vector3(2.258, 4.8, 0.35)
 
 [sub_resource type="BoxShape3D" id="S_Wall2L"]
-size = Vector3(5.8, 4.8, 0.35)
+size = Vector3(2.258, 4.8, 0.35)
 
 [sub_resource type="BoxMesh" id="M_Wall2R"]
 size = Vector3(5.8, 4.8, 0.35)
@@ -93,10 +95,10 @@ size = Vector3(5.8, 4.8, 0.35)
 size = Vector3(5.8, 4.8, 0.35)
 
 [sub_resource type="BoxMesh" id="M_Wall3R"]
-size = Vector3(5.8, 4.8, 0.35)
+size = Vector3(2.258, 4.8, 0.35)
 
 [sub_resource type="BoxShape3D" id="S_Wall3R"]
-size = Vector3(5.8, 4.8, 0.35)
+size = Vector3(2.258, 4.8, 0.35)
 
 [sub_resource type="BoxMesh" id="M_Wall4L"]
 size = Vector3(5.8, 4.8, 0.35)
@@ -239,9 +241,9 @@ height = 0.65
 [node name="ArchiveMain" type="Node3D"]
 script = ExtResource("World")
 stage_id = &"s01_observatory"
-supported_stages = Array[StringName]([&"s01_observatory", &"s02_wing_01"])
+supported_stages = Array[StringName]([&"s00_prologue", &"s01_observatory", &"s02_wing_01"])
 default_spawn = NodePath("Spawns/Intro")
-checkpoint_spawns = {&"archive_awakened": NodePath("Spawns/Awakened"), &"star_collected": NodePath("Spawns/Star"), &"hearth_collected": NodePath("Spawns/Hearth")}
+checkpoint_spawns = {&"prologue_completed": NodePath("Spawns/Intro"), &"archive_awakened": NodePath("Spawns/Awakened"), &"star_collected": NodePath("Spawns/Star"), &"hearth_collected": NodePath("Spawns/Hearth")}
 
 [node name="Environment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment")
@@ -439,7 +441,7 @@ material_override = SubResource("Stone")
 shape = SubResource("S_Wall1R")
 
 [node name="Wall2L" type="StaticBody3D" parent="Hub"]
-position = Vector3(-0.9808038442150284, 2.4, 9.175948115544955)
+position = Vector3(-2.4139, 2.4, 8.1347)
 rotation = Vector3(0, 2.513274123, 0)
 collision_layer = 1
 collision_mask = 4
@@ -481,7 +483,7 @@ material_override = SubResource("Stone")
 shape = SubResource("S_Wall3L")
 
 [node name="Wall3R" type="StaticBody3D" parent="Hub"]
-position = Vector3(0.9808038442150258, 2.4, 9.175948115544957)
+position = Vector3(2.4139, 2.4, 8.1347)
 rotation = Vector3(0, 3.769911184, 0)
 collision_layer = 1
 collision_mask = 4
@@ -910,3 +912,5 @@ grow_vertical = 2
 script = ExtResource("Notice")
 
 [editable path="Wing01/Room/Rings/Carrier"]
+
+[node name="Prologue" parent="." instance=ExtResource("Prologue")]

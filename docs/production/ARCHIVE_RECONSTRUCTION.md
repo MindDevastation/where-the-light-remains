@@ -133,6 +133,22 @@ shipping IN_PLACE registry, including cold entry, Star/Hearth primary reload,
 safe spawns and no duplicate pickups/writes. S01 and router pipeline/transaction/
 seamless regressions also PASS. Registry paths are never read from save files.
 
-Next unfinished block: Boot/Continue/S00 integration; explicit New Game must
-preserve prior files and protect future schemas/actual IO obstacles before any
-reset. GATE-VS1 still blocks later wings.
+## S00 graybox timeline
+
+S00 is now a registered supported stage in the persistent Archive. The local
+`ArchivePrologue` owns an exterior camera, first spark and sliding main doors;
+trimmed Hub wall ends form a real clear entrance. The exterior floor has physical
+edge guards. No separate world/loading cut is used for S00→S01. The terminal
+camera matches the persistent player's transform and configured FOV before the
+IN_PLACE transaction enables first-person input. Pause freezes the timeline;
+accepted completion writes `prologue_completed` once. Quiet S01 load skips S00.
+Timings and primitive presentation remain engineering graybox parameters, with
+no new narrative copy, authored art/audio or release skip policy invented.
+
+`prologue-validation-1` retains the bounded failed scene-resource parse: .tscn
+constructors require a leading zero for decimal literals. The resource and
+fixture early failure handling were corrected; `prologue-validation-2` records
+the targeted clean-source S00/state/S01/S02 run. Native S00 review and Boot are
+the next unfinished block. Explicit New Game must preserve prior files and
+protect future schemas/actual IO obstacles before any reset. GATE-VS1 still
+blocks later wings.

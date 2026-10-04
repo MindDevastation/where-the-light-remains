@@ -1,0 +1,38 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: res://worlds/archive/archive_prologue.tscn:6 - Parse Error: Expected float in constructor.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+ERROR: Failed loading resource: res://worlds/archive/archive_prologue.tscn.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: res://worlds/archive/archive_main.tscn:916 - Parse Error: [ext_resource] referenced non-existent resource at: res://worlds/archive/archive_prologue.tscn.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+ERROR: res://worlds/archive/archive_main.tscn:916 - Parse Error: [ext_resource] referenced non-existent resource at: res://worlds/archive/archive_prologue.tscn.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+ERROR: Failed loading resource: res://worlds/archive/archive_main.tscn.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: ARCHIVE_PROLOGUE FAIL: Materialize dormant Archive for S00
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_prologue_smoke.gd:23)
+       [1] _run (res://tests/archive_prologue_smoke.gd:48)
+       [2] request_resume_stage (res://autoload/scene_router.gd:201)
+       [3] _request_stage (res://autoload/scene_router.gd:298)
+       [4] _preload_definition (res://autoload/scene_router.gd:93)
+ERROR: Index p_index = 0 is out of bounds ((int)data.children_cache.size() - data.internal_children_front_count_cache - data.internal_children_back_count_cache = 0).
+   at: get_child (scene/main/node.cpp:1861)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://tests/archive_prologue_smoke.gd:49)
+       [1] request_resume_stage (res://autoload/scene_router.gd:201)
+       [2] _request_stage (res://autoload/scene_router.gd:298)
+       [3] _preload_definition (res://autoload/scene_router.gd:93)
+SCRIPT ERROR: Cannot call method 'get_instance_id' on a null value.
+          at: _run (res://tests/archive_prologue_smoke.gd:50)
+          GDScript backtrace (most recent call first):
+              [0] _run (res://tests/archive_prologue_smoke.gd:50)
+              [1] request_resume_stage (res://autoload/scene_router.gd:201)
+              [2] _request_stage (res://autoload/scene_router.gd:298)
+              [3] _preload_definition (res://autoload/scene_router.gd:93)
+ERROR: ARCHIVE_PROLOGUE FAIL: timeout
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] <anonymous lambda> (res://tests/archive_prologue_smoke.gd:13)

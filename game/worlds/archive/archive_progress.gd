@@ -2,9 +2,10 @@ class_name ArchiveProgress
 extends RefCounted
 ## Pure save-to-presentation projection. No Nodes, globals, IO or animation.
 
+const PROLOGUE := &"s00_prologue"
 const INTRO := &"s01_observatory"
 const WING_ONE := &"s02_wing_01"
-const STAGES: Array[StringName] = [INTRO, WING_ONE]
+const STAGES: Array[StringName] = [PROLOGUE, INTRO, WING_ONE]
 const KEYS := ["awakened", "unlocked", "completed", "memories", "light_restored",
     "star_collected", "hearth_collected", "finale_ready"]
 
