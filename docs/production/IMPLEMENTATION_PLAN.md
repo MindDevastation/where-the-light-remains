@@ -2,6 +2,31 @@
 
 Status: **started**.
 
+## Source availability after the 2026-10-04 interruption
+
+The reconnected filesystem lacks the newer local Boot, ArchiveMain and connected
+S02 checkout, its commits and snapshots. Historical accepted results are retained
+in the recovery report; their missing source is not currently certified. A separate
+partial checkout restores exact published baseline `c6818057b96174172b59e29ca0fba187c698c904`
+without resetting either surviving worktree. See `SESSION_RECOVERY_2026-10-04_14-53.md`.
+
+- [x] Continue the unfinished T019 local gate/light-channel foundation: reusable
+  graybox prefabs, four gate states, animated/instant restoration, explicit
+  forward/return impulse, Low fallback without glow/volumetrics and local lifetime
+  ownership. Seven clean commands PASS; 147 assertions in headless and Forward+,
+  four inspected 1920×1080 views and exact protected-file/source hashes. See
+  `ARCHIVE_ROUTE_PRESENTATION.md` and `evidence/archive_route/README.md`.
+- [ ] Recover or explicitly reconstruct the missing newer story-controller source
+  before connecting the accepted T019 components to actual Archive progression.
+  Component proof alone does not close full T018/T019 or the playable VS1 gate.
+- [ ] `GATE-VS1`: full S00→S01→S02, authored art/audio and target-hardware profile.
+  S03 remains gated; no later-wing implementation starts from this component proof.
+
+Historical milestone checkboxes below describe their accepted published baseline;
+this availability note does not revoke those results or claim recovery of missing
+later local features. Available changes are committed and checkpointed; the old
+worktrees and accepted preflight suites are not reset or rerun.
+
 Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implementation work.
 
 ## Global implementation constraints

@@ -36,3 +36,5 @@
 # A destructive history rewrite is not required to begin 3D production.
 # Any later audio-history cleanup/migration must be a separate, explicitly
 # validated maintenance task with fresh-clone and LFS-object retrieval checks.
+
+docs/production/evidence/archive_route/**/*.log whitespace=-blank-at-eof

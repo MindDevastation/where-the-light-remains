@@ -1,0 +1,63 @@
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/bin/Xvfb :100 -screen 0 1920x1080x24 -listen tcp -nolisten unix -nolisten local -noreset -auth /tmp/wlr-x11-8e8gnmxo/Xauthority
+DISPLAY=127.0.0.1:100; VK_ICD_FILENAMES=/workspace/scratch/4f0b36b4bb0e/toolchain/graphics/usr/share/vulkan/icd.d/lvp_icd.json
+X11_TCP_AUTH PASS: valid cookie accepted; unauthenticated client rejected
+$ /workspace/scratch/4f0b36b4bb0e/toolchain/session-recovery-20261004-1455/verified-godot/Godot_v4.7.2-stable_linux.x86_64 --display-driver x11 --rendering-driver vulkan --rendering-method forward_plus --audio-driver Dummy --path game res://tests/archive_route_smoke.tscn
+GRAPHICAL_RUN PASS: exit=0
+
+Godot stdout/stderr:
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.318 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 20.1.2, 256 bits)
+
+ROUTE_PHYSICS: Gate1 state=0 forward_distance=-0.47067701816559 grounded=true
+ROUTE_PHYSICS: Gate2 state=0 forward_distance=-0.47093063592911 grounded=true
+ROUTE_PHYSICS: Gate3 state=0 forward_distance=-0.47070527076721 grounded=true
+ROUTE_PHYSICS: Gate4 state=0 forward_distance=-0.47093063592911 grounded=true
+ROUTE_PHYSICS: Gate5 state=0 forward_distance=-0.47093063592911 grounded=true
+ROUTE_PHYSICS: Gate1 state=1 forward_distance=-0.47093063592911 grounded=true
+ROUTE_PHYSICS: Gate2 state=1 forward_distance=-0.47093063592911 grounded=true
+ROUTE_PHYSICS: Gate3 state=1 forward_distance=-0.47070527076721 grounded=true
+ROUTE_PHYSICS: Gate4 state=1 forward_distance=-0.47093063592911 grounded=true
+ROUTE_PHYSICS: Gate5 state=1 forward_distance=-0.47093063592911 grounded=true
+ROUTE_PHYSICS: Gate1 state=2 forward_distance=5.51999759674072 grounded=true
+ROUTE_PHYSICS: Gate2 state=2 forward_distance=5.51999807357788 grounded=true
+ROUTE_PHYSICS: Gate3 state=2 forward_distance=5.51999759674072 grounded=true
+ROUTE_PHYSICS: Gate4 state=2 forward_distance=5.51999950408936 grounded=true
+ROUTE_PHYSICS: Gate5 state=2 forward_distance=5.51999759674072 grounded=true
+ROUTE_PHYSICS: Gate1 state=3 forward_distance=5.51999759674072 grounded=true
+ROUTE_PHYSICS: Gate2 state=3 forward_distance=5.51999807357788 grounded=true
+ROUTE_PHYSICS: Gate3 state=3 forward_distance=5.51999759674072 grounded=true
+ROUTE_PHYSICS: Gate4 state=3 forward_distance=5.51999950408936 grounded=true
+ROUTE_PHYSICS: Gate5 state=3 forward_distance=5.51999759674072 grounded=true
+ROUTE_PHYSICS: Gate3 state=0 forward_distance=-0.47093063592911 grounded=true
+ROUTE_PHYSICS: Gate3 state=2 forward_distance=5.51999950408936 grounded=true
+ROUTE_CASE PASS: all five gates and four states, real capsule/floor, rotated route
+ROUTE_CASE PASS: instant reload, interrupted opening/pulse and no duplicate signals
+ROUTE_CASE PASS: detach/reparent lifetime, missing/queued/replaced bindings, invalid states
+ROUTE_CASE PASS: frozen candidate, reentrant state ownership, transformed forward/return pulse
+ARCHIVE_ROUTE PASS: 147 assertions; five prefab instances, actual capsule/floor,
+instant restore, pulse, ownership/lifetime and binding rejection; globals/physical files unchanged
+
+
+Xvfb stdout/stderr:
+Warning: getifaddrs returns Operation not permitted
+Warning: getifaddrs returns Operation not permitted
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Could not resolve keysym XF86CameraAccessEnable
+> Warning:          Could not resolve keysym XF86CameraAccessDisable
+> Warning:          Could not resolve keysym XF86CameraAccessToggle
+> Warning:          Could not resolve keysym XF86NextElement
+> Warning:          Could not resolve keysym XF86PreviousElement
+> Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+> Warning:          Could not resolve keysym XF86MarkWaypoint
+> Warning:          Could not resolve keysym XF86Sos
+> Warning:          Could not resolve keysym XF86NavChart
+> Warning:          Could not resolve keysym XF86FishingChart
+> Warning:          Could not resolve keysym XF86SingleRangeRadar
+> Warning:          Could not resolve keysym XF86DualRangeRadar
+> Warning:          Could not resolve keysym XF86RadarOverlay
+> Warning:          Could not resolve keysym XF86TraditionalSonar
+> Warning:          Could not resolve keysym XF86ClearvuSonar
+> Warning:          Could not resolve keysym XF86SidevuSonar
+> Warning:          Could not resolve keysym XF86NavInfo
+Errors from xkbcomp are not fatal to the X server
+

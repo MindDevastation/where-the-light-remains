@@ -1,0 +1,29 @@
+{
+  "name": "headless_route",
+  "command": [
+    "/workspace/scratch/4f0b36b4bb0e/toolchain/session-recovery-20261004-1455/verified-godot/Godot_v4.7.2-stable_linux.x86_64",
+    "--headless",
+    "--audio-driver",
+    "Dummy",
+    "--path",
+    "game",
+    "res://tests/archive_route_smoke.tscn"
+  ],
+  "started_at": "2026-10-04T15:38:03.944472+00:00",
+  "exit_code": 0,
+  "timeout": false,
+  "finished_at": "2026-10-04T15:38:16.656239+00:00",
+  "stdout_bytes": 2312,
+  "stdout_sha256": "e02547eee854bb030e7298dace761d84a9104fb16c4836a574f152bb4d5c11c8",
+  "passed": true,
+  "protected_before": {
+    "savegame.json": "0269f0683885c76113507ebcc14554fdac605cebb26ca15301411eaa556039cd",
+    "savegame.backup.json": "5dd3d3c998b4822d412c8119e47fa1d13f8367dc57c6431a55e7727f7c2dd8e6",
+    "settings.cfg": "absent"
+  },
+  "protected_after": {
+    "savegame.json": "0269f0683885c76113507ebcc14554fdac605cebb26ca15301411eaa556039cd",
+    "savegame.backup.json": "5dd3d3c998b4822d412c8119e47fa1d13f8367dc57c6431a55e7727f7c2dd8e6",
+    "settings.cfg": "absent"
+  }
+}

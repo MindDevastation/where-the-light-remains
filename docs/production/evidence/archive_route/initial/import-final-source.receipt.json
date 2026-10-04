@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/scratch/4f0b36b4bb0e/toolchain/session-recovery-20261004-1455/verified-godot/Godot_v4.7.2-stable_linux.x86_64",
+    "--headless",
+    "--path",
+    "game",
+    "--editor",
+    "--import"
+  ],
+  "exit_code": 0,
+  "sha256": "abbf7b1575861211b14d7d532771fdbcecb2d3089bcf4f8560a986145329b23e",
+  "stdout_bytes": 1371,
+  "passed": true
+}

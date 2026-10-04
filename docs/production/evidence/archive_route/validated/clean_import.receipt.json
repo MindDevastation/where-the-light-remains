@@ -1,0 +1,28 @@
+{
+  "name": "clean_import",
+  "command": [
+    "/workspace/scratch/4f0b36b4bb0e/toolchain/session-recovery-20261004-1455/verified-godot/Godot_v4.7.2-stable_linux.x86_64",
+    "--headless",
+    "--path",
+    "game",
+    "--editor",
+    "--import"
+  ],
+  "started_at": "2026-10-04T15:38:01.080483+00:00",
+  "exit_code": 0,
+  "timeout": false,
+  "finished_at": "2026-10-04T15:38:03.943868+00:00",
+  "stdout_bytes": 4025,
+  "stdout_sha256": "e4a34f823044717995659e68b48242e62a74bfce0dd01b701dc384da3cf3537a",
+  "passed": true,
+  "protected_before": {
+    "savegame.json": "0269f0683885c76113507ebcc14554fdac605cebb26ca15301411eaa556039cd",
+    "savegame.backup.json": "5dd3d3c998b4822d412c8119e47fa1d13f8367dc57c6431a55e7727f7c2dd8e6",
+    "settings.cfg": "absent"
+  },
+  "protected_after": {
+    "savegame.json": "0269f0683885c76113507ebcc14554fdac605cebb26ca15301411eaa556039cd",
+    "savegame.backup.json": "5dd3d3c998b4822d412c8119e47fa1d13f8367dc57c6431a55e7727f7c2dd8e6",
+    "settings.cfg": "absent"
+  }
+}
