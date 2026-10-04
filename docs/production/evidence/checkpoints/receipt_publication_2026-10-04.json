@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checkpoint_commit": "e36bb64e6806b0f20ebf11ba0004e70f39683170",
+  "verified_utc": "2026-10-04T17:06:18.688738+00:00",
+  "branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+  "records": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "started_utc": "2026-10-04T17:05:55.817644+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "e36bb64e6806b0f20ebf11ba0004e70f39683170\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T17:05:55.820980+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "started_utc": "2026-10-04T17:05:55.821385+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T17:05:55.824449+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T17:05:55.828496+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "",
+      "stderr": "To https://github.com/MindDevastation/where-the-light-remains.git\n   127a7df..e36bb64  HEAD -> feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "finished_utc": "2026-10-04T17:06:03.719373+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T17:06:03.719877+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "e36bb64e6806b0f20ebf11ba0004e70f39683170\trefs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T17:06:18.688738+00:00"
+    }
+  ],
+  "tests": "Same accepted 163-source-file identity; no repeated completed tests.",
+  "scope": "Current clean source and recovery evidence remotely durable; latest remote branch tip also includes subsequent documentation receipt."
+}

@@ -35,3 +35,17 @@ The manual 930.919423-second snapshot gap is explicitly marked as a cadence
 miss. The managed foreground timer's first archive started at 16:57:20 UTC;
 its archives are individually verified. The policy requires starting that timer
 before future active work rather than relying on manual elapsed-time checks.
+
+`receipt_publication_2026-10-04.json`: the source/evidence checkpoint
+`e36bb64e6806b0f20ebf11ba0004e70f39683170` was pushed normally and its remote SHA
+verified at 17:06:18 UTC. The final clean snapshots reference that exact commit;
+the latest one includes the corrected actual timer lifecycle and private push
+journal as extra evidence. The timer was stopped only through its owned managed
+session; a scoped process check confirmed no matching timer remained. Its
+terminal exit was 1 with `^C`, rather than the wrapper's expected PAUSED message;
+the actual result is recorded, and no graceful deadline exit is claimed.
+
+The final documentation receipt contains those verified checkpoint SHAs and
+snapshot times. Its own SHA is resolved from the latest remote working-branch
+ref. No timer or credential process is intended to remain active after this
+checkpoint task; start a new supervised timer when active development resumes.

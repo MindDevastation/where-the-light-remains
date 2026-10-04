@@ -1,0 +1,13 @@
+{
+  "managed_session": 31318,
+  "command": "session_snapshot.py --history available --interval 900 --until 2026-10-04T17:30:00Z",
+  "status": "STOPPED",
+  "stop_observed_utc": "2026-10-04T17:08:15.683703+00:00",
+  "stop_method": "Ctrl-C delivered only to the owned managed foreground session; tool returned exit 1 and ^C, then a scoped process check found no remaining matching timer.",
+  "reason": "Accepted source and complete transport-evidence checkpoint e36bb64 are verified remote; collecting the final clean snapshot and closing receipt.",
+  "next_development": "Start/monitor this verified foreground timer from the beginning of active work, using the authorized work deadline.",
+  "stop_stdout": "^C",
+  "stop_exit_code": 1,
+  "wrapper_pause_message": false,
+  "process_stop_verified_utc": "2026-10-04T17:09:48.045172+00:00"
+}
