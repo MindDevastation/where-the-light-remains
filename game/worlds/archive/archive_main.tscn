@@ -1,9 +1,11 @@
-[gd_scene load_steps=51 format=3]
+[gd_scene load_steps=57 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
 [ext_resource type="PackedScene" path="res://worlds/archive/common/archive_gate.tscn" id="Gate"]
 [ext_resource type="PackedScene" path="res://worlds/archive/common/archive_light_channel.tscn" id="Channel"]
+[ext_resource type="Script" path="res://worlds/archive/hub/archive_onboarding.gd" id="Onboarding"]
+[ext_resource type="Script" path="res://core/interaction/interaction_target.gd" id="Target"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -157,6 +159,22 @@ size = Vector3(3, 5.5, 0.3)
 
 [sub_resource type="BoxShape3D" id="ApproachShape"]
 size = Vector3(4.6, 3, 3.2)
+
+[sub_resource type="SphereMesh" id="LensMesh"]
+radius = 0.18
+height = 0.36
+
+[sub_resource type="StandardMaterial3D" id="LensMaterial"]
+albedo_color = Color(0.18, 0.65, 0.82, 1)
+emission_enabled = true
+emission = Color(0.18, 0.65, 0.82, 1)
+emission_energy_multiplier = 1.5
+
+[sub_resource type="BoxShape3D" id="HubTargetShape"]
+size = Vector3(0.45, 0.45, 0.3)
+
+[sub_resource type="BoxMesh" id="HubTargetMesh"]
+size = Vector3(0.38, 0.38, 0.2)
 
 [node name="ArchiveMain" type="Node3D"]
 script = ExtResource("World")
@@ -584,3 +602,83 @@ shape = SubResource("ApproachShape")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Routes/Wing05/Approach"]
 shape = SubResource("ApproachShape")
+
+[node name="Onboarding" type="Node3D" parent="Hub"]
+script = ExtResource("Onboarding")
+target_paths = Array[NodePath]([NodePath("Panel/InteractionTarget"), NodePath("Lens/InteractionTarget"), NodePath("Socket/InteractionTarget"), NodePath("Lever/InteractionTarget")])
+loose_lens_path = NodePath("Lens/Visual")
+installed_lens_path = NodePath("InstalledLens")
+
+[node name="InstalledLens" type="MeshInstance3D" parent="Hub/Onboarding"]
+position = Vector3(0.45, 1.4, 0.8)
+mesh = SubResource("LensMesh")
+material_override = SubResource("LensMaterial")
+visible = false
+
+[node name="Panel" type="Area3D" parent="Hub/Onboarding"]
+position = Vector3(-0.65, 1.25, 0.9)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Onboarding/Panel"]
+shape = SubResource("HubTargetShape")
+
+[node name="Visual" type="MeshInstance3D" parent="Hub/Onboarding/Panel"]
+mesh = SubResource("HubTargetMesh")
+material_override = SubResource("Metal")
+
+[node name="InteractionTarget" type="Node" parent="Hub/Onboarding/Panel"]
+script = ExtResource("Target")
+prompt = "Взаимодействовать"
+enabled = true
+
+[node name="Lens" type="Area3D" parent="Hub/Onboarding"]
+position = Vector3(-1.7, 1.15, 0.2)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Onboarding/Lens"]
+shape = SubResource("HubTargetShape")
+
+[node name="Visual" type="MeshInstance3D" parent="Hub/Onboarding/Lens"]
+mesh = SubResource("LensMesh")
+material_override = SubResource("LensMaterial")
+
+[node name="InteractionTarget" type="Node" parent="Hub/Onboarding/Lens"]
+script = ExtResource("Target")
+prompt = "Взять"
+enabled = false
+
+[node name="Socket" type="Area3D" parent="Hub/Onboarding"]
+position = Vector3(0.45, 1.4, 0.8)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Onboarding/Socket"]
+shape = SubResource("HubTargetShape")
+
+[node name="Visual" type="MeshInstance3D" parent="Hub/Onboarding/Socket"]
+mesh = SubResource("HubTargetMesh")
+material_override = SubResource("LensMaterial")
+
+[node name="InteractionTarget" type="Node" parent="Hub/Onboarding/Socket"]
+script = ExtResource("Target")
+prompt = "Установить"
+enabled = false
+
+[node name="Lever" type="Area3D" parent="Hub/Onboarding"]
+position = Vector3(0.95, 1.15, 0.45)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Onboarding/Lever"]
+shape = SubResource("HubTargetShape")
+
+[node name="Visual" type="MeshInstance3D" parent="Hub/Onboarding/Lever"]
+mesh = SubResource("HubTargetMesh")
+material_override = SubResource("Metal")
+
+[node name="InteractionTarget" type="Node" parent="Hub/Onboarding/Lever"]
+script = ExtResource("Target")
+prompt = "Активировать"
+enabled = false

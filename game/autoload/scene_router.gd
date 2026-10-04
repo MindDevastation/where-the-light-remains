@@ -189,6 +189,18 @@ func _route_owned() -> bool:
 
 
 func request_registered_stage(stage_id: StringName, saved: SaveGame = null, checkpoint_before: bool = false) -> Error:
+    return await _request_stage(stage_id, saved, checkpoint_before, false)
+
+
+func request_progression_stage(stage_id: StringName, target: SaveGame, checkpoint_before: bool = false) -> Error:
+    # Explicit live progression: keep feet/camera while committing a validated
+    # next milestone DTO. This is not a load API and never discards a load spawn.
+    if target == null:
+        return ERR_INVALID_DATA
+    return await _request_stage(stage_id, target, checkpoint_before, true)
+
+
+func _request_stage(stage_id: StringName, saved: SaveGame, checkpoint_before: bool, progression: bool) -> Error:
     # Serialized transaction; old callbacks stay frozen until commit/rollback.
     if _transition_in_progress or _preload_in_progress or get_tree().paused:
         return ERR_BUSY
@@ -211,8 +223,10 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
     if target.stage_id != stage_id or target.copy_validated() == null:
         return ERR_INVALID_DATA
     var in_place := definition.presentation == StageDefinition.Presentation.IN_PLACE or (String(original.stage_id).begins_with("s14_") and String(stage_id).begins_with("s15_"))
+    if progression and not in_place:
+        return ERR_UNAVAILABLE
     if in_place:
-        if saved != null or _world_slot.get_child_count() != 1:
+        if saved != null and not progression or _world_slot.get_child_count() != 1:
             return ERR_UNAVAILABLE
         var existing := _world_slot.get_child(0) as WorldScene
         if existing == null or existing.scene_file_path != definition.scene_path or not existing.supports_stage(stage_id):
