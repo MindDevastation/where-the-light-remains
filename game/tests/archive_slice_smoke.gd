@@ -61,16 +61,19 @@ func _run() -> void:
     var definition := StageDefinition.new()
     definition.stage_id = ArchiveProgress.WING_ONE
     definition.scene_path = "res://worlds/archive/archive_main.tscn"
-    # This fixture enters/loads the world normally, rather than invoking S01 progression.
-    definition.presentation = StageDefinition.Presentation.FADE
-    _check(SceneRouter.register_stage(definition) == OK, "Register normal saved-world entry")
+    definition.presentation = StageDefinition.Presentation.IN_PLACE
+    _check(SceneRouter.register_stage(definition) == OK, "Register shipping live-progression stage")
     var initial := SaveGame.new()
     initial.stage_id = ArchiveProgress.WING_ONE
     initial.checkpoint_id = &"archive_awakened"
     initial.milestones = {"archive_awakened": true, "wing_01_unlocked": true}
     _check(ArchiveProgress.write_projection(initial) == OK, "Project canonical first-wing entry")
     SceneRouter.fade_duration = .02
-    _check(await SceneRouter.request_registered_stage(ArchiveProgress.WING_ONE, initial) == OK, "Enter materialized Archive with safe spawn")
+    _check(await SceneRouter.request_resume_stage(null) == ERR_INVALID_DATA, "Resume rejects absent checkpoint before routing")
+    var before_load := GameState.capture_save().to_dict()
+    _check(await SceneRouter.request_registered_stage(ArchiveProgress.WING_ONE, initial) == ERR_UNAVAILABLE, "Generic live entry cannot reinterpret an IN_PLACE save")
+    _check(slot.get_child_count() == 0 and GameState.capture_save().to_dict() == before_load, "Rejected generic load leaves world and state intact")
+    _check(await SceneRouter.request_resume_stage(initial) == OK, "Explicit checkpoint entry materializes Archive with safe spawn")
     var world := slot.get_child(0) as ArchiveMain
     var rings := world.get_node("Wing01/Room/Rings") as LightRingPuzzle
     var focus := world.get_node("Wing01/Room/Focus") as LightFocusPuzzle
@@ -114,7 +117,7 @@ func _run() -> void:
     _check(InputManager.mode == InputManager.Mode.LIMITED_LOOK, "Dismiss preserves a later input owner")
     InputManager.set_mode(InputManager.Mode.GAMEPLAY)
     _check(presenter.present_fragment(&"star") == ERR_ALREADY_EXISTS, "Collected fragment cannot replay its modal")
-    _check(await SceneRouter.request_registered_stage(ArchiveProgress.WING_ONE, star_save) == OK, "Reload actual Star checkpoint")
+    _check(await SceneRouter.request_resume_stage(star_save) == OK, "Resume actual Star checkpoint in shipping IN_PLACE stage")
     world = slot.get_child(0) as ArchiveMain
     rings = world.get_node("Wing01/Room/Rings") as LightRingPuzzle
     focus = world.get_node("Wing01/Room/Focus") as LightFocusPuzzle
@@ -136,7 +139,7 @@ func _run() -> void:
     _check(backup != null and backup.checkpoint_id == &"star_collected", "Physical backup retains previous valid Star checkpoint")
     presenter.continue_button.pressed.emit()
     _check(InputManager.mode == InputManager.Mode.GAMEPLAY and not presenter.visible, "Continue returns to gameplay")
-    _check(await SceneRouter.request_registered_stage(ArchiveProgress.WING_ONE, hearth_save) == OK, "Reload actual Hearth checkpoint")
+    _check(await SceneRouter.request_resume_stage(hearth_save) == OK, "Resume actual Hearth checkpoint in shipping IN_PLACE stage")
     world = slot.get_child(0) as ArchiveMain
     focus = world.get_node("Wing01/Room/Focus") as LightFocusPuzzle
     presenter = world.get_node("FragmentLayer/FragmentPresenter") as FragmentPresenter

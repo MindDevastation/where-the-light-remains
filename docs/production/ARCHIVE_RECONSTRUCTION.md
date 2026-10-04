@@ -122,6 +122,17 @@ original evidence is retained. The redundant WIP redraw request was removed.
 No software-renderer FPS is used as target-hardware evidence. Boot/S00, authored
 room art/audio and GATE-VS1 remain open.
 
-Next unfinished block: add explicit registered checkpoint-resume routing for
-IN_PLACE Archive stages, then Boot/Continue/S00 integration. Live S01→S02 keeps
-the existing player/world; loading must instead instantiate and use a safe spawn.
+## Explicit checkpoint resume
+
+`SceneRouter.request_resume_stage` validates the checkpoint and uses the normal
+transactional world instantiation/safe-spawn path even when the registry stage
+uses IN_PLACE for live progression. Generic saved IN_PLACE entry remains rejected;
+live S01→S02 retains the existing world/player without a loading cut.
+`resume-validation-1`: clean import and 60 actual S02 assertions PASS with the
+shipping IN_PLACE registry, including cold entry, Star/Hearth primary reload,
+safe spawns and no duplicate pickups/writes. S01 and router pipeline/transaction/
+seamless regressions also PASS. Registry paths are never read from save files.
+
+Next unfinished block: Boot/Continue/S00 integration; explicit New Game must
+preserve prior files and protect future schemas/actual IO obstacles before any
+reset. GATE-VS1 still blocks later wings.

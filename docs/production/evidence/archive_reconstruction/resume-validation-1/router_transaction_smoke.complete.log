@@ -1,0 +1,3 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ROUTER_TRANSACTION PASS: real checkpoint failure/success and backup/dirty order; post-commit audio/state/event rollback; physics settling; disabled/inherited colliders; callbacks/rigid-body modes; absent/steep support; nested/slot spawn

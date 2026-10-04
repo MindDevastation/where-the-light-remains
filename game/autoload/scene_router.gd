@@ -192,6 +192,15 @@ func request_registered_stage(stage_id: StringName, saved: SaveGame = null, chec
     return await _request_stage(stage_id, saved, checkpoint_before, false)
 
 
+func request_resume_stage(saved: SaveGame, checkpoint_before: bool = false) -> Error:
+    # A checkpoint load materializes the registered world and restores its safe
+    # spawn, even when the same stage uses IN_PLACE during live progression.
+    var target := saved.copy_validated() if saved != null else null
+    if target == null:
+        return ERR_INVALID_DATA
+    return await _request_stage(target.stage_id, target, checkpoint_before, false, true)
+
+
 func request_progression_stage(stage_id: StringName, target: SaveGame, checkpoint_before: bool = false) -> Error:
     # Explicit live progression: keep feet/camera while committing a validated
     # next milestone DTO. This is not a load API and never discards a load spawn.
@@ -200,7 +209,7 @@ func request_progression_stage(stage_id: StringName, target: SaveGame, checkpoin
     return await _request_stage(stage_id, target, checkpoint_before, true)
 
 
-func _request_stage(stage_id: StringName, saved: SaveGame, checkpoint_before: bool, progression: bool) -> Error:
+func _request_stage(stage_id: StringName, saved: SaveGame, checkpoint_before: bool, progression: bool, resume: bool = false) -> Error:
     # Serialized transaction; old callbacks stay frozen until commit/rollback.
     if _transition_in_progress or _preload_in_progress or get_tree().paused:
         return ERR_BUSY
@@ -222,7 +231,7 @@ func _request_stage(stage_id: StringName, saved: SaveGame, checkpoint_before: bo
         target.checkpoint_id = &""
     if target.stage_id != stage_id or target.copy_validated() == null:
         return ERR_INVALID_DATA
-    var in_place := definition.presentation == StageDefinition.Presentation.IN_PLACE or (String(original.stage_id).begins_with("s14_") and String(stage_id).begins_with("s15_"))
+    var in_place := not resume and (definition.presentation == StageDefinition.Presentation.IN_PLACE or (String(original.stage_id).begins_with("s14_") and String(stage_id).begins_with("s15_")))
     if progression and not in_place:
         return ERR_UNAVAILABLE
     if in_place:
