@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "guard_count": 11,
+  "utc": "2026-10-04T22:29:35.798930+00:00",
+  "scope": "One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.",
+  "guard_log_sha256": "320ffaf93c18e357909875c19eea05637a42f8d9b2187a279ab62b6835307732",
+  "source_hashes": {
+    "tools/audio_slice.py": "582cac52c7ac5edce4b50647dcea13e41e80174a757fa2668be9ef5376a647c6",
+    "tools/test_audio_slice.py": "63569aec50ec802ee306a8ce140f878bf469dc23e66874bdd959dff35fa0bec3",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/A_Archive/shared/Mechanism Light.wav": "67a7ebe4802b710a82d0fe2b0fa18dc087bc3d0b60d97a31ad0690bb79e73b82",
+    "docs/production/evidence/audio_director/s01-mechanism-review-1/mus_s01_mechanism_light_v01.ogg": "9bed972bbae3b6fae695168dba8051f114b04702fb1eec859f162ef32bd43c72"
+  }
+}

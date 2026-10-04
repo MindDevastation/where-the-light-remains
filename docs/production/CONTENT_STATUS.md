@@ -21,7 +21,7 @@ with playing score. Two reproduced routing/teardown defects are fixed; see
 bindings and full VS1 art/audio/hardware acceptance remain separate work.
 The S00/S01/S02 twelve-source edit/export manifest and measured loudness/PCM
 envelopes are now recorded; five export boundary guards pass. S00 motif interval
-selection and 5 shared S01/S02 review exports/acceptance remain open. Two
+selection and 4 shared S01/S02 review exports/acceptance remain open. Two
 unique review OGGs pass decode measurements and a private cache-free Godot
 import/mixer test (30 assertions), protected saves and main-entry regressions. See
 `audio/README.md` and `AUDIO_SLICE_BRIEF.md`.

@@ -55,9 +55,9 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: export `mus_s01_mechanism_light_v01` as one bounded review family, then checkpoint.
-5/10 finite S01/S02 candidates pass technical export/decode/source
-checks; 5 remain. See `audio/REVIEW_INDEX.md` for exact files/proof.
+Next: export `mus_s01_resonant_puzzle_v01` as one bounded review family, then checkpoint.
+6/10 finite S01/S02 candidates pass technical export/decode/source
+checks; 4 remain. See `audio/REVIEW_INDEX.md` for exact files/proof.
 
 Actual S00
 first-note/common motif selection and listening/scene mix

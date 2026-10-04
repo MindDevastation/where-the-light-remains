@@ -1,0 +1,188 @@
+{
+  "utc": "2026-10-04T22:29:24.311081+00:00",
+  "status": "REMOTE_BRANCH_SOURCE_CONFIRMED",
+  "transport": "Bounded ordinary git fetch --filter=blob:none of all heads; independent object commit timestamps",
+  "session_start_checkpoint": "4eee90586b1efc02d4bb4fea16c1a423f9f0c28d",
+  "session_start_timestamp": "2026-10-05T00:40:57+03:00",
+  "original_local_status": "clean; HEAD equals independently fetched working ref",
+  "working_branch": "origin/feature/04-archive-gameplay/checkpoints-2026-10-04",
+  "other_remote_heads_older_than_session_start": true,
+  "remote_refs": [
+    {
+      "committer_timestamp": "2026-10-05T01:28:01+03:00",
+      "sha": "4cd21455473096a5804b693daf3b71a2f0fec2a9",
+      "ref": "origin/feature/04-archive-gameplay/checkpoints-2026-10-04"
+    },
+    {
+      "committer_timestamp": "2026-10-03T18:59:13+01:00",
+      "sha": "c6818057b96174172b59e29ca0fba187c698c904",
+      "ref": "origin/feature/02-state-saves/audio-director"
+    },
+    {
+      "committer_timestamp": "2026-10-03T20:03:36+03:00",
+      "sha": "2914ec0a0a01a7f4b9a34d89768774451267c68c",
+      "ref": "origin/main"
+    },
+    {
+      "committer_timestamp": "2026-10-03T18:01:52+01:00",
+      "sha": "a2387c9b95b559fa61beb460874374f344710fbc",
+      "ref": "origin/epic/02-state-saves"
+    },
+    {
+      "committer_timestamp": "2026-10-03T17:20:58+03:00",
+      "sha": "c050d9f7a6f02a0b2be5f5497264ee8d0171c226",
+      "ref": "origin/feature/02-state-saves/scene-router"
+    },
+    {
+      "committer_timestamp": "2026-10-03T08:59:02+03:00",
+      "sha": "4c89560434aae65abefb1f9f63dec9fc350ed129",
+      "ref": "origin/feature/02-state-saves/atomic-save"
+    },
+    {
+      "committer_timestamp": "2026-10-03T08:38:02+03:00",
+      "sha": "a95cfbd02a1d920a8159e872dba13c476f0cf0ee",
+      "ref": "origin/feature/02-state-saves/save-dto"
+    },
+    {
+      "committer_timestamp": "2026-10-03T08:16:41+03:00",
+      "sha": "8af368cdc347712303aaca9e02a4982d14c76497",
+      "ref": "origin/epic/01-shell"
+    },
+    {
+      "committer_timestamp": "2026-10-03T08:10:48+03:00",
+      "sha": "fbb62a54e7197052278cfb0644a3da3203eb78ff",
+      "ref": "origin/feature/01-shell/pause-fade-ui"
+    },
+    {
+      "committer_timestamp": "2026-10-03T07:51:40+03:00",
+      "sha": "f1af6c727b9443d70b57564894a85c3ba2b09aef",
+      "ref": "origin/feature/01-shell/settings"
+    },
+    {
+      "committer_timestamp": "2026-10-03T07:17:34+03:00",
+      "sha": "a56663208c7cbaaabbdec33dfc8551f5c515f66f",
+      "ref": "origin/feature/01-shell/player-interaction"
+    },
+    {
+      "committer_timestamp": "2026-10-03T06:49:59+03:00",
+      "sha": "99ddbdeb794b33c52493812b0837f44789b481fd",
+      "ref": "origin/feature/01-shell/input-focus"
+    },
+    {
+      "committer_timestamp": "2026-10-02T18:38:56-07:00",
+      "sha": "d21ee0077d8c34b693b540c44210c1801a72bd31",
+      "ref": "origin/epic/03-art-foundation"
+    },
+    {
+      "committer_timestamp": "2026-10-02T18:33:26-07:00",
+      "sha": "d799a3e4009c4f1700df66acddb7102b18f75758",
+      "ref": "origin/feature/03-art-foundation/wing01-optics-sample"
+    },
+    {
+      "committer_timestamp": "2026-10-02T17:36:33-07:00",
+      "sha": "774b50c52c062173d36a5f37f8ea07c05f393b16",
+      "ref": "origin/feature/03-art-foundation/modular-archive-kit"
+    },
+    {
+      "committer_timestamp": "2026-10-02T16:09:00-07:00",
+      "sha": "feb658a02c41d334804620b1b6ad303df83b864a",
+      "ref": "origin/feature/03-art-foundation/visual-rebaseline-v2"
+    },
+    {
+      "committer_timestamp": "2026-10-02T14:23:23+02:00",
+      "sha": "4f3579ba60e91018ec4eee0b7bdce8317a697785",
+      "ref": "origin/feature/03-art-foundation/modular-kit-contract"
+    },
+    {
+      "committer_timestamp": "2026-10-02T05:42:54+03:00",
+      "sha": "d90b6edff25f1c02b31c4a94334cdc171a10d0a8",
+      "ref": "origin/feature/03-art-foundation/material-library"
+    },
+    {
+      "committer_timestamp": "2026-09-23T13:52:02+03:00",
+      "sha": "5f1044e16c7035cefc4b012697dd98870c9d659c",
+      "ref": "origin/feature/03-art-foundation/graphics-preflight"
+    },
+    {
+      "committer_timestamp": "2026-09-22T15:14:59+03:00",
+      "sha": "e5e704fa25df118bcda0c6a83c41f8883985a0dc",
+      "ref": "origin/feature/03-art-foundation/blender-export"
+    },
+    {
+      "committer_timestamp": "2026-09-21T14:42:13+03:00",
+      "sha": "75bc33f0edd99c0d5e994574a6a4508766f142d2",
+      "ref": "origin/epic/00-foundation"
+    },
+    {
+      "committer_timestamp": "2026-09-21T04:28:36+03:00",
+      "sha": "c9f91d2b04352cd507fa868cce230fb3694d6cde",
+      "ref": "origin/feature/00-foundation/debug-tools"
+    },
+    {
+      "committer_timestamp": "2026-09-21T01:59:17+03:00",
+      "sha": "668a0590272b3478c77723667a7d459351a7f596",
+      "ref": "origin/feature/00-foundation/lfs-forward-config"
+    },
+    {
+      "committer_timestamp": "2026-09-21T01:08:00+03:00",
+      "sha": "9e4a45b57e73f8757d707cbce5be0066186b24f3",
+      "ref": "origin/feature/00-foundation/lfs-history-migration"
+    },
+    {
+      "committer_timestamp": "2026-09-20T11:24:05+03:00",
+      "sha": "ccc0e2153a3661b778c907adf27b88ab71e5b5f2",
+      "ref": "origin/feature/03-art-foundation/pipeline-spec"
+    },
+    {
+      "committer_timestamp": "2026-09-20T11:02:54+03:00",
+      "sha": "b1ccc5cd1d8efaf2b9459dc9a5aabfb5e3b2d70e",
+      "ref": "origin/feature/00-foundation/audio-buses"
+    },
+    {
+      "committer_timestamp": "2026-09-20T05:12:57+03:00",
+      "sha": "51834c47878e16d9ef8332c3bac1d3c8ae3576c9",
+      "ref": "origin/feature/00-foundation/input-map"
+    },
+    {
+      "committer_timestamp": "2026-09-20T00:01:16+03:00",
+      "sha": "c09ccedb406c9720194a810853c17a859cb0b0b2",
+      "ref": "origin/feature/00-foundation/engine-preflight"
+    },
+    {
+      "committer_timestamp": "2026-09-19T18:23:41Z",
+      "sha": "57f86c20a5a81f107a1e0a7536e127b51f76ce1b",
+      "ref": "origin/audio/final-pool-structure"
+    },
+    {
+      "committer_timestamp": "2026-09-19T20:56:17+03:00",
+      "sha": "0eca934b28881e3cceb83fe0d9f76a889c1af37a",
+      "ref": "origin/analysis/audio-reaudit"
+    },
+    {
+      "committer_timestamp": "2026-09-19T18:02:50+03:00",
+      "sha": "66236f12c90f85dc8ddcb4c06592b26b07d21124",
+      "ref": "origin/audio/curation-2026-09-19"
+    },
+    {
+      "committer_timestamp": "2026-09-19T17:35:12+03:00",
+      "sha": "9b24bed118d59c22ca78f74edbf09c5cf16d69a3",
+      "ref": "origin/analysis/audio-audit"
+    },
+    {
+      "committer_timestamp": "2026-09-19T16:49:07+03:00",
+      "sha": "922ba3cf17515d246f4c28a9bd4f00e36be376ec",
+      "ref": "origin/analysis/audio-audit2"
+    },
+    {
+      "committer_timestamp": "2026-09-19T16:49:07+03:00",
+      "sha": "922ba3cf17515d246f4c28a9bd4f00e36be376ec",
+      "ref": "origin/analysis/audio-audit3"
+    },
+    {
+      "committer_timestamp": "2026-09-19T16:49:07+03:00",
+      "sha": "922ba3cf17515d246f4c28a9bd4f00e36be376ec",
+      "ref": "origin/analysis/audio-audit4"
+    }
+  ],
+  "scope": "Read-only source confirmation. No checkout/reset/history rewrite/main update performed."
+}

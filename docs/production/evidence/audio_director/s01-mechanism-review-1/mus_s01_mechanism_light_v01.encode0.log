@@ -1,0 +1,17 @@
+[aist#0:0/pcm_s16le @ 0x55872ef48c80] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/assets/audio/music/A_Archive/shared/Mechanism Light.wav':
+  Metadata:
+    comment         : made with suno; created=2026-09-18T12:44:42Z; id=eb350c34-04b3-4556-8d42-b1c7761367be
+    encoder         : Lavf60.16.100
+  Duration: 00:02:12.76, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Output #0, ogg, to '/tmp/wlr-audio-encode-bynfp6h3/mus_s01_mechanism_light_v01.attempt0.ogg':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+[out#0/ogg @ 0x55872ef483c0] video:0kB audio:2387kB subtitle:0kB other streams:0kB global headers:4kB muxing overhead: 0.870699%
+size=    2408kB time=00:02:12.74 bitrate= 148.6kbits/s speed=69.4x    
