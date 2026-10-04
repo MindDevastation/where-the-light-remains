@@ -34,10 +34,24 @@ func _capture(name: String) -> void:
     var world := get_node("GameRoot/WorldSlot").get_child(0) as ArchiveMain
     var presenter := world.get_node("FragmentLayer/FragmentPresenter") as FragmentPresenter
     var button := presenter.continue_button
+    var bright_button_pixels := 0
+    if presenter.visible:
+        # Verify the rendered text inside the actual button, excluding its border.
+        # Node visibility alone does not establish that the captured UI was drawn.
+        var rect := button.get_global_rect().grow(-5)
+        for y in range(int(rect.position.y), int(rect.end.y)):
+            for x in range(int(rect.position.x), int(rect.end.x)):
+                var pixel := image.get_pixel(x, y)
+                if minf(pixel.r, minf(pixel.g, pixel.b)) > .67:
+                    bright_button_pixels += 1
+        if bright_button_pixels < 200:
+            push_error("Fragment Continue text absent from rendered capture: " + name)
+            get_tree().quit(1)
+            return
     _captures.append({"name": name, "path": path, "width": image.get_width(), "height": image.get_height(),
         "modal_visible": presenter.visible, "button_visible": button.is_visible_in_tree(),
         "button_rect": [button.global_position.x, button.global_position.y, button.size.x, button.size.y],
-        "button_text": button.text})
+        "button_text": button.text, "bright_button_pixels": bright_button_pixels})
 
 
 func _run() -> void:

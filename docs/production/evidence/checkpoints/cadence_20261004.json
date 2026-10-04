@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-04T19:43:22.839899+00:00",
+  "status": "CADENCE_BREACH_RECORDED",
+  "previous_checkpoint": "f1e8f3058a34a5984389d27f10f274676a7457fc",
+  "current_checkpoint": "a91079115b7a1168c5f8c48ac89433aa7a742818",
+  "independently_verified_interval_seconds": 1316.528009,
+  "limit_seconds": 900,
+  "cause": "Overlong graphical assessment block, followed by large transport-output truncation and a corrected chunked Git-data publication. No loss of source or evidence occurred; the WIP state is remotely verified.",
+  "next_policy": "Use 5-8 minute implementation blocks and begin publication before 10 minutes; no active automatic coordinator is claimed."
+}

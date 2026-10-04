@@ -4,9 +4,9 @@
 
 Fresh-session remote recovery, 2026-10-04: ArchiveMain and S01 resumed from the
 verified working branch. Connected S02 now passes 57 real controls/save/return
-assertions, with 101 state and 109 S01 regressions. Native Low/Medium captures confirm the reused optical model, cold/warm
-room response and Cyrillic text; repeated-modal Continue draw remains under
-investigation. Source/evidence are durably published
+assertions, with 101 state and 109 S01 regressions. Eight native Low/Medium views
+confirm the reused optical model, cold/warm room response and complete readable
+Cyrillic modals, with rendered Continue text assertions. Source/evidence are durably published
 on the working branch; `main` is unchanged. Boot/S00, final room art/audio and
 GATE-VS1 remain open. See `ARCHIVE_RECONSTRUCTION.md` and its current receipts.
 

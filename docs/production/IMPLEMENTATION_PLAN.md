@@ -21,8 +21,9 @@ physical save retry, quiet restore and continuous return walking. See
 - [x] Reconstruct ArchiveMain/S01/S02 logic and connect T019. Current clean-copy
   checks: 101 state assertions, 109 S01 assertions and 57 S02 assertions including
   actual E rays, directory IO failure/retry, primary/backup, quiet reload and
-  physical corridor/Hub return. Native Low/Medium captures confirm the reused optics carrier and Cyrillic
-  text; repeated-modal Continue draw remains under investigation. Missing later
+  physical corridor/Hub return. Eight native Low/Medium views confirm the reused
+  optics carrier, cold/warm response and readable complete Cyrillic modals;
+  Continue text is also asserted in the captured pixels. Missing later
   wing ground stays blocked despite the logical next-route indication.
   Boot/S00, authored room art/audio and full VS1 remain open.
 - [ ] `GATE-VS1`: full S00→S01→S02, authored art/audio and target-hardware profile.

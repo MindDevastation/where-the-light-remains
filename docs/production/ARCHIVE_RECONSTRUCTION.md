@@ -97,7 +97,9 @@ parent and staged-tree identity. `tools/checkpoint_gitdata.py` prepares a review
 source/evidence delta snapshot and verifies each guarded local fast-forward.
 It excludes immutable masters/object packs/toolchains and is not a full archive.
 The token-dependent old coordinator is not claimed active in this environment;
-event checkpoints are invoked explicitly within the owner's 15-minute limit.
+event checkpoints are invoked explicitly. The 19:17→19:39 interval exceeded
+the owner's 15-minute limit; `evidence/checkpoints/cadence_20261004.json` records
+the breach and shorter publication blocks. No uninterrupted cadence is claimed.
 
 ## Physical return / graphical review checkpoint
 
@@ -108,10 +110,18 @@ Hub with continuous ground. An actual return trigger pulses the shared channel
 once without mutating save data. Logical Wing II readiness remains visible;
 its unbuilt passage cannot open into absent ground.
 
-Native captures 1/2/3 remain incomplete: the Low second modal intermittently
-lacks the Continue draw despite a visible node and viewport-safe rectangle.
-A production focus-release/redraw fix is WIP; no complete modal graphical PASS
-is claimed yet. Earlier inspected carrier/cold-warm/Cyrillic findings remain
-valid, but the eight-view UI acceptance must be repeated on the fixed source.
+`modal-validation-1/results.json`: clean-copy import and 57/101/109 assertions
+PASS with explicit modal button focus release. `slice-graphical-4/review.json`:
+eight inspected 1920×1080 Low/Medium native Forward+ views PASS, including
+readable intact Star/Hearth modals and rendered Continue text. The fixture
+verifies 806 bright interior text pixels in all four actual modal captures.
+The earlier missing-button annotation was an incorrect visual assessment:
+reinspection and raw PNG pixel counts establish the button in all twelve
+historical captures. `modal_assessment_correction.json` supersedes that annotation;
+original evidence is retained. The redundant WIP redraw request was removed.
 No software-renderer FPS is used as target-hardware evidence. Boot/S00, authored
 room art/audio and GATE-VS1 remain open.
+
+Next unfinished block: add explicit registered checkpoint-resume routing for
+IN_PLACE Archive stages, then Boot/Continue/S00 integration. Live S01→S02 keeps
+the existing player/world; loading must instead instantiate and use a safe spawn.

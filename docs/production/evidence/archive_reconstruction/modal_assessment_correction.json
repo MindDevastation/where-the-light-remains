@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-04T19:43:22.839551+00:00",
+  "status": "ASSESSMENT_CORRECTION",
+  "records": [
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-1/fragment_star_low.png",
+      "sha256": "87caf95f0bdaa50c43fdc6c342952e5ae5e152cd66fd1a6e1a14569dd0f6bd07",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-1/fragment_hearth_low.png",
+      "sha256": "8e2eb4c2621f87fe46192856a825ff0ba6fbc48d48d1090e8a18e803e9bd655e",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-1/fragment_star_medium.png",
+      "sha256": "673bb20dc3402ca03ada5d27dd66a32b65ed34db9e6a0280bc068d1ccf3d738d",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-1/fragment_hearth_medium.png",
+      "sha256": "b509f739d46b30815a8fcc83b44f66a61e388e870d79f1a5f549b4a78b6b2885",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-2/fragment_star_low.png",
+      "sha256": "87caf95f0bdaa50c43fdc6c342952e5ae5e152cd66fd1a6e1a14569dd0f6bd07",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-2/fragment_hearth_low.png",
+      "sha256": "6f1eff4d87ad37cd4ff2e0d3f489234edb30395ceb89bfddb345e76a5d4fad77",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-2/fragment_star_medium.png",
+      "sha256": "673bb20dc3402ca03ada5d27dd66a32b65ed34db9e6a0280bc068d1ccf3d738d",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-2/fragment_hearth_medium.png",
+      "sha256": "0edf11131675920400e448671d9365ad6e82d1bea1ed364cc4b68313cfa7673c",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-3/fragment_star_low.png",
+      "sha256": "87caf95f0bdaa50c43fdc6c342952e5ae5e152cd66fd1a6e1a14569dd0f6bd07",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-3/fragment_hearth_low.png",
+      "sha256": "f6f7e746344e355aeca6b70648a83876bb45dc4b3542d8bdc6159d2a4f4b6dc1",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-3/fragment_star_medium.png",
+      "sha256": "673bb20dc3402ca03ada5d27dd66a32b65ed34db9e6a0280bc068d1ccf3d738d",
+      "bright_button_interior_pixels": 806
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/slice-graphical-3/fragment_hearth_medium.png",
+      "sha256": "1f52fdb1261e9076671ec7ec2405ef8bd4840f44b4d96d1efff25b4242ff3d38",
+      "bright_button_interior_pixels": 806
+    }
+  ],
+  "correction": "All 12 captured fragment images have 806 bright interior pixels for the Continue text. A fresh inspection also confirms the Low second modal button. The previous missing-button annotation was an incorrect visual assessment; it is superseded, not evidence of a reproduced runtime defect. Original images/receipts are preserved. Capture 4 adds rendered-pixel assertions and verifies explicit focus release.",
+  "scope": "Historical capture assessment only; full eight-view acceptance uses current capture-4 source."
+}

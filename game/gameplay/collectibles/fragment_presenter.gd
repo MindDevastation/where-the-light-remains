@@ -96,7 +96,6 @@ func present_fragment(id: StringName) -> Error:
     _mode_revision = InputManager.mode_revision
     continue_button.release_focus()
     show()
-    continue_button.queue_redraw()
     continue_button.grab_focus()
     return OK
 
