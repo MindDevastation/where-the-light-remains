@@ -1,0 +1,40 @@
+{
+  "name": "review_all_completed_low",
+  "command": [
+    "python3",
+    "/tmp/wlr-route-clean-1btahee_/source/tools/run_graphical.py",
+    "--graphics-prefix",
+    "/workspace/scratch/4f0b36b4bb0e/toolchain/graphics",
+    "--godot",
+    "/workspace/scratch/4f0b36b4bb0e/toolchain/session-recovery-20261004-1455/verified-godot/Godot_v4.7.2-stable_linux.x86_64",
+    "--timeout",
+    "100",
+    "--expect",
+    "ROUTE_REVIEW PASS:",
+    "--",
+    "--path",
+    "game",
+    "res://tests/archive_route_review.tscn",
+    "--",
+    "--view=all_completed_low",
+    "--output=/workspace/scratch/4f0b36b4bb0e/wlr-reconstruction/docs/production/evidence/archive_route/validated/all_completed_low.png",
+    "--metadata=/workspace/scratch/4f0b36b4bb0e/wlr-reconstruction/docs/production/evidence/archive_route/validated/all_completed_low.json"
+  ],
+  "started_at": "2026-10-04T15:38:40.127267+00:00",
+  "exit_code": 0,
+  "timeout": false,
+  "finished_at": "2026-10-04T15:38:42.519862+00:00",
+  "stdout_bytes": 2561,
+  "stdout_sha256": "966174462df2d27429e2a37887b1ddd6cffef9d9e4a4e0b8285dd3174c211409",
+  "passed": true,
+  "protected_before": {
+    "savegame.json": "0269f0683885c76113507ebcc14554fdac605cebb26ca15301411eaa556039cd",
+    "savegame.backup.json": "5dd3d3c998b4822d412c8119e47fa1d13f8367dc57c6431a55e7727f7c2dd8e6",
+    "settings.cfg": "absent"
+  },
+  "protected_after": {
+    "savegame.json": "0269f0683885c76113507ebcc14554fdac605cebb26ca15301411eaa556039cd",
+    "savegame.backup.json": "5dd3d3c998b4822d412c8119e47fa1d13f8367dc57c6431a55e7727f7c2dd8e6",
+    "settings.cfg": "absent"
+  }
+}

@@ -43,8 +43,11 @@ ownership; malformed/missing/queued/replaced bindings; unchanged global
 SaveGame/dirty/input and actual primary/backup files; actual Low Forward+ route
 readability without volumetrics/glow. Only new component tests are run.
 
-Status: implementation in progress. T019 integration in the historically
-accepted newer ArchiveMain remains open because that source is absent in this
-environment. The isolated proof does not close T018/T019 or GATE-VS1, restore
+Status: **PASS for the isolated components**, source
+`d757a084c0773c9108f4d1fcbb95eb60bebf3dfd`; seven clean commands, 147 assertions
+in headless and Forward+, four inspected Low/Medium views and unchanged actual
+slot files. See `evidence/archive_route/README.md` for complete receipts and scope.
+T019 integration in the historically accepted newer ArchiveMain remains open
+because that source is absent in this environment. The isolated proof does not close T018/T019 or GATE-VS1, restore
 missing Boot/fragment controllers, or authorize starting S03. No target-GPU,
 Windows, full audio/art or release-performance acceptance is implied.

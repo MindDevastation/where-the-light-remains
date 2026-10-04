@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/workspace/scratch/4f0b36b4bb0e/toolchain/session-recovery-20261004-1455/verified-godot/Godot_v4.7.2-stable_linux.x86_64",
+    "--version"
+  ],
+  "exit_code": 0,
+  "stdout_bytes": 32,
+  "sha256": "edff16c1721dd4ae989cadf29a01f574ae8d51b118221f664725bd6980bbba5d",
+  "accepted": false
+}

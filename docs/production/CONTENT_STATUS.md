@@ -2,6 +2,14 @@
 
 ## Current phase
 
+Recovery source availability, 2026-10-04: newer local Boot/ArchiveMain/S02 source
+and snapshots are absent from the reconnected filesystem. Exact published text
+baseline was restored separately; historical later results do not certify absent
+files. Shared T019 gate/channel components now pass seven clean commands, 147
+assertions in headless and Forward+, and four inspected Low/Medium graybox views.
+Actual Archive progression integration and full VS1 remain open. See
+`SESSION_RECOVERY_2026-10-04_14-53.md` and `ARCHIVE_ROUTE_PRESENTATION.md`.
+
 **Implementation preflight / initial implementation.**
 
 ## Ready
