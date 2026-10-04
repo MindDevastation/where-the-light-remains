@@ -50,9 +50,10 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: export `mus_s02_cold_to_warm_v01` into a new review evidence family and
-checkpoint, then privately cache-free import/mixer-test the two exact unique
-OGGs in Godot. Continue one candidate family at a time. Actual S00
+Next: privately cache-free import/mixer-test the exact S01/S02 unique review
+OGGs in Godot, checking finite playback/crossfade/duck and protected saves. Both
+unique exports are complete with source protection and eight boundary guards;
+S02 measurement/recipe is in `s02-unique-review-1/`. Continue one candidate family at a time. Actual S00
 first-note/common motif selection and listening/scene mix
 remain pending; do not bind unaccepted candidates to shipping scenes. There are
 currently no runtime music derivatives and no ambience/SFX media. Existing

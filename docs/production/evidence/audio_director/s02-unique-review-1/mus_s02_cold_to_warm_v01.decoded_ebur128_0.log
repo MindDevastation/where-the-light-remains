@@ -1,0 +1,29 @@
+Input #0, ogg, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/audio_director/s02-unique-review-1/mus_s02_cold_to_warm_v01.attempt0.ogg':
+  Duration: 00:02:07.96, start: 0.000000, bitrate: 135 kb/s
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+Stream mapping:
+  Stream #0:0 -> #0:0 (vorbis (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+[out#0/null @ 0x5636f0ef1ac0] video:0kB audio:23992kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:02:07.90 bitrate=N/A speed= 140x    
+[Parsed_ebur128_0 @ 0x5636f0f1e580] Summary:
+
+  Integrated loudness:
+    I:         -16.5 LUFS
+    Threshold: -26.7 LUFS
+
+  Loudness range:
+    LRA:         9.1 LU
+    Threshold: -36.6 LUFS
+    LRA low:   -22.6 LUFS
+    LRA high:  -13.5 LUFS
+
+  True peak:
+    Peak:       -3.6 dBFS

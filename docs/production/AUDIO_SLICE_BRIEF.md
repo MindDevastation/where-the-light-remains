@@ -48,8 +48,10 @@ compressed format/decode/duration/true-peak/source protection in
 -15.9 LUFS / 8.0 LU LRA / -3.1 dBTP, no gain adjustment. Seven export guards pass.
 It remains unbound; no Godot import or musical acceptance is claimed yet.
 
-Next export `mus_s02_cold_to_warm_v01` into a new review family and checkpoint,
-then validate both exact OGGs with a private cache-free Godot import/mixer run.
+The S02 unique review derivative now also passes in `s02-unique-review-1/`: 127.96 s, 2,168,261 bytes, -16.5 LUFS / 9.1 LU LRA / -3.6 dBTP; no gain adjustment. Eight boundary guards include timeout diagnostics.
+
+Next validate both exact unique OGGs with a private cache-free Godot import/mixer
+run, preserving protected save slots and leaving shipping bindings absent.
 Listening/scene-mix/motif acceptance remains pending. Identify the
 actual S00 first-note excerpt and common Archive motif from the source material;
 do not infer identical motifs across generated takes.

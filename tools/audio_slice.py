@@ -32,12 +32,19 @@ def stamp():
 
 def command(args, output, timeout=45):
     started = stamp()
-    result = subprocess.run(args, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
-                            stderr=subprocess.STDOUT, timeout=timeout, check=False)
+    timed_out = False
+    try:
+        result = subprocess.run(args, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
+                                stderr=subprocess.STDOUT, timeout=timeout, check=False)
+    except subprocess.TimeoutExpired as error:
+        timed_out = True
+        # subprocess.run already kills/reaps this exact child. Preserve its output.
+        result = subprocess.CompletedProcess(args, -1, error.stdout or b'')
     output.write_bytes(result.stdout)
     with (output.parent / 'commands.jsonl').open('a') as record:
         record.write(json.dumps({'command': args, 'started_at': started, 'finished_at': stamp(),
                                 'timeout_seconds': timeout, 'exit_code': result.returncode,
+                                'timed_out': timed_out,
                                 'stdout_file': output.name, 'stdout_sha256': digest(output)}) + '\n')
     if result.returncode:
         raise RuntimeError(f'Command failed ({result.returncode}): {args[0]}; see {output}')
@@ -143,6 +150,8 @@ def execute(args):
             raise ValueError('Select one known canonical cue')
         interval(selected[0])  # Reject unresolved S00 before creating anything.
     output.mkdir(parents=True, exist_ok=False)
+    (output / '.gitattributes').write_text('# Preserve exact FFmpeg process log whitespace.\n'
+                                         '*.log whitespace=-blank-at-eof,-blank-at-eol\n')
     result = {'status': 'RUNNING', 'acceptance': 'TECHNICAL_REVIEW_ONLY_UNBOUND',
               'started_at': stamp(), 'operation': args.operation,
               'manifest_sha256': digest(MANIFEST),

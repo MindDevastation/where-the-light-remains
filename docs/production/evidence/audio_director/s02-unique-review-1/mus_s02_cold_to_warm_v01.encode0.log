@@ -1,0 +1,17 @@
+[aist#0:0/pcm_s16le @ 0x55b7b4984c40] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/assets/audio/music/B_Wings/stages/S02_Warmth_Light/unique/Cold to Warm.wav':
+  Metadata:
+    comment         : made with suno; created=2026-09-18T12:47:36Z; id=c80909ef-fdfd-4436-b0ee-4ed396efa040
+    encoder         : Lavf60.16.100
+  Duration: 00:02:07.96, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Output #0, ogg, to '/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/audio_director/s02-unique-review-1/mus_s02_cold_to_warm_v01.attempt0.ogg':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+[out#0/ogg @ 0x55b7b4984380] video:0kB audio:2098kB subtitle:0kB other streams:0kB global headers:4kB muxing overhead: 0.927227%
+size=    2117kB time=00:02:07.95 bitrate= 135.6kbits/s speed=  70x    

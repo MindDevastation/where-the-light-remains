@@ -60,6 +60,18 @@ class ExportProtection(unittest.TestCase):
         for value in [float('nan'), float('inf'), 0]:
             self._reject_manifest_edit(lambda m: m.update(candidate_true_peak_ceiling_dbtp=value), 'safety ceiling')
 
+    def test_timed_out_child_preserves_diagnostics(self):
+        with tempfile.TemporaryDirectory() as parent:
+            output = audio.Path(parent) / 'bounded.log'
+            failure = audio.subprocess.TimeoutExpired(['ffmpeg'], 45, output=b'partial progress\n')
+            with patch.object(audio.subprocess, 'run', side_effect=failure):
+                with self.assertRaisesRegex(RuntimeError, 'Command failed'):
+                    audio.command(['ffmpeg'], output)
+            self.assertEqual(output.read_bytes(), b'partial progress\n')
+            record = audio.json.loads((output.parent / 'commands.jsonl').read_text())
+            self.assertTrue(record['timed_out'])
+            self.assertEqual(record['stdout_sha256'], audio.digest(output))
+
 
 if __name__ == '__main__':
     unittest.main()

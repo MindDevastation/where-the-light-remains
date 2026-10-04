@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "S02 finite review Vorbis decode/format/duration/true peak, eight guards including bounded child diagnostics. Godot/listening/mix acceptance not claimed.",
+  "guard_count": 8,
+  "source_hashes": {
+    "tools/audio_slice.py": "0b41ea000cab3f324fbfe1d93970b25018bc07ad5f41c6a7af8a54d3578d6e58",
+    "tools/test_audio_slice.py": "d0df660051abadb44522d70df9462b4d3e3979777770eed77607a3919812b9c6",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/B_Wings/stages/S02_Warmth_Light/unique/Cold to Warm.wav": "ccbf2c5fbc700df6f077863c11c37fb7a962f7efd95d793b51dbce4951a96a39",
+    "docs/production/evidence/audio_director/s02-unique-review-1/mus_s02_cold_to_warm_v01.ogg": "e778b49e6d0954fd647b5482a7b8d02f9c60606f34007f8b66fe0f18d38bf33a"
+  }
+}
