@@ -1,0 +1,22 @@
+{
+  "restored_utc": "2026-10-04T16:51:38.484699+00:00",
+  "status": "PASS",
+  "blob_sha": "1c38614f5ede019d3a3f8eb0fed53de210ef6dac",
+  "bytes": 1060,
+  "source_url": "https://api.github.com/repos/MindDevastation/where-the-light-remains/git/blobs/1c38614f5ede019d3a3f8eb0fed53de210ef6dac",
+  "method": "Verified immutable GitHub blob -> Git hash-object, as established by hydrate_head_blobs.py; no worktree file or ref changed.",
+  "incremental_checkpoint_closure": "123 reachable objects above published c6818057, no missing objects.",
+  "local_old_object_caches": "Object absent in both preserved older worktrees.",
+  "scope": "Ordinary .gitattributes blob from another published tree, needed by pack traversal; no asset/LFS hydration or rewrite.",
+  "additional_blobs": [
+    {
+      "restored_utc": "2026-10-04T16:58:06.247981+00:00",
+      "status": "PASS",
+      "sha": "37854546121a4e33916eb2183bb1c57a8c383f48",
+      "bytes": 420,
+      "path_kind": ".gitattributes from an older published tree",
+      "method": "Immutable GitHub blob, verified Git SHA-1 and inserted only into object cache",
+      "worktree_and_refs_unchanged": true
+    }
+  ]
+}

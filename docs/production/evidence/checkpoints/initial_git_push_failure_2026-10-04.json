@@ -1,0 +1,13 @@
+{
+  "command": [
+    "git",
+    "push",
+    "origin",
+    "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+  ],
+  "exit_code": 128,
+  "stdout": "",
+  "stderr": "fatal: could not read Username for 'https://github.com': No such device or address\n",
+  "resolution": "Previously installed verified gh 2.101.0; GH_TOKEN supplied privately to a single process environment; gh auth status/user and repository push permission PASS; gh auth setup-git followed by authenticated normal push.",
+  "credential_value_saved": false
+}

@@ -35,9 +35,73 @@
         "evidence_payloads": 41,
         "rerun": false
       },
+      "checkpoint_commit": "127a7dfb832250575797ec474767069905459986",
+      "remote_status": "PASS",
+      "remote_sha": "127a7dfb832250575797ec474767069905459986",
+      "push_verified_utc": "2026-10-04T17:01:19.572886+00:00"
+    },
+    {
+      "snapshot_started_utc": "2026-10-04T16:53:36.902596+00:00",
+      "snapshot_finished_utc": "2026-10-04T16:53:37.134621+00:00",
+      "archive": "wlr-snapshot-20261004T165337237370Z.tar.gz",
+      "archive_sha256": "716fb61753355378c0b07678687256c34451e9164fbe7fb89472f093bea97b8d",
+      "archive_verified_payloads": 1009,
+      "archive_verification_status": "PASS; HEAD recoverable; available_objects",
+      "head_at_snapshot": "127a7dfb832250575797ec474767069905459986",
+      "working_branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+      "gap_from_preceding_seconds": 930.919423,
+      "cadence_within_900_seconds": false,
+      "stage": "T019 accepted; source/evidence remote checkpoint transport recovery",
+      "tests": {
+        "status": "PASS",
+        "accepted_source": "d757a084c0773c9108f4d1fcbb95eb60bebf3dfd",
+        "commands": 7,
+        "source_hashes": 163,
+        "evidence_payloads": 41,
+        "rerun": false
+      },
       "checkpoint_commit": null,
-      "remote_status": "PREPARED; not yet published",
-      "remote_sha": null
+      "remote_status": "Source checkpoint 127a7df is verified; new transport receipts await their coherent documentation checkpoint.",
+      "uncommitted_at_snapshot": [
+        "docs/production/evidence/checkpoints/transport_2026-10-04.json",
+        "docs/production/evidence/checkpoints/object_restore_2026-10-04.json"
+      ]
+    },
+    {
+      "snapshot_started_utc": "2026-10-04T16:57:20.648355+00:00",
+      "snapshot_finished_utc": "2026-10-04T16:57:21.089399+00:00",
+      "archive": "wlr-snapshot-20261004T165721206957Z.tar.gz",
+      "archive_sha256": "d705dd4a9634a3363e541b43f86268a43e437774e819c36b98f3c3239af89712",
+      "archive_verified_payloads": 1009,
+      "archive_verification_status": "PASS; HEAD recoverable; available_objects",
+      "head_at_snapshot": "127a7dfb832250575797ec474767069905459986",
+      "working_branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+      "gap_from_preceding_seconds": 223.745759,
+      "cadence_within_900_seconds": true,
+      "stage": "T019 accepted; source/evidence remote checkpoint transport recovery",
+      "tests": {
+        "status": "PASS",
+        "accepted_source": "d757a084c0773c9108f4d1fcbb95eb60bebf3dfd",
+        "commands": 7,
+        "source_hashes": 163,
+        "evidence_payloads": 41,
+        "rerun": false
+      },
+      "checkpoint_commit": null,
+      "remote_status": "Source checkpoint 127a7df is verified; new transport receipts await their coherent documentation checkpoint.",
+      "uncommitted_at_snapshot": [
+        "docs/production/evidence/checkpoints/transport_2026-10-04.json",
+        "docs/production/evidence/checkpoints/object_restore_2026-10-04.json"
+      ]
     }
-  ]
+  ],
+  "cadence": {
+    "nominal_seconds": 900,
+    "manual_miss_seconds": 30.919423,
+    "manual_miss_acknowledged": true,
+    "remedy": "Verified foreground timer started before the 16:57:20 UTC collection; managed execution session 31318.",
+    "timer_session": 31318,
+    "timer_ceiling_utc": "2026-10-04T17:30:00Z",
+    "timer_scope": "Checkpoint maintenance task only; stop this owned session when its work completes; no new three-hour development interval."
+  }
 }

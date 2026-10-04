@@ -84,3 +84,32 @@ source identities, 147 behavioral assertions and four inspected native images.
 See `evidence/archive_route/README.md` and the current checkpoint receipts.
 Only the isolated stage is stable; full ArchiveMain/Boot/S02 reconstruction and
 T019 integration remain open. No old historical source is assigned new PASS.
+
+The first remote checkpoint is
+`127a7dfb832250575797ec474767069905459986`, verified on the working branch at
+2026-10-04 17:01:19 UTC. Its complete local commit history was preserved by normal
+Git push. The following receipt commits carry the actual transport/checkpoint
+logs. Use the newest remote branch tip during later recovery.
+
+In this environment, use the existing official gh 2.101.0 portable binary.
+Authenticated `gh auth status`, `gh api user --jq .login` and repository push
+permission passed for MindDevastation; `gh auth setup-git` enables Git's helper.
+Supply GH_TOKEN through the session's private credential input/environment,
+never a remote URL, repository file, command argument or evidence value.
+The credential remains necessary in that process environment when the helper
+has no persistent login. Do not interpret an anonymous read as write access.
+
+The reconstructed partial clone initially lacked six small historical ordinary
+blobs needed during packing. Restore requested objects using the already
+documented `hydrate_head_blobs.py` method: immutable GitHub blob metadata,
+byte length and Git SHA-1 verification, then `git hash-object -w --no-filters`.
+Only the object cache changed. The checkpoint's 123-object incremental closure
+above published c6818057 was already complete; no full asset hydration, file
+replacement, history/LFS rewrite, missing-object suppression or hook bypass was
+used. Exact failed attempts and restorations remain in checkpoint evidence.
+
+The 16:38:05 to 16:53:36 UTC manual gap was 930.919423 seconds, exceeding the
+900-second requirement by 30.919423 seconds. It is recorded as a cadence miss.
+The verified foreground timer was then started and monitored for the remainder
+of this checkpoint task. Start that timer at the beginning of future active
+work, including recovery tasks that may exceed 15 minutes.

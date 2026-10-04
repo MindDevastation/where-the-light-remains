@@ -1,0 +1,47 @@
+{
+  "branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+  "records": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "started_utc": "2026-10-04T16:54:44.827029+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "127a7dfb832250575797ec474767069905459986\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T16:54:44.830627+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "started_utc": "2026-10-04T16:54:44.831009+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T16:54:44.833618+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T16:54:44.833837+00:00",
+      "exit_code": 1,
+      "timeout": false,
+      "stdout": "",
+      "stderr": "warning: lazy fetching disabled; some objects may not be available\nfatal: could not fetch 37854546121a4e33916eb2183bb1c57a8c383f48 from promisor remote\nfatal: the remote end hung up unexpectedly\nsend-pack: unexpected disconnect while reading sideband packet\nerror: failed to push some refs to 'https://github.com/MindDevastation/where-the-light-remains.git'\nfatal: the remote end hung up unexpectedly\n",
+      "finished_utc": "2026-10-04T16:54:53.045041+00:00"
+    }
+  ],
+  "status": "FAILED_BEFORE_REF_PUBLICATION",
+  "note": "Second attempt requested missing ordinary attributes blob 37854546121a4e33916eb2183bb1c57a8c383f48; exact command output preserved."
+}

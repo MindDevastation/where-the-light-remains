@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "checkpoint_commit": "127a7dfb832250575797ec474767069905459986",
+  "verified_utc": "2026-10-04T17:01:19.572886+00:00",
+  "branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+  "records": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "started_utc": "2026-10-04T16:54:44.827029+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "127a7dfb832250575797ec474767069905459986\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T16:54:44.830627+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "started_utc": "2026-10-04T16:54:44.831009+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T16:54:44.833618+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T16:54:44.833837+00:00",
+      "exit_code": 1,
+      "timeout": false,
+      "stdout": "",
+      "stderr": "warning: lazy fetching disabled; some objects may not be available\nfatal: could not fetch 37854546121a4e33916eb2183bb1c57a8c383f48 from promisor remote\nfatal: the remote end hung up unexpectedly\nsend-pack: unexpected disconnect while reading sideband packet\nerror: failed to push some refs to 'https://github.com/MindDevastation/where-the-light-remains.git'\nfatal: the remote end hung up unexpectedly\n",
+      "finished_utc": "2026-10-04T16:54:53.045041+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "started_utc": "2026-10-04T16:59:44.409615+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "127a7dfb832250575797ec474767069905459986\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T16:59:44.416061+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "started_utc": "2026-10-04T16:59:44.416384+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T16:59:44.418949+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T16:59:44.419163+00:00",
+      "exit_code": 1,
+      "timeout": false,
+      "stdout": "",
+      "stderr": "warning: lazy fetching disabled; some objects may not be available\nfatal: could not fetch 8c1452e325a5c03fb8ddd36584f683b7174513e9 from promisor remote\nfatal: the remote end hung up unexpectedly\nsend-pack: unexpected disconnect while reading sideband packet\nfatal: the remote end hung up unexpectedly\nerror: failed to push some refs to 'https://github.com/MindDevastation/where-the-light-remains.git'\n",
+      "finished_utc": "2026-10-04T16:59:54.551120+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/4f0b36b4bb0e/toolchain/gh_2.101.0_linux_amd64/bin/gh",
+        "api",
+        "repos/MindDevastation/where-the-light-remains/git/blobs/8c1452e325a5c03fb8ddd36584f683b7174513e9"
+      ],
+      "started_utc": "2026-10-04T16:59:54.551808+00:00",
+      "stdout_bytes": 8609,
+      "stdout_sha256": "5361b7fbe41fabf6d0970ccc8502d23191d154e3e4c4fda2126b49945f9e1296",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "[successful immutable-object response retained in memory only]",
+      "stderr": "",
+      "finished_utc": "2026-10-04T17:00:08.902189+00:00"
+    },
+    {
+      "operation": "restore verified immutable blob only",
+      "sha": "8c1452e325a5c03fb8ddd36584f683b7174513e9",
+      "bytes": 6025,
+      "utc": "2026-10-04T17:00:08.907004+00:00",
+      "source_worktree_unchanged": true
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T17:00:08.907322+00:00",
+      "exit_code": 1,
+      "timeout": false,
+      "stdout": "",
+      "stderr": "warning: lazy fetching disabled; some objects may not be available\nfatal: could not fetch 7be597a386a2a20ca9ba7b89ffcf60304287ef7a from promisor remote\nfatal: the remote end hung up unexpectedly\nsend-pack: unexpected disconnect while reading sideband packet\nfatal: the remote end hung up unexpectedly\nerror: failed to push some refs to 'https://github.com/MindDevastation/where-the-light-remains.git'\n",
+      "finished_utc": "2026-10-04T17:00:17.672874+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/4f0b36b4bb0e/toolchain/gh_2.101.0_linux_amd64/bin/gh",
+        "api",
+        "repos/MindDevastation/where-the-light-remains/git/blobs/7be597a386a2a20ca9ba7b89ffcf60304287ef7a"
+      ],
+      "started_utc": "2026-10-04T17:00:17.673518+00:00",
+      "stdout_bytes": 3571,
+      "stdout_sha256": "f1d2fe2050b1ee06575ffc9de08d272ea2242e02fe8078f7a9dbe003c68220f5",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "[successful immutable-object response retained in memory only]",
+      "stderr": "",
+      "finished_utc": "2026-10-04T17:00:24.172183+00:00"
+    },
+    {
+      "operation": "restore verified immutable blob only",
+      "sha": "7be597a386a2a20ca9ba7b89ffcf60304287ef7a",
+      "bytes": 2368,
+      "utc": "2026-10-04T17:00:24.176783+00:00",
+      "source_worktree_unchanged": true
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T17:00:24.177046+00:00",
+      "exit_code": 1,
+      "timeout": false,
+      "stdout": "",
+      "stderr": "warning: lazy fetching disabled; some objects may not be available\nfatal: could not fetch 3fbce9c1ad6ed5168219ca4775be0def0e316f93 from promisor remote\nfatal: the remote end hung up unexpectedly\nsend-pack: unexpected disconnect while reading sideband packet\nfatal: the remote end hung up unexpectedly\nerror: failed to push some refs to 'https://github.com/MindDevastation/where-the-light-remains.git'\n",
+      "finished_utc": "2026-10-04T17:00:32.908282+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/4f0b36b4bb0e/toolchain/gh_2.101.0_linux_amd64/bin/gh",
+        "api",
+        "repos/MindDevastation/where-the-light-remains/git/blobs/3fbce9c1ad6ed5168219ca4775be0def0e316f93"
+      ],
+      "started_utc": "2026-10-04T17:00:32.908732+00:00",
+      "stdout_bytes": 6263,
+      "stdout_sha256": "d80a56d1a3cfff54b656335d65e880bb85ad1034a50a47e06b7511fc1e1da07c",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "[successful immutable-object response retained in memory only]",
+      "stderr": "",
+      "finished_utc": "2026-10-04T17:00:44.675667+00:00"
+    },
+    {
+      "operation": "restore verified immutable blob only",
+      "sha": "3fbce9c1ad6ed5168219ca4775be0def0e316f93",
+      "bytes": 4322,
+      "utc": "2026-10-04T17:00:44.679998+00:00",
+      "source_worktree_unchanged": true
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T17:00:44.680296+00:00",
+      "exit_code": 1,
+      "timeout": false,
+      "stdout": "",
+      "stderr": "warning: lazy fetching disabled; some objects may not be available\nfatal: could not fetch 0c70f08957746ca97a1fc0df2a6bc7b3512ba9b0 from promisor remote\nfatal: the remote end hung up unexpectedly\nsend-pack: unexpected disconnect while reading sideband packet\nfatal: the remote end hung up unexpectedly\nerror: failed to push some refs to 'https://github.com/MindDevastation/where-the-light-remains.git'\n",
+      "finished_utc": "2026-10-04T17:00:52.684603+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/4f0b36b4bb0e/toolchain/gh_2.101.0_linux_amd64/bin/gh",
+        "api",
+        "repos/MindDevastation/where-the-light-remains/git/blobs/0c70f08957746ca97a1fc0df2a6bc7b3512ba9b0"
+      ],
+      "started_utc": "2026-10-04T17:00:52.685028+00:00",
+      "stdout_bytes": 6791,
+      "stdout_sha256": "c282ec7c270c009336e129a01d826d3a58a1f94abfad467b6928a0e167dab86b",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "[successful immutable-object response retained in memory only]",
+      "stderr": "",
+      "finished_utc": "2026-10-04T17:01:01.607780+00:00"
+    },
+    {
+      "operation": "restore verified immutable blob only",
+      "sha": "0c70f08957746ca97a1fc0df2a6bc7b3512ba9b0",
+      "bytes": 4706,
+      "utc": "2026-10-04T17:01:01.612019+00:00",
+      "source_worktree_unchanged": true
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T17:01:01.612426+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "",
+      "stderr": "remote: \nremote: Create a pull request for 'feature/04-archive-gameplay/checkpoints-2026-10-04' on GitHub by visiting:        \nremote:      https://github.com/MindDevastation/where-the-light-remains/pull/new/feature/04-archive-gameplay/checkpoints-2026-10-04        \nremote: \nTo https://github.com/MindDevastation/where-the-light-remains.git\n * [new branch]      HEAD -> feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "finished_utc": "2026-10-04T17:01:12.126394+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "started_utc": "2026-10-04T17:01:12.126953+00:00",
+      "exit_code": 0,
+      "timeout": false,
+      "stdout": "127a7dfb832250575797ec474767069905459986\trefs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "stderr": "",
+      "finished_utc": "2026-10-04T17:01:19.572886+00:00"
+    }
+  ],
+  "retained_failures": "Missing cached ordinary blobs restored with immutable Git SHA verification; all failed attempts retained.",
+  "lfs_scope": "No new LFS payloads, endpoint acceptance or migration claimed."
+}
