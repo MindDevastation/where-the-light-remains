@@ -2,13 +2,13 @@
 
 ## Current phase
 
-Recovery source availability, 2026-10-04: newer local Boot/ArchiveMain/S02 source
-and snapshots are absent from the reconnected filesystem. Exact published text
-baseline was restored separately; historical later results do not certify absent
-files. Shared T019 gate/channel components now pass seven clean commands, 147
-assertions in headless and Forward+, and four inspected Low/Medium graybox views.
-Actual Archive progression integration and full VS1 remain open. See
-`SESSION_RECOVERY_2026-10-04_14-53.md` and `ARCHIVE_ROUTE_PRESENTATION.md`.
+Fresh-session remote recovery, 2026-10-04: ArchiveMain and S01 resumed from the
+verified working branch. Connected S02 now passes 57 real controls/save/return
+assertions, with 101 state and 109 S01 regressions. Native Low/Medium captures confirm the reused optical model, cold/warm
+room response and Cyrillic text; repeated-modal Continue draw remains under
+investigation. Source/evidence are durably published
+on the working branch; `main` is unchanged. Boot/S00, final room art/audio and
+GATE-VS1 remain open. See `ARCHIVE_RECONSTRUCTION.md` and its current receipts.
 
 **Implementation preflight / initial implementation.**
 

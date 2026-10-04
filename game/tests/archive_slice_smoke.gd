@@ -145,6 +145,26 @@ func _run() -> void:
     _check(world.get_node("Routes/Wing01/Gate").status == ArchiveGate.Status.COMPLETED and world.get_node("Routes/Wing02/Channel").status == ArchiveLightChannel.Status.ACTIVE, "Completed return passage and next route indication")
     _check(_fragments.size() == 2 and _checkpoints == [&"star_collected", &"hearth_collected"] and not SaveManager.get("_dirty"), "Reload creates no duplicate events or writes")
     _check(player.global_position.distance_to(world.get_node("Spawns/Hearth").global_position) < .03, "Safe Hearth checkpoint mapping")
+    world.call("_on_gate_approach", player, 1)
+    _check(world.get_node("Routes/Wing02/Gate").status == ArchiveGate.Status.UNLOCKED, "Unbuilt next wing is indicated but cannot open onto missing ground")
+    player.rotation.y = PI
+    var move := InputEventAction.new()
+    move.action = &"move_forward"
+    move.pressed = true
+    Input.parse_input_event(move)
+    var deadline := Time.get_ticks_msec() + 12000
+    var lowest := player.global_position.y
+    while player.global_position.z < -2.6 and Time.get_ticks_msec() < deadline:
+        await get_tree().physics_frame
+        lowest = minf(lowest, player.global_position.y)
+    move = InputEventAction.new()
+    move.action = &"move_forward"
+    move.pressed = false
+    Input.parse_input_event(move)
+    await get_tree().physics_frame
+    _check(player.global_position.z >= -2.6 and lowest > -.03 and player.is_on_floor(), "Actual walking returns from checkpoint through room/corridor/gate to Hub on continuous ground")
+    _check(world.get("_return_pulsed"), "Physical Hub return emits the local return-light impulse once")
+    _check(_fragments.size() == 2 and _checkpoints.size() == 2 and not SaveManager.get("_dirty"), "Return presentation does not change fragments or disk state")
     game.queue_free()
     await get_tree().process_frame
     SceneRouter.unregister_stage(ArchiveProgress.WING_ONE)

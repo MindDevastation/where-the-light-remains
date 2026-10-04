@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3]
+[gd_scene load_steps=73 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -197,6 +197,9 @@ ring_segments = 12
 top_radius = 0.18
 bottom_radius = 0.24
 height = 0.35
+
+[sub_resource type="BoxShape3D" id="ReturnShape"]
+size = Vector3(3.6, 3, 1.5)
 
 [sub_resource type="StandardMaterial3D" id="BeamMaterial"]
 shading_mode = 0
@@ -886,6 +889,14 @@ omni_range = 9.0
 
 [node name="FragmentLayer" type="CanvasLayer" parent="."]
 layer = 20
+
+[node name="Wing01Return" type="Area3D" parent="Hub"]
+position = Vector3(0, 1.5, -5.8)
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wing01Return"]
+shape = SubResource("ReturnShape")
 
 [node name="FragmentPresenter" parent="FragmentLayer" instance=ExtResource("Fragments")]
 

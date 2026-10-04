@@ -1,0 +1,68 @@
+{
+  "captures": [
+    {
+      "button_rect": [
+        0.0,
+        0.0,
+        162.0,
+        48.0
+      ],
+      "button_text": "Продолжить",
+      "button_visible": false,
+      "height": 1080,
+      "modal_visible": false,
+      "name": "room_cold_low",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/slice-graphical-3/room_cold_low.png",
+      "width": 1920
+    },
+    {
+      "button_rect": [
+        582.0,
+        718.0,
+        756.0,
+        48.0
+      ],
+      "button_text": "Продолжить",
+      "button_visible": true,
+      "height": 1080,
+      "modal_visible": true,
+      "name": "fragment_star_low",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/slice-graphical-3/fragment_star_low.png",
+      "width": 1920
+    },
+    {
+      "button_rect": [
+        582.0,
+        718.0,
+        756.0,
+        48.0
+      ],
+      "button_text": "Продолжить",
+      "button_visible": true,
+      "height": 1080,
+      "modal_visible": true,
+      "name": "fragment_hearth_low",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/slice-graphical-3/fragment_hearth_low.png",
+      "width": 1920
+    },
+    {
+      "button_rect": [
+        582.0,
+        718.0,
+        756.0,
+        48.0
+      ],
+      "button_text": "Продолжить",
+      "button_visible": false,
+      "height": 1080,
+      "modal_visible": false,
+      "name": "room_warm_low",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/slice-graphical-3/room_warm_low.png",
+      "width": 1920
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "low",
+  "renderer": "forward_plus",
+  "status": "CAPTURED_FOR_REVIEW"
+}

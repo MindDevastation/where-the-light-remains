@@ -98,3 +98,20 @@ source/evidence delta snapshot and verifies each guarded local fast-forward.
 It excludes immutable masters/object packs/toolchains and is not a full archive.
 The token-dependent old coordinator is not claimed active in this environment;
 event checkpoints are invoked explicitly within the owner's 15-minute limit.
+
+## Physical return / graphical review checkpoint
+
+`return-validation-3/results.json`: PASS, exact current clean-copy source;
+57 S02 assertions, 101 state and 109 S01 assertions. The persistent player
+walks from the Hearth checkpoint through room/corridor/completed gate into the
+Hub with continuous ground. An actual return trigger pulses the shared channel
+once without mutating save data. Logical Wing II readiness remains visible;
+its unbuilt passage cannot open into absent ground.
+
+Native captures 1/2/3 remain incomplete: the Low second modal intermittently
+lacks the Continue draw despite a visible node and viewport-safe rectangle.
+A production focus-release/redraw fix is WIP; no complete modal graphical PASS
+is claimed yet. Earlier inspected carrier/cold-warm/Cyrillic findings remain
+valid, but the eight-view UI acceptance must be repeated on the fixed source.
+No software-renderer FPS is used as target-hardware evidence. Boot/S00, authored
+room art/audio and GATE-VS1 remain open.

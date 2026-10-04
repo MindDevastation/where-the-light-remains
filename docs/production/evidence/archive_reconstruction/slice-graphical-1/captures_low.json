@@ -1,0 +1,32 @@
+{
+  "captures": [
+    {
+      "height": 1080,
+      "name": "room_cold_low",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/slice-graphical-1/room_cold_low.png",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "name": "fragment_star_low",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/slice-graphical-1/fragment_star_low.png",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "name": "fragment_hearth_low",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/slice-graphical-1/fragment_hearth_low.png",
+      "width": 1920
+    },
+    {
+      "height": 1080,
+      "name": "room_warm_low",
+      "path": "/workspace/scratch/af1393cbbc18/where-the-light-remains/docs/production/evidence/archive_reconstruction/slice-graphical-1/room_warm_low.png",
+      "width": 1920
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "low",
+  "renderer": "forward_plus",
+  "status": "CAPTURED_FOR_REVIEW"
+}

@@ -4,6 +4,7 @@ extends WorldScene
 
 signal checkpoint_finished(checkpoint: StringName, error: Error)
 @export_range(5.0, 8.0, 0.1) var awakening_duration := 7.0
+@export var playable_wings := PackedInt32Array([0])
 var _awakening_elapsed := -1.0
 var _busy := false
 var _sequence_mode_revision := -1
@@ -14,6 +15,7 @@ var _channels_flashed := false
 var _other_channels_dimmed := false
 var _pending_fragment: StringName = &""
 var _lighting_tween: Tween
+var _return_pulsed := false
 
 
 func _ready() -> void:
@@ -46,6 +48,9 @@ func _ready() -> void:
     var notice := get_node_or_null("FragmentLayer/CheckpointNotice") as CheckpointNotice
     if notice != null:
         notice.retry_requested.connect(retry_checkpoint)
+    var return_area := get_node_or_null("Hub/Wing01Return") as Area3D
+    if return_area != null:
+        return_area.body_entered.connect(_on_wing_return)
 
 
 func _on_hub_step(actor: Node3D, index: int) -> void:
@@ -56,11 +61,19 @@ func _on_hub_step(actor: Node3D, index: int) -> void:
 
 
 func _on_gate_approach(actor: Node3D, index: int) -> void:
-    if not actor is FirstPersonPlayer or not actor.active or not InputManager.can_interact():
+    # Logical next-wing indication must not expose an unbuilt passage/drop.
+    if index not in playable_wings or not actor is FirstPersonPlayer or not actor.active or not InputManager.can_interact():
         return
     var controller := get_node("StageController") as ArchiveStageController
     if controller.capture_presentation()["unlocked"][index]:
         controller.open_wing(index)
+
+
+func _on_wing_return(actor: Node3D) -> void:
+    if not _return_pulsed and _actor_can_interact(actor) and GameState.milestones.get("wing_01_completed", false):
+        _return_pulsed = true
+        var channel := get_node("Routes/Wing01/Channel") as ArchiveLightChannel
+        channel.pulse(false)
 
 
 func _on_activation_requested() -> void:
@@ -331,6 +344,9 @@ func _restore_slice(state: Dictionary, quiet: bool) -> void:
         else:
             light.light_color = color
     if quiet:
+        var notice := get_node_or_null("FragmentLayer/CheckpointNotice") as CheckpointNotice
+        if notice != null:
+            notice.close()
         _pending_checkpoint = &""
         _pending_fragment = &""
         var presenter := get_node_or_null("FragmentLayer/FragmentPresenter") as FragmentPresenter

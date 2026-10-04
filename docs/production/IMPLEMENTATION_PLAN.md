@@ -4,11 +4,13 @@ Status: **started**.
 
 ## Source availability after the 2026-10-04 interruption
 
-The reconnected filesystem lacks the newer local Boot, ArchiveMain and connected
-S02 checkout, its commits and snapshots. Historical accepted results are retained
-in the recovery report; their missing source is not currently certified. A separate
-partial checkout restores exact published baseline `c6818057b96174172b59e29ca0fba187c698c904`
-without resetting either surviving worktree. See `SESSION_RECOVERY_2026-10-04_14-53.md`.
+Fresh Work recovery selected remote checkpoint `5f196fd` on
+`feature/04-archive-gameplay/checkpoints-2026-10-04`; no old snapshot was applied.
+ArchiveMain/S01 had already been reconstructed and verified remotely. S02's
+saved module patch and pending binding draft have now been restored/reviewed.
+Current stable source includes connected ring/focus model grips, Star/Hearth,
+physical save retry, quiet restore and continuous return walking. See
+`ARCHIVE_RECONSTRUCTION.md` and checkpoint receipts for exact source identity.
 
 - [x] Continue the unfinished T019 local gate/light-channel foundation: reusable
   graybox prefabs, four gate states, animated/instant restoration, explicit
@@ -16,13 +18,13 @@ without resetting either surviving worktree. See `SESSION_RECOVERY_2026-10-04_14
   ownership. Seven clean commands PASS; 147 assertions in headless and Forward+,
   four inspected 1920×1080 views and exact protected-file/source hashes. See
   `ARCHIVE_ROUTE_PRESENTATION.md` and `evidence/archive_route/README.md`.
-- [ ] Recover or explicitly reconstruct the missing newer story-controller source
-  before connecting the accepted T019 components to actual Archive progression.
-  Component proof alone does not close full T018/T019 or the playable VS1 gate.
-  The first reconstructed state/world binding now passes a clean import and
-  101 actual-scene assertions, including physical spawn clearance/ground and
-  quiet five-route restore. S01/S02 interactive controllers remain the next
-  missing delta. See `ARCHIVE_RECONSTRUCTION.md` and its exact-source evidence.
+- [x] Reconstruct ArchiveMain/S01/S02 logic and connect T019. Current clean-copy
+  checks: 101 state assertions, 109 S01 assertions and 57 S02 assertions including
+  actual E rays, directory IO failure/retry, primary/backup, quiet reload and
+  physical corridor/Hub return. Native Low/Medium captures confirm the reused optics carrier and Cyrillic
+  text; repeated-modal Continue draw remains under investigation. Missing later
+  wing ground stays blocked despite the logical next-route indication.
+  Boot/S00, authored room art/audio and full VS1 remain open.
 - [ ] `GATE-VS1`: full S00→S01→S02, authored art/audio and target-hardware profile.
   S03 remains gated; no later-wing implementation starts from this component proof.
 
@@ -76,7 +78,7 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [x] Typed SaveGame v1 DTO/resource with bounded JSON-only state, exact numeric round trips and validated isolated GameState capture/apply. Clean import, invalid/version/order/resource/cycle cases, state/file integrity, prior shell/player/input and Forward+ startup PASS; see `SAVE_SYSTEM.md` and `evidence/save_dto/`. Disk persistence and registered-world validation remain later tasks.
 - [x] Atomic validated JSON write/read + last-valid backup + read-only corruption fallback. Failed writes retain dirty/state/files; future schemas are protected; Russian retry/stay guards App and actual native close. Clean import, physical file/failure/recovery tests, successful dirty exits, GUI and Forward+ regressions PASS; see `SAVE_SYSTEM.md` and `evidence/atomic_save/`. Both-corrupt New Game choice UI and authored checkpoint triggers belong to Boot/world integration.
 - [x] SceneRouter registered preload/checkpoint/fade/input/state/spawn pipeline. Clean acceptance passes actual checkpoint files, transactional cancellation/rollback, physics/callback restoration, native close recovery and same-world S14→15 presentation; see `SCENE_ROUTER.md` and `evidence/scene_router/`. Shipping worlds/registry, Boot/Continue and authored final choreography remain their own features. PR #41 is merged into the epic; its exact accepted tree and merged-epic startup/safe-exit gate pass. Integration follows the normal epic → main PR route.
-- [ ] ArchiveMain graybox + spawn/state restoration.
+- [x] ArchiveMain graybox + spawn/state restoration, S01/S02 controls and fragment checkpoints. Current clean runtime and graphical evidence: `ARCHIVE_RECONSTRUCTION.md`. Boot/S00 and authored art/audio remain separate acceptance.
 - [ ] AudioDirector dual-player crossfade + group/unique playlist skeleton + silence locks.
 
 ## Milestone 3 — vertical slice

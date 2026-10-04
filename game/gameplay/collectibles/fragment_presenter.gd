@@ -94,7 +94,9 @@ func present_fragment(id: StringName) -> Error:
     _previous_mode = InputManager.mode
     InputManager.set_mode(InputManager.Mode.UI)
     _mode_revision = InputManager.mode_revision
+    continue_button.release_focus()
     show()
+    continue_button.queue_redraw()
     continue_button.grab_focus()
     return OK
 
@@ -109,6 +111,7 @@ func restore_collected(ids: Array[StringName]) -> void:
 func dismiss(emit_closed: bool = true) -> void:
     if not visible:
         return
+    continue_button.release_focus()
     hide()
     if InputManager.mode == InputManager.Mode.UI and InputManager.mode_revision == _mode_revision:
         InputManager.set_mode(_previous_mode)
