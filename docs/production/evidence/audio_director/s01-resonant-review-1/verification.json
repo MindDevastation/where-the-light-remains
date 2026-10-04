@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "guard_count": 11,
+  "utc": "2026-10-04T22:31:19.973248+00:00",
+  "scope": "One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.",
+  "guard_log_sha256": "accbc19e74a7e430160d7076625c299e3d9c753c26e0b255a01133be6e1955a0",
+  "source_hashes": {
+    "tools/audio_slice.py": "582cac52c7ac5edce4b50647dcea13e41e80174a757fa2668be9ef5376a647c6",
+    "tools/test_audio_slice.py": "63569aec50ec802ee306a8ce140f878bf469dc23e66874bdd959dff35fa0bec3",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/A_Archive/shared/Resonant Puzzle.wav": "4efb020e0ee524b940124079c31d468541dd6e1b14170c38d38bbc76efe2d875",
+    "docs/production/evidence/audio_director/s01-resonant-review-1/mus_s01_resonant_puzzle_v01.ogg": "b344afbac1292bb4e70378ce247786ba7d485cc4b177119658d875d2c0e2aa2e"
+  }
+}

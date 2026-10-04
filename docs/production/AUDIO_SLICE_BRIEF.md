@@ -68,8 +68,8 @@ a previous immutable receipt.
 `s01-fragment-review-1/`, with eleven guards. Unfinished encoder files now live
 outside Git; verification rejects any leftover intermediate inside evidence.
 
-Next export `mus_s01_resonant_puzzle_v01` and checkpoint, continuing one finite family at a time.
-Current 6/10 technical candidates and their exact evidence are indexed
+Next export `mus_s02_silent_roads_v01` and checkpoint, continuing one finite family at a time.
+Current 7/10 technical candidates and their exact evidence are indexed
 in `audio/REVIEW_INDEX.md`. After all derivatives exist,
 prepare a compact listening/edit review index; actual source-motif selection
 and scene-mix acceptance remain open.

@@ -1,0 +1,29 @@
+Input #0, ogg, from '/tmp/wlr-audio-encode-hnqusv72/mus_s01_resonant_puzzle_v01.attempt0.ogg':
+  Duration: 00:02:58.40, start: 0.000000, bitrate: 143 kb/s
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+Stream mapping:
+  Stream #0:0 -> #0:0 (vorbis (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+[out#0/null @ 0x55b7183e1a80] video:0kB audio:33450kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:02:58.30 bitrate=N/A speed= 141x    
+[Parsed_ebur128_0 @ 0x55b71840e540] Summary:
+
+  Integrated loudness:
+    I:         -16.3 LUFS
+    Threshold: -26.4 LUFS
+
+  Loudness range:
+    LRA:         6.5 LU
+    Threshold: -36.3 LUFS
+    LRA low:   -20.5 LUFS
+    LRA high:  -14.0 LUFS
+
+  True peak:
+    Peak:       -3.5 dBFS
