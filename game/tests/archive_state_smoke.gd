@@ -63,7 +63,21 @@ func _run() -> void:
     _check(world.prepare_state(bad)["error"] == ERR_INVALID_DATA, "Stale owned namespace rejected")
     add_child(world)
     await get_tree().physics_frame
+    await get_tree().physics_frame
     _check(controller.bindings_valid(), "Five actual gate/channel pairs and finale are bound")
+    var capsule := CapsuleShape3D.new()
+    capsule.radius = 0.24
+    capsule.height = 1.7
+    var space := world.get_world_3d().direct_space_state
+    for marker: Marker3D in world.get_node("Spawns").get_children():
+        var shape := PhysicsShapeQueryParameters3D.new()
+        shape.shape = capsule
+        shape.transform = marker.global_transform.translated(Vector3.UP * 0.85)
+        shape.collision_mask = 1
+        _check(space.intersect_shape(shape, 1).is_empty(), "Safe capsule clearance at authored " + marker.name)
+        var ground := PhysicsRayQueryParameters3D.create(marker.global_position, marker.global_position - Vector3.UP * 0.25, 1)
+        var hit := space.intersect_ray(ground)
+        _check(not hit.is_empty() and hit["normal"].dot(Vector3.UP) > 0.99, "Solid level ground at authored " + marker.name)
     for count in [-1, 0, 1, 2]:
         var saved := _saved(count)
         var prepared := world.prepare_state(saved)

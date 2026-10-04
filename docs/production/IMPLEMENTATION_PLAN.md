@@ -19,6 +19,10 @@ without resetting either surviving worktree. See `SESSION_RECOVERY_2026-10-04_14
 - [ ] Recover or explicitly reconstruct the missing newer story-controller source
   before connecting the accepted T019 components to actual Archive progression.
   Component proof alone does not close full T018/T019 or the playable VS1 gate.
+  The first reconstructed state/world binding now passes a clean import and
+  101 actual-scene assertions, including physical spawn clearance/ground and
+  quiet five-route restore. S01/S02 interactive controllers remain the next
+  missing delta. See `ARCHIVE_RECONSTRUCTION.md` and its exact-source evidence.
 - [ ] `GATE-VS1`: full S00→S01→S02, authored art/audio and target-hardware profile.
   S03 remains gated; no later-wing implementation starts from this component proof.
 
