@@ -11,7 +11,9 @@ import json
 import math
 from pathlib import Path
 import re
+import shutil
 import subprocess
+import tempfile
 import wave
 
 import numpy as np
@@ -143,6 +145,8 @@ def verify_family(output, manifest):
     verification = output / 'verification.json'
     if verification.exists():
         raise FileExistsError('Existing immutable verification receipt')
+    if list(output.glob('*.attempt*.ogg')):
+        raise ValueError('Unaccepted intermediate media remains in review evidence')
     result = json.loads((output / 'results.json').read_text())
     if result['status'] != 'PASS' or result['operation'] != 'export' or \
             result['acceptance'] != 'TECHNICAL_REVIEW_ONLY_UNBOUND' or len(result['records']) != 1:
@@ -222,22 +226,27 @@ def execute(args):
                 # A safety margin is re-measured after lossy encoding.
                 gain = min(0.0, manifest['candidate_true_peak_ceiling_dbtp'] - original['true_peak_dbtp'] - 1)
                 target = output / (name + '.ogg')
-                for attempt in range(3):
-                    trial = output / f'{name}.attempt{attempt}.ogg'
-                    filters = (f'volume={gain:.6f}dB,afade=t=in:d={entry["fade_in_seconds"]:.6f},'
-                               f'afade=t=out:st={duration-entry["fade_out_seconds"]:.6f}:d={entry["fade_out_seconds"]:.6f}')
-                    command(['ffmpeg', '-hide_banner', '-nostats', '-nostdin', '-n', '-ss', str(start), '-i', str(source),
-                             '-t', str(duration), '-map', '0:a:0', '-map_metadata', '-1', '-af', filters,
-                             '-ar', '48000', '-ac', '2', '-c:a', 'libvorbis', '-q:a', '5', str(trial)],
-                            output / f'{name}.encode{attempt}.log')
-                    measured = measure(trial, output / f'{name}.decoded_ebur128_{attempt}.log')
-                    if measured['true_peak_dbtp'] <= manifest['candidate_true_peak_ceiling_dbtp']:
-                        trial.rename(target)
-                        break
-                    trial.unlink()  # Own unaccepted derivative only, never the source.
-                    gain -= measured['true_peak_dbtp'] - manifest['candidate_true_peak_ceiling_dbtp'] + .2
-                else:
-                    raise RuntimeError('Decoded review cue exceeds its safety ceiling')
+                # Keep unfinished encoder output outside Git. Only a measured
+                # accepted derivative is copied into the new review family.
+                with tempfile.TemporaryDirectory(prefix='wlr-audio-encode-') as private:
+                    for attempt in range(3):
+                        trial = Path(private) / f'{name}.attempt{attempt}.ogg'
+                        filters = (f'volume={gain:.6f}dB,afade=t=in:d={entry["fade_in_seconds"]:.6f},'
+                                   f'afade=t=out:st={duration-entry["fade_out_seconds"]:.6f}:d={entry["fade_out_seconds"]:.6f}')
+                        command(['ffmpeg', '-hide_banner', '-nostats', '-nostdin', '-n', '-ss', str(start), '-i', str(source),
+                                 '-t', str(duration), '-map', '0:a:0', '-map_metadata', '-1', '-af', filters,
+                                 '-ar', '48000', '-ac', '2', '-c:a', 'libvorbis', '-q:a', '5', str(trial)],
+                                output / f'{name}.encode{attempt}.log')
+                        measured = measure(trial, output / f'{name}.decoded_ebur128_{attempt}.log')
+                        if measured['true_peak_dbtp'] <= manifest['candidate_true_peak_ceiling_dbtp']:
+                            with trial.open('rb') as encoded, target.open('xb') as accepted:
+                                shutil.copyfileobj(encoded, accepted)
+                            if digest(trial) != digest(target):
+                                raise RuntimeError('Accepted derivative copy SHA mismatch')
+                            break
+                        gain -= measured['true_peak_dbtp'] - manifest['candidate_true_peak_ceiling_dbtp'] + .2
+                    else:
+                        raise RuntimeError('Decoded review cue exceeds its safety ceiling')
                 probe = json.loads(command(['ffprobe', '-v', 'error', '-show_entries',
                          'stream=codec_name,sample_rate,channels:format=duration', '-of', 'json', str(target)],
                          output / (name + '.probe.json')))

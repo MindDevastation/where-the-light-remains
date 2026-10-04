@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "guard_count": 11,
+  "utc": "2026-10-04T22:24:28.257526+00:00",
+  "scope": "One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.",
+  "guard_log_sha256": "48e5630fc08efd8f7bb894f09bb8b57470668d5c9e352ffc4462f68eda930160",
+  "source_hashes": {
+    "tools/audio_slice.py": "582cac52c7ac5edce4b50647dcea13e41e80174a757fa2668be9ef5376a647c6",
+    "tools/test_audio_slice.py": "63569aec50ec802ee306a8ce140f878bf469dc23e66874bdd959dff35fa0bec3",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/A_Archive/shared/Archive Fragment.wav": "67bc63793e27c7734719c5aa4c0ac4780621a0fb4e338b7567d25af4664a9da0",
+    "docs/production/evidence/audio_director/s01-fragment-review-1/mus_s01_archive_fragment_v01.ogg": "6bddd55ad5835ce1870e946b83b53425d1e66dff9ac454c53993e4995c9f19e1"
+  }
+}

@@ -64,7 +64,11 @@ finite Vorbis export/decode and ten source/output/receipt guards in
 `s01-activation-review-1/`. Verification refuses tampered media and overwriting
 a previous immutable receipt.
 
-Next export `mus_s01_archive_fragment_v01`, then the remaining three Group A
+`mus_s01_archive_fragment_v01` also passes finite review export/decode in
+`s01-fragment-review-1/`, with eleven guards. Unfinished encoder files now live
+outside Git; verification rejects any leftover intermediate inside evidence.
+
+Next export `mus_s01_hub_motif_v01`, then the remaining two Group A
 and three Group B shared sources, checkpointing each family. After all derivatives exist,
 prepare a compact listening/edit review index; actual source-motif selection
 and scene-mix acceptance remain open.

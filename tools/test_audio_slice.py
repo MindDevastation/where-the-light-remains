@@ -96,6 +96,14 @@ class ExportProtection(unittest.TestCase):
             audio.verify_family(folder, audio.load_manifest())
         self.assertEqual(receipt.read_bytes(), before)
 
+    def test_intermediate_media_cannot_receive_verification(self):
+        with tempfile.TemporaryDirectory(dir=audio.REVIEW) as parent:
+            folder = audio.Path(parent).resolve()
+            (folder / 'mus_s01_fixture_v01.attempt0.ogg').write_bytes(b'unaccepted partial')
+            with self.assertRaisesRegex(ValueError, 'intermediate media'):
+                audio.verify_family(folder, audio.load_manifest())
+            self.assertFalse((folder / 'verification.json').exists())
+
 
 if __name__ == '__main__':
     unittest.main()
