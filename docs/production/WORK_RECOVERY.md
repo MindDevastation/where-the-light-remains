@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-04 23:21 UTC
+# Current Work recovery boundary — 2026-10-04 23:28 UTC
 
 Durable source of truth: GitHub working branch
 `feature/04-archive-gameplay/checkpoints-2026-10-04`.
@@ -12,6 +12,9 @@ with a clean matching checkout. No newer remote working branch was found.
 Its next authored S00 note/motif selection still lacks listening acceptance.
 Independent engineering work now adds the actual spark-to-Director event;
 fetch the newest checkpoint/publication receipt for its exact current SHA.
+First hook checkpoint `e4a12b15f726a04e46c36f0d19b12bacbbab0bae` was independently
+verified 2026-10-04 23:22:24.341057 UTC. The next exact-source PCM block below
+adds revision-guarded request cancellation and explicit paused-tree protection.
 
 Previously completed audio export/pool implementation/validation checkpoint:
 `9e0a27ba219fe39478634f9d177872f8ed28e07c`.
@@ -68,6 +71,14 @@ all current implementation/evidence is now on the same remote working branch.
   reject looping seeds. Cache-free `prologue-spark-hook-1/` passes 29 actual
   prologue, 59 playlist/policy, 18 transactional route and 17 entry assertions
   plus normal startup. No shipping audio resource/media binding was introduced.
+- `prologue-pcm-2/` passes 41 actual spark/PCM/lifetime checks plus 29 mixer,
+  59 playlist, 18 route, 29 prologue and 17 entry checks (193 total). Synthetic
+  seed RMS 0.07073; pre-spark, paused, finite-tail, locked, removed/released and
+  completed-restore Music PCM are zero. Teardown revokes only its exact semantic
+  revision, preserving independent silence, newer intent and pending route.
+  `prologue-pcm-1/` retains the paused-timeline failure under an ALWAYS ancestor;
+  explicit paused-tree guarding fixes it. Physical slots remain unchanged in
+  the PCM test; all runtime logs in the passed family are error/warning free.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -81,10 +92,10 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next independent block: exercise the actual spark event with an explicitly
-synthetic finite PCM test fixture, including paused pre-spark silence, finite
-end, external silence ownership, scene removal and quiet completed restore.
-This fixture must not become a musical asset or imply source-note acceptance.
+Next independent block: provide a bounded source-audition/edit proposal tool
+for the two S00 masters. It must preserve bytes, keep proposals outside the
+shipping manifest until listening selection, and never equate energy/pitch
+analysis with an approved motif. The actual S00 event/PCM contracts are complete.
 
 Authored next step remains: select an actual first-note S00 source interval/common four-note motif
 through source listening/editing; fill only the selected S00 manifest row,

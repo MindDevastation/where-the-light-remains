@@ -33,6 +33,12 @@ physical save retry, quiet restore and continuous return walking. See
   configured-main startup pass; authored prologue art/audio remain open.
 - [ ] `GATE-VS1`: full S00→S01→S02, authored art/audio and target-hardware profile.
   S03 remains gated; no later-wing implementation starts from this component proof.
+- [x] S00 first-spark semantic request and bounded lifetime. S00 forces silent
+  entry and finite seeds; pause/quiet restore never repeat the event. Actual
+  synthetic PCM and affected route/mixer/entry regression: 193 assertions pass
+  in `evidence/audio_director/prologue-pcm-2/`. Removed requests cannot begin
+  after foreign silence releases or cancel newer ownership. Source-note/motif
+  selection, shipping derivatives/bindings and full art/audio acceptance stay open.
 
 Historical milestone checkboxes below describe their accepted published baseline;
 this availability note does not revoke those results or claim recovery of missing

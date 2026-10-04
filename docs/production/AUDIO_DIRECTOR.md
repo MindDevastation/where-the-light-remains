@@ -167,3 +167,30 @@ Source-master availability for the next audio slice is sealed separately in
 `slice-input-inventory-1`: twelve 48 kHz stereo 16-bit PCM WAVs, zero currently
 imported runtime music derivatives. Header/hash inspection is not a mix, loop,
 motif or shipping-source-provenance acceptance.
+
+## S00 actual spark and scene ownership — 2026-10-04 23:28 UTC
+
+`ArchivePrologue` sends `spark_first_note` once at the actual visible spark,
+through AudioDirector alone. An absent profile stays silent. MusicStage forces
+S00 initial silence and rejects looping authored/unique seeds. Completed quiet
+restoration does not send the event. No shipping musical resource is bound.
+
+Accepted semantic revisions can be revoked with `cancel_music_state(stage,
+state, revision)`. A removed/restored prologue revokes only its own accepted
+request; pending routes, later intents and independent silence/duck tokens
+are untouched. This also removes its pending resume under foreign silence,
+so releasing that lock cannot start a removed scene's cue. The API never
+creates or releases a foreign lock or cancels a newer route.
+
+`prologue-spark-hook-1/` passes 29 real prologue, 59 playlist, 18 route and
+17 main-entry assertions plus normal startup. `prologue-pcm-1/` retains a
+paused-timeline failure with an ALWAYS ancestor; a direct paused-tree guard
+now freezes the timeline regardless of inherited processing mode.
+`prologue-pcm-2/` passes 41 real event/PCM/lifetime assertions and 152 affected
+mixer/playlist/route/prologue/entry assertions (193 total), clean-cache import,
+no errors/warnings. Actual synthetic seed RMS is 0.07073; pre-spark, paused,
+finite-tail, locked, removed/released and quiet-completed-restore PCM is zero.
+Newer semantic PCM survives old scene removal, a pending route lease survives
+stale cancellation, and both physical save hashes remain unchanged in the
+PCM test. Synthetic PCM is explicitly not the Archive motif or shipping score.
+Authored note selection/listening/mix and target hardware remain open.

@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_PROLOGUE PCM: {"frames":8192,"label":"before_spark","rms":0.0}
+AUDIO_PROLOGUE PCM: {"frames":8192,"label":"paused_before_spark","rms":0.0}
+AUDIO_PROLOGUE PCM: {"frames":8192,"label":"spark_seed","rms":0.0707348909863924}
+AUDIO_PROLOGUE PCM: {"frames":8192,"label":"finite_tail","rms":0.0}
+AUDIO_PROLOGUE PCM: {"frames":4096,"label":"locked_spark","rms":0.0}
+AUDIO_PROLOGUE PCM: {"frames":8192,"label":"removed_then_released","rms":0.0}
+AUDIO_PROLOGUE PCM: {"frames":4096,"label":"newer_owner_after_remove","rms":0.0707574532903901}
+AUDIO_PROLOGUE PCM: {"frames":8192,"label":"completed_restore","rms":0.0}
+AUDIO_PROLOGUE PASS: 41 assertions; actual spark, paused silence, finite PCM, owned teardown, newer intent/lease and quiet restore; no musical acceptance

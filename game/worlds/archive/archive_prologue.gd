@@ -17,6 +17,7 @@ var _finishing := false
 var _mode_revision := -1
 var _paused_owned := false
 var _spark_ignited := false
+var _music_revision := -1
 
 
 func _ready() -> void:
@@ -26,6 +27,7 @@ func _ready() -> void:
 
 
 func restore(completed: bool) -> void:
+    _release_spark_music()
     _completed = completed
     _started = false
     _finishing = false
@@ -65,7 +67,7 @@ func _on_pause_changed(paused: bool) -> void:
 
 func _process(delta: float) -> void:
     var world := get_parent() as ArchiveMain
-    if _completed or _finishing or world.stage_id != ArchiveProgress.PROLOGUE:
+    if _completed or _finishing or get_tree().paused or world.stage_id != ArchiveProgress.PROLOGUE:
         return
     if not _started:
         if InputManager.mode != InputManager.Mode.CINEMATIC:
@@ -101,7 +103,19 @@ func _ignite_spark() -> void:
             error = ERR_BUSY
         else:
             error = AudioDirector.set_music_state(SPARK_MUSIC_STATE, 0.0)
+            if error == OK:
+                _music_revision = AudioDirector.playback_snapshot()["revision"]
     spark_ignited.emit(error)
+
+
+func _release_spark_music() -> void:
+    if _music_revision >= 0:
+        AudioDirector.cancel_music_state(ArchiveProgress.PROLOGUE, SPARK_MUSIC_STATE, _music_revision)
+        _music_revision = -1
+
+
+func _exit_tree() -> void:
+    _release_spark_music()
 
 
 func _finish() -> void:

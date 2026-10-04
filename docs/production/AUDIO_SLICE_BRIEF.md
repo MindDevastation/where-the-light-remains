@@ -91,8 +91,15 @@ player or source fallback. S00 profiles force silent entry and finite seeds.
 Unbound shipping, pause/resume, continuous S01 handoff and quiet completed
 restore pass in `prologue-spark-hook-1/`: 29 prologue + 59 playlist + 18 route +
 17 exact-entry assertions and normal startup, initially cache-free, no errors.
-Next engineering block captures actual finite synthetic fixture PCM at the
-spark and verifies owned-silence/removal boundaries; it cannot select music.
+Actual synthetic PCM at the spark now passes in `prologue-pcm-2/`: 41 event /
+PCM / lifetime checks plus 152 affected mixer/playlist/route/prologue/entry
+checks. Pre-spark/paused/finite-tail/locked/removed/quiet-load output is zero;
+the seed is audible only after the actual spark. Revision-guarded cancellation
+prevents a removed scene's deferred cue while retaining foreign silence/newer
+intent/route leases. The initial ALWAYS-ancestor pause failure is preserved in
+`prologue-pcm-1/`; the explicit paused-tree guard fixes it. No fixture is music.
+Next independent tool work supports source audition/edit proposals; acceptance
+still requires an actual listening selection, not measurement or a source title.
 
 Authored next step: select the actual S00 first-note interval and common four-note Archive
 identity by listening/editing the supplied sources, then export only that seed

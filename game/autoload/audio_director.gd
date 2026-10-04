@@ -133,6 +133,20 @@ func set_music_state(state_id: StringName, fade_seconds: float = 2.0) -> Error:
     return _dispatch_state(state_id, fade_seconds)
 
 
+func cancel_music_state(stage_id: StringName, state_id: StringName, revision: int) -> bool:
+    # A removed scene can revoke only its exact accepted semantic request.
+    # Never supersede a route lease, a newer intent or another silence owner.
+    if _exit_preparing or not _pending_stage.is_empty() or current_stage != stage_id or _requested_state != state_id or _revision != revision:
+        return false
+    _revision += 1
+    _requested_state = &"silence"
+    _resume_requested = false
+    _automatic = false
+    current_state = &"silence"
+    _stop_music()
+    return true
+
+
 func _dispatch_state(state_id: StringName, fade_seconds: float) -> Error:
     if _exit_preparing: return ERR_BUSY
     _resume_requested = false
