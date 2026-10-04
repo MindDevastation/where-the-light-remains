@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3]
+[gd_scene load_steps=72 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -6,6 +6,13 @@
 [ext_resource type="PackedScene" path="res://worlds/archive/common/archive_light_channel.tscn" id="Channel"]
 [ext_resource type="Script" path="res://worlds/archive/hub/archive_onboarding.gd" id="Onboarding"]
 [ext_resource type="Script" path="res://core/interaction/interaction_target.gd" id="Target"]
+
+[ext_resource type="Script" path="res://gameplay/puzzles/light_ring_puzzle.gd" id="Rings"]
+[ext_resource type="Script" path="res://gameplay/puzzles/light_focus_puzzle.gd" id="Focus"]
+[ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_optics_sample.tscn" id="Optics"]
+[ext_resource type="PackedScene" path="res://gameplay/collectibles/fragment_presenter.tscn" id="Fragments"]
+[ext_resource type="Script" path="res://core/ui/checkpoint_notice.gd" id="Notice"]
+[ext_resource type="Texture2D" path="res://art/sigils/star.svg" id="StarSigil"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -185,6 +192,46 @@ inner_radius = 0.9
 outer_radius = 0.97
 rings = 32
 ring_segments = 12
+
+[sub_resource type="CylinderMesh" id="EmitterMesh"]
+top_radius = 0.18
+bottom_radius = 0.24
+height = 0.35
+
+[sub_resource type="StandardMaterial3D" id="BeamMaterial"]
+shading_mode = 0
+albedo_color = Color(0.3, 0.78, 1, 1)
+emission_enabled = true
+emission = Color(0.3, 0.78, 1, 1)
+emission_energy_multiplier = 1.4
+
+[sub_resource type="CylinderMesh" id="BeamMesh"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 1.0
+radial_segments = 8
+
+[sub_resource type="CylinderMesh" id="HearthMesh"]
+top_radius = 0.6
+bottom_radius = 0.4
+height = 0.5
+
+[sub_resource type="SphereMesh" id="FlameMesh"]
+radius = 0.22
+height = 0.72
+radial_segments = 12
+rings = 8
+
+[sub_resource type="StandardMaterial3D" id="FlameMaterial"]
+shading_mode = 0
+albedo_color = Color(1, 0.62, 0.18, 1)
+emission_enabled = true
+emission = Color(1, 0.38, 0.1, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="CylinderShape3D" id="HearthShape"]
+radius = 0.6
+height = 0.65
 
 [node name="ArchiveMain" type="Node3D"]
 script = ExtResource("World")
@@ -721,3 +768,134 @@ position = Vector3(0.85, 0.15, 0)
 scale = Vector3(0.4, 0.4, 0.4)
 mesh = SubResource("LensMesh")
 material_override = SubResource("LensMaterial")
+
+[node name="Rings" type="Node3D" parent="Wing01/Room"]
+position = Vector3(0, 0, -23)
+rotation_degrees = Vector3(0, 180, 0)
+script = ExtResource("Rings")
+solution = Vector3i(1, 2, 3)
+ring_paths = Array[NodePath]([NodePath("Carrier/Outer"), NodePath("Carrier/Middle"), NodePath("Carrier/Inner")])
+segment_paths = Array[NodePath]([NodePath("../BeamSegments/Segment0"), NodePath("../BeamSegments/Segment1"), NodePath("../BeamSegments/Segment2"), NodePath("../BeamSegments/Segment3")])
+interaction_paths = Array[NodePath]([NodePath("Carrier/Outer/Grip/InteractionTarget"), NodePath("Carrier/Middle/Grip/InteractionTarget"), NodePath("Carrier/Inner/Grip/InteractionTarget")])
+
+[node name="Carrier" parent="Wing01/Room/Rings" instance=ExtResource("Optics")]
+
+[node name="InteractionTarget" type="Node" parent="Wing01/Room/Rings/Carrier/Outer/Grip"]
+script = ExtResource("Target")
+prompt = "Повернуть внешнее кольцо"
+enabled = false
+
+[node name="InteractionTarget" type="Node" parent="Wing01/Room/Rings/Carrier/Middle/Grip"]
+script = ExtResource("Target")
+prompt = "Повернуть среднее кольцо"
+enabled = false
+
+[node name="InteractionTarget" type="Node" parent="Wing01/Room/Rings/Carrier/Inner/Grip"]
+script = ExtResource("Target")
+prompt = "Повернуть внутреннее кольцо"
+enabled = false
+
+[node name="InteractionTarget" type="Node" parent="Wing01/Room/Rings/Carrier/Focus/Grip"]
+script = ExtResource("Target")
+prompt = "Изменить фокус"
+enabled = false
+
+[node name="Emitter" type="MeshInstance3D" parent="Wing01/Room"]
+position = Vector3(0, 1.72, -20)
+rotation_degrees = Vector3(90, 0, 0)
+mesh = SubResource("EmitterMesh")
+material_override = SubResource("Metal")
+
+[node name="BeamSegments" type="Node3D" parent="Wing01/Room"]
+
+[node name="Segment0" type="MeshInstance3D" parent="Wing01/Room/BeamSegments"]
+position = Vector3(0, 1.72, -20.7)
+rotation_degrees = Vector3(90, 0, 0)
+mesh = SubResource("BeamMesh")
+material_override = SubResource("BeamMaterial")
+visible = false
+
+[node name="Segment1" type="MeshInstance3D" parent="Wing01/Room/BeamSegments"]
+position = Vector3(0, 1.72, -21.8)
+rotation_degrees = Vector3(90, 0, 0)
+mesh = SubResource("BeamMesh")
+material_override = SubResource("BeamMaterial")
+visible = false
+
+[node name="Segment2" type="MeshInstance3D" parent="Wing01/Room/BeamSegments"]
+position = Vector3(0, 1.72, -23.6)
+rotation_degrees = Vector3(90, 0, 0)
+mesh = SubResource("BeamMesh")
+material_override = SubResource("BeamMaterial")
+visible = false
+
+[node name="Segment3" type="MeshInstance3D" parent="Wing01/Room/BeamSegments"]
+position = Vector3(0, 1.72, -24.7)
+rotation_degrees = Vector3(90, 0, 0)
+mesh = SubResource("BeamMesh")
+material_override = SubResource("BeamMaterial")
+visible = false
+
+[node name="Star" type="Sprite3D" parent="Wing01/Room"]
+position = Vector3(0, 1.72, -25.3)
+texture = ExtResource("StarSigil")
+pixel_size = 0.01
+billboard = 1
+shaded = false
+visible = false
+
+[node name="Focus" type="Node3D" parent="Wing01/Room"]
+script = ExtResource("Focus")
+solution = 2
+wheel_path = NodePath("../Rings/Carrier/Focus")
+beam_path = NodePath("Beam")
+interaction_path = NodePath("../Rings/Carrier/Focus/Grip/InteractionTarget")
+
+[node name="Beam" type="MeshInstance3D" parent="Wing01/Room/Focus"]
+position = Vector3(-1.9, 0.8, -23.2)
+rotation_degrees = Vector3(62, 0, 55)
+scale = Vector3(1, 2.0, 1)
+mesh = SubResource("BeamMesh")
+material_override = SubResource("BeamMaterial")
+visible = false
+
+[node name="Hearth" type="StaticBody3D" parent="Wing01/Room"]
+position = Vector3(-2.8, 0.65, -24)
+collision_layer = 1
+collision_mask = 4
+disable_mode = 1
+
+[node name="Bowl" type="MeshInstance3D" parent="Wing01/Room/Hearth"]
+mesh = SubResource("HearthMesh")
+material_override = SubResource("Metal")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/Hearth"]
+shape = SubResource("HearthShape")
+
+[node name="Flame" type="MeshInstance3D" parent="Wing01/Room/Hearth"]
+position = Vector3(0, 0.55, 0)
+mesh = SubResource("FlameMesh")
+material_override = SubResource("FlameMaterial")
+visible = false
+
+[node name="RoomLight" type="OmniLight3D" parent="Wing01/Room"]
+position = Vector3(0, 3.6, -22)
+light_color = Color(0.43, 0.65, 1, 1)
+light_energy = 2.5
+omni_range = 9.0
+
+[node name="FragmentLayer" type="CanvasLayer" parent="."]
+layer = 20
+
+[node name="FragmentPresenter" parent="FragmentLayer" instance=ExtResource("Fragments")]
+
+[node name="CheckpointNotice" type="Control" parent="FragmentLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("Notice")
+
+[editable path="Wing01/Room/Rings/Carrier"]

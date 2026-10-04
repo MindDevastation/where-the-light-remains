@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FragmentData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://gameplay/collectibles/fragment_data.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/sigils/hearth.svg" id="2"]
+
+[resource]
+script = ExtResource("1")
+fragment_id = &"hearth"
+display_name = "Очаг"
+sigil = ExtResource("2")
+couplet = PackedStringArray("Я заметил тепло в самых обычных днях,", "Оно появилось тихо — просто после твоего появления.")
+feeling = "С тобой в моей жизни стало теплее. Не потому, что раньше в ней чего-то не хватало — просто после твоего появления у обычных дней появилось свое особенное тепло."
+final_order = 0
+acrostic_letter = "Я"

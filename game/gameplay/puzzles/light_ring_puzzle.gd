@@ -8,6 +8,7 @@ signal solved
 @export var solution := Vector3i(1, 2, 3)
 @export var ring_paths: Array[NodePath] = []
 @export var segment_paths: Array[NodePath] = []
+@export var interaction_paths: Array[NodePath] = []
 var _positions := Vector3i.ZERO
 var _locked := false
 

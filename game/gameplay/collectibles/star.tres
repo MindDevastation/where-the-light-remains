@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FragmentData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://gameplay/collectibles/fragment_data.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/sigils/star.svg" id="2"]
+
+[resource]
+script = ExtResource("1")
+fragment_id = &"star"
+display_name = "Звезда"
+sigil = ExtResource("2")
+couplet = PackedStringArray("Ловлю в тебе свет — то яркий, то едва заметный,", "Особенно когда ты чем-то по-настоящему загораешься.")
+feeling = "В тебе есть свой свет — иногда яркий, когда ты чем-то загораешься, иногда совсем тихий. Мне нравится замечать его именно таким, какой он есть."
+final_order = 1
+acrostic_letter = "Л"

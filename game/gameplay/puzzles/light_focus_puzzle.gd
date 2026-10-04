@@ -8,6 +8,7 @@ signal solved
 @export_range(0, 4, 1) var solution := 2
 @export var wheel_path: NodePath
 @export var beam_path: NodePath
+@export var interaction_path: NodePath
 var _position := 0
 var _available := false
 var _locked := false

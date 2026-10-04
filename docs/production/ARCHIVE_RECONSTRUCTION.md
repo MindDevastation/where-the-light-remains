@@ -65,3 +65,36 @@ Star-before-focus gating. Their scene target choices (rings 1/2/3, focus 2) are
 new reconstructed graybox authoring parameters, not recovered historical bytes.
 They are not yet connected to the S02 room or fragment window. Graphical review,
 authored art/audio, hints, full S00/Boot and VS1 acceptance remain open.
+
+## S02 recovered binding — 2026-10-04 19:15 UTC
+
+Fresh Work checkout resumed from remote receipt `5f196fd`; seven fragment files
+were absent and recovered only from its saved patch. The separately labelled
+pending binding was reviewed as an untested draft. The room now reuses the
+materialized accepted Wing I optical carrier, with real ring/focus grip targets,
+a segmented beam, emitter, Star, Hearth and cold-to-warm room light.
+
+Acquisition checks actual solved/locked controllers and found order before
+publishing milestones. Failed physical IO retains logical acquisition, dirty
+state and a Russian Retry modal. Retry writes before presenting the fragment;
+pickup/checkpoint events cannot replay. Quiet load restores solved states, the
+safe spawn and warm light without animation or another fragment modal. Hidden
+final order/letters remain resource metadata. Recovered copy is retained from
+the recovery draft; final wording still follows the master narrative authority.
+
+`slice-validation-1` records a test-fixture parse failure (Dictionary vs Array
+comparison), bounded by the external timeout. The fixture was corrected to
+inspect the typed captured DTO. `slice-validation-2`: clean-copy import and 53
+actual S02 assertions PASS, including real E rays, a physical directory IO
+obstacle, Retry, primary/backup writes and Star/Hearth reload. The next receipt
+adds changed-scene/S01 regressions. No authored room art, Boot/S00, full VS1,
+Windows or physical-GPU acceptance is inferred from this headless result.
+
+Shell Git push in this fresh session lacks a credential helper. The authorized
+GitHub Git-data connector publishes exact staged trees on the same working
+branch with `force=false`; ordinary fetch/ls-remote independently verifies SHA,
+parent and staged-tree identity. `tools/checkpoint_gitdata.py` prepares a reviewed
+source/evidence delta snapshot and verifies each guarded local fast-forward.
+It excludes immutable masters/object packs/toolchains and is not a full archive.
+The token-dependent old coordinator is not claimed active in this environment;
+event checkpoints are invoked explicitly within the owner's 15-minute limit.
