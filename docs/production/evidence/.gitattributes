@@ -1,0 +1,2 @@
+# Preserve exact process logs, including engine-emitted trailing empty lines.
+*.log whitespace=-blank-at-eof

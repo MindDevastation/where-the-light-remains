@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-04T21:13:07.571803+00:00",
+  "exit_code": 0,
+  "command": [
+    "python",
+    "-B",
+    "tools/run_graphical.py",
+    "--graphics-prefix",
+    "/workspace/scratch/af1393cbbc18/wlr-tools/graphics",
+    "--godot",
+    "/workspace/scratch/af1393cbbc18/wlr-tools/godot/Godot_v4.7.2-stable_linux.x86_64",
+    "--timeout",
+    "30",
+    "--expect",
+    "AUDIO_EXIT PASS",
+    "--",
+    "--path",
+    "game",
+    "--resolution",
+    "1920x1080",
+    "--audio-driver",
+    "Dummy",
+    "res://tests/audio_exit_smoke.tscn",
+    "--",
+    "--save-exit-root=/workspace/scratch/af1393cbbc18/wlr-tools/userdata/audio-exit-native-1/data",
+    "--native-close"
+  ],
+  "raw_output_sha256": "5f8ee85a623f07c8a0a4cafad3e0b901e2604c63150989af04158b482d231a4e",
+  "stored_log_sha256": "2221fd05134a9d1d37369c213f46fa3c922a3fdf86bab81f72860b02701366ec",
+  "log_storage": "Only trailing empty lines normalized to one LF. All process diagnostic lines retained.",
+  "scope": "Actual bounded WM_DELETE_WINDOW -> physical failed save -> Stay -> second failure -> actual Retry commits state -> stopped score drain -> clean native App quit. TCP X11 / Vulkan Forward+ software llvmpipe and Dummy PCM mixer; no speaker/target-hardware acceptance."
+}

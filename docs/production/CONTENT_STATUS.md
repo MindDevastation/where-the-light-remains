@@ -14,6 +14,11 @@ Boot/S00 pass 33/25 assertions; the exact main entry and actual safe menu Exit
 pass 17 read-only assertions. Fourteen native Low/Medium component views and the
 actual configured main startup pass. Authored room/prologue art/audio, physical
 target GPU/FPS and full GATE-VS1 remain open; S03 is gated.
+The existing AudioDirector foundation is now accepted: actual PCM duck/silence,
+finite playlists/two-player crossfade, transactional route intent and safe exit
+with playing score. Two reproduced routing/teardown defects are fixed; see
+`AUDIO_DIRECTOR.md` and its clean-copy/native receipts. Shipping authored audio
+bindings and full VS1 art/audio/hardware acceptance remain separate work.
 See `ARCHIVE_RECONSTRUCTION.md` and its current receipts.
 
 **Implementation preflight / initial implementation.**

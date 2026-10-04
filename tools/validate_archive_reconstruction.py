@@ -53,7 +53,7 @@ def validate(args):
                         (slots / filename).write_text(json.dumps(saved) + "\n")
                 before = {p.name: digest(p) for p in slots.iterdir() if p.is_file()}
                 env = dict(os.environ, GODOT_SILENCE_ROOT_WARNING="1", XDG_DATA_HOME=str(data))
-                if name == "app_save_exit_smoke":
+                if name in {"app_save_exit_smoke", "audio_exit_smoke"}:
                     command = command + ["--", "--save-exit-root=" + str(data)]
                 record = {"name": name, "command": command, "started_at": stamp()}
                 process = subprocess.Popen(command, cwd=clean, env=env, stdout=subprocess.PIPE,

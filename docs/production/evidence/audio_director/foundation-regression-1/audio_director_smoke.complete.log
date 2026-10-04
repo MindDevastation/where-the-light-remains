@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUDIO_DIRECTOR runtime: 4.7.2-stable (official); display=headless; audio=Dummy
+AUDIO_DIRECTOR PCM: {"name":"baseline","peaks":{"Ambience":0.0,"Music":0.0891198515892029,"SFX":0.0,"UI":0.0}}
+AUDIO_DIRECTOR PCM: {"name":"nested_duck","peaks":{"Ambience":0.0,"Music":0.0446657128632069,"SFX":0.0,"UI":0.0}}
+AUDIO_DIRECTOR PCM: {"name":"single_duck","peaks":{"Ambience":0.0,"Music":0.0562307983636856,"SFX":0.0,"UI":0.0}}
+AUDIO_DIRECTOR PCM: {"name":"nested_silence","peaks":{"Ambience":0.099965788424015,"Music":0.0,"SFX":0.099965788424015,"UI":0.099965788424015}}
+AUDIO_DIRECTOR PCM: {"name":"expired_without_new_intent","peaks":{"Ambience":0.0999658033251762,"Music":0.0,"SFX":0.0999658033251762,"UI":0.0999658033251762}}
+AUDIO_DIRECTOR PCM: {"name":"explicit_resume","peaks":{"Ambience":0.0999658107757568,"Music":0.0891198143362999,"SFX":0.0999658107757568,"UI":0.0999658107757568}}
+AUDIO_DIRECTOR PASS: 29 assertions; actual PCM ducking, independent branches, nested timed silence, no automatic replay and exact preferences

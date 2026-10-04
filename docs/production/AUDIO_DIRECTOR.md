@@ -52,7 +52,9 @@ close must remain safe. Required import, affected shell/router/Settings regressi
 and authenticated TCP X11/Vulkan Forward+ checks use the confirmed local toolchain.
 No old environment preflight is repeated.
 
-Status: implementation in progress; no completed feature acceptance yet.
+Status: **PASS for the bounded Director foundation** (2026-10-04 UTC).
+Shipping authored cue/stem/ambience bindings and final speaker/target-hardware
+mix acceptance remain open; see the exact-source receipts below.
 
 ## Recovery mixer acceptance — 2026-10-04 UTC
 
@@ -119,3 +121,32 @@ PCM do not certify physical target hardware or a speaker mix.
 
 Next: actual failed/successful App exit with score playback, then close the
 bounded Director foundation acceptance. Shipping OGG/stem bindings stay separate.
+
+## Safe exit with actual score / foundation acceptance
+
+`exit-validation-1` reproduces two ObjectDB leaks during the actual successful
+App quit with playing WAV PCM, despite its 12 functional assertions passing.
+App now freezes further choices/timeline progression only after a successful
+flush, then awaits Director shutdown for a bounded 0.2-second audio-thread drain.
+Shutdown stops current/pending score, mutes score child buses and rejects late
+semantic/stage playback requests. Failed or stayed exits never enter shutdown
+and retain the original advancing cue. The drain works while a save-error guard
+owns the paused tree; no indefinite wait or user action is needed.
+
+`exit-validation-2` passes 13 actual failed/stay/retry score assertions, ordinary
+dirty App exit and 17 shipping-entry/clean-Exit assertions with no Godot errors,
+warnings or leaks. `exit-native-1` passes 15 assertions including actual bounded
+WM_DELETE_WINDOW delivery, two physical directory-IO failures, real Stay/Retry,
+exact accepted save state and clean X11/Vulkan Forward+ process completion.
+`foundation-regression-1` passes the 29 mixer, 56 playlist, 18 actual audio-route,
+transactional/seamless router, 17 shipping-entry and normal-startup commands on
+the exact final source. Save/progression semantics and parent preferences remain
+as previously accepted; the Archive regression after the routing fix is retained.
+
+This closes the planned dual-player/playlist/silence/duck/transactional foundation
+only. Production stages still have no invented music bindings; generated PCM is
+test-only. Next technical step: inspect available approved S00/S01/S02 runtime
+cue derivatives, define the bounded authored cue/stem export/binding brief and
+continue the VS1 art/audio slice from its actual assets. Missing motif editing,
+ambience/SFX, final derivatives or target hardware block only their dependent
+acceptance. S03 remains gated by full GATE-VS1.

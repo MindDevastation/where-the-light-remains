@@ -88,7 +88,12 @@ Execution policy: `docs/production/ASTRA_WORKFLOW.md` is mandatory for implement
 - [x] Atomic validated JSON write/read + last-valid backup + read-only corruption fallback. Failed writes retain dirty/state/files; future schemas are protected; Russian retry/stay guards App and actual native close. Clean import, physical file/failure/recovery tests, successful dirty exits, GUI and Forward+ regressions PASS; see `SAVE_SYSTEM.md` and `evidence/atomic_save/`. Both-corrupt New Game choice UI and authored checkpoint triggers belong to Boot/world integration.
 - [x] SceneRouter registered preload/checkpoint/fade/input/state/spawn pipeline. Clean acceptance passes actual checkpoint files, transactional cancellation/rollback, physics/callback restoration, native close recovery and same-world S14→15 presentation; see `SCENE_ROUTER.md` and `evidence/scene_router/`. Shipping worlds/registry, Boot/Continue and authored final choreography remain their own features. PR #41 is merged into the epic; its exact accepted tree and merged-epic startup/safe-exit gate pass. Integration follows the normal epic → main PR route.
 - [x] ArchiveMain graybox + spawn/state restoration, S00/S01/S02 controls and fragment checkpoints. Current clean runtime and graphical evidence: `ARCHIVE_RECONSTRUCTION.md`. Authored art/audio and full VS1 remain separate acceptance.
-- [ ] AudioDirector dual-player crossfade + group/unique playlist skeleton + silence locks.
+- [x] AudioDirector dual-player crossfade + group/unique finite playlist, owned
+  silence/duck locks and transactional stage intent. Actual generated PCM,
+  latest queue, semantic/vocal guards, real route rollback and failed/stayed/
+  successful App exit pass; native WM_DELETE_WINDOW and seamless framebuffer
+  equality pass. See `AUDIO_DIRECTOR.md` and `evidence/audio_director/`.
+  Shipping authored derivatives/bindings and final mix/hardware remain open.
 
 ## Milestone 3 — vertical slice
 

@@ -20,6 +20,10 @@ func request_safe_exit() -> void:
         _exit_pending = false
         exit_failed.emit(error)
         return
+    # Freeze further choices/timeline progress only after persistence succeeds.
+    InputManager.set_mode(InputManager.Mode.DISABLED)
+    InputManager.set_paused(true)
+    await AudioDirector.prepare_safe_exit()
     get_tree().quit()
 
 

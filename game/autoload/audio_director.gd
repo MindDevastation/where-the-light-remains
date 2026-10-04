@@ -31,6 +31,7 @@ var _resume_requested := false
 var _silence_latched := false
 var _state_silence := 0
 var _final_wide_shot := false
+var _exit_preparing := false
 var _rng := RandomNumberGenerator.new()
 
 
@@ -71,7 +72,7 @@ func stage_profile(stage_id: StringName) -> MusicStage:
 
 
 func begin_stage_audio(stage_id: StringName) -> int:
-    if MusicStage.group_for_stage(stage_id).is_empty() or not _pending_stage.is_empty(): return 0
+    if _exit_preparing or MusicStage.group_for_stage(stage_id).is_empty() or not _pending_stage.is_empty(): return 0
     _token += 1
     _revision += 1
     _pending_stage = {"token": _token, "previous_stage": current_stage, "previous_state": current_state, "stage": stage_id}
@@ -133,6 +134,7 @@ func set_music_state(state_id: StringName, fade_seconds: float = 2.0) -> Error:
 
 
 func _dispatch_state(state_id: StringName, fade_seconds: float) -> Error:
+    if _exit_preparing: return ERR_BUSY
     _resume_requested = false
     _silence_latched = false
     if _state_silence > 0:
@@ -262,6 +264,7 @@ func _emit_finished(id: StringName, revision: int, stage: StringName) -> void:
 
 
 func _process(delta: float) -> void:
+    if _exit_preparing: return
     _expire_silence()
     _finish_silence()
     if _pending_stage.is_empty() and _active >= 0 and _cues[_active] != null and _cues[_active].vocal and not _cue_allowed(_cues[_active]):
@@ -381,6 +384,24 @@ func _stop_music() -> void:
     _queued.clear()
     for index in _players.size(): _stop_player(index)
     _active = -1
+
+
+func prepare_safe_exit() -> void:
+    # App calls only after a successful flush. Failed/stayed exits leave
+    # playback and every existing owner untouched. Stop commands reach the
+    # audio thread asynchronously, so drain before engine ObjectDB teardown.
+    _exit_preparing = true
+    _supersede_pending()
+    _revision += 1
+    _automatic = false
+    _resume_requested = false
+    _silence_latched = true
+    _stop_music()
+    for bus in MUSIC_BUSES:
+        var index := AudioServer.get_bus_index(bus)
+        if index >= 0:
+            AudioServer.set_bus_mute(index, true)
+    await get_tree().create_timer(.2, true).timeout
 
 
 func playback_snapshot() -> Dictionary:

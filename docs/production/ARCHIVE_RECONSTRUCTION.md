@@ -221,3 +221,13 @@ Boot/S00 graybox shell integration is complete. Full GATE-VS1 remains open for
 authored art/audio and target hardware; S03 remains gated. Next independent
 implementation task: inspect the existing AudioDirector in-progress source and
 receipts and continue its unfinished mixer/route acceptance rather than rebuild it.
+
+## Next recovery boundary after AudioDirector foundation
+
+The existing Director foundation is now accepted on this working branch; exact
+PCM/playlist/route/exit receipts and both fixed defects are in `AUDIO_DIRECTOR.md`.
+Boot remains the shipping main scene and main remains untouched. No later world
+or shipping soundtrack was invented. Next: inspect the actual approved runtime
+derivatives and prepare the bounded S00/S01/S02 authored audio binding/export
+brief, then continue VS1 room/prologue art/audio while physical GPU acceptance
+remains separately open. Full GATE-VS1 must pass before S03.
