@@ -6,6 +6,31 @@ Full S01/S02 takes are review candidates; no cue is bound to shipping scenes.
 Both S00 intervals remain blocked on actual first-note/motif selection. No stems
 were supplied, and this tool does not fabricate them by automatic separation.
 
+For bounded listening/edit proposals use `tools/audio_audition.py`. It permits
+only the two original S00 sources, windows of .3–20 seconds (a tooling budget,
+not an authored seed length), explicit finite edge fades and a new evidence
+directory. It keeps all twelve masters and the blocked seed manifest unchanged.
+Proposal status is `PENDING_LISTENING_SELECTION`, with null note/motif identity
+and no shipping binding. Its acceptance class deliberately differs from the
+sealed review exports; the Godot review-family importer does not accept these
+windows as authored candidates. No automated analysis claims first-note identity.
+
+```sh
+timeout 30 python -B tools/test_audio_audition.py
+timeout 90 python -B tools/audio_audition.py \
+  --cue mus_s00_archive_seed_v01 --start 0 --end 8 \
+  --output docs/production/evidence/audio_director/s00-opening-audition-NEW
+```
+
+`s00-opening-audition-1/` contains the primary source's 0–8 second listening
+window: stereo 48 kHz finite Vorbis, -17.8 LUFS / -5.9 dBTP, gain 0, 20 ms / 250 ms
+fades. All four bounded encode/decode/probe commands and seven protection guards
+pass; `audition_checks.json` independently seals their logs/proposal/media and
+the unchanged sources/manifest. This is an opening excerpt, not a selected seed.
+Listen to the original and proposed cut before selecting actual note boundaries,
+motif, instrumental/palette quality or scene mix. Only that separate authored
+selection may update one S00 manifest row for the normal seed exporter below.
+
 `tools/audio_slice.py` requires Python 3.11+, NumPy, FFmpeg/ffprobe with libvorbis.
 Run from the repository root. Every output directory must be new and inside
 `docs/production/evidence/audio_director/`; game/audio and assets are forbidden.

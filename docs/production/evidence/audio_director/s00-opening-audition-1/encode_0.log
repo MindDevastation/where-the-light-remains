@@ -1,0 +1,17 @@
+[aist#0:0/pcm_s16le @ 0x5589b1ac4c00] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/scratch/af1393cbbc18/where-the-light-remains/assets/audio/music/A_Archive/stages/S00_Prologue/unique/Sparse Awakening vol.2.wav':
+  Metadata:
+    comment         : made with suno; created=2026-09-19T16:14:42Z; id=3a206b84-78f6-41b8-9c26-575f7cc849ec
+    encoder         : Lavf60.16.100
+  Duration: 00:02:48.16, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, 2 channels, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> vorbis (libvorbis))
+Output #0, ogg, to '/tmp/wlr-audio-audition-pv_8gu5y/audition.ogg':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+[out#0/ogg @ 0x5589b1ac4340] video:0kB audio:135kB subtitle:0kB other streams:0kB global headers:4kB muxing overhead: 3.890825%
+size=     140kB time=00:00:07.99 bitrate= 143.3kbits/s speed=70.4x    

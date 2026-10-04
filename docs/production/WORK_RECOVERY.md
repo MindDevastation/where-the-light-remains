@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-04 23:28 UTC
+# Current Work recovery boundary — 2026-10-04 23:34 UTC
 
 Durable source of truth: GitHub working branch
 `feature/04-archive-gameplay/checkpoints-2026-10-04`.
@@ -79,6 +79,12 @@ all current implementation/evidence is now on the same remote working branch.
   `prologue-pcm-1/` retains the paused-timeline failure under an ALWAYS ancestor;
   explicit paused-tree guarding fixes it. Physical slots remain unchanged in
   the PCM test; all runtime logs in the passed family are error/warning free.
+- `tools/audio_audition.py` now produces only bounded S00 listening proposals,
+  never manifest selection or shipping media. Seven guards pass. The primary
+  source's opening 0–8 s excerpt passes exact finite stereo Vorbis decode/probe,
+  -17.8 LUFS / -5.9 dBTP, unchanged twelve-master/manifest hashes and four bounded
+  command logs in `s00-opening-audition-1/`. Note/motif identities remain null;
+  this is explicitly not a selected seed. Approved seed export stays blocked.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -92,10 +98,10 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next independent block: provide a bounded source-audition/edit proposal tool
-for the two S00 masters. It must preserve bytes, keep proposals outside the
-shipping manifest until listening selection, and never equate energy/pitch
-analysis with an approved motif. The actual S00 event/PCM contracts are complete.
+Next independent block: prepare the alternate S00 source's short opening
+listening proposal with the existing tool and its own exact-source receipt.
+Do not repeat completed ten-cue exports/pool tests or S00 event/PCM validation.
+The actual S00 event/PCM contracts and primary audition proposal are complete.
 
 Authored next step remains: select an actual first-note S00 source interval/common four-note motif
 through source listening/editing; fill only the selected S00 manifest row,

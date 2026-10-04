@@ -23,3 +23,16 @@
 
 30 проверок Godot для двух уникальных OGG: ../evidence/audio_director/unique-godot-review-2/.
 Полный private cache-free Godot прогон: [93 pool + 30 unique-cue assertions, защищенные save-файлы и вход в игру](../evidence/audio_director/full-pools-godot-review-1/results.json). Все десять OGG дали реальный PCM; музыкальная приемка остается открытой.
+
+## S00 opening audition proposals
+
+These short windows support listening without downloading a full master first.
+They are not selected first notes or authored/approved cues. The original WAVs
+above remain unchanged and authoritative. Both seed manifest intervals are null.
+
+| Source | Original window | Audition | Independent technical receipt | Selection |
+| --- | --- | --- | --- | --- |
+| Sparse Awakening vol.2 | 0–8 s | [Opening OGG](../evidence/audio_director/s00-opening-audition-1/audition.ogg) | [Exact-byte checks](../evidence/audio_director/s00-opening-audition-1/audition_checks.json) | Pending listening; note/motif unset |
+
+Use `tools/audio_audition.py` for another explicit bounded window. Only actual
+listening/edit selection may change the seed manifest; an audition PASS cannot.

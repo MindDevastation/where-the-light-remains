@@ -100,6 +100,12 @@ intent/route leases. The initial ALWAYS-ancestor pause failure is preserved in
 `prologue-pcm-1/`; the explicit paused-tree guard fixes it. No fixture is music.
 Next independent tool work supports source audition/edit proposals; acceptance
 still requires an actual listening selection, not measurement or a source title.
+The tool now exists as `tools/audio_audition.py`. The primary source's 0–8 s
+opening proposal in `s00-opening-audition-1/` passes finite compressed decode,
+four bounded command traces, seven protection guards and unchanged original
+master/manifest hashes. It has null note/motif identity and explicit pending
+listening status; neither seed manifest interval was changed. Next independent
+block produces the alternate opening proposal, then listening selects the cut.
 
 Authored next step: select the actual S00 first-note interval and common four-note Archive
 identity by listening/editing the supplied sources, then export only that seed
