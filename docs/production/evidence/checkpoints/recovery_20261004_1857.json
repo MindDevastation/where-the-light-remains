@@ -1,0 +1,30 @@
+{
+  "status": "RECOVERY_READY",
+  "utc": "2026-10-04T19:02:57.375348+00:00",
+  "branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+  "head": "5f196fd317b528a6d4361191c25148bdd7e7f86d",
+  "remote_source_of_truth": "5f196fd317b528a6d4361191c25148bdd7e7f86d",
+  "checkpoint_timestamp": "2026-10-04T18:29:59Z",
+  "clean_checkout": true,
+  "last_verified_source": "582e21cafbf296f3b9e05a8e2ff7d857b247490f",
+  "historical_verified_scope": {
+    "archive_state_assertions": 101,
+    "s01_progression_assertions": 109
+  },
+  "pending": "Restore seven missing S02 modules from remote recovery patch; review pending binding draft; require solved puzzles, bind room, add save retry, test physical IO and quiet reload.",
+  "godot": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "archive_sha256": "cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4",
+    "matches_repository_pin": true
+  },
+  "git_push_dry_run": {
+    "exit_code": 128,
+    "stderr": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "publication_transport": "Authenticated GitHub Git-data connector; create tree/commit then non-forced fast-forward ref update and independent remote SHA check. Ordinary clone/fetch/read work. No credential requested or stored.",
+  "checkpoint_policy": "Atomic blocks and event checkpoints, at most 15 minutes. Existing GH_TOKEN-dependent coordinator unavailable with this transport; connector checkpoints use the same review, evidence and remote verification contract.",
+  "no_old_snapshot_applied": true,
+  "main_untouched": true,
+  "force_push": false,
+  "acceptance": "No new S02 or visual-slice PASS yet; historical evidence is read only."
+}
