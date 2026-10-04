@@ -7,10 +7,13 @@ Working branch for the resumed T019 state:
 
 ## Every 15 minutes of active work
 
-1. Use the verified foreground `tools/session_snapshot.py` timer in a managed
-   execution session, `--interval 900`, with the authorized UTC work deadline.
-   Retain its session identity/output and inspect it after an interruption.
-   Do not rely on the previously unverified detached-process approach.
+1. Use `tools/durable_checkpoint.py` in a managed foreground execution session,
+   with `--interval 600` to leave time for push verification before the maximum
+   900-second interval. It collects and verifies the local archive, reviews
+   changed paths, commits an explicitly labelled WIP checkpoint, pushes the
+   working branch and verifies its remote SHA. Supply credentials only through
+   its private stdin/environment. Retain the session identity and inspect output
+   after an interruption. Do not rely on detached processes.
 2. Pause writers briefly for collection. Keep required in-progress logs in
    evidence or select them using `--extra-evidence`. Verify the new archive with
    `tools/verify_session_snapshot.py`; retain its time and SHA-256. A failed
@@ -42,9 +45,13 @@ a stable label. A completed logical stage gets a separate stable commit and
 immediate push, even if the 15-minute tick is not yet due. Checkpoint operations
 do not restart accepted environment preflights or unrelated completed tests.
 
-The snapshot timer only creates archives; the coding agent must handle each
-reported snapshot's review/commit/push immediately while monitoring that managed
-session. Do not leave a timer unattended or claim it provides remote backups.
+The older `session_snapshot.py` timer only creates archives. The durable
+coordinator supersedes that archive-only path for continuing development. It
+serializes timed and requested checkpoints; do not stage/commit/push separately
+while it runs. Request event checkpoints through its JSON stdin interface.
+Stable checkpoints require a PASS validation receipt with nonempty current
+source hashes. Automatic checkpoints are WIP, not claims of test acceptance.
+Monitor each `REMOTE_PASS` or failure; do not leave the coordinator unattended.
 At a work-window deadline pause the unfinished stage, checkpoint its actual
 state, report the last confirmed step and stop active work. No continuous
 background timer is claimed between authorized work windows.
@@ -113,3 +120,13 @@ The 16:38:05 to 16:53:36 UTC manual gap was 930.919423 seconds, exceeding the
 The verified foreground timer was then started and monitored for the remainder
 of this checkpoint task. Start that timer at the beginning of future active
 work, including recovery tasks that may exceed 15 minutes.
+
+The next development recovery began at 17:16:09 UTC. While preparing and
+validating the durable coordinator, the first new remote receipt was verified
+at 17:32:26 UTC; the previous remote receipt was verified at 17:14:28 UTC.
+That interval exceeded 15 minutes. The corresponding snapshot collection
+started at 17:31:51 UTC, after the previous 17:10:22 UTC archive. These are
+cadence misses, not evidence of continuous compliance. The coordinator is now
+active with a 600-second interval; its real WIP source and receipt pushes are
+recorded in `evidence/checkpoints/development.jsonl`. Its temporary bare-repo
+smoke test is separately identified in `durable_tool_smoke.json`.
