@@ -105,7 +105,12 @@ opening proposal in `s00-opening-audition-1/` passes finite compressed decode,
 four bounded command traces, seven protection guards and unchanged original
 master/manifest hashes. It has null note/motif identity and explicit pending
 listening status; neither seed manifest interval was changed. Next independent
-block produces the alternate opening proposal, then listening selects the cut.
+block produced the alternate opening proposal in `s00-alternate-opening-audition-2/`:
+-18.2 LUFS / -4.0 dBTP, gain 0, four complete commands and eleven guards. Both
+openings are linked in REVIEW_INDEX.md, still with null note/motif identity.
+Alternate family 1 is excluded because its final receipt remained RUNNING after
+CLI completion; the preserved diagnosis and atomic/read-back receipt fix precede
+the accepted new family. Only actual listening/edit selection can select a seed.
 
 Authored next step: select the actual S00 first-note interval and common four-note Archive
 identity by listening/editing the supplied sources, then export only that seed

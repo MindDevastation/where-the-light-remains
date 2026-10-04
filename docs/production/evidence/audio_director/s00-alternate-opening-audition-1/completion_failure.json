@@ -1,0 +1,7 @@
+{
+  "status": "INCOMPLETE_RECEIPT_NOT_ACCEPTED",
+  "utc": "2026-10-04T23:40:04.594436+00:00",
+  "observation": "CLI exited 0 and printed PASS, but the independently read final results.json retained RUNNING without finished_at/command_count. Four complete successful command logs and the measured media/proposal exist. Cause unconfirmed; preserve family, do not promote it to an accepted audition.",
+  "results_sha256": "f4873c0c42d8f16f04caadffed2bab6708b71eda2a036ad61dc1d83057f9fa65",
+  "fix": "New tool writes receipts with fsync/atomic replace and verifies read-back before printing PASS. Rerun in a separate new family."
+}

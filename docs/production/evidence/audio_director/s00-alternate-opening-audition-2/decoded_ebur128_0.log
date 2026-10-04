@@ -1,0 +1,29 @@
+Input #0, ogg, from '/tmp/wlr-audio-audition-86iq5rz5/audition.ogg':
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 140 kb/s
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+Stream mapping:
+  Stream #0:0 -> #0:0 (vorbis (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+[out#0/null @ 0x560b998cca40] video:0kB audio:1500kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:00:07.90 bitrate=N/A speed= 152x    
+[Parsed_ebur128_0 @ 0x560b998f9500] Summary:
+
+  Integrated loudness:
+    I:         -18.2 LUFS
+    Threshold: -28.2 LUFS
+
+  Loudness range:
+    LRA:         6.0 LU
+    Threshold: -37.2 LUFS
+    LRA low:   -21.4 LUFS
+    LRA high:  -15.4 LUFS
+
+  True peak:
+    Peak:       -4.0 dBFS

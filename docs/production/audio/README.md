@@ -31,6 +31,13 @@ Listen to the original and proposed cut before selecting actual note boundaries,
 motif, instrumental/palette quality or scene mix. Only that separate authored
 selection may update one S00 manifest row for the normal seed exporter below.
 
+The alternate source's 0–8 s opening is accepted technically in
+`s00-alternate-opening-audition-2/`: -18.2 LUFS / -4.0 dBTP, gain 0, eleven guards
+and four complete bounded command traces. Family 1 retains an incomplete final
+receipt and is excluded. Receipt writes now fsync, atomically replace and verify
+read-back before stdout reports completion. Guards explicitly reject promoting
+an audition to normal export verification or unlocking an unselected S00 seed.
+
 `tools/audio_slice.py` requires Python 3.11+, NumPy, FFmpeg/ffprobe with libvorbis.
 Run from the repository root. Every output directory must be new and inside
 `docs/production/evidence/audio_director/`; game/audio and assets are forbidden.

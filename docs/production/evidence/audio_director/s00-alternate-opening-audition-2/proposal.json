@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "PENDING_LISTENING_SELECTION",
+  "source_cue_id": "mus_s00_archive_seed_alternate_v01",
+  "source_path": "assets/audio/music/A_Archive/stages/S00_Prologue/supplemental/Sparse Awakening.wav",
+  "source_sha256": "cb27c6512d710497b058d94eb74004b510c7b50f001f16e712ab7cf180e015ad",
+  "source_interval_seconds": [
+    0.0,
+    8.0
+  ],
+  "fade_in_seconds": 0.02,
+  "fade_out_seconds": 0.25,
+  "gain_db": 0.0,
+  "note_identity": null,
+  "four_note_motif": null,
+  "shipping_binding": false,
+  "manifest_modified": false,
+  "loop": false,
+  "stems": false,
+  "audition_path": "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/audition.ogg",
+  "audition_sha256": "0044920d10b8171d42040a3ac0bed5cbe873bb572856925fec1e890e5b9c99b7",
+  "decoded_loudness": {
+    "integrated_lufs": -18.2,
+    "lra_lu": 6.0,
+    "true_peak_dbtp": -4.0
+  },
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "vorbis",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ],
+    "format": {
+      "duration": "8.000000"
+    }
+  },
+  "instruction": "Listen to the original and excerpt; select actual note/cut/motif before editing the seed manifest. Do not bind this opening excerpt as a seed."
+}

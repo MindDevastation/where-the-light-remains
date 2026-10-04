@@ -28,6 +28,26 @@ class AuditionProtection(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'two S00'):
             audition.parameters(self.manifest['entries'][2], 0, 8, .02, .25)
 
+    def test_audition_cannot_receive_normal_export_verification(self):
+        # Real audition metadata remains a different acceptance class, even
+        # when its format/measurement technically passed.
+        record = json.loads((audition.REVIEW / 's00-opening-audition-1/results.json').read_text())
+        with tempfile.TemporaryDirectory() as private:
+            folder = Path(private)
+            (folder / 'results.json').write_text(json.dumps(record))
+            with self.assertRaisesRegex(ValueError, 'technically passed review export'):
+                audition.audio.verify_family(folder, self.manifest)
+            self.assertFalse((folder / 'verification.json').exists())
+
+    def test_opening_audition_does_not_unlock_original_seed_export(self):
+        with tempfile.TemporaryDirectory() as private:
+            folder = Path(private) / 'never_created'
+            args = argparse.Namespace(operation='export', cue=self.seed['cue_id'], output=folder)
+            with patch.object(audition.audio, 'REVIEW', Path(private)), \
+                    self.assertRaisesRegex(ValueError, 'selection is pending'):
+                audition.audio.execute(args)
+            self.assertFalse(folder.exists())
+
     def test_non_finite_or_outside_or_overbudget_windows_are_rejected(self):
         for start, end in [(float('nan'), 8), (0, float('inf')), (-1, 8), (0, .3),
                            (0, 21), (168, 169), (8, 7)]:
@@ -53,6 +73,22 @@ class AuditionProtection(unittest.TestCase):
             with patch.object(audition, 'REVIEW', Path(private)), self.assertRaises(FileExistsError):
                 audition.destination(folder)
             self.assertEqual(owner.read_bytes(), b'Existing evidence')
+
+    def test_completed_receipt_is_persisted_and_read_back_without_partial_file(self):
+        with tempfile.TemporaryDirectory() as private:
+            path = Path(private) / 'results.json'
+            audition.write_receipt(path, {'status': 'RUNNING'})
+            audition.write_receipt(path, {'status': 'PASS', 'command_count': 4})
+            self.assertEqual(json.loads(path.read_text()), {'status': 'PASS', 'command_count': 4})
+            self.assertEqual(list(path.parent.iterdir()), [path])
+
+    def test_receipt_read_back_mismatch_cannot_report_success(self):
+        with tempfile.TemporaryDirectory() as private:
+            path = Path(private) / 'results.json'
+            with patch.object(Path, 'read_bytes', return_value=b'stale receipt'), \
+                    self.assertRaisesRegex(RuntimeError, 'read-back mismatch'):
+                audition.write_receipt(path, {'status': 'PASS'})
+            self.assertFalse(path.with_name('results.json.pending').exists())
 
     def test_failed_encoder_keeps_diagnostics_but_never_accepts_or_changes_seed(self):
         with tempfile.TemporaryDirectory() as private:

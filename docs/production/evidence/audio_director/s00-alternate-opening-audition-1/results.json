@@ -1,0 +1,25 @@
+{
+  "status": "RUNNING",
+  "operation": "audition",
+  "acceptance": "AUDITION_ONLY_NOT_A_SELECTED_SEED",
+  "started_at": "2026-10-04T23:35:54.160911+00:00",
+  "source_hashes": {
+    "tools/audio_audition.py": "22a97fb0b30822375311e86745b014431bcf2fd7fd1c6e64b658f26762eb879a",
+    "tools/audio_slice.py": "d7e298978d044fb7bfb0ecf2762ffc0dabf4a6fc04b1993d9cfb429261b368a0",
+    "tools/test_audio_audition.py": "3c90281c5d77d624bae77e5b1e4f3b45b91758b62721e0a30d92053f3c9a16b8",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/A_Archive/stages/S00_Prologue/unique/Sparse Awakening vol.2.wav": "4bb445fdf9c9187c00ddaf4c016860ab775532b666916b15e8fbf1d11a41953b",
+    "assets/audio/music/A_Archive/stages/S00_Prologue/supplemental/Sparse Awakening.wav": "cb27c6512d710497b058d94eb74004b510c7b50f001f16e712ab7cf180e015ad",
+    "assets/audio/music/A_Archive/stages/S01_Hub/unique/Archive Awakening.wav": "0eeaafefb8a2f14f4d167a8638c2625ac278a447eb02d5a98e104348614fb0b3",
+    "assets/audio/music/B_Wings/stages/S02_Warmth_Light/unique/Cold to Warm.wav": "ccbf2c5fbc700df6f077863c11c37fb7a962f7efd95d793b51dbce4951a96a39",
+    "assets/audio/music/A_Archive/shared/Activation Sequence.wav": "7e7a680588fd3257a340853054960b21609fd83ce7280651f41a0c6ee331cf3a",
+    "assets/audio/music/A_Archive/shared/Archive Fragment.wav": "67bc63793e27c7734719c5aa4c0ac4780621a0fb4e338b7567d25af4664a9da0",
+    "assets/audio/music/A_Archive/shared/Hub Motif.wav": "737cea8ee38fdf0d9819515f8f4d4dfbec0376fc3d80cbf76d69cd1049b3fec6",
+    "assets/audio/music/A_Archive/shared/Mechanism Light.wav": "67a7ebe4802b710a82d0fe2b0fa18dc087bc3d0b60d97a31ad0690bb79e73b82",
+    "assets/audio/music/A_Archive/shared/Resonant Puzzle.wav": "4efb020e0ee524b940124079c31d468541dd6e1b14170c38d38bbc76efe2d875",
+    "assets/audio/music/B_Wings/shared/024_Silent Roads Beneath the Frost.wav": "f653a468b5aad5cbd97b2bb88d69b27a563cab91036103dbc6b23b2aea992337",
+    "assets/audio/music/B_Wings/shared/034_Muted Pulse Under Falling White.wav": "1cbcaa01aa3fee728d9ffd382e3ea07c048cddfae9c443757c45127bc2c414af",
+    "assets/audio/music/B_Wings/shared/080_Quiet Exhale Through Evergreens.wav": "70688672fb4e78ef67139539f2b602271fc03716f56432c575f7eef234c1153b"
+  },
+  "scope": "An explicit listening window only; not a first-note/motif/instrumental/palette/scene-mix/license acceptance."
+}

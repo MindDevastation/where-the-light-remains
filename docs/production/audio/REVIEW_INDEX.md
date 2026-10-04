@@ -24,15 +24,20 @@
 30 проверок Godot для двух уникальных OGG: ../evidence/audio_director/unique-godot-review-2/.
 Полный private cache-free Godot прогон: [93 pool + 30 unique-cue assertions, защищенные save-файлы и вход в игру](../evidence/audio_director/full-pools-godot-review-1/results.json). Все десять OGG дали реальный PCM; музыкальная приемка остается открытой.
 
-## S00 opening audition proposals
+## S00: короткие фрагменты для прослушивания
 
-These short windows support listening without downloading a full master first.
-They are not selected first notes or authored/approved cues. The original WAVs
-above remain unchanged and authoritative. Both seed manifest intervals are null.
+Вырезки начала источников помогают сравнить звучание. Первая нота и общий мотив
+еще не выбраны; вырезки не используются в игре. Оба интервала seed в manifest
+остаются пустыми. Исходные WAV выше сохранены без изменений.
 
-| Source | Original window | Audition | Independent technical receipt | Selection |
+| Источник | Интервал | Вырезка OGG | Технические данные | Проверка точных байтов |
 | --- | --- | --- | --- | --- |
-| Sparse Awakening vol.2 | 0–8 s | [Opening OGG](../evidence/audio_director/s00-opening-audition-1/audition.ogg) | [Exact-byte checks](../evidence/audio_director/s00-opening-audition-1/audition_checks.json) | Pending listening; note/motif unset |
+| Sparse Awakening vol.2 | 0–8 с | [Основной источник](../evidence/audio_director/s00-opening-audition-1/audition.ogg) | -17.8 LUFS / -5.9 dBTP; gain 0 | [Receipt](../evidence/audio_director/s00-opening-audition-1/audition_checks.json) |
+| Sparse Awakening | 0–8 с | [Альтернативный источник](../evidence/audio_director/s00-alternate-opening-audition-2/audition.ogg) | -18.2 LUFS / -4.0 dBTP; gain 0 | [Receipt](../evidence/audio_director/s00-alternate-opening-audition-2/audition_checks.json) |
 
-Use `tools/audio_audition.py` for another explicit bounded window. Only actual
-listening/edit selection may change the seed manifest; an audition PASS cannot.
+Обе вырезки конечные, stereo 48 kHz Vorbis, с fades 20 / 250 мс. После
+прослушивания нужно выбрать границы первой ноты и четырехнотный мотив из
+исходников; затем изменить только выбранную строку seed и экспортировать ее.
+`tools/audio_audition.py` позволяет подготовить другой короткий интервал без
+изменения manifest. Музыкальная приемка остается открытой. Неполная первая
+попытка альтернативной вырезки сохранена отдельно и в эту таблицу не входит.

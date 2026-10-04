@@ -7,6 +7,7 @@ export retains its explicit first-note selection guard in audio_slice.py.
 import argparse
 import json
 import math
+import os
 from pathlib import Path
 import shutil
 import tempfile
@@ -16,6 +17,25 @@ import audio_slice as audio
 ROOT = audio.ROOT
 REVIEW = audio.REVIEW
 ACCEPTANCE = 'AUDITION_ONLY_NOT_A_SELECTED_SEED'
+
+
+def write_receipt(path, value):
+    """Publish/read back this new family's receipt before reporting success."""
+    data = (json.dumps(value, indent=2) + '\n').encode('utf-8')
+    pending = path.with_name(path.name + '.pending')
+    created = False
+    try:
+        with pending.open('xb') as stream:
+            created = True
+            stream.write(data)
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(pending, path)
+        if path.read_bytes() != data:
+            raise RuntimeError('Audition receipt read-back mismatch')
+    finally:
+        if created and pending.exists():
+            pending.unlink()
 
 
 def parameters(entry, start, end, fade_in, fade_out):
@@ -59,7 +79,7 @@ def execute(args):
               'started_at': audio.stamp(), 'source_hashes': hashes,
               'scope': 'An explicit listening window only; not a first-note/motif/instrumental/palette/scene-mix/license acceptance.'}
     receipt = output / 'results.json'
-    receipt.write_text(json.dumps(result, indent=2) + '\n')
+    write_receipt(receipt, result)
     try:
         audio.command(['ffmpeg', '-version'], output / 'ffmpeg_version.log')
         duration, gain = args.end - args.start, 0.0
@@ -112,8 +132,6 @@ def execute(args):
             raise RuntimeError('Source/recipe/audition bytes changed during processing')
         audio.load_manifest()  # Source masters and blocked seed recipe are unchanged.
         result.update(status='PASS', proposal=proposal_path.relative_to(ROOT).as_posix())
-        print(json.dumps({'status': 'PASS', 'acceptance': ACCEPTANCE, 'source': entry['cue_id'],
-                          'interval': [args.start, args.end], 'decoded_loudness': measured}), flush=True)
     except Exception as error:
         result.update(status='FAIL', failure=str(error))
         raise
@@ -121,7 +139,10 @@ def execute(args):
         commands = audio.COMMANDS.get(output, [])
         (output / 'commands.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in commands))
         result.update(command_count=len(commands), finished_at=audio.stamp())
-        receipt.write_text(json.dumps(result, indent=2) + '\n')
+        write_receipt(receipt, result)
+    # A PASS in stdout now means the final file has actually been read back.
+    print(json.dumps({'status': result['status'], 'acceptance': ACCEPTANCE, 'source': entry['cue_id'],
+                      'interval': [args.start, args.end], 'decoded_loudness': measured}), flush=True)
 
 
 if __name__ == '__main__':

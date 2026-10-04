@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "source_hashes": {
+    "tools/audio_audition.py": "d27539bc68655666ba4350344fe80bbbd406ddc52c48918c9cc7dd49fb68da96",
+    "tools/audio_slice.py": "d7e298978d044fb7bfb0ecf2762ffc0dabf4a6fc04b1993d9cfb429261b368a0",
+    "tools/test_audio_audition.py": "b3c319a7006892500ba41dba79368968c8da445d4e9a7ac667f14a0423376501",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/A_Archive/stages/S00_Prologue/unique/Sparse Awakening vol.2.wav": "4bb445fdf9c9187c00ddaf4c016860ab775532b666916b15e8fbf1d11a41953b",
+    "assets/audio/music/A_Archive/stages/S00_Prologue/supplemental/Sparse Awakening.wav": "cb27c6512d710497b058d94eb74004b510c7b50f001f16e712ab7cf180e015ad",
+    "assets/audio/music/A_Archive/stages/S01_Hub/unique/Archive Awakening.wav": "0eeaafefb8a2f14f4d167a8638c2625ac278a447eb02d5a98e104348614fb0b3",
+    "assets/audio/music/B_Wings/stages/S02_Warmth_Light/unique/Cold to Warm.wav": "ccbf2c5fbc700df6f077863c11c37fb7a962f7efd95d793b51dbce4951a96a39",
+    "assets/audio/music/A_Archive/shared/Activation Sequence.wav": "7e7a680588fd3257a340853054960b21609fd83ce7280651f41a0c6ee331cf3a",
+    "assets/audio/music/A_Archive/shared/Archive Fragment.wav": "67bc63793e27c7734719c5aa4c0ac4780621a0fb4e338b7567d25af4664a9da0",
+    "assets/audio/music/A_Archive/shared/Hub Motif.wav": "737cea8ee38fdf0d9819515f8f4d4dfbec0376fc3d80cbf76d69cd1049b3fec6",
+    "assets/audio/music/A_Archive/shared/Mechanism Light.wav": "67a7ebe4802b710a82d0fe2b0fa18dc087bc3d0b60d97a31ad0690bb79e73b82",
+    "assets/audio/music/A_Archive/shared/Resonant Puzzle.wav": "4efb020e0ee524b940124079c31d468541dd6e1b14170c38d38bbc76efe2d875",
+    "assets/audio/music/B_Wings/shared/024_Silent Roads Beneath the Frost.wav": "f653a468b5aad5cbd97b2bb88d69b27a563cab91036103dbc6b23b2aea992337",
+    "assets/audio/music/B_Wings/shared/034_Muted Pulse Under Falling White.wav": "1cbcaa01aa3fee728d9ffd382e3ea07c048cddfae9c443757c45127bc2c414af",
+    "assets/audio/music/B_Wings/shared/080_Quiet Exhale Through Evergreens.wav": "70688672fb4e78ef67139539f2b602271fc03716f56432c575f7eef234c1153b",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/audition.ogg": "0044920d10b8171d42040a3ac0bed5cbe873bb572856925fec1e890e5b9c99b7",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/proposal.json": "e28fbe65bcd2b83e0aa692ae5790e20ca9707b439bbb7a2524c76e6c5fc43cc8",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/ffmpeg_version.log": "5b320c97f515e79171f10a2147d875ffb6b14bd2b25681047b73c46fe0a527ee",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/encode_0.log": "7c69cb456fa81fe5f3baeb7c31ea643463b24f5731f9e90993716f6958d9add7",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/decoded_ebur128_0.log": "ed8b28422e4932dcd30ee4ee757c2cb401cbfb0dd78fdccde65a5606290fb0ab",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/probe.json": "bc97ef4791f529bd02a34696bf7d1ff0908c7afc2909c0801d08849e73e2bb0f",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/results.json": "4aba9388825af917610902167629a9f2b601b8f7daa866d015efe00db991a959",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/commands.jsonl": "2b63ec70f25b78dc881f0658505d491f0c6a4ff70a27e976bdbf9a60b43717a2",
+    "docs/production/evidence/audio_director/s00-alternate-opening-audition-2/guard_tests.log": "8cb3296696ac0b02164028ae9678cfd6d7769b3fd4c736d77f719c44469e85ac"
+  },
+  "guard_count": 11,
+  "scope": "Exact bounded alternate S00 audition only, null note/motif, unchanged twelve masters/blocked manifest, four bounded successful command logs, finite stereo Vorbis and measured safety peak.",
+  "utc": "2026-10-04T23:40:46.005907+00:00"
+}

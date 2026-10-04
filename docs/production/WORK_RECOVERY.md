@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-04 23:34 UTC
+# Current Work recovery boundary — 2026-10-04 23:41 UTC
 
 Durable source of truth: GitHub working branch
 `feature/04-archive-gameplay/checkpoints-2026-10-04`.
@@ -85,6 +85,14 @@ all current implementation/evidence is now on the same remote working branch.
   -17.8 LUFS / -5.9 dBTP, unchanged twelve-master/manifest hashes and four bounded
   command logs in `s00-opening-audition-1/`. Note/motif identities remain null;
   this is explicitly not a selected seed. Approved seed export stays blocked.
+- Alternate opening 0–8 s passes in `s00-alternate-opening-audition-2/`:
+  -18.2 LUFS / -4.0 dBTP, gain 0, unchanged twelve masters and blocked manifest,
+  four complete bounded commands and eleven guards. `audition_checks.json`
+  independently reads/seals final results/proposal/media/logs. Alternate family
+  1 retains an incomplete RUNNING final receipt despite CLI exit 0/PASS; it is
+  excluded. The tool now fsyncs/atomically replaces/read-backs receipts before
+  printing PASS. Audition proposals cannot receive normal seed verification or
+  unlock the blocked exporter. Both listening links are in REVIEW_INDEX.md.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -98,10 +106,11 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next independent block: prepare the alternate S00 source's short opening
-listening proposal with the existing tool and its own exact-source receipt.
-Do not repeat completed ten-cue exports/pool tests or S00 event/PCM validation.
-The actual S00 event/PCM contracts and primary audition proposal are complete.
+Next safety check: run only the actual S00 event/PCM scenario with the validator's
+read-only, physically existing primary/backup fixtures. The earlier 193-check
+test-owned suite protected their absence in this one scenario; its full timeline
+test intentionally writes its isolated checkpoint. Do not conflate that with
+testing two pre-existing protected files, or rerun unrelated finished exports.
 
 Authored next step remains: select an actual first-note S00 source interval/common four-note motif
 through source listening/editing; fill only the selected S00 manifest row,
@@ -130,3 +139,9 @@ seconds between `f1e8f305` and `a9107911`. It is retained in
 `evidence/checkpoints/cadence_20261004.json`; later publication receipts retain
 actual times. Do not claim uninterrupted cadence compliance. Use smaller blocks
 and a ten-minute preparation target in the next session.
+
+`accept_5b80ee3_next_delta.json` retains this session's clean-status guard abort:
+the next block began while independent acceptance was still running. The remote
+SHA/parent/tree and exact index tree were verified; only the reviewed next-block
+delta remained. No clean checkout is claimed for that intermediate acceptance.
+Complete each acceptance process before starting mutations in its next block.
