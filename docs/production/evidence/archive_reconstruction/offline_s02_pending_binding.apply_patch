@@ -1,0 +1,173 @@
+*** Begin Patch
+*** Update File: game/gameplay/collectibles/fragment_presenter.tscn
+@@
+-[gd_scene load_steps=4 format=3]
++[gd_scene load_steps=5 format=3]
+@@
+ [ext_resource type="Resource" path="res://gameplay/collectibles/hearth.tres" id="3"]
++[ext_resource type="Script" path="res://gameplay/collectibles/fragment_data.gd" id="Data"]
+@@
+-fragments = Array[ExtResource("2")]([ExtResource("2"), ExtResource("3")])
++fragments = Array[ExtResource("Data")]([ExtResource("2"), ExtResource("3")])
+*** Update File: game/gameplay/collectibles/fragment_presenter.gd
+@@
+     couplet_label = _label(column, 25)
++    couplet_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
++    couplet_label.custom_minimum_size.x = 756
+*** Update File: game/worlds/archive/archive_main.gd
+@@
+ var _other_channels_dimmed := false
++var _pending_fragment: StringName = &""
++var _lighting_tween: Tween
+@@
+     for index in 5:
+@@
+             area.body_entered.connect(_on_gate_approach.bind(index))
++    var rings := get_node_or_null("Wing01/Room/Rings") as LightRingPuzzle
++    var focus := get_node_or_null("Wing01/Room/Focus") as LightFocusPuzzle
++    if rings != null:
++        rings.solved.connect(_on_star_solved)
++        for index in 3:
++            var target := rings.get_node("Ring%d/Grip/InteractionTarget" % index) as InteractionTarget
++            target.interacted.connect(_on_ring_interacted.bind(index))
++    if focus != null:
++        focus.solved.connect(_on_hearth_solved)
++        var target := focus.get_node("Wheel/Grip/InteractionTarget") as InteractionTarget
++        target.interacted.connect(_on_focus_interacted)
+@@
+ func retry_checkpoint() -> Error:
+-    return OK if _pending_checkpoint.is_empty() else _flush_checkpoint(_pending_checkpoint)
++    var error := OK if _pending_checkpoint.is_empty() else _flush_checkpoint(_pending_checkpoint)
++    if error == OK and not _pending_fragment.is_empty():
++        _present_pending_fragment()
++    return error
+@@
+ func _exit_tree() -> void:
++    if _lighting_tween != null:
++        _lighting_tween.kill()
+@@
+         if onboarding != null:
+             onboarding.restore_awakened(projected["awakened"])
++        _restore_slice(projected, true)
+     return error
++
++
++func _actor_can_interact(actor: Node3D) -> bool:
++    return actor is FirstPersonPlayer and actor.active and InputManager.can_interact() and \
++        not _busy and _pending_checkpoint.is_empty() and stage_id == ArchiveProgress.WING_ONE
++
++
++func _on_ring_interacted(actor: Node3D, index: int) -> void:
++    if _actor_can_interact(actor):
++        var rings := get_node("Wing01/Room/Rings") as LightRingPuzzle
++        rings.rotate_ring(index)
++
++
++func _on_focus_interacted(actor: Node3D) -> void:
++    if _actor_can_interact(actor):
++        var focus := get_node("Wing01/Room/Focus") as LightFocusPuzzle
++        focus.cycle()
++
++
++func _on_star_solved() -> void:
++    collect_fragment(&"star")
++
++
++func _on_hearth_solved() -> void:
++    collect_fragment(&"hearth")
++
++
++func collect_fragment(id: StringName) -> Error:
++    if _busy or not _pending_checkpoint.is_empty() or stage_id != ArchiveProgress.WING_ONE or not InputManager.can_interact():
++        return ERR_BUSY
++    var original := GameState.capture_save()
++    if original == null:
++        return ERR_INVALID_DATA
++    if original.collected_fragments.has(id):
++        return ERR_ALREADY_EXISTS
++    if id not in [&"star", &"hearth"] or original.collected_fragments.size() != (0 if id == &"star" else 1):
++        return ERR_INVALID_DATA
++    var presenter := get_node_or_null("FragmentLayer/FragmentPresenter") as FragmentPresenter
++    var controller := get_node("StageController") as ArchiveStageController
++    if presenter == null or presenter.fragment(id) == null or not controller.bindings_valid():
++        return ERR_UNCONFIGURED
++    var target := original.copy_validated()
++    target.collected_fragments.append(id)
++    target.checkpoint_id = &"star_collected" if id == &"star" else &"hearth_collected"
++    if id == &"star":
++        target.milestones.merge({"wing_01_light_restored": true, "fragment_star_collected": true}, true)
++    else:
++        target.milestones.merge({"wing_01_completed": true, "fragment_hearth_collected": true, "wing_02_unlocked": true}, true)
++    var error := ArchiveProgress.write_projection(target)
++    if error != OK:
++        return error
++    _busy = true
++    error = GameState.apply_save(target)
++    if error == OK:
++        error = controller.apply_state(target.world_states[stage_id], true)
++    if error != OK:
++        GameState.apply_save(original)
++        controller.apply_state(original.world_states[stage_id])
++        _busy = false
++        return error
++    _restore_slice(target.world_states[stage_id], false)
++    _pending_fragment = id
++    _busy = false
++    error = _flush_checkpoint(target.checkpoint_id)
++    # Acquisition is logical/idempotent even if physical IO needs retry.
++    EventBus.fragment_collected.emit(id)
++    if error == OK:
++        error = _present_pending_fragment()
++    return error
++
++
++func _present_pending_fragment() -> Error:
++    var presenter := get_node_or_null("FragmentLayer/FragmentPresenter") as FragmentPresenter
++    if presenter == null:
++        return ERR_UNCONFIGURED
++    var error := presenter.present_fragment(_pending_fragment)
++    if error == OK:
++        _pending_fragment = &""
++    return error
++
++
++func _restore_slice(state: Dictionary, quiet: bool) -> void:
++    var rings := get_node_or_null("Wing01/Room/Rings") as LightRingPuzzle
++    var focus := get_node_or_null("Wing01/Room/Focus") as LightFocusPuzzle
++    if rings != null:
++        rings.restore_completed(state["light_restored"])
++        for index in 3:
++            var target := rings.get_node("Ring%d/Grip/InteractionTarget" % index) as InteractionTarget
++            target.enabled = stage_id == ArchiveProgress.WING_ONE and not state["light_restored"]
++    if focus != null:
++        focus.restore_state(state["star_collected"], state["hearth_collected"])
++        var target := focus.get_node("Wheel/Grip/InteractionTarget") as InteractionTarget
++        target.enabled = stage_id == ArchiveProgress.WING_ONE and state["star_collected"] and not state["hearth_collected"]
++    var star := get_node_or_null("Wing01/Room/Star") as Node3D
++    var hearth := get_node_or_null("Wing01/Room/Hearth/Flame") as Node3D
++    if star != null:
++        star.visible = state["star_collected"]
++    if hearth != null:
++        hearth.visible = state["hearth_collected"]
++    var light := get_node_or_null("Wing01/Room/RoomLight") as OmniLight3D
++    if light != null:
++        if _lighting_tween != null:
++            _lighting_tween.kill()
++        var color := Color(1.0, .68, .36) if state["hearth_collected"] else Color(.43, .65, 1.0)
++        if not quiet and state["hearth_collected"]:
++            _lighting_tween = create_tween()
++            _lighting_tween.tween_property(light, "light_color", color, .8)
++        else:
++            light.light_color = color
++    if quiet:
++        _pending_checkpoint = &""
++        _pending_fragment = &""
++        var presenter := get_node_or_null("FragmentLayer/FragmentPresenter") as FragmentPresenter
++        if presenter != null:
++            var collected: Array[StringName] = []
++            if state["star_collected"]:
++                collected.append(&"star")
++            if state["hearth_collected"]:
++                collected.append(&"hearth")
++            presenter.restore_collected(collected)
+*** End Patch

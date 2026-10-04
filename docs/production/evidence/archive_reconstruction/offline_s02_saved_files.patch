@@ -1,0 +1,228 @@
+diff --git a/game/gameplay/collectibles/fragment_data.gd b/game/gameplay/collectibles/fragment_data.gd
+new file mode 100644
+--- /dev/null
++++ b/game/gameplay/collectibles/fragment_data.gd
+@@ -0,0 +1,17 @@
++class_name FragmentData
++extends Resource
++## Canonical copy and internal finale metadata; presentation never renders order/letter.
++
++@export var fragment_id: StringName
++@export var display_name := ""
++@export var sigil: Texture2D
++@export var couplet: PackedStringArray
++@export_multiline var feeling := ""
++@export_range(0, 9, 1) var final_order := 0
++@export var acrostic_letter := ""
++
++
++func valid() -> bool:
++    return fragment_id in SaveGame.FOUND_ORDER and not display_name.is_empty() and sigil != null and \
++        couplet.size() == 2 and not couplet[0].is_empty() and not couplet[1].is_empty() and \
++        not feeling.is_empty() and final_order in range(10) and acrostic_letter.length() == 1
+diff --git a/game/gameplay/collectibles/fragment_presenter.gd b/game/gameplay/collectibles/fragment_presenter.gd
+new file mode 100644
+--- /dev/null
++++ b/game/gameplay/collectibles/fragment_presenter.gd
+@@ -0,0 +1,125 @@
++class_name FragmentPresenter
++extends Control
++## One shared modal. The world owns acquisition/IO; quiet load only restores seen IDs.
++
++signal closed
++@export var fragments: Array[FragmentData] = []
++var _seen: Dictionary = {}
++var _previous_mode := InputManager.Mode.GAMEPLAY
++var _mode_revision := -1
++var title_label: Label
++var couplet_label: Label
++var feeling_label: Label
++var sigil_view: TextureRect
++var continue_button: Button
++var _panel: PanelContainer
++
++
++func _ready() -> void:
++    set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
++    mouse_filter = Control.MOUSE_FILTER_IGNORE
++    var dim := ColorRect.new()
++    dim.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
++    dim.color = Color(0.015, 0.022, 0.035, .86)
++    add_child(dim)
++    var center := CenterContainer.new()
++    center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
++    add_child(center)
++    _panel = PanelContainer.new()
++    _panel.custom_minimum_size = Vector2(820, 0)
++    var style := StyleBoxFlat.new()
++    style.bg_color = Color("172335")
++    style.border_color = Color("b5a47d")
++    style.set_border_width_all(1)
++    style.set_content_margin_all(32)
++    _panel.add_theme_stylebox_override("panel", style)
++    center.add_child(_panel)
++    var column := VBoxContainer.new()
++    column.add_theme_constant_override("separation", 22)
++    _panel.add_child(column)
++    sigil_view = TextureRect.new()
++    sigil_view.custom_minimum_size = Vector2(100, 100)
++    sigil_view.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
++    sigil_view.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
++    column.add_child(sigil_view)
++    title_label = _label(column, 32)
++    couplet_label = _label(column, 25)
++    feeling_label = _label(column, 22)
++    feeling_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
++    feeling_label.custom_minimum_size.x = 756
++    continue_button = Button.new()
++    continue_button.text = "Продолжить"
++    continue_button.custom_minimum_size.y = 48
++    continue_button.add_theme_font_size_override("font_size", 24)
++    column.add_child(continue_button)
++    continue_button.pressed.connect(dismiss)
++    hide()
++
++
++func _label(parent: Node, size: int) -> Label:
++    var label := Label.new()
++    label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
++    label.add_theme_font_size_override("font_size", size)
++    parent.add_child(label)
++    return label
++
++
++func fragment(id: StringName) -> FragmentData:
++    var found: FragmentData
++    for data in fragments:
++        if data != null and data.fragment_id == id:
++            if found != null:
++                return null
++            found = data
++    return found if found != null and found.valid() else null
++
++
++func present_fragment(id: StringName) -> Error:
++    if not is_inside_tree() or is_queued_for_deletion():
++        return ERR_UNCONFIGURED
++    if _seen.has(id):
++        return ERR_ALREADY_EXISTS
++    if visible or get_tree().paused or InputManager.mode != InputManager.Mode.GAMEPLAY:
++        return ERR_BUSY
++    var data := fragment(id)
++    if data == null:
++        return ERR_INVALID_DATA
++    _seen[id] = true
++    title_label.text = data.display_name
++    couplet_label.text = "\n".join(data.couplet)
++    feeling_label.text = data.feeling
++    sigil_view.texture = data.sigil
++    _previous_mode = InputManager.mode
++    InputManager.set_mode(InputManager.Mode.UI)
++    _mode_revision = InputManager.mode_revision
++    show()
++    continue_button.grab_focus()
++    return OK
++
++
++func restore_collected(ids: Array[StringName]) -> void:
++    dismiss(false)
++    _seen.clear()
++    for id in ids:
++        _seen[id] = true
++
++
++func dismiss(emit_closed: bool = true) -> void:
++    if not visible:
++        return
++    hide()
++    if InputManager.mode == InputManager.Mode.UI and InputManager.mode_revision == _mode_revision:
++        InputManager.set_mode(_previous_mode)
++    _mode_revision = -1
++    if emit_closed:
++        closed.emit()
++
++
++func _unhandled_key_input(event: InputEvent) -> void:
++    if visible and event is InputEventKey and event.is_action_pressed(&"pause") and not event.is_echo():
++        dismiss()
++        get_viewport().set_input_as_handled()
++
++
++func _exit_tree() -> void:
++    dismiss(false)
+diff --git a/game/gameplay/collectibles/star.tres b/game/gameplay/collectibles/star.tres
+new file mode 100644
+--- /dev/null
++++ b/game/gameplay/collectibles/star.tres
+@@ -0,0 +1,14 @@
++[gd_resource type="Resource" script_class="FragmentData" load_steps=3 format=3]
++
++[ext_resource type="Script" path="res://gameplay/collectibles/fragment_data.gd" id="1"]
++[ext_resource type="Texture2D" path="res://art/sigils/star.svg" id="2"]
++
++[resource]
++script = ExtResource("1")
++fragment_id = &"star"
++display_name = "Звезда"
++sigil = ExtResource("2")
++couplet = PackedStringArray("Ловлю в тебе свет — то яркий, то едва заметный,", "Особенно когда ты чем-то по-настоящему загораешься.")
++feeling = "В тебе есть свой свет — иногда яркий, когда ты чем-то загораешься, иногда совсем тихий. Мне нравится замечать его именно таким, какой он есть."
++final_order = 1
++acrostic_letter = "Л"
+diff --git a/game/gameplay/collectibles/hearth.tres b/game/gameplay/collectibles/hearth.tres
+new file mode 100644
+--- /dev/null
++++ b/game/gameplay/collectibles/hearth.tres
+@@ -0,0 +1,14 @@
++[gd_resource type="Resource" script_class="FragmentData" load_steps=3 format=3]
++
++[ext_resource type="Script" path="res://gameplay/collectibles/fragment_data.gd" id="1"]
++[ext_resource type="Texture2D" path="res://art/sigils/hearth.svg" id="2"]
++
++[resource]
++script = ExtResource("1")
++fragment_id = &"hearth"
++display_name = "Очаг"
++sigil = ExtResource("2")
++couplet = PackedStringArray("Я заметил тепло в самых обычных днях,", "Оно появилось тихо — просто после твоего появления.")
++feeling = "С тобой в моей жизни стало теплее. Не потому, что раньше в ней чего-то не хватало — просто после твоего появления у обычных дней появилось свое особенное тепло."
++final_order = 0
++acrostic_letter = "Я"
+diff --git a/game/art/sigils/star.svg b/game/art/sigils/star.svg
+new file mode 100644
+--- /dev/null
++++ b/game/art/sigils/star.svg
+@@ -0,0 +1,4 @@
++<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
++  <path d="M64 12 77 47 114 49 85 72 95 109 64 88 33 109 43 72 14 49 51 47Z" fill="none" stroke="#9fd7ec" stroke-width="4" stroke-linejoin="round"/>
++  <circle cx="64" cy="64" r="9" fill="#9fd7ec"/>
++</svg>
+diff --git a/game/art/sigils/hearth.svg b/game/art/sigils/hearth.svg
+new file mode 100644
+--- /dev/null
++++ b/game/art/sigils/hearth.svg
+@@ -0,0 +1,4 @@
++<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
++  <path d="M24 112V59L64 24 104 59V112M24 112H104" fill="none" stroke="#e9bc79" stroke-width="4" stroke-linejoin="round"/>
++  <path d="M65 104C36 104 44 80 57 64 55 81 66 81 67 52 85 72 93 99 65 104Z" fill="#e9bc79"/>
++</svg>
+diff --git a/game/gameplay/collectibles/fragment_presenter.tscn b/game/gameplay/collectibles/fragment_presenter.tscn
+new file mode 100644
+--- /dev/null
++++ b/game/gameplay/collectibles/fragment_presenter.tscn
+@@ -0,0 +1,15 @@
++[gd_scene load_steps=4 format=3]
++
++[ext_resource type="Script" path="res://gameplay/collectibles/fragment_presenter.gd" id="1"]
++[ext_resource type="Resource" path="res://gameplay/collectibles/star.tres" id="2"]
++[ext_resource type="Resource" path="res://gameplay/collectibles/hearth.tres" id="3"]
++
++[node name="FragmentPresenter" type="Control"]
++layout_mode = 3
++anchors_preset = 15
++anchor_right = 1.0
++anchor_bottom = 1.0
++grow_horizontal = 2
++grow_vertical = 2
++script = ExtResource("1")
++fragments = Array[ExtResource("2")]([ExtResource("2"), ExtResource("3")])

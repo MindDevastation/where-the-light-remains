@@ -1,0 +1,55 @@
+{
+  "status": "WIP_REMOTE_RECOVERY_ONLY",
+  "created_at": "2026-10-04T18:23:12.330Z",
+  "branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+  "last_stable_remote": "9a4a5a57f3c8ab1b18c4260192a6afe4ff42ce9d",
+  "last_stable_source": "582e21cafbf296f3b9e05a8e2ff7d857b247490f",
+  "last_verified_tests": {
+    "state": "101 assertions PASS",
+    "progression": "109 assertions PASS",
+    "receipt": "progression-validation-3/results.json"
+  },
+  "last_verified_local_snapshot": "wlr-snapshot-20261004T180842761398Z.tar.gz",
+  "last_completed_mutation": "apply_patch created 7 fragment-data/presenter/sigil files; result returned successfully",
+  "last_unfinished_operation": "apply_patch: presenter typed-array/wrapping fixes and ArchiveMain S02 signal/acquisition/restore binding",
+  "unfinished_result": "UNKNOWN. Orchestration cell 97 was terminated after no response; backend mutation may have completed or partially applied. Inspect actual files first.",
+  "last_test": "No S02 integration test had started; last completed S01/state suite was PASS at 18:07:18 UTC.",
+  "environment_errors": [
+    {
+      "operation": "exec_command",
+      "command": "date -u +%FT%TZ; git status --short; rg -n ...; ps -eo pid,ppid,etime,stat,comm",
+      "error": "failed to query exec-server capabilities: exec-server connection attempt failed: environment registry request failed (409 Conflict, environment_offline): Environment is not connected."
+    },
+    {
+      "operation": "write_stdin",
+      "session_id": 16547,
+      "chars": "empty read",
+      "error": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 25s"
+    }
+  ],
+  "paths": {
+    "completed_module_recovery": "docs/production/evidence/archive_reconstruction/offline_s02_saved_files.patch",
+    "pending_operation": "docs/production/evidence/archive_reconstruction/offline_s02_pending_binding.apply_patch"
+  },
+  "source_format": "Recovery patches saved from completed tool input and separately labelled pending input; NOT a current filesystem snapshot.",
+  "pending_known_work": [
+    "Complete S02 scene bindings/ring/focus/beam/hearth Nodes and fragment layer",
+    "Validate FragmentPresenter typed resource array and wrapping fix",
+    "Require actual puzzle completion before fragment acquisition",
+    "Add usable checkpoint IO retry notice, preserve logical milestone/dirty state on IO failure",
+    "Validate actual Star/Hearth writes and quiet reload in separate test-owned slots",
+    "Graphical Cyrillic/Low/return-route validation using accepted authenticated Xvfb TCP baseline"
+  ],
+  "recovery_rules": [
+    "Inspect current checkout/HEAD/status/processes/logs and newest remote checkpoint before any mutation",
+    "Preserve any newer surviving local delta",
+    "Apply saved-file patch only for files truly missing; compare existing bytes first",
+    "Pending binding is an unverified implementation draft, not historical accepted work; inspect actual file outcome and continue only missing implementation",
+    "No old preflight/S01/state test repetition unless source/environment relevantly changed",
+    "If coordinator session survives, inspect/stop only that owned session before reconciling local branch with remote API receipt; no force push/reset"
+  ],
+  "scope": "Only emergency durable backup via available GitHub Git-data connector. No tests, runtime PASS, full S02/VS1 acceptance or local snapshot is claimed.",
+  "main_untouched": true,
+  "force_push": false,
+  "token_in_payload": false
+}
