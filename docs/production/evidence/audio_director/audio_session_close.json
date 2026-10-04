@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-04T22:52:31.436740+00:00",
+  "scope": "Current audio session only; prior recorded cadence breach is retained.",
+  "implementation_checkpoint": "9e0a27ba219fe39478634f9d177872f8ed28e07c",
+  "unchanged_master_count": 12,
+  "shipping_music_media": 0,
+  "owned_engine_x11_ffmpeg_processes": [],
+  "empty_owned_temporary_dirs_removed": [
+    "tmp3_lurnxb"
+  ],
+  "initial_active_recovery_to_checkpoint_seconds": 725.584004,
+  "current_session_checkpoint_intervals": [
+    {
+      "previous": "5f15fb15ca5d85e9c43b141cb1aea7964ff9aabb",
+      "current": "702db335d6c9ab5b5ed945a280404aeb5a5a08d4",
+      "seconds": 281.796447
+    },
+    {
+      "previous": "702db335d6c9ab5b5ed945a280404aeb5a5a08d4",
+      "current": "b4211329e537de62e41103d1e3884cbe3dba8e3f",
+      "seconds": 134.174867
+    },
+    {
+      "previous": "b4211329e537de62e41103d1e3884cbe3dba8e3f",
+      "current": "5427a312ce7d37dac5b5376faf8068f6644eae36",
+      "seconds": 496.990974
+    },
+    {
+      "previous": "5427a312ce7d37dac5b5376faf8068f6644eae36",
+      "current": "adff7cec0075269fa956a582fd1c8d2ce6c0e3f8",
+      "seconds": 344.022395
+    },
+    {
+      "previous": "adff7cec0075269fa956a582fd1c8d2ce6c0e3f8",
+      "current": "6ed25b6eb45ac802bf06715f64d7d7e996e7d000",
+      "seconds": 183.577087
+    },
+    {
+      "previous": "6ed25b6eb45ac802bf06715f64d7d7e996e7d000",
+      "current": "4cd21455473096a5804b693daf3b71a2f0fec2a9",
+      "seconds": 145.166713
+    },
+    {
+      "previous": "4cd21455473096a5804b693daf3b71a2f0fec2a9",
+      "current": "25003dde61069a08f1fd62c54cccdcd526795061",
+      "seconds": 118.517041
+    },
+    {
+      "previous": "25003dde61069a08f1fd62c54cccdcd526795061",
+      "current": "99724b7f5bfd4bdbadf8d52c79ae721601034c62",
+      "seconds": 108.822851
+    },
+    {
+      "previous": "99724b7f5bfd4bdbadf8d52c79ae721601034c62",
+      "current": "df02325693cc7a6bef9d8649129313c9f9d281e5",
+      "seconds": 170.624532
+    },
+    {
+      "previous": "df02325693cc7a6bef9d8649129313c9f9d281e5",
+      "current": "2f49fed768dbb9b48a0ddcae73492ac90ba5d445",
+      "seconds": 309.824318
+    },
+    {
+      "previous": "2f49fed768dbb9b48a0ddcae73492ac90ba5d445",
+      "current": "679d4f3e86ae0a093bf9eca3c9f7d688642e3509",
+      "seconds": 85.367747
+    },
+    {
+      "previous": "679d4f3e86ae0a093bf9eca3c9f7d688642e3509",
+      "current": "9e0a27ba219fe39478634f9d177872f8ed28e07c",
+      "seconds": 482.234142
+    }
+  ],
+  "maximum_interval_seconds": 725.584004,
+  "godot_review": "full-pools-godot-review-1: 93 pool + 30 unique + 17 entry and normal startup PASS; Dummy technical mixer, musical/speaker/target-GPU acceptance open"
+}

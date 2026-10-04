@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-04 UTC
+# Current Work recovery boundary — 2026-10-04 22:49 UTC
 
 Durable source of truth: GitHub working branch
 `feature/04-archive-gameplay/checkpoints-2026-10-04`.
@@ -6,14 +6,21 @@ Fetch its newest verified checkpoint before continuing; do not overlay old local
 snapshots. Current audio source processing progress is recorded below; fetch
 the newest remote checkpoint/receipt rather than assuming a closing SHA.
 
+Latest completed audio implementation/validation checkpoint:
+`9e0a27ba219fe39478634f9d177872f8ed28e07c`.
+Independent remote/parent/tree/clean fast-forward verified
+2026-10-04 22:49:32.703118 UTC. It seals all ten review OGGs' current Godot
+pool/unique/entry source and evidence. Subsequent closing commits update only
+documentation/receipts; do not rerun the completed exports/foundation.
+
 Last gameplay/audio foundation implementation checkpoint:
 `b9236b96d4560391e3b0a519b18757b4c888f369`.
 Commit timestamp: 2026-10-04 21:32:03 UTC.
 Independent fetch/ls-remote/parent/tree verification:
 2026-10-04 21:32:20.573621 UTC. See the publication receipt log.
-The following 4eee9058 closing commit contains documentation only. The next
-session continues with the bounded audio edit/export tool and manifest; its
-publication SHA is recorded in the remote commit/receipt, not predicted here.
+The former 4eee9058 closing commit contained documentation only. This audio
+session advanced from it with one source/export family per durable checkpoint;
+all current implementation/evidence is now on the same remote working branch.
 
 ## Completed and verified
 
@@ -79,6 +86,9 @@ Publication used the authenticated GitHub Git-data connector with `force:false`,
 then independent Git fetch/ls-remote, exact parent/index tree and guarded local
 fast-forward. No main merge, history rewrite, destructive reset or remote branch
 removal was performed. No owned Godot/Xvfb process remained at the closing check.
+`evidence/audio_director/audio_session_close.json` checks twelve unchanged
+masters, zero shipping music media, no owned Godot/Xvfb/FFmpeg process and this
+session's actual checkpoint intervals. Earlier failed diagnostics remain.
 
 One earlier checkpoint interval exceeded the requested 15 minutes: 1,316.528
 seconds between `f1e8f305` and `a9107911`. It is retained in
