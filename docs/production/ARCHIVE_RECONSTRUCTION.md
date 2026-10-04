@@ -152,3 +152,21 @@ the targeted clean-source S00/state/S01/S02 run. Native S00 review and Boot are
 the next unfinished block. Explicit New Game must preserve prior files and
 protect future schemas/actual IO obstacles before any reset. GATE-VS1 still
 blocks later wings.
+
+## Explicit New Game persistence
+
+`SaveManager.write_new_game` is an explicit confirmed disk-only operation for a
+fresh S00 DTO. It never applies global state or clears dirty state. Before either
+slot replacement it copies both existing files byte-for-byte into a unique
+`user://savegame_history` directory, verifies SHA-256 and flushes a manifest.
+Both fresh temporary saves are validated before replacement; partial replacement
+rolls changed slots back from the preserved originals. Future schemas and actual
+IO obstacles are rejected before history/replacement. Unconfirmed/non-fresh calls
+cannot change slots. Ordinary read/flush never invokes this operation.
+
+`new-game-validation-1` passes 57 isolated physical New Game assertions and the
+atomic Save IO regression; its App exit invocation lacks the fixture's required
+isolated-root CLI argument and fails its guard. The delta runner now supplies
+that argument. `new-game-validation-2` is the exact-source targeted receipt for
+New Game, ordinary Save IO and actual dirty App exit. Boot UI is still next; no
+automatic reset or deletion on startup is introduced.

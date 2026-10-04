@@ -87,6 +87,100 @@ func write_save(saved: SaveGame) -> Error:
     return error
 
 
+func write_new_game(saved: SaveGame, confirmed: bool = false) -> Dictionary:
+    # Explicit Boot choice only. Preserve exact prior bytes, including corruption,
+    # before replacing either slot. Ordinary read/flush never calls this path.
+    var result := {"error": ERR_UNAUTHORIZED, "history": "", "rollback_error": OK}
+    if not confirmed:
+        return result
+    if _writing:
+        result["error"] = ERR_BUSY
+        return result
+    var fresh := saved.copy_validated() if saved != null else null
+    if fresh == null:
+        result["error"] = ERR_INVALID_DATA
+        return result
+    var expected := SaveGame.new()
+    expected.world_states = fresh.world_states.duplicate(true)
+    if fresh.to_dict() != expected.to_dict():
+        result["error"] = ERR_INVALID_DATA
+        return result
+    var primary := _primary_path()
+    var backup := _backup_path()
+    if primary == backup or primary.get_base_dir() != backup.get_base_dir():
+        result["error"] = ERR_INVALID_PARAMETER
+        return result
+    for path in [primary, backup]:
+        var prior := _read_file(path)
+        if prior["error"] != OK and not _recoverable(prior["error"]):
+            result["error"] = prior["error"]
+            return result
+    _writing = true
+    var history := primary.get_base_dir().path_join("savegame_history").path_join("new_game_%d_%d_%d" % [int(Time.get_unix_time_from_system()), OS.get_process_id(), Time.get_ticks_usec()])
+    var error := DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(history))
+    var originals := {}
+    if error == OK:
+        result["history"] = history
+        for path in [primary, backup]:
+            var record := {"exists": FileAccess.file_exists(path), "copy": "", "sha256": ""}
+            if record["exists"]:
+                record["copy"] = history.path_join("primary.json" if path == primary else "backup.json")
+                record["sha256"] = FileAccess.get_sha256(path)
+                error = DirAccess.copy_absolute(ProjectSettings.globalize_path(path), ProjectSettings.globalize_path(record["copy"]))
+                if error == OK and (record["sha256"].is_empty() or FileAccess.get_sha256(record["copy"]) != record["sha256"]):
+                    error = ERR_FILE_CANT_WRITE
+            originals[path] = record
+            if error != OK:
+                break
+    if error == OK:
+        var manifest := FileAccess.open(history.path_join("manifest.json"), FileAccess.WRITE)
+        if manifest == null:
+            error = FileAccess.get_open_error()
+        else:
+            manifest.store_string(JSON.stringify({"operation": "explicit_new_game", "originals": originals}, "  "))
+            manifest.flush()
+            error = manifest.get_error()
+            manifest.close()
+    var bytes := JSON.stringify(fresh.to_dict(), "", true, true).to_utf8_buffer()
+    var prepared: Array[Dictionary] = []
+    if error == OK:
+        for path in [primary, backup]:
+            var temporary := _prepare_file(path, bytes)
+            prepared.append(temporary)
+            error = temporary["error"]
+            if error != OK:
+                break
+    if error == OK:
+        error = _replace_file(prepared[1]["path"], backup)
+        if error == OK:
+            error = _replace_file(prepared[0]["path"], primary)
+        if error != OK:
+            for path in [primary, backup]:
+                var rollback := _restore_new_game_original(path, originals[path])
+                if rollback != OK:
+                    result["rollback_error"] = rollback
+    for temporary in prepared:
+        var cleanup := _remove_temporary(temporary["path"])
+        if cleanup != OK and error == OK:
+            error = cleanup
+    _writing = false
+    result["error"] = error
+    return result
+
+
+func _restore_new_game_original(path: String, record: Dictionary) -> Error:
+    if not record["exists"]:
+        return DirAccess.remove_absolute(ProjectSettings.globalize_path(path)) if FileAccess.file_exists(path) else OK
+    if FileAccess.file_exists(path) and FileAccess.get_sha256(path) == record["sha256"]:
+        return OK
+    var temporary := path + ".tmp_rollback_" + str(OS.get_process_id()) + "_" + str(Time.get_ticks_usec())
+    var error := DirAccess.copy_absolute(ProjectSettings.globalize_path(record["copy"]), ProjectSettings.globalize_path(temporary))
+    if error == OK:
+        error = _replace_file(temporary, path) if FileAccess.get_sha256(temporary) == record["sha256"] else ERR_FILE_CANT_WRITE
+    var cleanup := _remove_temporary(temporary)
+    return cleanup if cleanup != OK and error == OK else error
+
+
 func _recoverable(error: Error) -> bool:
     return error in [ERR_FILE_NOT_FOUND, ERR_INVALID_DATA, ERR_PARSE_ERROR]
 

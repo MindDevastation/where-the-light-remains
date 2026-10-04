@@ -1,0 +1,5 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SAVE_IO runtime: 4.7.2-stable (official); display=headless
+SAVE_IO checked: first/previous backup, real JSON round trips, corruption fallback/read-only decisions, future-schema protection, backup/primary replacement failures, no temp leaks, bounded reads and dirty commit
+SAVE_IO PASS: actual atomic files/backup/recovery/dirty and failed App exit, Russian retry/stay, close guard; production files preserved
