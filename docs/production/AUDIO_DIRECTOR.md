@@ -53,3 +53,26 @@ and authenticated TCP X11/Vulkan Forward+ checks use the confirmed local toolcha
 No old environment preflight is repeated.
 
 Status: implementation in progress; no completed feature acceptance yet.
+
+## Recovery mixer acceptance — 2026-10-04 UTC
+
+The current Archive working branch already contains the dual-player director
+and MusicCue/MusicStage resources from its published reconstruction checkpoint;
+they were inspected in place and not rebuilt. No earlier AudioDirector feature
+acceptance receipt is present. Work continues on
+`feature/04-archive-gameplay/checkpoints-2026-10-04` under the owner's recovery
+policy; main remains unchanged.
+
+`evidence/audio_director/mixer-validation-1/results.json` passes clean-copy import
+and 29 assertions with generated in-memory PCM through Godot's actual Dummy
+driver mixer. Actual Music-parent peaks: baseline 0.08912, nested -6 dB duck
+0.04467, remaining -4 dB duck 0.05623, nested/expired silence zero, explicit
+semantic resume 0.08912. SFX/Ambience/UI continue around 0.09997 during silence.
+Timed tokens expire while paused, remain latched against an automatic second
+swell and preserve pre-existing child mutes. Ducks restore exact child gains;
+parent preference gains and both protected save hashes remain unchanged.
+
+This accepts the bounded mixer/lock component only, without a speaker check or
+shipping music bindings. Next: unique/bag selection, bounded crossfade queue,
+vocal/semantic guards and actual transactional router cancellation. Runtime
+OGG/stem exports, authored scene events and target-hardware audio/art remain open.
