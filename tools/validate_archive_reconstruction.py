@@ -6,6 +6,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
@@ -26,9 +27,36 @@ def validate(args):
     paths = sorted(p.relative_to(source).as_posix() for folder in ("game", "tools")
                    for p in (source / folder).rglob("*") if p.is_file() and not p.is_symlink()
                    and not any(part in {".godot", ".import", "__pycache__"} for part in p.parts))
+    review_copies = {}
+    for family in args.review_family:
+        folder = family.resolve()
+        if not folder.is_relative_to(source / 'docs/production/evidence/audio_director'):
+            raise ValueError('Review family is outside repository evidence')
+        receipt_path = folder / 'results.json'
+        receipt_data = json.loads(receipt_path.read_text())
+        if receipt_data.get('status') != 'PASS' or receipt_data.get('acceptance') != 'TECHNICAL_REVIEW_ONLY_UNBOUND':
+            raise ValueError('Review export does not have a technical PASS receipt')
+        paths.append(receipt_path.relative_to(source).as_posix())
+        for record in receipt_data['records']:
+            cue = record['cue_id']
+            if not re.fullmatch(r'mus_s0[12]_[a-z0-9_]+_v\d{2}', cue) or record.get('shipping_binding') is not False:
+                raise ValueError('Unexpected review-only cue identity/binding')
+            media = source / record['derivative_path']
+            if media.is_symlink() or media.resolve().parent != folder or media.name != cue + '.ogg' or \
+                    digest(media) != record['derivative_sha256']:
+                raise ValueError('Review media path/hash mismatch')
+            name = media.relative_to(source).as_posix()
+            target = 'game/audio/review/' + media.name
+            if target in review_copies.values() or (source / target).exists():
+                raise ValueError('Duplicate review cue or existing shipping path')
+            paths.append(name)
+            review_copies[name] = target
+    paths = sorted(set(paths))
     hashes = {p: digest(source / p) for p in paths}
     result = {"status": "RUNNING", "started_at": stamp(), "source_hashes": hashes,
-              "scope": args.tests, "save_mode": args.save_mode, "records": []}
+              "scope": args.tests, "save_mode": args.save_mode, "records": [],
+              "private_review_copies": review_copies,
+              "review_acceptance": "Technical import/mixer only; no shipping/listening/motif acceptance." if review_copies else None}
     receipt = output / "results.json"
     receipt.write_text(json.dumps(result, indent=2) + "\n")
     try:
@@ -41,6 +69,12 @@ def validate(args):
                 shutil.copyfile(source / name, target)
             if (clean / "game/.godot").exists() or any(digest(clean / p) != h for p, h in hashes.items()):
                 raise RuntimeError("Clean-copy source mismatch or reused import cache")
+            for name, target_name in review_copies.items():
+                target = clean / target_name
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(source / name, target)
+                if digest(target) != hashes[name]:
+                    raise RuntimeError('Private review copy hash mismatch')
             def run(name, command, marker="", timeout=90):
                 data = scratch / ("userdata-" + name)
                 slots = data / "godot/app_userdata/Where the Light Remains"
@@ -113,4 +147,6 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--tests", nargs="+", required=True)
     parser.add_argument("--save-mode", choices=("read-only", "test-owned"), default="read-only")
+    parser.add_argument("--review-family", type=Path, nargs="+", default=[],
+                        help="Copy sealed unbound review OGGs into the private clean game only")
     validate(parser.parse_args())

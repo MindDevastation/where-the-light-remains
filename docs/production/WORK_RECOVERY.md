@@ -37,6 +37,11 @@ publication SHA is recorded in the remote commit/receipt, not predicted here.
 - First S01 unique finite Vorbis review derivative passes: 129.72 s, stereo
   48 kHz, 2,369,745 bytes, -15.9 LUFS / -3.1 dBTP, seven boundary guards.
   Exact recipe/command logs/hashes are in `s01-unique-review-1/`; no binding.
+- Both unique source-derived OGGs privately cache-free import in Godot 4.7.2:
+  30 actual compressed decoder/mixer/duck/crossfade/finite-end assertions,
+  protected save hashes, 17 main-entry checks and normal startup pass.
+  `unique-godot-review-2/` is current; initial test typing failure is retained
+  in `unique-godot-review-1/`. No shipping music/media bindings were added.
 
 Exact source hashes, full logs, failed diagnostics and subsequent PASS receipts
 are under `evidence/archive_reconstruction/` and `evidence/audio_director/`.
@@ -50,10 +55,11 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: privately cache-free import/mixer-test the exact S01/S02 unique review
-OGGs in Godot, checking finite playback/crossfade/duck and protected saves. Both
-unique exports are complete with source protection and eight boundary guards;
-S02 measurement/recipe is in `s02-unique-review-1/`. Continue one candidate family at a time. Actual S00
+Next: export `mus_s01_activation_sequence_v01`, then the four remaining Group A
+and three Group B shared candidates, one finite family/checkpoint at a time.
+Verify decode/format/duration/true peak/source hashes and preserve review-only
+status. Both unique exports and their private Godot import/mixer pass are complete.
+Actual S00
 first-note/common motif selection and listening/scene mix
 remain pending; do not bind unaccepted candidates to shipping scenes. There are
 currently no runtime music derivatives and no ambience/SFX media. Existing

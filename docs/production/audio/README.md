@@ -35,3 +35,25 @@ does not mean a musical/edit/palette/no-vocal/scene-mix/license check passed.
 Review derivatives live with evidence until their authored acceptance exists.
 Then perform initially cache-free Godot import/mixer/world/progression/resume
 validation before shipping bindings. The immutable master WAVs remain in assets.
+
+Two unique review cues now exist in `s01-unique-review-1/` and
+`s02-unique-review-1/` under the evidence directory. To import them only into an
+exact temporary cache-free project and capture actual Godot mixer output:
+
+```sh
+timeout 180 python -B tools/validate_archive_reconstruction.py \
+  --godot /absolute/path/to/Godot_v4.7.2-stable_linux.x86_64 \
+  --output docs/production/evidence/audio_director/unique-godot-review-NEW \
+  --tests audio_review_smoke boot_startup_smoke normal_startup \
+  --save-mode read-only \
+  --review-family docs/production/evidence/audio_director/s01-unique-review-1 \
+    docs/production/evidence/audio_director/s02-unique-review-1
+```
+
+The validator verifies sealed derivative SHA/path/identity and copies OGGs into
+`game/audio/review/` only inside its temporary project. It checks source hashes
+and removes that project/cache afterward. The shipping working copy never gains
+these media/bindings. `audio_review_smoke` expects the two exact unique cues;
+running that test without private review media intentionally fails. Accepted
+technical evidence is `unique-godot-review-2/` (30 assertions plus main-entry
+regressions); listening/edit/motif and actual speaker/scene-mix remain unverified.

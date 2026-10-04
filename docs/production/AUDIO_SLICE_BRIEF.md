@@ -46,12 +46,24 @@ The first finite review derivative, `mus_s01_archive_awakening_v01`, now passes
 compressed format/decode/duration/true-peak/source protection in
 `evidence/audio_director/s01-unique-review-1/`: 129.72 s, 2,369,745 bytes,
 -15.9 LUFS / 8.0 LU LRA / -3.1 dBTP, no gain adjustment. Seven export guards pass.
-It remains unbound; no Godot import or musical acceptance is claimed yet.
+It remains unbound; Godot technical validation is recorded below and musical
+acceptance remains pending.
 
 The S02 unique review derivative now also passes in `s02-unique-review-1/`: 127.96 s, 2,168,261 bytes, -16.5 LUFS / 9.1 LU LRA / -3.6 dBTP; no gain adjustment. Eight boundary guards include timeout diagnostics.
 
-Next validate both exact unique OGGs with a private cache-free Godot import/mixer
-run, preserving protected save slots and leaving shipping bindings absent.
+Both exact unique OGGs now pass private cache-free Godot 4.7.2 import and 30
+real decoder/mixer assertions: score signal, owned duck, two-decoder crossfade,
+finite end/silence and unchanged protected saves. The exact main entry's 17
+checks and normal startup also pass. See `unique-godot-review-2/`.
+`unique-godot-review-1/` retains the initial test-array typing error and bounded
+process termination; typed constants fix it. No shipping registry binding was
+added, and the private imported files/caches were removed after validation.
+
+Next export one shared finite review cue at a time, starting with
+`mus_s01_activation_sequence_v01`, then the remaining four Group A and three
+Group B sources, checkpointing each family. After all derivatives exist,
+prepare a compact listening/edit review index; actual source-motif selection
+and scene-mix acceptance remain open.
 Listening/scene-mix/motif acceptance remains pending. Identify the
 actual S00 first-note excerpt and common Archive motif from the source material;
 do not infer identical motifs across generated takes.
