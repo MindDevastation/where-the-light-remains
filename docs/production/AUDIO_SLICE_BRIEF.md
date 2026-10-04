@@ -68,8 +68,9 @@ a previous immutable receipt.
 `s01-fragment-review-1/`, with eleven guards. Unfinished encoder files now live
 outside Git; verification rejects any leftover intermediate inside evidence.
 
-Next export `mus_s02_quiet_exhale_v01` and checkpoint, continuing one finite family at a time.
-Current 9/10 technical candidates and their exact evidence are indexed
+All ten finite S01/S02 exports now pass. Next privately cache-free import/mixer
+validate the complete pools and finish the listening/edit review package.
+Current 10/10 technical candidates and their exact evidence are indexed
 in `audio/REVIEW_INDEX.md`. After all derivatives exist,
 prepare a compact listening/edit review index; actual source-motif selection
 and scene-mix acceptance remain open.

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "guard_count": 12,
+  "utc": "2026-10-04T22:40:55.196661+00:00",
+  "scope": "One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.",
+  "guard_log_sha256": "ac54988caf89b035c63cf499afd2301118d363ae2e39d3999388d9cf22a27d2f",
+  "source_hashes": {
+    "tools/audio_slice.py": "d7e298978d044fb7bfb0ecf2762ffc0dabf4a6fc04b1993d9cfb429261b368a0",
+    "tools/test_audio_slice.py": "6b82917aece26921c4bad1f59b3e8f58a9a5d8891ed0f9bd9ee3d674d17c81c1",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/B_Wings/shared/080_Quiet Exhale Through Evergreens.wav": "70688672fb4e78ef67139539f2b602271fc03716f56432c575f7eef234c1153b",
+    "docs/production/evidence/audio_director/s02-quiet-exhale-review-1/mus_s02_quiet_exhale_v01.ogg": "ba7a75b6578a92c38b5cb9d400a23f6688101e96b7accda18a9aaa8251d51bfa"
+  }
+}

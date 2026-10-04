@@ -17,9 +17,9 @@
 | mus_s01_resonant_puzzle_v01 | S01 / group A shared source | [OGG](../evidence/audio_director/s01-resonant-review-1/mus_s01_resonant_puzzle_v01.ogg) · [proof](../evidence/audio_director/s01-resonant-review-1/verification.json) | 178.40 | -16.3 / -3.5 | Technical PASS; musical pending |
 | mus_s02_silent_roads_v01 | S02 / group B shared source | [OGG](../evidence/audio_director/s02-silent-roads-review-1/mus_s02_silent_roads_v01.ogg) · [proof](../evidence/audio_director/s02-silent-roads-review-1/verification.json) | 119.96 | -14.7 / -2.7 | Technical PASS; musical pending |
 | mus_s02_muted_pulse_v01 | S02 / group B shared source | [OGG](../evidence/audio_director/s02-muted-pulse-review-2/mus_s02_muted_pulse_v01.ogg) · [proof](../evidence/audio_director/s02-muted-pulse-review-2/verification.json) | 79.84 | -17.3 / -3.8 | Technical PASS; musical pending |
-| mus_s02_quiet_exhale_v01 | S02 / group B shared source | — | — | — | Export pending |
+| mus_s02_quiet_exhale_v01 | S02 / group B shared source | [OGG](../evidence/audio_director/s02-quiet-exhale-review-1/mus_s02_quiet_exhale_v01.ogg) · [proof](../evidence/audio_director/s02-quiet-exhale-review-1/verification.json) | 128.56 | -13.7 / -2.7 | Technical PASS; musical pending |
 
-Готово 9 из 10 конечных кандидатов S01/S02. S00 в этот счет не входит.
+Готово 10 из 10 конечных кандидатов S01/S02. S00 в этот счет не входит.
 
 30 проверок Godot для двух уникальных OGG: ../evidence/audio_director/unique-godot-review-2/.
 Shared OGGs currently have compressed decode/probe/peak/source proof; full pool Godot validation remains the next acceptance step.

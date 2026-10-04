@@ -55,9 +55,10 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: export `mus_s02_quiet_exhale_v01` as one bounded review family, then checkpoint.
-9/10 finite S01/S02 candidates pass technical export/decode/source
-checks; 1 remain. See `audio/REVIEW_INDEX.md` for exact files/proof.
+Next: privately cache-free import/mixer/finite-pool test all ten review OGGs,
+then finish the listening/edit review package and checkpoint.
+10/10 finite S01/S02 candidates pass technical export/decode/source
+checks; 0 remain. See `audio/REVIEW_INDEX.md` for exact files/proof.
 
 Actual S00
 first-note/common motif selection and listening/scene mix

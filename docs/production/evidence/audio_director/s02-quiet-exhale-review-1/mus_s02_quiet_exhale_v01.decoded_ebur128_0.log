@@ -1,0 +1,29 @@
+Input #0, ogg, from '/tmp/wlr-audio-encode-5tpfugtf/mus_s02_quiet_exhale_v01.attempt0.ogg':
+  Duration: 00:02:08.56, start: 0.000000, bitrate: 136 kb/s
+  Stream #0:0: Audio: vorbis, 48000 Hz, stereo, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 libvorbis
+Stream mapping:
+  Stream #0:0 -> #0:0 (vorbis (native) -> pcm_s16le (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc60.31.102 pcm_s16le
+[out#0/null @ 0x55ace4a48a80] video:0kB audio:24105kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+size=N/A time=00:02:08.50 bitrate=N/A speed= 142x    
+[Parsed_ebur128_0 @ 0x55ace4a75540] Summary:
+
+  Integrated loudness:
+    I:         -13.7 LUFS
+    Threshold: -24.9 LUFS
+
+  Loudness range:
+    LRA:        16.5 LU
+    Threshold: -34.8 LUFS
+    LRA low:   -26.3 LUFS
+    LRA high:   -9.8 LUFS
+
+  True peak:
+    Peak:       -2.7 dBFS
