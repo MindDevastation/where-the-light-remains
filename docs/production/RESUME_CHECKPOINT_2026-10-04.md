@@ -30,12 +30,14 @@ which missed the explicitly required 900-second cadence. This was a manual
 cadence miss while recording final evidence, not a network interruption. Do not
 describe this series as continuous 15-minute compliance.
 
-Subsequent active development must use the existing verified foreground timer
+Subsequent active development must follow `SESSION_CHECKPOINTS.md`, including
+immediate working-branch commit/push after each consistent snapshot. Use the
+existing verified foreground timer
 in a managed execution session, with `--interval 900` and the owner's authorized
 UTC deadline, retaining its session identity/output. Inspect that session and
 archive timestamps before resuming; do not launch an unverified detached timer.
 The timer does not survive an entire filesystem replacement or guarantee a
-remote backup. A fresh verified post-merge checkpoint preserves this exact work
+remote backup by itself. A fresh verified post-merge checkpoint preserves this exact work
 and the checkpoint-series record. Its archive identity is recorded in the final
 execution output and archive metadata.
 
@@ -56,8 +58,12 @@ or the already documented safe local toolchain restoration if that path is lost.
 Use authenticated Xvfb TCP with MIT-MAGIC-COOKIE, the local xkbcomp dependency,
 `-noreset`, X11 and Vulkan/Forward+ for new graphics tests. Do not disable TCP.
 
-Do not start S03 while GATE-VS1 is open. Do not publish, reset, rewrite LFS/history,
-claim final art/audio, or claim physical-GPU/Windows acceptance from this proof.
+Do not start S03 while GATE-VS1 is open. The owner's later explicit instruction
+authorizes checkpoint publication to a dedicated working GitHub branch; it
+supersedes the earlier publication pause. Follow `SESSION_CHECKPOINTS.md` and
+verify the remote ref. Do not update `main`, reset surviving changes, rewrite
+LFS/history, claim final art/audio, or claim physical-GPU/Windows acceptance
+from this proof.
 The original three-hour work window ended at 14:54:32 UTC during the interrupted
 session. The latest resume instruction was handled through this bounded recovery
 and unfinished-component checkpoint; no additional three-hour deadline is invented.

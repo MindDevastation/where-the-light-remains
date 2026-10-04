@@ -1,0 +1,66 @@
+{
+  "reviewed_utc": "2026-10-04T16:40:24.493821+00:00",
+  "status": "PASS",
+  "assessment": "Consistent production-document/evidence-only change; accepted game/tools hashes unchanged; no known broken intermediate result.",
+  "checks": [
+    {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 0,
+      "stdout": "M  docs/production/ASTRA_WORKFLOW.md\nM  docs/production/RESUME_CHECKPOINT_2026-10-04.md\nA  docs/production/SESSION_CHECKPOINTS.md\nA  docs/production/evidence/checkpoints/README.md\nA  docs/production/evidence/checkpoints/accepted_state_2026-10-04.json\nA  docs/production/evidence/checkpoints/checkpoint_log.json\nA  docs/production/evidence/checkpoints/remote_before_2026-10-04.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--no-ext-diff",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--no-ext-diff",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout": " docs/production/ASTRA_WORKFLOW.md                  | 17 +++++\n docs/production/RESUME_CHECKPOINT_2026-10-04.md    | 14 +++-\n docs/production/SESSION_CHECKPOINTS.md             | 86 ++++++++++++++++++++++\n docs/production/evidence/checkpoints/README.md     | 25 +++++++\n .../checkpoints/accepted_state_2026-10-04.json     | 18 +++++\n .../evidence/checkpoints/checkpoint_log.json       | 43 +++++++++++\n .../checkpoints/remote_before_2026-10-04.json      | 14 ++++\n 7 files changed, 213 insertions(+), 4 deletions(-)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--no-ext-diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "exit_code": 0,
+      "stdout": "docs/production/ASTRA_WORKFLOW.md\ndocs/production/RESUME_CHECKPOINT_2026-10-04.md\ndocs/production/SESSION_CHECKPOINTS.md\ndocs/production/evidence/checkpoints/README.md\ndocs/production/evidence/checkpoints/accepted_state_2026-10-04.json\ndocs/production/evidence/checkpoints/checkpoint_log.json\ndocs/production/evidence/checkpoints/remote_before_2026-10-04.json\n",
+      "stderr": ""
+    }
+  ],
+  "staged_diff_reviewed": true,
+  "credential_scan": "PASS",
+  "target_branch": "feature/04-archive-gameplay/checkpoints-2026-10-04"
+}

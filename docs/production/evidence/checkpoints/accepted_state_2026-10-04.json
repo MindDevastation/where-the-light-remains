@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-10-04T16:37:11.160762+00:00",
+  "status": "PASS",
+  "stage": "T019 isolated gate/channel components; checkpoint policy documentation",
+  "accepted_source_commit": "d757a084c0773c9108f4d1fcbb95eb60bebf3dfd",
+  "commands_pass": 7,
+  "source_hashes_checked": 163,
+  "source_mismatches": [],
+  "evidence_payloads_checked": 41,
+  "evidence_mismatches": [],
+  "last_completed_check": {
+    "name": "review_all_completed_low",
+    "finished_at": "2026-10-04T15:38:42.519862+00:00",
+    "status": "PASS"
+  },
+  "tests_rerun": false,
+  "scope_limit": "Full T019/ArchiveMain/Boot/S02 reconstruction and GATE-VS1 remain open."
+}

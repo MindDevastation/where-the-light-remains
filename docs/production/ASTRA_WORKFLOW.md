@@ -217,3 +217,20 @@ Owner policy, 2026-09-22; applies before every new technical task.
 
 These recovery steps precede the missing-tool pause examples in section 6.
 They do not waive actual validation, canonical decisions or performance gates.
+
+## 11. Remote session checkpoints
+
+Owner policy, 2026-10-04: follow `SESSION_CHECKPOINTS.md` during development.
+Create a snapshot every 900 seconds while work is active, inspect `git status`
+and `git diff`, then commit and immediately push a consistent state to the
+dedicated working branch. A local archive alone is not a durable backup.
+Record snapshot time, commit SHA, stage, tests and verified remote ref in the
+checkpoint evidence. A completed, validated stage also gets a stable commit
+and push without waiting for the next timer tick.
+
+Known failing intermediate work must not be labeled stable; preserve its local
+snapshot and, when useful, publish an explicitly labeled WIP commit only to the
+working branch. Checkpoint publication never updates `main`. Recover from the
+newest verified remote working-branch checkpoint after environment loss, keeping
+newer surviving local changes. Never force-push or rewrite history without
+separate owner authorization.

@@ -1,0 +1,43 @@
+{
+  "policy": "docs/production/SESSION_CHECKPOINTS.md",
+  "records": [
+    {
+      "recorded_utc": "2026-10-04T16:39:08.132237+00:00",
+      "snapshot_started_utc": "2026-10-04T16:38:05.983173+00:00",
+      "snapshot_finished_utc": "2026-10-04T16:38:06.412996+00:00",
+      "archive": "wlr-snapshot-20261004T163806613717Z.tar.gz",
+      "archive_sha256": "3f30207caa022040dff9ff68777c5d1f8fd308f8dd5202a4437726f1fbb85026",
+      "archive_verification": {
+        "command": [
+          "python3",
+          "tools/verify_session_snapshot.py",
+          "--archive",
+          "/workspace/scratch/4f0b36b4bb0e/wlr-resumed-snapshots/wlr-snapshot-20261004T163806613717Z.tar.gz"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS: actual archive has 990 verified payloads; all 1 worktree HEAD objects recoverable; history mode=available_objects\n",
+        "stderr": ""
+      },
+      "history_coverage": {
+        "mode": "available_objects",
+        "complete": false,
+        "bundle_failure": null,
+        "limitation": "Preserves the existing local object cache only; missing promisor objects still need hydration from the original repository."
+      },
+      "head_at_snapshot": "b5f036ecbb74e846d28ebe953dd4628b9ef0361f",
+      "working_branch": "feature/04-archive-gameplay/checkpoints-2026-10-04",
+      "stage": "T019 isolated components accepted; remote checkpoint policy established",
+      "tests": {
+        "status": "PASS",
+        "accepted_source": "d757a084c0773c9108f4d1fcbb95eb60bebf3dfd",
+        "commands": 7,
+        "source_hashes": 163,
+        "evidence_payloads": 41,
+        "rerun": false
+      },
+      "checkpoint_commit": null,
+      "remote_status": "PREPARED; not yet published",
+      "remote_sha": null
+    }
+  ]
+}

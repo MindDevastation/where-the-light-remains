@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-04T16:37:18.804333+00:00",
+  "command": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04",
+    "refs/heads/feature/02-state-saves/audio-director",
+    "refs/heads/main"
+  ],
+  "exit_code": 0,
+  "stdout": "c6818057b96174172b59e29ca0fba187c698c904\trefs/heads/feature/02-state-saves/audio-director\n2914ec0a0a01a7f4b9a34d89768774451267c68c\trefs/heads/main\n",
+  "stderr": ""
+}
