@@ -3,6 +3,7 @@
 import argparse
 import tempfile
 import unittest
+import copy
 from unittest.mock import patch
 
 import audio_slice as audio
@@ -71,6 +72,29 @@ class ExportProtection(unittest.TestCase):
             record = audio.json.loads((output.parent / 'commands.jsonl').read_text())
             self.assertTrue(record['timed_out'])
             self.assertEqual(record['stdout_sha256'], audio.digest(output))
+
+    def test_tampered_derivative_cannot_receive_verification(self):
+        original = audio.json.loads((audio.REVIEW / 's02-unique-review-1/results.json').read_text())
+        with tempfile.TemporaryDirectory(dir=audio.REVIEW) as parent:
+            folder = audio.Path(parent).resolve()
+            result = copy.deepcopy(original)
+            record = result['records'][0]
+            media = folder / (record['cue_id'] + '.ogg')
+            media.write_bytes((audio.ROOT / record['derivative_path']).read_bytes() + b'tampered')
+            record['derivative_path'] = media.relative_to(audio.ROOT).as_posix()
+            result['tool_sha256'] = audio.digest(audio.Path(audio.__file__))
+            (folder / 'results.json').write_text(audio.json.dumps(result))
+            with self.assertRaisesRegex(ValueError, 'Derivative path/SHA'):
+                audio.verify_family(folder, audio.load_manifest())
+            self.assertFalse((folder / 'verification.json').exists())
+
+    def test_existing_verification_receipt_remains_immutable(self):
+        folder = audio.REVIEW / 's02-unique-review-1'
+        receipt = folder / 'verification.json'
+        before = receipt.read_bytes()
+        with self.assertRaises(FileExistsError):
+            audio.verify_family(folder, audio.load_manifest())
+        self.assertEqual(receipt.read_bytes(), before)
 
 
 if __name__ == '__main__':

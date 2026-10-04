@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "guard_count": 10,
+  "utc": "2026-10-04T22:19:17.243535+00:00",
+  "scope": "One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.",
+  "guard_log_sha256": "6131b844a0d1f5c67b8761b8eaf709a4cf707e80685869a980afe5d336030ea1",
+  "source_hashes": {
+    "tools/audio_slice.py": "2ac403e20ccfecb4c57525114db16a1a7ab864897b5b25c6124a7b340e22dcaf",
+    "tools/test_audio_slice.py": "29e02a9569f1aa4cc4780f998b162a4c67ea5e0e08a9b9598db86fd11040d911",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010",
+    "assets/audio/music/A_Archive/shared/Activation Sequence.wav": "7e7a680588fd3257a340853054960b21609fd83ce7280651f41a0c6ee331cf3a",
+    "docs/production/evidence/audio_director/s01-activation-review-1/mus_s01_activation_sequence_v01.ogg": "5722022b43585571bef00678fda85ca709cd3a2edcb993c0747a4cf58fdbe4df"
+  }
+}

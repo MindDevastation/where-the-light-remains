@@ -55,8 +55,10 @@ GATE-VS1 still needs authored scene art/audio and physical target-GPU profiling;
 S03 remains gated. Main was independently checked unchanged at
 `2914ec0a0a01a7f4b9a34d89768774451267c68c`.
 
-Next: export `mus_s01_activation_sequence_v01`, then the four remaining Group A
+Next: export `mus_s01_archive_fragment_v01`, then the three remaining Group A
 and three Group B shared candidates, one finite family/checkpoint at a time.
+The Activation Sequence review derivative passes in `s01-activation-review-1/`
+with ten guards, including altered media and immutable receipt protection.
 Verify decode/format/duration/true peak/source hashes and preserve review-only
 status. Both unique exports and their private Godot import/mixer pass are complete.
 Actual S00

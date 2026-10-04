@@ -59,9 +59,13 @@ checks and normal startup also pass. See `unique-godot-review-2/`.
 process termination; typed constants fix it. No shipping registry binding was
 added, and the private imported files/caches were removed after validation.
 
-Next export one shared finite review cue at a time, starting with
-`mus_s01_activation_sequence_v01`, then the remaining four Group A and three
-Group B sources, checkpointing each family. After all derivatives exist,
+The first Group A shared cue, `mus_s01_activation_sequence_v01`, now passes
+finite Vorbis export/decode and ten source/output/receipt guards in
+`s01-activation-review-1/`. Verification refuses tampered media and overwriting
+a previous immutable receipt.
+
+Next export `mus_s01_archive_fragment_v01`, then the remaining three Group A
+and three Group B shared sources, checkpointing each family. After all derivatives exist,
 prepare a compact listening/edit review index; actual source-motif selection
 and scene-mix acceptance remain open.
 Listening/scene-mix/motif acceptance remains pending. Identify the

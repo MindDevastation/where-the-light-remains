@@ -19,6 +19,10 @@ timeout 180 python -B tools/audio_slice.py analyze \
 timeout 120 python -B tools/audio_slice.py export \
   --cue mus_s01_archive_awakening_v01 \
   --output docs/production/evidence/audio_director/s01-unique-review-NEW
+timeout 30 python -B tools/test_audio_slice.py \
+  > docs/production/evidence/audio_director/s01-unique-review-NEW/guard_tests.log 2>&1
+timeout 30 python -B tools/audio_slice.py verify \
+  --output docs/production/evidence/audio_director/s01-unique-review-NEW
 ```
 
 Analysis records stereo PCM envelopes and EBU R128 integrated loudness, LRA and

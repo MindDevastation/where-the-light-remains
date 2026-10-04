@@ -138,11 +138,60 @@ def envelope(path):
             'scope': 'PCM energy envelope only; does not identify pitch, motif, vocals or loop boundaries.'}
 
 
+def verify_family(output, manifest):
+    """Seal one new export against its recipe, commands, guards and source bytes."""
+    verification = output / 'verification.json'
+    if verification.exists():
+        raise FileExistsError('Existing immutable verification receipt')
+    result = json.loads((output / 'results.json').read_text())
+    if result['status'] != 'PASS' or result['operation'] != 'export' or \
+            result['acceptance'] != 'TECHNICAL_REVIEW_ONLY_UNBOUND' or len(result['records']) != 1:
+        raise ValueError('One technically passed review export is required')
+    if result['tool_sha256'] != digest(Path(__file__)) or result['manifest_sha256'] != digest(MANIFEST):
+        raise ValueError('Source recipe changed after export')
+    record = result['records'][0]
+    entry = next(e for e in manifest['entries'] if e['cue_id'] == record['cue_id'])
+    media = ROOT / record['derivative_path']
+    if media.is_symlink() or media.resolve().parent != output or media.name != entry['cue_id'] + '.ogg' or \
+            digest(media) != record['derivative_sha256']:
+        raise ValueError('Derivative path/SHA mismatch')
+    if record['source_sha256'] != entry['source_sha256'] or record['source_path'] != entry['source_path'] or \
+            record['shipping_binding'] or record['loop'] or record['stems'] or \
+            record['decoded_loudness']['true_peak_dbtp'] > manifest['candidate_true_peak_ceiling_dbtp']:
+        raise ValueError('Export acceptance/source/finite/peak scope mismatch')
+    start, end = interval(entry)
+    if record['interval_seconds'] != [start, end] or abs(float(record['probe']['format']['duration']) - (end - start)) > .02:
+        raise ValueError('Export interval/duration mismatch')
+    logs = [json.loads(line) for line in (output / 'commands.jsonl').read_text().splitlines()]
+    if len(logs) < 5:
+        raise ValueError('Incomplete FFmpeg/probe command evidence')
+    for command_record in logs:
+        name = command_record['stdout_file']
+        if Path(name).name != name or command_record['exit_code'] or command_record['timed_out'] or \
+                digest(output / name) != command_record['stdout_sha256']:
+            raise ValueError('Command log/status/SHA mismatch')
+    guards = output / 'guard_tests.log'
+    text = guards.read_text()
+    match = re.search(r'Ran (\d+) tests', text)
+    if match is None or int(match[1]) < 8 or '\nOK\n' not in text or 'FAILED' in text:
+        raise ValueError('Export guard tests did not pass')
+    paths = ['tools/audio_slice.py', 'tools/test_audio_slice.py', MANIFEST.relative_to(ROOT).as_posix(),
+             record['source_path'], record['derivative_path']]
+    receipt = {'status': 'PASS', 'guard_count': int(match[1]), 'utc': stamp(),
+               'scope': 'One finite unbound review export; exact recipe/command/media/source bytes and safety guards. No musical or shipping acceptance.',
+               'guard_log_sha256': digest(guards),
+               'source_hashes': {path: digest(ROOT / path) for path in paths}}
+    verification.write_text(json.dumps(receipt, indent=2) + '\n')
+    print(json.dumps({'cue_id': entry['cue_id'], 'status': 'PASS', 'guard_count': receipt['guard_count']}))
+
+
 def execute(args):
     manifest = load_manifest()
     output = args.output.resolve()
     if not output.is_relative_to(REVIEW.resolve()) or output == REVIEW.resolve():
         raise ValueError('Exports must be an isolated review family outside shipping game/assets')
+    if args.operation == 'verify':
+        return verify_family(output, manifest)
     selected = manifest['entries']
     if args.operation == 'export':
         selected = [e for e in selected if e['cue_id'] == args.cue]
@@ -219,7 +268,7 @@ def execute(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('operation', choices=('analyze', 'export'))
+    parser.add_argument('operation', choices=('analyze', 'export', 'verify'))
     parser.add_argument('--cue')
     parser.add_argument('--output', type=Path, required=True)
     execute(parser.parse_args())

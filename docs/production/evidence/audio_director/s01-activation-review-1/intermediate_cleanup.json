@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-04T22:21:45.385395+00:00",
+  "unaccepted_intermediate": "mus_s01_activation_sequence_v01.attempt0.ogg",
+  "bytes": 786432,
+  "sha256": "e020c2529b629502d99ff71249c48987d49554b1b0261c711e058dd4750e1775",
+  "mtime_utc": "2026-10-04T22:18:39.680792+00:00",
+  "ffmpeg_processes": [],
+  "action": "Remove only own unaccepted intermediate; accepted full derivative/source hashes preserved."
+}
