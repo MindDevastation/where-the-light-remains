@@ -231,3 +231,10 @@ or shipping soundtrack was invented. Next: inspect the actual approved runtime
 derivatives and prepare the bounded S00/S01/S02 authored audio binding/export
 brief, then continue VS1 room/prologue art/audio while physical GPU acceptance
 remains separately open. Full GATE-VS1 must pass before S03.
+
+The follow-up fragment integration owns a -4 dB text duck and passes 13 actual
+modal/PCM assertions plus 60 S02 and 17 shipping-entry assertions in
+`fragment-validation-2`. Removal of a hidden modal safely releases input/audio
+ownership without touching newer owners. The exact next source-processing block
+and twelve-source inventory are in `AUDIO_SLICE_BRIEF.md`; runtime derivatives,
+authored slice art/audio and physical target hardware remain unaccepted.

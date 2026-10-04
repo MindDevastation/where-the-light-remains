@@ -21,7 +21,7 @@ with playing score. Two reproduced routing/teardown defects are fixed; see
 bindings and full VS1 art/audio/hardware acceptance remain separate work.
 See `ARCHIVE_RECONSTRUCTION.md` and its current receipts.
 
-**Implementation preflight / initial implementation.**
+**Playable graybox implementation; authored VS1 art/audio acceptance remains open.**
 
 ## Ready
 
