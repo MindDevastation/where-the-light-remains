@@ -7,6 +7,7 @@ signal closed
 var _seen: Dictionary = {}
 var _previous_mode := InputManager.Mode.GAMEPLAY
 var _mode_revision := -1
+var _duck_token := 0
 var title_label: Label
 var couplet_label: Label
 var feeling_label: Label
@@ -94,6 +95,7 @@ func present_fragment(id: StringName) -> Error:
     _previous_mode = InputManager.mode
     InputManager.set_mode(InputManager.Mode.UI)
     _mode_revision = InputManager.mode_revision
+    _duck_token = AudioDirector.acquire_duck(-4.0)
     continue_button.release_focus()
     show()
     continue_button.grab_focus()
@@ -108,15 +110,24 @@ func restore_collected(ids: Array[StringName]) -> void:
 
 
 func dismiss(emit_closed: bool = true) -> void:
-    if not visible:
+    _release_duck()
+    var was_visible := visible
+    if not was_visible and _mode_revision < 0:
         return
-    continue_button.release_focus()
+    if is_instance_valid(continue_button) and continue_button.is_inside_tree():
+        continue_button.release_focus()
     hide()
     if InputManager.mode == InputManager.Mode.UI and InputManager.mode_revision == _mode_revision:
         InputManager.set_mode(_previous_mode)
     _mode_revision = -1
-    if emit_closed:
+    if emit_closed and was_visible:
         closed.emit()
+
+
+func _release_duck() -> void:
+    if _duck_token > 0:
+        AudioDirector.release_duck(_duck_token)
+        _duck_token = 0
 
 
 func _unhandled_key_input(event: InputEvent) -> void:

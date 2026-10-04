@@ -1,0 +1,261 @@
+{
+  "status": "INPUT_INVENTORY_ONLY",
+  "utc": "2026-10-04T21:21:42.865717+00:00",
+  "source_policy": "assets/audio/music/MUSIC_RUNTIME_POLICY.md; assets/audio/README.md",
+  "runtime_music_derivatives": [],
+  "sources": [
+    {
+      "stage": "S00",
+      "role": "scripted seed source",
+      "path": "assets/audio/music/A_Archive/stages/S00_Prologue/unique/Sparse Awakening vol.2.wav",
+      "bytes": 32300560,
+      "sha256": "4bb445fdf9c9187c00ddaf4c016860ab775532b666916b15e8fbf1d11a41953b",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "168.160000"
+        }
+      }
+    },
+    {
+      "stage": "S00",
+      "role": "scripted supplemental source",
+      "path": "assets/audio/music/A_Archive/stages/S00_Prologue/supplemental/Sparse Awakening.wav",
+      "bytes": 31501840,
+      "sha256": "cb27c6512d710497b058d94eb74004b510c7b50f001f16e712ab7cf180e015ad",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "164.000000"
+        }
+      }
+    },
+    {
+      "stage": "S01",
+      "role": "unique first",
+      "path": "assets/audio/music/A_Archive/stages/S01_Hub/unique/Archive Awakening.wav",
+      "bytes": 24920080,
+      "sha256": "0eeaafefb8a2f14f4d167a8638c2625ac278a447eb02d5a98e104348614fb0b3",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "129.720000"
+        }
+      }
+    },
+    {
+      "stage": "S02",
+      "role": "unique first",
+      "path": "assets/audio/music/B_Wings/stages/S02_Warmth_Light/unique/Cold to Warm.wav",
+      "bytes": 24582160,
+      "sha256": "ccbf2c5fbc700df6f077863c11c37fb7a962f7efd95d793b51dbce4951a96a39",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "127.960000"
+        }
+      }
+    },
+    {
+      "stage": "S01",
+      "role": "group A shared source",
+      "path": "assets/audio/music/A_Archive/shared/Activation Sequence.wav",
+      "bytes": 22554640,
+      "sha256": "7e7a680588fd3257a340853054960b21609fd83ce7280651f41a0c6ee331cf3a",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "117.400000"
+        }
+      }
+    },
+    {
+      "stage": "S01",
+      "role": "group A shared source",
+      "path": "assets/audio/music/A_Archive/shared/Archive Fragment.wav",
+      "bytes": 33229840,
+      "sha256": "67bc63793e27c7734719c5aa4c0ac4780621a0fb4e338b7567d25af4664a9da0",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "173.000000"
+        }
+      }
+    },
+    {
+      "stage": "S01",
+      "role": "group A shared source",
+      "path": "assets/audio/music/A_Archive/shared/Hub Motif.wav",
+      "bytes": 22669834,
+      "sha256": "737cea8ee38fdf0d9819515f8f4d4dfbec0376fc3d80cbf76d69cd1049b3fec6",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "118.000000"
+        }
+      }
+    },
+    {
+      "stage": "S01",
+      "role": "group A shared source",
+      "path": "assets/audio/music/A_Archive/shared/Mechanism Light.wav",
+      "bytes": 25503760,
+      "sha256": "67a7ebe4802b710a82d0fe2b0fa18dc087bc3d0b60d97a31ad0690bb79e73b82",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "132.760000"
+        }
+      }
+    },
+    {
+      "stage": "S01",
+      "role": "group A shared source",
+      "path": "assets/audio/music/A_Archive/shared/Resonant Puzzle.wav",
+      "bytes": 34266640,
+      "sha256": "4efb020e0ee524b940124079c31d468541dd6e1b14170c38d38bbc76efe2d875",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "178.400000"
+        }
+      }
+    },
+    {
+      "stage": "S02",
+      "role": "group B shared source",
+      "path": "assets/audio/music/B_Wings/shared/024_Silent Roads Beneath the Frost.wav",
+      "bytes": 23032488,
+      "sha256": "f653a468b5aad5cbd97b2bb88d69b27a563cab91036103dbc6b23b2aea992337",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "119.959979"
+        }
+      }
+    },
+    {
+      "stage": "S02",
+      "role": "group B shared source",
+      "path": "assets/audio/music/B_Wings/shared/034_Muted Pulse Under Falling White.wav",
+      "bytes": 15329448,
+      "sha256": "1cbcaa01aa3fee728d9ffd382e3ea07c048cddfae9c443757c45127bc2c414af",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "79.839979"
+        }
+      }
+    },
+    {
+      "stage": "S02",
+      "role": "group B shared source",
+      "path": "assets/audio/music/B_Wings/shared/080_Quiet Exhale Through Evergreens.wav",
+      "bytes": 24683688,
+      "sha256": "70688672fb4e78ef67139539f2b602271fc03716f56432c575f7eef234c1153b",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16
+          }
+        ],
+        "format": {
+          "duration": "128.559979"
+        }
+      }
+    }
+  ],
+  "scope": "Nearest S00/S01/S02 source masters only. Header/hash inspection proves available input, not musical/motif/loop/loudness/provenance or shipping acceptance. No source WAV changed or runtime binding created."
+}

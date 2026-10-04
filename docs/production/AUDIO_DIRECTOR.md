@@ -150,3 +150,20 @@ cue derivatives, define the bounded authored cue/stem export/binding brief and
 continue the VS1 art/audio slice from its actual assets. Missing motif editing,
 ambience/SFX, final derivatives or target hardware block only their dependent
 acceptance. S03 remains gated by full GATE-VS1.
+
+## Fragment text score ownership
+
+The existing fragment modal acquires one owned -4 dB score duck only on a new,
+accepted presentation. Continue, restore and tree removal release only that
+token; duplicate/busy/quiet-load paths never acquire another. Removing an
+externally hidden modal also restores its owned input mode while preserving any
+newer owner. Teardown releases focus only while the child button is still in the
+tree. Canonical title/couplet/feeling/sigil data and UI layout are unchanged.
+
+`fragment-validation-1` measures the correct PCM ratio but retains a focus-on-
+removed-child error. Its narrow teardown guard is corrected;
+`fragment-validation-2` is the final exact-source modal/Archive/entry receipt.
+Source-master availability for the next audio slice is sealed separately in
+`slice-input-inventory-1`: twelve 48 kHz stereo 16-bit PCM WAVs, zero currently
+imported runtime music derivatives. Header/hash inspection is not a mix, loop,
+motif or shipping-source-provenance acceptance.

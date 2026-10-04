@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "!is_inside_tree()" is true.
+   at: release_focus (scene/gui/control.cpp:3027)
+   GDScript backtrace (most recent call first):
+       [0] dismiss (res://gameplay/collectibles/fragment_presenter.gd:117)
+       [1] _exit_tree (res://gameplay/collectibles/fragment_presenter.gd:139)
+FRAGMENT_AUDIO PCM: baseline=0.09997862577438; modal=0.06308218836784; closed=0.09997861087322
+FRAGMENT_AUDIO PASS: 13 assertions; actual text duck, Continue/free/quiet restore and independent ownership
