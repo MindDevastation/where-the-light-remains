@@ -130,3 +130,27 @@ cadence misses, not evidence of continuous compliance. The coordinator is now
 active with a 600-second interval; its real WIP source and receipt pushes are
 recorded in `evidence/checkpoints/development.jsonl`. Its temporary bare-repo
 smoke test is separately identified in `durable_tool_smoke.json`.
+
+## Entrance continuation checkpoint — 2026-10-05 16:20:43 UTC
+
+Stable runtime/evidence commit: `feb39437fdf672f83e481538bc7b31a8e456f056`,
+parent `62d4b41b5f61b15ecb18c5d8b1931988277af642`, working branch
+`feature/04-archive-gameplay/checkpoints-2026-10-04`. Published through the
+authenticated GitHub connector with force=false; independent Git fetch and
+ls-remote verified exact parent/tree and a guarded clean local fast-forward.
+The transport receipt is in `evidence/checkpoints/gitdata_publications.jsonl`.
+The delta snapshot SHA-256 is
+`3a68191a63690d2e827675337e835ecade21426b00d6453473431e206614a540`;
+its archive is local, while complete changed code/evidence/captures are remote.
+
+Stage: approved room entrance junction piers and temporary skin alignment.
+Validation: 39 room + 45 corridor + 60 actual S02 assertions (144 total),
+cache-free imports, four inspected actual Forward+ Low/Medium views, unchanged
+protected physical save slots and cleaned private review copies. Historical
+xkbcomp-link failure is retained separately; the documented environment fix
+passed without changing the runner. Source fingerprints seal the exact delta.
+
+No new LFS payload or front-wall/ceiling/full VS1 acceptance is claimed. The
+protected supplied credential was used for a bounded authenticated API request;
+proxy CONNECT timed out before an authentication response. The next 3 m wall
+asset remains dependent on authorized GitHub/LFS network transport.

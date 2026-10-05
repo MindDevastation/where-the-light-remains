@@ -4,7 +4,8 @@ Recovered existing checkout and independently verified remote working-branch
 HEAD `62d4b41b5f61b15ecb18c5d8b1931988277af642`. Preserved its newer local
 entrance delta rather than reverting it or repeating completed art/audio work.
 The two approved entrance piers and aligned temporary skins now pass 84
-targeted room/corridor assertions and four inspected native Low/Medium views.
+targeted room/corridor assertions, 60 actual S02 regression assertions and four
+inspected native Low/Medium views.
 See `WING01_ROOM_ART.md` and `room-entrance-*` evidence.
 
 The supplied protected credential was actually used for a bounded authenticated
