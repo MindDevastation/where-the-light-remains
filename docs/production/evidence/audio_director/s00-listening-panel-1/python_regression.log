@@ -1,0 +1,16 @@
+test_completed_receipt_is_persisted_and_read_back_without_partial_file (test_audio_audition.ReceiptProtection.test_completed_receipt_is_persisted_and_read_back_without_partial_file) ... ok
+test_foreign_pending_file_is_preserved (test_audio_audition.ReceiptProtection.test_foreign_pending_file_is_preserved) ... ok
+test_invalid_write_progress_preserves_previous_receipt_and_cleans_own_pending (test_audio_audition.ReceiptProtection.test_invalid_write_progress_preserves_previous_receipt_and_cleans_own_pending) ... ok
+test_partial_write_error_preserves_previous_receipt (test_audio_audition.ReceiptProtection.test_partial_write_error_preserves_previous_receipt) ... ok
+test_receipt_read_back_mismatch_cannot_report_success (test_audio_audition.ReceiptProtection.test_receipt_read_back_mismatch_cannot_report_success) ... ok
+test_short_writes_complete_exact_receipt_before_replacement (test_audio_audition.ReceiptProtection.test_short_writes_complete_exact_receipt_before_replacement) ... ok
+test_catalog_uses_only_two_sealed_unselected_excerpts (test_audio_review_panel.ReviewProtection.test_catalog_uses_only_two_sealed_unselected_excerpts) ... ok
+test_changed_sealed_bytes_are_rejected (test_audio_review_panel.ReviewProtection.test_changed_sealed_bytes_are_rejected) ... ok
+test_existing_review_and_shipping_destinations_cannot_be_overwritten (test_audio_review_panel.ReviewProtection.test_existing_review_and_shipping_destinations_cannot_be_overwritten) ... ok
+test_failed_family_cannot_be_displayed_as_accepted (test_audio_review_panel.ReviewProtection.test_failed_family_cannot_be_displayed_as_accepted) ... ok
+test_selected_or_mismatched_manifest_source_is_rejected (test_audio_review_panel.ReviewProtection.test_selected_or_mismatched_manifest_source_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.017s
+
+OK

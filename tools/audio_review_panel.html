@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S00 · Выбор звучания искры</title>
+<style>
+:root{color-scheme:dark;font:16px/1.6 system-ui,sans-serif;color:#ebe6dc;background:#12191c}
+*{box-sizing:border-box}body{margin:0}main{max-width:1040px;margin:0 auto;padding:48px 24px 64px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:8px 0 20px;font-weight:600}
+h2{font-size:21px;font-weight:550;margin:0 0 12px}p{max-width:76ch;margin:12px 0}
+.eyebrow{color:#ddbf86;letter-spacing:.12em;font-size:13px}.muted,small{color:#aab8bc}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}
+.card,section{border:1px solid #435158;border-radius:12px;padding:22px;background:#1a2428}
+.card:has(input:checked){border-color:#ddbf86}.choose{display:flex;align-items:center;gap:10px;font-weight:550;font-size:18px}
+input[type=radio]{accent-color:#ddbf86}audio{display:block;width:100%;margin:18px 0 10px}
+section{margin-top:22px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+label.field{display:flex;flex-direction:column;gap:6px}input,textarea,button{font:inherit}
+input[type=number],input[type=text],textarea{width:100%;background:#10191d;color:#ebe6dc;border:1px solid #607279;border-radius:6px;padding:9px 12px}
+textarea{resize:vertical;min-height:70px}button{background:#ddbf86;color:#12191c;border:0;border-radius:6px;padding:10px 16px;cursor:pointer}
+button.secondary{background:#2f4249;color:#ebe6dc;border:1px solid #607279}button:hover{filter:brightness(1.12)}
+input:focus-visible,textarea:focus-visible,button:focus-visible,audio:focus-visible{outline:3px solid #e7d8b7;outline-offset:3px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}#message{min-height:28px;color:#ddbf86}#message[data-error=true]{color:#ffa899}
+@media(max-width:650px){main{padding:28px 16px}.grid,.fields{grid-template-columns:1fr}.card,section{padding:18px}}
+</style>
+<main>
+<div class="eyebrow">WHERE THE LIGHT REMAINS · S00</div>
+<h1>Звучание первой искры</h1>
+<p>Сравните два начала и отметьте фрагмент, который хотите использовать для первой ноты.
+Сохраненный выбор станет предложением по монтажу. Музыка в игре появится после проверки источника, мотива и готовой вырезки.</p>
+<p class="muted">Здесь доступны только первые 8 секунд каждого источника. Исходные WAV сохранены.
+Если нужная нота звучит дальше, потребуется новая вырезка для прослушивания.</p>
+<div class="grid" id="candidates"></div>
+<section>
+<h2>Границы фрагмента</h2>
+<p class="muted">Время отсчитывается от начала исходного WAV. В этих вырезках уже есть плавное начало 20 мс и окончание 250 мс.
+Кнопка ниже проигрывает выбранный участок без дополнительных переходов.</p>
+<div class="fields">
+<label class="field">Начало, с<input id="start" type="number" min="0" max="8" step="0.01" value="0"></label>
+<label class="field">Конец, с<input id="end" type="number" min="0" max="8" step="0.01" value="8"></label>
+</div>
+<div class="actions"><button id="preview" type="button">Прослушать участок</button><button id="stop" class="secondary" type="button">Остановить</button></div>
+<p id="message" role="status" aria-live="polite">Выберите источник и прослушайте его.</p>
+</section>
+<section>
+<h2>Предложение по монтажу</h2>
+<div class="fields">
+<label class="field">Первая нота, если определена<input id="note" type="text" placeholder="Например: D4" maxlength="80"></label>
+<label class="field">Четыре ноты мотива, через запятую<input id="motif" type="text" placeholder="Можно оставить пустым" maxlength="320"></label>
+</div>
+<label class="field">Комментарий после прослушивания<textarea id="notes" placeholder="Звучание, хвост ноты, инструментальность, связь с мотивом" maxlength="2000"></textarea></label>
+<p><button id="save" type="button">Сохранить предложение JSON</button></p>
+<small>Неопределенные нота и мотив останутся пустыми. Предложение не меняет музыкальный manifest и не подключает вырезку к игре.</small>
+</section>
+<p class="muted">В игровой сцене запрос музыки уже привязан к появлению искры. Этот просмотр помогает выбрать само звучание.</p>
+</main>
+<script id="review-data" type="application/json"><!--REVIEW_DATA--></script>
+<script><!--REVIEW_SCRIPT--></script>
+</html>

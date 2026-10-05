@@ -13,9 +13,15 @@ partial-write disk failure and protection of a pre-existing foreign pending file
 Evidence: `evidence/audio_director/receipt-short-writes-1/results.json`.
 The other nine source/encoding guards were not rerun in this block.
 
-Exact authored next step remains S00 listening/edit selection. Both accepted
-opening audition proposals are available; no first-note/motif selection or
-shipping music acceptance is inferred by this receipt fix.
+A self-contained S00 comparison/cut-proposal page now exists at
+`evidence/audio_director/s00-listening-panel-1/listen.html`, with both exact
+accepted excerpt bytes embedded. Five sealed-input Python + eight Node proposal/
+DOM ownership checks pass; the six receipt regressions also pass (19 total).
+`panel_checks.json` seals current sources/page/logs. It is a listening aid only;
+real-browser rendering/playback remains pending. Next independent block:
+validate this page in a bounded real headless browser, then return to actual
+source listening/edit selection. Both source intervals remain blocked; no note,
+motif, shipping media or scene binding was selected.
 
 ---
 

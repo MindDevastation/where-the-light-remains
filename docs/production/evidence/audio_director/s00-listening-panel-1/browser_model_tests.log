@@ -1,0 +1,16 @@
+✔ blank identities remain pending; source bytes and original clip are preserved (1.440139ms)
+✔ a entered note and four-note identity remain a proposal, never acceptance (0.206111ms)
+✔ invalid/outside/empty/non-finite intervals cannot be saved (0.374815ms)
+✔ partial/malformed motifs cannot silently become four notes (0.252581ms)
+✔ switching sources preserves separate note/motif/cut drafts (2.258483ms)
+✔ stop during decoding prevents delayed preview playback (1.044413ms)
+✔ source switch during decoding prevents the old source from starting (0.941659ms)
+✔ preview uses exact finite offset/duration; native play revokes it (0.952835ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 87.737902
