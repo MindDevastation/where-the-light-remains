@@ -3,6 +3,7 @@ extends Node
 
 var _output := ""
 var _quality := "low"
+var _entrance_only := false
 
 func _ready() -> void:
     get_tree().create_timer(40.0, true).timeout.connect(func() -> void:
@@ -14,6 +15,8 @@ func _ready() -> void:
             _output = arg.trim_prefix("--review-output=")
         elif arg.begins_with("--quality="):
             _quality = arg.trim_prefix("--quality=")
+        elif arg == "--entrance-only":
+            _entrance_only = true
     _run.call_deferred()
 
 func _run() -> void:
@@ -52,6 +55,11 @@ func _run() -> void:
         {"name": "room_corner", "position": Vector3(3.2, .02, -23.7), "target": Vector3(4.9, .02, -26.5)},
         {"name": "room_warm", "position": Vector3(1.8, .02, -20), "target": Vector3(0, .02, -23.5), "warm": true}
     ]
+    if _entrance_only:
+        views = [
+            {"name": "room_entrance_front", "position": Vector3(0, .02, -12), "target": Vector3(0, .02, -18)},
+            {"name": "room_entrance_reverse", "position": Vector3(0, .02, -18), "target": Vector3(0, .02, -12)}
+        ]
     var captures: Array[Dictionary] = []
     for view: Dictionary in views:
         if view.get("warm", false):
@@ -70,7 +78,7 @@ func _run() -> void:
                 return
         player.spawn_at(Transform3D(Basis.IDENTITY, view["position"]))
         player.look_at(view["target"])
-        player.head.rotation.x = .04 if view["name"] != "room_corner" else 0.0
+        player.head.rotation.x = .04 if not _entrance_only and view["name"] != "room_corner" else 0.0
         player.camera.make_current()
         for frame in 12:
             await get_tree().process_frame
@@ -92,12 +100,13 @@ func _run() -> void:
         return
     var environment: Environment = world.get_node("Environment").environment
     var file := FileAccess.open(_output.path_join("captures_" + _quality + ".json"), FileAccess.WRITE)
-    file.store_string(JSON.stringify({"status": "CAPTURED_FOR_REVIEW", "scope": "room", "quality": _quality, "captures": captures,
+    var review_scope := "entrance" if _entrance_only else "room"
+    file.store_string(JSON.stringify({"status": "CAPTURED_FOR_REVIEW", "scope": review_scope, "quality": _quality, "captures": captures,
         "renderer": RenderingServer.get_current_rendering_method(), "device": RenderingServer.get_video_adapter_name(),
         "glow": environment.glow_enabled, "volumetrics": environment.volumetric_fog_enabled}, "  "))
     file.close()
     game.queue_free()
     await get_tree().process_frame
     SceneRouter.unregister_stage(ArchiveProgress.WING_ONE)
-    print("ARCHIVE_ROOM_REVIEW CAPTURED: ", _quality, "; 3 actual player views; quiet local cold/warm projections")
+    print("ARCHIVE_%s_REVIEW CAPTURED: %s; %d actual player views; quiet local projections" % [review_scope.to_upper(), _quality, captures.size()])
     get_tree().quit(0)

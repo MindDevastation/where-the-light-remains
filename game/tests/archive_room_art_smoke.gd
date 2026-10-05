@@ -37,7 +37,7 @@ func _run() -> void:
     await get_tree().physics_frame
     var room := world.get_node("Wing01/Room") as Node3D
     var art := room.get_node("Presentation") as Node3D
-    var modules_valid := art.get_child_count() == 19
+    var modules_valid := art.get_child_count() == 21
     for part: Node3D in art.get_children():
         modules_valid = modules_valid and part.scale.is_equal_approx(Vector3.ONE) and part.position.y == 0.0
         modules_valid = modules_valid and part.position.x == roundf(part.position.x) and part.position.z == roundf(part.position.z)
@@ -49,6 +49,7 @@ func _run() -> void:
     var shape := (player.get_node("CollisionShape3D") as CollisionShape3D).shape
     var space := world.get_world_3d().direct_space_state
     await _test_floor(world, player, space)
+    _test_entrance_junctions(world, player, space)
     var feet: Array[Vector3] = []
     for name in ["Star", "Hearth"]:
         feet.append((world.get_node("Spawns/" + name) as Node3D).global_position)
@@ -79,6 +80,38 @@ func _run() -> void:
     if _failures.is_empty():
         print("ARCHIVE_ROOM_ART PASS: %d assertions" % _checks)
     get_tree().quit(0 if _failures.is_empty() else 1)
+
+func _test_entrance_junctions(world: ArchiveMain, player: FirstPersonPlayer, space: PhysicsDirectSpaceState3D) -> void:
+    var room := world.get_node("Wing01/Room") as Node3D
+    var art := room.get_node("Presentation") as Node3D
+    for side in ["L", "R"]:
+        var sign_x := -1.0 if side == "L" else 1.0
+        var expected := Vector3(sign_x * 2, 0, -15)
+        var pier := art.get_node("PierEntrance" + side) as Node3D
+        var owners := 0
+        for candidate: Node3D in world.find_children("*", "Node3D", true, false):
+            if candidate.scene_file_path == "res://worlds/archive/modules/archive_pier_4m.tscn" and candidate.global_position.is_equal_approx(expected):
+                owners += 1
+        _check(owners == 1 and pier.global_position.is_equal_approx(expected), "Exactly one approved pier owns entrance junction " + side)
+        var body := pier.get_node("Collision") as StaticBody3D
+        var excluded: Array[RID] = []
+        for other: StaticBody3D in world.find_children("*", "StaticBody3D", true, false):
+            if other != body:
+                excluded.append(other.get_rid())
+        var ray := PhysicsRayQueryParameters3D.create(Vector3(sign_x * 1.5, 2, -15), Vector3(sign_x * 2.2, 2, -15), 1, excluded)
+        var hit := space.intersect_ray(ray)
+        _check(not hit.is_empty() and hit["collider"] == body, "New entrance pier has its own solid blocker " + side)
+        var guard := room.get_node("RoomFront" + side) as StaticBody3D
+        var shape := guard.get_node("CollisionShape3D").shape as BoxShape3D
+        var skin := guard.get_node("Mesh") as MeshInstance3D
+        _check(guard.collision_layer == 1 and guard.global_position.is_equal_approx(Vector3(sign_x * 3.5, 2.75, -14.85)) and shape.size.is_equal_approx(Vector3(3, 5.5, .3)) and skin.visible and is_equal_approx(skin.global_position.z, -15), "Original higher front guard stays intact; temporary skin aligns with the portal " + side)
+    for x in [-.75, 0.0, .75]:
+        for direction in [-1.0, 1.0]:
+            var start := Vector3(x, .02, -13.5 if direction < 0 else -17.5)
+            var motion := Vector3(0, 0, direction * 4)
+            player.global_position = start
+            var hit := player.move_and_collide(motion)
+            _check(hit == null and player.global_position.is_equal_approx(start + motion), "Shipping capsule crosses the entrance in lane " + str(x) + ", direction " + str(direction))
 
 func _test_floor(world: ArchiveMain, player: FirstPersonPlayer, space: PhysicsDirectSpaceState3D) -> void:
     var tiles := world.get_node("Wing01/Room/TileFloor") as Node3D

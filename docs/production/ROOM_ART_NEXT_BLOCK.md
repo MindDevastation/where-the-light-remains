@@ -52,3 +52,12 @@ upload plus independent retrieval, then place two skins with old guards intact,
 test real capsule/grip/return paths and inspect the entrance from both sides.
 Ceiling and emitter/Hearth follow their own asset breakdown; do not substitute
 invented canonical geometry, stretch accepted modules or start S03.
+
+## Independent entrance block completed — 2026-10-05
+
+The existing approved entrance junction piers and temporary-skin alignment are
+now verified independently of the new 3 m binary asset. See `WING01_ROOM_ART.md`
+and `room-entrance-*` evidence. This does not resolve front-wall/LFS acceptance.
+The latest bounded authenticated API retry still stops at proxy CONNECT timeout
+before an authentication response; `auth-followup-2026-10-05-1619/results.json`
+retains the exact transport boundary. Recover the newest remote branch tip.

@@ -1,3 +1,26 @@
+# Current recovery boundary — entrance junction continuation, 2026-10-05
+
+Recovered existing checkout and independently verified remote working-branch
+HEAD `62d4b41b5f61b15ecb18c5d8b1931988277af642`. Preserved its newer local
+entrance delta rather than reverting it or repeating completed art/audio work.
+The two approved entrance piers and aligned temporary skins now pass 84
+targeted room/corridor assertions and four inspected native Low/Medium views.
+See `WING01_ROOM_ART.md` and `room-entrance-*` evidence.
+
+The supplied protected credential was actually used for a bounded authenticated
+GitHub API request. It again stopped at proxy CONNECT timeout before any HTTP
+authentication response, so token validity/permissions remain unverified.
+`auth-followup-2026-10-05-1619/results.json` contains only sanitized metadata.
+Ordinary Git/evidence publication can continue through the approved GitHub
+connector; that is not LFS transport validation.
+
+Next dependency: authorize network access to GitHub/API/LFS hosts in this
+execution environment, then verify authentication and independent LFS object
+retrieval. Continue the corrected 3 m wall variant only after that dependency
+is resolved; preserve the original higher guards and explicitly decide its
+odd-width pivot/placement. Ceiling, emitter/Hearth, authored audio/mix and
+target-GPU profiling remain open. Do not start S03 or claim full VS1 acceptance.
+
 # Current Work recovery boundary — 2026-10-05 room floor and next-input seal
 
 ## Front-wall numeric authoring input — 2026-10-05 16:04 UTC

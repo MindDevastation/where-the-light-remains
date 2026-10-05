@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED",
+  "utc": "2026-10-05T16:19:04.843027+00:00",
+  "supplied_credential": "Loaded from protected file outside repository; value not logged.",
+  "request": "Authenticated GET https://api.github.com/user; curl configuration delivered via stdin.",
+  "connect_timeout_seconds": 5,
+  "max_time_seconds": 12,
+  "exit_code": 28,
+  "error": "Proxy CONNECT aborted due to timeout",
+  "http_authentication_response_received": false,
+  "credential_validity": "UNVERIFIED",
+  "lfs_upload_or_download_verified": false,
+  "working_branch_remote": "62d4b41b5f61b15ecb18c5d8b1931988277af642",
+  "git_gateway": "Existing approved Git remote read succeeded; not an LFS authentication check."
+}

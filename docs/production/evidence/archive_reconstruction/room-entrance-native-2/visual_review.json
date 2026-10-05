@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "acceptance": "BOUNDED_ENTRANCE_PLACEMENT_ONLY",
+  "reviewed_at": "2026-10-05T16:19:04.840996+00:00",
+  "captures": {
+    "room_entrance_front_low.png": "d6a15273c2927df4f2ab402e86fc3944201b39819274ae041f3fa2428bf363d4",
+    "room_entrance_front_medium.png": "0d2c00a30cce554411ad46c443250eed00c0a8863b4c59d790fc86349665371f",
+    "room_entrance_reverse_low.png": "14d5d6be01a1aa0d852094a4d3b8c10b575b80c97b7188071758c31abf205c57",
+    "room_entrance_reverse_medium.png": "3cba94090b4941247b9de8f815f6a4afcf7a5e6c0ec99152b8345ad4f042efd4"
+  },
+  "observations": [
+    "All four actual Forward+ player views inspected, front and reverse on Low and Medium.",
+    "Approved portal and junction piers are aligned; floor and stone are readable.",
+    "Unfinished front skins, ceiling and graybox end walls are visibly retained; these views do not certify full room art."
+  ],
+  "limits": "Software Vulkan only; no target GPU certification or full VS1 acceptance."
+}

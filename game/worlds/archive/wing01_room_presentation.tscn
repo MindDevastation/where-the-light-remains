@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_pier_4m.tscn" id="Pier"]
 
 [node name="Wing01RoomPresentation" type="Node3D"]
-metadata/scope = "Approved kit side/back placement only; front, floor, ceiling and full room art remain open."
+metadata/scope = "Approved kit side/back walls and entrance junction piers; 3 m front skins and ceiling remain open. Room tiles use a separate assembly."
 
 [node name="WallL0" parent="." instance=ExtResource("Wall4")]
 position = Vector3(-5, 0, -17)
@@ -69,3 +69,9 @@ position = Vector3(-1, 0, -27)
 
 [node name="BackPierR" parent="." instance=ExtResource("Pier")]
 position = Vector3(1, 0, -27)
+
+[node name="PierEntranceL" parent="." instance=ExtResource("Pier")]
+position = Vector3(-2, 0, -15)
+
+[node name="PierEntranceR" parent="." instance=ExtResource("Pier")]
+position = Vector3(2, 0, -15)

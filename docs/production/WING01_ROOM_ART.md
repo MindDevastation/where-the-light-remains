@@ -61,3 +61,29 @@ Next: inspect approved front-wall/ceiling/emitter/Hearth inputs and the remainin
 module variants against the preserved layout before starting their art block.
 Front/ceiling,
 full emitter/Hearth art, authored audio/mix and target GPU remain open.
+
+## Entrance junction closure — 2026-10-05
+
+Two approved, unit-scale 4 m piers now own the junctions at (-2, 0, -15)
+and (2, 0, -15), one owner each. Temporary front skins move only 0.15 m
+in Z to align with the portal; both original 3 x 5.5 x 0.3 m safety guards
+stay at their original positions and remain visible/collidable. No wall
+source/export, room width, portal collider or puzzle binding changes.
+
+`room-entrance-headless-1/` passes clean import, 39 room assertions and
+45 corridor assertions. This includes six real capsule crossings in both
+directions, independent pier-blocker rays, original front-guard dimensions,
+unit-scale/on-grid ownership, floor seams, spawns and grip approaches. Existing
+primary/backup fixture hashes stay unchanged; the private project is removed.
+
+`room-entrance-native-2/` passes clean import and four actual Forward+ player
+captures (front/reverse on Low/Medium), with unchanged physical slot hashes.
+All four images are inspected; the portal/junction alignment and stone/floor
+are readable. Front skins, ceiling and distant graybox boundaries remain
+unfinished. `visual_review.json` seals the inspected captures. Family 1 retains
+the missing environment xkbcomp-link failure; the documented link was restored
+without changing the runner, and family 2 passed. Software Vulkan is not
+target-GPU or complete room/VS1 acceptance.
+
+The affected actual S02 progression/collision regression is recorded separately
+in `room-entrance-s02-regression-1/`, using only test-owned save slots.

@@ -63,18 +63,20 @@ def validate(args):
                     raise RuntimeError('Corridor review failed: ' + name)
             godot = str(args.godot.resolve())
             marker = 'ARCHIVE_' + args.scope.upper() + '_REVIEW CAPTURED'
-            scene = 'res://tests/archive_' + args.scope + '_review.tscn'
-            expected_captures = 4 if args.scope == 'corridor' else 3
+            scene_scope = 'corridor' if args.scope == 'corridor' else 'room'
+            scene = 'res://tests/archive_' + scene_scope + '_review.tscn'
+            expected_captures = {'corridor': 4, 'room': 3, 'entrance': 2}[args.scope]
+            view_args = ['--entrance-only'] if args.scope == 'entrance' else []
             run('clean_import', [godot, '--headless', '--path', 'game', '--editor', '--import'], 90)
             for quality in ['low', 'medium']:
                 run(quality, ['python3', '-B', str(clean / 'tools/run_graphical.py'),
                              '--graphics-prefix', str(args.graphics_prefix.resolve()), '--godot', godot,
                              '--timeout', '55', '--expect', marker, '--',
                              '--path', 'game', '--resolution', '960x540', scene,
-                             '--', '--review-output=' + str(output), '--quality=' + quality], 80,
+                             '--', '--review-output=' + str(output), '--quality=' + quality] + view_args, 80,
                     marker)
                 captures = json.loads((output / ('captures_' + quality + '.json')).read_text())
-                if captures['renderer'] != 'forward_plus' or len(captures['captures']) != expected_captures or \
+                if captures['scope'] != args.scope or captures['renderer'] != 'forward_plus' or len(captures['captures']) != expected_captures or \
                         quality == 'low' and (captures['glow'] or captures['volumetrics']):
                     raise RuntimeError('Wrong renderer/capture count/Low effects')
             if any(receipts.audio.digest(root / name) != expected for name, expected in hashes.items()):
@@ -96,5 +98,5 @@ if __name__ == '__main__':
     parser.add_argument('--godot', type=Path, required=True)
     parser.add_argument('--graphics-prefix', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--scope', choices=['corridor', 'room'], default='corridor')
+    parser.add_argument('--scope', choices=['corridor', 'room', 'entrance'], default='corridor')
     validate(parser.parse_args())

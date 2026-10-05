@@ -1,0 +1,43 @@
+{
+  "captures": [
+    {
+      "draw_calls": 29,
+      "file": "room_entrance_front_medium.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "room_entrance_front",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 26127360
+    },
+    {
+      "draw_calls": 32,
+      "file": "room_entrance_reverse_medium.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "room_entrance_reverse",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 26127360
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "entrance",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

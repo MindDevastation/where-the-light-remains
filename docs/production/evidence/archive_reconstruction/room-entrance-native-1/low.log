@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/tmp/wlr-corridor-visual-7fe2of93/tools/run_graphical.py", line 145, in <module>
+    main()
+  File "/tmp/wlr-corridor-visual-7fe2of93/tools/run_graphical.py", line 71, in main
+    raise RuntimeError('Restore the documented /usr/bin/xkbcomp symlink to the local prefix')
+RuntimeError: Restore the documented /usr/bin/xkbcomp symlink to the local prefix
