@@ -128,7 +128,8 @@ MAT inventory to final shipping acceptance.
 Five original modules are available as validated sample assets. Shared editable
 source: `assets/3d/blender/archive_kit/archive_kit_sample.blend`. Runtime exports
 are under `game/art/meshes/archive_kit/`; script-free wrappers under
-`game/worlds/archive/modules/`. No GameRoot/ArchiveMain instance is added.
+`game/worlds/archive/modules/`. That original sample did not add world instances;
+current gameplay placement is recorded below.
 
 | Inventory | GLB | Wrapper | Coverage |
 |---|---|---|---|
@@ -187,3 +188,23 @@ Actual source/export/import/physics, three-view Forward+ review and independent
 LFS upload/retrieval PASS: `WING01_OPTICS_SAMPLE.md` and
 `evidence/wing01_optics/README.md`. S02-002/004/005/006/007, full room/gameplay and
 physical target-GPU profiling remain open. This is not complete S02 inventory.
+
+## Current Archive gameplay usage — 2026-10-05
+
+The accepted wall/arch/pier/floor sources now populate the actual Wing I
+corridor and room side/back/floor, preserving higher graybox safety guards.
+No source mesh/material was replaced. See `WING01_CORRIDOR_ART.md` and
+`WING01_ROOM_ART.md`; the latest room block passes 188 targeted assertions and
+six inspected Low/Medium views with unchanged protected physical slots.
+
+The existing optical carrier is connected to real E controls, rings/focus,
+ordered Star/Hearth, atomic save retry, quiet resume and grounded Hub return.
+Gameplay foundation is accepted; S02-001/003 full art coverage remains PARTIAL.
+S02-002/004 emitter/Hearth are still graybox art; canonical fragment UI and
+cold/warm behavior work, while full presentation/mix/hardware gates remain open.
+Front/ceiling and remaining inventory variants are unfinished.
+
+The next 3 m front variant cannot use `wall(3)` unchanged and currently lacks
+authenticated LFS publication capability; exact input proof/dependency and next
+step are in `ROOM_ART_NEXT_BLOCK.md`. Ordinary code/evidence checkpoint push is
+working. Do not revoke accepted existing payloads or promote full ARCH/VS1 gates.

@@ -27,6 +27,10 @@ and `evidence/checkpoints/gitdata_publications.jsonl`.
   101 state and 60 S02 checks pass. Six new Low/Medium views verify floor/joins
   and cold/warm response. Captured draw-call/texture counters are software
   diagnostics only. Front/ceiling and full room acceptance remain open.
+- [x] Read-only next-front input audit; exact 3 m spans and unsupported naive
+  builder are recorded in `ROOM_ART_NEXT_BLOCK.md`. New binary production waits
+  for authenticated LFS upload (current bounded negotiation HTTP 401); ordinary
+  code/evidence publication remains working. No new runtime asset was invented.
 
 ## Source availability after the 2026-10-04 interruption
 

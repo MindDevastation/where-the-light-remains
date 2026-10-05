@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-05 room floor checkpoint
+# Current Work recovery boundary — 2026-10-05 room floor and next-input seal
 
 New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
 (2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
@@ -90,8 +90,15 @@ actual row/column walks with the fallback disabled in the private test.
 joins and cold/warm response are readable. Captured frame draw calls are 24/5/26
 for cold/corner/warm on both presets; these are software diagnostics, not target
 timing acceptance. Private projects/processes close and logs contain no errors.
-Exact next step: inspect approved front-wall/ceiling/emitter/Hearth art inputs
-and remaining module variants against the preserved room layout.
+The next-input audit is complete. Existing front spans are 3 m; blindly calling
+the accepted two/four-meter builder with 3 produces a 4 m unclosed result.
+No new mesh/pivot contract was invented. `front-art-inputs-1/` records this
+read-only proof and the nearest transport blocker: no usable local credential
+and exact-object LFS upload negotiation HTTP 401. Ordinary Git-data checkpoint
+publication works; current runtime assets remain valid/retrievable.
+Exact next step: restore authorized LFS upload, then bounded 3 m front authoring
+under the existing pipeline, followed by retrieval/placement/real route/views.
+See `ROOM_ART_NEXT_BLOCK.md`; no historical suites or audio exports need repeat.
 Front/ceiling/full room art,
 authored audio and physical target GPU remain open.
 Full room/target-GPU/music remain open.

@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "acceptance": "READ_ONLY_INPUT_AUDIT_ONLY",
+  "finished_at": "2026-10-05T12:39:47.767901+00:00",
+  "source_hashes": {
+    "tools/audit_archive_front.py": "6e1d313921c947abb33d459bda1178c4922d509d84b4bd50f880973de60fe071",
+    "tools/create_archive_kit.py": "637ae6fc10cf5fb8f3bcfb685c054e687ef674b6d44753bb3f5a3975ce78f3a0",
+    "game/worlds/archive/archive_main.tscn": "8c17bbabd535557b24a5756f56fd195cd29475edf37ef024a7ac0c991cbb161c",
+    "docs/design/REQUIRED_ASSET_TABLE.md": "e5aa8ba983d18feef4fddf0f8ddfa7795b246dcbf1a0978fa38f366fdbce960c",
+    "docs/production/MODULAR_ARCHIVE_KIT.md": "7afd237419ce0e54710744994da2f43ece5f58de3af3faabc49d2abe11cc9c44",
+    "docs/production/modular_archive_kit_v1.json": "ebbcadc704be7af4a304a31bf094f763b7caf0e9b90a565b819484c43900fe5c",
+    "docs/production/LFS_POLICY.md": "dd5409c24bd6b85d3979386fa96c55f7836d315cea6747adbb6e230b690bc3d8"
+  },
+  "fronts": [
+    {
+      "side": "L",
+      "existing_size_xyz": [
+        3.0,
+        5.5,
+        0.3
+      ],
+      "existing_center_xyz": [
+        -3.5,
+        2.75,
+        -14.85
+      ],
+      "x_span": [
+        -5.0,
+        -2.0
+      ]
+    },
+    {
+      "side": "R",
+      "existing_size_xyz": [
+        3.0,
+        5.5,
+        0.3
+      ],
+      "existing_center_xyz": [
+        3.5,
+        2.75,
+        -14.85
+      ],
+      "x_span": [
+        2.0,
+        5.0
+      ]
+    }
+  ],
+  "existing_builder_probes": [
+    {
+      "requested_width": 2,
+      "x_bounds": [
+        -1.0,
+        1.0
+      ],
+      "actual_width": 2.0,
+      "closed_edge_incidence": true,
+      "non_two_incidence_edges": 0,
+      "analytical_triangles": 108
+    },
+    {
+      "requested_width": 3,
+      "x_bounds": [
+        -1.5,
+        2.5
+      ],
+      "actual_width": 4.0,
+      "closed_edge_incidence": false,
+      "non_two_incidence_edges": 8,
+      "analytical_triangles": 212
+    },
+    {
+      "requested_width": 4,
+      "x_bounds": [
+        -2.0,
+        2.0
+      ],
+      "actual_width": 4.0,
+      "closed_edge_incidence": true,
+      "non_two_incidence_edges": 0,
+      "analytical_triangles": 212
+    }
+  ],
+  "finding": "Both preserved front spans are 3 m. Existing wall(3) is unsupported: it spans 4 m and has eight non-two-incidence edges. Existing 2/4 m helpers remain valid.",
+  "limits": "Analytical input audit only. No new Blender/GLB asset, manifold Blender validation, visual acceptance, contract/pivot change or binary upload."
+}

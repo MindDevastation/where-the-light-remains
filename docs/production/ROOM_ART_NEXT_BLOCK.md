@@ -1,0 +1,39 @@
+# Next room art block — exact input boundary
+
+Last runtime/evidence checkpoint:
+`67a614323c943036ce9e0f7ced614049759d6563`, independently verified
+2026-10-05 12:29:17 UTC on the existing checkpoint branch. Subsequent seal
+changes only documentation and the read-only input audit. Recover the newest
+remote branch SHA; do not restore an older local copy.
+
+Completed: corridor structural/floor placement and ambient/Hub-skin correction;
+room side/back placement and 120 shared floor tiles. Latest room block passes
+27 room + 101 state + 60 actual S02 assertions (188) and six inspected Low/
+Medium views. Existing slots, puzzle approaches and grounded Hub return pass.
+No full VS1, authored audio/mix, ceiling/front/hero or target-GPU acceptance.
+
+The preserved front spans are X=[-5,-2] and [2,5], each 3 m. Their higher 5.5 m
+safety guards must stay. The accepted kit contains 2/4 m wall variants only;
+ARCH-004 allows 2–3 sizes in the 2–4 m range, but there is no authored 3 m asset.
+
+`front-art-inputs-1/results.json` numerically checks the exact source helpers.
+The accepted 2/4 m cases have correct bounds and closed edge incidence. Calling
+`wall(3)` blindly creates X=[-1.5,2.5] (4 m), with eight non-two-incidence edges.
+It is unsupported, not a new validated variant. No Blender or mesh was generated.
+Also resolve the center/pivot placement explicitly for this odd-width span;
+the accepted five-module center-origin/grid contract must not silently change.
+
+Nearest dependency: authenticated Git LFS upload transport. Current token
+presence/helper checks are negative, and bounded negotiation with an exact
+existing object returns HTTP 401. No payload was uploaded. The GitHub connector
+still publishes ordinary code/evidence successfully but exposes no LFS upload
+operation. Details without credentials: `front-art-inputs-1/lfs_transport.json`.
+
+Next: restore authorized LFS upload capability, then define/produce only the
+bounded 3 m front variant under the existing art/export policy. Restore the
+pinned Blender 4.5.14 only when modeling is unblocked; do not rerun historical
+preflight or regenerate accepted kit binaries. Validate source/export, actual
+upload plus independent retrieval, then place two skins with old guards intact,
+test real capsule/grip/return paths and inspect the entrance from both sides.
+Ceiling and emitter/Hearth follow their own asset breakdown; do not substitute
+invented canonical geometry, stretch accepted modules or start S03.

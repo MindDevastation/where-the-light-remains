@@ -1,0 +1,23 @@
+{
+  "status": "BLOCKED_AUTHENTICATED_LFS_UPLOAD_TRANSPORT",
+  "utc": "2026-10-05T12:39:48.316324+00:00",
+  "operation": "bounded unauthenticated negotiation with exact existing object oid/size; no payload uploaded",
+  "object_sha256": "76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8",
+  "object_bytes": 3344,
+  "timeout_seconds": 15,
+  "credentials_logged": false,
+  "payload_uploaded": false,
+  "known_token_presence": {
+    "GH_TOKEN": false,
+    "GITHUB_TOKEN": false
+  },
+  "credential_helper_observation": {
+    "utc": "2026-10-05T12:31:53.549619+00:00",
+    "exit_code": 128,
+    "usable": false
+  },
+  "connector_git_data_publication": "Working and independently verified; separate from LFS payload upload",
+  "connector_lfs_upload_tool_available": false,
+  "http_status": 401,
+  "authentication_required": true
+}
