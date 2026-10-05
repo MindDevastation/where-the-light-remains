@@ -49,9 +49,14 @@ func _run() -> void:
     var before := GameState.capture_save().to_dict()
     var dirty: bool = SaveManager.get("_dirty")
     var world := game.get_node("WorldSlot").get_child(0) as ArchiveMain
+    if world.get_node("StageController").open_wing(0, false) != OK:
+        push_error("Corridor review could not open existing eligible gate")
+        get_tree().quit(1)
+        return
     var player := game.get_node("PlayerContainer/Player") as FirstPersonPlayer
     player.set_physics_process(false)
     var views := [
+        {"name": "threshold", "position": Vector3(0, .02, -7.0), "target": Vector3(0, .02, -12)},
         {"name": "entrance", "position": Vector3(0, .02, -8.6), "target": Vector3(0, .02, -15)},
         {"name": "seam", "position": Vector3(.3, .02, -10.7), "target": Vector3(-1.7, .02, -12.2)},
         {"name": "return", "position": Vector3(0, .02, -16.8), "target": Vector3(0, .02, -11)}
@@ -88,5 +93,5 @@ func _run() -> void:
     game.queue_free()
     await get_tree().process_frame
     SceneRouter.unregister_stage(ArchiveProgress.WING_ONE)
-    print("ARCHIVE_CORRIDOR_REVIEW CAPTURED: ", _quality, "; 3 actual player views")
+    print("ARCHIVE_CORRIDOR_REVIEW CAPTURED: ", _quality, "; ", captures.size(), " actual player views")
     get_tree().quit(0)

@@ -2,6 +2,25 @@
 
 Status: **started**.
 
+## Current bounded corridor art — 2026-10-05
+
+Fresh recovery used remote `92afd6214d2a1564eda5bad7c13e227123038356`, not an
+old local snapshot; development remains on the existing checkpoint branch.
+Newest exact implementation/publication identities are in `WORK_RECOVERY.md`
+and `evidence/checkpoints/gitdata_publications.jsonl`.
+
+- [x] Place approved Wing I corridor wall bays/piers/room portal and 28 unit
+  floor tiles without changing source assets, dimensions or safety guards.
+  45 current capsule checks and 101 affected Archive state regressions pass;
+  cache-free import and protected physical primary/backup hashes pass. Eight
+  inspected Low/Medium views verify the bounded placement after correcting
+  missing-sky ambient selection and coplanar Hub skin overlap. See
+  `WING01_CORRIDOR_ART.md`. Full room/ceiling/palette/audio/target-GPU acceptance
+  remains open; this does not close GATE-VS1 or unlock S03.
+- [x] S00 source-comparison/cut-proposal page and 16 actual Chromium checks.
+  Both source intervals/note/motif remain unselected; no shipping binding.
+- [ ] Continue bounded room side/back wall reuse and puzzle-route clearance.
+
 ## Source availability after the 2026-10-04 interruption
 
 Fresh Work recovery selected remote checkpoint `5f196fd` on

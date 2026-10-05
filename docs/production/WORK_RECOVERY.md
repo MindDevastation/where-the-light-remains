@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-05 corridor floor WIP
+# Current Work recovery boundary — 2026-10-05 bounded corridor art
 
 New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
 (2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
@@ -59,8 +59,14 @@ including actual grounded capsule walks with both fallback floors disabled in
 the private fixture. Native Low/Medium capture passes, but six inspected views
 show an entrance overlap with the old circular Hub skin. This WIP checkpoint
 records NEEDS_HUB_SKIN_OVERLAP_FIX, not visual acceptance.
-Exact next block: remove only the overlapping Hub visual surface at the corridor
-entrance, preserve the old solid Hub collider, inspect affected native views.
+The next `corridor-hub-cutout-native-1/` family resolves that finding with a
+local graybox material cutout over only the corridor strip. The Hub radius-10
+collider, shared Stone, color/roughness and tile levels remain unchanged. All
+eight Low/Medium corridor/Hub-threshold images were inspected; no jagged overlap
+patches remain. Its cache-free import/rendering and protected slots pass, as do
+45 actual-capsule checks in `corridor-hub-cutout-headless-1/`.
+Exact next block: approved wall bays/piers on the existing Wing I room side/back
+spans; preserve safety guards and check actual puzzle approach/return clearance.
 Full room/target-GPU/music remain open.
 
 ---

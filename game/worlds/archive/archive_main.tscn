@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3]
+[gd_scene load_steps=78 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -17,10 +17,14 @@
 [ext_resource type="PackedScene" path="res://worlds/archive/archive_prologue.tscn" id="Prologue"]
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_corridor_presentation.tscn" id="CorridorArt"]
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_corridor_floor.tscn" id="CorridorFloor"]
+[ext_resource type="Shader" path="res://worlds/archive/hub/hub_floor_cutout.gdshader" id="HubFloorCutout"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
 roughness = 0.9
+
+[sub_resource type="ShaderMaterial" id="HubFloorStone"]
+shader = ExtResource("HubFloorCutout")
 
 [sub_resource type="StandardMaterial3D" id="Metal"]
 albedo_color = Color(0.28, 0.24, 0.16, 1)
@@ -265,7 +269,7 @@ disable_mode = 1
 
 [node name="Mesh" type="MeshInstance3D" parent="Hub/Floor"]
 mesh = SubResource("HubFloor")
-material_override = SubResource("Stone")
+material_override = SubResource("HubFloorStone")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Floor"]
 shape = SubResource("HubShape")

@@ -23,7 +23,7 @@ def validate(args):
     hashes = {p: receipts.audio.digest(root / p) for p in paths}
     output.mkdir(parents=True, exist_ok=False)
     result = {'status': 'RUNNING', 'started_at': receipts.audio.stamp(), 'source_hashes': hashes, 'records': [],
-              'scope': 'Three actual player corridor views each on Low/Medium using software lavapipe, not target GPU/full art/VS1 acceptance.'}
+              'scope': 'Four actual player corridor/Hub-threshold views each on Low/Medium using software lavapipe, not target GPU/full art/VS1 acceptance.'}
     receipt = output / 'results.json'
     receipts.write_receipt(receipt, result)
     try:
@@ -71,7 +71,7 @@ def validate(args):
                              '--', '--review-output=' + str(output), '--quality=' + quality], 80,
                     'ARCHIVE_CORRIDOR_REVIEW CAPTURED')
                 captures = json.loads((output / ('captures_' + quality + '.json')).read_text())
-                if captures['renderer'] != 'forward_plus' or len(captures['captures']) != 3 or \
+                if captures['renderer'] != 'forward_plus' or len(captures['captures']) != 4 or \
                         quality == 'low' and (captures['glow'] or captures['volumetrics']):
                     raise RuntimeError('Wrong renderer/capture count/Low effects')
             if any(receipts.audio.digest(root / name) != expected for name, expected in hashes.items()):

@@ -1,0 +1,18 @@
+{
+  "status": "PASS_BOUNDED_CORRIDOR_OVERLAP_CORRECTION",
+  "reviewed_at": "2026-10-05T12:04:20.898818+00:00",
+  "finding": "All eight Low/Medium player views inspected, including Hub threshold. Stone floor, wall trim and room portal are readable; previous dark jagged coplanar Hub patches are absent.",
+  "change": "Local Hub graybox surface discards only X=[-2,2], Z<=-8. Original radius-10 solid collider, shared Stone, color/roughness, grid and floor level retained.",
+  "captures": {
+    "entrance_low.png": "cb235b3afec4081ca43b26f87eabb876bc6a1021a55d71ead244f8791ae5a38a",
+    "entrance_medium.png": "734602ff4cda16951e2f3f3e79e9612120b665eaf8c84e6ae0cbcb944bf7e646",
+    "return_low.png": "ff85fadd703046f3c92974d7f0eae03bfbc3efe04cb6e2061894bee0bfc2fd49",
+    "return_medium.png": "c839c30c590d451dd7755dcfad66bd886c108c4d5a406bd5742bebb9d3ef44b9",
+    "seam_low.png": "01cd814ea1c25bf6287293c0133c80aba751ca663cf06c62a2265b4584729bcb",
+    "seam_medium.png": "d65d2af060a26fadf9cdc6e4c40c0cc1155ac0771ba9a262e598e1c00d061654",
+    "threshold_low.png": "8eacc34d68f4379315d0d8bea436e04d70dc37df2c4489467c08ece54b400b59",
+    "threshold_medium.png": "ceb9f7b372fc1bdd5643320123e1f33bd8f253c50300c37d589cef4c5f9b4074"
+  },
+  "validation_sha256": "94c1d37bf065d7d120265b1bf5562bf977a01fa6ee316d68e9c13f2f4ed2d01f",
+  "limits": "Bounded corridor placement only; ceiling, room, authored palette/mix and physical target-GPU acceptance remain open. Software llvmpipe rendering."
+}

@@ -49,7 +49,17 @@ retain the fixture's unintended radius-10 Hub floor overlap.
 `corridor-floor-native-1/` passes runtime/capture checks, but six inspected
 views show coplanar Hub skin interfering with tiles at the entrance:
 NEEDS_HUB_SKIN_OVERLAP_FIX. This intermediate floor placement is a WIP checkpoint.
-Next: remove only that visual overlap while preserving the original Hub collider,
-then repeat affected views. Full room/observatory
+That finding is resolved in `corridor-hub-cutout-native-1/`: a local graybox
+floor shader removes only the overlapping visual strip X=[-2,2], Z<=-8. It
+retains the old color/roughness, the shared Stone resource and the unchanged
+radius-10 Hub collider. No depth offset, floor step or kit asset edit is used.
+Four views per preset now include the Hub threshold; all eight were inspected
+and the dark jagged overlap patches are gone. The fixture explicitly opens the
+already eligible gate without persistence. Cache-free import/native rendering,
+protected save hashes and 45 actual-capsule checks pass. This completes the
+bounded corridor placement/overlap correction, not full scene acceptance.
+Next: reuse approved wall bays/piers on the room's existing side/back spans,
+retain its old safety guards and verify puzzle approach/return clearance.
+Full room/observatory
 art, emitter/Hearth authoring, S00 note/motif selection, scene mix and physical
 GTX 1060 profiling remain open. No full GATE-VS1 acceptance is implied.
