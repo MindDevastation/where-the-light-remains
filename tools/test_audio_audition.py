@@ -74,22 +74,6 @@ class AuditionProtection(unittest.TestCase):
                 audition.destination(folder)
             self.assertEqual(owner.read_bytes(), b'Existing evidence')
 
-    def test_completed_receipt_is_persisted_and_read_back_without_partial_file(self):
-        with tempfile.TemporaryDirectory() as private:
-            path = Path(private) / 'results.json'
-            audition.write_receipt(path, {'status': 'RUNNING'})
-            audition.write_receipt(path, {'status': 'PASS', 'command_count': 4})
-            self.assertEqual(json.loads(path.read_text()), {'status': 'PASS', 'command_count': 4})
-            self.assertEqual(list(path.parent.iterdir()), [path])
-
-    def test_receipt_read_back_mismatch_cannot_report_success(self):
-        with tempfile.TemporaryDirectory() as private:
-            path = Path(private) / 'results.json'
-            with patch.object(Path, 'read_bytes', return_value=b'stale receipt'), \
-                    self.assertRaisesRegex(RuntimeError, 'read-back mismatch'):
-                audition.write_receipt(path, {'status': 'PASS'})
-            self.assertFalse(path.with_name('results.json.pending').exists())
-
     def test_failed_encoder_keeps_diagnostics_but_never_accepts_or_changes_seed(self):
         with tempfile.TemporaryDirectory() as private:
             folder = Path(private) / 'failed'
@@ -107,6 +91,108 @@ class AuditionProtection(unittest.TestCase):
             self.assertFalse((folder / 'proposal.json').exists())
             self.assertFalse((folder / 'verification.json').exists())
             self.assertEqual(audition.audio.MANIFEST.read_bytes(), before)
+
+
+class ReceiptProtection(unittest.TestCase):
+    """Receipt I/O does not need audio masters or a codec/toolchain."""
+
+    def test_completed_receipt_is_persisted_and_read_back_without_partial_file(self):
+        with tempfile.TemporaryDirectory() as private:
+            path = Path(private) / 'results.json'
+            audition.write_receipt(path, {'status': 'RUNNING'})
+            audition.write_receipt(path, {'status': 'PASS', 'command_count': 4})
+            self.assertEqual(json.loads(path.read_text()), {'status': 'PASS', 'command_count': 4})
+            self.assertEqual(list(path.parent.iterdir()), [path])
+
+    def test_receipt_read_back_mismatch_cannot_report_success(self):
+        with tempfile.TemporaryDirectory() as private:
+            path = Path(private) / 'results.json'
+            with patch.object(Path, 'read_bytes', return_value=b'stale receipt'), \
+                    self.assertRaisesRegex(RuntimeError, 'read-back mismatch'):
+                audition.write_receipt(path, {'status': 'PASS'})
+            self.assertFalse(path.with_name('results.json.pending').exists())
+
+    def test_short_writes_complete_exact_receipt_before_replacement(self):
+        with tempfile.TemporaryDirectory() as private:
+            path = Path(private) / 'results.json'
+            value = {'status': 'PASS', 'details': 'actual multi-write receipt' * 10}
+            writes = []
+            with self.short_writer(path, writes=writes):
+                audition.write_receipt(path, value)
+            self.assertEqual(json.loads(path.read_text()), value)
+            self.assertGreater(len(writes), 1)
+            self.assertEqual(list(path.parent.iterdir()), [path])
+
+    def test_invalid_write_progress_preserves_previous_receipt_and_cleans_own_pending(self):
+        for returned in (0, None, -1, 10000):
+            with self.subTest(returned=returned), tempfile.TemporaryDirectory() as private:
+                path = Path(private) / 'results.json'
+                before = b'{"status":"RUNNING"}\n'
+                path.write_bytes(before)
+                with self.short_writer(path, failure=returned), \
+                        self.assertRaisesRegex(OSError, 'no valid progress'):
+                    audition.write_receipt(path, {'status': 'PASS'})
+                self.assertEqual(path.read_bytes(), before)
+                self.assertEqual(list(path.parent.iterdir()), [path])
+
+    def test_partial_write_error_preserves_previous_receipt(self):
+        with tempfile.TemporaryDirectory() as private:
+            path = Path(private) / 'results.json'
+            before = b'{"status":"RUNNING"}\n'
+            path.write_bytes(before)
+            with self.short_writer(path, failure=OSError('disk failure')), \
+                    self.assertRaisesRegex(OSError, 'disk failure'):
+                audition.write_receipt(path, {'status': 'PASS'})
+            self.assertEqual(path.read_bytes(), before)
+            self.assertEqual(list(path.parent.iterdir()), [path])
+
+    def test_foreign_pending_file_is_preserved(self):
+        with tempfile.TemporaryDirectory() as private:
+            path = Path(private) / 'results.json'
+            pending = path.with_name(path.name + '.pending')
+            pending.write_bytes(b'foreign evidence')
+            with self.assertRaises(FileExistsError):
+                audition.write_receipt(path, {'status': 'PASS'})
+            self.assertEqual(pending.read_bytes(), b'foreign evidence')
+            self.assertFalse(path.exists())
+
+    @staticmethod
+    def short_writer(path, writes=None, failure='none'):
+        original = Path.open
+
+        class Writer:
+            def __init__(self, stream):
+                self.stream = stream
+                self.calls = 0
+
+            def __enter__(self):
+                self.stream.__enter__()
+                return self
+
+            def __exit__(self, *args):
+                return self.stream.__exit__(*args)
+
+            def write(self, data):
+                self.calls += 1
+                if writes is not None:
+                    writes.append(len(data))
+                if self.calls > 1 and failure != 'none':
+                    if isinstance(failure, Exception):
+                        raise failure
+                    return failure
+                return self.stream.write(data[:7])
+
+            def flush(self):
+                return self.stream.flush()
+
+            def fileno(self):
+                return self.stream.fileno()
+
+        def open_file(candidate, *args, **kwargs):
+            stream = original(candidate, *args, **kwargs)
+            return Writer(stream) if candidate == path.with_name(path.name + '.pending') else stream
+
+        return patch.object(Path, 'open', open_file)
 
 
 if __name__ == '__main__':

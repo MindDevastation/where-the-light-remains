@@ -1,3 +1,24 @@
+# Current Work recovery boundary — 2026-10-05 receipt I/O block
+
+New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
+(2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
+completed gameplay/PCM/export families below were inspected, not repeated.
+Godot is not installed in this environment; this isolated Python I/O fix does
+not require it or immutable source masters.
+
+`tools/audio_audition.py` now consumes every short write before fsync/replace.
+Zero/invalid progress fails promptly, preserves the previous receipt and cleans
+only its owned temporary. Six receipt regressions pass, including a simulated
+partial-write disk failure and protection of a pre-existing foreign pending file.
+Evidence: `evidence/audio_director/receipt-short-writes-1/results.json`.
+The other nine source/encoding guards were not rerun in this block.
+
+Exact authored next step remains S00 listening/edit selection. Both accepted
+opening audition proposals are available; no first-note/motif selection or
+shipping music acceptance is inferred by this receipt fix.
+
+---
+
 # Current Work recovery boundary — 2026-10-04 23:47 UTC
 
 Durable source of truth: GitHub working branch

@@ -27,7 +27,12 @@ def write_receipt(path, value):
     try:
         with pending.open('xb') as stream:
             created = True
-            stream.write(data)
+            remaining = memoryview(data)
+            while remaining:
+                written = stream.write(remaining)
+                if not isinstance(written, int) or not 0 < written <= len(remaining):
+                    raise OSError('Audition receipt write made no valid progress')
+                remaining = remaining[written:]
             stream.flush()
             os.fsync(stream.fileno())
         os.replace(pending, path)

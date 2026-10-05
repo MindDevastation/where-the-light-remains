@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-05T10:40:35.898477+00:00",
+  "recovered_parent": "92afd6214d2a1564eda5bad7c13e227123038356",
+  "scope": "Receipt I/O only: six isolated tests, including real partial-file writes, invalid progress, injected disk failure, foreign pending ownership and prior read-back regression. No listening or seed acceptance.",
+  "command": "timeout 30 python3 -B -m unittest -v test_audio_audition.ReceiptProtection (cwd tools)",
+  "exit_code": 0,
+  "tests_run": 6,
+  "tests_passed": 6,
+  "source_hashes": {
+    "tools/audio_audition.py": "64aae6b755512767be8dba546931e6c0fb0e13aea84d04b0d5d9e19497de5590",
+    "tools/test_audio_audition.py": "e93993c3eeaec4ffd2c14316febf83787659bf2c72a23c5257695e7b451e3cbc",
+    "docs/production/audio/slice_edit_manifest.json": "bbf73164dbf4e2ae484cabe2452f57cfa3a8341bd58b781c6a22cb2c66a4b010"
+  },
+  "masters_required": false,
+  "shipping_or_manifest_modified": false
+}
