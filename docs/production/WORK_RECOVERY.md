@@ -18,10 +18,22 @@ A self-contained S00 comparison/cut-proposal page now exists at
 accepted excerpt bytes embedded. Five sealed-input Python + eight Node proposal/
 DOM ownership checks pass; the six receipt regressions also pass (19 total).
 `panel_checks.json` seals current sources/page/logs. It is a listening aid only;
-real-browser rendering/playback remains pending. Next independent block:
-validate this page in a bounded real headless browser, then return to actual
-source listening/edit selection. Both source intervals remain blocked; no note,
-motif, shipping media or scene binding was selected.
+real-browser rendering/playback remains pending. The page now passes 16 actual Chromium 151.0.7922.34 checks in
+`s00-listening-browser-2/`, including both stereo Vorbis decodes, finite offset/
+duration, stop, source-bound JSON, zero external requests/errors and inspected
+Russian desktop/mobile screenshots. Browser and private download fixture close.
+Family 1 preserves an offscreen-paint capture issue and exact original validator;
+family 2 captures all mobile-width content in its viewport. Test note/motif
+inputs are deliberately synthetic and are removed, never production selections.
+Both source intervals remain blocked; no note, motif, shipping media or scene
+binding was selected. Actual authored listening/edit selection is still open.
+
+Godot was restored only for the nearest independent art task; official archive
+SHA matches `setup_linux_toolchain.py`, exact version
+`4.7.2.stable.official.ed1daf0bf`. No Blender/gh/historical suites restored.
+Next independent block: reuse the approved Archive kit for a bounded Wing I
+corridor presentation pass, retaining safe geometry/progression and validating
+only that change. Full room/art/target-GPU and musical acceptance remain open.
 
 ---
 

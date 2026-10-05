@@ -1,0 +1,6 @@
+{
+  "status": "NEEDS_SCREENSHOT_RECHECK",
+  "scope": "Sixteen automated checks passed; desktop rendering is readable. The first full-page mobile screenshot has blank painted regions despite valid DOM/no overflow, so visual mobile acceptance is not claimed. Recheck with all content in the capture viewport.",
+  "validator_source_sha256": "45136efc83ed0b7fdf1e31b4ef91baf6dfb7367c5f6ceaf8eee1280f60c32b0c",
+  "preserved_source": "docs/production/evidence/audio_director/s00-listening-browser-1/validator_source.js"
+}

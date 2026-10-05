@@ -55,4 +55,9 @@ HTML содержит обе проверенные OGG-вырезки и раб
 
 19 Python/Node проверок и точное совпадение встроенных байтов:
 [panel_checks.json](../evidence/audio_director/s00-listening-panel-1/panel_checks.json).
-Проверка реального браузера еще не выполнена; музыкальная приемка остается открытой.
+Дополнительно [16 проверок настоящего Chromium](../evidence/audio_director/s00-listening-browser-2/results.json)
+подтвердили декодирование обеих OGG, конечный участок, остановку, правильный
+источник скачанного JSON и отсутствие сетевых запросов/runtime errors.
+[Desktop](../evidence/audio_director/s00-listening-browser-2/desktop.png) и
+[mobile](../evidence/audio_director/s00-listening-browser-2/mobile.png) осмотрены;
+музыкальная приемка остается открытой.

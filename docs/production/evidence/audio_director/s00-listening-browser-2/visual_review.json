@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-05T11:02:50.258446+00:00",
+  "scope": "Visual inspection of actual desktop/mobile review UI only. Both cards, Russian copy, interval/transport controls, note/motif/comment fields and download button are readable; no clipping/overflow. Mobile capture forces full-height viewport to avoid the earlier headless offscreen-paint omission. No source listening/seed/music acceptance.",
+  "source_hashes": {
+    "docs/production/evidence/audio_director/s00-listening-browser-2/results.json": "1ad575442f04f751a80463cadebbbd303ad7caf0db3a2353400148fce5f1d508",
+    "docs/production/evidence/audio_director/s00-listening-browser-2/desktop.png": "16d537174318df6e99920210f850c4baba5911a0997a49a2af498505f1f63bc5",
+    "docs/production/evidence/audio_director/s00-listening-browser-2/mobile.png": "0296c11c9219f36b52ac80e4ba2de932a74e2c6218e77c5c82356075796f5cf3"
+  },
+  "first_mobile_family": "s00-listening-browser-1 retained; not visually accepted"
+}
