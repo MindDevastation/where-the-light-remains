@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-05T21:14:06.705149+00:00",
+  "scope": "Blender authoring/reopen and exact-object upload only; independent retrieval/import/placement remain open.",
+  "source_hashes": {
+    "docs/production/archive_wall_3m.json": "2fa52b878b45a7f3550332efdc4dd805f91e74a3585a008c44df3efd6f3dec40",
+    "tools/create_archive_wall_3m.py": "10c4f7c5d09af26697645c3da3fd8d719579daac46a03ca767f95cba99f90935",
+    "tools/verify_archive_wall_3m.py": "14d72b537b94987263f7f1b0e11590f9439c1373e7f479a4aaee319e340336fb",
+    "tools/create_archive_kit.py": "b4a42fd0cca72cb68edb22f2d7dc8f0ea93e132618c18ec761140cbc2dd0a5e9",
+    "tools/test_archive_wall_geometry.py": "6ffe5a8ed0ccb6a18929859e0dec6029ffd1e784304d5d7a21d3a6d628e9d9b8",
+    "tools/durable_checkpoint.py": "937df4427daf1071e56561d35d9d4a67a295ad5aed6bdd3815fbf38bbedfd3cf",
+    "assets/3d/blender/archive_kit/archive_wall_3m.blend": "57ca05cbbd47053185053bd61967156f99079061bccab4b37c03671b6be07bbd",
+    "game/art/meshes/archive_kit/sm_archive_wall_3m.glb": "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3",
+    "docs/production/evidence/archive_reconstruction/front-wall-authoring-1/payload_manifest.json": "f9a288ff1ccb8f1d39d9eac260b1f96679cb9a5377331fa2e1a08f57f3936048",
+    "docs/production/evidence/archive_reconstruction/front-wall-authoring-1/reopen.log": "bb6dfec6d03fbbf89426944c0dadfa28e0aa7518b1fce43c35870b3558f6bcd3",
+    "docs/production/evidence/archive_reconstruction/front-wall-authoring-1/lfs_upload.json": "cacde22ec9e2057aa0955dd051a0f6577de72cfa32b9bdde72e77c06771cdc89",
+    "docs/production/evidence/archive_reconstruction/front-wall-authoring-1/author.log": "be49192d6eb71fdc20214a1e8e84eaa4d67589fab25d6094303b72ebaf178457"
+  },
+  "triangles": 212,
+  "surfaces": 1
+}

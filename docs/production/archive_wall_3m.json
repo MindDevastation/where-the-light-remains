@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "scope": "ARCH-004 third size; bounded Wing I front walls",
+  "id": "wall_3m",
+  "inventory": "ARCH-004",
+  "stem": "sm_archive_wall_3m",
+  "bounds_min": [-1.5, 0, -0.2],
+  "bounds_max": [1.5, 4, 0.2],
+  "materials": ["stone"],
+  "triangle_ceiling": 1800,
+  "anchors": {"left": [-1.5, 0, 0], "right": [1.5, 0, 0]},
+  "source": "assets/3d/blender/archive_kit/archive_wall_3m.blend",
+  "runtime": "game/art/meshes/archive_kit/sm_archive_wall_3m.glb",
+  "placements": [[-3.5, 0, -15], [3.5, 0, -15]],
+  "placement_rule": "Centered ground pivot is unchanged. Only odd-span center origins use X phase 0.5; endpoint anchors still meet integer-meter junctions at -5/-2 and 2/5. Original five-module grid contract is unchanged."
+}

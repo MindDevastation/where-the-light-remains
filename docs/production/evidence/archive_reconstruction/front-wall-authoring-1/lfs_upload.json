@@ -1,0 +1,26 @@
+{
+  "command": [
+    "git",
+    "-c",
+    "lfs.dialtimeout=12",
+    "-c",
+    "lfs.tlstimeout=12",
+    "-c",
+    "lfs.activitytimeout=12",
+    "-c",
+    "lfs.transfer.maxretries=0",
+    "lfs",
+    "push",
+    "--object-id",
+    "origin",
+    "57ca05cbbd47053185053bd61967156f99079061bccab4b37c03671b6be07bbd",
+    "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3"
+  ],
+  "exit": 0,
+  "stdout": "Uploading LFS objects: 100% (2/2), 486 KB | 0 B/s, done.\n",
+  "stderr": "",
+  "object_sha256": [
+    "57ca05cbbd47053185053bd61967156f99079061bccab4b37c03671b6be07bbd",
+    "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3"
+  ]
+}
