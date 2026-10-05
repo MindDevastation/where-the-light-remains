@@ -1,0 +1,366 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_floor_1m.tscn" id="Tile"]
+
+[node name="Wing01RoomFloor" type="Node3D"]
+metadata/scope = "Approved unit tiles on existing room footprint; original solid safety slab retained."
+
+[node name="Tile0_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -15.5)
+
+[node name="Tile0_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -15.5)
+
+[node name="Tile0_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -15.5)
+
+[node name="Tile0_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -15.5)
+
+[node name="Tile0_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -15.5)
+
+[node name="Tile0_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -15.5)
+
+[node name="Tile0_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -15.5)
+
+[node name="Tile0_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -15.5)
+
+[node name="Tile0_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -15.5)
+
+[node name="Tile0_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -15.5)
+
+[node name="Tile1_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -16.5)
+
+[node name="Tile1_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -16.5)
+
+[node name="Tile1_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -16.5)
+
+[node name="Tile1_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -16.5)
+
+[node name="Tile1_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -16.5)
+
+[node name="Tile1_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -16.5)
+
+[node name="Tile1_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -16.5)
+
+[node name="Tile1_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -16.5)
+
+[node name="Tile1_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -16.5)
+
+[node name="Tile1_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -16.5)
+
+[node name="Tile2_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -17.5)
+
+[node name="Tile2_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -17.5)
+
+[node name="Tile2_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -17.5)
+
+[node name="Tile2_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -17.5)
+
+[node name="Tile2_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -17.5)
+
+[node name="Tile2_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -17.5)
+
+[node name="Tile2_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -17.5)
+
+[node name="Tile2_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -17.5)
+
+[node name="Tile2_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -17.5)
+
+[node name="Tile2_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -17.5)
+
+[node name="Tile3_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -18.5)
+
+[node name="Tile3_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -18.5)
+
+[node name="Tile3_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -18.5)
+
+[node name="Tile3_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -18.5)
+
+[node name="Tile3_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -18.5)
+
+[node name="Tile3_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -18.5)
+
+[node name="Tile3_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -18.5)
+
+[node name="Tile3_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -18.5)
+
+[node name="Tile3_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -18.5)
+
+[node name="Tile3_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -18.5)
+
+[node name="Tile4_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -19.5)
+
+[node name="Tile4_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -19.5)
+
+[node name="Tile4_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -19.5)
+
+[node name="Tile4_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -19.5)
+
+[node name="Tile4_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -19.5)
+
+[node name="Tile4_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -19.5)
+
+[node name="Tile4_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -19.5)
+
+[node name="Tile4_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -19.5)
+
+[node name="Tile4_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -19.5)
+
+[node name="Tile4_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -19.5)
+
+[node name="Tile5_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -20.5)
+
+[node name="Tile5_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -20.5)
+
+[node name="Tile5_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -20.5)
+
+[node name="Tile5_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -20.5)
+
+[node name="Tile5_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -20.5)
+
+[node name="Tile5_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -20.5)
+
+[node name="Tile5_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -20.5)
+
+[node name="Tile5_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -20.5)
+
+[node name="Tile5_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -20.5)
+
+[node name="Tile5_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -20.5)
+
+[node name="Tile6_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -21.5)
+
+[node name="Tile6_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -21.5)
+
+[node name="Tile6_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -21.5)
+
+[node name="Tile6_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -21.5)
+
+[node name="Tile6_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -21.5)
+
+[node name="Tile6_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -21.5)
+
+[node name="Tile6_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -21.5)
+
+[node name="Tile6_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -21.5)
+
+[node name="Tile6_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -21.5)
+
+[node name="Tile6_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -21.5)
+
+[node name="Tile7_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -22.5)
+
+[node name="Tile7_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -22.5)
+
+[node name="Tile7_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -22.5)
+
+[node name="Tile7_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -22.5)
+
+[node name="Tile7_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -22.5)
+
+[node name="Tile7_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -22.5)
+
+[node name="Tile7_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -22.5)
+
+[node name="Tile7_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -22.5)
+
+[node name="Tile7_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -22.5)
+
+[node name="Tile7_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -22.5)
+
+[node name="Tile8_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -23.5)
+
+[node name="Tile8_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -23.5)
+
+[node name="Tile8_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -23.5)
+
+[node name="Tile8_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -23.5)
+
+[node name="Tile8_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -23.5)
+
+[node name="Tile8_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -23.5)
+
+[node name="Tile8_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -23.5)
+
+[node name="Tile8_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -23.5)
+
+[node name="Tile8_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -23.5)
+
+[node name="Tile8_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -23.5)
+
+[node name="Tile9_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -24.5)
+
+[node name="Tile9_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -24.5)
+
+[node name="Tile9_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -24.5)
+
+[node name="Tile9_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -24.5)
+
+[node name="Tile9_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -24.5)
+
+[node name="Tile9_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -24.5)
+
+[node name="Tile9_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -24.5)
+
+[node name="Tile9_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -24.5)
+
+[node name="Tile9_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -24.5)
+
+[node name="Tile9_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -24.5)
+
+[node name="Tile10_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -25.5)
+
+[node name="Tile10_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -25.5)
+
+[node name="Tile10_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -25.5)
+
+[node name="Tile10_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -25.5)
+
+[node name="Tile10_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -25.5)
+
+[node name="Tile10_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -25.5)
+
+[node name="Tile10_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -25.5)
+
+[node name="Tile10_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -25.5)
+
+[node name="Tile10_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -25.5)
+
+[node name="Tile10_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -25.5)
+
+[node name="Tile11_0" parent="." instance=ExtResource("Tile")]
+position = Vector3(-4.5, 0, -26.5)
+
+[node name="Tile11_1" parent="." instance=ExtResource("Tile")]
+position = Vector3(-3.5, 0, -26.5)
+
+[node name="Tile11_2" parent="." instance=ExtResource("Tile")]
+position = Vector3(-2.5, 0, -26.5)
+
+[node name="Tile11_3" parent="." instance=ExtResource("Tile")]
+position = Vector3(-1.5, 0, -26.5)
+
+[node name="Tile11_4" parent="." instance=ExtResource("Tile")]
+position = Vector3(-0.5, 0, -26.5)
+
+[node name="Tile11_5" parent="." instance=ExtResource("Tile")]
+position = Vector3(0.5, 0, -26.5)
+
+[node name="Tile11_6" parent="." instance=ExtResource("Tile")]
+position = Vector3(1.5, 0, -26.5)
+
+[node name="Tile11_7" parent="." instance=ExtResource("Tile")]
+position = Vector3(2.5, 0, -26.5)
+
+[node name="Tile11_8" parent="." instance=ExtResource("Tile")]
+position = Vector3(3.5, 0, -26.5)
+
+[node name="Tile11_9" parent="." instance=ExtResource("Tile")]
+position = Vector3(4.5, 0, -26.5)

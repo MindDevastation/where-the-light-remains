@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3]
+[gd_scene load_steps=80 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_corridor_floor.tscn" id="CorridorFloor"]
 [ext_resource type="Shader" path="res://worlds/archive/hub/hub_floor_cutout.gdshader" id="HubFloorCutout"]
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_room_presentation.tscn" id="RoomArt"]
+[ext_resource type="PackedScene" path="res://worlds/archive/wing01_room_floor.tscn" id="RoomFloor"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -582,6 +583,8 @@ shape = SubResource("S_CorridorWallR")
 
 [node name="Presentation" parent="Wing01/Room" instance=ExtResource("RoomArt")]
 
+[node name="TileFloor" parent="Wing01/Room" instance=ExtResource("RoomFloor")]
+
 [node name="RoomFloor" type="StaticBody3D" parent="Wing01/Room"]
 position = Vector3(0, -0.15, -21)
 rotation = Vector3(0, 0.000000000, 0)
@@ -590,6 +593,7 @@ collision_mask = 4
 disable_mode = 1
 
 [node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomFloor"]
+visible = false
 mesh = SubResource("M_RoomFloor")
 material_override = SubResource("Stone")
 

@@ -83,7 +83,9 @@ func _run() -> void:
             return
         var color: Color = world.get_node("Wing01/Room/RoomLight").light_color
         captures.append({"name": view["name"], "file": filename, "size": [image.get_width(), image.get_height()],
-            "light_color": [color.r, color.g, color.b], "hearth_visible": world.get_node("Wing01/Room/Hearth/Flame").visible})
+            "light_color": [color.r, color.g, color.b], "hearth_visible": world.get_node("Wing01/Room/Hearth/Flame").visible,
+            "draw_calls": int(Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)),
+            "texture_bytes": int(Performance.get_monitor(Performance.RENDER_TEXTURE_MEM_USED))})
     if GameState.capture_save().to_dict() != before or SaveManager.get("_dirty") != dirty:
         push_error("Room presentation review mutated progression/dirty state")
         get_tree().quit(1)

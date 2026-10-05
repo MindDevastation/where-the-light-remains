@@ -23,7 +23,10 @@ and `evidence/checkpoints/gitdata_publications.jsonl`.
   retained; 19 actual capsule/approach checks, 101 state and 60 S02 regressions
   pass. See `WING01_ROOM_ART.md`. Six inspected Low/Medium native views confirm
   readable stone/joins and existing cold/warm response with protected slots.
-  Front/floor/ceiling and full room acceptance remain open.
+  120 shared floor tiles now cover the unchanged footprint; 27 current room,
+  101 state and 60 S02 checks pass. Six new Low/Medium views verify floor/joins
+  and cold/warm response. Captured draw-call/texture counters are software
+  diagnostics only. Front/ceiling and full room acceptance remain open.
 
 ## Source availability after the 2026-10-04 interruption
 

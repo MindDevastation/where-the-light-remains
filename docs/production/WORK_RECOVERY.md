@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-05 room side/back native review
+# Current Work recovery boundary — 2026-10-05 room floor checkpoint
 
 New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
 (2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
@@ -81,8 +81,18 @@ existing cold/warm response remains visible. Warm rendering uses a validated
 local quiet presentation projection; global progression/dirty state and files
 are unchanged. Real persisted E/progression remains verified by the separate
 60-check suite, not inferred from screenshots.
-Exact next step: bounded approved room floor tiles, protected fallback slab,
-actual seam/approach tests and cold/warm views. Front/ceiling/full room art,
+The floor now reuses 120 approved unit tiles over the existing 10 x 12 m slab;
+its collider remains and only the skin is hidden. `room-floor-headless-1/`
+passes 27 room and 101 state assertions with existing slots unchanged, including
+actual row/column walks with the fallback disabled in the private test.
+`room-floor-s02-regression-1/` passes 60 real E/save/reload/Hub-return checks.
+`room-floor-native-1/` passes Low/Medium: all six images were inspected, texture/
+joins and cold/warm response are readable. Captured frame draw calls are 24/5/26
+for cold/corner/warm on both presets; these are software diagnostics, not target
+timing acceptance. Private projects/processes close and logs contain no errors.
+Exact next step: inspect approved front-wall/ceiling/emitter/Hearth art inputs
+and remaining module variants against the preserved room layout.
+Front/ceiling/full room art,
 authored audio and physical target GPU remain open.
 Full room/target-GPU/music remain open.
 

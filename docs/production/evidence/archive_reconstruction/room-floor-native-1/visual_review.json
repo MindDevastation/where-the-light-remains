@@ -1,0 +1,52 @@
+{
+  "status": "PASS_BOUNDED_ROOM_FLOOR_PLACEMENT",
+  "reviewed_at": "2026-10-05T12:27:13.772869+00:00",
+  "finding": "All six actual player Low/Medium images inspected. Approved floor texture/joins, side/back stone and existing cold/warm response are readable; no observed coplanar overlap patches.",
+  "captures": {
+    "room_cold_low.png": "94cba251a9d477b6ef3fdf64439fa7491a2fbe6d9a6b5ea2d553d5d0c5c96604",
+    "room_cold_medium.png": "84246abb4f1540ecfcdd90a50b7ab4b75d661a4657b7e41c2f02dfd19b874ee5",
+    "room_corner_low.png": "bc7e9f7b0b6df6b3ce867f980de16302bbdb0ec91b1a55992613e8189b96669f",
+    "room_corner_medium.png": "4696cb688e79b37d6f99f31f18ce7b2370ef944ed1c2c2cc38b2ff936f9e6f7c",
+    "room_warm_low.png": "aa1c58c39be87624ff99fac3d71d3b50ec86e28ce72a60f7558c397b1ac1bc47",
+    "room_warm_medium.png": "0ed3a0bab8a84a427be61ed83fe916db2a2557a96d3a86fcd299768fddee9e69"
+  },
+  "validation_sha256": "3801341757789104750642c122eb58c61a7ed742b8e00b818f9eec9dca646442",
+  "frame_counters": {
+    "low": [
+      {
+        "name": "room_cold",
+        "draw_calls": 24,
+        "texture_bytes": 22533120
+      },
+      {
+        "name": "room_corner",
+        "draw_calls": 5,
+        "texture_bytes": 22533120
+      },
+      {
+        "name": "room_warm",
+        "draw_calls": 26,
+        "texture_bytes": 22533120
+      }
+    ],
+    "medium": [
+      {
+        "name": "room_cold",
+        "draw_calls": 24,
+        "texture_bytes": 26127360
+      },
+      {
+        "name": "room_corner",
+        "draw_calls": 5,
+        "texture_bytes": 26127360
+      },
+      {
+        "name": "room_warm",
+        "draw_calls": 26,
+        "texture_bytes": 26127360
+      }
+    ]
+  },
+  "geometry_scope": "120 shared unscaled approved unit modules on old 10x12 m footprint, cell-center phase and Y=0. Original safety slab stays solid without its skin.",
+  "limits": "Single captured frame counters are software-renderer diagnostics, not performance certification. Front/ceiling, emitter/Hearth authoring, audio/mix, full VS1 and physical target GPU remain open."
+}
