@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-05 bounded corridor art
+# Current Work recovery boundary — 2026-10-05 room side/back placement
 
 New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
 (2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
@@ -67,6 +67,16 @@ patches remain. Its cache-free import/rendering and protected slots pass, as do
 45 actual-capsule checks in `corridor-hub-cutout-headless-1/`.
 Exact next block: approved wall bays/piers on the existing Wing I room side/back
 spans; preserve safety guards and check actual puzzle approach/return clearance.
+That placement now exists as 19 shared unit instances; old higher safety guards
+stay solid and side/back graybox skins are hidden. `room-wall-headless-1/`
+passes 19 actual shipping-capsule/spawn/grip/escape checks plus 101 state checks
+with existing primary/backup files unchanged. `room-wall-s02-regression-1/`
+passes all 60 actual S02/E/physical IO/quiet reload/grounded Hub-return checks
+using its own disposable slots. Both cache-free copies are removed; no runtime
+errors/warnings. See `WING01_ROOM_ART.md` for exact scope and positions.
+Exact next step: affected Low/Medium room/joins and existing cold/warm response
+views. Front/floor/ceiling/full room art remains open; do not claim visual
+acceptance from the headless evidence.
 Full room/target-GPU/music remain open.
 
 ---

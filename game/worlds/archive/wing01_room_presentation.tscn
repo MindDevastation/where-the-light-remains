@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_4m.tscn" id="Wall4"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_2m.tscn" id="Wall2"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_pier_4m.tscn" id="Pier"]
+
+[node name="Wing01RoomPresentation" type="Node3D"]
+metadata/scope = "Approved kit side/back placement only; front, floor, ceiling and full room art remain open."
+
+[node name="WallL0" parent="." instance=ExtResource("Wall4")]
+position = Vector3(-5, 0, -17)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="WallL1" parent="." instance=ExtResource("Wall4")]
+position = Vector3(-5, 0, -21)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="WallL2" parent="." instance=ExtResource("Wall4")]
+position = Vector3(-5, 0, -25)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="PierL0" parent="." instance=ExtResource("Pier")]
+position = Vector3(-5, 0, -15)
+
+[node name="PierL1" parent="." instance=ExtResource("Pier")]
+position = Vector3(-5, 0, -19)
+
+[node name="PierL2" parent="." instance=ExtResource("Pier")]
+position = Vector3(-5, 0, -23)
+
+[node name="PierL3" parent="." instance=ExtResource("Pier")]
+position = Vector3(-5, 0, -27)
+
+[node name="WallR0" parent="." instance=ExtResource("Wall4")]
+position = Vector3(5, 0, -17)
+rotation_degrees = Vector3(0, 270, 0)
+
+[node name="WallR1" parent="." instance=ExtResource("Wall4")]
+position = Vector3(5, 0, -21)
+rotation_degrees = Vector3(0, 270, 0)
+
+[node name="WallR2" parent="." instance=ExtResource("Wall4")]
+position = Vector3(5, 0, -25)
+rotation_degrees = Vector3(0, 270, 0)
+
+[node name="PierR0" parent="." instance=ExtResource("Pier")]
+position = Vector3(5, 0, -15)
+
+[node name="PierR1" parent="." instance=ExtResource("Pier")]
+position = Vector3(5, 0, -19)
+
+[node name="PierR2" parent="." instance=ExtResource("Pier")]
+position = Vector3(5, 0, -23)
+
+[node name="PierR3" parent="." instance=ExtResource("Pier")]
+position = Vector3(5, 0, -27)
+
+[node name="BackL" parent="." instance=ExtResource("Wall4")]
+position = Vector3(-3, 0, -27)
+
+[node name="BackCenter" parent="." instance=ExtResource("Wall2")]
+position = Vector3(0, 0, -27)
+
+[node name="BackR" parent="." instance=ExtResource("Wall4")]
+position = Vector3(3, 0, -27)
+
+[node name="BackPierL" parent="." instance=ExtResource("Pier")]
+position = Vector3(-1, 0, -27)
+
+[node name="BackPierR" parent="." instance=ExtResource("Pier")]
+position = Vector3(1, 0, -27)

@@ -19,7 +19,10 @@ and `evidence/checkpoints/gitdata_publications.jsonl`.
   remains open; this does not close GATE-VS1 or unlock S03.
 - [x] S00 source-comparison/cut-proposal page and 16 actual Chromium checks.
   Both source intervals/note/motif remain unselected; no shipping binding.
-- [ ] Continue bounded room side/back wall reuse and puzzle-route clearance.
+- [x] Bounded room side/back reuse: 19 unit module instances, old higher guards
+  retained; 19 actual capsule/approach checks, 101 state and 60 S02 regressions
+  pass. See `WING01_ROOM_ART.md`. Native cold/warm/joins review remains pending;
+  front/floor/ceiling and full room acceptance remain open.
 
 ## Source availability after the 2026-10-04 interruption
 
