@@ -29,9 +29,14 @@ player views and protected slot hashes. Failed 1/2 fixtures and their original
 source are retained; the test now registers the same S02 IN_PLACE profile as
 Boot and uses the existing explicit resume API. No runtime routing change.
 
-All six views were inspected. Portal/trim and route are visible, but the stone
-faces away from directional moonlight are nearly black: NEEDS_LIGHTING_FIX.
-Next: verify/use the existing environment's authored color ambient fill before
-adding the approved corridor floor tiles. No full visual acceptance is claimed. Full room/observatory
+Those six views exposed black stone faces away from directional moonlight.
+`corridor-ambient-native-1/` resolves this local resource defect: Archive has no
+Sky, but selected AMBIENT_SOURCE_SKY (3). It now selects AMBIENT_SOURCE_COLOR (2),
+using the existing configured color/energy without changing lighting budgets,
+materials or geometry. Cache-free import, Low/Medium captures and protected
+physical save hashes pass; all six new views were inspected and stone faces
+are readable. `visual_review.json` retains the exact before/after diagnostic.
+This is a bounded lighting correction, not authored color or full art acceptance.
+Next: place the approved corridor floor tiles. Full room/observatory
 art, emitter/Hearth authoring, S00 note/motif selection, scene mix and physical
 GTX 1060 profiling remain open. No full GATE-VS1 acceptance is implied.

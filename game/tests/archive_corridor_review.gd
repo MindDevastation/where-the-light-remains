@@ -80,6 +80,8 @@ func _run() -> void:
     var file := FileAccess.open(_output.path_join("captures_" + _quality + ".json"), FileAccess.WRITE)
     file.store_string(JSON.stringify({"status": "CAPTURED_FOR_REVIEW", "quality": _quality, "captures": captures,
         "renderer": RenderingServer.get_current_rendering_method(), "device": RenderingServer.get_video_adapter_name(),
+        "ambient_source": world.get_node("Environment").environment.ambient_light_source,
+        "sky_present": world.get_node("Environment").environment.sky != null,
         "glow": world.get_node("Environment").environment.glow_enabled,
         "volumetrics": world.get_node("Environment").environment.volumetric_fog_enabled}, "  "))
     file.close()

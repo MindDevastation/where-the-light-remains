@@ -1,0 +1,53 @@
+{
+  "status": "PASS_BOUNDED_AMBIENT_CORRECTION",
+  "reviewed_at": "2026-10-05T11:49:19.534413+00:00",
+  "finding": "All six actual player views inspected. Stone faces previously black away from moonlight now show texture; portal, seam trim and return path remain readable.",
+  "cause": "Environment selected AMBIENT_SOURCE_SKY (3) with no Sky resource. Godot 4.7.2 introspection confirms AMBIENT_SOURCE_COLOR is 2.",
+  "change": "Only ambient_light_source 3 -> 2; existing color (0.5, 0.64, 0.8) and energy 0.65 retained.",
+  "captures": {
+    "entrance_low.png": "f6790b523e214a3a1253a1875742a08015f030e96adc2e7121c726600dc48676",
+    "entrance_medium.png": "9178245600fb306311a0e93aaa6993dbdf9b75bfdd14082fe08aa8972951d35b",
+    "return_low.png": "771b30895a802be6ee9baeab15fada74ba584167924008f9fb4e251ae4c6e58e",
+    "return_medium.png": "b25c8a400894fc840cbf0d1c36692374559e973f49acde5e6f98449baf3eb98a",
+    "seam_low.png": "d436a8c7af5f7a7a81de83d672de29d4fb793f4f42db2e529fc9b44bb6e7f054",
+    "seam_medium.png": "5ad1b4bd84c1c131801c8dc3087b40b68aa826aa7a5fd3e4a6e95ea44da5b6e6"
+  },
+  "validation_sha256": "04f2a64c60bc4d2eb4d8bc684876f0668e866ed032dc96dc950daf228248e5a7",
+  "crop_xyxy": [
+    80,
+    150,
+    200,
+    320
+  ],
+  "crop_diagnostics": {
+    "low": {
+      "before": {
+        "image": "docs/production/evidence/archive_reconstruction/corridor-art-native-3/entrance_low.png",
+        "sha256": "2306cd25328e3bc5f8fab5c9bec97baae23d5e74915280c26e04e1568f8c5e43",
+        "mean_luma": 0.0,
+        "std_luma": 0.0
+      },
+      "after": {
+        "image": "docs/production/evidence/archive_reconstruction/corridor-ambient-native-1/entrance_low.png",
+        "sha256": "f6790b523e214a3a1253a1875742a08015f030e96adc2e7121c726600dc48676",
+        "mean_luma": 0.4377251474817377,
+        "std_luma": 0.013736845440289837
+      }
+    },
+    "medium": {
+      "before": {
+        "image": "docs/production/evidence/archive_reconstruction/corridor-art-native-3/entrance_medium.png",
+        "sha256": "362013de939579cd18c1752dc16279e4a2824cf70e85b6adcf6305d47dcc7035",
+        "mean_luma": 0.0,
+        "std_luma": 0.0
+      },
+      "after": {
+        "image": "docs/production/evidence/archive_reconstruction/corridor-ambient-native-1/entrance_medium.png",
+        "sha256": "9178245600fb306311a0e93aaa6993dbdf9b75bfdd14082fe08aa8972951d35b",
+        "mean_luma": 0.4377161643214148,
+        "std_luma": 0.014235722459548584
+      }
+    }
+  },
+  "limits": "SDR crop luminance is diagnostic, not an authored brightness criterion. Software llvmpipe only; full art, palette acceptance and target GPU profiling remain open."
+}

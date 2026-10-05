@@ -1,10 +1,10 @@
-# Current Work recovery boundary — 2026-10-05 receipt I/O block
+# Current Work recovery boundary — 2026-10-05 corridor ambient fix
 
 New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
 (2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
 completed gameplay/PCM/export families below were inspected, not repeated.
-Godot is not installed in this environment; this isolated Python I/O fix does
-not require it or immutable source masters.
+The initial isolated Python I/O fix needed neither Godot nor source masters;
+the exact Godot version was later restored for the independent corridor work.
 
 `tools/audio_audition.py` now consumes every short write before fsync/replace.
 Zero/invalid progress fails promptly, preserves the previous receipt and cleans
@@ -46,11 +46,16 @@ unchanged and private project/owned Godot/Xvfb cleaned. Earlier native families
 required outside Boot, followed by the existing request_resume_stage API.
 No shipping routing policy was modified. The six captures were inspected:
 portal/trim are visible, but stone faces away from directional moonlight are
-nearly black. Visual status is NEEDS_LIGHTING_FIX, not a full art acceptance.
-Exact next block: verify/fix the existing local Archive environment's ambient
-source so its already authored color fill is used; repeat only these affected
-Low/Medium views, then continue bounded corridor floor art. No global lighting
-budget/pipeline change is proposed. Full room/target-GPU/music remain open.
+nearly black. That finding is retained in the original visual review.
+`corridor-ambient-native-1/` fixes the local environment source: SKY (3) with no
+Sky resource became COLOR (2), using the already configured color/energy.
+Clean import and all six affected Low/Medium views pass with unchanged physical
+slots and cleaned private project/processes. All six images were inspected;
+stone texture is now readable. No global lighting budget/pipeline changed and
+no authored palette/full art acceptance is implied.
+Exact next block: tile the existing corridor floor using approved 1 m modules,
+retain the safety slab, test actual capsule travel and inspect affected views.
+Full room/target-GPU/music remain open.
 
 ---
 
