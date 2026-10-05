@@ -1,0 +1,5 @@
+{
+  "status": "FIXTURE_FAILURE",
+  "confirmed_cause": "Native fixture runs without Boot, so no S02 StageDefinition has been registered. Both attempts refused a missing stage definition. Register the same S02 path/mode as Boot before explicit resume.",
+  "runtime_changes": false
+}

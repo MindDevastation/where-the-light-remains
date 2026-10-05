@@ -39,9 +39,18 @@ shipping-capsule traversal/ownership checks and 101 relevant Archive state/
 safe-spawn regressions, clean cache-free import and unchanged existing primary/
 backup files (140 assertions). Private copy removed; no errors/warnings.
 See `WING01_CORRIDOR_ART.md` for exact placement and scope.
-Next independent block: bounded native Forward+ visual review of this corridor
-on Low/Medium, using the already documented TCP/cookie Xvfb/llvmpipe runner.
-Full room/art/target-GPU and musical acceptance remain open.
+`corridor-art-native-3/` now passes exact cache-free import and six native
+Forward+ player views (three each Low/Medium), with two existing physical slots
+unchanged and private project/owned Godot/Xvfb cleaned. Earlier native families
+1/2 preserve fixture omissions: explicit shipping-style S02 registration is
+required outside Boot, followed by the existing request_resume_stage API.
+No shipping routing policy was modified. The six captures were inspected:
+portal/trim are visible, but stone faces away from directional moonlight are
+nearly black. Visual status is NEEDS_LIGHTING_FIX, not a full art acceptance.
+Exact next block: verify/fix the existing local Archive environment's ambient
+source so its already authored color fill is used; repeat only these affected
+Low/Medium views, then continue bounded corridor floor art. No global lighting
+budget/pipeline change is proposed. Full room/target-GPU/music remain open.
 
 ---
 

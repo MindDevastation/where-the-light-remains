@@ -1,0 +1,7 @@
+{
+  "status": "RECORDED_NOT_CONTINUOUS_CADENCE_PASS",
+  "last_verified_publication_utc": "2026-10-05T11:14:53.139998+00:00",
+  "native_checks_finished_utc": "2026-10-05T11:22:22.199413+00:00",
+  "next_active_clock_observation_utc": "2026-10-05T11:35:01Z",
+  "scope": "Elapsed publication gap exceeds 15 minutes. Record actual times; do not claim uninterrupted cadence. Immediate native evidence checkpoint follows before lighting changes."
+}

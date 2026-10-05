@@ -24,6 +24,14 @@ portal into the room and back; a seam pier blocks lateral escape. All three
 commands preserve two physically existing save fixtures exactly; no runtime
 errors/warnings and the private cache-free copy is removed.
 
-Visual corridor review is the next independent block. Full room/observatory
+Native capture family `corridor-art-native-3/` passes Low/Medium with six actual
+player views and protected slot hashes. Failed 1/2 fixtures and their original
+source are retained; the test now registers the same S02 IN_PLACE profile as
+Boot and uses the existing explicit resume API. No runtime routing change.
+
+All six views were inspected. Portal/trim and route are visible, but the stone
+faces away from directional moonlight are nearly black: NEEDS_LIGHTING_FIX.
+Next: verify/use the existing environment's authored color ambient fill before
+adding the approved corridor floor tiles. No full visual acceptance is claimed. Full room/observatory
 art, emitter/Hearth authoring, S00 note/motif selection, scene mix and physical
 GTX 1060 profiling remain open. No full GATE-VS1 acceptance is implied.

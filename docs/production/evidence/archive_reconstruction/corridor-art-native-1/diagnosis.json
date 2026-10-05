@@ -1,0 +1,7 @@
+{
+  "status": "FIXTURE_FAILURE",
+  "confirmed_cause": "Native fixture runs without Boot and omitted S02 registration; SceneRouter refuses the missing definition.",
+  "other_fixture_defects": "Use explicit request_resume_stage for the IN_PLACE profile once registered; correct Environment node name before captures.",
+  "earlier_hypothesis": "Generic saved IN_PLACE request refusal was suspected first; missing registration was then confirmed by source inspection.",
+  "runtime_changes": false
+}

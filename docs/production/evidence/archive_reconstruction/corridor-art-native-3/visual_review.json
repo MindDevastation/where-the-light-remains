@@ -1,0 +1,17 @@
+{
+  "status": "NEEDS_LIGHTING_FIX",
+  "utc": "2026-10-05T11:36:22.967352+00:00",
+  "scope": "All six actual corridor images inspected. Approved wall/pier/portal silhouettes and route/return are readable; the stone face away from directional moonlight is nearly black on Low and Medium. Full visual acceptance is not claimed.",
+  "next": "Verify the existing world ambient source against its intended color fill; fix the local lighting source before further floor art. No global budget/material/pipeline change is proposed.",
+  "source_hashes": {
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/results.json": "bb850bacd51ca46c008689820c590bc62a652a56247f97c00b12eeb76ea10947",
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/seam_medium.png": "d4dfc9b79a7caee06fa93bba50e3a86f7128214a975a17922d71fc7b5da4c221",
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/captures_medium.json": "9942b1c31cbd60106c8c95f25870eaab0b60696d090748c1bcf1082dd8baedac",
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/entrance_medium.png": "362013de939579cd18c1752dc16279e4a2824cf70e85b6adcf6305d47dcc7035",
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/seam_low.png": "a7f6a90c48ee7e7abb2e1803b6b17ba910dadf54100523556d3f05d178ae3f4b",
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/return_medium.png": "6dbdff112b9a340bb04722f433f2feb55d99031b0dafe4c36b81e7087f346280",
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/captures_low.json": "f392201a2c29a7895bc387a2b75b35ce6e111692b072fc78f6d3aaa61748d7c8",
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/return_low.png": "d99573ca9bacd5d94117f5fb0e04e49e8d69c6df8d3adb894670b8f747052493",
+    "docs/production/evidence/archive_reconstruction/corridor-art-native-3/entrance_low.png": "2306cd25328e3bc5f8fab5c9bec97baae23d5e74915280c26e04e1568f8c5e43"
+  }
+}
