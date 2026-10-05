@@ -1,0 +1,77 @@
+{
+  "status": "NETWORK_BLOCKER_CONFIRMED",
+  "utc": "2026-10-05T16:39:51.017893+00:00",
+  "credential_value_logged": false,
+  "new_credential_installed": true,
+  "global_git_helper": "HTTPS github.com only; protected private file outside Git",
+  "login_shell_GH_TOKEN_matches_new_credential": true,
+  "credential_isolation_checks": {
+    "github_helper_returns_new_credential": true,
+    "other_host_receives_no_password": true
+  },
+  "probes": [
+    {
+      "name": "github_public",
+      "curl_exit": 28,
+      "http_code": "000",
+      "proxy_connect_code": "000",
+      "tls_handshake_seconds": 0,
+      "error": "Proxy CONNECT aborted due to timeout"
+    },
+    {
+      "name": "github_API_authenticated",
+      "curl_exit": 28,
+      "http_code": "000",
+      "proxy_connect_code": "000",
+      "tls_handshake_seconds": 0,
+      "error": "Proxy CONNECT aborted due to timeout"
+    },
+    {
+      "name": "github_LFS_authenticated",
+      "curl_exit": 28,
+      "http_code": "000",
+      "proxy_connect_code": "000",
+      "tls_handshake_seconds": 0,
+      "error": "Proxy CONNECT aborted due to timeout"
+    },
+    {
+      "name": "approved_git_gateway",
+      "curl_exit": 0,
+      "proxy_connect_code": "200",
+      "http_code": "400",
+      "note": "Root has no repository resource; successful TLS/HTTP connectivity."
+    },
+    {
+      "name": "approved_chatgpt",
+      "curl_exit": 0,
+      "proxy_connect_code": "200",
+      "http_code": "200"
+    },
+    {
+      "name": "native_Git_read",
+      "exit": 0,
+      "proxy_connect_code": "200",
+      "Git_info_refs_HTTP": "200",
+      "Git_upload_pack_HTTP": "200",
+      "remote_SHA": "f0881d5c6a255f283fcfb1a9ab4ea2c3de63dc79"
+    },
+    {
+      "name": "native_Git_push_dry_run",
+      "exit": 0,
+      "output": "Everything up-to-date",
+      "new_ref_written": false
+    },
+    {
+      "name": "native_LFS_one_existing_object",
+      "bounded_timeout_seconds": 18,
+      "timed_out": true,
+      "retrieved_objects": 0,
+      "owned_process_group_terminated": true,
+      "independent_store_removed": true
+    }
+  ],
+  "diagnosis": "Ordinary Git transport is permitted separately. Direct HTTPS GitHub/API/LFS requests stall in proxy CONNECT before TLS/HTTP authentication; the supplied token is not evaluated at the failing stage. Runtime allowlist omits GitHub/API; exact proxy implementation is not exposed.",
+  "permission_boundary": "No proxy bypass, alternate unauthorized route, host spoofing or authentication downgrade attempted. No exposed tool can update the runtime network allowlist.",
+  "next_required_change": "Enable the authorized GitHub API and LFS network route in the execution environment, then verify actual authentication, upload and independent LFS retrieval.",
+  "credential_persistence_limit": "Current runtime login shells and Git projects only; no guarantee across replaced environments or other isolated chats."
+}

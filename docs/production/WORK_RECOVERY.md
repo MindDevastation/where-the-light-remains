@@ -1,3 +1,26 @@
+## New credential and confirmed transport boundary — 2026-10-05
+
+Owner replaced the development credential. Protected GitHub-scoped global Git
+helper and login-shell GH_TOKEN setup use the new value; isolation/protection
+checks pass. Values and shell configuration remain outside this repository and
+all evidence. Availability in other isolated/replaced environments is not assumed.
+
+The actual failure occurs at ordinary HTTPS proxy CONNECT, before TLS or HTTP
+authentication: anonymous github.com, authenticated API and LFS requests all
+return curl 28 / HTTP 000 / CONNECT 000. Approved ChatGPT/Git-gateway endpoints
+complete CONNECT/TLS/HTTP. Native Git has a separately permitted transport: exact
+remote read and no-op push dry-run pass. An independent native one-object LFS
+fetch with the new credential times out at its 18-second bound with zero objects;
+its owned process group and private store are cleaned. See
+`evidence/archive_reconstruction/new-token-network-2026-10-05/results.json`.
+
+The next asset remains blocked on the execution environment's authorized API/
+LFS network route. Credential replacement cannot address a pre-authentication
+CONNECT failure. No runtime allowlist-management tool is exposed; no network
+policy bypass was attempted. Existing connector/ordinary Git code publication
+continues to work. Resume new 3 m wall authoring only after actual LFS transport
+verification, preserving the accepted room/entrance state and higher guards.
+
 # Current recovery boundary — entrance junction continuation, 2026-10-05
 
 Recovered existing checkout and independently verified remote working-branch
