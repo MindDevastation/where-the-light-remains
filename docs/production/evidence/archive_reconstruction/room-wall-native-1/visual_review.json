@@ -1,0 +1,60 @@
+{
+  "status": "PASS_BOUNDED_ROOM_SIDE_BACK_PLACEMENT",
+  "reviewed_at": "2026-10-05T12:17:43.173806+00:00",
+  "finding": "All six actual player images inspected. Imported stone/trim and single-owner room corner join are readable; existing cold blue and warm Hearth response remains visibly distinct.",
+  "captures": {
+    "room_cold_low.png": "d7db2d50822a6269d1f5de6e10199cf94f57f04d7c37bd8eb7aa7f9f0385273b",
+    "room_cold_medium.png": "62593aa835df3e1dbd4e8558332a56652a48945b25b82e5d3b1f99f37886f267",
+    "room_corner_low.png": "6e8588d8be37621e35d46b6b9792e43939b92363463b9749ebc712e3f67d575c",
+    "room_corner_medium.png": "4ab7b7ae9ae79adc965d5e685bb1f166dc4a35fe1f019364053f7a6828c1d658",
+    "room_warm_low.png": "51d80851cef4bf2c8a1654eb46078f8ab7b2740f6007eb9a4187ac4c28b19e54",
+    "room_warm_medium.png": "2a8609d1c639f540921beeb77f722dea2017ab7c533e9b7db5f3ce8660ef47f4"
+  },
+  "validation_sha256": "4933e4931da03437751ef861627b875e171c0cfaadc9c58b487280021f5b42a6",
+  "lighting_crop_xyxy": [
+    80,
+    165,
+    250,
+    245
+  ],
+  "lighting_diagnostics": {
+    "low": {
+      "cold": {
+        "mean_rgb": [
+          0.4491003460206528,
+          0.577372549019767,
+          0.6929267589389352
+        ],
+        "mean_red_minus_blue": -0.24382641291810841
+      },
+      "warm": {
+        "mean_rgb": [
+          0.69586649365635,
+          0.5876998269897743,
+          0.5352001153404146
+        ],
+        "mean_red_minus_blue": 0.16066637831603228
+      }
+    },
+    "medium": {
+      "cold": {
+        "mean_rgb": [
+          0.4490357554785539,
+          0.5773566897348764,
+          0.6928001730104466
+        ],
+        "mean_red_minus_blue": -0.24376441753171857
+      },
+      "warm": {
+        "mean_rgb": [
+          0.6956559976932584,
+          0.5876787773934654,
+          0.5350896770474475
+        ],
+        "mean_red_minus_blue": 0.1605663206459054
+      }
+    }
+  },
+  "state_scope": "Warm capture uses validated local quiet presentation only, without global progression/dirty/save changes. Separate 60 S02 checks verify real persisted E/puzzle/return behavior.",
+  "limits": "Only side/back placement. Front/floor/ceiling, emitter/Hearth authoring, audio/mix, full VS1 and physical target GPU remain open. Software llvmpipe; pixel color diagnostics are not authored palette criteria."
+}

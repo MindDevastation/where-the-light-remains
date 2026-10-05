@@ -1,0 +1,53 @@
+{
+  "captures": [
+    {
+      "file": "room_cold_medium.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "room_cold",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "room_corner_medium.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "room_corner",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "room_warm_medium.png",
+      "hearth_visible": true,
+      "light_color": [
+        1.0,
+        0.680000007152557,
+        0.360000014305115
+      ],
+      "name": "room_warm",
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "room",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

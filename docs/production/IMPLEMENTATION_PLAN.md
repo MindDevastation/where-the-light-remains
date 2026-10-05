@@ -21,8 +21,9 @@ and `evidence/checkpoints/gitdata_publications.jsonl`.
   Both source intervals/note/motif remain unselected; no shipping binding.
 - [x] Bounded room side/back reuse: 19 unit module instances, old higher guards
   retained; 19 actual capsule/approach checks, 101 state and 60 S02 regressions
-  pass. See `WING01_ROOM_ART.md`. Native cold/warm/joins review remains pending;
-  front/floor/ceiling and full room acceptance remain open.
+  pass. See `WING01_ROOM_ART.md`. Six inspected Low/Medium native views confirm
+  readable stone/joins and existing cold/warm response with protected slots.
+  Front/floor/ceiling and full room acceptance remain open.
 
 ## Source availability after the 2026-10-04 interruption
 

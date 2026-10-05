@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-05 room side/back placement
+# Current Work recovery boundary — 2026-10-05 room side/back native review
 
 New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
 (2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
@@ -74,9 +74,16 @@ with existing primary/backup files unchanged. `room-wall-s02-regression-1/`
 passes all 60 actual S02/E/physical IO/quiet reload/grounded Hub-return checks
 using its own disposable slots. Both cache-free copies are removed; no runtime
 errors/warnings. See `WING01_ROOM_ART.md` for exact scope and positions.
-Exact next step: affected Low/Medium room/joins and existing cold/warm response
-views. Front/floor/ceiling/full room art remains open; do not claim visual
-acceptance from the headless evidence.
+`room-wall-native-1/` now passes clean import and Low/Medium Forward+ with
+unchanged existing slots and closed private project/owned processes. All six
+actual player images were inspected: wall/corner detail is readable and the
+existing cold/warm response remains visible. Warm rendering uses a validated
+local quiet presentation projection; global progression/dirty state and files
+are unchanged. Real persisted E/progression remains verified by the separate
+60-check suite, not inferred from screenshots.
+Exact next step: bounded approved room floor tiles, protected fallback slab,
+actual seam/approach tests and cold/warm views. Front/ceiling/full room art,
+authored audio and physical target GPU remain open.
 Full room/target-GPU/music remain open.
 
 ---

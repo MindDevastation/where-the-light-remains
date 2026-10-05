@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bounded exact-source corridor views through the documented TCP/Xvfb runner."""
+"""Bounded exact-source corridor/room views through the documented TCP/Xvfb runner."""
 import argparse
 import json
 import os
@@ -23,7 +23,7 @@ def validate(args):
     hashes = {p: receipts.audio.digest(root / p) for p in paths}
     output.mkdir(parents=True, exist_ok=False)
     result = {'status': 'RUNNING', 'started_at': receipts.audio.stamp(), 'source_hashes': hashes, 'records': [],
-              'scope': 'Four actual player corridor/Hub-threshold views each on Low/Medium using software lavapipe, not target GPU/full art/VS1 acceptance.'}
+              'scope': args.scope + ' actual player views on Low/Medium using software lavapipe; not target GPU/full art/VS1 acceptance.'}
     receipt = output / 'results.json'
     receipts.write_receipt(receipt, result)
     try:
@@ -62,16 +62,19 @@ def validate(args):
                 if not passed:
                     raise RuntimeError('Corridor review failed: ' + name)
             godot = str(args.godot.resolve())
+            marker = 'ARCHIVE_' + args.scope.upper() + '_REVIEW CAPTURED'
+            scene = 'res://tests/archive_' + args.scope + '_review.tscn'
+            expected_captures = 4 if args.scope == 'corridor' else 3
             run('clean_import', [godot, '--headless', '--path', 'game', '--editor', '--import'], 90)
             for quality in ['low', 'medium']:
                 run(quality, ['python3', '-B', str(clean / 'tools/run_graphical.py'),
                              '--graphics-prefix', str(args.graphics_prefix.resolve()), '--godot', godot,
-                             '--timeout', '55', '--expect', 'ARCHIVE_CORRIDOR_REVIEW CAPTURED', '--',
-                             '--path', 'game', '--resolution', '960x540', 'res://tests/archive_corridor_review.tscn',
+                             '--timeout', '55', '--expect', marker, '--',
+                             '--path', 'game', '--resolution', '960x540', scene,
                              '--', '--review-output=' + str(output), '--quality=' + quality], 80,
-                    'ARCHIVE_CORRIDOR_REVIEW CAPTURED')
+                    marker)
                 captures = json.loads((output / ('captures_' + quality + '.json')).read_text())
-                if captures['renderer'] != 'forward_plus' or len(captures['captures']) != 4 or \
+                if captures['renderer'] != 'forward_plus' or len(captures['captures']) != expected_captures or \
                         quality == 'low' and (captures['glow'] or captures['volumetrics']):
                     raise RuntimeError('Wrong renderer/capture count/Low effects')
             if any(receipts.audio.digest(root / name) != expected for name, expected in hashes.items()):
@@ -93,4 +96,5 @@ if __name__ == '__main__':
     parser.add_argument('--godot', type=Path, required=True)
     parser.add_argument('--graphics-prefix', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--scope', choices=['corridor', 'room'], default='corridor')
     validate(parser.parse_args())
