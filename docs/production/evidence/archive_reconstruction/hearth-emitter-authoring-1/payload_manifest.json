@@ -1,0 +1,20 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/wing01/wing01_hearth_emitter.blend",
+      "bytes": 712123,
+      "sha256": "68bd95178d10ee48ed174fb25f0d3d60f8dc8fc9748e45a292b1d605dae0a0bd"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_hearth.glb",
+      "bytes": 163888,
+      "sha256": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_emitter.glb",
+      "bytes": 142444,
+      "sha256": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39"
+    }
+  ],
+  "recipe_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

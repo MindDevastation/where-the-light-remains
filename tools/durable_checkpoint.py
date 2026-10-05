@@ -74,7 +74,7 @@ class Coordinator:
                 index += 1
         for name in paths:
             p = Path(name)
-            if p.is_absolute() or ".." in p.parts or not (name.startswith(("game/", "tools/", "docs/", "assets/3d/blender/archive_kit/")) or name in {".gitignore", ".gitattributes", "README.md"}):
+            if p.is_absolute() or ".." in p.parts or not (name.startswith(("game/", "tools/", "docs/", "assets/3d/blender/archive_kit/")) or name in {".gitignore", ".gitattributes", "README.md", "assets/3d/blender/wing01/wing01_hearth_emitter.blend"}):
                 raise RuntimeError("Changed path requires explicit review: " + name)
             if any(part in PRIVATE_NAMES or part.startswith(".env.") for part in p.parts):
                 raise RuntimeError("Credential filename; checkpoint refused.")

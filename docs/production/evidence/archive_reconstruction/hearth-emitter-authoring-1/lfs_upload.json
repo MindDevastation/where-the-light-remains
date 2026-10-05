@@ -1,0 +1,23 @@
+{
+  "command": [
+    "git",
+    "-c",
+    "lfs.dialtimeout=12",
+    "-c",
+    "lfs.tlstimeout=12",
+    "-c",
+    "lfs.activitytimeout=12",
+    "-c",
+    "lfs.transfer.maxretries=0",
+    "lfs",
+    "push",
+    "--object-id",
+    "origin",
+    "68bd95178d10ee48ed174fb25f0d3d60f8dc8fc9748e45a292b1d605dae0a0bd",
+    "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738",
+    "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "scope": "Bounded S02-004 bowl/stand and S02-002 emitter housing; existing beam/star/activation ownership unchanged",
+  "source": "assets/3d/blender/wing01/wing01_hearth_emitter.blend",
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "glass": "res://art/materials/m_clear_glass.tres"
+  },
+  "parts": [
+    {"id": "hearth", "stem": "sm_wing01_hearth", "joint": [0, 0, 0], "materials": ["stone", "brass"], "triangle_ceiling": 2000, "bounds_min": [-0.6, -0.65, -0.6], "bounds_max": [0.6, 0.32, 0.6], "runtime_position": [-2.8, 0.65, -24]},
+    {"id": "emitter", "stem": "sm_wing01_emitter", "joint": [0, 0, 0], "materials": ["brass", "iron", "glass"], "triangle_ceiling": 2000, "bounds_min": [-0.24, -0.2, -0.24], "bounds_max": [0.24, 0.175, 0.24], "runtime_position": [0, 1.72, -20], "runtime_rotation_degrees": [90, 0, 0]}
+  ],
+  "limits": ["No new room topology or ceiling design", "No beam/Star/Flame VFX or gameplay/save/controller change", "Original Hearth collision and all puzzle grips remain owned by existing nodes", "No copied faction marks or invented sigils"]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Source authoring/reopen and actual upload only; retrieval/import/runtime/view acceptance pending.",
+  "source_hashes": {
+    "tools/create_wing01_hearth_emitter.py": "808ba0127e0bfe63d4bb9ebf040c3fb60143f5b1973936b3c86666d1f2a133bd",
+    "tools/verify_wing01_hearth_emitter.py": "dc1556071064713a515314665fc01a69423fd8ecd1cec3646af601bb958021d9",
+    "tools/create_wing01_optics.py": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7",
+    "tools/durable_checkpoint.py": "546aa6d1be558a02fed9d8b6834ee74d947a3add14b1f712f2806552b8459a8e",
+    "docs/production/wing01_hearth_emitter.json": "25655a6b8d4f2eba88332c5e380670966ab04f7d91bd726aa2c8c2c4d987652e",
+    "docs/production/WING01_HEARTH_EMITTER.md": "df968559ee56df80d10fd75e85cdbc1711d6d6d64a627ec4871ea7e10417f3a3",
+    "assets/3d/blender/wing01/wing01_hearth_emitter.blend": "68bd95178d10ee48ed174fb25f0d3d60f8dc8fc9748e45a292b1d605dae0a0bd",
+    "game/art/meshes/wing01/sm_wing01_hearth.glb": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738",
+    "game/art/meshes/wing01/sm_wing01_emitter.glb": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39",
+    "docs/production/evidence/archive_reconstruction/hearth-emitter-authoring-1/payload_manifest.json": "8105fa9c3a9b86d980400f295d221a475870d1d4163f8bfbbe9b492d08e783a3",
+    "docs/production/evidence/archive_reconstruction/hearth-emitter-authoring-1/reopen.log": "0be46b1dd06c68a33558849e136bd8177414cc2379f79493ae84ab825e9cdac2",
+    "docs/production/evidence/archive_reconstruction/hearth-emitter-authoring-1/lfs_upload.json": "ed7fc0e76b50c605047c5cec110896bc3ecfced64736aeb3cfa9dc9df934de21",
+    "docs/production/evidence/archive_reconstruction/hearth-emitter-authoring-1/author.log": "f96fe112f308245640803550c40c566b39bfe6342008fd84cf66dc8c29bf7b9c"
+  }
+}
