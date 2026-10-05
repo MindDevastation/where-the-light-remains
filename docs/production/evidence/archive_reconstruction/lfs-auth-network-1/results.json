@@ -1,0 +1,68 @@
+{
+  "status": "BLOCKED_NETWORK_TRANSPORT",
+  "timestamp_utc": "2026-10-05T13:24:55.818554+00:00",
+  "recovered_remote_checkpoint": "cbe95ae3feca78aec4426c49d089396ca24d6eb8",
+  "credential_supplied_by_owner": true,
+  "credential_helper_configured": true,
+  "credential_protection_checks": {
+    "github_https_get": true,
+    "http_rejected": true,
+    "other_host_rejected": true,
+    "store_no_output": true,
+    "erase_no_output": true,
+    "private_directory_0700": true,
+    "credential_file_0600": true
+  },
+  "credential_values_in_receipt": false,
+  "authentication_acceptance": "UNVERIFIED_NO_GITHUB_RESPONSE",
+  "github_api_transport": {
+    "utc": "2026-10-05T13:18:44.557127+00:00",
+    "curl_exit": 28,
+    "github_user_http": "000",
+    "credentials_logged": false,
+    "transport_error": "curl: (28) Proxy CONNECT aborted due to timeout"
+  },
+  "native_lfs_transport": {
+    "timestamp_utc": "2026-10-05T13:21:35.828685+00:00",
+    "command": [
+      "git",
+      "-c",
+      "lfs.storage=/workspace/scratch/af1393cbbc18/wlr-tools/lfs-auth-probe-independent",
+      "-c",
+      "lfs.dialtimeout=8",
+      "-c",
+      "lfs.tlstimeout=8",
+      "-c",
+      "lfs.activitytimeout=8",
+      "-c",
+      "lfs.transfer.maxretries=0",
+      "lfs",
+      "fetch",
+      "--include=game/art/meshes/archive_kit/sm_archive_floor_1m.glb",
+      "--exclude=",
+      "origin",
+      "feature/04-archive-gameplay/checkpoints-2026-10-04"
+    ],
+    "credential_value_recorded": false,
+    "probe_scope": "Fetch one existing 3344-byte floor object into a separate empty LFS store; no upload or ref mutation.",
+    "exit_code": null,
+    "bounded_timeout_seconds": 35,
+    "stdout": "fetch: Fetching reference refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+    "stderr": ""
+  },
+  "public_github_probe": {
+    "http": "000",
+    "exit": 28,
+    "error": "Proxy CONNECT aborted due to timeout"
+  },
+  "approved_git_gateway_probe": {
+    "host": "git.chatgpt-team.site",
+    "http": "400",
+    "exit": 0,
+    "interpretation": "Reachable; not GitHub authentication acceptance."
+  },
+  "owned_lfs_fetch_processes_remaining": [],
+  "new_payload_uploaded": false,
+  "runtime_asset_changes": false,
+  "historical_unauthenticated_401": "front-art-inputs-1/lfs_transport.json; does not describe the supplied token."
+}

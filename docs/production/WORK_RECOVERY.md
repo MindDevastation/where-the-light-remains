@@ -1,5 +1,24 @@
 # Current Work recovery boundary — 2026-10-05 room floor and next-input seal
 
+## Authentication follow-up — 2026-10-05 13:24 UTC
+
+Recovered remote/local HEAD `cbe95ae3feca78aec4426c49d089396ca24d6eb8`,
+with a clean working tree on the existing checkpoint branch. The owner then
+supplied a GitHub credential. It is configured through a private local Git
+helper; HTTPS/GitHub-only delivery and private-file protection checks pass.
+No credential value is in Git, snapshots or evidence.
+
+Current dependent blocker is network transport, **not a confirmed credential
+failure**: authenticated GitHub API and public GitHub probes stop at proxy
+CONNECT timeout, while the approved Git gateway remains reachable. A bounded
+one-object Git LFS fetch into an independent empty store times out after 35 s;
+owned lingering fetch processes are cleaned up. No new asset was authored,
+uploaded or integrated, and no historical Godot suite was repeated. See
+`evidence/archive_reconstruction/lfs-auth-network-1/results.json` and
+`ROOM_ART_NEXT_BLOCK.md`. Enable the permitted network path and verify actual
+GitHub/LFS responses before resuming the two 3 m front skins. Credentials are
+ephemeral and must be supplied securely again after environment loss.
+
 New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
 (2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
 completed gameplay/PCM/export families below were inspected, not repeated.

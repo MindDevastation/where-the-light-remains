@@ -23,13 +23,23 @@ It is unsupported, not a new validated variant. No Blender or mesh was generated
 Also resolve the center/pivot placement explicitly for this odd-width span;
 the accepted five-module center-origin/grid contract must not silently change.
 
-Nearest dependency: authenticated Git LFS upload transport. Current token
-presence/helper checks are negative, and bounded negotiation with an exact
-existing object returns HTTP 401. No payload was uploaded. The GitHub connector
-still publishes ordinary code/evidence successfully but exposes no LFS upload
-operation. Details without credentials: `front-art-inputs-1/lfs_transport.json`.
+Nearest dependency: working network transport for authenticated Git LFS. The
+owner supplied a credential on 2026-10-05; a private, repository-local Git helper
+is configured and its scoped credential/protection checks pass. Authentication
+and permissions remain **unverified**: GitHub/API requests stop at proxy CONNECT
+timeout before any HTTP authentication response. A one-object native LFS fetch
+into a separate empty store also reaches its controlled 35-second limit.
+No payload was uploaded. The approved Git gateway is reachable and the GitHub
+connector still publishes ordinary code/evidence; this does not establish LFS
+transport. Current diagnostics: `lfs-auth-network-1/results.json`.
+The earlier unauthenticated HTTP 401 in `front-art-inputs-1/lfs_transport.json`
+is historical and must not be attributed to the supplied credential. Credentials
+live outside the repository in this ephemeral runtime; no secret is a checkpoint
+dependency or recorded in evidence. A future environment needs secure credential
+provisioning again.
 
-Next: restore authorized LFS upload capability, then define/produce only the
+Next: enable the environment's authorized GitHub network path, verify the supplied
+credential against GitHub and exact LFS negotiation/retrieval, then define/produce only the
 bounded 3 m front variant under the existing art/export policy. Restore the
 pinned Blender 4.5.14 only when modeling is unblocked; do not rerun historical
 preflight or regenerate accepted kit binaries. Validate source/export, actual
