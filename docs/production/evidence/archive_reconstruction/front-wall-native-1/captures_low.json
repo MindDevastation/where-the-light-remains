@@ -1,0 +1,75 @@
+{
+  "captures": [
+    {
+      "draw_calls": 28,
+      "file": "room_entrance_front_low.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "room_entrance_front",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 22533120
+    },
+    {
+      "draw_calls": 31,
+      "file": "room_entrance_reverse_low.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "room_entrance_reverse",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 22533120
+    },
+    {
+      "draw_calls": 31,
+      "file": "front_wall_left_low.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "front_wall_left",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 22533120
+    },
+    {
+      "draw_calls": 31,
+      "file": "front_wall_right_low.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "front_wall_right",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 22533120
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "front",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

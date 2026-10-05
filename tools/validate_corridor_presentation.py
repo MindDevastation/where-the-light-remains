@@ -65,8 +65,8 @@ def validate(args):
             marker = 'ARCHIVE_' + args.scope.upper() + '_REVIEW CAPTURED'
             scene_scope = 'corridor' if args.scope == 'corridor' else 'room'
             scene = 'res://tests/archive_' + scene_scope + '_review.tscn'
-            expected_captures = {'corridor': 4, 'room': 3, 'entrance': 2}[args.scope]
-            view_args = ['--entrance-only'] if args.scope == 'entrance' else []
+            expected_captures = {'corridor': 4, 'room': 3, 'entrance': 2, 'front': 4}[args.scope]
+            view_args = ['--front-walls'] if args.scope == 'front' else (['--entrance-only'] if args.scope == 'entrance' else [])
             run('clean_import', [godot, '--headless', '--path', 'game', '--editor', '--import'], 90)
             for quality in ['low', 'medium']:
                 run(quality, ['python3', '-B', str(clean / 'tools/run_graphical.py'),
@@ -98,5 +98,5 @@ if __name__ == '__main__':
     parser.add_argument('--godot', type=Path, required=True)
     parser.add_argument('--graphics-prefix', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--scope', choices=['corridor', 'room', 'entrance'], default='corridor')
+    parser.add_argument('--scope', choices=['corridor', 'room', 'entrance', 'front'], default='corridor')
     validate(parser.parse_args())

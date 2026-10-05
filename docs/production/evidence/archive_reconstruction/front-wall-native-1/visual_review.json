@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-05T21:20:40.144546+00:00",
+  "images": {
+    "front_wall_left_low.png": "d504aa359604c35eeea48d76e29ecfc292c057ae9e0e575a4fa25995eb4a9bcc",
+    "front_wall_left_medium.png": "47a5ae08f66a42ac139652d99a777c2deae72abf1cfc857454a2f66d7f16b553",
+    "room_entrance_reverse_low.png": "54bf5ded6c8728012c6878a7bc174479668a15f0987f16233397d7697f11ec74",
+    "room_entrance_front_low.png": "d6a15273c2927df4f2ab402e86fc3944201b39819274ae041f3fa2428bf363d4",
+    "front_wall_right_medium.png": "5d5b694ec456956998acb6a92d262b9d330ff2ed4fbdab571e5d19e0e5f0fb6e",
+    "room_entrance_reverse_medium.png": "2ecc2db3f7f32ad2a43e41649bf56497ae446a19fa1b260b7b0454b04fbb7a94",
+    "room_entrance_front_medium.png": "0d2c00a30cce554411ad46c443250eed00c0a8863b4c59d790fc86349665371f",
+    "front_wall_right_low.png": "a3176782a7acae9e9309f884008cbfd5d33cf341f039424a3929624325012517"
+  },
+  "findings": [
+    "All eight Low/Medium images inspected: actual front/reverse entrance and both room-side front spans.",
+    "Both front faces retain layered stone panels/trim and a readable center bay seam; pier junctions align. No missing wall face, overlapping old front skin or obstructed passage observed.",
+    "Open ceiling and black exterior beyond the unfinished Hub are known remaining art scope. Software lavapipe captures do not certify target GPU performance or owner whole-room visual acceptance."
+  ],
+  "acceptance": "BOUNDED_FRONT_WALL_PLACEMENT_ONLY"
+}

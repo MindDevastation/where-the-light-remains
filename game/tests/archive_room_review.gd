@@ -4,6 +4,7 @@ extends Node
 var _output := ""
 var _quality := "low"
 var _entrance_only := false
+var _front_walls := false
 
 func _ready() -> void:
     get_tree().create_timer(40.0, true).timeout.connect(func() -> void:
@@ -17,6 +18,9 @@ func _ready() -> void:
             _quality = arg.trim_prefix("--quality=")
         elif arg == "--entrance-only":
             _entrance_only = true
+        elif arg == "--front-walls":
+            _entrance_only = true
+            _front_walls = true
     _run.call_deferred()
 
 func _run() -> void:
@@ -60,6 +64,9 @@ func _run() -> void:
             {"name": "room_entrance_front", "position": Vector3(0, .02, -12), "target": Vector3(0, .02, -18)},
             {"name": "room_entrance_reverse", "position": Vector3(0, .02, -18), "target": Vector3(0, .02, -12)}
         ]
+    if _front_walls:
+        views.append({"name": "front_wall_left", "position": Vector3(-3.3, .02, -18.2), "target": Vector3(-3.5, .02, -15)})
+        views.append({"name": "front_wall_right", "position": Vector3(3.3, .02, -18.2), "target": Vector3(3.5, .02, -15)})
     var captures: Array[Dictionary] = []
     for view: Dictionary in views:
         if view.get("warm", false):
@@ -100,7 +107,7 @@ func _run() -> void:
         return
     var environment: Environment = world.get_node("Environment").environment
     var file := FileAccess.open(_output.path_join("captures_" + _quality + ".json"), FileAccess.WRITE)
-    var review_scope := "entrance" if _entrance_only else "room"
+    var review_scope := "front" if _front_walls else ("entrance" if _entrance_only else "room")
     file.store_string(JSON.stringify({"status": "CAPTURED_FOR_REVIEW", "scope": review_scope, "quality": _quality, "captures": captures,
         "renderer": RenderingServer.get_current_rendering_method(), "device": RenderingServer.get_video_adapter_name(),
         "glow": environment.glow_enabled, "volumetrics": environment.volumetric_fog_enabled}, "  "))

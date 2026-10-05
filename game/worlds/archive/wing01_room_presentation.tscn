@@ -1,11 +1,12 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_4m.tscn" id="Wall4"]
 [ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_2m.tscn" id="Wall2"]
 [ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_pier_4m.tscn" id="Pier"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_3m.tscn" id="Wall3"]
 
 [node name="Wing01RoomPresentation" type="Node3D"]
-metadata/scope = "Approved kit side/back walls and entrance junction piers; 3 m front skins and ceiling remain open. Room tiles use a separate assembly."
+metadata/scope = "Shared kit side/back/front walls and entrance junction piers. Odd-width front centers have X phase 0.5 and integer endpoint anchors. Ceiling remains open. Room tiles use a separate assembly."
 
 [node name="WallL0" parent="." instance=ExtResource("Wall4")]
 position = Vector3(-5, 0, -17)
@@ -75,3 +76,9 @@ position = Vector3(-2, 0, -15)
 
 [node name="PierEntranceR" parent="." instance=ExtResource("Pier")]
 position = Vector3(2, 0, -15)
+
+[node name="FrontL" parent="." instance=ExtResource("Wall3")]
+position = Vector3(-3.5, 0, -15)
+
+[node name="FrontR" parent="." instance=ExtResource("Wall3")]
+position = Vector3(3.5, 0, -15)

@@ -37,10 +37,11 @@ func _run() -> void:
     await get_tree().physics_frame
     var room := world.get_node("Wing01/Room") as Node3D
     var art := room.get_node("Presentation") as Node3D
-    var modules_valid := art.get_child_count() == 21
+    var modules_valid := art.get_child_count() == 23
     for part: Node3D in art.get_children():
         modules_valid = modules_valid and part.scale.is_equal_approx(Vector3.ONE) and part.position.y == 0.0
-        modules_valid = modules_valid and part.position.x == roundf(part.position.x) and part.position.z == roundf(part.position.z)
+        var phase := .5 if part.name in ["FrontL", "FrontR"] else 0.0
+        modules_valid = modules_valid and is_equal_approx(fposmod(part.position.x, 1.0), phase) and part.position.z == roundf(part.position.z)
         modules_valid = modules_valid and part.get_node("Art").get_child_count() > 0
     _check(modules_valid, "Approved shared module art loads unscaled on the meter grid")
     for name in ["RoomWallL", "RoomWallR", "RoomBack"]:
@@ -50,6 +51,7 @@ func _run() -> void:
     var space := world.get_world_3d().direct_space_state
     await _test_floor(world, player, space)
     _test_entrance_junctions(world, player, space)
+    _test_front_walls(world, player)
     var feet: Array[Vector3] = []
     for name in ["Star", "Hearth"]:
         feet.append((world.get_node("Spawns/" + name) as Node3D).global_position)
@@ -104,7 +106,7 @@ func _test_entrance_junctions(world: ArchiveMain, player: FirstPersonPlayer, spa
         var guard := room.get_node("RoomFront" + side) as StaticBody3D
         var shape := guard.get_node("CollisionShape3D").shape as BoxShape3D
         var skin := guard.get_node("Mesh") as MeshInstance3D
-        _check(guard.collision_layer == 1 and guard.global_position.is_equal_approx(Vector3(sign_x * 3.5, 2.75, -14.85)) and shape.size.is_equal_approx(Vector3(3, 5.5, .3)) and skin.visible and is_equal_approx(skin.global_position.z, -15), "Original higher front guard stays intact; temporary skin aligns with the portal " + side)
+        _check(guard.collision_layer == 1 and guard.global_position.is_equal_approx(Vector3(sign_x * 3.5, 2.75, -14.85)) and shape.size.is_equal_approx(Vector3(3, 5.5, .3)) and not skin.visible, "Original higher front guard stays intact without its temporary skin " + side)
     for x in [-.75, 0.0, .75]:
         for direction in [-1.0, 1.0]:
             var start := Vector3(x, .02, -13.5 if direction < 0 else -17.5)
@@ -112,6 +114,51 @@ func _test_entrance_junctions(world: ArchiveMain, player: FirstPersonPlayer, spa
             player.global_position = start
             var hit := player.move_and_collide(motion)
             _check(hit == null and player.global_position.is_equal_approx(start + motion), "Shipping capsule crosses the entrance in lane " + str(x) + ", direction " + str(direction))
+
+func _test_front_walls(world: ArchiveMain, player: FirstPersonPlayer) -> void:
+    var room := world.get_node("Wing01/Room") as Node3D
+    for side in ["L", "R"]:
+        var sign_x := -1.0 if side == "L" else 1.0
+        var wall := room.get_node("Presentation/Front" + side) as Node3D
+        var left := wall.get_node("Left") as Marker3D
+        var right := wall.get_node("Right") as Marker3D
+        _check(left.global_position.is_equal_approx(Vector3(-5 if side == "L" else 2, 0, -15)) and right.global_position.is_equal_approx(Vector3(-2 if side == "L" else 5, 0, -15)), "Odd-span anchors meet existing integer junctions " + side)
+        var parts := wall.find_children("*", "MeshInstance3D", true, false)
+        _check(parts.size() == 1 and wall.get_script() == null, "Front wrapper owns one static imported visual " + side)
+        if parts.size() != 1:
+            continue
+        var visual := parts[0] as MeshInstance3D
+        var bounds: AABB = wall.global_transform.affine_inverse() * visual.global_transform * visual.mesh.get_aabb()
+        _check(bounds.position.distance_to(Vector3(-1.5, 0, -.2)) < .001 and bounds.size.distance_to(Vector3(3, 4, .4)) < .001, "Imported front bounds preserve meter axes and center pivot " + side)
+        var shared := preload("res://art/materials/m_observatory_stone.tres")
+        var valid := visual.mesh.get_surface_count() == 1 and visual.get_active_material(0) == shared and not shared.resource_local_to_scene
+        var arrays: Array = visual.mesh.surface_get_arrays(0)
+        var vertices: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
+        var normals: PackedVector3Array = arrays[Mesh.ARRAY_NORMAL]
+        var uv: PackedVector2Array = arrays[Mesh.ARRAY_TEX_UV]
+        var tangents: PackedFloat32Array = arrays[Mesh.ARRAY_TANGENT]
+        var indices: PackedInt32Array = arrays[Mesh.ARRAY_INDEX]
+        valid = valid and vertices.size() > 0 and normals.size() == vertices.size() and uv.size() == vertices.size() and tangents.size() == vertices.size() * 4 and indices.size() == 212 * 3
+        if valid:
+            for i in vertices.size():
+                var tangent := Vector3(tangents[i * 4], tangents[i * 4 + 1], tangents[i * 4 + 2])
+                valid = valid and vertices[i].is_finite() and uv[i].is_finite() and absf(normals[i].length() - 1) < .002 and absf(tangent.length() - 1) < .002 and absf(tangent.dot(normals[i])) < .003
+            for t in int(indices.size() / 3):
+                var a := indices[t * 3]
+                var b := indices[t * 3 + 1]
+                var c := indices[t * 3 + 2]
+                var area: float = (vertices[b] - vertices[a]).cross(vertices[c] - vertices[a]).length() / 2
+                var ab: Vector2 = uv[b] - uv[a]
+                var ac: Vector2 = uv[c] - uv[a]
+                var uv_area := absf(ab.x * ac.y - ab.y * ac.x) / 2
+                valid = valid and area > .0000000001 and absf(uv_area / area - 1) < .01
+        _check(valid, "Front uses shared Stone, 212 triangles and valid metric UVs/normals/tangents " + side)
+        var guard := room.get_node("RoomFront" + side) as StaticBody3D
+        guard.collision_layer = 0
+        player.global_position = Vector3(sign_x * 3.5, .02, -16.5)
+        var hit := player.move_and_collide(Vector3(0, 0, 3))
+        _check(hit != null and wall.is_ancestor_of(hit.get_collider()), "New front collider alone stops the actual capsule " + side)
+        guard.collision_layer = 1
 
 func _test_floor(world: ArchiveMain, player: FirstPersonPlayer, space: PhysicsDirectSpaceState3D) -> void:
     var tiles := world.get_node("Wing01/Room/TileFloor") as Node3D

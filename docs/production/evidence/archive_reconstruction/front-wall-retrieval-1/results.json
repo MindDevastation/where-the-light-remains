@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "scope": "Independent shallow Git clone, remote pointers, initially empty LFS store, no alternates; exact SHA/size and reopened retrieved Blender source. Runtime import/placement remains pending.",
+  "remote_checkpoint": "b3b85835a4b452bdefd93455f69b760f00ba88f6",
+  "source_hashes": {
+    "tools/verify_archive_wall_3m.py": "14d72b537b94987263f7f1b0e11590f9439c1373e7f479a4aaee319e340336fb",
+    "docs/production/archive_wall_3m.json": "2fa52b878b45a7f3550332efdc4dd805f91e74a3585a008c44df3efd6f3dec40",
+    "assets/3d/blender/archive_kit/archive_wall_3m.blend": "57ca05cbbd47053185053bd61967156f99079061bccab4b37c03671b6be07bbd",
+    "game/art/meshes/archive_kit/sm_archive_wall_3m.glb": "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3"
+  },
+  "retrieved_payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/archive_wall_3m.blend",
+      "sha256": "57ca05cbbd47053185053bd61967156f99079061bccab4b37c03671b6be07bbd",
+      "bytes": 466026
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_3m.glb",
+      "sha256": "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3",
+      "bytes": 20076
+    }
+  ],
+  "records": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--single-branch",
+        "--branch",
+        "feature/04-archive-gameplay/checkpoints-2026-10-04",
+        "--filter=blob:none",
+        "--no-checkout",
+        "https://github.com/MindDevastation/where-the-light-remains.git",
+        "/workspace/scratch/af1393cbbc18/front-wall-independent"
+      ],
+      "exit": 0,
+      "stderr": "Cloning into '/workspace/scratch/af1393cbbc18/front-wall-independent'...\n"
+    },
+    {
+      "command": [
+        "git",
+        "config",
+        "--get-all",
+        "credential.https://github.com.helper"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "config",
+        "credential.https://github.com.helper",
+        "!python3 /workspace/scratch/af1393cbbc18/wlr-tools/private-auth/credential_helper.py"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "HEAD:assets/3d/blender/archive_kit/archive_wall_3m.blend"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "lfs.dialtimeout=12",
+        "-c",
+        "lfs.tlstimeout=12",
+        "-c",
+        "lfs.activitytimeout=12",
+        "lfs",
+        "smudge",
+        "assets/3d/blender/archive_kit/archive_wall_3m.blend"
+      ],
+      "exit": 0,
+      "stderr": "Downloading assets/3d/blender/archive_kit/archive_wall_3m.blend (466 KB)\n"
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "HEAD:game/art/meshes/archive_kit/sm_archive_wall_3m.glb"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "lfs.dialtimeout=12",
+        "-c",
+        "lfs.tlstimeout=12",
+        "-c",
+        "lfs.activitytimeout=12",
+        "lfs",
+        "smudge",
+        "game/art/meshes/archive_kit/sm_archive_wall_3m.glb"
+      ],
+      "exit": 0,
+      "stderr": "Downloading game/art/meshes/archive_kit/sm_archive_wall_3m.glb (20 KB)\n"
+    }
+  ]
+}

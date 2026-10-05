@@ -87,3 +87,27 @@ target-GPU or complete room/VS1 acceptance.
 
 The affected actual S02 progression/collision regression is recorded separately
 in `room-entrance-s02-regression-1/`, using only test-owned save slots.
+
+
+## Third-size front walls — 2026-10-05
+
+Both fronts now reuse the new script-free `archive_wall_3m.tscn` at
+(-3.5,0,-15)/(3.5,0,-15), yaw 0 and scale 1. Its centered odd-width pivot has X
+phase 0.5; endpoint anchors meet existing integer piers. Only its 3 m variant
+uses this phase. The original five-module contract and accepted binaries remain
+unchanged. The higher front guards stay solid, with only their skins hidden.
+
+Editable Blender source and exported GLB pass 212 triangles/one Stone surface,
+closed positive volume, exact meter envelope, UV density and unit normals/
+tangents. Both new objects were uploaded to LFS and downloaded from an independent
+shallow Git clone with an initially empty LFS store; hashes/sizes and reopened
+retrieved source pass. New imported geometry checks and actual capsule stopping
+with fallback fronts disabled pass, alongside six entrance crossings.
+
+`front-wall-headless-1` passes 49 room + 45 corridor assertions;
+`front-wall-s02-regression-1` passes 60 real controls/save/reload/return + 17 entry/
+safe-Exit assertions and normal startup. `front-wall-native-1` contains eight
+inspected Low/Medium views: front/reverse entrance and close views of both spans.
+Stone faces, trim and junctions remain readable. Read-only fixture save hashes
+are unchanged. Open ceiling/unfinished Hub, full art acceptance, authored audio
+and target GPU remain separate. See the exact-source aggregate acceptance receipt.

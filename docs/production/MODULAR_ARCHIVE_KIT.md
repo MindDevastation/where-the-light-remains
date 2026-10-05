@@ -236,3 +236,16 @@ Front/reverse/corner preview draw calls: 25/27/18 under software Vulkan.
 Full ARCH inventory, owner full-world art review and target performance remain
 open. Next: Wing I hero mechanism brief/sample, then the representative vertical
 slice under the established plan. Do not begin bulk modeling from this sample.
+
+
+## Bounded third wall size — 2026-10-05
+
+ARCH-004 now also has a 3 m size, independently sourced in
+`archive_wall_3m.json`/`archive_wall_3m.blend`, not a regeneration of this five-part
+sample. Its 3 x 4 x 0.4 m centered ground envelope, Stone resource, original
+layered wall helper, export/import policy and endpoint anchors are unchanged
+in kind. Odd-span origins use X phase 0.5 to keep endpoints on the meter grid.
+The sample's original even-size wall/junction origin rule is unchanged.
+Actual source/export/upload/retrieval and bounded Wing I placement are recorded
+in `WING01_ROOM_ART.md` and `front-wall-acceptance-1`. This completes the third
+wall size only; it does not close the full ARCH/VS1/performance inventory.

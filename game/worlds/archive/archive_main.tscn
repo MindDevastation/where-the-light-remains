@@ -653,6 +653,7 @@ collision_mask = 4
 disable_mode = 1
 
 [node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomFrontL"]
+visible = false
 position = Vector3(0, 0, -0.15)
 mesh = SubResource("M_RoomFrontL")
 material_override = SubResource("Stone")
@@ -668,6 +669,7 @@ collision_mask = 4
 disable_mode = 1
 
 [node name="Mesh" type="MeshInstance3D" parent="Wing01/Room/RoomFrontR"]
+visible = false
 position = Vector3(0, 0, -0.15)
 mesh = SubResource("M_RoomFrontR")
 material_override = SubResource("Stone")

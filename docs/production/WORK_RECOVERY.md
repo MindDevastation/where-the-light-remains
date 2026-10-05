@@ -1,3 +1,35 @@
+# Latest recovery boundary — 2026-10-05 3 m room front completed
+
+Recover the newest remote tip of
+`feature/04-archive-gameplay/checkpoints-2026-10-04`; source and push receipts
+are in `evidence/checkpoints/development.jsonl`. Do not overlay an old snapshot.
+Recovered `f4acd6e` and preserved its entrance work. New source/upload WIP
+`661b91723d73dc520246f0c9ec0c567d2b0b02ee` and following receipt
+`b3b85835a4b452bdefd93455f69b760f00ba88f6` were remotely verified.
+
+The current 3 m front wall source/export and both placements are now validated:
+Blender 4.5.14, 212 triangles/one shared Stone surface, source reopen/UVs/normals,
+actual two-object LFS upload, independent shallow clone/empty LFS retrieval with
+exact sizes/SHA-256, and reopened retrieved source. The odd-span center remains
+at ground/span center; X phase 0.5 is restricted to the new variant and its end
+anchors meet integer junctions. The original five source/export assets are intact.
+
+Cache-free Godot 4.7.2 checks: 49 actual room geometry/capsule/anchor checks,
+45 corridor checks, 60 actual S02 control/save/reload/return checks and 17 shipping
+entry/safe-Exit checks (171), plus normal startup. Protected saves are unchanged
+in the read-only fixtures. All eight Low/Medium Forward+ front/reverse/left/right
+images inspected. Evidence families: `front-wall-authoring-1`,
+`front-wall-retrieval-1`, `front-wall-headless-1`, `front-wall-s02-regression-1`,
+`front-wall-native-1` and aggregate `front-wall-acceptance-1`.
+
+Next: canonical ceiling/emitter/Hearth breakdown under the existing art pipeline;
+full room/VS1 visuals, authored audio choices and physical target GPU remain open.
+No S03 or bulk production acceptance. The old network blocker is superseded by
+successful authenticated API and exact LFS transfers in this session. Secrets
+remain outside Git/snapshots. No history rewrite or main update was performed.
+
+---
+
 ## New credential and confirmed transport boundary — 2026-10-05
 
 Owner replaced the development credential. Protected GitHub-scoped global Git
