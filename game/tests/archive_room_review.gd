@@ -5,6 +5,7 @@ var _output := ""
 var _quality := "low"
 var _entrance_only := false
 var _front_walls := false
+var _hero_housings := false
 
 func _ready() -> void:
     get_tree().create_timer(40.0, true).timeout.connect(func() -> void:
@@ -21,6 +22,8 @@ func _ready() -> void:
         elif arg == "--front-walls":
             _entrance_only = true
             _front_walls = true
+        elif arg == "--hero-housings":
+            _hero_housings = true
     _run.call_deferred()
 
 func _run() -> void:
@@ -67,6 +70,12 @@ func _run() -> void:
     if _front_walls:
         views.append({"name": "front_wall_left", "position": Vector3(-3.3, .02, -18.2), "target": Vector3(-3.5, .02, -15)})
         views.append({"name": "front_wall_right", "position": Vector3(3.3, .02, -18.2), "target": Vector3(3.5, .02, -15)})
+    if _hero_housings:
+        views = [views[0],
+            {"name": "hearth_close_cold", "position": Vector3(-2.8, .02, -21.8), "target": Vector3(-2.8, .02, -24), "pitch": -.33},
+            views[2],
+            {"name": "hearth_close_warm", "position": Vector3(-2.8, .02, -21.8), "target": Vector3(-2.8, .02, -24), "pitch": -.33},
+            {"name": "emitter_close", "position": Vector3(.8, .02, -21.4), "target": Vector3(0, .02, -20), "pitch": .03}]
     var captures: Array[Dictionary] = []
     for view: Dictionary in views:
         if view.get("warm", false):
@@ -85,7 +94,7 @@ func _run() -> void:
                 return
         player.spawn_at(Transform3D(Basis.IDENTITY, view["position"]))
         player.look_at(view["target"])
-        player.head.rotation.x = .04 if not _entrance_only and view["name"] != "room_corner" else 0.0
+        player.head.rotation.x = float(view.get("pitch", .04 if not _entrance_only and view["name"] != "room_corner" else 0.0))
         player.camera.make_current()
         for frame in 12:
             await get_tree().process_frame
@@ -107,7 +116,7 @@ func _run() -> void:
         return
     var environment: Environment = world.get_node("Environment").environment
     var file := FileAccess.open(_output.path_join("captures_" + _quality + ".json"), FileAccess.WRITE)
-    var review_scope := "front" if _front_walls else ("entrance" if _entrance_only else "room")
+    var review_scope := "hero" if _hero_housings else ("front" if _front_walls else ("entrance" if _entrance_only else "room"))
     file.store_string(JSON.stringify({"status": "CAPTURED_FOR_REVIEW", "scope": review_scope, "quality": _quality, "captures": captures,
         "renderer": RenderingServer.get_current_rendering_method(), "device": RenderingServer.get_video_adapter_name(),
         "glow": environment.glow_enabled, "volumetrics": environment.volumetric_fog_enabled}, "  "))

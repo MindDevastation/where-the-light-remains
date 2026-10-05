@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/wing01/sm_wing01_emitter.glb" id="Art"]
+
+[node name="Wing01EmitterArt" type="Node3D"]
+metadata/inventory = "S02-002 static housing only; local -Y face; parent and existing beam own placement/state"
+
+[node name="Art" parent="." instance=ExtResource("Art")]

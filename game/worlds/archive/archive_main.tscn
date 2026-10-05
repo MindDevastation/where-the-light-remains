@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3]
+[gd_scene load_steps=82 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -20,6 +20,8 @@
 [ext_resource type="Shader" path="res://worlds/archive/hub/hub_floor_cutout.gdshader" id="HubFloorCutout"]
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_room_presentation.tscn" id="RoomArt"]
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_room_floor.tscn" id="RoomFloor"]
+[ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_hearth_art.tscn" id="HearthArt"]
+[ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_emitter_art.tscn" id="EmitterArt"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -832,11 +834,11 @@ script = ExtResource("Target")
 prompt = "Изменить фокус"
 enabled = false
 
-[node name="Emitter" type="MeshInstance3D" parent="Wing01/Room"]
+[node name="Emitter" type="Node3D" parent="Wing01/Room"]
 position = Vector3(0, 1.72, -20)
 rotation_degrees = Vector3(90, 0, 0)
-mesh = SubResource("EmitterMesh")
-material_override = SubResource("Metal")
+
+[node name="Housing" parent="Wing01/Room/Emitter" instance=ExtResource("EmitterArt")]
 
 [node name="BeamSegments" type="Node3D" parent="Wing01/Room"]
 
@@ -897,9 +899,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Bowl" type="MeshInstance3D" parent="Wing01/Room/Hearth"]
-mesh = SubResource("HearthMesh")
-material_override = SubResource("Metal")
+[node name="Bowl" parent="Wing01/Room/Hearth" instance=ExtResource("HearthArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/Hearth"]
 shape = SubResource("HearthShape")

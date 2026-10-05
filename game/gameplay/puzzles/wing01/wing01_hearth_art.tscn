@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/wing01/sm_wing01_hearth.glb" id="Art"]
+
+[node name="Wing01HearthArt" type="Node3D"]
+metadata/inventory = "S02-004 static housing only; original body/Flame owns collision and activation"
+
+[node name="Art" parent="." instance=ExtResource("Art")]

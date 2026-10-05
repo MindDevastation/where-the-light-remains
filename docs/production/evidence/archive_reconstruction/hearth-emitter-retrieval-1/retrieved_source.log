@@ -1,0 +1,7 @@
+WING01_HOUSING_SOURCE PASS: hearth triangles= 1208 surfaces= 2 closed outward solids; meter UVs; normals/tangents; cavity/front rays
+WING01_HOUSING_SOURCE PASS: emitter triangles= 1204 surfaces= 3 closed outward solids; meter UVs; normals/tangents; cavity/front rays
+WING01_HEARTH_EMITTER_SOURCE PASS: reopened actual two-part source
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/af1393cbbc18/hearth-emitter-independent/assets/3d/blender/wing01/wing01_hearth_emitter.blend"
+
+Blender quit

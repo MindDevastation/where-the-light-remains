@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "scope": "Fresh shallow Git clone, remote pointers, initially empty LFS store, no alternates, exact stored SHA/size and actual reopened source. Runtime placement pending.",
+  "remote_checkpoint": "558e28f10871b2d5a23bb1a73566cffb0d6a15af",
+  "source_hashes": {
+    "tools/verify_wing01_hearth_emitter.py": "dc1556071064713a515314665fc01a69423fd8ecd1cec3646af601bb958021d9",
+    "docs/production/wing01_hearth_emitter.json": "25655a6b8d4f2eba88332c5e380670966ab04f7d91bd726aa2c8c2c4d987652e",
+    "assets/3d/blender/wing01/wing01_hearth_emitter.blend": "68bd95178d10ee48ed174fb25f0d3d60f8dc8fc9748e45a292b1d605dae0a0bd",
+    "game/art/meshes/wing01/sm_wing01_hearth.glb": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738",
+    "game/art/meshes/wing01/sm_wing01_emitter.glb": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39"
+  },
+  "retrieved_payloads": [
+    {
+      "path": "assets/3d/blender/wing01/wing01_hearth_emitter.blend",
+      "bytes": 712123,
+      "sha256": "68bd95178d10ee48ed174fb25f0d3d60f8dc8fc9748e45a292b1d605dae0a0bd"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_hearth.glb",
+      "bytes": 163888,
+      "sha256": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_emitter.glb",
+      "bytes": 142444,
+      "sha256": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39"
+    }
+  ],
+  "records": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "--single-branch",
+        "--branch",
+        "feature/04-archive-gameplay/checkpoints-2026-10-04",
+        "--filter=blob:none",
+        "--no-checkout",
+        "https://github.com/MindDevastation/where-the-light-remains.git",
+        "/workspace/scratch/af1393cbbc18/hearth-emitter-independent"
+      ],
+      "exit": 0,
+      "stderr": "Cloning into '/workspace/scratch/af1393cbbc18/hearth-emitter-independent'...\n"
+    },
+    {
+      "command": [
+        "git",
+        "config",
+        "--get-all",
+        "credential.https://github.com.helper"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "config",
+        "credential.https://github.com.helper",
+        "!python3 /workspace/scratch/af1393cbbc18/wlr-tools/private-auth/credential_helper.py"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "HEAD:assets/3d/blender/wing01/wing01_hearth_emitter.blend"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "lfs.dialtimeout=12",
+        "-c",
+        "lfs.tlstimeout=12",
+        "-c",
+        "lfs.activitytimeout=12",
+        "lfs",
+        "smudge",
+        "assets/3d/blender/wing01/wing01_hearth_emitter.blend"
+      ],
+      "exit": 0,
+      "stderr": "Downloading assets/3d/blender/wing01/wing01_hearth_emitter.blend (712 KB)\n"
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "HEAD:game/art/meshes/wing01/sm_wing01_hearth.glb"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "lfs.dialtimeout=12",
+        "-c",
+        "lfs.tlstimeout=12",
+        "-c",
+        "lfs.activitytimeout=12",
+        "lfs",
+        "smudge",
+        "game/art/meshes/wing01/sm_wing01_hearth.glb"
+      ],
+      "exit": 0,
+      "stderr": "Downloading game/art/meshes/wing01/sm_wing01_hearth.glb (164 KB)\n"
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "HEAD:game/art/meshes/wing01/sm_wing01_emitter.glb"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "lfs.dialtimeout=12",
+        "-c",
+        "lfs.tlstimeout=12",
+        "-c",
+        "lfs.activitytimeout=12",
+        "lfs",
+        "smudge",
+        "game/art/meshes/wing01/sm_wing01_emitter.glb"
+      ],
+      "exit": 0,
+      "stderr": "Downloading game/art/meshes/wing01/sm_wing01_emitter.glb (142 KB)\n"
+    }
+  ]
+}

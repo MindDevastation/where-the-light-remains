@@ -1,0 +1,6 @@
+{
+  "status": "NEEDS_FRAMING_FIX",
+  "reviewed_at": "2026-10-05T21:57:19.575637+00:00",
+  "finding": "All eight captures inspected. Cold/warm projection and imported models render, but Hearth close camera pitch points upward and crops the bowl/base. Emitter close intersects the existing visible beam. This family is technical rendering only, not visual acceptance.",
+  "next": "Correct camera pitch, add cold/warm Hearth close views and move emitter camera off the beam axis; retain all original screenshots."
+}
