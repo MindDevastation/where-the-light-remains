@@ -16,11 +16,16 @@ The preserved front spans are X=[-5,-2] and [2,5], each 3 m. Their higher 5.5 m
 safety guards must stay. The accepted kit contains 2/4 m wall variants only;
 ARCH-004 allows 2–3 sizes in the 2–4 m range, but there is no authored 3 m asset.
 
-`front-art-inputs-1/results.json` numerically checks the exact source helpers.
-The accepted 2/4 m cases have correct bounds and closed edge incidence. Calling
-`wall(3)` blindly creates X=[-1.5,2.5] (4 m), with eight non-two-incidence edges.
-It is unsupported, not a new validated variant. No Blender or mesh was generated.
-Also resolve the center/pivot placement explicitly for this odd-width span;
+Historical `front-art-inputs-1/results.json` identified the previous helper bug:
+`wall(3)` produced X=[-1.5,2.5] (4 m), with eight non-two-incidence edges.
+Current `front-art-inputs-2/results.json` validates the corrected numeric input:
+two 1.5 m bays span X=[-1.5,1.5], with closed edge incidence. Four targeted
+tests pass: the complete 2/4 m vertex/face/material data matches pre-edit hashes;
+the 3 m shell is connected, has correct bounds and no zero-area faces; unsupported
+spans fail before construction. This is numeric authoring preparation only.
+The existing CLI still exports only the original five-part sample. No new
+Blender source, GLB, UV/normal/material/render acceptance or runtime integration
+is claimed. Resolve the center/pivot placement explicitly for this odd-width span;
 the accepted five-module center-origin/grid contract must not silently change.
 
 Nearest dependency: working network transport for authenticated Git LFS. The

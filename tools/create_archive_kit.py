@@ -131,9 +131,15 @@ def rectangle(x0, x1, y0, y1, z):
 
 
 def wall(width):
+    if not isinstance(width, (int, float)) or width not in (2, 3, 4):
+        raise ValueError('Supported wall spans are exactly 2, 3 and 4 meters')
     g = Geometry()
-    # 2 m construction bays; no internal faces between the bays of wall_4m.
-    for center in [-width / 2 + 1 + i * 2 for i in range(round(width / 2))]:
+    # Preserve the accepted 2/4 m geometry exactly. The pending 3 m variant
+    # has two 1.5 m bays, with the same metric trim insets and closed perimeter.
+    # This helper does not add a source/export to the five-part sample CLI.
+    bay_count = 1 if width == 2 else 2
+    bay_width = width / bay_count
+    for center in [-width / 2 + bay_width / 2 + i * bay_width for i in range(bay_count)]:
         for sign in (-1, 1):
             profiles = [
                 (0.0, 0.0, 4.0, .20), (.055, .11, 3.89, .20),
@@ -141,15 +147,15 @@ def wall(width):
                 (.14, .34, 3.68, .142), (.20, .45, 3.50, .142),
                 (.22, .47, 3.48, .12),
             ]
-            loops = [rectangle(center - 1 + inset, center + 1 - inset, low, high, sign * depth)
+            loops = [rectangle(center - bay_width / 2 + inset, center + bay_width / 2 - inset, low, high, sign * depth)
                      for inset, low, high, depth in profiles]
             for a, b in zip(loops, loops[1:]):
                 g.band(a, b)
             g.face(loops[-1])
     # Perimeter walls: split top/bottom at the same construction-bay vertices.
-    for a in [-width / 2 + i * 2 for i in range(round(width / 2))]:
+    for a in [-width / 2 + i * bay_width for i in range(bay_count)]:
         for y in (0, 4):
-            g.face([(a, y, -.2), (a + 2, y, -.2), (a + 2, y, .2), (a, y, .2)])
+            g.face([(a, y, -.2), (a + bay_width, y, -.2), (a + bay_width, y, .2), (a, y, .2)])
     for x in (-width / 2, width / 2):
         g.face([(x, 0, -.2), (x, 4, -.2), (x, 4, .2), (x, 0, .2)])
     return g

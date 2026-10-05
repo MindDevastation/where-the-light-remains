@@ -1,5 +1,24 @@
 # Current Work recovery boundary — 2026-10-05 room floor and next-input seal
 
+## Front-wall numeric authoring input — 2026-10-05 16:04 UTC
+
+Recovered remote/local `11ebf59b913e9425ea24e2f2d7a4ae0523bee785`;
+existing checkpoint branch remains the durable authority. GitHub API still
+stops at proxy CONNECT timeout with the supplied private credential. No new
+authentication or LFS success is inferred.
+
+Completed the independent numeric preparation for the next 3 m front-wall
+variant: corrected `wall(3)` to two 1.5 m bays with exact bounds and a closed,
+connected shell. Full 2/4 m vertex/face/material hashes remain identical to
+the recovered source. Four targeted geometry tests and the updated input
+audit pass: `evidence/archive_reconstruction/front-art-inputs-2/results.json`.
+The five-part sample export CLI, existing Blender/GLB assets, modular contract
+and shipping scenes are unchanged. No historical runtime suite was repeated.
+
+Next remains secure network restoration and actual LFS verification, followed
+by the bounded 3 m source/export and explicit front-placement pivot decision.
+Numeric preparation is not Blender, UV/normal/render or full room acceptance.
+
 ## Authentication follow-up — 2026-10-05 13:24 UTC
 
 Recovered remote/local HEAD `cbe95ae3feca78aec4426c49d089396ca24d6eb8`,

@@ -50,16 +50,17 @@ def audit(output):
         fronts.append({"side": side, "existing_size_xyz": size, "existing_center_xyz": center,
                        "x_span": [center[0] - size[0] / 2, center[0] + size[0] / 2]})
     if not all(w["closed_edge_incidence"] and w["actual_width"] == w["requested_width"]
-               for w in walls if w["requested_width"] in (2, 4)):
-        raise ValueError("Accepted two/four-meter helper assumptions no longer hold")
+               for w in walls):
+        raise ValueError("A supported wall helper has incorrect bounds or open edges")
     inputs = ["tools/audit_archive_front.py", "tools/create_archive_kit.py",
+              "tools/test_archive_wall_geometry.py",
               "game/worlds/archive/archive_main.tscn", "docs/design/REQUIRED_ASSET_TABLE.md",
               "docs/production/MODULAR_ARCHIVE_KIT.md", "docs/production/modular_archive_kit_v1.json",
               "docs/production/LFS_POLICY.md"]
     result = {"status": "PASS", "acceptance": "READ_ONLY_INPUT_AUDIT_ONLY",
               "finished_at": receipts.audio.stamp(), "source_hashes": {name: hashlib.sha256((root / name).read_bytes()).hexdigest() for name in inputs},
               "fronts": fronts, "existing_builder_probes": walls,
-              "finding": "Both preserved front spans are 3 m. Existing wall(3) is unsupported: it spans 4 m and has eight non-two-incidence edges. Existing 2/4 m helpers remain valid.",
+              "finding": "Both preserved front spans are 3 m. The corrected wall(3) helper spans exactly 3 m with closed edge incidence; 2/4 m helpers remain valid. No new Blender source or runtime export is authored by this audit.",
               "limits": "Analytical input audit only. No new Blender/GLB asset, manifold Blender validation, visual acceptance, contract/pivot change or binary upload."}
     output.mkdir(parents=True, exist_ok=False)
     receipts.write_receipt(output / "results.json", result)
