@@ -1,0 +1,16 @@
+{
+  "status": "NEEDS_HUB_SKIN_OVERLAP_FIX",
+  "reviewed_at": "2026-10-05T11:57:51.349334+00:00",
+  "finding": "All six Low/Medium views inspected. Approved stone floor/trim and room portal are readable. Return views show dark jagged patches from the coplanar radius-10 Hub skin overlapping entrance tiles.",
+  "captures": {
+    "entrance_low.png": "cb235b3afec4081ca43b26f87eabb876bc6a1021a55d71ead244f8791ae5a38a",
+    "entrance_medium.png": "734602ff4cda16951e2f3f3e79e9612120b665eaf8c84e6ae0cbcb944bf7e646",
+    "return_low.png": "ab37ee265c8b10e03ad1eeb1153c591dfad0d3f2a0ff902147413cc4a85dc0d4",
+    "return_medium.png": "b81a88bfa6b39692e0556e914b66e0c6e5bc5999f68c907879fb8435eb28d49a",
+    "seam_low.png": "01cd814ea1c25bf6287293c0133c80aba751ca663cf06c62a2265b4584729bcb",
+    "seam_medium.png": "d65d2af060a26fadf9cdc6e4c40c0cc1155ac0771ba9a262e598e1c00d061654"
+  },
+  "validation_sha256": "9f710448ec3313f3ae8dfdc15556733606d11c3ebf6d970226a2df0adeda61e1",
+  "next_step": "Remove only overlapping Hub visual surface at the corridor entrance; preserve Hub solid collider. Repeat affected native captures.",
+  "limits": "Intermediate WIP, not full visual acceptance. Software llvmpipe only; full room/audio/target GPU remain open."
+}

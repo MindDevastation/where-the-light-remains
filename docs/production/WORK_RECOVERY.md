@@ -1,4 +1,4 @@
-# Current Work recovery boundary — 2026-10-05 corridor ambient fix
+# Current Work recovery boundary — 2026-10-05 corridor floor WIP
 
 New environment recovered exact remote `92afd6214d2a1564eda5bad7c13e227123038356`
 (2026-10-04 23:48:40 UTC), clean on the existing working branch. The previous
@@ -53,8 +53,14 @@ Clean import and all six affected Low/Medium views pass with unchanged physical
 slots and cleaned private project/processes. All six images were inspected;
 stone texture is now readable. No global lighting budget/pipeline changed and
 no authored palette/full art acceptance is implied.
-Exact next block: tile the existing corridor floor using approved 1 m modules,
-retain the safety slab, test actual capsule travel and inspect affected views.
+The approved floor now has 28 unit tile instances and retains its safety slab.
+`corridor-floor-headless-2/` passes 45 corridor plus 101 state assertions,
+including actual grounded capsule walks with both fallback floors disabled in
+the private fixture. Native Low/Medium capture passes, but six inspected views
+show an entrance overlap with the old circular Hub skin. This WIP checkpoint
+records NEEDS_HUB_SKIN_OVERLAP_FIX, not visual acceptance.
+Exact next block: remove only the overlapping Hub visual surface at the corridor
+entrance, preserve the old solid Hub collider, inspect affected native views.
 Full room/target-GPU/music remain open.
 
 ---

@@ -52,7 +52,6 @@ func _run() -> void:
     var space := world.get_world_3d().direct_space_state
     var tiles := world.get_node("Wing01/Corridor/TileFloor") as Node3D
     var safety_floor := world.get_node("Wing01/Corridor/CorridorFloor") as StaticBody3D
-    var hub_floor := world.get_node("Hub/Floor") as StaticBody3D
     var floor_shape: Shape3D = tiles.get_child(0).get_node("Collision/Solid").shape
     var tiles_valid := tiles.get_child_count() == 28
     for tile: Node3D in tiles.get_children():
@@ -64,15 +63,18 @@ func _run() -> void:
     var seams_supported := true
     for x in [-1.0, 0.0, 1.0]:
         for z in [-9.0, -10.0, -11.0, -12.0, -13.0, -14.0]:
-            var ray := PhysicsRayQueryParameters3D.create(Vector3(x, .2, z), Vector3(x, -.2, z), 1, [safety_floor.get_rid(), hub_floor.get_rid()])
+            var ray := PhysicsRayQueryParameters3D.create(Vector3(x, .2, z), Vector3(x, -.2, z), 1, [safety_floor.get_rid()])
             var hit := space.intersect_ray(ray)
+            if hit.is_empty():
+                print("FLOOR_RAY boundary has no single-point hit: ", x, ", ", z)
+            elif not tiles.is_ancestor_of(hit["collider"]) or not hit["normal"].is_equal_approx(Vector3.UP) or not is_zero_approx(hit["position"].y):
+                print("FLOOR_RAY unexpected hit: ", x, ", ", z, " ", hit["collider"].get_path(), " ", hit["normal"], " ", hit["position"])
             seams_supported = seams_supported and not hit.is_empty()
             if not hit.is_empty():
                 seams_supported = seams_supported and tiles.is_ancestor_of(hit["collider"]) and hit["normal"].is_equal_approx(Vector3.UP) and is_zero_approx(hit["position"].y)
     _check(seams_supported, "Tile colliders alone support all longitudinal/transverse seam intersections at flush Y=0")
-    # Disable private-world fallback floors, including the existing circular Hub overlap.
+    # Disable only the private world's fallback during movement, so it cannot mask tile gaps.
     safety_floor.collision_layer = 0
-    hub_floor.collision_layer = 0
     await get_tree().physics_frame
     player.global_position = Vector3(0, .15, -8.5)
     var landing := player.move_and_collide(Vector3(0, -.3, 0))
@@ -87,7 +89,6 @@ func _run() -> void:
             supported = supported and player.is_on_floor() and absf(player.global_position.y) < .01
         _check(supported and absf(player.global_position.z - start_z - direction * 6) < .06, "Grounded actual player crosses tile seams without snagging or falling, direction " + str(direction))
     safety_floor.collision_layer = 1
-    hub_floor.collision_layer = 1
     await get_tree().physics_frame
     for depth in [-8.5, -10.0, -12.0, -14.0, -15.0, -16.0]:
         var query := PhysicsShapeQueryParameters3D.new()

@@ -37,6 +37,19 @@ materials or geometry. Cache-free import, Low/Medium captures and protected
 physical save hashes pass; all six new views were inspected and stone faces
 are readable. `visual_review.json` retains the exact before/after diagnostic.
 This is a bounded lighting correction, not authored color or full art acceptance.
-Next: place the approved corridor floor tiles. Full room/observatory
+The floor now uses 28 approved 1 m instances: X=-1.5/-0.5/0.5/1.5,
+Z=-8.5 through -14.5, Y=0. The original corridor slab remains solid and its
+coplanar primitive skin is hidden. Shared unit modules retain the prescribed
+cell-center phase. `corridor-floor-headless-2/` passes 45 corridor assertions
+plus 101 Archive regressions with existing slots unchanged. Seam rays exclude
+both old fallback floors; the actual shipping capsule walks both ways with
+both disabled only in the private test world. Earlier failed/diagnostic families
+retain the fixture's unintended radius-10 Hub floor overlap.
+
+`corridor-floor-native-1/` passes runtime/capture checks, but six inspected
+views show coplanar Hub skin interfering with tiles at the entrance:
+NEEDS_HUB_SKIN_OVERLAP_FIX. This intermediate floor placement is a WIP checkpoint.
+Next: remove only that visual overlap while preserving the original Hub collider,
+then repeat affected views. Full room/observatory
 art, emitter/Hearth authoring, S00 note/motif selection, scene mix and physical
 GTX 1060 profiling remain open. No full GATE-VS1 acceptance is implied.
