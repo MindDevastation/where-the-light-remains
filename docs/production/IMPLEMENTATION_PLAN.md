@@ -2,6 +2,21 @@
 
 Status: **started**.
 
+## Latest room models — 2026-10-05
+
+- [x] Complete original 3 m front walls; actual LFS upload/retrieval, 171
+  targeted assertions and eight inspected Low/Medium views pass.
+- [x] Complete static Hearth bowl/pedestal and emitter housing; actual LFS
+  upload/empty-store retrieval/reopened source, 145 targeted assertions, normal
+  startup and ten inspected Low/Medium views pass. See `WING01_HEARTH_EMITTER.md`
+  and `hearth-emitter-acceptance-1` for exact scope and camera compatibility audit.
+- [ ] Canonical ceiling/ribs, authored beam/Star/Flame VFX, complete room/VS1,
+  authored audio and physical target GPU. See `ROOM_ART_NEXT_BLOCK.md`.
+
+Current recovery authority: `WORK_RECOVERY.md` and
+`evidence/checkpoints/development.jsonl`; old network notes below are historical.
+
+
 ## Current bounded corridor art — 2026-10-05
 
 Fresh recovery used remote `92afd6214d2a1564eda5bad7c13e227123038356`, not an
@@ -27,10 +42,10 @@ and `evidence/checkpoints/gitdata_publications.jsonl`.
   101 state and 60 S02 checks pass. Six new Low/Medium views verify floor/joins
   and cold/warm response. Captured draw-call/texture counters are software
   diagnostics only. Front/ceiling and full room acceptance remain open.
-- [x] Read-only next-front input audit; exact 3 m spans and unsupported naive
-  builder are recorded in `ROOM_ART_NEXT_BLOCK.md`. New binary production waits
-  for authenticated LFS upload (current bounded negotiation HTTP 401); ordinary
-  code/evidence publication remains working. No new runtime asset was invented.
+- [x] Front input audit followed by the completed bounded 3 m source/export and
+  placement. Actual authenticated API/LFS transport now passes; the earlier
+  HTTP 401/blocking note is superseded. Current ceiling/model follow-up is in
+  `ROOM_ART_NEXT_BLOCK.md`.
 
 ## Source availability after the 2026-10-04 interruption
 

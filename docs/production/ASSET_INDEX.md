@@ -191,20 +191,26 @@ physical target-GPU profiling remain open. This is not complete S02 inventory.
 
 ## Current Archive gameplay usage — 2026-10-05
 
-The accepted wall/arch/pier/floor sources now populate the actual Wing I
-corridor and room side/back/floor, preserving higher graybox safety guards.
-No source mesh/material was replaced. See `WING01_CORRIDOR_ART.md` and
-`WING01_ROOM_ART.md`; the latest room block passes 188 targeted assertions and
-six inspected Low/Medium views with unchanged protected physical slots.
+Accepted wall/arch/pier/floor modules populate the Wing I corridor and room
+side/back/floor. Two original authored 3 m front modules now close both front
+spans while higher safety guards remain. Actual LFS retrieval, 171 targeted
+assertions and eight inspected front views pass (`front-wall-acceptance-1`).
 
-The existing optical carrier is connected to real E controls, rings/focus,
-ordered Star/Hearth, atomic save retry, quiet resume and grounded Hub return.
-Gameplay foundation is accepted; S02-001/003 full art coverage remains PARTIAL.
-S02-002/004 emitter/Hearth are still graybox art; canonical fragment UI and
-cold/warm behavior work, while full presentation/mix/hardware gates remain open.
-Front/ceiling and remaining inventory variants are unfinished.
+The optical carrier remains connected to real E controls, rings/focus, ordered
+Star/Hearth, atomic save retry, quiet resume and grounded Hub return. Gameplay
+foundation is accepted; S02-001/003 full art coverage remains PARTIAL.
 
-The next 3 m front variant cannot use `wall(3)` unchanged and currently lacks
-authenticated LFS publication capability; exact input proof/dependency and next
-step are in `ROOM_ART_NEXT_BLOCK.md`. Ordinary code/evidence checkpoint push is
-working. Do not revoke accepted existing payloads or promote full ARCH/VS1 gates.
+| Requirement | New source/runtime asset | Accepted scope |
+|---|---|---|
+| S02-002 | `wing01_hearth_emitter.blend` / `sm_wing01_emitter.glb` | Static brass/iron/glass emitter housing; final beam/Star VFX pending |
+| S02-004 | Same editable source / `sm_wing01_hearth.glb` | Hollow brass bowl and stone pedestal; final Flame VFX pending |
+
+Both script-free wrappers preserve mechanics, original colliders and shared
+materials. Three LFS payloads were uploaded and independently retrieved into an
+initially empty store; exact hashes/sizes and reopened retrieved source pass.
+145 targeted assertions, normal startup and ten inspected Low/Medium captures
+pass. See `WING01_HEARTH_EMITTER.md` and `hearth-emitter-acceptance-1`.
+
+Canonical ceiling/ribs, remaining inventory/VFX, full ARCH/VS1, authored audio
+and target GPU remain open. Current follow-up: `ROOM_ART_NEXT_BLOCK.md`.
+The old API/LFS transport blocker is superseded by actual successful transfers.

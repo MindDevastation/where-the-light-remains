@@ -1,3 +1,40 @@
+# Latest recovery boundary — 2026-10-05 Hearth and emitter models completed
+
+Recover the newest remote tip of
+`feature/04-archive-gameplay/checkpoints-2026-10-04`; the exact stable commit and
+following receipt identity are recorded in `evidence/checkpoints/development.jsonl`.
+Source WIP `52399310077fa26b2931ebac0b70070403a17fb1` / receipt `558e28f`
+and integration WIP `01d0bee050d6c870dff94fa12c5dcc426a86b668` / receipt
+`912e28c7aec29a599ac54d1aef70657963aafc36` were remotely verified.
+
+Original editable Blender source now supplies a hollow brass Hearth bowl with
+stone pedestal (1208 triangles, two shared materials) and recessed-glass emitter
+housing (1204 triangles, three shared materials). Source/UV/normals/manifold
+checks, actual three-object LFS upload, independent initially empty LFS retrieval
+with exact stored hashes/sizes and reopened retrieved Blender source pass.
+Script-free Godot wrappers preserve the Hearth body/collider, emitter optical
+axis, flame/beam nodes, rings/focus controls and ordered Star/Hearth progression.
+See `WING01_HEARTH_EMITTER.md` for the bounded asset contract.
+
+Cache-free tests pass 19 model/integration + 49 room + 60 actual S02
+controls/save/reload/return + 17 shipping entry/safe-Exit assertions (145), plus
+normal startup. Read-only fixtures preserve physical slots; destructive save
+regressions use only test-owned slots. All ten corrected Low/Medium captures
+were inspected. The first eight-image review is retained as a framing failure.
+Only two independent presentation-fixture files changed after the headless
+runs; the aggregate audits this delta and seals their new native-render proof.
+Shipping sources and tested physics/control fixtures match the original runs.
+
+Evidence: `hearth-emitter-authoring-1`, `hearth-emitter-retrieval-1`,
+`hearth-emitter-headless-1`, `hearth-emitter-s02-regression-1`,
+`hearth-emitter-native-2`, and `hearth-emitter-acceptance-1`.
+Next: canonical ceiling/rib variants adapted to the preserved footprint, then
+remaining emitter/Star/Flame VFX. Full art/VS1, authored audio and target GPU
+remain open. The previous API/LFS network blocker is superseded by actual
+successful authenticated transfers. No S03, main update or history rewrite.
+
+---
+
 # Latest recovery boundary — 2026-10-05 3 m room front completed
 
 Recover the newest remote tip of

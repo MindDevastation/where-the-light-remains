@@ -111,3 +111,23 @@ inspected Low/Medium views: front/reverse entrance and close views of both spans
 Stone faces, trim and junctions remain readable. Read-only fixture save hashes
 are unchanged. Open ceiling/unfinished Hub, full art acceptance, authored audio
 and target GPU remain separate. See the exact-source aggregate acceptance receipt.
+
+## Hearth bowl and emitter housing — 2026-10-05
+
+The previous primitives now have original Blender-derived static models:
+1208-triangle hollow brass Hearth bowl/stone pedestal and 1204-triangle brass,
+iron and recessed-glass emitter. Script-free wrappers reuse shared materials.
+Original collider, poses, optical axis, controls, flame, beams and state bindings
+stay intact. Actual LFS upload, empty-store independent retrieval and reopened
+retrieved source pass. See `WING01_HEARTH_EMITTER.md`.
+
+145 assertions (19 model/integration, 49 room, 60 S02, 17 shipping entry), normal
+startup and ten inspected Low/Medium captures pass. First close views required
+camera-only framing corrections; their original evidence remains retained.
+`hearth-emitter-acceptance-1` audits those two independent fixture-file changes
+against the new native proof without claiming the earlier headless runs used
+these revised cameras. All shipping geometry/physics/control hashes match.
+
+Ceiling/ribs and final beam/Star/Flame VFX, full room art/VS1, authored audio and
+physical target-GPU acceptance remain open. Existing front/entrance asset proofs
+remain valid; they were not regenerated for this block.
