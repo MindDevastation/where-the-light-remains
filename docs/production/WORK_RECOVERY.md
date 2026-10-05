@@ -31,9 +31,17 @@ binding was selected. Actual authored listening/edit selection is still open.
 Godot was restored only for the nearest independent art task; official archive
 SHA matches `setup_linux_toolchain.py`, exact version
 `4.7.2.stable.official.ed1daf0bf`. No Blender/gh/historical suites restored.
-Next independent block: reuse the approved Archive kit for a bounded Wing I
-corridor presentation pass, retaining safe geometry/progression and validating
-only that change. Full room/art/target-GPU and musical acceptance remain open.
+A bounded Wing I corridor placement now reuses the approved kit (four walls,
+two piers, room portal), unscaled/on-grid; the two primitive skins are hidden
+while existing safety guards/floor remain. No kit assets/pipeline/materials/
+progression/save APIs changed. `corridor-art-headless-1/` passes 39 new actual
+shipping-capsule traversal/ownership checks and 101 relevant Archive state/
+safe-spawn regressions, clean cache-free import and unchanged existing primary/
+backup files (140 assertions). Private copy removed; no errors/warnings.
+See `WING01_CORRIDOR_ART.md` for exact placement and scope.
+Next independent block: bounded native Forward+ visual review of this corridor
+on Low/Medium, using the already documented TCP/cookie Xvfb/llvmpipe runner.
+Full room/art/target-GPU and musical acceptance remain open.
 
 ---
 

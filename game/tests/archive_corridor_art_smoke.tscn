@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tests/archive_corridor_art_smoke.gd" id="Test"]
+
+[node name="ArchiveCorridorArtSmoke" type="Node"]
+script = ExtResource("Test")

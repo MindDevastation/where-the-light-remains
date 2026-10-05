@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=3]
+[gd_scene load_steps=75 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" path="res://art/sigils/star.svg" id="StarSigil"]
 
 [ext_resource type="PackedScene" path="res://worlds/archive/archive_prologue.tscn" id="Prologue"]
+[ext_resource type="PackedScene" path="res://worlds/archive/wing01_corridor_presentation.tscn" id="CorridorArt"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -546,6 +547,7 @@ collision_mask = 4
 disable_mode = 1
 
 [node name="Mesh" type="MeshInstance3D" parent="Wing01/Corridor/CorridorWallL"]
+visible = false
 mesh = SubResource("M_CorridorWallL")
 material_override = SubResource("Stone")
 
@@ -560,11 +562,14 @@ collision_mask = 4
 disable_mode = 1
 
 [node name="Mesh" type="MeshInstance3D" parent="Wing01/Corridor/CorridorWallR"]
+visible = false
 mesh = SubResource("M_CorridorWallR")
 material_override = SubResource("Stone")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Corridor/CorridorWallR"]
 shape = SubResource("S_CorridorWallR")
+
+[node name="Presentation" parent="Wing01/Corridor" instance=ExtResource("CorridorArt")]
 
 [node name="RoomFloor" type="StaticBody3D" parent="Wing01/Room"]
 position = Vector3(0, -0.15, -21)

@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_4m.tscn" id="Wall"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_pier_4m.tscn" id="Pier"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_arch_4m.tscn" id="Arch"]
+
+[node name="Wing01CorridorPresentation" type="Node3D"]
+metadata/scope = "Bounded reuse of approved v2 kit; full Wing I room art remains open."
+
+[node name="WallL0" parent="." instance=ExtResource("Wall")]
+position = Vector3(-2, 0, -10)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="WallL1" parent="." instance=ExtResource("Wall")]
+position = Vector3(-2, 0, -14)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="WallR0" parent="." instance=ExtResource("Wall")]
+position = Vector3(2, 0, -10)
+rotation_degrees = Vector3(0, 270, 0)
+
+[node name="WallR1" parent="." instance=ExtResource("Wall")]
+position = Vector3(2, 0, -14)
+rotation_degrees = Vector3(0, 270, 0)
+
+[node name="PierL" parent="." instance=ExtResource("Pier")]
+position = Vector3(-2, 0, -12)
+
+[node name="PierR" parent="." instance=ExtResource("Pier")]
+position = Vector3(2, 0, -12)
+
+[node name="RoomPortal" parent="." instance=ExtResource("Arch")]
+position = Vector3(0, 0, -15)
