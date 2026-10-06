@@ -1,8 +1,12 @@
-[gd_scene load_steps=16 format=3]
+[gd_scene load_steps=19 format=3]
 
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb" id="Leaf"]
 
 [ext_resource type="PackedScene" path="res://art/vfx/last_spark.tscn" id="LastSpark"]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_approach_path.glb" id="path"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb" id="guard_long"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb" id="guard_rear"]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_prologue.gd" id="Script"]
 [ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_door_lock.tscn" id="Lock"]
@@ -55,9 +59,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Floor"]
-mesh = SubResource("Floor")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Floor" instance=ExtResource("path")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
 shape = SubResource("FloorShape")
@@ -102,9 +104,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="LeftGuard"]
-mesh = SubResource("SideGuard")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="LeftGuard" instance=ExtResource("guard_long")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="LeftGuard"]
 shape = SubResource("SideGuardShape")
@@ -115,9 +115,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="RightGuard"]
-mesh = SubResource("SideGuard")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="RightGuard" instance=ExtResource("guard_long")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RightGuard"]
 shape = SubResource("SideGuardShape")
@@ -128,9 +126,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="RearGuard"]
-mesh = SubResource("RearGuard")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="RearGuard" instance=ExtResource("guard_rear")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RearGuard"]
 shape = SubResource("RearGuardShape")
