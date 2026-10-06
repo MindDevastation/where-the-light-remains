@@ -312,3 +312,13 @@ PROP-003 leaf props replace the three graybox visual nodes at unchanged poses.
 259 current assertions/startup, fourteen inspected Low/Medium player views,
 actual three-object LFS upload/empty-store retrieval/reopen/import/use. See
 S01_STARTING_LENS_ACCEPTANCE.md; full Hub/core/console/ARCH/VS1 remain open.
+
+## S01 panel and activation lever — 2026-10-06
+
+s01_hub_controls.blend plus four local-pivot GLBs:panel base/cover664/360 and
+lever base/handle484/432 triangles,1940 total. Existing Iron/Brass/Walnut only.
+Original poses/targets retained; existing phase projects cover/handle cosmetics,
+including physical checkpoint quiet reload and activation retry.325 current
+assertions/startup,14 inspected Low/Medium views and independent download/use
+of all5 LFS payloads: S01_HUB_CONTROLS_ACCEPTANCE.md. PROP-004 skins/PROP-006
+second shape remain PARTIAL; no PROP-005 dial or full console/Hub acceptance.

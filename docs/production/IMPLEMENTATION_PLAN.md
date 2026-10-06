@@ -510,3 +510,14 @@ controller/save behavior and prior142 art/module identities preserved. See
 S01_STARTING_LENS_ACCEPTANCE.md and SLICE_ART_INVENTORY.md. Remaining required
 slice art includes S00 exterior, full Hub mechanism/console/rotunda/gates/channels
 and final S02 presentation; full ARCH/VS1/audio/physical GPU/S03 remain open.
+
+## Working-branch art checkpoint — 2026-10-06, S01 controls
+
+Bounded original panel/lever fittings complete on resume-2026-10-06,1940
+triangles/four meshes/five LFS payloads.325 scoped current assertions/startup,
+14 individually inspected Low/Medium views, independent retrieval/reopen/use
+PASS. Cosmetic phase poses include real E input and physical checkpoint quiet
+reload; original sequence/timers/save schema preserved.147 prior art/module
+identities unchanged. See S01_HUB_CONTROLS_ACCEPTANCE.md. Universal variants,
+full Hub console/mounting/lighting/architecture and full visual gate remain open.
+Main unchanged; next bounded audit is S00 activation hardware.

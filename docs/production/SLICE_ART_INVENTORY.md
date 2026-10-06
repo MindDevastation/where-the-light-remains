@@ -33,3 +33,10 @@ steps/railings/alcoves and exterior/terrain. Any reused multi-stage architectura
 design must follow ASTRA_WORKFLOW escalation; ordinary leaf-prop execution
 does not settle those decisions. S03, full gallery, authored music selection,
 complete ARCH/VS1 and physical target hardware remain open.
+
+S01 control update: bounded PROP-004/006 panel/lever fittings now replace two
+Hub visual cubes. Four original meshes/five LFS files,1940 triangles, existing
+materials; cosmetic cover/handle phase poses include retry/quiet restore.
+S01_HUB_CONTROLS_ACCEPTANCE.md records325 assertions,14 inspected views and
+independent retrieval/use. Universal panel skins/second lever shape, complete
+hero console/mounting and PROP-005 remain PARTIAL/not produced respectively.

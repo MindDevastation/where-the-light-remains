@@ -1,3 +1,31 @@
+# Latest confirmed boundary — S01 panel/lever, 2026-10-06
+
+Working branch: `feature/04-archive-gameplay/resume-2026-10-06`. Started from
+verified6dccc0c without replaying accepted toolchain preflights or art production.
+Candidate39204fa is remotely backed by7fe1cd0. Current bounded acceptance is
+sealed in controls-acceptance-20261006; resolve the latest stable checkpoint and
+receipt tip from the journal/remote before continuing.
+
+Original panel base/cover and lever base/handle total1940 triangles, four meshes,
+existing Iron/Brass/Walnut surfaces. Existing targets/prompts/step eligibility,
+seven-second awakening, collision and save schema preserved. Cosmetic cover/
+handle poses are projected by existing _refresh, including retry and quiet load.
+325 current assertions/startup, fourteen inspected native Low/Medium views and
+independent empty-store retrieval/reopen/import/use of all five LFS files PASS.
+147 prior accepted art/module identities unchanged. See
+S01_HUB_CONTROLS_ACCEPTANCE.md and SLICE_ART_INVENTORY.md.
+
+Next bounded work: inspect S00-005 door-lock/activation hardware and whether
+existing generic fittings can be reused under its canonical timeline/target
+contract. Do not redesign exterior/complete core/rotunda or infer new mechanics
+from concept images. Full PROP-004 skins/PROP-006 second shape, Hub mounting/
+lighting/architecture, S00 exterior, gallery/audio/physical GPU/ARCH/VS1/S03
+remain open. Keep supervised remote-delta checkpoints every600 seconds in live
+work. No unattended coordinator is claimed between turns; historical work
+windows do not create a new3–4 hour window.
+
+---
+
 # Latest confirmed boundary — S01 starting lens/socket, 2026-10-06
 
 Branch: `feature/04-archive-gameplay/resume-2026-10-06`. Started from the verified
