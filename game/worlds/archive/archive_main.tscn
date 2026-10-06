@@ -1,5 +1,6 @@
-[gd_scene load_steps=97 format=3]
+[gd_scene load_steps=98 format=3]
 
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_floor.glb" id="HubFloorArt"]
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_wall.glb" id="HubWallArt"]
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb" id="HubDomeDrum"]
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb" id="HubDomeFrame"]
@@ -275,9 +276,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Floor"]
-mesh = SubResource("HubFloor")
-material_override = SubResource("HubFloorStone")
+[node name="Mesh" parent="Hub/Floor" instance=ExtResource("HubFloorArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Floor"]
 shape = SubResource("HubShape")
