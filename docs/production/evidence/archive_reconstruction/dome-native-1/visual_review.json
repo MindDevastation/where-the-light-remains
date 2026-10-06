@@ -1,0 +1,19 @@
+{
+  "status": "FAIL",
+  "reviewed_at": "2026-10-06T03:30:02.002935+00:00",
+  "images": {
+    "dome_hearth_low.png": "528a87e8e1e9b11b17621e68a904e5a9ad900a654056d2bac5ff1dfc4fb93c76",
+    "dome_reverse_low.png": "93a50ee86df27dc9ad4beac3025db2c8f70aaf21d2d35dfedea8531194a06352",
+    "dome_entrance_low.png": "4f3b7dcde1633e46d44d531ce357c9089cd39c81dbe2de23dea0445362c0af6f",
+    "dome_hero_low.png": "adf5b4780623d3b974ac891f9450276d71c2dc4e6b7213e84b322d32add1b45c",
+    "dome_entrance_medium.png": "5019b502d6506188a6238777ad539987c5354d0aff8ec3edcf74e5dad1325ec3",
+    "dome_lookup_low.png": "c2c5fbcc48eb4a4cfe5381a3c4e7d876ea4b34e8807e1431b6d50605e469f6f3",
+    "dome_hero_medium.png": "e3d893408e1a005f4a4d9985286e8b49ff8d7ec67ff43fa093c9e3737eef29f0",
+    "dome_reverse_medium.png": "97eda339083a148be001b4bb01e2d01d039c04f44cb8d6c6b96d850240d9be81",
+    "dome_corner_medium.png": "29a4f2a91ceefdcf8c4b98e7444f5c5375820e7e121ce611945929de1f8bbc34",
+    "dome_hearth_medium.png": "2a55f5b8c568110a4c3fab1b004e5e9b9e1754b6a917604d0bb8411cfc3241ad",
+    "dome_corner_low.png": "aeff4d4098f8d4e4f689770d077991b9c4be5e14c4740e8b7cccb95995b75c47",
+    "dome_lookup_medium.png": "6ef7db8e8da0274c6b5db3c356b78780dbd13227ca5163fa3c392fadda694af2"
+  },
+  "scope": "All twelve actual Low/Medium images inspected. Imported structure covers the room without low headroom/corner gaps; opaque ring/hearth silhouette remains unchanged. Glass practical reflection is a bright facet checker grid in lookup/entrance/hero/reverse; not accepted. Next: continuous shading normals, same geometry/material/lighting. Headless-1 separately failed an untyped Dictionary expression in standalone test; corrected explicitly."
+}

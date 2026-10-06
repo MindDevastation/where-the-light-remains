@@ -1,0 +1,10 @@
+BLENDER_DOME_PART PASS: frame triangles= 10944 surfaces= 2 bounds= [-4.839475631713867, 1.5, -5.791856288909912] [4.839475631713867, 5.576329708099365, 5.791856288909912] closed_volume= 2.593548335460086 metric UVs; normals/tangents; identity pivot
+BLENDER_DOME_PART PASS: glass triangles= 4608 surfaces= 1 bounds= [-5.119999885559082, 1.5, -6.119999885559082] [5.119999885559082, 5.619999885559082, 6.119999885559082] closed_volume= 3.226759051446059 metric UVs; normals/tangents; identity pivot
+BLENDER_DOME_PART PASS: sky triangles= 4608 surfaces= 1 bounds= [-5.46999979019165, 1.4800000190734863, -6.46999979019165] [5.46999979019165, 6.0, 6.46999979019165] closed_volume= 3.7146916377805907 metric UVs; normals/tangents; identity pivot
+BLENDER_DOME_ROOF_RAYS PASS: 49 actual covered interior rays; separate farther opaque sky
+BLENDER_DOME_MERIDIANS PASS: twelve actual members; four accepted cardinal locations excluded
+BLENDER_DOME PASS: three reopened parts; closed roof coverage; separate sky; unchanged cardinal rib scope
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/e4dba9b6d2e8/where-the-light-remains/assets/3d/blender/archive_kit/wing01_dome_coverage.blend"
+
+Blender quit

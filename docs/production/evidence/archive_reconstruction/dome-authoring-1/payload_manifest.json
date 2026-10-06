@@ -1,0 +1,42 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/wing01_dome_coverage.blend",
+      "bytes": 2057500,
+      "sha256": "5790523cfbfd1bacef9a3ce505338fa9e1b043f14f70d11ec2bfdecf02818178"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb",
+      "bytes": 1436904,
+      "sha256": "54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb",
+      "bytes": 681412,
+      "sha256": "732a1089e4a3c99b1399ee600ee7eb8a5dc59270d75bdc0bf7092c23ce401421"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb",
+      "bytes": 681472,
+      "sha256": "fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "frame",
+      "triangles": 10944,
+      "surfaces": 2
+    },
+    {
+      "id": "glass",
+      "triangles": 4608,
+      "surfaces": 1
+    },
+    {
+      "id": "sky",
+      "triangles": 4608,
+      "surfaces": 1
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-06T03:30:33.526801+00:00",
+  "source_hashes": {
+    "assets/3d/blender/archive_kit/wing01_dome_coverage.blend": "c025c4fe34449b9d70163734ff0aad22ba650bd72811f5034e9e58ba475fbcb3",
+    "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb": "54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8",
+    "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb": "ee8a33474c883136f62d09fbe01ec35877b1fff37d35c0c3491e6813d1d6f054",
+    "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb": "fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa",
+    "tools/create_wing01_dome.py": "468321b94d21ccfb55270f29cefc7ad07d13685536a77459d3903c4570282957",
+    "tools/verify_wing01_dome.py": "4cb2c81793e5e2718f225aad9c5bcc7ddd699c1afe95782cd4c29207e112d39e",
+    "tools/create_wing01_optics.py": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7",
+    "docs/production/WING01_DOME_COVERAGE.md": "9beb0c7c8749aa5033f19054a13075dcdd040b454545a91f5359ab3b06de7137",
+    "docs/production/wing01_dome_coverage.json": "ce0eb6a6772ac99ba2d4763158e2d28b53fc05d5704b56ca1f2146169bb71d9d",
+    "docs/production/evidence/archive_reconstruction/dome-authoring-2/reopened-source.log": "cffbaf5fefbfb263292ecbf8a938b6475018de77d804e4e55a7f1cd0aefa0bec",
+    "docs/production/evidence/archive_reconstruction/dome-authoring-2/payload_manifest.json": "bd1893af5333c44309c88e9b7e1a531f3918d4766a5db836eb7088f10aba4242"
+  },
+  "unchanged_prior_payloads": 18,
+  "unchanged_candidate_exports": [
+    "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb",
+    "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb"
+  ],
+  "scope": "Reopened geometry/rays/UVs/normals. Frame and sky remain byte-identical; only new candidate source/glass shading changed. Native/import/LFS acceptance pending."
+}

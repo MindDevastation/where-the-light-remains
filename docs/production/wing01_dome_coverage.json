@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "scope": "Isolated dome coverage candidate; canonical shipping mechanics and footprint preserved",
+  "source": "assets/3d/blender/archive_kit/wing01_dome_coverage.blend",
+  "assembly_origin": [
+    0,
+    4,
+    -21
+  ],
+  "ellipse_axes_m": [
+    5,
+    6
+  ],
+  "spring_y_local_m": 1.5,
+  "rise_m": 4,
+  "meridian_count": 16,
+  "meridian_segments": 32,
+  "tie_angles_radians": [
+    0.31,
+    0.7,
+    1.1
+  ],
+  "shell_longitudes": 48,
+  "shell_latitudes": 24,
+  "materials": {
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "glass": "res://art/materials/m_clear_glass.tres",
+    "sky": "res://art/materials/m_archive_night_sky.tres"
+  },
+  "parts": [
+    {
+      "id": "frame",
+      "stem": "sm_wing01_dome_frame",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "materials": [
+        "iron",
+        "brass"
+      ],
+      "bounds_min": [
+        -5.13,
+        1.37,
+        -6.13
+      ],
+      "bounds_max": [
+        5.13,
+        5.63,
+        6.13
+      ],
+      "triangle_ceiling": 12000
+    },
+    {
+      "id": "glass",
+      "stem": "sm_wing01_dome_glass",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "materials": [
+        "glass"
+      ],
+      "bounds_min": [
+        -5.12,
+        1.5,
+        -6.12
+      ],
+      "bounds_max": [
+        5.12,
+        5.62,
+        6.12
+      ],
+      "inner_axes_m": [
+        5.1,
+        6.1
+      ],
+      "outer_axes_m": [
+        5.12,
+        6.12
+      ],
+      "inner_rise_m": 4.1,
+      "outer_rise_m": 4.12,
+      "base_y_m": 1.5,
+      "triangle_ceiling": 4800
+    },
+    {
+      "id": "sky",
+      "stem": "sm_wing01_dome_sky",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "materials": [
+        "sky"
+      ],
+      "bounds_min": [
+        -5.47,
+        1.48,
+        -6.47
+      ],
+      "bounds_max": [
+        5.47,
+        6.0,
+        6.47
+      ],
+      "inner_axes_m": [
+        5.45,
+        6.45
+      ],
+      "outer_axes_m": [
+        5.47,
+        6.47
+      ],
+      "inner_rise_m": 4.5,
+      "outer_rise_m": 4.52,
+      "base_y_m": 1.48,
+      "triangle_ceiling": 4800
+    }
+  ],
+  "references": [
+    {
+      "file": "wi_002_v2_angle_a.png",
+      "sha256": "fd48d679468af3eec489d6f0cdd36934e573fba1b3332395bc9a2a7c517c283e",
+      "git_blob": "aa725d266cdaa5528abd1a5ee4b121f5ca6ab42f"
+    },
+    {
+      "file": "wi_002_v2_angle_b.png",
+      "sha256": "5c74210307c9c4c1c107b27864d60957c39c91c9721c8441110a18c810c8c47f",
+      "git_blob": "bba1ce619c580dc931e1ff287ff057f85bb6a403"
+    },
+    {
+      "file": "wi_002_v2_angle_c.png",
+      "sha256": "b90c07718e4ef845fe6e51c5847c863d2bc7e7071fb067212293ef35fda3dcf5",
+      "git_blob": "2f5930c2642b196ee64ca7a59d15bfed9a20afec"
+    },
+    {
+      "file": "wi_001_v2_angle_a.png",
+      "sha256": "42a374179355f8a538b8645552867918e14ebe7b752ec6eac8a1b548e834d6ee",
+      "git_blob": "f5ef9b0cbfa0c757290eb2870320fadf84bc90c0"
+    },
+    {
+      "file": "wi_001_v2_angle_b.png",
+      "sha256": "07ebdbc5099c57e7e04b07629e8c59590e403c354c329c05c4c79229f3321e03",
+      "git_blob": "c069fb7c0df7d25c1da482b26e8bc706acc94b46"
+    },
+    {
+      "file": "wi_001_v2_angle_c.png",
+      "sha256": "ded04ed38a910bbadddaec4762463a84d0cf6d4046852090226c53df18130d78",
+      "git_blob": "23fd00472de93e20e93289839e75dc067afb316b"
+    }
+  ]
+}
