@@ -1,3 +1,30 @@
+# Latest confirmed boundary — S01 starting lens/socket, 2026-10-06
+
+Branch: `feature/04-archive-gameplay/resume-2026-10-06`. Started from the verified
+273aabd tip without replaying accepted environment or room stages. Candidate
+source is fa4db05, remotely verified with its receipt at 5155a50. Current stable
+acceptance is sealed in lens-acceptance-20261006 and the newest checkpoint
+journal; resolve the latest remote tip before continuing.
+
+PROP-003 now has original brass/glass pickup and installed lens plus open
+iron/brass socket. Existing poses/targets/controllers/Russian prompts and save
+schema retained. Current 259 assertions/startup, fourteen inspected native
+Low/Medium player images and independent empty-store download/reopen/import/use
+of all three LFS payloads PASS. Front grip tabs were corrected to clear socket
+fasteners by 2mm. Initial review fixture failure and candidate evidence retained.
+142 prior accepted art/module identities unchanged. See
+S01_STARTING_LENS_ACCEPTANCE.md and SLICE_ART_INVENTORY.md.
+
+Next bounded work: reconcile generic Hub panel/activation control leaf props
+against PROP-004/005/006 and their existing target envelopes. Do not replace
+complete core/rotunda architecture or infer orbit count from concept images.
+Full S00 exterior, Hub core/console/architecture, gallery, authored music,
+physical GPU, ARCH/VS1 and S03 remain open. Continue supervised remote-delta
+checkpoints every 600 seconds in a live turn. No unattended timer is claimed
+between turns; the earlier 03:06–07:06 window is historical.
+
+---
+
 # Latest confirmed boundary — rug and compact checkpoints, 2026-10-06
 
 Current working branch: `feature/04-archive-gameplay/resume-2026-10-06`.

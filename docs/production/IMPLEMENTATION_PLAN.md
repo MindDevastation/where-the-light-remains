@@ -500,3 +500,13 @@ two existing read-only save fixtures. Both primary/backup SHA values remain
 No runtime errors/warnings or shipping source-audio bindings. The two S00
 opening proposals in `audio/REVIEW_INDEX.md` are ready for listening; first-note
 and common motif selection remain pending, so GATE-VS1 stays open.
+
+## Working-branch art checkpoint — 2026-10-06, S01 PROP-003
+
+Starting lens/socket bounded art complete on resume-2026-10-06; no main
+integration.259 scoped current assertions/startup,14 inspected Low/Medium views
+and independent retrieval/use of all3 LFS payloads PASS. Existing target poses,
+controller/save behavior and prior142 art/module identities preserved. See
+S01_STARTING_LENS_ACCEPTANCE.md and SLICE_ART_INVENTORY.md. Remaining required
+slice art includes S00 exterior, full Hub mechanism/console/rotunda/gates/channels
+and final S02 presentation; full ARCH/VS1/audio/physical GPU/S03 remain open.

@@ -296,3 +296,19 @@ Evidence bookcase-acceptance-1:282 assertions/startup, sixteen inspected Low/
 Medium images with exact rendering-dependency reuse after CLI oracle correction,
 actual source/GLB LFS upload and independent empty-store retrieval/reopen/use.
 No new walking gallery/lights/clues; full room/VS1/target GPU remain open.
+
+## Ordinary archive rug — 2026-10-06
+
+archive_rug.blend / sm_archive_rug.glb:44 closed triangles/two existing textile
+surfaces, one centered 2.6x4m room instance, actual floor separation, no collider.
+See ARCHIVE_RUG_ACCEPTANCE.md:207 read-only assertions,60 actual S02 assertions,
+fourteen inspected native views and independent two-payload LFS retrieval.
+
+## S01 starting lens/socket — 2026-10-06
+
+s01_starting_lens.blend / sm_s01_starting_lens.glb / sm_s01_lens_socket.glb:
+1364/1392 triangles, existing Brass/Glass and Iron/Brass surfaces. Original
+PROP-003 leaf props replace the three graybox visual nodes at unchanged poses.
+259 current assertions/startup, fourteen inspected Low/Medium player views,
+actual three-object LFS upload/empty-store retrieval/reopen/import/use. See
+S01_STARTING_LENS_ACCEPTANCE.md; full Hub/core/console/ARCH/VS1 remain open.

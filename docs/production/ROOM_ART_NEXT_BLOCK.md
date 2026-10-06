@@ -1,27 +1,20 @@
-# Next bounded block — remaining slice art inventory
+# Next bounded block — Hub control leaf props
 
-Accepted current shipping roof/beam/quiet Star, original practicals and four
-bookcases retain exact game/tool identities. Actual1080p profiling passes in
-room-profile-2:360 instrumented frame samples, six inspected pictures, protected
-slots and current startup. See ARCHIVE_ROOM_PROFILE_RESULTS.md. Software
-llvmpipe wall timings348..879ms median are not physical target acceptance;
-release profiler run count remains0. No budget/default or art asset changed.
+Current PROP-003 lens/socket is accepted in S01_STARTING_LENS_ACCEPTANCE.md:
+original editable brass/glass and iron/brass meshes, 259 assertions/startup,
+fourteen inspected native Low/Medium views and three independently retrieved
+LFS payloads. Geometry-only integration retains poses, targets, controllers,
+save schema and Russian prompts. The corrected front grip tabs clear the socket.
+142 prior accepted art/module identities remain unchanged.
 
-The ordinary rug is accepted in ARCHIVE_RUG_ACCEPTANCE.md: original 44-triangle
-closed cloth, two existing materials, measured tile separation, no collider,
-207 read-only assertions, 60 actual S02 assertions, 14 inspected player images
-and independent empty-store retrieval/reopen/import/use of both new LFS objects.
+SLICE_ART_INVENTORY.md reconciles all required S00/S01/S02 rows. Next, inspect
+PROP-004/005/006 and bounded Hub panel/activation control envelopes before
+ordinary leaf-prop execution. Full core/rotunda/exterior reused architecture
+requires its separate approved brief/workflow; do not infer rings/mechanics from
+concept art or bulk-author missing families. Wing I walls/floor/roof/beam/books/
+practicals/rug retain bounded acceptance, not full ARCH/VS1 acceptance.
 
-This fresh checkout revealed that full-history tar snapshots collect several
-gigabytes before publication. The owned collection was stopped without claiming
-archive completion. The rug was preserved with an ordinary working-branch
-commit, LFS upload and exact remote SHA verification within fifteen minutes.
-The opt-in remote delta archive mode is now complete and tested; see
-REMOTE_DELTA_CHECKPOINTS.md and remote-delta-20261006 evidence. The complete
-local/offline archive modes remain available. Accepted rug/game identities are
-unchanged. Next, reconcile remaining required S00/S01/S02 art with canonical
-asset tables and bounded acceptance receipts before choosing another asset family. Full gallery/authored audio/physical
-hardware/ARCH/VS1/S03 remain open. No new walking gallery or bulk production.
-
-Checkpoint each finished stage immediately, keep verified remote snapshots
-within fifteen minutes and continue until the active3–4 hour work window ends.
+Full gallery, authored audio selection/bindings, physical target hardware,
+ARCH/VS1 and S03 remain open. Checkpoint each finished stage immediately and
+keep verified supervised remote-delta snapshots within fifteen active minutes.
+No unattended timer or new 3–4 hour window is inferred from historical sessions.
