@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-06T01:12:25.713462+00:00",
+  "captures": {
+    "emitter_close_low.png": "64dc0ecafc9a802c2b7113a0b00b7c4977b7d4abc403a1eb434b3ec2f8f66381",
+    "emitter_close_medium.png": "481a8620379d43609b3ab04e7e042d10a3837c0304de7ec647e3d29c59b22738",
+    "hearth_close_cold_low.png": "9842a5b0f54c2845859995671aa2db5cce93cde51c7bb8f49e582517fce27f99",
+    "hearth_close_cold_medium.png": "866d742d7226a45172b1e8e940705950a1477993b70cda2b8b97943ae11ceddc",
+    "hearth_close_warm_low.png": "7207f7ca3fc4d29a53eb26090060f6b0ec6c61139f9e3450632ae4d9ea7b8fb5",
+    "hearth_close_warm_medium.png": "37de0c3bea40341f8b6a25aaed826b0688efdb47fa4a70209c49a83403b36f26",
+    "room_cold_low.png": "6980dd3ec7d7822635fa4a9db3e138903a9e61c8ac2840e7eb8378ca0196b9cb",
+    "room_cold_medium.png": "952d80b4c85655ab7f30b4a731a35f996c41f37799fd03f2b9a5e4833c8db6ba",
+    "room_warm_low.png": "c08a49a8d580e427744a71b2fe1cfdb89adc36c3c34f677003a719d421953d67",
+    "room_warm_medium.png": "207d27ef14f9545df0c71d03e0b5ed9b5d5ba221dec1a5ba8e32cfb3ae5a00f3"
+  },
+  "scope": "All ten actual player captures inspected individually on Low/Medium; bounded Hearth Flame only.",
+  "findings": [
+    "Cold room and Hearth close views show an empty bowl without flame.",
+    "Warm room and close views show the golden three-tongue silhouette rising inside the existing brass bowl; base and bowl stay visible.",
+    "Low/Medium both render the opaque emissive geometry without glow/particles.",
+    "Existing rings, emitter, cyan beams and Star keep their original placement/readability."
+  ],
+  "limits": [
+    "Software lavapipe 960x540; not physical target-GPU performance proof.",
+    "Existing ceiling/upper walls, beam/Star presentation and full room/VS1 remain unfinished."
+  ],
+  "earlier_families": "native-1/native-2 retained as warning failures, not accepted visual families."
+}

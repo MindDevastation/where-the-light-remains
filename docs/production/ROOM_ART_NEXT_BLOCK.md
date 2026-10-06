@@ -1,4 +1,4 @@
-# Next room art block — ceiling/ribs after front and Hearth/emitter models
+# Next room art block — upper structure after Hearth Flame
 
 Recover the newest remote working-branch checkpoint, with its exact source and
 push receipts in `evidence/checkpoints/development.jsonl`. The former network
@@ -27,7 +27,14 @@ Aggregate exact-source evidence: `evidence/archive_reconstruction/front-wall-acc
 Hearth bowl/pedestal and emitter housing are now authored, imported and checked.
 See `WING01_HEARTH_EMITTER.md` and `hearth-emitter-acceptance-1`: 145 current
 assertions, normal startup and ten inspected Low/Medium views. This supplies
-static S02-002/004 model coverage; authored beam/Star/Flame VFX remains open.
+static S02-002/004 model coverage; bounded Flame VFX now passes 161 assertions and ten inspected views; beam/Star
+VFX remains open. See `WING01_HEARTH_FLAME.md`.
+
+Actual ceiling inputs are now measured and inspected in `WING01_CEILING_INPUTS.md`
+and `ceiling-inputs-1`. This does not author or approve a roof. Workspace
+maintenance removed the protected write credential; current native push lacks
+authentication. Existing models download; code/evidence connector publication
+works. Restore new LFS write capability before publishing Blender/GLB variants.
 
 Next: adapt ARCH-007's two ceiling/rib variants to the preserved 10 x 12 m room.
 The six pinned Wing I room references show a tall dome/upper gallery; they do

@@ -1,6 +1,30 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://art/vfx/hearth_flame.gd" id="Flame"]
+[ext_resource type="ArrayMesh" path="res://art/vfx/hearth_flame_mesh.tres" id="Mesh"]
+[ext_resource type="Material" path="res://art/materials/m_archive_emissive_gold.tres" id="Gold"]
 
 [node name="HearthFlame" type="Node3D"]
+process_mode = 1
 script = ExtResource("Flame")
+
+[node name="Tongue0" type="MeshInstance3D" parent="."]
+mesh = ExtResource("Mesh")
+material_override = ExtResource("Gold")
+cast_shadow = 0
+
+[node name="Tongue1" type="MeshInstance3D" parent="."]
+position = Vector3(-0.105, -0.115, 0.015)
+rotation = Vector3(0, 2, 0)
+scale = Vector3(0.65, 0.68, 0.65)
+mesh = ExtResource("Mesh")
+material_override = ExtResource("Gold")
+cast_shadow = 0
+
+[node name="Tongue2" type="MeshInstance3D" parent="."]
+position = Vector3(0.1, -0.072, -0.025)
+rotation = Vector3(0, -1.8, 0)
+scale = Vector3(0.55, 0.8, 0.55)
+mesh = ExtResource("Mesh")
+material_override = ExtResource("Gold")
+cast_shadow = 0

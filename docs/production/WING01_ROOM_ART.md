@@ -131,3 +131,19 @@ these revised cameras. All shipping geometry/physics/control hashes match.
 Ceiling/ribs and final beam/Star/Flame VFX, full room art/VS1, authored audio and
 physical target-GPU acceptance remain open. Existing front/entrance asset proofs
 remain valid; they were not regenerated for this block.
+
+## Local Hearth Flame — 2026-10-06
+
+The old sphere is replaced by an opaque three-tongue Godot VFX scene, one shared
+80-triangle mesh repeated three times, using the unchanged emissive gold family.
+No new Blender/LFS payload or shared material mutation. Root path/pose,
+colliders and progression are intact; visibility remains owned by ArchiveMain.
+Cold/hidden resets and stops processing; pause freezes local phase. Explicit
+scene dependencies/children clear the warning from threaded route loading.
+
+161 assertions and normal startup pass without warnings, and ten actual
+Low/Medium player views were inspected. Intermediate envelope/pause/load-warning
+failures and a warning-free old-scene comparison remain in evidence. Exact
+current acceptance: `hearth-flame-acceptance-1`. See `WING01_HEARTH_FLAME.md`.
+Ceiling inputs: `WING01_CEILING_INPUTS.md` / `ceiling-inputs-1`; input audit only,
+no authored roof or completed ARCH-007. Beam/Star/full room/audio/GPU remain open.

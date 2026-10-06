@@ -1,3 +1,49 @@
+# Latest recovery boundary — 2026-10-06 Hearth Flame completed
+
+Recover the newest remote working branch
+`feature/04-archive-gameplay/checkpoints-2026-10-04`. Exact implementation and
+following receipt identities are in `evidence/checkpoints/gitdata_publications.jsonl`.
+The starting remote tip was `4a85204c84feb1f9ef068d5fe3bb5c36bc716f87`.
+Workspace maintenance removed the old checkout/tools/private credential helper;
+no surviving newer source was replaced. Code and 14 existing runtime GLBs were
+retrieved and checked against unchanged committed LFS pointers. The pinned
+Godot 4.7.2, Blender 4.5.14 and authenticated TCP Xvfb/lavapipe were restored.
+The current minimal graphical capability probe passes.
+
+WIP `2d8e0df23f42bda6e6f531afa798935c11a8e2e3` was independently verified
+at 01:03:14 UTC; its local delta snapshot began at 01:02:04 UTC. This bounded
+continuation uses the existing Git-data connector prepare/accept fallback,
+force=false, exact parent/tree and independent native fetch/ref verification.
+Native push lacks its former protected credential; new LFS upload is unproved.
+Successful read/download is not write authorization or upload proof.
+
+The shipping Hearth Flame now uses three teardrop tongues, one shared Godot
+ArrayMesh (240 triangles total) and the existing emissive gold material. Explicit
+PackedScene mesh/material dependencies and visual children avoid the warning
+seen with nested script preloads on the actual threaded route. The script owns
+only bounded slow sway and visibility processing: cold/hidden stops/resets,
+pausing freezes and quiet reactivation emits no burst/audio/state changes.
+Original node path, root pose, bowl/body/collider and S02 progression remain.
+
+161 assertions pass: 16 Flame lifecycle/geometry, 19 housing integration,
+49 room, 60 actual S02 controls/save/reload/return and 17 entry/safe-Exit;
+normal startup also passes. Read-only physical slots are unchanged and save
+failure/retry tests use only test-owned slots. All ten Low/Medium captures were
+inspected. Final proof families: `hearth-flame-headless-4`,
+`hearth-flame-s02-regression-3`, `hearth-flame-native-3`,
+`hearth-flame-mesh-authoring-1`, `hearth-flame-capability-1` and aggregate
+`hearth-flame-acceptance-1`. Intermediate failures and baseline comparison are
+retained; they are not accepted as current-source PASS.
+
+Ceiling inputs are audited separately: 120 unit tiles independently confirm the
+10 x 12 m footprint; five safety guards end at Y=5.5; six pinned Wing I room
+images were inspected. See `WING01_CEILING_INPUTS.md`. No roof was authored.
+Next: bounded upper-support/rib construction brief and source assets once new
+LFS write credentials are restored, or remaining code-native beam/Star VFX.
+Full room/VS1, audio and physical target GPU remain open; no S03/main/history changes.
+
+---
+
 # Latest recovery boundary — 2026-10-05 Hearth and emitter models completed
 
 Recover the newest remote tip of

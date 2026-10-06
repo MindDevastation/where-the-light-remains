@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "acceptance": "READ_ONLY_CEILING_INPUT_AUDIT_ONLY",
+  "finished_at": "2026-10-06T01:04:26.408805+00:00",
+  "source_hashes": {
+    "game/worlds/archive/archive_main.tscn": "5b363fb8f809f13283d6fba62e4d853762aa7dbeb2d48630301716d422205928",
+    "game/worlds/archive/wing01_room_floor.tscn": "2e26220c75da0f0d8d963b217b9cf17b2377dc85777a42532e1195fdf82e25b1",
+    "docs/production/wing01_optics_v1.json": "866ad89a6b6dcfe95dbe6388c7ee453e19951332d0cb16c957470e910d628a62",
+    "docs/production/WING01_CEILING_INPUTS.md": "ec3da246b231de6b7b70a03885165aa3cac9754ed86ba76a6d73c5672b52eefd",
+    "docs/design/REQUIRED_ASSET_TABLE.md": "e5aa8ba983d18feef4fddf0f8ddfa7795b246dcbf1a0978fa38f366fdbce960c"
+  },
+  "actual_floor_size": [
+    10.0,
+    0.3,
+    12.0
+  ],
+  "actual_floor_center": [
+    0.0,
+    -0.15,
+    -21.0
+  ],
+  "unique_unit_tiles": 120,
+  "guards": [
+    {
+      "node": "RoomWallL",
+      "size_xyz": [
+        0.3,
+        5.5,
+        12.3
+      ],
+      "position_xyz": [
+        -5.15,
+        2.75,
+        -21.0
+      ],
+      "ground_y": 0.0,
+      "top_y": 5.5
+    },
+    {
+      "node": "RoomWallR",
+      "size_xyz": [
+        0.3,
+        5.5,
+        12.3
+      ],
+      "position_xyz": [
+        5.15,
+        2.75,
+        -21.0
+      ],
+      "ground_y": 0.0,
+      "top_y": 5.5
+    },
+    {
+      "node": "RoomBack",
+      "size_xyz": [
+        10.6,
+        5.5,
+        0.3
+      ],
+      "position_xyz": [
+        0.0,
+        2.75,
+        -27.15
+      ],
+      "ground_y": 0.0,
+      "top_y": 5.5
+    },
+    {
+      "node": "RoomFrontL",
+      "size_xyz": [
+        3.0,
+        5.5,
+        0.3
+      ],
+      "position_xyz": [
+        -3.5,
+        2.75,
+        -14.85
+      ],
+      "ground_y": 0.0,
+      "top_y": 5.5
+    },
+    {
+      "node": "RoomFrontR",
+      "size_xyz": [
+        3.0,
+        5.5,
+        0.3
+      ],
+      "position_xyz": [
+        3.5,
+        2.75,
+        -14.85
+      ],
+      "ground_y": 0.0,
+      "top_y": 5.5
+    }
+  ],
+  "references_retrieved_hashed_and_inspected": [
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_a.png",
+      "sha256": "fd48d679468af3eec489d6f0cdd36934e573fba1b3332395bc9a2a7c517c283e",
+      "git_blob": "aa725d266cdaa5528abd1a5ee4b121f5ca6ab42f"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_b.png",
+      "sha256": "5c74210307c9c4c1c107b27864d60957c39c91c9721c8441110a18c810c8c47f",
+      "git_blob": "bba1ce619c580dc931e1ff287ff057f85bb6a403"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Gameplay view/wi_002_v2_angle_c.png",
+      "sha256": "b90c07718e4ef845fe6e51c5847c863d2bc7e7071fb067212293ef35fda3dcf5",
+      "git_blob": "2f5930c2642b196ee64ca7a59d15bfed9a20afec"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_a.png",
+      "sha256": "42a374179355f8a538b8645552867918e14ebe7b752ec6eac8a1b548e834d6ee",
+      "git_blob": "f5ef9b0cbfa0c757290eb2870320fadf84bc90c0"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_b.png",
+      "sha256": "07ebdbc5099c57e7e04b07629e8c59590e403c354c329c05c4c79229f3321e03",
+      "git_blob": "c069fb7c0df7d25c1da482b26e8bc706acc94b46"
+    },
+    {
+      "path": "assets/concept_art/environments/s02_wing_light/Key art/wi_001_v2_angle_c.png",
+      "sha256": "ded04ed38a910bbadddaec4762463a84d0cf6d4046852090226c53df18130d78",
+      "git_blob": "23fd00472de93e20e93289839e75dc067afb316b"
+    }
+  ],
+  "findings": [
+    "10 x 12 m rectangular playable floor is confirmed independently by body size and 120 unit-tile positions.",
+    "Five safety guards end at Y=5.5; authored wall/pier heights are 4/4.12 m.",
+    "Six current room views show tall upper bays/gallery and sky-facing curved ribs.",
+    "Exact roof height/corner coverage/upper transitions require a bounded construction study before modeling."
+  ],
+  "limits": "No authored Blender/GLB, runtime roof, geometry construction/physics/visual acceptance, new LFS upload or final ARCH-007 acceptance."
+}

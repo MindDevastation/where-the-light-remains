@@ -1,0 +1,91 @@
+{
+  "captures": [
+    {
+      "draw_calls": 25,
+      "file": "room_cold_low.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "room_cold",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 15,
+      "file": "hearth_close_cold_low.png",
+      "hearth_visible": false,
+      "light_color": [
+        0.430000007152557,
+        0.649999976158142,
+        1.0
+      ],
+      "name": "hearth_close_cold",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 27,
+      "file": "room_warm_low.png",
+      "hearth_visible": true,
+      "light_color": [
+        1.0,
+        0.680000007152557,
+        0.360000014305115
+      ],
+      "name": "room_warm",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 18,
+      "file": "hearth_close_warm_low.png",
+      "hearth_visible": true,
+      "light_color": [
+        1.0,
+        0.680000007152557,
+        0.360000014305115
+      ],
+      "name": "hearth_close_warm",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 36,
+      "file": "emitter_close_low.png",
+      "hearth_visible": true,
+      "light_color": [
+        1.0,
+        0.680000007152557,
+        0.360000014305115
+      ],
+      "name": "emitter_close",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "hero",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

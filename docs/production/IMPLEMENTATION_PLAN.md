@@ -2,6 +2,21 @@
 
 Status: **started**.
 
+## Latest bounded Flame and ceiling inputs — 2026-10-06
+
+- [x] Replace the Hearth sphere with local three-tongue VFX: shared 240-triangle
+  opaque geometry, quiet visibility, pause and cleanup; no puzzle/save changes.
+  161 assertions, normal startup and ten inspected Low/Medium views pass.
+  See `WING01_HEARTH_FLAME.md` and `hearth-flame-acceptance-1`.
+- [x] Audit ceiling inputs against actual floor/guard resources and six pinned
+  inspected room images; `WING01_CEILING_INPUTS.md` records the required upper
+  structure transitions. This is not an authored ceiling/ARCH-007 completion.
+- [ ] Upper-support/rib modeling and LFS publication require restoring the
+  protected write credential lost in workspace maintenance. Code/evidence
+  publication uses the authenticated connector fallback and remains available.
+- [ ] Remaining beam/Star VFX, full room/VS1, audio and physical target GPU.
+
+
 ## Latest room models — 2026-10-05
 
 - [x] Complete original 3 m front walls; actual LFS upload/retrieval, 171

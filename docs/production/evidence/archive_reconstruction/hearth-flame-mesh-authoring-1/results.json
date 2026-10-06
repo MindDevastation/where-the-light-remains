@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-06T01:08:27.139129+00:00",
+  "scope": "Reproducible Godot-native opaque VFX mesh authoring; imported runtime/lifecycle/render checks are separate.",
+  "triangles_per_mesh": 80,
+  "source_hashes": {
+    "tools/create_hearth_flame_mesh.gd": "9d55e0a70ffcbc3c55d245e4f2118ac15fd8a14b33172df43cca50b4a9408c6d",
+    "game/art/vfx/hearth_flame_mesh.tres": "accdd8c29501f7e99b13abc89499a11173cf98f6b5e843154a20bf247032a42e",
+    "docs/production/evidence/archive_reconstruction/hearth-flame-mesh-authoring-1/authoring.complete.log": "6e53a42f490017f2400c986378713d86a1aa74de0f7eb30032771e9ea589c775"
+  },
+  "generator_verification_note": "Initial Python log-verification used bytes against text after the successful generator completed; corrected to text and verified the saved complete log. No generator/runtime failure."
+}

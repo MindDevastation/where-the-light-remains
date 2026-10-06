@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-06T01:10:38.349721+00:00",
+  "scope": "Minimal current graphical capability only: authenticated Xvfb TCP, valid/rejected auth clients, Vulkan Forward+, nonempty rendered viewport.",
+  "source_hashes": {
+    "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205",
+    "tools/setup_linux_graphics.py": "8f282a4f3892d56ada105792057b0d5ac021285c2ae9830c497d8d6a0d0209e2",
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "docs/production/evidence/archive_reconstruction/hearth-flame-capability-1/capability.complete.log": "1c7ef27605243fe8ac1448da526c01e4906cd3e04ce2e30e152a1608123d859f"
+  },
+  "private_project_removed": true,
+  "performance": "Software Vulkan lavapipe; not target-GPU profiling."
+}
