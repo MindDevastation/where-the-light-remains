@@ -2,7 +2,9 @@
 
 Recovered actual remote1f38cb4 / prior production STABLE1419f35. Dust STABLE
 fa9006e and strict inspect WIPb1a09ca are independently remote confirmed;
-resolve final inspect STABLE/HEAD from evidence/checkpoints/continuation_20261007.jsonl.
+inspect STABLE2730e0a11260e7b09de789947c755701325b09c5 is independently
+remote confirmed. Resolve final receipt HEAD from
+evidence/checkpoints/continuation_20261007.jsonl.
 No rollback, main write, force push or repeat full185-row reconciliation.
 
 ARCHIVE_DUST_MOTES_ACCEPTANCE.md: VFX-006 Hub/S02 native dust,602 current scoped
