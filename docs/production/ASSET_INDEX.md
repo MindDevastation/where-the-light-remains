@@ -381,3 +381,9 @@ Original lower Hub/exterior: s01_hub_wall.blend,sm_s01_hub_wall.glb(6708tri,
 five shared surfaces),eight original-body instances. Source/import/pivot/shading/
 clearance,515 scoped checks/16 inspected native images/2 independent LFS payloads:
 S01_HUB_WALL_ACCEPTANCE.md. Existing accepted fronts/Wing walls unchanged.
+
+Original Hub floor: s01_hub_floor.blend,sm_s01_hub_floor.glb(6928tri,Stone/Brass),
+unit root within unchanged10m floorbody; authored corridor ownership notch,
+world stone/inlay tops.002/.0035 below original channels/core/approach.248 scoped
+checks/16 inspected native images/2 fresh LFS payloads: S01_HUB_FLOOR_ACCEPTANCE.md.
+Full representative lighting/style still PARTIAL, existing Wing tiles unchanged.

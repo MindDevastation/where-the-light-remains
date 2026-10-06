@@ -1,3 +1,12 @@
+# Current Hub floor delta
+
+S01_HUB_FLOOR_ACCEPTANCE.md:6928tri source/GLB,two shared surfaces,248 scoped
+checks,16 individually inspected native images,2 fresh LFS payloads used. Original
+floor/corridor/channel/core/approach ownership retained; full lighting/style still
+PARTIAL due observed cool pale fill. Counts25 ACCEPTED/35 PARTIAL/17 MISSING.
+
+---
+
 # Current lower wall delta
 
 S01_HUB_WALL_ACCEPTANCE.md: one6708tri two-sided master/eight original bodies,

@@ -1,3 +1,20 @@
+# Next bounded block — shared existing five-gate visual mesh
+
+Hub floor geometry accepted in S01_HUB_FLOOR_ACCEPTANCE.md, full lighting/style
+still PARTIAL. ARCH-014 requires five instances/shared geometry distinguished by
+existing state light/labels, not five models. Original Barrier(0,1.6,0), Box3.4x
+3.2x.24, gate MeshInstance3D binding valid before tree insertion, opening.45s/
+height3.3, original logical immediate disable/quiet restoration/ghost ownership
+must remain. GLB subresource cold-load probe rejected direct ::ArrayMesh links;
+use a bounded immutable local GLB-to-Mesh adapter initialized before tree entry,
+without changing ArchiveGate.gd or scene/save/puzzle API. New unit mesh within
+original body, three aged timber/iron/brass surfaces; no new emblem/narrative clue.
+Canonical per-route emblem specificity remains unclaimed unless existing canon
+supplies it. After gate coverage, observed pale/cool scene fill requires lighting
+pass/regression of all affectedS00/S01/S02. No old art regeneration, VS1/S03 PASS.
+
+---
+
 # Next bounded block — production Hub floor within existing cylinder
 
 S01_HUB_WALL_ACCEPTANCE.md accepted eight lower wall visual replacements; no

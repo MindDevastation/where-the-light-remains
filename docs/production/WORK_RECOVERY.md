@@ -1,3 +1,22 @@
+# Active boundary — original Hub production floor geometry accepted, 2026-10-06
+
+Walls stable401dd6f/receipt1f7fd200 retained. Current -v2 floor6928tri/two surfaces,
+source/GLB:248 scoped checks/startup,16 individually inspected native images and
+2 independent LFS payloads PASS;201 prior identities unchanged. Original10m
+cylinder/plane, Wing corridor notch and channel/core/approach clearance retained.
+S01_HUB_FLOOR_ACCEPTANCE.md and hub-floor-acceptance-20261006 are current geometry
+authority; full visual lighting/style PARTIAL, observed pale/cool fill not approved.
+Current25 ACCEPTED/35 PARTIAL/17 MISSING among77,185-row reconciliation retained.
+Next missing ARCH-014 five instances/shared gate geometry within original3.4x3.2x
+.24 body; retain original pre-tree MeshInstance bindings, ghost/open/save/state.
+Then representative warm/cool practical lighting scope using accepted lanterns;
+no accepted asset regeneration. Upper infill/windows/backdrop/hero/dressing/audio/
+gallery/physical GPU/full VS1 OPEN; S03 blocked, owner escalation resolved.
+Resolve actual latest remote stable/receipt. Supervised600s checkpoints,
+no unattended owned work after session end.
+
+---
+
 # Active boundary — eight original lower wall skins accepted, 2026-10-06
 
 Upper dome stable29e795a/receiptb0f4649 retained. Current -v2 lower wall6708tri,

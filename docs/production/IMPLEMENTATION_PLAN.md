@@ -1,3 +1,13 @@
+# Latest bounded checkpoint — original Hub floor geometry accepted
+
+hub-floor-acceptance-20261006:248 scoped assertions/startup,16 inspected native
+images,2 independently retrieved/used LFS payloads;201 prior identities retained.
+Full lighting/style explicitly PARTIAL. Next missing shared five-gate mesh with
+original binding/ghost/state contracts, then representative practical warm/cool
+lighting. Full visuals/audio/gallery/physical GPU/VS1 OPEN; S03 blocked.
+
+---
+
 # Latest bounded checkpoint — original lower wall skins accepted
 
 hub-wall-acceptance-20261006:515 scoped assertions/startup,16 inspected native
