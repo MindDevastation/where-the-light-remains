@@ -1,4 +1,6 @@
-[gd_scene load_steps=88 format=3]
+[gd_scene load_steps=89 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_core_pedestal.glb" id="CorePedestal"]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -269,10 +271,8 @@ material_override = SubResource("HubFloorStone")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Floor"]
 shape = SubResource("HubShape")
 
-[node name="Mechanism" type="MeshInstance3D" parent="Hub"]
+[node name="Mechanism" parent="Hub" instance=ExtResource("CorePedestal")]
 position = Vector3(0, 0.7, 0)
-mesh = SubResource("CoreMesh")
-material_override = SubResource("Metal")
 
 [node name="Finale" type="Node3D" parent="Hub"]
 position = Vector3(0, 0.95, 3)
