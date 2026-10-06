@@ -1,3 +1,12 @@
+# Escalation resolved — 2026-10-06
+
+Owner confirmed the requested Extra High/highest switch. The §9 architectural
+reasoning BLOCKER below is historical and resolved; proceed with bounded
+S00_S15_EXTERIOR_INTERFACES.md. Canonical design/gameplay/save, audio choice and
+physical GPU requirements remain; no structural-preview or full VS1 promotion.
+
+---
+
 # Next mandatory boundary — 2026-10-06
 
 Full185-row reconciliation is stable baseline, with later delta acceptance in

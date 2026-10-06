@@ -1,3 +1,13 @@
+# Active bounded block — S00/S15 portal and front facade
+
+Owner Extra High/highest confirmation resolves the previous reasoning blocker.
+S00_S15_EXTERIOR_INTERFACES.md fixes the original wall/door/rail/lantern envelopes
+and first original facade/crown family. Reconciliation remains accepted; no
+repeat universal-variant audit, old family regeneration, S15 gameplay or S03.
+Full shell/dome/backdrop/approach and complete Hub remain independent open scopes.
+
+---
+
 # Next boundary — reusable exterior/interface design audit
 
 The universal panel/fitting audit is complete in VS1_ART_RECONCILIATION.md:

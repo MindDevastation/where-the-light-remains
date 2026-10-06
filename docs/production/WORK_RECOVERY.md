@@ -1,3 +1,15 @@
+# Active boundary — S00/S15 architectural interface audit, 2026-10-06
+
+Recovered exact8d25e2e and597 sealed identities without old runtime preflights.
+Owner explicitly confirmed Extra High/highest; previous §9 reasoning BLOCKER
+resolved. Read S00_S15_EXTERIOR_INTERFACES.md for original entry/wall/rail/light
+contracts and first bounded facade/arch family. Source/GLB production acceptance
+is still pending, no exterior/VS1/S15 gameplay/S03 claim. Resolve newest WIP/
+stable/receipt from actual remote. Continue facade/crown then next bounded art,
+supervised600s remote-delta checkpoints, no unattended work at turn end.
+
+---
+
 # Latest boundary — local S00 spark and architectural escalation
 
 Recovered c186b4f exactly; full reconciliation stable f000a85/a6aeb0b. Continued
