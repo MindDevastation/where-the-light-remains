@@ -10,7 +10,7 @@ Historical folder-wide concept labels are not asset completion receipts.
 | S00-002 last spark | Functional guided sphere and timeline | Authored guided-mote presentation, VFX-002 |
 | S00-003 night lighting | Existing prologue lighting | Exterior night composition and practical art |
 | S00-004 rail camera | Actual timeline/pause/handoff smoke | Composition against completed exterior |
-| S00-005 entry lock | Functional interaction and physical door path | Generic lock/activation prop art |
+| S00-005 entry lock | Original bounded 848-triangle housing/bolt/keeper; automatic timed release, pause and quiet physical load | Full door/exterior composition and universal family adoption; see S00_DOOR_LOCK_ACCEPTANCE.md |
 | S01-001 central mechanism | Graybox body/two rings, seven-second awakening | PROP-001/002 complete hero core and console; no ring-count inference from concepts |
 | S01-002 pickup lens | Original bounded PROP-003 in current stage | Bounded acceptance recorded separately; full Hub composition remains open |
 | S01-003 lens socket | Original open socket and installed lens in current stage | Bounded acceptance recorded separately; no new interaction sequence |

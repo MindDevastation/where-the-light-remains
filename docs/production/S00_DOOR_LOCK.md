@@ -32,7 +32,7 @@ review; it emits no events and does not mutate elapsed/progression.
 
 Require actual Blender reopen/manifold/positive volume/metric UV/unit shading,
 actual guide bore rays and bolt/keeper clearance. Validate imported material
-identity, unit transforms, attached fitting travel, floor/capsule/camera path,
+identity, unit transforms, attached fitting travel, physical door/camera path,
 pause during retraction, first-spark single event and actual physical checkpoint
 quiet reload. Native Low/Medium rail poses and clearly labelled supplemental
 near-detail camera views use shipping lights/materials, protected slots and no

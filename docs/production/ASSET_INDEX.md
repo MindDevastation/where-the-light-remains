@@ -322,3 +322,11 @@ including physical checkpoint quiet reload and activation retry.325 current
 assertions/startup,14 inspected Low/Medium views and independent download/use
 of all5 LFS payloads: S01_HUB_CONTROLS_ACCEPTANCE.md. PROP-004 skins/PROP-006
 second shape remain PARTIAL; no PROP-005 dial or full console/Hub acceptance.
+
+S00 original door activation fitting: assets/3d/blender/archive_kit/s00_door_lock.blend
+and game/art/meshes/archive_kit/sm_s00_lock_{housing,bolt,keeper}.glb. Three
+parts848 triangles, existing Iron/Brass, two wrappers attached to original
+sliding leaves. Timed cosmetic release and quiet completed restoration only.
+378 current assertions/startup,18 inspected native pose images and independent
+retrieval/use of four LFS files: S00_DOOR_LOCK_ACCEPTANCE.md. Full exterior/door
+composition and global generic variant adoption remain open.

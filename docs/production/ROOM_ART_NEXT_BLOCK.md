@@ -1,22 +1,21 @@
-# Next bounded block — S00 activation hardware audit
+# Next bounded block — remaining generic leaf variants audit
 
-S01 lens/socket and now panel/activation lever have bounded acceptance:
-S01_STARTING_LENS_ACCEPTANCE.md and S01_HUB_CONTROLS_ACCEPTANCE.md. Latest
-four fitting meshes total1940 triangles, two shared surfaces each; actual
-cosmetic poses retain original targets, sequence, awakening and save behavior.
-325 current assertions/startup, fourteen inspected Low/Medium player images,
-independent retrieval/use of all five LFS payloads.147 prior art/module source
-identities unchanged. Generic panel skins/second lever shape remain PARTIAL.
+S01 lens/socket and panel/lever plus S00 door activation fitting have bounded
+acceptance. Latest S00 original housing/bolt/keeper848 triangles, existing Iron/
+Brass, automatic cosmetic release with unchanged original clock and physical
+leaf colliders.378 current assertions/startup,18 inspected native pose images,
+independent empty-store retrieval/reopen/import/use of all four LFS payloads.
+See S00_DOOR_LOCK_ACCEPTANCE.md; no full exterior/door or universal family claim.
 
-Next, inspect S00-005 lock/activation hardware under the canonical prologue
-and existing timing/target contract, considering reuse of generic fittings.
-Do not invent new player input for the realtime prologue or rebuild exterior/
-core/rotunda architecture as leaf-prop execution. Full Hub console composition,
-mounting/lighting and universal variant coverage remain open.
+Next reconcile PROP-004 panel skin variants and remaining generic handle/fitting
+coverage with established target envelopes and required rows. The S00 bolt now
+provides a second bounded mechanism shape; validate reuse before global adoption.
+Do not infer new player interactions or redo complete core/rotunda/exterior as
+ordinary leaf execution. Full Hub mounting/console/lighting remains open.
 
-Wing I walls/floor/roof/beam/books/practicals/rug retain bounded acceptance;
-SLICE_ART_INVENTORY.md records remaining required S00/S01/S02 coverage. Full
-ARCH/VS1, gallery, authored audio selection, physical target GPU and S03 remain
-open. Checkpoint every finished stage immediately; supervise remote-delta
-snapshots/remote SHA verification within fifteen active minutes. No unattended
-process or new work-window duration is inferred from historical sessions.
+Wing I walls/floor/roof/beam/books/practicals/rug retain acceptance and exact
+identities. SLICE_ART_INVENTORY.md records remaining S00/S01/S02 coverage.
+ARCH/VS1/gallery/authored audio/physical target GPU/S03 remain open. Supervise
+remote-delta checkpoint cadence within15 active minutes, pause evidence writers
+while collecting, immediately publish finished stages, stop loop at turn end.
+No unattended process or new work-window duration inferred from old sessions.

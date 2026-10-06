@@ -20,6 +20,10 @@ historical active-window/environment notes below.
   proved too large for live cadence. Actual staged/unstaged/LFS recovery, remote
   advancement and publication/refusal fixtures pass; old full archive tests pass.
   Tooling source: `f59c385`; accepted game/art bytes unchanged.
+- [x] Original S00-005 bolt/housing/keeper,848 triangles, unchanged automatic
+  prologue/collider/save contract;378 assertions/startup,18 inspected Low/Medium
+  pose views and independent retrieval/use of four LFS payloads. See
+  `S00_DOOR_LOCK_ACCEPTANCE.md`; full exterior/door composition remains open.
 - [ ] Reconcile the remaining mandatory S00/S01/S02 art against canonical tables
   and bounded acceptance receipts before selecting the next original asset family.
 - [ ] Complete authored audio, full gallery/art review and physical target-hardware
@@ -520,4 +524,4 @@ PASS. Cosmetic phase poses include real E input and physical checkpoint quiet
 reload; original sequence/timers/save schema preserved.147 prior art/module
 identities unchanged. See S01_HUB_CONTROLS_ACCEPTANCE.md. Universal variants,
 full Hub console/mounting/lighting/architecture and full visual gate remain open.
-Main unchanged; next bounded audit is S00 activation hardware.
+Main unchanged; S00 activation fitting now has bounded acceptance; next audit is remaining universal leaf-prop skins/variants.

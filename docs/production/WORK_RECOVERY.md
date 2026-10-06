@@ -1,3 +1,28 @@
+# Latest confirmed boundary — S00 activation fitting, 2026-10-06
+
+Branch feature/04-archive-gameplay/resume-2026-10-06, recovered from verified
+44adf4f without replaying accepted environment/art preflights. Candidate880707e
+was independently confirmed remotely after a55s push timeout; acceptance and
+final receipt tip are resolved from newest journal/remote after continuation.
+
+Original housing/bolt/keeper848 triangles, Iron/Brass, editable source plus
+three GLBs. Cosmetic release1.5..2s follows existing automatic clock; original
+spark/opening/rail/handoff/collision/save/audio preserved.378 current assertions,
+startup,18 individually inspected Low/Medium native poses and independent empty-
+store download/reopen/import/use of four payloads PASS. Scope/hash evidence in
+S00_DOOR_LOCK_ACCEPTANCE.md and lock-acceptance-20261006. Previous art/modules
+compare unchanged; full exterior/door composition and night lighting remain open.
+
+Next bounded audit: universal panel skins and remaining fitting/handle variant
+coverage against existing target contracts. Second generic mechanism shape now
+exists as this bolt; universal family adoption is not claimed. Keep full Hub
+core/console/rotunda, S00 exterior, gallery/authored audio/physical GPU/ARCH/VS1/
+S03 open. Supervise remote-delta checkpoints every600s in live work and pause
+writers during collection. Stop coordinator at turn end; no unattended timer
+or new3–4h window inferred from historical work windows.
+
+---
+
 # Latest confirmed boundary — S01 panel/lever, 2026-10-06
 
 Working branch: `feature/04-archive-gameplay/resume-2026-10-06`. Started from
