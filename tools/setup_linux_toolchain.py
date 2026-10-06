@@ -62,9 +62,10 @@ for name, url, expected, folder, binary in packages:
                     raise RuntimeError('Unsafe archive member')
             package.extractall(destination)
     else:
-        # Archives are local and checksum-verified. Seekable access also avoids
-        # prematurely exhausted member streams observed in this runtime.
-        with tarfile.open(archive, mode='r:*') as package:
+        # Consume each member sequentially and verify the installed bytes. Large
+        # buffered/native writes have produced truncated files on this managed
+        # filesystem despite reporting success; bounded raw writes are reliable.
+        with tarfile.open(archive, mode='r|*') as package:
             for member in package:
                 safe = tarfile.data_filter(member, str(destination))
                 if not safe.isfile():
@@ -73,20 +74,31 @@ for name, url, expected, folder, binary in packages:
                 target = destination / safe.name
                 target.parent.mkdir(parents=True, exist_ok=True)
                 temporary = target.with_name(target.name + '.install-part')
-                with package.extractfile(member) as source, temporary.open('wb') as output:
-                    # This managed filesystem can return a short write. Consume
-                    # the whole block before requesting the next archive block.
-                    while block := source.read(1024 * 1024):
-                        pending = memoryview(block)
-                        while pending:
-                            written = output.write(pending)
-                            if not written:
-                                raise RuntimeError(f'No extraction progress: {member.name}')
-                            pending = pending[written:]
-                    output.flush()
-                    os.fsync(output.fileno())
-                if temporary.stat().st_size != member.size:
+                digest = hashlib.sha256()
+                count = 0
+                descriptor = os.open(temporary, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, safe.mode)
+                try:
+                    with package.extractfile(member) as source:
+                        while count < member.size:
+                            block = source.read(min(65536, member.size - count))
+                            if not block:
+                                raise RuntimeError(f'Incomplete archive member: {member.name}')
+                            digest.update(block)
+                            pending = memoryview(block)
+                            while pending:
+                                written = os.write(descriptor, pending)
+                                if written <= 0:
+                                    raise RuntimeError(f'No extraction progress: {member.name}')
+                                count += written
+                                pending = pending[written:]
+                    os.fsync(descriptor)
+                finally:
+                    os.close(descriptor)
+                if count != member.size or temporary.stat().st_size != member.size:
                     raise RuntimeError(f'Incomplete extracted file: {member.name}')
+                with temporary.open('rb') as installed:
+                    if hashlib.file_digest(installed, 'sha256').digest() != digest.digest():
+                        raise RuntimeError(f'Extracted file checksum mismatch: {member.name}')
                 temporary.chmod(safe.mode)
                 os.replace(temporary, target)
     executable = destination / binary

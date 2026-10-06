@@ -1,3 +1,29 @@
+# Active 3–4 hour session — 2026-10-06 03:06 UTC
+
+Start from confirmed remote receipt `884335c216f4122bcccc4846f9497a78a837d7d1`.
+The live supervised checkpoint coordinator prepares snapshots every ten minutes
+to meet the owner's fifteen-minute upload cadence. Immediate stable checkpoints
+follow completed stages; then continue the next stage until the authorized
+session ends. Actual timings belong to `evidence/checkpoints/development.jsonl`;
+the coordinator does not survive a finished chat turn.
+
+All 17 existing runtime GLBs and the accepted ceiling Blender source were
+recovered with exact committed LFS size/SHA-256 checks. The unchanged pinned
+tool restorer exposed truncated Blender files: buffered extraction failed its
+size check, and native tar reported success with a truncated executable.
+The revised restorer consumes sequential archive members with bounded raw
+64KB writes, checks actual byte counts and SHA-256 readback before replacement.
+Its complete cached-archive restoration passes Godot 4.7.2, Blender 4.5.14 LTS,
+GitHub CLI 2.101.0 and Git LFS startup. A real Blender save/export and current
+authenticated TCP-Xvfb nonempty Vulkan viewport pass in `toolchain-recovery-0306`.
+The archive pins were not changed. This is environment recovery, not new art or
+physical target GPU acceptance. Protected authentication remains outside Git.
+
+Next: a dimensioned isolated dome coverage brief, additional meridian members,
+curved glass and a local night backing; review actual assets before integration.
+
+---
+
 # Latest recovery boundary — 2026-10-06 isolated ceiling sample completed
 
 Recover the newest remote tip of

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-06T03:18:53.208704+00:00",
+  "scope": "Current pinned tool restoration, Blender CLI export and authenticated TCP-Xvfb nonempty Forward+ viewport; no gameplay/art acceptance or physical target performance claimed.",
+  "source_hashes": {
+    "tools/setup_linux_toolchain.py": "454a061db53cc428a6358522e315bece8baecbaceaf3ae5b80eee0e6d41d25ba",
+    "tools/blender_cli_probe.py": "600ccc2f84781afff9fc20a1df8a58c56937e1e26dc8c11250972b8b24f1f4ab",
+    "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205",
+    "tools/setup_linux_graphics.py": "8f282a4f3892d56ada105792057b0d5ac021285c2ae9830c497d8d6a0d0209e2",
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "docs/production/evidence/archive_reconstruction/toolchain-recovery-0306/graphics-capability.log": "308b7dc78dadf4344704e59264f8d56f6b4ef9b79f9a93b5f4668bdbbc4de064",
+    "docs/production/evidence/archive_reconstruction/toolchain-recovery-0306/asset-recovery.json": "4e3e58ac1bfbc0c1a1a23892c88f849e3cfffe963d00865179dddf01da3cbf98",
+    "docs/production/evidence/archive_reconstruction/toolchain-recovery-0306/blender-capability.log": "a8445b832d242f1e7e475f76307d78a07d4b9e6ae2ae1d6d540f151b6997d5ef",
+    "docs/production/WORK_RECOVERY.md": "dd78db8afa97bd1d71aef8103fc8fc57a85f9c60f87a980cc6a730ea06822359",
+    "docs/production/evidence/archive_reconstruction/toolchain-recovery-0306/restorer.log": "22a7c77f884ea8febfdda9c13ed9fe1027d474fe2e5abc807fbaaebda9fccdf9",
+    "docs/production/evidence/archive_reconstruction/.gitattributes": "deea8c2ce014eaac75930d485bddbb9299fa26949d6dae2bff01103af383d930"
+  },
+  "commands": {
+    "blender_exit": 0,
+    "graphics_exit": 0
+  },
+  "tool_archives": {
+    "gh_2.101.0_linux_amd64.tar.gz": "9bca2d1c16825f109907a23307628a2f0698fbf99662b73a5cf0b020293072b8",
+    ".blender-4.5.14-linux-x64.tar.xz.part.vftErS": "1af1e0b9d941f138d6adb16a743d3fc29526e4f8e1467e5ffd1a5eecc8810ae4",
+    "blender-4.5.14-linux-x64.tar.xz": "9ba871ff2ecd36526b77432745980b7e6664ecd0c7ca11c48849073dcfe06da3"
+  },
+  "tools": {
+    "blender": "050c02562f81fe80ba616a80198fa02d381e60f8b61b8d39add881f4bca0d7d8",
+    "gh": "ea857a3f0f7d4276cf5848b236542c5048e2eaa7bdd1b6ddec238f8793e74bff",
+    "godot": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e"
+  },
+  "repair": "Raw 64KB writes consume actual os.write counts; member size and SHA256 readback before replacement. Previous buffered Python extraction failed size check, native tar reported success on truncated binary. Pinned archive hashes unchanged.",
+  "restoration_exit_code": 0,
+  "checkpoint_note": "Stable preparation rejected literal trailing spaces in Blender stdout; raw log preserved. Root attribute was overridden by nested evidence rules; corrected at archive_reconstruction scope. No commit/push occurred during two rejected attempts."
+}
