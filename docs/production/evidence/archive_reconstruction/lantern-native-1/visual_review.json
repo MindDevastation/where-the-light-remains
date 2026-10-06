@@ -1,0 +1,382 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-06T04:16:07.214053+00:00",
+  "images": [
+    {
+      "draw_calls": 46,
+      "file": "practical_entrance_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_entrance",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "dd2c408438291072673343348a9cd3dfd96c0924b976e1372fdaebeac7cfa9b9",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 43,
+      "file": "practical_hero_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_hero",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "a50403ac0c1be7a960b538092e0b3009a72aac7a1034571f74fd7b0e69a59b6e",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 18,
+      "file": "practical_left_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_left",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "87a3fab05551ee1ec3993fbacf20806a01d1165a577c89352473e98a7c783679",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 18,
+      "file": "practical_right_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_right",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "acee2b98179af7bfbd2d2e130ec4762649724072866429121796b0eb1e875b39",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 24,
+      "file": "practical_roof_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_roof",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "6377fc950badb0640ea7ecc6ffd58c9e40620801a4a0d45271fe08e3f8943aee",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 69,
+      "file": "practical_reverse_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_reverse",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "753deabc014945156e68427959c0f16e5add9de2bf4e556a11227a6433db9254",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 45,
+      "file": "practical_warm_low.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "practical_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.938978314399719,
+      "star_visible": true,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "eeec8a8760f8147a9951c1c27bdc929e3fdae72753664444ad8f2c2a3ad2a60b",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 19,
+      "file": "practical_hearth_low.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "practical_hearth",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.867604732513428,
+      "star_visible": true,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "9c1f200e30a1ae9404b4b6d062a471cf46e7919d0cc50b4710a4d7e5236dde15",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 46,
+      "file": "practical_entrance_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_entrance",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "299e02a474b355124f1436f506a03c1fa0de461a3d37ddaf97b4d3d83baaa255",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 43,
+      "file": "practical_hero_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_hero",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "f2f02cd06a2aa7910f356471610ddfb12745520038f6b8b21bca1adec40660cd",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 18,
+      "file": "practical_left_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_left",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "a1a9593864dd4cdeb1a5ae4bbd528f74705261628fe1ff3d2abeb7908d8b626d",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 18,
+      "file": "practical_right_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_right",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "bb9902d2c4c233b087b83d778249c2ed6a1d0c9cfa713aafc82200d6864db588",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 24,
+      "file": "practical_roof_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_roof",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "fb02f8d6ce22506478311095c07632be58459046b903de469c3a3bbedfcd8bce",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 69,
+      "file": "practical_reverse_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_reverse",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "71e8963cdfc1dbcd958090b3502c43e4a3781453c22e162a387b3d1328fd673b",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 45,
+      "file": "practical_warm_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "practical_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.935180127620697,
+      "star_visible": true,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "dbcec366245bb52a6690ecc57528ca42843a94db527c52da07ebb907792b6053",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 19,
+      "file": "practical_hearth_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "practical_hearth",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.845003187656403,
+      "star_visible": true,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "4b36f833affdb7fd8558b820f66024bec84174df422d37bd61450cf603666351",
+      "individually_inspected": true
+    }
+  ],
+  "observations": [
+    "Both actual wall fixtures are mounted cleanly on existing wall panel centers, with clear panes/gold static core and restrained warm pools.",
+    "Entrance and reverse views preserve central mechanism/return doorway; new warm pools give local contrast without warming the whole cold room.",
+    "Hero beam and canonical Star/Flame remain readable through original quiet warm projection.",
+    "Roof has smooth coherent existing practical reflections; no reflection checker grid or new amber glare.",
+    "No new textures; measured calls 18..69 in these eight camera poses; software Vulkan counters are not target hardware FPS."
+  ],
+  "scope": "Sixteen individually inspected actual Low/Medium player images; bounded wall practical art/light only."
+}

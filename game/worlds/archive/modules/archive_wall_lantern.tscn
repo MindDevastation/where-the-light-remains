@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_archive_wall_lantern.glb" id="Art"]
+
+[node name="ArchiveWallLantern" type="Node3D"]
+metadata/asset_brief = "docs/production/ARCHIVE_WALL_LANTERN.md"
+
+[node name="Art" parent="." instance=ExtResource("Art")]
+
+[node name="Practical" type="OmniLight3D" parent="."]
+position = Vector3(0, 0, 0.23)
+light_color = Color(1, 0.55, 0.24, 1)
+light_energy = 1.25
+light_specular = 0.1
+shadow_enabled = false
+omni_range = 3.0

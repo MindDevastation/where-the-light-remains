@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "scope": "Bounded original wall practical; local art/light only, not a new required gameplay function",
+  "source": "assets/3d/blender/archive_kit/archive_wall_lantern.blend",
+  "stem": "sm_archive_wall_lantern",
+  "id": "lantern",
+  "joint": [
+    0,
+    0,
+    0
+  ],
+  "materials": {
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "glass": "res://art/materials/m_clear_glass.tres",
+    "gold": "res://art/materials/m_archive_emissive_gold.tres"
+  },
+  "material_order": [
+    "iron",
+    "brass",
+    "glass",
+    "gold"
+  ],
+  "bounds_min": [
+    -0.19,
+    -0.32,
+    0
+  ],
+  "bounds_max": [
+    0.19,
+    0.36,
+    0.37
+  ],
+  "triangle_ceiling": 1200,
+  "mount_axis": "+Z into room; pivot on wall face; Godot +Y up",
+  "placements": [
+    {
+      "name": "Left",
+      "position": [
+        -4.8,
+        2.8,
+        -21
+      ],
+      "yaw_degrees": 90
+    },
+    {
+      "name": "Right",
+      "position": [
+        4.8,
+        2.8,
+        -21
+      ],
+      "yaw_degrees": -90
+    }
+  ],
+  "light": {
+    "position": [
+      0,
+      0,
+      0.23
+    ],
+    "color": [
+      1,
+      0.55,
+      0.24,
+      1
+    ],
+    "energy": 1.25,
+    "range_m": 3,
+    "specular": 0.1,
+    "shadow_enabled": false
+  },
+  "references": [
+    {
+      "file": "wi_002_v2_angle_a.png",
+      "sha256": "fd48d679468af3eec489d6f0cdd36934e573fba1b3332395bc9a2a7c517c283e",
+      "git_blob": "aa725d266cdaa5528abd1a5ee4b121f5ca6ab42f"
+    },
+    {
+      "file": "wi_002_v2_angle_b.png",
+      "sha256": "5c74210307c9c4c1c107b27864d60957c39c91c9721c8441110a18c810c8c47f",
+      "git_blob": "bba1ce619c580dc931e1ff287ff057f85bb6a403"
+    },
+    {
+      "file": "wi_002_v2_angle_c.png",
+      "sha256": "b90c07718e4ef845fe6e51c5847c863d2bc7e7071fb067212293ef35fda3dcf5",
+      "git_blob": "2f5930c2642b196ee64ca7a59d15bfed9a20afec"
+    },
+    {
+      "file": "wi_001_v2_angle_a.png",
+      "sha256": "42a374179355f8a538b8645552867918e14ebe7b752ec6eac8a1b548e834d6ee",
+      "git_blob": "f5ef9b0cbfa0c757290eb2870320fadf84bc90c0"
+    },
+    {
+      "file": "wi_001_v2_angle_b.png",
+      "sha256": "07ebdbc5099c57e7e04b07629e8c59590e403c354c329c05c4c79229f3321e03",
+      "git_blob": "c069fb7c0df7d25c1da482b26e8bc706acc94b46"
+    },
+    {
+      "file": "wi_001_v2_angle_c.png",
+      "sha256": "ded04ed38a910bbadddaec4762463a84d0cf6d4046852090226c53df18130d78",
+      "git_blob": "23fd00472de93e20e93289839e75dc067afb316b"
+    }
+  ]
+}

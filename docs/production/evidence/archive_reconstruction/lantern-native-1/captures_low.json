@@ -1,0 +1,171 @@
+{
+  "captures": [
+    {
+      "draw_calls": 46,
+      "file": "practical_entrance_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_entrance",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 43,
+      "file": "practical_hero_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_hero",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 18,
+      "file": "practical_left_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_left",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 18,
+      "file": "practical_right_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_right",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 24,
+      "file": "practical_roof_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_roof",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 69,
+      "file": "practical_reverse_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "practical_reverse",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 45,
+      "file": "practical_warm_low.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "practical_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.938978314399719,
+      "star_visible": true,
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 19,
+      "file": "practical_hearth_low.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "practical_hearth",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.867604732513428,
+      "star_visible": true,
+      "texture_bytes": 27648512
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "practical",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_lantern.tscn" id="Lantern"]
+
+[node name="Wing01Practicals" type="Node3D"]
+
+[node name="Left" parent="." instance=ExtResource("Lantern")]
+position = Vector3(-4.8, 2.8, -21)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="Right" parent="." instance=ExtResource("Lantern")]
+position = Vector3(4.8, 2.8, -21)
+rotation_degrees = Vector3(0, -90, 0)

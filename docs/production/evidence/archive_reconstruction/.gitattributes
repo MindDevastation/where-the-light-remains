@@ -1,2 +1,5 @@
 **/*.log whitespace=-blank-at-eof
 toolchain-recovery-0306/*.log whitespace=-blank-at-eol,-blank-at-eof
+
+lantern-authoring-*/*.log whitespace=-blank-at-eol,-blank-at-eof
+lantern-retrieval-*/*.log whitespace=-blank-at-eol,-blank-at-eof

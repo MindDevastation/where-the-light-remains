@@ -1,0 +1,19 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/archive_wall_lantern.blend",
+      "bytes": 575183,
+      "sha256": "b326486030206cc8772b3010f8a8b3d30bcb77ced53ece687156a0abe979acfb"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_lantern.glb",
+      "bytes": 81164,
+      "sha256": "9598d00819f9c1bacc37390f02b6d677b8e9830a8ebad70b940dc1a6fe3c3096"
+    }
+  ],
+  "measurements": {
+    "triangles": 708,
+    "surfaces": 4
+  },
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}
