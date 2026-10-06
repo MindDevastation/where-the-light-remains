@@ -339,3 +339,9 @@ Only the leaf skin is accepted; ARCH-002 portal and full S00 exterior remain ope
 Full canonical reconciliation: VS1_ART_RECONCILIATION.md. Existing S02 focus wheel
 is actual bounded rotary hardware; historical PROP-005 not-produced wording does
 not justify making a duplicate wheel. Two bounded PROP-006 shapes now exist.
+
+S01 original lower housing: s01_core_pedestal.blend / sm_s01_core_pedestal.glb,
+2144 triangles/five shared surfaces. Original collider/center and ring clearance,
+240 current assertions/startup,16 inspected Low/Medium views and independent
+source/GLB retrieval/reopen/import/use: S01_CORE_PEDESTAL_ACCEPTANCE.md.
+PROP-001/002/S01-001 remain PARTIAL; full hero/orbit/console mounts remain open.

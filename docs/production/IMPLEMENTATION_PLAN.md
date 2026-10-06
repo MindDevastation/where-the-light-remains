@@ -529,3 +529,10 @@ reload; original sequence/timers/save schema preserved.147 prior art/module
 identities unchanged. See S01_HUB_CONTROLS_ACCEPTANCE.md. Universal variants,
 full Hub console/mounting/lighting/architecture and full visual gate remain open.
 Main unchanged; S00 activation fitting now has bounded acceptance; next audit is remaining universal leaf-prop skins/variants.
+
+## Working-branch checkpoint — S01 lower housing, 2026-10-06
+
+[x] Ordinary bounded lower housing inside unchanged core collider;240 current
+assertions,16 inspected Low/Medium images and two-payload independent LFS use.
+[ ] Complete hero3–5 orbit family/console mounts/Hub rotunda, architecture/light gate.
+Next eligible composition: one S00 warm practical from the accepted lantern.

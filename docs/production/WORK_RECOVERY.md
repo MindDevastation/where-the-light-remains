@@ -1,3 +1,16 @@
+# Latest boundary — S01 lower housing, 2026-10-06
+
+Continued from entrance stable f3eb644/receipt8083fcb, no accepted reauthoring.
+Original2144-triangle/five-surface lower plinth/axle:240 current assertions,
+16 inspected native Low/Medium images, independent empty-store source/GLB
+retrieval/reopen/import/use PASS. Seal core-pedestal-acceptance-20261006.
+Resolve newest stable/receipt from actual remote and development journal.
+Full core3–5-piece orbit/console/mounts/rotunda remains PARTIAL. Next eligible
+bounded composition is one warm S00 practical using accepted lantern, no new
+family/global lighting budget. S03/VS1/physical target GPU remain blocked.
+
+---
+
 # Latest boundary — complete reconciliation and S00 timber leaf, 2026-10-06
 
 Recovered exact remote c186b4f and584 acceptance hashes without old preflights.

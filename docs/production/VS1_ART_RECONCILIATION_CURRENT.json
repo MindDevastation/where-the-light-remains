@@ -332,8 +332,9 @@
       "canonical_notes": "Самый важный reusable hero asset",
       "required_for_vs1": true,
       "status": "MISSING",
-      "finding": "Hub hero remains primitive body/two TorusMesh rings. Canon requires complete mechanism/3–5 pieces; reference ring counts cannot silently redesign existing drivers.",
+      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
       "evidence_paths": [
+        "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md",
         "game/worlds/archive/archive_main.tscn"
       ]
     },
@@ -349,8 +350,9 @@
       "canonical_notes": "Анимация и финальная сборка",
       "required_for_vs1": true,
       "status": "MISSING",
-      "finding": "Hub hero remains primitive body/two TorusMesh rings. Canon requires complete mechanism/3–5 pieces; reference ring counts cannot silently redesign existing drivers.",
+      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
       "evidence_paths": [
+        "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md",
         "game/worlds/archive/archive_main.tscn"
       ]
     },
@@ -1423,8 +1425,10 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "MISSING",
-      "finding": "Full central hero core and console have no production source/GLB; two graybox ring primitives not production art.",
-      "evidence_paths": []
+      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
+      "evidence_paths": [
+        "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md"
+      ]
     },
     {
       "section": "Stage 1 — Центральная обсерватория «Пробуждение Архива»",
@@ -2918,5 +2922,6 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T10:50:39.624281+00:00"
+  "updated_at": "2026-10-06T10:50:39.624281+00:00",
+  "latest_delta": "Bounded S01 lower core housing accepted; full hero/core/console remains PARTIAL."
 }
