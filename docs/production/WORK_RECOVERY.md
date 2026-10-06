@@ -1,3 +1,20 @@
+# Active boundary — eight original lower wall skins accepted, 2026-10-06
+
+Upper dome stable29e795a/receiptb0f4649 retained. Current -v2 lower wall6708tri,
+source/GLB,five surfaces/eight original-body instances:515 scoped checks/startup,
+16 individually inspected Low/Medium PNG and2 independent LFS payloads PASS.
+198 prior identities unchanged. S01_HUB_WALL_ACCEPTANCE.md and hub-wall-acceptance-
+20261006 seal are authority; old authoring depth iteration excluded. Current
+25 ACCEPTED/35 PARTIAL/17 MISSING among77;185-row reconciliation retained.
+Next missing Hub floor skin within original10m cylinder, preserve Wing I tile
+cutout, accepted approach/core and five state-owned channels. Original portals/
+five blue graybox gates, upper infill/windows/backdrop/hero/light/dressing/audio/
+gallery/physical GPU/full VS1 open. Owner escalation resolved; S03 blocked.
+Resolve latest actual stable/receipt; no older snapshot/repeatedpreflight.
+Supervised600s remote-delta checkpoints; stop owned jobs at turn end.
+
+---
+
 # Active boundary — shared S00/S01 upper drum/dome accepted, 2026-10-06
 
 S00 portal/approach checkpoints retained; S01_HUB_DOME_ACCEPTANCE.md and current

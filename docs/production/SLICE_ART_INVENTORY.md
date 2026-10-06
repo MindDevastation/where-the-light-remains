@@ -1,3 +1,13 @@
+# Current lower wall delta
+
+S01_HUB_WALL_ACCEPTANCE.md: one6708tri two-sided master/eight original bodies,
+515 scoped assertions,16 inspected native images,2 fresh LFS payloads used.
+Existing 2/3/4m wall family retained; ARCH-001/003 remain PARTIAL, full floor/
+gates/infill/windows/backdrop/hero/lighting remain open. Current77-group counts:
+25 ACCEPTED/35 PARTIAL/17 MISSING;185 canonical rows unchanged.
+
+---
+
 # Current shared upper dome delta
 
 S01_HUB_DOME_ACCEPTANCE.md: source/four GLBs,414 scoped assertions,16 inspected

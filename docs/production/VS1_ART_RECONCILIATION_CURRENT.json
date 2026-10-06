@@ -13,11 +13,12 @@
       "canonical_notes": "Custom modular shell; тот же mesh в прологе и эпилоге",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Shared S00/S01 upper drum/dome is accepted production source/GLBs with original walls/routes/camera; complete lower shell, exterior infill/windows/backdrop and Hub floor/rotunda/hero/dressing remain open.",
+      "finding": "Accepted shared upper drum/dome and eight original two-sided lower wall skins; complete aperture/gate/upper facade infill/windows/backdrop and Hub floor/hero/dressing still PARTIAL.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
         "game/worlds/archive/archive_prologue.tscn",
-        "docs/production/S01_HUB_DOME_ACCEPTANCE.md"
+        "docs/production/S01_HUB_DOME_ACCEPTANCE.md",
+        "docs/production/S01_HUB_WALL_ACCEPTANCE.md"
       ]
     },
     {
@@ -51,11 +52,12 @@
       "canonical_notes": "Главный reuse-space финала",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Shared S00/S01 upper drum/dome is accepted production source/GLBs with original walls/routes/camera; complete lower shell, exterior infill/windows/backdrop and Hub floor/rotunda/hero/dressing remain open.",
+      "finding": "Accepted shared upper drum/dome and eight original two-sided lower wall skins; complete aperture/gate/upper facade infill/windows/backdrop and Hub floor/hero/dressing still PARTIAL.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
         "game/worlds/archive/archive_prologue.tscn",
-        "docs/production/S01_HUB_DOME_ACCEPTANCE.md"
+        "docs/production/S01_HUB_DOME_ACCEPTANCE.md",
+        "docs/production/S01_HUB_WALL_ACCEPTANCE.md"
       ]
     },
     {
@@ -73,7 +75,8 @@
       "finding": "2/3/4m authored wall family integrated in corridor and Wing I; broader Hub/exterior composition remains open.",
       "evidence_paths": [
         "docs/production/ASSET_INDEX.md",
-        "game/worlds/archive/wing01_room_presentation.tscn"
+        "game/worlds/archive/wing01_room_presentation.tscn",
+        "docs/production/S01_HUB_WALL_ACCEPTANCE.md"
       ]
     },
     {
@@ -1350,13 +1353,14 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Accepted leaves/lock/front facades/crown/practical/flat approach/guards and upper drum/dome; lower exterior shell, upper facade infill/windows, backdrop and whole night composition remain PARTIAL.",
+      "finding": "Accepted leaves/lock/front portal/practical/approach/guards/upper drum/dome and eight lower wall skins. Apertures/upper facade infill/windows/backdrop and full night consistency still PARTIAL.",
       "evidence_paths": [
         "docs/production/S00_ENTRANCE_LEAF_ACCEPTANCE.md",
         "docs/production/S00_DOOR_LOCK_ACCEPTANCE.md",
         "docs/production/S00_ENTRY_PORTAL_ACCEPTANCE.md",
         "docs/production/S00_APPROACH_ACCEPTANCE.md",
-        "docs/production/S01_HUB_DOME_ACCEPTANCE.md"
+        "docs/production/S01_HUB_DOME_ACCEPTANCE.md",
+        "docs/production/S01_HUB_WALL_ACCEPTANCE.md"
       ]
     },
     {
@@ -2934,8 +2938,8 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T15:27:07.293857+00:00",
-  "latest_delta": "Original shared upper drum/dome accepted:414 scoped assertions,16 inspected Low/Medium captures,5 independently retrieved/used LFS payloads; original bodies/apertures/FOV/state retained.",
+  "updated_at": "2026-10-06T15:42:23.896399+00:00",
+  "latest_delta": "Current -v2 eight lower wall skins accepted:515 scoped assertions,16 individually inspected native images,2 independent LFS payloads used; unchanged original wall/route/state and198 prior identities.",
   "vs1_counts": {
     "PARTIAL": 35,
     "ACCEPTED": 25,

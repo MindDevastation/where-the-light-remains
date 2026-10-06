@@ -1,3 +1,13 @@
+# Latest bounded checkpoint — original lower wall skins accepted
+
+hub-wall-acceptance-20261006:515 scoped assertions/startup,16 inspected native
+images,2 independently retrieved/used LFS payloads;198 prior identities retained.
+Next Hub floor skin on fixed original cylinder/plane, preserve accepted corridor
+and approach/core/channel ownership. Full visuals/audio/gallery/physical GPU/
+GATE-VS1 OPEN; S03 blocked.25 ACCEPTED/35 PARTIAL/17 MISSING among77 groups.
+
+---
+
 # Latest bounded checkpoint — shared upper drum/dome accepted
 
 hub-dome-acceptance-20261006:414 scoped assertions/startup,16 inspected native

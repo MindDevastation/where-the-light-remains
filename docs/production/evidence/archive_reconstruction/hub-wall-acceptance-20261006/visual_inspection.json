@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T15:42:23.642345+00:00",
+  "scope": "All sixteen actual Low/Medium new two-sided wall/exterior images individually viewed; lower floor, graybox gates, upper infill/backdrop and whole lighting/dressing remain open.",
+  "images": [
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_completed_hub_low.png",
+      "sha256": "79b668abf4c82ca13fb50b72ae9062f9d9aa595c380ba817857fc74e47f3feb4",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_completed_hub_medium.png",
+      "sha256": "d3a83a1389237d5ad6348065a3b113ae9134ceb58405ab68ea4f7350fcf91169",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s00_closed_low.png",
+      "sha256": "2f95568d954be2f11106b913ec49d15aa88ed2394f3de1e9bd8a83392f18c22f",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s00_closed_medium.png",
+      "sha256": "f261b5eddb36e9e94943ec7c0e80c661aebdc6859c5587230ea2df272981bfae",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s00_entry_low.png",
+      "sha256": "c309844e3fc5fd6f9726dc496eee7a55dab9558ced664ac2f3aae5fc4ec8cbce",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s00_entry_medium.png",
+      "sha256": "d04c2c281074bccb143cfa3828843e21670bbe79dbbea4d6cc90440a4022f48d",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s00_opening_low.png",
+      "sha256": "9290f9b5476f2e126e3466d9986e7cf8aa95c4a0e4d85067744162d105054f44",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s00_opening_medium.png",
+      "sha256": "3152e05079f44f976a862442e0549a63e2eef60b0c9854457214a0d187b5d54f",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s01_asleep_low.png",
+      "sha256": "9bbe7b6e983eee599cd270d32b5f30a20f34b6f96690d37bc2674259dd55f284",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s01_asleep_medium.png",
+      "sha256": "05311c138b1e907bcdf7de6d8c06036124569eae09749422ee48a74c9a2cafb7",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s01_awakened_low.png",
+      "sha256": "47da2b5e7ef90b2757bf91a885b3649210d8c579e40584bb56a061baf037556d",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s01_awakened_medium.png",
+      "sha256": "fa2a2e88cd06c3c1a62500ea522e92217dd44b07a96596741e18ccc0d9a3c869",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s01_detail_low.png",
+      "sha256": "4989d1831b4cd57f4df24ce37842941e86a8c1826ac4e273c9079841b6b346b5",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s01_detail_medium.png",
+      "sha256": "1322637608dd525eb7767cf4eac8320f56a37270f9fd7914ecd5199827ba14ad",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s01_join_low.png",
+      "sha256": "06cda274c993cca9cf81c53e5dcc021dcc98766d38d7d63e1fe2054ccdd09bde",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-wall-native-1/hub_wall_s01_join_medium.png",
+      "sha256": "c9170ea01e2a04c33c8a2a0040c9272bf0eacf2132b0a277aa12ed73f40db701",
+      "inspected": true
+    }
+  ],
+  "observations": [
+    "Timber fascia/post/skirting, stone seams and plain navy inset visible; same single master reused on eight existing bodies. Source rays additionally prove timber exposure on both faces.",
+    "Wall joins and original route edges read on both presets; five existing blue graybox gates remain separate missing family, not new wall acceptance.",
+    "Original asleep/awakened/completed control silhouettes/routes remain; untouched Hub floor still blue graybox and black backdrop remains unfinished.",
+    "Current cold ambient makes stone cool; whole representative warm/cool lighting pass remains open. No owner gallery, whole visual style or physical target-GPU approval."
+  ],
+  "renderer": "Forward+ / llvmpipe; not physical target GPU"
+}

@@ -376,3 +376,8 @@ Hub instances. New bounded static hub_night_sky.gdshader/m_hub_night_sky.tres;
 accepted palette/glass/Wing roof unchanged.414 scoped assertions/16 inspected
 native images/5 independent LFS payloads: S01_HUB_DOME_ACCEPTANCE.md. Full lower
 shell, infill/windows/backdrop/floor/hero/light remain open.
+
+Original lower Hub/exterior: s01_hub_wall.blend,sm_s01_hub_wall.glb(6708tri,
+five shared surfaces),eight original-body instances. Source/import/pivot/shading/
+clearance,515 scoped checks/16 inspected native images/2 independent LFS payloads:
+S01_HUB_WALL_ACCEPTANCE.md. Existing accepted fronts/Wing walls unchanged.

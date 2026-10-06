@@ -1,3 +1,17 @@
+# Next bounded block — production Hub floor within existing cylinder
+
+S01_HUB_WALL_ACCEPTANCE.md accepted eight lower wall visual replacements; no
+existing accepted family regeneration. Next missing Hub floor production skin,
+original radius10/height.3/body(0,-.15,0)/collision planeY0 unchanged. Preserve
+accepted corridor ownership X=[-2,2]/Z<=-8, approach skinY.006, core floor gap.006
+and five state-owned channel bottomsY.005; new surface must stay below them.
+S01 v2 radial observatory identity, worn stone with restrained noninteractive
+brass inlay, no clue/glyph/stair/puzzle/channel semantic change. Full aperture/
+upper infill/windows/backdrop/hero/light/dressing/audio/gallery/hardware remain
+open; GATE-VS1 OPEN/S03 blocked, owner architectural escalation resolved.
+
+---
+
 # Next bounded block — original Hub/exterior lower wall panels
 
 S01_HUB_DOME_ACCEPTANCE.md upper drum/dome accepted. Next original eight large
