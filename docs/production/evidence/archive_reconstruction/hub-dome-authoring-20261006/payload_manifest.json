@@ -1,0 +1,52 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s01_hub_dome.blend",
+      "bytes": 2126505,
+      "sha256": "c2f7d9b48762ff446c98e969208d6cde515c4bda8644f0903ff172c9e69f4868"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_dome_drum.glb",
+      "bytes": 1583316,
+      "sha256": "eaf342a4196e36b7c811fee1e8a62b8e4530b6ec8f8297c4128770540c54e404"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_dome_frame.glb",
+      "bytes": 296632,
+      "sha256": "bb68b2af5849907104c88c368c5bbe5c369362237bd862fc5121bd0b0975017d"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_dome_glass.glb",
+      "bytes": 340980,
+      "sha256": "441f5630a6dd34cbdee0fe878e7c3691a03016e3b0716f77d10ac45619f2b9df"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_dome_sky.glb",
+      "bytes": 339840,
+      "sha256": "ad08178e51dec6e6c11b2e3746e9ede7004e9233a1b7d6de793bfb9361bd7245"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s01_hub_dome_drum",
+      "triangles": 12492,
+      "surfaces": 4
+    },
+    {
+      "stem": "sm_s01_hub_dome_frame",
+      "triangles": 2784,
+      "surfaces": 3
+    },
+    {
+      "stem": "sm_s01_hub_dome_glass",
+      "triangles": 2396,
+      "surfaces": 1
+    },
+    {
+      "stem": "sm_s01_hub_dome_sky",
+      "triangles": 2396,
+      "surfaces": 1
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

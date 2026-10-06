@@ -1,4 +1,9 @@
-[gd_scene load_steps=92 format=3]
+[gd_scene load_steps=96 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb" id="HubDomeDrum"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb" id="HubDomeFrame"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb" id="HubDomeGlass"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb" id="HubDomeSky"]
 
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_entry_facade.glb" id="EntryFacade"]
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_entry_arch.glb" id="EntryArch"]
@@ -389,6 +394,14 @@ script = ExtResource("Controller")
 gates = Array[NodePath]([NodePath("../Routes/Wing01/Gate"), NodePath("../Routes/Wing02/Gate"), NodePath("../Routes/Wing03/Gate"), NodePath("../Routes/Wing04/Gate"), NodePath("../Routes/Wing05/Gate")])
 channels = Array[NodePath]([NodePath("../Routes/Wing01/Channel"), NodePath("../Routes/Wing02/Channel"), NodePath("../Routes/Wing03/Channel"), NodePath("../Routes/Wing04/Channel"), NodePath("../Routes/Wing05/Channel")])
 finale_path = NodePath("../Hub/Finale")
+
+[node name="DomeDrum" parent="Hub" instance=ExtResource("HubDomeDrum")]
+
+[node name="DomeFrame" parent="Hub" instance=ExtResource("HubDomeFrame")]
+
+[node name="DomeGlass" parent="Hub" instance=ExtResource("HubDomeGlass")]
+
+[node name="DomeSky" parent="Hub" instance=ExtResource("HubDomeSky")]
 
 [node name="EntryArch" parent="Hub" instance=ExtResource("EntryArch")]
 position = Vector3(0, 0, 9)
