@@ -14,6 +14,8 @@ func _check(value: bool, message: String) -> void:
         push_error("ARCHIVE_HUB_DOME FAIL: " + message)
 
 func _run() -> void:
+    get_tree().root.size = Vector2i(960,540)
+    await get_tree().process_frame
     var before := GameState.capture_save().to_dict()
     var dirty: bool = SaveManager.get("_dirty")
     var world := preload("res://worlds/archive/archive_main.tscn").instantiate() as ArchiveMain
@@ -82,7 +84,7 @@ func _run() -> void:
     var gate_paths := ["Routes/Wing01/Gate","Routes/Wing02/Gate","Routes/Wing03/Gate","Routes/Wing04/Gate","Routes/Wing05/Gate"]
     for path in gate_paths:
         var gate := world.get_node(path) as Node3D
-        _check(gate.position.is_equal_approx(Vector3(0,1.7,-8)), "Original route aperture center " + path)
+        _check(gate.position.is_equal_approx(Vector3(0,0,-8)), "Original route aperture root " + path)
     # Body snapshots are emitted into constants from the already-pinned canonical scene.
     _check_wall_bodies(world)
     prologue._apply_timeline_pose(8.0)
