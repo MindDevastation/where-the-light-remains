@@ -13,12 +13,13 @@
       "canonical_notes": "Custom modular shell; тот же mesh в прологе и эпилоге",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Accepted shared upper drum/dome and eight original two-sided lower wall skins; complete aperture/gate/upper facade infill/windows/backdrop and Hub floor/hero/dressing still PARTIAL.",
+      "finding": "Accepted shared upper drum/dome and eight original two-sided lower wall skins; complete aperture/gate/upper facade infill/future windows/backdrop and Hub floor/hero/dressing still PARTIAL. Five current static arched headers now have bounded ARCH-008 coverage; full shell/rotunda remains PARTIAL.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
         "game/worlds/archive/archive_prologue.tscn",
         "docs/production/S01_HUB_DOME_ACCEPTANCE.md",
-        "docs/production/S01_HUB_WALL_ACCEPTANCE.md"
+        "docs/production/S01_HUB_WALL_ACCEPTANCE.md",
+        "docs/production/ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md"
       ]
     },
     {
@@ -52,13 +53,14 @@
       "canonical_notes": "Главный reuse-space финала",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Accepted upper drum/dome, eight original lower walls and Hub floor with corridor ownership cutout; full portal/gate/infill/windows/backdrop/hero/dressing remains PARTIAL.",
+      "finding": "Accepted upper drum/dome, eight original lower walls and Hub floor with corridor ownership cutout; full portal/gate/infill/future windows/backdrop/hero/dressing remains PARTIAL. Five current static arched headers now have bounded ARCH-008 coverage; full shell/rotunda remains PARTIAL.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
         "game/worlds/archive/archive_prologue.tscn",
         "docs/production/S01_HUB_DOME_ACCEPTANCE.md",
         "docs/production/S01_HUB_WALL_ACCEPTANCE.md",
-        "docs/production/S01_HUB_FLOOR_ACCEPTANCE.md"
+        "docs/production/S01_HUB_FLOOR_ACCEPTANCE.md",
+        "docs/production/ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md"
       ]
     },
     {
@@ -144,11 +146,11 @@
       "variants": "1–2 размера",
       "canonical_notes": "Night/dawn lighting reuse",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets.",
+      "status": "PARTIAL",
+      "finding": "One original1560tri four-surface fanlight with five fixed route-header instances accepted:712 scoped assertions,32 individually inspected native views and two fresh LFS payloads reopened/imported/used. Future stages/window sizes/night-dawn and full shell composition remain open.",
       "evidence_paths": [
-        "game/worlds/archive/archive_main.tscn",
-        "game/worlds/archive/archive_prologue.tscn"
+        "docs/production/ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md",
+        "game/worlds/archive/archive_main.tscn"
       ]
     },
     {
@@ -198,10 +200,10 @@
       "canonical_notes": "Без сложного платформинга",
       "required_for_vs1": true,
       "status": "MISSING",
-      "finding": "No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets.",
+      "finding": "Two-width traversable stair family remains missing. Current S01/S02 floors are flatY0; no canonical stair placement/elevation brief or step-up contract. Dependent asset production paused at a layout decision; no unused future-stage or decorative substitute counted.",
       "evidence_paths": [
-        "game/worlds/archive/archive_main.tscn",
-        "game/worlds/archive/archive_prologue.tscn"
+        "docs/production/ARCHIVE_SHORT_STAIRS_LAYOUT_AUDIT.md",
+        "docs/design/REQUIRED_ASSET_TABLE.md"
       ]
     },
     {
@@ -253,7 +255,7 @@
       "canonical_notes": "Различаются светом/эмблемой, не геометрией",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Original shared3596tri timber/iron/brass mesh and five state-owned instances pass bounded local acceptance. Full per-route emblem/light and Hub composition remain open; publication awaits direct authorization after automatic review refusal.",
+      "finding": "Original shared3596tri timber/iron/brass mesh and five state-owned instances pass bounded local acceptance. Full per-route emblem/light and Hub composition remain open; gate publication resolved at3d81acb with explicit owner authorization; subsequent lighting and fanlight coverage does not close full route emblems/composition.",
       "evidence_paths": [
         "docs/production/ARCHIVE_WING_GATE_ACCEPTANCE.md",
         "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/results.json",
@@ -1497,7 +1499,7 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Original shared3596tri timber/iron/brass mesh and five state-owned instances pass bounded local acceptance. Full per-route emblem/light and Hub composition remain open; publication awaits direct authorization after automatic review refusal.",
+      "finding": "Original shared3596tri timber/iron/brass mesh and five state-owned instances pass bounded local acceptance. Full per-route emblem/light and Hub composition remain open; gate publication resolved at3d81acb with explicit owner authorization; subsequent lighting and fanlight coverage does not close full route emblems/composition.",
       "evidence_paths": [
         "docs/production/ARCHIVE_WING_GATE_ACCEPTANCE.md",
         "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/results.json"
@@ -2950,12 +2952,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T16:57:58.677198+00:00",
-  "latest_delta": "Shared gate bounded mesh/state acceptance prepared locally:542 exact-source assertions,16 individually inspected native images, two fresh independent LFS payloads used with116 checks/startup; full light/emblem/composition PARTIAL, publication blocked.",
+  "updated_at": "2026-10-06T21:15:52.155874+00:00",
+  "latest_delta": "Bounded ARCH-008 fanlight locally accepted with independent LFS/current evidence; ARCH-011 paused for canonical placement/elevation decision. Original185 classifications retained except bounded documented deltas; GATE-VS1 OPEN.",
   "vs1_counts": {
-    "PARTIAL": 37,
+    "PARTIAL": 38,
     "ACCEPTED": 25,
-    "MISSING": 15
+    "MISSING": 14
   },
-  "publication_status": "LOCAL_PREPARED_NOT_PUBLISHED"
+  "publication_status": "Gate3d81acb and lighting1af05c2/2224b73 remote confirmed; fanlight binary candidate6c7d99f/receipt dc6805a remote confirmed. Resolve final stable acceptance publication from checkpoint journal."
 }

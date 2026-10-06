@@ -1,4 +1,25 @@
-# Current bounded lighting acceptance — 2026-10-06
+# Current fanlight acceptance and next layout dependency — 2026-10-06
+
+ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md records one1560tri four-surface shared
+window above five original gates:712 scoped assertions plus72 in independent
+LFS use;32 individually inspected Low/Medium images;208 prior art/module
+identities preserved. Strengthened source reopen verifies83 closed positive
+components. Existing lighting stable1af05c2/receipt2224b73 remains accepted.
+Fanlight candidate6c7d99f/receipt dc6805a is remotely confirmed; resolve final
+stable acceptance/receipt from docs/production/evidence/checkpoints/development.jsonl.
+
+ARCH-008 MISSING→PARTIAL;25 ACCEPTED/38 PARTIAL/14 MISSING among77 rows;185
+canonical rows retained. Complete windows/infill/backdrop/hero/channels/dressing/
+audio/gallery/physical GTX1060/style/VS1 remain OPEN; S03 blocked. Planning
+estimate25–30%, low confidence,3/16 playable stages.
+Next ARCH-011 is paused for canonical stair locations, two widths and walking
+elevations; current accepted S01/S02 surfaces are flatY0. See
+ARCHIVE_SHORT_STAIRS_LAYOUT_AUDIT.md. No stair asset/layout or future stage was
+invented. This is a design dependency, not another push-permission request.
+
+---
+
+# Historical lighting acceptance at1af05c2 — 2026-10-06
 
 ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md:654 current assertions/import/startup,
 28 individually inspected native Low/Medium images, protected saves PASS. Four

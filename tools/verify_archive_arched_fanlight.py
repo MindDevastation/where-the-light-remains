@@ -15,6 +15,22 @@ assert all(m.use_backface_culling for m in obj.data.materials)
 bm=bmesh.new();bm.from_mesh(obj.data)
 assert all(e.is_manifold and len(e.link_faces)==2 for e in bm.edges)
 assert all(f.calc_area()>1e-10 for f in bm.faces) and bm.calc_volume(signed=True)>0
+remaining=set(bm.verts)
+components=0
+while remaining:
+ seed=remaining.pop(); vertices={seed}; frontier=[seed]
+ while frontier:
+  for edge in frontier.pop().link_edges:
+   for vertex in edge.verts:
+    if vertex in remaining:
+     remaining.remove(vertex); vertices.add(vertex); frontier.append(vertex)
+ solid=bmesh.new(); mapping={v:solid.verts.new(v.co) for v in vertices}
+ for face in {f for v in vertices for f in v.link_faces}:
+  solid.faces.new([mapping[v] for v in face.verts])
+ solid.normal_update()
+ assert all(e.is_manifold for e in solid.edges) and solid.calc_volume(signed=True)>0
+ solid.free(); components+=1
+assert components>0
 bm.free();obj.data.calc_loop_triangles();assert len(obj.data.loop_triangles)<=part['triangle_ceiling']
 assert len(obj.data.uv_layers)==1;obj.data.calc_tangents(uvmap='UVMap');uv=obj.data.uv_layers.active.data
 for tri in obj.data.loop_triangles:
@@ -26,4 +42,4 @@ for p in points:
  assert all(lo-1e-6<=co<=hi+1e-6 for co,lo,hi in zip(p,c['min'],c['max']))
 assert min(p.z for p in points)-c['gate_max_z']>.056
 assert min(p.y for p in points)-c['gate_top']>.019 and c['lintel_bottom']-max(p.y for p in points)>.019
-print('BLENDER_ARCHIVE_ARCHED_FANLIGHT PASS: closed positive unit fanlight; metric UV/unit shading/four shared surfaces; passage/lintel and entire opening-ghost depth clearance')
+print('BLENDER_ARCHIVE_ARCHED_FANLIGHT PASS: '+str(components)+' independently closed positive components; metric UV/unit shading/four shared surfaces; passage/lintel and entire opening-ghost depth clearance')
