@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scope": "Actual entry validation rejects unsupported user-data hosts and invalid bounds before launching Godot or creating output. Linux physical display execution remains unverified.",
+  "source_hashes": {
+    "tools/profile_archive_room.py": "647fc4dc6b26ccb568c4a2818eb65dadaa9143a9c8825c82657c69c9757b5e4e"
+  },
+  "records": [
+    {
+      "host": "win32",
+      "samples": 180,
+      "warmup": 45,
+      "rejected": "This runner requires Linux: private XDG save isolation is not verified on other hosts",
+      "no_engine_launch": true,
+      "no_output_directory": true
+    },
+    {
+      "host": "darwin",
+      "samples": 180,
+      "warmup": 45,
+      "rejected": "This runner requires Linux: private XDG save isolation is not verified on other hosts",
+      "no_engine_launch": true,
+      "no_output_directory": true
+    },
+    {
+      "host": "linux",
+      "samples": 0,
+      "warmup": 45,
+      "rejected": "Sample count must be between 60 and 600",
+      "no_engine_launch": true,
+      "no_output_directory": true
+    },
+    {
+      "host": "linux",
+      "samples": 180,
+      "warmup": 0,
+      "rejected": "Warm-up count must be between 15 and 180, with a 1.2-second minimum",
+      "no_engine_launch": true,
+      "no_output_directory": true
+    }
+  ]
+}
