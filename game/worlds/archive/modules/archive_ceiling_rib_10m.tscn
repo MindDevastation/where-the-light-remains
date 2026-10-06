@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb" id="Art"]
+
+[node name="Rib10M" type="Node3D"]
+metadata/scope = "Isolated ceiling construction sample; no collision or gameplay"
+
+[node name="Art" parent="." instance=ExtResource("Art")]
+
+[node name="FootLeft" type="Marker3D" parent="."]
+position = Vector3(-5.0, 0, 0)
+
+[node name="FootRight" type="Marker3D" parent="."]
+position = Vector3(5.0, 0, 0)
+
+[node name="SpringLeft" type="Marker3D" parent="."]
+position = Vector3(-5.0, 1.5, 0)
+
+[node name="SpringRight" type="Marker3D" parent="."]
+position = Vector3(5.0, 1.5, 0)
+
+[node name="Crown" type="Marker3D" parent="."]
+position = Vector3(0, 5.5, 0)

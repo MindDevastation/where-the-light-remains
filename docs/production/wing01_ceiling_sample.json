@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "scope": "ARCH-007 isolated construction sample; not shipping roof/owner full-room acceptance",
+  "source": "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend",
+  "room_center": [
+    0,
+    0,
+    -21
+  ],
+  "assembly_origin": [
+    0,
+    4,
+    -21
+  ],
+  "spring_y_local_m": 1.5,
+  "crown_center_y_local_m": 5.5,
+  "arc_segments_per_half": 32,
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres"
+  },
+  "parts": [
+    {
+      "id": "rib_10m",
+      "stem": "sm_wing01_ceiling_rib_10m",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "span_m": 10,
+      "bounds_min": [
+        -5.3,
+        0,
+        -0.3
+      ],
+      "bounds_max": [
+        5.3,
+        5.62,
+        0.3
+      ],
+      "triangle_ceiling": 2600,
+      "materials": [
+        "stone",
+        "iron",
+        "brass"
+      ],
+      "anchors": {
+        "foot_left": [
+          -5.0,
+          0,
+          0
+        ],
+        "foot_right": [
+          5.0,
+          0,
+          0
+        ],
+        "spring_left": [
+          -5.0,
+          1.5,
+          0
+        ],
+        "spring_right": [
+          5.0,
+          1.5,
+          0
+        ],
+        "crown": [
+          0,
+          5.5,
+          0
+        ]
+      }
+    },
+    {
+      "id": "rib_12m",
+      "stem": "sm_wing01_ceiling_rib_12m",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "span_m": 12,
+      "bounds_min": [
+        -6.3,
+        0,
+        -0.3
+      ],
+      "bounds_max": [
+        6.3,
+        5.62,
+        0.3
+      ],
+      "triangle_ceiling": 2600,
+      "materials": [
+        "stone",
+        "iron",
+        "brass"
+      ],
+      "anchors": {
+        "foot_left": [
+          -6.0,
+          0,
+          0
+        ],
+        "foot_right": [
+          6.0,
+          0,
+          0
+        ],
+        "spring_left": [
+          -6.0,
+          1.5,
+          0
+        ],
+        "spring_right": [
+          6.0,
+          1.5,
+          0
+        ],
+        "crown": [
+          0,
+          5.5,
+          0
+        ]
+      }
+    },
+    {
+      "id": "transition",
+      "stem": "sm_wing01_ceiling_transition",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "bounds_min": [
+        -5.2,
+        0,
+        -6.2
+      ],
+      "bounds_max": [
+        5.2,
+        5.64,
+        6.2
+      ],
+      "triangle_ceiling": 6000,
+      "materials": [
+        "stone",
+        "iron",
+        "brass"
+      ],
+      "anchors": {
+        "crown": [
+          0,
+          5.5,
+          0
+        ],
+        "spring": [
+          0,
+          1.5,
+          0
+        ]
+      }
+    }
+  ]
+}

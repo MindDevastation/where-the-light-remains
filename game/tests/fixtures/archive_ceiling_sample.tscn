@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/archive_main.tscn" id="World"]
+[ext_resource type="PackedScene" path="res://worlds/archive/wing01_ceiling_study.tscn" id="Study"]
+
+[node name="ArchiveCeilingSample" instance=ExtResource("World")]
+
+[node name="CeilingStudy" parent="Wing01/Room" instance=ExtResource("Study")]
+position = Vector3(0, 4, -21)

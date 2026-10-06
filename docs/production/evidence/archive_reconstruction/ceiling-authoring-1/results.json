@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-06T01:40:21.779325+00:00",
+  "source_hashes": {
+    "tools/create_wing01_ceiling.py": "b510765b7615d9d80645a6052d96768047356adcf16c08e6bd66ad7634f7ed95",
+    "tools/verify_wing01_ceiling.py": "423b0df07531ae419402dd6da14b657fa582c6e2373e9361098c83b1f33724e7",
+    "tools/create_wing01_optics.py": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7",
+    "docs/production/wing01_ceiling_sample.json": "24831c7617453346f65d6a4a1b60778da79d6f04e9322183bbe1bd288b6a23f8",
+    "docs/production/WING01_CEILING_SAMPLE.md": "91793c040f46224625679aba8eb7ef5cab62bd4739cf43b93b52995436adff13",
+    "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend": "05f62d3c514fa102230dabc66bdd34685ceac7a5c96f055e50fe4074e5794138",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb": "ba5f23dcebb2383cafc9bfed4418eaa7ed919308f89761947ad9f450ed99a04d",
+    "docs/production/evidence/archive_reconstruction/ceiling-authoring-1/payload_manifest.json": "c841fc47c6b00dbf1404b5be15050c24ee62c20fc2ccd277970c3e51e3fda77d",
+    "docs/production/evidence/archive_reconstruction/ceiling-authoring-1/reopen.log": "75028863dd41aeb58baaa144f20cd9a29cfad8708936ff61a7d0fc5782066d27",
+    "docs/production/evidence/archive_reconstruction/ceiling-authoring-1/authoring.log": "777e2259aea08b631d1eb02426104dc19bb74de7d59a45c4267e34e2e801c543",
+    "docs/production/evidence/archive_reconstruction/ceiling-authoring-1/authoring-failed-1.log": "4d35f9e459317b1f1c00e100c4ae5cdf67ee5df8a14a76fb35cfe9adeb604da8"
+  },
+  "measurements": [
+    {
+      "id": "rib_10m",
+      "triangles": 2568,
+      "surfaces": 3
+    },
+    {
+      "id": "rib_12m",
+      "triangles": 2568,
+      "surfaces": 3
+    },
+    {
+      "id": "transition",
+      "triangles": 1688,
+      "surfaces": 3
+    }
+  ],
+  "scope": "Saved/reopened source and exports; source actual topology/UV/pivot/bounds/corner rays. Import/native/LFS retrieval are separate gates.",
+  "historical_failure": "First eight-vertex brass-strip section exceeded preassigned 2600 triangle ceiling; retained log. Four-vertex strip yields 2568 per rib without raising budget."
+}

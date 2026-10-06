@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_ceiling_rib_10m.tscn" id="rib_10m"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_ceiling_rib_12m.tscn" id="rib_12m"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_ceiling_transition.tscn" id="transition"]
+
+[node name="CeilingStudy" type="Node3D"]
+metadata/scope = "Two original crossed dome ribs, rectangular upper transition, shared collar. Curved roof infill and full-room art remain open."
+
+[node name="Rib10M" parent="." instance=ExtResource("rib_10m")]
+
+[node name="Rib12M" parent="." instance=ExtResource("rib_12m")]
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="Transition" parent="." instance=ExtResource("transition")]

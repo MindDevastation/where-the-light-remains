@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "started_at": "2026-10-06T01:38:01.553147+00:00",
+  "objects": [
+    {
+      "path": "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend",
+      "bytes": 1038936,
+      "sha256": "05f62d3c514fa102230dabc66bdd34685ceac7a5c96f055e50fe4074e5794138",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:05f62d3c514fa102230dabc66bdd34685ceac7a5c96f055e50fe4074e5794138\nsize 1038936\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb",
+      "bytes": 258596,
+      "sha256": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662\nsize 258596\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb",
+      "bytes": 256964,
+      "sha256": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff\nsize 256964\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb",
+      "bytes": 167116,
+      "sha256": "ba5f23dcebb2383cafc9bfed4418eaa7ed919308f89761947ad9f450ed99a04d",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:ba5f23dcebb2383cafc9bfed4418eaa7ed919308f89761947ad9f450ed99a04d\nsize 167116\n"
+    }
+  ],
+  "source_hashes": {
+    "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend": "05f62d3c514fa102230dabc66bdd34685ceac7a5c96f055e50fe4074e5794138",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb": "ba5f23dcebb2383cafc9bfed4418eaa7ed919308f89761947ad9f450ed99a04d"
+  },
+  "command": [
+    "git",
+    "lfs",
+    "push",
+    "--object-id",
+    "origin",
+    "05f62d3c514fa102230dabc66bdd34685ceac7a5c96f055e50fe4074e5794138",
+    "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+    "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+    "ba5f23dcebb2383cafc9bfed4418eaa7ed919308f89761947ad9f450ed99a04d"
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-10-06T01:38:21.708173+00:00"
+}

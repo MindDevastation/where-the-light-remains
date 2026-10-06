@@ -1,0 +1,8 @@
+BLENDER_CEILING_PART PASS: rib_10m triangles= 2568 surfaces= 3 actual_bounds= [-5.300000190734863, 0.0, -0.30000001192092896] [5.300000190734863, 5.614900588989258, 0.30000001192092896] closed topology; metric UVs; unit normals/tangents; identity pivot
+BLENDER_CEILING_PART PASS: rib_12m triangles= 2568 surfaces= 3 actual_bounds= [-6.300000190734863, 0.0, -0.30000001192092896] [6.300000190734863, 5.616479873657227, 0.30000001192092896] closed topology; metric UVs; unit normals/tangents; identity pivot
+BLENDER_CEILING_PART PASS: transition triangles= 1688 surfaces= 3 actual_bounds= [-5.199999809265137, 0.0, -6.199999809265137] [5.199999809265137, 5.639999866485596, 6.199999809265137] closed topology; metric UVs; unit normals/tangents; identity pivot
+BLENDER_CEILING PASS: three reopened parts; two span variants; actual corner coverage and open central headroom
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/e4dba9b6d2e8/where-the-light-remains/assets/3d/blender/archive_kit/wing01_ceiling_sample.blend"
+
+Blender quit
