@@ -1,0 +1,171 @@
+{
+  "captures": [
+    {
+      "draw_calls": 52,
+      "file": "bookcase_entrance_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_entrance",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 13,
+      "file": "bookcase_left_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_left",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 11,
+      "file": "bookcase_right_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_right",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 49,
+      "file": "bookcase_hero_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_hero",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 75,
+      "file": "bookcase_reverse_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_reverse",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 35,
+      "file": "bookcase_star_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_star",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.95997941493988,
+      "star_visible": true,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 51,
+      "file": "bookcase_warm_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "bookcase_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.852821230888367,
+      "star_visible": true,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 25,
+      "file": "bookcase_hearth_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "bookcase_hearth",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.82232266664505,
+      "star_visible": true,
+      "texture_bytes": 40731648
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "bookcase",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

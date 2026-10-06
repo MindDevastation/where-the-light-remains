@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_bookcase.tscn" id="Case"]
+
+[node name="Wing01Books" type="Node3D"]
+
+[node name="Left0" parent="." instance=ExtResource("Case")]
+position = Vector3(-4.8, 0, -17)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="Left1" parent="." instance=ExtResource("Case")]
+position = Vector3(-4.8, 0, -25)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="Right0" parent="." instance=ExtResource("Case")]
+position = Vector3(4.8, 0, -17)
+rotation_degrees = Vector3(0, -90, 0)
+
+[node name="Right1" parent="." instance=ExtResource("Case")]
+position = Vector3(4.8, 0, -25)
+rotation_degrees = Vector3(0, -90, 0)

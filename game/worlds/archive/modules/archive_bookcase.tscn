@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_archive_bookcase.glb" id="Art"]
+
+[sub_resource type="BoxShape3D" id="Footprint"]
+size = Vector3(2.4, 2.55, 0.42)
+
+[node name="ArchiveBookcase" type="Node3D"]
+metadata/asset_brief = "docs/production/ARCHIVE_BOOKCASE.md"
+
+[node name="Art" parent="." instance=ExtResource("Art")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 1
+collision_mask = 1
+
+[node name="Footprint" type="CollisionShape3D" parent="Collision"]
+position = Vector3(0, 1.275, 0.21)
+shape = SubResource("Footprint")

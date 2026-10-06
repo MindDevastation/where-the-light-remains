@@ -1,0 +1,406 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/archive_bookcase.blend",
+      "bytes": 905444,
+      "sha256": "658003fc0aeffdf45ec1a2b74ea2ab9eb14ddecb21fbe702d7b2dd1c45fb2d05"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_bookcase.glb",
+      "bytes": 454768,
+      "sha256": "4eabe0dc054f24b6efd894733ac9758e83d84d7d590e4914b3253eaec816205a"
+    }
+  ],
+  "measurements": {
+    "triangles": 4296,
+    "surfaces": 6,
+    "closed_books": 48
+  },
+  "books": [
+    {
+      "row": 0,
+      "bay": -1,
+      "width": 0.084,
+      "height": 0.43,
+      "depth": 0.23,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": -1,
+      "width": 0.10400000000000001,
+      "height": 0.52,
+      "depth": 0.23900000000000002,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": -1,
+      "width": 0.124,
+      "height": 0.61,
+      "depth": 0.248,
+      "family": "navy"
+    },
+    {
+      "row": 0,
+      "bay": -1,
+      "width": 0.094,
+      "height": 0.49,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": -1,
+      "width": 0.114,
+      "height": 0.58,
+      "depth": 0.23,
+      "family": "crimson"
+    },
+    {
+      "row": 0,
+      "bay": -1,
+      "width": 0.084,
+      "height": 0.45999999999999996,
+      "depth": 0.23900000000000002,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": -1,
+      "width": 0.10400000000000001,
+      "height": 0.55,
+      "depth": 0.248,
+      "family": "navy"
+    },
+    {
+      "row": 0,
+      "bay": -1,
+      "width": 0.124,
+      "height": 0.43,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": 1,
+      "width": 0.094,
+      "height": 0.49,
+      "depth": 0.23,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": 1,
+      "width": 0.114,
+      "height": 0.58,
+      "depth": 0.23900000000000002,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": 1,
+      "width": 0.084,
+      "height": 0.45999999999999996,
+      "depth": 0.248,
+      "family": "navy"
+    },
+    {
+      "row": 0,
+      "bay": 1,
+      "width": 0.10400000000000001,
+      "height": 0.55,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": 1,
+      "width": 0.124,
+      "height": 0.43,
+      "depth": 0.23,
+      "family": "crimson"
+    },
+    {
+      "row": 0,
+      "bay": 1,
+      "width": 0.094,
+      "height": 0.52,
+      "depth": 0.23900000000000002,
+      "family": "leather"
+    },
+    {
+      "row": 0,
+      "bay": 1,
+      "width": 0.114,
+      "height": 0.61,
+      "depth": 0.248,
+      "family": "navy"
+    },
+    {
+      "row": 0,
+      "bay": 1,
+      "width": 0.084,
+      "height": 0.49,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": -1,
+      "width": 0.114,
+      "height": 0.45999999999999996,
+      "depth": 0.23,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": -1,
+      "width": 0.084,
+      "height": 0.55,
+      "depth": 0.23900000000000002,
+      "family": "navy"
+    },
+    {
+      "row": 1,
+      "bay": -1,
+      "width": 0.10400000000000001,
+      "height": 0.43,
+      "depth": 0.248,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": -1,
+      "width": 0.124,
+      "height": 0.52,
+      "depth": 0.257,
+      "family": "crimson"
+    },
+    {
+      "row": 1,
+      "bay": -1,
+      "width": 0.094,
+      "height": 0.61,
+      "depth": 0.23,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": -1,
+      "width": 0.114,
+      "height": 0.49,
+      "depth": 0.23900000000000002,
+      "family": "navy"
+    },
+    {
+      "row": 1,
+      "bay": -1,
+      "width": 0.084,
+      "height": 0.58,
+      "depth": 0.248,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": -1,
+      "width": 0.10400000000000001,
+      "height": 0.45999999999999996,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": 1,
+      "width": 0.124,
+      "height": 0.52,
+      "depth": 0.23,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": 1,
+      "width": 0.094,
+      "height": 0.61,
+      "depth": 0.23900000000000002,
+      "family": "navy"
+    },
+    {
+      "row": 1,
+      "bay": 1,
+      "width": 0.114,
+      "height": 0.49,
+      "depth": 0.248,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": 1,
+      "width": 0.084,
+      "height": 0.58,
+      "depth": 0.257,
+      "family": "crimson"
+    },
+    {
+      "row": 1,
+      "bay": 1,
+      "width": 0.10400000000000001,
+      "height": 0.45999999999999996,
+      "depth": 0.23,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": 1,
+      "width": 0.124,
+      "height": 0.55,
+      "depth": 0.23900000000000002,
+      "family": "navy"
+    },
+    {
+      "row": 1,
+      "bay": 1,
+      "width": 0.094,
+      "height": 0.43,
+      "depth": 0.248,
+      "family": "leather"
+    },
+    {
+      "row": 1,
+      "bay": 1,
+      "width": 0.114,
+      "height": 0.52,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": -1,
+      "width": 0.094,
+      "height": 0.49,
+      "depth": 0.23,
+      "family": "navy"
+    },
+    {
+      "row": 2,
+      "bay": -1,
+      "width": 0.114,
+      "height": 0.58,
+      "depth": 0.23900000000000002,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": -1,
+      "width": 0.084,
+      "height": 0.45999999999999996,
+      "depth": 0.248,
+      "family": "crimson"
+    },
+    {
+      "row": 2,
+      "bay": -1,
+      "width": 0.10400000000000001,
+      "height": 0.55,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": -1,
+      "width": 0.124,
+      "height": 0.43,
+      "depth": 0.23,
+      "family": "navy"
+    },
+    {
+      "row": 2,
+      "bay": -1,
+      "width": 0.094,
+      "height": 0.52,
+      "depth": 0.23900000000000002,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": -1,
+      "width": 0.114,
+      "height": 0.61,
+      "depth": 0.248,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": -1,
+      "width": 0.084,
+      "height": 0.49,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": 1,
+      "width": 0.10400000000000001,
+      "height": 0.55,
+      "depth": 0.23,
+      "family": "navy"
+    },
+    {
+      "row": 2,
+      "bay": 1,
+      "width": 0.124,
+      "height": 0.43,
+      "depth": 0.23900000000000002,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": 1,
+      "width": 0.094,
+      "height": 0.52,
+      "depth": 0.248,
+      "family": "crimson"
+    },
+    {
+      "row": 2,
+      "bay": 1,
+      "width": 0.114,
+      "height": 0.61,
+      "depth": 0.257,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": 1,
+      "width": 0.084,
+      "height": 0.49,
+      "depth": 0.23,
+      "family": "navy"
+    },
+    {
+      "row": 2,
+      "bay": 1,
+      "width": 0.10400000000000001,
+      "height": 0.58,
+      "depth": 0.23900000000000002,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": 1,
+      "width": 0.124,
+      "height": 0.45999999999999996,
+      "depth": 0.248,
+      "family": "leather"
+    },
+    {
+      "row": 2,
+      "bay": 1,
+      "width": 0.094,
+      "height": 0.55,
+      "depth": 0.257,
+      "family": "leather"
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

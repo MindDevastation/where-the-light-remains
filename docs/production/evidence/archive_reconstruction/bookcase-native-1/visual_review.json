@@ -1,0 +1,381 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-06T04:24:52.319211+00:00",
+  "images": [
+    {
+      "draw_calls": 52,
+      "file": "bookcase_entrance_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_entrance",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 33242112,
+      "quality": "low",
+      "sha256": "c2c66d939522418988cbf2d2c9402b7d3902de3cf3e14ba08d2acd692895835d",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 13,
+      "file": "bookcase_left_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_left",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 33242112,
+      "quality": "low",
+      "sha256": "cb8e35b17cf18e81ac83204220cdad30f74186040a73a1ca46c86837b3144cfd",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 11,
+      "file": "bookcase_right_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_right",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 33242112,
+      "quality": "low",
+      "sha256": "42009431356a1f662364afe427eaab5f6d2e238af47a387dfffd05400d8d6438",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 49,
+      "file": "bookcase_hero_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_hero",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 33242112,
+      "quality": "low",
+      "sha256": "95aa6685cf3c349ddb36596fab5c8d03cc19b7f9b97a87cddb948874d15a4762",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 75,
+      "file": "bookcase_reverse_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_reverse",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 33242112,
+      "quality": "low",
+      "sha256": "0e602130ffa4dd33b9c565894018cc289acb865d2a63eb01a706ac7d3f001003",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 35,
+      "file": "bookcase_star_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_star",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.974650204181671,
+      "star_visible": true,
+      "texture_bytes": 33242112,
+      "quality": "low",
+      "sha256": "a7d53be05214582a7265ec19bf2eb63aa559a51c262b2c5202f9da697c8df9cb",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 51,
+      "file": "bookcase_warm_low.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "bookcase_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.869041979312897,
+      "star_visible": true,
+      "texture_bytes": 33242112,
+      "quality": "low",
+      "sha256": "84f5bdb5fed1ba5298e2dee50bae2884655ba46751359344c64d54a9e5b6c557",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 25,
+      "file": "bookcase_hearth_low.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "bookcase_hearth",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.822976529598236,
+      "star_visible": true,
+      "texture_bytes": 33242112,
+      "quality": "low",
+      "sha256": "c6c83187e799fe729ab392cbc07d00a5ad59db0ea87103f8b26c973e7d80f1df",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 52,
+      "file": "bookcase_entrance_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_entrance",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648,
+      "quality": "medium",
+      "sha256": "2e86f886fb9392007daefd9c7b04ada99b22538e0d38315d0a59d03bb26bffc6",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 13,
+      "file": "bookcase_left_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_left",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648,
+      "quality": "medium",
+      "sha256": "783774a4b09b97d15189d30a6cbbad01cf2ec9861d76bf57df4e281474faadb1",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 11,
+      "file": "bookcase_right_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_right",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648,
+      "quality": "medium",
+      "sha256": "3875acc3705daec9ae428c84cdd34b92a4e43c1f17a38f93af3df7c5e3f80b2e",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 49,
+      "file": "bookcase_hero_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_hero",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648,
+      "quality": "medium",
+      "sha256": "bf15380cd4503791ee849c865063f170eb34839fdcc4733add4a53bbb3702b8b",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 75,
+      "file": "bookcase_reverse_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_reverse",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648,
+      "quality": "medium",
+      "sha256": "5caa76a71581e0329c8c69d541b043dd550e3d445baa611c55059752ea5ebfcd",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 35,
+      "file": "bookcase_star_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "bookcase_star",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.95997941493988,
+      "star_visible": true,
+      "texture_bytes": 40731648,
+      "quality": "medium",
+      "sha256": "9a76e9ce324190521f744e746aeb0e8a1670c3b6a6c9229a7bc63589bc1aa22d",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 51,
+      "file": "bookcase_warm_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "bookcase_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.852821230888367,
+      "star_visible": true,
+      "texture_bytes": 40731648,
+      "quality": "medium",
+      "sha256": "c063b5298256c0ed423b9d26bfeccebf6a91874a09d43f46d8c434966b4a73a3",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 25,
+      "file": "bookcase_hearth_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "bookcase_hearth",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.82232266664505,
+      "star_visible": true,
+      "texture_bytes": 40731648,
+      "quality": "medium",
+      "sha256": "aa6fb614017a974b9122332ccd5d4a31271f146f43aa9ab9eea7dcf93aeac2ab",
+      "individually_inspected": true
+    }
+  ],
+  "observations": [
+    "Four case footprints stay in perimeter strips, with readable original mechanism and entrance/return paths.",
+    "Closed varied leather/navy/crimson books have plain brass bands and visible warm paper edges, no letters/dates/numbers/sigils.",
+    "Star, teal core, Hearth gold Flame and canonical warm projection remain readable in close/hero views.",
+    "Walnut/perimeter books add ordinary furniture contrast without new lamps, walking gallery or changed roof silhouette."
+  ],
+  "scope": "Sixteen actual individually inspected software Forward+ Low/Medium player views; bounded original furniture only."
+}
