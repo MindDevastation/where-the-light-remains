@@ -7,7 +7,7 @@ import subprocess
 import tempfile
 import time
 
-from remote_delta_snapshot import git, snapshot, restore, verify
+from remote_delta_snapshot import git, snapshot, restore, verify, media_directory
 from durable_checkpoint import Coordinator
 
 
@@ -56,6 +56,18 @@ def main():
         assert state['remote_verified_sha'] == baseline.decode().strip()
         assert archive.stat().st_size < 100_000 and time.monotonic()-started < 20
         assert 'reverted.txt' in state['worktrees'][0]['changed_paths']
+        staged_entry = next(e for e in state['staged_lfs'] if e['path']=='asset.blend')
+        oid = staged_entry['oid']
+        cache = media_directory(source) / oid[:2] / oid[2:4] / oid
+        cached_bytes = cache.read_bytes()
+        cache.unlink()
+        try:
+            snapshot(source,root/'snapshots')
+        except RuntimeError as error:
+            assert 'Unpublished staged LFS payload missing' in str(error)
+        else:
+            raise AssertionError('Missing unpublished staged LFS bytes accepted')
+        cache.write_bytes(cached_bytes)
         # Advance the remote after collection. Recovery must pin the old SHA.
         git(source, 'add', '.')
         git(source, 'commit', '-qm', 'later state')
@@ -68,7 +80,11 @@ def main():
         actual_files = {p.relative_to(recovered).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
                         for p in recovered.rglob('*') if p.is_file() and '.git' not in p.parts}
         assert actual_files == expected_files
-        print('PASS: exact old remote baseline, staged/unstaged edits, deletion, rename, spaces, binary and materialized LFS roundtrip; archive',archive.stat().st_size,'bytes',flush=True)
+        staged_pointer = git(recovered,'show',':asset.blend').decode()
+        staged_oid = next(line.split(':',1)[1] for line in staged_pointer.splitlines() if line.startswith('oid sha256:'))
+        staged_cache = recovered / '.git/lfs/objects' / staged_oid[:2] / staged_oid[2:4] / staged_oid
+        assert staged_cache.read_bytes() == b'staged binary\0'*256
+        print('PASS: exact old remote baseline, staged/unstaged edits, deletion, rename, spaces, binary and both staged/working LFS payloads recovered; archive',archive.stat().st_size,'bytes',flush=True)
         # Refuse overwriting an existing recovery and unpublished local HEAD.
         try:
             restore(archive, recovered)

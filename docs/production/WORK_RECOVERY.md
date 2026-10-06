@@ -21,6 +21,9 @@ offline/full-history backup. Actual recovery, materialized LFS, remote advanceme
 refusal and coordinator publication fixtures pass. The original full archive
 and coordinator tests still pass. The actual repository delta was 13,332 bytes;
 its scope and hash are recorded in `evidence/checkpoints/remote-delta-20261006`.
+A follow-up hardening preserves distinct staged LFS bytes separately from the
+working payload and refuses a missing unpublished staged object. Current
+hash-bound tooling evidence supersedes the initial optional-mode hashes.
 Use this mode with the existing 600-second supervision during the next live
 turn. All accepted rug/game payload identities remain unchanged by tooling.
 

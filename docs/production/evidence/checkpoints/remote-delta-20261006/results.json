@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "finished_at": "2026-10-06T08:16:44.173202+00:00",
+  "finished_at": "2026-10-06T08:25:28.857694+00:00",
   "scope": "Remote-dependent delta checkpoint tooling only. Exact prior accepted rug/game payloads unchanged; game assertions reused by byte identity, not claimed rerun.",
   "source_hashes": {
     "game/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -424,14 +424,15 @@
     "game/worlds/archive/wing01_room_presentation.tscn": "4d804881bc5f7f016be76900749be44e77b28ffc40bfde3e37f29100c764d3a4",
     "assets/3d/blender/archive_kit/archive_rug.blend": "d798e11858bc25be2269b1c2292e872b33022df81f84565ce5e4bb380f3091f0",
     "tools/durable_checkpoint.py": "7891692f091dd43e6b340d8c9c561a8720b419fdecd0fcf4e57d87677e83ad8f",
-    "tools/remote_delta_snapshot.py": "c5ddf29e36bf19e611451b5bb7ce5cf8483f82008dcdf57b91c20f5195692ecd",
-    "tools/test_remote_delta_snapshot.py": "36e10055cc1826fd72662acc5a6b4d302f62df46c43cc692dd6ae1525064e68c",
+    "tools/remote_delta_snapshot.py": "0a2f7c7ba9a8626b7c9596e3a704037b63a58c66fbc9f6c038fce9d8b2c7332f",
+    "tools/test_remote_delta_snapshot.py": "115d1ae92bb4dfe9fcffc2e4fe57156abae81e9a8c9d16b257b258a4717bf571",
     "tools/session_snapshot.py": "1206fdf1b47401359bcbd0761410a1f84905bb15811794f51ee0c870d09f1cab",
     "tools/verify_session_snapshot.py": "73f9de8726888a56d56ebeef1fdb4ce0a85f075f4d4ed8dfdd5bc6bfa2ad3bed",
-    "docs/production/REMOTE_DELTA_CHECKPOINTS.md": "cb7d70055cc0f7d1800050f496cd4e07ea6982ca3fd81cd9ab2498ed1e600e59",
+    "docs/production/REMOTE_DELTA_CHECKPOINTS.md": "064a14a3fe5b7fafa0354825f3693e1f46c4a31a3111dd6ebebdf766b84b00e6",
     "docs/production/evidence/checkpoints/remote-delta-20261006/legacy-archive.log": "d71a1524c1aeb6e6c43ef8edaa64f99cb1d53cc512500fa5a029ac50def01bad",
-    "docs/production/evidence/checkpoints/remote-delta-20261006/roundtrip.log": "8910b7eadfcd10a01fec1bdcf663888ccb388ff5f06df63b77ac69be697c8a46",
-    "docs/production/evidence/checkpoints/remote-delta-20261006/legacy-coordinator.log": "a72c2126d620cea8d2174a02710f680be6537f270c0a469c3fa7d658a2acc03f"
+    "docs/production/evidence/checkpoints/remote-delta-20261006/roundtrip.log": "62e769ea2a086d5ef783d8cb745d761239a6f0eee36944bb4e38da90221f828a",
+    "docs/production/evidence/checkpoints/remote-delta-20261006/legacy-coordinator.log": "a72c2126d620cea8d2174a02710f680be6537f270c0a469c3fa7d658a2acc03f",
+    "docs/production/evidence/checkpoints/remote-delta-20261006/lfs-cache.log": "81f6819612dfaf9af7854c05c501e2a69e3852e47f0bfb0a82dfce8f3f6c5db9"
   },
   "checks": [
     "actual delta recovery after remote advances",
@@ -439,13 +440,16 @@
     "deletion, rename, spaces, zero-net staged change and untracked binary",
     "stale baseline, symlink, credential and overwrite refusal",
     "actual local-remote coordinator commit and remote receipt verification",
-    "original complete archive recovery and coordinator fixtures"
+    "original complete archive recovery and coordinator fixtures",
+    "distinct staged LFS payload recovered from its archived cache object",
+    "missing unpublished staged LFS bytes refuse collection",
+    "all current HEAD LFS cache objects fsck PASS after restoring missing baseline sources"
   ],
   "actual_repository_delta": {
-    "archive": "wlr-remote-delta-2026-10-06T081546.691331_0000.tar.gz",
-    "bytes": 13332,
-    "sha256": "9f166b4a835d465f4b0d2f81406aba6565bf5918874223706260f9abdfd0791e",
-    "baseline": "c5fc78a366b9de4d5c3b1bd68ce827835869a5f0",
+    "archive": "wlr-remote-delta-2026-10-06T082438.982597_0000.tar.gz",
+    "bytes": 10403,
+    "sha256": "ff9aa3c85a94dda6484234e7a7321bd42e4d0fc350dfc4dc49afb1cfebd12142",
+    "baseline": "af934af2734bb7f8d784e132747935f74b6f1672",
     "status": "MANIFEST_VERIFIED",
     "limitation": "This actual archive was decompressed/hash-verified; remote baseline recovery exercised in the independent local fixture. No second fully hydrated GitHub clone claimed."
   }

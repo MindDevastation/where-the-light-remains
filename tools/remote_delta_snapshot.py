@@ -15,9 +15,9 @@ import tempfile
 from session_snapshot import CREDENTIAL, PRIVATE_NAMES, copy_checked, identity, stamp, worktrees, write_json
 
 
-def git(repo, *args):
+def git(repo, *args, timeout=55):
     env = dict(os.environ, GIT_LFS_SKIP_SMUDGE='1', GIT_TERMINAL_PROMPT='0', GIT_NO_LAZY_FETCH='1')
-    result = subprocess.run(['git', '-C', str(repo), *args], env=env, capture_output=True, timeout=55)
+    result = subprocess.run(['git', '-C', str(repo), *args], env=env, capture_output=True, timeout=timeout)
     if result.returncode:
         raise RuntimeError('Remote delta git operation failed: ' + args[0])
     return result.stdout
@@ -26,6 +26,11 @@ def git(repo, *args):
 def digest(path):
     with path.open('rb') as stream:
         return hashlib.file_digest(stream, 'sha256').hexdigest()
+
+
+def media_directory(repo):
+    lines = git(repo, 'lfs', 'env').decode().splitlines()
+    return Path(next(line.split('=',1)[1] for line in lines if line.startswith('LocalMediaDir=')))
 
 
 def snapshot(repo, output):
@@ -59,6 +64,7 @@ def snapshot(repo, output):
         files = stage / 'worktrees/0/files'
         files.mkdir(parents=True)
         deleted, paths = [], []
+        staged_lfs = []
         for raw in sorted(changed):
             name = Path(os.fsdecode(raw))
             if name.is_absolute() or '..' in name.parts or '.git' in name.parts:
@@ -71,6 +77,28 @@ def snapshot(repo, output):
                 deleted.append(name.as_posix())
             else:
                 copy_checked(source, files / name)
+            # The worktree can differ from the staged LFS version. Preserve that
+            # version's actual payload as well as its index pointer/patch.
+            index = subprocess.run(['git','-C',str(repo),'show',':'+name.as_posix()],
+                                   capture_output=True, timeout=55)
+            pointer = re.fullmatch(rb'version https://git-lfs.github.com/spec/v1\noid sha256:([0-9a-f]{64})\nsize ([0-9]+)\n',index.stdout) if index.returncode == 0 else None
+            if pointer:
+                oid, size = pointer[1].decode(), int(pointer[2])
+                cached = media_directory(repo) / oid[:2] / oid[2:4] / oid
+                if cached.is_file():
+                    if cached.stat().st_size != size:
+                        raise RuntimeError('Staged LFS payload size mismatch')
+                    target = stage / 'lfs_objects' / oid
+                    if not target.exists():
+                        copy_checked(cached, target, oid)
+                    staged_lfs.append({'path':name.as_posix(),'oid':oid,'bytes':size,'retained':True})
+                else:
+                    head = subprocess.run(['git','-C',str(repo),'show','HEAD:'+name.as_posix()],
+                                          capture_output=True, timeout=55)
+                    if head.returncode or head.stdout != index.stdout:
+                        raise RuntimeError('Unpublished staged LFS payload missing from local cache')
+                    staged_lfs.append({'path':name.as_posix(),'oid':oid,'bytes':size,'retained':False,
+                                       'scope':'Unchanged remote baseline object; hydration required'})
         for name, args in [
             ('staged.patch', ('diff', '--cached', '--binary', '--no-renames', '--no-ext-diff')),
             ('unstaged.patch', ('diff', '--binary', '--no-renames', '--no-ext-diff')),
@@ -91,6 +119,7 @@ def snapshot(repo, output):
         write_json(stage / 'state.json', {
             'started_utc': started, 'history': {'mode': 'remote_delta', 'complete': False},
             'remote': remote, 'remote_ref': ref, 'remote_verified_sha': baseline['head'],
+            'staged_lfs': staged_lfs,
             'worktrees': [dict(baseline, id=0, changed_paths=paths, absent_files=deleted)],
             'scope': 'Changed files and staged/unstaged state only. Recovery requires the exact remote baseline and its existing LFS objects; no complete/offline backup claim.'
         })
@@ -149,8 +178,20 @@ def restore(archive, destination):
         git(destination.parent, 'init', '-q', str(destination))
         git(destination, 'remote', 'add', 'origin', state['remote'])
         sha = state['remote_verified_sha']
-        git(destination, 'fetch', '--depth=1', 'origin', sha)
-        git(destination, 'checkout', '-q', '-b', state['worktrees'][0]['branch'], sha)
+        git(destination, 'fetch', '--depth=1', '--filter=blob:none', 'origin', sha, timeout=300)
+        git(destination, 'checkout', '-q', '-b', state['worktrees'][0]['branch'], sha, timeout=300)
+        # Keep index-version objects in the new checkout's own LFS store, even
+        # if the captured working file contains a different unstaged version.
+        git(destination, 'config', '--local', 'lfs.storage', str(destination / '.git/lfs'))
+        media = media_directory(destination)
+        for entry in state.get('staged_lfs',[]):
+            if entry['retained']:
+                oid = entry['oid']
+                if not re.fullmatch('[0-9a-f]{64}',oid):
+                    raise RuntimeError('Invalid staged LFS identity')
+                target = media / oid[:2] / oid[2:4] / oid
+                if not target.exists():
+                    copy_checked(root / 'lfs_objects' / oid,target,oid)
         for name, index in [('staged.patch', True), ('unstaged.patch', False)]:
             patch = root / 'worktrees/0' / name
             if patch.stat().st_size:

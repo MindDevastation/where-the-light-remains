@@ -13,7 +13,12 @@ collection, and never force-pushes. One source worktree is currently supported.
 
 Each archive stores the exact remote URL/ref/SHA, staged and unstaged binary
 patches, deletions and changed materialized files, including new/changed LFS
-source payloads. It includes paths with a staged change that has been reverted
+source payloads.
+When a staged LFS pointer differs from its working file, its actual cached
+payload is preserved separately and restored into the new checkout's own LFS
+store. A missing unpublished staged object blocks collection. An unchanged
+baseline object may instead require ordinary remote hydration.
+It includes paths with a staged change that has been reverted
 in the worktree, even when their net difference from HEAD is zero. All archive
 payloads are independently decompressed and checked against the SHA-256
 manifest before publication. Credential files/patterns and symlinks are refused.
