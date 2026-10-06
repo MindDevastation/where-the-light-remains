@@ -1,3 +1,18 @@
+# Current bounded lighting acceptance — 2026-10-06
+
+ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md:654 current assertions/import/startup,
+28 individually inspected native Low/Medium images, protected saves PASS. Four
+accepted Hub lantern instances and local clock/state-owned core lighting; S00
+retains one warm source by stage projection. Accepted art bytes preserved.
+Full style/upper apertures/windows/backdrop/hero/channels/dressing/audio/gallery/
+physical GTX1060 remain OPEN; GATE-VS1 OPEN/S03 blocked. Counts25/37/15 among77,
+185 rows retained; full-game planning estimate25–30%, low confidence.
+Next highest missing architectural row ARCH-008: audit window/glass placement
+and opening-ghost clearance in existing upper apertures before authoring.
+Resolve newest stable/receipt from actual remote/checkpoint journal.
+
+---
+
 # Current shared gate delta — local acceptance, publication pending
 
 ARCHIVE_WING_GATE_ACCEPTANCE.md records the3596tri shared timber/iron/brass mesh

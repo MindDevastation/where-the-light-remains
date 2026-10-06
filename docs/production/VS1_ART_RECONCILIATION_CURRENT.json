@@ -1396,9 +1396,10 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Moon fill plus one accepted warm practical now instanced and locally validated; full night/exterior composition still PARTIAL.",
+      "finding": "Bounded current practical/state acceptance:654 assertions,28 inspected Low/Medium views; original one-source S00, four shared interior Hub fixtures/core awakening, unchanged S02 cold/hearth projection. Full exterior/rotunda/style/gallery/physical target GPU remains PARTIAL.",
       "evidence_paths": [
-        "docs/production/S00_ENTRY_PRACTICAL_ACCEPTANCE.md"
+        "docs/production/S00_ENTRY_PRACTICAL_ACCEPTANCE.md",
+        "docs/production/ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md"
       ]
     },
     {
@@ -1529,8 +1530,10 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Sleeping/awakened light state implemented; complete rotunda/core composition not present.",
-      "evidence_paths": []
+      "finding": "Bounded current practical/state acceptance:654 assertions,28 inspected Low/Medium views; original one-source S00, four shared interior Hub fixtures/core awakening, unchanged S02 cold/hearth projection. Full exterior/rotunda/style/gallery/physical target GPU remains PARTIAL.",
+      "evidence_paths": [
+        "docs/production/ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md"
+      ]
     },
     {
       "section": "Stage 2 — Крыло I «Тепло / Свет»",
@@ -1648,8 +1651,10 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Real cold/warm projections and scoped native room evidence accepted; final full-room material/lighting/art/GPU gate open.",
-      "evidence_paths": []
+      "finding": "Bounded current practical/state acceptance:654 assertions,28 inspected Low/Medium views; original one-source S00, four shared interior Hub fixtures/core awakening, unchanged S02 cold/hearth projection. Full exterior/rotunda/style/gallery/physical target GPU remains PARTIAL.",
+      "evidence_paths": [
+        "docs/production/ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md"
+      ]
     },
     {
       "section": "Stage 3 — Крыло II «Жизнь / Голос»",

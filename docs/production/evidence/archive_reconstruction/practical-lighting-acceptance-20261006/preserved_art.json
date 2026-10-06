@@ -1,0 +1,850 @@
+{
+  "status": "PASS",
+  "count": 208,
+  "identities": {
+    "game/art/README.md": {
+      "sha256": "00a7e2fe55e5674940651a9fc06617aa58afd25bddaffe0379933806283b9534",
+      "verification": "Current materialized identity"
+    },
+    "game/art/import/archive_wing_gate_mesh_root.gd": {
+      "sha256": "7506275f189332d966b15b79609a32fba1807b7691b1452c93b2ba2815e9f958",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_aged_brass.tres": {
+      "sha256": "9cea370c0aaf299bdfdf4bb29867194a8fd13d7b4b1d5a2877a1730a358e134c",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_aged_leather.tres": {
+      "sha256": "71ca371edd03b1062fcd6e42dd9ae1fa54557a678d39be358ec6db3455e228cb",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_archive_beam_core.tres": {
+      "sha256": "5b33e50aea683106e6c661abc41ff37ff5b1686d5af552b1e0895886cef90db6",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_archive_beam_halo.tres": {
+      "sha256": "1c06298a705dc2b146ec06d326314d23b8b74c64496ebf1a6284c0df232bd64f",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_archive_emissive_gold.tres": {
+      "sha256": "d81e1f39c7cc7397823eae630c4d76f734cd19997581042fa55a5b900b00959a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_archive_night_sky.tres": {
+      "sha256": "4a10f2a8270d3f3cd9abcaf3f88b75137f2c6dfb025ca16fd628dc41e3474bda",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_archive_parchment.tres": {
+      "sha256": "e09a5b0783ff1f725d1a8da9797a1278beeae0ef426c9f2c9fca4c04a00d78a1",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_clear_glass.tres": {
+      "sha256": "42d7964b6db1f86666d06ffcefed6603524a319739dc9574f66ad6f0573989cc",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_crimson_textile.tres": {
+      "sha256": "eaa353a11b5bf0c2282af05bfe567ed99e708a42e96e25a3deb04d4d34eb128b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_crystal_glass.tres": {
+      "sha256": "f0a3f957b1eadebc42adb65122f95ea7b4f7703658a1a7406e40a5e249c22858",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_dark_iron.tres": {
+      "sha256": "cd98d082db10f52a9f8c8dde2618a4cc8de59ce863f39ed9d849d50893d9feff",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_dark_walnut.tres": {
+      "sha256": "f5e2de68b1ababca7df2246ad953eea5a5fed0a5ab117e436aa57bd84048034f",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_hub_night_sky.tres": {
+      "sha256": "23d560c7d595277136385acbf9b9c3e444624889e111e075ca902870cff08e11",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_memory_glass.tres": {
+      "sha256": "ee3f78e846ce8f0ab79fc6f080bee9a75a0594ed1b629e26cbf9ea40adc7ec3e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_navy_textile.tres": {
+      "sha256": "21f4d6f05f4fdc3aa9317f640b297fc2b62522bd44da5c6313ed6cc8b2493f60",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_observatory_stone.tres": {
+      "sha256": "7198490b91e871a015e02ce2bf4ce1bed240d3db4391c6aa42145cf82d368d5d",
+      "verification": "Current materialized identity"
+    },
+    "game/art/materials/m_resonance_teal.tres": {
+      "sha256": "5bbcae0ff5d59565785d2cf1c1987c83b053c64f6588cc76dced902c01a090b2",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_arch_4m.glb": {
+      "sha256": "92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_arch_4m.glb.import": {
+      "sha256": "541d84ec2c20c3227107206dfe424603ea684b5686c6172f631df6f193012ced",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_bookcase.glb": {
+      "sha256": "4eabe0dc054f24b6efd894733ac9758e83d84d7d590e4914b3253eaec816205a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_bookcase.glb.import": {
+      "sha256": "16280433e5c5289cefe67eb52c08a6e632ae39d27be8bd7f343c9f4b47e59c0b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_floor_1m.glb": {
+      "sha256": "76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_floor_1m.glb.import": {
+      "sha256": "5570f094e6cedc50731c7e5d94457b7f39cebc2c5ac53de496beb550cc807e92",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_pier_4m.glb": {
+      "sha256": "fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_pier_4m.glb.import": {
+      "sha256": "29bda80941dc95e3be2a54f55d272b6a7cb722ce056a115e3242638019198984",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_rug.glb": {
+      "sha256": "d4d5d77e2348b229ac532d1c8088ae0762c8d3b636a48a240bf14652eb3261d9",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_rug.glb.import": {
+      "sha256": "a682aee3c1cdef477d3dbfc86bcaf13423fba0c46180304295dd4e5e71b151fb",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_2m.glb": {
+      "sha256": "0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_2m.glb.import": {
+      "sha256": "18cf42a6b0bd0ef8d3e7473af445522c0622f0105a45a67b6dda660b0c09bb85",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_3m.glb": {
+      "sha256": "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_3m.glb.import": {
+      "sha256": "9923e54fa29bc1d5e28c8c74b954bafff13d1bd62033218f8eb5057f3409dc02",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_4m.glb": {
+      "sha256": "e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_4m.glb.import": {
+      "sha256": "3252123e985db498384a8c664f911d4a12bb6ad4f4eeb1c639cd2db7e2575a7f",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_lantern.glb": {
+      "sha256": "9598d00819f9c1bacc37390f02b6d677b8e9830a8ebad70b940dc1a6fe3c3096",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_lantern.glb.import": {
+      "sha256": "4f1fe2e48cb37a331d6b9fb9c65c404892d8eb29e5ec67b249678740293e8d4e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wing_gate.glb": {
+      "sha256": "0df79227b620257ef586821690c9f58257457defe6aa1608ac93e1c81281a190",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_archive_wing_gate.glb.import": {
+      "sha256": "91df001dd02fcb80c5df5a195ced5dc520c128f0e30084ff5729048532174f73",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_guard_long.glb": {
+      "sha256": "4d52cb70a3fec6bdce3c75d714f15fc4afce1cbfff1b8ec1cee19848fcb30f57",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_guard_long.glb.import": {
+      "sha256": "f8f60fbfd90ad737bfc5e0f9ca379c5ec1e19fe669707764cddb65376c73d70b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_guard_rear.glb": {
+      "sha256": "75dcc815e74c1900e7d8ab36bf1f2a8d3f46c348132f8bd3b675b76d2c22afd6",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_guard_rear.glb.import": {
+      "sha256": "9a01653e5a14a1935cf3dd20f4daa449b6f619c62b752129b20b02efefc7a32a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_path.glb": {
+      "sha256": "2697adc7b90c93c4a1cd2da5513d13d7c7893084d0d9dae258339826a717c7b4",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_path.glb.import": {
+      "sha256": "08ffaeb81293155553f09a97bf7b4a111a569aff7bf36dc9b1c6372f9445c570",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_entrance_leaf.glb": {
+      "sha256": "5af2f6db8dc3860d29bd1a90c1379e460d96d152fa21ccdf0f7af35612d05e41",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_entrance_leaf.glb.import": {
+      "sha256": "4a0313a936a34e1341d4716420ba7ef79de420274b156372208878f032a828d3",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_entry_arch.glb": {
+      "sha256": "c1c0efd48af37d6b9c03a2a745c4e88dbae395f77d8b4827a5557304916d029b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_entry_arch.glb.import": {
+      "sha256": "46c4ba950354d03fb45133764015502356d90134282eb758b14e58d6ea96d81d",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_entry_facade.glb": {
+      "sha256": "f434c2bbc9bc5a8bc007373cab6bd9ce337c6692aa6da281f6ff66e8d96734d8",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_entry_facade.glb.import": {
+      "sha256": "41765e021a4523742edcb6c223ae4a4544151500109dcf33c0fa1cbfc9c0d21c",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_bolt.glb": {
+      "sha256": "f90aa412f2c70f15e959eadce3f12b65ca49fce0adaa9716d543f6b681f3d93b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_bolt.glb.import": {
+      "sha256": "8826994b1bf37ea9a9800a721420eb63ab45a729b04f9b6131dbbebf003b39fa",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_housing.glb": {
+      "sha256": "c38850f65031236949be5f7533886c0a5bf2bb75e236643488b1c8acf9ebdf50",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_housing.glb.import": {
+      "sha256": "987712ce0270a1fac05eb9c22d80314777cd45921c9e25fc2837887f91e2414b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_keeper.glb": {
+      "sha256": "257fb8d48d95547a3a61fbb2fab6d82307c6c68ffb138cb14f89426ae5d6c26e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_keeper.glb.import": {
+      "sha256": "45255c3d06fdc772bdbdb44817b85cdd264c3c35f5a46c2c3f395edf5abf99af",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_core_pedestal.glb": {
+      "sha256": "46fd606039325ab095a87debcee5b168b48ceefe7d4574838f061d9f42e1f1ff",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_core_pedestal.glb.import": {
+      "sha256": "18d21e2e7de108a5c4c1d28bd830003226c6104f557ae445bb7828987575810e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_drum.glb": {
+      "sha256": "eaf342a4196e36b7c811fee1e8a62b8e4530b6ec8f8297c4128770540c54e404",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_drum.glb.import": {
+      "sha256": "707e6f4bfb5c8755ace73d2a6eac85d89c156eda0adc47515ee40b42c16ca89f",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_frame.glb": {
+      "sha256": "bb68b2af5849907104c88c368c5bbe5c369362237bd862fc5121bd0b0975017d",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_frame.glb.import": {
+      "sha256": "cb5a9e50b5ce8117a96f152c8c9257ee33116cf465f425296b1c6692f253ff16",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_glass.glb": {
+      "sha256": "441f5630a6dd34cbdee0fe878e7c3691a03016e3b0716f77d10ac45619f2b9df",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_glass.glb.import": {
+      "sha256": "6bb22fa23487d1d90fc9ffa0a08f6c546daed3978051e31d7eabc9de6662d031",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_sky.glb": {
+      "sha256": "ad08178e51dec6e6c11b2e3746e9ede7004e9233a1b7d6de793bfb9361bd7245",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_sky.glb.import": {
+      "sha256": "db8ad06bc0a9287fd774a1cabcf135607e17a7459ab798ed972abbe664082937",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_floor.glb": {
+      "sha256": "b13179eca99cf87dde6a76097ab3436955a3470ce3dd1bc6eed3960a17fa2c35",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_floor.glb.import": {
+      "sha256": "8f452db00e5316b5671d282711e5dba4267a2e24fba729eefbbb0427b947cca7",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_wall.glb": {
+      "sha256": "f00705ba6d03def2ea4a01c8bd736be6c469a1b94c8f3a3ab5712e90e5c33e0f",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_wall.glb.import": {
+      "sha256": "47c02bb79656cd1eb28284910aa0c686302b8f7e51d9fb8a6a4fba18cd07a1d6",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_lens_socket.glb": {
+      "sha256": "048dc3854782d0f9675a84eddbd9f7bdd1d13687908d5c1d574afc6e4370d07a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_lens_socket.glb.import": {
+      "sha256": "c5a34cda212622e5a6e4a7e6ae0a888fee9037145522e082c7e214c00f9f89a9",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_lever_base.glb": {
+      "sha256": "c3817ce376a2b7380fbaaaab5796c271707c0ea7d6ccb03e8d1c7e0d3707c7a3",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_lever_base.glb.import": {
+      "sha256": "d001371e644ed71f5b8e18c7263e647a9e94faf6e9bc3c1b055aad3fc27bacdc",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_lever_handle.glb": {
+      "sha256": "3e75aa3d1dc259985069b225d8e4ac0ca7e7695a352b98b69b3f4b1770530ee0",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_lever_handle.glb.import": {
+      "sha256": "ad16bdf53c726e1d181b302ee15a60ed15e2f88f721a93797007211e98501647",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_panel_base.glb": {
+      "sha256": "f9e3a6455a74e06ae9941726095d99183b8ee9d88603716ab664c5de91a17cf8",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_panel_base.glb.import": {
+      "sha256": "9ae32689d3f11893d0177d7576a90920dd88f40d56ad09952991ab58a032136b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_panel_cover.glb": {
+      "sha256": "55f821825a8894bd0692b3e99669f3da4816e767d26f4eb2304a06ae7207934c",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_panel_cover.glb.import": {
+      "sha256": "5841288409ee2ff8d36343b1f723a53833c999f5af19b570ebaa7e6c8b39140f",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_starting_lens.glb": {
+      "sha256": "2f3e6451666da55d05bddf4124a216ed7d3cae05d0bed894486a0eedbc72a1ea",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_s01_starting_lens.glb.import": {
+      "sha256": "adf9c6c7a53c36d3b51c925a6ecb1e45a7979a1c8b8b5842c8348887ef1cca91",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb": {
+      "sha256": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb.import": {
+      "sha256": "e125cc961f5fb99acd18fc3f4f5bad0764ce6c9f58f23d26c4db6d175a2d383f",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb": {
+      "sha256": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb.import": {
+      "sha256": "04b89247f97794eef2998757730e5f0b25845fc283d619e5f2b8ffa5a733341a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb": {
+      "sha256": "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb.import": {
+      "sha256": "a228a7946f8b0fcadb3ed63493a4d598fa4ec35ed7ef22ca6a01e70ef7473e02",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb": {
+      "sha256": "54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb.import": {
+      "sha256": "508e4b0df95049132458a7a36ad5fd5a340a60e36c5a399df3a03013c3e17d28",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb": {
+      "sha256": "ee8a33474c883136f62d09fbe01ec35877b1fff37d35c0c3491e6813d1d6f054",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb.import": {
+      "sha256": "13362806d980710de9ee5d0fdbbf1b2ccd2819fd69f030f96d57f0306b9ee348",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb": {
+      "sha256": "fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb.import": {
+      "sha256": "f4fb767da9937b63595ef89c03c939b170bb61949d7b106f75b149103177d24c",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/validation/sm_pipeline_meter_cube.glb": {
+      "sha256": "245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/validation/sm_pipeline_meter_cube.glb.import": {
+      "sha256": "d379d6d114fd9f467d96b2e5e987e197f2a6faaa3c04e7ca57c9fdc045f42ef9",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_emitter.glb": {
+      "sha256": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_emitter.glb.import": {
+      "sha256": "9a2fa86caa4248f4ac055d56a66f4a741410753fd8a0eb792199926968060bf4",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_focus.glb": {
+      "sha256": "da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_focus.glb.import": {
+      "sha256": "835f10ec81886f64407af2a3826374682b70b67e18e45f948b6f4aff3250af0e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_frame.glb": {
+      "sha256": "90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_frame.glb.import": {
+      "sha256": "e7198ed1769f8448c53eae760fcd826a2e8451a360e628090d53e6f9216478cb",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_hearth.glb": {
+      "sha256": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_hearth.glb.import": {
+      "sha256": "6a75c82ade1980ea8eb9703d4187198f02f95022193df7c00d27e39b92e3cd3a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_inner.glb": {
+      "sha256": "e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_inner.glb.import": {
+      "sha256": "d213b167a738470afb51d7f88dfed1335973c0dd7b3ddd74726b399a4e672665",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_middle.glb": {
+      "sha256": "845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_middle.glb.import": {
+      "sha256": "36db181fceb7f2f5d6cdba3611b7286579180f456115592f06697de07ad291df",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_outer.glb": {
+      "sha256": "14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212",
+      "verification": "Current materialized identity"
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_outer.glb.import": {
+      "sha256": "dba17a242f93c8bb9b4828c64da0b47e6b6af36970e32b269269d01530c878b2",
+      "verification": "Current materialized identity"
+    },
+    "game/art/shaders/archive_beam_core.gdshader": {
+      "sha256": "16fa2cb52427b1a25c932fe99f13e1b49b762ea14b1d778f71db44de0b5318c9",
+      "verification": "Current materialized identity"
+    },
+    "game/art/shaders/archive_beam_halo.gdshader": {
+      "sha256": "bd06584019fc3f34aa0d7924fdb57912a7f1ffcf1201928955c54c9c94ecc183",
+      "verification": "Current materialized identity"
+    },
+    "game/art/shaders/archive_night_sky.gdshader": {
+      "sha256": "471f5549d779ec5217403396fdc663c52ed8074b477b595546c6c0ad08879a3b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/shaders/hub_night_sky.gdshader": {
+      "sha256": "643b77a0bcf6ecddbdf06b04a94a718e8c3cee6109bd3859bbfd48ac67cbb9ee",
+      "verification": "Current materialized identity"
+    },
+    "game/art/sigils/hearth.svg": {
+      "sha256": "66a2a8f61ff5e2bb75c906c55fa657e31b3f11b8b410e3c331a66f3ea9ffdaaf",
+      "verification": "Current materialized identity"
+    },
+    "game/art/sigils/hearth.svg.import": {
+      "sha256": "3a8fd2ba5d2380b498ee5eec772753ce364924db36f24518409642a2af81b92b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/sigils/star.svg": {
+      "sha256": "6543f484005993357b83f4b9a2a8ba6c78757d464d25212b1796be0ecc34a54e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/sigils/star.svg.import": {
+      "sha256": "99a3db5f655f627b77b1097da368b68a0ee7ff8b98e71d43fe1b470fafba558e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_brass_albedo.png": {
+      "sha256": "8fdc78c94d5cb6350661d786f2b3471d3091531694e0776e3058862b800176ab",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_brass_albedo.png.import": {
+      "sha256": "c4f60e9889b2144529e5be2b8ae488270ebbeb1f1eb512ab7ed35da50cc30a86",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_brass_normal.png": {
+      "sha256": "c3987c56a5e546529133e8976cb2816433eea40e495710b53a54c7d904f98f7e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_brass_normal.png.import": {
+      "sha256": "cee430a5c1c2721c1bf5ea1c9167f82f6140a1c0f0aa6fb7e74044c933f458a0",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_brass_orm.png": {
+      "sha256": "ee05d9944768534663438d6520b638b6a28b79b1eff1f25872bb540452d92ed4",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_brass_orm.png.import": {
+      "sha256": "9fde05304dc7cc45e8f0d63d94dc1e3323b55b6183d8eafd0187a94a2c779135",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_leather_albedo.png": {
+      "sha256": "113c3a9022a3971c9a3fe40beaebbe8332e4be3560a14785829978a8364f50b3",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_leather_albedo.png.import": {
+      "sha256": "bc0609d9509b20ef40583eeef5b7dd6e8a2fd09feff84f74a58e691bc7a56e72",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_leather_normal.png": {
+      "sha256": "66b55a9bf2397e57a9afec6ce9ac4ae62e81389fd2b77a0468c29b48525357ef",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_leather_normal.png.import": {
+      "sha256": "174a583a9ba044a4f37255a971a3947c5d3bb0b6deed61be234fadef77b69425",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_leather_orm.png": {
+      "sha256": "f2db50ef558c832612b295ac3a08e0b1d60ba79e59df57e95ad2b5db5113fc25",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_aged_leather_orm.png.import": {
+      "sha256": "74ac54c37b7778898e546a5f22828bdf5f80e4f4a15f78436ab8f4a51904bf1a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_iron_albedo.png": {
+      "sha256": "b09dcca7d1ccf1437db82ea1d488d8d2593cd08c5eb8800b98d1ca39420b080a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_iron_albedo.png.import": {
+      "sha256": "f0013b69cf48e783249d58d4e106f9cd09906215021f8f4b07b28047e12ac699",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_iron_normal.png": {
+      "sha256": "01448a91b4f5dfff5b19035a2b787e1e20ecfe9ec23bae45c0ece6d006d10eef",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_iron_normal.png.import": {
+      "sha256": "3be1bbf71b3a9b4a696a737eb579512cec72223f8dc5848ccb784c34c07176b6",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_iron_orm.png": {
+      "sha256": "52faf7f2632f728d87733bf683073beb26c90f44bc0133ce00d205bcb3a2a80a",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_iron_orm.png.import": {
+      "sha256": "be4834481187371459be6d9b8258bc8d75e6781718f8998b5c5394f5b78d96f4",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_walnut_albedo.png": {
+      "sha256": "0d8d0eef4fb173a8a996e7dfd6a6448dff36587a841581ba25b08c6ebb50f988",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_walnut_albedo.png.import": {
+      "sha256": "92464bb83c415d9a86160cae94e69d5226568e17ee092e7f0fbace3bef97f08f",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_walnut_normal.png": {
+      "sha256": "12c281e5cf923369028d478ce8b72691bb8874e3b17e529b9fa7c7f2106c1600",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_walnut_normal.png.import": {
+      "sha256": "867cd2bd83267ea6a9e6da36a3acc431448b4b881d2a90c905aaa2c3442cdf1e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_walnut_orm.png": {
+      "sha256": "e361bdbd22506c2cf5d7fb476b971e18da8b37c99ac73ef6f899fb0a83332dc6",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_dark_walnut_orm.png.import": {
+      "sha256": "5bd0b288befa7e51215a809df5e3bdf1fe43f0ad698d6d7d25e1f8ebc451d5bc",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_memory_glass_normal.png": {
+      "sha256": "8e3f0bb8350f50bf07d09deb262f838896a5cc218ecf3232192fbf6e429b0a20",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_memory_glass_normal.png.import": {
+      "sha256": "534c8c452f3a3628d30cb8547e397cf47de2641992aa87594e36a61035235e40",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_memory_glass_roughness.png": {
+      "sha256": "c5b9f2ea905b3d268cc4b735fcb741ca03221af13fea33a5ed0930b58a052be3",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_memory_glass_roughness.png.import": {
+      "sha256": "899f2794154b06e0ac7413e3d705575e8370fdf5602761c35e795cfe0a1f3af3",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_observatory_stone_albedo.png": {
+      "sha256": "70cdce0111813bb7d8a5cb3b19def99ee9723e5ee96fc1c27139d450159be861",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_observatory_stone_albedo.png.import": {
+      "sha256": "604a8595f27cadb28e0702adda5c0bb3c9de29f1a8579ac9002a44d0ab52959b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_observatory_stone_normal.png": {
+      "sha256": "af0b93b7295d1ed3f8409345beaa84135236f76b35fd7e7f8f7cb8b3c774bc52",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_observatory_stone_normal.png.import": {
+      "sha256": "b5caad21a620b0797f69304a28e5e6d763f791246dc6e5f63a850e70036e0bfe",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_observatory_stone_orm.png": {
+      "sha256": "c37020fe7daea97898afef9ee6322962d77df15bc1430d4a2195118eecb1332b",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_observatory_stone_orm.png.import": {
+      "sha256": "8fe80700f737f21703c69a245d37e80d44774c3c9a71ba2d999c85494131a577",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_woven_textile_albedo.png": {
+      "sha256": "b12cf22e086b5f74f9bf0c888bdcafa792f904c4b87c2b5cef7a3ffc5e249be8",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_woven_textile_albedo.png.import": {
+      "sha256": "503cb554fc5594c6dbad0bbdb7df3056eed393d87f400d707f73203dac0baace",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_woven_textile_normal.png": {
+      "sha256": "b140bff4e4e5e62bdea0db9592a261a4c16abad31746e42dc35825f02742a840",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_woven_textile_normal.png.import": {
+      "sha256": "c4ab0fff83e635bb930fe3afa6e16cc04633b7bdae9f0ea3fe351fad2c27d7cd",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_woven_textile_orm.png": {
+      "sha256": "8b7b36ae2e28f1bd06b5a8aa144c8e552c69b2bc36dc24864250eb812a1a783d",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/t_woven_textile_orm.png.import": {
+      "sha256": "7a276021f7961158028e2d49ab216a15dbd543fec4d8d0c5a0d638f27bb2c909",
+      "verification": "Current materialized identity"
+    },
+    "game/art/textures/material_library/texture_manifest.json": {
+      "sha256": "aadaad2f185bcad7195683b8d15116c9067ee05d29e816a4a011671520540ae9",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/archive_beam_core_mesh.tres": {
+      "sha256": "0232dba8308c558cd00d1a310e403403c131b595d60d19975b486df6a0c74292",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/archive_beam_halo_mesh.tres": {
+      "sha256": "3ac46f38711e74e730ab63045b1dbe2deaea107ac53cad8eebfb945b24fa40db",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/archive_light_beam.gd": {
+      "sha256": "050612bb53a5742b83d5355e26838ae66dd38933662905fb47a031bb60a79799",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/archive_light_beam.tscn": {
+      "sha256": "48519fcb7ad483c798297d6c2ef003f9902f3d83d5d476c1f2dbcf14b8af9df2",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/hearth_flame.gd": {
+      "sha256": "3ccdd04545e5e3b8454238518e9184fde35d2eeea9887d97d9ab5ca2e5531e9c",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/hearth_flame.tscn": {
+      "sha256": "f8685a56a186c7ba0e7bc80650e5617c6e9f220ddf00fd494344c14686067f43",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/hearth_flame_mesh.tres": {
+      "sha256": "accdd8c29501f7e99b13abc89499a11173cf98f6b5e843154a20bf247032a42e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/last_spark.svg": {
+      "sha256": "075bf1dac0f3db4906a6b5f05896631736c523c4b511b4f910396d1c8ecf8cfe",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/last_spark.tscn": {
+      "sha256": "f247a9a8a8ffb7b4b7a351207b54cd337cb7a33d91028029091979d0f5f61008",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/star_target.gd": {
+      "sha256": "239d88e2743c71632cccae1185291bc5243ab4973aed2ddf4b64613822b72b0e",
+      "verification": "Current materialized identity"
+    },
+    "game/art/vfx/star_target.tscn": {
+      "sha256": "164c971dcc75fcb15237130e1be33ba4b53d9da52b7e2fd98eab1111158da42f",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_arch_4m.tscn": {
+      "sha256": "42b2b827a1afcc3171292df84dba4ddc7bf480bc34c8de1fddf86c9f0590a1df",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_bookcase.tscn": {
+      "sha256": "5f1295e658bd4d0338e7562cc1b569d6ecaa48c9e9e30f26d83c1871c548df4c",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_ceiling_rib_10m.tscn": {
+      "sha256": "8cdee08eab0dd273438c02bc8cb14949ff73338cd502c7635da48e3f2379e32f",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_ceiling_rib_12m.tscn": {
+      "sha256": "1ec1626344ade4f017b0505b1fee4f0ac36b240930418315d49f9aaeec38ae2c",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_ceiling_transition.tscn": {
+      "sha256": "d03c100bda1043323943030edc19e271ea336538f63dfd1d510ce3ca3ff476b0",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_door_keeper.tscn": {
+      "sha256": "c03b9cb6adf7b9b083e1025628876048c672fa1da61fc78e57af7d778eb9303a",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_door_lock.tscn": {
+      "sha256": "c1bc24354c5077303b335b1b841228da79b115a286f9cc1accf20f0d4420fb27",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_floor_1m.tscn": {
+      "sha256": "f1fc85e772e3b6c58c58c4ba5827821c071b3326f042a9373ea01355b1095e01",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_hub_lever.tscn": {
+      "sha256": "19678b4b9c03cc407233599e8015543af63f6032c55b8dcb4c276a9e824dc8eb",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_hub_panel.tscn": {
+      "sha256": "5f1c6a16c65c445e42adde470bb3d8990035c4c7773e3081cd4df8e722d2d476",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_pier_4m.tscn": {
+      "sha256": "57af190b3f65659f17be91635912d71e53d3f13d8c3b41010429fa6b30608638",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_rug.tscn": {
+      "sha256": "5e8bc6fffe2def031bf2a841efd9665e98e96fcecaf1812a0ef32332435dfaa7",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_wall_2m.tscn": {
+      "sha256": "19b825d768f1c8c4a364256bac83aa3e188afa11b8537ef3f6a45f2df6d80fb6",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_wall_3m.tscn": {
+      "sha256": "cc72835de3230b63d77193f96c3d7cdbb641de41226604429723fb04fb4e92bb",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_wall_4m.tscn": {
+      "sha256": "333d364b9bd5da8f58dcbe45a280dffc6f8d001d51ad45ae6770856b197349d2",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/modules/archive_wall_lantern.tscn": {
+      "sha256": "e4575b7b82fde3330441cbe9d25155b526735a8abb797ababab7d5a54657cd84",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_books.tscn": {
+      "sha256": "867c51aaef1864a9241ac7220f2f1a45f2352daedc7354d4d0311c28cdcfe3b8",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_ceiling_study.tscn": {
+      "sha256": "2cdd6ce84ad9a7aba92934d37e35a9363b50d177f7821ce7148682544da0726b",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_corridor_floor.tscn": {
+      "sha256": "ec82cfdebe079262a40b4fcf6d9aa9e73f708a20f009f6c3f585131f8551e526",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_corridor_presentation.tscn": {
+      "sha256": "eabde12947f19766d88472ad24162ab388eb2a82e24d7722e40e3e2135351a8a",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_dome_coverage.tscn": {
+      "sha256": "701e7cdf508331da2c83ddcc552e44340eea752617c3b0119b25b0d9d68145ce",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_practicals.tscn": {
+      "sha256": "85bed423e5a6218962199f9d9962654d2b413778e0a3e4ba589e280f55a618ae",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_roof_presentation.tscn": {
+      "sha256": "41c74c987c80e0579e820e85ea63c728114a8678046c32ff9f05e46130f4273e",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_room_floor.tscn": {
+      "sha256": "2e26220c75da0f0d8d963b217b9cf17b2377dc85777a42532e1195fdf82e25b1",
+      "verification": "Current materialized identity"
+    },
+    "game/worlds/archive/wing01_room_presentation.tscn": {
+      "sha256": "4d804881bc5f7f016be76900749be44e77b28ffc40bfde3e37f29100c764d3a4",
+      "verification": "Current materialized identity"
+    },
+    "assets/3d/blender/archive_kit/archive_wing_gate.blend": {
+      "accepted_payload_sha256": "06fdc27a487d6cc8bc9d1f14a6a1fa745f0e47cae8670c54978c789ecadc1156",
+      "git_blob_identity": "07f13e315059a7df3397fbfa806d0d73b2bff30d",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s01_hub_floor.blend": {
+      "accepted_payload_sha256": "a4ab821ec78466db41d60ca8f52ea61cac2a6db9ed624d8ed0b78ad57124724a",
+      "git_blob_identity": "5ef8695b91c5647494ae9996e57af36271d8276f",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s01_hub_wall.blend": {
+      "accepted_payload_sha256": "8de0e3a0378752a848e0ccd1c1fd3c57f9d659b6ebf04fafce1ddaae76bbdfe1",
+      "git_blob_identity": "a114f797675dda82046525938466c27d5e63201b",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s01_hub_dome.blend": {
+      "accepted_payload_sha256": "c2f7d9b48762ff446c98e969208d6cde515c4bda8644f0903ff172c9e69f4868",
+      "git_blob_identity": "a6fad396d32ef73f56c9fbc79e88875e6b9fe63f",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s00_approach.blend": {
+      "accepted_payload_sha256": "7c482d1f465246937f8ff63f1a9b79ffc1dd590a5f822e9ee06e1e6c7aa360b7",
+      "git_blob_identity": "5a33da42ce264f90138031a79a1b95711e7bcf9b",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s00_entry_portal.blend": {
+      "accepted_payload_sha256": "f6af12cd4c37b335dfc3ae7199931522faf5d4ae719c6511ab51853bada02c27",
+      "git_blob_identity": "1f3820331295f757b0d880eafc79c3e51821875b",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/archive_rug.blend": {
+      "accepted_payload_sha256": "d798e11858bc25be2269b1c2292e872b33022df81f84565ce5e4bb380f3091f0",
+      "git_blob_identity": "3512065154a22eb24e32fcd65270190479ddb52c",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s00_door_lock.blend": {
+      "accepted_payload_sha256": "d7146727118f1f82ec92f5529a8476d7d633f50df459061680362cf7e5186ced",
+      "git_blob_identity": "8e7bc71b7bf4020108c384bf083c243b16315e0c",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s00_entrance_leaf.blend": {
+      "accepted_payload_sha256": "e918a2c4b1399eadacb358db898adf6c1a1ef8a249335a4a4f10ee464cc0b457",
+      "git_blob_identity": "eb67239f9f0f517be301879157669b68ffe07fe5",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s01_core_pedestal.blend": {
+      "accepted_payload_sha256": "323066677aed8877a2cfc05cbb9d7abadbe86af1667eb4be81fbb43ce474c2f4",
+      "git_blob_identity": "1a67a0a7cc6342910dfaadd5186971eea53b26ef",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s01_hub_controls.blend": {
+      "accepted_payload_sha256": "47c07aa5f22c46e602cb841fd8f2dcf5b99668d730d22436b56670057f04eee3",
+      "git_blob_identity": "03911226218e3d6686447eb4d2a56b9603b2fdc4",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    },
+    "assets/3d/blender/archive_kit/s01_starting_lens.blend": {
+      "accepted_payload_sha256": "e9db1b6bde2f409a8b9a6b71fbbf3c58a099b41924948c35aaac570a8a55b155",
+      "git_blob_identity": "569216cf74dad639d02b0740ec0c1e37855b7ac9",
+      "verification": "Unchanged committed identity; accepted source sparse/unmaterialized, not reopened in this lighting-only block"
+    }
+  }
+}
