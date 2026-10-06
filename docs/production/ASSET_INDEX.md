@@ -350,3 +350,9 @@ S00 single warm practical: existing accepted archive_wall_lantern wrapper now
 fixed to outside Hub/Wall3R. No new asset payload;49 scoped assertions/startup,
 12 inspected native images, original family hashes unchanged. See
 S00_ENTRY_PRACTICAL_ACCEPTANCE.md. Full S00 night/exterior still PARTIAL.
+
+S00 local last spark: game/art/vfx/last_spark.svg / last_spark.tscn, original
+native editable presentation, fixed existing root and clock-owned cosmetic pose.
+40 actual timeline/pause/quiet checks/startup,12 inspected Low/Medium views:
+S00_LAST_SPARK_ACCEPTANCE.md. No new modeled binary family. Global VFX-002 and
+full guided exterior remain PARTIAL; current delta classifications include this.

@@ -1,3 +1,28 @@
+# Latest boundary — local S00 spark and architectural escalation
+
+Recovered c186b4f exactly; full reconciliation stable f000a85/a6aeb0b. Continued
+through entrance stable f3eb644/8083fcb, lower core75cbec4/b737181 and warm
+practical8cde634/b0bd2a0. Local native spark40 actual clock/pause/quiet checks,
+startup and12 inspected Low/Medium images PASS; seal last-spark-acceptance-20261006.
+All four bounded stages total443 scoped check executions (including repeated
+regression),58 individually inspected native images. New modeled families only
+entrance leaf2100tri and lower housing2144tri; four LFS payloads independently
+retrieved/reopened/imported/used. Existing accepted art exact identities retained.
+
+Resolve final stable/receipt from actual remote and development journal. Current
+canonical delta:24 ACCEPTED/32 PARTIAL/21 MISSING among77 VS1-related groups;
+108 future groups NOT REQUIRED FOR VS1. Native local spark does not close global
+particle/path; lower housing does not close full hero. No full VS1/GPU/S03 PASS.
+
+Next highest mandatory scope ARCH-001 shared S00/S15 exterior requires new
+multi-stage architecture. Explicit ASTRA_WORKFLOW §9 owner Extra High/highest
+switch + confirmation BLOCKER; VS1_NEXT_BLOCKERS.md records exact boundary and
+remaining gallery/audio/hardware/full-game estimate. No architectural redesign
+performed. Finish/verify checkpoint receipts and PR43, stop coordinator at end.
+No unattended work; future continuation starts from newest verified remote.
+
+---
+
 # Latest boundary — S00 warm practical, 2026-10-06
 
 S01 lower housing stable75cbec4/receipt b737181,240 assertions/16 native images/

@@ -810,10 +810,10 @@
       "variants": "1 particle system",
       "canonical_notes": "Primary reuse effect",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "S00 spark is still an emissive SphereMesh; no authored guided-mote particle/trail family.",
+      "status": "PARTIAL",
+      "finding": "Original native local last-spark SVG/billboard now accepted at unchanged clock/anchor. Global reusable particle/shimmer/scripted path coverage and completed exterior guided composition remain open.",
       "evidence_paths": [
-        "game/worlds/archive/archive_prologue.tscn"
+        "docs/production/S00_LAST_SPARK_ACCEPTANCE.md"
       ]
     },
     {
@@ -1362,9 +1362,11 @@
       "variants": "VFX-002 variant + scripted path",
       "canonical_notes": "",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "First-spark event/audio ownership and visibility accepted, but guided-mote production visual absent.",
-      "evidence_paths": []
+      "status": "PARTIAL",
+      "finding": "Original native local last-spark SVG/billboard now accepted at unchanged clock/anchor. Global reusable particle/shimmer/scripted path coverage and completed exterior guided composition remain open.",
+      "evidence_paths": [
+        "docs/production/S00_LAST_SPARK_ACCEPTANCE.md"
+      ]
     },
     {
       "section": "Stage 0 — Пролог «Последняя искра»",
@@ -2924,6 +2926,11 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T10:50:39.624281+00:00",
-  "latest_delta": "S01 lower housing is PARTIAL core coverage; one warm S00 practical accepted; full exterior/night/core still open."
+  "updated_at": "2026-10-06T11:13:29.975020+00:00",
+  "latest_delta": "Entrance leaf, lower S01 housing, one S00 warm practical and local last spark accepted in bounded scopes; full VS1 OPEN.",
+  "vs1_counts": {
+    "MISSING": 21,
+    "PARTIAL": 32,
+    "ACCEPTED": 24
+  }
 }

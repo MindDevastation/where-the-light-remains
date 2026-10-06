@@ -9,7 +9,7 @@ Historical folder-wide concept labels are not asset completion receipts.
 | Required row | Current evidence / implementation | Remaining art boundary |
 | --- | --- | --- |
 | S00-001 exterior | Continuous prologue plus original timber entrance leaf; S00_ENTRANCE_LEAF_ACCEPTANCE.md | ARCH-001/002/017/018 exterior, approach, door and silhouette art |
-| S00-002 last spark | Functional guided sphere and timeline | Authored guided-mote presentation, VFX-002 |
+| S00-002 last spark | Original local spark SVG/billboard and unchanged timeline; S00_LAST_SPARK_ACCEPTANCE.md | Global reusable VFX-002/path and full guided composition |
 | S00-003 night lighting | Moon fill plus one reused warm lantern; S00_ENTRY_PRACTICAL_ACCEPTANCE.md | Full exterior night composition |
 | S00-004 rail camera | Actual timeline/pause/handoff smoke | Composition against completed exterior |
 | S00-005 entry lock | Original bounded 848-triangle housing/bolt/keeper; automatic timed release, pause and quiet physical load | Full door/exterior composition and universal family adoption; see S00_DOOR_LOCK_ACCEPTANCE.md |

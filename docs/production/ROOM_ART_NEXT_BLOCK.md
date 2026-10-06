@@ -1,21 +1,18 @@
-# Next bounded block — remaining generic leaf variants audit
+# Next boundary — reusable exterior/interface design audit
 
-S01 lens/socket and panel/lever plus S00 door activation fitting have bounded
-acceptance. Latest S00 original housing/bolt/keeper848 triangles, existing Iron/
-Brass, automatic cosmetic release with unchanged original clock and physical
-leaf colliders.378 current assertions/startup,18 inspected native pose images,
-independent empty-store retrieval/reopen/import/use of all four LFS payloads.
-See S00_DOOR_LOCK_ACCEPTANCE.md; no full exterior/door or universal family claim.
+The universal panel/fitting audit is complete in VS1_ART_RECONCILIATION.md:
+current slice contracts use accepted S01 panel/lever and S02 rotary focus, plus
+S00 bolt as second bounded shape. Global future variants/adoption remain PARTIAL;
+no unused duplicate variants or accepted family regeneration are authorized.
 
-Next reconcile PROP-004 panel skin variants and remaining generic handle/fitting
-coverage with established target envelopes and required rows. The S00 bolt now
-provides a second bounded mechanism shape; validate reuse before global adoption.
-Do not infer new player interactions or redo complete core/rotunda/exterior as
-ordinary leaf execution. Full Hub mounting/console/lighting remains open.
+New bounded acceptance: S00 timber leaf, S01 lower core housing, one S00 warm
+practical from existing lantern, local native last spark. See their acceptance
+documents and VS1_ART_RECONCILIATION_CURRENT.json. Full core3–5 orbit/console,
+Hub rotunda/gates/channels and complete exterior/portal/approach remain open.
 
-Wing I walls/floor/roof/beam/books/practicals/rug retain acceptance and exact
-identities. SLICE_ART_INVENTORY.md records remaining S00/S01/S02 coverage.
-ARCH/VS1/gallery/authored audio/physical target GPU/S03 remain open. Supervise
-remote-delta checkpoint cadence within15 active minutes, pause evidence writers
-while collecting, immediately publish finished stages, stop loop at turn end.
-No unattended process or new work-window duration inferred from old sessions.
+Highest remaining ARCH-001 shared S00/S15 shell needs new multi-stage modular
+architectural design. ASTRA_WORKFLOW §9 explicitly requires owner switch to
+Extra High/highest and confirmation before that work. See VS1_NEXT_BLOCKERS.md
+for exact blocked scope and owner/gallery/GPU remaining boundaries. Do not
+start S03, pipeline/global budget or canonical layout changes. Resume from exact
+newest verified remote checkpoint; no old snapshots/preflights/art reauthoring.

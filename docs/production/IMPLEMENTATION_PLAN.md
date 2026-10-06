@@ -541,3 +541,9 @@ Next eligible composition: one S00 warm practical from the accepted lantern.
 12 inspected Low/Medium views. Full exterior/night composition remains open.
 Next eligible local art: S00 last-spark sprite presentation inside existing clock;
 no global particle strategy or gameplay/path redesign.
+
+[x] Local S00 spark replaces primitive with original native VFX,40 scoped checks,
+12 inspected Low/Medium views. Global particle/path family remains PARTIAL.
+[ ] Highest missing reusable S00/S15 exterior and Hub architecture: ASTRA §9
+reasoning escalation required before modular architectural design; see
+VS1_NEXT_BLOCKERS.md. Full VS1 and S03 not promoted.
