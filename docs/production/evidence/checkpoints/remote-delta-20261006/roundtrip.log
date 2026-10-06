@@ -1,0 +1,4 @@
+PASS: exact old remote baseline, staged/unstaged edits, deletion, rename, spaces, binary and materialized LFS roundtrip; archive 2406 bytes
+PASS: stale/unpublished baseline, symlink, credentials and existing recovery refused
+{"status": "REMOTE_PASS", "utc": "2026-10-06T08:15:20.448476+00:00", "kind": "WIP", "stage": "delta coordinator fixture", "archive": "/tmp/wlr-delta-fixture-bjgv4wdh/coordinator-snapshots/wlr-remote-delta-2026-10-06T081520.371298_0000.tar.gz", "checkpoint_commit": "8bcc968626c817db1a60c6f971944be3145d27ac", "remote_sha": "4c071150ec560e377ef2a318c5cce79aac33b352"}
+PASS: delta coordinator snapshot, actual commit/push and independently resolved receipt SHA
