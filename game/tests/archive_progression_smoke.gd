@@ -114,6 +114,9 @@ func _run() -> void:
             route_frames[1] = Engine.get_process_frames()
     )
     var onboarding := world.get_node("Hub/Onboarding") as ArchiveOnboarding
+    var cover := onboarding.get_node("Panel/Visual/Cover") as Node3D
+    var handle := onboarding.get_node("Lever/Visual/Handle") as Node3D
+    _check(cover.rotation == Vector3.ZERO and handle.rotation == Vector3.ZERO, "Fresh S01 fitting poses")
     _check(onboarding.advance(ArchiveOnboarding.Step.INSTALL_LENS) == ERR_UNAUTHORIZED, "No out-of-order installation")
     for index in 4:
         var component := onboarding.get_node(onboarding.target_paths[index]) as InteractionTarget
@@ -126,6 +129,7 @@ func _run() -> void:
         _check(player.call("_pick_target") == component, "Actual interaction ray reaches the authored S01 target")
         await _press_interact()
         _check(int(onboarding.phase) == index + 1, "Real E advances exactly one onboarding step")
+        _check(absf(cover.rotation.y-deg_to_rad(-18))<.00001 and absf(handle.rotation.x-(deg_to_rad(25) if index==3 else 0.0))<.00001, "Actual E projects cover/lever cosmetic poses")
         await _press_interact()
         _check(int(onboarding.phase) == index + 1, "Consumed target or sequence cannot repeat by E spam")
     _check(InputManager.mode == InputManager.Mode.LIMITED_LOOK and not InputManager.can_interact(), "Awakening restricts interaction while retaining look")
@@ -154,6 +158,15 @@ func _run() -> void:
     for frame in 5:
         await get_tree().physics_frame
     _check(world.get_node("Routes/Wing01/Gate").status == ArchiveGate.Status.OPEN, "Physical approach opens eligible gate")
+    _check(await SceneRouter.request_resume_stage(saved["data"]) == OK, "Actual saved awakening checkpoint resumes")
+    var restored := slot.get_child(0) as ArchiveMain
+    var restored_hub := restored.get_node("Hub/Onboarding") as ArchiveOnboarding
+    _check(restored_hub.phase == ArchiveOnboarding.Phase.AWAKENED and restored.get("_awakening_elapsed") < 0.0 and
+        absf((restored_hub.get_node("Panel/Visual/Cover") as Node3D).rotation.y-deg_to_rad(-18))<.00001 and
+        absf((restored_hub.get_node("Lever/Visual/Handle") as Node3D).rotation.x-deg_to_rad(25))<.00001,
+        "Quiet physical reload restores art poses without replaying awakening")
+    var after_resume := SaveManager.read_save()
+    _check(after_resume["error"] == OK and after_resume["data"].to_dict() == saved["data"].to_dict(), "Art restoration leaves physical checkpoint unchanged")
     game.queue_free()
     await get_tree().process_frame
     for stage in ArchiveProgress.STAGES:
