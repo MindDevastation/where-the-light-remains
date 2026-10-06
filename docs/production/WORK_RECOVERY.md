@@ -1,3 +1,29 @@
+# Active boundary — shared gate accepted locally; publication blocked, 2026-10-06
+
+Recovered exact remote a914b53c, latest WIP e7e3c80e and stable floor2600c116.
+Retained revision4 imported MeshInstance root;542 scoped assertions reused by
+626 exact identities,16 Low/Medium native images reused by550 identities and
+individually inspected. Fresh anonymous wing-gate-lfs-5 retrieved both exact
+payloads from an empty independent store, reopened source, imported cache-free,
+ran116 gate checks/startup PASS.204 previous art/module identities unchanged.
+ARCHIVE_WING_GATE_ACCEPTANCE.md / wing-gate-acceptance-20261006 define the bounded
+mesh/state acceptance; full emblem/light/Hub composition still PARTIAL.
+Counts25 ACCEPTED/37 PARTIAL/15 MISSING among77;185-row reconciliation retained.
+
+Automatic approval review rejected attachment-PAT extraction and a workflow
+with a potential GitHub push because direct trusted-message authorization was
+missing. No credential-extraction workaround or remote write is allowed before
+that authorization. Anonymous independent reads passed. Preserve the local
+acceptance/snapshot/commit; do not claim a remote stable gate checkpoint. Verify
+actual remote before a future ordinary push to the authoritative working branch.
+
+Next bounded scope after publication: warm/cool practical lighting with accepted
+lanterns and all affectedS00/S01/S02 regressions, not accepted mesh regeneration.
+Upper infill/windows/backdrop/full hero/console/channels/carrier/dressing/audio/
+full gallery/physical GPU/VS1 OPEN; S03 blocked. No unattended jobs claimed.
+
+---
+
 # Active boundary — original Hub production floor geometry accepted, 2026-10-06
 
 Walls stable401dd6f/receipt1f7fd200 retained. Current -v2 floor6928tri/two surfaces,

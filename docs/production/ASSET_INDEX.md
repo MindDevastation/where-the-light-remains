@@ -2,6 +2,14 @@
 
 Status: **implementation mapping for selected repository assets**.
 
+Latest local delta: shared five-gate skin, archive_wing_gate.blend and
+sm_archive_wing_gate.glb,3596tri/three Walnut-Iron-Brass surfaces. Original
+barrier/state/opening/save ownership retained; import-only revision4 creates the
+existing MeshInstance target. ARCHIVE_WING_GATE_ACCEPTANCE.md records542 scoped
+checks,16 inspected native images and fresh two-payload LFS usability proof.
+Full ARCH-014 emblem/light composition remains PARTIAL; publication pending
+direct authorization after automatic review refusal. No old asset regenerated.
+
 Rule: current visual authority is explicitly enumerated in `VISUAL_REBASELINE_V2.md` / `visual_rebaseline_v2.json`. Folder-wide labels below are historical stage/role mappings, not approval of legacy images or additional candidates. Concept art never overrides canonical mechanics/narrative.
 
 ## Visual rebaseline v2 — current authority

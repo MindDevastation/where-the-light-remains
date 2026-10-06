@@ -1,3 +1,20 @@
+# Current boundary — shared gate local acceptance, publication pending
+
+ARCHIVE_WING_GATE_ACCEPTANCE.md closes the bounded shared gate mesh/state scope
+locally; ARCH-014/S01-004 are PARTIAL for remaining emblem/light/Hub composition.
+Actual remote recovery base a914b53c; a direct authorization message is required
+before publishing prepared evidence after automatic approval review refusal.
+No remote stable gate checkpoint, completed gallery or full VS1 is claimed.
+
+Next scope after durable publication: representative warm/cool practical light
+using accepted lanterns, fixed global budgets/state ownership and affected
+S00/S01/S02 regression. Windows/upper infill/backdrop, complete hero/console/
+channels/carrier/dressing/audio/full gallery/physical GPU remain open. Planning
+estimate stays25–30%, low confidence:3/16 playable stages,13 stages remaining;
+no percentage increase inferred from this bounded evidence closure.
+
+---
+
 # Escalation resolved — 2026-10-06
 
 Owner confirmed the requested Extra High/highest switch. The §9 architectural

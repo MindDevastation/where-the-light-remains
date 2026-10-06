@@ -1,3 +1,15 @@
+# Current shared gate delta — local acceptance, publication pending
+
+ARCHIVE_WING_GATE_ACCEPTANCE.md records the3596tri shared timber/iron/brass mesh
+and all five original gate/state instances.542 scoped checks reused by exact
+identities,16 individually inspected Low/Medium images, fresh source/GLB LFS
+retrieval/reopen/import/116-check/startup PASS;204 prior art identities retained.
+ARCH-014/S01-004 move MISSING to PARTIAL: shared geometry accepted, full route
+emblem/light/Hub composition open. Counts25 ACCEPTED/37 PARTIAL/15 MISSING.
+Automatic approval review blocks remote publication; no remote stable claim.
+
+---
+
 # Current Hub floor delta
 
 S01_HUB_FLOOR_ACCEPTANCE.md:6928tri source/GLB,two shared surfaces,248 scoped

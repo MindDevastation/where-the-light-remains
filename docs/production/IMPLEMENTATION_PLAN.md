@@ -1,3 +1,18 @@
+# Latest bounded gate acceptance — prepared locally, remote publication pending
+
+Recovered actual a914b53c import-only revision4; existing3596tri shared master
+and five gate instances validated without reauthoring.542 scoped assertions
+reused after exact identity comparison,16 retained native images individually
+inspected, two fresh independently retrieved LFS payloads reopened/imported/
+used with116 checks/startup PASS.204 prior art/module identities unchanged.
+ARCHIVE_WING_GATE_ACCEPTANCE.md defines scope; per-route light/emblem and full
+Hub remain PARTIAL. Current25 ACCEPTED/37 PARTIAL/15 MISSING among77.
+Remote publication requires direct authorization after automatic review refusal;
+no remote stable checkpoint claimed. Next practical warm/cool lighting, then
+remaining inventory. Full art/audio/gallery/physical GPU/VS1 OPEN; S03 blocked.
+
+---
+
 # Latest bounded checkpoint — original Hub floor geometry accepted
 
 hub-floor-acceptance-20261006:248 scoped assertions/startup,16 inspected native

@@ -1,4 +1,23 @@
-# Next bounded block — shared existing five-gate visual mesh
+# Next bounded block — representative practical lighting after gate publication
+
+ARCHIVE_WING_GATE_ACCEPTANCE.md records local bounded shared gate acceptance:
+3596tri/three surfaces/five existing instances,542 exact-source scoped checks,
+16 individually inspected Low/Medium captures and fresh two-payload LFS use.
+Per-route light/emblem composition remains PARTIAL; no new canon is invented.
+Current25 ACCEPTED/37 PARTIAL/15 MISSING among77,185-row inventory retained.
+
+First resolve publication approval in WORK_RECOVERY.md, then verify actual remote
+and publish the prepared local gate result before beginning a long new stage.
+Representative warm/cool practical lighting follows the observed pale/cool fill
+in all retained captures. Use accepted lanterns/local approved light contracts;
+do not redesign global budgets, puzzle/state/save/layout or accepted materials.
+Pin v2 views, audit state ownership and run affected S00/S01/S02 regression plus
+actual Low/Medium captures. Full apertures/windows/backdrop/hero/channel/carrier/
+dressing/audio/gallery/physical GPU/VS1 remain open; S03 blocked.
+
+---
+
+# Historical gate block — superseded by import-only revision4 and acceptance
 
 Hub floor geometry accepted in S01_HUB_FLOOR_ACCEPTANCE.md, full lighting/style
 still PARTIAL. ARCH-014 requires five instances/shared geometry distinguished by
