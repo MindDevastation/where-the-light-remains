@@ -1,0 +1,22 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s00_entrance_leaf.blend",
+      "bytes": 659673,
+      "sha256": "e918a2c4b1399eadacb358db898adf6c1a1ef8a249335a4a4f10ee464cc0b457"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_entrance_leaf.glb",
+      "bytes": 252500,
+      "sha256": "5af2f6db8dc3860d29bd1a90c1379e460d96d152fa21ccdf0f7af35612d05e41"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s00_entrance_leaf",
+      "triangles": 2100,
+      "surfaces": 3
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

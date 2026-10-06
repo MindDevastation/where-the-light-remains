@@ -1,4 +1,6 @@
-[gd_scene load_steps=16 format=3]
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb" id="Leaf"]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_prologue.gd" id="Script"]
 [ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_door_lock.tscn" id="Lock"]
@@ -75,9 +77,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="LeftDoor"]
-mesh = SubResource("Door")
-material_override = SubResource("Metal")
+[node name="Mesh" parent="LeftDoor" instance=ExtResource("Leaf")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="LeftDoor"]
 shape = SubResource("DoorShape")
@@ -91,9 +91,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="RightDoor"]
-mesh = SubResource("Door")
-material_override = SubResource("Metal")
+[node name="Mesh" parent="RightDoor" instance=ExtResource("Leaf")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RightDoor"]
 shape = SubResource("DoorShape")
