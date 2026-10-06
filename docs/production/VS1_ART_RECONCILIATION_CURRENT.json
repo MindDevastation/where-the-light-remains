@@ -12,11 +12,12 @@
       "variants": "1 master shell + night/dawn states",
       "canonical_notes": "Custom modular shell; тот же mesh в прологе и эпилоге",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "Full shared exterior shell/dome is still MISSING; accepted bounded front facade/crown does not constitute a building.",
+      "status": "PARTIAL",
+      "finding": "Shared S00/S01 upper drum/dome is accepted production source/GLBs with original walls/routes/camera; complete lower shell, exterior infill/windows/backdrop and Hub floor/rotunda/hero/dressing remain open.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
-        "game/worlds/archive/archive_prologue.tscn"
+        "game/worlds/archive/archive_prologue.tscn",
+        "docs/production/S01_HUB_DOME_ACCEPTANCE.md"
       ]
     },
     {
@@ -49,11 +50,12 @@
       "variants": "1 modular room",
       "canonical_notes": "Главный reuse-space финала",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets.",
+      "status": "PARTIAL",
+      "finding": "Shared S00/S01 upper drum/dome is accepted production source/GLBs with original walls/routes/camera; complete lower shell, exterior infill/windows/backdrop and Hub floor/rotunda/hero/dressing remain open.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
-        "game/worlds/archive/archive_prologue.tscn"
+        "game/worlds/archive/archive_prologue.tscn",
+        "docs/production/S01_HUB_DOME_ACCEPTANCE.md"
       ]
     },
     {
@@ -1348,12 +1350,13 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Accepted timber leaves/lock, front facades/crown, warm practical, level approach and guards; complete shared building/dome/upper infill/backdrop/night consistency still PARTIAL.",
+      "finding": "Accepted leaves/lock/front facades/crown/practical/flat approach/guards and upper drum/dome; lower exterior shell, upper facade infill/windows, backdrop and whole night composition remain PARTIAL.",
       "evidence_paths": [
         "docs/production/S00_ENTRANCE_LEAF_ACCEPTANCE.md",
         "docs/production/S00_DOOR_LOCK_ACCEPTANCE.md",
         "docs/production/S00_ENTRY_PORTAL_ACCEPTANCE.md",
-        "docs/production/S00_APPROACH_ACCEPTANCE.md"
+        "docs/production/S00_APPROACH_ACCEPTANCE.md",
+        "docs/production/S01_HUB_DOME_ACCEPTANCE.md"
       ]
     },
     {
@@ -2931,11 +2934,11 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T14:52:05.588588+00:00",
-  "latest_delta": "S00 -v3 flat paving and guard skins accepted: 291 scoped checks, 12 inspected native captures, 4 independent LFS payloads; no gameplay/collision/light change.",
+  "updated_at": "2026-10-06T15:27:07.293857+00:00",
+  "latest_delta": "Original shared upper drum/dome accepted:414 scoped assertions,16 inspected Low/Medium captures,5 independently retrieved/used LFS payloads; original bodies/apertures/FOV/state retained.",
   "vs1_counts": {
-    "MISSING": 19,
-    "PARTIAL": 33,
-    "ACCEPTED": 25
+    "PARTIAL": 35,
+    "ACCEPTED": 25,
+    "MISSING": 17
   }
 }

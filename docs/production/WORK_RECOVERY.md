@@ -1,3 +1,20 @@
+# Active boundary — shared S00/S01 upper drum/dome accepted, 2026-10-06
+
+S00 portal/approach checkpoints retained; S01_HUB_DOME_ACCEPTANCE.md and current
+hub-dome-acceptance-20261006 seal: one source/fourGLBs,total20068tri,414 scoped
+checks/startup,16 individually inspected Low/Medium images and5 independent LFS
+payloads PASS.187 prior art/module identities preserved. Native fixture invariant
+corrected; old partial attempt excluded, seal records unrelated hash exception.
+Current25 ACCEPTED/35 PARTIAL/17 MISSING among77 VS1 rows;185 rows retained.
+ARCH-001/003 PARTIAL for upper coverage only; lower walls/floor/infill/windows/
+backdrop/hero/light/dressing/audio/gallery/physical GPU/VS1 remain open. Next
+bounded eight original lower wall visual panels, same bodies/five apertures;
+accepted front portal and Wing I roof unchanged. Resolve actual stable/receipt
+from remote/journal; no earlier snapshot/repeatedpreflight. Owner escalation
+resolved; S03 blocked. Supervised600s remote-delta; stop owned work at turn end.
+
+---
+
 # Active boundary — S00 flat approach/guards accepted, 2026-10-06
 
 Portal stable ddc34ee/receipt495581d preserved. Current -v3 paving5460tri,

@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T15:27:07.077996+00:00",
+  "scope": "Sixteen current Low/Medium upper drum/dome images individually viewed; full lower shell/floor/hero/light/backdrop/dressing not accepted.",
+  "images": [
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_completed_hub_low.png",
+      "sha256": "50ca3f4cf88d9277bc41be5dee3cbc067b4a298293ef99b2b388e13053125c3b",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_completed_hub_medium.png",
+      "sha256": "060150b867eda06b1034278098328bf9827e22b9a058eb1c252d36e2ce38acf2",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s00_closed_low.png",
+      "sha256": "fff2369e3b741a866e0f83fa71b6e2dbd27e26d35bf01e59a6607ba1af3fcbee",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s00_closed_medium.png",
+      "sha256": "595677941ad0e4134ce868d6b471dfab2619115198c6f3a30617e72f755edd11",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s00_entry_low.png",
+      "sha256": "f088781efacde334780f747451aed2c70a595d1ab404830fe24bd32d8bc99d26",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s00_entry_medium.png",
+      "sha256": "c7e3c34f1cc59d05817c087388dd290c02f37fef8a0cbf2bdad8f74f4a8e6a61",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s00_opening_low.png",
+      "sha256": "60af5c9f6553c51788f7483e7840f7694a130457b1845e05400d22683c65ba21",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s00_opening_medium.png",
+      "sha256": "09fc8ab14759890e0d7ff42f6d57c2b32cf8b105e837f9f624bb4fa6cb6c06dd",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s01_asleep_low.png",
+      "sha256": "e81a3ceb0d2351eb5842d992744aebf6b2a948d0d671f31ea0ce10808d97b6fb",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s01_asleep_medium.png",
+      "sha256": "9384450bf01e9990806492f8c41f18135cd632ee6ab3a0eee10387492af2196c",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s01_awakened_low.png",
+      "sha256": "1a9b706b464107a4117daae8e653fcf0b4618b8b07283fc0ebc8fe052a3c6f07",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s01_awakened_medium.png",
+      "sha256": "e39841b96904be0a2aa865f3e273d233f3e3b6c6d05db2ac50b7371b6a84e71a",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s01_join_low.png",
+      "sha256": "53f30213dbc28783c2176a1a1354b997d8c2e3f8b3fdd3b55fadefb7da93990e",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s01_join_medium.png",
+      "sha256": "0a565d1982aeb49599a7bcee22f3a886d70726bf56a0808ccb02ba0cc2274449",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s01_roof_low.png",
+      "sha256": "b19c5d9c57624f9b90030de4bb51582eb66a6cbcc97154843303170b68778e6b",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-dome-native-2/hub_dome_s01_roof_medium.png",
+      "sha256": "254449357ba9b1fb6d2e440d9c6d5be596678ff5be8052a86fd71690d74003a2",
+      "inspected": true
+    }
+  ],
+  "observations": [
+    "Original exterior closed/open/entry frame retains the roof and original aperture silhouette. Lower eight walls and Hub floor remain visible graybox and are the next bounded dependencies.",
+    "Worn stone collar, timber/iron ribs, restrained brass joins and static star backing read in actual shipping upward views; thin converging rib edges alias on Low at 960x540. No extra clue or animated mechanism.",
+    "Asleep/awakened/completed projections retain existing rings/routes/light milestones; completed fixture explicitly follows existing next-wing unlock invariant without introducing another stage.",
+    "Current low and medium differ in anti-aliasing/effects; both are software llvmpipe evidence, not target GPU performance or owner gallery approval."
+  ],
+  "renderer": "Forward+ / llvmpipe; physical target hardware unavailable"
+}

@@ -369,3 +369,10 @@ sm_s00_approach_guard_rear.glb (1740tri, geometryY+2mm inside original body).
 Three shared material surfaces;291 current scoped assertions,12 inspected native
 images,4-payload independent retrieval/use: S00_APPROACH_ACCEPTANCE.md. Full
 exterior/Hub/corner reuse coverage remains open.
+
+Shared S00/S01 upper observatory: s01_hub_dome.blend; sm_s01_hub_dome_drum.glb
+(12492tri),frame.glb(2784tri),glass.glb(2396tri),sky.glb(2396tri); four unit-root
+Hub instances. New bounded static hub_night_sky.gdshader/m_hub_night_sky.tres;
+accepted palette/glass/Wing roof unchanged.414 scoped assertions/16 inspected
+native images/5 independent LFS payloads: S01_HUB_DOME_ACCEPTANCE.md. Full lower
+shell, infill/windows/backdrop/floor/hero/light remain open.

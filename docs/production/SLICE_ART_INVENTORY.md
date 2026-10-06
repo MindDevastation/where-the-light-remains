@@ -1,3 +1,12 @@
+# Current shared upper dome delta
+
+S01_HUB_DOME_ACCEPTANCE.md: source/four GLBs,414 scoped assertions,16 inspected
+Low/Medium PNG and5 fresh independently used LFS payloads. ARCH-001/003 PARTIAL
+for upper coverage; full shell/rotunda remains open. Current77 canonical groups:
+25 ACCEPTED/35 PARTIAL/17 MISSING. Reference/concept/graybox is not production.
+
+---
+
 # Current S00 approach delta
 
 S00_APPROACH_ACCEPTANCE.md: current -v3 paving/contained guard skins,291 scoped

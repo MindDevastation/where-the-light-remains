@@ -1,3 +1,15 @@
+# Next bounded block — original Hub/exterior lower wall panels
+
+S01_HUB_DOME_ACCEPTANCE.md upper drum/dome accepted. Next original eight large
+5.8x4.8x.35 wall-body visual replacements; retain ten body poses, accepted two
+front facades, five aperture envelopes and existing routes/actor/rail/FOV/state.
+Use S00/S01 v2, aged pale-warm stone/timber/iron/brass; no new clue/glyph/stair
+or future room. Missing lower architecture first, then floor/upper infill/windows/
+backdrop/hero/light/dressing. Full slice/gallery/audio/hardware remain open,
+GATE-VS1 OPEN/S03 blocked; owner architectural escalation already resolved.
+
+---
+
 # Next bounded block — missing shared exterior/Hub upper architecture
 
 S00_ENTRY_PORTAL_ACCEPTANCE.md and S00_APPROACH_ACCEPTANCE.md accepted; no leaf,

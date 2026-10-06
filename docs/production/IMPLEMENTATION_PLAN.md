@@ -1,3 +1,13 @@
+# Latest bounded checkpoint — shared upper drum/dome accepted
+
+hub-dome-acceptance-20261006:414 scoped assertions/startup,16 inspected native
+images,5 independently retrieved LFS payloads;187 prior identities preserved.
+Current25 ACCEPTED/35 PARTIAL/17 MISSING among77 slice groups. Continue eight
+original lower wall panels, fixed bodies/apertures/FOV/puzzles/save. Full visual/
+audio/gallery/target hardware gates open; GATE-VS1 OPEN/S03 blocked.
+
+---
+
 # Latest bounded checkpoint — original S00 approach accepted
 
 S00_APPROACH_ACCEPTANCE.md / approach-acceptance-20261006:291 scoped assertions,

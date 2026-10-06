@@ -56,7 +56,7 @@ func _run() -> void:
         {"name":"hub_dome_s01_roof","time":8.0,"quiet":true,"target":Vector3(0,.004,0),"pitch":.85,"detail":true},
         {"name":"hub_dome_s01_join","time":8.0,"quiet":true,"position":Vector3(5.5,.004,2.4),"target":Vector3(8.5,.004,3.6),"pitch":.45,"detail":true},
         {"name":"hub_dome_s01_awakened","time":8.0,"quiet":true,"awakened":true,"target":Vector3(0,.004,0)},
-        {"name":"hub_dome_return_restored","time":8.0,"quiet":true,"completed":true,"target":Vector3(0,.004,0)}
+        {"name":"hub_dome_completed_hub","time":8.0,"quiet":true,"completed":true,"target":Vector3(0,.004,0)}
     ]
     var captures: Array[Dictionary] = []
     for view: Dictionary in views:
@@ -78,7 +78,8 @@ func _run() -> void:
                 projection["star_collected"] = true
                 projection["hearth_collected"] = true
                 projection["completed"][0] = true
-                stage = ArchiveProgress.RETURN
+                projection["unlocked"][1] = true
+                stage = ArchiveProgress.WING_ONE
             if world.apply_stage_state(stage,projection)!=OK:
                 push_error("Quiet roof review projection failed")
                 get_tree().quit(1)
