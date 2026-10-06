@@ -1,19 +1,19 @@
-# Next room art block — original side-wall bookcase family
+# Next room work — measured profiling, then bounded polish
 
-Shipping roof, beam/quiet Star and local original wall practicals are accepted
-in their bounded scopes. See WING01_ROOF_INTEGRATION.md,
-WING01_BEAM_STAR_ACCEPTANCE.md and ARCHIVE_WALL_LANTERN_ACCEPTANCE.md.
-Lantern stage: 216 assertions, sixteen inspected native views, actual two-object
-LFS upload and independent fresh-store retrieval/reopen/use. Roof unchanged.
+Shipping roof, beam/quiet Star, local original wall practicals and four original
+side-wall bookcases are accepted in their bounded scopes. See their acceptance
+files; latest bookcase-acceptance-1 binds282 assertions, startup, sixteen
+inspected native views and actual independent two-object LFS retrieval/use.
+Roof/lamp/beam payload identities remain unchanged. No new walking gallery.
 
-Continue ARCHIVE_BOOKCASE.md / archive_bookcase.json: original compact walnut
-case with closed leather/cloth books and a reusable missing MAT-009 paper master,
-four side-panel instances limited to .42m perimeter strips. Preserve required
-capsule/grip/checkpoint/entrance paths and exact existing art identities. No new
-walking gallery, clues/text, light/script or global budget changes. Actual LFS
-upload/retrieval/source/use and Low/Medium room/close/warm views before stable.
-Then measure current resource/software frame costs and assess remaining room
-polish. Physical target GPU/full gallery/audio/ARCH/VS1/S03 stay open.
+Profile current actual shipping GameRoot room at1920x1080 on Low/Medium with
+cold/warm/roof camera cases, enough warm-up and measured frame intervals,
+render counters, internal render scale and identified device. Provide a bounded
+repeatable physical-display/device entry for the owner; software Vulkan numbers
+must never certify GTX1060 /1080p60 or the three release profiler runs. Preserve
+physical slots/state, current art and quality budgets. Then continue bounded
+rug/material/room polish as evidence permits. Full gallery/authored audio/
+physical target/ARCH/VS1/S03 remain open.
 
-Continue immediately after each verified stage checkpoint until the current
-3–4 hour work window ends; keep remote snapshots within fifteen minutes.
+Checkpoint each stage immediately, keep verified remote snapshots within
+fifteen minutes and continue until the current3–4 hour session work window ends.

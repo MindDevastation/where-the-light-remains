@@ -285,3 +285,14 @@ warm shadow-free range3m lights. Actual source reopen, 216 regression assertions
 sixteen inspected Low/Medium views, actual two-object upload and independent
 empty-store retrieval/reopen/import/use: lantern-acceptance-1. No new texture,
 route/controller/global light changes. Complete room/VS1/target GPU still open.
+
+## Original archive bookcase and paper family — 2026-10-06
+
+archive_bookcase.blend / sm_archive_bookcase.glb:4296 triangles/six shared
+surfaces and48 closed unlettered books per case; four static perimeter instances
+with conservative box footprints,17184 triangles total. Existing five material
+families plus reusable required MAT-009 m_archive_parchment.tres, no new texture.
+Evidence bookcase-acceptance-1:282 assertions/startup, sixteen inspected Low/
+Medium images with exact rendering-dependency reuse after CLI oracle correction,
+actual source/GLB LFS upload and independent empty-store retrieval/reopen/use.
+No new walking gallery/lights/clues; full room/VS1/target GPU remain open.

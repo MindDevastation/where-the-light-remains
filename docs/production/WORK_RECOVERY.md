@@ -1,3 +1,22 @@
+# Latest active boundary — bookcases accepted, 2026-10-06
+
+Live session03:06:06 UTC; minimum end06:06:06, maximum07:06:06. Keep supervised
+checkpoints/remote verification and continue until the work window ends. Recover
+newest working-branch tip/journal; protected credential stays outside Git.
+
+Original bookcase family4296 triangles/six surfaces each, four actual perimeter
+footprints,48 closed plain books each; reusable missing MAT-009 paper master
+adds no texture.282 assertions/startup, sixteen inspected native views, actual
+two-object upload and independent fresh-store retrieval/reopen/use. First lane
+oracle crossed inherited Hearth; corrected oracle proves that exact collider,
+then clears actual side lanes/checkpoints/grips. Rendering dependencies unchanged
+by CLI-only fix; exact native reuse recorded. See ARCHIVE_BOOKCASE_ACCEPTANCE.md
+and bookcase-acceptance-1. Existing roof/lamp/beam art unchanged. Next: actual
+1080p software profiling and repeatable physical-device entry, then bounded
+room polish. Full gallery/audio/target GPU/ARCH/VS1/S03 remain open.
+
+---
+
 # Latest active boundary — wall practicals accepted, 2026-10-06
 
 Live session03:06:06 UTC; minimum end06:06:06, maximum07:06:06. Keep supervised
