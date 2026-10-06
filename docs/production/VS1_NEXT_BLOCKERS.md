@@ -1,3 +1,17 @@
+# Current publication/recovery resolution — 2026-10-06
+
+Owner directly authorized the prepared and subsequent ordinary working-branch
+checkpoint pushes with “Разрешаю”. Accepted shared-gate evidence is remotely
+verified at 3d81acbcd94759d472b72f60dbac3eb39000fad4.
+The publication blocker below is historical and resolved. Fresh recovery uses
+this exact remote tip after checkout/coordinator loss; no unattended work is
+claimed. Next bounded scope is warm/cool practical lighting, fixed contracts
+and affected S00/S01/S02 regression. No accepted art regeneration; VS1/S03 and
+physical target-GPU gates remain open. Publication receipt: wing-gate-acceptance-
+20261006/publication.json.
+
+---
+
 # Current boundary — shared gate local acceptance, publication pending
 
 ARCHIVE_WING_GATE_ACCEPTANCE.md closes the bounded shared gate mesh/state scope

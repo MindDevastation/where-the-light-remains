@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "publication_status": "LOCAL_PREPARED_NOT_PUBLISHED",
+  "publication_status": "REMOTE_VERIFIED",
   "visual_target_status": "PARTIAL",
   "utc": "2026-10-06T16:57:58.677198+00:00",
   "scope": "Bounded shared3596tri mesh/five gate instances; current import-only revision4. Emblem/light/full Hub/audio/gallery/VS1/physical GPU remain open.",
@@ -681,15 +681,16 @@
     "docs/production/evidence/archive_reconstruction/wing-gate-authoring-20261006/authoring.log": "835e2d3e313c2e2f1bdab4c22cd517b99cdf185274853f743569c90f68896a5c",
     "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/README.md": "0c5deb767df46b16b48b79e29787d72363910c72e21e4d3188c82005f732bedf",
     "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/visual_inspection.json": "0f3fb2ffceb294f585e88cedfa713d90157c589d30e4811b4f447648071f06a4",
-    "docs/production/ARCHIVE_WING_GATE_ACCEPTANCE.md": "c66e4067aacc9bcd895473738f0848e42d3ccb4512525e2db34d62965cd471a0",
+    "docs/production/ARCHIVE_WING_GATE_ACCEPTANCE.md": "2104026e0055459726f501397cae771ab4ee82df3716e188e46d659c4a527e24",
     "docs/production/ARCHIVE_WING_GATE.md": "4efbda38a14587042f1d9ca859c3fe051eb18423f1153a2bc4da9fdd290a7f86",
-    "docs/production/WORK_RECOVERY.md": "55bd552d4d2c6573801c11e257336d72cbd18b132f30ea7aa444b6a5eee52695",
-    "docs/production/ROOM_ART_NEXT_BLOCK.md": "7a64a6648bddcee2c3c5f1ccaa8bf96e26cb933c0edc08f5e0036bae1dcc9018",
+    "docs/production/WORK_RECOVERY.md": "a312043240bfc3dd7b4cd6c3d8836019c813952672f24af1968b939428f3e0b4",
+    "docs/production/ROOM_ART_NEXT_BLOCK.md": "9e6de388585d49fbda7102e4ae26e57f83d7d5d347a9c2f844dcd8efdd8144c1",
     "docs/production/SLICE_ART_INVENTORY.md": "24f2e80b828604ec3b9d18f1d7a4ca9e77a4b273cf27da31e44e33f36c05e60c",
-    "docs/production/IMPLEMENTATION_PLAN.md": "df6ad37e44f169a7a03182afc94c00de2d7b570cf225837f7cf07ccaaff875b2",
+    "docs/production/IMPLEMENTATION_PLAN.md": "ea9ca969f7eee3afcd84b56df54af593d266407f65198c659846278fed05f125",
     "docs/production/ASSET_INDEX.md": "57ca5416be1da0136748f5ef4260928fdb140a24db2d3bb39855e22999bacc25",
     "docs/production/VS1_ART_RECONCILIATION_CURRENT.json": "fc46737675708f644d9aa5bd7bb1d59f6b2707fdc5a1f86275c40816623e61e9",
-    "docs/production/VS1_NEXT_BLOCKERS.md": "45ff916fde3045ffae9956ae0d535f5f2e6d2bf57c078598f2126f965d10bf43"
+    "docs/production/VS1_NEXT_BLOCKERS.md": "b2523b1d5be0d0fdfea669e2474bb05dd3bd90d2300ebd671a6c16e34e05cab1",
+    "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/publication.json": "560dfa4afb0b9da4f49321edd83b03468b44eeb5bc876fb9bcc7cde5310f5bce"
   },
   "reused_scoped_assertions": 542,
   "reused_assertion_receipt_hashes_compared": 626,
@@ -712,5 +713,7 @@
     "wing-gate-lfs-4"
   ],
   "publication_blocker": "Automatic approval review rejected attachment-PAT extraction and potential GitHub push without direct trusted-message authorization.",
-  "screenshot_bundle": "Separate user-facing deliverable; all16 original PNG and capture indexes remain committed as evidence."
+  "screenshot_bundle": "Separate user-facing deliverable; all16 original PNG and capture indexes remain committed as evidence.",
+  "publication_receipt": "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/publication.json",
+  "publication_update_scope": "Only directly authorized publication/recovery documentation hashes refreshed; original accepted asset/gameplay/test identities retained."
 }

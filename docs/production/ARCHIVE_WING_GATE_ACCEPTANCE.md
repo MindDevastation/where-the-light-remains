@@ -45,9 +45,8 @@ console/channel/carrier/dressing, authored audio, complete gallery and physical
 target-GPU validation remain open. GATE-VS1 OPEN; S03 blocked. llvmpipe timings
 are not target hardware acceptance.
 
-Publication is pending: automatic approval review rejected extracting a PAT
-from the attached instruction file and the workflow that could push to GitHub,
-because trusted user-message authorization was not explicit. The review did
-not reject anonymous repository/LFS reads. The result is prepared locally;
-no remote stable gate checkpoint is claimed. Resolve remote HEAD again before
-an explicitly authorized ordinary working-branch push; never force-push.
+Publication resolved: the owner directly authorized ordinary work-branch pushes
+with “Разрешаю”; accepted evidence is independently remote-verified at
+3d81acbcd94759d472b72f60dbac3eb39000fad4. Earlier local publication
+refusal remains historical in checkpoint evidence. No force/main write occurred.
+See wing-gate-acceptance-20261006/publication.json.
