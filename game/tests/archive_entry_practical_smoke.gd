@@ -45,7 +45,10 @@ func _run() -> void:
     var light := fixture.get_node("Practical") as OmniLight3D
     _check(light.light_color.is_equal_approx(Color(1,.55,.24,1)) and is_equal_approx(light.light_energy,1.25) and is_equal_approx(light.omni_range,3) and not light.shadow_enabled and is_equal_approx(light.light_specular,.1), "Original accepted warm shadow-free light contract")
     _check(light.global_position.distance_to(Vector3(0,.7,0))>light.omni_range+1 and light.global_position.z-light.omni_range>0, "Local light cannot reach core or Wing I")
-    var lights := world.find_children("*","OmniLight3D",true,false)
+    # The accepted exterior and original S02 family have three practicals.
+    # Interior Hub fixtures are checked by archive_practical_lighting_smoke.
+    var lights := fixture.find_children("*","OmniLight3D",true,false)
+    lights.append_array(world.get_node("Wing01/Room/Practicals").find_children("*","OmniLight3D",true,false))
     var lanterns := 0
     for candidate in lights:
         if candidate.name=="Practical":

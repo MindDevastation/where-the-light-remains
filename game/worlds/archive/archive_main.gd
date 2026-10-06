@@ -28,6 +28,7 @@ func _ready() -> void:
             if target != null:
                 target.interacted.connect(_on_hub_step.bind(index))
         onboarding.restore_awakened(false)
+    _project_hub_light(0.0)
     for index in 5:
         var area := get_node_or_null("Routes/Wing%02d/Approach" % (index + 1)) as Area3D
         if area != null:
@@ -107,6 +108,7 @@ func _process(delta: float) -> void:
         _cancel_awakening()
         return
     _awakening_elapsed += delta
+    _project_hub_light(clampf((_awakening_elapsed - 2.0) / (awakening_duration - 2.0), 0.0, 1.0))
     var mechanism := get_node_or_null("Hub/Astrolabe") as Node3D
     if mechanism != null and _awakening_elapsed >= 2.0:
         mechanism.rotation.y += delta * 0.35
@@ -159,6 +161,7 @@ func _cancel_awakening() -> void:
     var controller := get_node_or_null("StageController") as ArchiveStageController
     if controller != null and controller.is_inside_tree():
         controller.apply_state(controller.capture_presentation())
+        _project_hub_light(1.0 if controller.capture_presentation()["awakened"] else 0.0)
 
 
 func _flush_checkpoint(checkpoint: StringName) -> Error:
@@ -236,6 +239,7 @@ func apply_stage_state(id: StringName, state: Dictionary) -> Error:
         if onboarding != null:
             onboarding.restore_awakened(projected["awakened"])
         _restore_slice(projected, true)
+        _project_hub_light(1.0 if projected["awakened"] else 0.0)
         var prologue := get_node_or_null("Prologue") as ArchivePrologue
         if prologue != null:
             prologue.restore(id != ArchiveProgress.PROLOGUE)
@@ -342,6 +346,21 @@ func _present_pending_fragment() -> Error:
     if error == OK:
         _pending_fragment = &""
     return error
+
+
+func _project_hub_light(amount: float) -> void:
+    # Presentation only: existing sequence clock and durable flag own the pose.
+    # Direct quiet projection/cancel never creates a tween or writes progression.
+    var light := get_node_or_null("Hub/CoreLight") as OmniLight3D
+    if light != null:
+        light.light_energy = lerpf(.30, 1.8, amount)
+        light.light_color = Color(.43, .65, 1.0).lerp(Color(1.0, .68, .36), amount)
+    # Shadow-free interior practicals must not light the exterior through walls.
+    # The original S00 practical remains the sole warm source until handoff.
+    for wall: String in ["Wall0L", "Wall0R", "Wall2R", "Wall3L"]:
+        var practical := get_node_or_null("Hub/" + wall + "/HubPractical") as Node3D
+        if practical != null:
+            practical.visible = stage_id != ArchiveProgress.PROLOGUE
 
 
 func _restore_slice(state: Dictionary, quiet: bool) -> void:

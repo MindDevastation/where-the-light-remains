@@ -69,7 +69,7 @@ background_mode = 1
 background_color = Color(0.025, 0.04, 0.065, 1)
 ambient_light_source = 2
 ambient_light_color = Color(0.5, 0.64, 0.8, 1)
-ambient_light_energy = 0.65
+ambient_light_energy = 0.22
 tonemap_mode = 2
 
 [sub_resource type="CylinderMesh" id="HubFloor"]
@@ -266,7 +266,7 @@ environment = SubResource("Environment")
 [node name="MoonLight" type="DirectionalLight3D" parent="."]
 rotation_degrees = Vector3(-65, -25, 0)
 light_color = Color(0.55, 0.7, 0.9, 1)
-light_energy = 0.7
+light_energy = 0.38
 
 [node name="Hub" type="Node3D" parent="."]
 
@@ -418,6 +418,9 @@ disable_mode = 1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall0L"]
 shape = SubResource("S_Wall0L")
 
+[node name="HubPractical" parent="Hub/Wall0L" instance=ExtResource("EntryPractical")]
+position = Vector3(0, 0.35, 0.175)
+
 [node name="Wall0R" type="StaticBody3D" parent="Hub"]
 position = Vector3(4.6, 2.4, -8.0)
 rotation = Vector3(0, 0.000000000, 0)
@@ -429,6 +432,9 @@ disable_mode = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall0R"]
 shape = SubResource("S_Wall0R")
+
+[node name="HubPractical" parent="Hub/Wall0R" instance=ExtResource("EntryPractical")]
+position = Vector3(0, 0.35, 0.175)
 
 [node name="Wall1L" type="StaticBody3D" parent="Hub"]
 position = Vector3(-9.029930304485987, 2.4, 1.902724019958126)
@@ -478,6 +484,9 @@ disable_mode = 1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall2R"]
 shape = SubResource("S_Wall2R")
 
+[node name="HubPractical" parent="Hub/Wall2R" instance=ExtResource("EntryPractical")]
+position = Vector3(0, 0.35, 0.175)
+
 [node name="Wall3L" type="StaticBody3D" parent="Hub"]
 position = Vector3(8.423760192464542, 2.4, 3.7683237944542047)
 rotation = Vector3(0, 3.769911184, 0)
@@ -489,6 +498,9 @@ disable_mode = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall3L"]
 shape = SubResource("S_Wall3L")
+
+[node name="HubPractical" parent="Hub/Wall3L" instance=ExtResource("EntryPractical")]
+position = Vector3(0, 0.35, 0.175)
 
 [node name="Wall3R" type="StaticBody3D" parent="Hub"]
 position = Vector3(2.4139, 2.4, 8.1347)
@@ -783,6 +795,14 @@ shape = SubResource("CoreShape")
 
 [node name="Astrolabe" type="Node3D" parent="Hub"]
 position = Vector3(0, 1.8, 0)
+
+[node name="CoreLight" type="OmniLight3D" parent="Hub"]
+position = Vector3(0, 2.35, 0)
+light_color = Color(0.43, 0.65, 1, 1)
+light_energy = 0.3
+light_specular = 0.25
+shadow_enabled = false
+omni_range = 5.5
 
 [node name="OuterRing" type="MeshInstance3D" parent="Hub/Astrolabe"]
 rotation_degrees = Vector3(55, 0, 25)
