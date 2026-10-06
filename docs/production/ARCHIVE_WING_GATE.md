@@ -10,10 +10,15 @@ restrained brass fasteners. Unit pivot/body3.4x3.2x.24 centeredBarrier(0,1.6,0),
 all authored geometry inside original body, floor gap8mm. No addedcollision/
 light/shader/material/texture/animation. Local4000tri ceiling/globalstrategy fixed.
 Existing MeshInstance3D target, mesh/material identity and original gate behavior
-must work before tree insertion. A bounded immutable local GLB-to-Mesh adapter
-assigns imported mesh at _init, no new process/tween/event or SceneRouter API.
+must work before tree insertion. One asset-local EditorScenePostImport script
+returns this GLB's single unit MeshInstance3D as scene root, retaining materials
+and arrays; no runtime adapter/Node allocation/third binary format or global
+import policy. Official API: https://docs.godotengine.org/en/stable/classes/class_editorscenepostimport.html
 ArchiveGate.gd byte identity retained, opening.45s/height3.3, immediate logical
 shape disable, ghost surface/transform, reentry/removal and quiet state preserved.
+Earlier runtime binding variants leaked RefCounted count0 during threaded
+world loading; current import-only revision4 regression is authority. Exact
+engine-internal cause unproven, no historical result rewritten.
 
 Source/reopen metricUV/unitnormals/tangents/closed solids; actual five instances,
 materials/sharedmesh/pre-tree bindings/body bounds; real ghost/timing/state/ray/
