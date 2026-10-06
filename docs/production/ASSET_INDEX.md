@@ -243,3 +243,16 @@ retained; corrected source separates coplanar iron/stone underside planes.
 See `WING01_CEILING_ACCEPTANCE.md` and `ceiling-acceptance-1`. Shipping room and
 all 347 previous game source IDs are unchanged. Curved dome infill/sky, remaining
 ribs/gallery, full ARCH-007 integration/world art/VS1 and target GPU remain open.
+## Isolated dome coverage — 2026-10-06
+
+`wing01_dome_coverage.blend` supplies `sm_wing01_dome_frame.glb` (10944
+triangles / two Iron/Brass surfaces), `sm_wing01_dome_glass.glb` (4608 / one
+shared clear-glass surface) and `sm_wing01_dome_sky.glb` (4608 / one reusable
+local night backing). Unchanged original cardinal ribs/transition plus these
+parts total 26984 triangles / thirteen surfaces. No collision/lights or shared
+world environment change. Source, actual LFS upload/empty-store retrieval,
+reopen/import, 98 assertions and twelve inspected Low/Medium views pass.
+See WING01_DOME_ACCEPTANCE.md and dome-acceptance-1. Isolated fit is accepted;
+shipping integration, gallery/full-room art/lighting/VS1 and target GPU remain
+open. Earlier flat-normal glass reflection is retained in native-1; corrected
+smooth source and native-2 supersede that candidate.

@@ -1,0 +1,71 @@
+{
+  "captures": [
+    {
+      "draw_calls": 17,
+      "file": "dome_lookup_low.png",
+      "name": "dome_lookup",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 35,
+      "file": "dome_entrance_low.png",
+      "name": "dome_entrance",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 14,
+      "file": "dome_corner_low.png",
+      "name": "dome_corner",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 61,
+      "file": "dome_reverse_low.png",
+      "name": "dome_reverse",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 38,
+      "file": "dome_hero_low.png",
+      "name": "dome_hero",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 30,
+      "file": "dome_hearth_low.png",
+      "name": "dome_hearth",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "dome",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

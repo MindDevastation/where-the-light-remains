@@ -49,3 +49,14 @@ full ARCH-007 approval. Upper gallery art does not authorize new walking routes.
 Full room art/VS1, authored audio selection/mix and physical target GPU remain
 open. Do not stretch accepted modules or begin S03/bulk production. Repeat
 accepted component checks only when their sources or dependencies change.
+
+## Current next block — integrated roof after dome coverage
+
+The isolated dome extension now passes reopened source, actual LFS upload and
+independent empty-store retrieval/use, 98 imported geometry/ray/capsule checks,
+startup and twelve inspected Low/Medium views. See WING01_DOME_ACCEPTANCE.md.
+Its smooth glass corrects native-1 reflections; all 362 prior game source IDs
+remain unchanged. Integrate the measured 26984-triangle whole roof as a static
+room presentation, preserve guards/state and isolated fixtures, then validate
+shipping S02/entry and native views before continuing beam/Star presentation.
+Full room/gallery/audio/physical target acceptance and S03 remain open.

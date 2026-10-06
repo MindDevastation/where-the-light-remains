@@ -1,0 +1,164 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-06T03:35:53.924825+00:00",
+  "scope": "Bounded isolated dome fit only; all twelve actual Low/Medium images inspected. Additional meridians and ties form a tall sky-facing dome; no low central ceiling/corner gap. Smooth glass removes the bright checker-grid defect from native-1; coherent practical reflections remain, strongest above the look-up camera. Existing ring/hearth silhouettes and approach framing remain unchanged. Full room lighting/art and target GPU are open.",
+  "images": {
+    "dome_hearth_low.png": "528a87e8e1e9b11b17621e68a904e5a9ad900a654056d2bac5ff1dfc4fb93c76",
+    "dome_reverse_low.png": "5bee18e4b7300d347f952ed73c99da1bceba3dd0ab8e09a3d6ecd531b5319329",
+    "dome_entrance_low.png": "50b2b580af9b3d8a2b02e841fe7dea0b20408250d456d315c9b97ec43d3a00ea",
+    "dome_hero_low.png": "1c57622191541c431bb412935ad177294c464c65b4c5a1f440739f9e1571130b",
+    "dome_entrance_medium.png": "fbd7a3e43896fbd0d4cd6315a7be0ef082134f77041c2c58f8ac1dd3cbb8dd19",
+    "dome_lookup_low.png": "d09ee39f97c4d1b2640318454aa3480378ebe7a6a3cf0b4dbee54890711af1f7",
+    "dome_hero_medium.png": "25d3254c0a0be199703286302d745483d695fd9ef404377ea7bd1202f426002f",
+    "dome_reverse_medium.png": "33e148daac274965cbb77bf20753be9ddab2911459e895d46a948d143a3dff56",
+    "dome_corner_medium.png": "739a2aa2e01c25461a8d722f4a88f79207f4e3703823f021ad4a6ce9c6878ad3",
+    "dome_hearth_medium.png": "2a55f5b8c568110a4c3fab1b004e5e9b9e1754b6a917604d0bb8411cfc3241ad",
+    "dome_corner_low.png": "efa18a4de862704e39db3be524ab5ae4e63f74c65fc8cb350d14863910ff7b3e",
+    "dome_lookup_medium.png": "bc53b0fff2400b79d8cdcb76f6bc48500406548b4583fe481b6a55e08d5d2b15"
+  },
+  "transparency": "One shared clear-glass surface, backface-culling interior shell; one separate farther opaque local sky. No new textures/lights/collision or shared environment changes.",
+  "counters": {
+    "low": {
+      "captures": [
+        {
+          "draw_calls": 17,
+          "file": "dome_lookup_low.png",
+          "name": "dome_lookup",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 27648512
+        },
+        {
+          "draw_calls": 35,
+          "file": "dome_entrance_low.png",
+          "name": "dome_entrance",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 27648512
+        },
+        {
+          "draw_calls": 14,
+          "file": "dome_corner_low.png",
+          "name": "dome_corner",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 27648512
+        },
+        {
+          "draw_calls": 61,
+          "file": "dome_reverse_low.png",
+          "name": "dome_reverse",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 27648512
+        },
+        {
+          "draw_calls": 38,
+          "file": "dome_hero_low.png",
+          "name": "dome_hero",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 27648512
+        },
+        {
+          "draw_calls": 30,
+          "file": "dome_hearth_low.png",
+          "name": "dome_hearth",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 27648512
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "glow": false,
+      "quality": "low",
+      "renderer": "forward_plus",
+      "scope": "dome",
+      "status": "CAPTURED_FOR_REVIEW",
+      "volumetrics": false
+    },
+    "medium": {
+      "captures": [
+        {
+          "draw_calls": 17,
+          "file": "dome_lookup_medium.png",
+          "name": "dome_lookup",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 35138048
+        },
+        {
+          "draw_calls": 35,
+          "file": "dome_entrance_medium.png",
+          "name": "dome_entrance",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 35138048
+        },
+        {
+          "draw_calls": 14,
+          "file": "dome_corner_medium.png",
+          "name": "dome_corner",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 35138048
+        },
+        {
+          "draw_calls": 61,
+          "file": "dome_reverse_medium.png",
+          "name": "dome_reverse",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 35138048
+        },
+        {
+          "draw_calls": 38,
+          "file": "dome_hero_medium.png",
+          "name": "dome_hero",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 35138048
+        },
+        {
+          "draw_calls": 30,
+          "file": "dome_hearth_medium.png",
+          "name": "dome_hearth",
+          "size": [
+            960,
+            540
+          ],
+          "texture_bytes": 35138048
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "glow": false,
+      "quality": "medium",
+      "renderer": "forward_plus",
+      "scope": "dome",
+      "status": "CAPTURED_FOR_REVIEW",
+      "volumetrics": false
+    }
+  }
+}

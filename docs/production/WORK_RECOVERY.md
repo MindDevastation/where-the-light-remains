@@ -19,8 +19,15 @@ authenticated TCP-Xvfb nonempty Vulkan viewport pass in `toolchain-recovery-0306
 The archive pins were not changed. This is environment recovery, not new art or
 physical target GPU acceptance. Protected authentication remains outside Git.
 
-Next: a dimensioned isolated dome coverage brief, additional meridian members,
-curved glass and a local night backing; review actual assets before integration.
+The isolated dome coverage stage now passes: 20160 added triangles / four
+surfaces, unchanged original 6824 / nine, 98 actual imported roof-ray/geometry/
+capsule/state assertions, startup, twelve inspected native Low/Medium views
+and four actual LFS uploads plus independent empty-store retrieval/reopen/use.
+See WING01_DOME_ACCEPTANCE.md and dome-acceptance-1. Smooth glazing corrects
+the first candidate reflection grid; failed native/test diagnostics remain.
+All 362 prior game source identities still match. Next: integrate the measured
+roof into the shipping room and validate S02/entry/native presentation, then
+continue beam/Star art. Full room/gallery/audio/target GPU and S03 remain open.
 
 ---
 

@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-06T03:31:21.490910+00:00",
+  "objects": [
+    {
+      "path": "assets/3d/blender/archive_kit/wing01_dome_coverage.blend",
+      "bytes": 2057500,
+      "sha256": "c025c4fe34449b9d70163734ff0aad22ba650bd72811f5034e9e58ba475fbcb3"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb",
+      "bytes": 1436904,
+      "sha256": "54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb",
+      "bytes": 681268,
+      "sha256": "ee8a33474c883136f62d09fbe01ec35877b1fff37d35c0c3491e6813d1d6f054"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb",
+      "bytes": 681472,
+      "sha256": "fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa"
+    }
+  ],
+  "committed_source": "57b7a8a9ccd5b4273e33482f1f739be95db62469",
+  "remote_verified_sha": "57b7a8a9ccd5b4273e33482f1f739be95db62469",
+  "actual_push": {
+    "command": [
+      "git",
+      "push",
+      "origin",
+      "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+    ],
+    "exit_code": 0,
+    "stdout": "Uploading LFS objects: 100% (4/4), 4.9 MB | 0 B/s, done.\n",
+    "stderr": "To https://github.com/MindDevastation/where-the-light-remains.git\n   a191788..57b7a8a  HEAD -> feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+    "utc": "2026-10-06T03:31:21.490910+00:00"
+  },
+  "scope": "Actual native pre-push uploaded four new LFS payloads, 4.9 MB. Independent retrieval/use gate is separate.",
+  "source_hashes": {
+    "assets/3d/blender/archive_kit/wing01_dome_coverage.blend": "c025c4fe34449b9d70163734ff0aad22ba650bd72811f5034e9e58ba475fbcb3",
+    "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb": "54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8",
+    "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb": "ee8a33474c883136f62d09fbe01ec35877b1fff37d35c0c3491e6813d1d6f054",
+    "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb": "fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa",
+    "docs/production/evidence/archive_reconstruction/dome-lfs-upload-1/upload.log": "3c3322bd606c9cd59f4266e6c448e63a388da7cab5e2013a067c69f4f96a6e53"
+  }
+}
