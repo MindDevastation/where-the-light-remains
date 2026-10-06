@@ -1,20 +1,20 @@
-# Next room art block — beam and Star after shipping roof
+# Next room art block — local wall practicals
 
-The measured whole roof is now integrated into ArchiveMain. See
-WING01_ROOF_INTEGRATION.md / roof-acceptance-1: 383 current assertions,
-startup, protected physical slots and twelve actual shipping Low/Medium views
-byte-identical to the inspected isolated dome. Both roof source/export families
-remain unchanged and their actual upload/retrieval/use evidence is preserved.
+Shipping roof and bounded S02 beam/quiet Star are integrated and validated.
+See WING01_ROOF_INTEGRATION.md and WING01_BEAM_STAR_ACCEPTANCE.md. Current
+beam stage: 146 assertions, startup and sixteen inspected Low/Medium views;
+72 triangles per core/halo pair, canonical Star texture and controller poses.
+Accepted roof source/export identities remain unchanged.
 
-Continue bounded reusable S02 beam and quiet Star presentation. Preserve the
-four sequential segment owners, current authored positions/axes/lengths, focus
-scaling, canonical star.svg and visibility from Star/Hearth projection. No new
-optical physics, puzzle states, hidden letters/numbers, particles or lights.
-Then assess local room lighting and remaining upper-gallery/books art against
-the pinned references; no new walking route is authorized.
+Continue a bounded original wall-lantern family using existing iron/brass/glass/
+gold materials, with two local warm shadow-free practicals. Establish metric
+source/placement/light range budgets before authoring; preserve 10x12 room,
+head/entrance clearance, canonical warm transition and all routes/controllers.
+No global environment/budget increases, new clues or walking route. Actual
+Blender/GLB upload, independent empty-store retrieval/reopen/use and cold/warm
+Low/Medium visual review precede acceptance. Then assess gallery/books art and
+software resource/performance evidence against the pinned reference family.
 
-Use current feature-branch snapshots every fifteen minutes and checkpoint each
-completed stage immediately, then begin the next until this 3–4 hour session
-ends. Full room/ARCH/VS1, authored audio and physical target GPU remain open.
-Do not begin S03 or bulk production, stretch accepted modules, or repeat
-unchanged checks without comparing their exact dependencies.
+Checkpoint each completed stage immediately and keep supervised snapshots
+within fifteen minutes until the authorized 3–4 hour session ends. Full room,
+ARCH/VS1, authored audio and physical target GPU remain open; no S03/bulk work.

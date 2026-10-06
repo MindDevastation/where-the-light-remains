@@ -266,3 +266,13 @@ shipping owner/geometry/rays/capsule and isolated fixture tests, S02 persistence
 return, room and Boot pass 383 assertions; startup and twelve pixel-identical
 Low/Medium shipping views pass. See WING01_ROOF_INTEGRATION.md and
 roof-acceptance-1. Full room/gallery/lighting/VS1 and target GPU remain open.
+
+## Wing I beam and quiet Star — 2026-10-06
+
+Shipping reusable archive_light_beam.tscn uses two immutable shared ArrayMeshes,
+48+24=72 triangles/pair (360 five owners), core/halo ShaderMaterials with instance
+palette, no lights/shadow/collision/runtime mesh construction. star_target.tscn
+preserves canonical star.svg and pausable visibility-owned breathing. Generator:
+tools/create_archive_beam_mesh.gd. Evidence beam-star-acceptance-1 binds 146
+assertions, startup and sixteen inspected actual Low/Medium views. Existing
+roof assets unchanged; no new LFS payload. Full room/VS1 acceptance remains open.

@@ -1,0 +1,382 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-06T04:10:35.588981+00:00",
+  "images": [
+    {
+      "draw_calls": 39,
+      "file": "beam_cold_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_cold",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "6cd1eececa54039e0fe61ff89ba1ce19c75d83fd93f8dbedc9fbe762b0fbfa91",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 39,
+      "file": "beam_partial_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_partial",
+      "segments": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "0663dcce6722715b52f543b757c3ec3de9fb401fe71d7233e569a7b2478a18eb",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 40,
+      "file": "beam_aligned_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_aligned",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.942257106304169,
+      "star_visible": true,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "f503b6666e48e8de28814ad84fdacad6288ab2c0dd3d68511008b6e247333bd6",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 29,
+      "file": "star_close_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "star_close",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.87776505947113,
+      "star_visible": true,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "ab46c341bf07b6226396e2b6a5040687095c42e34d1abc2c4e193512f4ad82cb",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 24,
+      "file": "focus_broad_low.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "focus_broad",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.820002138614655,
+      "star_visible": true,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "5579885fab9838b8f59ad0fa2f55e45c9cafa88dbaf96af1044d977f4bfb95ae",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 27,
+      "file": "focus_adjusted_low.png",
+      "focus_x": 0.639999985694885,
+      "hearth_visible": false,
+      "name": "focus_adjusted",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.878330230712891,
+      "star_visible": true,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "acc150a4ffe2ed60a670bda4b440a9014413b6092fa050f5b760e6e11446b8b6",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 41,
+      "file": "beam_warm_low.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "beam_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.975711166858673,
+      "star_visible": true,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "3953dddda6edae415505fdb85978e6b7d259309c286e6d4f0b2593d2c32a54eb",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 19,
+      "file": "beam_hearth_warm_low.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "beam_hearth_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.999896228313446,
+      "star_visible": true,
+      "texture_bytes": 27648512,
+      "quality": "low",
+      "sha256": "503242b8ab0da5c9c9c1d2bf0e02291e7fdd9fae2d05f1050a550a20a8c63e92",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 39,
+      "file": "beam_cold_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_cold",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "411cf128bb3ca05fd4c82835ea6a5d98c9db6e1c4aa31cda1e45b54e4ec6c937",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 39,
+      "file": "beam_partial_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_partial",
+      "segments": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "2e4e24b9a75b7a034e7645ca2d891e6c5aea3752a1827dd132af1044a7a8e284",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 40,
+      "file": "beam_aligned_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_aligned",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.935520052909851,
+      "star_visible": true,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "1d74316985a8b4f66f4d538d265ccc202f193cb3bff1dbfbf80b77b8de151114",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 29,
+      "file": "star_close_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "star_close",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.859060943126678,
+      "star_visible": true,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "44cb466cb3babecc7db1bb324afb4331c7b987846ede643a8af744e1227c3677",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 24,
+      "file": "focus_broad_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "focus_broad",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.824286758899689,
+      "star_visible": true,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "1cba5278170b9310fe525a710145da6146f8097284d283cd9dacaff30592faaf",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 27,
+      "file": "focus_adjusted_medium.png",
+      "focus_x": 0.639999985694885,
+      "hearth_visible": false,
+      "name": "focus_adjusted",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.91180294752121,
+      "star_visible": true,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "b4ad812df841c2eaf4d7e547519a42a660cdd20467378231bb5aa0760b8ee3bb",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 41,
+      "file": "beam_warm_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "beam_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.996627688407898,
+      "star_visible": true,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "d866c89afd5df7d403b223f0a3b653115a63e56e2bdce7eedabda65e5e4af14e",
+      "individually_inspected": true
+    },
+    {
+      "draw_calls": 19,
+      "file": "beam_hearth_warm_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "beam_hearth_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.976605474948883,
+      "star_visible": true,
+      "texture_bytes": 35138048,
+      "quality": "medium",
+      "sha256": "126b96e5b8dc82d4b697a64968108395f45fb04107dbb7f542d382286cb844fb",
+      "individually_inspected": true
+    }
+  ],
+  "observations": [
+    "Cold and one-ring partial state show only their owned beam segments; inherited spatial gaps are preserved.",
+    "Aligned state reveals the canonical outlined five-point Star; focus adjustment visibly narrows the authored diagonal beam.",
+    "Teal core and restrained surrounding halo remain readable without glow on Low and Medium.",
+    "Hearth warm projection preserves teal cues and gold Flame while warming existing room lighting.",
+    "No new visible roof seams or changed hero silhouettes. Final room lighting/gallery art remain open."
+  ],
+  "scope": "Sixteen actual 960x540 Forward+ software Vulkan player views, not physical target GPU performance."
+}

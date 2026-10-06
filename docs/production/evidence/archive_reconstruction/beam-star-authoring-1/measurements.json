@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "factory_log_sha256": "8e526d928230442f53c0806fee7360b1ec257fe960fb54404b78b8aba7c9e116",
+  "geometry": {
+    "core_triangles": 48,
+    "halo_triangles": 24,
+    "pair_triangles": 72,
+    "five_owners_triangles": 360,
+    "surfaces_per_pair": 2
+  },
+  "source_generator": "tools/create_archive_beam_mesh.gd",
+  "source_hash": "103ff27718863f9f3157c1cf33f98eb8a0b97534481cba49b77608077585127d",
+  "production_mesh_hashes": {
+    "archive_beam_core_mesh.tres": "0232dba8308c558cd00d1a310e403403c131b595d60d19975b486df6a0c74292",
+    "archive_beam_halo_mesh.tres": "3ac46f38711e74e730ab63045b1dbe2deaea107ac53cad8eebfb945b24fa40db"
+  },
+  "note": "Actual current static mesh arrays independently checked by archive_beam_star_smoke; fresh factory reproduction confirms measured count/bounds, no byte-identical ResourceSaver UID claim. First scratch candidate rings=1 measured 120 triangles and was rejected against the declared 100 ceiling; final rings=0 measures 72."
+}

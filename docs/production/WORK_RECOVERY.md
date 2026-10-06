@@ -1,3 +1,20 @@
+# Latest active boundary — S02 beam and quiet Star, 2026-10-06
+
+Live session began 03:06:06 UTC; minimum end 06:06:06, maximum 07:06:06.
+Recover newest verified working-branch tip and checkpoint journal. Coordinator
+prepares snapshots every ten minutes and stable stages immediately; continue
+until the work window ends. Protected credential stays outside Git.
+
+Current beam/Star stage passes 146 assertions, startup and sixteen individually
+inspected Low/Medium player views. Five shared core/halo pairs total 360
+triangles, unchanged controller poses/visibility/focus scaling, canonical Star
+texture and pausable quiet breathing. Exact accepted roof payloads unchanged.
+See WING01_BEAM_STAR_ACCEPTANCE.md / beam-star-acceptance-1. Next: local wall
+practicals, then remaining room art/evidence. Full room/gallery/audio/target
+GPU/ARCH/VS1 and S03 remain open.
+
+---
+
 # Latest active boundary — shipping roof integrated, 2026-10-06
 
 The live 3–4 hour session began at 03:06:06 UTC; minimum end 06:06:06,
