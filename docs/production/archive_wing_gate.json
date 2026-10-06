@@ -1,0 +1,39 @@
+{
+  "source": "assets/3d/blender/archive_kit/archive_wing_gate.blend",
+  "parts": [
+    {
+      "id": "gate",
+      "stem": "sm_archive_wing_gate",
+      "runtime": "game/art/meshes/archive_kit/sm_archive_wing_gate.glb",
+      "materials": [
+        "walnut",
+        "iron",
+        "brass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 4000
+    }
+  ],
+  "materials": {
+    "walnut": "res://art/materials/m_dark_walnut.tres",
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres"
+  },
+  "body_size": [
+    3.4,
+    3.2,
+    0.24
+  ],
+  "body_center": [
+    0,
+    1.6,
+    0
+  ],
+  "opening_duration": 0.45,
+  "opening_height": 3.3,
+  "floor_gap": 0.008
+}
