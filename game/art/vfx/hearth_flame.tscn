@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://art/vfx/hearth_flame.gd" id="Flame"]
+
+[node name="HearthFlame" type="Node3D"]
+script = ExtResource("Flame")

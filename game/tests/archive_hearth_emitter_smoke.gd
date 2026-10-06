@@ -109,9 +109,8 @@ func _run() -> void:
     player.global_position = Vector3(-2.8, .02, -22.5)
     var blocked := player.move_and_collide(Vector3(0, 0, -2))
     _check(blocked != null and blocked.get_collider() == hearth, "Original Hearth collider stops the shipping capsule")
-    var flame := hearth.get_node("Flame") as MeshInstance3D
-    var flame_mesh := flame.mesh as SphereMesh
-    _check(flame.position.is_equal_approx(Vector3(0, .55, 0)) and flame_mesh != null and is_equal_approx(flame_mesh.radius, .22) and is_equal_approx(flame_mesh.height, .72) and not flame.visible, "Cold housing does not replace or activate existing Flame")
+    var flame := hearth.get_node("Flame") as Node3D
+    _check(flame.position.is_equal_approx(Vector3(0, .55, 0)) and flame.get_child_count() == 3 and not flame.visible and not flame.is_processing(), "Cold Hearth keeps the local Flame effect inactive at its original pose")
     var completed := ArchiveProgress.fresh()
     completed["awakened"] = true
     completed["unlocked"][0] = true
@@ -120,7 +119,7 @@ func _run() -> void:
     completed["light_restored"] = true
     completed["star_collected"] = true
     completed["hearth_collected"] = true
-    _check(world.apply_stage_state(ArchiveProgress.WING_ONE, completed) == OK and flame.visible and bowl_mesh.is_visible_in_tree() and emitter_mesh.is_visible_in_tree(), "Warm quiet projection restores original Flame with both housings intact")
+    _check(world.apply_stage_state(ArchiveProgress.WING_ONE, completed) == OK and flame.visible and bowl_mesh.is_visible_in_tree() and emitter_mesh.is_visible_in_tree(), "Warm quiet projection restores Flame with both housings intact")
     _check(world.slice_bindings_valid() and GameState.capture_save().to_dict() == before and SaveManager.get("_dirty") == dirty, "Art preserves puzzle bindings, progression and dirty state")
     world.queue_free()
     await get_tree().process_frame

@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=3]
+[gd_scene load_steps=81 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_room_floor.tscn" id="RoomFloor"]
 [ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_hearth_art.tscn" id="HearthArt"]
 [ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_emitter_art.tscn" id="EmitterArt"]
+[ext_resource type="PackedScene" path="res://art/vfx/hearth_flame.tscn" id="HearthFlame"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -230,19 +231,6 @@ radial_segments = 8
 top_radius = 0.6
 bottom_radius = 0.4
 height = 0.5
-
-[sub_resource type="SphereMesh" id="FlameMesh"]
-radius = 0.22
-height = 0.72
-radial_segments = 12
-rings = 8
-
-[sub_resource type="StandardMaterial3D" id="FlameMaterial"]
-shading_mode = 0
-albedo_color = Color(1, 0.62, 0.18, 1)
-emission_enabled = true
-emission = Color(1, 0.38, 0.1, 1)
-emission_energy_multiplier = 2.0
 
 [sub_resource type="CylinderShape3D" id="HearthShape"]
 radius = 0.6
@@ -904,10 +892,8 @@ disable_mode = 1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wing01/Room/Hearth"]
 shape = SubResource("HearthShape")
 
-[node name="Flame" type="MeshInstance3D" parent="Wing01/Room/Hearth"]
+[node name="Flame" parent="Wing01/Room/Hearth" instance=ExtResource("HearthFlame")]
 position = Vector3(0, 0.55, 0)
-mesh = SubResource("FlameMesh")
-material_override = SubResource("FlameMaterial")
 visible = false
 
 [node name="RoomLight" type="OmniLight3D" parent="Wing01/Room"]

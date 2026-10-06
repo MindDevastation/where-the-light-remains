@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "scope": "Remote checkpoint/ordinary code/existing runtime GLB and pinned tool restoration only; no new binary upload permission or graphical acceptance claim.",
+  "finished_at": "2026-10-06T01:02:04.345275+00:00",
+  "remote_and_local_recovery_head": "4a85204c84feb1f9ef068d5fe3bb5c36bc716f87",
+  "previous_local_checkout": "Removed by automated workspace maintenance; no newer surviving local source was overlaid.",
+  "restored_meshes": [
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_ring_middle.glb",
+      "bytes": 185080,
+      "sha256": "845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_frame.glb",
+      "bytes": 322060,
+      "sha256": "90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_emitter.glb",
+      "bytes": 142444,
+      "sha256": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_ring_outer.glb",
+      "bytes": 185028,
+      "sha256": "14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_focus.glb",
+      "bytes": 128240,
+      "sha256": "da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_hearth.glb",
+      "bytes": 163888,
+      "sha256": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_ring_inner.glb",
+      "bytes": 184740,
+      "sha256": "e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_3m.glb",
+      "bytes": 20076,
+      "sha256": "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_2m.glb",
+      "bytes": 10708,
+      "sha256": "0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_4m.glb",
+      "bytes": 19496,
+      "sha256": "e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_arch_4m.glb",
+      "bytes": 159160,
+      "sha256": "92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_floor_1m.glb",
+      "bytes": 3344,
+      "sha256": "76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8",
+      "status": "PASS"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_pier_4m.glb",
+      "bytes": 36280,
+      "sha256": "fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0",
+      "status": "PASS"
+    }
+  ],
+  "meter_cube_read_probe": {
+    "exit_code": 0,
+    "stderr": "Downloading game/art/meshes/validation/sm_pipeline_meter_cube.glb (2.0 KB)\n",
+    "bytes": 1992,
+    "sha256": "245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893"
+  },
+  "tool_versions": {
+    "godot": "4.7.2.stable.official.ed1daf0bf",
+    "blender": "4.5.14 LTS / 62c1db4208e8",
+    "gh": "2.101.0",
+    "git_lfs": "3.4.1"
+  },
+  "tool_provenance": "Pinned SHA-256 in unchanged setup_linux_toolchain.py; graphics packages checked against unchanged signed-snapshot-derived lock.",
+  "new_native_push": {
+    "command": [
+      "git",
+      "push",
+      "--dry-run",
+      "origin",
+      "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+    ],
+    "exit_code": 128,
+    "stderr": "fatal: could not read Username for 'https://github.com': terminal prompts disabled\n"
+  },
+  "credentials": {
+    "GH_TOKEN_available": false,
+    "git_credential_fill_exit": 128,
+    "saved_password_available": false
+  },
+  "lfs_upload_probe": "The existing-object push attempt was canceled by the execution approval service before a decision; no upload result is claimed.",
+  "alternative_publication": "Authenticated GitHub Git-data connector; existing checkpoint_gitdata.py prepare/accept with force=false and remote parent/tree verification. Does not publish LFS payloads.",
+  "source_hashes": {
+    "tools/setup_linux_toolchain.py": "025fac80ef3a384cbff3d6066b0d75680d5dc0834b25963176ef2598f26368ff",
+    "tools/setup_linux_graphics.py": "8f282a4f3892d56ada105792057b0d5ac021285c2ae9830c497d8d6a0d0209e2",
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "tools/checkpoint_gitdata.py": "0d0ea97c164e4c61fa397f718b6ad14198c33bce9de14fda39011af639ea5440"
+  }
+}
