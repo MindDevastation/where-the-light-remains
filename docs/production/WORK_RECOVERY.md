@@ -1,3 +1,37 @@
+# Latest confirmed boundary — rug and compact checkpoints, 2026-10-06
+
+Current working branch: `feature/04-archive-gameplay/resume-2026-10-06`.
+Fresh recovery started at `58bde0c`, the independent interruption receipt based
+on `32e8eb2`; no older snapshot was applied. The original 03:06–07:06 UTC
+session window below is historical. No unattended coordinator is claimed active
+when this turn finishes. Resolve the newest remote tip and checkpoint journal.
+
+The rug source checkpoint is `91b6856`; bounded art acceptance is `c5fc78a`.
+It has actual editable source reopen, 207 read-only assertions, 60 real S02
+assertions, 14 inspected Low/Medium player views and independent empty-store
+LFS retrieval/reopen/import/use. See `ARCHIVE_RUG_ACCEPTANCE.md` and its receipt.
+The first proposed longitudinal test lanes crossed the inherited pedestal;
+the corrected fixture retains existing clear side lanes and rug edge crossings.
+No collision or progression obstacle was removed.
+
+Tooling checkpoint `f59c385` adds opt-in `--snapshot-mode remote-delta` to the
+supervised coordinator. It saves changed materialized files and staged/unstaged
+binary patches against an independently verified remote HEAD; it is not an
+offline/full-history backup. Actual recovery, materialized LFS, remote advancement,
+refusal and coordinator publication fixtures pass. The original full archive
+and coordinator tests still pass. The actual repository delta was 13,332 bytes;
+its scope and hash are recorded in `evidence/checkpoints/remote-delta-20261006`.
+Use this mode with the existing 600-second supervision during the next live
+turn. All accepted rug/game payload identities remain unchanged by tooling.
+
+Before another art family, reconcile required remaining S00/S01/S02 assets with
+canonical tables and current bounded acceptance receipts. Full gallery, authored
+music selection/bindings, physical target GPU, ARCH/VS1 and S03 remain open.
+Do not re-author completed room families or treat software timings as physical
+GPU acceptance. Existing accepted source art is available through LFS.
+
+---
+
 # Latest active boundary — actual room profiling, 2026-10-06
 
 Live session03:06:06 UTC; minimum end06:06:06, maximum07:06:06. Keep supervised

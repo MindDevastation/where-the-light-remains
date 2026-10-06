@@ -1,4 +1,4 @@
-# Next bounded tooling block — reliable remote checkpoints
+# Next bounded block — remaining slice art inventory
 
 Accepted current shipping roof/beam/quiet Star, original practicals and four
 bookcases retain exact game/tool identities. Actual1080p profiling passes in
@@ -16,10 +16,11 @@ This fresh checkout revealed that full-history tar snapshots collect several
 gigabytes before publication. The owned collection was stopped without claiming
 archive completion. The rug was preserved with an ordinary working-branch
 commit, LFS upload and exact remote SHA verification within fifteen minutes.
-Next, add an explicitly remote-dependent small delta archive mode for supervised
-checkpoints, with an exact verified remote baseline and actual recovery fixture.
-Keep the complete local/offline archive modes available. This is tooling only;
-reuse accepted rug game/art identities. Full gallery/authored audio/physical
+The opt-in remote delta archive mode is now complete and tested; see
+REMOTE_DELTA_CHECKPOINTS.md and remote-delta-20261006 evidence. The complete
+local/offline archive modes remain available. Accepted rug/game identities are
+unchanged. Next, reconcile remaining required S00/S01/S02 art with canonical
+asset tables and bounded acceptance receipts before choosing another asset family. Full gallery/authored audio/physical
 hardware/ARCH/VS1/S03 remain open. No new walking gallery or bulk production.
 
 Checkpoint each finished stage immediately, keep verified remote snapshots

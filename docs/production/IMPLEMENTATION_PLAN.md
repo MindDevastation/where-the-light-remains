@@ -2,6 +2,30 @@
 
 Status: **started**.
 
+## Latest recovered bounded stages — 2026-10-06
+
+Current development branch is `feature/04-archive-gameplay/resume-2026-10-06`.
+`WORK_RECOVERY.md` and the verified remote checkpoint journal supersede the
+historical active-window/environment notes below.
+
+- [x] Bounded upper supports, dome and shipping roof integration, beam/quiet Star,
+  wall lanterns and bookcases were already accepted before this recovery. Their
+  respective acceptance documents/receipts define the exact scope. The old
+  write-credential blocker below is historical; no full ARCH/VS1 claim follows.
+- [x] Recover and complete the ordinary crimson/navy rug: 44 triangles, two shared
+  materials, 6 mm measured floor gap, no collider; 207 read-only and 60 real S02
+  assertions, 14 inspected player views and independent fresh-store source/GLB
+  retrieval/reopen/import/use. Art acceptance: `c5fc78a`.
+- [x] Add optional compact remote delta checkpoints after a full-history collection
+  proved too large for live cadence. Actual staged/unstaged/LFS recovery, remote
+  advancement and publication/refusal fixtures pass; old full archive tests pass.
+  Tooling source: `f59c385`; accepted game/art bytes unchanged.
+- [ ] Reconcile the remaining mandatory S00/S01/S02 art against canonical tables
+  and bounded acceptance receipts before selecting the next original asset family.
+- [ ] Complete authored audio, full gallery/art review and physical target-hardware
+  acceptance. `GATE-VS1` remains open and S03 remains gated.
+
+
 ## Latest bounded Flame and ceiling inputs — 2026-10-06
 
 - [x] Replace the Hearth sphere with local three-tongue VFX: shared 240-triangle
