@@ -1,3 +1,16 @@
+# Latest boundary — S00 warm practical, 2026-10-06
+
+S01 lower housing stable75cbec4/receipt b737181,240 assertions/16 native images/
+independent two-payload LFS PASS. S00 single accepted lantern now fixed on actual
+Wall3R outside face;49 scoped checks and12 inspected Low/Medium images PASS,
+no new binary family or old art change. Seal entry-practical-acceptance-20261006.
+Resolve actual newest SHA/receipt from remote and journal. Continue bounded
+local last-spark presentation; original anchor/clock/event/pause/save retained.
+Full building/portal/rotunda/core3–5 assembly/global particles/gallery/audio/GPU
+remain OPEN. S03 gated; supervised600s checkpoints, no unattended work.
+
+---
+
 # Latest boundary — S01 lower housing, 2026-10-06
 
 Continued from entrance stable f3eb644/receipt8083fcb, no accepted reauthoring.

@@ -10,7 +10,7 @@ Historical folder-wide concept labels are not asset completion receipts.
 | --- | --- | --- |
 | S00-001 exterior | Continuous prologue plus original timber entrance leaf; S00_ENTRANCE_LEAF_ACCEPTANCE.md | ARCH-001/002/017/018 exterior, approach, door and silhouette art |
 | S00-002 last spark | Functional guided sphere and timeline | Authored guided-mote presentation, VFX-002 |
-| S00-003 night lighting | Existing prologue lighting | Exterior night composition and practical art |
+| S00-003 night lighting | Moon fill plus one reused warm lantern; S00_ENTRY_PRACTICAL_ACCEPTANCE.md | Full exterior night composition |
 | S00-004 rail camera | Actual timeline/pause/handoff smoke | Composition against completed exterior |
 | S00-005 entry lock | Original bounded 848-triangle housing/bolt/keeper; automatic timed release, pause and quiet physical load | Full door/exterior composition and universal family adoption; see S00_DOOR_LOCK_ACCEPTANCE.md |
 | S01-001 central mechanism | Original bounded lower housing, two primitive rings; S01_CORE_PEDESTAL_ACCEPTANCE.md | PROP-001/002 complete hero core and console; no ring-count inference from concepts |

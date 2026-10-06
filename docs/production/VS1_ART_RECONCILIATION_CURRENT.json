@@ -331,7 +331,7 @@
       "variants": "base + awakened + final states",
       "canonical_notes": "Самый важный reusable hero asset",
       "required_for_vs1": true,
-      "status": "MISSING",
+      "status": "PARTIAL",
       "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
       "evidence_paths": [
         "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md",
@@ -349,7 +349,7 @@
       "variants": "3–5 ring pieces",
       "canonical_notes": "Анимация и финальная сборка",
       "required_for_vs1": true,
-      "status": "MISSING",
+      "status": "PARTIAL",
       "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
       "evidence_paths": [
         "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md",
@@ -1378,8 +1378,10 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Existing night ambient/fill; required composed moon fill plus one warm practical and full exterior review absent.",
-      "evidence_paths": []
+      "finding": "Moon fill plus one accepted warm practical now instanced and locally validated; full night/exterior composition still PARTIAL.",
+      "evidence_paths": [
+        "docs/production/S00_ENTRY_PRACTICAL_ACCEPTANCE.md"
+      ]
     },
     {
       "section": "Stage 0 — Пролог «Последняя искра»",
@@ -1424,7 +1426,7 @@
       "variants": "PROP-001/002",
       "canonical_notes": "",
       "required_for_vs1": true,
-      "status": "MISSING",
+      "status": "PARTIAL",
       "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
       "evidence_paths": [
         "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md"
@@ -2923,5 +2925,5 @@
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
   "updated_at": "2026-10-06T10:50:39.624281+00:00",
-  "latest_delta": "Bounded S01 lower core housing accepted; full hero/core/console remains PARTIAL."
+  "latest_delta": "S01 lower housing is PARTIAL core coverage; one warm S00 practical accepted; full exterior/night/core still open."
 }

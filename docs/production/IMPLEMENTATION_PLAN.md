@@ -536,3 +536,8 @@ Main unchanged; S00 activation fitting now has bounded acceptance; next audit is
 assertions,16 inspected Low/Medium images and two-payload independent LFS use.
 [ ] Complete hero3–5 orbit family/console mounts/Hub rotunda, architecture/light gate.
 Next eligible composition: one S00 warm practical from the accepted lantern.
+
+[x] One S00 warm practical from unchanged accepted lantern;49 scoped checks,
+12 inspected Low/Medium views. Full exterior/night composition remains open.
+Next eligible local art: S00 last-spark sprite presentation inside existing clock;
+no global particle strategy or gameplay/path redesign.

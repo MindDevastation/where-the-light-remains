@@ -1,4 +1,6 @@
-[gd_scene load_steps=89 format=3]
+[gd_scene load_steps=90 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_lantern.tscn" id="EntryPractical"]
 
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_core_pedestal.glb" id="CorePedestal"]
 
@@ -496,6 +498,10 @@ material_override = SubResource("Stone")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall3R"]
 shape = SubResource("S_Wall3R")
+
+[node name="EntryPractical" parent="Hub/Wall3R" instance=ExtResource("EntryPractical")]
+position = Vector3(0.72, 0.35, -0.175)
+rotation = Vector3(0, 3.141592654, 0)
 
 [node name="Wall4L" type="StaticBody3D" parent="Hub"]
 position = Vector3(6.186973956236472, 2.4, -6.846995929957284)

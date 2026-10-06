@@ -345,3 +345,8 @@ S01 original lower housing: s01_core_pedestal.blend / sm_s01_core_pedestal.glb,
 240 current assertions/startup,16 inspected Low/Medium views and independent
 source/GLB retrieval/reopen/import/use: S01_CORE_PEDESTAL_ACCEPTANCE.md.
 PROP-001/002/S01-001 remain PARTIAL; full hero/orbit/console mounts remain open.
+
+S00 single warm practical: existing accepted archive_wall_lantern wrapper now
+fixed to outside Hub/Wall3R. No new asset payload;49 scoped assertions/startup,
+12 inspected native images, original family hashes unchanged. See
+S00_ENTRY_PRACTICAL_ACCEPTANCE.md. Full S00 night/exterior still PARTIAL.
