@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3]
+[gd_scene load_steps=84 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -29,6 +29,8 @@
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_practicals.tscn" id="Practicals"]
 
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_books.tscn" id="Books"]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_rug.tscn" id="Rug"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -569,6 +571,9 @@ shape = SubResource("S_CorridorWallR")
 [node name="Presentation" parent="Wing01/Room" instance=ExtResource("RoomArt")]
 
 [node name="Books" parent="Wing01/Room" instance=ExtResource("Books")]
+
+[node name="Rug" parent="Wing01/Room" instance=ExtResource("Rug")]
+position = Vector3(0, 0.010, -21.4)
 
 [node name="Practicals" parent="Wing01/Room" instance=ExtResource("Practicals")]
 
