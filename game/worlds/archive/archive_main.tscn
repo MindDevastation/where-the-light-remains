@@ -1,4 +1,6 @@
-[gd_scene load_steps=98 format=3]
+[gd_scene load_steps=99 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_archive_arched_fanlight.glb" id="ArchedFanlight"]
 
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_floor.glb" id="HubFloorArt"]
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_wall.glb" id="HubWallArt"]
@@ -300,6 +302,9 @@ rotation = Vector3(0, 0.000000000, 0)
 [node name="Gate" parent="Routes/Wing01" instance=ExtResource("Gate")]
 position = Vector3(0, 0, -8)
 
+[node name="ArchedFanlight" parent="Routes/Wing01" instance=ExtResource("ArchedFanlight")]
+position = Vector3(0, 0, -8)
+
 [node name="Approach" type="Area3D" parent="Routes/Wing01"]
 position = Vector3(0, 1.5, -8)
 collision_layer = 0
@@ -313,6 +318,9 @@ scale = Vector3(1, 1, 1.38)
 rotation = Vector3(0, 1.256637061, 0)
 
 [node name="Gate" parent="Routes/Wing02" instance=ExtResource("Gate")]
+position = Vector3(0, 0, -8)
+
+[node name="ArchedFanlight" parent="Routes/Wing02" instance=ExtResource("ArchedFanlight")]
 position = Vector3(0, 0, -8)
 
 [node name="Approach" type="Area3D" parent="Routes/Wing02"]
@@ -330,6 +338,9 @@ rotation = Vector3(0, 2.513274123, 0)
 [node name="Gate" parent="Routes/Wing03" instance=ExtResource("Gate")]
 position = Vector3(0, 0, -8)
 
+[node name="ArchedFanlight" parent="Routes/Wing03" instance=ExtResource("ArchedFanlight")]
+position = Vector3(0, 0, -8)
+
 [node name="Approach" type="Area3D" parent="Routes/Wing03"]
 position = Vector3(0, 1.5, -8)
 collision_layer = 0
@@ -345,6 +356,9 @@ rotation = Vector3(0, 3.769911184, 0)
 [node name="Gate" parent="Routes/Wing04" instance=ExtResource("Gate")]
 position = Vector3(0, 0, -8)
 
+[node name="ArchedFanlight" parent="Routes/Wing04" instance=ExtResource("ArchedFanlight")]
+position = Vector3(0, 0, -8)
+
 [node name="Approach" type="Area3D" parent="Routes/Wing04"]
 position = Vector3(0, 1.5, -8)
 collision_layer = 0
@@ -358,6 +372,9 @@ scale = Vector3(1, 1, 1.38)
 rotation = Vector3(0, 5.026548246, 0)
 
 [node name="Gate" parent="Routes/Wing05" instance=ExtResource("Gate")]
+position = Vector3(0, 0, -8)
+
+[node name="ArchedFanlight" parent="Routes/Wing05" instance=ExtResource("ArchedFanlight")]
 position = Vector3(0, 0, -8)
 
 [node name="Approach" type="Area3D" parent="Routes/Wing05"]
