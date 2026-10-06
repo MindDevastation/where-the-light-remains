@@ -1,6 +1,6 @@
 # VFX-007 bounded brief — 2026-10-07
 
-Status: **IMPLEMENTATION BRIEF / AFTER VFX-006 STABLE**.
+Status: **FIXED BOUNDED BRIEF; candidate undergoing final strict validation**.
 Current canonical VFX-007 requires one subtle inspect/highlight strategy for
 stages1–11, explicitly not a cartoon outline. The current inventory marks it
 MISSING; the accepted player already provides an actual ray-selected
@@ -15,11 +15,11 @@ do not authorize new interaction locations, hero shape or symbols.
 
 ## Fixed scope before implementation
 
-- One native shader/material + world presentation listener; no new geometry,
+- One native editable StandardMaterial3D + world presentation listener; no new geometry,
   Blender source, bitmap, LFS payload, light, collider, narration or save flag.
 - Existing geometry is used for a very low-alpha additive warm surface wash,
   without vertex expansion, silhouettes, screen-space outlines, flash or pulse.
-  Material overlays live only on the selected current MeshInstance(s); original
+  The built-in unshaded additive shader uses .055 alpha. Material overlays live only on the selected current MeshInstance(s); original
   base materials and preexisting overlays are preserved/restored.
 - Eight existing targets only: S01 panel cover, pickup lens, socket and lever
   handle; S02 outer/middle/inner ring and focus control. Map exact target paths
@@ -42,3 +42,12 @@ do not authorize new interaction locations, hero shape or symbols.
   adoption and complete style/gate remain PARTIAL.
 
 Execute after dust publication with a separate bounded acceptance/checkpoint.
+
+Material-path correction: the script default preload of either custom ShaderMaterial
+or an external StandardMaterial3D reproducibly caused one RefCounted exit warning
+in headless physical progression. No preload or constructed StandardMaterial3D
+removed it in private isolation. Final scene-serialized external StandardMaterial3D
+assignment removes the warning in the shipping integration. This is a scoped
+reproduction/workaround; the engine internals causing it are not established.
+The candidate custom shader was removed. The strict validator is unchanged;
+extra shutdown-frame experiments were reverted to the accepted original test.

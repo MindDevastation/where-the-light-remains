@@ -906,9 +906,13 @@
       "variants": "1 shader/outline strategy",
       "canonical_notes": "Не cartoon outline; subtle emissive",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No production materialize/dissolve, ambient dust particle or shared inspect-highlight family. Quiet Star breathing and local Flame are separate accepted effects, not these assets.",
-      "evidence_paths": []
+      "status": "PARTIAL",
+      "finding": "Bounded native warm additive inspect wash on eight existing S01/S02 target/visual bindings accepted: actual player ray, Low/effects-off, pause/occlusion/consumed/lifetime/material preservation.286 current scoped assertions and8 individually inspected paired native frames. Stages1–11 adoption and complete style remain open.",
+      "evidence_paths": [
+        "docs/production/ARCHIVE_INSPECT_GLOW_ACCEPTANCE.md",
+        "game/art/vfx/archive_inspect_glow.gd",
+        "game/art/materials/m_archive_inspect_glow.tres"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -2955,12 +2959,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T22:17:57.606543+00:00",
-  "latest_delta": "VFX-006 bounded current dust accepted; ARCH-011 owner decision pending with reviewable A/B proposal; VFX-007 brief ready. Full VS1 OPEN.",
+  "updated_at": "2026-10-06T22:43:57.560631+00:00",
+  "latest_delta": "VFX-006 dust and VFX-007 inspect bounded current scopes accepted; ARCH-011 owner A/B decision pending. Full VS1 OPEN.",
   "vs1_counts": {
     "ACCEPTED": 25,
-    "PARTIAL": 39,
-    "MISSING": 13
+    "PARTIAL": 40,
+    "MISSING": 12
   },
-  "publication_status": "Gate3d81acb and lighting1af05c2/2224b73 remote confirmed; fanlight binary candidate6c7d99f/receipt dc6805a remote confirmed. Resolve final stable acceptance publication from checkpoint journal."
+  "publication_status": "Prior fanlight STABLE1419f35 preserved; current dust STABLEfa9006e remote confirmed. Resolve final inspect STABLE and HEAD from continuation_20261007.jsonl; historical development.jsonl unchanged."
 }

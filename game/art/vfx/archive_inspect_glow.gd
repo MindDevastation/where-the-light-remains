@@ -5,7 +5,7 @@ extends Node
 @export var player_path := NodePath("../../../PlayerContainer/Player")
 @export var target_paths: Array[NodePath] = []
 @export var visual_paths: Array[NodePath] = []
-@export var wash_material: Material = preload("res://art/materials/m_archive_inspect_glow.tres")
+@export var wash_material: Material
 var _player: FirstPersonPlayer
 var _target: InteractionTarget
 var _visuals: Array[int] = []

@@ -1,0 +1,61 @@
+{
+  "captures": [
+    {
+      "active_overlay_meshes": 1,
+      "actual_ray_target": "/root/ArchiveInspectGlowReview/GameRoot/WorldSlot/ArchiveMain/Hub/Onboarding/Panel/InteractionTarget",
+      "decorative_effects": false,
+      "draw_calls": 99,
+      "enabled": true,
+      "file": "panel_on_medium.png",
+      "size": [
+        960,
+        540
+      ],
+      "view": "panel"
+    },
+    {
+      "active_overlay_meshes": 0,
+      "actual_ray_target": "/root/ArchiveInspectGlowReview/GameRoot/WorldSlot/ArchiveMain/Hub/Onboarding/Panel/InteractionTarget",
+      "decorative_effects": false,
+      "draw_calls": 97,
+      "enabled": false,
+      "file": "panel_off_medium.png",
+      "size": [
+        960,
+        540
+      ],
+      "view": "panel"
+    },
+    {
+      "active_overlay_meshes": 1,
+      "actual_ray_target": "/root/ArchiveInspectGlowReview/GameRoot/WorldSlot/ArchiveMain/Wing01/Room/Rings/Carrier/Outer/Grip/InteractionTarget",
+      "decorative_effects": false,
+      "draw_calls": 37,
+      "enabled": true,
+      "file": "outer_on_medium.png",
+      "size": [
+        960,
+        540
+      ],
+      "view": "outer"
+    },
+    {
+      "active_overlay_meshes": 0,
+      "actual_ray_target": "/root/ArchiveInspectGlowReview/GameRoot/WorldSlot/ArchiveMain/Wing01/Room/Rings/Carrier/Outer/Grip/InteractionTarget",
+      "decorative_effects": false,
+      "draw_calls": 34,
+      "enabled": false,
+      "file": "outer_off_medium.png",
+      "size": [
+        960,
+        540
+      ],
+      "view": "outer"
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "inspect_glow",
+  "status": "CAPTURED_FOR_REVIEW"
+}

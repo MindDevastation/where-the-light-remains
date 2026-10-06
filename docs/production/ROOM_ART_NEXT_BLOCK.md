@@ -1,3 +1,43 @@
+# Current continuation — bounded native VS1 effects, 2026-10-07
+
+Recovered actual remote1f38cb4 / prior production STABLE1419f35. Dust STABLE
+fa9006e and strict inspect WIPb1a09ca are independently remote confirmed;
+resolve final inspect STABLE/HEAD from evidence/checkpoints/continuation_20261007.jsonl.
+No rollback, main write, force push or repeat full185-row reconciliation.
+
+ARCHIVE_DUST_MOTES_ACCEPTANCE.md: VFX-006 Hub/S02 native dust,602 current scoped
+assertion executions and20 individually inspected final Low/Medium on/off views.
+ARCHIVE_INSPECT_GLOW_ACCEPTANCE.md: VFX-007 eight current S01/S02 actual-ray
+bindings,286 current scoped assertion executions and8 inspected final paired
+Low/Medium views. Strict exit-warning diagnostics retained/excluded; external
+material serialization resolves the observed preload reproduction. No warning
+waiver. Original progression test restored. Both canonical rows stay PARTIAL.
+Prior193 art/source/module identities and47 runtime GLB payloads preserved;
+previous source reopen/acceptance is reused in its original scope, not rerun.
+Counts25 ACCEPTED/40 PARTIAL/12 MISSING among77;185 canonical rows retained.
+
+ARCHIVE_SHORT_STAIRS_DECISION.md / review/arch011_decision.png present owner A/B.
+Recommended A explicitly defers the MUST two-width family to S03 and changes its
+VS1 dependency only after the owner decision. B proposes real corridor2.4/3.6m
+runs with.30m rise, requiring a floor/collision/walk contract. Neither is canon
+or implemented. ARCH-011 remainsMISSING/required_for_vs1. Only stairs pause.
+
+Next independent block: ARCHIVE_CORE_HERO_NEXT_BLOCK.md interface audit for
+PROP-001/004 orbits/core/mounts/console, preserving accepted pedestal/controls.
+New DCC/LFS production needs restoration of a configured private upload path;
+ordinary working-branch/LFS publication is already authorized, no new permission.
+Native Git data publication is working.600s supervised remote-delta checkpoints
+include one documented900s cadence miss during the larger dust upload; subsequent
+WIP transport is verified within900s. Historical journal retained unchanged.
+
+Full exterior/infill/ARCH-013/017, complete hero, emblems/channels/carrier,
+materials/trims/decals/style/light/dressing, authored audio/mix, owner gallery and
+physical GTX1060-equivalent1080p60 remain OPEN. Audio first-note/motif owner
+choices remain separate. GATE-VS1 OPEN; S03 blocked. Full-game estimate25–30%,
+low confidence;3/16 playable stages, unchanged. Stop owned jobs at session end.
+
+---
+
 # Current fanlight acceptance and next layout dependency — 2026-10-06
 
 ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md records one1560tri four-surface shared

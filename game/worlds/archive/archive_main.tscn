@@ -1,6 +1,7 @@
-[gd_scene load_steps=101 format=3]
+[gd_scene load_steps=102 format=3]
 
 [ext_resource type="Script" path="res://art/vfx/archive_inspect_glow.gd" id="InspectGlow"]
+[ext_resource type="Material" path="res://art/materials/m_archive_inspect_glow.tres" id="InspectWash"]
 
 [ext_resource type="PackedScene" path="res://art/vfx/archive_dust_motes.tscn" id="DustMotes"]
 
@@ -398,6 +399,7 @@ scale = Vector3(1, 1, 1.38)
 
 [node name="InspectGlow" type="Node" parent="."]
 script = ExtResource("InspectGlow")
+wash_material = ExtResource("InspectWash")
 target_paths = Array[NodePath]([NodePath("../Hub/Onboarding/Panel/InteractionTarget"), NodePath("../Hub/Onboarding/Lens/InteractionTarget"), NodePath("../Hub/Onboarding/Socket/InteractionTarget"), NodePath("../Hub/Onboarding/Lever/InteractionTarget"), NodePath("../Wing01/Room/Rings/Carrier/Outer/Grip/InteractionTarget"), NodePath("../Wing01/Room/Rings/Carrier/Middle/Grip/InteractionTarget"), NodePath("../Wing01/Room/Rings/Carrier/Inner/Grip/InteractionTarget"), NodePath("../Wing01/Room/Rings/Carrier/Focus/Grip/InteractionTarget")])
 visual_paths = Array[NodePath]([NodePath("../Hub/Onboarding/Panel/Visual/Cover"), NodePath("../Hub/Onboarding/Lens/Visual"), NodePath("../Hub/Onboarding/Socket/Visual"), NodePath("../Hub/Onboarding/Lever/Visual/Handle"), NodePath("../Wing01/Room/Rings/Carrier/Outer/Art"), NodePath("../Wing01/Room/Rings/Carrier/Middle/Art"), NodePath("../Wing01/Room/Rings/Carrier/Inner/Art"), NodePath("../Wing01/Room/Rings/Carrier/Focus/Art")])
 
