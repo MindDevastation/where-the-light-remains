@@ -1,3 +1,20 @@
+# Active boundary — S00 flat approach/guards accepted, 2026-10-06
+
+Portal stable ddc34ee/receipt495581d preserved. Current -v3 paving5460tri,
+shared side guard2700tri/rear1740tri, one source/three GLBs:291 scoped checks,
+12 individually inspected Low/Medium PNG and4 independent LFS payloads PASS.
+180 prior art/module identities unchanged. Old source/native/LFS attempts marked
+EXCLUDED; current approach-acceptance-20261006 seal is authority. Resolve latest
+stable/receipt from actual remote/journal, no older snapshot or repeatedpreflight.
+Current77 groups:25 ACCEPTED/33 PARTIAL/19 MISSING;185 canonical rows retained.
+ARCH-018 S00 path accepted, ARCH-012 broader family PARTIAL; full shell/dome/
+Hub/lighting/audio/gallery/GPU/VS1 still open, S03 blocked. Owner escalation
+already resolved. Continue bounded shared upper exterior/Hub architectural block
+with fixed routes/door/rail and current v2 targets. Supervised600s checkpoints,
+no unattended owned work after session end.
+
+---
+
 # Active boundary — S00 entry portal accepted, 2026-10-06
 
 Owner architectural escalation resolved. Reconciliation preserved. Original two

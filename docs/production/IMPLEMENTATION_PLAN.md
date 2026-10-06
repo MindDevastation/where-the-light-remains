@@ -1,3 +1,13 @@
+# Latest bounded checkpoint — original S00 approach accepted
+
+S00_APPROACH_ACCEPTANCE.md / approach-acceptance-20261006:291 scoped assertions,
+startup,12 inspected Low/Medium captures and4 fresh LFS payloads used PASS.
+Current77 inventory groups:25 ACCEPTED/33 PARTIAL/19 MISSING. Next missing shared
+exterior/dome/Hub upper architecture; keep all original apertures/gameplay/save.
+GATE-VS1 OPEN, S03 blocked; full visuals/audio/gallery/physical GPU outstanding.
+
+---
+
 # Latest bounded checkpoint — entry facade/crown accepted
 
 S00_ENTRY_PORTAL_ACCEPTANCE.md / portal-acceptance-20261006:225 scoped assertions,

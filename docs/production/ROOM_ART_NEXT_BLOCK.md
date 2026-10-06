@@ -1,3 +1,15 @@
+# Next bounded block — missing shared exterior/Hub upper architecture
+
+S00_ENTRY_PORTAL_ACCEPTANCE.md and S00_APPROACH_ACCEPTANCE.md accepted; no leaf,
+portal, paving or guard regeneration. Next ARCH-001 shared exterior/dome and
+ARCH-003 Hub visual coverage, preserving all five existing aperture envelopes,
+original floor/player/camera/door/save and Wing I roof. Authoritative S00 v2 and
+three S01 ca_004_v2 gameplay views inspected. No concept stairs/routes/glyphs or
+extra mechanisms inferred. Full shell/rotunda/hero/lighting/audio/gallery/GPU
+remain independent gates; owner escalation resolved, S03 blocked.
+
+---
+
 # Next bounded block — existing S00 approach path/guards
 
 Portal facade/crown accepted in S00_ENTRY_PORTAL_ACCEPTANCE.md. Canonical ARCH-018

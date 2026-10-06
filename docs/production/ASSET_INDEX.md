@@ -362,3 +362,10 @@ sm_s00_entry_facade.glb (3840tri/5 surfaces, two original wall instances) and
 sm_s00_entry_arch.glb (984tri/3 surfaces). Source/import/UV/shading/clearance,
 225 scoped assertions,12 inspected native images and three-payload independent
 LFS use PASS: S00_ENTRY_PORTAL_ACCEPTANCE.md. Complete exterior still open.
+
+S00 original level approach/guards: s00_approach.blend; sm_s00_approach_path.glb
+(5460tri),sm_s00_approach_guard_long.glb (2700tri, two original body instances),
+sm_s00_approach_guard_rear.glb (1740tri, geometryY+2mm inside original body).
+Three shared material surfaces;291 current scoped assertions,12 inspected native
+images,4-payload independent retrieval/use: S00_APPROACH_ACCEPTANCE.md. Full
+exterior/Hub/corner reuse coverage remains open.

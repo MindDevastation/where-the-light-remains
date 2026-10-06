@@ -1,3 +1,13 @@
+# Current S00 approach delta
+
+S00_APPROACH_ACCEPTANCE.md: current -v3 paving/contained guard skins,291 scoped
+checks and12 inspected native captures,4 independently retrieved LFS payloads.
+ARCH-018 VS1 path ACCEPTED; ARCH-012 broader reuse remains PARTIAL. Current
+185-row delta table:25 ACCEPTED/33 PARTIAL/19 MISSING among77 slice-related rows.
+Do not promote complete exterior/Hub/lighting/gallery/physical GPU/VS1.
+
+---
+
 # Latest bounded delta — S00 facade/crown
 
 S00_ENTRY_PORTAL_ACCEPTANCE.md records one editable source, two GLBs and actual

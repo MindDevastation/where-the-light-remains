@@ -208,11 +208,12 @@
       "variants": "1 straight + corner",
       "canonical_notes": "Hub/exterior/bridge fallback",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets.",
+      "status": "PARTIAL",
+      "finding": "S00 shared straight side guards and shorter crosswise guard/corner assembly accepted in original bodies; reusable broader corner/Hub/future coverage remains open.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
-        "game/worlds/archive/archive_prologue.tscn"
+        "game/worlds/archive/archive_prologue.tscn",
+        "docs/production/S00_APPROACH_ACCEPTANCE.md"
       ]
     },
     {
@@ -314,11 +315,12 @@
       "variants": "1 set",
       "canonical_notes": "Reuse в эпилоге",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets.",
+      "status": "ACCEPTED",
+      "finding": "VS1 S00 level path is authored production geometry with original flat collision and camera route; one same master reserved for S15, no S15 gameplay/dawn acceptance.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
-        "game/worlds/archive/archive_prologue.tscn"
+        "game/worlds/archive/archive_prologue.tscn",
+        "docs/production/S00_APPROACH_ACCEPTANCE.md"
       ]
     },
     {
@@ -1346,10 +1348,12 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Original timber leaves and accepted lock now integrated; full arch portal/building/approach still missing.",
+      "finding": "Accepted timber leaves/lock, front facades/crown, warm practical, level approach and guards; complete shared building/dome/upper infill/backdrop/night consistency still PARTIAL.",
       "evidence_paths": [
         "docs/production/S00_ENTRANCE_LEAF_ACCEPTANCE.md",
-        "docs/production/S00_DOOR_LOCK_ACCEPTANCE.md"
+        "docs/production/S00_DOOR_LOCK_ACCEPTANCE.md",
+        "docs/production/S00_ENTRY_PORTAL_ACCEPTANCE.md",
+        "docs/production/S00_APPROACH_ACCEPTANCE.md"
       ]
     },
     {
@@ -2927,11 +2931,11 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T14:27:54.749266+00:00",
-  "latest_delta": "S00 front facades and arch crown bounded PASS; 225 scoped checks, 12 inspected Low/Medium captures, 3 independent LFS payloads, full exterior/VS1 still open.",
+  "updated_at": "2026-10-06T14:52:05.588588+00:00",
+  "latest_delta": "S00 -v3 flat paving and guard skins accepted: 291 scoped checks, 12 inspected native captures, 4 independent LFS payloads; no gameplay/collision/light change.",
   "vs1_counts": {
-    "MISSING": 21,
-    "PARTIAL": 32,
-    "ACCEPTED": 24
+    "MISSING": 19,
+    "PARTIAL": 33,
+    "ACCEPTED": 25
   }
 }
