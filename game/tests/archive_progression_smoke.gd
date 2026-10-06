@@ -176,6 +176,8 @@ func _run() -> void:
     _check(after_resume["error"] == OK and after_resume["data"].to_dict() == saved["data"].to_dict(), "Art restoration leaves physical checkpoint unchanged")
     game.queue_free()
     await get_tree().process_frame
+    # Drain deferred destruction after the physical world reload/unload.
+    await get_tree().process_frame
     for stage in ArchiveProgress.STAGES:
         SceneRouter.unregister_stage(stage)
     SceneRouter.fade_duration = duration
