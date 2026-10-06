@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-06T03:46:38.283173+00:00",
+  "scope": "All twelve actual shipping images SHA256-identical to previously individually inspected dome-native-2 images; shipping lookup additionally inspected. Same roof fit/material/reflections and original hero silhouettes; no full art/lighting/target-GPU acceptance.",
+  "pairs": [
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_corner_low.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_corner_low.png",
+      "sha256": "efa18a4de862704e39db3be524ab5ae4e63f74c65fc8cb350d14863910ff7b3e",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_entrance_low.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_entrance_low.png",
+      "sha256": "50b2b580af9b3d8a2b02e841fe7dea0b20408250d456d315c9b97ec43d3a00ea",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_hearth_low.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_hearth_low.png",
+      "sha256": "528a87e8e1e9b11b17621e68a904e5a9ad900a654056d2bac5ff1dfc4fb93c76",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_hero_low.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_hero_low.png",
+      "sha256": "1c57622191541c431bb412935ad177294c464c65b4c5a1f440739f9e1571130b",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_lookup_low.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_lookup_low.png",
+      "sha256": "d09ee39f97c4d1b2640318454aa3480378ebe7a6a3cf0b4dbee54890711af1f7",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_reverse_low.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_reverse_low.png",
+      "sha256": "5bee18e4b7300d347f952ed73c99da1bceba3dd0ab8e09a3d6ecd531b5319329",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_corner_medium.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_corner_medium.png",
+      "sha256": "739a2aa2e01c25461a8d722f4a88f79207f4e3703823f021ad4a6ce9c6878ad3",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_entrance_medium.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_entrance_medium.png",
+      "sha256": "fbd7a3e43896fbd0d4cd6315a7be0ef082134f77041c2c58f8ac1dd3cbb8dd19",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_hearth_medium.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_hearth_medium.png",
+      "sha256": "2a55f5b8c568110a4c3fab1b004e5e9b9e1754b6a917604d0bb8411cfc3241ad",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_hero_medium.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_hero_medium.png",
+      "sha256": "25d3254c0a0be199703286302d745483d695fd9ef404377ea7bd1202f426002f",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_lookup_medium.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_lookup_medium.png",
+      "sha256": "bc53b0fff2400b79d8cdcb76f6bc48500406548b4583fe481b6a55e08d5d2b15",
+      "pixel_file_identical": true
+    },
+    {
+      "shipping": "docs/production/evidence/archive_reconstruction/roof-native-1/roof_reverse_medium.png",
+      "previously_inspected": "docs/production/evidence/archive_reconstruction/dome-native-2/dome_reverse_medium.png",
+      "sha256": "33e148daac274965cbb77bf20753be9ddab2911459e895d46a948d143a3dff56",
+      "pixel_file_identical": true
+    }
+  ]
+}

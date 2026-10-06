@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3]
+[gd_scene load_steps=82 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_hearth_art.tscn" id="HearthArt"]
 [ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_emitter_art.tscn" id="EmitterArt"]
 [ext_resource type="PackedScene" path="res://art/vfx/hearth_flame.tscn" id="HearthFlame"]
+[ext_resource type="PackedScene" path="res://worlds/archive/wing01_roof_presentation.tscn" id="RoofArt"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -572,6 +573,9 @@ shape = SubResource("S_CorridorWallR")
 [node name="TileFloor" parent="Wing01/Corridor" instance=ExtResource("CorridorFloor")]
 
 [node name="Presentation" parent="Wing01/Room" instance=ExtResource("RoomArt")]
+
+[node name="RoofPresentation" parent="Wing01/Room" instance=ExtResource("RoofArt")]
+position = Vector3(0, 4, -21)
 
 [node name="TileFloor" parent="Wing01/Room" instance=ExtResource("RoomFloor")]
 

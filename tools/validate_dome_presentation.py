@@ -67,6 +67,8 @@ def validate(args):
             scene = 'res://tests/archive_' + scene_scope + '_review.tscn'
             expected_captures = 6
             view_args = {'front': ['--front-walls'], 'entrance': ['--entrance-only'], 'hero': ['--hero-housings']}.get(args.scope, [])
+            if args.scope == 'roof':
+                view_args = ['--shipping-roof']
             run('clean_import', [godot, '--headless', '--path', 'game', '--editor', '--import'], 90)
             for quality in ['low', 'medium']:
                 run(quality, ['python3', '-B', str(clean / 'tools/run_graphical.py'),
@@ -98,5 +100,5 @@ if __name__ == '__main__':
     parser.add_argument('--godot', type=Path, required=True)
     parser.add_argument('--graphics-prefix', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--scope', choices=['dome'], default='dome')
+    parser.add_argument('--scope', choices=['dome','roof'], default='dome')
     validate(parser.parse_args())

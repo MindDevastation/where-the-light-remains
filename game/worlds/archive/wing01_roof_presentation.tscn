@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://worlds/archive/wing01_ceiling_study.tscn" id="Structure"]
+[ext_resource type="PackedScene" path="res://worlds/archive/wing01_dome_coverage.tscn" id="Coverage"]
+
+[node name="RoofPresentation" type="Node3D"]
+metadata/scope = "Measured static roof: accepted two cardinal ribs/transition plus dome coverage; no gameplay/collision/lights"
+
+[node name="Structure" parent="." instance=ExtResource("Structure")]
+
+[node name="DomeCoverage" parent="." instance=ExtResource("Coverage")]

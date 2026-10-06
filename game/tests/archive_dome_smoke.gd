@@ -3,6 +3,9 @@ extends Node
 
 var _checks := 0
 var _failures: Array[String] = []
+var _world_scene: PackedScene = preload("res://tests/fixtures/archive_dome_sample.tscn")
+var _dome_path: NodePath = ^"Wing01/Room/DomeCoverage"
+var _marker := "ARCHIVE_DOME"
 
 func _ready() -> void:
     _run.call_deferred()
@@ -11,12 +14,15 @@ func _check(condition: bool, message: String) -> void:
     _checks += 1
     if not condition:
         _failures.append(message)
-        push_error("ARCHIVE_DOME FAIL: " + message)
+        push_error(_marker + " FAIL: " + message)
+
+func _inspect_world(_world: ArchiveMain, _dome: Node3D) -> void:
+    pass
 
 func _run() -> void:
     var before := GameState.capture_save().to_dict()
     var dirty: bool = SaveManager.get("_dirty")
-    var world := preload("res://tests/fixtures/archive_dome_sample.tscn").instantiate() as ArchiveMain
+    var world := _world_scene.instantiate() as ArchiveMain
     add_child(world)
     var player := preload("res://core/player/player.tscn").instantiate() as FirstPersonPlayer
     world.add_child(player)
@@ -30,8 +36,9 @@ func _run() -> void:
     _check(world.get_node("StageController").open_wing(0,false) == OK, "Original entrance gate opens quietly")
     await get_tree().physics_frame
     await get_tree().physics_frame
-    var dome := world.get_node("Wing01/Room/DomeCoverage") as Node3D
-    _check(dome.position.is_equal_approx(Vector3(0,4,-21)) and dome.scale == Vector3.ONE, "Unscaled wall-top pivot")
+    var dome := world.get_node(_dome_path) as Node3D
+    _inspect_world(world,dome)
+    _check(dome.global_position.is_equal_approx(Vector3(0,4,-21)) and dome.scale == Vector3.ONE, "Unscaled wall-top pivot")
     _check(dome.get_node("Crown").global_position.is_equal_approx(Vector3(0,9.5,-21)), "Accepted crown connection")
     _check(dome.get_node("Spring").global_position.is_equal_approx(Vector3(0,5.5,-21)), "Accepted spring connection")
     for type_name in ["CollisionObject3D","Light3D","WorldEnvironment"]:
@@ -133,5 +140,5 @@ func _run() -> void:
     world.queue_free()
     await get_tree().process_frame
     if _failures.is_empty():
-        print("ARCHIVE_DOME PASS: %d imported geometry/roof-ray/material/capsule/state assertions; 20160 new triangles / four surfaces" % _checks)
+        print(_marker + " PASS: %d imported geometry/roof-ray/material/capsule/state assertions; 20160 new triangles / four surfaces" % _checks)
     get_tree().quit(0 if _failures.is_empty() else 1)

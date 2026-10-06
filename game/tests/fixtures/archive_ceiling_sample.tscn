@@ -5,5 +5,8 @@
 
 [node name="ArchiveCeilingSample" instance=ExtResource("World")]
 
+[node name="RoofPresentation" parent="Wing01/Room" index="1"]
+visible = false
+
 [node name="CeilingStudy" parent="Wing01/Room" instance=ExtResource("Study")]
 position = Vector3(0, 4, -21)

@@ -1,0 +1,71 @@
+{
+  "captures": [
+    {
+      "draw_calls": 17,
+      "file": "roof_lookup_low.png",
+      "name": "roof_lookup",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 35,
+      "file": "roof_entrance_low.png",
+      "name": "roof_entrance",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 14,
+      "file": "roof_corner_low.png",
+      "name": "roof_corner",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 61,
+      "file": "roof_reverse_low.png",
+      "name": "roof_reverse",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 38,
+      "file": "roof_hero_low.png",
+      "name": "roof_hero",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 30,
+      "file": "roof_hearth_low.png",
+      "name": "roof_hearth",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "roof",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

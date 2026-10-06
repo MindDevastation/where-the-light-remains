@@ -1,3 +1,21 @@
+# Latest active boundary — shipping roof integrated, 2026-10-06
+
+The live 3–4 hour session began at 03:06:06 UTC; minimum end 06:06:06,
+maximum 07:06:06. Keep the supervised ten-minute preparation coordinator
+active and verify every remote receipt; continue stages until the work window
+ends. Last isolated-dome stable implementation was 748af9d371785ab36b9a51eda146c2bdf3b29c84,
+receipt 850355e4c546229038b57703f27185e13ec027f3. Recover the newest remote
+working-branch tip and current checkpoint journal, not this historical SHA.
+
+Shipping roof integration now passes 383 assertions, startup and twelve actual
+Low/Medium views byte-identical to inspected dome-native-2. One visible dome
+owner; unchanged roof source/export identities; no new collision/lights/state.
+See WING01_ROOF_INTEGRATION.md / roof-acceptance-1. Next: beam and quiet Star
+presentation, then local room lighting/art. Full room/gallery/audio/physical
+target/VS1 and S03 remain open. Protected credential stays outside Git.
+
+---
+
 # Active 3–4 hour session — 2026-10-06 03:06 UTC
 
 Start from confirmed remote receipt `884335c216f4122bcccc4846f9497a78a837d7d1`.

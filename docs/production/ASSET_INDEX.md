@@ -256,3 +256,13 @@ See WING01_DOME_ACCEPTANCE.md and dome-acceptance-1. Isolated fit is accepted;
 shipping integration, gallery/full-room art/lighting/VS1 and target GPU remain
 open. Earlier flat-normal glass reflection is retained in native-1; corrected
 smooth source and native-2 supersede that candidate.
+
+## Shipping Wing I roof integration — 2026-10-06
+
+One static wing01_roof_presentation.tscn now places the unchanged accepted
+cardinal ribs/transition and dome coverage in ArchiveMain. 26984 triangles /
+thirteen surfaces; no collision/lights/environment or gameplay change. Actual
+shipping owner/geometry/rays/capsule and isolated fixture tests, S02 persistence/
+return, room and Boot pass 383 assertions; startup and twelve pixel-identical
+Low/Medium shipping views pass. See WING01_ROOF_INTEGRATION.md and
+roof-acceptance-1. Full room/gallery/lighting/VS1 and target GPU remain open.
