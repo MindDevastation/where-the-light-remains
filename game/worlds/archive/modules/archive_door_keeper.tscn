@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_lock_keeper.glb" id="Keeper"]
+
+[node name="ArchiveDoorKeeper" type="Node3D"]
+metadata/asset_brief = "docs/production/S00_DOOR_LOCK.md"
+
+[node name="Keeper" parent="." instance=ExtResource("Keeper")]

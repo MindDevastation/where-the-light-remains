@@ -1,6 +1,8 @@
-[gd_scene load_steps=14 format=3]
+[gd_scene load_steps=16 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_prologue.gd" id="Script"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_door_lock.tscn" id="Lock"]
+[ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_door_keeper.tscn" id="Keeper"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -80,6 +82,9 @@ material_override = SubResource("Metal")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="LeftDoor"]
 shape = SubResource("DoorShape")
 
+[node name="Lock" parent="LeftDoor" instance=ExtResource("Lock")]
+position = Vector3(0.65, -0.28, 0.175)
+
 [node name="RightDoor" type="StaticBody3D" parent="."]
 position = Vector3(0.65, 1.9, 9.4)
 collision_layer = 1
@@ -92,6 +97,9 @@ material_override = SubResource("Metal")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RightDoor"]
 shape = SubResource("DoorShape")
+
+[node name="Keeper" parent="RightDoor" instance=ExtResource("Keeper")]
+position = Vector3(-0.65, -0.28, 0.175)
 
 [node name="Spark" type="MeshInstance3D" parent="."]
 position = Vector3(0, 3.3, 9.65)
