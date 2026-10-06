@@ -1,0 +1,95 @@
+{
+  "captures": [
+    {
+      "draw_calls": 71,
+      "file": "lens_hub_sleeping_low.png",
+      "installed_visible": false,
+      "loose_visible": true,
+      "name": "lens_hub_sleeping",
+      "phase": 0,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "draw_calls": 68,
+      "file": "lens_pickup_low.png",
+      "installed_visible": false,
+      "loose_visible": true,
+      "name": "lens_pickup",
+      "phase": 0,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "draw_calls": 69,
+      "file": "lens_empty_socket_low.png",
+      "installed_visible": false,
+      "loose_visible": false,
+      "name": "lens_empty_socket",
+      "phase": 2,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "draw_calls": 69,
+      "file": "lens_empty_detail_low.png",
+      "installed_visible": false,
+      "loose_visible": false,
+      "name": "lens_empty_detail",
+      "phase": 2,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "draw_calls": 71,
+      "file": "lens_installed_low.png",
+      "installed_visible": true,
+      "loose_visible": false,
+      "name": "lens_installed",
+      "phase": 3,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "draw_calls": 71,
+      "file": "lens_installed_detail_low.png",
+      "installed_visible": true,
+      "loose_visible": false,
+      "name": "lens_installed_detail",
+      "phase": 3,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "draw_calls": 72,
+      "file": "lens_hub_awakened_low.png",
+      "installed_visible": true,
+      "loose_visible": false,
+      "name": "lens_hub_awakened",
+      "phase": 5,
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "lens",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

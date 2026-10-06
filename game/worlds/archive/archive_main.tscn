@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=3]
+[gd_scene load_steps=86 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -31,6 +31,9 @@
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_books.tscn" id="Books"]
 
 [ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_rug.tscn" id="Rug"]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_starting_lens.glb" id="StartingLens"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_lens_socket.glb" id="LensSocket"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -695,10 +698,8 @@ target_paths = Array[NodePath]([NodePath("Panel/InteractionTarget"), NodePath("L
 loose_lens_path = NodePath("Lens/Visual")
 installed_lens_path = NodePath("InstalledLens")
 
-[node name="InstalledLens" type="MeshInstance3D" parent="Hub/Onboarding"]
+[node name="InstalledLens" parent="Hub/Onboarding" instance=ExtResource("StartingLens")]
 position = Vector3(0.45, 1.4, 0.8)
-mesh = SubResource("LensMesh")
-material_override = SubResource("LensMaterial")
 visible = false
 
 [node name="Panel" type="Area3D" parent="Hub/Onboarding"]
@@ -726,9 +727,7 @@ collision_mask = 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Onboarding/Lens"]
 shape = SubResource("HubTargetShape")
 
-[node name="Visual" type="MeshInstance3D" parent="Hub/Onboarding/Lens"]
-mesh = SubResource("LensMesh")
-material_override = SubResource("LensMaterial")
+[node name="Visual" parent="Hub/Onboarding/Lens" instance=ExtResource("StartingLens")]
 
 [node name="InteractionTarget" type="Node" parent="Hub/Onboarding/Lens"]
 script = ExtResource("Target")
@@ -743,9 +742,7 @@ collision_mask = 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Onboarding/Socket"]
 shape = SubResource("HubTargetShape")
 
-[node name="Visual" type="MeshInstance3D" parent="Hub/Onboarding/Socket"]
-mesh = SubResource("HubTargetMesh")
-material_override = SubResource("LensMaterial")
+[node name="Visual" parent="Hub/Onboarding/Socket" instance=ExtResource("LensSocket")]
 
 [node name="InteractionTarget" type="Node" parent="Hub/Onboarding/Socket"]
 script = ExtResource("Target")
