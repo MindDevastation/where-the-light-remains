@@ -1,3 +1,19 @@
+# Latest active boundary — wall practicals accepted, 2026-10-06
+
+Live session03:06:06 UTC; minimum end06:06:06, maximum07:06:06. Keep supervised
+checkpoints/remote verification and continue stages until the work window ends.
+Always recover newest working-branch tip/journal; protected credential outside Git.
+
+Original wall lantern: 708 triangles/four reused materials, two local static
+shadow-free warm lights; 216 current assertions, startup and sixteen inspected
+Low/Medium views. Actual two-object LFS upload followed by independent empty-
+store retrieval/reopen/cache-free room use passes. See ARCHIVE_WALL_LANTERN_
+ACCEPTANCE.md / lantern-acceptance-1. Accepted roof and beam identities preserved.
+Next: original side-wall bookcases within .42m perimeter strips; no new walking
+gallery or clues. Full room/gallery/audio/target GPU/ARCH/VS1/S03 remain open.
+
+---
+
 # Latest active boundary — S02 beam and quiet Star, 2026-10-06
 
 Live session began 03:06:06 UTC; minimum end 06:06:06, maximum 07:06:06.

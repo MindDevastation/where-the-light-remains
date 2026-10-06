@@ -1,20 +1,19 @@
-# Next room art block — local wall practicals
+# Next room art block — original side-wall bookcase family
 
-Shipping roof and bounded S02 beam/quiet Star are integrated and validated.
-See WING01_ROOF_INTEGRATION.md and WING01_BEAM_STAR_ACCEPTANCE.md. Current
-beam stage: 146 assertions, startup and sixteen inspected Low/Medium views;
-72 triangles per core/halo pair, canonical Star texture and controller poses.
-Accepted roof source/export identities remain unchanged.
+Shipping roof, beam/quiet Star and local original wall practicals are accepted
+in their bounded scopes. See WING01_ROOF_INTEGRATION.md,
+WING01_BEAM_STAR_ACCEPTANCE.md and ARCHIVE_WALL_LANTERN_ACCEPTANCE.md.
+Lantern stage: 216 assertions, sixteen inspected native views, actual two-object
+LFS upload and independent fresh-store retrieval/reopen/use. Roof unchanged.
 
-Continue a bounded original wall-lantern family using existing iron/brass/glass/
-gold materials, with two local warm shadow-free practicals. Establish metric
-source/placement/light range budgets before authoring; preserve 10x12 room,
-head/entrance clearance, canonical warm transition and all routes/controllers.
-No global environment/budget increases, new clues or walking route. Actual
-Blender/GLB upload, independent empty-store retrieval/reopen/use and cold/warm
-Low/Medium visual review precede acceptance. Then assess gallery/books art and
-software resource/performance evidence against the pinned reference family.
+Continue ARCHIVE_BOOKCASE.md / archive_bookcase.json: original compact walnut
+case with closed leather/cloth books and a reusable missing MAT-009 paper master,
+four side-panel instances limited to .42m perimeter strips. Preserve required
+capsule/grip/checkpoint/entrance paths and exact existing art identities. No new
+walking gallery, clues/text, light/script or global budget changes. Actual LFS
+upload/retrieval/source/use and Low/Medium room/close/warm views before stable.
+Then measure current resource/software frame costs and assess remaining room
+polish. Physical target GPU/full gallery/audio/ARCH/VS1/S03 stay open.
 
-Checkpoint each completed stage immediately and keep supervised snapshots
-within fifteen minutes until the authorized 3–4 hour session ends. Full room,
-ARCH/VS1, authored audio and physical target GPU remain open; no S03/bulk work.
+Continue immediately after each verified stage checkpoint until the current
+3–4 hour work window ends; keep remote snapshots within fifteen minutes.

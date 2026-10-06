@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "scope": "Original reusable side-wall bookcase; four static footprint-bounded room instances, no interaction/text/walking gallery",
+  "source": "assets/3d/blender/archive_kit/archive_bookcase.blend",
+  "stem": "sm_archive_bookcase",
+  "id": "bookcase",
+  "joint": [
+    0,
+    0,
+    0
+  ],
+  "material_order": [
+    "walnut",
+    "brass",
+    "leather",
+    "paper",
+    "navy",
+    "crimson"
+  ],
+  "materials": {
+    "walnut": "res://art/materials/m_dark_walnut.tres",
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "leather": "res://art/materials/m_aged_leather.tres",
+    "paper": "res://art/materials/m_archive_parchment.tres",
+    "navy": "res://art/materials/m_navy_textile.tres",
+    "crimson": "res://art/materials/m_crimson_textile.tres"
+  },
+  "bounds_min": [
+    -1.2,
+    0,
+    0
+  ],
+  "bounds_max": [
+    1.2,
+    2.55,
+    0.42
+  ],
+  "triangle_ceiling": 6500,
+  "placements": [
+    {
+      "name": "Left0",
+      "position": [
+        -4.8,
+        0,
+        -17
+      ],
+      "yaw_degrees": 90
+    },
+    {
+      "name": "Left1",
+      "position": [
+        -4.8,
+        0,
+        -25
+      ],
+      "yaw_degrees": 90
+    },
+    {
+      "name": "Right0",
+      "position": [
+        4.8,
+        0,
+        -17
+      ],
+      "yaw_degrees": -90
+    },
+    {
+      "name": "Right1",
+      "position": [
+        4.8,
+        0,
+        -25
+      ],
+      "yaw_degrees": -90
+    }
+  ],
+  "collision_box": {
+    "size": [
+      2.4,
+      2.55,
+      0.42
+    ],
+    "center": [
+      0,
+      1.275,
+      0.21
+    ]
+  },
+  "references": [
+    {
+      "file": "wi_002_v2_angle_a.png",
+      "sha256": "fd48d679468af3eec489d6f0cdd36934e573fba1b3332395bc9a2a7c517c283e",
+      "git_blob": "aa725d266cdaa5528abd1a5ee4b121f5ca6ab42f"
+    },
+    {
+      "file": "wi_002_v2_angle_b.png",
+      "sha256": "5c74210307c9c4c1c107b27864d60957c39c91c9721c8441110a18c810c8c47f",
+      "git_blob": "bba1ce619c580dc931e1ff287ff057f85bb6a403"
+    },
+    {
+      "file": "wi_002_v2_angle_c.png",
+      "sha256": "b90c07718e4ef845fe6e51c5847c863d2bc7e7071fb067212293ef35fda3dcf5",
+      "git_blob": "2f5930c2642b196ee64ca7a59d15bfed9a20afec"
+    },
+    {
+      "file": "wi_001_v2_angle_a.png",
+      "sha256": "42a374179355f8a538b8645552867918e14ebe7b752ec6eac8a1b548e834d6ee",
+      "git_blob": "f5ef9b0cbfa0c757290eb2870320fadf84bc90c0"
+    },
+    {
+      "file": "wi_001_v2_angle_b.png",
+      "sha256": "07ebdbc5099c57e7e04b07629e8c59590e403c354c329c05c4c79229f3321e03",
+      "git_blob": "c069fb7c0df7d25c1da482b26e8bc706acc94b46"
+    },
+    {
+      "file": "wi_001_v2_angle_c.png",
+      "sha256": "ded04ed38a910bbadddaec4762463a84d0cf6d4046852090226c53df18130d78",
+      "git_blob": "23fd00472de93e20e93289839e75dc067afb316b"
+    }
+  ]
+}

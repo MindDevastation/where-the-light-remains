@@ -1,0 +1,32 @@
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+git version 2.51.1
+
+Endpoint=https://github.com/MindDevastation/where-the-light-remains.git/info/lfs (auth=none)
+LocalWorkingDir=/tmp/wlr-lfs-family-jbwnje2a/clone
+LocalGitDir=/tmp/wlr-lfs-family-jbwnje2a/clone/.git
+LocalGitStorageDir=/tmp/wlr-lfs-family-jbwnje2a/clone/.git
+LocalMediaDir=/tmp/wlr-lfs-family-jbwnje2a/independent-lfs/objects
+LocalReferenceDirs=
+TempDir=/tmp/wlr-lfs-family-jbwnje2a/independent-lfs/tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneRemoteName=origin
+LfsStorageDir=/tmp/wlr-lfs-family-jbwnje2a/independent-lfs
+AccessDownload=none
+AccessUpload=none
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_EXEC_PATH=/usr/local/libexec/git-core
+GIT_PAGER=cat
+GIT_TERMINAL_PROMPT=0
+git config filter.lfs.process = "git-lfs filter-process"
+git config filter.lfs.smudge = "git-lfs smudge -- %f"
+git config filter.lfs.clean = "git-lfs clean -- %f"

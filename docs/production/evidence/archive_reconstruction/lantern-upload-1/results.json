@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checkpoint_commit": "eab080db75e58a77d97da583d1b1e7c010b65ad6",
+  "remote_verified_sha": "eab080db75e58a77d97da583d1b1e7c010b65ad6",
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/archive_wall_lantern.blend",
+      "bytes": 575183,
+      "sha256": "b326486030206cc8772b3010f8a8b3d30bcb77ced53ece687156a0abe979acfb"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_lantern.glb",
+      "bytes": 81164,
+      "sha256": "9598d00819f9c1bacc37390f02b6d677b8e9830a8ebad70b940dc1a6fe3c3096"
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "HEAD:refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "exit_code": 0,
+      "stdout": "Uploading LFS objects: 100% (2/2), 656 KB | 0 B/s, done.\n",
+      "stderr": "To https://github.com/MindDevastation/where-the-light-remains.git\n   4822dc4..eab080d  HEAD -> feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "utc": "2026-10-06T04:16:47.355324+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04"
+      ],
+      "exit_code": 0,
+      "stdout": "eab080db75e58a77d97da583d1b1e7c010b65ad6\trefs/heads/feature/04-archive-gameplay/checkpoints-2026-10-04\n",
+      "stderr": "",
+      "utc": "2026-10-06T04:16:52.437945+00:00"
+    }
+  ],
+  "note": "Native pre-push hook actual LFS upload; independent fresh-store retrieval/reopen/use is in lantern-retrieval-1."
+}

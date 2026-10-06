@@ -276,3 +276,12 @@ preserves canonical star.svg and pausable visibility-owned breathing. Generator:
 tools/create_archive_beam_mesh.gd. Evidence beam-star-acceptance-1 binds 146
 assertions, startup and sixteen inspected actual Low/Medium views. Existing
 roof assets unchanged; no new LFS payload. Full room/VS1 acceptance remains open.
+
+## Original archive wall practical — 2026-10-06
+
+archive_wall_lantern.blend / sm_archive_wall_lantern.glb: 708 triangles/four
+existing Iron/Brass/Glass/Gold surfaces; two shipping instances with static local
+warm shadow-free range3m lights. Actual source reopen, 216 regression assertions,
+sixteen inspected Low/Medium views, actual two-object upload and independent
+empty-store retrieval/reopen/import/use: lantern-acceptance-1. No new texture,
+route/controller/global light changes. Complete room/VS1/target GPU still open.
