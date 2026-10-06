@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
+  "status": "PASS",
   "started_at": "2026-10-06T04:36:51.996529+00:00",
   "source_hashes": {
     "game/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -418,7 +418,25 @@
     "tools/verify_lfs_asset_family.py": "422ccf5884747887f0ca137551019b3099936926da98a9f1164d1b1779e7b720",
     "tools/session_snapshot.py": "1206fdf1b47401359bcbd0761410a1f84905bb15811794f51ee0c870d09f1cab",
     "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205",
-    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327"
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/case_warm_hero_low.json": "47a051cb056e6f725369fa2145bfa18590848091a1e336c7cbae84941c61cc86",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/normal_startup.log": "6d1c065383a27c36804949b6ffa4b09714470b112e5dacc0bd5aeb7b9c147c4e",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/cold_roof_low_1080p.png": "84936081227c77ab5fb30a315a3cd0668702ae2a1b5270cb740c5dfc136ee09d",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/profile_medium.json": "7966d2f5e844bcaebba3977e5927a212e2c13321ed6f73d35e86ac288076d1a7",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/cold_roof_medium_1080p.png": "e35a098b1ba70d7e04be821673dfab133cf6e08ab71a2988fb30f6c222660b44",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/case_cold_roof_low.json": "7e4d51e34ee787503967698041773d0d8b31282b2181026e98ec1d7b2bd035ae",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/cold_hero_low_1080p.png": "ddba1a4e42c829cf24e7c93a5246ff00e6dbe4cd738fdd047a91a04ff1d2223d",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/warm_hero_low_1080p.png": "6a548b6b3b3a9911fdcb5a7aa95b2f883e9f709d9f23b89f0b98d64e5a02d2fe",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/case_cold_hero_low.json": "1b40b8c0c71e7047b09a5a59af11c7a4c3fa68c89e2022da5a7e2e5e19e37817",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/medium.log": "47de0a5b5bd6a64e73800468607fabfe983cd718c1afb490b3fbbe271de8689b",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/cold_hero_medium_1080p.png": "c099b6f2b0f5fb55fb71591a0982c1c83329ed0d43554201f2de2cc91aeef5cf",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/case_cold_roof_medium.json": "31423a3a5c284f6ed224fb42a9e141e17682a6362c24ebd3a464c731fcdf659b",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/warm_hero_medium_1080p.png": "a8e9f68ef0ccea16148a4f51c89f9250a1df97d1bfca40d30a8ed0714f2e05ce",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/low.log": "b97fbfabb80f138a228d21a1cdcef0a0abd7430959fcde05c2dbce999a15793c",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/case_warm_hero_medium.json": "74f2d982a5de0301e80ca073c80023afb918f62c99537e774ba6c832e54017f0",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/case_cold_hero_medium.json": "6b5d17243a54c826fd0ec83c7009046a2e9ead296a1f6fe99912a9aeb03d08fc",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/clean_import.log": "cf4ed3d20c293561c72828fa3efa2a86f9dfbc787c20f7cf04855b3259afc85d",
+    "docs/production/evidence/archive_reconstruction/room-profile-2/profile_low.json": "929911300b9f4cc223cadde252b1280185ab2ff3824a97575622605033272ac7"
   },
   "commands": [
     {
@@ -508,6 +526,46 @@
         "savegame.backup.json": "a8f464dc403b93c60fb7fd60a658335505e4506c5344ec05f1f487120372d757"
       },
       "log_sha256": "b97fbfabb80f138a228d21a1cdcef0a0abd7430959fcde05c2dbce999a15793c"
+    },
+    {
+      "name": "medium",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/wlr-room-profile-0u23sree/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/e4dba9b6d2e8/wlr-tools/graphics",
+        "--godot",
+        "/workspace/scratch/e4dba9b6d2e8/wlr-tools/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "250",
+        "--expect",
+        "ARCHIVE_ROOM_PROFILE MEASURED",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "1920x1080",
+        "res://tests/archive_room_profile.tscn",
+        "--",
+        "--profile-output=/workspace/scratch/e4dba9b6d2e8/where-the-light-remains/docs/production/evidence/archive_reconstruction/room-profile-2",
+        "--quality=medium",
+        "--samples=60",
+        "--warmup=20"
+      ],
+      "started_at": "2026-10-06T04:38:50.309434+00:00",
+      "finished_at": "2026-10-06T04:41:40.274549+00:00",
+      "exit_code": 0,
+      "passed": true,
+      "slots_before": {
+        "savegame.json": "a8f464dc403b93c60fb7fd60a658335505e4506c5344ec05f1f487120372d757",
+        "savegame.backup.json": "a8f464dc403b93c60fb7fd60a658335505e4506c5344ec05f1f487120372d757"
+      },
+      "slots_after": {
+        "savegame.json": "a8f464dc403b93c60fb7fd60a658335505e4506c5344ec05f1f487120372d757",
+        "savegame.backup.json": "a8f464dc403b93c60fb7fd60a658335505e4506c5344ec05f1f487120372d757"
+      },
+      "log_sha256": "47de0a5b5bd6a64e73800468607fabfe983cd718c1afb490b3fbbe271de8689b"
     }
   ],
   "scope": "Instrumented actual GameRoot 1080p room measurements on the identified renderer only.",
@@ -759,6 +817,254 @@
           "gpu_timing_available": true
         }
       ]
+    },
+    {
+      "quality": "medium",
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "device_kind": "SOFTWARE",
+      "render_scale": 1.0,
+      "visible_shadow_lights": 0,
+      "cases": [
+        {
+          "name": "cold_hero",
+          "sample_count": 60,
+          "metrics": {
+            "draw_calls": {
+              "min": 49,
+              "median": 49.0,
+              "p95": 49,
+              "max": 49
+            },
+            "engine_static_bytes": {
+              "min": 61724863,
+              "median": 61762501.0,
+              "p95": 61795759,
+              "max": 61799467
+            },
+            "main_process_ms": {
+              "min": 502.014,
+              "median": 537.4105,
+              "p95": 586.985,
+              "max": 666.677
+            },
+            "physics_process_ms": {
+              "min": 0.047,
+              "median": 0.051,
+              "p95": 0.078,
+              "max": 0.412
+            },
+            "render_buffer_bytes": {
+              "min": 33335012,
+              "median": 33335012.0,
+              "p95": 33335012,
+              "max": 33335012
+            },
+            "render_setup_cpu_ms": {
+              "min": 0.019,
+              "median": 0.022,
+              "p95": 0.045,
+              "max": 0.124
+            },
+            "rendered_primitives": {
+              "min": 45582,
+              "median": 45582.0,
+              "p95": 45582,
+              "max": 45582
+            },
+            "renderer_video_bytes": {
+              "min": 145108864,
+              "median": 145108864.0,
+              "p95": 145108864,
+              "max": 145108864
+            },
+            "texture_bytes": {
+              "min": 98792448,
+              "median": 98792448.0,
+              "p95": 98792448,
+              "max": 98792448
+            },
+            "viewport_render_cpu_ms": {
+              "min": 0.303999990224838,
+              "median": 0.33849999308586154,
+              "p95": 0.544000029563904,
+              "max": 1.48800003528595
+            },
+            "viewport_renderer_gpu_ms": {
+              "min": 492.290985107422,
+              "median": 521.686492919922,
+              "p95": 567.575988769531,
+              "max": 657.7919921875
+            },
+            "wall_ms": {
+              "min": 507.324,
+              "median": 538.5375,
+              "p95": 584.516,
+              "max": 676.338
+            }
+          },
+          "gpu_timing_available": true
+        },
+        {
+          "name": "cold_roof",
+          "sample_count": 60,
+          "metrics": {
+            "draw_calls": {
+              "min": 24,
+              "median": 24.0,
+              "p95": 24,
+              "max": 24
+            },
+            "engine_static_bytes": {
+              "min": 68207375,
+              "median": 68244853.0,
+              "p95": 68278111,
+              "max": 68281819
+            },
+            "main_process_ms": {
+              "min": 819.706,
+              "median": 873.848,
+              "p95": 983.015,
+              "max": 1070.348
+            },
+            "physics_process_ms": {
+              "min": 0.046,
+              "median": 0.049,
+              "p95": 0.094,
+              "max": 0.141
+            },
+            "render_buffer_bytes": {
+              "min": 33335012,
+              "median": 33335012.0,
+              "p95": 33335012,
+              "max": 33335012
+            },
+            "render_setup_cpu_ms": {
+              "min": 0.017,
+              "median": 0.021,
+              "p95": 0.026,
+              "max": 0.049
+            },
+            "rendered_primitives": {
+              "min": 31850,
+              "median": 31850.0,
+              "p95": 31850,
+              "max": 31850
+            },
+            "renderer_video_bytes": {
+              "min": 145108864,
+              "median": 145108864.0,
+              "p95": 145108864,
+              "max": 145108864
+            },
+            "texture_bytes": {
+              "min": 98792448,
+              "median": 98792448.0,
+              "p95": 98792448,
+              "max": 98792448
+            },
+            "viewport_render_cpu_ms": {
+              "min": 0.266999989748001,
+              "median": 0.28999999165535,
+              "p95": 0.458999991416931,
+              "max": 0.546000003814697
+            },
+            "viewport_renderer_gpu_ms": {
+              "min": 810.632019042969,
+              "median": 865.645477294922,
+              "p95": 976.747985839844,
+              "max": 1063.01696777344
+            },
+            "wall_ms": {
+              "min": 823.605,
+              "median": 879.336,
+              "p95": 997.482,
+              "max": 1119.681
+            }
+          },
+          "gpu_timing_available": true
+        },
+        {
+          "name": "warm_hero",
+          "sample_count": 60,
+          "metrics": {
+            "draw_calls": {
+              "min": 51,
+              "median": 51.0,
+              "p95": 51,
+              "max": 51
+            },
+            "engine_static_bytes": {
+              "min": 68303999,
+              "median": 68341477.0,
+              "p95": 68374735,
+              "max": 68378443
+            },
+            "main_process_ms": {
+              "min": 523.588,
+              "median": 569.7425000000001,
+              "p95": 700.218,
+              "max": 723.123
+            },
+            "physics_process_ms": {
+              "min": 0.048,
+              "median": 0.051,
+              "p95": 0.083,
+              "max": 0.092
+            },
+            "render_buffer_bytes": {
+              "min": 33335172,
+              "median": 33335172.0,
+              "p95": 33335172,
+              "max": 33335172
+            },
+            "render_setup_cpu_ms": {
+              "min": 0.042,
+              "median": 0.0465,
+              "p95": 0.074,
+              "max": 0.126
+            },
+            "rendered_primitives": {
+              "min": 46112,
+              "median": 46112.0,
+              "p95": 46112,
+              "max": 46112
+            },
+            "renderer_video_bytes": {
+              "min": 145109024,
+              "median": 145109024.0,
+              "p95": 145109024,
+              "max": 145109024
+            },
+            "texture_bytes": {
+              "min": 98792448,
+              "median": 98792448.0,
+              "p95": 98792448,
+              "max": 98792448
+            },
+            "viewport_render_cpu_ms": {
+              "min": 0.317999988794327,
+              "median": 0.34200000762939453,
+              "p95": 0.439000010490417,
+              "max": 0.529999971389771
+            },
+            "viewport_renderer_gpu_ms": {
+              "min": 498.912994384766,
+              "median": 550.0855102539065,
+              "p95": 674.505981445312,
+              "max": 716.487976074219
+            },
+            "wall_ms": {
+              "min": 511.93,
+              "median": 562.843,
+              "p95": 689.843,
+              "max": 728.64
+            }
+          },
+          "gpu_timing_available": true
+        }
+      ]
     }
-  ]
+  ],
+  "private_copy_removed": true,
+  "finished_at": "2026-10-06T04:41:40.320226+00:00"
 }

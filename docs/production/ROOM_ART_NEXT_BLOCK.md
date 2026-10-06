@@ -1,19 +1,18 @@
-# Next room work — measured profiling, then bounded polish
+# Next room art — bounded ordinary cloth rug
 
-Shipping roof, beam/quiet Star, local original wall practicals and four original
-side-wall bookcases are accepted in their bounded scopes. See their acceptance
-files; latest bookcase-acceptance-1 binds282 assertions, startup, sixteen
-inspected native views and actual independent two-object LFS retrieval/use.
-Roof/lamp/beam payload identities remain unchanged. No new walking gallery.
+Accepted current shipping roof/beam/quiet Star, original practicals and four
+bookcases retain exact game/tool identities. Actual1080p profiling passes in
+room-profile-2:360 instrumented frame samples, six inspected pictures, protected
+slots and current startup. See ARCHIVE_ROOM_PROFILE_RESULTS.md. Software
+llvmpipe wall timings348..879ms median are not physical target acceptance;
+release profiler run count remains0. No budget/default or art asset changed.
 
-Profile current actual shipping GameRoot room at1920x1080 on Low/Medium with
-cold/warm/roof camera cases, enough warm-up and measured frame intervals,
-render counters, internal render scale and identified device. Provide a bounded
-repeatable physical-display/device entry for the owner; software Vulkan numbers
-must never certify GTX1060 /1080p60 or the three release profiler runs. Preserve
-physical slots/state, current art and quality budgets. Then continue bounded
-rug/material/room polish as evidence permits. Full gallery/authored audio/
-physical target/ARCH/VS1/S03 remain open.
+Continue ARCHIVE_RUG.md: original unlettered low-profile crimson/navy cloth
+rug,2.6x4m, two existing materials, metric closed geometry/floor-plane separation,
+no collider/step/clue/new texture or light. Actual source/LFS retrieval/import/
+use and relevant capsule/S02/native edge/hero/warm review before acceptance.
+Then continue bounded room/tooling work. Full gallery/authored audio/physical
+hardware/ARCH/VS1/S03 remain open. No new walking gallery or bulk production.
 
-Checkpoint each stage immediately, keep verified remote snapshots within
-fifteen minutes and continue until the current3–4 hour session work window ends.
+Checkpoint each finished stage immediately, keep verified remote snapshots
+within fifteen minutes and continue until the active3–4 hour work window ends.

@@ -1,3 +1,23 @@
+# Latest active boundary — actual room profiling, 2026-10-06
+
+Live session03:06:06 UTC; minimum end06:06:06, maximum07:06:06. Keep supervised
+snapshots/remote verification and continue stages until the work window ends.
+Recover newest working-branch tip/journal; protected credential outside Git.
+
+Current1080p room profiling passes360 instrumented Low/Medium frame samples,
+six inspected screenshots/current startup/protected physical slots. Actual
+llvmpipe software wall medians348/587/345ms Low,539/879/563ms Medium; not
+GTX1060/1080p60 acceptance. Release full profiler-run count0. First default
+sample run bounded out; completed cases now saved immediately. Linux physical-
+display runner rejects unsupported hosts/invalid bounds before engine launch.
+All prior accepted game/tools compare exact against bookcase-acceptance-1;
+282 prior assertions reused, not rerun for an unbound CLI fixture addition.
+See ARCHIVE_ROOM_PROFILE_RESULTS.md / room-profile-acceptance-1. Next: bounded
+ordinary cloth rug, then further room/tooling work. Full gallery/audio/physical
+hardware/ARCH/VS1/S03 remain open.
+
+---
+
 # Latest active boundary — bookcases accepted, 2026-10-06
 
 Live session03:06:06 UTC; minimum end06:06:06, maximum07:06:06. Keep supervised

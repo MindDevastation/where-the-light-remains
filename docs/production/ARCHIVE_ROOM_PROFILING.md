@@ -18,6 +18,9 @@ sum overlapping monitors into an invented complete frame time. Renderer GPU
 numbers describe the identified device; on llvmpipe they are software Vulkan
 timings. Zero may mean unavailable. Engine static allocation is not process RSS;
 rendered primitives include render passes and are not unique authored triangles.
+The raw `main_process_ms` label is the engine TIME_PROCESS complete-frame
+readout, not isolated script/gameplay CPU. Do not compare it with the7–8ms
+main-gameplay CPU envelope or describe it as an independent CPU profiler.
 Some monitors can lag by up to a second; the warm-up and raw data are retained.
 
 A successful tooling receipt means valid measurements/source/slots, not GTX1060

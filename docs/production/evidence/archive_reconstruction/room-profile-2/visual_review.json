@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-06T04:43:16.326405+00:00",
+  "images": [
+    {
+      "file": "cold_hero_low_1080p.png",
+      "sha256": "ddba1a4e42c829cf24e7c93a5246ff00e6dbe4cd738fdd047a91a04ff1d2223d",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    },
+    {
+      "file": "cold_roof_low_1080p.png",
+      "sha256": "84936081227c77ab5fb30a315a3cd0668702ae2a1b5270cb740c5dfc136ee09d",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    },
+    {
+      "file": "warm_hero_low_1080p.png",
+      "sha256": "6a548b6b3b3a9911fdcb5a7aa95b2f883e9f709d9f23b89f0b98d64e5a02d2fe",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    },
+    {
+      "file": "cold_hero_medium_1080p.png",
+      "sha256": "c099b6f2b0f5fb55fb71591a0982c1c83329ed0d43554201f2de2cc91aeef5cf",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    },
+    {
+      "file": "cold_roof_medium_1080p.png",
+      "sha256": "e35a098b1ba70d7e04be821673dfab133cf6e08ab71a2988fb30f6c222660b44",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    },
+    {
+      "file": "warm_hero_medium_1080p.png",
+      "sha256": "a8e9f68ef0ccea16148a4f51c89f9250a1df97d1bfca40d30a8ed0714f2e05ce",
+      "size": [
+        1920,
+        1080
+      ],
+      "inspected": true
+    }
+  ],
+  "scope": "Six actual 1080p Low/Medium views inspected. Current cold hero Low is also byte-identical to the fully inspected first interrupted-run cold image. Original roof/practical/book/beam silhouettes and warm transition remain coherent; not full room/physical target acceptance.",
+  "exact_prior_cold_hero_match": true
+}
