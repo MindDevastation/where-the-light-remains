@@ -1,3 +1,13 @@
+# Latest bounded delta — S00 facade/crown
+
+S00_ENTRY_PORTAL_ACCEPTANCE.md records one editable source, two GLBs and actual
+runtime instances with original walls/door/rail/lantern preserved.225 scoped
+checks,12 inspected Low/Medium PNG,3 independent LFS payloads PASS. Full exterior
+shell/approach/upper infill remains open; ARCH-002 still PARTIAL, ARCH-001 MISSING.
+Current185-row table remains authority; no prior accepted family rebuilt.
+
+---
+
 Full185-group reconciliation and dependency/variant classification: VS1_ART_RECONCILIATION.md.
 
 # S00/S01/S02 art inventory — 2026-10-06

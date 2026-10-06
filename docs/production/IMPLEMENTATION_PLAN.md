@@ -1,3 +1,13 @@
+# Latest bounded checkpoint — entry facade/crown accepted
+
+S00_ENTRY_PORTAL_ACCEPTANCE.md / portal-acceptance-20261006:225 scoped assertions,
+startup,12 inspected Low/Medium captures and independent3-payload LFS use PASS.
+Next existing flat approach/guard presentation, then missing shared exterior/
+dome/upper infill/backdrop and Hub, with original routes and gameplay preserved.
+GATE-VS1 remains OPEN and S03 blocked; owner gallery/audio/physical GPU outstanding.
+
+---
+
 # Implementation plan
 
 Status: **started**.

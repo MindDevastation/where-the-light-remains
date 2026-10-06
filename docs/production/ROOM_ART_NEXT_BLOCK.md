@@ -1,3 +1,15 @@
+# Next bounded block — existing S00 approach path/guards
+
+Portal facade/crown accepted in S00_ENTRY_PORTAL_ACCEPTANCE.md. Canonical ARCH-018
+permits steps/path; use the current flat4x8 approach atfloorY0, no new stairs or
+camera/player/physics contract. Existing side/rear guard bodies retain exact
+poses/shapes/layers; only contained visual stone/iron/brass dressing may change.
+ARCH-012 shared railing remains PARTIAL until its required broader straight/
+corner and Hub coverage exist. Then missing shell/dome/upper infill/backdrop.
+Escalation resolved; no S03 or new gameplay/save/route/lighting-budget redesign.
+
+---
+
 # Active bounded block — S00/S15 portal and front facade
 
 Owner Extra High/highest confirmation resolves the previous reasoning blocker.

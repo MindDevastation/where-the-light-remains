@@ -356,3 +356,9 @@ native editable presentation, fixed existing root and clock-owned cosmetic pose.
 40 actual timeline/pause/quiet checks/startup,12 inspected Low/Medium views:
 S00_LAST_SPARK_ACCEPTANCE.md. No new modeled binary family. Global VFX-002 and
 full guided exterior remain PARTIAL; current delta classifications include this.
+
+S00 original bounded portal: assets/3d/blender/archive_kit/s00_entry_portal.blend;
+sm_s00_entry_facade.glb (3840tri/5 surfaces, two original wall instances) and
+sm_s00_entry_arch.glb (984tri/3 surfaces). Source/import/UV/shading/clearance,
+225 scoped assertions,12 inspected native images and three-payload independent
+LFS use PASS: S00_ENTRY_PORTAL_ACCEPTANCE.md. Complete exterior still open.

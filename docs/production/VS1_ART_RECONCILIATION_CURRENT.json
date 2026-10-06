@@ -13,7 +13,7 @@
       "canonical_notes": "Custom modular shell; тот же mesh в прологе и эпилоге",
       "required_for_vs1": true,
       "status": "MISSING",
-      "finding": "No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets.",
+      "finding": "Full shared exterior shell/dome is still MISSING; accepted bounded front facade/crown does not constitute a building.",
       "evidence_paths": [
         "game/worlds/archive/archive_main.tscn",
         "game/worlds/archive/archive_prologue.tscn"
@@ -31,10 +31,11 @@
       "canonical_notes": "Повторяется как композиционная рифма вход/выход",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Original timber leaves and accepted lock now integrated; full arch portal/building/approach still missing.",
+      "finding": "Accepted original timber leaves/lock plus shared front facades and crown; full exterior/upper infill/approach composition remains PARTIAL.",
       "evidence_paths": [
         "docs/production/S00_ENTRANCE_LEAF_ACCEPTANCE.md",
-        "docs/production/S00_DOOR_LOCK_ACCEPTANCE.md"
+        "docs/production/S00_DOOR_LOCK_ACCEPTANCE.md",
+        "docs/production/S00_ENTRY_PORTAL_ACCEPTANCE.md"
       ]
     },
     {
@@ -2926,8 +2927,8 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T11:13:29.975020+00:00",
-  "latest_delta": "Entrance leaf, lower S01 housing, one S00 warm practical and local last spark accepted in bounded scopes; full VS1 OPEN.",
+  "updated_at": "2026-10-06T14:27:54.749266+00:00",
+  "latest_delta": "S00 front facades and arch crown bounded PASS; 225 scoped checks, 12 inspected Low/Medium captures, 3 independent LFS payloads, full exterior/VS1 still open.",
   "vs1_counts": {
     "MISSING": 21,
     "PARTIAL": 32,

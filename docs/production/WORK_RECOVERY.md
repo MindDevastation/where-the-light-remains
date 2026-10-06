@@ -1,3 +1,18 @@
+# Active boundary — S00 entry portal accepted, 2026-10-06
+
+Owner architectural escalation resolved. Reconciliation preserved. Original two
+facade instances3840tri each and984tri crown, one source/two GLBs:225 scoped
+checks/startup,12 individually inspected native Low/Medium images, all three LFS
+payloads independently downloaded/reopened/cache-free imported/used PASS.
+175 previous art/module identities unchanged. Read S00_ENTRY_PORTAL_ACCEPTANCE.md
+and portal-acceptance-20261006 seal; resolve stable/receipt from actual remote.
+ARCH-001 exterior MISSING, full ARCH-002 PARTIAL, VS1/S03/physical GPU open.
+Next bounded entry approach path/guard on existing planes/bodies; then exterior
+shell/dome/infill/backdrop and Hub. No repeated reconciliation or old preflights.
+Supervised600s remote-delta checkpoints; stop owned jobs/coordinator at turn end.
+
+---
+
 # Active boundary — S00/S15 architectural interface audit, 2026-10-06
 
 Recovered exact8d25e2e and597 sealed identities without old runtime preflights.
