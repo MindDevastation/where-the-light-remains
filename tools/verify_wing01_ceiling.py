@@ -55,6 +55,11 @@ for part in contract['parts']:
         assert all(upward(x,z) is not None for x,z in [(4.9,5.9),(-4.9,5.9),
                     (4.9,-5.9),(-4.9,-5.9),(4.8,3),(-4.8,-3),(3,5.8),(-3,-5.8)])
         assert upward(0,0) is None, 'Corner infill must not become a low central ceiling'
+        iron = part['materials'].index('iron')
+        belt_planes = {round(f.center.z,5) for f in obj.data.polygons
+                       if f.material_index==iron and abs(f.normal.z)>.99 and f.center.z<2}
+        assert belt_planes == {1.37,1.49}, belt_planes
+        assert 1.44 not in belt_planes, 'Metal underside must clear the stone underside plane'
     print('BLENDER_CEILING_PART PASS:',part['id'],'triangles=',count,'surfaces=',len(obj.data.materials),
           'actual_bounds=',low,high,'closed topology; metric UVs; unit normals/tangents; identity pivot')
 print('BLENDER_CEILING PASS: three reopened parts; two span variants; actual corner coverage and open central headroom')

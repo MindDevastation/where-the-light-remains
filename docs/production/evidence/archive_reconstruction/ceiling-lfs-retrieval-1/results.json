@@ -1,0 +1,159 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T01:42:49.953797+00:00",
+  "remote_commit": "18a950ef83aa651f9aa5cc855b137adee21567d5",
+  "initial_lfs_store": "EMPTY",
+  "object_alternates": false,
+  "independent_clone": "/workspace/scratch/e4dba9b6d2e8/ceiling-independent-1",
+  "objects": [
+    {
+      "path": "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend",
+      "bytes": 1038936,
+      "sha256": "05f62d3c514fa102230dabc66bdd34685ceac7a5c96f055e50fe4074e5794138",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:05f62d3c514fa102230dabc66bdd34685ceac7a5c96f055e50fe4074e5794138\nsize 1038936\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb",
+      "bytes": 258596,
+      "sha256": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662\nsize 258596\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb",
+      "bytes": 256964,
+      "sha256": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff\nsize 256964\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb",
+      "bytes": 167116,
+      "sha256": "ba5f23dcebb2383cafc9bfed4418eaa7ed919308f89761947ad9f450ed99a04d",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:ba5f23dcebb2383cafc9bfed4418eaa7ed919308f89761947ad9f450ed99a04d\nsize 167116\n"
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--no-checkout",
+        "--depth",
+        "1",
+        "--filter=blob:none",
+        "--single-branch",
+        "--branch",
+        "feature/04-archive-gameplay/checkpoints-2026-10-04",
+        "https://github.com/MindDevastation/where-the-light-remains.git",
+        "/workspace/scratch/e4dba9b6d2e8/ceiling-independent-1"
+      ],
+      "exit_code": 0,
+      "stderr": "Cloning into '/workspace/scratch/e4dba9b6d2e8/ceiling-independent-1'...\n"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/scratch/e4dba9b6d2e8/ceiling-independent-1",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/scratch/e4dba9b6d2e8/ceiling-independent-1",
+        "show",
+        "18a950ef83aa651f9aa5cc855b137adee21567d5:assets/3d/blender/archive_kit/wing01_ceiling_sample.blend"
+      ],
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "lfs",
+        "smudge",
+        "--",
+        "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend"
+      ],
+      "exit_code": 0,
+      "stderr": "Downloading assets/3d/blender/archive_kit/wing01_ceiling_sample.blend (1.0 MB)\n"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/scratch/e4dba9b6d2e8/ceiling-independent-1",
+        "show",
+        "18a950ef83aa651f9aa5cc855b137adee21567d5:game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb"
+      ],
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "lfs",
+        "smudge",
+        "--",
+        "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb"
+      ],
+      "exit_code": 0,
+      "stderr": "Downloading game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb (259 KB)\n"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/scratch/e4dba9b6d2e8/ceiling-independent-1",
+        "show",
+        "18a950ef83aa651f9aa5cc855b137adee21567d5:game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb"
+      ],
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "lfs",
+        "smudge",
+        "--",
+        "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb"
+      ],
+      "exit_code": 0,
+      "stderr": "Downloading game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb (257 KB)\n"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/scratch/e4dba9b6d2e8/ceiling-independent-1",
+        "show",
+        "18a950ef83aa651f9aa5cc855b137adee21567d5:game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb"
+      ],
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "lfs",
+        "smudge",
+        "--",
+        "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb"
+      ],
+      "exit_code": 0,
+      "stderr": "Downloading game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb (167 KB)\n"
+    }
+  ],
+  "scope": "Actual four LFS pointers and independent payload downloads; source reopen/import follow separately.",
+  "source_hashes": {
+    "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend": "05f62d3c514fa102230dabc66bdd34685ceac7a5c96f055e50fe4074e5794138",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb": "ba5f23dcebb2383cafc9bfed4418eaa7ed919308f89761947ad9f450ed99a04d"
+  }
+}

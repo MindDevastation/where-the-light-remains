@@ -1,0 +1,51 @@
+{
+  "captures": [
+    {
+      "draw_calls": 13,
+      "file": "ceiling_lookup_low.png",
+      "name": "ceiling_lookup",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 31,
+      "file": "ceiling_entrance_low.png",
+      "name": "ceiling_entrance",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 10,
+      "file": "ceiling_corner_low.png",
+      "name": "ceiling_corner",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    },
+    {
+      "draw_calls": 57,
+      "file": "ceiling_reverse_low.png",
+      "name": "ceiling_reverse",
+      "size": [
+        960,
+        540
+      ],
+      "texture_bytes": 27648512
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "ceiling",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

@@ -1,0 +1,42 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend",
+      "bytes": 1038936,
+      "sha256": "8abd1e012bd13a50a1092535fc95ede5e87f89492baa7fa065cf4faf2a394fb8"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb",
+      "bytes": 258596,
+      "sha256": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb",
+      "bytes": 256964,
+      "sha256": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb",
+      "bytes": 167500,
+      "sha256": "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "rib_10m",
+      "triangles": 2568,
+      "surfaces": 3
+    },
+    {
+      "id": "rib_12m",
+      "triangles": 2568,
+      "surfaces": 3
+    },
+    {
+      "id": "transition",
+      "triangles": 1688,
+      "surfaces": 3
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

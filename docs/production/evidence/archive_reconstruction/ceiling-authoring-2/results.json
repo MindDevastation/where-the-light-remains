@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-06T01:45:55.119401+00:00",
+  "source_hashes": {
+    "tools/create_wing01_ceiling.py": "262bab00b374289fef0d8ded0b9f2f7070827f47d4c98386b62a1669c437568c",
+    "tools/verify_wing01_ceiling.py": "26814e42005a995641b01ac581526912637ba3febc1d307365f76fcde0045c9a",
+    "tools/create_wing01_optics.py": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7",
+    "docs/production/wing01_ceiling_sample.json": "24831c7617453346f65d6a4a1b60778da79d6f04e9322183bbe1bd288b6a23f8",
+    "docs/production/WING01_CEILING_SAMPLE.md": "70c0206cd617e0266b9c68aab84d2e13e74d8791b445b9cd08cd8523ebd8e3c5",
+    "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend": "8abd1e012bd13a50a1092535fc95ede5e87f89492baa7fa065cf4faf2a394fb8",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb": "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8",
+    "docs/production/evidence/archive_reconstruction/ceiling-authoring-2/payload_manifest.json": "9b07942c6500920188e9a9e1ce144fb465ca77661679c006913321a1fe27cc73",
+    "docs/production/evidence/archive_reconstruction/ceiling-authoring-2/reopen.log": "75028863dd41aeb58baaa144f20cd9a29cfad8708936ff61a7d0fc5782066d27",
+    "docs/production/evidence/archive_reconstruction/ceiling-authoring-2/authoring.log": "27012c210e90f23299d5fa7d29fea3ea92f476adc3ac1609b6bdc983dc186c94"
+  },
+  "measurements": [
+    {
+      "id": "rib_10m",
+      "triangles": 2568,
+      "surfaces": 3
+    },
+    {
+      "id": "rib_12m",
+      "triangles": 2568,
+      "surfaces": 3
+    },
+    {
+      "id": "transition",
+      "triangles": 1688,
+      "surfaces": 3
+    }
+  ],
+  "scope": "Revised saved/reopened source and exports. Actual spring belt planes 1.37/1.49 clear the corner underside plane 1.44. Import/native/LFS retrieval remain separate gates.",
+  "unchanged_rib_exports": "Both exported rib GLBs are byte-identical to the first candidate."
+}

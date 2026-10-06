@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "started_at": "2026-10-06T01:44:57.627463+00:00",
+  "objects": [
+    {
+      "path": "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend",
+      "bytes": 1038936,
+      "sha256": "8abd1e012bd13a50a1092535fc95ede5e87f89492baa7fa065cf4faf2a394fb8",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:8abd1e012bd13a50a1092535fc95ede5e87f89492baa7fa065cf4faf2a394fb8\nsize 1038936\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb",
+      "bytes": 258596,
+      "sha256": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662\nsize 258596\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb",
+      "bytes": 256964,
+      "sha256": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff\nsize 256964\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb",
+      "bytes": 167500,
+      "sha256": "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8\nsize 167500\n"
+    }
+  ],
+  "source_hashes": {
+    "assets/3d/blender/archive_kit/wing01_ceiling_sample.blend": "8abd1e012bd13a50a1092535fc95ede5e87f89492baa7fa065cf4faf2a394fb8",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb": "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8"
+  },
+  "command": [
+    "git",
+    "lfs",
+    "push",
+    "--object-id",
+    "origin",
+    "8abd1e012bd13a50a1092535fc95ede5e87f89492baa7fa065cf4faf2a394fb8",
+    "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+    "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+    "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8"
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-10-06T01:45:16.242318+00:00",
+  "scope": "Revised source/transition plus byte-identical two previously uploaded ribs."
+}

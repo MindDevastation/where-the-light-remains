@@ -97,9 +97,19 @@ func _run() -> void:
         player.global_position = corner
         var motion := Vector3(-signf(corner.x),0,1 if corner.z<-21 else -1)
         _check(player.move_and_collide(motion) == null, "Actual capsule clears room corner below infill " + str(corner))
-    for approach in [Vector3(0,.02,-21.5),Vector3(-2.8,.02,-23),Vector3(.9,.02,-19.8)]:
-        player.global_position = approach
-        _check(player.move_and_collide(Vector3(0,0,-.3)) == null, "Preserved puzzle approach " + str(approach))
+    var feet: Array[Vector3] = []
+    for checkpoint in ["Star","Hearth"]:
+        feet.append((world.get_node("Spawns/"+checkpoint) as Node3D).global_position)
+    for grip_name in ["Outer","Middle","Inner","Focus"]:
+        var grip := world.get_node("Wing01/Room/Rings/Carrier/"+grip_name+"/Grip") as Node3D
+        feet.append(Vector3(grip.global_position.x,.004,grip.global_position.z+1.5))
+    for approach: Vector3 in feet:
+        var query := PhysicsShapeQueryParameters3D.new()
+        query.shape = player.get_node("CollisionShape3D").shape
+        query.transform = Transform3D(Basis.IDENTITY,approach+Vector3(0,.9,0))
+        query.collision_mask = 1
+        _check(world.get_world_3d().direct_space_state.intersect_shape(query,1).is_empty(), "Actual shipping capsule clears preserved checkpoint/grip approach " + str(approach))
+    _check(world.slice_bindings_valid(), "Existing puzzle bindings remain valid in fixture")
     _check(GameState.capture_save().to_dict() == before and SaveManager.get("_dirty") == dirty, "Geometry/physics review preserves state and save dirty flag")
     world.queue_free()
     await get_tree().process_frame

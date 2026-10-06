@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "scope": "Eight actual Low/Medium player views inspected for the isolated construction sample. Not full-room/concept fidelity or target GPU acceptance.",
+  "findings": [
+    "Original 10/12 meter ribs meet the common crown collar; upper feet contact the wall-top transition.",
+    "Corner stone coverage joins the rectangular wall tops to the elliptical spring edge.",
+    "Previously coincident spring-belt/stone undersides are separated; the jagged flicker seen in native-1 is absent in all eight revised views.",
+    "Low retains expected raster aliasing and segmented specular highlights; no antialias/lighting/preset change was made.",
+    "The existing dark background is visible through unfilled dome panes. Curved panes/intermediate ribs/sky and gallery art remain open.",
+    "The existing room remains otherwise unchanged; sample appears only in its explicit test fixture."
+  ],
+  "counters": [
+    {
+      "low": [
+        {
+          "name": "ceiling_lookup",
+          "draw_calls": 13,
+          "texture_bytes": 27648512
+        },
+        {
+          "name": "ceiling_entrance",
+          "draw_calls": 31,
+          "texture_bytes": 27648512
+        },
+        {
+          "name": "ceiling_corner",
+          "draw_calls": 10,
+          "texture_bytes": 27648512
+        },
+        {
+          "name": "ceiling_reverse",
+          "draw_calls": 57,
+          "texture_bytes": 27648512
+        }
+      ]
+    },
+    {
+      "medium": [
+        {
+          "name": "ceiling_lookup",
+          "draw_calls": 13,
+          "texture_bytes": 35138048
+        },
+        {
+          "name": "ceiling_entrance",
+          "draw_calls": 31,
+          "texture_bytes": 35138048
+        },
+        {
+          "name": "ceiling_corner",
+          "draw_calls": 10,
+          "texture_bytes": 35138048
+        },
+        {
+          "name": "ceiling_reverse",
+          "draw_calls": 57,
+          "texture_bytes": 35138048
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "docs/production/evidence/archive_reconstruction/ceiling-native-2/ceiling_lookup_low.png": "262ad3540fd8861a49021722efee3b0428932e3a7dc87bc7e0a0134a84dec1b6",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-2/ceiling_reverse_low.png": "58e2b2db5dc8b1298d69e370ca03fea89b36322263594f05ad96d41b39b82201",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-2/ceiling_reverse_medium.png": "98606161577ba4aa9a64e4438ae13a3af290ff94c456b7fa4c6215c656a05862",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-2/ceiling_entrance_medium.png": "ce2a3a48cc428a15bdb768a88bad4318d2ab7f4121ea2fd81ebca7e9db62278d",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-2/ceiling_corner_medium.png": "e2b0ef8f81237004cfdd5961c784dafa2d394cc17a8e5c659b522db93f98102a",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-2/ceiling_corner_low.png": "12f5c8e7b4fa3d5d534c1734f226d4ad7ab150296796dade9eb4f60dadfb69c8",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-2/ceiling_lookup_medium.png": "2003c8b20a1cf13ce231563770ec7efcac5fae14a3b295de07428882bcb616e2",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-2/ceiling_entrance_low.png": "ffbd113711fa84ff87adcc971e2777616617d9a9aca413427e3457be1330f2d7"
+  }
+}

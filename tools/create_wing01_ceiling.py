@@ -110,7 +110,7 @@ def transition(g):
     # Spring belt follows the same polygonal ellipse; no transparent roof panes.
     loops = []
     for angle in angles:
-        loops.append([((5+r)*math.cos(angle),1.5+y,(6+r)*math.sin(angle))
+        loops.append([((5+r)*math.cos(angle),1.43+y,(6+r)*math.sin(angle))
                       for r,y in [(-.065,-.06),(.065,-.06),(.065,.06),(-.065,.06)]])
     # Avoid duplicate coincident end caps on the closed belt.
     vertices = [p for loop in loops[:-1] for p in loop]
@@ -153,7 +153,7 @@ for obj,target,part in zip(objects,targets[1:],contract['parts']):
     assert len(doc['meshes'][0]['primitives']) == len(part['materials'])
     for primitive in doc['meshes'][0]['primitives']:
         assert {'POSITION','NORMAL','TANGENT','TEXCOORD_0'} <= set(primitive['attributes'])
-e = out / 'docs/production/evidence/archive_reconstruction/ceiling-authoring-1'
+e = out / 'docs/production/evidence/archive_reconstruction/ceiling-authoring-2'
 e.mkdir(parents=True)
 (e/'payload_manifest.json').write_text(json.dumps({'payloads':[{'path':p.relative_to(out).as_posix(),
     'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in targets],

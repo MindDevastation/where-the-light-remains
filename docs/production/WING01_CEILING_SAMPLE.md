@@ -29,7 +29,8 @@ spring. New perimeter panels cover Y=4..5.5, overlapping existing 4.12 m pier
 caps by 0.12 m; no old asset is stretched. Thin horizontal corner spandrels close
 the area between the 10x12 rectangle and a 5x6 half-axis ellipse at Y=5.5.
 Include exact corner ray angles in the polygonal ellipse boundary, so its outer
-edge reaches all four rectangular corners. This is edge coverage only: the
+edge reaches all four rectangular corners. The spring belt center is Y=5.43, 0.07 m below the spring anchors; its lower
+face clears the stone underside to avoid coplanar rendering. This is edge coverage only: the
 curved roof panes, intermediate meridian ribs, upper gallery and sky treatment
 remain open. The two crossed ribs are not a finished closed dome.
 

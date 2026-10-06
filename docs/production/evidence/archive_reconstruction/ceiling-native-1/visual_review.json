@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "scope": "All eight actual Low/Medium player captures inspected. Rim shows coplanar metal/stone undersides; fix source belt before sample acceptance.",
+  "findings": [
+    "Four hemisphere rib halves meet one collar without crossing-face overlap.",
+    "Stone upper transition closes the formerly open wall-top band.",
+    "Visible jagged flicker along ellipse edge: iron spring belt bottom and corner stone underside both at global Y=5.44.",
+    "Empty dome panes/sky and full room visual design remain open."
+  ],
+  "source_hashes": {
+    "docs/production/evidence/archive_reconstruction/ceiling-native-1/ceiling_lookup_low.png": "a5f6bcb0d55f6dbfb9fda476a706f1af5d399c1cc25e806cba3b02b09d76a697",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-1/ceiling_reverse_low.png": "1915a603432f8acd67bee38cfa507ed0af0d1432345c53d2d8f75d7757cdd004",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-1/ceiling_reverse_medium.png": "f9a56d3ba11869ce8acc9e39332ad47275140eacebe997fa53063b001f74304b",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-1/ceiling_entrance_medium.png": "f1bcb0ed144cedfab6b261e754995b3966106fe8b738c79a30727480f4060a70",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-1/ceiling_corner_medium.png": "be8cbb25c48f2ec36b20db1525413f938102e24745e1d1a4244626cb2400d753",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-1/ceiling_corner_low.png": "818c896be9fe017873ca10612d7171d192d627d8c84afad6b79733816ab97e33",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-1/ceiling_lookup_medium.png": "d24888bf65b1c64c3529af2e1872e94cf00e95c5694584a848bf485b26a3a2f5",
+    "docs/production/evidence/archive_reconstruction/ceiling-native-1/ceiling_entrance_low.png": "a2a6983b17856483b58234c8bf87f0ef22e9e551bfc977cabae07087eb4c2911"
+  }
+}
