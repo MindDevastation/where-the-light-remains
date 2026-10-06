@@ -6,11 +6,13 @@ baseline receipt remains evidence/archive_reconstruction/vs1-reconciliation-2026
 it is not rerun or relabeled. All185 canonical rows remain in the JSON; the77
 VS1-related rows are shown below. Counts are scope classifications, not percent completion.
 
-Current25 ACCEPTED/38 PARTIAL/14 MISSING. ARCH-008 now has bounded five-header
-coverage; full window/night-dawn/style coverage is PARTIAL. GATE-VS1 OPEN/S03
-blocked. ARCH-011 requires the placement/elevation decision documented in
-ARCHIVE_SHORT_STAIRS_LAYOUT_AUDIT.md. Gate publication is resolved by explicit
-owner authorization; final current stable/receipt identities are in the checkpoint journal.
+Current26 ACCEPTED/40 PARTIAL/11 MISSING. MAT-002 now supplies one distinct
+mapped polished-brass master in bounded current integration. VFX-006/007 remain
+PARTIAL after their current native dust/inspect acceptance. Full hero, style,
+owner gallery and physical target GPU remain OPEN; GATE-VS1 OPEN/S03 blocked.
+ARCH-011 stays MISSING/required_for_vs1 pending the explicit A/B owner decision
+in ARCHIVE_SHORT_STAIRS_DECISION.md. Actual production STABLE/receipt HEAD are
+recorded in evidence/checkpoints/continuation_20261007.jsonl.
 
 | ID | Status | Canonical requirement / current finding | Evidence |
 | --- | --- | --- | --- |
@@ -41,7 +43,7 @@ owner authorization; final current stable/receipt identities are in the checkpoi
 | PROP-007 | MISSING | Фрагмент Архива — базовый носитель/stand; No original fragment shell/stand source or GLB. Existing optical pedestal and Hearth bowl are their puzzle assets, not the specified shared fragment carrier. | game/gameplay/collectibles/fragment_presenter.tscn |
 | SIG-001–010 | PARTIAL | 10 уникальных сигилов: Очаг, Звезда, Росток, Эхо, Колокольчик, Перо, Двойная луна, Блик, Кристалл, Созвездие; Only canonical Star/Hearth SVGs and their presentation are implemented; remaining eight glyphs belong to gated stages. | game/art/sigils/star.svg, game/art/sigils/hearth.svg |
 | MAT-001 | ACCEPTED | Aged Brass master; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_aged_brass.tres, docs/production/MATERIAL_LIBRARY.md |
-| MAT-002 | MISSING | Polished Brass hero; No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface. |  |
+| MAT-002 | ACCEPTED | Polished Brass hero; One distinct reusable original mapped polished-brass StandardMaterial3D master accepted on two existing S01 rings; deterministic3-map source,301 final scoped assertion executions and20 individually inspected native frames. Full authored hero and room style/future-stage adoption remain separate open scopes. | docs/production/ARCHIVE_POLISHED_BRASS_ACCEPTANCE.md, game/art/materials/m_polished_brass.tres, tools/generate_polished_brass_maps.py |
 | MAT-003 | ACCEPTED | Dark Walnut / warm wood; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_dark_walnut.tres, docs/production/MATERIAL_LIBRARY.md |
 | MAT-004 | ACCEPTED | Warm Stone; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_observatory_stone.tres, docs/production/MATERIAL_LIBRARY.md |
 | MAT-005 | MISSING | Cool/Dark Stone; No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface. |  |
@@ -58,8 +60,8 @@ owner authorization; final current stable/receipt identities are in the checkpoi
 | VFX-002 | PARTIAL | Light path motes / shimmer; Original native local last-spark SVG/billboard now accepted at unchanged clock/anchor. Global reusable particle/shimmer/scripted path coverage and completed exterior guided composition remain open. | docs/production/S00_LAST_SPARK_ACCEPTANCE.md |
 | VFX-003 | PARTIAL | Correct interaction pulse/chime visual; Existing pausable route pulses/target feedback functional; final unified chime/pulse presentation and audio unbound. | game/worlds/archive/common/archive_light_channel.gd |
 | VFX-004 | MISSING | Fragment materialize / dissolve; No production materialize/dissolve, ambient dust particle or shared inspect-highlight family. Quiet Star breathing and local Flame are separate accepted effects, not these assets. |  |
-| VFX-006 | MISSING | Dust motes / soft atmosphere; No production materialize/dissolve, ambient dust particle or shared inspect-highlight family. Quiet Star breathing and local Flame are separate accepted effects, not these assets. |  |
-| VFX-007 | MISSING | Highlight / inspect glow; No production materialize/dissolve, ambient dust particle or shared inspect-highlight family. Quiet Star breathing and local Flame are separate accepted effects, not these assets. |  |
+| VFX-006 | PARTIAL | Dust motes / soft atmosphere; Bounded native dust in two existing Hub/S02 volumes accepted; Low12/Medium36/High48, pause/effects/quiet projection,602 current assertions and20 individually inspected Forward+ on/off frames. Full stages0–15 adoption/style remains open. | docs/production/ARCHIVE_DUST_MOTES_ACCEPTANCE.md, game/art/vfx/archive_dust_motes.tscn |
+| VFX-007 | PARTIAL | Highlight / inspect glow; Bounded native warm additive inspect wash on eight existing S01/S02 target/visual bindings accepted: actual player ray, Low/effects-off, pause/occlusion/consumed/lifetime/material preservation.286 current scoped assertions and8 individually inspected paired native frames. Stages1–11 adoption and complete style remain open. | docs/production/ARCHIVE_INSPECT_GLOW_ACCEPTANCE.md, game/art/vfx/archive_inspect_glow.gd, game/art/materials/m_archive_inspect_glow.tres |
 | UI-001 | ACCEPTED | Minimal reticle / focus dot; Russian/Cyrillic runtime reticle, interaction and hint widgets validated; retain accepted behavior. | docs/production/IMPLEMENTATION_PLAN.md |
 | UI-002 | ACCEPTED | Interaction prompt component [E]/[R]; Russian/Cyrillic runtime reticle, interaction and hint widgets validated; retain accepted behavior. | docs/production/IMPLEMENTATION_PLAN.md |
 | UI-003 | ACCEPTED | Hint/world-space text component; Russian/Cyrillic runtime reticle, interaction and hint widgets validated; retain accepted behavior. | docs/production/IMPLEMENTATION_PLAN.md |

@@ -1,4 +1,45 @@
-# Current continuation — bounded native VS1 effects, 2026-10-07
+# Current continuation — MAT-002 and core interface audit, 2026-10-07
+
+Recovered actual remote b695dddf / production STABLE2730e0a. Core/material WIP
+2bec7cd is independently remote verified. Resolve final production STABLE and
+receipt HEAD from evidence/checkpoints/continuation_20261007.jsonl. No rollback,
+main/force/base-retarget or full185-row reconciliation replay.
+
+ARCHIVE_POLISHED_BRASS_ACCEPTANCE.md closes MAT-002's one shared editable master
+with three original periodic1024 albedo/+Y-normal/ORM maps on the two existing
+S01 toruses.301 final scoped assertion executions, exact fresh map regeneration,
+20 individually inspected native Low/Medium frames, protected or owned saves
+PASS. Prior193 art/source identities and47 actual runtime GLBs preserved; old
+source reopen/full family evidence is reused, not advertised as fresh. Native
+software rendering is not physical target-GPU evidence. Strict warning failure
+and superseded candidate families remain excluded; current families end in -2.
+Counts26 ACCEPTED/40 PARTIAL/11 MISSING among77;185 canonical rows retained.
+These are scope classifications, not percentage completion.
+
+ARCHIVE_CORE_HERO_INTERFACE_AUDIT.md measures the current pivot/envelope, axle,
+collider and four control targets. Two primitive toruses are still provisional;
+PROP-001/002/004 remain PARTIAL. Accepted pedestal/controls/materials, original
+lights, geometry, E/save/state/route contracts stay unchanged. The next constrained
+core/orbit/mount production brief follows ARCHIVE_CORE_HERO_NEXT_BLOCK.md. New
+binary families need restoration of a usable private LFS upload path; ordinary
+working-branch/LFS publication remains already authorized. Native material-slot
+brief/placement audits remain independent available work.
+
+ARCHIVE_SHORT_STAIRS_DECISION.md is still pending explicit A/B owner choice.
+ARCH-011 remains MISSING/required_for_vs1; no canonical, collision, floor or
+walking contract change. Only stair-dependent work is paused.
+
+Full exterior/infill/alcove/backdrop/hero/emblems/channels/carrier, remaining
+materials/trims/decals/dressing/style, authored audio/mix, owner gallery and
+physical GTX1060-equivalent1080p60 remain OPEN. Audio first-note/motif choices
+remain separate. GATE-VS1 OPEN; S03 blocked. Full-game estimate25–30%, low
+confidence,3/16 playable stages stays unchanged. Checkpoint interval600s/max900s;
+current WIP remote cadence passed. Earlier dust upload cadence miss is retained.
+Owned supervisor/testing jobs stop at session end.
+
+---
+
+# Historical native effects continuation — before MAT-002, 2026-10-07
 
 Recovered actual remote1f38cb4 / prior production STABLE1419f35. Dust STABLE
 fa9006e and strict inspect WIPb1a09ca are independently remote confirmed;

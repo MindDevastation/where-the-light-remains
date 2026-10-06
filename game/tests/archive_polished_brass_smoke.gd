@@ -11,6 +11,11 @@ func check(value: bool,label: String) -> void:
 func _ready() -> void:
     _run.call_deferred()
 
+func source_image(path: String) -> Image:
+    var image:=Image.new()
+    check(image.load_png_from_buffer(FileAccess.get_file_as_bytes(path))==OK,"Source PNG buffer decodes")
+    return image
+
 func _run() -> void:
     var before := GameState.capture_save().to_dict()
     var dirty: bool = SaveManager.get("_dirty")
@@ -25,9 +30,9 @@ func _run() -> void:
     for texture: Texture2D in [material.albedo_texture,material.normal_texture,material.roughness_texture]:
         check(texture!=null and texture.get_width()==1024 and texture.get_height()==1024,"Actual1024 imported texture")
         check(texture is CompressedTexture2D and texture.get_image().has_mipmaps(),"Native compressed texture mip chain")
-    var normal := Image.load_from_file("res://art/textures/material_library/t_polished_brass_normal.png")
-    var orm := Image.load_from_file("res://art/textures/material_library/t_polished_brass_orm.png")
-    var old_orm := Image.load_from_file("res://art/textures/material_library/t_aged_brass_orm.png")
+    var normal := source_image("res://art/textures/material_library/t_polished_brass_normal.png")
+    var orm := source_image("res://art/textures/material_library/t_polished_brass_orm.png")
+    var old_orm := source_image("res://art/textures/material_library/t_aged_brass_orm.png")
     var valid := true
     var rough := 0.0
     var old_rough := 0.0
