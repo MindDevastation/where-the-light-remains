@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=3]
+[gd_scene load_steps=81 format=3]
 
 [ext_resource type="Script" path="res://worlds/archive/archive_main.gd" id="World"]
 [ext_resource type="Script" path="res://worlds/archive/archive_stage_controller.gd" id="Controller"]
@@ -12,7 +12,6 @@
 [ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_optics_sample.tscn" id="Optics"]
 [ext_resource type="PackedScene" path="res://gameplay/collectibles/fragment_presenter.tscn" id="Fragments"]
 [ext_resource type="Script" path="res://core/ui/checkpoint_notice.gd" id="Notice"]
-[ext_resource type="Texture2D" path="res://art/sigils/star.svg" id="StarSigil"]
 
 [ext_resource type="PackedScene" path="res://worlds/archive/archive_prologue.tscn" id="Prologue"]
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_corridor_presentation.tscn" id="CorridorArt"]
@@ -24,6 +23,8 @@
 [ext_resource type="PackedScene" path="res://gameplay/puzzles/wing01/wing01_emitter_art.tscn" id="EmitterArt"]
 [ext_resource type="PackedScene" path="res://art/vfx/hearth_flame.tscn" id="HearthFlame"]
 [ext_resource type="PackedScene" path="res://worlds/archive/wing01_roof_presentation.tscn" id="RoofArt"]
+[ext_resource type="PackedScene" path="res://art/vfx/archive_light_beam.tscn" id="LightBeam"]
+[ext_resource type="PackedScene" path="res://art/vfx/star_target.tscn" id="StarTarget"]
 
 [sub_resource type="StandardMaterial3D" id="Stone"]
 albedo_color = Color(0.13, 0.18, 0.24, 1)
@@ -215,18 +216,7 @@ height = 0.35
 [sub_resource type="BoxShape3D" id="ReturnShape"]
 size = Vector3(3.6, 3, 1.5)
 
-[sub_resource type="StandardMaterial3D" id="BeamMaterial"]
-shading_mode = 0
-albedo_color = Color(0.3, 0.78, 1, 1)
-emission_enabled = true
-emission = Color(0.3, 0.78, 1, 1)
-emission_energy_multiplier = 1.4
 
-[sub_resource type="CylinderMesh" id="BeamMesh"]
-top_radius = 0.025
-bottom_radius = 0.025
-height = 1.0
-radial_segments = 8
 
 [sub_resource type="CylinderMesh" id="HearthMesh"]
 top_radius = 0.6
@@ -834,40 +824,28 @@ rotation_degrees = Vector3(90, 0, 0)
 
 [node name="BeamSegments" type="Node3D" parent="Wing01/Room"]
 
-[node name="Segment0" type="MeshInstance3D" parent="Wing01/Room/BeamSegments"]
+[node name="Segment0" parent="Wing01/Room/BeamSegments" instance=ExtResource("LightBeam")]
 position = Vector3(0, 1.72, -20.7)
 rotation_degrees = Vector3(90, 0, 0)
-mesh = SubResource("BeamMesh")
-material_override = SubResource("BeamMaterial")
 visible = false
 
-[node name="Segment1" type="MeshInstance3D" parent="Wing01/Room/BeamSegments"]
+[node name="Segment1" parent="Wing01/Room/BeamSegments" instance=ExtResource("LightBeam")]
 position = Vector3(0, 1.72, -21.8)
 rotation_degrees = Vector3(90, 0, 0)
-mesh = SubResource("BeamMesh")
-material_override = SubResource("BeamMaterial")
 visible = false
 
-[node name="Segment2" type="MeshInstance3D" parent="Wing01/Room/BeamSegments"]
+[node name="Segment2" parent="Wing01/Room/BeamSegments" instance=ExtResource("LightBeam")]
 position = Vector3(0, 1.72, -23.6)
 rotation_degrees = Vector3(90, 0, 0)
-mesh = SubResource("BeamMesh")
-material_override = SubResource("BeamMaterial")
 visible = false
 
-[node name="Segment3" type="MeshInstance3D" parent="Wing01/Room/BeamSegments"]
+[node name="Segment3" parent="Wing01/Room/BeamSegments" instance=ExtResource("LightBeam")]
 position = Vector3(0, 1.72, -24.7)
 rotation_degrees = Vector3(90, 0, 0)
-mesh = SubResource("BeamMesh")
-material_override = SubResource("BeamMaterial")
 visible = false
 
-[node name="Star" type="Sprite3D" parent="Wing01/Room"]
+[node name="Star" parent="Wing01/Room" instance=ExtResource("StarTarget")]
 position = Vector3(0, 1.72, -25.3)
-texture = ExtResource("StarSigil")
-pixel_size = 0.01
-billboard = 1
-shaded = false
 visible = false
 
 [node name="Focus" type="Node3D" parent="Wing01/Room"]
@@ -877,12 +855,10 @@ wheel_path = NodePath("../Rings/Carrier/Focus")
 beam_path = NodePath("Beam")
 interaction_path = NodePath("../Rings/Carrier/Focus/Grip/InteractionTarget")
 
-[node name="Beam" type="MeshInstance3D" parent="Wing01/Room/Focus"]
+[node name="Beam" parent="Wing01/Room/Focus" instance=ExtResource("LightBeam")]
 position = Vector3(-1.9, 0.8, -23.2)
 rotation_degrees = Vector3(62, 0, 55)
 scale = Vector3(1, 2.0, 1)
-mesh = SubResource("BeamMesh")
-material_override = SubResource("BeamMaterial")
 visible = false
 
 [node name="Hearth" type="StaticBody3D" parent="Wing01/Room"]

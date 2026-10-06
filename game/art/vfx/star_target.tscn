@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://art/vfx/star_target.gd" id="Presentation"]
+[ext_resource type="Texture2D" path="res://art/sigils/star.svg" id="Sigil"]
+
+[node name="Star" type="Sprite3D"]
+script = ExtResource("Presentation")
+texture = ExtResource("Sigil")
+pixel_size = 0.01
+billboard = 1
+shaded = false

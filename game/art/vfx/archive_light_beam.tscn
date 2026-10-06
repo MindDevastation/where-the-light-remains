@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://art/vfx/archive_light_beam.gd" id="Presentation"]
+[ext_resource type="ArrayMesh" path="res://art/vfx/archive_beam_core_mesh.tres" id="CoreMesh"]
+[ext_resource type="ArrayMesh" path="res://art/vfx/archive_beam_halo_mesh.tres" id="HaloMesh"]
+[ext_resource type="Material" path="res://art/materials/m_archive_beam_core.tres" id="CoreMaterial"]
+[ext_resource type="Material" path="res://art/materials/m_archive_beam_halo.tres" id="HaloMaterial"]
+
+[node name="ArchiveLightBeam" type="MeshInstance3D"]
+cast_shadow = 0
+mesh = ExtResource("CoreMesh")
+material_override = ExtResource("CoreMaterial")
+script = ExtResource("Presentation")
+
+[node name="Halo" type="MeshInstance3D" parent="."]
+cast_shadow = 0
+mesh = ExtResource("HaloMesh")
+material_override = ExtResource("HaloMaterial")
