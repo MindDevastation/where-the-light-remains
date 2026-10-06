@@ -1,3 +1,29 @@
+# Current continuation — 2026-10-07
+
+Recovered remote1f38cb4 / production STABLE1419f35; no newer stair owner decision.
+ARCHIVE_SHORT_STAIRS_DECISION.md and review/arch011_decision.svg present A/B,
+recommended explicit defer-to-S03 override. ARCH-011 staysMISSING/required_for_vs1.
+Only the dependent stair block is paused; independent VS1 work is authorized.
+
+ARCHIVE_DUST_MOTES_ACCEPTANCE.md: bounded native VFX-006 in Hub/S02,602 current
+assertions,20 individually inspected Low/Medium on/off views; no new LFS family.
+Previous fanlight/art acceptance is reused by exact identities, not rerun.
+Counts25 ACCEPTED/39 PARTIAL/13 MISSING among77;185 rows retained.
+Next independent VFX-007 inspect wash: ARCHIVE_INSPECT_GLOW.md.
+Current-session remote receipts: evidence/checkpoints/continuation_20261007.jsonl;
+historical development.jsonl is retained unchanged. Publication uses connected
+GitHub Git data API fast-forward plus independent native ls-remote, supervised
+600s remote-delta collection; no private CLI LFS upload credential is configured.
+New DCC/LFS families pause only their dependent production; native scopes continue.
+
+Full exterior/infill/ARCH-013/017, complete core/orbits/console/mounts, route
+emblems/channels/carrier, materials/trims/decals, complete style/light/dressing,
+authored audio/mix, owner gallery and physical GPU remain OPEN. GATE-VS1 OPEN;
+S03 blocked. Planning estimate25–30%, low confidence,3/16 playable stages.
+Resolve newest remote STABLE/receipt from current-session journal.
+
+---
+
 # Current fanlight acceptance and next layout dependency — 2026-10-06
 
 ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md records one1560tri four-surface shared

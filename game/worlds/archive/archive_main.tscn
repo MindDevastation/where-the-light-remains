@@ -1,4 +1,6 @@
-[gd_scene load_steps=99 format=3]
+[gd_scene load_steps=100 format=3]
+
+[ext_resource type="PackedScene" path="res://art/vfx/archive_dust_motes.tscn" id="DustMotes"]
 
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_archive_arched_fanlight.glb" id="ArchedFanlight"]
 
@@ -391,6 +393,12 @@ scale = Vector3(1, 1, 1.38)
 [node name="Corridor" type="Node3D" parent="Wing01"]
 
 [node name="Room" type="Node3D" parent="Wing01"]
+
+[node name="DustMotes" parent="Hub" instance=ExtResource("DustMotes")]
+position = Vector3(3, 2, 0)
+
+[node name="DustMotes" parent="Wing01/Room" instance=ExtResource("DustMotes")]
+position = Vector3(1.8, 2, -22)
 
 [node name="Spawns" type="Node3D" parent="."]
 

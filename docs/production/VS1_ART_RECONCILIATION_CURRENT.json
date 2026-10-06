@@ -888,9 +888,12 @@
       "variants": "1 low-cost system",
       "canonical_notes": "Quality-scalable",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No production materialize/dissolve, ambient dust particle or shared inspect-highlight family. Quiet Star breathing and local Flame are separate accepted effects, not these assets.",
-      "evidence_paths": []
+      "status": "PARTIAL",
+      "finding": "Bounded native dust in two existing Hub/S02 volumes accepted; Low12/Medium36/High48, pause/effects/quiet projection,602 current assertions and20 individually inspected Forward+ on/off frames. Full stages0–15 adoption/style remains open.",
+      "evidence_paths": [
+        "docs/production/ARCHIVE_DUST_MOTES_ACCEPTANCE.md",
+        "game/art/vfx/archive_dust_motes.tscn"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -2952,12 +2955,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T21:15:52.155874+00:00",
-  "latest_delta": "Bounded ARCH-008 fanlight locally accepted with independent LFS/current evidence; ARCH-011 paused for canonical placement/elevation decision. Original185 classifications retained except bounded documented deltas; GATE-VS1 OPEN.",
+  "updated_at": "2026-10-06T22:17:57.606543+00:00",
+  "latest_delta": "VFX-006 bounded current dust accepted; ARCH-011 owner decision pending with reviewable A/B proposal; VFX-007 brief ready. Full VS1 OPEN.",
   "vs1_counts": {
-    "PARTIAL": 38,
     "ACCEPTED": 25,
-    "MISSING": 14
+    "PARTIAL": 39,
+    "MISSING": 13
   },
   "publication_status": "Gate3d81acb and lighting1af05c2/2224b73 remote confirmed; fanlight binary candidate6c7d99f/receipt dc6805a remote confirmed. Resolve final stable acceptance publication from checkpoint journal."
 }
