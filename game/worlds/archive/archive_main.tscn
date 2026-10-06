@@ -1,5 +1,6 @@
-[gd_scene load_steps=96 format=3]
+[gd_scene load_steps=97 format=3]
 
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_wall.glb" id="HubWallArt"]
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb" id="HubDomeDrum"]
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb" id="HubDomeFrame"]
 [ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb" id="HubDomeGlass"]
@@ -413,9 +414,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall0L"]
-mesh = SubResource("M_Wall0L")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall0L" instance=ExtResource("HubWallArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall0L"]
 shape = SubResource("S_Wall0L")
@@ -427,9 +426,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall0R"]
-mesh = SubResource("M_Wall0R")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall0R" instance=ExtResource("HubWallArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall0R"]
 shape = SubResource("S_Wall0R")
@@ -441,9 +438,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall1L"]
-mesh = SubResource("M_Wall1L")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall1L" instance=ExtResource("HubWallArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall1L"]
 shape = SubResource("S_Wall1L")
@@ -455,9 +450,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall1R"]
-mesh = SubResource("M_Wall1R")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall1R" instance=ExtResource("HubWallArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall1R"]
 shape = SubResource("S_Wall1R")
@@ -481,9 +474,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall2R"]
-mesh = SubResource("M_Wall2R")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall2R" instance=ExtResource("HubWallArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall2R"]
 shape = SubResource("S_Wall2R")
@@ -495,9 +486,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall3L"]
-mesh = SubResource("M_Wall3L")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall3L" instance=ExtResource("HubWallArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall3L"]
 shape = SubResource("S_Wall3L")
@@ -525,9 +514,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall4L"]
-mesh = SubResource("M_Wall4L")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall4L" instance=ExtResource("HubWallArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall4L"]
 shape = SubResource("S_Wall4L")
@@ -539,9 +526,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall4R"]
-mesh = SubResource("M_Wall4R")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall4R" instance=ExtResource("HubWallArt")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall4R"]
 shape = SubResource("S_Wall4R")
