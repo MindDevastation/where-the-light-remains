@@ -24,8 +24,12 @@ historical active-window/environment notes below.
   prologue/collider/save contract;378 assertions/startup,18 inspected Low/Medium
   pose views and independent retrieval/use of four LFS payloads. See
   `S00_DOOR_LOCK_ACCEPTANCE.md`; full exterior/door composition remains open.
-- [ ] Reconcile the remaining mandatory S00/S01/S02 art against canonical tables
-  and bounded acceptance receipts before selecting the next original asset family.
+- [x] Reconcile all185 canonical groups and77 VS1-related rows against runtime
+  owners, reference authority and14 current art acceptance subsets. See
+  VS1_ART_RECONCILIATION.md; counts are scoped, not percent completion.
+- [x] Original S00 timber leaf skin:2100 triangles/shared by both unchanged doors,
+  114 assertions/startup,18 native images and independent two-payload LFS use.
+  Portal/exterior still open. See S00_ENTRANCE_LEAF_ACCEPTANCE.md.
 - [ ] Complete authored audio, full gallery/art review and physical target-hardware
   acceptance. `GATE-VS1` remains open and S03 remains gated.
 

@@ -330,3 +330,12 @@ sliding leaves. Timed cosmetic release and quiet completed restoration only.
 378 current assertions/startup,18 inspected native pose images and independent
 retrieval/use of four LFS files: S00_DOOR_LOCK_ACCEPTANCE.md. Full exterior/door
 composition and global generic variant adoption remain open.
+
+S00 original entrance leaf: s00_entrance_leaf.blend / sm_s00_entrance_leaf.glb,
+2100 triangles/three existing Walnut/Iron/Brass surfaces, shared by two original
+sliding bodies.114 current assertions/startup,18 inspected Low/Medium images,
+independent two-payload retrieval/reopen/import/use: S00_ENTRANCE_LEAF_ACCEPTANCE.md.
+Only the leaf skin is accepted; ARCH-002 portal and full S00 exterior remain open.
+Full canonical reconciliation: VS1_ART_RECONCILIATION.md. Existing S02 focus wheel
+is actual bounded rotary hardware; historical PROP-005 not-produced wording does
+not justify making a duplicate wheel. Two bounded PROP-006 shapes now exist.

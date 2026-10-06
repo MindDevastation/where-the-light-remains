@@ -1,3 +1,29 @@
+# Latest boundary — complete reconciliation and S00 timber leaf, 2026-10-06
+
+Recovered exact remote c186b4f and584 acceptance hashes without old preflights.
+Full185-group reconciliation stable f000a85/receipt a6aeb0b;77 VS1-related rows
+at that boundary:24 ACCEPTED/25 PARTIAL/28 MISSING, documented bounded scopes.
+431 serialized instances,14 prior accepted art subsets unchanged. Fixes older
+PROP-005 absence/PROP-006 second-shape wording without duplicating accepted art.
+See VS1_ART_RECONCILIATION.md; later accepted deltas change this baseline.
+
+S00 timber leaf candidate6152765/receipt385b264, ordinary original2100-triangle
+Walnut/Iron/Brass master shared by both original bodies.114 scoped assertions,
+startup,18 individually inspected native images, independent retrieval/reopen/
+import/use of both source/GLB payloads PASS. Original lock/collision/clock/rail/
+input/audio/save/handoff preserved. Seal entrance-acceptance-20261006; newest
+stable SHA and final receipt are resolved from remote/checkpoint journal.
+
+Immediately continue ordinary lower S01 core housing inside unchanged collider;
+accepted rings/controls/lens remain intact, full hero/orbit design separate.
+Then representative S00 practical using existing accepted lantern, if no new
+canonical/pipeline decision. Full exterior/portal/rotunda/hero3–5 orbit pieces,
+gates/channels/remaining VFX/trim/material/font/audio/gallery/physical GPU open.
+S03 gated. Supervise600s checkpoints and pause writers during collection; no
+unattended work is claimed after ending the turn.
+
+---
+
 # Latest confirmed boundary — S00 activation fitting, 2026-10-06
 
 Branch feature/04-archive-gameplay/resume-2026-10-06, recovered from verified

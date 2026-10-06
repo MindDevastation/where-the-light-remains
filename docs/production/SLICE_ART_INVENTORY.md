@@ -1,3 +1,5 @@
+Full185-group reconciliation and dependency/variant classification: VS1_ART_RECONCILIATION.md.
+
 # S00/S01/S02 art inventory — 2026-10-06
 
 Reconciled against REQUIRED_ASSET_TABLE, current scene bindings and bounded
@@ -6,7 +8,7 @@ Historical folder-wide concept labels are not asset completion receipts.
 
 | Required row | Current evidence / implementation | Remaining art boundary |
 | --- | --- | --- |
-| S00-001 exterior | Functional continuous prologue in archive_prologue.tscn | ARCH-001/002/017/018 exterior, approach, door and silhouette art |
+| S00-001 exterior | Continuous prologue plus original timber entrance leaf; S00_ENTRANCE_LEAF_ACCEPTANCE.md | ARCH-001/002/017/018 exterior, approach, door and silhouette art |
 | S00-002 last spark | Functional guided sphere and timeline | Authored guided-mote presentation, VFX-002 |
 | S00-003 night lighting | Existing prologue lighting | Exterior night composition and practical art |
 | S00-004 rail camera | Actual timeline/pause/handoff smoke | Composition against completed exterior |
