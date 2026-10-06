@@ -44,7 +44,7 @@ for part in contract['parts']:
  else:
   rear=part['id']=='guard_rear';length=4.6 if rear else 8.3
   def box(center,size,material,bevel=.005):
-   if rear:center=(center[2],center[1],center[0]);size=(size[2],size[1],size[0])
+   if rear:center=(center[2],center[1]+.002,center[0]);size=(size[2],size[1],size[0])
    g.box(center,size,material,bevel)
   box((0,-.398,0),(.294,.388,length-.012),'stone',.008)
   box((0,.54,0),(.160,.100,length-.022),'iron',.005)

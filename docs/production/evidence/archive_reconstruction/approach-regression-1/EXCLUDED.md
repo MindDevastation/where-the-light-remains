@@ -1,0 +1,1 @@
+Historical technical receipt for the prior source revision. Final -v3 rear geometry offset avoids measured coplanar corner surfaces. Not final acceptance; current -v3 and later smoke/native/LFS receipts are authority. Prior record retained without rewriting.

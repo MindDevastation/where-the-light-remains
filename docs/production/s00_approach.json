@@ -70,5 +70,6 @@
       ]
     }
   ],
-  "max_floor_local_y": 0.156
+  "max_floor_local_y": 0.156,
+  "rear_visual_y_offset": 0.002
 }

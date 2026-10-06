@@ -66,6 +66,32 @@ func _run() -> void:
         _check(triangles<=(6000 if i==0 else 4000), "Measured imported local triangle budget " + owners[i])
         _check(absf(maximum-.006)<.00002 if i==0 else maximum<1.20001, "Six-mm level paving or contained guard height " + owners[i])
     _check(meshes[1]==meshes[2] and meshes[1]!=meshes[3], "Both side guards share one master; rear has original shorter crosswise envelope")
+    var planes: Array[Array] = []
+    for owner in ["RightGuard","RearGuard"]:
+        var visual := prologue.get_node(owner+"/Mesh").find_children("*","MeshInstance3D",true,false)[0] as MeshInstance3D
+        var horizontal: Array[Vector4] = []
+        var heights: Array[float] = []
+        for surface in 3:
+            var arrays := visual.mesh.surface_get_arrays(surface)
+            var vertices: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
+            var indices: PackedInt32Array = arrays[Mesh.ARRAY_INDEX]
+            for n in range(0,indices.size(),3):
+                var a := visual.global_transform*vertices[indices[n]]
+                var b := visual.global_transform*vertices[indices[n+1]]
+                var c := visual.global_transform*vertices[indices[n+2]]
+                var normal := (b-a).cross(c-a).normalized()
+                if absf(normal.y)>.99999:
+                    horizontal.append(Vector4(minf(a.x,minf(b.x,c.x)),maxf(a.x,maxf(b.x,c.x)),minf(a.z,minf(b.z,c.z)),maxf(a.z,maxf(b.z,c.z))))
+                    heights.append(a.y)
+        planes.append([horizontal,heights])
+    var separated := true
+    for a in planes[0][0].size():
+        for b in planes[1][0].size():
+            var first: Vector4 = planes[0][0][a]
+            var second: Vector4 = planes[1][0][b]
+            if minf(first.y,second.y)-maxf(first.x,second.x)>.00001 and minf(first.w,second.w)-maxf(first.z,second.z)>.00001:
+                separated = separated and absf(planes[0][1][a]-planes[1][1][b])>.00001
+    _check(separated, "Actual imported overlapping corner horizontal planes are separated; rear source offset stays inside unchanged body")
     var space := world.get_world_3d().direct_space_state
     var down := space.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(0,1,12),Vector3(0,-1,12),1))
     _check(not down.is_empty() and down["collider"]==prologue.get_node("Floor") and absf(down["position"].y)<.00001, "Original flat collision plane remains exactly Y0")

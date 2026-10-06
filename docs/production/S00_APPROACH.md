@@ -12,7 +12,7 @@ cap rings. No glowing line, clue marking, copied emblem, lantern or prop clutter
 | --- | --- | --- |
 | Prologue/Floor | (0,-.15,12), Box4x.3x8 | center-pivot paving; maxlocalY.156 (world6mm), X<=2/Z<=4 |
 | LeftGuard/RightGuard | (+/-2.15,.6,12), Box.3x1.2x8.3 | one shared centered longitudinal master within original body |
-| RearGuard | (0,.6,16.15), Box4.6x1.2x.3 | shorter crosswise centered master within original body |
+| RearGuard | (0,.6,16.15), Box4.6x1.2x.3 | shorter crosswise centered master, geometryY+2mm within original body |
 
 Replace only the three old visual primitive definitions' four Mesh instances.
 Floor/guard bodies/shapes/layers remain the authority; open bars do not create
@@ -29,3 +29,7 @@ S00 clock/pause/persistence and S01 handoff; Low/Medium native views inspected;
 all four new committed LFS payloads independently downloaded/reopened/imported/
 used before acceptance. ARCH-018/012/complete exterior classifications must
 retain incomplete future/Hub/corner scope, no full exterior/VS1/GPU/S03 promotion.
+
+Measured side/rear plinth intersection needs a2mm rear geometry offset to avoid
+coplanar horizontal faces. Source pivot and body pose remain unchanged; actual
+imported overlapping horizontal triangle planes are checked for separation.
