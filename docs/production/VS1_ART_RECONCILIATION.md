@@ -61,7 +61,7 @@ VS1-related rows: {'MISSING': 28, 'ACCEPTED': 24, 'PARTIAL': 25}. Counts are not
 | UI-005 | PARTIAL | Main/Pause/Settings/Postgame screens; Fragment card and menu/pause/settings ship functional accepted widgets; final v2 presentation/style pass remains open. | game/gameplay/collectibles/fragment_presenter.tscn, docs/production/IMPLEMENTATION_PLAN.md |
 | FONT-001 | PARTIAL | System UI Cyrillic font family; Cyrillic runtime uses engine/system fallback; no tracked licensed authored font files/redistribution proof for the full requested families. |  |
 | FONT-002 | PARTIAL | Personal/handwritten Cyrillic accent font; Cyrillic runtime uses engine/system fallback; no tracked licensed authored font files/redistribution proof for the full requested families. |  |
-| CAM-001 | ACCEPTED | First-person camera rig; Persistent first-person rig accepted; no reimplementation. | game/core/player/first_person_player.tscn |
+| CAM-001 | ACCEPTED | First-person camera rig; Persistent first-person rig accepted; no reimplementation. | game/core/player/player.tscn |
 | CAM-002 | PARTIAL | Cinematic rail/Path3D camera; S00 timed rail/camera handoff/pause accepted; generic later paths and final exterior composition remain open. | game/worlds/archive/archive_prologue.gd |
 | SAVE-ART-001 | ACCEPTED | World-space save/checkpoint feedback style; Existing subtle checkpoint notice accepted; no new persistent state or noisy popup. | game/core/ui/checkpoint_notice.gd |
 | ANIM-008 | PARTIAL | Central Archive rings awaken/slow/final unfold; Existing seven-second core awakening and two ring drivers accepted; full 3–5 authored ring/final sequence remains open. |  |
