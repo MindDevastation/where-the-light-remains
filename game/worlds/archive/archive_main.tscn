@@ -1,4 +1,7 @@
-[gd_scene load_steps=90 format=3]
+[gd_scene load_steps=92 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_entry_facade.glb" id="EntryFacade"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_entry_arch.glb" id="EntryArch"]
 
 [ext_resource type="PackedScene" path="res://worlds/archive/modules/archive_wall_lantern.tscn" id="EntryPractical"]
 
@@ -387,6 +390,9 @@ gates = Array[NodePath]([NodePath("../Routes/Wing01/Gate"), NodePath("../Routes/
 channels = Array[NodePath]([NodePath("../Routes/Wing01/Channel"), NodePath("../Routes/Wing02/Channel"), NodePath("../Routes/Wing03/Channel"), NodePath("../Routes/Wing04/Channel"), NodePath("../Routes/Wing05/Channel")])
 finale_path = NodePath("../Hub/Finale")
 
+[node name="EntryArch" parent="Hub" instance=ExtResource("EntryArch")]
+position = Vector3(0, 0, 9)
+
 [node name="Wall0L" type="StaticBody3D" parent="Hub"]
 position = Vector3(-4.6, 2.4, -8.0)
 rotation = Vector3(0, 0.000000000, 0)
@@ -450,9 +456,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall2L"]
-mesh = SubResource("M_Wall2L")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall2L" instance=ExtResource("EntryFacade")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall2L"]
 shape = SubResource("S_Wall2L")
@@ -492,9 +496,7 @@ collision_layer = 1
 collision_mask = 4
 disable_mode = 1
 
-[node name="Mesh" type="MeshInstance3D" parent="Hub/Wall3R"]
-mesh = SubResource("M_Wall3R")
-material_override = SubResource("Stone")
+[node name="Mesh" parent="Hub/Wall3R" instance=ExtResource("EntryFacade")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hub/Wall3R"]
 shape = SubResource("S_Wall3R")
