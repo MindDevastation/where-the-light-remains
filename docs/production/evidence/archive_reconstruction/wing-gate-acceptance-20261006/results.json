@@ -679,9 +679,8 @@
     "assets/3d/blender/archive_kit/s01_starting_lens.blend": "e9db1b6bde2f409a8b9a6b71fbbf3c58a099b41924948c35aaac570a8a55b155",
     "docs/production/evidence/archive_reconstruction/wing-gate-authoring-20261006/source-reopen.log": "4f007f708e8c0497252d4adf0fb37ef124c7077d86849feca21f6946eae9defb",
     "docs/production/evidence/archive_reconstruction/wing-gate-authoring-20261006/authoring.log": "835e2d3e313c2e2f1bdab4c22cd517b99cdf185274853f743569c90f68896a5c",
-    "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/README.md": "fb7bedc5ab4ff90d745d9dc2de97b87c8d0e6d14ff03fad497116f1bfeb00ac2",
+    "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/README.md": "0c5deb767df46b16b48b79e29787d72363910c72e21e4d3188c82005f732bedf",
     "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/visual_inspection.json": "0f3fb2ffceb294f585e88cedfa713d90157c589d30e4811b4f447648071f06a4",
-    "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/gate-screenshots-low-medium.zip": "64a389d981ed7a3c35f282e5f3830301e7333ac6bd009ccc6da9342382694412",
     "docs/production/ARCHIVE_WING_GATE_ACCEPTANCE.md": "c66e4067aacc9bcd895473738f0848e42d3ccb4512525e2db34d62965cd471a0",
     "docs/production/ARCHIVE_WING_GATE.md": "4efbda38a14587042f1d9ca859c3fe051eb18423f1153a2bc4da9fdd290a7f86",
     "docs/production/WORK_RECOVERY.md": "55bd552d4d2c6573801c11e257336d72cbd18b132f30ea7aa444b6a5eee52695",
@@ -712,5 +711,6 @@
     "wing-gate-lfs-3",
     "wing-gate-lfs-4"
   ],
-  "publication_blocker": "Automatic approval review rejected attachment-PAT extraction and potential GitHub push without direct trusted-message authorization."
+  "publication_blocker": "Automatic approval review rejected attachment-PAT extraction and potential GitHub push without direct trusted-message authorization.",
+  "screenshot_bundle": "Separate user-facing deliverable; all16 original PNG and capture indexes remain committed as evidence."
 }

@@ -4,7 +4,8 @@ Local acceptance is prepared; remote publication is pending direct authorization
 following automatic review refusal. No full VS1 or target-GPU acceptance.
 
 - [Bounded acceptance](../../../ARCHIVE_WING_GATE_ACCEPTANCE.md)
-- [All16 unmodified Low/Medium screenshots](gate-screenshots-low-medium.zip)
+- [Low capture index](../wing-gate-native-2/captures_low.json)
+- [Medium capture index](../wing-gate-native-2/captures_medium.json)
 - [Individual visual inspection](visual_inspection.json)
 - [Closed gate detail, Medium](../wing-gate-native-2/wing_gate_s01_detail_medium.png)
 - [Sleeping Hub, Medium](../wing-gate-native-2/wing_gate_s01_asleep_medium.png)
