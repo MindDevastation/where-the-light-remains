@@ -3,8 +3,13 @@ extends MeshInstance3D
 const SOURCE := preload("res://art/meshes/archive_kit/sm_archive_wing_gate.glb")
 
 func _init() -> void:
-    var source := SOURCE.instantiate()
-    var visuals := source.find_children("*","MeshInstance3D",true,false)
-    assert(visuals.size()==1)
-    mesh = (visuals[0] as MeshInstance3D).mesh
-    source.free()
+    # Read the imported resource without nested Node allocation during threaded loads.
+    var state := SOURCE.get_state()
+    for node in state.get_node_count():
+        if state.get_node_type(node)!=&"MeshInstance3D":
+            continue
+        for property in state.get_node_property_count(node):
+            if state.get_node_property_name(node,property)==&"mesh":
+                mesh = state.get_node_property_value(node,property) as Mesh
+                return
+    push_error("Shared imported gate has no mesh resource")

@@ -1,0 +1,588 @@
+WorkerThreadPool: 9 threads, 2 max low-priority.
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+SDL: Init OK!
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+Loading resource: res://audio/default_bus_layout.tres remapped: res://audio/default_bus_layout.tres
+Completed load for: 'res://audio/default_bus_layout.tres' remapped 'res://audio/default_bus_layout.tres' at thread -1
+CORE API HASH: 2004498165
+EDITOR API HASH: 1696660745
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://autoload/app.gd remapped: res://autoload/app.gd
+Completed load for: 'res://autoload/app.gd' remapped 'res://autoload/app.gd' at thread -1
+Loaded system CA certificates
+Loading resource: res://tests/archive_progression_smoke.tscn remapped: res://tests/archive_progression_smoke.tscn
+Loading resource: res://tests/archive_progression_smoke.gd remapped: res://tests/archive_progression_smoke.gd
+Loading resource: res://core/game_root/game_root.tscn remapped: res://core/game_root/game_root.tscn
+Loading resource: res://core/game_root/game_root.gd remapped: res://core/game_root/game_root.gd
+Completed load for: 'res://core/game_root/game_root.gd' remapped 'res://core/game_root/game_root.gd' at thread -1
+Loading resource: res://core/player/player.tscn remapped: res://core/player/player.tscn
+Completed load for: 'res://core/player/player.tscn' remapped 'res://core/player/player.tscn' at thread -1
+Loading resource: res://core/interaction/interaction_hud.tscn remapped: res://core/interaction/interaction_hud.tscn
+Loading resource: res://core/interaction/interaction_hud.gd remapped: res://core/interaction/interaction_hud.gd
+Completed load for: 'res://core/interaction/interaction_hud.gd' remapped 'res://core/interaction/interaction_hud.gd' at thread -1
+Completed load for: 'res://core/interaction/interaction_hud.tscn' remapped 'res://core/interaction/interaction_hud.tscn' at thread -1
+Loading resource: res://core/ui/settings_menu.tscn remapped: res://core/ui/settings_menu.tscn
+Loading resource: res://core/ui/settings_menu.gd remapped: res://core/ui/settings_menu.gd
+Completed load for: 'res://core/ui/settings_menu.gd' remapped 'res://core/ui/settings_menu.gd' at thread -1
+Completed load for: 'res://core/ui/settings_menu.tscn' remapped 'res://core/ui/settings_menu.tscn' at thread -1
+Loading resource: res://core/ui/pause_menu.tscn remapped: res://core/ui/pause_menu.tscn
+Loading resource: res://core/ui/pause_menu.gd remapped: res://core/ui/pause_menu.gd
+Completed load for: 'res://core/ui/pause_menu.gd' remapped 'res://core/ui/pause_menu.gd' at thread -1
+Completed load for: 'res://core/ui/pause_menu.tscn' remapped 'res://core/ui/pause_menu.tscn' at thread -1
+Loading resource: res://core/transitions/fade_overlay.tscn remapped: res://core/transitions/fade_overlay.tscn
+Completed load for: 'res://core/transitions/fade_overlay.tscn' remapped 'res://core/transitions/fade_overlay.tscn' at thread -1
+Loading resource: res://core/ui/exit_failure_dialog.tscn remapped: res://core/ui/exit_failure_dialog.tscn
+Loading resource: res://core/ui/exit_failure_dialog.gd remapped: res://core/ui/exit_failure_dialog.gd
+Completed load for: 'res://core/ui/exit_failure_dialog.gd' remapped 'res://core/ui/exit_failure_dialog.gd' at thread -1
+Completed load for: 'res://core/ui/exit_failure_dialog.tscn' remapped 'res://core/ui/exit_failure_dialog.tscn' at thread -1
+Completed load for: 'res://core/game_root/game_root.tscn' remapped 'res://core/game_root/game_root.tscn' at thread -1
+Completed load for: 'res://tests/archive_progression_smoke.gd' remapped 'res://tests/archive_progression_smoke.gd' at thread -1
+Completed load for: 'res://tests/archive_progression_smoke.tscn' remapped 'res://tests/archive_progression_smoke.tscn' at thread -1
+Loading resource: res://worlds/archive/archive_main.tscn remapped: res://worlds/archive/archive_main.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_floor.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_floor.glb
+Loading resource: res://.godot/imported/sm_s01_hub_floor.glb-c55f6e3bf7cf6e49807197ce28051152.scn remapped: res://.godot/imported/sm_s01_hub_floor.glb-c55f6e3bf7cf6e49807197ce28051152.scn
+Loading resource: res://art/materials/m_observatory_stone.tres remapped: res://art/materials/m_observatory_stone.tres
+Loading resource: res://art/textures/material_library/t_observatory_stone_albedo.png remapped: res://art/textures/material_library/t_observatory_stone_albedo.png
+Loading resource: res://.godot/imported/t_observatory_stone_albedo.png-43349643c0875f5ace3ffdb2d210c57f.s3tc.ctex remapped: res://.godot/imported/t_observatory_stone_albedo.png-43349643c0875f5ace3ffdb2d210c57f.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_observatory_stone_albedo.png' remapped 'res://art/textures/material_library/t_observatory_stone_albedo.png' at thread 0
+Loading resource: res://art/textures/material_library/t_observatory_stone_normal.png remapped: res://art/textures/material_library/t_observatory_stone_normal.png
+Loading resource: res://.godot/imported/t_observatory_stone_normal.png-47e0f6bff75f2896b77ed27a272dde2f.s3tc.ctex remapped: res://.godot/imported/t_observatory_stone_normal.png-47e0f6bff75f2896b77ed27a272dde2f.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_observatory_stone_normal.png' remapped 'res://art/textures/material_library/t_observatory_stone_normal.png' at thread 0
+Loading resource: res://art/textures/material_library/t_observatory_stone_orm.png remapped: res://art/textures/material_library/t_observatory_stone_orm.png
+Loading resource: res://.godot/imported/t_observatory_stone_orm.png-4da19abca2400c1ea60157ddc8b2fe43.s3tc.ctex remapped: res://.godot/imported/t_observatory_stone_orm.png-4da19abca2400c1ea60157ddc8b2fe43.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_observatory_stone_orm.png' remapped 'res://art/textures/material_library/t_observatory_stone_orm.png' at thread 0
+Completed load for: 'res://art/materials/m_observatory_stone.tres' remapped 'res://art/materials/m_observatory_stone.tres' at thread 0
+Loading resource: res://art/materials/m_aged_brass.tres remapped: res://art/materials/m_aged_brass.tres
+Loading resource: res://art/textures/material_library/t_aged_brass_albedo.png remapped: res://art/textures/material_library/t_aged_brass_albedo.png
+Loading resource: res://.godot/imported/t_aged_brass_albedo.png-abc56163ac1f88b0fdc87aa9855967f6.bptc.ctex remapped: res://.godot/imported/t_aged_brass_albedo.png-abc56163ac1f88b0fdc87aa9855967f6.bptc.ctex
+Completed load for: 'res://art/textures/material_library/t_aged_brass_albedo.png' remapped 'res://art/textures/material_library/t_aged_brass_albedo.png' at thread 0
+Loading resource: res://art/textures/material_library/t_aged_brass_normal.png remapped: res://art/textures/material_library/t_aged_brass_normal.png
+Loading resource: res://.godot/imported/t_aged_brass_normal.png-8e39d8996b346af431d3dca26c806cc9.s3tc.ctex remapped: res://.godot/imported/t_aged_brass_normal.png-8e39d8996b346af431d3dca26c806cc9.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_aged_brass_normal.png' remapped 'res://art/textures/material_library/t_aged_brass_normal.png' at thread 0
+Loading resource: res://art/textures/material_library/t_aged_brass_orm.png remapped: res://art/textures/material_library/t_aged_brass_orm.png
+Loading resource: res://.godot/imported/t_aged_brass_orm.png-3d326ed2e26256e8095984503e4be2d1.bptc.ctex remapped: res://.godot/imported/t_aged_brass_orm.png-3d326ed2e26256e8095984503e4be2d1.bptc.ctex
+Completed load for: 'res://art/textures/material_library/t_aged_brass_orm.png' remapped 'res://art/textures/material_library/t_aged_brass_orm.png' at thread 0
+Completed load for: 'res://art/materials/m_aged_brass.tres' remapped 'res://art/materials/m_aged_brass.tres' at thread 0
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_floor.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_floor.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_wall.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_wall.glb
+Loading resource: res://.godot/imported/sm_s01_hub_wall.glb-a7ce994cd9ee4d9bdd021bf72044fcca.scn remapped: res://.godot/imported/sm_s01_hub_wall.glb-a7ce994cd9ee4d9bdd021bf72044fcca.scn
+Loading resource: res://art/materials/m_dark_walnut.tres remapped: res://art/materials/m_dark_walnut.tres
+Loading resource: res://art/textures/material_library/t_dark_walnut_albedo.png remapped: res://art/textures/material_library/t_dark_walnut_albedo.png
+Loading resource: res://.godot/imported/t_dark_walnut_albedo.png-eeb53fd26080333269d26f1244156de6.s3tc.ctex remapped: res://.godot/imported/t_dark_walnut_albedo.png-eeb53fd26080333269d26f1244156de6.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_dark_walnut_albedo.png' remapped 'res://art/textures/material_library/t_dark_walnut_albedo.png' at thread 0
+Loading resource: res://art/textures/material_library/t_dark_walnut_normal.png remapped: res://art/textures/material_library/t_dark_walnut_normal.png
+Loading resource: res://.godot/imported/t_dark_walnut_normal.png-0da8c0cbc718834a50d80f1e10dd6f67.s3tc.ctex remapped: res://.godot/imported/t_dark_walnut_normal.png-0da8c0cbc718834a50d80f1e10dd6f67.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_dark_walnut_normal.png' remapped 'res://art/textures/material_library/t_dark_walnut_normal.png' at thread 0
+Loading resource: res://art/textures/material_library/t_dark_walnut_orm.png remapped: res://art/textures/material_library/t_dark_walnut_orm.png
+Loading resource: res://.godot/imported/t_dark_walnut_orm.png-80714522fb65226a649b9a39ea999577.s3tc.ctex remapped: res://.godot/imported/t_dark_walnut_orm.png-80714522fb65226a649b9a39ea999577.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_dark_walnut_orm.png' remapped 'res://art/textures/material_library/t_dark_walnut_orm.png' at thread 0
+Completed load for: 'res://art/materials/m_dark_walnut.tres' remapped 'res://art/materials/m_dark_walnut.tres' at thread 0
+Loading resource: res://art/materials/m_dark_iron.tres remapped: res://art/materials/m_dark_iron.tres
+Loading resource: res://art/textures/material_library/t_dark_iron_albedo.png remapped: res://art/textures/material_library/t_dark_iron_albedo.png
+Loading resource: res://.godot/imported/t_dark_iron_albedo.png-66c578930998aa52cde4476e849cd53e.bptc.ctex remapped: res://.godot/imported/t_dark_iron_albedo.png-66c578930998aa52cde4476e849cd53e.bptc.ctex
+Completed load for: 'res://art/textures/material_library/t_dark_iron_albedo.png' remapped 'res://art/textures/material_library/t_dark_iron_albedo.png' at thread 0
+Loading resource: res://art/textures/material_library/t_dark_iron_normal.png remapped: res://art/textures/material_library/t_dark_iron_normal.png
+Loading resource: res://.godot/imported/t_dark_iron_normal.png-b114b4c4e436e88cf9c30b356a3fdc97.s3tc.ctex remapped: res://.godot/imported/t_dark_iron_normal.png-b114b4c4e436e88cf9c30b356a3fdc97.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_dark_iron_normal.png' remapped 'res://art/textures/material_library/t_dark_iron_normal.png' at thread 0
+Loading resource: res://art/textures/material_library/t_dark_iron_orm.png remapped: res://art/textures/material_library/t_dark_iron_orm.png
+Loading resource: res://.godot/imported/t_dark_iron_orm.png-26d916cff2f6d9ab53816438c312c0a3.bptc.ctex remapped: res://.godot/imported/t_dark_iron_orm.png-26d916cff2f6d9ab53816438c312c0a3.bptc.ctex
+Completed load for: 'res://art/textures/material_library/t_dark_iron_orm.png' remapped 'res://art/textures/material_library/t_dark_iron_orm.png' at thread 0
+Completed load for: 'res://art/materials/m_dark_iron.tres' remapped 'res://art/materials/m_dark_iron.tres' at thread 0
+Loading resource: res://art/materials/m_navy_textile.tres remapped: res://art/materials/m_navy_textile.tres
+Loading resource: res://art/textures/material_library/t_woven_textile_albedo.png remapped: res://art/textures/material_library/t_woven_textile_albedo.png
+Loading resource: res://.godot/imported/t_woven_textile_albedo.png-9e29b4e83b199f138d1df37fac0d7268.s3tc.ctex remapped: res://.godot/imported/t_woven_textile_albedo.png-9e29b4e83b199f138d1df37fac0d7268.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_woven_textile_albedo.png' remapped 'res://art/textures/material_library/t_woven_textile_albedo.png' at thread 0
+Loading resource: res://art/textures/material_library/t_woven_textile_normal.png remapped: res://art/textures/material_library/t_woven_textile_normal.png
+Loading resource: res://.godot/imported/t_woven_textile_normal.png-3c03783a156691d57565b008a8be7444.s3tc.ctex remapped: res://.godot/imported/t_woven_textile_normal.png-3c03783a156691d57565b008a8be7444.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_woven_textile_normal.png' remapped 'res://art/textures/material_library/t_woven_textile_normal.png' at thread 0
+Loading resource: res://art/textures/material_library/t_woven_textile_orm.png remapped: res://art/textures/material_library/t_woven_textile_orm.png
+Loading resource: res://.godot/imported/t_woven_textile_orm.png-0973fdd338724e02d2a305aa9ff5826a.s3tc.ctex remapped: res://.godot/imported/t_woven_textile_orm.png-0973fdd338724e02d2a305aa9ff5826a.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_woven_textile_orm.png' remapped 'res://art/textures/material_library/t_woven_textile_orm.png' at thread 0
+Completed load for: 'res://art/materials/m_navy_textile.tres' remapped 'res://art/materials/m_navy_textile.tres' at thread 0
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_wall.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_wall.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb
+Loading resource: res://.godot/imported/sm_s01_hub_dome_drum.glb-1fffa47e9b520fcaa7a3595c472fd1d2.scn remapped: res://.godot/imported/sm_s01_hub_dome_drum.glb-1fffa47e9b520fcaa7a3595c472fd1d2.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb
+Loading resource: res://.godot/imported/sm_s01_hub_dome_frame.glb-3a8a0e6d43fc5d8f0e6ac205a883ae74.scn remapped: res://.godot/imported/sm_s01_hub_dome_frame.glb-3a8a0e6d43fc5d8f0e6ac205a883ae74.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb
+Loading resource: res://.godot/imported/sm_s01_hub_dome_glass.glb-a79c37cc2a16399ea3779f3ff0a4612a.scn remapped: res://.godot/imported/sm_s01_hub_dome_glass.glb-a79c37cc2a16399ea3779f3ff0a4612a.scn
+Loading resource: res://art/materials/m_clear_glass.tres remapped: res://art/materials/m_clear_glass.tres
+Completed load for: 'res://art/materials/m_clear_glass.tres' remapped 'res://art/materials/m_clear_glass.tres' at thread 0
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb
+Loading resource: res://.godot/imported/sm_s01_hub_dome_sky.glb-6d858dde9f4156656dc4550af1f7181e.scn remapped: res://.godot/imported/sm_s01_hub_dome_sky.glb-6d858dde9f4156656dc4550af1f7181e.scn
+Loading resource: res://art/materials/m_hub_night_sky.tres remapped: res://art/materials/m_hub_night_sky.tres
+Loading resource: res://art/shaders/hub_night_sky.gdshader remapped: res://art/shaders/hub_night_sky.gdshader
+Completed load for: 'res://art/shaders/hub_night_sky.gdshader' remapped 'res://art/shaders/hub_night_sky.gdshader' at thread 0
+Completed load for: 'res://art/materials/m_hub_night_sky.tres' remapped 'res://art/materials/m_hub_night_sky.tres' at thread 0
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s00_entry_facade.glb remapped: res://art/meshes/archive_kit/sm_s00_entry_facade.glb
+Loading resource: res://.godot/imported/sm_s00_entry_facade.glb-5cb9001d73f62bdb5cb73d6d02152618.scn remapped: res://.godot/imported/sm_s00_entry_facade.glb-5cb9001d73f62bdb5cb73d6d02152618.scn
+Loading resource: res://art/materials/m_crimson_textile.tres remapped: res://art/materials/m_crimson_textile.tres
+Completed load for: 'res://art/materials/m_crimson_textile.tres' remapped 'res://art/materials/m_crimson_textile.tres' at thread 0
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_entry_facade.glb' remapped 'res://art/meshes/archive_kit/sm_s00_entry_facade.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s00_entry_arch.glb remapped: res://art/meshes/archive_kit/sm_s00_entry_arch.glb
+Loading resource: res://.godot/imported/sm_s00_entry_arch.glb-6374517dfbb7795b489db02458b5e662.scn remapped: res://.godot/imported/sm_s00_entry_arch.glb-6374517dfbb7795b489db02458b5e662.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_entry_arch.glb' remapped 'res://art/meshes/archive_kit/sm_s00_entry_arch.glb' at thread 0
+Loading resource: res://worlds/archive/modules/archive_wall_lantern.tscn remapped: res://worlds/archive/modules/archive_wall_lantern.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_wall_lantern.glb remapped: res://art/meshes/archive_kit/sm_archive_wall_lantern.glb
+Loading resource: res://.godot/imported/sm_archive_wall_lantern.glb-8285d2f2d249897b92768d6acd085c4d.scn remapped: res://.godot/imported/sm_archive_wall_lantern.glb-8285d2f2d249897b92768d6acd085c4d.scn
+Loading resource: res://art/materials/m_archive_emissive_gold.tres remapped: res://art/materials/m_archive_emissive_gold.tres
+Completed load for: 'res://art/materials/m_archive_emissive_gold.tres' remapped 'res://art/materials/m_archive_emissive_gold.tres' at thread 0
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wall_lantern.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wall_lantern.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_wall_lantern.tscn' remapped 'res://worlds/archive/modules/archive_wall_lantern.tscn' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_core_pedestal.glb remapped: res://art/meshes/archive_kit/sm_s01_core_pedestal.glb
+Loading resource: res://.godot/imported/sm_s01_core_pedestal.glb-c12c1433be78ca196d89d6f5eb0e34a3.scn remapped: res://.godot/imported/sm_s01_core_pedestal.glb-c12c1433be78ca196d89d6f5eb0e34a3.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_core_pedestal.glb' remapped 'res://art/meshes/archive_kit/sm_s01_core_pedestal.glb' at thread 0
+Loading resource: res://worlds/archive/common/archive_gate.tscn remapped: res://worlds/archive/common/archive_gate.tscn
+Loading resource: res://worlds/archive/common/archive_gate_skin.gd remapped: res://worlds/archive/common/archive_gate_skin.gd
+Loading resource: res://art/meshes/archive_kit/sm_archive_wing_gate.glb remapped: res://art/meshes/archive_kit/sm_archive_wing_gate.glb
+Loading resource: res://.godot/imported/sm_archive_wing_gate.glb-385529003cfbc95f857646945d0a1005.scn remapped: res://.godot/imported/sm_archive_wing_gate.glb-385529003cfbc95f857646945d0a1005.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wing_gate.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wing_gate.glb' at thread 0
+Completed load for: 'res://worlds/archive/common/archive_gate_skin.gd' remapped 'res://worlds/archive/common/archive_gate_skin.gd' at thread 0
+Completed load for: 'res://worlds/archive/common/archive_gate.tscn' remapped 'res://worlds/archive/common/archive_gate.tscn' at thread 0
+Loading resource: res://worlds/archive/common/archive_light_channel.tscn remapped: res://worlds/archive/common/archive_light_channel.tscn
+Completed load for: 'res://worlds/archive/common/archive_light_channel.tscn' remapped 'res://worlds/archive/common/archive_light_channel.tscn' at thread 0
+Loading resource: res://gameplay/puzzles/wing01/wing01_optics_sample.tscn remapped: res://gameplay/puzzles/wing01/wing01_optics_sample.tscn
+Loading resource: res://art/meshes/wing01/sm_wing01_frame.glb remapped: res://art/meshes/wing01/sm_wing01_frame.glb
+Loading resource: res://.godot/imported/sm_wing01_frame.glb-d979c5a84deda3d1e11ad89ae3a78146.scn remapped: res://.godot/imported/sm_wing01_frame.glb-d979c5a84deda3d1e11ad89ae3a78146.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_frame.glb' remapped 'res://art/meshes/wing01/sm_wing01_frame.glb' at thread 0
+Loading resource: res://art/meshes/wing01/sm_wing01_ring_outer.glb remapped: res://art/meshes/wing01/sm_wing01_ring_outer.glb
+Loading resource: res://.godot/imported/sm_wing01_ring_outer.glb-48b821eae3ebe3951634ee8da3376191.scn remapped: res://.godot/imported/sm_wing01_ring_outer.glb-48b821eae3ebe3951634ee8da3376191.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_ring_outer.glb' remapped 'res://art/meshes/wing01/sm_wing01_ring_outer.glb' at thread 0
+Loading resource: res://art/meshes/wing01/sm_wing01_ring_middle.glb remapped: res://art/meshes/wing01/sm_wing01_ring_middle.glb
+Loading resource: res://.godot/imported/sm_wing01_ring_middle.glb-d670d1b39b3a9ec6c397a419323af088.scn remapped: res://.godot/imported/sm_wing01_ring_middle.glb-d670d1b39b3a9ec6c397a419323af088.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_ring_middle.glb' remapped 'res://art/meshes/wing01/sm_wing01_ring_middle.glb' at thread 0
+Loading resource: res://art/meshes/wing01/sm_wing01_ring_inner.glb remapped: res://art/meshes/wing01/sm_wing01_ring_inner.glb
+Loading resource: res://.godot/imported/sm_wing01_ring_inner.glb-ec0722615e56a84855e8dc7a33bbe88e.scn remapped: res://.godot/imported/sm_wing01_ring_inner.glb-ec0722615e56a84855e8dc7a33bbe88e.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_ring_inner.glb' remapped 'res://art/meshes/wing01/sm_wing01_ring_inner.glb' at thread 0
+Loading resource: res://art/meshes/wing01/sm_wing01_focus.glb remapped: res://art/meshes/wing01/sm_wing01_focus.glb
+Loading resource: res://.godot/imported/sm_wing01_focus.glb-26d7e8416b8296abd61314836383d69a.scn remapped: res://.godot/imported/sm_wing01_focus.glb-26d7e8416b8296abd61314836383d69a.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_focus.glb' remapped 'res://art/meshes/wing01/sm_wing01_focus.glb' at thread 0
+Completed load for: 'res://gameplay/puzzles/wing01/wing01_optics_sample.tscn' remapped 'res://gameplay/puzzles/wing01/wing01_optics_sample.tscn' at thread 0
+Loading resource: res://gameplay/collectibles/fragment_presenter.tscn remapped: res://gameplay/collectibles/fragment_presenter.tscn
+Loading resource: res://gameplay/collectibles/star.tres remapped: res://gameplay/collectibles/star.tres
+Loading resource: res://art/sigils/star.svg remapped: res://art/sigils/star.svg
+Loading resource: res://.godot/imported/star.svg-205daaddcc7bb42d6fc388d2e050a0d4.ctex remapped: res://.godot/imported/star.svg-205daaddcc7bb42d6fc388d2e050a0d4.ctex
+Completed load for: 'res://art/sigils/star.svg' remapped 'res://art/sigils/star.svg' at thread 0
+Completed load for: 'res://gameplay/collectibles/star.tres' remapped 'res://gameplay/collectibles/star.tres' at thread 0
+Loading resource: res://gameplay/collectibles/hearth.tres remapped: res://gameplay/collectibles/hearth.tres
+Loading resource: res://art/sigils/hearth.svg remapped: res://art/sigils/hearth.svg
+Loading resource: res://.godot/imported/hearth.svg-97c18577b782f479372c9665aec42756.ctex remapped: res://.godot/imported/hearth.svg-97c18577b782f479372c9665aec42756.ctex
+Completed load for: 'res://art/sigils/hearth.svg' remapped 'res://art/sigils/hearth.svg' at thread 0
+Completed load for: 'res://gameplay/collectibles/hearth.tres' remapped 'res://gameplay/collectibles/hearth.tres' at thread 0
+Completed load for: 'res://gameplay/collectibles/fragment_presenter.tscn' remapped 'res://gameplay/collectibles/fragment_presenter.tscn' at thread 0
+Loading resource: res://worlds/archive/archive_prologue.tscn remapped: res://worlds/archive/archive_prologue.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb remapped: res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb
+Loading resource: res://.godot/imported/sm_s00_entrance_leaf.glb-c8e2c97cd730a20a1340f722dfa220d9.scn remapped: res://.godot/imported/sm_s00_entrance_leaf.glb-c8e2c97cd730a20a1340f722dfa220d9.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb' remapped 'res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb' at thread 0
+Loading resource: res://art/vfx/last_spark.tscn remapped: res://art/vfx/last_spark.tscn
+Loading resource: res://art/vfx/last_spark.svg remapped: res://art/vfx/last_spark.svg
+Loading resource: res://.godot/imported/last_spark.svg-af24d212f41396807e99850c8cbf3dd5.ctex remapped: res://.godot/imported/last_spark.svg-af24d212f41396807e99850c8cbf3dd5.ctex
+Completed load for: 'res://art/vfx/last_spark.svg' remapped 'res://art/vfx/last_spark.svg' at thread 0
+Completed load for: 'res://art/vfx/last_spark.tscn' remapped 'res://art/vfx/last_spark.tscn' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s00_approach_path.glb remapped: res://art/meshes/archive_kit/sm_s00_approach_path.glb
+Loading resource: res://.godot/imported/sm_s00_approach_path.glb-80956990687f005421444fd029907b49.scn remapped: res://.godot/imported/sm_s00_approach_path.glb-80956990687f005421444fd029907b49.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_approach_path.glb' remapped 'res://art/meshes/archive_kit/sm_s00_approach_path.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb remapped: res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb
+Loading resource: res://.godot/imported/sm_s00_approach_guard_long.glb-1dcdcbd6c18bd638a43a04fb42921964.scn remapped: res://.godot/imported/sm_s00_approach_guard_long.glb-1dcdcbd6c18bd638a43a04fb42921964.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb' remapped 'res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb remapped: res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb
+Loading resource: res://.godot/imported/sm_s00_approach_guard_rear.glb-2df92df214df228c4653132bf870c02d.scn remapped: res://.godot/imported/sm_s00_approach_guard_rear.glb-2df92df214df228c4653132bf870c02d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb' remapped 'res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb' at thread 0
+Loading resource: res://worlds/archive/modules/archive_door_lock.tscn remapped: res://worlds/archive/modules/archive_door_lock.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s00_lock_housing.glb remapped: res://art/meshes/archive_kit/sm_s00_lock_housing.glb
+Loading resource: res://.godot/imported/sm_s00_lock_housing.glb-724132b83765ebc378b365b137b230a1.scn remapped: res://.godot/imported/sm_s00_lock_housing.glb-724132b83765ebc378b365b137b230a1.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_lock_housing.glb' remapped 'res://art/meshes/archive_kit/sm_s00_lock_housing.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s00_lock_bolt.glb remapped: res://art/meshes/archive_kit/sm_s00_lock_bolt.glb
+Loading resource: res://.godot/imported/sm_s00_lock_bolt.glb-179eb2cf370d84820886b4c1389d25f0.scn remapped: res://.godot/imported/sm_s00_lock_bolt.glb-179eb2cf370d84820886b4c1389d25f0.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_lock_bolt.glb' remapped 'res://art/meshes/archive_kit/sm_s00_lock_bolt.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_door_lock.tscn' remapped 'res://worlds/archive/modules/archive_door_lock.tscn' at thread 0
+Loading resource: res://worlds/archive/modules/archive_door_keeper.tscn remapped: res://worlds/archive/modules/archive_door_keeper.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s00_lock_keeper.glb remapped: res://art/meshes/archive_kit/sm_s00_lock_keeper.glb
+Loading resource: res://.godot/imported/sm_s00_lock_keeper.glb-634b2af293ef6cd3bc76018a05d204f0.scn remapped: res://.godot/imported/sm_s00_lock_keeper.glb-634b2af293ef6cd3bc76018a05d204f0.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_lock_keeper.glb' remapped 'res://art/meshes/archive_kit/sm_s00_lock_keeper.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_door_keeper.tscn' remapped 'res://worlds/archive/modules/archive_door_keeper.tscn' at thread 0
+Completed load for: 'res://worlds/archive/archive_prologue.tscn' remapped 'res://worlds/archive/archive_prologue.tscn' at thread 0
+Loading resource: res://worlds/archive/wing01_corridor_presentation.tscn remapped: res://worlds/archive/wing01_corridor_presentation.tscn
+Loading resource: res://worlds/archive/modules/archive_wall_4m.tscn remapped: res://worlds/archive/modules/archive_wall_4m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_wall_4m.glb remapped: res://art/meshes/archive_kit/sm_archive_wall_4m.glb
+Loading resource: res://.godot/imported/sm_archive_wall_4m.glb-5a43b122942b61368232191aa3dd0bfd.scn remapped: res://.godot/imported/sm_archive_wall_4m.glb-5a43b122942b61368232191aa3dd0bfd.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wall_4m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wall_4m.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_wall_4m.tscn' remapped 'res://worlds/archive/modules/archive_wall_4m.tscn' at thread 0
+Loading resource: res://worlds/archive/modules/archive_pier_4m.tscn remapped: res://worlds/archive/modules/archive_pier_4m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_pier_4m.glb remapped: res://art/meshes/archive_kit/sm_archive_pier_4m.glb
+Loading resource: res://.godot/imported/sm_archive_pier_4m.glb-e177d2f7ba2b799f6a79fccd1a02ee64.scn remapped: res://.godot/imported/sm_archive_pier_4m.glb-e177d2f7ba2b799f6a79fccd1a02ee64.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_pier_4m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_pier_4m.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_pier_4m.tscn' remapped 'res://worlds/archive/modules/archive_pier_4m.tscn' at thread 0
+Loading resource: res://worlds/archive/modules/archive_arch_4m.tscn remapped: res://worlds/archive/modules/archive_arch_4m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_arch_4m.glb remapped: res://art/meshes/archive_kit/sm_archive_arch_4m.glb
+Loading resource: res://.godot/imported/sm_archive_arch_4m.glb-ef169cda85430380b40421ea06abee76.scn remapped: res://.godot/imported/sm_archive_arch_4m.glb-ef169cda85430380b40421ea06abee76.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_arch_4m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_arch_4m.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_arch_4m.tscn' remapped 'res://worlds/archive/modules/archive_arch_4m.tscn' at thread 0
+Completed load for: 'res://worlds/archive/wing01_corridor_presentation.tscn' remapped 'res://worlds/archive/wing01_corridor_presentation.tscn' at thread 0
+Loading resource: res://worlds/archive/wing01_corridor_floor.tscn remapped: res://worlds/archive/wing01_corridor_floor.tscn
+Loading resource: res://worlds/archive/modules/archive_floor_1m.tscn remapped: res://worlds/archive/modules/archive_floor_1m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_floor_1m.glb remapped: res://art/meshes/archive_kit/sm_archive_floor_1m.glb
+Loading resource: res://.godot/imported/sm_archive_floor_1m.glb-3177ff2ad8d649f708c187ebd4e05e3c.scn remapped: res://.godot/imported/sm_archive_floor_1m.glb-3177ff2ad8d649f708c187ebd4e05e3c.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_floor_1m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_floor_1m.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_floor_1m.tscn' remapped 'res://worlds/archive/modules/archive_floor_1m.tscn' at thread 0
+Completed load for: 'res://worlds/archive/wing01_corridor_floor.tscn' remapped 'res://worlds/archive/wing01_corridor_floor.tscn' at thread 0
+Loading resource: res://worlds/archive/hub/hub_floor_cutout.gdshader remapped: res://worlds/archive/hub/hub_floor_cutout.gdshader
+Completed load for: 'res://worlds/archive/hub/hub_floor_cutout.gdshader' remapped 'res://worlds/archive/hub/hub_floor_cutout.gdshader' at thread 0
+Loading resource: res://worlds/archive/wing01_room_presentation.tscn remapped: res://worlds/archive/wing01_room_presentation.tscn
+Loading resource: res://worlds/archive/modules/archive_wall_2m.tscn remapped: res://worlds/archive/modules/archive_wall_2m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_wall_2m.glb remapped: res://art/meshes/archive_kit/sm_archive_wall_2m.glb
+Loading resource: res://.godot/imported/sm_archive_wall_2m.glb-4100a680890fdd16aa7ccedb085a24a8.scn remapped: res://.godot/imported/sm_archive_wall_2m.glb-4100a680890fdd16aa7ccedb085a24a8.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wall_2m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wall_2m.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_wall_2m.tscn' remapped 'res://worlds/archive/modules/archive_wall_2m.tscn' at thread 0
+Loading resource: res://worlds/archive/modules/archive_wall_3m.tscn remapped: res://worlds/archive/modules/archive_wall_3m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_wall_3m.glb remapped: res://art/meshes/archive_kit/sm_archive_wall_3m.glb
+Loading resource: res://.godot/imported/sm_archive_wall_3m.glb-d181371ad931e243242487b28c97776a.scn remapped: res://.godot/imported/sm_archive_wall_3m.glb-d181371ad931e243242487b28c97776a.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wall_3m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wall_3m.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_wall_3m.tscn' remapped 'res://worlds/archive/modules/archive_wall_3m.tscn' at thread 0
+Completed load for: 'res://worlds/archive/wing01_room_presentation.tscn' remapped 'res://worlds/archive/wing01_room_presentation.tscn' at thread 0
+Loading resource: res://worlds/archive/wing01_room_floor.tscn remapped: res://worlds/archive/wing01_room_floor.tscn
+Completed load for: 'res://worlds/archive/wing01_room_floor.tscn' remapped 'res://worlds/archive/wing01_room_floor.tscn' at thread 0
+Loading resource: res://gameplay/puzzles/wing01/wing01_hearth_art.tscn remapped: res://gameplay/puzzles/wing01/wing01_hearth_art.tscn
+Loading resource: res://art/meshes/wing01/sm_wing01_hearth.glb remapped: res://art/meshes/wing01/sm_wing01_hearth.glb
+Loading resource: res://.godot/imported/sm_wing01_hearth.glb-f85e1260a3c75f3c60aab6268f9c1397.scn remapped: res://.godot/imported/sm_wing01_hearth.glb-f85e1260a3c75f3c60aab6268f9c1397.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_hearth.glb' remapped 'res://art/meshes/wing01/sm_wing01_hearth.glb' at thread 0
+Completed load for: 'res://gameplay/puzzles/wing01/wing01_hearth_art.tscn' remapped 'res://gameplay/puzzles/wing01/wing01_hearth_art.tscn' at thread 0
+Loading resource: res://gameplay/puzzles/wing01/wing01_emitter_art.tscn remapped: res://gameplay/puzzles/wing01/wing01_emitter_art.tscn
+Loading resource: res://art/meshes/wing01/sm_wing01_emitter.glb remapped: res://art/meshes/wing01/sm_wing01_emitter.glb
+Loading resource: res://.godot/imported/sm_wing01_emitter.glb-29a862b5637c98396d3d8f801df5a725.scn remapped: res://.godot/imported/sm_wing01_emitter.glb-29a862b5637c98396d3d8f801df5a725.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_emitter.glb' remapped 'res://art/meshes/wing01/sm_wing01_emitter.glb' at thread 0
+Completed load for: 'res://gameplay/puzzles/wing01/wing01_emitter_art.tscn' remapped 'res://gameplay/puzzles/wing01/wing01_emitter_art.tscn' at thread 0
+Loading resource: res://art/vfx/hearth_flame.tscn remapped: res://art/vfx/hearth_flame.tscn
+Loading resource: res://art/vfx/hearth_flame.gd remapped: res://art/vfx/hearth_flame.gd
+Completed load for: 'res://art/vfx/hearth_flame.gd' remapped 'res://art/vfx/hearth_flame.gd' at thread 0
+Loading resource: res://art/vfx/hearth_flame_mesh.tres remapped: res://art/vfx/hearth_flame_mesh.tres
+Completed load for: 'res://art/vfx/hearth_flame_mesh.tres' remapped 'res://art/vfx/hearth_flame_mesh.tres' at thread 0
+Completed load for: 'res://art/vfx/hearth_flame.tscn' remapped 'res://art/vfx/hearth_flame.tscn' at thread 0
+Loading resource: res://worlds/archive/wing01_roof_presentation.tscn remapped: res://worlds/archive/wing01_roof_presentation.tscn
+Loading resource: res://worlds/archive/wing01_ceiling_study.tscn remapped: res://worlds/archive/wing01_ceiling_study.tscn
+Loading resource: res://worlds/archive/modules/archive_ceiling_rib_10m.tscn remapped: res://worlds/archive/modules/archive_ceiling_rib_10m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb remapped: res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb
+Loading resource: res://.godot/imported/sm_wing01_ceiling_rib_10m.glb-7a632d934a45d91e566b0000c72daf31.scn remapped: res://.godot/imported/sm_wing01_ceiling_rib_10m.glb-7a632d934a45d91e566b0000c72daf31.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_ceiling_rib_10m.tscn' remapped 'res://worlds/archive/modules/archive_ceiling_rib_10m.tscn' at thread 0
+Loading resource: res://worlds/archive/modules/archive_ceiling_rib_12m.tscn remapped: res://worlds/archive/modules/archive_ceiling_rib_12m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb remapped: res://art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb
+Loading resource: res://.godot/imported/sm_wing01_ceiling_rib_12m.glb-07722fbe342b9767c373469d51669bcf.scn remapped: res://.godot/imported/sm_wing01_ceiling_rib_12m.glb-07722fbe342b9767c373469d51669bcf.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_ceiling_rib_12m.tscn' remapped 'res://worlds/archive/modules/archive_ceiling_rib_12m.tscn' at thread 0
+Loading resource: res://worlds/archive/modules/archive_ceiling_transition.tscn remapped: res://worlds/archive/modules/archive_ceiling_transition.tscn
+Loading resource: res://art/meshes/archive_kit/sm_wing01_ceiling_transition.glb remapped: res://art/meshes/archive_kit/sm_wing01_ceiling_transition.glb
+Loading resource: res://.godot/imported/sm_wing01_ceiling_transition.glb-836e00c0ad08ed92ec09070fb07a7529.scn remapped: res://.godot/imported/sm_wing01_ceiling_transition.glb-836e00c0ad08ed92ec09070fb07a7529.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_ceiling_transition.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_ceiling_transition.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_ceiling_transition.tscn' remapped 'res://worlds/archive/modules/archive_ceiling_transition.tscn' at thread 0
+Completed load for: 'res://worlds/archive/wing01_ceiling_study.tscn' remapped 'res://worlds/archive/wing01_ceiling_study.tscn' at thread 0
+Loading resource: res://worlds/archive/wing01_dome_coverage.tscn remapped: res://worlds/archive/wing01_dome_coverage.tscn
+Loading resource: res://art/meshes/archive_kit/sm_wing01_dome_frame.glb remapped: res://art/meshes/archive_kit/sm_wing01_dome_frame.glb
+Loading resource: res://.godot/imported/sm_wing01_dome_frame.glb-85793bdacb2e99b1f0d31ecaa2b5e43d.scn remapped: res://.godot/imported/sm_wing01_dome_frame.glb-85793bdacb2e99b1f0d31ecaa2b5e43d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_dome_frame.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_dome_frame.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_wing01_dome_glass.glb remapped: res://art/meshes/archive_kit/sm_wing01_dome_glass.glb
+Loading resource: res://.godot/imported/sm_wing01_dome_glass.glb-59ab608cd5b94a72e9b13391f0189d21.scn remapped: res://.godot/imported/sm_wing01_dome_glass.glb-59ab608cd5b94a72e9b13391f0189d21.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_dome_glass.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_dome_glass.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_wing01_dome_sky.glb remapped: res://art/meshes/archive_kit/sm_wing01_dome_sky.glb
+Loading resource: res://.godot/imported/sm_wing01_dome_sky.glb-35a5ef8ba9f3e976a2e935413f99f1fd.scn remapped: res://.godot/imported/sm_wing01_dome_sky.glb-35a5ef8ba9f3e976a2e935413f99f1fd.scn
+Loading resource: res://art/materials/m_archive_night_sky.tres remapped: res://art/materials/m_archive_night_sky.tres
+Loading resource: res://art/shaders/archive_night_sky.gdshader remapped: res://art/shaders/archive_night_sky.gdshader
+Completed load for: 'res://art/shaders/archive_night_sky.gdshader' remapped 'res://art/shaders/archive_night_sky.gdshader' at thread 0
+Completed load for: 'res://art/materials/m_archive_night_sky.tres' remapped 'res://art/materials/m_archive_night_sky.tres' at thread 0
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_dome_sky.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_dome_sky.glb' at thread 0
+Completed load for: 'res://worlds/archive/wing01_dome_coverage.tscn' remapped 'res://worlds/archive/wing01_dome_coverage.tscn' at thread 0
+Completed load for: 'res://worlds/archive/wing01_roof_presentation.tscn' remapped 'res://worlds/archive/wing01_roof_presentation.tscn' at thread 0
+Loading resource: res://art/vfx/archive_light_beam.tscn remapped: res://art/vfx/archive_light_beam.tscn
+Loading resource: res://art/vfx/archive_light_beam.gd remapped: res://art/vfx/archive_light_beam.gd
+Completed load for: 'res://art/vfx/archive_light_beam.gd' remapped 'res://art/vfx/archive_light_beam.gd' at thread 0
+Loading resource: res://art/vfx/archive_beam_core_mesh.tres remapped: res://art/vfx/archive_beam_core_mesh.tres
+Completed load for: 'res://art/vfx/archive_beam_core_mesh.tres' remapped 'res://art/vfx/archive_beam_core_mesh.tres' at thread 0
+Loading resource: res://art/vfx/archive_beam_halo_mesh.tres remapped: res://art/vfx/archive_beam_halo_mesh.tres
+Completed load for: 'res://art/vfx/archive_beam_halo_mesh.tres' remapped 'res://art/vfx/archive_beam_halo_mesh.tres' at thread 0
+Loading resource: res://art/materials/m_archive_beam_core.tres remapped: res://art/materials/m_archive_beam_core.tres
+Loading resource: res://art/shaders/archive_beam_core.gdshader remapped: res://art/shaders/archive_beam_core.gdshader
+Completed load for: 'res://art/shaders/archive_beam_core.gdshader' remapped 'res://art/shaders/archive_beam_core.gdshader' at thread 0
+Completed load for: 'res://art/materials/m_archive_beam_core.tres' remapped 'res://art/materials/m_archive_beam_core.tres' at thread 0
+Loading resource: res://art/materials/m_archive_beam_halo.tres remapped: res://art/materials/m_archive_beam_halo.tres
+Loading resource: res://art/shaders/archive_beam_halo.gdshader remapped: res://art/shaders/archive_beam_halo.gdshader
+Completed load for: 'res://art/shaders/archive_beam_halo.gdshader' remapped 'res://art/shaders/archive_beam_halo.gdshader' at thread 0
+Completed load for: 'res://art/materials/m_archive_beam_halo.tres' remapped 'res://art/materials/m_archive_beam_halo.tres' at thread 0
+Completed load for: 'res://art/vfx/archive_light_beam.tscn' remapped 'res://art/vfx/archive_light_beam.tscn' at thread 0
+Loading resource: res://art/vfx/star_target.tscn remapped: res://art/vfx/star_target.tscn
+Loading resource: res://art/vfx/star_target.gd remapped: res://art/vfx/star_target.gd
+Completed load for: 'res://art/vfx/star_target.gd' remapped 'res://art/vfx/star_target.gd' at thread 0
+Completed load for: 'res://art/vfx/star_target.tscn' remapped 'res://art/vfx/star_target.tscn' at thread 0
+Loading resource: res://worlds/archive/wing01_practicals.tscn remapped: res://worlds/archive/wing01_practicals.tscn
+Completed load for: 'res://worlds/archive/wing01_practicals.tscn' remapped 'res://worlds/archive/wing01_practicals.tscn' at thread 0
+Loading resource: res://worlds/archive/wing01_books.tscn remapped: res://worlds/archive/wing01_books.tscn
+Loading resource: res://worlds/archive/modules/archive_bookcase.tscn remapped: res://worlds/archive/modules/archive_bookcase.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_bookcase.glb remapped: res://art/meshes/archive_kit/sm_archive_bookcase.glb
+Loading resource: res://.godot/imported/sm_archive_bookcase.glb-e7420483fe0bf14bc8aefaa9f4c2fc15.scn remapped: res://.godot/imported/sm_archive_bookcase.glb-e7420483fe0bf14bc8aefaa9f4c2fc15.scn
+Loading resource: res://art/materials/m_aged_leather.tres remapped: res://art/materials/m_aged_leather.tres
+Loading resource: res://art/textures/material_library/t_aged_leather_albedo.png remapped: res://art/textures/material_library/t_aged_leather_albedo.png
+Loading resource: res://.godot/imported/t_aged_leather_albedo.png-547a925d2ff2a8d57a023e279c9b757e.s3tc.ctex remapped: res://.godot/imported/t_aged_leather_albedo.png-547a925d2ff2a8d57a023e279c9b757e.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_aged_leather_albedo.png' remapped 'res://art/textures/material_library/t_aged_leather_albedo.png' at thread 0
+Loading resource: res://art/textures/material_library/t_aged_leather_normal.png remapped: res://art/textures/material_library/t_aged_leather_normal.png
+Loading resource: res://.godot/imported/t_aged_leather_normal.png-72c0a2cba1dbf048d9b1a7f0905f2ddd.s3tc.ctex remapped: res://.godot/imported/t_aged_leather_normal.png-72c0a2cba1dbf048d9b1a7f0905f2ddd.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_aged_leather_normal.png' remapped 'res://art/textures/material_library/t_aged_leather_normal.png' at thread 0
+Loading resource: res://art/textures/material_library/t_aged_leather_orm.png remapped: res://art/textures/material_library/t_aged_leather_orm.png
+Loading resource: res://.godot/imported/t_aged_leather_orm.png-2a959c802b1b29b54928fc039c4ec264.s3tc.ctex remapped: res://.godot/imported/t_aged_leather_orm.png-2a959c802b1b29b54928fc039c4ec264.s3tc.ctex
+Completed load for: 'res://art/textures/material_library/t_aged_leather_orm.png' remapped 'res://art/textures/material_library/t_aged_leather_orm.png' at thread 0
+Completed load for: 'res://art/materials/m_aged_leather.tres' remapped 'res://art/materials/m_aged_leather.tres' at thread 0
+Loading resource: res://art/materials/m_archive_parchment.tres remapped: res://art/materials/m_archive_parchment.tres
+Completed load for: 'res://art/materials/m_archive_parchment.tres' remapped 'res://art/materials/m_archive_parchment.tres' at thread 0
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_bookcase.glb' remapped 'res://art/meshes/archive_kit/sm_archive_bookcase.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_bookcase.tscn' remapped 'res://worlds/archive/modules/archive_bookcase.tscn' at thread 0
+Completed load for: 'res://worlds/archive/wing01_books.tscn' remapped 'res://worlds/archive/wing01_books.tscn' at thread 0
+Loading resource: res://worlds/archive/modules/archive_rug.tscn remapped: res://worlds/archive/modules/archive_rug.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_rug.glb remapped: res://art/meshes/archive_kit/sm_archive_rug.glb
+Loading resource: res://.godot/imported/sm_archive_rug.glb-8cba8072ab9b642a3630452ad5a0183d.scn remapped: res://.godot/imported/sm_archive_rug.glb-8cba8072ab9b642a3630452ad5a0183d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_rug.glb' remapped 'res://art/meshes/archive_kit/sm_archive_rug.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_rug.tscn' remapped 'res://worlds/archive/modules/archive_rug.tscn' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_starting_lens.glb remapped: res://art/meshes/archive_kit/sm_s01_starting_lens.glb
+Loading resource: res://.godot/imported/sm_s01_starting_lens.glb-8ade46f8d4b44aafa4079a4d51e916a0.scn remapped: res://.godot/imported/sm_s01_starting_lens.glb-8ade46f8d4b44aafa4079a4d51e916a0.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_starting_lens.glb' remapped 'res://art/meshes/archive_kit/sm_s01_starting_lens.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_lens_socket.glb remapped: res://art/meshes/archive_kit/sm_s01_lens_socket.glb
+Loading resource: res://.godot/imported/sm_s01_lens_socket.glb-188dc482e99acfcc032a55181e4c154b.scn remapped: res://.godot/imported/sm_s01_lens_socket.glb-188dc482e99acfcc032a55181e4c154b.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_lens_socket.glb' remapped 'res://art/meshes/archive_kit/sm_s01_lens_socket.glb' at thread 0
+Loading resource: res://worlds/archive/modules/archive_hub_panel.tscn remapped: res://worlds/archive/modules/archive_hub_panel.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s01_panel_base.glb remapped: res://art/meshes/archive_kit/sm_s01_panel_base.glb
+Loading resource: res://.godot/imported/sm_s01_panel_base.glb-8681a4ec7bcfa37eb4662db93ddec067.scn remapped: res://.godot/imported/sm_s01_panel_base.glb-8681a4ec7bcfa37eb4662db93ddec067.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_panel_base.glb' remapped 'res://art/meshes/archive_kit/sm_s01_panel_base.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_panel_cover.glb remapped: res://art/meshes/archive_kit/sm_s01_panel_cover.glb
+Loading resource: res://.godot/imported/sm_s01_panel_cover.glb-b0e046b140a4bb496a1e4202a899a64d.scn remapped: res://.godot/imported/sm_s01_panel_cover.glb-b0e046b140a4bb496a1e4202a899a64d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_panel_cover.glb' remapped 'res://art/meshes/archive_kit/sm_s01_panel_cover.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_hub_panel.tscn' remapped 'res://worlds/archive/modules/archive_hub_panel.tscn' at thread 0
+Loading resource: res://worlds/archive/modules/archive_hub_lever.tscn remapped: res://worlds/archive/modules/archive_hub_lever.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s01_lever_base.glb remapped: res://art/meshes/archive_kit/sm_s01_lever_base.glb
+Loading resource: res://.godot/imported/sm_s01_lever_base.glb-63e7398c2a5499ac9150a3c08e270f15.scn remapped: res://.godot/imported/sm_s01_lever_base.glb-63e7398c2a5499ac9150a3c08e270f15.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_lever_base.glb' remapped 'res://art/meshes/archive_kit/sm_s01_lever_base.glb' at thread 0
+Loading resource: res://art/meshes/archive_kit/sm_s01_lever_handle.glb remapped: res://art/meshes/archive_kit/sm_s01_lever_handle.glb
+Loading resource: res://.godot/imported/sm_s01_lever_handle.glb-5e1d4adffa4de19eb92fb54455429c33.scn remapped: res://.godot/imported/sm_s01_lever_handle.glb-5e1d4adffa4de19eb92fb54455429c33.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_lever_handle.glb' remapped 'res://art/meshes/archive_kit/sm_s01_lever_handle.glb' at thread 0
+Completed load for: 'res://worlds/archive/modules/archive_hub_lever.tscn' remapped 'res://worlds/archive/modules/archive_hub_lever.tscn' at thread 0
+Completed load for: 'res://worlds/archive/archive_main.tscn' remapped 'res://worlds/archive/archive_main.tscn' at thread 0
+Loading resource: res://worlds/archive/archive_main.tscn remapped: res://worlds/archive/archive_main.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_floor.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_floor.glb
+Loading resource: res://.godot/imported/sm_s01_hub_floor.glb-c55f6e3bf7cf6e49807197ce28051152.scn remapped: res://.godot/imported/sm_s01_hub_floor.glb-c55f6e3bf7cf6e49807197ce28051152.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_floor.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_floor.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_wall.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_wall.glb
+Loading resource: res://.godot/imported/sm_s01_hub_wall.glb-a7ce994cd9ee4d9bdd021bf72044fcca.scn remapped: res://.godot/imported/sm_s01_hub_wall.glb-a7ce994cd9ee4d9bdd021bf72044fcca.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_wall.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_wall.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb
+Loading resource: res://.godot/imported/sm_s01_hub_dome_drum.glb-1fffa47e9b520fcaa7a3595c472fd1d2.scn remapped: res://.godot/imported/sm_s01_hub_dome_drum.glb-1fffa47e9b520fcaa7a3595c472fd1d2.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_dome_drum.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb
+Loading resource: res://.godot/imported/sm_s01_hub_dome_frame.glb-3a8a0e6d43fc5d8f0e6ac205a883ae74.scn remapped: res://.godot/imported/sm_s01_hub_dome_frame.glb-3a8a0e6d43fc5d8f0e6ac205a883ae74.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_dome_frame.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb
+Loading resource: res://.godot/imported/sm_s01_hub_dome_glass.glb-a79c37cc2a16399ea3779f3ff0a4612a.scn remapped: res://.godot/imported/sm_s01_hub_dome_glass.glb-a79c37cc2a16399ea3779f3ff0a4612a.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_dome_glass.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb remapped: res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb
+Loading resource: res://.godot/imported/sm_s01_hub_dome_sky.glb-6d858dde9f4156656dc4550af1f7181e.scn remapped: res://.godot/imported/sm_s01_hub_dome_sky.glb-6d858dde9f4156656dc4550af1f7181e.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb' remapped 'res://art/meshes/archive_kit/sm_s01_hub_dome_sky.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s00_entry_facade.glb remapped: res://art/meshes/archive_kit/sm_s00_entry_facade.glb
+Loading resource: res://.godot/imported/sm_s00_entry_facade.glb-5cb9001d73f62bdb5cb73d6d02152618.scn remapped: res://.godot/imported/sm_s00_entry_facade.glb-5cb9001d73f62bdb5cb73d6d02152618.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_entry_facade.glb' remapped 'res://art/meshes/archive_kit/sm_s00_entry_facade.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s00_entry_arch.glb remapped: res://art/meshes/archive_kit/sm_s00_entry_arch.glb
+Loading resource: res://.godot/imported/sm_s00_entry_arch.glb-6374517dfbb7795b489db02458b5e662.scn remapped: res://.godot/imported/sm_s00_entry_arch.glb-6374517dfbb7795b489db02458b5e662.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_entry_arch.glb' remapped 'res://art/meshes/archive_kit/sm_s00_entry_arch.glb' at thread 2
+Loading resource: res://worlds/archive/modules/archive_wall_lantern.tscn remapped: res://worlds/archive/modules/archive_wall_lantern.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_wall_lantern.glb remapped: res://art/meshes/archive_kit/sm_archive_wall_lantern.glb
+Loading resource: res://.godot/imported/sm_archive_wall_lantern.glb-8285d2f2d249897b92768d6acd085c4d.scn remapped: res://.godot/imported/sm_archive_wall_lantern.glb-8285d2f2d249897b92768d6acd085c4d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wall_lantern.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wall_lantern.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_wall_lantern.tscn' remapped 'res://worlds/archive/modules/archive_wall_lantern.tscn' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_core_pedestal.glb remapped: res://art/meshes/archive_kit/sm_s01_core_pedestal.glb
+Loading resource: res://.godot/imported/sm_s01_core_pedestal.glb-c12c1433be78ca196d89d6f5eb0e34a3.scn remapped: res://.godot/imported/sm_s01_core_pedestal.glb-c12c1433be78ca196d89d6f5eb0e34a3.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_core_pedestal.glb' remapped 'res://art/meshes/archive_kit/sm_s01_core_pedestal.glb' at thread 2
+Loading resource: res://worlds/archive/common/archive_gate.tscn remapped: res://worlds/archive/common/archive_gate.tscn
+Completed load for: 'res://worlds/archive/common/archive_gate.tscn' remapped 'res://worlds/archive/common/archive_gate.tscn' at thread 2
+Loading resource: res://worlds/archive/common/archive_light_channel.tscn remapped: res://worlds/archive/common/archive_light_channel.tscn
+Completed load for: 'res://worlds/archive/common/archive_light_channel.tscn' remapped 'res://worlds/archive/common/archive_light_channel.tscn' at thread 2
+Loading resource: res://gameplay/puzzles/wing01/wing01_optics_sample.tscn remapped: res://gameplay/puzzles/wing01/wing01_optics_sample.tscn
+Loading resource: res://art/meshes/wing01/sm_wing01_frame.glb remapped: res://art/meshes/wing01/sm_wing01_frame.glb
+Loading resource: res://.godot/imported/sm_wing01_frame.glb-d979c5a84deda3d1e11ad89ae3a78146.scn remapped: res://.godot/imported/sm_wing01_frame.glb-d979c5a84deda3d1e11ad89ae3a78146.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_frame.glb' remapped 'res://art/meshes/wing01/sm_wing01_frame.glb' at thread 2
+Loading resource: res://art/meshes/wing01/sm_wing01_ring_outer.glb remapped: res://art/meshes/wing01/sm_wing01_ring_outer.glb
+Loading resource: res://.godot/imported/sm_wing01_ring_outer.glb-48b821eae3ebe3951634ee8da3376191.scn remapped: res://.godot/imported/sm_wing01_ring_outer.glb-48b821eae3ebe3951634ee8da3376191.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_ring_outer.glb' remapped 'res://art/meshes/wing01/sm_wing01_ring_outer.glb' at thread 2
+Loading resource: res://art/meshes/wing01/sm_wing01_ring_middle.glb remapped: res://art/meshes/wing01/sm_wing01_ring_middle.glb
+Loading resource: res://.godot/imported/sm_wing01_ring_middle.glb-d670d1b39b3a9ec6c397a419323af088.scn remapped: res://.godot/imported/sm_wing01_ring_middle.glb-d670d1b39b3a9ec6c397a419323af088.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_ring_middle.glb' remapped 'res://art/meshes/wing01/sm_wing01_ring_middle.glb' at thread 2
+Loading resource: res://art/meshes/wing01/sm_wing01_ring_inner.glb remapped: res://art/meshes/wing01/sm_wing01_ring_inner.glb
+Loading resource: res://.godot/imported/sm_wing01_ring_inner.glb-ec0722615e56a84855e8dc7a33bbe88e.scn remapped: res://.godot/imported/sm_wing01_ring_inner.glb-ec0722615e56a84855e8dc7a33bbe88e.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_ring_inner.glb' remapped 'res://art/meshes/wing01/sm_wing01_ring_inner.glb' at thread 2
+Loading resource: res://art/meshes/wing01/sm_wing01_focus.glb remapped: res://art/meshes/wing01/sm_wing01_focus.glb
+Loading resource: res://.godot/imported/sm_wing01_focus.glb-26d7e8416b8296abd61314836383d69a.scn remapped: res://.godot/imported/sm_wing01_focus.glb-26d7e8416b8296abd61314836383d69a.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_focus.glb' remapped 'res://art/meshes/wing01/sm_wing01_focus.glb' at thread 2
+Completed load for: 'res://gameplay/puzzles/wing01/wing01_optics_sample.tscn' remapped 'res://gameplay/puzzles/wing01/wing01_optics_sample.tscn' at thread 2
+Loading resource: res://gameplay/collectibles/fragment_presenter.tscn remapped: res://gameplay/collectibles/fragment_presenter.tscn
+Completed load for: 'res://gameplay/collectibles/fragment_presenter.tscn' remapped 'res://gameplay/collectibles/fragment_presenter.tscn' at thread 2
+Loading resource: res://worlds/archive/archive_prologue.tscn remapped: res://worlds/archive/archive_prologue.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb remapped: res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb
+Loading resource: res://.godot/imported/sm_s00_entrance_leaf.glb-c8e2c97cd730a20a1340f722dfa220d9.scn remapped: res://.godot/imported/sm_s00_entrance_leaf.glb-c8e2c97cd730a20a1340f722dfa220d9.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb' remapped 'res://art/meshes/archive_kit/sm_s00_entrance_leaf.glb' at thread 2
+Loading resource: res://art/vfx/last_spark.tscn remapped: res://art/vfx/last_spark.tscn
+Completed load for: 'res://art/vfx/last_spark.tscn' remapped 'res://art/vfx/last_spark.tscn' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s00_approach_path.glb remapped: res://art/meshes/archive_kit/sm_s00_approach_path.glb
+Loading resource: res://.godot/imported/sm_s00_approach_path.glb-80956990687f005421444fd029907b49.scn remapped: res://.godot/imported/sm_s00_approach_path.glb-80956990687f005421444fd029907b49.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_approach_path.glb' remapped 'res://art/meshes/archive_kit/sm_s00_approach_path.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb remapped: res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb
+Loading resource: res://.godot/imported/sm_s00_approach_guard_long.glb-1dcdcbd6c18bd638a43a04fb42921964.scn remapped: res://.godot/imported/sm_s00_approach_guard_long.glb-1dcdcbd6c18bd638a43a04fb42921964.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb' remapped 'res://art/meshes/archive_kit/sm_s00_approach_guard_long.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb remapped: res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb
+Loading resource: res://.godot/imported/sm_s00_approach_guard_rear.glb-2df92df214df228c4653132bf870c02d.scn remapped: res://.godot/imported/sm_s00_approach_guard_rear.glb-2df92df214df228c4653132bf870c02d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb' remapped 'res://art/meshes/archive_kit/sm_s00_approach_guard_rear.glb' at thread 2
+Loading resource: res://worlds/archive/modules/archive_door_lock.tscn remapped: res://worlds/archive/modules/archive_door_lock.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s00_lock_housing.glb remapped: res://art/meshes/archive_kit/sm_s00_lock_housing.glb
+Loading resource: res://.godot/imported/sm_s00_lock_housing.glb-724132b83765ebc378b365b137b230a1.scn remapped: res://.godot/imported/sm_s00_lock_housing.glb-724132b83765ebc378b365b137b230a1.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_lock_housing.glb' remapped 'res://art/meshes/archive_kit/sm_s00_lock_housing.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s00_lock_bolt.glb remapped: res://art/meshes/archive_kit/sm_s00_lock_bolt.glb
+Loading resource: res://.godot/imported/sm_s00_lock_bolt.glb-179eb2cf370d84820886b4c1389d25f0.scn remapped: res://.godot/imported/sm_s00_lock_bolt.glb-179eb2cf370d84820886b4c1389d25f0.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_lock_bolt.glb' remapped 'res://art/meshes/archive_kit/sm_s00_lock_bolt.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_door_lock.tscn' remapped 'res://worlds/archive/modules/archive_door_lock.tscn' at thread 2
+Loading resource: res://worlds/archive/modules/archive_door_keeper.tscn remapped: res://worlds/archive/modules/archive_door_keeper.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s00_lock_keeper.glb remapped: res://art/meshes/archive_kit/sm_s00_lock_keeper.glb
+Loading resource: res://.godot/imported/sm_s00_lock_keeper.glb-634b2af293ef6cd3bc76018a05d204f0.scn remapped: res://.godot/imported/sm_s00_lock_keeper.glb-634b2af293ef6cd3bc76018a05d204f0.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s00_lock_keeper.glb' remapped 'res://art/meshes/archive_kit/sm_s00_lock_keeper.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_door_keeper.tscn' remapped 'res://worlds/archive/modules/archive_door_keeper.tscn' at thread 2
+Completed load for: 'res://worlds/archive/archive_prologue.tscn' remapped 'res://worlds/archive/archive_prologue.tscn' at thread 2
+Loading resource: res://worlds/archive/wing01_corridor_presentation.tscn remapped: res://worlds/archive/wing01_corridor_presentation.tscn
+Loading resource: res://worlds/archive/modules/archive_wall_4m.tscn remapped: res://worlds/archive/modules/archive_wall_4m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_wall_4m.glb remapped: res://art/meshes/archive_kit/sm_archive_wall_4m.glb
+Loading resource: res://.godot/imported/sm_archive_wall_4m.glb-5a43b122942b61368232191aa3dd0bfd.scn remapped: res://.godot/imported/sm_archive_wall_4m.glb-5a43b122942b61368232191aa3dd0bfd.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wall_4m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wall_4m.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_wall_4m.tscn' remapped 'res://worlds/archive/modules/archive_wall_4m.tscn' at thread 2
+Loading resource: res://worlds/archive/modules/archive_pier_4m.tscn remapped: res://worlds/archive/modules/archive_pier_4m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_pier_4m.glb remapped: res://art/meshes/archive_kit/sm_archive_pier_4m.glb
+Loading resource: res://.godot/imported/sm_archive_pier_4m.glb-e177d2f7ba2b799f6a79fccd1a02ee64.scn remapped: res://.godot/imported/sm_archive_pier_4m.glb-e177d2f7ba2b799f6a79fccd1a02ee64.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_pier_4m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_pier_4m.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_pier_4m.tscn' remapped 'res://worlds/archive/modules/archive_pier_4m.tscn' at thread 2
+Loading resource: res://worlds/archive/modules/archive_arch_4m.tscn remapped: res://worlds/archive/modules/archive_arch_4m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_arch_4m.glb remapped: res://art/meshes/archive_kit/sm_archive_arch_4m.glb
+Loading resource: res://.godot/imported/sm_archive_arch_4m.glb-ef169cda85430380b40421ea06abee76.scn remapped: res://.godot/imported/sm_archive_arch_4m.glb-ef169cda85430380b40421ea06abee76.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_arch_4m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_arch_4m.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_arch_4m.tscn' remapped 'res://worlds/archive/modules/archive_arch_4m.tscn' at thread 2
+Completed load for: 'res://worlds/archive/wing01_corridor_presentation.tscn' remapped 'res://worlds/archive/wing01_corridor_presentation.tscn' at thread 2
+Loading resource: res://worlds/archive/wing01_corridor_floor.tscn remapped: res://worlds/archive/wing01_corridor_floor.tscn
+Loading resource: res://worlds/archive/modules/archive_floor_1m.tscn remapped: res://worlds/archive/modules/archive_floor_1m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_floor_1m.glb remapped: res://art/meshes/archive_kit/sm_archive_floor_1m.glb
+Loading resource: res://.godot/imported/sm_archive_floor_1m.glb-3177ff2ad8d649f708c187ebd4e05e3c.scn remapped: res://.godot/imported/sm_archive_floor_1m.glb-3177ff2ad8d649f708c187ebd4e05e3c.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_floor_1m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_floor_1m.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_floor_1m.tscn' remapped 'res://worlds/archive/modules/archive_floor_1m.tscn' at thread 2
+Completed load for: 'res://worlds/archive/wing01_corridor_floor.tscn' remapped 'res://worlds/archive/wing01_corridor_floor.tscn' at thread 2
+Loading resource: res://worlds/archive/hub/hub_floor_cutout.gdshader remapped: res://worlds/archive/hub/hub_floor_cutout.gdshader
+Completed load for: 'res://worlds/archive/hub/hub_floor_cutout.gdshader' remapped 'res://worlds/archive/hub/hub_floor_cutout.gdshader' at thread 2
+Loading resource: res://worlds/archive/wing01_room_presentation.tscn remapped: res://worlds/archive/wing01_room_presentation.tscn
+Loading resource: res://worlds/archive/modules/archive_wall_2m.tscn remapped: res://worlds/archive/modules/archive_wall_2m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_wall_2m.glb remapped: res://art/meshes/archive_kit/sm_archive_wall_2m.glb
+Loading resource: res://.godot/imported/sm_archive_wall_2m.glb-4100a680890fdd16aa7ccedb085a24a8.scn remapped: res://.godot/imported/sm_archive_wall_2m.glb-4100a680890fdd16aa7ccedb085a24a8.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wall_2m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wall_2m.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_wall_2m.tscn' remapped 'res://worlds/archive/modules/archive_wall_2m.tscn' at thread 2
+Loading resource: res://worlds/archive/modules/archive_wall_3m.tscn remapped: res://worlds/archive/modules/archive_wall_3m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_wall_3m.glb remapped: res://art/meshes/archive_kit/sm_archive_wall_3m.glb
+Loading resource: res://.godot/imported/sm_archive_wall_3m.glb-d181371ad931e243242487b28c97776a.scn remapped: res://.godot/imported/sm_archive_wall_3m.glb-d181371ad931e243242487b28c97776a.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_wall_3m.glb' remapped 'res://art/meshes/archive_kit/sm_archive_wall_3m.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_wall_3m.tscn' remapped 'res://worlds/archive/modules/archive_wall_3m.tscn' at thread 2
+Completed load for: 'res://worlds/archive/wing01_room_presentation.tscn' remapped 'res://worlds/archive/wing01_room_presentation.tscn' at thread 2
+Loading resource: res://worlds/archive/wing01_room_floor.tscn remapped: res://worlds/archive/wing01_room_floor.tscn
+Completed load for: 'res://worlds/archive/wing01_room_floor.tscn' remapped 'res://worlds/archive/wing01_room_floor.tscn' at thread 2
+Loading resource: res://gameplay/puzzles/wing01/wing01_hearth_art.tscn remapped: res://gameplay/puzzles/wing01/wing01_hearth_art.tscn
+Loading resource: res://art/meshes/wing01/sm_wing01_hearth.glb remapped: res://art/meshes/wing01/sm_wing01_hearth.glb
+Loading resource: res://.godot/imported/sm_wing01_hearth.glb-f85e1260a3c75f3c60aab6268f9c1397.scn remapped: res://.godot/imported/sm_wing01_hearth.glb-f85e1260a3c75f3c60aab6268f9c1397.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_hearth.glb' remapped 'res://art/meshes/wing01/sm_wing01_hearth.glb' at thread 2
+Completed load for: 'res://gameplay/puzzles/wing01/wing01_hearth_art.tscn' remapped 'res://gameplay/puzzles/wing01/wing01_hearth_art.tscn' at thread 2
+Loading resource: res://gameplay/puzzles/wing01/wing01_emitter_art.tscn remapped: res://gameplay/puzzles/wing01/wing01_emitter_art.tscn
+Loading resource: res://art/meshes/wing01/sm_wing01_emitter.glb remapped: res://art/meshes/wing01/sm_wing01_emitter.glb
+Loading resource: res://.godot/imported/sm_wing01_emitter.glb-29a862b5637c98396d3d8f801df5a725.scn remapped: res://.godot/imported/sm_wing01_emitter.glb-29a862b5637c98396d3d8f801df5a725.scn
+Completed load for: 'res://art/meshes/wing01/sm_wing01_emitter.glb' remapped 'res://art/meshes/wing01/sm_wing01_emitter.glb' at thread 2
+Completed load for: 'res://gameplay/puzzles/wing01/wing01_emitter_art.tscn' remapped 'res://gameplay/puzzles/wing01/wing01_emitter_art.tscn' at thread 2
+Loading resource: res://art/vfx/hearth_flame.tscn remapped: res://art/vfx/hearth_flame.tscn
+Completed load for: 'res://art/vfx/hearth_flame.tscn' remapped 'res://art/vfx/hearth_flame.tscn' at thread 2
+Loading resource: res://worlds/archive/wing01_roof_presentation.tscn remapped: res://worlds/archive/wing01_roof_presentation.tscn
+Loading resource: res://worlds/archive/wing01_ceiling_study.tscn remapped: res://worlds/archive/wing01_ceiling_study.tscn
+Loading resource: res://worlds/archive/modules/archive_ceiling_rib_10m.tscn remapped: res://worlds/archive/modules/archive_ceiling_rib_10m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb remapped: res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb
+Loading resource: res://.godot/imported/sm_wing01_ceiling_rib_10m.glb-7a632d934a45d91e566b0000c72daf31.scn remapped: res://.godot/imported/sm_wing01_ceiling_rib_10m.glb-7a632d934a45d91e566b0000c72daf31.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_ceiling_rib_10m.tscn' remapped 'res://worlds/archive/modules/archive_ceiling_rib_10m.tscn' at thread 2
+Loading resource: res://worlds/archive/modules/archive_ceiling_rib_12m.tscn remapped: res://worlds/archive/modules/archive_ceiling_rib_12m.tscn
+Loading resource: res://art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb remapped: res://art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb
+Loading resource: res://.godot/imported/sm_wing01_ceiling_rib_12m.glb-07722fbe342b9767c373469d51669bcf.scn remapped: res://.godot/imported/sm_wing01_ceiling_rib_12m.glb-07722fbe342b9767c373469d51669bcf.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_ceiling_rib_12m.tscn' remapped 'res://worlds/archive/modules/archive_ceiling_rib_12m.tscn' at thread 2
+Loading resource: res://worlds/archive/modules/archive_ceiling_transition.tscn remapped: res://worlds/archive/modules/archive_ceiling_transition.tscn
+Loading resource: res://art/meshes/archive_kit/sm_wing01_ceiling_transition.glb remapped: res://art/meshes/archive_kit/sm_wing01_ceiling_transition.glb
+Loading resource: res://.godot/imported/sm_wing01_ceiling_transition.glb-836e00c0ad08ed92ec09070fb07a7529.scn remapped: res://.godot/imported/sm_wing01_ceiling_transition.glb-836e00c0ad08ed92ec09070fb07a7529.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_ceiling_transition.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_ceiling_transition.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_ceiling_transition.tscn' remapped 'res://worlds/archive/modules/archive_ceiling_transition.tscn' at thread 2
+Completed load for: 'res://worlds/archive/wing01_ceiling_study.tscn' remapped 'res://worlds/archive/wing01_ceiling_study.tscn' at thread 2
+Loading resource: res://worlds/archive/wing01_dome_coverage.tscn remapped: res://worlds/archive/wing01_dome_coverage.tscn
+Loading resource: res://art/meshes/archive_kit/sm_wing01_dome_frame.glb remapped: res://art/meshes/archive_kit/sm_wing01_dome_frame.glb
+Loading resource: res://.godot/imported/sm_wing01_dome_frame.glb-85793bdacb2e99b1f0d31ecaa2b5e43d.scn remapped: res://.godot/imported/sm_wing01_dome_frame.glb-85793bdacb2e99b1f0d31ecaa2b5e43d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_dome_frame.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_dome_frame.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_wing01_dome_glass.glb remapped: res://art/meshes/archive_kit/sm_wing01_dome_glass.glb
+Loading resource: res://.godot/imported/sm_wing01_dome_glass.glb-59ab608cd5b94a72e9b13391f0189d21.scn remapped: res://.godot/imported/sm_wing01_dome_glass.glb-59ab608cd5b94a72e9b13391f0189d21.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_dome_glass.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_dome_glass.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_wing01_dome_sky.glb remapped: res://art/meshes/archive_kit/sm_wing01_dome_sky.glb
+Loading resource: res://.godot/imported/sm_wing01_dome_sky.glb-35a5ef8ba9f3e976a2e935413f99f1fd.scn remapped: res://.godot/imported/sm_wing01_dome_sky.glb-35a5ef8ba9f3e976a2e935413f99f1fd.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_wing01_dome_sky.glb' remapped 'res://art/meshes/archive_kit/sm_wing01_dome_sky.glb' at thread 2
+Completed load for: 'res://worlds/archive/wing01_dome_coverage.tscn' remapped 'res://worlds/archive/wing01_dome_coverage.tscn' at thread 2
+Completed load for: 'res://worlds/archive/wing01_roof_presentation.tscn' remapped 'res://worlds/archive/wing01_roof_presentation.tscn' at thread 2
+Loading resource: res://art/vfx/archive_light_beam.tscn remapped: res://art/vfx/archive_light_beam.tscn
+Completed load for: 'res://art/vfx/archive_light_beam.tscn' remapped 'res://art/vfx/archive_light_beam.tscn' at thread 2
+Loading resource: res://art/vfx/star_target.tscn remapped: res://art/vfx/star_target.tscn
+Completed load for: 'res://art/vfx/star_target.tscn' remapped 'res://art/vfx/star_target.tscn' at thread 2
+Loading resource: res://worlds/archive/wing01_practicals.tscn remapped: res://worlds/archive/wing01_practicals.tscn
+Completed load for: 'res://worlds/archive/wing01_practicals.tscn' remapped 'res://worlds/archive/wing01_practicals.tscn' at thread 2
+Loading resource: res://worlds/archive/wing01_books.tscn remapped: res://worlds/archive/wing01_books.tscn
+Loading resource: res://worlds/archive/modules/archive_bookcase.tscn remapped: res://worlds/archive/modules/archive_bookcase.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_bookcase.glb remapped: res://art/meshes/archive_kit/sm_archive_bookcase.glb
+Loading resource: res://.godot/imported/sm_archive_bookcase.glb-e7420483fe0bf14bc8aefaa9f4c2fc15.scn remapped: res://.godot/imported/sm_archive_bookcase.glb-e7420483fe0bf14bc8aefaa9f4c2fc15.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_bookcase.glb' remapped 'res://art/meshes/archive_kit/sm_archive_bookcase.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_bookcase.tscn' remapped 'res://worlds/archive/modules/archive_bookcase.tscn' at thread 2
+Completed load for: 'res://worlds/archive/wing01_books.tscn' remapped 'res://worlds/archive/wing01_books.tscn' at thread 2
+Loading resource: res://worlds/archive/modules/archive_rug.tscn remapped: res://worlds/archive/modules/archive_rug.tscn
+Loading resource: res://art/meshes/archive_kit/sm_archive_rug.glb remapped: res://art/meshes/archive_kit/sm_archive_rug.glb
+Loading resource: res://.godot/imported/sm_archive_rug.glb-8cba8072ab9b642a3630452ad5a0183d.scn remapped: res://.godot/imported/sm_archive_rug.glb-8cba8072ab9b642a3630452ad5a0183d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_archive_rug.glb' remapped 'res://art/meshes/archive_kit/sm_archive_rug.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_rug.tscn' remapped 'res://worlds/archive/modules/archive_rug.tscn' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_starting_lens.glb remapped: res://art/meshes/archive_kit/sm_s01_starting_lens.glb
+Loading resource: res://.godot/imported/sm_s01_starting_lens.glb-8ade46f8d4b44aafa4079a4d51e916a0.scn remapped: res://.godot/imported/sm_s01_starting_lens.glb-8ade46f8d4b44aafa4079a4d51e916a0.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_starting_lens.glb' remapped 'res://art/meshes/archive_kit/sm_s01_starting_lens.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_lens_socket.glb remapped: res://art/meshes/archive_kit/sm_s01_lens_socket.glb
+Loading resource: res://.godot/imported/sm_s01_lens_socket.glb-188dc482e99acfcc032a55181e4c154b.scn remapped: res://.godot/imported/sm_s01_lens_socket.glb-188dc482e99acfcc032a55181e4c154b.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_lens_socket.glb' remapped 'res://art/meshes/archive_kit/sm_s01_lens_socket.glb' at thread 2
+Loading resource: res://worlds/archive/modules/archive_hub_panel.tscn remapped: res://worlds/archive/modules/archive_hub_panel.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s01_panel_base.glb remapped: res://art/meshes/archive_kit/sm_s01_panel_base.glb
+Loading resource: res://.godot/imported/sm_s01_panel_base.glb-8681a4ec7bcfa37eb4662db93ddec067.scn remapped: res://.godot/imported/sm_s01_panel_base.glb-8681a4ec7bcfa37eb4662db93ddec067.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_panel_base.glb' remapped 'res://art/meshes/archive_kit/sm_s01_panel_base.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_panel_cover.glb remapped: res://art/meshes/archive_kit/sm_s01_panel_cover.glb
+Loading resource: res://.godot/imported/sm_s01_panel_cover.glb-b0e046b140a4bb496a1e4202a899a64d.scn remapped: res://.godot/imported/sm_s01_panel_cover.glb-b0e046b140a4bb496a1e4202a899a64d.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_panel_cover.glb' remapped 'res://art/meshes/archive_kit/sm_s01_panel_cover.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_hub_panel.tscn' remapped 'res://worlds/archive/modules/archive_hub_panel.tscn' at thread 2
+Loading resource: res://worlds/archive/modules/archive_hub_lever.tscn remapped: res://worlds/archive/modules/archive_hub_lever.tscn
+Loading resource: res://art/meshes/archive_kit/sm_s01_lever_base.glb remapped: res://art/meshes/archive_kit/sm_s01_lever_base.glb
+Loading resource: res://.godot/imported/sm_s01_lever_base.glb-63e7398c2a5499ac9150a3c08e270f15.scn remapped: res://.godot/imported/sm_s01_lever_base.glb-63e7398c2a5499ac9150a3c08e270f15.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_lever_base.glb' remapped 'res://art/meshes/archive_kit/sm_s01_lever_base.glb' at thread 2
+Loading resource: res://art/meshes/archive_kit/sm_s01_lever_handle.glb remapped: res://art/meshes/archive_kit/sm_s01_lever_handle.glb
+Loading resource: res://.godot/imported/sm_s01_lever_handle.glb-5e1d4adffa4de19eb92fb54455429c33.scn remapped: res://.godot/imported/sm_s01_lever_handle.glb-5e1d4adffa4de19eb92fb54455429c33.scn
+Completed load for: 'res://art/meshes/archive_kit/sm_s01_lever_handle.glb' remapped 'res://art/meshes/archive_kit/sm_s01_lever_handle.glb' at thread 2
+Completed load for: 'res://worlds/archive/modules/archive_hub_lever.tscn' remapped 'res://worlds/archive/modules/archive_hub_lever.tscn' at thread 2
+Completed load for: 'res://worlds/archive/archive_main.tscn' remapped 'res://worlds/archive/archive_main.tscn' at thread 2
+ARCHIVE_PROGRESSION PASS: 118 assertions; real S01 E rays, lens chain, pauseable awakening, same-world transactional progression and physical checkpoint
+WARNING: 1 ObjectDB instance was leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Leaked instance: RefCounted:9223372110724859758 - Reference count: 0
+Hint: Leaked instances typically happen when nodes are removed from the scene tree (with `remove_child()`) but not freed (with `free()` or `queue_free()`).
