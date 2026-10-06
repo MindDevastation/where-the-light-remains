@@ -1,0 +1,53 @@
+{
+  "source": "tools/generate_polished_brass_maps.py",
+  "helper": "tools/generate_material_maps.py",
+  "resolution": 1024,
+  "provenance": "Original analytic/seeded periodic maps; no concept pixels or third-party textures.",
+  "packing": "R=1 reserved AO; G=roughness; B=metallic; +Y tangent normal",
+  "roughness_range": [
+    0.21248368851549854,
+    0.2820967465647863
+  ],
+  "metallic": 0.98,
+  "maps": [
+    {
+      "role": "albedo",
+      "file": "t_polished_brass_albedo.png",
+      "sha256": "5ff3330e944eb2faeb46380bbddc8d53b7ec88bb7e0ccae39e47b20de414b517",
+      "bytes": 554161,
+      "wrap_mean_8bit": 0.6344,
+      "adjacent_mean_8bit": 0.4766,
+      "mean_rgb_8bit": [
+        178.2273349761963,
+        134.87787246704102,
+        71.12762451171875
+      ]
+    },
+    {
+      "role": "normal",
+      "file": "t_polished_brass_normal.png",
+      "sha256": "11c5e04949d62f1b07b42863503ff3c0a81c2150d307b0bd39176ddc84dd98e2",
+      "bytes": 394382,
+      "wrap_mean_8bit": 0.207,
+      "adjacent_mean_8bit": 0.1992,
+      "mean_rgb_8bit": [
+        127.49990272521973,
+        127.50001049041748,
+        255.0
+      ]
+    },
+    {
+      "role": "orm",
+      "file": "t_polished_brass_orm.png",
+      "sha256": "c28ed3ca62221445882c2b995ab66a92781790ca2c23bc671ecad57a62988807",
+      "bytes": 291480,
+      "wrap_mean_8bit": 0.5202,
+      "adjacent_mean_8bit": 0.3151,
+      "mean_rgb_8bit": [
+        255.0,
+        60.30250358581543,
+        250.0
+      ]
+    }
+  ]
+}

@@ -1,7 +1,8 @@
-[gd_scene load_steps=102 format=3]
+[gd_scene load_steps=103 format=3]
 
 [ext_resource type="Script" path="res://art/vfx/archive_inspect_glow.gd" id="InspectGlow"]
 [ext_resource type="Material" path="res://art/materials/m_archive_inspect_glow.tres" id="InspectWash"]
+[ext_resource type="Material" path="res://art/materials/m_polished_brass.tres" id="PolishedBrass"]
 
 [ext_resource type="PackedScene" path="res://art/vfx/archive_dust_motes.tscn" id="DustMotes"]
 
@@ -841,13 +842,13 @@ omni_range = 5.5
 [node name="OuterRing" type="MeshInstance3D" parent="Hub/Astrolabe"]
 rotation_degrees = Vector3(55, 0, 25)
 mesh = SubResource("AstrolabeRing")
-material_override = SubResource("Metal")
+material_override = ExtResource("PolishedBrass")
 
 [node name="InnerRing" type="MeshInstance3D" parent="Hub/Astrolabe"]
 rotation_degrees = Vector3(-30, 0, -20)
 scale = Vector3(0.8, 0.8, 0.8)
 mesh = SubResource("AstrolabeRing")
-material_override = SubResource("Metal")
+material_override = ExtResource("PolishedBrass")
 
 [node name="LightMarker" type="MeshInstance3D" parent="Hub/Astrolabe"]
 position = Vector3(0.85, 0.15, 0)
