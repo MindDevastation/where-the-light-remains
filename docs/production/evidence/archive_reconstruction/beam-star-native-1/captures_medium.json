@@ -1,0 +1,171 @@
+{
+  "captures": [
+    {
+      "draw_calls": 39,
+      "file": "beam_cold_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_cold",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048
+    },
+    {
+      "draw_calls": 39,
+      "file": "beam_partial_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_partial",
+      "segments": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 35138048
+    },
+    {
+      "draw_calls": 40,
+      "file": "beam_aligned_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "beam_aligned",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.935520052909851,
+      "star_visible": true,
+      "texture_bytes": 35138048
+    },
+    {
+      "draw_calls": 29,
+      "file": "star_close_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "star_close",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.859060943126678,
+      "star_visible": true,
+      "texture_bytes": 35138048
+    },
+    {
+      "draw_calls": 24,
+      "file": "focus_broad_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "focus_broad",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.824286758899689,
+      "star_visible": true,
+      "texture_bytes": 35138048
+    },
+    {
+      "draw_calls": 27,
+      "file": "focus_adjusted_medium.png",
+      "focus_x": 0.639999985694885,
+      "hearth_visible": false,
+      "name": "focus_adjusted",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.91180294752121,
+      "star_visible": true,
+      "texture_bytes": 35138048
+    },
+    {
+      "draw_calls": 41,
+      "file": "beam_warm_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "beam_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.996627688407898,
+      "star_visible": true,
+      "texture_bytes": 35138048
+    },
+    {
+      "draw_calls": 19,
+      "file": "beam_hearth_warm_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "beam_hearth_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.976605474948883,
+      "star_visible": true,
+      "texture_bytes": 35138048
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "beam_star",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}
