@@ -1,3 +1,37 @@
+# Latest recovery boundary — 2026-10-06 isolated ceiling sample completed
+
+Recover the newest remote tip of
+`feature/04-archive-gameplay/checkpoints-2026-10-04`, with source/push receipts
+in `evidence/checkpoints/development.jsonl`. This continuation began at
+`445ce0306ec8e4411a52e835422445bbd332dcab`. The newly supplied protected credential
+passed native GitHub owner/write checks, Git push and actual LFS upload. It is
+configured outside the repository; no raw secret is committed or put into
+long-term memory. Environment replacement may remove that private configuration.
+
+Original ceiling source provides 10/12 m rib variants and upper transition:
+6824 triangles / nine reused material surfaces. The isolated fixture preserves
+all 347 prior game source hashes and is not loaded by the shipping room/route.
+Current evidence: authoring-2, LFS-upload-2/retrieval-2, headless-3, native-2 and
+`ceiling-acceptance-1`. See `WING01_CEILING_ACCEPTANCE.md` for full filenames.
+Retrieved-source reopen, retrieved cache-free import and actual 50-assertion
+capsule/geometry/state fixture pass, as does normal startup. All eight corrected
+Low/Medium player views were inspected and protected save slots are unchanged.
+
+The first native candidate had coincident spring-belt/stone underside planes;
+the revised belt is 0.07 m lower and the defect is absent. Earlier failed test
+approach and retrieved-copy postprocessing errors are retained with their actual
+scope. WIP `2556a22a1bb1e7d77455cb62f9fd0659eb780bdd` / receipt
+`af990f4e685225fb66cb3afe6ec08fa771fa985d` preserve the corrected assets and reviews.
+The later stable source and receipt identities are in the native checkpoint log;
+always recover its newest independently verified remote branch tip.
+
+Next: intermediate ribs and curved roof panel/sky coverage, then dimensional/
+visual review before shipping-room integration. Crossed ribs alone are not a
+closed dome. Full ARCH-007/world art/VS1, gallery art, audio and target hardware
+remain open. No main/history rewrite, S03 or bulk production acceptance.
+
+---
+
 # Latest recovery boundary — 2026-10-06 Hearth Flame completed
 
 Recover the newest remote working branch

@@ -1,4 +1,4 @@
-# Next room art block — upper structure after Hearth Flame
+# Next room art block — dome coverage after isolated rib sample
 
 Recover the newest remote working-branch checkpoint, with its exact source and
 push receipts in `evidence/checkpoints/development.jsonl`. The former network
@@ -30,17 +30,21 @@ assertions, normal startup and ten inspected Low/Medium views. This supplies
 static S02-002/004 model coverage; bounded Flame VFX now passes 161 assertions and ten inspected views; beam/Star
 VFX remains open. See `WING01_HEARTH_FLAME.md`.
 
-Actual ceiling inputs are now measured and inspected in `WING01_CEILING_INPUTS.md`
-and `ceiling-inputs-1`. This does not author or approve a roof. Workspace
-maintenance removed the protected write credential; current native push lacks
-authentication. Existing models download; code/evidence connector publication
-works. Restore new LFS write capability before publishing Blender/GLB variants.
+The ceiling input audit in `WING01_CEILING_INPUTS.md` now has a dimensioned
+construction sample: `WING01_CEILING_SAMPLE.md` / `wing01_ceiling_sample.json`.
+Two original 10/12 m ribs and a separate 4..5.5 m upper transition/corner infill
+pass bounded source, actual LFS upload/independent retrieval, imported geometry,
+50 actual capsule/anchor/state assertions and eight inspected Low/Medium views.
+See `WING01_CEILING_ACCEPTANCE.md` and `ceiling-acceptance-1` for current scope.
+The former missing-credential blocker is superseded by the owner's new protected
+credential and successful native GitHub/LFS transport. No secret is in Git.
 
-Next: adapt ARCH-007's two ceiling/rib variants to the preserved 10 x 12 m room.
-The six pinned Wing I room references show a tall dome/upper gallery; they do
-not authorize an invented low stone barrel roof. Preserve gameplay footprint,
-portal clearances and existing higher safety guards. Record a bounded adaptation
-brief against those references before authoring source/export variants.
+This stage appears only in an isolated fixture. All 347 prior shipping game
+source identities still match; gameplay/collision and the shipping room remain
+unchanged. Next: resolve intermediate meridian ribs and curved panel/sky coverage
+against the six pinned Wing I v2 views, then assess the sample's dimensions and
+visual fit before integration. The two crossed ribs are not a completed dome or
+full ARCH-007 approval. Upper gallery art does not authorize new walking routes.
 
 Full room art/VS1, authored audio selection/mix and physical target GPU remain
 open. Do not stretch accepted modules or begin S03/bulk production. Repeat

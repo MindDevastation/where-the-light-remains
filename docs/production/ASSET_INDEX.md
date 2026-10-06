@@ -226,3 +226,20 @@ assertions and ten inspected Low/Medium captures pass without warnings.
 Ceiling/ribs and final beam/Star, full art/VS1/audio/hardware remain open.
 New LFS writes currently require credential restoration; existing downloads and
 code/evidence connector checkpoints work after workspace maintenance.
+
+
+## Isolated ceiling construction sample — 2026-10-06
+
+| Requirement | Original source/runtime | Accepted scope |
+|---|---|---|
+| ARCH-007 variants | `wing01_ceiling_sample.blend`; `sm_wing01_ceiling_rib_10m.glb` / `sm_wing01_ceiling_rib_12m.glb` | Two fixed spans, 2568 triangles each; script-free wrappers and connection anchors |
+| Supporting upper transition | Same source; `sm_wing01_ceiling_transition.glb` | 1688 triangles; wall-top supports/panels, rectangle-to-ellipse corner infill, spring belt and shared collar |
+
+Bounded technical sample PASS: 6824 triangles / nine shared Stone/Iron/Brass
+surfaces, actual four-object LFS upload and independent empty-store retrieval,
+retrieved Blender reopen/cache-free import/50 capsule/anchor/state assertions,
+startup and eight inspected Low/Medium captures. The first native rim defect is
+retained; corrected source separates coplanar iron/stone underside planes.
+See `WING01_CEILING_ACCEPTANCE.md` and `ceiling-acceptance-1`. Shipping room and
+all 347 previous game source IDs are unchanged. Curved dome infill/sky, remaining
+ribs/gallery, full ARCH-007 integration/world art/VS1 and target GPU remain open.
