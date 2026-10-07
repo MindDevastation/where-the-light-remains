@@ -559,9 +559,13 @@
       "variants": "1 tiling",
       "canonical_notes": "Raid/night variants",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface.",
-      "evidence_paths": []
+      "status": "PARTIAL",
+      "finding": "One original mapped shared cool/dark-stone master with deterministic source and isolated native Low/Medium specimens validated:66 fresh assertions and8 individually inspected frames. No shipping assignment; final S00 integration and complete scene/style remain open.",
+      "evidence_paths": [
+        "docs/production/COOL_DARK_STONE_SOURCE_READINESS.md",
+        "game/art/materials/m_cool_dark_stone.tres",
+        "tools/generate_cool_dark_stone_maps.py"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -2963,12 +2967,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-06T23:21:57.360294+00:00",
-  "latest_delta": "MAT-002 one-master requirement accepted; current core interface audit measured. ARCH-011 owner A/B pending; full hero and VS1 OPEN.",
+  "updated_at": "2026-10-07T11:01:01.500381+00:00",
+  "latest_delta": "MAT-005 source/specimen candidate validated but unbound; PARTIAL only. MAT-002 master accepted. ARCH-011 owner decision/full VS1 OPEN.",
   "vs1_counts": {
     "ACCEPTED": 26,
-    "PARTIAL": 40,
-    "MISSING": 11
+    "PARTIAL": 41,
+    "MISSING": 10
   },
-  "publication_status": "Current MAT-002 candidate WIP2bec7cd remote verified. Resolve final production STABLE and receipt HEAD from continuation_20261007.jsonl; prior inspect STABLE2730e0a preserved."
+  "publication_status": "Recovery base8db32c5 and last integrated production STABLE5184c48 verified. Resolve MAT-005 source-only checkpoint and latest receipt HEAD from continuation_20261007.jsonl."
 }

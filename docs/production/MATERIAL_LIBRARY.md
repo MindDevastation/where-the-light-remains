@@ -156,3 +156,13 @@ README. Historical six-family logs above retain their original scope.
 The material board establishes surface behavior and palette. It cannot establish
 Warcraft geometry/craftsmanship, navigation, puzzle readability, collision or
 representative GTX1060 performance in unbuilt environments.
+
+## MAT-005 unbound source extension — 2026-10-07
+
+The original shared masters/maps are preserved. New m_cool_dark_stone.tres and
+three original periodic1024 PNGs use tools/generate_cool_dark_stone_maps.py.
+COOL_DARK_STONE_SOURCE_READINESS.md records isolated native source/specimen PASS,
+66 assertions/8 images; shipping assignment absent, row PARTIAL. The original
+20-map manifest is unchanged; separate cool_dark_stone_manifest.json seals the
+new3 maps. The previously accepted polished-brass extension has its own3-map
+manifest and acceptance. No fixture lights or specimen geometry ship.

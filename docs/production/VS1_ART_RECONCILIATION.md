@@ -6,7 +6,7 @@ baseline receipt remains evidence/archive_reconstruction/vs1-reconciliation-2026
 it is not rerun or relabeled. All185 canonical rows remain in the JSON; the77
 VS1-related rows are shown below. Counts are scope classifications, not percent completion.
 
-Current26 ACCEPTED/40 PARTIAL/11 MISSING. MAT-002 now supplies one distinct
+Current26 ACCEPTED/41 PARTIAL/10 MISSING. MAT-005 source/specimens are PARTIAL; shipping assignment remains absent. MAT-002 now supplies one distinct
 mapped polished-brass master in bounded current integration. VFX-006/007 remain
 PARTIAL after their current native dust/inspect acceptance. Full hero, style,
 owner gallery and physical target GPU remain OPEN; GATE-VS1 OPEN/S03 blocked.
@@ -46,7 +46,7 @@ recorded in evidence/checkpoints/continuation_20261007.jsonl.
 | MAT-002 | ACCEPTED | Polished Brass hero; One distinct reusable original mapped polished-brass StandardMaterial3D master accepted on two existing S01 rings; deterministic3-map source,301 final scoped assertion executions and20 individually inspected native frames. Full authored hero and room style/future-stage adoption remain separate open scopes. | docs/production/ARCHIVE_POLISHED_BRASS_ACCEPTANCE.md, game/art/materials/m_polished_brass.tres, tools/generate_polished_brass_maps.py |
 | MAT-003 | ACCEPTED | Dark Walnut / warm wood; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_dark_walnut.tres, docs/production/MATERIAL_LIBRARY.md |
 | MAT-004 | ACCEPTED | Warm Stone; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_observatory_stone.tres, docs/production/MATERIAL_LIBRARY.md |
-| MAT-005 | MISSING | Cool/Dark Stone; No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface. |  |
+| MAT-005 | PARTIAL | Cool/Dark Stone; One original mapped shared cool/dark-stone master with deterministic source and isolated native Low/Medium specimens validated:66 fresh assertions and8 individually inspected frames. No shipping assignment; final S00 integration and complete scene/style remain open. | docs/production/COOL_DARK_STONE_SOURCE_READINESS.md, game/art/materials/m_cool_dark_stone.tres, tools/generate_cool_dark_stone_maps.py |
 | MAT-006 | ACCEPTED | Clear Glass; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_clear_glass.tres, docs/production/MATERIAL_LIBRARY.md |
 | MAT-009 | ACCEPTED | Parchment / paper; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_archive_parchment.tres, docs/production/MATERIAL_LIBRARY.md |
 | MAT-010 | ACCEPTED | Wine / plum textile; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_crimson_textile.tres, docs/production/MATERIAL_LIBRARY.md |

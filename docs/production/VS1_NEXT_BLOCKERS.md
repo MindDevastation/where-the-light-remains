@@ -1,4 +1,31 @@
-# Current continuation — MAT-002 and core interface audit, 2026-10-07
+# Current native source continuation — MAT-005, 2026-10-07
+
+Recovered exact remote8db32c5 / integrated production STABLE5184c48 after scratch
+replacement. Pinned Godot4.7.2 and verified graphics packages restored; accepted
+preflight/art/gameplay suites not replayed. COOL_DARK_STONE_SOURCE_READINESS.md:
+one unbound shared MAT-005 master,3 original periodic1024 PBR maps, deterministic
+fresh regeneration,66 scoped native specimen assertions,8 individually inspected
+frames, protected primary/backup PASS. No shipping scene/accepted source changed.
+Prior identities remain accepted proof; current47-GLB payload/use or Blender
+reopen is not freshly claimed. Ordinary Git only, zero new LFS family.
+
+MAT-005 is PARTIAL until measured S00 exterior/backdrop assignment and affected
+shipping tests.26 ACCEPTED/41 PARTIAL/10 MISSING among77;185 canonical rows stay.
+Resolve source-only STABLE/latest receipt HEAD via continuation_20261007.jsonl;
+last integrated runtime acceptance remains5184c48. Next independent native work:
+MAT-011 linen source/specimens; shipping dressing placement remains separate.
+
+ARCH-011 remains MISSING/required_for_vs1 pending explicit owner A/B. Full hero/
+architecture/backdrop/carrier/channels/emblems, remaining materials/trims/decals/
+style/dressing, authored audio/mix/owner first-note/motif, full gallery and physical
+GTX1060-equivalent1080p60 remain OPEN. GATE-VS1 OPEN; S03 blocked. Planning estimate
+25–30%, low confidence,3/16 playable stages unchanged. Active supervisor600s/max900s;
+stop owned jobs at session end. Current source stage does not accept unused
+materials as shipping art.
+
+---
+
+# Historical MAT-002 continuation — prior integrated STABLE, 2026-10-07
 
 Recovered actual remote b695dddf / production STABLE2730e0a. Core/material WIP
 2bec7cd is independently remote verified. Resolve final production STABLE and

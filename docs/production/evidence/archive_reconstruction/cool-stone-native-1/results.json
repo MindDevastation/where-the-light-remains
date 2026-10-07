@@ -1,0 +1,319 @@
+{
+  "status": "PASS",
+  "started_at": "2026-10-07T10:57:03.857738+00:00",
+  "scope": "Unbound isolated material specimens; no gameplay, shipping assignment, fresh old-art/GLB test, target GPU or full VS1 acceptance",
+  "source_hashes": {
+    "game/tests/cool_dark_stone_review.gd": "506c166599158a320ccdb66cd43f237d15b63d2412e82be9ec79f2f8773010c6",
+    "tools/generate_cool_dark_stone_maps.py": "a8d8a7b3691ac3a2a29b752d2f28dcb97406a2ee43c152a6a185e58f505ead8d",
+    "tools/generate_material_maps.py": "beff054a7dc882ebcc3b3aed79360ebd9d7679b1cefdc94a79224442a701bf85",
+    "tools/validate_cool_dark_stone.py": "294cb5934b020c8a92ac7c5023369980e99f788602332c409f16248c8b7f9e4d",
+    "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205",
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "game/autoload/settings_manager.gd": "17c1499f08bcedca5778060102c316428d9ba363d73e4cea7b603ed90ac1fd44",
+    "docs/production/COOL_DARK_STONE.md": "d965f05143a48622493be2fc7554cdf8466fcf9d65b8423a91242755fb8a5da4",
+    "game/art/materials/m_cool_dark_stone.tres": "fdfd12368163e5db95a9c698b4e7c06ef9d4c5ae1ccdd5d401d13e5d2883df55",
+    "game/art/textures/material_library/t_cool_dark_stone_albedo.png": "8112a30a6897eb2e089ecb8c5d9d50c20e6f83a666e9026732733734a676d331",
+    "game/art/textures/material_library/t_cool_dark_stone_albedo.png.import": "c909516c76906c1512ebc700a26f07ddb4aad29616a680cdb83ab49862089137",
+    "game/art/textures/material_library/t_cool_dark_stone_normal.png": "c8dfa925a7524409ac784665c99de7cd87a6339d2bb3e3260b74d03eef042f15",
+    "game/art/textures/material_library/t_cool_dark_stone_normal.png.import": "44adbf5e8378185b86a8a5713295f2419e153e3b2f9960e0217534a43ea6e2ac",
+    "game/art/textures/material_library/t_cool_dark_stone_orm.png": "79c9fc35170064ec3e4cd44658227197c5bb1e0dc99dca6d09e02a4ebbedc6b7",
+    "game/art/textures/material_library/t_cool_dark_stone_orm.png.import": "415c1c98b4319559991da547efcccafcc2e9027fd9c266096ca38b8c3f48c4d9",
+    "game/art/materials/m_observatory_stone.tres": "7198490b91e871a015e02ce2bf4ce1bed240d3db4391c6aa42145cf82d368d5d",
+    "game/art/textures/material_library/t_observatory_stone_albedo.png": "70cdce0111813bb7d8a5cb3b19def99ee9723e5ee96fc1c27139d450159be861",
+    "game/art/textures/material_library/t_observatory_stone_albedo.png.import": "604a8595f27cadb28e0702adda5c0bb3c9de29f1a8579ac9002a44d0ab52959b",
+    "game/art/textures/material_library/t_observatory_stone_normal.png": "af0b93b7295d1ed3f8409345beaa84135236f76b35fd7e7f8f7cb8b3c774bc52",
+    "game/art/textures/material_library/t_observatory_stone_normal.png.import": "b5caad21a620b0797f69304a28e5e6d763f791246dc6e5f63a850e70036e0bfe",
+    "game/art/textures/material_library/t_observatory_stone_orm.png": "c37020fe7daea97898afef9ee6322962d77df15bc1430d4a2195118eecb1332b",
+    "game/art/textures/material_library/t_observatory_stone_orm.png.import": "8fe80700f737f21703c69a245d37e80d44774c3c9a71ba2d999c85494131a577",
+    "game/art/textures/material_library/cool_dark_stone_manifest.json": "1a7aa769265012129e74ff8dd36baee294375d849434aa4f9c246a04c2ad186f",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/isolated_clean_import.log": "74538653dba35929dda0e444eaa5b62f183ef9a55a9560f8cbe8a9ce0b7f4fe2",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/low.log": "2354d3a0fad9c32b8a87917caa8b7781334bff05579340d8288e1ebbf3aaa344",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/fresh_map_regeneration.log": "81731f0f195b2663c16def881abd24e6bd598f1bcd4bd97978a3f69c1293013b",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/captures_medium.json": "8724fc8eaef9d4add8581842fc9a21f7527d7533de928762f374335d5f928037",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/stone_tiles_medium.png": "48b7f8d621f24010654c8ef99f89dd3fd4d2b47deef9ec1fc9b606c3f305aaba",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/stone_neutral_low.png": "21443fdd31ae2a7f0f954d8fb0d9f971d5a1f55893a63deddbbb230fde611050",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/stone_cool_medium.png": "e78c2a7e8607902f4c2ead17c267db092612ed0a94a0397d540a4264c3bb9661",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/medium.log": "d5b407b56e6632fe7727ce14847f31d409a711f56b3e2cac88fd0111f2a84821",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/stone_cool_low.png": "a16e986871e5f2f40b8d9241ebc8ab1522dd6d9e0c9b3da89139b49df86f989b",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/stone_warm_low.png": "86b39cbca652471e71adc287f4904dc21f9c526a080e77ff92c998a6a4144e5d",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/captures_low.json": "82dd56f0661374fb031771fc3107ff4372957c995d089412cf8dacb7da052ba4",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/stone_tiles_low.png": "db6ff0962c1bf670796f30d9c852847bb1aa22d86c06e1b88dc46f66a8fbda99",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/stone_warm_medium.png": "72e110238ba5526db8fdf150e6f30d1b2f1d069e6b8987204d168e652855d974",
+    "docs/production/evidence/archive_reconstruction/cool-stone-native-1/stone_neutral_medium.png": "f95515261a6898ac829027d99498580a51a4c954e440e2523f588d7f6be45992"
+  },
+  "records": [
+    {
+      "name": "fresh_map_regeneration",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-cool-stone-awbt8v0r/tools/generate_cool_dark_stone_maps.py",
+        "--output",
+        "/tmp/wlr-cool-stone-awbt8v0r/regenerated"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "81731f0f195b2663c16def881abd24e6bd598f1bcd4bd97978a3f69c1293013b"
+    },
+    {
+      "name": "isolated_clean_import",
+      "command": [
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "game",
+        "--editor",
+        "--import"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "74538653dba35929dda0e444eaa5b62f183ef9a55a9560f8cbe8a9ce0b7f4fe2"
+    },
+    {
+      "name": "low",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-cool-stone-awbt8v0r/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+        "--godot",
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "100",
+        "--expect",
+        "COOL_DARK_STONE_REVIEW PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "960x540",
+        "--script",
+        "res://tests/cool_dark_stone_review.gd",
+        "--",
+        "--review-output=/workspace/scratch/0e91a73a58d2/repo/docs/production/evidence/archive_reconstruction/cool-stone-native-1",
+        "--quality=low"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "2354d3a0fad9c32b8a87917caa8b7781334bff05579340d8288e1ebbf3aaa344"
+    },
+    {
+      "name": "medium",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-cool-stone-awbt8v0r/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+        "--godot",
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "100",
+        "--expect",
+        "COOL_DARK_STONE_REVIEW PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "960x540",
+        "--script",
+        "res://tests/cool_dark_stone_review.gd",
+        "--",
+        "--review-output=/workspace/scratch/0e91a73a58d2/repo/docs/production/evidence/archive_reconstruction/cool-stone-native-1",
+        "--quality=medium"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "d5b407b56e6632fe7727ce14847f31d409a711f56b3e2cac88fd0111f2a84821"
+    }
+  ],
+  "captures": [
+    {
+      "assertions": 33,
+      "captures": [
+        {
+          "draw_calls": 3,
+          "file": "stone_neutral_low.png",
+          "lighting": "neutral",
+          "materials": [
+            "res://art/materials/m_cool_dark_stone.tres",
+            "res://art/materials/m_observatory_stone.tres"
+          ],
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "stone_warm_low.png",
+          "lighting": "warm",
+          "materials": [
+            "res://art/materials/m_cool_dark_stone.tres",
+            "res://art/materials/m_observatory_stone.tres"
+          ],
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "stone_cool_low.png",
+          "lighting": "cool",
+          "materials": [
+            "res://art/materials/m_cool_dark_stone.tres",
+            "res://art/materials/m_observatory_stone.tres"
+          ],
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "stone_tiles_low.png",
+          "lighting": "tiles",
+          "materials": [
+            "res://art/materials/m_cool_dark_stone.tres",
+            "res://art/materials/m_observatory_stone.tres"
+          ],
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 4
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "quality": "low",
+      "renderer": "forward_plus",
+      "scope": "unbound_material_specimens",
+      "status": "CAPTURED_FOR_REVIEW"
+    },
+    {
+      "assertions": 33,
+      "captures": [
+        {
+          "draw_calls": 3,
+          "file": "stone_neutral_medium.png",
+          "lighting": "neutral",
+          "materials": [
+            "res://art/materials/m_cool_dark_stone.tres",
+            "res://art/materials/m_observatory_stone.tres"
+          ],
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "stone_warm_medium.png",
+          "lighting": "warm",
+          "materials": [
+            "res://art/materials/m_cool_dark_stone.tres",
+            "res://art/materials/m_observatory_stone.tres"
+          ],
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "stone_cool_medium.png",
+          "lighting": "cool",
+          "materials": [
+            "res://art/materials/m_cool_dark_stone.tres",
+            "res://art/materials/m_observatory_stone.tres"
+          ],
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "stone_tiles_medium.png",
+          "lighting": "tiles",
+          "materials": [
+            "res://art/materials/m_cool_dark_stone.tres",
+            "res://art/materials/m_observatory_stone.tres"
+          ],
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 4
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "quality": "medium",
+      "renderer": "forward_plus",
+      "scope": "unbound_material_specimens",
+      "status": "CAPTURED_FOR_REVIEW"
+    }
+  ],
+  "private_fixture_project_sha256": "4dd5ce7f638d16dd6e2877cb82b3bca371ea3a9505fed04e177c684f67e20b91",
+  "fresh_regeneration_files_identical": 4,
+  "private_copy_removed": true,
+  "shipping_assignments_added": 0,
+  "new_lfs_payloads": 0,
+  "finished_at": "2026-10-07T10:57:37.362991+00:00"
+}
