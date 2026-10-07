@@ -1,4 +1,36 @@
-# Current native source continuation — MAT-005, 2026-10-07
+# Current native source continuation — stone and linen, 2026-10-07
+
+Exact recovery8db32c5 followed by remote-verified MAT-005 source STABLEde3860c.
+LINEN_SOURCE_READINESS.md and COOL_DARK_STONE_SOURCE_READINESS.md now record
+2 unbound shared masters,6 original1024 PBR maps, exact fresh regeneration,
+132 scoped native specimen assertion executions and16 individually inspected
+frames. Protected primary/backup PASS; no GameRoot/gameplay/settings/save/route
+loaded or changed. Last integrated runtime production STABLE5184c48 is unchanged.
+Resolve latest source-only STABLE/receipt HEAD in continuation_20261007.jsonl.
+
+MAT-005 and MAT-011 are PARTIAL until their measured S00 surface/S01 neutral-cloth
+actor assignments and affected shipping tests.26 ACCEPTED/42 PARTIAL/9 MISSING
+among77;185 canonical rows preserved, no full baseline replay. Prior193 art/source
+and47 LFS pointer/OID/size identities preserved. Old payload download/use/Blender
+reopen and old accepted suites are not fresh tests in this restored environment.
+Current isolated software native profiles are not shipping/target-GPU acceptance.
+
+Next independent native source scope: MAT-012 leaf/ivy atlas brief and raster/
+alpha/mipmap specimens; no speculative plant placement. A new3D carrier still
+needs editable source and a usable private LFS upload path. Ordinary working-
+branch/LFS publication remains already authorized. ARCH-011 remains MISSING/
+required_for_vs1 pending explicit owner A/B; no walking/collision/canon change.
+
+Full architecture/backdrop/alcove/hero/emblems/channels/carrier, atlas/trims/decals/
+dressing/style, authored audio/mix/owner first-note/motif, full gallery and physical
+GTX1060-equivalent1080p60 remain OPEN. GATE-VS1 OPEN; S03 blocked. Planning25–30%,
+low confidence,3/16 playable stages unchanged. Native source preparation does not
+accept an unused material as shipping art. Supervisor600s/max900s stays owned
+and stops with the active session; previous recorded cadence miss is retained.
+
+---
+
+# Historical first source stage — MAT-005, 2026-10-07
 
 Recovered exact remote8db32c5 / integrated production STABLE5184c48 after scratch
 replacement. Pinned Godot4.7.2 and verified graphics packages restored; accepted

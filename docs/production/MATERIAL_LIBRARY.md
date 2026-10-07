@@ -166,3 +166,11 @@ COOL_DARK_STONE_SOURCE_READINESS.md records isolated native source/specimen PASS
 20-map manifest is unchanged; separate cool_dark_stone_manifest.json seals the
 new3 maps. The previously accepted polished-brass extension has its own3-map
 manifest and acceptance. No fixture lights or specimen geometry ship.
+
+## MAT-011 unbound linen extension — 2026-10-07
+
+New m_linen.tres uses original3-map source tools/generate_linen_maps.py and
+linen_manifest.json. All3 source maps differ from preserved woven_textile maps;
+LINEN_SOURCE_READINESS.md records66 isolated assertions/8 individual native
+images. Material remains unbound/PARTIAL pending the canonical dressing actor.
+Crimson/navy/rug/leather source and material assignments remain unchanged.

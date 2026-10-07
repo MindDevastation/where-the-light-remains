@@ -662,9 +662,13 @@
       "variants": "1 fabric tiling",
       "canonical_notes": "\u0422\u0438\u0445\u0438\u0435 \u0431\u044b\u0442\u043e\u0432\u044b\u0435 \u0434\u0435\u0442\u0430\u043b\u0438",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface.",
-      "evidence_paths": []
+      "status": "PARTIAL",
+      "finding": "One distinct original linen weave master/maps with deterministic source and isolated native Low/Medium specimens validated:66 assertions and8 individually inspected frames. Neutral-fabric dressing carrier/assignment, close-up UV density/folds and shipping S01 style/tests remain open.",
+      "evidence_paths": [
+        "docs/production/LINEN_SOURCE_READINESS.md",
+        "game/art/materials/m_linen.tres",
+        "tools/generate_linen_maps.py"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -2967,12 +2971,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-07T11:01:01.500381+00:00",
-  "latest_delta": "MAT-005 source/specimen candidate validated but unbound; PARTIAL only. MAT-002 master accepted. ARCH-011 owner decision/full VS1 OPEN.",
+  "updated_at": "2026-10-07T11:11:00.046789+00:00",
+  "latest_delta": "MAT-005 and MAT-011 original masters/specimens ready but unbound/PARTIAL. Last integrated runtime STABLE5184c48; ARCH-011 owner/full VS1 remain OPEN.",
   "vs1_counts": {
     "ACCEPTED": 26,
-    "PARTIAL": 41,
-    "MISSING": 10
+    "PARTIAL": 42,
+    "MISSING": 9
   },
-  "publication_status": "Recovery base8db32c5 and last integrated production STABLE5184c48 verified. Resolve MAT-005 source-only checkpoint and latest receipt HEAD from continuation_20261007.jsonl."
+  "publication_status": "MAT-005 source-only STABLEde3860c independently remote verified. Resolve final MAT-011 source-only STABLE/receipt HEAD in continuation_20261007.jsonl; integrated runtime STABLE5184c48 unchanged."
 }
