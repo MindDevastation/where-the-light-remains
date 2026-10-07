@@ -1,0 +1,9 @@
+extends SceneTree
+func _initialize():
+    var b0:=Basis.from_euler(Vector3(55,0,25)*PI/180)
+    print(JSON.stringify({"columns":[[b0.x.x,b0.x.y,b0.x.z],[b0.y.x,b0.y.y,b0.y.z],[b0.z.x,b0.z.y,b0.z.z]]}))
+    var b1:=Basis.from_euler(Vector3(-30,0,-20)*PI/180)
+    print(JSON.stringify({"columns":[[b1.x.x,b1.x.y,b1.x.z],[b1.y.x,b1.y.y,b1.y.z],[b1.z.x,b1.z.y,b1.z.z]]}))
+    var b2:=Basis.from_euler(Vector3(25,0,68)*PI/180)
+    print(JSON.stringify({"columns":[[b2.x.x,b2.x.y,b2.x.z],[b2.y.x,b2.y.y,b2.y.z],[b2.z.x,b2.z.y,b2.z.z]]}))
+    quit()
