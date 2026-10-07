@@ -6,11 +6,11 @@
       "id": "ARCH-001",
       "kind": "MUST",
       "category": "3D / Architecture",
-      "requirement": "\u042d\u043a\u0441\u0442\u0435\u0440\u044c\u0435\u0440 \u0434\u043e\u043c\u0430-\u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u0438 + \u043a\u0443\u043f\u043e\u043b",
+      "requirement": "Экстерьер дома-обсерватории + купол",
       "stages": "0,15",
       "reuse": "R-HUB",
       "variants": "1 master shell + night/dawn states",
-      "canonical_notes": "Custom modular shell; \u0442\u043e\u0442 \u0436\u0435 mesh \u0432 \u043f\u0440\u043e\u043b\u043e\u0433\u0435 \u0438 \u044d\u043f\u0438\u043b\u043e\u0433\u0435",
+      "canonical_notes": "Custom modular shell; тот же mesh в прологе и эпилоге",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "Accepted shared upper drum/dome and eight original two-sided lower wall skins; complete aperture/gate/upper facade infill/future windows/backdrop and Hub floor/hero/dressing still PARTIAL. Five current static arched headers now have bounded ARCH-008 coverage; full shell/rotunda remains PARTIAL.",
@@ -27,11 +27,11 @@
       "id": "ARCH-002",
       "kind": "MUST",
       "category": "3D / Architecture",
-      "requirement": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u0432\u0445\u043e\u0434\u043d\u0430\u044f \u0434\u0432\u0435\u0440\u044c + \u0430\u0440\u043e\u0447\u043d\u044b\u0439 \u043f\u043e\u0440\u0442\u0430\u043b",
+      "requirement": "Главная входная дверь + арочный портал",
       "stages": "0,15",
       "reuse": "R-HUB",
       "variants": "1 set, open/closed",
-      "canonical_notes": "\u041f\u043e\u0432\u0442\u043e\u0440\u044f\u0435\u0442\u0441\u044f \u043a\u0430\u043a \u043a\u043e\u043c\u043f\u043e\u0437\u0438\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u0440\u0438\u0444\u043c\u0430 \u0432\u0445\u043e\u0434/\u0432\u044b\u0445\u043e\u0434",
+      "canonical_notes": "Повторяется как композиционная рифма вход/выход",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "Accepted original timber leaves/lock plus shared front facades and crown; full exterior/upper infill/approach composition remains PARTIAL.",
@@ -46,11 +46,11 @@
       "id": "ARCH-003",
       "kind": "MUST",
       "category": "3D / Architecture",
-      "requirement": "\u0420\u043e\u0442\u043e\u043d\u0434\u0430 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u0438",
-      "stages": "1,10\u201315",
+      "requirement": "Ротонда Центральной обсерватории",
+      "stages": "1,10–15",
       "reuse": "R-HUB",
       "variants": "1 modular room",
-      "canonical_notes": "\u0413\u043b\u0430\u0432\u043d\u044b\u0439 reuse-space \u0444\u0438\u043d\u0430\u043b\u0430",
+      "canonical_notes": "Главный reuse-space финала",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "Accepted upper drum/dome, eight original lower walls and Hub floor with corridor ownership cutout; full portal/gate/infill/future windows/backdrop/hero/dressing remains PARTIAL. Five current static arched headers now have bounded ARCH-008 coverage; full shell/rotunda remains PARTIAL.",
@@ -68,11 +68,11 @@
       "id": "ARCH-004",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u041f\u0440\u044f\u043c\u0430\u044f \u0441\u0442\u0435\u043d\u0430 2\u20134 \u043c",
-      "stages": "1\u20138",
+      "requirement": "Прямая стена 2–4 м",
+      "stages": "1–8",
       "reuse": "R-ARCHIVE",
-      "variants": "2\u20133 \u0440\u0430\u0437\u043c\u0435\u0440\u043e\u0432",
-      "canonical_notes": "\u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 wall kit",
+      "variants": "2–3 размеров",
+      "canonical_notes": "Основной wall kit",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "2/3/4m authored wall family integrated in corridor and Wing I; broader Hub/exterior composition remains open.",
@@ -87,11 +87,11 @@
       "id": "ARCH-005",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u0410\u0440\u043e\u0447\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430 / doorway module",
-      "stages": "1\u20139",
+      "requirement": "Арочная стена / doorway module",
+      "stages": "1–9",
       "reuse": "R-ARCHIVE",
-      "variants": "2 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430",
-      "canonical_notes": "\u0415\u0434\u0438\u043d\u044b\u0439 shape language",
+      "variants": "2 варианта",
+      "canonical_notes": "Единый shape language",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "One original arch is accepted and instanced; second required global variant absent.",
@@ -104,14 +104,14 @@
       "id": "ARCH-006",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u041f\u043e\u043b / \u043f\u043b\u0438\u0442\u043e\u0447\u043d\u044b\u0439 \u043c\u043e\u0434\u0443\u043b\u044c",
-      "stages": "1\u20139",
+      "requirement": "Пол / плиточный модуль",
+      "stages": "1–9",
       "reuse": "R-ARCHIVE",
-      "variants": "2\u20133 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430",
-      "canonical_notes": "\u041c\u043e\u0436\u043d\u043e tint/material-swap \u043f\u043e\u043a\u0440\u044b\u043b\u044c\u043d\u043e",
+      "variants": "2–3 варианта",
+      "canonical_notes": "Можно tint/material-swap покрыльно",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Accepted Wing I floor module/corridor/room and unique Hub paving skin with retained cylinder/corridor notch; full global2\u20133 reusable variant coverage not claimed.",
+      "finding": "Accepted Wing I floor module/corridor/room and unique Hub paving skin with retained cylinder/corridor notch; full global2–3 reusable variant coverage not claimed.",
       "evidence_paths": [
         "game/worlds/archive/wing01_room_floor.tscn",
         "docs/production/S01_HUB_FLOOR_ACCEPTANCE.md"
@@ -122,11 +122,11 @@
       "id": "ARCH-007",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u041f\u043e\u0442\u043e\u043b\u043e\u0447\u043d\u0430\u044f \u0430\u0440\u043a\u0430 / \u0440\u0435\u0431\u0440\u043e / vault segment",
-      "stages": "1\u20138",
+      "requirement": "Потолочная арка / ребро / vault segment",
+      "stages": "1–8",
       "reuse": "R-ARCHIVE",
-      "variants": "2 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430",
-      "canonical_notes": "\u041f\u043e\u0432\u0442\u043e\u0440\u044f\u0435\u043c\u0430\u044f \u0432\u0435\u0440\u0445\u043d\u044f\u044f \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0430",
+      "variants": "2 варианта",
+      "canonical_notes": "Повторяемая верхняя структура",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "10m/12m ribs, transitions and dome integrated with bounded roof evidence; not Hub/exterior ceiling approval.",
@@ -140,10 +140,10 @@
       "id": "ARCH-008",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u0410\u0440\u043e\u0447\u043d\u043e\u0435 \u043e\u043a\u043d\u043e + \u0441\u0442\u0435\u043a\u043b\u043e",
+      "requirement": "Арочное окно + стекло",
       "stages": "0,1,7,8,15",
       "reuse": "R-ARCHIVE",
-      "variants": "1\u20132 \u0440\u0430\u0437\u043c\u0435\u0440\u0430",
+      "variants": "1–2 размера",
       "canonical_notes": "Night/dawn lighting reuse",
       "required_for_vs1": true,
       "status": "PARTIAL",
@@ -158,11 +158,11 @@
       "id": "ARCH-009",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u041a\u043e\u043b\u043e\u043d\u043d\u0430 / \u043f\u0438\u043b\u044f\u0441\u0442\u0440\u0430",
-      "stages": "1\u20138",
+      "requirement": "Колонна / пилястра",
+      "stages": "1–8",
       "reuse": "R-ARCHIVE",
-      "variants": "2 \u0432\u044b\u0441\u043e\u0442\u044b",
-      "canonical_notes": "\u0412 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435 cover/decor \u0432 \u043f\u0430\u043c\u044f\u0442\u0438",
+      "variants": "2 высоты",
+      "canonical_notes": "В том числе cover/decor в памяти",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "One 4m pier accepted; second global height absent.",
@@ -175,11 +175,11 @@
       "id": "ARCH-010",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u041f\u044c\u0435\u0434\u0435\u0441\u0442\u0430\u043b / pedestal family",
-      "stages": "1\u20138,10\u201311",
+      "requirement": "Пьедестал / pedestal family",
+      "stages": "1–8,10–11",
       "reuse": "R-ARCHIVE",
-      "variants": "3 \u0432\u044b\u0441\u043e\u0442\u044b",
-      "canonical_notes": "\u0414\u043b\u044f hero props, sigils, optics",
+      "variants": "3 высоты",
+      "canonical_notes": "Для hero props, sigils, optics",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "Optical stepped plinth and Hearth pedestal accepted; full 3-height standalone family absent.",
@@ -193,11 +193,11 @@
       "id": "ARCH-011",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u041a\u043e\u0440\u043e\u0442\u043a\u0430\u044f \u043b\u0435\u0441\u0442\u043d\u0438\u0446\u0430 / \u0441\u0442\u0443\u043f\u0435\u043d\u0438",
-      "stages": "1\u20139",
+      "requirement": "Короткая лестница / ступени",
+      "stages": "1–9",
       "reuse": "R-ARCHIVE",
-      "variants": "2 \u0448\u0438\u0440\u0438\u043d\u044b",
-      "canonical_notes": "\u0411\u0435\u0437 \u0441\u043b\u043e\u0436\u043d\u043e\u0433\u043e \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0438\u043d\u0433\u0430",
+      "variants": "2 ширины",
+      "canonical_notes": "Без сложного платформинга",
       "required_for_vs1": true,
       "status": "MISSING",
       "finding": "Two-width traversable stair family remains missing. Current S01/S02 floors are flatY0; no canonical stair placement/elevation brief or step-up contract. Dependent asset production paused at a layout decision; no unused future-stage or decorative substitute counted.",
@@ -211,7 +211,7 @@
       "id": "ARCH-012",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u0411\u0430\u043b\u044e\u0441\u0442\u0440\u0430\u0434\u0430 / railing",
+      "requirement": "Балюстрада / railing",
       "stages": "0,1,9,15",
       "reuse": "R-ARCHIVE",
       "variants": "1 straight + corner",
@@ -230,11 +230,11 @@
       "id": "ARCH-013",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u041d\u0438\u0448\u0430 / alcove / reveal recess",
-      "stages": "1\u20138",
+      "requirement": "Ниша / alcove / reveal recess",
+      "stages": "1–8",
       "reuse": "R-ARCHIVE",
-      "variants": "1\u20132 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430",
-      "canonical_notes": "\u0422\u0430\u043a\u0436\u0435 \u043f\u043e\u0434 optional secrets",
+      "variants": "1–2 варианта",
+      "canonical_notes": "Также под optional secrets",
       "required_for_vs1": true,
       "status": "MISSING",
       "finding": "No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets.",
@@ -248,11 +248,11 @@
       "id": "ARCH-014",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u0414\u0432\u0435\u0440\u044c/\u0432\u043e\u0440\u043e\u0442\u0430 \u043a\u0440\u044b\u043b\u0430",
-      "stages": "1\u20138",
+      "requirement": "Дверь/ворота крыла",
+      "stages": "1–8",
       "reuse": "R-ARCHIVE",
       "variants": "5 instances, shared mesh",
-      "canonical_notes": "\u0420\u0430\u0437\u043b\u0438\u0447\u0430\u044e\u0442\u0441\u044f \u0441\u0432\u0435\u0442\u043e\u043c/\u044d\u043c\u0431\u043b\u0435\u043c\u043e\u0439, \u043d\u0435 \u0433\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u0435\u0439",
+      "canonical_notes": "Различаются светом/эмблемой, не геометрией",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "Original shared3596tri timber/iron/brass mesh and five state-owned instances pass bounded local acceptance. Full per-route emblem/light and Hub composition remain open; gate publication resolved at3d81acb with explicit owner authorization; subsequent lighting and fanlight coverage does not close full route emblems/composition.",
@@ -267,11 +267,11 @@
       "id": "ARCH-015",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u0421\u0432\u0435\u0442\u043e\u0432\u043e\u0439 \u043a\u0430\u043d\u0430\u043b \u043f\u043e\u043b\u0430/\u0441\u0442\u0435\u043d\u044b",
-      "stages": "1\u201315",
+      "requirement": "Световой канал пола/стены",
+      "stages": "1–15",
       "reuse": "R-ARCHIVE",
       "variants": "Spline/mesh system",
-      "canonical_notes": "\u041e\u0434\u0438\u043d reusable system \u0441 tint/state",
+      "canonical_notes": "Один reusable system с tint/state",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "Existing route ownership/pulses accepted; Hub strip is still a BoxMesh, no authored channel trim. Reusable S02 beam does not close this row.",
@@ -285,8 +285,8 @@
       "id": "ARCH-016",
       "kind": "MUST",
       "category": "3D / Module",
-      "requirement": "\u041a\u043e\u0440\u0438\u0434\u043e\u0440\u043d\u044b\u0439 \u043f\u0435\u0440\u0435\u0445\u043e\u0434 / threshold",
-      "stages": "1\u20139",
+      "requirement": "Коридорный переход / threshold",
+      "stages": "1–9",
       "reuse": "R-ARCHIVE",
       "variants": "1 modular set",
       "canonical_notes": "Seamless transitions",
@@ -302,7 +302,7 @@
       "id": "ARCH-017",
       "kind": "MUST",
       "category": "3D / Exterior",
-      "requirement": "\u041e\u043a\u0440\u0443\u0436\u0430\u044e\u0449\u0438\u0439 terrain / distant mountains-water silhouette",
+      "requirement": "Окружающий terrain / distant mountains-water silhouette",
       "stages": "0,9,15",
       "reuse": "R-HUB",
       "variants": "1 low-poly backdrop",
@@ -320,11 +320,11 @@
       "id": "ARCH-018",
       "kind": "MUST",
       "category": "3D / Exterior",
-      "requirement": "\u0412\u043d\u0435\u0448\u043d\u0438\u0435 \u0441\u0442\u0443\u043f\u0435\u043d\u0438/\u0434\u043e\u0440\u043e\u0436\u043a\u0430 \u043a \u0432\u0445\u043e\u0434\u0443",
+      "requirement": "Внешние ступени/дорожка к входу",
       "stages": "0,15",
       "reuse": "R-HUB",
       "variants": "1 set",
-      "canonical_notes": "Reuse \u0432 \u044d\u043f\u0438\u043b\u043e\u0433\u0435",
+      "canonical_notes": "Reuse в эпилоге",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "VS1 S00 level path is authored production geometry with original flat collision and camera route; one same master reserved for S15, no S15 gameplay/dawn acceptance.",
@@ -339,14 +339,14 @@
       "id": "PROP-001",
       "kind": "MUST",
       "category": "Hero Prop",
-      "requirement": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043c\u0435\u0445\u0430\u043d\u0438\u0437\u043c \u0410\u0440\u0445\u0438\u0432\u0430 / core orrery",
-      "stages": "1,10\u201315",
+      "requirement": "Центральный механизм Архива / core orrery",
+      "stages": "1,10–15",
       "reuse": "R-HUB",
       "variants": "base + awakened + final states",
-      "canonical_notes": "\u0421\u0430\u043c\u044b\u0439 \u0432\u0430\u0436\u043d\u044b\u0439 reusable hero asset",
+      "canonical_notes": "Самый важный reusable hero asset",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3\u20135 orbit pieces and console/mounts remain PARTIAL.",
+      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
       "evidence_paths": [
         "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md",
         "game/worlds/archive/archive_main.tscn"
@@ -357,14 +357,14 @@
       "id": "PROP-002",
       "kind": "MUST",
       "category": "Hero Prop",
-      "requirement": "\u041a\u043e\u043b\u044c\u0446\u0430/\u043e\u0440\u0431\u0438\u0442\u044b \u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043c\u0435\u0445\u0430\u043d\u0438\u0437\u043c\u0430",
-      "stages": "1,10\u201315",
+      "requirement": "Кольца/орбиты центрального механизма",
+      "stages": "1,10–15",
       "reuse": "R-HUB",
-      "variants": "3\u20135 ring pieces",
-      "canonical_notes": "\u0410\u043d\u0438\u043c\u0430\u0446\u0438\u044f \u0438 \u0444\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0441\u0431\u043e\u0440\u043a\u0430",
+      "variants": "3–5 ring pieces",
+      "canonical_notes": "Анимация и финальная сборка",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3\u20135 orbit pieces and console/mounts remain PARTIAL.",
+      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
       "evidence_paths": [
         "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md",
         "game/worlds/archive/archive_main.tscn"
@@ -375,11 +375,11 @@
       "id": "PROP-003",
       "kind": "MUST",
       "category": "Gameplay Prop",
-      "requirement": "\u0421\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u044f \u043b\u0438\u043d\u0437\u0430 + \u0433\u043d\u0435\u0437\u0434\u043e",
+      "requirement": "Стартовая линза + гнездо",
       "stages": "1",
       "reuse": "R-ARCHIVE",
       "variants": "1 lens + socket",
-      "canonical_notes": "\u041b\u0438\u043d\u0437\u0430 \u043c\u043e\u0436\u0435\u0442 \u0441\u0442\u0430\u0442\u044c \u0431\u0430\u0437\u043e\u0439 \u0434\u043b\u044f \u0434\u0440\u0443\u0433\u0438\u0445 optics",
+      "canonical_notes": "Линза может стать базой для других optics",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Editable source, lens/socket/installed runtime instances, actual E/save/quiet and independent LFS evidence.",
@@ -392,11 +392,11 @@
       "id": "PROP-004",
       "kind": "MUST",
       "category": "Gameplay Prop",
-      "requirement": "Archive interaction console / \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c",
-      "stages": "1\u20138,10",
+      "requirement": "Archive interaction console / универсальная панель",
+      "stages": "1–8,10",
       "reuse": "R-ARCHIVE",
       "variants": "1 base + skins",
-      "canonical_notes": "Switch/lever/dial variants \u0447\u0435\u0440\u0435\u0437 child parts",
+      "canonical_notes": "Switch/lever/dial variants через child parts",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "S01 base/cover and lever child variants accepted inside original target contracts; full console/mounting and universal skins not accepted. Unused later-stage skins are not the next VS1 priority.",
@@ -409,11 +409,11 @@
       "id": "PROP-005",
       "kind": "MUST",
       "category": "Gameplay Prop",
-      "requirement": "\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u044b\u0439 rotary dial / knob",
-      "stages": "1\u20138",
+      "requirement": "Универсальный rotary dial / knob",
+      "stages": "1–8",
       "reuse": "R-ARCHIVE",
       "variants": "1 master",
-      "canonical_notes": "Reuse \u0432 optics/resonators/moons",
+      "canonical_notes": "Reuse в optics/resonators/moons",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "S02 focus wheel is an accepted original rotary master; generic reuse is not instantiated elsewhere and ASSET_INDEX older not-produced wording must not force a duplicate wheel.",
@@ -427,11 +427,11 @@
       "id": "PROP-006",
       "kind": "MUST",
       "category": "Gameplay Prop",
-      "requirement": "\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u044b\u0439 lever/lock/stopper",
-      "stages": "1\u20138",
+      "requirement": "Универсальный lever/lock/stopper",
+      "stages": "1–8",
       "reuse": "R-ARCHIVE",
       "variants": "2 shapes",
-      "canonical_notes": "Reuse \u043c\u0435\u0445\u0430\u043d\u0438\u043a \u0431\u0435\u0437 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u043d\u043e\u0432\u043e\u0433\u043e lever \u043a\u0430\u0436\u0434\u044b\u0439 \u0440\u0430\u0437",
+      "canonical_notes": "Reuse механик без создания нового lever каждый раз",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "Two bounded shapes exist: S01 lever and S00 bolt. Earlier second-shape-not-produced wording is superseded; global adoption/stopper variants remain open.",
@@ -445,11 +445,11 @@
       "id": "PROP-007",
       "kind": "MUST",
       "category": "Narrative Prop",
-      "requirement": "\u0424\u0440\u0430\u0433\u043c\u0435\u043d\u0442 \u0410\u0440\u0445\u0438\u0432\u0430 \u2014 \u0431\u0430\u0437\u043e\u0432\u044b\u0439 \u043d\u043e\u0441\u0438\u0442\u0435\u043b\u044c/stand",
-      "stages": "2,3,5,7,8,10\u201313",
+      "requirement": "Фрагмент Архива — базовый носитель/stand",
+      "stages": "2,3,5,7,8,10–13",
       "reuse": "R-FINAL",
       "variants": "1 base + 10 glyph variants",
-      "canonical_notes": "\u041e\u0434\u0438\u043d shell, \u043c\u0435\u043d\u044f\u0435\u0442\u0441\u044f \u0441\u0438\u0433\u0438\u043b/\u044d\u043c\u0438\u0441\u0441\u0438\u044f",
+      "canonical_notes": "Один shell, меняется сигил/эмиссия",
       "required_for_vs1": true,
       "status": "MISSING",
       "finding": "No original fragment shell/stand source or GLB. Existing optical pedestal and Hearth bowl are their puzzle assets, not the specified shared fragment carrier.",
@@ -459,14 +459,14 @@
     },
     {
       "section": "GLOBAL / REUSABLE",
-      "id": "SIG-001\u2013010",
+      "id": "SIG-001–010",
       "kind": "MUST",
       "category": "2D/3D Sigil",
-      "requirement": "10 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0445 \u0441\u0438\u0433\u0438\u043b\u043e\u0432: \u041e\u0447\u0430\u0433, \u0417\u0432\u0435\u0437\u0434\u0430, \u0420\u043e\u0441\u0442\u043e\u043a, \u042d\u0445\u043e, \u041a\u043e\u043b\u043e\u043a\u043e\u043b\u044c\u0447\u0438\u043a, \u041f\u0435\u0440\u043e, \u0414\u0432\u043e\u0439\u043d\u0430\u044f \u043b\u0443\u043d\u0430, \u0411\u043b\u0438\u043a, \u041a\u0440\u0438\u0441\u0442\u0430\u043b\u043b, \u0421\u043e\u0437\u0432\u0435\u0437\u0434\u0438\u0435",
-      "stages": "2\u201314",
+      "requirement": "10 уникальных сигилов: Очаг, Звезда, Росток, Эхо, Колокольчик, Перо, Двойная луна, Блик, Кристалл, Созвездие",
+      "stages": "2–14",
       "reuse": "R-FINAL",
       "variants": "10 vector/SDF glyphs",
-      "canonical_notes": "\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442\u0441\u044f \u0432 world-space, UI \u0438 \u0444\u0438\u043d\u0430\u043b\u044c\u043d\u043e\u043c \u0441\u0442\u043e\u043b\u0435",
+      "canonical_notes": "Используются в world-space, UI и финальном столе",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "Only canonical Star/Hearth SVGs and their presentation are implemented; remaining eight glyphs belong to gated stages.",
@@ -481,10 +481,10 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Aged Brass master",
-      "stages": "0\u201315",
+      "stages": "0–15",
       "reuse": "R-GLOBAL",
       "variants": "1 master + roughness params",
-      "canonical_notes": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430\u044f \u043c\u0435\u0445\u0430\u043d\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0441\u0435\u043c\u044c\u044f",
+      "canonical_notes": "Основная механическая семья",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open.",
@@ -499,7 +499,7 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Polished Brass hero",
-      "stages": "1\u201314",
+      "stages": "1–14",
       "reuse": "R-GLOBAL",
       "variants": "1 master",
       "canonical_notes": "Hero props/interactives",
@@ -518,10 +518,10 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Dark Walnut / warm wood",
-      "stages": "1\u201315",
+      "stages": "1–15",
       "reuse": "R-GLOBAL",
-      "variants": "1\u20132 tiling maps",
-      "canonical_notes": "\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430/\u043c\u0435\u0431\u0435\u043b\u044c/\u043f\u0430\u043d\u0435\u043b\u0438",
+      "variants": "1–2 tiling maps",
+      "canonical_notes": "Библиотека/мебель/панели",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open.",
@@ -536,10 +536,10 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Warm Stone",
-      "stages": "0\u201315",
+      "stages": "0–15",
       "reuse": "R-GLOBAL",
       "variants": "1 tiling + variation",
-      "canonical_notes": "\u0410\u0440\u0445\u0438\u0432, exterior, props",
+      "canonical_notes": "Архив, exterior, props",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open.",
@@ -573,10 +573,10 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Clear Glass",
-      "stages": "1\u20139",
+      "stages": "1–9",
       "reuse": "R-GLOBAL",
       "variants": "1 shader",
-      "canonical_notes": "\u041e\u043a\u043d\u0430/\u043b\u0438\u043d\u0437\u044b/\u043f\u0440\u0438\u0437\u043c\u044b",
+      "canonical_notes": "Окна/линзы/призмы",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open.",
@@ -591,7 +591,7 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Frosted / Memory Glass",
-      "stages": "7,8,12\u201313",
+      "stages": "7,8,12–13",
       "reuse": "R-GLOBAL",
       "variants": "1 shader",
       "canonical_notes": "Memory glass + text substrate",
@@ -606,10 +606,10 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Crystal fake-refraction",
-      "stages": "8,10\u201311",
+      "stages": "8,10–11",
       "reuse": "R-GLOBAL",
       "variants": "1 shader, quality tiers",
-      "canonical_notes": "\u0411\u0435\u0437 true ray tracing",
+      "canonical_notes": "Без true ray tracing",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -621,10 +621,10 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Parchment / paper",
-      "stages": "1\u201315",
+      "stages": "1–15",
       "reuse": "R-GLOBAL",
       "variants": "1 master + tint",
-      "canonical_notes": "\u0417\u0430\u043f\u0438\u0441\u043a\u0438/poem/cards",
+      "canonical_notes": "Записки/poem/cards",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open.",
@@ -642,7 +642,7 @@
       "stages": "1,5,7",
       "reuse": "R-GLOBAL",
       "variants": "1 fabric tiling",
-      "canonical_notes": "\u041a\u043e\u0432\u0440\u044b/\u0431\u0430\u043d\u043d\u0435\u0440\u044b/\u0430\u043a\u0446\u0435\u043d\u0442\u044b",
+      "canonical_notes": "Ковры/баннеры/акценты",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open.",
@@ -660,7 +660,7 @@
       "stages": "1,5,7,9",
       "reuse": "R-GLOBAL",
       "variants": "1 fabric tiling",
-      "canonical_notes": "\u0422\u0438\u0445\u0438\u0435 \u0431\u044b\u0442\u043e\u0432\u044b\u0435 \u0434\u0435\u0442\u0430\u043b\u0438",
+      "canonical_notes": "Тихие бытовые детали",
       "required_for_vs1": true,
       "status": "PARTIAL",
       "finding": "One distinct original linen weave master/maps with deterministic source and isolated native Low/Medium specimens validated:66 assertions and8 individually inspected frames. Neutral-fabric dressing carrier/assignment, close-up UV density/folds and shipping S01 style/tests remain open.",
@@ -676,14 +676,18 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Leaf / ivy atlas",
-      "stages": "0\u20139,15",
+      "stages": "0–9,15",
       "reuse": "R-GLOBAL",
       "variants": "1 atlas",
-      "canonical_notes": "\u0410\u043a\u0446\u0435\u043d\u0442\u043d\u0430\u044f \u0440\u0430\u0441\u0442\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c",
+      "canonical_notes": "Акцентная растительность",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface.",
-      "evidence_paths": []
+      "status": "PARTIAL",
+      "finding": "Original eight-cell1774x887 RGBA atlas and shared .5 alpha-cutout master ready;168 isolated native assertion executions/8 individually viewed frames. Actual plant carrier, UV density, shipping placement, motion/scene/style acceptance absent.",
+      "evidence_paths": [
+        "docs/production/LEAF_ATLAS_SOURCE_READINESS.md",
+        "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/results.json",
+        "game/art/textures/foliage/leaf_atlas_manifest.json"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -694,7 +698,7 @@
       "stages": "5,7,9",
       "reuse": "R-GLOBAL",
       "variants": "1 atlas",
-      "canonical_notes": "DECOR \u043c\u043e\u0436\u0435\u0442 reuse \u0442\u043e\u0442 \u0436\u0435 atlas",
+      "canonical_notes": "DECOR может reuse тот же atlas",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -706,10 +710,10 @@
       "kind": "MUST",
       "category": "Material",
       "requirement": "Archive emissive gold",
-      "stages": "1\u201315",
+      "stages": "1–15",
       "reuse": "R-GLOBAL",
       "variants": "1 shader",
-      "canonical_notes": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430\u044f feedback/emissive \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+      "canonical_notes": "Основная feedback/emissive система",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open.",
@@ -727,7 +731,7 @@
       "stages": "3",
       "reuse": "R-GLOBAL",
       "variants": "parameter variant",
-      "canonical_notes": "\u041d\u0435 \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0439 shader",
+      "canonical_notes": "Не отдельный shader",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -742,7 +746,7 @@
       "stages": "7",
       "reuse": "R-GLOBAL",
       "variants": "parameter variant",
-      "canonical_notes": "\u041d\u0435 \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0439 shader",
+      "canonical_notes": "Не отдельный shader",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -757,7 +761,7 @@
       "stages": "6",
       "reuse": "UNIQUE",
       "variants": "1 shader",
-      "canonical_notes": "\u0422\u043e\u043b\u044c\u043a\u043e Egg chase",
+      "canonical_notes": "Только Egg chase",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -769,10 +773,10 @@
       "kind": "MUST",
       "category": "Texture / Trim",
       "requirement": "Archive brass/wood trim sheet",
-      "stages": "1\u201315",
+      "stages": "1–15",
       "reuse": "R-GLOBAL",
-      "variants": "1\u20132 2K trims",
-      "canonical_notes": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u044f texturing",
+      "variants": "1–2 2K trims",
+      "canonical_notes": "Главная экономия texturing",
       "required_for_vs1": true,
       "status": "MISSING",
       "finding": "No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface.",
@@ -784,10 +788,10 @@
       "kind": "MUST",
       "category": "Texture / Trim",
       "requirement": "Stone/ornament trim sheet",
-      "stages": "0\u201315",
+      "stages": "0–15",
       "reuse": "R-GLOBAL",
       "variants": "1 2K trim",
-      "canonical_notes": "\u0410\u0440\u043a\u0438/\u043f\u044c\u0435\u0434\u0435\u0441\u0442\u0430\u043b\u044b/\u0431\u043e\u0440\u0434\u044e\u0440\u044b",
+      "canonical_notes": "Арки/пьедесталы/бордюры",
       "required_for_vs1": true,
       "status": "MISSING",
       "finding": "No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface.",
@@ -799,10 +803,10 @@
       "kind": "MUST",
       "category": "Decal kit",
       "requirement": "Scratches, edge wear, dust, subtle soot",
-      "stages": "0\u201315",
+      "stages": "0–15",
       "reuse": "R-GLOBAL",
       "variants": "1 atlas",
-      "canonical_notes": "\u0414\u043e\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e, \u043d\u0435 \u043f\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0442\u044c \u0432 ruin",
+      "canonical_notes": "Дозированно, не превращать в ruin",
       "required_for_vs1": true,
       "status": "MISSING",
       "finding": "No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface.",
@@ -814,10 +818,10 @@
       "kind": "MUST",
       "category": "VFX",
       "requirement": "Archive light beam / spline beam",
-      "stages": "1\u201315",
+      "stages": "1–15",
       "reuse": "R-GLOBAL",
       "variants": "1 system + color/intensity params",
-      "canonical_notes": "\u041d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f, optics, final",
+      "canonical_notes": "Навигация, optics, final",
       "required_for_vs1": true,
       "status": "ACCEPTED",
       "finding": "Shared beam immutable mesh/shaders accepted for S02; other route/global variants not implicitly approved.",
@@ -831,7 +835,7 @@
       "kind": "MUST",
       "category": "VFX",
       "requirement": "Light path motes / shimmer",
-      "stages": "0\u201315",
+      "stages": "0–15",
       "reuse": "R-GLOBAL",
       "variants": "1 particle system",
       "canonical_notes": "Primary reuse effect",
@@ -848,7 +852,7 @@
       "kind": "MUST",
       "category": "VFX",
       "requirement": "Correct interaction pulse/chime visual",
-      "stages": "1\u201311",
+      "stages": "1–11",
       "reuse": "R-GLOBAL",
       "variants": "1 system",
       "canonical_notes": "Scale/tint variants",
@@ -865,7 +869,7 @@
       "kind": "MUST",
       "category": "VFX",
       "requirement": "Fragment materialize / dissolve",
-      "stages": "2,3,5,7,8,10\u201313",
+      "stages": "2,3,5,7,8,10–13",
       "reuse": "R-FINAL",
       "variants": "1 system",
       "canonical_notes": "10 sigils reuse same effect",
@@ -880,7 +884,7 @@
       "kind": "MUST",
       "category": "VFX",
       "requirement": "Memory transition dissolve",
-      "stages": "3\u21924,5\u21926,8\u21929,9\u219210",
+      "stages": "3→4,5→6,8→9,9→10",
       "reuse": "R-GLOBAL",
       "variants": "1 shader/VFX rig",
       "canonical_notes": "Seamless memory transitions",
@@ -895,13 +899,13 @@
       "kind": "MUST",
       "category": "VFX",
       "requirement": "Dust motes / soft atmosphere",
-      "stages": "0\u201315",
+      "stages": "0–15",
       "reuse": "R-GLOBAL",
       "variants": "1 low-cost system",
       "canonical_notes": "Quality-scalable",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Bounded native dust in two existing Hub/S02 volumes accepted; Low12/Medium36/High48, pause/effects/quiet projection,602 current assertions and20 individually inspected Forward+ on/off frames. Full stages0\u201315 adoption/style remains open.",
+      "finding": "Bounded native dust in two existing Hub/S02 volumes accepted; Low12/Medium36/High48, pause/effects/quiet projection,602 current assertions and20 individually inspected Forward+ on/off frames. Full stages0–15 adoption/style remains open.",
       "evidence_paths": [
         "docs/production/ARCHIVE_DUST_MOTES_ACCEPTANCE.md",
         "game/art/vfx/archive_dust_motes.tscn"
@@ -913,13 +917,13 @@
       "kind": "MUST",
       "category": "VFX",
       "requirement": "Highlight / inspect glow",
-      "stages": "1\u201311",
+      "stages": "1–11",
       "reuse": "R-GLOBAL",
       "variants": "1 shader/outline strategy",
-      "canonical_notes": "\u041d\u0435 cartoon outline; subtle emissive",
+      "canonical_notes": "Не cartoon outline; subtle emissive",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Bounded native warm additive inspect wash on eight existing S01/S02 target/visual bindings accepted: actual player ray, Low/effects-off, pause/occlusion/consumed/lifetime/material preservation.286 current scoped assertions and8 individually inspected paired native frames. Stages1\u201311 adoption and complete style remain open.",
+      "finding": "Bounded native warm additive inspect wash on eight existing S01/S02 target/visual bindings accepted: actual player ray, Low/effects-off, pause/occlusion/consumed/lifetime/material preservation.286 current scoped assertions and8 individually inspected paired native frames. Stages1–11 adoption and complete style remain open.",
       "evidence_paths": [
         "docs/production/ARCHIVE_INSPECT_GLOW_ACCEPTANCE.md",
         "game/art/vfx/archive_inspect_glow.gd",
@@ -932,7 +936,7 @@
       "kind": "MUST",
       "category": "UI",
       "requirement": "Minimal reticle / focus dot",
-      "stages": "1\u201311",
+      "stages": "1–11",
       "reuse": "R-GLOBAL",
       "variants": "1 asset",
       "canonical_notes": "Can fade during cinematics/text",
@@ -949,7 +953,7 @@
       "kind": "MUST",
       "category": "UI",
       "requirement": "Interaction prompt component [E]/[R]",
-      "stages": "1\u201314",
+      "stages": "1–14",
       "reuse": "R-GLOBAL",
       "variants": "1 widget",
       "canonical_notes": "Dynamic verb string",
@@ -966,7 +970,7 @@
       "kind": "MUST",
       "category": "UI",
       "requirement": "Hint/world-space text component",
-      "stages": "1\u201311",
+      "stages": "1–11",
       "reuse": "R-GLOBAL",
       "variants": "1 widget",
       "canonical_notes": "System and semantic hints",
@@ -1034,7 +1038,7 @@
       "kind": "MUST",
       "category": "UI",
       "requirement": "Text reading / poem layout",
-      "stages": "12\u201314",
+      "stages": "12–14",
       "reuse": "R-FINAL",
       "variants": "1 responsive layout",
       "canonical_notes": "Cyrillic-safe",
@@ -1064,7 +1068,7 @@
       "kind": "MUST",
       "category": "Font/License",
       "requirement": "Personal/handwritten Cyrillic accent font",
-      "stages": "2\u201315",
+      "stages": "2–15",
       "reuse": "R-GLOBAL",
       "variants": "1 family + fallback",
       "canonical_notes": "Use sparingly; high readability",
@@ -1079,7 +1083,7 @@
       "kind": "MUST",
       "category": "Camera Rig",
       "requirement": "First-person camera rig",
-      "stages": "1\u201314",
+      "stages": "1–14",
       "reuse": "R-GLOBAL",
       "variants": "1 rig",
       "canonical_notes": "FOV/headbob states",
@@ -1133,7 +1137,7 @@
       "stages": "4,9",
       "reuse": "R-CHAR",
       "variants": "1 rig + silhouette material",
-      "canonical_notes": "\u041d\u0435 \u043d\u0443\u0436\u0435\u043d facial rig; \u0432\u0438\u0434\u0438\u043c\u043e\u0441\u0442\u044c \u0442\u0435\u043b\u0430 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u0430\u044f",
+      "canonical_notes": "Не нужен facial rig; видимость тела ограниченная",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -1148,7 +1152,7 @@
       "stages": "4,6,9",
       "reuse": "R-CHAR",
       "variants": "1 rig",
-      "canonical_notes": "\u041e\u0440\u0438\u0433\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0438\u043d\u0442\u0435\u0440\u043f\u0440\u0435\u0442\u0430\u0446\u0438\u044f, \u043d\u0435 \u0438\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u043d\u044b\u0439 \u0438\u0433\u0440\u043e\u0432\u043e\u0439 asset",
+      "canonical_notes": "Оригинальная интерпретация, не извлеченный игровой asset",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -1162,8 +1166,8 @@
       "requirement": "Background raid participant rig",
       "stages": "4,6",
       "reuse": "R-RAID",
-      "variants": "1 rig \u00d7 3\u20135 material variants",
-      "canonical_notes": "\u041c\u043e\u0436\u043d\u043e \u0437\u0430\u043c\u0435\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0443\u043f\u0440\u043e\u0437\u0440\u0430\u0447\u043d\u044b\u043c\u0438 echo-\u0441\u0438\u043b\u0443\u044d\u0442\u0430\u043c\u0438",
+      "variants": "1 rig × 3–5 material variants",
+      "canonical_notes": "Можно заменить полупрозрачными echo-силуэтами",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -1178,7 +1182,7 @@
       "stages": "6",
       "reuse": "UNIQUE",
       "variants": "1 partial/full rig",
-      "canonical_notes": "\u0414\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u043e readable head/upper body + roar/wake; full combat rig \u043d\u0435 \u043d\u0443\u0436\u0435\u043d",
+      "canonical_notes": "Достаточно readable head/upper body + roar/wake; full combat rig не нужен",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -1192,8 +1196,8 @@
       "requirement": "Snake hazard",
       "stages": "6",
       "reuse": "UNIQUE",
-      "variants": "1 rig \u00d7 instances",
-      "canonical_notes": "\u041e\u0434\u0438\u043d mesh/animation reused for all lunges",
+      "variants": "1 rig × instances",
+      "canonical_notes": "Один mesh/animation reused for all lunges",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -1208,7 +1212,7 @@
       "stages": "6; optional 1/9",
       "reuse": "R-CHAR",
       "variants": "1 simple rig",
-      "canonical_notes": "\u0414\u043b\u044f \u044f\u0439\u0446\u0430; fallback \u2014 object-only edge-of-screen",
+      "canonical_notes": "Для яйца; fallback — object-only edge-of-screen",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
       "finding": "Canonical use belongs to gated stages/endgame; no production execution in this session.",
@@ -1252,7 +1256,7 @@
       "requirement": "Dracthyr rescue: rise/reach/grab/flight/land",
       "stages": "6",
       "reuse": "UNIQUE",
-      "variants": "4\u20135 clips or one sequence",
+      "variants": "4–5 clips or one sequence",
       "canonical_notes": "No ragdoll/physics carry",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -1297,7 +1301,7 @@
       "requirement": "Boss wake/eyes/roar/recoil",
       "stages": "6",
       "reuse": "UNIQUE",
-      "variants": "2\u20133 clips",
+      "variants": "2–3 clips",
       "canonical_notes": "No full combat set",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -1325,13 +1329,13 @@
       "kind": "MUST",
       "category": "Character / Rig / Animation",
       "requirement": "Central Archive rings awaken/slow/final unfold",
-      "stages": "1,10\u201315",
+      "stages": "1,10–15",
       "reuse": "R-HUB",
-      "variants": "3\u20134 sequences",
+      "variants": "3–4 sequences",
       "canonical_notes": "Core hero animation reused",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Existing seven-second core awakening and two ring drivers accepted; full 3\u20135 authored ring/final sequence remains open.",
+      "finding": "Existing seven-second core awakening and two ring drivers accepted; full 3–5 authored ring/final sequence remains open.",
       "evidence_paths": []
     },
     {
@@ -1340,7 +1344,7 @@
       "kind": "MUST",
       "category": "Character / Rig / Animation",
       "requirement": "Fragment reveal / float / settle",
-      "stages": "2,3,5,7,8,10\u201313",
+      "stages": "2,3,5,7,8,10–13",
       "reuse": "R-FINAL",
       "variants": "1 generic sequence",
       "canonical_notes": "Applied to all sigils",
@@ -1355,7 +1359,7 @@
       "kind": "MUST",
       "category": "Character / Rig / Animation",
       "requirement": "Door/gate open/close",
-      "stages": "0\u20138,15",
+      "stages": "0–8,15",
       "reuse": "R-ARCHIVE",
       "variants": "1 generic + timing variants",
       "canonical_notes": "Shared hinges/rails",
@@ -1367,11 +1371,11 @@
       ]
     },
     {
-      "section": "Stage 0 \u2014 \u041f\u0440\u043e\u043b\u043e\u0433 \u00ab\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0438\u0441\u043a\u0440\u0430\u00bb",
+      "section": "Stage 0 — Пролог «Последняя искра»",
       "id": "S00-001",
       "kind": "MUST",
       "category": "Hero",
-      "requirement": "\u042d\u043a\u0441\u0442\u0435\u0440\u044c\u0435\u0440 \u0434\u043e\u043c\u0430/\u043a\u0443\u043f\u043e\u043b\u0430 \u0432 \u043d\u043e\u0447\u043d\u043e\u043c \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0438",
+      "requirement": "Экстерьер дома/купола в ночном состоянии",
       "stages": "0",
       "reuse": "R-HUB",
       "variants": "ARCH-001/002/017/018 reuse",
@@ -1389,11 +1393,11 @@
       ]
     },
     {
-      "section": "Stage 0 \u2014 \u041f\u0440\u043e\u043b\u043e\u0433 \u00ab\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0438\u0441\u043a\u0440\u0430\u00bb",
+      "section": "Stage 0 — Пролог «Последняя искра»",
       "id": "S00-002",
       "kind": "MUST",
       "category": "VFX",
-      "requirement": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0438\u0441\u043a\u0440\u0430 / guided light particle",
+      "requirement": "Последняя искра / guided light particle",
       "stages": "0",
       "reuse": "R-GLOBAL",
       "variants": "VFX-002 variant + scripted path",
@@ -1406,7 +1410,7 @@
       ]
     },
     {
-      "section": "Stage 0 \u2014 \u041f\u0440\u043e\u043b\u043e\u0433 \u00ab\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0438\u0441\u043a\u0440\u0430\u00bb",
+      "section": "Stage 0 — Пролог «Последняя искра»",
       "id": "S00-003",
       "kind": "MUST",
       "category": "Lighting",
@@ -1424,7 +1428,7 @@
       ]
     },
     {
-      "section": "Stage 0 \u2014 \u041f\u0440\u043e\u043b\u043e\u0433 \u00ab\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0438\u0441\u043a\u0440\u0430\u00bb",
+      "section": "Stage 0 — Пролог «Последняя искра»",
       "id": "S00-004",
       "kind": "MUST",
       "category": "Camera",
@@ -1439,7 +1443,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 0 \u2014 \u041f\u0440\u043e\u043b\u043e\u0433 \u00ab\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0438\u0441\u043a\u0440\u0430\u00bb",
+      "section": "Stage 0 — Пролог «Последняя искра»",
       "id": "S00-005",
       "kind": "MUST",
       "category": "Prop",
@@ -1456,7 +1460,7 @@
       ]
     },
     {
-      "section": "Stage 1 \u2014 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044f \u00ab\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u0410\u0440\u0445\u0438\u0432\u0430\u00bb",
+      "section": "Stage 1 — Центральная обсерватория «Пробуждение Архива»",
       "id": "S01-001",
       "kind": "MUST",
       "category": "Hero",
@@ -1467,13 +1471,13 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3\u20135 orbit pieces and console/mounts remain PARTIAL.",
+      "finding": "Original lower stone/wood/iron/brass housing now accepted; complete hero3–5 orbit pieces and console/mounts remain PARTIAL.",
       "evidence_paths": [
         "docs/production/S01_CORE_PEDESTAL_ACCEPTANCE.md"
       ]
     },
     {
-      "section": "Stage 1 \u2014 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044f \u00ab\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u0410\u0440\u0445\u0438\u0432\u0430\u00bb",
+      "section": "Stage 1 — Центральная обсерватория «Пробуждение Архива»",
       "id": "S01-002",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1490,7 +1494,7 @@
       ]
     },
     {
-      "section": "Stage 1 \u2014 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044f \u00ab\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u0410\u0440\u0445\u0438\u0432\u0430\u00bb",
+      "section": "Stage 1 — Центральная обсерватория «Пробуждение Архива»",
       "id": "S01-003",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1507,14 +1511,14 @@
       ]
     },
     {
-      "section": "Stage 1 \u2014 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044f \u00ab\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u0410\u0440\u0445\u0438\u0432\u0430\u00bb",
+      "section": "Stage 1 — Центральная обсерватория «Пробуждение Архива»",
       "id": "S01-004",
       "kind": "MUST",
       "category": "World",
       "requirement": "Five wing gates + dormant/active states",
       "stages": "1",
       "reuse": "R-ARCHIVE",
-      "variants": "ARCH-014 \u00d75",
+      "variants": "ARCH-014 ×5",
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
@@ -1525,7 +1529,7 @@
       ]
     },
     {
-      "section": "Stage 1 \u2014 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044f \u00ab\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u0410\u0440\u0445\u0438\u0432\u0430\u00bb",
+      "section": "Stage 1 — Центральная обсерватория «Пробуждение Архива»",
       "id": "S01-005",
       "kind": "MUST",
       "category": "VFX",
@@ -1540,7 +1544,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 1 \u2014 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044f \u00ab\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435 \u0410\u0440\u0445\u0438\u0432\u0430\u00bb",
+      "section": "Stage 1 — Центральная обсерватория «Пробуждение Архива»",
       "id": "S01-006",
       "kind": "MUST",
       "category": "Lighting",
@@ -1557,7 +1561,7 @@
       ]
     },
     {
-      "section": "Stage 2 \u2014 \u041a\u0440\u044b\u043b\u043e I \u00ab\u0422\u0435\u043f\u043b\u043e / \u0421\u0432\u0435\u0442\u00bb",
+      "section": "Stage 2 — Крыло I «Тепло / Свет»",
       "id": "S02-001",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1574,7 +1578,7 @@
       ]
     },
     {
-      "section": "Stage 2 \u2014 \u041a\u0440\u044b\u043b\u043e I \u00ab\u0422\u0435\u043f\u043b\u043e / \u0421\u0432\u0435\u0442\u00bb",
+      "section": "Stage 2 — Крыло I «Тепло / Свет»",
       "id": "S02-002",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1592,7 +1596,7 @@
       ]
     },
     {
-      "section": "Stage 2 \u2014 \u041a\u0440\u044b\u043b\u043e I \u00ab\u0422\u0435\u043f\u043b\u043e / \u0421\u0432\u0435\u0442\u00bb",
+      "section": "Stage 2 — Крыло I «Тепло / Свет»",
       "id": "S02-003",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1609,7 +1613,7 @@
       ]
     },
     {
-      "section": "Stage 2 \u2014 \u041a\u0440\u044b\u043b\u043e I \u00ab\u0422\u0435\u043f\u043b\u043e / \u0421\u0432\u0435\u0442\u00bb",
+      "section": "Stage 2 — Крыло I «Тепло / Свет»",
       "id": "S02-004",
       "kind": "MUST",
       "category": "Hero",
@@ -1627,7 +1631,7 @@
       ]
     },
     {
-      "section": "Stage 2 \u2014 \u041a\u0440\u044b\u043b\u043e I \u00ab\u0422\u0435\u043f\u043b\u043e / \u0421\u0432\u0435\u0442\u00bb",
+      "section": "Stage 2 — Крыло I «Тепло / Свет»",
       "id": "S02-005",
       "kind": "MUST",
       "category": "Narrative",
@@ -1644,7 +1648,7 @@
       ]
     },
     {
-      "section": "Stage 2 \u2014 \u041a\u0440\u044b\u043b\u043e I \u00ab\u0422\u0435\u043f\u043b\u043e / \u0421\u0432\u0435\u0442\u00bb",
+      "section": "Stage 2 — Крыло I «Тепло / Свет»",
       "id": "S02-006",
       "kind": "MUST",
       "category": "Narrative",
@@ -1661,7 +1665,7 @@
       ]
     },
     {
-      "section": "Stage 2 \u2014 \u041a\u0440\u044b\u043b\u043e I \u00ab\u0422\u0435\u043f\u043b\u043e / \u0421\u0432\u0435\u0442\u00bb",
+      "section": "Stage 2 — Крыло I «Тепло / Свет»",
       "id": "S02-007",
       "kind": "MUST",
       "category": "Lighting/VFX",
@@ -1678,7 +1682,7 @@
       ]
     },
     {
-      "section": "Stage 3 \u2014 \u041a\u0440\u044b\u043b\u043e II \u00ab\u0416\u0438\u0437\u043d\u044c / \u0413\u043e\u043b\u043e\u0441\u00bb",
+      "section": "Stage 3 — Крыло II «Жизнь / Голос»",
       "id": "S03-001",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1693,14 +1697,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 3 \u2014 \u041a\u0440\u044b\u043b\u043e II \u00ab\u0416\u0438\u0437\u043d\u044c / \u0413\u043e\u043b\u043e\u0441\u00bb",
+      "section": "Stage 3 — Крыло II «Жизнь / Голос»",
       "id": "S03-002",
       "kind": "MUST",
       "category": "Puzzle",
       "requirement": "Three local resonators, 3 states each",
       "stages": "3",
       "reuse": "R-ARCHIVE",
-      "variants": "1 mesh instanced \u00d73",
+      "variants": "1 mesh instanced ×3",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -1708,7 +1712,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 3 \u2014 \u041a\u0440\u044b\u043b\u043e II \u00ab\u0416\u0438\u0437\u043d\u044c / \u0413\u043e\u043b\u043e\u0441\u00bb",
+      "section": "Stage 3 — Крыло II «Жизнь / Голос»",
       "id": "S03-003",
       "kind": "MUST",
       "category": "UI/VFX",
@@ -1723,7 +1727,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 3 \u2014 \u041a\u0440\u044b\u043b\u043e II \u00ab\u0416\u0438\u0437\u043d\u044c / \u0413\u043e\u043b\u043e\u0441\u00bb",
+      "section": "Stage 3 — Крыло II «Жизнь / Голос»",
       "id": "S03-004",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1738,7 +1742,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 3 \u2014 \u041a\u0440\u044b\u043b\u043e II \u00ab\u0416\u0438\u0437\u043d\u044c / \u0413\u043e\u043b\u043e\u0441\u00bb",
+      "section": "Stage 3 — Крыло II «Жизнь / Голос»",
       "id": "S03-005",
       "kind": "MUST",
       "category": "Hero",
@@ -1753,7 +1757,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 3 \u2014 \u041a\u0440\u044b\u043b\u043e II \u00ab\u0416\u0438\u0437\u043d\u044c / \u0413\u043e\u043b\u043e\u0441\u00bb",
+      "section": "Stage 3 — Крыло II «Жизнь / Голос»",
       "id": "S03-006",
       "kind": "MUST",
       "category": "Narrative",
@@ -1768,11 +1772,11 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 3 \u2014 \u041a\u0440\u044b\u043b\u043e II \u00ab\u0416\u0438\u0437\u043d\u044c / \u0413\u043e\u043b\u043e\u0441\u00bb",
+      "section": "Stage 3 — Крыло II «Жизнь / Голос»",
       "id": "S03-007",
       "kind": "MUST",
       "category": "Transition",
-      "requirement": "Archive room \u2192 raid memory dissolve rig",
+      "requirement": "Archive room → raid memory dissolve rig",
       "stages": "3",
       "reuse": "R-GLOBAL",
       "variants": "VFX-005",
@@ -1783,7 +1787,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 4 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 I \u00ab\u041f\u0435\u0440\u0432\u0430\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
+      "section": "Stage 4 — Воспоминание I «Первая встреча»",
       "id": "S04-001",
       "kind": "MUST",
       "category": "Environment",
@@ -1798,14 +1802,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 4 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 I \u00ab\u041f\u0435\u0440\u0432\u0430\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
+      "section": "Stage 4 — Воспоминание I «Первая встреча»",
       "id": "S04-002",
       "kind": "MUST",
       "category": "Gameplay",
       "requirement": "Two resonance runes / marked positions",
       "stages": "4",
       "reuse": "R-RAID",
-      "variants": "1 rune mesh/material instanced \u00d72",
+      "variants": "1 rune mesh/material instanced ×2",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -1813,7 +1817,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 4 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 I \u00ab\u041f\u0435\u0440\u0432\u0430\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
+      "section": "Stage 4 — Воспоминание I «Первая встреча»",
       "id": "S04-003",
       "kind": "MUST",
       "category": "Character",
@@ -1828,7 +1832,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 4 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 I \u00ab\u041f\u0435\u0440\u0432\u0430\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
+      "section": "Stage 4 — Воспоминание I «Первая встреча»",
       "id": "S04-004",
       "kind": "MUST",
       "category": "Character",
@@ -1843,7 +1847,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 4 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 I \u00ab\u041f\u0435\u0440\u0432\u0430\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
+      "section": "Stage 4 — Воспоминание I «Первая встреча»",
       "id": "S04-005",
       "kind": "FALLBACK",
       "category": "Character",
@@ -1858,7 +1862,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 4 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 I \u00ab\u041f\u0435\u0440\u0432\u0430\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
+      "section": "Stage 4 — Воспоминание I «Первая встреча»",
       "id": "S04-006",
       "kind": "MUST",
       "category": "VFX",
@@ -1873,7 +1877,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 4 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 I \u00ab\u041f\u0435\u0440\u0432\u0430\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
+      "section": "Stage 4 — Воспоминание I «Первая встреча»",
       "id": "S04-007",
       "kind": "MUST",
       "category": "Animation",
@@ -1888,7 +1892,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 5 \u2014 \u041a\u0440\u044b\u043b\u043e III \u00ab\u0421\u043c\u0435\u0445 / \u041b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u00bb",
+      "section": "Stage 5 — Крыло III «Смех / Легкость»",
       "id": "S05-001",
       "kind": "MUST",
       "category": "Hero",
@@ -1903,14 +1907,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 5 \u2014 \u041a\u0440\u044b\u043b\u043e III \u00ab\u0421\u043c\u0435\u0445 / \u041b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u00bb",
+      "section": "Stage 5 — Крыло III «Смех / Легкость»",
       "id": "S05-002",
       "kind": "MUST",
       "category": "Puzzle",
       "requirement": "Three counterweights with 3 fixed positions",
       "stages": "5",
       "reuse": "UNIQUE",
-      "variants": "1 base instanced \u00d73",
+      "variants": "1 base instanced ×3",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -1918,7 +1922,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 5 \u2014 \u041a\u0440\u044b\u043b\u043e III \u00ab\u0421\u043c\u0435\u0445 / \u041b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u00bb",
+      "section": "Stage 5 — Крыло III «Смех / Легкость»",
       "id": "S05-003",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1933,7 +1937,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 5 \u2014 \u041a\u0440\u044b\u043b\u043e III \u00ab\u0421\u043c\u0435\u0445 / \u041b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u00bb",
+      "section": "Stage 5 — Крыло III «Смех / Легкость»",
       "id": "S05-004",
       "kind": "MUST",
       "category": "Puzzle",
@@ -1948,7 +1952,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 5 \u2014 \u041a\u0440\u044b\u043b\u043e III \u00ab\u0421\u043c\u0435\u0445 / \u041b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u00bb",
+      "section": "Stage 5 — Крыло III «Смех / Легкость»",
       "id": "S05-005",
       "kind": "MUST",
       "category": "Hero",
@@ -1963,14 +1967,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 5 \u2014 \u041a\u0440\u044b\u043b\u043e III \u00ab\u0421\u043c\u0435\u0445 / \u041b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u00bb",
+      "section": "Stage 5 — Крыло III «Смех / Легкость»",
       "id": "S05-006",
       "kind": "MUST",
       "category": "Hero",
       "requirement": "Bell cascade set",
       "stages": "5",
       "reuse": "UNIQUE",
-      "variants": "3\u20135 bell meshes; shared material",
+      "variants": "3–5 bell meshes; shared material",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -1978,7 +1982,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 5 \u2014 \u041a\u0440\u044b\u043b\u043e III \u00ab\u0421\u043c\u0435\u0445 / \u041b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u00bb",
+      "section": "Stage 5 — Крыло III «Смех / Легкость»",
       "id": "S05-007",
       "kind": "MUST",
       "category": "Narrative",
@@ -1993,7 +1997,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 5 \u2014 \u041a\u0440\u044b\u043b\u043e III \u00ab\u0421\u043c\u0435\u0445 / \u041b\u0435\u0433\u043a\u043e\u0441\u0442\u044c\u00bb",
+      "section": "Stage 5 — Крыло III «Смех / Легкость»",
       "id": "S05-008",
       "kind": "MUST",
       "category": "Transition",
@@ -2008,7 +2012,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-001",
       "kind": "MUST",
       "category": "Hero",
@@ -2023,7 +2027,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-002",
       "kind": "MUST",
       "category": "Environment",
@@ -2038,7 +2042,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-003",
       "kind": "MUST",
       "category": "Environment",
@@ -2053,11 +2057,11 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-004",
       "kind": "MUST",
       "category": "Gameplay",
-      "requirement": "3\u20134 cover props",
+      "requirement": "3–4 cover props",
       "stages": "6",
       "reuse": "R-RAID",
       "variants": "columns/mechanisms/statue debris from shared kit",
@@ -2068,7 +2072,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-005",
       "kind": "MUST",
       "category": "Character",
@@ -2083,7 +2087,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-006",
       "kind": "MUST",
       "category": "Character",
@@ -2098,14 +2102,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-007",
       "kind": "MUST",
       "category": "Hazard",
       "requirement": "Collapsing ceiling segments",
       "stages": "6",
       "reuse": "UNIQUE",
-      "variants": "2\u20133 chunks + dust; scripted",
+      "variants": "2–3 chunks + dust; scripted",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2113,7 +2117,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-008",
       "kind": "MUST",
       "category": "Hazard",
@@ -2128,7 +2132,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-009",
       "kind": "MUST",
       "category": "Hazard",
@@ -2143,7 +2147,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-010",
       "kind": "MUST",
       "category": "Environment",
@@ -2158,7 +2162,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-011",
       "kind": "MUST",
       "category": "Character/Anim",
@@ -2173,7 +2177,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 6 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 II \u00ab\u042f\u0439\u0446\u043e\u00bb",
+      "section": "Stage 6 — Воспоминание II «Яйцо»",
       "id": "S06-012",
       "kind": "MUST",
       "category": "VFX",
@@ -2188,7 +2192,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 7 \u2014 \u041a\u0440\u044b\u043b\u043e IV \u00ab\u0421\u0435\u0440\u044c\u0435\u0437\u043d\u043e\u0441\u0442\u044c / \u0423\u043b\u044b\u0431\u043a\u0430\u00bb",
+      "section": "Stage 7 — Крыло IV «Серьезность / Улыбка»",
       "id": "S07-001",
       "kind": "MUST",
       "category": "Hero",
@@ -2203,7 +2207,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 7 \u2014 \u041a\u0440\u044b\u043b\u043e IV \u00ab\u0421\u0435\u0440\u044c\u0435\u0437\u043d\u043e\u0441\u0442\u044c / \u0423\u043b\u044b\u0431\u043a\u0430\u00bb",
+      "section": "Stage 7 — Крыло IV «Серьезность / Улыбка»",
       "id": "S07-002",
       "kind": "MUST",
       "category": "Puzzle",
@@ -2218,14 +2222,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 7 \u2014 \u041a\u0440\u044b\u043b\u043e IV \u00ab\u0421\u0435\u0440\u044c\u0435\u0437\u043d\u043e\u0441\u0442\u044c / \u0423\u043b\u044b\u0431\u043a\u0430\u00bb",
+      "section": "Stage 7 — Крыло IV «Серьезность / Улыбка»",
       "id": "S07-003",
       "kind": "MUST",
       "category": "Puzzle",
       "requirement": "Four symbol discs, 3 states each",
       "stages": "7",
       "reuse": "UNIQUE",
-      "variants": "1 disc mesh instanced \u00d74 + symbol atlas",
+      "variants": "1 disc mesh instanced ×4 + symbol atlas",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2233,7 +2237,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 7 \u2014 \u041a\u0440\u044b\u043b\u043e IV \u00ab\u0421\u0435\u0440\u044c\u0435\u0437\u043d\u043e\u0441\u0442\u044c / \u0423\u043b\u044b\u0431\u043a\u0430\u00bb",
+      "section": "Stage 7 — Крыло IV «Серьезность / Улыбка»",
       "id": "S07-004",
       "kind": "MUST",
       "category": "Content",
@@ -2248,7 +2252,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 7 \u2014 \u041a\u0440\u044b\u043b\u043e IV \u00ab\u0421\u0435\u0440\u044c\u0435\u0437\u043d\u043e\u0441\u0442\u044c / \u0423\u043b\u044b\u0431\u043a\u0430\u00bb",
+      "section": "Stage 7 — Крыло IV «Серьезность / Улыбка»",
       "id": "S07-005",
       "kind": "MUST",
       "category": "Puzzle",
@@ -2263,7 +2267,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 7 \u2014 \u041a\u0440\u044b\u043b\u043e IV \u00ab\u0421\u0435\u0440\u044c\u0435\u0437\u043d\u043e\u0441\u0442\u044c / \u0423\u043b\u044b\u0431\u043a\u0430\u00bb",
+      "section": "Stage 7 — Крыло IV «Серьезность / Улыбка»",
       "id": "S07-006",
       "kind": "MUST",
       "category": "Narrative",
@@ -2278,7 +2282,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 7 \u2014 \u041a\u0440\u044b\u043b\u043e IV \u00ab\u0421\u0435\u0440\u044c\u0435\u0437\u043d\u043e\u0441\u0442\u044c / \u0423\u043b\u044b\u0431\u043a\u0430\u00bb",
+      "section": "Stage 7 — Крыло IV «Серьезность / Улыбка»",
       "id": "S07-007",
       "kind": "MUST",
       "category": "VFX",
@@ -2293,7 +2297,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-001",
       "kind": "MUST",
       "category": "Hero",
@@ -2308,14 +2312,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-002",
       "kind": "MUST",
       "category": "Puzzle",
       "requirement": "Four observers / optical viewers",
       "stages": "8",
       "reuse": "R-ARCHIVE",
-      "variants": "1 mesh instanced \u00d74",
+      "variants": "1 mesh instanced ×4",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2323,7 +2327,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-003",
       "kind": "MUST",
       "category": "Puzzle",
@@ -2338,7 +2342,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-004",
       "kind": "MUST",
       "category": "Puzzle",
@@ -2353,7 +2357,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-005",
       "kind": "MUST",
       "category": "Hero",
@@ -2368,14 +2372,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-006",
       "kind": "MUST",
       "category": "Puzzle",
       "requirement": "Three filter frames, 3 states each",
       "stages": "8",
       "reuse": "R-ARCHIVE",
-      "variants": "1 frame instanced \u00d73",
+      "variants": "1 frame instanced ×3",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2383,7 +2387,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-007",
       "kind": "MUST",
       "category": "Puzzle",
@@ -2398,7 +2402,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-008",
       "kind": "MUST",
       "category": "Narrative",
@@ -2413,11 +2417,11 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 8 \u2014 \u041a\u0440\u044b\u043b\u043e V \u00ab\u0418\u0441\u043a\u0440\u0435\u043d\u043d\u043e\u0441\u0442\u044c / \u0412\u043e\u0441\u0445\u0438\u0449\u0435\u043d\u0438\u0435\u00bb",
+      "section": "Stage 8 — Крыло V «Искренность / Восхищение»",
       "id": "S08-009",
       "kind": "MUST",
       "category": "Narrative",
-      "requirement": "Future Record panel \u00ab\u041d\u0435 \u0441\u043e\u0437\u0434\u0430\u043d\u0430\u00bb",
+      "requirement": "Future Record panel «Не создана»",
       "stages": "8",
       "reuse": "UNIQUE",
       "variants": "1 system panel + world-space text",
@@ -2428,7 +2432,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 9 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 III \u00ab\u0422\u043e, \u0447\u0435\u0433\u043e \u0435\u0449\u0435 \u043d\u0435\u0442\u00bb",
+      "section": "Stage 9 — Воспоминание III «То, чего еще нет»",
       "id": "S09-001",
       "kind": "MUST",
       "category": "Environment",
@@ -2443,7 +2447,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 9 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 III \u00ab\u0422\u043e, \u0447\u0435\u0433\u043e \u0435\u0449\u0435 \u043d\u0435\u0442\u00bb",
+      "section": "Stage 9 — Воспоминание III «То, чего еще нет»",
       "id": "S09-002",
       "kind": "MUST",
       "category": "Environment",
@@ -2458,7 +2462,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 9 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 III \u00ab\u0422\u043e, \u0447\u0435\u0433\u043e \u0435\u0449\u0435 \u043d\u0435\u0442\u00bb",
+      "section": "Stage 9 — Воспоминание III «То, чего еще нет»",
       "id": "S09-003",
       "kind": "MUST",
       "category": "Environment",
@@ -2473,7 +2477,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 9 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 III \u00ab\u0422\u043e, \u0447\u0435\u0433\u043e \u0435\u0449\u0435 \u043d\u0435\u0442\u00bb",
+      "section": "Stage 9 — Воспоминание III «То, чего еще нет»",
       "id": "S09-004",
       "kind": "MUST",
       "category": "Character",
@@ -2488,7 +2492,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 9 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 III \u00ab\u0422\u043e, \u0447\u0435\u0433\u043e \u0435\u0449\u0435 \u043d\u0435\u0442\u00bb",
+      "section": "Stage 9 — Воспоминание III «То, чего еще нет»",
       "id": "S09-005",
       "kind": "MUST",
       "category": "Character",
@@ -2503,11 +2507,11 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 9 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 III \u00ab\u0422\u043e, \u0447\u0435\u0433\u043e \u0435\u0449\u0435 \u043d\u0435\u0442\u00bb",
+      "section": "Stage 9 — Воспоминание III «То, чего еще нет»",
       "id": "S09-006",
       "kind": "MUST",
       "category": "VFX",
-      "requirement": "Fantasy \u2192 real dissolve",
+      "requirement": "Fantasy → real dissolve",
       "stages": "9",
       "reuse": "R-GLOBAL",
       "variants": "VFX-005 variant",
@@ -2518,7 +2522,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 9 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 III \u00ab\u0422\u043e, \u0447\u0435\u0433\u043e \u0435\u0449\u0435 \u043d\u0435\u0442\u00bb",
+      "section": "Stage 9 — Воспоминание III «То, чего еще нет»",
       "id": "S09-007",
       "kind": "MUST",
       "category": "VFX",
@@ -2533,7 +2537,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 9 \u2014 \u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 III \u00ab\u0422\u043e, \u0447\u0435\u0433\u043e \u0435\u0449\u0435 \u043d\u0435\u0442\u00bb",
+      "section": "Stage 9 — Воспоминание III «То, чего еще нет»",
       "id": "S09-008",
       "kind": "MUST",
       "category": "Camera/Path",
@@ -2548,7 +2552,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 10 \u2014 \u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0432 \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044e",
+      "section": "Stage 10 — Возвращение в обсерваторию",
       "id": "S10-001",
       "kind": "MUST",
       "category": "Environment",
@@ -2563,7 +2567,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 10 \u2014 \u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0432 \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044e",
+      "section": "Stage 10 — Возвращение в обсерваторию",
       "id": "S10-002",
       "kind": "MUST",
       "category": "Hero",
@@ -2578,14 +2582,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 10 \u2014 \u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0432 \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044e",
+      "section": "Stage 10 — Возвращение в обсерваторию",
       "id": "S10-003",
       "kind": "MUST",
       "category": "Gameplay",
       "requirement": "10 empty sigil sockets",
       "stages": "10",
       "reuse": "R-FINAL",
-      "variants": "1 socket mesh instanced \u00d710",
+      "variants": "1 socket mesh instanced ×10",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2593,14 +2597,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 10 \u2014 \u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0432 \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044e",
+      "section": "Stage 10 — Возвращение в обсерваторию",
       "id": "S10-004",
       "kind": "MUST",
       "category": "Presentation",
       "requirement": "10 sigil instances in found/free arrangement",
       "stages": "10",
       "reuse": "R-FINAL",
-      "variants": "SIG-001\u2013010",
+      "variants": "SIG-001–010",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2608,7 +2612,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 10 \u2014 \u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0432 \u043e\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043e\u0440\u0438\u044e",
+      "section": "Stage 10 — Возвращение в обсерваторию",
       "id": "S10-005",
       "kind": "MUST",
       "category": "VFX",
@@ -2623,14 +2627,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 11 \u2014 \u0424\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0433\u043e\u043b\u043e\u0432\u043e\u043b\u043e\u043c\u043a\u0430 \u00ab\u041f\u043e\u0440\u044f\u0434\u043e\u043a \u0441\u0432\u0435\u0442\u0430\u00bb",
+      "section": "Stage 11 — Финальная головоломка «Порядок света»",
       "id": "S11-001",
       "kind": "MUST",
       "category": "Puzzle",
       "requirement": "Five pair nodes / frames",
       "stages": "11",
       "reuse": "R-FINAL",
-      "variants": "1 pair-node assembly instanced \u00d75",
+      "variants": "1 pair-node assembly instanced ×5",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2638,7 +2642,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 11 \u2014 \u0424\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0433\u043e\u043b\u043e\u0432\u043e\u043b\u043e\u043c\u043a\u0430 \u00ab\u041f\u043e\u0440\u044f\u0434\u043e\u043a \u0441\u0432\u0435\u0442\u0430\u00bb",
+      "section": "Stage 11 — Финальная головоломка «Порядок света»",
       "id": "S11-002",
       "kind": "MUST",
       "category": "Puzzle",
@@ -2653,7 +2657,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 11 \u2014 \u0424\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0433\u043e\u043b\u043e\u0432\u043e\u043b\u043e\u043c\u043a\u0430 \u00ab\u041f\u043e\u0440\u044f\u0434\u043e\u043a \u0441\u0432\u0435\u0442\u0430\u00bb",
+      "section": "Stage 11 — Финальная головоломка «Порядок света»",
       "id": "S11-003",
       "kind": "MUST",
       "category": "VFX",
@@ -2668,7 +2672,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 11 \u2014 \u0424\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0433\u043e\u043b\u043e\u0432\u043e\u043b\u043e\u043c\u043a\u0430 \u00ab\u041f\u043e\u0440\u044f\u0434\u043e\u043a \u0441\u0432\u0435\u0442\u0430\u00bb",
+      "section": "Stage 11 — Финальная головоломка «Порядок света»",
       "id": "S11-004",
       "kind": "MUST",
       "category": "VFX",
@@ -2683,7 +2687,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 11 \u2014 \u0424\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0433\u043e\u043b\u043e\u0432\u043e\u043b\u043e\u043c\u043a\u0430 \u00ab\u041f\u043e\u0440\u044f\u0434\u043e\u043a \u0441\u0432\u0435\u0442\u0430\u00bb",
+      "section": "Stage 11 — Финальная головоломка «Порядок света»",
       "id": "S11-005",
       "kind": "MUST",
       "category": "UI",
@@ -2698,14 +2702,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 12 \u2014 \u0421\u0431\u043e\u0440\u043a\u0430 \u0441\u0442\u0438\u0445\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u0438\u044f",
+      "section": "Stage 12 — Сборка стихотворения",
       "id": "S12-001",
       "kind": "MUST",
       "category": "UI/World-space",
       "requirement": "10 poem block rigs",
       "stages": "12",
       "reuse": "R-FINAL",
-      "variants": "1 template instanced \u00d710",
+      "variants": "1 template instanced ×10",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2713,7 +2717,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 12 \u2014 \u0421\u0431\u043e\u0440\u043a\u0430 \u0441\u0442\u0438\u0445\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u0438\u044f",
+      "section": "Stage 12 — Сборка стихотворения",
       "id": "S12-002",
       "kind": "MUST",
       "category": "UI/World-space",
@@ -2728,7 +2732,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 12 \u2014 \u0421\u0431\u043e\u0440\u043a\u0430 \u0441\u0442\u0438\u0445\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u0438\u044f",
+      "section": "Stage 12 — Сборка стихотворения",
       "id": "S12-003",
       "kind": "MUST",
       "category": "VFX",
@@ -2743,7 +2747,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 12 \u2014 \u0421\u0431\u043e\u0440\u043a\u0430 \u0441\u0442\u0438\u0445\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u0438\u044f",
+      "section": "Stage 12 — Сборка стихотворения",
       "id": "S12-004",
       "kind": "MUST",
       "category": "Typography",
@@ -2758,14 +2762,14 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 13 \u2014 \u0420\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0435 \u0430\u043a\u0440\u043e\u0441\u0442\u0438\u0445\u0430",
+      "section": "Stage 13 — Раскрытие акростиха",
       "id": "S13-001",
       "kind": "MUST",
       "category": "UI/VFX",
       "requirement": "10 initial-letter overlay nodes aligned to poem",
       "stages": "13",
       "reuse": "R-FINAL",
-      "variants": "1 component \u00d710",
+      "variants": "1 component ×10",
       "canonical_notes": "",
       "required_for_vs1": false,
       "status": "NOT REQUIRED FOR VS1",
@@ -2773,7 +2777,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 13 \u2014 \u0420\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0435 \u0430\u043a\u0440\u043e\u0441\u0442\u0438\u0445\u0430",
+      "section": "Stage 13 — Раскрытие акростиха",
       "id": "S13-002",
       "kind": "MUST",
       "category": "VFX",
@@ -2788,11 +2792,11 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 13 \u2014 \u0420\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0435 \u0430\u043a\u0440\u043e\u0441\u0442\u0438\u0445\u0430",
+      "section": "Stage 13 — Раскрытие акростиха",
       "id": "S13-003",
       "kind": "MUST",
       "category": "UI/VFX",
-      "requirement": "Vertical \u2192 horizontal letter rearrangement",
+      "requirement": "Vertical → horizontal letter rearrangement",
       "stages": "13",
       "reuse": "R-FINAL",
       "variants": "animation data only",
@@ -2803,11 +2807,11 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 13 \u2014 \u0420\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0435 \u0430\u043a\u0440\u043e\u0441\u0442\u0438\u0445\u0430",
+      "section": "Stage 13 — Раскрытие акростиха",
       "id": "S13-004",
       "kind": "MUST",
       "category": "UI",
-      "requirement": "Final phrase rig \u00ab\u042f \u043b\u044e\u0431\u043b\u044e \u0442\u0435\u0431\u044f\u00bb",
+      "requirement": "Final phrase rig «Я люблю тебя»",
       "stages": "13",
       "reuse": "R-FINAL",
       "variants": "same glyphs/typography, no new font",
@@ -2818,7 +2822,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 14 \u2014 \u041f\u0440\u0438\u0437\u043d\u0430\u043d\u0438\u0435",
+      "section": "Stage 14 — Признание",
       "id": "S14-001",
       "kind": "MUST",
       "category": "UI",
@@ -2833,7 +2837,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 14 \u2014 \u041f\u0440\u0438\u0437\u043d\u0430\u043d\u0438\u0435",
+      "section": "Stage 14 — Признание",
       "id": "S14-002",
       "kind": "MUST",
       "category": "UI",
@@ -2848,7 +2852,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 14 \u2014 \u041f\u0440\u0438\u0437\u043d\u0430\u043d\u0438\u0435",
+      "section": "Stage 14 — Признание",
       "id": "S14-003",
       "kind": "MUST",
       "category": "Lighting",
@@ -2863,7 +2867,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 14 \u2014 \u041f\u0440\u0438\u0437\u043d\u0430\u043d\u0438\u0435",
+      "section": "Stage 14 — Признание",
       "id": "S14-004",
       "kind": "MUST",
       "category": "Camera",
@@ -2878,7 +2882,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 15 \u2014 \u042d\u043f\u0438\u043b\u043e\u0433 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u00bb",
+      "section": "Stage 15 — Эпилог «Рассвет»",
       "id": "S15-001",
       "kind": "MUST",
       "category": "Environment",
@@ -2893,11 +2897,11 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 15 \u2014 \u042d\u043f\u0438\u043b\u043e\u0433 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u00bb",
+      "section": "Stage 15 — Эпилог «Рассвет»",
       "id": "S15-002",
       "kind": "MUST",
       "category": "Lighting",
-      "requirement": "NIGHT_FINAL \u2192 PRE_DAWN \u2192 DAWN \u2192 MORNING states",
+      "requirement": "NIGHT_FINAL → PRE_DAWN → DAWN → MORNING states",
       "stages": "15",
       "reuse": "R-HUB",
       "variants": "4 lighting/world presets",
@@ -2908,7 +2912,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 15 \u2014 \u042d\u043f\u0438\u043b\u043e\u0433 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u00bb",
+      "section": "Stage 15 — Эпилог «Рассвет»",
       "id": "S15-003",
       "kind": "MUST",
       "category": "Sky",
@@ -2923,7 +2927,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 15 \u2014 \u042d\u043f\u0438\u043b\u043e\u0433 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u00bb",
+      "section": "Stage 15 — Эпилог «Рассвет»",
       "id": "S15-004",
       "kind": "MUST",
       "category": "Camera",
@@ -2938,7 +2942,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 15 \u2014 \u042d\u043f\u0438\u043b\u043e\u0433 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u00bb",
+      "section": "Stage 15 — Эпилог «Рассвет»",
       "id": "S15-005",
       "kind": "MUST",
       "category": "UI",
@@ -2953,7 +2957,7 @@
       "evidence_paths": []
     },
     {
-      "section": "Stage 15 \u2014 \u042d\u043f\u0438\u043b\u043e\u0433 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u00bb",
+      "section": "Stage 15 — Эпилог «Рассвет»",
       "id": "S15-006",
       "kind": "MUST",
       "category": "VFX",
@@ -2971,12 +2975,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-07T11:11:00.046789+00:00",
-  "latest_delta": "MAT-005 and MAT-011 original masters/specimens ready but unbound/PARTIAL. Last integrated runtime STABLE5184c48; ARCH-011 owner/full VS1 remain OPEN.",
+  "updated_at": "2026-10-07T11:29:53.638927+00:00",
+  "latest_delta": "MAT-012 unbound raster/alpha source ready, PARTIAL only. Stone/linen unbound PARTIAL retained. No shipping changes; integrated STABLE5184c48 unchanged.",
   "vs1_counts": {
     "ACCEPTED": 26,
-    "PARTIAL": 42,
-    "MISSING": 9
+    "PARTIAL": 43,
+    "MISSING": 8
   },
-  "publication_status": "MAT-005 source-only STABLEde3860c independently remote verified. Resolve final MAT-011 source-only STABLE/receipt HEAD in continuation_20261007.jsonl; integrated runtime STABLE5184c48 unchanged."
+  "publication_status": "Stone source STABLEde3860c and linen source STABLE2cb6d39 remote verified. Resolve final atlas source STABLE/receipt HEAD in continuation_20261007.jsonl; integrated runtime STABLE5184c48 unchanged."
 }

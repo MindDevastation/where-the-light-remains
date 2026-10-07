@@ -1,0 +1,219 @@
+{
+  "status": "SOURCE_ANALYZED_NATIVE_PENDING",
+  "generation_mode": "built-in imagegen; original generation then layout-only edit",
+  "source_sha256": "e393f45ac7550485e175e9817cf043b486649904f433dd521e5ad5f5d9a860a7",
+  "original_candidate_sha256": "5febe4d5dd7141695a085dbd12ca345fb01850fe282536ad5a8d8d5d22a98e7e",
+  "prompts": {
+    "docs/production/leaf_atlas_prompt.txt": "740799654b47365f6a8d7341b74c2b0aeb01209f945a91f52e0fddab306e0d0c",
+    "docs/production/leaf_atlas_edit_prompt.txt": "2af6681e9f99958741e9dd2af839e04a3f2de7c91d9e06972de50cf091550e60"
+  },
+  "actual_dimensions": [
+    1774,
+    887
+  ],
+  "requested_dimensions": [
+    2048,
+    1024
+  ],
+  "mode": "RGBA",
+  "source_bytes_preserved": true,
+  "raster_edits_by_python": false,
+  "alpha_threshold": 0.5,
+  "alpha_zero_pixel_count": 1264127,
+  "alpha_255_pixel_count": 1569,
+  "cells": [
+    {
+      "index": 0,
+      "source_rect": [
+        0,
+        0,
+        443,
+        443
+      ],
+      "normalized_uv_rect": [
+        0.0,
+        0.0,
+        0.25,
+        0.5
+      ],
+      "cutout_bounds": [
+        110,
+        84,
+        347,
+        380
+      ],
+      "minimum_effective_gutter_fraction": 0.1399548532731377,
+      "gutter_max_alpha": 1,
+      "opaque_occupancy": 0.1874098721522148
+    },
+    {
+      "index": 1,
+      "source_rect": [
+        443,
+        0,
+        444,
+        443
+      ],
+      "normalized_uv_rect": [
+        0.25,
+        0.0,
+        0.25,
+        0.5
+      ],
+      "cutout_bounds": [
+        100,
+        83,
+        359,
+        383
+      ],
+      "minimum_effective_gutter_fraction": 0.13318284424379231,
+      "gutter_max_alpha": 1,
+      "opaque_occupancy": 0.17371830069347
+    },
+    {
+      "index": 2,
+      "source_rect": [
+        887,
+        0,
+        443,
+        443
+      ],
+      "normalized_uv_rect": [
+        0.5,
+        0.0,
+        0.25,
+        0.5
+      ],
+      "cutout_bounds": [
+        107,
+        82,
+        309,
+        383
+      ],
+      "minimum_effective_gutter_fraction": 0.13318284424379231,
+      "gutter_max_alpha": 1,
+      "opaque_occupancy": 0.163904019893095
+    },
+    {
+      "index": 3,
+      "source_rect": [
+        1330,
+        0,
+        444,
+        443
+      ],
+      "normalized_uv_rect": [
+        0.75,
+        0.0,
+        0.25,
+        0.5
+      ],
+      "cutout_bounds": [
+        70,
+        82,
+        356,
+        383
+      ],
+      "minimum_effective_gutter_fraction": 0.13318284424379231,
+      "gutter_max_alpha": 1,
+      "opaque_occupancy": 0.18416610741667175
+    },
+    {
+      "index": 4,
+      "source_rect": [
+        0,
+        443,
+        443,
+        444
+      ],
+      "normalized_uv_rect": [
+        0.0,
+        0.5,
+        0.25,
+        0.5
+      ],
+      "cutout_bounds": [
+        86,
+        58,
+        365,
+        360
+      ],
+      "minimum_effective_gutter_fraction": 0.13063063063063063,
+      "gutter_max_alpha": 1,
+      "opaque_occupancy": 0.1865963028491245
+    },
+    {
+      "index": 5,
+      "source_rect": [
+        443,
+        443,
+        444,
+        444
+      ],
+      "normalized_uv_rect": [
+        0.25,
+        0.5,
+        0.25,
+        0.5
+      ],
+      "cutout_bounds": [
+        81,
+        58,
+        378,
+        362
+      ],
+      "minimum_effective_gutter_fraction": 0.13063063063063063,
+      "gutter_max_alpha": 1,
+      "opaque_occupancy": 0.20813042772502233
+    },
+    {
+      "index": 6,
+      "source_rect": [
+        887,
+        443,
+        443,
+        444
+      ],
+      "normalized_uv_rect": [
+        0.5,
+        0.5,
+        0.25,
+        0.5
+      ],
+      "cutout_bounds": [
+        113,
+        62,
+        296,
+        361
+      ],
+      "minimum_effective_gutter_fraction": 0.13963963963963963,
+      "gutter_max_alpha": 1,
+      "opaque_occupancy": 0.14401704187257236
+    },
+    {
+      "index": 7,
+      "source_rect": [
+        1330,
+        443,
+        444,
+        444
+      ],
+      "normalized_uv_rect": [
+        0.75,
+        0.5,
+        0.25,
+        0.5
+      ],
+      "cutout_bounds": [
+        75,
+        61,
+        365,
+        361
+      ],
+      "minimum_effective_gutter_fraction": 0.1373873873873874,
+      "gutter_max_alpha": 1,
+      "opaque_occupancy": 0.19459155101046993
+    }
+  ],
+  "note": "Normalized equal4x2 cells; integer source rectangles differ by at most1 pixel at nondivisible returned dimensions. Sparse alpha1-15 residuals exist in gutters and are discarded by explicit alpha-scissor. No fully-zero alpha gutter or exact requested-size claim; never use this source as blended glass."
+}

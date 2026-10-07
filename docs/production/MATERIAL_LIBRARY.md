@@ -174,3 +174,13 @@ linen_manifest.json. All3 source maps differ from preserved woven_textile maps;
 LINEN_SOURCE_READINESS.md records66 isolated assertions/8 individual native
 images. Material remains unbound/PARTIAL pending the canonical dressing actor.
 Crimson/navy/rug/leather source and material assignments remain unchanged.
+
+## MAT-012 unbound leaf-atlas extension — 2026-10-07
+
+One preserved original imagegen RGBA atlas t_archive_leaf_atlas.png, actual
+1774×887, eight normalized4×2 cells; exact two-prompt lineage and alpha bounds
+in leaf_atlas_manifest.json. Shared m_archive_leaf_cutout.tres uses native .5
+alpha-scissor/two-sided matte PBR and HQ compressed mipmaps/fix-alpha-border.
+LEAF_ATLAS_SOURCE_READINESS.md records168 assertions/8 individually inspected
+native frames. Source row PARTIAL; actual plant carrier/UV density/placement and
+shipping/motion/style acceptance remain open. No original material map changed.

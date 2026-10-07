@@ -1,4 +1,36 @@
-# Current native source continuation — stone and linen, 2026-10-07
+# Current native source continuation — stone, linen and leaf atlas, 2026-10-07
+
+Exact recovery8db32c5 followed by verified source STABLEde3860c (MAT-005) and
+2cb6d39 (MAT-011). LEAF_ATLAS_SOURCE_READINESS.md adds one original eight-cell
+1774×887 RGBA atlas and shared native cutout master,168 isolated assertions and
+8 individually inspected native frames. Source continuation total300 scoped
+assertion executions/24 individual frames; protected primary/backup PASS.
+No shipping assignment, gameplay autoload, settings/save/route change or new LFS.
+Last integrated runtime production STABLE5184c48 remains unchanged. Resolve final
+atlas source STABLE and receipt HEAD via continuation_20261007.jsonl.
+
+MAT-005/011/012 remain PARTIAL until their canonical carriers/assignments and
+affected shipping tests:26 ACCEPTED/43 PARTIAL/8 MISSING among77;185 rows intact.
+Only the MAT-012 row changes this stage. Atlas has .5 cutout-safe gutters; actual
+returned dimensions and sparse low-alpha residue are documented, generated PNG
+bytes preserved. S00 v2 timber/iron/cobalt look is unchanged. Prior193 art/source
+and47 committed LFS pointer/OID/size identities remain intact; old payload use/
+Blender reopen and accepted suites are historical, not freshly rerun.
+
+Next independent source scope: fix TRIM-002 stone-trim sheet regions/texel density
+before authoring native source specimens. Shipping ARCH/hero/carrier assets still
+need editable3D sources and independently usable private LFS upload. ARCH-011
+remains required/MISSING pending explicit owner A/B; no collision/canon change.
+
+Architecture/backdrop/alcove/hero/emblems/channels/carrier, remaining trims/decals/
+dressing/style, authored audio/mix/owner first-note/motif, full gallery and physical
+GTX1060-equivalent1080p60 remain OPEN. GATE-VS1 OPEN; S03 blocked. Planning25–30%,
+low confidence,3/16 playable stages unchanged. Source readiness is not integrated
+art acceptance. Owned checkpoint supervisor stops with this active session.
+
+---
+
+# Historical stone and linen source stages, 2026-10-07
 
 Exact recovery8db32c5 followed by remote-verified MAT-005 source STABLEde3860c.
 LINEN_SOURCE_READINESS.md and COOL_DARK_STONE_SOURCE_READINESS.md now record

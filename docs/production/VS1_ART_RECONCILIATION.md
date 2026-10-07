@@ -6,7 +6,7 @@ baseline receipt remains evidence/archive_reconstruction/vs1-reconciliation-2026
 it is not rerun or relabeled. All185 canonical rows remain in the JSON; the77
 VS1-related rows are shown below. Counts are scope classifications, not percent completion.
 
-Current26 ACCEPTED/42 PARTIAL/9 MISSING. MAT-011 source/specimens are also PARTIAL; dressing assignment remains absent. MAT-005 source/specimens are PARTIAL; shipping assignment remains absent. MAT-002 now supplies one distinct
+Current26 ACCEPTED/43 PARTIAL/8 MISSING. MAT-012 atlas/alpha source is PARTIAL; actual plant carrier/placement remains absent. MAT-011 source/specimens are also PARTIAL; dressing assignment remains absent. MAT-005 source/specimens are PARTIAL; shipping assignment remains absent. MAT-002 now supplies one distinct
 mapped polished-brass master in bounded current integration. VFX-006/007 remain
 PARTIAL after their current native dust/inspect acceptance. Full hero, style,
 owner gallery and physical target GPU remain OPEN; GATE-VS1 OPEN/S03 blocked.
@@ -51,7 +51,7 @@ recorded in evidence/checkpoints/continuation_20261007.jsonl.
 | MAT-009 | ACCEPTED | Parchment / paper; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_archive_parchment.tres, docs/production/MATERIAL_LIBRARY.md |
 | MAT-010 | ACCEPTED | Wine / plum textile; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_crimson_textile.tres, docs/production/MATERIAL_LIBRARY.md |
 | MAT-011 | PARTIAL | Linen / neutral fabric; One distinct original linen weave master/maps with deterministic source and isolated native Low/Medium specimens validated:66 assertions and8 individually inspected frames. Neutral-fabric dressing carrier/assignment, close-up UV density/folds and shipping S01 style/tests remain open. | docs/production/LINEN_SOURCE_READINESS.md, game/art/materials/m_linen.tres, tools/generate_linen_maps.py |
-| MAT-012 | MISSING | Leaf / ivy atlas; No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface. |  |
+| MAT-012 | PARTIAL | Leaf / ivy atlas; Original eight-cell RGBA atlas/shared cutout ready;168 native assertions/8 individual frames. Carrier, shipping placement, UV density and motion/style acceptance remain open. | LEAF_ATLAS_SOURCE_READINESS.md |
 | MAT-014 | ACCEPTED | Archive emissive gold; Shared authored runtime material accepted in documented bounded integration; representative full-slice lighting remains open. | game/art/materials/m_archive_emissive_gold.tres, docs/production/MATERIAL_LIBRARY.md |
 | TRIM-001 | MISSING | Archive brass/wood trim sheet; No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface. |  |
 | TRIM-002 | MISSING | Stone/ornament trim sheet; No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface. |  |
