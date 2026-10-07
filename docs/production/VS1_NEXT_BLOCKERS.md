@@ -1,4 +1,39 @@
-# Current native source continuation — stone, linen and leaf atlas, 2026-10-07
+# Current TRIM-002 source and measured integration handoff — 2026-10-07
+
+STONE_TRIM_SOURCE_READINESS.md: separate original2048 trim/3 PBR maps/editable
+shared native master, five guarded carved regions at1024px/m. Fresh final
+stone-trim-native-3:128 assertion executions and8 individually inspected Low/
+Medium neutral/current-light/mip frames. Diagnostics1/2 excluded from final credit.
+Prior material300 executions/24 views remain historical current-source evidence.
+No shipping assignments, new LFS binaries, gameplay/save/route/settings changes.
+Root/game READMEs now describe the actual playable S00→S01→S02→Hub scope.
+
+Only TRIM-002 MISSING→PARTIAL:26 ACCEPTED/44 PARTIAL/7 MISSING among77;185 rows
+retained. MAT-005/011/012 and hero/console classifications remain PARTIAL.
+First carrier: RoomPortal front6cm stone fillet, world(0,0,-15), UV-only sibling
+contract in STONE_TRIM_FIRST_INTEGRATION.md. Existing geometry/collision stays.
+CORE_ORBITS_PRODUCTION_BRIEF.md fixes three radii .58/.46/.34m, authored mounts,
+pivot/yaw/material/UV/budget contracts. Actual native Euler basis and conservative
+continuous-yaw metric bounds pass;Socket gap≥109.5mm. This is no new GLB or E-ray/
+style acceptance. Its inspected metric drawing is not a native shipping frame.
+
+Next concrete step: configure authenticated GitHub credential helper supporting
+private git-lfs upload in this environment, restore pinned Blender, then author/
+independently retrieve/reopen the first UV sibling or bounded three-orbit assembly
+and run affected native integration tests. Ordinary source checkpoint transport
+works;publication permission is already granted. No additional unused material
+family is the next step. Latest source-only STABLE/receipt HEAD resolves from
+continuation_20261007.jsonl; integrated runtime STABLE5184c48 unchanged.
+ARCH-011 remains required/MISSING pending explicit owner A/B. GATE-VS1 OPEN;
+S03 blocked. Full architecture/dressing/style/audio/owner-gallery/physical target
+GPU dependencies remain open;planning25–30%,low confidence,3/16 stages unchanged.
+Prior193 art identities and47 LFS pointer/OID/size identities are preserved;
+old payload/Blender/game suites are not freshly rerun. Existing runtime files are
+byte-preserved;game/README.md is the explicitly requested documentation update.
+
+---
+
+# Historical native source continuation — stone, linen and leaf atlas, 2026-10-07
 
 Exact recovery8db32c5 followed by verified source STABLEde3860c (MAT-005) and
 2cb6d39 (MAT-011). LEAF_ATLAS_SOURCE_READINESS.md adds one original eight-cell

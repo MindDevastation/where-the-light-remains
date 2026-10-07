@@ -184,3 +184,14 @@ alpha-scissor/two-sided matte PBR and HQ compressed mipmaps/fix-alpha-border.
 LEAF_ATLAS_SOURCE_READINESS.md records168 assertions/8 individually inspected
 native frames. Source row PARTIAL; actual plant carrier/UV density/placement and
 shipping/motion/style acceptance remain open. No original material map changed.
+
+## TRIM-002 original guarded stone trim — source-only PARTIAL
+
+`m_stone_ornament_trim.tres` shares three2048 PNGs under `textures/trims/`.
+Five measured arch/plinth/wall/floor bands,2m U-repeat at1024px/m,minimum64px
+clamped guards, +Y normals±5mm relief and matte dielectric ORM. Editable
+`tools/generate_stone_trim_maps.py` / `stone_trim_regions.json`; accepted tileables
+are unchanged. Source readiness/gallery/final128 executions8 views documented in
+STONE_TRIM_SOURCE_READINESS.md. First6cm RoomPortal fillet requires a UV-only
+LFS sibling;ordinary override onto current tileableUV is not approved. No shipping
+assignment or whole-scene/performance acceptance yet.

@@ -30,8 +30,10 @@ yaw, not only one pose. Minimum orbit-to-control gaps: Panel321 mm, Lens936 mm,
 Socket109.5 mm, Lever292 mm. Radius0.58 is selected to retain≥100 mm at Socket;
 larger silhouette is not automatically permitted. Conservative orbit bounds fit
 inside the historical accepted world envelope x±.882265, y.969710–2.630290,
-z±.688279. The proposed three-ring union is x±.545881, y1.284304–2.315696,
-z±.426241. This proves bounded metric clearance, not gameplay ray visibility,
+z±.688279. The proposed three-ring union before shared yaw is x±.545881, y1.284304–2.315696,
+z±.426241. During full shared yaw, a conservative horizontal bound is radius
+.58+.020+(.58*pi/8192)<.601m in both X/Z, inside the same accepted envelope;
+Y is invariant under parent yaw. This proves bounded metric clearance, not gameplay ray visibility,
 craftsmanship, style parity or material/performance acceptance.
 
 Mount construction: centre spindle radius≤.055 m at worldY1.39–1.8; base collar

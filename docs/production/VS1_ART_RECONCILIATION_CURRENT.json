@@ -793,9 +793,14 @@
       "variants": "1 2K trim",
       "canonical_notes": "Арки/пьедесталы/бордюры",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No distinct required production master/atlas/trim file. Tileables/micro-wear are not a trim or decal atlas; palette-only primitive material is not an authored surface.",
-      "evidence_paths": []
+      "status": "PARTIAL",
+      "finding": "Original guarded2048 trim,3 PBR maps/shared native master;128 final isolated Low/Medium assertion executions and8 inspected views. No shipping assignment;first6cm RoomPortal fillet requires UV sibling and private LFS integration.",
+      "evidence_paths": [
+        "docs/production/STONE_TRIM_SOURCE_READINESS.md",
+        "docs/production/STONE_TRIM_FIRST_INTEGRATION.md",
+        "docs/production/evidence/archive_reconstruction/stone-trim-native-3/results.json",
+        "docs/production/review/stone_trim.html"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -2975,12 +2980,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-07T11:29:53.638927+00:00",
-  "latest_delta": "MAT-012 unbound raster/alpha source ready, PARTIAL only. Stone/linen unbound PARTIAL retained. No shipping changes; integrated STABLE5184c48 unchanged.",
+  "updated_at": "2026-10-07T16:27:29.587495+00:00",
+  "latest_delta": "Only TRIM-002 MISSING→PARTIAL; original unbound2K trim source ready. Three-orbit measured production/mount brief ready;no shipping changes.",
   "vs1_counts": {
     "ACCEPTED": 26,
-    "PARTIAL": 43,
-    "MISSING": 8
+    "PARTIAL": 44,
+    "MISSING": 7
   },
-  "publication_status": "Stone source STABLEde3860c, linen source STABLE2cb6d39 and leaf atlas source STABLE1ccdf68 independently remote verified. Latest receipt HEAD resolves from branch/journal. Last integrated runtime STABLE5184c48 unchanged."
+  "publication_status": "TRIM source seal/latest source-only STABLE and receipt HEAD resolve from continuation_20261007.jsonl. Last integrated runtime STABLE5184c48 unchanged;ordinary Git works/private CLI LFS upload absent."
 }

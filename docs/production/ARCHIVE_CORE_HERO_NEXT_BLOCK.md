@@ -1,3 +1,17 @@
+# Current S01 hero handoff — measured three-orbit brief ready
+
+CORE_ORBITS_PRODUCTION_BRIEF.md and core_orbits_production_brief.json now fix
+three authored orbit radii/orientations, upper mounts, metric UV/material/triangle
+budgets and unchanged pivot/shared yaw. Native default YXZ basis probe and
+conservative full-yaw/control bounds pass;minimumSocket clearance109.5mm.
+The individually inspected metric drawing is not a production mesh/native frame.
+No new geometry, collision, light, control or inventory acceptance. Private CLI
+LFS upload and pinned Blender restoration remain authoring dependencies.
+Actual E-ray/state/save/route/native style checks remain integration work.
+PROP-001/004 remain PARTIAL;ARCH-011 owner A/B pending;GATE-VS1 OPEN/S03 blocked.
+
+---
+
 # Next independent VS1 art block — S01 hero interface audit
 
 Status: native interface audit complete; new 3D production not started. See
