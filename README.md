@@ -8,7 +8,7 @@ The working branch contains playable **S00 prologue â†’ S01 Archive onboarding â
 
 ## Run the current slice
 
-Use Godot **4.7.2 stable** with Forward+. Check out `feature/04-archive-gameplay/resume-2026-10-06`, then run `git lfs install` and `git lfs pull` so committed GLB/source pointers become real payloads. Open `game/project.godot` in the editor and press F6/F5 as appropriate, or launch `godot --path game` from the repository root (the configured boot scene opens the game). The editor command is `godot --editor --path game`. Baseline controls: WASD, mouse look, E interaction, Esc pause; settings expose bindings/accessibility options. Existing primary/backup saves must be preserved when running development checks.
+Use Godot **4.7.2 stable** with Forward+. Check out `feature/04-archive-gameplay/resume-2026-10-06`, then run `git lfs install` and `git lfs pull` so committed GLB/source pointers become real payloads. Open `game/project.godot` in the editor and press F5, or launch `godot --path game` from the repository root (the configured boot scene opens the game). The editor command is `godot --editor --path game`. Baseline controls: WASD, mouse look, E interaction, Esc pause; settings expose bindings/accessibility options. Existing primary/backup saves must be preserved when running development checks.
 
 ## Core profile
 

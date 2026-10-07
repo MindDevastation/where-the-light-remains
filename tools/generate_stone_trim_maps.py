@@ -54,6 +54,7 @@ def generate(output):
         else:
             # Floor-edge return: bevel-like rounded stone profile and two joints.
             relief+=.003*np.sin(np.pi*vv)**2
+            relief+=groove(.18,.02,.002)+groove(.82,.02,.002)
             joint=np.exp(-((np.sin(np.pi*uu*2))/.035)**2)
             relief-=.003*joint*edge;line_stain+=.022*joint*edge
         grain=.0035*stone_grain[None,:]+.0025*np.sin(2*np.pi*(uu*83+vv*43))
