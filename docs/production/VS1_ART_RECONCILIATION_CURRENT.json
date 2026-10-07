@@ -2982,5 +2982,5 @@
     "PARTIAL": 43,
     "MISSING": 8
   },
-  "publication_status": "Stone source STABLEde3860c and linen source STABLE2cb6d39 remote verified. Resolve final atlas source STABLE/receipt HEAD in continuation_20261007.jsonl; integrated runtime STABLE5184c48 unchanged."
+  "publication_status": "Stone source STABLEde3860c, linen source STABLE2cb6d39 and leaf atlas source STABLE1ccdf68 independently remote verified. Latest receipt HEAD resolves from branch/journal. Last integrated runtime STABLE5184c48 unchanged."
 }
