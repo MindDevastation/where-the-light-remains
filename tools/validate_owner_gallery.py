@@ -72,6 +72,14 @@ def main(args):
    result['independent_store_initially_empty']=True
    result['current_run_fresh_payload_reads']=sum(x['independently_retrieved'] for x in result['runtime_lfs_payloads'])
    result['current_run_verified_cache_reuses']=47-result['current_run_fresh_payload_reads']
+   if args.import_cache:
+    assert args.import_cache.is_dir()
+    cache_hashes={}
+    for cached in sorted(args.import_cache.rglob('*')):
+     if cached.is_file():
+      relative=cached.relative_to(args.import_cache);h=sha(cached)
+      write_exact(clean/'game/.godot'/relative,cached.read_bytes(),h);cache_hashes[str(relative)]=h
+    result['verified_import_cache_reuse']={'source':str(args.import_cache),'file_hashes':cache_hashes,'cache_free_import_this_attempt':False,'prior_current_session_cache_free_import':'owner-gallery-native-20261008-4/clean-import.log'}
    data=private/'userdata';slots=data/'godot/app_userdata/Where the Light Remains';slots.mkdir(parents=True)
    for name in ['savegame.json','savegame.backup.json']:(slots/name).write_text('{"protected_fixture":true}\n')
    before={p.name:sha(p) for p in slots.iterdir()};env['XDG_DATA_HOME']=str(data)
@@ -100,4 +108,4 @@ def main(args):
  print(json.dumps({'status':result['status'],'fresh_native_frames':len(result['captures']),'existing_payloads_verified':len(result['runtime_lfs_payloads'])}))
 
 if __name__=='__main__':
- parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--godot',type=Path,required=True);parser.add_argument('--graphics-prefix',type=Path,required=True);parser.add_argument('--output',type=Path,required=True);parser.add_argument('--payload-cache',type=Path,help='Verified prior owned payload cache;reuse separately labelled');parser.add_argument('--private-workspace',type=Path,help='Owned scratch directory retained only on failure for import diagnostics');main(parser.parse_args())
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--godot',type=Path,required=True);parser.add_argument('--graphics-prefix',type=Path,required=True);parser.add_argument('--output',type=Path,required=True);parser.add_argument('--import-cache',type=Path,help='Exact owned previously validated native import cache;reuse explicitly labelled');parser.add_argument('--payload-cache',type=Path,help='Verified prior owned payload cache;reuse separately labelled');parser.add_argument('--private-workspace',type=Path,help='Owned scratch directory retained only on failure for import diagnostics');main(parser.parse_args())

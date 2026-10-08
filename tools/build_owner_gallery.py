@@ -25,7 +25,8 @@ def build(folder):
    assert inspected['frames'][item['file']]['sha256']==item['sha256']
    uri='data:image/png;base64,'+base64.b64encode(raw).decode()
    note=html.escape(inspected['frames'][item['file']]['observation'])
-   figures.append(f'<figure><figcaption>{quality.title()} · 1280×720</figcaption><a href="{uri}" target="_blank"><img alt="{html.escape(title)} / {quality}" src="{uri}" loading="lazy"></a><p>{note}</p><details><summary>Камера и состояние</summary><pre>{html.escape(json.dumps(item,ensure_ascii=False,indent=2))}</pre></details></figure>')
+   original='../'+folder.relative_to(ROOT/'docs/production').as_posix()+'/'+item['file']
+   figures.append(f'<figure><figcaption>{quality.title()} · 1280×720</figcaption><a href="{original}" target="_blank"><img alt="{html.escape(title)} / {quality}" src="{uri}" loading="lazy"></a><p>{note}</p><details><summary>Камера и состояние</summary><pre>{html.escape(json.dumps(item,ensure_ascii=False,indent=2))}</pre></details></figure>')
    embedded.append({'file':item['file'],'sha256':item['sha256'],'bytes':len(raw)})
   sections.append(f'<section id="{name}"><h2>{html.escape(title)}</h2><div class="pair">'+''.join(figures)+'</div></section>')
  nav=' · '.join(f'<a href="#{name}">{html.escape(title)}</a>' for name,title in VIEWS)

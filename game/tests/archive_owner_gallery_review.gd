@@ -107,7 +107,8 @@ func _run() -> void:
         if view.get("awakening",false):
             world._on_activation_requested()
             world._process(4.5)
-        for frame in 24:
+        # Two complete frames after state/camera writes,then explicit post-draw sync.
+        for frame in 2:
             await get_tree().process_frame
         await RenderingServer.frame_post_draw
         var image := get_viewport().get_texture().get_image()
@@ -117,7 +118,7 @@ func _run() -> void:
             get_tree().quit(1)
             return
         captures.append({"name":view["name"],"file":filename,"size":[image.get_width(),image.get_height()],
-            "sample_seconds":view["time"],"supplemental_detail":view.get("detail",false),
+            "sample_seconds":view["time"],"settle_frames":2,"supplemental_detail":view.get("detail",false),
             "bolt_local_x":prologue.lock_bolt.position.x,"left_door_x":prologue.left_door.position.x,
             "right_door_x":prologue.right_door.position.x,
             "core_light_energy":world.get_node("Hub/CoreLight").light_energy,
