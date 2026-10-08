@@ -37,8 +37,9 @@ func _run() -> void:
         return
     var saved := SaveGame.new()
     ArchiveProgress.write_projection(saved)
-    if await SceneRouter.request_resume_stage(saved)!=OK:
-        push_error("Controls shipping resume failed")
+    var resume_error := await SceneRouter.request_resume_stage(saved)
+    if resume_error!=OK:
+        push_error("Owner gallery resume failed: error=%s" % resume_error)
         get_tree().quit(1)
         return
     var before := GameState.capture_save().to_dict()

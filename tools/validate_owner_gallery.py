@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Capture current shipping geometry overview after independent existing LFS reads."""
-import argparse,concurrent.futures,datetime as dt,hashlib,json,os,re,subprocess,tempfile
+import argparse,concurrent.futures,contextlib,datetime as dt,hashlib,json,os,re,shutil,subprocess,tempfile
 from pathlib import Path
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -27,7 +27,13 @@ def main(args):
  def save():receipt.write_text(json.dumps(result,indent=2)+'\n')
  save()
  try:
-  with tempfile.TemporaryDirectory(prefix='wlr-owner-gallery-') as directory:
+  if args.private_workspace:
+   assert not args.private_workspace.exists()
+   assert args.private_workspace.resolve().is_relative_to(root.parent) and not args.private_workspace.resolve().is_relative_to(root)
+   args.private_workspace.mkdir()
+   workspace=contextlib.nullcontext(str(args.private_workspace.resolve()))
+  else:workspace=tempfile.TemporaryDirectory(prefix='wlr-owner-gallery-')
+  with workspace as directory:
    private=Path(directory);clean=private/'source';store=private/'independent-lfs'
    assert not store.exists()
    env=dict(os.environ,GIT_TERMINAL_PROMPT='0',GIT_ASKPASS='/bin/false',GODOT_SILENCE_ROOT_WARNING='1',PYTHONDONTWRITEBYTECODE='1')
@@ -43,6 +49,10 @@ def main(args):
     else:write_exact(clean/name,data,hashes[name])
    def retrieve(item):
     command=['git','-c','lfs.storage='+str(store),'-c','lfs.dialtimeout=8','-c','lfs.tlstimeout=8','-c','lfs.activitytimeout=8','-c','lfs.transfer.maxretries=0','lfs','smudge','--',item['path']]
+    cached=args.payload_cache/item['path'] if args.payload_cache else None
+    if cached and cached.exists() and cached.stat().st_size==item['bytes'] and sha(cached)==item['oid_sha256']:
+     write_exact(clean/item['path'],cached.read_bytes(),item['oid_sha256'])
+     return {k:v for k,v in item.items() if k!='pointer'}|{'independently_retrieved':False,'reused_verified_payload_cache':str(args.payload_cache)}
     p=subprocess.run(command,cwd=root,input=item['pointer'],env=env,capture_output=True,timeout=40)
     if p.returncode or len(p.stdout)!=item['bytes'] or hashlib.sha256(p.stdout).hexdigest()!=item['oid_sha256']:
      raise RuntimeError('Existing payload read failed: '+item['path']+';exit='+str(p.returncode)+';stderr='+p.stderr.decode(errors='replace'))
@@ -72,12 +82,13 @@ def main(args):
      result['captures'].append(item|{'quality':quality,'sha256':sha(output/item['file'])})
     save()
    for p,v in hashes.items():assert sha(root/p)==v,('Source changed',p)
+  if args.private_workspace:shutil.rmtree(args.private_workspace)
   result.update(status='PASS_CAPTURE_ONLY',owned_private_copy_and_store_removed=True,finished_at=stamp(),fresh_native_frames=16,visual_review='PENDING individual inspection',fresh_gameplay_assertion_executions=0)
  except Exception as e:
-  result.update(status='FAIL',failure=str(e),finished_at=stamp());raise
+  result.update(status='FAIL',failure=str(e),finished_at=stamp(),diagnostic_workspace_retained=str(args.private_workspace) if args.private_workspace else None);raise
  finally:
   result['evidence_hashes']={p.name:sha(p) for p in output.iterdir() if p.is_file() and p!=receipt};save()
  print(json.dumps({'status':result['status'],'fresh_native_frames':len(result['captures']),'existing_payloads_verified':len(result['runtime_lfs_payloads'])}))
 
 if __name__=='__main__':
- parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--godot',type=Path,required=True);parser.add_argument('--graphics-prefix',type=Path,required=True);parser.add_argument('--output',type=Path,required=True);main(parser.parse_args())
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--godot',type=Path,required=True);parser.add_argument('--graphics-prefix',type=Path,required=True);parser.add_argument('--output',type=Path,required=True);parser.add_argument('--payload-cache',type=Path,help='Verified prior owned payload cache;reuse separately labelled');parser.add_argument('--private-workspace',type=Path,help='Owned scratch directory retained only on failure for import diagnostics');main(parser.parse_args())
