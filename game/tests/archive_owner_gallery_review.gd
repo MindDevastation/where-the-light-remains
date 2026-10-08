@@ -23,6 +23,15 @@ func _run() -> void:
         return
     SettingsManager.graphics_preset = "Low" if _quality=="low" else "Medium"
     SettingsManager.apply_runtime(false)
+    # Review resource preparation is synchronous;route timing is outside this capture scope.
+    var resource_started := Time.get_ticks_msec()
+    var overview_scene := load("res://worlds/archive/archive_main.tscn") as PackedScene
+    if overview_scene == null:
+        push_error("Owner gallery synchronous world resource load failed")
+        get_tree().quit(1)
+        return
+    var resource_prepare_msec := Time.get_ticks_msec()-resource_started
+    print("OWNER_GALLERY_RESOURCE_PREPARED msec=%s" % resource_prepare_msec)
     var game := preload("res://core/game_root/game_root.tscn").instantiate()
     add_child(game)
     var definition := StageDefinition.new()
@@ -133,7 +142,7 @@ func _run() -> void:
     var file := FileAccess.open(_output.path_join("captures_"+_quality+".json"),FileAccess.WRITE)
     file.store_string(JSON.stringify({"status":"CAPTURED_FOR_REVIEW","scope":"Actual current ArchiveMain geometry/material/light camera overview;readonly visual projections,not actual E/sequence/route or full style acceptance","quality":_quality,
         "captures":captures,"renderer":RenderingServer.get_current_rendering_method(),
-        "device":RenderingServer.get_video_adapter_name(),"glow":environment.glow_enabled,
+        "device":RenderingServer.get_video_adapter_name(),"resource_prepare_msec":resource_prepare_msec,"review_resource_preparation":"synchronous current scene load before route;not route latency validation","glow":environment.glow_enabled,
         "volumetrics":environment.volumetric_fog_enabled},"  "))
     file.close()
     game.queue_free()
