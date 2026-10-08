@@ -8,8 +8,10 @@ const SPARK_MUSIC_STATE: StringName = &"spark_first_note"
 @export_range(6.0, 20.0, .5) var duration := 8.0
 @onready var camera: Camera3D = $Camera3D
 @onready var spark: MeshInstance3D = $Spark
+@onready var spark_art: Sprite3D = $Spark/Art
 @onready var left_door: StaticBody3D = $LeftDoor
 @onready var right_door: StaticBody3D = $RightDoor
+@onready var lock_bolt: Node3D = $LeftDoor/Lock/Bolt
 var elapsed := 0.0
 var _started := false
 var _completed := true
@@ -36,7 +38,9 @@ func restore(completed: bool) -> void:
     _paused_owned = false
     _spark_ignited = completed
     spark.visible = completed
+    _set_spark_pose(0.0)
     _set_door(1.0 if completed else 0.0)
+    _set_lock(1.0 if completed else 0.0)
     camera.position = Vector3(0, 1.624, 15)
     camera.rotation = Vector3.ZERO
     _apply_camera_settings()
@@ -53,6 +57,29 @@ func _apply_camera_settings() -> void:
 func _set_door(amount: float) -> void:
     left_door.position.x = -.65 - amount * 1.4
     right_door.position.x = .65 + amount * 1.4
+
+
+func _set_lock(amount: float) -> void:
+    lock_bolt.position.x = -.24 * clampf(amount, 0.0, 1.0)
+
+
+func _set_spark_pose(seconds: float) -> void:
+    # Local cosmetic pose only. No independent TIME/process/particle clock:
+    # the existing cinematic pause/focus/mode guard owns every animated update.
+    spark_art.position = Vector3(.015 * sin(seconds * 1.2), .02 * sin(seconds * .8), 0)
+    var breath := .98 + .02 * cos(seconds * 1.3)
+    spark_art.scale = Vector3.ONE * breath
+    spark_art.modulate = Color(1, 1, 1, .92 + .08 * cos(seconds * 1.3))
+
+
+func _apply_timeline_pose(seconds: float) -> void:
+    # Cosmetic release uses the existing clock; pure pose sampling cannot emit
+    # spark/stage events or write a checkpoint.
+    _set_spark_pose(seconds)
+    _set_lock(clampf((seconds - 1.5) / .5, 0.0, 1.0))
+    _set_door(clampf((seconds - 2.0) / 1.5, 0.0, 1.0))
+    var travel := clampf((seconds - 3.5) / (duration - 3.5), 0.0, 1.0)
+    camera.position.z = lerpf(15.0, 4.0, smoothstep(0.0, 1.0, travel))
 
 
 func _on_pause_changed(paused: bool) -> void:
@@ -85,9 +112,7 @@ func _process(delta: float) -> void:
     elapsed = minf(duration, elapsed + delta)
     if elapsed >= 1.0 and not _spark_ignited:
         _ignite_spark()
-    _set_door(clampf((elapsed - 2.0) / 1.5, 0.0, 1.0))
-    var travel := clampf((elapsed - 3.5) / (duration - 3.5), 0.0, 1.0)
-    camera.position.z = lerpf(15.0, 4.0, smoothstep(0.0, 1.0, travel))
+    _apply_timeline_pose(elapsed)
     if elapsed >= duration:
         _finish()
 

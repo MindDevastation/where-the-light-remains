@@ -1,0 +1,20 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/archive_rug.blend",
+      "bytes": 477135,
+      "sha256": "d798e11858bc25be2269b1c2292e872b33022df81f84565ce5e4bb380f3091f0"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_rug.glb",
+      "bytes": 5720,
+      "sha256": "d4d5d77e2348b229ac532d1c8088ae0762c8d3b636a48a240bf14652eb3261d9"
+    }
+  ],
+  "measurements": {
+    "triangles": 44,
+    "surfaces": 2,
+    "thickness_m": 0.008
+  },
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

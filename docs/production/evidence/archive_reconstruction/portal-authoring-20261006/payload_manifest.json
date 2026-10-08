@@ -1,0 +1,32 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s00_entry_portal.blend",
+      "bytes": 924670,
+      "sha256": "f6af12cd4c37b335dfc3ae7199931522faf5d4ae719c6511ab51853bada02c27"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_entry_facade.glb",
+      "bytes": 307084,
+      "sha256": "f434c2bbc9bc5a8bc007373cab6bd9ce337c6692aa6da281f6ff66e8d96734d8"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_entry_arch.glb",
+      "bytes": 75100,
+      "sha256": "c1c0efd48af37d6b9c03a2a745c4e88dbae395f77d8b4827a5557304916d029b"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s00_entry_facade",
+      "triangles": 3840,
+      "surfaces": 5
+    },
+    {
+      "stem": "sm_s00_entry_arch",
+      "triangles": 984,
+      "surfaces": 3
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

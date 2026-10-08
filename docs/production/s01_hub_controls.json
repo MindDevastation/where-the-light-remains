@@ -1,0 +1,20 @@
+{
+  "version":1,
+  "source":"assets/3d/blender/archive_kit/s01_hub_controls.blend",
+  "materials":{
+    "iron":"res://art/materials/m_dark_iron.tres",
+    "brass":"res://art/materials/m_aged_brass.tres",
+    "walnut":"res://art/materials/m_dark_walnut.tres"
+  },
+  "parts":[
+    {"id":"panel_base","stem":"sm_s01_panel_base","joint":[-0.5,0,0],"materials":["iron","brass"],"triangle_ceiling":1600},
+    {"id":"panel_cover","stem":"sm_s01_panel_cover","joint":[-0.657,0,0.02],"materials":["walnut","brass"],"triangle_ceiling":1600},
+    {"id":"lever_base","stem":"sm_s01_lever_base","joint":[0.5,0,0],"materials":["iron","brass"],"triangle_ceiling":1600},
+    {"id":"lever_handle","stem":"sm_s01_lever_handle","joint":[0.5,-0.08,0],"materials":["brass","walnut"],"triangle_ceiling":1600}
+  ],
+  "cover_hinge":[-0.157,0,0.02],
+  "lever_pivot":[0,-0.08,0],
+  "cover_open_degrees":-18,
+  "lever_pulled_degrees":25,
+  "target_size":[0.45,0.45,0.30]
+}

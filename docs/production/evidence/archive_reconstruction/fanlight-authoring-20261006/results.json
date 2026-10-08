@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T21:05:54.749606+00:00",
+  "source_hashes": {
+    "assets/3d/blender/archive_kit/archive_arched_fanlight.blend": "3c1a8cd4411b6a46ac7ad261d1fcba2fb7a9659082d2df9bb924c9a578e18367",
+    "game/art/meshes/archive_kit/sm_archive_arched_fanlight.glb": "caf5e4b5bb21fe97b8a3df915d912419ec9f60b99d7b4998e894f848f1d8f03b",
+    "docs/production/ARCHIVE_ARCHED_FANLIGHT.md": "cd13a1167f42a627394c69a875f8a265452971f84189243e381989633f543f6c",
+    "docs/production/archive_arched_fanlight.json": "90884d4671b830273cd6e4a87a28f207e533918b53b1afe91205a950740ca21f",
+    "tools/create_archive_arched_fanlight.py": "3d68900743ebad6187e516cec667e9ac89c9f34b8402c734c6961871c6e1c3e5",
+    "tools/verify_archive_arched_fanlight.py": "a5d965ab06894b1e2339291cdc51affeab663e852b5676443d3ad1d71cbdbb32",
+    "tools/create_wing01_optics.py": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7",
+    "game/art/meshes/archive_kit/sm_archive_arched_fanlight.glb.import": "6631bfd414e4683f10a2495511c052f3e891f2ccfd9659a4f00b9b5e37552d5e",
+    "docs/production/evidence/archive_reconstruction/fanlight-authoring-20261006/reopen.log": "d4facdf123d5b850d9ac5a4a5434ee1ebb47d09d08c4a5d0f96ffbff902e437c",
+    "docs/production/evidence/archive_reconstruction/fanlight-authoring-20261006/payload_manifest.json": "c82bbbafbcb058c70bfd3267c1bf061a45549f7068ee7364219bc1eab24194ff",
+    "docs/production/evidence/archive_reconstruction/fanlight-authoring-20261006/create.log": "2d6277dd45db829c1c94fc64f0f9ee0de9e0322d914ac02c3576c4fbec7f5162"
+  },
+  "scope": "Current actual original1560tri/four-surface source reopen and GLB identity only; native/independent LFS/full visual gate still pending.",
+  "recipe_note": "Removed a dead empty-list target expression after execution; geometry recipe, accepted Geometry helper and actual source/export remain unchanged."
+}

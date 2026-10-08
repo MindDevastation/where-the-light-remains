@@ -1,3 +1,604 @@
+# Current S01 mount handoff — corrected route, 2026-10-08
+
+CORE_ORBITS_MOUNT_REVISION2.md / core_orbits_mount_revision2.json supersede the
+v1 direct outer bridge: its20mm envelope approaches the third orbit within6.72mm.
+New upper waypoint(0,2.15,0) retains radii/orientations/pivot/yaw/UV/budgets and
+provides≥56.66mm nonconnected ring/bridge clearance. Fresh final135 native
+assertions and20 reconstructed Area3D/CoreBody queries verify the measured
+assembly and selected approach rays. No actual FirstPersonPlayer/E, gameplay,
+GLB/style/performance acceptance. Metric diagram inspected;native new frames0.
+Previous trim/material evidence is retained and not rerun or aggregated.
+Current native proof is core-mount-access-20261008-final2;the clipped joint
+boundary uses a full sample-step reserve. Earlier135-check proof is superseded
+and excluded from final credit. Latest handoff/receipt SHA resolves from
+evidence/checkpoints/continuation_20261008.jsonl.
+
+All shipping game files are unchanged;inventory26 ACCEPTED/44 PARTIAL/7 MISSING,
+185 rows retained. Integrated runtime STABLE5184c48;trim source STABLEce45bad.
+ARCH-011 owner A/B pending;GATE-VS1 OPEN/S03 blocked. Next authoring requires an
+authenticated GitHub credential helper supporting private git-lfs upload and
+restored pinned Blender. Ordinary working-branch checkpoints remain authorized.
+Use the corrected source contract before orbit/mount authoring. The first trim
+carrier stays the RoomPortal6cm fillet with its existing UV sibling contract.
+
+---
+
+# Historical TRIM-002 source and measured integration handoff — 2026-10-07
+
+STONE_TRIM_SOURCE_READINESS.md: separate original2048 trim/3 PBR maps/editable
+shared native master, five guarded carved regions at1024px/m. Fresh final
+stone-trim-native-3:128 assertion executions and8 individually inspected Low/
+Medium neutral/current-light/mip frames. Diagnostics1/2 excluded from final credit.
+Prior material300 executions/24 views remain historical current-source evidence.
+No shipping assignments, new LFS binaries, gameplay/save/route/settings changes.
+Root/game READMEs now describe the actual playable S00→S01→S02→Hub scope.
+
+Only TRIM-002 MISSING→PARTIAL:26 ACCEPTED/44 PARTIAL/7 MISSING among77;185 rows
+retained. MAT-005/011/012 and hero/console classifications remain PARTIAL.
+First carrier: RoomPortal front6cm stone fillet, world(0,0,-15), UV-only sibling
+contract in STONE_TRIM_FIRST_INTEGRATION.md. Existing geometry/collision stays.
+CORE_ORBITS_PRODUCTION_BRIEF.md fixes three radii .58/.46/.34m, authored mounts,
+pivot/yaw/material/UV/budget contracts. Actual native Euler basis and conservative
+continuous-yaw metric bounds pass;Socket gap≥109.5mm. This is no new GLB or E-ray/
+style acceptance. Its inspected metric drawing is not a native shipping frame.
+
+Next concrete step: configure authenticated GitHub credential helper supporting
+private git-lfs upload in this environment, restore pinned Blender, then author/
+independently retrieve/reopen the first UV sibling or bounded three-orbit assembly
+and run affected native integration tests. Ordinary source checkpoint transport
+works;publication permission is already granted. No additional unused material
+family is the next step. Latest source-only STABLE/receipt HEAD resolves from
+continuation_20261007.jsonl; integrated runtime STABLE5184c48 unchanged.
+ARCH-011 remains required/MISSING pending explicit owner A/B. GATE-VS1 OPEN;
+S03 blocked. Full architecture/dressing/style/audio/owner-gallery/physical target
+GPU dependencies remain open;planning25–30%,low confidence,3/16 stages unchanged.
+Prior193 art identities and47 LFS pointer/OID/size identities are preserved;
+old payload/Blender/game suites are not freshly rerun. Existing runtime files are
+byte-preserved;game/README.md is the explicitly requested documentation update.
+
+---
+
+# Historical native source continuation — stone, linen and leaf atlas, 2026-10-07
+
+Exact recovery8db32c5 followed by verified source STABLEde3860c (MAT-005) and
+2cb6d39 (MAT-011). LEAF_ATLAS_SOURCE_READINESS.md adds one original eight-cell
+1774×887 RGBA atlas and shared native cutout master,168 isolated assertions and
+8 individually inspected native frames. Source continuation total300 scoped
+assertion executions/24 individual frames; protected primary/backup PASS.
+No shipping assignment, gameplay autoload, settings/save/route change or new LFS.
+Last integrated runtime production STABLE5184c48 remains unchanged. Resolve final
+atlas source STABLE and receipt HEAD via continuation_20261007.jsonl.
+
+MAT-005/011/012 remain PARTIAL until their canonical carriers/assignments and
+affected shipping tests:26 ACCEPTED/43 PARTIAL/8 MISSING among77;185 rows intact.
+Only the MAT-012 row changes this stage. Atlas has .5 cutout-safe gutters; actual
+returned dimensions and sparse low-alpha residue are documented, generated PNG
+bytes preserved. S00 v2 timber/iron/cobalt look is unchanged. Prior193 art/source
+and47 committed LFS pointer/OID/size identities remain intact; old payload use/
+Blender reopen and accepted suites are historical, not freshly rerun.
+
+Next independent source scope: fix TRIM-002 stone-trim sheet regions/texel density
+before authoring native source specimens. Shipping ARCH/hero/carrier assets still
+need editable3D sources and independently usable private LFS upload. ARCH-011
+remains required/MISSING pending explicit owner A/B; no collision/canon change.
+
+Architecture/backdrop/alcove/hero/emblems/channels/carrier, remaining trims/decals/
+dressing/style, authored audio/mix/owner first-note/motif, full gallery and physical
+GTX1060-equivalent1080p60 remain OPEN. GATE-VS1 OPEN; S03 blocked. Planning25–30%,
+low confidence,3/16 playable stages unchanged. Source readiness is not integrated
+art acceptance. Owned checkpoint supervisor stops with this active session.
+
+---
+
+# Historical stone and linen source stages, 2026-10-07
+
+Exact recovery8db32c5 followed by remote-verified MAT-005 source STABLEde3860c.
+LINEN_SOURCE_READINESS.md and COOL_DARK_STONE_SOURCE_READINESS.md now record
+2 unbound shared masters,6 original1024 PBR maps, exact fresh regeneration,
+132 scoped native specimen assertion executions and16 individually inspected
+frames. Protected primary/backup PASS; no GameRoot/gameplay/settings/save/route
+loaded or changed. Last integrated runtime production STABLE5184c48 is unchanged.
+Resolve latest source-only STABLE/receipt HEAD in continuation_20261007.jsonl.
+
+MAT-005 and MAT-011 are PARTIAL until their measured S00 surface/S01 neutral-cloth
+actor assignments and affected shipping tests.26 ACCEPTED/42 PARTIAL/9 MISSING
+among77;185 canonical rows preserved, no full baseline replay. Prior193 art/source
+and47 LFS pointer/OID/size identities preserved. Old payload download/use/Blender
+reopen and old accepted suites are not fresh tests in this restored environment.
+Current isolated software native profiles are not shipping/target-GPU acceptance.
+
+Next independent native source scope: MAT-012 leaf/ivy atlas brief and raster/
+alpha/mipmap specimens; no speculative plant placement. A new3D carrier still
+needs editable source and a usable private LFS upload path. Ordinary working-
+branch/LFS publication remains already authorized. ARCH-011 remains MISSING/
+required_for_vs1 pending explicit owner A/B; no walking/collision/canon change.
+
+Full architecture/backdrop/alcove/hero/emblems/channels/carrier, atlas/trims/decals/
+dressing/style, authored audio/mix/owner first-note/motif, full gallery and physical
+GTX1060-equivalent1080p60 remain OPEN. GATE-VS1 OPEN; S03 blocked. Planning25–30%,
+low confidence,3/16 playable stages unchanged. Native source preparation does not
+accept an unused material as shipping art. Supervisor600s/max900s stays owned
+and stops with the active session; previous recorded cadence miss is retained.
+
+---
+
+# Historical first source stage — MAT-005, 2026-10-07
+
+Recovered exact remote8db32c5 / integrated production STABLE5184c48 after scratch
+replacement. Pinned Godot4.7.2 and verified graphics packages restored; accepted
+preflight/art/gameplay suites not replayed. COOL_DARK_STONE_SOURCE_READINESS.md:
+one unbound shared MAT-005 master,3 original periodic1024 PBR maps, deterministic
+fresh regeneration,66 scoped native specimen assertions,8 individually inspected
+frames, protected primary/backup PASS. No shipping scene/accepted source changed.
+Prior identities remain accepted proof; current47-GLB payload/use or Blender
+reopen is not freshly claimed. Ordinary Git only, zero new LFS family.
+
+MAT-005 is PARTIAL until measured S00 exterior/backdrop assignment and affected
+shipping tests.26 ACCEPTED/41 PARTIAL/10 MISSING among77;185 canonical rows stay.
+Resolve source-only STABLE/latest receipt HEAD via continuation_20261007.jsonl;
+last integrated runtime acceptance remains5184c48. Next independent native work:
+MAT-011 linen source/specimens; shipping dressing placement remains separate.
+
+ARCH-011 remains MISSING/required_for_vs1 pending explicit owner A/B. Full hero/
+architecture/backdrop/carrier/channels/emblems, remaining materials/trims/decals/
+style/dressing, authored audio/mix/owner first-note/motif, full gallery and physical
+GTX1060-equivalent1080p60 remain OPEN. GATE-VS1 OPEN; S03 blocked. Planning estimate
+25–30%, low confidence,3/16 playable stages unchanged. Active supervisor600s/max900s;
+stop owned jobs at session end. Current source stage does not accept unused
+materials as shipping art.
+
+---
+
+# Historical MAT-002 continuation — prior integrated STABLE, 2026-10-07
+
+Recovered actual remote b695dddf / production STABLE2730e0a. Core/material WIP
+2bec7cd is independently remote verified. Resolve final production STABLE and
+receipt HEAD from evidence/checkpoints/continuation_20261007.jsonl. No rollback,
+main/force/base-retarget or full185-row reconciliation replay.
+
+ARCHIVE_POLISHED_BRASS_ACCEPTANCE.md closes MAT-002's one shared editable master
+with three original periodic1024 albedo/+Y-normal/ORM maps on the two existing
+S01 toruses.301 final scoped assertion executions, exact fresh map regeneration,
+20 individually inspected native Low/Medium frames, protected or owned saves
+PASS. Prior193 art/source identities and47 actual runtime GLBs preserved; old
+source reopen/full family evidence is reused, not advertised as fresh. Native
+software rendering is not physical target-GPU evidence. Strict warning failure
+and superseded candidate families remain excluded; current families end in -2.
+Counts26 ACCEPTED/40 PARTIAL/11 MISSING among77;185 canonical rows retained.
+These are scope classifications, not percentage completion.
+
+ARCHIVE_CORE_HERO_INTERFACE_AUDIT.md measures the current pivot/envelope, axle,
+collider and four control targets. Two primitive toruses are still provisional;
+PROP-001/002/004 remain PARTIAL. Accepted pedestal/controls/materials, original
+lights, geometry, E/save/state/route contracts stay unchanged. The next constrained
+core/orbit/mount production brief follows ARCHIVE_CORE_HERO_NEXT_BLOCK.md. New
+binary families need restoration of a usable private LFS upload path; ordinary
+working-branch/LFS publication remains already authorized. Native material-slot
+brief/placement audits remain independent available work.
+
+ARCHIVE_SHORT_STAIRS_DECISION.md is still pending explicit A/B owner choice.
+ARCH-011 remains MISSING/required_for_vs1; no canonical, collision, floor or
+walking contract change. Only stair-dependent work is paused.
+
+Full exterior/infill/alcove/backdrop/hero/emblems/channels/carrier, remaining
+materials/trims/decals/dressing/style, authored audio/mix, owner gallery and
+physical GTX1060-equivalent1080p60 remain OPEN. Audio first-note/motif choices
+remain separate. GATE-VS1 OPEN; S03 blocked. Full-game estimate25–30%, low
+confidence,3/16 playable stages stays unchanged. Checkpoint interval600s/max900s;
+current WIP remote cadence passed. Earlier dust upload cadence miss is retained.
+Owned supervisor/testing jobs stop at session end.
+
+---
+
+# Historical native effects continuation — before MAT-002, 2026-10-07
+
+Recovered actual remote1f38cb4 / prior production STABLE1419f35. Dust STABLE
+fa9006e and strict inspect WIPb1a09ca are independently remote confirmed;
+inspect STABLE2730e0a11260e7b09de789947c755701325b09c5 is independently
+remote confirmed. Resolve final receipt HEAD from
+evidence/checkpoints/continuation_20261007.jsonl.
+No rollback, main write, force push or repeat full185-row reconciliation.
+
+ARCHIVE_DUST_MOTES_ACCEPTANCE.md: VFX-006 Hub/S02 native dust,602 current scoped
+assertion executions and20 individually inspected final Low/Medium on/off views.
+ARCHIVE_INSPECT_GLOW_ACCEPTANCE.md: VFX-007 eight current S01/S02 actual-ray
+bindings,286 current scoped assertion executions and8 inspected final paired
+Low/Medium views. Strict exit-warning diagnostics retained/excluded; external
+material serialization resolves the observed preload reproduction. No warning
+waiver. Original progression test restored. Both canonical rows stay PARTIAL.
+Prior193 art/source/module identities and47 runtime GLB payloads preserved;
+previous source reopen/acceptance is reused in its original scope, not rerun.
+Counts25 ACCEPTED/40 PARTIAL/12 MISSING among77;185 canonical rows retained.
+
+ARCHIVE_SHORT_STAIRS_DECISION.md / review/arch011_decision.png present owner A/B.
+Recommended A explicitly defers the MUST two-width family to S03 and changes its
+VS1 dependency only after the owner decision. B proposes real corridor2.4/3.6m
+runs with.30m rise, requiring a floor/collision/walk contract. Neither is canon
+or implemented. ARCH-011 remainsMISSING/required_for_vs1. Only stairs pause.
+
+Next independent block: ARCHIVE_CORE_HERO_NEXT_BLOCK.md interface audit for
+PROP-001/004 orbits/core/mounts/console, preserving accepted pedestal/controls.
+New DCC/LFS production needs restoration of a configured private upload path;
+ordinary working-branch/LFS publication is already authorized, no new permission.
+Native Git data publication is working.600s supervised remote-delta checkpoints
+include one documented900s cadence miss during the larger dust upload; subsequent
+WIP transport is verified within900s. Historical journal retained unchanged.
+
+Full exterior/infill/ARCH-013/017, complete hero, emblems/channels/carrier,
+materials/trims/decals/style/light/dressing, authored audio/mix, owner gallery and
+physical GTX1060-equivalent1080p60 remain OPEN. Audio first-note/motif owner
+choices remain separate. GATE-VS1 OPEN; S03 blocked. Full-game estimate25–30%,
+low confidence;3/16 playable stages, unchanged. Stop owned jobs at session end.
+
+---
+
+# Current fanlight acceptance and next layout dependency — 2026-10-06
+
+ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md records one1560tri four-surface shared
+window above five original gates:712 scoped assertions plus72 in independent
+LFS use;32 individually inspected Low/Medium images;208 prior art/module
+identities preserved. Strengthened source reopen verifies83 closed positive
+components. Existing lighting stable1af05c2/receipt2224b73 remains accepted.
+Fanlight candidate6c7d99f/receipt dc6805a is remotely confirmed; resolve final
+stable acceptance/receipt from docs/production/evidence/checkpoints/development.jsonl.
+
+ARCH-008 MISSING→PARTIAL;25 ACCEPTED/38 PARTIAL/14 MISSING among77 rows;185
+canonical rows retained. Complete windows/infill/backdrop/hero/channels/dressing/
+audio/gallery/physical GTX1060/style/VS1 remain OPEN; S03 blocked. Planning
+estimate25–30%, low confidence,3/16 playable stages.
+Next ARCH-011 is paused for canonical stair locations, two widths and walking
+elevations; current accepted S01/S02 surfaces are flatY0. See
+ARCHIVE_SHORT_STAIRS_LAYOUT_AUDIT.md. No stair asset/layout or future stage was
+invented. This is a design dependency, not another push-permission request.
+
+---
+
+# Historical lighting acceptance at1af05c2 — 2026-10-06
+
+ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md:654 current assertions/import/startup,
+28 individually inspected native Low/Medium images, protected saves PASS. Four
+accepted Hub lantern instances and local clock/state-owned core lighting; S00
+retains one warm source by stage projection. Accepted art bytes preserved.
+Full style/upper apertures/windows/backdrop/hero/channels/dressing/audio/gallery/
+physical GTX1060 remain OPEN; GATE-VS1 OPEN/S03 blocked. Counts25/37/15 among77,
+185 rows retained; full-game planning estimate25–30%, low confidence.
+Next highest missing architectural row ARCH-008: audit window/glass placement
+and opening-ghost clearance in existing upper apertures before authoring.
+Resolve newest stable/receipt from actual remote/checkpoint journal.
+
+---
+
+# Current publication/recovery resolution — 2026-10-06
+
+Owner directly authorized the prepared and subsequent ordinary working-branch
+checkpoint pushes with “Разрешаю”. Accepted shared-gate evidence is remotely
+verified at 3d81acbcd94759d472b72f60dbac3eb39000fad4.
+The publication blocker below is historical and resolved. Fresh recovery uses
+this exact remote tip after checkout/coordinator loss; no unattended work is
+claimed. Next bounded scope is warm/cool practical lighting, fixed contracts
+and affected S00/S01/S02 regression. No accepted art regeneration; VS1/S03 and
+physical target-GPU gates remain open. Publication receipt: wing-gate-acceptance-
+20261006/publication.json.
+
+---
+
+# Active boundary — shared gate accepted locally; publication blocked, 2026-10-06
+
+Recovered exact remote a914b53c, latest WIP e7e3c80e and stable floor2600c116.
+Retained revision4 imported MeshInstance root;542 scoped assertions reused by
+626 exact identities,16 Low/Medium native images reused by550 identities and
+individually inspected. Fresh anonymous wing-gate-lfs-5 retrieved both exact
+payloads from an empty independent store, reopened source, imported cache-free,
+ran116 gate checks/startup PASS.204 previous art/module identities unchanged.
+ARCHIVE_WING_GATE_ACCEPTANCE.md / wing-gate-acceptance-20261006 define the bounded
+mesh/state acceptance; full emblem/light/Hub composition still PARTIAL.
+Counts25 ACCEPTED/37 PARTIAL/15 MISSING among77;185-row reconciliation retained.
+
+Automatic approval review rejected attachment-PAT extraction and a workflow
+with a potential GitHub push because direct trusted-message authorization was
+missing. No credential-extraction workaround or remote write is allowed before
+that authorization. Anonymous independent reads passed. Preserve the local
+acceptance/snapshot/commit; do not claim a remote stable gate checkpoint. Verify
+actual remote before a future ordinary push to the authoritative working branch.
+
+Next bounded scope after publication: warm/cool practical lighting with accepted
+lanterns and all affectedS00/S01/S02 regressions, not accepted mesh regeneration.
+Upper infill/windows/backdrop/full hero/console/channels/carrier/dressing/audio/
+full gallery/physical GPU/VS1 OPEN; S03 blocked. No unattended jobs claimed.
+
+---
+
+# Active boundary — original Hub production floor geometry accepted, 2026-10-06
+
+Walls stable401dd6f/receipt1f7fd200 retained. Current -v2 floor6928tri/two surfaces,
+source/GLB:248 scoped checks/startup,16 individually inspected native images and
+2 independent LFS payloads PASS;201 prior identities unchanged. Original10m
+cylinder/plane, Wing corridor notch and channel/core/approach clearance retained.
+S01_HUB_FLOOR_ACCEPTANCE.md and hub-floor-acceptance-20261006 are current geometry
+authority; full visual lighting/style PARTIAL, observed pale/cool fill not approved.
+Current25 ACCEPTED/35 PARTIAL/17 MISSING among77,185-row reconciliation retained.
+Next missing ARCH-014 five instances/shared gate geometry within original3.4x3.2x
+.24 body; retain original pre-tree MeshInstance bindings, ghost/open/save/state.
+Then representative warm/cool practical lighting scope using accepted lanterns;
+no accepted asset regeneration. Upper infill/windows/backdrop/hero/dressing/audio/
+gallery/physical GPU/full VS1 OPEN; S03 blocked, owner escalation resolved.
+Resolve actual latest remote stable/receipt. Supervised600s checkpoints,
+no unattended owned work after session end.
+
+---
+
+# Active boundary — eight original lower wall skins accepted, 2026-10-06
+
+Upper dome stable29e795a/receiptb0f4649 retained. Current -v2 lower wall6708tri,
+source/GLB,five surfaces/eight original-body instances:515 scoped checks/startup,
+16 individually inspected Low/Medium PNG and2 independent LFS payloads PASS.
+198 prior identities unchanged. S01_HUB_WALL_ACCEPTANCE.md and hub-wall-acceptance-
+20261006 seal are authority; old authoring depth iteration excluded. Current
+25 ACCEPTED/35 PARTIAL/17 MISSING among77;185-row reconciliation retained.
+Next missing Hub floor skin within original10m cylinder, preserve Wing I tile
+cutout, accepted approach/core and five state-owned channels. Original portals/
+five blue graybox gates, upper infill/windows/backdrop/hero/light/dressing/audio/
+gallery/physical GPU/full VS1 open. Owner escalation resolved; S03 blocked.
+Resolve latest actual stable/receipt; no older snapshot/repeatedpreflight.
+Supervised600s remote-delta checkpoints; stop owned jobs at turn end.
+
+---
+
+# Active boundary — shared S00/S01 upper drum/dome accepted, 2026-10-06
+
+S00 portal/approach checkpoints retained; S01_HUB_DOME_ACCEPTANCE.md and current
+hub-dome-acceptance-20261006 seal: one source/fourGLBs,total20068tri,414 scoped
+checks/startup,16 individually inspected Low/Medium images and5 independent LFS
+payloads PASS.187 prior art/module identities preserved. Native fixture invariant
+corrected; old partial attempt excluded, seal records unrelated hash exception.
+Current25 ACCEPTED/35 PARTIAL/17 MISSING among77 VS1 rows;185 rows retained.
+ARCH-001/003 PARTIAL for upper coverage only; lower walls/floor/infill/windows/
+backdrop/hero/light/dressing/audio/gallery/physical GPU/VS1 remain open. Next
+bounded eight original lower wall visual panels, same bodies/five apertures;
+accepted front portal and Wing I roof unchanged. Resolve actual stable/receipt
+from remote/journal; no earlier snapshot/repeatedpreflight. Owner escalation
+resolved; S03 blocked. Supervised600s remote-delta; stop owned work at turn end.
+
+---
+
+# Active boundary — S00 flat approach/guards accepted, 2026-10-06
+
+Portal stable ddc34ee/receipt495581d preserved. Current -v3 paving5460tri,
+shared side guard2700tri/rear1740tri, one source/three GLBs:291 scoped checks,
+12 individually inspected Low/Medium PNG and4 independent LFS payloads PASS.
+180 prior art/module identities unchanged. Old source/native/LFS attempts marked
+EXCLUDED; current approach-acceptance-20261006 seal is authority. Resolve latest
+stable/receipt from actual remote/journal, no older snapshot or repeatedpreflight.
+Current77 groups:25 ACCEPTED/33 PARTIAL/19 MISSING;185 canonical rows retained.
+ARCH-018 S00 path accepted, ARCH-012 broader family PARTIAL; full shell/dome/
+Hub/lighting/audio/gallery/GPU/VS1 still open, S03 blocked. Owner escalation
+already resolved. Continue bounded shared upper exterior/Hub architectural block
+with fixed routes/door/rail and current v2 targets. Supervised600s checkpoints,
+no unattended owned work after session end.
+
+---
+
+# Active boundary — S00 entry portal accepted, 2026-10-06
+
+Owner architectural escalation resolved. Reconciliation preserved. Original two
+facade instances3840tri each and984tri crown, one source/two GLBs:225 scoped
+checks/startup,12 individually inspected native Low/Medium images, all three LFS
+payloads independently downloaded/reopened/cache-free imported/used PASS.
+175 previous art/module identities unchanged. Read S00_ENTRY_PORTAL_ACCEPTANCE.md
+and portal-acceptance-20261006 seal; resolve stable/receipt from actual remote.
+ARCH-001 exterior MISSING, full ARCH-002 PARTIAL, VS1/S03/physical GPU open.
+Next bounded entry approach path/guard on existing planes/bodies; then exterior
+shell/dome/infill/backdrop and Hub. No repeated reconciliation or old preflights.
+Supervised600s remote-delta checkpoints; stop owned jobs/coordinator at turn end.
+
+---
+
+# Active boundary — S00/S15 architectural interface audit, 2026-10-06
+
+Recovered exact8d25e2e and597 sealed identities without old runtime preflights.
+Owner explicitly confirmed Extra High/highest; previous §9 reasoning BLOCKER
+resolved. Read S00_S15_EXTERIOR_INTERFACES.md for original entry/wall/rail/light
+contracts and first bounded facade/arch family. Source/GLB production acceptance
+is still pending, no exterior/VS1/S15 gameplay/S03 claim. Resolve newest WIP/
+stable/receipt from actual remote. Continue facade/crown then next bounded art,
+supervised600s remote-delta checkpoints, no unattended work at turn end.
+
+---
+
+# Latest boundary — local S00 spark and architectural escalation
+
+Recovered c186b4f exactly; full reconciliation stable f000a85/a6aeb0b. Continued
+through entrance stable f3eb644/8083fcb, lower core75cbec4/b737181 and warm
+practical8cde634/b0bd2a0. Local native spark40 actual clock/pause/quiet checks,
+startup and12 inspected Low/Medium images PASS; seal last-spark-acceptance-20261006.
+All four bounded stages total443 scoped check executions (including repeated
+regression),58 individually inspected native images. New modeled families only
+entrance leaf2100tri and lower housing2144tri; four LFS payloads independently
+retrieved/reopened/imported/used. Existing accepted art exact identities retained.
+
+Resolve final stable/receipt from actual remote and development journal. Current
+canonical delta:24 ACCEPTED/32 PARTIAL/21 MISSING among77 VS1-related groups;
+108 future groups NOT REQUIRED FOR VS1. Native local spark does not close global
+particle/path; lower housing does not close full hero. No full VS1/GPU/S03 PASS.
+
+Next highest mandatory scope ARCH-001 shared S00/S15 exterior requires new
+multi-stage architecture. Explicit ASTRA_WORKFLOW §9 owner Extra High/highest
+switch + confirmation BLOCKER; VS1_NEXT_BLOCKERS.md records exact boundary and
+remaining gallery/audio/hardware/full-game estimate. No architectural redesign
+performed. Finish/verify checkpoint receipts and PR43, stop coordinator at end.
+No unattended work; future continuation starts from newest verified remote.
+
+---
+
+# Latest boundary — S00 warm practical, 2026-10-06
+
+S01 lower housing stable75cbec4/receipt b737181,240 assertions/16 native images/
+independent two-payload LFS PASS. S00 single accepted lantern now fixed on actual
+Wall3R outside face;49 scoped checks and12 inspected Low/Medium images PASS,
+no new binary family or old art change. Seal entry-practical-acceptance-20261006.
+Resolve actual newest SHA/receipt from remote and journal. Continue bounded
+local last-spark presentation; original anchor/clock/event/pause/save retained.
+Full building/portal/rotunda/core3–5 assembly/global particles/gallery/audio/GPU
+remain OPEN. S03 gated; supervised600s checkpoints, no unattended work.
+
+---
+
+# Latest boundary — S01 lower housing, 2026-10-06
+
+Continued from entrance stable f3eb644/receipt8083fcb, no accepted reauthoring.
+Original2144-triangle/five-surface lower plinth/axle:240 current assertions,
+16 inspected native Low/Medium images, independent empty-store source/GLB
+retrieval/reopen/import/use PASS. Seal core-pedestal-acceptance-20261006.
+Resolve newest stable/receipt from actual remote and development journal.
+Full core3–5-piece orbit/console/mounts/rotunda remains PARTIAL. Next eligible
+bounded composition is one warm S00 practical using accepted lantern, no new
+family/global lighting budget. S03/VS1/physical target GPU remain blocked.
+
+---
+
+# Latest boundary — complete reconciliation and S00 timber leaf, 2026-10-06
+
+Recovered exact remote c186b4f and584 acceptance hashes without old preflights.
+Full185-group reconciliation stable f000a85/receipt a6aeb0b;77 VS1-related rows
+at that boundary:24 ACCEPTED/25 PARTIAL/28 MISSING, documented bounded scopes.
+431 serialized instances,14 prior accepted art subsets unchanged. Fixes older
+PROP-005 absence/PROP-006 second-shape wording without duplicating accepted art.
+See VS1_ART_RECONCILIATION.md; later accepted deltas change this baseline.
+
+S00 timber leaf candidate6152765/receipt385b264, ordinary original2100-triangle
+Walnut/Iron/Brass master shared by both original bodies.114 scoped assertions,
+startup,18 individually inspected native images, independent retrieval/reopen/
+import/use of both source/GLB payloads PASS. Original lock/collision/clock/rail/
+input/audio/save/handoff preserved. Seal entrance-acceptance-20261006; newest
+stable SHA and final receipt are resolved from remote/checkpoint journal.
+
+Immediately continue ordinary lower S01 core housing inside unchanged collider;
+accepted rings/controls/lens remain intact, full hero/orbit design separate.
+Then representative S00 practical using existing accepted lantern, if no new
+canonical/pipeline decision. Full exterior/portal/rotunda/hero3–5 orbit pieces,
+gates/channels/remaining VFX/trim/material/font/audio/gallery/physical GPU open.
+S03 gated. Supervise600s checkpoints and pause writers during collection; no
+unattended work is claimed after ending the turn.
+
+---
+
+# Latest confirmed boundary — S00 activation fitting, 2026-10-06
+
+Branch feature/04-archive-gameplay/resume-2026-10-06, recovered from verified
+44adf4f without replaying accepted environment/art preflights. Candidate880707e
+was independently confirmed remotely after a55s push timeout; acceptance and
+final receipt tip are resolved from newest journal/remote after continuation.
+
+Original housing/bolt/keeper848 triangles, Iron/Brass, editable source plus
+three GLBs. Cosmetic release1.5..2s follows existing automatic clock; original
+spark/opening/rail/handoff/collision/save/audio preserved.378 current assertions,
+startup,18 individually inspected Low/Medium native poses and independent empty-
+store download/reopen/import/use of four payloads PASS. Scope/hash evidence in
+S00_DOOR_LOCK_ACCEPTANCE.md and lock-acceptance-20261006. Previous art/modules
+compare unchanged; full exterior/door composition and night lighting remain open.
+
+Next bounded audit: universal panel skins and remaining fitting/handle variant
+coverage against existing target contracts. Second generic mechanism shape now
+exists as this bolt; universal family adoption is not claimed. Keep full Hub
+core/console/rotunda, S00 exterior, gallery/authored audio/physical GPU/ARCH/VS1/
+S03 open. Supervise remote-delta checkpoints every600s in live work and pause
+writers during collection. Stop coordinator at turn end; no unattended timer
+or new3–4h window inferred from historical work windows.
+
+---
+
+# Latest confirmed boundary — S01 panel/lever, 2026-10-06
+
+Working branch: `feature/04-archive-gameplay/resume-2026-10-06`. Started from
+verified6dccc0c without replaying accepted toolchain preflights or art production.
+Candidate39204fa is remotely backed by7fe1cd0. Current bounded acceptance is
+sealed in controls-acceptance-20261006; resolve the latest stable checkpoint and
+receipt tip from the journal/remote before continuing.
+
+Original panel base/cover and lever base/handle total1940 triangles, four meshes,
+existing Iron/Brass/Walnut surfaces. Existing targets/prompts/step eligibility,
+seven-second awakening, collision and save schema preserved. Cosmetic cover/
+handle poses are projected by existing _refresh, including retry and quiet load.
+325 current assertions/startup, fourteen inspected native Low/Medium views and
+independent empty-store retrieval/reopen/import/use of all five LFS files PASS.
+147 prior accepted art/module identities unchanged. See
+S01_HUB_CONTROLS_ACCEPTANCE.md and SLICE_ART_INVENTORY.md.
+
+Next bounded work: inspect S00-005 door-lock/activation hardware and whether
+existing generic fittings can be reused under its canonical timeline/target
+contract. Do not redesign exterior/complete core/rotunda or infer new mechanics
+from concept images. Full PROP-004 skins/PROP-006 second shape, Hub mounting/
+lighting/architecture, S00 exterior, gallery/audio/physical GPU/ARCH/VS1/S03
+remain open. Keep supervised remote-delta checkpoints every600 seconds in live
+work. No unattended coordinator is claimed between turns; historical work
+windows do not create a new3–4 hour window.
+
+---
+
+# Latest confirmed boundary — S01 starting lens/socket, 2026-10-06
+
+Branch: `feature/04-archive-gameplay/resume-2026-10-06`. Started from the verified
+273aabd tip without replaying accepted environment or room stages. Candidate
+source is fa4db05, remotely verified with its receipt at 5155a50. Current stable
+acceptance is sealed in lens-acceptance-20261006 and the newest checkpoint
+journal; resolve the latest remote tip before continuing.
+
+PROP-003 now has original brass/glass pickup and installed lens plus open
+iron/brass socket. Existing poses/targets/controllers/Russian prompts and save
+schema retained. Current 259 assertions/startup, fourteen inspected native
+Low/Medium player images and independent empty-store download/reopen/import/use
+of all three LFS payloads PASS. Front grip tabs were corrected to clear socket
+fasteners by 2mm. Initial review fixture failure and candidate evidence retained.
+142 prior accepted art/module identities unchanged. See
+S01_STARTING_LENS_ACCEPTANCE.md and SLICE_ART_INVENTORY.md.
+
+Next bounded work: reconcile generic Hub panel/activation control leaf props
+against PROP-004/005/006 and their existing target envelopes. Do not replace
+complete core/rotunda architecture or infer orbit count from concept images.
+Full S00 exterior, Hub core/console/architecture, gallery, authored music,
+physical GPU, ARCH/VS1 and S03 remain open. Continue supervised remote-delta
+checkpoints every 600 seconds in a live turn. No unattended timer is claimed
+between turns; the earlier 03:06–07:06 window is historical.
+
+---
+
+# Latest confirmed boundary — rug and compact checkpoints, 2026-10-06
+
+Current working branch: `feature/04-archive-gameplay/resume-2026-10-06`.
+Fresh recovery started at `58bde0c`, the independent interruption receipt based
+on `32e8eb2`; no older snapshot was applied. The original 03:06–07:06 UTC
+session window below is historical. No unattended coordinator is claimed active
+when this turn finishes. Resolve the newest remote tip and checkpoint journal.
+
+The rug source checkpoint is `91b6856`; bounded art acceptance is `c5fc78a`.
+It has actual editable source reopen, 207 read-only assertions, 60 real S02
+assertions, 14 inspected Low/Medium player views and independent empty-store
+LFS retrieval/reopen/import/use. See `ARCHIVE_RUG_ACCEPTANCE.md` and its receipt.
+The first proposed longitudinal test lanes crossed the inherited pedestal;
+the corrected fixture retains existing clear side lanes and rug edge crossings.
+No collision or progression obstacle was removed.
+
+Tooling checkpoint `f59c385` adds opt-in `--snapshot-mode remote-delta` to the
+supervised coordinator. It saves changed materialized files and staged/unstaged
+binary patches against an independently verified remote HEAD; it is not an
+offline/full-history backup. Actual recovery, materialized LFS, remote advancement,
+refusal and coordinator publication fixtures pass. The original full archive
+and coordinator tests still pass. The actual repository delta was 13,332 bytes;
+its scope and hash are recorded in `evidence/checkpoints/remote-delta-20261006`.
+A follow-up hardening preserves distinct staged LFS bytes separately from the
+working payload and refuses a missing unpublished staged object. Current
+hash-bound tooling evidence supersedes the initial optional-mode hashes.
+Use this mode with the existing 600-second supervision during the next live
+turn. All accepted rug/game payload identities remain unchanged by tooling.
+
+Before another art family, reconcile required remaining S00/S01/S02 assets with
+canonical tables and current bounded acceptance receipts. Full gallery, authored
+music selection/bindings, physical target GPU, ARCH/VS1 and S03 remain open.
+Do not re-author completed room families or treat software timings as physical
+GPU acceptance. Existing accepted source art is available through LFS.
+
+---
+
 # Latest active boundary — actual room profiling, 2026-10-06
 
 Live session03:06:06 UTC; minimum end06:06:06, maximum07:06:06. Keep supervised

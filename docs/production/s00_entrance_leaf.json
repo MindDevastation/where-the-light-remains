@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "source": "assets/3d/blender/archive_kit/s00_entrance_leaf.blend",
+  "materials": {
+    "walnut": "res://art/materials/m_dark_walnut.tres",
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres"
+  },
+  "parts": [
+    {
+      "id": "leaf",
+      "stem": "sm_s00_entrance_leaf",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "materials": [
+        "walnut",
+        "iron",
+        "brass"
+      ],
+      "triangle_ceiling": 3000
+    }
+  ],
+  "body_size": [
+    1.3,
+    3.8,
+    0.25
+  ],
+  "left_body": [
+    -0.65,
+    1.9,
+    9.4
+  ],
+  "right_body": [
+    0.65,
+    1.9,
+    9.4
+  ],
+  "plate_min_front_z": [
+    9.54,
+    9.535
+  ],
+  "references": {
+    "a": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_a.png",
+    "b": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_b.png",
+    "c": "assets/concept_art/environments/s00_prologue/p_004_v2_angle_c.png"
+  }
+}

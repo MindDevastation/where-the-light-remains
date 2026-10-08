@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "archive_inspect_wash"
+transparency = 1
+shading_mode = 0
+blend_mode = 1
+albedo_color = Color(0.78, 0.52, 0.22, 0.055)
+no_depth_test = false
+disable_receive_shadows = true

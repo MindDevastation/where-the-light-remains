@@ -1,0 +1,295 @@
+{
+  "status": "PASS",
+  "images_individually_viewed": 32,
+  "scope": "Bounded fanlight integration/native views only; full style/gallery/physical target GPU/VS1 remain open.",
+  "images": [
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s00_closed_low.png",
+      "sha256": "e6ad8540e9c9eecf9c030945fbb2e0223e40dc745f5ca6eecda2dd046773d230",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "One original exterior practical retained; side header arches present; entrance/rail silhouette unchanged. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 123,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s00_opening_low.png",
+      "sha256": "bb66408f1e14f7c5d7d9c2cfed356bfde35aa3fc61841b88466d7da4eacd3c5c",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original sliding entrance and central sightline unobstructed; no S00 interior warm spill. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 124,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s00_entry_low.png",
+      "sha256": "7b6e69fc0cb575982cde3bb86571ad6f708e4b3b4ae6cc2c221544539bcda43b",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original player handoff view, five route headers and central mechanism readable; stage-dependent interior fixtures still hidden during S00. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 98,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s01_asleep_low.png",
+      "sha256": "221b7438b8829eda170a791f46c33e77e8bbe349a483616de7221db5af578c1b",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Cool sleeping core with warm wall fixtures; five shared fanlights frame existing gates; no new route/emblem. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 99,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s01_detail_low.png",
+      "sha256": "9111a8e8146e520045b8c760137541c3110e8e2c4b02c0c5655be6c6494be6bf",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Arched frame/glass/mullions above accepted timber gate; restrained shared material contrast; joints remain visible. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 75,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_corridor_join_low.png",
+      "sha256": "adf96f07352a6e01cad22da1ec641c396c0cc37177d4c9a4ce1d3992eb3dbfb8",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original flat threshold and cyan route into optics remain clear; no floor/passage change. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 47,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s01_awakened_low.png",
+      "sha256": "36fe2a440ac4433e2a170cda8bffdc49195fbc8f1c735fff3ac495a26e29b219",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Warm local core projection with cool glass/ambient context; fanlights keep gate silhouettes readable. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 100,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_completed_hub_low.png",
+      "sha256": "9d9de25c8466b997d33f4860cbae909889600c1e349c07b0b86a18342013472d",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Completed route opens onto optics; original channels/core state readable and no window intrusion. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 104,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s01_controls_low.png",
+      "sha256": "40f717736101a8129e2092633a394acac80c2a8536be4e6f763fe9a736a1a0ef",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original pickup/socket/control silhouettes retain contrast; header remains above targets. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 94,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s01_awakening_low.png",
+      "sha256": "76a8aa28d38c0a94741bde52d5c471f32591a0c3f1595e150d6791ae0d14f3ea",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Actual intermediate clock pose/light and cyan channels retain visibility; window framing remains static. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 100,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s02_entry_cold_low.png",
+      "sha256": "de45bd50819af4d43f085a13c5a6096d4cade79622249a12708f38ce5b3af372",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Accepted roof/room/paving/practicals and cold optics composition unchanged. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 53,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s02_optics_cold_low.png",
+      "sha256": "cbde3af775ad8ac11ec1f3a31157cdb20aca43408d8a8220e013c2d43a6c4833",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Cold optical apparatus and cyan beam/target path remain readable. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 53,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s02_star_low.png",
+      "sha256": "fb4f980c68c82710fdf91f5b00bb955abb2c050b3f0dbb0dba3e84771d3b413b",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Star state and optical cyan beam remain distinct; no change to accepted puzzle presentation. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 54,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s02_hearth_warm_low.png",
+      "sha256": "1309795912a369fb24a11bb0803cd8ac572246be6be4caf0f6a8eadf13bc2f52",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original cold→warm Hearth color projection is distinct; beam/flame readable. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 55,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_header_detail_low.png",
+      "sha256": "2a36ca13df4b70642aefe8666dd7a33a1766fca7cbe0c6b99b03d96b2c400e86",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Actual player upward look confirms curved glass/frame and original lintel/passage envelope; no floating label or clue added. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 78,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_opening_ghost_low.png",
+      "sha256": "8918c4e7457ae6a18db3af072c84c8433eec8d366bfd678c2fba855f23221655",
+      "quality": "low",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Actual paused original gate OpeningVisual remains visible behind the fixed header; open corridor is clear. Numeric full-sweep depth gap verified separately. Low .75 scale aliases thin joints; routes/optics remain readable.",
+      "draw_calls": 79,
+      "opening_ghost": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s00_closed_medium.png",
+      "sha256": "28a87ccae77928c20581f7f8fdd713031c768badc70c1986d6a0c137b8847164",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "One original exterior practical retained; side header arches present; entrance/rail silhouette unchanged. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 123,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s00_opening_medium.png",
+      "sha256": "bbe73db393a6c2ade9b47a4854aee378ea202cf92ded344e4af083f221f8a682",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original sliding entrance and central sightline unobstructed; no S00 interior warm spill. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 124,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s00_entry_medium.png",
+      "sha256": "259c5d0c2a524048712328f724a2386088650635690377e69b2b5ce782a7adea",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original player handoff view, five route headers and central mechanism readable; stage-dependent interior fixtures still hidden during S00. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 98,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s01_asleep_medium.png",
+      "sha256": "badaacd2b347fbfd93218bbcf7d8ad26850c5a362d8eaeb6c9aae15bc172555b",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Cool sleeping core with warm wall fixtures; five shared fanlights frame existing gates; no new route/emblem. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 99,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s01_detail_medium.png",
+      "sha256": "e552a257c624d81a5788ab1232965846ab5a11005be045f67045685e90ec4746",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Arched frame/glass/mullions above accepted timber gate; restrained shared material contrast; joints remain visible. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 75,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_corridor_join_medium.png",
+      "sha256": "3ca538149e554433b5a95342c571f62f95d03a2f72c6df85985141df5bba7ee2",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original flat threshold and cyan route into optics remain clear; no floor/passage change. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 47,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_s01_awakened_medium.png",
+      "sha256": "498b3e477531c13fe510814957bee58fa665f0ec120159c910d51bb31dd5d0b0",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Warm local core projection with cool glass/ambient context; fanlights keep gate silhouettes readable. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 100,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_completed_hub_medium.png",
+      "sha256": "82351eac17eaab469ad70e2d34889b876a67aed2abab337b544a9133ead4aa1c",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Completed route opens onto optics; original channels/core state readable and no window intrusion. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 104,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s01_controls_medium.png",
+      "sha256": "8addf4344b9c59afcbdedafec8cc6fc0a09bf6ba180cafe26a46cba62818064b",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original pickup/socket/control silhouettes retain contrast; header remains above targets. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 94,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s01_awakening_medium.png",
+      "sha256": "3f3154bd04bbce8dc88ff1f7e1e6487687d93b399cfcbf099d83f7630bb4d9a5",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Actual intermediate clock pose/light and cyan channels retain visibility; window framing remains static. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 100,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s02_entry_cold_medium.png",
+      "sha256": "a530dc058935e5e6fb889cc0ab758c1dd0406e2c950b01a38018917377695a8c",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Accepted roof/room/paving/practicals and cold optics composition unchanged. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 53,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s02_optics_cold_medium.png",
+      "sha256": "277e3d2b28592692fccde94882432001d19aa4070615d00852b271484bad69b7",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Cold optical apparatus and cyan beam/target path remain readable. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 53,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s02_star_medium.png",
+      "sha256": "7678c20cc55f3482ce227252a74828c77f7bce838e1443e0b38f8a33c79b3c54",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Star state and optical cyan beam remain distinct; no change to accepted puzzle presentation. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 54,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/lighting_s02_hearth_warm_medium.png",
+      "sha256": "c130085db055183cdb0397a66c646ce7b43f2104ca013c1a99a3054ae877f1c9",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Original cold→warm Hearth color projection is distinct; beam/flame readable. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 55,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_header_detail_medium.png",
+      "sha256": "64d744e4cdf6447bd537e48d5b770da96b99b8d41835a782c047ac50c07459ba",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Actual player upward look confirms curved glass/frame and original lintel/passage envelope; no floating label or clue added. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 78,
+      "opening_ghost": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/fanlight-native-1/fanlight_opening_ghost_medium.png",
+      "sha256": "55e02ac38228cb1300edf5bc11b5dc2a9017875814b5026f600d579b33b0e924",
+      "quality": "medium",
+      "status": "INDIVIDUALLY_VIEWED_BOUNDED_PASS",
+      "judgment": "Actual paused original gate OpeningVisual remains visible behind the fixed header; open corridor is clear. Numeric full-sweep depth gap verified separately. Medium resolves thin frame/joint edges more clearly.",
+      "draw_calls": 79,
+      "opening_ghost": true
+    }
+  ]
+}

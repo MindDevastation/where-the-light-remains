@@ -1,0 +1,41 @@
+{
+  "source": "assets/3d/blender/archive_kit/s01_hub_floor.blend",
+  "parts": [
+    {
+      "id": "floor",
+      "stem": "sm_s01_hub_floor",
+      "runtime": "game/art/meshes/archive_kit/sm_s01_hub_floor.glb",
+      "materials": [
+        "stone",
+        "brass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 7500
+    }
+  ],
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "brass": "res://art/materials/m_aged_brass.tres"
+  },
+  "body_center": [
+    0,
+    -0.15,
+    0
+  ],
+  "radius": 10.0,
+  "body_height": 0.3,
+  "source_radius": 9.98,
+  "segments": 80,
+  "stone_top_local_y": 0.152,
+  "inlay_top_local_y": 0.1535,
+  "corridor_half_width": 2.0,
+  "corridor_front_z": -8.0,
+  "channel_bottom_y": 0.005,
+  "core_bottom_y": 0.006,
+  "approach_top_y": 0.006,
+  "inlay_segments": 64
+}

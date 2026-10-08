@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T14:27:54.545108+00:00",
+  "scope": "Bounded shared front facades and static entry crown only; all twelve actual native screenshots individually viewed. Exterior shell, approach, Hub graybox context not promoted.",
+  "images": [
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_crown_detail_low.png",
+      "sha256": "0271dc9f6bd0652b64999816925d47c1c1db5a6c4f01f3974ab3e3ba9bb3e310",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_crown_detail_medium.png",
+      "sha256": "eea4733e5d18b18a05d7ca48da240346245e70581e0b49acbfb42c4c021e7e57",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_facade_oblique_low.png",
+      "sha256": "4803e78264ba5f66ec4e401fcba9bff8361ddb91842721940ba57b19493d9606",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_facade_oblique_medium.png",
+      "sha256": "de6e81f3f0ca7f73a99757b3187f55b6233cf16c771b3871214a43441639c55b",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_quiet_s01_reverse_low.png",
+      "sha256": "ce839a113d2b3673cbb60936cd90ffdd029b6f744d9496442aee55ff34fd8ee7",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_quiet_s01_reverse_medium.png",
+      "sha256": "6f72b2c06b1664a0fd36100576924d646281dbe3ea90499af30ae5c17f8db9ef",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_rail_closed_low.png",
+      "sha256": "2371fa810ada645c343a41538d7e4c41da6d51ed6fe9131eb0c4f737e7fc77f0",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_rail_closed_medium.png",
+      "sha256": "3c3d7255b79b75a64fda2a4db6d2682e8829d81f7f81626b68041c215d808151",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_rail_entry_low.png",
+      "sha256": "9a157145fe50a2ffd5ff0002a03496e4301c1b4bcf70c5ee7b3732570525d627",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_rail_entry_medium.png",
+      "sha256": "ae74f38f52a886d694d5d222c30796984771070a78a60e4727dbe8e54fbc80a7",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_rail_opening_low.png",
+      "sha256": "88006f15520aa7e6499ff9158c939005958137626d01ed78d614cbe1c372d649",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/portal-native-1/portal_rail_opening_medium.png",
+      "sha256": "9dd813c3d9ca5df3601be32b0e0782609a793584a0e13bc6874c86105e87e168",
+      "inspected": true
+    }
+  ],
+  "observations": [
+    "Stone courses and curved crown readable on Low/Medium; lantern warm patch versus cool night lighting; plain high crimson, aged timber/iron/brass retained.",
+    "Closed/opening/entry/quiet reverse views preserve leaf motion and gameplay silhouettes; no visible door/crown clipping or new obstruction.",
+    "Crown detail exposes still-open upper exterior composition and graybox Hub; full art/lighting/gallery/GPU remain open."
+  ],
+  "renderer": "Forward+ / llvmpipe; not physical target GPU"
+}

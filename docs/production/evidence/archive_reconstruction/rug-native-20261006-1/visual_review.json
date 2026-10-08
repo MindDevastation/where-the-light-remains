@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T08:09:35.721742+00:00",
+  "scope": "Fourteen actual shipping-player static Low/Medium captures inspected. Stable visible border/field and tile separation; pedestal, beam, Star and Hearth cues readable. No physical target FPS acceptance.",
+  "source_hashes": {
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_edge_low.png": "88a3ac6df0607784c044e12e46d42ee33282e4f2943239f4b77d94e7b36363d6",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_entrance_low.png": "1cc7938c624fd68cc04f13801d2bcee38292bb9ce9ce61bbcbe3c3f44c35a0c0",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_hero_medium.png": "6094e481259ab1c39817837e26822cb78883bfc63314118c543da1440f842819",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_star_low.png": "1126a3d9634773740dae3202c71a515427236f219ee8509acc9b365300195bea",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_reverse_low.png": "599908b541411099255e319eadc5d7c72d0e7bb45f40192911a1149039e4ef5a",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_hearth_medium.png": "c1f9ef49a76666ad12f544c1afa3e16484bd97b0178809c9b05c5a03cf53034b",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_entrance_medium.png": "757e8c939e21d372566754596b97a0d82e7b3ade25615fb8c45ed765a2ca4753",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_star_medium.png": "fe4983cc27f1eb4a9323be7a25555a9a98a37772019cd6b248dfa6e09dd72c99",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_warm_medium.png": "16388304bf44c952372c32ca3811d5ef9d053652ddc15b5c83ef9a52b47f2bbc",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_edge_medium.png": "9544d8f4951584526fffeabe66cfd5336300b0b03c917d20b16fa48e16af4387",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_hearth_low.png": "971ba012da3851c3d0a7f80a4a3a554fe38984b5c7da02f199fe31683ed5e090",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_hero_low.png": "37c388135604ae49b2a509fa6e93425521f95e7772f755c66fad1ac436c2948f",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_reverse_medium.png": "d20bdc9f4622778e0961192aa1587599ea672e8750dd285fa13c7154976dcbf1",
+    "docs/production/evidence/archive_reconstruction/rug-native-20261006-1/rug_warm_low.png": "8266039b7a54bf2fae8220868161a1714244edcd5f924d4107e98f24622af3a7"
+  },
+  "observations": {
+    "entrance": "Centered plain textile runner under the original optical pedestal; existing room routes remain open.",
+    "edge": "Continuous navy silhouette with crimson inset; no observed coplanar floor patches in these views.",
+    "hero_reverse": "Original pedestal remains above cloth and visually distinct.",
+    "star_hearth_warm": "Existing cyan Star and warm Hearth retain contrast; decorative rug has no clue or text."
+  }
+}

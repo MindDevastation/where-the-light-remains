@@ -1,0 +1,52 @@
+{
+  "source": "tools/generate_cool_dark_stone_maps.py",
+  "helper": "tools/generate_material_maps.py",
+  "resolution": 1024,
+  "provenance": "Original seeded periodic dielectric stone data; no external/concept pixels.",
+  "packing": "R=1 reserved AO; G=roughness; B=0 metallic; +Y tangent normals",
+  "roughness_range": [
+    0.8221011850122755,
+    0.9267928225431621
+  ],
+  "maps": [
+    {
+      "role": "albedo",
+      "file": "t_cool_dark_stone_albedo.png",
+      "sha256": "8112a30a6897eb2e089ecb8c5d9d50c20e6f83a666e9026732733734a676d331",
+      "bytes": 513338,
+      "wrap_mean_8bit": 0.3953,
+      "adjacent_mean_8bit": 0.3841,
+      "mean_rgb_8bit": [
+        48.42269039154053,
+        57.34747123718262,
+        67.54764080047607
+      ]
+    },
+    {
+      "role": "normal",
+      "file": "t_cool_dark_stone_normal.png",
+      "sha256": "c8dfa925a7524409ac784665c99de7cd87a6339d2bb3e3260b74d03eef042f15",
+      "bytes": 600268,
+      "wrap_mean_8bit": 0.4541,
+      "adjacent_mean_8bit": 0.4397,
+      "mean_rgb_8bit": [
+        127.49983882904053,
+        127.50055313110352,
+        255.0
+      ]
+    },
+    {
+      "role": "orm",
+      "file": "t_cool_dark_stone_orm.png",
+      "sha256": "79c9fc35170064ec3e4cd44658227197c5bb1e0dc99dca6d09e02a4ebbedc6b7",
+      "bytes": 426343,
+      "wrap_mean_8bit": 0.4061,
+      "adjacent_mean_8bit": 0.395,
+      "mean_rgb_8bit": [
+        255.0,
+        223.07646656036377,
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "assertions": 64,
+  "captures": [
+    {
+      "all_scene_lights_reproduced": false,
+      "camera_size": 2.34999990463257,
+      "density_px_per_m": 1024,
+      "file": "stone_trim_neutral_low.png",
+      "lighting": "neutral",
+      "normal_scale": 1.0,
+      "physical_u_length_m": 4,
+      "regions": 6,
+      "render_scale": 0.75,
+      "scene_lighting_subset": false,
+      "scope": "isolated_metric_trim_uv",
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "u_repeats": 2
+    },
+    {
+      "all_scene_lights_reproduced": false,
+      "camera_size": 2.34999990463257,
+      "density_px_per_m": 1024,
+      "file": "stone_trim_corridor_cold_low.png",
+      "lighting": "corridor_cold",
+      "normal_scale": 1.0,
+      "physical_u_length_m": 4,
+      "regions": 6,
+      "render_scale": 0.75,
+      "scene_lighting_subset": true,
+      "scope": "isolated_metric_trim_uv",
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "u_repeats": 2
+    },
+    {
+      "all_scene_lights_reproduced": false,
+      "camera_size": 2.34999990463257,
+      "density_px_per_m": 1024,
+      "file": "stone_trim_hub_awake_low.png",
+      "lighting": "hub_awake",
+      "normal_scale": 1.0,
+      "physical_u_length_m": 4,
+      "regions": 6,
+      "render_scale": 0.75,
+      "scene_lighting_subset": true,
+      "scope": "isolated_metric_trim_uv",
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "u_repeats": 2
+    },
+    {
+      "all_scene_lights_reproduced": false,
+      "camera_size": 5.0,
+      "density_px_per_m": 1024,
+      "file": "stone_trim_mips_low.png",
+      "lighting": "mips",
+      "normal_scale": 1.0,
+      "physical_u_length_m": 4,
+      "regions": 6,
+      "render_scale": 0.75,
+      "scene_lighting_subset": false,
+      "scope": "isolated_metric_trim_uv",
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "u_repeats": 2
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "low",
+  "renderer": "forward_plus",
+  "status": "CAPTURED_FOR_REVIEW"
+}

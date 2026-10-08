@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "source": "assets/3d/blender/archive_kit/s01_core_pedestal.blend",
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "walnut": "res://art/materials/m_dark_walnut.tres",
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "crimson": "res://art/materials/m_crimson_textile.tres"
+  },
+  "parts": [
+    {
+      "id": "pedestal",
+      "stem": "sm_s01_core_pedestal",
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "materials": [
+        "stone",
+        "walnut",
+        "iron",
+        "brass",
+        "crimson"
+      ],
+      "triangle_ceiling": 3000
+    }
+  ],
+  "body_radius": 1.0,
+  "body_height": 1.4,
+  "root": [
+    0,
+    0.7,
+    0
+  ],
+  "floor_gap": 0.006,
+  "lower_top": 0.64,
+  "upper_radius": 0.2,
+  "references": {
+    "a": "assets/concept_art/hero_props/The Archive\u2019s Central Mechanism_v2_angle_a.png",
+    "b": "assets/concept_art/hero_props/The Archive\u2019s Central Mechanism_v2_angle_b.png",
+    "c": "assets/concept_art/hero_props/The Archive\u2019s Central Mechanism_v2_angle_c.png"
+  }
+}

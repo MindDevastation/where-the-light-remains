@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "families": {
+    "fanlight-authoring-20261006": {
+      "status": "PASS",
+      "receipt_sha256": "13752119d64c850944cc1f9915af01d541750786b31d3ae84c9accb618a4fef8",
+      "verified_source_hashes": 11,
+      "differences": [
+        {
+          "path": "tools/verify_archive_arched_fanlight.py",
+          "receipt_sha256": "a5d965ab06894b1e2339291cdc51affeab663e852b5676443d3ad1d71cbdbb32",
+          "current_sha256": "c32786935054d575f55ca64d950f40bbce8a69b9af654b017f90f2eed9c308b2",
+          "basis": "Verifier-only refinement; no runtime/fixture/renderer change. component-validation and fanlight-lfs-2 execute current verifier."
+        }
+      ],
+      "runtime_and_fixture_hashes_unchanged": true
+    },
+    "fanlight-readonly-1": {
+      "status": "PASS",
+      "receipt_sha256": "e39708becf82ad2a3f91653d0273897fbd0bea377ddef7258d6db9933be43096",
+      "verified_source_hashes": 640,
+      "differences": [
+        {
+          "path": "tools/verify_archive_arched_fanlight.py",
+          "receipt_sha256": "a5d965ab06894b1e2339291cdc51affeab663e852b5676443d3ad1d71cbdbb32",
+          "current_sha256": "c32786935054d575f55ca64d950f40bbce8a69b9af654b017f90f2eed9c308b2",
+          "basis": "Verifier-only refinement; no runtime/fixture/renderer change. component-validation and fanlight-lfs-2 execute current verifier."
+        }
+      ],
+      "runtime_and_fixture_hashes_unchanged": true
+    },
+    "fanlight-progression-1": {
+      "status": "PASS",
+      "receipt_sha256": "91836883cd750dfaace9ecc87b199b4551d881b45da1a258e204e33005b22fc0",
+      "verified_source_hashes": 640,
+      "differences": [
+        {
+          "path": "tools/verify_archive_arched_fanlight.py",
+          "receipt_sha256": "a5d965ab06894b1e2339291cdc51affeab663e852b5676443d3ad1d71cbdbb32",
+          "current_sha256": "c32786935054d575f55ca64d950f40bbce8a69b9af654b017f90f2eed9c308b2",
+          "basis": "Verifier-only refinement; no runtime/fixture/renderer change. component-validation and fanlight-lfs-2 execute current verifier."
+        }
+      ],
+      "runtime_and_fixture_hashes_unchanged": true
+    },
+    "fanlight-native-1": {
+      "status": "PASS",
+      "receipt_sha256": "b0c90ed8ab569548e4953a8cbb4fded758bae86d7803488d0cdc63eee1eeb7a1",
+      "verified_source_hashes": 576,
+      "differences": [],
+      "runtime_and_fixture_hashes_unchanged": true
+    },
+    "fanlight-lfs-2": {
+      "status": "PASS",
+      "receipt_sha256": "2c41ac5061d92d186d6182d39151c2afd366af4e3872f741f65ebcf5fd33a11d",
+      "verified_source_hashes": 651,
+      "differences": [],
+      "runtime_and_fixture_hashes_unchanged": true
+    }
+  },
+  "note": "Historical receipts retained verbatim. Only old supporting verifier hashes differ; current strengthened verifier was actually executed locally and after independent LFS retrieval. Native receipt hashes all match."
+}

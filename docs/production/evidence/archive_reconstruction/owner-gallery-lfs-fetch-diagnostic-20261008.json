@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-08T13:00:56.568655+00:00",
+  "owned_fetch_cancelled": true,
+  "observed_blocking_child": "git ls-tree -r -l -z --full-tree",
+  "promisor_child_fetch_observed": true,
+  "exact_current_existing_objects_recovered": 33,
+  "missing_objects": 14,
+  "next_bounded_workaround": "Read remaining committed OIDs in a minimal owned Git namespace with same origin LFS endpoint;avoid full-tree size scan of sparse promisor checkout",
+  "no_credential_extraction": true,
+  "new_upload": false
+}

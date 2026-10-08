@@ -156,3 +156,42 @@ README. Historical six-family logs above retain their original scope.
 The material board establishes surface behavior and palette. It cannot establish
 Warcraft geometry/craftsmanship, navigation, puzzle readability, collision or
 representative GTX1060 performance in unbuilt environments.
+
+## MAT-005 unbound source extension — 2026-10-07
+
+The original shared masters/maps are preserved. New m_cool_dark_stone.tres and
+three original periodic1024 PNGs use tools/generate_cool_dark_stone_maps.py.
+COOL_DARK_STONE_SOURCE_READINESS.md records isolated native source/specimen PASS,
+66 assertions/8 images; shipping assignment absent, row PARTIAL. The original
+20-map manifest is unchanged; separate cool_dark_stone_manifest.json seals the
+new3 maps. The previously accepted polished-brass extension has its own3-map
+manifest and acceptance. No fixture lights or specimen geometry ship.
+
+## MAT-011 unbound linen extension — 2026-10-07
+
+New m_linen.tres uses original3-map source tools/generate_linen_maps.py and
+linen_manifest.json. All3 source maps differ from preserved woven_textile maps;
+LINEN_SOURCE_READINESS.md records66 isolated assertions/8 individual native
+images. Material remains unbound/PARTIAL pending the canonical dressing actor.
+Crimson/navy/rug/leather source and material assignments remain unchanged.
+
+## MAT-012 unbound leaf-atlas extension — 2026-10-07
+
+One preserved original imagegen RGBA atlas t_archive_leaf_atlas.png, actual
+1774×887, eight normalized4×2 cells; exact two-prompt lineage and alpha bounds
+in leaf_atlas_manifest.json. Shared m_archive_leaf_cutout.tres uses native .5
+alpha-scissor/two-sided matte PBR and HQ compressed mipmaps/fix-alpha-border.
+LEAF_ATLAS_SOURCE_READINESS.md records168 assertions/8 individually inspected
+native frames. Source row PARTIAL; actual plant carrier/UV density/placement and
+shipping/motion/style acceptance remain open. No original material map changed.
+
+## TRIM-002 original guarded stone trim — source-only PARTIAL
+
+`m_stone_ornament_trim.tres` shares three2048 PNGs under `textures/trims/`.
+Five measured arch/plinth/wall/floor bands,2m U-repeat at1024px/m,minimum64px
+clamped guards, +Y normals±5mm relief and matte dielectric ORM. Editable
+`tools/generate_stone_trim_maps.py` / `stone_trim_regions.json`; accepted tileables
+are unchanged. Source readiness/gallery/final128 executions8 views documented in
+STONE_TRIM_SOURCE_READINESS.md. First6cm RoomPortal fillet requires a UV-only
+LFS sibling;ordinary override onto current tileableUV is not approved. No shipping
+assignment or whole-scene/performance acceptance yet.

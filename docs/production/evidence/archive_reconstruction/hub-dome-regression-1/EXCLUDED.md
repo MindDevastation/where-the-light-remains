@@ -1,0 +1,1 @@
+Historical fixture/selection attempt; not acceptance. Original gate root is Y0, frustum fixture now matches native16:9. Later actual existing test scenes are authority. Production geometry and original gate/camera contracts unchanged.

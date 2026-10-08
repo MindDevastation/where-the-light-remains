@@ -1,0 +1,3 @@
+PASS: bundle roundtrip preserves HEAD, staged/unstaged edits, deletion and untracked evidence; source unchanged
+PASS: unsafe inputs refused; last complete archive retained; no incomplete archive published
+PASS: local timer produces successive checkpoints and pauses at the UTC deadline

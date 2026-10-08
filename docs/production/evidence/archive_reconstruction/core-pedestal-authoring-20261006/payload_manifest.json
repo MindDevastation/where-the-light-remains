@@ -1,0 +1,22 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s01_core_pedestal.blend",
+      "bytes": 709313,
+      "sha256": "323066677aed8877a2cfc05cbb9d7abadbe86af1667eb4be81fbb43ce474c2f4"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_core_pedestal.glb",
+      "bytes": 274028,
+      "sha256": "46fd606039325ab095a87debcee5b168b48ceefe7d4574838f061d9f42e1f1ff"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s01_core_pedestal",
+      "triangles": 2144,
+      "surfaces": 5
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

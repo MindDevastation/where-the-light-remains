@@ -1,0 +1,32 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s01_starting_lens.blend",
+      "bytes": 715359,
+      "sha256": "e9db1b6bde2f409a8b9a6b71fbbf3c58a099b41924948c35aaac570a8a55b155"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_starting_lens.glb",
+      "bytes": 158820,
+      "sha256": "2f3e6451666da55d05bddf4124a216ed7d3cae05d0bed894486a0eedbc72a1ea"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_lens_socket.glb",
+      "bytes": 161136,
+      "sha256": "048dc3854782d0f9675a84eddbd9f7bdd1d13687908d5c1d574afc6e4370d07a"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s01_starting_lens",
+      "triangles": 1364,
+      "surfaces": 2
+    },
+    {
+      "stem": "sm_s01_lens_socket",
+      "triangles": 1392,
+      "surfaces": 2
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

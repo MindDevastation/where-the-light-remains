@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "visual_target_status": "PARTIAL",
+  "utc": "2026-10-06T16:57:58.677198+00:00",
+  "scope": "All16 retained Low/Medium960x540 shipping/state and supplemental detail PNG inspected individually in this recovery; shared mesh readability only.",
+  "images": [
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_completed_hub_low.png",
+      "sha256": "f4e27501527b6a3c4675832c500976926d9fbfa904450dac846fcdf03e3bd956",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_completed_hub_medium.png",
+      "sha256": "9a5287e498d7031814fbc70346d74f55387fcf93b3729555ec762a08fbbf57f1",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_corridor_join_low.png",
+      "sha256": "644932dd4184af46366a19484e3f5dd83e5483ee6774208eb6c1f22663d8856b",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_corridor_join_medium.png",
+      "sha256": "acf10465f8bba979e185d3c3465b73557b5d862e193fcae26246db56ed21e386",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s00_closed_low.png",
+      "sha256": "986941fb5ac4e09f8d568fe8f7bf9ab7e6b8eb2cd493d921b2ed4e1394dad29e",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s00_closed_medium.png",
+      "sha256": "68205920bf077b16e1c3a9dfa7cbb80e286503cb01cd3c6be7a7a083193ec84d",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s00_entry_low.png",
+      "sha256": "bc5e0cd3d425a5b7174fdecf2ebd52087c45edf8645bcdebd9daca94a95f7eac",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s00_entry_medium.png",
+      "sha256": "8b67c2d3eb3a2c77eca8f3d725c93e4502be8244ddc0f4718ac608700f8bf95f",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s00_opening_low.png",
+      "sha256": "237b627eea177da840c38f5f8e405b11e55d3eb556b85eae7d4d9d7604cba723",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s00_opening_medium.png",
+      "sha256": "a9388aa98c3d4c46649f3239b937904cb96a4fcaab3af8d29272324e6cbed228",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s01_asleep_low.png",
+      "sha256": "011440238e0f38c95e0560127936384bc00605e42f1bcf875475695f82d70da6",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s01_asleep_medium.png",
+      "sha256": "8c9fd9590dbb0aeb182d6f6f7012de938bb282742d456903066d5bfb84b31c50",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s01_awakened_low.png",
+      "sha256": "48781fb67a37f4d40028a8e76e4575a1e81d6904b357c9cecd663b5760b3ea15",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s01_awakened_medium.png",
+      "sha256": "64ab3db84e7c248ad29c04cbb59ed68290f1331d43029d631ed6616ff9abc11e",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s01_detail_low.png",
+      "sha256": "eb000ccdc88c3ec59209797acb225f1523e3a9cbd90d492e25692ff398b1d4c6",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/wing-gate-native-2/wing_gate_s01_detail_medium.png",
+      "sha256": "41dad03cb184019b7ebe5f9b3ecfed1dd0fb130e4509a9e9cfcb03f8ecd370a1",
+      "inspected": true
+    }
+  ],
+  "observations": [
+    "Aged timber planks/iron bands are distinct from pale stone in the closed gate detail. Original floor gap and unchanged state passage are measured by regression.",
+    "Completed Hub view has an open Wing I portal and retained cyan channel; side gates remain present. Sleeping and awakened views preserve the original state projection.",
+    "S00 closed/opening/entry views retain the original doors, rail and one warm entry practical.",
+    "Current stone remains too pale/cool; upper apertures remain unfilled, no canonical per-route emblems are claimed, and the hero core remains unfinished. Full Hybrid Warcraft Observatory style/owner review remains PARTIAL.",
+    "Low960x540 aliases thin floor/stone joints and sky stars; Medium improves edge coverage. No target hardware performance or complete gallery claim."
+  ],
+  "renderer": "Forward+ / llvmpipe, software only"
+}

@@ -1,0 +1,15 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: Loaded resource as image file, this will not work on export: 'res://art/textures/material_library/t_polished_brass_normal.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2780)
+     GDScript backtrace (most recent call first):
+         [0] _run (res://tests/archive_polished_brass_smoke.gd:28)
+WARNING: Loaded resource as image file, this will not work on export: 'res://art/textures/material_library/t_polished_brass_orm.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2780)
+     GDScript backtrace (most recent call first):
+         [0] _run (res://tests/archive_polished_brass_smoke.gd:29)
+WARNING: Loaded resource as image file, this will not work on export: 'res://art/textures/material_library/t_aged_brass_orm.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2780)
+     GDScript backtrace (most recent call first):
+         [0] _run (res://tests/archive_polished_brass_smoke.gd:30)
+ARCHIVE_POLISHED_BRASS PASS: 26 assertions; actual maps/import/material/quality/state/retained hero interfaces

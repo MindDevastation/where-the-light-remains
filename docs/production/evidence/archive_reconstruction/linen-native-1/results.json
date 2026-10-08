@@ -1,0 +1,319 @@
+{
+  "status": "PASS",
+  "started_at": "2026-10-07T11:06:01.541330+00:00",
+  "scope": "Unbound isolated material specimens; no gameplay, shipping assignment, fresh old-art/GLB test, target GPU or full VS1 acceptance",
+  "source_hashes": {
+    "game/tests/linen_review.gd": "79eff0ce84d8533a71ba15b0593483ded70cdec2240cf0ca60098323fa4ce05c",
+    "tools/generate_linen_maps.py": "0afab96bc6377f791ee0de1081e7ac77a5bf7eb2aec7fae082e42146e26b0e50",
+    "tools/generate_material_maps.py": "beff054a7dc882ebcc3b3aed79360ebd9d7679b1cefdc94a79224442a701bf85",
+    "tools/validate_linen.py": "2f78b40822a03d71e0afeae865fb66d7e63815db0c39849a2fa29c740400032c",
+    "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205",
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "game/autoload/settings_manager.gd": "17c1499f08bcedca5778060102c316428d9ba363d73e4cea7b603ed90ac1fd44",
+    "docs/production/LINEN.md": "dc5de99ac81f5e31f954f8a8a27d4d7dd6f05ba592a8459f30516d1bb4fb1714",
+    "game/art/materials/m_linen.tres": "b15469d716af9a649362b654524ac55450f657603f7eb7e912f9bc668385859c",
+    "game/art/textures/material_library/t_linen_albedo.png": "713458705e127885ec32518ca841fc272a897740726583aa33d8fea717071f82",
+    "game/art/textures/material_library/t_linen_albedo.png.import": "cc03f34237a72e215a3b458c7bb6f018b0b6f2d5d95b74c33cbcadbd4d78da15",
+    "game/art/textures/material_library/t_linen_normal.png": "f5bb6fcd034fd48f1cb8ec1ef3ac024f479d0596a7997d0ab433c40f159bb41c",
+    "game/art/textures/material_library/t_linen_normal.png.import": "fccd99db1a46e59482af4ec36f3a8a62185a62b2ba2d3d4073ff14edb1edf6a0",
+    "game/art/textures/material_library/t_linen_orm.png": "0c5d25ab187e48a48d59a2aff6967101f29c63dde6fdccafa0ea7a8eace39459",
+    "game/art/textures/material_library/t_linen_orm.png.import": "d3a4dc305dc7f562ce1264b491c8e477a250caaa8af79d2f6f9facfb8e6d7e51",
+    "game/art/materials/m_crimson_textile.tres": "eaa353a11b5bf0c2282af05bfe567ed99e708a42e96e25a3deb04d4d34eb128b",
+    "game/art/textures/material_library/t_woven_textile_albedo.png": "b12cf22e086b5f74f9bf0c888bdcafa792f904c4b87c2b5cef7a3ffc5e249be8",
+    "game/art/textures/material_library/t_woven_textile_albedo.png.import": "503cb554fc5594c6dbad0bbdb7df3056eed393d87f400d707f73203dac0baace",
+    "game/art/textures/material_library/t_woven_textile_normal.png": "b140bff4e4e5e62bdea0db9592a261a4c16abad31746e42dc35825f02742a840",
+    "game/art/textures/material_library/t_woven_textile_normal.png.import": "c4ab0fff83e635bb930fe3afa6e16cc04633b7bdae9f0ea3fe351fad2c27d7cd",
+    "game/art/textures/material_library/t_woven_textile_orm.png": "8b7b36ae2e28f1bd06b5a8aa144c8e552c69b2bc36dc24864250eb812a1a783d",
+    "game/art/textures/material_library/t_woven_textile_orm.png.import": "7a276021f7961158028e2d49ab216a15dbd543fec4d8d0c5a0d638f27bb2c909",
+    "game/art/textures/material_library/linen_manifest.json": "c103649cedc8a25a08a43c6e3b321b28ef73ea8e69bc037a4d86f88593f8ffc1",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/isolated_clean_import.log": "13e18f72a51216fb8ffbb043ab20e7d04577c3dbc090814fa3fbd0ccd08b8537",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/low.log": "df411ff289fd1a116f3b7b02705700487f087420aa71a5ed8a7533ed4bfce168",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/linen_cool_medium.png": "dab30add667ab9a8f73a4d9dd1bdb9c41bf2403395f0faab94ce791280cbee2e",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/fresh_map_regeneration.log": "89a902de3fd71850242cb603baee60511adb0b8da58ec7530dca08b5e3ab79ac",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/captures_medium.json": "10e58bcfcad03adaa6150dc8157616112f2239338204b884f74182460797c1a0",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/linen_tiles_medium.png": "b97286facc877637df4f65670883ee550e28b92a4a57bf96df7e5654db51c04b",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/medium.log": "c3ae7c99f176b3a7fb4bd318df02efe75b4b878ed347bf252a85c8df8f40cf3e",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/linen_neutral_medium.png": "72a062ab534050a84a8b815c3eaf7acccc5d0b230969cfcb1ec2fe00ac8c7b4b",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/linen_neutral_low.png": "5aa078d529164b1d3260f512b00bdc82c39de0f21ad38958852208d7f5897ed3",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/linen_warm_medium.png": "8e416b4b3db3bb7b174be34e12c3c60943be64f0b318346d60fd21ca093059f1",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/linen_tiles_low.png": "c46db19debac6a66af49c8df0d9791f72452061b99432f7859a62633aa5baab1",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/captures_low.json": "9fe954212625595651bf43e2f5a60575a86be050fe6b3f34f41f72b2cdffd54f",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/linen_warm_low.png": "f7dcc43250c3fdf64b6235a75d57763c92dd35051f30e6c69bf34607fd6802d6",
+    "docs/production/evidence/archive_reconstruction/linen-native-1/linen_cool_low.png": "b278568c43e8a039c8f1fc7700d65c6fc0821e6392895500b289abe8268d528d"
+  },
+  "records": [
+    {
+      "name": "fresh_map_regeneration",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-linen-9ytfwd79/tools/generate_linen_maps.py",
+        "--output",
+        "/tmp/wlr-linen-9ytfwd79/regenerated"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "89a902de3fd71850242cb603baee60511adb0b8da58ec7530dca08b5e3ab79ac"
+    },
+    {
+      "name": "isolated_clean_import",
+      "command": [
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "game",
+        "--editor",
+        "--import"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "13e18f72a51216fb8ffbb043ab20e7d04577c3dbc090814fa3fbd0ccd08b8537"
+    },
+    {
+      "name": "low",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-linen-9ytfwd79/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+        "--godot",
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "100",
+        "--expect",
+        "LINEN_REVIEW PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "960x540",
+        "--script",
+        "res://tests/linen_review.gd",
+        "--",
+        "--review-output=/workspace/scratch/0e91a73a58d2/repo/docs/production/evidence/archive_reconstruction/linen-native-1",
+        "--quality=low"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "df411ff289fd1a116f3b7b02705700487f087420aa71a5ed8a7533ed4bfce168"
+    },
+    {
+      "name": "medium",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-linen-9ytfwd79/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+        "--godot",
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "100",
+        "--expect",
+        "LINEN_REVIEW PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "960x540",
+        "--script",
+        "res://tests/linen_review.gd",
+        "--",
+        "--review-output=/workspace/scratch/0e91a73a58d2/repo/docs/production/evidence/archive_reconstruction/linen-native-1",
+        "--quality=medium"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "c3ae7c99f176b3a7fb4bd318df02efe75b4b878ed347bf252a85c8df8f40cf3e"
+    }
+  ],
+  "captures": [
+    {
+      "assertions": 33,
+      "captures": [
+        {
+          "draw_calls": 3,
+          "file": "linen_neutral_low.png",
+          "lighting": "neutral",
+          "materials": [
+            "res://art/materials/m_linen.tres",
+            "res://art/materials/m_crimson_textile.tres"
+          ],
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "linen_warm_low.png",
+          "lighting": "warm",
+          "materials": [
+            "res://art/materials/m_linen.tres",
+            "res://art/materials/m_crimson_textile.tres"
+          ],
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "linen_cool_low.png",
+          "lighting": "cool",
+          "materials": [
+            "res://art/materials/m_linen.tres",
+            "res://art/materials/m_crimson_textile.tres"
+          ],
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "linen_tiles_low.png",
+          "lighting": "tiles",
+          "materials": [
+            "res://art/materials/m_linen.tres",
+            "res://art/materials/m_crimson_textile.tres"
+          ],
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 4
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "quality": "low",
+      "renderer": "forward_plus",
+      "scope": "unbound_material_specimens",
+      "status": "CAPTURED_FOR_REVIEW"
+    },
+    {
+      "assertions": 33,
+      "captures": [
+        {
+          "draw_calls": 3,
+          "file": "linen_neutral_medium.png",
+          "lighting": "neutral",
+          "materials": [
+            "res://art/materials/m_linen.tres",
+            "res://art/materials/m_crimson_textile.tres"
+          ],
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "linen_warm_medium.png",
+          "lighting": "warm",
+          "materials": [
+            "res://art/materials/m_linen.tres",
+            "res://art/materials/m_crimson_textile.tres"
+          ],
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "linen_cool_medium.png",
+          "lighting": "cool",
+          "materials": [
+            "res://art/materials/m_linen.tres",
+            "res://art/materials/m_crimson_textile.tres"
+          ],
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 1
+        },
+        {
+          "draw_calls": 3,
+          "file": "linen_tiles_medium.png",
+          "lighting": "tiles",
+          "materials": [
+            "res://art/materials/m_linen.tres",
+            "res://art/materials/m_crimson_textile.tres"
+          ],
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "tiles": 4
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "quality": "medium",
+      "renderer": "forward_plus",
+      "scope": "unbound_material_specimens",
+      "status": "CAPTURED_FOR_REVIEW"
+    }
+  ],
+  "private_fixture_project_sha256": "4dd5ce7f638d16dd6e2877cb82b3bca371ea3a9505fed04e177c684f67e20b91",
+  "fresh_regeneration_files_identical": 4,
+  "private_copy_removed": true,
+  "shipping_assignments_added": 0,
+  "new_lfs_payloads": 0,
+  "finished_at": "2026-10-07T11:06:27.837755+00:00"
+}
