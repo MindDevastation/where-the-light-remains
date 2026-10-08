@@ -1,4 +1,25 @@
-# Current S01 hero handoff — measured three-orbit brief ready
+# Current S01 mount handoff — corrected route, 2026-10-08
+
+CORE_ORBITS_MOUNT_REVISION2.md / core_orbits_mount_revision2.json supersede the
+v1 direct outer bridge: its20mm envelope approaches the third orbit within6.72mm.
+New upper waypoint(0,2.15,0) retains radii/orientations/pivot/yaw/UV/budgets and
+provides≥56.66mm nonconnected ring/bridge clearance. Fresh final135 native
+assertions and20 reconstructed Area3D/CoreBody queries verify the measured
+assembly and selected approach rays. No actual FirstPersonPlayer/E, gameplay,
+GLB/style/performance acceptance. Metric diagram inspected;native new frames0.
+Previous trim/material evidence is retained and not rerun or aggregated.
+
+All shipping game files are unchanged;inventory26 ACCEPTED/44 PARTIAL/7 MISSING,
+185 rows retained. Integrated runtime STABLE5184c48;trim source STABLEce45bad.
+ARCH-011 owner A/B pending;GATE-VS1 OPEN/S03 blocked. Next authoring requires an
+authenticated GitHub credential helper supporting private git-lfs upload and
+restored pinned Blender. Ordinary working-branch checkpoints remain authorized.
+Use the corrected source contract before orbit/mount authoring. The first trim
+carrier stays the RoomPortal6cm fillet with its existing UV sibling contract.
+
+---
+
+# Historical S01 hero handoff — measured three-orbit brief ready
 
 CORE_ORBITS_PRODUCTION_BRIEF.md and core_orbits_production_brief.json now fix
 three authored orbit radii/orientations, upper mounts, metric UV/material/triangle

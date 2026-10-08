@@ -1,0 +1,47 @@
+{
+  "status": "PASS_BRIEF_ONLY",
+  "utc": "2026-10-08T02:48:32.928789+00:00",
+  "source_hashes": {
+    "docs/production/ARCHIVE_CORE_HERO_INTERFACE_AUDIT.md": "d7cdac07cf858950f5979a6137672c7b75125bbdc0032802b73a4382de931e3a",
+    "docs/production/evidence/archive_reconstruction/core-hero-audit-20261007/interfaces.json": "5d1e43d17c44cabf7c85a574b7c88e64dc703f0bc4598faf2098f9fe536c99b7",
+    "game/worlds/archive/archive_main.tscn": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082",
+    "game/worlds/archive/archive_main.gd": "17edcb806e5868d671a1f820c1674b8975b57fbf5d745c0f879c28c19bddf09f",
+    "docs/production/visual_rebaseline_v2.json": "c9e72d3d8506a6c812f9a16b934a2b7c45fba6a1aecba61cb2936521517ef61d",
+    "docs/production/s01_core_pedestal.json": "afb4ac0a68961176a021d71a1a5bf589012bc7c49897a56d1481887eb128c43a",
+    "docs/production/core_orbits_production_brief.json": "0ce5bf3afb3784594a4822faae53bb025d159466d1894e1fbcf3249b3934bf80",
+    "docs/production/evidence/archive_reconstruction/core-orbits-brief-20261007/results.json": "e8495e93731f83c5b693eb57f2e937c063dab0c1cc5971168dd9c49c0686f841",
+    "game/core/player/player.gd": "ab7c871cd58cddacc6c371113d3c8442c458708d7a7b8faa2ef7e13b55c4040a",
+    "game/core/player/player.tscn": "8757c0216146778fef0a29f8fb170228f4a647df74f9739f70faae9f4f8c4954",
+    "game/core/interaction/interaction_target.gd": "047c544555db7a8a8a461746c0c50afafa7cc417028cfcbf8fa709677a9eaad1",
+    "docs/production/core_orbits_mount_revision2.json": "548266ff9d21b4a5bdaca6d5fb8558f258afd05ac8caa22c1deac17bd6f41abe",
+    "tools/probe_core_mount_access.gd": "d71d1e0c20712d90624776083e752f568e13df07cc3a89d25f63ae7e3038b06a",
+    "tools/validate_core_mount_access.py": "f5a49a94af957349dff15d2f60a2b9bca5bd7c31c9dac32b2951320e4e736280"
+  },
+  "native_status": "PASS_RECONSTRUCTED_ACCESS_AND_MOUNT_BRIEF",
+  "native_assertions": 132,
+  "commands": [
+    {
+      "argv": [
+        "Godot4.7.2",
+        "--headless",
+        "--path",
+        "OWNED_PRIVATE_FIXTURE",
+        "--script",
+        "res://probe.gd"
+      ],
+      "exit_code": 0,
+      "warning_or_error": false
+    }
+  ],
+  "prior_trim_source_seal_current": true,
+  "prior_native_tests_replayed": false,
+  "owned_private_fixture_removed": true,
+  "shipping_changes": 0,
+  "new_lfs_payloads": 0,
+  "inventory_delta": [],
+  "scope": "Measured v2 mount envelope and20 reconstructed native target queries;no actual E/gameplay/Blender/GLB/style/performance acceptance",
+  "evidence_hashes": {
+    "native.json": "cf9689d9415f07e8e2b6672c1f503a5831954936650ab676740deec5f62d0b04",
+    "native.log": "b1672e20e60883eed5c70f5b986d284b01257f03b7ece3c0b87e76924e49c7e2"
+  }
+}
