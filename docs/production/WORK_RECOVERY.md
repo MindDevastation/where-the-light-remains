@@ -8,6 +8,10 @@ assertions and20 reconstructed Area3D/CoreBody queries verify the measured
 assembly and selected approach rays. No actual FirstPersonPlayer/E, gameplay,
 GLB/style/performance acceptance. Metric diagram inspected;native new frames0.
 Previous trim/material evidence is retained and not rerun or aggregated.
+Current native proof is core-mount-access-20261008-final2;the clipped joint
+boundary uses a full sample-step reserve. Earlier135-check proof is superseded
+and excluded from final credit. Latest handoff/receipt SHA resolves from
+evidence/checkpoints/continuation_20261008.jsonl.
 
 All shipping game files are unchanged;inventory26 ACCEPTED/44 PARTIAL/7 MISSING,
 185 rows retained. Integrated runtime STABLE5184c48;trim source STABLEce45bad.

@@ -32,23 +32,29 @@ Central supports deliberately join the same hub; terminal joins are confined to
 connections, not additional moving parts. Nonconnected ring/bridge envelopes must
 remain≥20mm apart. The corrected minimum lower bound is56.66mm, outer bridge to
 third orbit. Own-ring clearance outside its intended terminal joint stays positive
-(minimum≈19.74mm);ring-to-ring lower bound≥80mm follows the reverse triangle
+(minimum≈19.5mm);ring-to-ring lower bound≥80mm follows the reverse triangle
 inequality from concentric radii minus two20mm supports. The shared parent yaw is
 an isometry, so assembly internal gaps hold at every yaw, not only one pose.
 Do not add independent rotation or spokes below the fixed upper support slab.
 
 ## Fresh measured evidence
 
-`evidence/archive_reconstruction/core-mount-access-20261008-final/results.json`
+`evidence/archive_reconstruction/core-mount-access-20261008-final2/results.json`
 records **135 final native assertions** in official Godot4.7.2. The fixture uses
 actual native default YXZ bases;8192 angular samples minus radius*pi/N Lipschitz
 allowance plus10µm numerical reserve bounds continuous circle-to-segment gaps.
+For the clipped own-ring domain outside the joint neighborhood, use a full
+2*pi*radius/N sample-step reserve at the boundary, not the half-step reserve
+that applies to an unclipped complete circle.
 Own terminal-joint exclusions and the original problematic support approach are
 checked explicitly. New exact source hashes and all retained game files are
 protected by the associated readiness seal. Retained attempt1 failed before
 loading the fixture because a surviving executable was truncated;verified raw
 atomic re-extraction from the existing official ZIP resolved it. Passing132-check
 attempt2 is superseded by135 final checks and excluded from final credit.
+The initial135-check final fixture is also retained as superseded: final2
+strengthens the clipped-domain boundary reserve without weakening any gap check.
+Only final2's135 executions count as current final native proof.
 
 Twenty reconstructed native queries cover five outward approach offsets
 (−30/−15/0/+15/+30degrees) for each Panel/Lens/Socket/Lever. They use measured

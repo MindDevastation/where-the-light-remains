@@ -64,7 +64,9 @@ func run() -> void:
             if point.distance_to(anchor)<=float(contract.mounts.terminal_joint_radius_m): continue
             for step in revised.size()-1:
                 own_distance=minf(own_distance,segment_gap(point,revised[step],revised[step+1]))
-        var own_allowance := float(contract.orbits[index].radius_m)*PI/sample_count
+        # After removing the joint neighborhood, nearest admissible sample at the
+        # boundary can be a full step away, rather than a half step.
+        var own_allowance := 2.0*float(contract.orbits[index].radius_m)*PI/sample_count
         var own_gap := own_distance-float(contract.tube_support_radius_m)-float(contract.mounts.support_radius_m)-own_allowance-float(contract.mounts.numerical_margin_m)
         check(own_gap>float(contract.mounts.own_orbit_outside_terminal_joint_clearance_floor_m),"own ring outside intended terminal joint "+str(index))
         own_joint_rows.append({"id":contract.orbits[index].id,"terminal_joint_radius_m":contract.mounts.terminal_joint_radius_m,"clearance_outside_joint_lower_bound_m":own_gap})
