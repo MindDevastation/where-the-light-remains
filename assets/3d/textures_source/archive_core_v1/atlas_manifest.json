@@ -1,0 +1,61 @@
+{
+  "regions": [
+    {
+      "radius_m": 0.58,
+      "u_pixels": 3732,
+      "v_start": 24,
+      "profile_height_pixels": 80,
+      "density_px_per_m": 1024.0797372740576
+    },
+    {
+      "radius_m": 0.46,
+      "u_pixels": 2960,
+      "v_start": 184,
+      "profile_height_pixels": 80,
+      "density_px_per_m": 1024.1274598956743
+    },
+    {
+      "radius_m": 0.34,
+      "u_pixels": 2188,
+      "v_start": 344,
+      "profile_height_pixels": 80,
+      "density_px_per_m": 1024.2088690737264
+    }
+  ],
+  "resolution": [
+    4096,
+    512
+  ],
+  "source_maps": {
+    "t_polished_brass_albedo.png": "5ff3330e944eb2faeb46380bbddc8d53b7ec88bb7e0ccae39e47b20de414b517",
+    "t_polished_brass_normal.png": "11c5e04949d62f1b07b42863503ff3c0a81c2150d307b0bd39176ddc84dd98e2",
+    "t_polished_brass_orm.png": "c28ed3ca62221445882c2b995ab66a92781790ca2c23bc671ecad57a62988807"
+  },
+  "ornament": "Unnumbered instrument ticks only;no new narrative sigil or gameplay hint",
+  "outputs": [
+    {
+      "path": "assets/3d/textures_source/archive_core_v1/t_core_orbit_brass_albedo.png",
+      "sha256": "40e11f7055448d317de92581b4521aebd41f0c96fea1325808eda8d01c203ee8",
+      "size": [
+        4096,
+        512
+      ]
+    },
+    {
+      "path": "assets/3d/textures_source/archive_core_v1/t_core_orbit_brass_normal.png",
+      "sha256": "0e8b359c4cd612ed694d585863625b622b0bc1ff5308095d3f051699ed33851f",
+      "size": [
+        4096,
+        512
+      ]
+    },
+    {
+      "path": "assets/3d/textures_source/archive_core_v1/t_core_orbit_brass_orm.png",
+      "sha256": "5a27639f705c5ae067395c8cc50c2f69356711e42e86877e3760c486e8b6e54e",
+      "size": [
+        4096,
+        512
+      ]
+    }
+  ]
+}
