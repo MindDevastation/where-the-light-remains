@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "route": "fresh GLB import",
+  "blender": "4.5.14 LTS",
+  "file_sha256": "30c9630339791d6362ad3758ddac86e146a8c1d4840e6a2464263f886e505ccc",
+  "mesh_parts": [
+    {
+      "part": "CoreEnergy",
+      "triangles": 2880,
+      "materials": 1,
+      "nonmanifold_edges": 5170,
+      "zero_geometry_triangles": 0,
+      "zero_uv_triangles": 0
+    },
+    {
+      "part": "CoreGlass",
+      "triangles": 960,
+      "materials": 1,
+      "nonmanifold_edges": 156,
+      "zero_geometry_triangles": 0,
+      "zero_uv_triangles": 0
+    },
+    {
+      "part": "Orbit_Inner",
+      "triangles": 1536,
+      "materials": 1,
+      "nonmanifold_edges": 1552,
+      "zero_geometry_triangles": 0,
+      "zero_uv_triangles": 0
+    },
+    {
+      "part": "Orbit_Outer",
+      "triangles": 1536,
+      "materials": 1,
+      "nonmanifold_edges": 1552,
+      "zero_geometry_triangles": 0,
+      "zero_uv_triangles": 0
+    },
+    {
+      "part": "Orbit_Third",
+      "triangles": 1536,
+      "materials": 1,
+      "nonmanifold_edges": 1552,
+      "zero_geometry_triangles": 0,
+      "zero_uv_triangles": 0
+    },
+    {
+      "part": "sm_archive_core_mounts_and_cage",
+      "triangles": 3288,
+      "materials": 3,
+      "nonmanifold_edges": 8488,
+      "zero_geometry_triangles": 0,
+      "zero_uv_triangles": 0
+    },
+    {
+      "part": "sm_archive_core_static_body",
+      "triangles": 18044,
+      "materials": 4,
+      "nonmanifold_edges": 42794,
+      "zero_geometry_triangles": 0,
+      "zero_uv_triangles": 0
+    }
+  ],
+  "triangles": 29780,
+  "used_images": {
+    "t_core_hero_brass_albedo": {
+      "size": [
+        4096,
+        1024
+      ],
+      "packed": true
+    },
+    "t_core_hero_brass_orm": {
+      "size": [
+        4096,
+        1024
+      ],
+      "packed": true
+    },
+    "t_core_hero_brass_normal": {
+      "size": [
+        4096,
+        1024
+      ],
+      "packed": true
+    },
+    "t_aged_brass_albedo": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    "t_aged_brass_orm": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    "t_aged_brass_normal": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    "t_dark_iron_albedo": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    "t_dark_iron_orm": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    "t_dark_iron_normal": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    "t_dark_walnut_albedo": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    "t_dark_walnut_orm": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    "t_dark_walnut_normal": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    }
+  },
+  "bounds_blender_m": {
+    "min": [
+      -0.5556839108467102,
+      -0.4620000123977661,
+      0.006000000052154064
+    ],
+    "max": [
+      0.5556839108467102,
+      0.4620000123977661,
+      1.559324026107788
+    ]
+  },
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "pivot_godot_m": [
+    0,
+    1.02,
+    0
+  ],
+  "note": "GLB vertex splits at UV seams are expected; watertightness is checked on the source"
+}
