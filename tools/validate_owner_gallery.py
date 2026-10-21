@@ -5,6 +5,15 @@ from pathlib import Path
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def stamp():return dt.datetime.now(dt.timezone.utc).isoformat()
+def protected_slots_unchanged(before,after):
+ # Godot's own empty recovery marker is not a progression save slot.
+ # Keep complete directory snapshots in receipts and reject every other change.
+ slots={'savegame.json','savegame.backup.json'}
+ marker='.recovery_mode_lock';empty=hashlib.sha256(b'').hexdigest()
+ if not slots.issubset(before) or not slots.issubset(after):return False
+ if (set(before)|set(after))-slots-{marker}:return False
+ if any(before[name]!=after[name] for name in slots):return False
+ return all(snapshot.get(marker,empty)==empty for snapshot in [before,after])
 def write_exact(path,data,expected):
  path.parent.mkdir(parents=True,exist_ok=True);fd=os.open(path,os.O_CREAT|os.O_WRONLY|os.O_TRUNC,0o644)
  try:
@@ -86,7 +95,7 @@ def main(args):
    def run(name,command,timeout,marker=''):
     p=subprocess.run(command,cwd=clean,env=env,capture_output=True,timeout=timeout);raw=p.stdout+p.stderr;log=output/(name+'.log');log.write_bytes(raw)
     after={p.name:sha(p) for p in slots.iterdir() if p.is_file()}
-    passed=not p.returncode and before==after and (not marker or marker.encode() in raw) and not any(word in raw for word in [b'ERROR:',b'WARNING:',b'SCRIPT ERROR',b'Parse Error'])
+    passed=not p.returncode and protected_slots_unchanged(before,after) and (not marker or marker.encode() in raw) and not any(word in raw for word in [b'ERROR:',b'WARNING:',b'SCRIPT ERROR',b'Parse Error'])
     result['records'].append({'name':name,'exit_code':p.returncode,'passed':passed,'log_sha256':sha(log),'slots_before':before,'slots_after':after});save();print(json.dumps({'command':name,'passed':passed}),flush=True)
     if not passed:raise RuntimeError('Native gallery command failed: '+name)
    godot=str(args.godot.resolve())

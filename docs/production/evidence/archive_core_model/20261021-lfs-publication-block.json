@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-21T14:43:54.291416+00:00",
+  "status": "BLOCKED_AUTOMATIC_APPROVAL_REVIEW",
+  "action": "Upload the three reviewed .blend/GLB payloads to MindDevastation/where-the-light-remains Git LFS",
+  "reason": "Automatic review requires explicit user confirmation for these binary files and destination; the development continuation did not satisfy that requirement.",
+  "native_process_result_available": false,
+  "new_lfs_object_write_acknowledged": false,
+  "main_changed": false,
+  "historical_credentials_used": false,
+  "prior_native_git_dry_run_exit": 128
+}

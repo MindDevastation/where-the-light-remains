@@ -1,0 +1,41 @@
+{
+  "resolution": [
+    4096,
+    1024
+  ],
+  "regions": [
+    {
+      "radius_m": 0.58,
+      "u_pixels": 3732,
+      "v_start": 24,
+      "density_px_per_m": 1024.0797372740576
+    },
+    {
+      "radius_m": 0.46,
+      "u_pixels": 2960,
+      "v_start": 296,
+      "density_px_per_m": 1024.1274598956743
+    },
+    {
+      "radius_m": 0.34,
+      "u_pixels": 2188,
+      "v_start": 568,
+      "density_px_per_m": 1024.2088690737264
+    }
+  ],
+  "outputs": [
+    {
+      "file": "t_core_hero_brass_albedo.png",
+      "sha256": "402a6d7977fcdade8fcc48ec85ebec99afc2246c36b8ca51412bdc2a90b8e537"
+    },
+    {
+      "file": "t_core_hero_brass_normal.png",
+      "sha256": "1aaa2e4a5fb89032009c7fb1b23c3d6e16652cdb3b7c623218fc24466e022c01"
+    },
+    {
+      "file": "t_core_hero_brass_orm.png",
+      "sha256": "5d9e69b5e9fa747a6dc0a836689d15b68acb7eb784c8280c64f913e21e4c25a5"
+    }
+  ],
+  "ornament": "Unlettered ticks and geometric diamonds; no code, narrative seal or hint"
+}
