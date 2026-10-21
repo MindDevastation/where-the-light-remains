@@ -1,0 +1,52 @@
+{
+  "source": "tools/generate_linen_maps.py",
+  "helper": "tools/generate_material_maps.py",
+  "resolution": 1024,
+  "provenance": "Original analytic crossing/seeded uneven-thread flax weave; no copied textile/concept pixels.",
+  "packing": "R=1 reserved AO; G=roughness; B=0 metallic; +Y tangent normals",
+  "roughness_range": [
+    0.8674031441189467,
+    0.9198563188952589
+  ],
+  "maps": [
+    {
+      "role": "albedo",
+      "file": "t_linen_albedo.png",
+      "sha256": "713458705e127885ec32518ca841fc272a897740726583aa33d8fea717071f82",
+      "bytes": 537276,
+      "wrap_mean_8bit": 0.548,
+      "adjacent_mean_8bit": 0.5369,
+      "mean_rgb_8bit": [
+        183.38272094726562,
+        175.73282146453857,
+        152.78300857543945
+      ]
+    },
+    {
+      "role": "normal",
+      "file": "t_linen_normal.png",
+      "sha256": "f5bb6fcd034fd48f1cb8ec1ef3ac024f479d0596a7997d0ab433c40f159bb41c",
+      "bytes": 356610,
+      "wrap_mean_8bit": 0.292,
+      "adjacent_mean_8bit": 0.1941,
+      "mean_rgb_8bit": [
+        127.49996948242188,
+        127.49913787841797,
+        255.0
+      ]
+    },
+    {
+      "role": "orm",
+      "file": "t_linen_orm.png",
+      "sha256": "0c5d25ab187e48a48d59a2aff6967101f29c63dde6fdccafa0ea7a8eace39459",
+      "bytes": 377279,
+      "wrap_mean_8bit": 0.3109,
+      "adjacent_mean_8bit": 0.3123,
+      "mean_rgb_8bit": [
+        255.0,
+        226.71096420288086,
+        0.0
+      ]
+    }
+  ]
+}

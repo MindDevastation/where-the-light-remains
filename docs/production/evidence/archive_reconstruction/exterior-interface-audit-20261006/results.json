@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-10-06T14:00:45.215082+00:00",
+  "scope": "Canonical/pinned-reference architectural interface audit only. Owner escalation resolved; no production asset/full exterior/VS1/GPU pass.",
+  "source_hashes": {
+    "docs/production/S00_S15_EXTERIOR_INTERFACES.md": "5ba76b0c041940212eead43e1f4aa2492484458a90703466e99fee80e5c63d42",
+    "docs/production/VS1_NEXT_BLOCKERS.md": "28f5cce508c88c474c4c9e430f064fcda16596e4580ad00a4077767ce6da5471",
+    "docs/production/ROOM_ART_NEXT_BLOCK.md": "2f3f844799ab2dc7988418e4549fe54d7123f61ab477c2e77b09fe8ecc73a139",
+    "docs/production/WORK_RECOVERY.md": "d98c41dc7de5ebc22dd3da909af8415c9e7fd52aedd2ed5662d9b7bf4f73141a",
+    "game/worlds/archive/archive_main.tscn": "af0651be2e5821c3efd27e0eaa77fd6e918131c617e427584072ce6b44da9aec",
+    "game/worlds/archive/archive_prologue.tscn": "b9f712efe4b432f5174a38ef47b5fe818610e8ddc380b01e905794077704ae69",
+    "game/worlds/archive/archive_prologue.gd": "aee641fc7b1a5b5d60f2ed6073746a4b53c09e6aac433dac902feccac3d2b2fb",
+    "docs/design/NARRATIVE_CANON.md": "82bb24aa4e13111bc25e7d9cba28071220a623d8a3cc09db27b1dc0242ac2004",
+    "docs/design/REQUIRED_ASSET_TABLE.md": "e5aa8ba983d18feef4fddf0f8ddfa7795b246dcbf1a0978fa38f366fdbce960c",
+    "docs/production/ASTRA_WORKFLOW.md": "e706dc2aea0fd1ee32f9d3378a3df149534aff2c496beb1d75417b02178a6354",
+    "assets/concept_art/environments/s00_prologue/p_001_v2_angle_a.png": "050ae87142f188e375c208b3e5543d339c0288839d1a0c905bb087450630b320",
+    "assets/concept_art/environments/s00_prologue/p_001_v2_angle_b.png": "31e33509b13209019909a344a87ac5c7f326ecf8e6da9be2e14393cf869d8e68",
+    "assets/concept_art/environments/s00_prologue/p_001_v2_angle_c.png": "68ff80fda32ab2cf5fa670d1847fe51f4f214630a94e702f272b3a3c4499099a",
+    "assets/concept_art/environments/s00_prologue/p_004_v2_angle_a.png": "0179e9cc59dbe40e94ec58829a9a2c61d790185de72f5b507fb16a30b72881fc",
+    "assets/concept_art/environments/s00_prologue/p_004_v2_angle_b.png": "8f96cab04b58cfd8419ac9c5c7dc31de654ab12b3c5d7471603ff63591386bb4",
+    "assets/concept_art/environments/s00_prologue/p_004_v2_angle_c.png": "2edca0e23554833a55813dde8fb4bb4c96036375747c1e15e43e77a6c2a0c923"
+  }
+}

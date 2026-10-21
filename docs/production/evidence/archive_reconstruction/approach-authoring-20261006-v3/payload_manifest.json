@@ -1,0 +1,42 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s00_approach.blend",
+      "bytes": 1275667,
+      "sha256": "7c482d1f465246937f8ff63f1a9b79ffc1dd590a5f822e9ee06e1e6c7aa360b7"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_approach_path.glb",
+      "bytes": 434252,
+      "sha256": "2697adc7b90c93c4a1cd2da5513d13d7c7893084d0d9dae258339826a717c7b4"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_approach_guard_long.glb",
+      "bytes": 211612,
+      "sha256": "4d52cb70a3fec6bdce3c75d714f15fc4afce1cbfff1b8ec1cee19848fcb30f57"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_approach_guard_rear.glb",
+      "bytes": 135832,
+      "sha256": "75dcc815e74c1900e7d8ab36bf1f2a8d3f46c348132f8bd3b675b76d2c22afd6"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s00_approach_path",
+      "triangles": 5460,
+      "surfaces": 3
+    },
+    {
+      "stem": "sm_s00_approach_guard_long",
+      "triangles": 2700,
+      "surfaces": 3
+    },
+    {
+      "stem": "sm_s00_approach_guard_rear",
+      "triangles": 1740,
+      "surfaces": 3
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

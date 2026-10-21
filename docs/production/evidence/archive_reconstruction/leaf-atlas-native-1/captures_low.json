@@ -1,0 +1,66 @@
+{
+  "assertions": 84,
+  "captures": [
+    {
+      "camera_size": 6.40000009536743,
+      "file": "leaf_atlas_neutral_low.png",
+      "leaf_cells": 8,
+      "lighting": "neutral",
+      "material": "res://art/materials/m_archive_leaf_cutout.tres",
+      "render_scale": 0.75,
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "top_row_reverse_facing": false
+    },
+    {
+      "camera_size": 6.40000009536743,
+      "file": "leaf_atlas_warm_low.png",
+      "leaf_cells": 8,
+      "lighting": "warm",
+      "material": "res://art/materials/m_archive_leaf_cutout.tres",
+      "render_scale": 0.75,
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "top_row_reverse_facing": false
+    },
+    {
+      "camera_size": 6.40000009536743,
+      "file": "leaf_atlas_cool_low.png",
+      "leaf_cells": 8,
+      "lighting": "cool",
+      "material": "res://art/materials/m_archive_leaf_cutout.tres",
+      "render_scale": 0.75,
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "top_row_reverse_facing": true
+    },
+    {
+      "camera_size": 12.0,
+      "file": "leaf_atlas_distance_low.png",
+      "leaf_cells": 8,
+      "lighting": "distance",
+      "material": "res://art/materials/m_archive_leaf_cutout.tres",
+      "render_scale": 0.75,
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "top_row_reverse_facing": false
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "unbound_leaf_alpha_specimens",
+  "status": "CAPTURED_FOR_REVIEW"
+}

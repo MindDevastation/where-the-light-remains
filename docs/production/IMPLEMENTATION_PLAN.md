@@ -1,6 +1,153 @@
+# Current fanlight acceptance and next layout dependency — 2026-10-06
+
+ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md records one1560tri four-surface shared
+window above five original gates:712 scoped assertions plus72 in independent
+LFS use;32 individually inspected Low/Medium images;208 prior art/module
+identities preserved. Strengthened source reopen verifies83 closed positive
+components. Existing lighting stable1af05c2/receipt2224b73 remains accepted.
+Fanlight candidate6c7d99f/receipt dc6805a is remotely confirmed; resolve final
+stable acceptance/receipt from docs/production/evidence/checkpoints/development.jsonl.
+
+ARCH-008 MISSING→PARTIAL;25 ACCEPTED/38 PARTIAL/14 MISSING among77 rows;185
+canonical rows retained. Complete windows/infill/backdrop/hero/channels/dressing/
+audio/gallery/physical GTX1060/style/VS1 remain OPEN; S03 blocked. Planning
+estimate25–30%, low confidence,3/16 playable stages.
+Next ARCH-011 is paused for canonical stair locations, two widths and walking
+elevations; current accepted S01/S02 surfaces are flatY0. See
+ARCHIVE_SHORT_STAIRS_LAYOUT_AUDIT.md. No stair asset/layout or future stage was
+invented. This is a design dependency, not another push-permission request.
+
+---
+
+# Historical lighting acceptance at1af05c2 — 2026-10-06
+
+ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md:654 current assertions/import/startup,
+28 individually inspected native Low/Medium images, protected saves PASS. Four
+accepted Hub lantern instances and local clock/state-owned core lighting; S00
+retains one warm source by stage projection. Accepted art bytes preserved.
+Full style/upper apertures/windows/backdrop/hero/channels/dressing/audio/gallery/
+physical GTX1060 remain OPEN; GATE-VS1 OPEN/S03 blocked. Counts25/37/15 among77,
+185 rows retained; full-game planning estimate25–30%, low confidence.
+Next highest missing architectural row ARCH-008: audit window/glass placement
+and opening-ghost clearance in existing upper apertures before authoring.
+Resolve newest stable/receipt from actual remote/checkpoint journal.
+
+---
+
+# Current publication/recovery resolution — 2026-10-06
+
+Owner directly authorized the prepared and subsequent ordinary working-branch
+checkpoint pushes with “Разрешаю”. Accepted shared-gate evidence is remotely
+verified at 3d81acbcd94759d472b72f60dbac3eb39000fad4.
+The publication blocker below is historical and resolved. Fresh recovery uses
+this exact remote tip after checkout/coordinator loss; no unattended work is
+claimed. Next bounded scope is warm/cool practical lighting, fixed contracts
+and affected S00/S01/S02 regression. No accepted art regeneration; VS1/S03 and
+physical target-GPU gates remain open. Publication receipt: wing-gate-acceptance-
+20261006/publication.json.
+
+---
+
+# Latest bounded gate acceptance — prepared locally, remote publication pending
+
+Recovered actual a914b53c import-only revision4; existing3596tri shared master
+and five gate instances validated without reauthoring.542 scoped assertions
+reused after exact identity comparison,16 retained native images individually
+inspected, two fresh independently retrieved LFS payloads reopened/imported/
+used with116 checks/startup PASS.204 prior art/module identities unchanged.
+ARCHIVE_WING_GATE_ACCEPTANCE.md defines scope; per-route light/emblem and full
+Hub remain PARTIAL. Current25 ACCEPTED/37 PARTIAL/15 MISSING among77.
+Remote publication requires direct authorization after automatic review refusal;
+no remote stable checkpoint claimed. Next practical warm/cool lighting, then
+remaining inventory. Full art/audio/gallery/physical GPU/VS1 OPEN; S03 blocked.
+
+---
+
+# Latest bounded checkpoint — original Hub floor geometry accepted
+
+hub-floor-acceptance-20261006:248 scoped assertions/startup,16 inspected native
+images,2 independently retrieved/used LFS payloads;201 prior identities retained.
+Full lighting/style explicitly PARTIAL. Next missing shared five-gate mesh with
+original binding/ghost/state contracts, then representative practical warm/cool
+lighting. Full visuals/audio/gallery/physical GPU/VS1 OPEN; S03 blocked.
+
+---
+
+# Latest bounded checkpoint — original lower wall skins accepted
+
+hub-wall-acceptance-20261006:515 scoped assertions/startup,16 inspected native
+images,2 independently retrieved/used LFS payloads;198 prior identities retained.
+Next Hub floor skin on fixed original cylinder/plane, preserve accepted corridor
+and approach/core/channel ownership. Full visuals/audio/gallery/physical GPU/
+GATE-VS1 OPEN; S03 blocked.25 ACCEPTED/35 PARTIAL/17 MISSING among77 groups.
+
+---
+
+# Latest bounded checkpoint — shared upper drum/dome accepted
+
+hub-dome-acceptance-20261006:414 scoped assertions/startup,16 inspected native
+images,5 independently retrieved LFS payloads;187 prior identities preserved.
+Current25 ACCEPTED/35 PARTIAL/17 MISSING among77 slice groups. Continue eight
+original lower wall panels, fixed bodies/apertures/FOV/puzzles/save. Full visual/
+audio/gallery/target hardware gates open; GATE-VS1 OPEN/S03 blocked.
+
+---
+
+# Latest bounded checkpoint — original S00 approach accepted
+
+S00_APPROACH_ACCEPTANCE.md / approach-acceptance-20261006:291 scoped assertions,
+startup,12 inspected Low/Medium captures and4 fresh LFS payloads used PASS.
+Current77 inventory groups:25 ACCEPTED/33 PARTIAL/19 MISSING. Next missing shared
+exterior/dome/Hub upper architecture; keep all original apertures/gameplay/save.
+GATE-VS1 OPEN, S03 blocked; full visuals/audio/gallery/physical GPU outstanding.
+
+---
+
+# Latest bounded checkpoint — entry facade/crown accepted
+
+S00_ENTRY_PORTAL_ACCEPTANCE.md / portal-acceptance-20261006:225 scoped assertions,
+startup,12 inspected Low/Medium captures and independent3-payload LFS use PASS.
+Next existing flat approach/guard presentation, then missing shared exterior/
+dome/upper infill/backdrop and Hub, with original routes and gameplay preserved.
+GATE-VS1 remains OPEN and S03 blocked; owner gallery/audio/physical GPU outstanding.
+
+---
+
 # Implementation plan
 
 Status: **started**.
+
+## Latest recovered bounded stages — 2026-10-06
+
+Current development branch is `feature/04-archive-gameplay/resume-2026-10-06`.
+`WORK_RECOVERY.md` and the verified remote checkpoint journal supersede the
+historical active-window/environment notes below.
+
+- [x] Bounded upper supports, dome and shipping roof integration, beam/quiet Star,
+  wall lanterns and bookcases were already accepted before this recovery. Their
+  respective acceptance documents/receipts define the exact scope. The old
+  write-credential blocker below is historical; no full ARCH/VS1 claim follows.
+- [x] Recover and complete the ordinary crimson/navy rug: 44 triangles, two shared
+  materials, 6 mm measured floor gap, no collider; 207 read-only and 60 real S02
+  assertions, 14 inspected player views and independent fresh-store source/GLB
+  retrieval/reopen/import/use. Art acceptance: `c5fc78a`.
+- [x] Add optional compact remote delta checkpoints after a full-history collection
+  proved too large for live cadence. Actual staged/unstaged/LFS recovery, remote
+  advancement and publication/refusal fixtures pass; old full archive tests pass.
+  Tooling source: `f59c385`; accepted game/art bytes unchanged.
+- [x] Original S00-005 bolt/housing/keeper,848 triangles, unchanged automatic
+  prologue/collider/save contract;378 assertions/startup,18 inspected Low/Medium
+  pose views and independent retrieval/use of four LFS payloads. See
+  `S00_DOOR_LOCK_ACCEPTANCE.md`; full exterior/door composition remains open.
+- [x] Reconcile all185 canonical groups and77 VS1-related rows against runtime
+  owners, reference authority and14 current art acceptance subsets. See
+  VS1_ART_RECONCILIATION.md; counts are scoped, not percent completion.
+- [x] Original S00 timber leaf skin:2100 triangles/shared by both unchanged doors,
+  114 assertions/startup,18 native images and independent two-payload LFS use.
+  Portal/exterior still open. See S00_ENTRANCE_LEAF_ACCEPTANCE.md.
+- [ ] Complete authored audio, full gallery/art review and physical target-hardware
+  acceptance. `GATE-VS1` remains open and S03 remains gated.
+
 
 ## Latest bounded Flame and ceiling inputs — 2026-10-06
 
@@ -476,3 +623,42 @@ two existing read-only save fixtures. Both primary/backup SHA values remain
 No runtime errors/warnings or shipping source-audio bindings. The two S00
 opening proposals in `audio/REVIEW_INDEX.md` are ready for listening; first-note
 and common motif selection remain pending, so GATE-VS1 stays open.
+
+## Working-branch art checkpoint — 2026-10-06, S01 PROP-003
+
+Starting lens/socket bounded art complete on resume-2026-10-06; no main
+integration.259 scoped current assertions/startup,14 inspected Low/Medium views
+and independent retrieval/use of all3 LFS payloads PASS. Existing target poses,
+controller/save behavior and prior142 art/module identities preserved. See
+S01_STARTING_LENS_ACCEPTANCE.md and SLICE_ART_INVENTORY.md. Remaining required
+slice art includes S00 exterior, full Hub mechanism/console/rotunda/gates/channels
+and final S02 presentation; full ARCH/VS1/audio/physical GPU/S03 remain open.
+
+## Working-branch art checkpoint — 2026-10-06, S01 controls
+
+Bounded original panel/lever fittings complete on resume-2026-10-06,1940
+triangles/four meshes/five LFS payloads.325 scoped current assertions/startup,
+14 individually inspected Low/Medium views, independent retrieval/reopen/use
+PASS. Cosmetic phase poses include real E input and physical checkpoint quiet
+reload; original sequence/timers/save schema preserved.147 prior art/module
+identities unchanged. See S01_HUB_CONTROLS_ACCEPTANCE.md. Universal variants,
+full Hub console/mounting/lighting/architecture and full visual gate remain open.
+Main unchanged; S00 activation fitting now has bounded acceptance; next audit is remaining universal leaf-prop skins/variants.
+
+## Working-branch checkpoint — S01 lower housing, 2026-10-06
+
+[x] Ordinary bounded lower housing inside unchanged core collider;240 current
+assertions,16 inspected Low/Medium images and two-payload independent LFS use.
+[ ] Complete hero3–5 orbit family/console mounts/Hub rotunda, architecture/light gate.
+Next eligible composition: one S00 warm practical from the accepted lantern.
+
+[x] One S00 warm practical from unchanged accepted lantern;49 scoped checks,
+12 inspected Low/Medium views. Full exterior/night composition remains open.
+Next eligible local art: S00 last-spark sprite presentation inside existing clock;
+no global particle strategy or gameplay/path redesign.
+
+[x] Local S00 spark replaces primitive with original native VFX,40 scoped checks,
+12 inspected Low/Medium views. Global particle/path family remains PARTIAL.
+[ ] Highest missing reusable S00/S15 exterior and Hub architecture: ASTRA §9
+reasoning escalation required before modular architectural design; see
+VS1_NEXT_BLOCKERS.md. Full VS1 and S03 not promoted.

@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-21T14:28:41.289470+00:00",
+  "command": [
+    "python",
+    "-B",
+    "tools/run_graphical.py",
+    "--graphics-prefix",
+    "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+    "--godot",
+    "/workspace/scratch/0e91a73a58d2/toolchain/bin/godot",
+    "--timeout",
+    "45",
+    "--expect",
+    "CAPABILITY_SMOKE_PASS",
+    "--",
+    "--path",
+    "/workspace/scratch/0e91a73a58d2/graphics-smoke-20261021",
+    "--script",
+    "res://smoke.gd",
+    "--resolution",
+    "640x360"
+  ],
+  "exit": 0,
+  "status": "PASS",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "blender": "4.5.14 LTS",
+  "gh": "2.101.0",
+  "git_lfs": "3.4.1",
+  "initial_capability_attempt": "Failed before engine start: restored Godot mode was 0644. Its bytes matched the verified archive member; chmod 0755 and version check passed.",
+  "godot_executable_sha256": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e",
+  "historical_tests_replayed": false
+}

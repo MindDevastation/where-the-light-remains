@@ -1,0 +1,52 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s01_hub_controls.blend",
+      "bytes": 665072,
+      "sha256": "47c07aa5f22c46e602cb841fd8f2dcf5b99668d730d22436b56670057f04eee3"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_panel_base.glb",
+      "bytes": 78604,
+      "sha256": "f9e3a6455a74e06ae9941726095d99183b8ee9d88603716ab664c5de91a17cf8"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_panel_cover.glb",
+      "bytes": 41688,
+      "sha256": "55f821825a8894bd0692b3e99669f3da4816e767d26f4eb2304a06ae7207934c"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_lever_base.glb",
+      "bytes": 58512,
+      "sha256": "c3817ce376a2b7380fbaaaab5796c271707c0ea7d6ccb03e8d1c7e0d3707c7a3"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_lever_handle.glb",
+      "bytes": 50956,
+      "sha256": "3e75aa3d1dc259985069b225d8e4ac0ca7e7695a352b98b69b3f4b1770530ee0"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s01_panel_base",
+      "triangles": 664,
+      "surfaces": 2
+    },
+    {
+      "stem": "sm_s01_panel_cover",
+      "triangles": 360,
+      "surfaces": 2
+    },
+    {
+      "stem": "sm_s01_lever_base",
+      "triangles": 484,
+      "surfaces": 2
+    },
+    {
+      "stem": "sm_s01_lever_handle",
+      "triangles": 432,
+      "surfaces": 2
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

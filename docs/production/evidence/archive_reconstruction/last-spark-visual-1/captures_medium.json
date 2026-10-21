@@ -1,0 +1,95 @@
+{
+  "captures": [
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 99,
+      "file": "spark_rail_before_medium.png",
+      "left_door_x": -0.649999976158142,
+      "name": "spark_rail_before",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 0.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 100,
+      "file": "spark_rail_first_medium.png",
+      "left_door_x": -0.649999976158142,
+      "name": "spark_rail_first",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 1.2,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 92,
+      "file": "spark_native_detail_medium.png",
+      "left_door_x": -0.649999976158142,
+      "name": "spark_native_detail",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 1.2,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 100,
+      "file": "spark_rail_opening_medium.png",
+      "left_door_x": -1.11666667461395,
+      "name": "spark_rail_opening",
+      "right_door_x": 1.11666667461395,
+      "sample_seconds": 2.5,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 100,
+      "file": "spark_rail_open_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "spark_rail_open",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 3.8,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 20,
+      "file": "spark_quiet_s01_reverse_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "spark_quiet_s01_reverse",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "spark",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

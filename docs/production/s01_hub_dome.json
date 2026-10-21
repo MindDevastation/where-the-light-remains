@@ -1,0 +1,225 @@
+{
+  "source": "assets/3d/blender/archive_kit/s01_hub_dome.blend",
+  "parts": [
+    {
+      "id": "drum",
+      "stem": "sm_s01_hub_dome_drum",
+      "runtime": "game/art/meshes/archive_kit/sm_s01_hub_dome_drum.glb",
+      "materials": [
+        "stone",
+        "walnut",
+        "iron",
+        "brass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 14000
+    },
+    {
+      "id": "frame",
+      "stem": "sm_s01_hub_dome_frame",
+      "runtime": "game/art/meshes/archive_kit/sm_s01_hub_dome_frame.glb",
+      "materials": [
+        "walnut",
+        "iron",
+        "brass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 6000
+    },
+    {
+      "id": "glass",
+      "stem": "sm_s01_hub_dome_glass",
+      "runtime": "game/art/meshes/archive_kit/sm_s01_hub_dome_glass.glb",
+      "materials": [
+        "glass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 4000
+    },
+    {
+      "id": "sky",
+      "stem": "sm_s01_hub_dome_sky",
+      "runtime": "game/art/meshes/archive_kit/sm_s01_hub_dome_sky.glb",
+      "materials": [
+        "sky"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 4000
+    }
+  ],
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "walnut": "res://art/materials/m_dark_walnut.tres",
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "glass": "res://art/materials/m_clear_glass.tres",
+    "sky": "res://art/materials/m_hub_night_sky.tres"
+  },
+  "walls": [
+    {
+      "name": "Wall0L",
+      "center": [
+        -4.6,
+        2.4,
+        -8.0
+      ],
+      "yaw": 0.0,
+      "size": [
+        5.8,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall0R",
+      "center": [
+        4.6,
+        2.4,
+        -8.0
+      ],
+      "yaw": 0.0,
+      "size": [
+        5.8,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall1L",
+      "center": [
+        -9.029930304485987,
+        2.4,
+        1.902724019958126
+      ],
+      "yaw": 1.256637061,
+      "size": [
+        5.8,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall1R",
+      "center": [
+        -6.18697395623647,
+        2.4,
+        -6.846995929957285
+      ],
+      "yaw": 1.256637061,
+      "size": [
+        5.8,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall2L",
+      "center": [
+        -2.4139,
+        2.4,
+        8.1347
+      ],
+      "yaw": 2.513274123,
+      "size": [
+        2.258,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall2R",
+      "center": [
+        -8.423760192464544,
+        2.4,
+        3.768323794454202
+      ],
+      "yaw": 2.513274123,
+      "size": [
+        5.8,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall3L",
+      "center": [
+        8.423760192464542,
+        2.4,
+        3.7683237944542047
+      ],
+      "yaw": 3.769911184,
+      "size": [
+        5.8,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall3R",
+      "center": [
+        2.4139,
+        2.4,
+        8.1347
+      ],
+      "yaw": 3.769911184,
+      "size": [
+        2.258,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall4L",
+      "center": [
+        6.186973956236472,
+        2.4,
+        -6.846995929957284
+      ],
+      "yaw": 5.026548246,
+      "size": [
+        5.8,
+        4.8,
+        0.35
+      ]
+    },
+    {
+      "name": "Wall4R",
+      "center": [
+        9.029930304485987,
+        2.4,
+        1.9027240199581286
+      ],
+      "yaw": 5.026548246,
+      "size": [
+        5.8,
+        4.8,
+        0.35
+      ]
+    }
+  ],
+  "spring_y": 6.2,
+  "radius": 7.5,
+  "rise": 3.1,
+  "collar_min_y": 5.95,
+  "front_cap_z": 9.1,
+  "outer_radius": 11.1,
+  "segments": 24,
+  "latitude_segments": 8,
+  "portal_max_y": 5.905
+}

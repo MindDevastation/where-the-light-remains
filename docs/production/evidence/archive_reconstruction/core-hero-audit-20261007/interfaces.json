@@ -1,0 +1,182 @@
+{
+  "astrolabe_pivot": [
+    0.0,
+    1.79999995231628,
+    0.0
+  ],
+  "controls": [
+    {
+      "layer": 2,
+      "mask": 0,
+      "path": "/root/CoreHeroAudit/ArchiveMain/Hub/Onboarding/Panel",
+      "position": [
+        -0.649999976158142,
+        1.25,
+        0.899999976158142
+      ],
+      "target_box": [
+        0.449999988079071,
+        0.449999988079071,
+        0.300000011920929
+      ]
+    },
+    {
+      "layer": 2,
+      "mask": 0,
+      "path": "/root/CoreHeroAudit/ArchiveMain/Hub/Onboarding/Lens",
+      "position": [
+        -1.70000004768372,
+        1.14999997615814,
+        0.200000002980232
+      ],
+      "target_box": [
+        0.449999988079071,
+        0.449999988079071,
+        0.300000011920929
+      ]
+    },
+    {
+      "layer": 2,
+      "mask": 0,
+      "path": "/root/CoreHeroAudit/ArchiveMain/Hub/Onboarding/Socket",
+      "position": [
+        0.449999988079071,
+        1.39999997615814,
+        0.800000011920929
+      ],
+      "target_box": [
+        0.449999988079071,
+        0.449999988079071,
+        0.300000011920929
+      ]
+    },
+    {
+      "layer": 2,
+      "mask": 0,
+      "path": "/root/CoreHeroAudit/ArchiveMain/Hub/Onboarding/Lever",
+      "position": [
+        0.949999988079071,
+        1.14999997615814,
+        0.449999988079071
+      ],
+      "target_box": [
+        0.449999988079071,
+        0.449999988079071,
+        0.300000011920929
+      ]
+    }
+  ],
+  "core_body": {
+    "height": 1.39999997615814,
+    "layer": 1,
+    "mask": 4,
+    "position": [
+      0.0,
+      0.699999988079071,
+      0.0
+    ],
+    "radius": 1.0
+  },
+  "lower_housing": {
+    "material": "res://art/materials/m_observatory_stone.tres",
+    "mesh_class": "ArrayMesh",
+    "path": "/root/CoreHeroAudit/ArchiveMain/Hub/Mechanism/sm_s01_core_pedestal",
+    "position": [
+      0.0,
+      0.699999988079071,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "triangles": 2144,
+    "world_vertex_bounds": {
+      "max": [
+        0.980000019073486,
+        1.38999998569489,
+        0.980000019073486
+      ],
+      "min": [
+        -0.980000019073486,
+        0.00599998235702515,
+        -0.980000019073486
+      ]
+    }
+  },
+  "purpose": "Actual native interface audit only; two primitive rings do not satisfy authored3\u20135-piece hero",
+  "rings": [
+    {
+      "material": "res://worlds/archive/archive_main.tscn::Metal",
+      "mesh_class": "TorusMesh",
+      "path": "/root/CoreHeroAudit/ArchiveMain/Hub/Astrolabe/OuterRing",
+      "position": [
+        0.0,
+        1.79999995231628,
+        0.0
+      ],
+      "rotation": [
+        0.959931075572968,
+        0.0,
+        0.436332315206528
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 768,
+      "world_vertex_bounds": {
+        "max": [
+          0.882264614105225,
+          2.63029003143311,
+          0.659957408905029
+        ],
+        "min": [
+          -0.882264614105225,
+          0.969709932804108,
+          -0.659957349300385
+        ]
+      }
+    },
+    {
+      "material": "res://worlds/archive/archive_main.tscn::Metal",
+      "mesh_class": "TorusMesh",
+      "path": "/root/CoreHeroAudit/ArchiveMain/Hub/Astrolabe/InnerRing",
+      "position": [
+        0.0,
+        1.79999995231628,
+        0.0
+      ],
+      "rotation": [
+        -0.523598790168762,
+        0.0,
+        -0.349065840244293
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "triangles": 768,
+      "world_vertex_bounds": {
+        "max": [
+          0.7304647564888,
+          2.26191735267639,
+          0.688278377056122
+        ],
+        "min": [
+          -0.7304647564888,
+          1.33808255195618,
+          -0.688278436660767
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Incomplete native capture — excluded from gallery
+
+All47 GLBs validated:13 fresh reads/34 exact cached reuses. Cache-free import passed. Exact current world resource loaded synchronously in12022ms;one actual S00 closed Low PNG was produced. The170s graphical wrapper then timed out before completion;DTO/dirty end guard was not reached. This frame is diagnostic only and is not part of an accepted16-frame gallery. Capture fixture used24 settling frames per static pose,unnecessary for frozen world/player and explicit post-draw sync. The next fixture uses2 completed frames and retains strict command/source/DTO/dirty/slot guards;import/shader cache reuse is labelled,not a fresh cache-free claim.

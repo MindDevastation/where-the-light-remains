@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3]
+[ext_resource type="Texture2D" path="res://art/textures/foliage/t_archive_leaf_atlas.png" id="Atlas"]
+[resource]
+resource_name = "archive_leaf_cutout"
+transparency = 2
+alpha_scissor_threshold = 0.5
+cull_mode = 2
+albedo_texture = ExtResource("Atlas")
+roughness = 0.85
+texture_filter = 5

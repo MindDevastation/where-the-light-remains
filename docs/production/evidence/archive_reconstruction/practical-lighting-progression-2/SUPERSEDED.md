@@ -1,0 +1,1 @@
+Candidate before explicit S00 stage projection of interior lantern visibility. Native review found exterior side-wall light spill; retained results do not certify current lighting. Later current family verifies actual PROLOGUE→INTRO visibility and re-inspects Low/Medium.

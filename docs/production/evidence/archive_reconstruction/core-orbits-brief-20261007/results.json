@@ -1,0 +1,178 @@
+{
+  "status": "PASS_METRIC_BRIEF_ONLY",
+  "utc": "2026-10-07T16:20:05.514360+00:00",
+  "source_hashes": {
+    "docs/production/core_orbits_production_brief.json": "0ce5bf3afb3784594a4822faae53bb025d159466d1894e1fbcf3249b3934bf80",
+    "tools/measure_core_orbits_brief.py": "c9dde45928daea844d45522f3583fce538e8bbb9fd7d43571175ff1b54d772ce",
+    "docs/production/evidence/archive_reconstruction/core-hero-audit-20261007/interfaces.json": "5d1e43d17c44cabf7c85a574b7c88e64dc703f0bc4598faf2098f9fe536c99b7"
+  },
+  "native_basis_probe": "Private headless Godot actual Basis.from_euler default YXZ;no game/autoload/save loaded",
+  "accepted_envelope_world_m": {
+    "min": [
+      -0.882264614105225,
+      0.969709932804108,
+      -0.688278436660767
+    ],
+    "max": [
+      0.882264614105225,
+      2.63029003143311,
+      0.688278377056122
+    ]
+  },
+  "measurements": [
+    {
+      "id": "orbit_outer",
+      "native_basis_columns": [
+        [
+          0.906307756900787,
+          0.242403879761696,
+          0.346188634634018
+        ],
+        [
+          -0.422618269920349,
+          0.519836783409119,
+          0.742403864860535
+        ],
+        [
+          0.0,
+          -0.819152057170868,
+          0.5735764503479
+        ]
+      ],
+      "conservative_world_bounds": {
+        "min": [
+          -0.5458809262166998,
+          1.284303520499368,
+          -0.4087949477179889
+        ],
+        "max": [
+          0.5458809262166998,
+          2.315696479500632,
+          0.40879494771798897
+        ]
+      },
+      "continuous_yaw_control_clearance_lower_bound_m": {
+        "Panel": 0.32105383516493935,
+        "Lens": 0.9355998975138303,
+        "Socket": 0.10953107685043237,
+        "Lever": 0.2921059981716517
+      },
+      "upper_bridge_anchor_world_m": [
+        0.14911466988756936,
+        2.2954740522863886,
+        -0.2620501614320474
+      ]
+    },
+    {
+      "id": "orbit_inner",
+      "native_basis_columns": [
+        [
+          0.939692616462708,
+          -0.296198129653931,
+          0.171010076999664
+        ],
+        [
+          0.342020153999329,
+          0.813797652721405,
+          -0.469846308231354
+        ],
+        [
+          0.0,
+          0.5,
+          0.866025388240814
+        ]
+      ],
+      "conservative_world_bounds": {
+        "min": [
+          -0.45243501136345254,
+          1.5124953863008928,
+          -0.42624058480791666
+        ],
+        "max": [
+          0.45243501136345254,
+          2.0875046136991076,
+          0.4262405848079166
+        ]
+      },
+      "continuous_yaw_control_clearance_lower_bound_m": {
+        "Panel": 0.4410998551423305,
+        "Lens": 1.0556459116345698,
+        "Socket": 0.22957708323645576,
+        "Lever": 0.41215201500773013
+      },
+      "upper_bridge_anchor_world_m": [
+        -0.2202315524215113,
+        2.0673282059085007,
+        0.30271056858069834
+      ]
+    },
+    {
+      "id": "orbit_third",
+      "native_basis_columns": [
+        [
+          0.374606519937515,
+          0.840313911437988,
+          0.391844838857651
+        ],
+        [
+          -0.927183866500854,
+          0.339508801698685,
+          0.158315554261208
+        ],
+        [
+          0.0,
+          -0.422618269920349,
+          0.906307756900787
+        ]
+      ],
+      "conservative_world_bounds": {
+        "min": [
+          -0.14749660514572535,
+          1.460064670307573,
+          -0.3558424914866599
+        ],
+        "max": [
+          0.14749660514572535,
+          2.139935329692427,
+          0.35584249148665986
+        ]
+      },
+      "continuous_yaw_control_clearance_lower_bound_m": {
+        "Panel": 0.5611458884534539,
+        "Lens": 1.1756919400270782,
+        "Socket": 0.349623120122334,
+        "Lever": 0.5321980490837626
+      },
+      "upper_bridge_anchor_world_m": [
+        0.11376659997812003,
+        2.119804941325457,
+        -0.0195435071188559
+      ]
+    }
+  ],
+  "continuous_yaw_clearance_lower_bound_m": {
+    "Panel": 0.32105383516493935,
+    "Lens": 0.9355998975138303,
+    "Socket": 0.10953107685043237,
+    "Lever": 0.2921059981716517
+  },
+  "mount_clearance_lower_bound_m": {
+    "Panel": 0.3050000059604645,
+    "Lens": 0.4050000298023244,
+    "Socket": 0.1550000298023244,
+    "Lever": 0.4050000298023244
+  },
+  "bound_method": "Full-yaw target AABB annular enclosure;8192 arc samples minus radius*pi/N Lipschitz allowance and20mm section support. Upper bridges conservatively stay above1.78m;centre collar radius<=.19m.",
+  "rendered_geometry": "Metric line projections only;not production mesh/native shipping frames",
+  "new_binary_families": 0,
+  "shipping_changes": 0,
+  "inventory_acceptance_added": 0,
+  "excluded_scope": "No actual E-ray occlusion, GLB/material/tangent/Blender/LFS/style/performance acceptance",
+  "owned_private_fixture_removed": true,
+  "evidence_hashes": {
+    "basis.log": "b5dd0fe7defe8342ee58734ab7bc69331b31e06163f708ef7c54dbebad5fc128",
+    "core_orbits_metric.png": "ede3ac18ae5cf1d74baa9673e5a5ea4a77edef484079284fed3c4b06be11a8f1",
+    "core_orbits_metric.svg": "765c513cbaabad08028c214892d5b17c6218398d3fa325a9ce5fb43b413db7d8",
+    "basis_probe.gd.txt": "ac9f44e9c80a86bba95b087f9bc0bef4538055ff9ac1cf77f161d2346cc293ba"
+  }
+}

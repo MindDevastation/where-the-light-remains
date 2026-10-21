@@ -1,0 +1,95 @@
+{
+  "captures": [
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 99,
+      "file": "entry_rail_closed_low.png",
+      "left_door_x": -0.649999976158142,
+      "name": "entry_rail_closed",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 0.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 99,
+      "file": "entry_detail_engaged_low.png",
+      "left_door_x": -0.649999976158142,
+      "name": "entry_detail_engaged",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 1.2,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 100,
+      "file": "entry_practical_detail_low.png",
+      "left_door_x": -0.649999976158142,
+      "name": "entry_practical_detail",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 1.2,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 100,
+      "file": "entry_rail_opening_low.png",
+      "left_door_x": -1.11666667461395,
+      "name": "entry_rail_opening",
+      "right_door_x": 1.11666667461395,
+      "sample_seconds": 2.5,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 100,
+      "file": "entry_rail_open_low.png",
+      "left_door_x": -2.04999995231628,
+      "name": "entry_rail_open",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 3.8,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 20,
+      "file": "entry_quiet_s01_reverse_low.png",
+      "left_door_x": -2.04999995231628,
+      "name": "entry_quiet_s01_reverse",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "entry",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

@@ -1,0 +1,4 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://tests/archive_hub_floor_smoke.gd" id="1"]
+[node name="ArchiveHubFloorSmoke" type="Node"]
+script = ExtResource("1")

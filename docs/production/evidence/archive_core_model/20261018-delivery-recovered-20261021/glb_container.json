@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "buffer_bytes": 9744776,
+  "embedded_images": 12,
+  "external_dependencies": 0,
+  "ao_materials": 4,
+  "material_surfaces": 12,
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.5.51",
+    "version": "2.0"
+  }
+}

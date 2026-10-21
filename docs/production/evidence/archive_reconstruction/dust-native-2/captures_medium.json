@@ -1,0 +1,149 @@
+{
+  "captures": [
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 123,
+      "enabled": true,
+      "file": "s00_closed_on_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s00_prologue",
+      "view": "s00_closed"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 123,
+      "enabled": false,
+      "file": "s00_closed_off_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s00_prologue",
+      "view": "s00_closed"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 104,
+      "enabled": true,
+      "file": "s01_asleep_on_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s01_observatory",
+      "view": "s01_asleep"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 102,
+      "enabled": false,
+      "file": "s01_asleep_off_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s01_observatory",
+      "view": "s01_asleep"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 105,
+      "enabled": true,
+      "file": "s01_awakened_on_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s02_wing_01",
+      "view": "s01_awakened"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 103,
+      "enabled": false,
+      "file": "s01_awakened_off_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s02_wing_01",
+      "view": "s01_awakened"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 54,
+      "enabled": true,
+      "file": "s02_cold_on_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s02_wing_01",
+      "view": "s02_cold"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 53,
+      "enabled": false,
+      "file": "s02_cold_off_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s02_wing_01",
+      "view": "s02_cold"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 59,
+      "enabled": true,
+      "file": "s02_warm_on_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s02_wing_01",
+      "view": "s02_warm"
+    },
+    {
+      "amount_per_volume": 36,
+      "draw_calls": 57,
+      "enabled": false,
+      "file": "s02_warm_off_medium.png",
+      "gpu_speed": 0.0,
+      "light_count": 10,
+      "size": [
+        960,
+        540
+      ],
+      "stage": "s02_wing_01",
+      "view": "s02_warm"
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "dust_motes",
+  "status": "CAPTURED_FOR_REVIEW"
+}

@@ -1,0 +1,35 @@
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+git version 2.51.1
+
+Endpoint=https://github.com/MindDevastation/where-the-light-remains.git/info/lfs (auth=none)
+LocalWorkingDir=/tmp/wlr-lfs-family-7am3gbc7/clone
+LocalGitDir=/tmp/wlr-lfs-family-7am3gbc7/clone/.git
+LocalGitStorageDir=/tmp/wlr-lfs-family-7am3gbc7/clone/.git
+LocalMediaDir=/tmp/wlr-lfs-family-7am3gbc7/independent-lfs/objects
+LocalReferenceDirs=
+TempDir=/tmp/wlr-lfs-family-7am3gbc7/independent-lfs/tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneRemoteName=origin
+LfsStorageDir=/tmp/wlr-lfs-family-7am3gbc7/independent-lfs
+AccessDownload=none
+AccessUpload=none
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_CONFIG_COUNT=1
+GIT_CONFIG_KEY_0=credential.helper
+GIT_CONFIG_VALUE_0=!python3 /workspace/scratch/f336f4bd7da1/where-the-light-remains/.git/session_credential.py
+GIT_EXEC_PATH=/usr/local/libexec/git-core
+GIT_PAGER=cat
+GIT_TERMINAL_PROMPT=0
+git config filter.lfs.process = "git-lfs filter-process"
+git config filter.lfs.smudge = "git-lfs smudge -- %f"
+git config filter.lfs.clean = "git-lfs clean -- %f"

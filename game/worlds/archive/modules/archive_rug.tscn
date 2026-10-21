@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_archive_rug.glb" id="Art"]
+
+[node name="ArchiveRug" type="Node3D"]
+metadata/asset_brief = "docs/production/ARCHIVE_RUG.md"
+
+[node name="Art" parent="." instance=ExtResource("Art")]

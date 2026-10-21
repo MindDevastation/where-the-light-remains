@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T16:50:27.365939+00:00",
+  "remote_head": "a914b53c52feda17a9b8217112e4b33e96727316",
+  "local_head": "a914b53c52feda17a9b8217112e4b33e96727316",
+  "branch": "feature/04-archive-gameplay/resume-2026-10-06",
+  "last_stable": "2600c116db41c5413f8b656a217540fc922038fe",
+  "last_wip": "e7e3c80e9357f20823f70f8da31e20417c7d3ccc",
+  "existing_receipt_identity_checks": {
+    "wing-gate-native-2": {
+      "status": "PASS",
+      "compared_hashes": 550,
+      "mismatches": []
+    },
+    "wing-gate-regression-4": {
+      "status": "PASS",
+      "compared_hashes": 626,
+      "mismatches": []
+    }
+  },
+  "unfinished": "Independent LFS retrieval and individual native visual review, then stable gate acceptance",
+  "source_hashes": {}
+}

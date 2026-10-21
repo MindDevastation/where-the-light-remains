@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "visual_target_status": "PARTIAL",
+  "utc": "2026-10-06T16:01:28.788675+00:00",
+  "scope": "Sixteen actual Low/Medium floor/Hub/exterior/corridor images individually viewed; geometry/material identity and joins accepted, full representative lighting/style still open.",
+  "images": [
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_completed_hub_low.png",
+      "sha256": "ef21e16ff68423e05b69339f49a247bb31054e737beb77beb78568a38f222c2c",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_completed_hub_medium.png",
+      "sha256": "05d109c6536e2b02611aec46394cdbb3af9b5c91e52d324cbfb3bd903e0bfe90",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_corridor_join_low.png",
+      "sha256": "644932dd4184af46366a19484e3f5dd83e5483ee6774208eb6c1f22663d8856b",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_corridor_join_medium.png",
+      "sha256": "acf10465f8bba979e185d3c3465b73557b5d862e193fcae26246db56ed21e386",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s00_closed_low.png",
+      "sha256": "bea51b6d5dcfda3e3b15b33e9865ca2468156911c52cf8474ba938e7e1eea68c",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s00_closed_medium.png",
+      "sha256": "9dd6babcdde18f5df844f6c5d0c19ea89f3207ca38e718700330f56a45436f43",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s00_entry_low.png",
+      "sha256": "ff30d5c17def3a627c7b76e802e6030f32b007afdb16a312c32ccf7a01904a5e",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s00_entry_medium.png",
+      "sha256": "a648b1e432fbd5b704acc5d4861265aeeffc07bf02862d12b08c4354cb01287a",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s00_opening_low.png",
+      "sha256": "dcddb756d04c05c1625197e02d3d73a51d4420b04bb88c4ab5436af1dd064972",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s00_opening_medium.png",
+      "sha256": "906e165969676668ff5c8425ffbd64c2a81bfabbd1fd53aae5282751a78f616c",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s01_asleep_low.png",
+      "sha256": "75debdceec667821b8845510b43345c4c01feff1d1b287e23516731a5d69066c",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s01_asleep_medium.png",
+      "sha256": "32ddc8b49243758f3e067eb4a6b0387559592331543df76897ed990e4aa0ac9d",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s01_awakened_low.png",
+      "sha256": "8e34d0726eab9f114beaf0299168b57a29a4c023cb98387b879d303d3ebe0973",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s01_awakened_medium.png",
+      "sha256": "e210ae14de1c1e7e5dd0f59336c14f7cd174f7e70a2b991755d630481753cb0f",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s01_detail_low.png",
+      "sha256": "81b0e091a156e478a86facce3cd25fe86c6f5ef3ddc686e0b81d58ad4d046e41",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/hub-floor-native-1/hub_floor_s01_detail_medium.png",
+      "sha256": "0ecd574a4fef1bd7cf4338c86386fe855a233fa3c1202d2e7dc4a1882f34546e",
+      "inspected": true
+    }
+  ],
+  "observations": [
+    "Authored worn paving and three noninteractive brass inlays read; existing channels remain visible above the surface, no new route glyph or clue.",
+    "Corridor join inspected in both presets: authored notch preserves the accepted tile ownership; original core and entrance approach clearances measured.",
+    "Thin grout and brass inlays alias at distance on Low960x540; Medium improves edge coverage. Physical target-GPU quality remains untested.",
+    "Current global cold ambient still makes stone too pale/cool compared with v2. This is an explicit lighting dependency, not whole visual PASS. Gates/upper facade infill/windows/backdrop/hero/dressing remain incomplete."
+  ],
+  "renderer": "Forward+ / llvmpipe; not physical target GPU"
+}

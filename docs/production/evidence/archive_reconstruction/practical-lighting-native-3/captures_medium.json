@@ -1,0 +1,249 @@
+{
+  "captures": [
+    {
+      "bolt_local_x": 0.0,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 118,
+      "file": "practical_lighting_s00_closed_medium.png",
+      "left_door_x": -0.649999976158142,
+      "light_count": 10,
+      "name": "practical_lighting_s00_closed",
+      "right_door_x": 0.649999976158142,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 0.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 119,
+      "file": "practical_lighting_s00_opening_medium.png",
+      "left_door_x": -1.11666667461395,
+      "light_count": 10,
+      "name": "practical_lighting_s00_opening",
+      "right_door_x": 1.11666667461395,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 2.5,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 94,
+      "file": "practical_lighting_s00_entry_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "practical_lighting_s00_entry",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 7.9,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 95,
+      "file": "practical_lighting_s01_asleep_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "practical_lighting_s01_asleep",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 71,
+      "file": "practical_lighting_s01_detail_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "practical_lighting_s01_detail",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 47,
+      "file": "practical_lighting_corridor_join_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "practical_lighting_corridor_join",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 96,
+      "file": "practical_lighting_s01_awakened_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "practical_lighting_s01_awakened",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 100,
+      "file": "practical_lighting_completed_hub_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "practical_lighting_completed_hub",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(1.0, 0.68, 0.36, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 90,
+      "file": "lighting_s01_controls_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s01_controls",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.04999995231628,
+      "draw_calls": 96,
+      "file": "lighting_s01_awakening_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s01_awakening",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 53,
+      "file": "lighting_s02_entry_cold_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s02_entry_cold",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 53,
+      "file": "lighting_s02_optics_cold_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s02_optics_cold",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 54,
+      "file": "lighting_s02_star_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s02_star",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 55,
+      "file": "lighting_s02_hearth_warm_medium.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s02_hearth_warm",
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(1.0, 0.68, 0.36, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "practical_lighting",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

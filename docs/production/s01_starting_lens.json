@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "source": "assets/3d/blender/archive_kit/s01_starting_lens.blend",
+  "materials": {
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "glass": "res://art/materials/m_clear_glass.tres",
+    "iron": "res://art/materials/m_dark_iron.tres"
+  },
+  "parts": [
+    {"id":"lens", "stem":"sm_s01_starting_lens", "joint":[0,0,0], "materials":["brass","glass"], "triangle_ceiling":1600},
+    {"id":"socket", "stem":"sm_s01_lens_socket", "joint":[0,0,0], "materials":["iron","brass"], "triangle_ceiling":1600}
+  ],
+  "lens_outer_radius": 0.18,
+  "socket_bore_radius": 0.182,
+  "target_size": [0.45,0.45,0.30]
+}

@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T14:52:05.376213+00:00",
+  "scope": "Actual current -v3 level approach and contained guard skins only; all twelve native images individually viewed. Full exterior/lighting/backdrop/gallery remain open.",
+  "images": [
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_guard_detail_low.png",
+      "sha256": "25508c851fea6570dead832b09d773a9c4aef318549c2d16899c4ca9238eb5f3",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_guard_detail_medium.png",
+      "sha256": "2f84f9e847f3a35826ac8929a3586698c8bf42de59f49a0117d504b665088172",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_paving_detail_low.png",
+      "sha256": "c88e1050280ba6b2425ae1a424f0ad22a4700091edca2a98db0fc9b3362fbd4f",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_paving_detail_medium.png",
+      "sha256": "67242d99a80623fd9784b63045bbaeefc6560481aa878258a9fe9c9f2f549533",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_quiet_s01_reverse_low.png",
+      "sha256": "19c53c30a40ad39ae9e238d56dd74dd456bf6374ad01558ac1bacdb1ad37b5b5",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_quiet_s01_reverse_medium.png",
+      "sha256": "1fe4372af62cd6f006cf553f52c61c6f7951df6a8c6ed77af43da70e8e2ad9fc",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_rail_closed_low.png",
+      "sha256": "2fd794ecbdcffebb7ba34a4a00496f391bf606f8da728e414902281b30b54d52",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_rail_closed_medium.png",
+      "sha256": "94efdff8a156039a1328e5f6a2dbdfca04b2ff22529e9c5e3ca44083b970e4a8",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_rail_opening_low.png",
+      "sha256": "85168ec670613ada297e0a545770be09cebc11314bd9c9c43d015d9dce48fc12",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_rail_opening_medium.png",
+      "sha256": "8cab067f3c5876fc2a80f55572efdfb08bec36d557bc9236f525f7c5a2eec057",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_rear_corner_low.png",
+      "sha256": "6f923dfa8acf1e9b2e4564cdda2a5e49b33b564e48d0267efad5ebfd2d8f33d3",
+      "inspected": true
+    },
+    {
+      "path": "docs/production/evidence/archive_reconstruction/approach-native-2/approach_rear_corner_medium.png",
+      "sha256": "1d61eb6dedc0cc915dd9707cd3031b5d6dde62fd4077fbda1d78e2bedaa85f77",
+      "inspected": true
+    }
+  ],
+  "observations": [
+    "Level paving seams readable on both presets; dark iron rail and low worn stone plinth leave the existing clear route silhouette.",
+    "Rear corner inspected; current2mm source offset and actual imported horizontal-plane check remove measured coplanarity without moving original bodies.",
+    "Warm accepted entry lantern contrasts with cool night ambient; rear guard is deliberately unlit, remaining black backdrop and graybox exterior/Hub not promoted."
+  ],
+  "renderer": "Forward+ / llvmpipe; not physical target GPU"
+}

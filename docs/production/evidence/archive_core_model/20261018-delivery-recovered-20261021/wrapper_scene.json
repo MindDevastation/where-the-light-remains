@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "godot": "4.7.2",
+  "clean_delivery_import": true,
+  "wrapper_and_preview_load": true,
+  "expected_mesh_instances": 8,
+  "includes_preview_ground": true
+}

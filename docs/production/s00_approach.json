@@ -1,0 +1,75 @@
+{
+  "source": "assets/3d/blender/archive_kit/s00_approach.blend",
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres"
+  },
+  "parts": [
+    {
+      "id": "path",
+      "stem": "sm_s00_approach_path",
+      "runtime": "game/art/meshes/archive_kit/sm_s00_approach_path.glb",
+      "materials": [
+        "stone",
+        "iron",
+        "brass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 6000,
+      "body_size": [
+        4,
+        0.3,
+        8
+      ]
+    },
+    {
+      "id": "guard_long",
+      "stem": "sm_s00_approach_guard_long",
+      "runtime": "game/art/meshes/archive_kit/sm_s00_approach_guard_long.glb",
+      "materials": [
+        "stone",
+        "iron",
+        "brass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 4000,
+      "body_size": [
+        0.3,
+        1.2,
+        8.3
+      ]
+    },
+    {
+      "id": "guard_rear",
+      "stem": "sm_s00_approach_guard_rear",
+      "runtime": "game/art/meshes/archive_kit/sm_s00_approach_guard_rear.glb",
+      "materials": [
+        "stone",
+        "iron",
+        "brass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 4000,
+      "body_size": [
+        4.6,
+        1.2,
+        0.3
+      ]
+    }
+  ],
+  "max_floor_local_y": 0.156,
+  "rear_visual_y_offset": 0.002
+}

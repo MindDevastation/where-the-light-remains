@@ -1,0 +1,2 @@
+{"status": "REMOTE_PASS", "utc": "2026-10-06T08:15:20.679358+00:00", "kind": "WIP", "stage": "fixture", "archive": "/tmp/wlr-checkpoint-fixture-lt0rlhx1/archives/wlr-snapshot-20261006T081520554813Z.tar.gz", "checkpoint_commit": "e0d51bf7b6c664e6bac3fd7f46c7240000d62a84", "remote_sha": "8f5b847552058be8062f10a52679dbea74ce4f5b"}
+{"status": "PASS", "checks": ["real snapshot verification", "WIP source and receipt push", "exact remote content", "clean source worktree", "credential refusal without ref mutation", "main refusal"]}

@@ -1,0 +1,100 @@
+{
+  "asset_animations": 0,
+  "asset_colliders": 0,
+  "asset_lights": 0,
+  "bounds_m": {
+    "min": "(-0.555684, 0.006, -0.462)",
+    "size": "(1.111368, 1.553324, 0.924)"
+  },
+  "draw_calls_fixture_frame": 27,
+  "godot": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "materials": {
+    "m_aged_brass": {
+      "ao_enabled": true,
+      "emission_enabled": false,
+      "normal_enabled": true,
+      "transparency": 0
+    },
+    "m_core_energy_gold": {
+      "ao_enabled": false,
+      "emission_enabled": true,
+      "normal_enabled": false,
+      "transparency": 0
+    },
+    "m_core_memory_glass": {
+      "ao_enabled": false,
+      "emission_enabled": false,
+      "normal_enabled": false,
+      "transparency": 4
+    },
+    "m_core_orbit_calibrated_brass": {
+      "ao_enabled": true,
+      "emission_enabled": false,
+      "normal_enabled": true,
+      "transparency": 0
+    },
+    "m_dark_iron": {
+      "ao_enabled": true,
+      "emission_enabled": false,
+      "normal_enabled": true,
+      "transparency": 0
+    },
+    "m_dark_walnut": {
+      "ao_enabled": true,
+      "emission_enabled": false,
+      "normal_enabled": true,
+      "transparency": 0
+    }
+  },
+  "mesh_count": 7,
+  "parts": [
+    {
+      "name": "CoreEnergy",
+      "triangles": 2880
+    },
+    {
+      "name": "CoreGlass",
+      "triangles": 960
+    },
+    {
+      "name": "Orbit_Inner",
+      "triangles": 1536
+    },
+    {
+      "name": "Orbit_Outer",
+      "triangles": 1536
+    },
+    {
+      "name": "Orbit_Third",
+      "triangles": 1536
+    },
+    {
+      "name": "sm_archive_core_mounts_and_cage",
+      "triangles": 3288
+    },
+    {
+      "name": "sm_archive_core_static_body",
+      "triangles": 18044
+    }
+  ],
+  "pivot_m": [
+    0,
+    1.02,
+    0
+  ],
+  "scope": "Standalone asset on software Vulkan; not target GPU or gameplay acceptance",
+  "status": "PASS",
+  "surfaces": 12,
+  "texture_memory_fixture_bytes": 219414784,
+  "triangles": 29780
+}

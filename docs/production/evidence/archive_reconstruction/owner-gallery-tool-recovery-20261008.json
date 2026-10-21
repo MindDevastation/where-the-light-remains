@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-08T12:50:18.926103+00:00",
+  "godot_version": "4.7.2.stable.official.ed1daf0bf",
+  "godot_sha256": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e",
+  "xkbcomp_link_restored_this_session": true,
+  "xkbcomp_link_target": "/workspace/scratch/0e91a73a58d2/toolchain/graphics/usr/bin/xkbcomp",
+  "xkbcomp_target_exists": true,
+  "package_or_pipeline_change": false,
+  "graphics_runner_unchanged": true,
+  "native_low_attempt1_graphics_device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "tcp_cookie_auth_pass": true,
+  "scope": "Executable/version and actual X11/Forward+ capability. Capture attempt1 failed later at scene preload;no successful gallery frame claimed here."
+}

@@ -1,0 +1,151 @@
+{
+  "captures": [
+    {
+      "draw_calls": 51,
+      "file": "rug_entrance_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "rug_entrance",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 35,
+      "file": "rug_edge_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "rug_edge",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 44,
+      "file": "rug_hero_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "rug_hero",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 73,
+      "file": "rug_reverse_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "rug_reverse",
+      "segments": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 1.0,
+      "star_visible": false,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 35,
+      "file": "rug_star_medium.png",
+      "focus_x": 0.930000007152557,
+      "hearth_visible": false,
+      "name": "rug_star",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.961475312709808,
+      "star_visible": true,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 46,
+      "file": "rug_warm_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "rug_warm",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.854619145393372,
+      "star_visible": true,
+      "texture_bytes": 40731648
+    },
+    {
+      "draw_calls": 27,
+      "file": "rug_hearth_medium.png",
+      "focus_x": 0.349999994039536,
+      "hearth_visible": true,
+      "name": "rug_hearth",
+      "segments": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "size": [
+        960,
+        540
+      ],
+      "star_alpha": 0.824062764644623,
+      "star_visible": true,
+      "texture_bytes": 40731648
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "rug",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

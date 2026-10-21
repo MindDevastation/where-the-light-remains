@@ -1,0 +1,32 @@
+{
+  "status": "PUBLISHED_STABLE_REVIEW_ONLY",
+  "utc": "2026-10-21T15:12:44.425394+00:00",
+  "repository": "MindDevastation/where-the-light-remains",
+  "branch": "feature/04-archive-gameplay/resume-2026-10-06",
+  "gallery_source_commit": "5cffa822e1ca7fcf2023f9ff4ccc5de5839d43eb",
+  "native_png_commit": "ca88f1ffcce01c3da2c2bfae213ddd6a07731a15",
+  "unique_native_frames": 16,
+  "published_png_paths": 32,
+  "html_pages": 9,
+  "individually_inspected": 16,
+  "protected_game_files": 595,
+  "existing_runtime_payloads_verified": 47,
+  "fresh_gameplay_assertions": 0,
+  "original_directory_guard_failure_retained": true,
+  "deliverable_archive": {
+    "filename": "WLR_Owner_Gallery_2026-10-21.zip",
+    "bytes": 43050028,
+    "sha256": "e5f1dbc85011d77273e1fa915ed6d4973f686324bf80bb08ad67f8f0b0f10fb8",
+    "verified_files": 65,
+    "integrity": "PASS",
+    "saved_for_download": true
+  },
+  "shipping_changes": 0,
+  "main_changed": false,
+  "pr_base_draft_unchanged": true,
+  "gate_vs1": "OPEN",
+  "s03": "BLOCKED",
+  "inventory": "26 ACCEPTED / 44 PARTIAL / 7 MISSING;185 rows",
+  "new_model_binary_publication": "Blocked by automatic approval review; no LFS object write acknowledged",
+  "receipt_identity": "The following receipt commit is independently verified from the remote branch; a commit cannot include its own SHA."
+}

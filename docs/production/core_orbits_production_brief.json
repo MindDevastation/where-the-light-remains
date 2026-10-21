@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "status": "MEASURED_PROPOSAL_NOT_AUTHORED",
+  "scope": "Three authored visual orbit pieces and their upper bridges/spindle only;no new input/collider/light/state",
+  "pivot_world_m": [
+    0,
+    1.8,
+    0
+  ],
+  "basis_order": "Godot native Basis.from_euler default YXZ;measured by private headless probe",
+  "tube_support_radius_m": 0.02,
+  "control_clearance_floor_m": 0.1,
+  "arc_samples": 8192,
+  "orbits": [
+    {
+      "id": "orbit_outer",
+      "radius_m": 0.58,
+      "euler_degrees": [
+        55,
+        0,
+        25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "triangle_ceiling": 1800
+    },
+    {
+      "id": "orbit_inner",
+      "radius_m": 0.46,
+      "euler_degrees": [
+        -30,
+        0,
+        -20
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "triangle_ceiling": 1800
+    },
+    {
+      "id": "orbit_third",
+      "radius_m": 0.34,
+      "euler_degrees": [
+        25,
+        0,
+        68
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "triangle_ceiling": 1800
+    }
+  ],
+  "mounts": {
+    "spindle_world_y_m": [
+      1.39,
+      1.8
+    ],
+    "spindle_radius_m": 0.055,
+    "base_collar_outer_radius_m": 0.19,
+    "base_collar_world_y_m": [
+      1.39,
+      1.44
+    ],
+    "upper_bridge_min_world_y_m": 1.78,
+    "triangle_ceiling": 600
+  },
+  "total_triangle_ceiling": 6000,
+  "maximum_shared_materials": 3,
+  "maximum_draw_surface_budget": 6,
+  "materials": [
+    "res://art/materials/m_polished_brass.tres",
+    "res://art/materials/m_dark_iron.tres",
+    "res://art/materials/m_aged_brass.tres"
+  ],
+  "uv_density_px_per_m": 1024,
+  "visual_geometry": "Original bevelled flat metal straps, restrained mechanical joins and upper bridge mounts;not shipped TorusMesh substitutes",
+  "clock": "Existing Astrolabe parent yaw .35rad/s after existing2s onset only;no per-orbit timer/input",
+  "inputs": {
+    "docs/production/ARCHIVE_CORE_HERO_INTERFACE_AUDIT.md": "d7cdac07cf858950f5979a6137672c7b75125bbdc0032802b73a4382de931e3a",
+    "docs/production/evidence/archive_reconstruction/core-hero-audit-20261007/interfaces.json": "5d1e43d17c44cabf7c85a574b7c88e64dc703f0bc4598faf2098f9fe536c99b7",
+    "game/worlds/archive/archive_main.tscn": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082",
+    "game/worlds/archive/archive_main.gd": "17edcb806e5868d671a1f820c1674b8975b57fbf5d745c0f879c28c19bddf09f",
+    "docs/production/visual_rebaseline_v2.json": "c9e72d3d8506a6c812f9a16b934a2b7c45fba6a1aecba61cb2936521517ef61d",
+    "docs/production/s01_core_pedestal.json": "afb4ac0a68961176a021d71a1a5bf589012bc7c49897a56d1481887eb128c43a"
+  },
+  "limits": "Clearance is a conservative full-yaw metric proposal bound;not actual E-ray occlusion, imported geometry, style or shipping acceptance"
+}

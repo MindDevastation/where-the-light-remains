@@ -1,0 +1,17 @@
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/tmp/wlr-lfs-family-_0ewba40/source/assets/3d/blender/archive_kit/archive_wing_gate.blend"
+
+Blender quit
+Traceback (most recent call last):
+  File "/tmp/wlr-lfs-family-_0ewba40/source/tools/verify_archive_wing_gate.py", line 7, in <module>
+    c=json.loads((root/'docs/production/archive_wing_gate.json').read_text())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/0152d86aa631/toolchain/blender-4.5.14-linux-x64/4.5/python/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/0152d86aa631/toolchain/blender-4.5.14-linux-x64/4.5/python/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/wlr-lfs-family-_0ewba40/source/docs/production/archive_wing_gate.json'
+
+Error: script failed, file: '/tmp/wlr-lfs-family-_0ewba40/source/tools/verify_archive_wing_gate.py', exiting.

@@ -1,0 +1,60 @@
+{
+  "status": "FAIL",
+  "started_at": "2026-10-07T16:03:44.215468+00:00",
+  "scope": "Unbound isolated material specimens; no gameplay, shipping assignment, fresh old-art/GLB test, target GPU or full VS1 acceptance",
+  "source_hashes": {
+    "game/tests/stone_trim_review.gd": "679086d70894268f3aa3329b120590c7c1e0145aa6cdc43a52685a65b9f89685",
+    "tools/generate_stone_trim_maps.py": "d25fa484c137bb87773e72012aaf6f9e05dbe25776848865565482c6ed0810f9",
+    "tools/validate_stone_trim.py": "96b4cdea8f28534c32087edd5bbc866ce7b573f60aca5257d1909737a64f20d1",
+    "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205",
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "game/autoload/settings_manager.gd": "17c1499f08bcedca5778060102c316428d9ba363d73e4cea7b603ed90ac1fd44",
+    "docs/production/STONE_TRIM.md": "d988dc0d7e0a77c3c6dfbb92aafee7468ef0d9d4f40a672401d69fabf8f96c43",
+    "docs/production/stone_trim_regions.json": "e4bd26a48543e7df65e64abf615f519a6e07e48812cdb0fb84795d9f72a63ed6",
+    "game/art/materials/m_stone_ornament_trim.tres": "d775c1281be8e03dd1837345969ca34ed750e8720f0e3f69d59ca13009944703",
+    "game/art/textures/trims/stone_trim_manifest.json": "a7086af3bb966cf1a1de73e0b488fbff1734563dd0f55c352ab3c02798efbc77",
+    "game/worlds/archive/archive_main.tscn": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082",
+    "game/worlds/archive/archive_main.gd": "17edcb806e5868d671a1f820c1674b8975b57fbf5d745c0f879c28c19bddf09f",
+    "game/worlds/archive/wing01_corridor_presentation.tscn": "eabde12947f19766d88472ad24162ab388eb2a82e24d7722e40e3e2135351a8a",
+    "tools/create_archive_kit.py": "b4a42fd0cca72cb68edb22f2d7dc8f0ea93e132618c18ec761140cbc2dd0a5e9",
+    "tools/create_s01_core_pedestal.py": "070fd3ec07d99d7d8abe5b59c7d10e83d0454d8b2c3c2b20958d74a1480bcf07",
+    "docs/production/modular_archive_kit_v1.json": "ebbcadc704be7af4a304a31bf094f763b7caf0e9b90a565b819484c43900fe5c",
+    "docs/production/s01_core_pedestal.json": "afb4ac0a68961176a021d71a1a5bf589012bc7c49897a56d1481887eb128c43a",
+    "docs/production/ARCHIVE_PRACTICAL_LIGHTING.md": "1641ae441bea124e1134eeaadfe95af85f5e20745302dbb329590a77d20abbda",
+    "game/art/textures/trims/t_stone_ornament_trim_albedo.png": "25a6669610cb406f77628332d7e98ecdd6e8e10ecec31ba9244c602f25561a78",
+    "game/art/textures/trims/t_stone_ornament_trim_albedo.png.import": "bf3279aece53af752691a6f23fa20b212e16066da5e078967edefaac6b01bfd3",
+    "game/art/textures/trims/t_stone_ornament_trim_normal.png": "91f497fdfd40139e36044e87655349977f447faaff89a2cd25a5d5e6bac70016",
+    "game/art/textures/trims/t_stone_ornament_trim_normal.png.import": "5561505f0b051d58c2e45d4203e4b922bc92362508df97762de5f350062cad97",
+    "game/art/textures/trims/t_stone_ornament_trim_orm.png": "ffb8538b4355a7fad454f649d580059f9fe185e1dc6d66d599803eb70c81fd64",
+    "game/art/textures/trims/t_stone_ornament_trim_orm.png.import": "286b3124619a11dba9b03f622ea45e4f52ac0b674ea388797b19c8041fa7f33c",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-1/fresh_map_regeneration.log": "835acc0a60f6dd5b752dcd6f2341832c30abe7e06c7718da621524213320bbd7"
+  },
+  "records": [
+    {
+      "name": "fresh_map_regeneration",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-stone_trim-s5nn5xnl/tools/generate_stone_trim_maps.py",
+        "--output",
+        "/tmp/wlr-stone_trim-s5nn5xnl/regenerated"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "835acc0a60f6dd5b752dcd6f2341832c30abe7e06c7718da621524213320bbd7"
+    }
+  ],
+  "captures": [],
+  "private_fixture_project_sha256": "4dd5ce7f638d16dd6e2877cb82b3bca371ea3a9505fed04e177c684f67e20b91",
+  "fresh_regeneration_files_identical": 4,
+  "failure": "No actual authored profile relief",
+  "finished_at": "2026-10-07T16:03:52.939766+00:00"
+}

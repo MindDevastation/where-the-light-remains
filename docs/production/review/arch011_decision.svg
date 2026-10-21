@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="720" viewBox="0 0 1380 720">
+<rect width="1380" height="720" fill="#101b2b"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#e6edf3">
+<text x="32" y="38" font-size="24">ARCH-011 · варианты для решения владельца</text>
+<text x="32" y="66" font-size="14" fill="#edc578">PROPOSAL · runtime и required_for_vs1 пока не изменены · все размеры B предложены</text>
+<text x="45" y="113" font-size="20">A · плоский VS1 (рекомендация)</text>
+<text x="600" y="113" font-size="20">B · два марша в текущем коридоре</text>
+<g stroke="#96a7bb" stroke-width="2" fill="#22334a">
+<rect x="180" y="140" width="200" height="100" rx="7"/><rect x="240" y="240" width="80" height="140"/><path d="M240 380 A120 120 0 1 0 320 380"/>
+<rect x="755" y="140" width="200" height="100" rx="7"/><rect x="815" y="240" width="80" height="140"/><path d="M815 380 A120 120 0 1 0 895 380"/>
+</g>
+<g font-size="16" text-anchor="middle">
+<text x="280" y="180">S02 · Y=0</text><text x="280" y="210" font-size="12">план комнаты сокращен</text>
+<text x="280" y="325" font-size="14">Y=0</text><text x="280" y="470">Hub · Y=0</text>
+<text x="855" y="180">S02 · Y=0</text><text x="855" y="210" font-size="12">план комнаты сокращен</text>
+<text x="855" y="470">Hub · Y=0</text>
+</g>
+<g fill="#dfb370" stroke="#dfb370">
+<rect x="819" y="250" width="72" height="30" fill-opacity=".5"/>
+<line x1="819" y1="265" x2="891" y2="265"/>
+</g>
+<rect x="819" y="280" width="72" height="30" fill="#57768e" fill-opacity=".45"/>
+<rect x="831" y="310" width="48" height="30" fill="#dfb370" fill-opacity=".65"/>
+<line x1="831" y1="325" x2="879" y2="325" stroke="#101b2b"/>
+<g font-size="13" fill="#edc578">
+<text x="942" y="265">вниз · 3.6 m · Z −13…−14.5</text>
+<text x="942" y="299">площадка · Y=.30 · Z −11.5…−13</text>
+<text x="942" y="330">вверх · 2.4 m · Z −10…−11.5</text>
+</g>
+<g stroke="#edc578" fill="none" stroke-width="1"><path d="M891 265 H932"/><path d="M891 295 H932"/><path d="M879 325 H932"/></g>
+<g font-size="13" fill="#b4c4d4">
+<text x="45" y="645">Двухширинную family предложено перенести на S03.</text>
+<text x="45" y="670">MUST остается для полной игры; нужен owner override VS1.</text>
+<text x="600" y="645">Каждый марш: 2 × .15 m, проступь .75 m.</text>
+<text x="600" y="670">Предложение: гладкая ramp collision, без jump/step-up.</text>
+</g>
+<path d="M860 410 V355 M854 364 L860 355 L866 364" stroke="#e6edf3" fill="none" stroke-width="2"/>
+<text x="875" y="397" font-size="12">к комнате · −Z</text>
+<rect x="32" y="683" width="1315" height="1" fill="#3b4b60"/>
+<text x="32" y="704" font-size="12" fill="#b4c4d4">Точные диапазоны/площадки и affected contracts — ARCHIVE_SHORT_STAIRS_DECISION.md. Схема не является приемкой или новым runtime layout.</text>
+</g></svg>
