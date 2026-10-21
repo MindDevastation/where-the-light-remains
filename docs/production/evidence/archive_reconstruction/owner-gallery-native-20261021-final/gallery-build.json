@@ -1,0 +1,104 @@
+{
+  "status": "PASS_EXACT_EMBEDDED_GALLERY",
+  "native_folder": "docs/production/evidence/archive_reconstruction/owner-gallery-native-20261021-final",
+  "gallery": "docs/production/review/owner_overview.html",
+  "gallery_sha256": "0f9225fda53ec4cf65c6f2f710097a2e8ff3e7d1c40223fb4353278166cd03e3",
+  "gallery_bytes": 38952,
+  "frames": [
+    {
+      "file": "s00_closed_low.png",
+      "sha256": "79be622722491c96c0e0e3d8880e83f16141a408bdf165b1a13b8ce0cabbe871",
+      "bytes": 671477
+    },
+    {
+      "file": "s00_closed_medium.png",
+      "sha256": "4d2135e3f461a6971acd973480d322f6b7be1ae75ded6d861aee678f28320548",
+      "bytes": 763807
+    },
+    {
+      "file": "s00_entry_low.png",
+      "sha256": "88c69f055ae98e75f3058c0e4f99e32bdbf1f362aba03350df01e4c5f50bd67e",
+      "bytes": 772964
+    },
+    {
+      "file": "s00_entry_medium.png",
+      "sha256": "2c1bb4a96b80656711ace2f5ee811ab3677467b809fa9007984c4a3ce60b68ea",
+      "bytes": 875606
+    },
+    {
+      "file": "s01_asleep_low.png",
+      "sha256": "437849ac4a634be369a64ddc68f3dfd60d95fe62b2c0700b6efb6d3303f2d1d0",
+      "bytes": 829405
+    },
+    {
+      "file": "s01_asleep_medium.png",
+      "sha256": "ad1fca56a41c2cc0ca3997b109817a6e3995136d58a231b3b2a2ec5492a9aa0c",
+      "bytes": 927647
+    },
+    {
+      "file": "s01_awakened_low.png",
+      "sha256": "ea6d85ecc9d3cca570d47a72262d96155303feda8ee0a026f0979540d653a533",
+      "bytes": 842611
+    },
+    {
+      "file": "s01_awakened_medium.png",
+      "sha256": "234a4b4f15e73dd126a6fddadf321a24923b3bc44afeef2c0c069cafd0a86574",
+      "bytes": 941924
+    },
+    {
+      "file": "s02_entry_cold_low.png",
+      "sha256": "fd2c69d71a5bffe80a3a251e72c95b021c9892f99b86517e6088f10ca73dbef4",
+      "bytes": 882647
+    },
+    {
+      "file": "s02_entry_cold_medium.png",
+      "sha256": "6efbadf7d8a4c9361feb497490d85572e25c6af8acd87e7d8c47ece30951b52d",
+      "bytes": 1030436
+    },
+    {
+      "file": "s02_star_low.png",
+      "sha256": "69a9451c2c83d4a8ae20134bca8692a299ee3ef5b1eaf384d3684a7537899d39",
+      "bytes": 892748
+    },
+    {
+      "file": "s02_star_medium.png",
+      "sha256": "f9838c59f170bb1c9982b20e587e3b38fc7524c4a691d9378d16dee0e0f62cb5",
+      "bytes": 1046528
+    },
+    {
+      "file": "s02_hearth_low.png",
+      "sha256": "73bc71046e7142073d279001d536d20fea3c271e1eef9ab7c5ee1b790de9e18c",
+      "bytes": 900723
+    },
+    {
+      "file": "s02_hearth_medium.png",
+      "sha256": "26d0f2b6af9ab0d55c2c99503a2e1876349982912c97ddd4d9a16b03f90c7e94",
+      "bytes": 1053599
+    },
+    {
+      "file": "s01_return_low.png",
+      "sha256": "7dfd5049e35482a7977db4fb0f882d461484d9f7edef5fb8bcb4cb86e64ce5e4",
+      "bytes": 851652
+    },
+    {
+      "file": "s01_return_medium.png",
+      "sha256": "cb2e7c4e0e4d11ee95115e7c0e16569714080dd145716917cd08d5593a38e150",
+      "bytes": 948960
+    }
+  ],
+  "raw_pngs_altered": false,
+  "index_images": "relative originals",
+  "self_contained_pair_pages": {
+    "docs/production/review/owner_overview_s00_closed.html": "0b67fb78bdd476f2658ff7334efaa0bc0e8797d9d17d40d3bb6a7ea1a4b2a3bc",
+    "docs/production/review/owner_overview_s00_entry.html": "133caf5eea902cc2d27332ae561d26031728e0d57a0d3e1ab52ac50e1af8f662",
+    "docs/production/review/owner_overview_s01_asleep.html": "2688bddfa01b4a9c27ec85dee4bc45703bfb1c5d2c9fa9858adb9a3c3e51f988",
+    "docs/production/review/owner_overview_s01_awakened.html": "941f1fb24adb27c84d64aaa43a841f986d16ea6e1e0ba2ecdfc17f33620bbfca",
+    "docs/production/review/owner_overview_s02_entry_cold.html": "92ef49451eb5e02e029c191c50868dd1e3d3009a61206f9fea4173f7520c3cda",
+    "docs/production/review/owner_overview_s02_star.html": "41968775ac3a2c1ec3ad18e1e308e5018a29273fc2cc1eab00fec37cbd73ef7b",
+    "docs/production/review/owner_overview_s02_hearth.html": "13a3d562eec7db3b9d4abbedd3b15604a452a40dfb9cd1d1cc7ae9bfa745ae40",
+    "docs/production/review/owner_overview_s01_return.html": "ceb070aa8902b209daf1b802e24c94ca0855b38d1b370054263523c62d5e06f6"
+  },
+  "reviewed_individually": 16,
+  "inventory_delta": [],
+  "shipping_changes": 0
+}

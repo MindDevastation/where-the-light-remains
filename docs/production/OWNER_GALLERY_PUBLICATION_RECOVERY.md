@@ -1,4 +1,10 @@
-# Owner overview publication recovery — WIP, 2026-10-08T13:52:22.852Z
+# Owner overview recovery resolved by new capture - 2026-10-21
+
+The old local PNG/HTML files did not survive workspace maintenance. A new uniquely recorded 20261021 native capture completed all sixteen views and individual review. [Current gallery](review/owner_overview.html) and [current evidence boundaries](OWNER_GALLERY_READINESS.md) supersede the unfinished publication state below. These files are new captures, not a recovery of the original 20261008 image bytes. The original account and failures remain preserved.
+
+## Original recovery note
+
+# Owner overview publication recovery - WIP, 2026-10-08T13:52:22.852Z
 
 The sixteen current native S00/S01/S02 review frames passed capture/source/DTO/dirty/private-slot guards and were individually inspected locally. Eight Low frames were reused from the bounded passing Low command in attempt5; eight Medium frames were captured by the Medium-only resume. No Low or accepted gameplay suite was replayed. A local HTML index and eight self-contained comparison pages passed original-PNG hashes, matching camera/state metadata, local link and image-count checks. This is partial review only, not full owner/style/GATE acceptance.
 

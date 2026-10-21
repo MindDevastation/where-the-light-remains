@@ -1,4 +1,20 @@
-# Current native owner gallery — work in progress, 2026-10-08
+# Current native owner gallery - STABLE_REVIEW_ONLY, 2026-10-21
+
+The interrupted owner overview is complete as a bounded review artifact: 16 original native 1280x720 frames, eight matching Low/Medium camera pairs, a linked index and eight self-contained comparison pages. Every original was individually inspected by the assistant. [Open the gallery](review/owner_overview.html).
+
+All 47 existing runtime GLBs were independently read into an initially empty owned store and matched their committed OID/size. A cache-free Godot 4.7.2 import and both native Forward+/X11 runs exited successfully. The 595 pre-existing game files remain byte-current. Raw images, materials, lights and scene geometry were not changed for this overview. The scene still displays its provisional Hub rings; the separately delivered [central mechanism model](ARCHIVE_CORE_MODEL_V1.md) is not assigned here.
+
+The initial orchestration receipt remains FAIL: its all-directory comparison found an extra empty `.recovery_mode_lock` after Medium. Both protected progression fixtures, DTO and dirty state were unchanged; both native runs had already completed all eight views with strict diagnostics and successful exits. The pinned engine source identifies the empty marker as Godot-owned. The cause of its visibility after exit in this filesystem remains unresolved. A separate finalizer rechecked exact source, payload, image, native-exit and primary/backup identities, allowing only that documented empty marker. Five synthetic negative controls reject changed primary/backup, a missing backup, unexpected data or a nonempty marker. Neither native quality run was repeated, and the marker plus original failed receipt are retained.
+
+Fresh execution count for this gallery: one clean import, one Low run, one Medium run, sixteen original frames, zero actual gameplay/E/route/save assertion executions. The finalizer and gallery seal add no native captures. This is current-scene presentation review, not full owner-style, gameplay progression or physical target-GPU acceptance. GATE-VS1 remains OPEN; S03 remains blocked. Inventory remains 26 ACCEPTED / 44 PARTIAL / 7 MISSING among 77 VS1 groups, 185 total rows. ARCH-011 still requires the owner's A/B decision.
+
+Evidence: [original directory guard failure](evidence/archive_reconstruction/owner-gallery-native-20261021-1/results.json), [scoped finalization](evidence/archive_reconstruction/owner-gallery-native-20261021-final/results.json), [individual inspection](evidence/archive_reconstruction/owner-gallery-native-20261021-final/visual-review.json), [exact gallery seal](evidence/archive_reconstruction/owner-gallery-native-20261021-final/review-seal.json), [engine marker provenance](evidence/archive_reconstruction/owner-gallery-native-20261021-final/engine-lock-provenance.json).
+
+The final 20261008 files were lost during workspace maintenance and were not recovered as original bytes. These are uniquely recorded new 20261021 captures. Main and PR #43 base/draft are unchanged. A separate automatic-review block still prevents publication of the three new model binaries; no LFS payload or dangling pointer is claimed uploaded.
+
+## Historical 2026-10-08 work record
+
+# Current native owner gallery - work in progress, 2026-10-08
 
 The bounded goal is16 original native current ArchiveMain views: eight S00/S01/S02 states in Low/Medium1280×720. Native final capture guards passed for16 frames,combining bounded Low5 PASS and Medium-only resume;individual visual review and gallery publication remain WIP. Only new test/capture tooling is authored;593 pre-existing game files remain byte-current against the corrected mount protection seal. Inventory stays26 ACCEPTED/44 PARTIAL/7 MISSING,185 rows;GATE-VS1 OPEN/S03 blocked,ARCH-011 A/B pending.
 
