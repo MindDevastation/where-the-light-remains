@@ -274,10 +274,13 @@
       "canonical_notes": "Один reusable system с tint/state",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Existing route ownership/pulses accepted; Hub strip is still a BoxMesh, no authored channel trim. Reusable S02 beam does not close this row.",
+      "finding": "Five Hub routes now share original native180-triangle bevelled core/iron-rail presentation;28 component checks and8 inspected Low/Medium native views pass. Existing controller/layout/material state preserved. Full floor/wall/curved reusable family and Hub composition remain open.",
       "evidence_paths": [
         "game/worlds/archive/common/archive_light_channel.tscn",
-        "docs/production/WING01_BEAM_STAR_ACCEPTANCE.md"
+        "docs/production/WING01_BEAM_STAR_ACCEPTANCE.md",
+        "docs/production/ARCHIVE_CHANNEL_TRIM_V1.md",
+        "docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/results.json",
+        "docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/visual_review.json"
       ]
     },
     {
@@ -1545,8 +1548,13 @@
       "canonical_notes": "",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Five route pulses/states exist, but authored channel mesh/material composition remains open.",
-      "evidence_paths": []
+      "finding": "Five existing route instances use the shared180-triangle channel skin; quiet dormant/one-active/completed-plus-next projections reviewed on Low/Medium. Existing pulse/controller unchanged; full awakening/input/route sequence and Hub style acceptance not rerun.",
+      "evidence_paths": [
+        "docs/production/ARCHIVE_CHANNEL_TRIM_V1.md",
+        "docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/results.json",
+        "docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/visual_review.json",
+        "game/worlds/archive/common/archive_light_channel.tscn"
+      ]
     },
     {
       "section": "Stage 1 — Центральная обсерватория «Пробуждение Архива»",
@@ -2980,12 +2988,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-07T16:27:29.587495+00:00",
-  "latest_delta": "Only TRIM-002 MISSING→PARTIAL; original unbound2K trim source ready. Three-orbit measured production/mount brief ready;no shipping changes.",
+  "updated_at": "2026-10-31T17:59:42.274216+00:00",
+  "latest_delta": "Bounded native ARCH-015/S01-005 Hub channel skin:180 triangles per instance,28 checks,8 inspected Low/Medium views. Both stay PARTIAL; no count change.",
   "vs1_counts": {
     "ACCEPTED": 26,
     "PARTIAL": 44,
     "MISSING": 7
   },
-  "publication_status": "TRIM source seal/latest source-only STABLE and receipt HEAD resolve from continuation_20261007.jsonl. Last integrated runtime STABLE5184c48 unchanged;ordinary Git works/private CLI LFS upload absent."
+  "publication_status": "Current channel acceptance source/remote receipt resolves from continuation_20261031.jsonl and working branch. Earlier gallery STABLE_REVIEW_ONLY8dc7ffe remains historical; central mechanism binary upload still blocked by prior automatic approval review."
 }

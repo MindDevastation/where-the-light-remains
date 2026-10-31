@@ -1,4 +1,24 @@
-# Current fanlight acceptance and next layout dependency — 2026-10-06
+# Current bounded channel presentation - 2026-10-31
+
+ARCHIVE_CHANNEL_TRIM_V1.md records the original shared 180-triangle luminous
+core/iron-rail skin now used by five existing Hub channels. Fresh cache-free
+Godot 4.7.2 import, 28 bounded geometry/state/pause/cancellation checks and eight
+individually inspected Low/Medium native views pass. The successful run reuses
+47 payloads independently retrieved in the retained first attempt; no new LFS
+binary is uploaded. Existing controller, routes, materials, lights, quality and
+save ownership are preserved. First failed fixture and correction are retained.
+
+ARCH-015/S01-005 stay PARTIAL; 26 ACCEPTED / 44 PARTIAL / 7 MISSING among 77,
+185 rows retained. Full floor/wall/curved family, Hub composition, owner style,
+audio and target GPU remain open. ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked.
+The prior sixteen-frame owner gallery remains STABLE_REVIEW_ONLY and was not
+rerun. Central-mechanism binary publication remains blocked by prior automatic
+review; generic continuation does not retry it. Main/base/draft stay unchanged.
+Current publication resolves from continuation_20261031.jsonl and remote branch.
+
+---
+
+# Historical fanlight acceptance and next layout dependency — 2026-10-06
 
 ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md records one1560tri four-surface shared
 window above five original gates:712 scoped assertions plus72 in independent

@@ -1,0 +1,247 @@
+{
+  "captures": [
+    {
+      "camera": "[X: (0.98387, 0.0, -0.178885), Y: (-0.049053, 0.961669, -0.26979), Z: (0.172029, 0.274214, 0.946157), O: (1.0, 1.624, 1.5)]",
+      "channels": [
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 1,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 2,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 3,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 4,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 5,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        }
+      ],
+      "file": "channel_dormant_low.png",
+      "light_count": 10,
+      "quiet_projection": true,
+      "size": [
+        1280,
+        720
+      ],
+      "supplemental_detail_camera": false,
+      "view": "dormant"
+    },
+    {
+      "camera": "[X: (0.98387, 0.0, -0.178885), Y: (-0.049053, 0.961669, -0.26979), Z: (0.172029, 0.274214, 0.946157), O: (1.0, 1.624, 1.5)]",
+      "channels": [
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 1,
+          "status": 1,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": true
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 2,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 3,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 4,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 5,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        }
+      ],
+      "file": "channel_active_low.png",
+      "light_count": 10,
+      "quiet_projection": true,
+      "size": [
+        1280,
+        720
+      ],
+      "supplemental_detail_camera": false,
+      "view": "active"
+    },
+    {
+      "camera": "[X: (0.98387, 0.0, -0.178885), Y: (-0.049053, 0.961669, -0.26979), Z: (0.172029, 0.274214, 0.946157), O: (1.0, 1.624, 1.5)]",
+      "channels": [
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 1,
+          "status": 2,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": true
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 2,
+          "status": 1,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": true
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 3,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 4,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 5,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        }
+      ],
+      "file": "channel_completed_low.png",
+      "light_count": 10,
+      "quiet_projection": true,
+      "size": [
+        1280,
+        720
+      ],
+      "supplemental_detail_camera": false,
+      "view": "completed"
+    },
+    {
+      "camera": "[X: (0.595228, 0.0, -0.803557), Y: (-0.567348, 0.708166, -0.420258), Z: (0.569052, 0.706046, 0.42152), O: (0.27, 0.36, -4.6)]",
+      "channels": [
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 1,
+          "status": 2,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": true
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 2,
+          "status": 1,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": true
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 3,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 4,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        },
+        {
+          "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+          "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+          "route": 5,
+          "status": 0,
+          "transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.38), O: (0.0, 0.0, -4.6)]",
+          "triangles": 180,
+          "visible": false
+        }
+      ],
+      "file": "channel_detail_low.png",
+      "light_count": 10,
+      "quiet_projection": true,
+      "size": [
+        1280,
+        720
+      ],
+      "supplemental_detail_camera": true,
+      "view": "detail"
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "render_scale": 0.75,
+  "renderer": "forward_plus",
+  "scope": "Three current player-camera quiet projections plus one supplemental channel close-up; unchanged shipping lights. No real input/awakening/save reload or target GPU acceptance.",
+  "volumetrics": false
+}

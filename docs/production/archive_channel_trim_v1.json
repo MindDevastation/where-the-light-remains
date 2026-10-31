@@ -1,5 +1,5 @@
 {
-  "status": "AUTHORED_DIAGNOSTIC_RERUN_PENDING",
+  "status": "BOUNDED_NATIVE_PRESENTATION_PASS",
   "scope": "Bounded native VFX skin for the existing ArchiveLightChannel prefab",
   "baseline_commit": "8dc7ffe618e0f95e802f310b714903d0ea21c39c",
   "baseline_controller_git_blob": "2486bd67e229b7d0e341b5f1df9e2852530a1cda",
@@ -67,5 +67,10 @@
   "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
   "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
   "controller_changed": false,
-  "shipping_layout_changed": false
+  "shipping_layout_changed": false,
+  "validation": "docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/results.json",
+  "visual_review": "docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/visual_review.json",
+  "bounded_component_checks": 28,
+  "native_views": 8,
+  "full_asset_classification": "PARTIAL"
 }

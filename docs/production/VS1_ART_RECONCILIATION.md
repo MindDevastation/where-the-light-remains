@@ -1,4 +1,24 @@
-# Current TRIM-002 source and measured integration handoff — 2026-10-07
+# Current bounded channel presentation - 2026-10-31
+
+ARCHIVE_CHANNEL_TRIM_V1.md records the original shared 180-triangle luminous
+core/iron-rail skin now used by five existing Hub channels. Fresh cache-free
+Godot 4.7.2 import, 28 bounded geometry/state/pause/cancellation checks and eight
+individually inspected Low/Medium native views pass. The successful run reuses
+47 payloads independently retrieved in the retained first attempt; no new LFS
+binary is uploaded. Existing controller, routes, materials, lights, quality and
+save ownership are preserved. First failed fixture and correction are retained.
+
+ARCH-015/S01-005 stay PARTIAL; 26 ACCEPTED / 44 PARTIAL / 7 MISSING among 77,
+185 rows retained. Full floor/wall/curved family, Hub composition, owner style,
+audio and target GPU remain open. ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked.
+The prior sixteen-frame owner gallery remains STABLE_REVIEW_ONLY and was not
+rerun. Central-mechanism binary publication remains blocked by prior automatic
+review; generic continuation does not retry it. Main/base/draft stay unchanged.
+Current publication resolves from continuation_20261031.jsonl and remote branch.
+
+---
+
+# Historical TRIM-002 source and measured integration handoff — 2026-10-07
 
 STONE_TRIM_SOURCE_READINESS.md: separate original2048 trim/3 PBR maps/editable
 shared native master, five guarded carved regions at1024px/m. Fresh final
@@ -65,7 +85,7 @@ recorded in evidence/checkpoints/continuation_20261007.jsonl.
 | ARCH-012 | PARTIAL | Балюстрада / railing; S00 shared straight side guards and shorter crosswise guard/corner assembly accepted in original bodies; reusable broader corner/Hub/future coverage remains open. | game/worlds/archive/archive_main.tscn, game/worlds/archive/archive_prologue.tscn, docs/production/S00_APPROACH_ACCEPTANCE.md |
 | ARCH-013 | MISSING | Ниша / alcove / reveal recess; No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets. | game/worlds/archive/archive_main.tscn, game/worlds/archive/archive_prologue.tscn |
 | ARCH-014 | PARTIAL | Дверь/ворота крыла; Original shared3596tri timber/iron/brass mesh and five state-owned instances pass bounded local acceptance. Full per-route emblem/light and Hub composition remain open; gate publication resolved at3d81acb with explicit owner authorization; subsequent lighting and fanlight coverage does not close full route emblems/composition. | docs/production/ARCHIVE_WING_GATE_ACCEPTANCE.md, docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/results.json, game/worlds/archive/common/archive_gate.tscn |
-| ARCH-015 | PARTIAL | Световой канал пола/стены; Existing route ownership/pulses accepted; Hub strip is still a BoxMesh, no authored channel trim. Reusable S02 beam does not close this row. | game/worlds/archive/common/archive_light_channel.tscn, docs/production/WING01_BEAM_STAR_ACCEPTANCE.md |
+| ARCH-015 | PARTIAL | Световой канал пола/стены; Five Hub routes now share original native180-triangle bevelled core/iron-rail presentation;28 component checks and8 inspected Low/Medium native views pass. Existing controller/layout/material state preserved. Full floor/wall/curved reusable family and Hub composition remain open. | game/worlds/archive/common/archive_light_channel.tscn, docs/production/WING01_BEAM_STAR_ACCEPTANCE.md, docs/production/ARCHIVE_CHANNEL_TRIM_V1.md, docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/results.json, docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/visual_review.json |
 | ARCH-016 | ACCEPTED | Коридорный переход / threshold; Accepted corridor/threshold assembly, exact shipping placement; no new level or collision redesign. | game/worlds/archive/wing01_corridor_presentation.tscn |
 | ARCH-017 | MISSING | Окружающий terrain / distant mountains-water silhouette; No corresponding production shell/portal/rotunda/window/stair/railing/recess/backdrop family; graybox and concept images are not assets. | game/worlds/archive/archive_main.tscn, game/worlds/archive/archive_prologue.tscn |
 | ARCH-018 | ACCEPTED | Внешние ступени/дорожка к входу; VS1 S00 level path is authored production geometry with original flat collision and camera route; one same master reserved for S15, no S15 gameplay/dawn acceptance. | game/worlds/archive/archive_main.tscn, game/worlds/archive/archive_prologue.tscn, docs/production/S00_APPROACH_ACCEPTANCE.md |
@@ -119,7 +139,7 @@ recorded in evidence/checkpoints/continuation_20261007.jsonl.
 | S01-002 | ACCEPTED | Pickup lens; Original accepted pickup lens/socket and existing paths/targets/save projection. | docs/production/S01_STARTING_LENS_ACCEPTANCE.md |
 | S01-003 | ACCEPTED | Lens socket / missing part indicator; Original accepted pickup lens/socket and existing paths/targets/save projection. | docs/production/S01_STARTING_LENS_ACCEPTANCE.md |
 | S01-004 | PARTIAL | Five wing gates + dormant/active states; Original shared3596tri timber/iron/brass mesh and five state-owned instances pass bounded local acceptance. Full per-route emblem/light and Hub composition remain open; gate publication resolved at3d81acb with explicit owner authorization; subsequent lighting and fanlight coverage does not close full route emblems/composition. | docs/production/ARCHIVE_WING_GATE_ACCEPTANCE.md, docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/results.json |
-| S01-005 | PARTIAL | Five hub light channels + one active route; Five route pulses/states exist, but authored channel mesh/material composition remains open. |  |
+| S01-005 | PARTIAL | Five hub light channels + one active route; Five existing route instances use the shared180-triangle channel skin; quiet dormant/one-active/completed-plus-next projections reviewed on Low/Medium. Existing pulse/controller unchanged; full awakening/input/route sequence and Hub style acceptance not rerun. | docs/production/ARCHIVE_CHANNEL_TRIM_V1.md, docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/results.json, docs/production/evidence/archive_reconstruction/channel-trim-native-20261031-2/visual_review.json, game/worlds/archive/common/archive_light_channel.tscn |
 | S01-006 | PARTIAL | Hub sleeping/awakened lighting states; Bounded current practical/state acceptance:654 assertions,28 inspected Low/Medium views; original one-source S00, four shared interior Hub fixtures/core awakening, unchanged S02 cold/hearth projection. Full exterior/rotunda/style/gallery/physical target GPU remains PARTIAL. | docs/production/ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md |
 | S02-001 | ACCEPTED | Three concentric optical rings; Three original optical rings/five-position focus carrier accepted and wired to actual existing puzzle; no remodel justified. | docs/production/WING01_OPTICS_SAMPLE.md |
 | S02-002 | ACCEPTED | Light source/emitter and star target; Original emitter, reusable beam and quiet canonical Star target accepted; room gate remains open. | docs/production/WING01_HEARTH_EMITTER.md, docs/production/WING01_BEAM_STAR_ACCEPTANCE.md |

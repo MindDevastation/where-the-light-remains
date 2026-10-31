@@ -1,0 +1,56 @@
+{
+  "status": "PASS_BOUNDED_VISUAL_REVIEW",
+  "utc": "2026-10-31T17:58:16.352961+00:00",
+  "method": "All eight original 1280x720 native PNGs individually opened and inspected. No synthetic images or image postprocessing.",
+  "images": [
+    {
+      "file": "channel_dormant_low.png",
+      "sha256": "5f58bfbe4bf843a5d1156403d7fe8dca42e7bd58ab1551a4df4c714c4b8c8c19",
+      "quality": "low",
+      "observation": "No channel core or rail remains visible in the quiet sleeping projection."
+    },
+    {
+      "file": "channel_active_low.png",
+      "sha256": "8faa48e3b80ff79aa584f49be6a431f35e891021af6d8dd5928393f68f772dca",
+      "quality": "low",
+      "observation": "One cyan route is readable under current lighting; the central mechanism partially occludes its near end in this player view."
+    },
+    {
+      "file": "channel_completed_low.png",
+      "sha256": "09bb1853cb5784d7b44f7056e76f8674a58e12e652da034af62c7871f2ea4a8b",
+      "quality": "low",
+      "observation": "Wing I is gold and Wing II cyan; the other three remain hidden."
+    },
+    {
+      "file": "channel_detail_low.png",
+      "sha256": "06f8b15ab67e629d9d39e945658dd860f7e46b35bae02e566bedf1e1ff94f386",
+      "quality": "low",
+      "observation": "Supplemental close-up shows continuous dark iron edging without an exposed gap or visible z-fighting. Subtle 3 mm bevel is a geometry detail, not a separately lit feature of the unshaded core."
+    },
+    {
+      "file": "channel_dormant_medium.png",
+      "sha256": "5ca104cc71e72998ae5c242519b84962aa1efc17daa9e8094234c8c123605c31",
+      "quality": "medium",
+      "observation": "No channel core or rail remains visible in the quiet sleeping projection."
+    },
+    {
+      "file": "channel_active_medium.png",
+      "sha256": "859273aef0f913c8ea619ac22eaa12ee50939b51fd73f10e02c0cea6c5f86115",
+      "quality": "medium",
+      "observation": "One cyan route is readable under current lighting; the central mechanism partially occludes its near end in this player view."
+    },
+    {
+      "file": "channel_completed_medium.png",
+      "sha256": "5e49f562d083b44ced1f0743a94c0f509b28ed687fe74dbe4f0d01d1d26619d2",
+      "quality": "medium",
+      "observation": "Wing I is gold and Wing II cyan; the other three remain hidden."
+    },
+    {
+      "file": "channel_detail_medium.png",
+      "sha256": "a31e814973934941c55d9802a9b5efc9778a9ac9fd05a5cd6bee77c3b1dfdfa9",
+      "quality": "medium",
+      "observation": "Supplemental close-up shows continuous dark iron edging without an exposed gap or visible z-fighting. Subtle 3 mm bevel is a geometry detail, not a separately lit feature of the unshaded core."
+    }
+  ],
+  "limits": "Current software Forward+ presentation only. Medium used render scale 1.0, Low 0.75; both actual profiles had glow and volumetrics off. No owner style acceptance, real E/awakening/route/save-reload replay or target GPU acceptance."
+}
