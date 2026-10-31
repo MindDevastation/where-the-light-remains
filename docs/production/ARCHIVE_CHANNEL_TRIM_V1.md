@@ -1,4 +1,4 @@
-# Archive channel trim v1 - source brief
+# Archive channel trim v1 - bounded native presentation
 
 The current ARCH-015/S01-005 route presentation still uses a plain BoxMesh. This bounded continuation adds an original native VFX skin to the existing reusable prefab: a bevelled luminous insert and two narrow dark-iron rails inside the original 0.18 by 0.03 by 4.7 m envelope. The original active/completed materials, five route placements and existing local Tween remain authoritative.
 
@@ -6,4 +6,4 @@ The measured baseline is `8dc7ffe618e0f95e802f310b714903d0ea21c39c`. The compone
 
 The source-native mesh format follows the accepted immutable ArrayMesh beam and Hearth VFX pattern. This is a new channel presentation source, not a conversion or publication of the blocked Archive central mechanism binaries. Text resources and existing shared material families are used. The per-channel candidate ceiling is 200 triangles; this does not change scene-level budgets.
 
-The exact execution contract is `archive_channel_trim_v1.json`. Generation, import, actual native rendering and bounded state/pause/cancellation checks are pending. This brief is WIP, not an acceptance receipt. ARCH-015/S01-005 stay PARTIAL and the inventory remains unchanged. GATE-VS1 is OPEN; S03 remains blocked.
+The exact execution contract is `archive_channel_trim_v1.json`. The offline generator now authors a 60-triangle luminous core and a 120-triangle paired rail resource, shared by all five shipping instances. Each extrusion has closed bevelled ends, metre-scale UVs and explicit normals/tangents. Rails reuse the existing textured dark-iron material and cast no new shadows. First clean import passed. The first component fixture failed its overly strict packed-tangent tolerance and immediate reparent timing assumption; diagnostic logs and measured corrections are retained. The revised component and actual Low/Medium rendering checks are pending. This remains WIP, not an acceptance receipt. ARCH-015/S01-005 stay PARTIAL and the inventory remains unchanged. GATE-VS1 is OPEN; S03 remains blocked.

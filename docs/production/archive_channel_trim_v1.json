@@ -1,26 +1,71 @@
 {
-  "status": "BRIEF_ONLY_NOT_VALIDATED",
+  "status": "AUTHORED_DIAGNOSTIC_RERUN_PENDING",
   "scope": "Bounded native VFX skin for the existing ArchiveLightChannel prefab",
   "baseline_commit": "8dc7ffe618e0f95e802f310b714903d0ea21c39c",
   "baseline_controller_git_blob": "2486bd67e229b7d0e341b5f1df9e2852530a1cda",
   "baseline_prefab_git_blob": "2e62c8ec25d31bc3bd55f8ba041dff6830833517",
-  "original_envelope_m": [0.18, 0.03, 4.7],
-  "visual_translation_m": [0, 0.02, 0],
-  "core_size_m": [0.12, 0.03, 4.7],
+  "original_envelope_m": [
+    0.18,
+    0.03,
+    4.7
+  ],
+  "visual_translation_m": [
+    0,
+    0.02,
+    0
+  ],
+  "core_size_m": [
+    0.12,
+    0.03,
+    4.7
+  ],
   "core_bevel_m": 0.003,
-  "rail_size_m": [0.03, 0.028, 4.7],
-  "rail_center_x_m": [-0.075, 0.075],
+  "rail_size_m": [
+    0.03,
+    0.028,
+    4.7
+  ],
+  "rail_center_x_m": [
+    -0.075,
+    0.075
+  ],
   "rail_bevel_m": 0.003,
   "end_bevel_m": 0.002,
   "native_triangle_ceiling_per_channel": 200,
   "frame_material": "res://art/materials/m_dark_iron.tres",
-  "active_color": [0.13, 0.70, 0.94, 1.0],
-  "completed_color": [1.0, 0.62, 0.16, 1.0],
+  "active_color": [
+    0.13,
+    0.7,
+    0.94,
+    1.0
+  ],
+  "completed_color": [
+    1.0,
+    0.62,
+    0.16,
+    1.0
+  ],
   "emission_multiplier": 2.5,
   "pulse_duration_seconds": 0.7,
   "route_instances": 5,
   "route_scale_z": 1.38,
   "format_reason": "Original immutable Godot ArrayMeshes follow the already accepted beam/flame VFX source pattern; no blocked model payload is converted or republished",
-  "unchanged_contracts": ["controller script", "five placements", "pivot", "pulse endpoints", "state materials", "save ownership", "input", "collision", "lights", "global quality policy"],
-  "acceptance_limits": "Requires geometry/material/state/pause/cancellation checks and native Low/Medium review. No full ARCH-015, owner-style, target-GPU or VS1 acceptance implied."
+  "unchanged_contracts": [
+    "controller script",
+    "five placements",
+    "pivot",
+    "pulse endpoints",
+    "state materials",
+    "save ownership",
+    "input",
+    "collision",
+    "lights",
+    "global quality policy"
+  ],
+  "acceptance_limits": "Requires geometry/material/state/pause/cancellation checks and native Low/Medium review. No full ARCH-015, owner-style, target-GPU or VS1 acceptance implied.",
+  "authored_native_triangles_per_channel": 180,
+  "core_mesh": "res://art/vfx/archive_channel_core_mesh.tres",
+  "rails_mesh": "res://art/vfx/archive_channel_rails_mesh.tres",
+  "controller_changed": false,
+  "shipping_layout_changed": false
 }
