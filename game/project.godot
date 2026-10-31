@@ -17,7 +17,7 @@ window/size/window_width_override=1280
 window/size/window_height_override=720
 
 [gui]
-theme/custom_font="res://art/fonts/archive_ui_font.tres"
+theme/custom="res://art/fonts/archive_ui_theme.tres"
 
 [rendering]
 renderer/rendering_method="forward_plus"
