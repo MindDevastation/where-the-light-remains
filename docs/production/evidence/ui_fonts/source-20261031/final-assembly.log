@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: All imported fonts must disable system fallback
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _initialize (/workspace/scratch/0e91a73a58d2/repo/tools/create_archive_ui_font.gd:14)

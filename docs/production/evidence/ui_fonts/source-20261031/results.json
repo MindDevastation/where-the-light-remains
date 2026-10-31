@@ -1,0 +1,35 @@
+{
+  "status": "SOURCE_COVERAGE_AND_NATIVE_RESOURCE_ONLY",
+  "utc": "2026-10-31T19:31:13.084472+00:00",
+  "source_checkpoint": "2fc956acc7a9184b4c67f691f8074dcad218c2bc",
+  "source_strings": 105,
+  "unique_codepoints": 165,
+  "native_font_assembly": "PASS after private cache-free import",
+  "prior_cache_diagnostic": "final-assembly.log FAIL is retained; source import options did not change in the resolution.",
+  "fallback_probes": [
+    {
+      "family": "notosanssymbols",
+      "file": "NotoSansSymbols[wght].ttf",
+      "bytes": 372684,
+      "arrow_2192": true,
+      "check_2713": false,
+      "sha256": "f7e7e04b4a24b6c78893d50cbfd2b2f6cae49617ab047bfef668d252adb128f7"
+    },
+    {
+      "family": "notosansmath",
+      "file": "NotoSansMath-Regular.ttf",
+      "bytes": 1015396,
+      "arrow_2192": true,
+      "check_2713": true,
+      "sha256": "3f495fe933c06786e4d5f6d86b8ee70b6753a68ee3b9d87528726de0f6e2c47d"
+    }
+  ],
+  "unused_noto_sans_probe": "U+2192 absent; never installed in published source",
+  "ui_layout_and_pack_validation": "PENDING",
+  "earlier_minimal_graphical_capability": "PASS on initial two-file chain; not final three-file acceptance",
+  "evidence_hashes": {
+    "final-assembly.log": "a1d417e5f00b31d32e7d617d0b749350cbe9c8cd7ad0763ae118910a518bcabc",
+    "final-clean-controlled-import.log": "211b0f718231f4c648d90b0dacaddb1e942eba901ad7d1c02e256a778d504bfc",
+    "final-ready-assembly.log": "5792e092cc261cd975ea5d7f29e6c6df29c5383fc535391522bb7f04a13adb77"
+  }
+}
