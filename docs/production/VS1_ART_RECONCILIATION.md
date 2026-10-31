@@ -1,4 +1,28 @@
-# Current bounded channel presentation - 2026-10-31
+# Current bundled Cyrillic UI font acceptance - 2026-10-31
+
+UI_CYRILLIC_FONT_V1.md records Open Sans600/100 and two explicit bundled Noto
+Symbols fallbacks, exact upstream files/full notices and native PCK readback.
+Fresh final native-20261031-3: cache-free Godot4.7.2 import,627 checks at each of
+1280x720,1600x900,1920x1080 and36 individually inspected original frames pass.
+No earlier617-check attempts or old accepted suites are aggregated. Native
+captions prove inherited/explicit font raster equality. A42px first-row Settings
+scroll was fixed with guarded deferred focus and reset; early close/reopen pass.
+
+Only FONT-001 is promoted:27 ACCEPTED /43 PARTIAL /7 MISSING among77,185 rows
+retained. FONT-002 and full UI style remain PARTIAL. Three existing game files
+change for font bootstrap/settings focus;598 other baseline files match exactly.
+Geometry, narrative, routes, clocks, materials and save schema are preserved.
+Protected synthetic slots and DTO/dirty pass. Software Vulkan is not a platform
+release, actual full gameplay/input/failure/save-reload or target-GPU acceptance.
+
+ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Prior channel and sixteen-frame
+owner-gallery acceptance remains separate. Central mechanism binary publication
+still has its prior automatic-review blocker; no retry or format conversion.
+Source/remote acknowledgement resolves from continuation_fonts_20261031.jsonl.
+
+---
+
+# Historical bounded channel presentation - 2026-10-31
 
 ARCHIVE_CHANNEL_TRIM_V1.md records the original shared 180-triangle luminous
 core/iron-rail skin now used by five existing Hub channels. Fresh cache-free
@@ -120,10 +144,10 @@ recorded in evidence/checkpoints/continuation_20261007.jsonl.
 | UI-001 | ACCEPTED | Minimal reticle / focus dot; Russian/Cyrillic runtime reticle, interaction and hint widgets validated; retain accepted behavior. | docs/production/IMPLEMENTATION_PLAN.md |
 | UI-002 | ACCEPTED | Interaction prompt component [E]/[R]; Russian/Cyrillic runtime reticle, interaction and hint widgets validated; retain accepted behavior. | docs/production/IMPLEMENTATION_PLAN.md |
 | UI-003 | ACCEPTED | Hint/world-space text component; Russian/Cyrillic runtime reticle, interaction and hint widgets validated; retain accepted behavior. | docs/production/IMPLEMENTATION_PLAN.md |
-| UI-004 | PARTIAL | Fragment presentation card / world-space panel; Fragment card and menu/pause/settings ship functional accepted widgets; final v2 presentation/style pass remains open. | game/gameplay/collectibles/fragment_presenter.tscn, docs/production/IMPLEMENTATION_PLAN.md |
-| UI-005 | PARTIAL | Main/Pause/Settings/Postgame screens; Fragment card and menu/pause/settings ship functional accepted widgets; final v2 presentation/style pass remains open. | game/gameplay/collectibles/fragment_presenter.tscn, docs/production/IMPLEMENTATION_PLAN.md |
-| FONT-001 | PARTIAL | System UI Cyrillic font family; Cyrillic runtime uses engine/system fallback; no tracked licensed authored font files/redistribution proof for the full requested families. |  |
-| FONT-002 | PARTIAL | Personal/handwritten Cyrillic accent font; Cyrillic runtime uses engine/system fallback; no tracked licensed authored font files/redistribution proof for the full requested families. |  |
+| UI-004 | PARTIAL | Fragment presentation card / world-space panel; Existing fragment/menu/pause/settings widgets have bounded FONT-001 family/fallback/readability coverage and a corrected first-row Settings focus/scroll. Full v2 UI presentation/style pass remains open. | game/gameplay/collectibles/fragment_presenter.tscn, docs/production/IMPLEMENTATION_PLAN.md, docs/production/UI_CYRILLIC_FONT_V1.md |
+| UI-005 | PARTIAL | Main/Pause/Settings/Postgame screens; Existing fragment/menu/pause/settings widgets have bounded FONT-001 family/fallback/readability coverage and a corrected first-row Settings focus/scroll. Full v2 UI presentation/style pass remains open. | game/gameplay/collectibles/fragment_presenter.tscn, docs/production/IMPLEMENTATION_PLAN.md, docs/production/UI_CYRILLIC_FONT_V1.md |
+| FONT-001 | ACCEPTED | System UI Cyrillic font family; Bundled unmodified Open Sans variable600/100 plus two Noto Symbols fallback families, pinned upstream bytes/full OFL notices and resource metadata. Cache-free Godot4.7.2 import, isolated native PCK readback and627 checks at each of three supported resolutions pass;36 originals individually inspected, including pixel-identical inherited/explicit Label3D captions. Font-source/readability scope only; full UI style/platform release remains separate. | docs/production/UI_CYRILLIC_FONT_V1.md, docs/production/evidence/ui_fonts/native-20261031-3/results.json, docs/production/evidence/ui_fonts/native-20261031-3/visual_review.json, docs/production/evidence/ui_fonts/native-20261031-3/pack-readback.json, game/art/fonts/provenance.json |
+| FONT-002 | PARTIAL | Personal/handwritten Cyrillic accent font; Dedicated personal/handwritten Cyrillic accent family remains absent. The accepted FONT-001 Open Sans/symbol fallback bundle is the readable UI baseline and does not close this accent/style row. | docs/production/UI_CYRILLIC_FONT_V1.md |
 | CAM-001 | ACCEPTED | First-person camera rig; Persistent first-person rig accepted; no reimplementation. | game/core/player/player.tscn |
 | CAM-002 | PARTIAL | Cinematic rail/Path3D camera; S00 timed rail/camera handoff/pause accepted; generic later paths and final exterior composition remain open. | game/worlds/archive/archive_prologue.gd |
 | SAVE-ART-001 | ACCEPTED | World-space save/checkpoint feedback style; Existing subtle checkpoint notice accepted; no new persistent state or noisy popup. | game/core/ui/checkpoint_notice.gd |

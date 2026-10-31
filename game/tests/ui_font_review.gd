@@ -87,7 +87,7 @@ func _inspect(root: Node) -> int:
 
 func _capture(name: String, root: Node, specimen: bool = false) -> void:
     for frame in 4: await get_tree().process_frame
-    var controls := _inspect(root)
+    var controls := _inspect(root) if root is Control else 0
     await RenderingServer.frame_post_draw
     var image := get_viewport().get_texture().get_image()
     _check(image.get_size() == get_window().size, "actual framebuffer matches window")
@@ -113,10 +113,24 @@ func _run() -> void:
     await _capture("new_game_confirmation", boot.menu)
     boot.confirm_panel.hide()
     boot.settings.open()
-    await _capture("settings_top", boot.settings)
     var scroll := boot.settings.find_children("*", "ScrollContainer", true, false)[0] as ScrollContainer
+    for frame in 4: await get_tree().process_frame
+    _check(scroll.scroll_vertical == 0 and scroll.get_global_rect().encloses(boot.settings.fields["resolution"].get_global_rect()),
+        "first settings field fully visible after normal open/focus")
+    var first_label := scroll.find_children("*", "Label", true, false)[0] as Label
+    _check(scroll.get_global_rect().encloses(first_label.get_global_rect()) and boot.settings.fields["resolution"].has_focus(),
+        "first setting label and focused control visible")
+    await _capture("settings_top", boot.settings)
     scroll.scroll_vertical = int(scroll.get_v_scroll_bar().max_value)
     await _capture("settings_bottom", boot.settings)
+    boot.settings.close()
+    boot.settings.open()
+    boot.settings.close()
+    for frame in 2: await get_tree().process_frame
+    _check(not boot.settings.fields["resolution"].has_focus(), "closed menu rejects stale deferred focus")
+    boot.settings.open()
+    for frame in 4: await get_tree().process_frame
+    _check(scroll.scroll_vertical == 0 and boot.settings.fields["resolution"].has_focus(), "reopen resets first-row visibility and focus")
     boot.settings.close()
     boot.menu.hide()
     var pause := boot.game.get_node("UILayer/PauseMenu") as PauseMenu
@@ -154,6 +168,26 @@ func _run() -> void:
     for codepoint: int in [0x2192, 0x23ce, 0x2713, 0x231b, 0x25a0]: specimen.text += String.chr(codepoint) + " "
     overlay.add_child(specimen)
     await _capture("font_specimen", specimen, true)
+    specimen.hide()
+    var label_3d := Label3D.new()
+    label_3d.text = "Крыло I\nКрыло II\nКрыло III\nКрыло IV\nКрыло V"
+    label_3d.font_size = 38
+    label_3d.pixel_size = 0.005
+    label_3d.billboard = BaseMaterial3D.BILLBOARD_ENABLED
+    add_child(label_3d)
+    var camera := Camera3D.new()
+    camera.projection = Camera3D.PROJECTION_ORTHOGONAL
+    camera.size = 3.0
+    camera.position = Vector3(0, 0, 3)
+    add_child(camera)
+    camera.look_at(Vector3.ZERO)
+    camera.make_current()
+    _check(label_3d.font == null, "world caption inherits project font without explicit override")
+    await _capture("world_labels_inherited", label_3d, true)
+    var inherited := get_viewport().get_texture().get_image().get_data()
+    label_3d.font = FONT
+    await _capture("world_labels_explicit", label_3d, true)
+    _check(inherited == get_viewport().get_texture().get_image().get_data(), "Label3D inherited and explicit bundled font rasterize identically")
     _check(GameState.capture_save().to_dict() == before and SaveManager.get("_dirty") == dirty, "UI font fixtures preserve DTO/dirty flag")
     var file := FileAccess.open(_output.path_join("captures_%dx%d.json" % [get_window().size.x, get_window().size.y]), FileAccess.WRITE)
     file.store_string(JSON.stringify({"status": "PASS_CAPTURE_ONLY" if _failures == 0 else "FAIL", "checks": _checks,
@@ -164,5 +198,5 @@ func _run() -> void:
     overlay.queue_free()
     boot.queue_free()
     await get_tree().process_frame
-    print("UI_FONT_REVIEW ", "CAPTURED" if _failures == 0 else "FAIL", ": ", _checks, " checks; ten native views")
+    print("UI_FONT_REVIEW ", "CAPTURED" if _failures == 0 else "FAIL", ": ", _checks, " checks; twelve native views")
     get_tree().quit(0 if _failures == 0 else 1)

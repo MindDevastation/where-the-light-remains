@@ -1001,10 +1001,11 @@
       "canonical_notes": "Sigil + couplet + feeling",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Fragment card and menu/pause/settings ship functional accepted widgets; final v2 presentation/style pass remains open.",
+      "finding": "Existing fragment/menu/pause/settings widgets have bounded FONT-001 family/fallback/readability coverage and a corrected first-row Settings focus/scroll. Full v2 UI presentation/style pass remains open.",
       "evidence_paths": [
         "game/gameplay/collectibles/fragment_presenter.tscn",
-        "docs/production/IMPLEMENTATION_PLAN.md"
+        "docs/production/IMPLEMENTATION_PLAN.md",
+        "docs/production/UI_CYRILLIC_FONT_V1.md"
       ]
     },
     {
@@ -1019,10 +1020,11 @@
       "canonical_notes": "Same style system",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Fragment card and menu/pause/settings ship functional accepted widgets; final v2 presentation/style pass remains open.",
+      "finding": "Existing fragment/menu/pause/settings widgets have bounded FONT-001 family/fallback/readability coverage and a corrected first-row Settings focus/scroll. Full v2 UI presentation/style pass remains open.",
       "evidence_paths": [
         "game/gameplay/collectibles/fragment_presenter.tscn",
-        "docs/production/IMPLEMENTATION_PLAN.md"
+        "docs/production/IMPLEMENTATION_PLAN.md",
+        "docs/production/UI_CYRILLIC_FONT_V1.md"
       ]
     },
     {
@@ -1066,9 +1068,15 @@
       "variants": "1 family + fallback",
       "canonical_notes": "License must allow redistribution; font file not embedded in documentation",
       "required_for_vs1": true,
-      "status": "PARTIAL",
-      "finding": "Cyrillic runtime uses engine/system fallback; no tracked licensed authored font files/redistribution proof for the full requested families.",
-      "evidence_paths": []
+      "status": "ACCEPTED",
+      "finding": "Bundled unmodified Open Sans variable600/100 plus two Noto Symbols fallback families, pinned upstream bytes/full OFL notices and resource metadata. Cache-free Godot4.7.2 import, isolated native PCK readback and627 checks at each of three supported resolutions pass;36 originals individually inspected, including pixel-identical inherited/explicit Label3D captions. Font-source/readability scope only; full UI style/platform release remains separate.",
+      "evidence_paths": [
+        "docs/production/UI_CYRILLIC_FONT_V1.md",
+        "docs/production/evidence/ui_fonts/native-20261031-3/results.json",
+        "docs/production/evidence/ui_fonts/native-20261031-3/visual_review.json",
+        "docs/production/evidence/ui_fonts/native-20261031-3/pack-readback.json",
+        "game/art/fonts/provenance.json"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -1082,8 +1090,10 @@
       "canonical_notes": "Use sparingly; high readability",
       "required_for_vs1": true,
       "status": "PARTIAL",
-      "finding": "Cyrillic runtime uses engine/system fallback; no tracked licensed authored font files/redistribution proof for the full requested families.",
-      "evidence_paths": []
+      "finding": "Dedicated personal/handwritten Cyrillic accent family remains absent. The accepted FONT-001 Open Sans/symbol fallback bundle is the readable UI baseline and does not close this accent/style row.",
+      "evidence_paths": [
+        "docs/production/UI_CYRILLIC_FONT_V1.md"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -2988,12 +2998,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-31T17:59:42.274216+00:00",
-  "latest_delta": "Bounded native ARCH-015/S01-005 Hub channel skin:180 triangles per instance,28 checks,8 inspected Low/Medium views. Both stay PARTIAL; no count change.",
+  "updated_at": "2026-10-31T19:58:40.629231+00:00",
+  "latest_delta": "Only FONT-001 PARTIAL to ACCEPTED for bundled family/fallback/licensed source and current native readability. Settings initial row/focus corrected. Full UI style, FONT-002, ARCH/VS1 unchanged.",
   "vs1_counts": {
-    "ACCEPTED": 26,
-    "PARTIAL": 44,
+    "ACCEPTED": 27,
+    "PARTIAL": 43,
     "MISSING": 7
   },
-  "publication_status": "Current channel acceptance source/remote receipt resolves from continuation_20261031.jsonl and working branch. Earlier gallery STABLE_REVIEW_ONLY8dc7ffe remains historical; central mechanism binary upload still blocked by prior automatic approval review."
+  "publication_status": "Final font source and remote acknowledgement resolve from continuation_fonts_20261031.jsonl and current working branch. Prior channel/gallery evidence remains historical. Central-mechanism binary upload not retried."
 }

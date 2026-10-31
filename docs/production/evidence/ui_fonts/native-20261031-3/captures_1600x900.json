@@ -1,0 +1,143 @@
+{
+  "captures": [
+    {
+      "file": "main_menu_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "main_menu",
+      "visible_text_controls": 6
+    },
+    {
+      "file": "new_game_confirmation_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "new_game_confirmation",
+      "visible_text_controls": 4
+    },
+    {
+      "file": "settings_top_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "settings_top",
+      "visible_text_controls": 26
+    },
+    {
+      "file": "settings_bottom_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "settings_bottom",
+      "visible_text_controls": 26
+    },
+    {
+      "file": "pause_menu_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "pause_menu",
+      "visible_text_controls": 4
+    },
+    {
+      "file": "star_fragment_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "star_fragment",
+      "visible_text_controls": 4
+    },
+    {
+      "file": "hearth_fragment_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "hearth_fragment",
+      "visible_text_controls": 4
+    },
+    {
+      "file": "checkpoint_notice_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "checkpoint_notice",
+      "visible_text_controls": 2
+    },
+    {
+      "file": "exit_failure_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": false,
+      "view": "exit_failure",
+      "visible_text_controls": 3
+    },
+    {
+      "file": "font_specimen_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": true,
+      "view": "font_specimen",
+      "visible_text_controls": 1
+    },
+    {
+      "file": "world_labels_inherited_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": true,
+      "view": "world_labels_inherited",
+      "visible_text_controls": 0
+    },
+    {
+      "file": "world_labels_explicit_1600x900.png",
+      "scope": "Existing UI API/pose fixture, not actual keyboard/mouse/gameplay/save action",
+      "size": [
+        1600,
+        900
+      ],
+      "synthetic_font_specimen": true,
+      "view": "world_labels_explicit",
+      "visible_text_controls": 0
+    }
+  ],
+  "checks": 627,
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "failures": 0,
+  "font": "res://art/fonts/archive_ui_font.tres",
+  "renderer": "forward_plus",
+  "scope": "Current UI font binding/glyph/layout fixtures; no real input, persistence failure, route or full visual acceptance",
+  "status": "PASS_CAPTURE_ONLY"
+}

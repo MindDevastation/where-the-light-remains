@@ -1,0 +1,224 @@
+{
+  "status": "PASS_BOUNDED_UI_VISUAL_REVIEW",
+  "utc": "2026-10-31T19:56:49.298835+00:00",
+  "method": "All36 original native PNGs individually opened at1280x720,1600x900,1920x1080. No image postprocessing.",
+  "images": [
+    {
+      "file": "main_menu_1280x720.png",
+      "sha256": "408c7d8871a08af30671e8b091ca14d085e8dd4820a6e660d209eb30bc242384",
+      "view": "main_menu",
+      "observation": "Title, wrapped synthetic corrupt-save fixture notice and button text are readable and contained. The save warning is a test fixture, not user save corruption."
+    },
+    {
+      "file": "new_game_confirmation_1280x720.png",
+      "sha256": "445e72ff4c4a9acff187f546e6a26f7586dd11eae35e5a1e36fc60c495f0b2fa",
+      "view": "new_game_confirmation",
+      "observation": "Confirmation text and buttons fit; no new-game action executed."
+    },
+    {
+      "file": "settings_top_1280x720.png",
+      "sha256": "1044851f0dfb0888c755e7ce7565dbd8ef80b59be5e8f2121b2e1b6f2d03fe4f",
+      "view": "settings_top",
+      "observation": "First label and resolution field fully visible, focused and at scroll zero after the production fix."
+    },
+    {
+      "file": "settings_bottom_1280x720.png",
+      "sha256": "461f74ff8a8d062133492fb84a709e1549070e5b35a122a5da252dd087eb152b",
+      "view": "settings_bottom",
+      "observation": "Lower settings and action buttons readable within the intended scroll view. Partial rows at the scroll boundary are intentional."
+    },
+    {
+      "file": "pause_menu_1280x720.png",
+      "sha256": "c8fdc1c5c65262736944a7d458110596b9901e8e461975b875288c48f0d8f6ab",
+      "view": "pause_menu",
+      "observation": "Pause text/buttons fit; visual pose only, not actual pause-key behavior."
+    },
+    {
+      "file": "star_fragment_1280x720.png",
+      "sha256": "5b85e5c8046c1df1a4a5a28f0c3c1e224e4d74ac0f6c650ee2ec83722b9a9f54",
+      "view": "star_fragment",
+      "observation": "Canonical Star copy and glyph readable without clipping or replacement boxes."
+    },
+    {
+      "file": "hearth_fragment_1280x720.png",
+      "sha256": "47a3d972f36a3b891bd9758cbf44702ad46ad63cf46e857f06df89d71f8d8202",
+      "view": "hearth_fragment",
+      "observation": "Canonical Hearth copy and glyph readable without clipping or replacement boxes."
+    },
+    {
+      "file": "checkpoint_notice_1280x720.png",
+      "sha256": "e04f080182844bfe6d986b5317b7e65758c3351ec8ea369388338c921a24501b",
+      "view": "checkpoint_notice",
+      "observation": "Existing checkpoint-retry copy and button fit; no real persistence failure invoked."
+    },
+    {
+      "file": "exit_failure_1280x720.png",
+      "sha256": "23caacf74542505fc8693b848f951059966ed7c94ba5409b83a539d59205080c",
+      "view": "exit_failure",
+      "observation": "Existing exit-failure copy/buttons fit; dialog API fixture only."
+    },
+    {
+      "file": "font_specimen_1280x720.png",
+      "sha256": "3f18f4cae5cc8d589e8ec2e32df6e05cbc310cb7b0194be2c0abb22f90cb5e74",
+      "view": "font_specimen",
+      "observation": "Synthetic full Russian alphabet including Yo, digits and fallback symbols render."
+    },
+    {
+      "file": "world_labels_inherited_1280x720.png",
+      "sha256": "a2b91cf992d5efd0309705e73a61636e14aa7d85dfba7b4a495f005be543bc35",
+      "view": "world_labels_inherited",
+      "observation": "Supplemental Label3D caption specimen uses current gate size/pixel/billboard properties and inherits the bundled project font. No shipping gate art review."
+    },
+    {
+      "file": "world_labels_explicit_1280x720.png",
+      "sha256": "a2b91cf992d5efd0309705e73a61636e14aa7d85dfba7b4a495f005be543bc35",
+      "view": "world_labels_explicit",
+      "observation": "Explicit assignment reference matches inherited caption raster exactly."
+    },
+    {
+      "file": "main_menu_1600x900.png",
+      "sha256": "94f95c9f6fca65b817becd6adc8955da6b130664abcc9bbd922a2f1d6c3384d4",
+      "view": "main_menu",
+      "observation": "Title, wrapped synthetic corrupt-save fixture notice and button text are readable and contained. The save warning is a test fixture, not user save corruption."
+    },
+    {
+      "file": "new_game_confirmation_1600x900.png",
+      "sha256": "f7d7ed073a0a043f13fb228eaa304ca5edf7306e294a39bd491978dfd170ab5b",
+      "view": "new_game_confirmation",
+      "observation": "Confirmation text and buttons fit; no new-game action executed."
+    },
+    {
+      "file": "settings_top_1600x900.png",
+      "sha256": "681ecf261c38431b1ab5f6c8feb0ca7e731d423a3c10a10347e27db246e1f281",
+      "view": "settings_top",
+      "observation": "First label and resolution field fully visible, focused and at scroll zero after the production fix."
+    },
+    {
+      "file": "settings_bottom_1600x900.png",
+      "sha256": "d83ac9689ae643f3e2b139b8e242b82361e13b4fcadd402723f5211236dce238",
+      "view": "settings_bottom",
+      "observation": "Lower settings and action buttons readable within the intended scroll view. Partial rows at the scroll boundary are intentional."
+    },
+    {
+      "file": "pause_menu_1600x900.png",
+      "sha256": "24028e8b2abdadf6f0451f984f99889806cf7b13a0f0b3b30ad4916bcec1092f",
+      "view": "pause_menu",
+      "observation": "Pause text/buttons fit; visual pose only, not actual pause-key behavior."
+    },
+    {
+      "file": "star_fragment_1600x900.png",
+      "sha256": "62746f4b953d5cdb32e1251ba30ded472f2e4ea557c966fb3f7a88dda446eecd",
+      "view": "star_fragment",
+      "observation": "Canonical Star copy and glyph readable without clipping or replacement boxes."
+    },
+    {
+      "file": "hearth_fragment_1600x900.png",
+      "sha256": "9d95e6b461d4333dc7f7d3db87485a698e84a421fe11916c81b2cc324dad82d9",
+      "view": "hearth_fragment",
+      "observation": "Canonical Hearth copy and glyph readable without clipping or replacement boxes."
+    },
+    {
+      "file": "checkpoint_notice_1600x900.png",
+      "sha256": "477dcfaaa4b2c9a1e8d6064e70f8837c4aa55d3657e94b967cee38e93c1e93e0",
+      "view": "checkpoint_notice",
+      "observation": "Existing checkpoint-retry copy and button fit; no real persistence failure invoked."
+    },
+    {
+      "file": "exit_failure_1600x900.png",
+      "sha256": "d6ab1a8839d2d7b2afb0d40fe822fc91a28a37afbfc2e9115d7d44a59bbcd152",
+      "view": "exit_failure",
+      "observation": "Existing exit-failure copy/buttons fit; dialog API fixture only."
+    },
+    {
+      "file": "font_specimen_1600x900.png",
+      "sha256": "d571507801c094a567927f38fdfdb28ea64bb05b0b3ce8857c7ecb5f74ddc3be",
+      "view": "font_specimen",
+      "observation": "Synthetic full Russian alphabet including Yo, digits and fallback symbols render."
+    },
+    {
+      "file": "world_labels_inherited_1600x900.png",
+      "sha256": "59143bcaa637f4f92aea2bbd4635176750e9ceb8e22a2edc5209cc8543663bbf",
+      "view": "world_labels_inherited",
+      "observation": "Supplemental Label3D caption specimen uses current gate size/pixel/billboard properties and inherits the bundled project font. No shipping gate art review."
+    },
+    {
+      "file": "world_labels_explicit_1600x900.png",
+      "sha256": "59143bcaa637f4f92aea2bbd4635176750e9ceb8e22a2edc5209cc8543663bbf",
+      "view": "world_labels_explicit",
+      "observation": "Explicit assignment reference matches inherited caption raster exactly."
+    },
+    {
+      "file": "main_menu_1920x1080.png",
+      "sha256": "037a0e59ab457c62eca000ef663fafe91013278ca19641165500943a90a345b0",
+      "view": "main_menu",
+      "observation": "Title, wrapped synthetic corrupt-save fixture notice and button text are readable and contained. The save warning is a test fixture, not user save corruption."
+    },
+    {
+      "file": "new_game_confirmation_1920x1080.png",
+      "sha256": "3bc03511ffce0a629c834dd56643a84ab3c636ef8d49f56e24502559f28bb181",
+      "view": "new_game_confirmation",
+      "observation": "Confirmation text and buttons fit; no new-game action executed."
+    },
+    {
+      "file": "settings_top_1920x1080.png",
+      "sha256": "052b14a6502494205441b096156f140200b97561bfbf087d196d9c34012c44d5",
+      "view": "settings_top",
+      "observation": "First label and resolution field fully visible, focused and at scroll zero after the production fix."
+    },
+    {
+      "file": "settings_bottom_1920x1080.png",
+      "sha256": "180b85bb58ff865743d1294ddce5e75153f6df495e9081d049ec40ad6533331f",
+      "view": "settings_bottom",
+      "observation": "Lower settings and action buttons readable within the intended scroll view. Partial rows at the scroll boundary are intentional."
+    },
+    {
+      "file": "pause_menu_1920x1080.png",
+      "sha256": "aaeee3712e6812091a5f0049c39e34c6ef338a889d88896ed05f676cf8a31344",
+      "view": "pause_menu",
+      "observation": "Pause text/buttons fit; visual pose only, not actual pause-key behavior."
+    },
+    {
+      "file": "star_fragment_1920x1080.png",
+      "sha256": "1796edf81f88099392530bf90d7b5aac942a88328d529baba050c76efceb6407",
+      "view": "star_fragment",
+      "observation": "Canonical Star copy and glyph readable without clipping or replacement boxes."
+    },
+    {
+      "file": "hearth_fragment_1920x1080.png",
+      "sha256": "e2956610830f4400fb576de50e804a932e6f148900373359424e2db47bcb795c",
+      "view": "hearth_fragment",
+      "observation": "Canonical Hearth copy and glyph readable without clipping or replacement boxes."
+    },
+    {
+      "file": "checkpoint_notice_1920x1080.png",
+      "sha256": "b2480ecadb3faf3965805e18cfdec400c4309208eea7c3cde2b5356ebe2ba846",
+      "view": "checkpoint_notice",
+      "observation": "Existing checkpoint-retry copy and button fit; no real persistence failure invoked."
+    },
+    {
+      "file": "exit_failure_1920x1080.png",
+      "sha256": "46b1a12a9095ef482c2c769034947d1b20374e71e8f059a3fb2ee487515ec19f",
+      "view": "exit_failure",
+      "observation": "Existing exit-failure copy/buttons fit; dialog API fixture only."
+    },
+    {
+      "file": "font_specimen_1920x1080.png",
+      "sha256": "ed78371f01ae6db1944792f4e2b06aaba30cb5afee901c0548380b57d54bce01",
+      "view": "font_specimen",
+      "observation": "Synthetic full Russian alphabet including Yo, digits and fallback symbols render."
+    },
+    {
+      "file": "world_labels_inherited_1920x1080.png",
+      "sha256": "30ee2ee5dccf71e4ba3af235daf52a426aebd45d54138d588851bdde0c1b170a",
+      "view": "world_labels_inherited",
+      "observation": "Supplemental Label3D caption specimen uses current gate size/pixel/billboard properties and inherits the bundled project font. No shipping gate art review."
+    },
+    {
+      "file": "world_labels_explicit_1920x1080.png",
+      "sha256": "30ee2ee5dccf71e4ba3af235daf52a426aebd45d54138d588851bdde0c1b170a",
+      "view": "world_labels_explicit",
+      "observation": "Explicit assignment reference matches inherited caption raster exactly."
+    }
+  ],
+  "limits": "Font/readability/current UI layout only; no owner complete-style, actual gameplay/input/failure/route/save reload, Windows/platform export or target-GPU acceptance."
+}

@@ -1,4 +1,28 @@
-# Current bounded channel presentation - 2026-10-31
+# Current bundled Cyrillic UI font acceptance - 2026-10-31
+
+UI_CYRILLIC_FONT_V1.md records Open Sans600/100 and two explicit bundled Noto
+Symbols fallbacks, exact upstream files/full notices and native PCK readback.
+Fresh final native-20261031-3: cache-free Godot4.7.2 import,627 checks at each of
+1280x720,1600x900,1920x1080 and36 individually inspected original frames pass.
+No earlier617-check attempts or old accepted suites are aggregated. Native
+captions prove inherited/explicit font raster equality. A42px first-row Settings
+scroll was fixed with guarded deferred focus and reset; early close/reopen pass.
+
+Only FONT-001 is promoted:27 ACCEPTED /43 PARTIAL /7 MISSING among77,185 rows
+retained. FONT-002 and full UI style remain PARTIAL. Three existing game files
+change for font bootstrap/settings focus;598 other baseline files match exactly.
+Geometry, narrative, routes, clocks, materials and save schema are preserved.
+Protected synthetic slots and DTO/dirty pass. Software Vulkan is not a platform
+release, actual full gameplay/input/failure/save-reload or target-GPU acceptance.
+
+ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Prior channel and sixteen-frame
+owner-gallery acceptance remains separate. Central mechanism binary publication
+still has its prior automatic-review blocker; no retry or format conversion.
+Source/remote acknowledgement resolves from continuation_fonts_20261031.jsonl.
+
+---
+
+# Historical bounded channel presentation - 2026-10-31
 
 ARCHIVE_CHANNEL_TRIM_V1.md records the original shared 180-triangle luminous
 core/iron-rail skin now used by five existing Hub channels. Fresh cache-free

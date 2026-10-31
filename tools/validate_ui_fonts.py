@@ -129,7 +129,7 @@ def main(args):
                        '--resolution', size, 'res://tests/ui_font_review.tscn', '--',
                        '--review-output=' + str(output)], 145, 'UI_FONT_REVIEW CAPTURED')
             capture = json.loads((output / ('captures_' + size + '.json')).read_text())
-            assert capture['status'] == 'PASS_CAPTURE_ONLY' and capture['renderer'] == 'forward_plus' and len(capture['captures']) == 10
+            assert capture['status'] == 'PASS_CAPTURE_ONLY' and capture['renderer'] == 'forward_plus' and len(capture['captures']) == 12
             for item in capture['captures']:
                 assert item['size'] == [int(x) for x in size.split('x')]
                 result['captures'].append(item | {'sha256': sha(output / item['file'])})
