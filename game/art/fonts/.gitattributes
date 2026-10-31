@@ -1,0 +1,6 @@
+# Keep unmodified upstream fonts as ordinary Git binary assets.
+*.ttf binary
+
+# The exact upstream Noto license has one trailing space on line 21.
+# Preserve its bytes and copyright notice; this exception covers that file only.
+noto_sans_symbols_2/OFL.txt whitespace=-blank-at-eol
