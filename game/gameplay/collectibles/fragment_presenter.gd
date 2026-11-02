@@ -14,6 +14,7 @@ var feeling_label: Label
 var sigil_view: TextureRect
 var continue_button: Button
 var _panel: PanelContainer
+var _sigil_effect: FragmentSigilEffect
 
 
 func _ready() -> void:
@@ -56,6 +57,10 @@ func _ready() -> void:
     continue_button.add_theme_font_size_override("font_size", 24)
     column.add_child(continue_button)
     continue_button.pressed.connect(dismiss)
+    _sigil_effect = FragmentSigilEffect.new()
+    _sigil_effect.name = "SigilEffect"
+    add_child(_sigil_effect)
+    _sigil_effect.bind(sigil_view)
     hide()
 
 
@@ -99,6 +104,7 @@ func present_fragment(id: StringName) -> Error:
     continue_button.release_focus()
     show()
     continue_button.grab_focus()
+    _sigil_effect.reveal()
     return OK
 
 
@@ -111,9 +117,13 @@ func restore_collected(ids: Array[StringName]) -> void:
 
 func dismiss(emit_closed: bool = true) -> void:
     _release_duck()
+    if not emit_closed and is_instance_valid(_sigil_effect):
+        _sigil_effect.cancel()
     var was_visible := visible
     if not was_visible and _mode_revision < 0:
         return
+    if emit_closed and was_visible and is_instance_valid(_sigil_effect):
+        _sigil_effect.dissolve()
     if is_instance_valid(continue_button) and continue_button.is_inside_tree():
         continue_button.release_focus()
     hide()
