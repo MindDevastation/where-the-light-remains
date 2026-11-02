@@ -1407,7 +1407,7 @@
     }
   ],
   "private_copy_removed": true,
-  "visual_review": "PENDING individual inspection",
+  "visual_review": "PASS: all20 original full-resolution frames individually inspected; no unresolved bounded projection, edge or local appearance defect.",
   "finished_at": "2026-11-02T19:42:46.832877+00:00",
   "evidence_hashes": {
     "hearth_approach_off_medium.png": "3d0498528ec0ae5e4ecd9f9de377ce9f4fab18a88841793f833b074bfa617ec4",
@@ -1438,5 +1438,128 @@
     "neutral_kit_on_medium.png": "a2817cbdf8eedff0a86c5f359557b4287d15e06f4dc549a68d04464a13fec422",
     "pixel-source.log": "2260e8bdc99e176750a1a4bc83f2ecb26d522e65b8470e6eec72dfd9a57f4403",
     "hearth_soot_on_medium.png": "210a181dc0bcc6e6c0bffb0c4abbe56ff571ee5aef008cfb2f57018426fc258b"
-  }
+  },
+  "visual_reviewed_at": "2026-11-02T19:52:40.677648+00:00",
+  "visual_reviews": [
+    {
+      "file": "neutral_kit_on_low.png",
+      "sha256": "fe93104c9e2e8bba28388981241bd18f6a8958d9f3f7e078d82fea2f6340202e",
+      "result": "PASS",
+      "finding": "Four original mask families are visible on neutral planes; the off frame retains clean planes. This is a neutral fixture, not shipping art/style."
+    },
+    {
+      "file": "neutral_kit_off_low.png",
+      "sha256": "52ed31419e44a1824f8c8135acc766be938ad043cb10d7741cbb5620224d9781",
+      "result": "PASS",
+      "finding": "Four original mask families are visible on neutral planes; the off frame retains clean planes. This is a neutral fixture, not shipping art/style."
+    },
+    {
+      "file": "hearth_close_on_low.png",
+      "sha256": "385499de04a1f8730aef2b0cd6c6845d6fcd3f472aac6857717c34b1857ae57f",
+      "result": "PASS",
+      "finding": "The two original projection volumes stay local to the existing bowl/pedestal. Same mesh, camera, light and room; restrained visible differences."
+    },
+    {
+      "file": "hearth_close_off_low.png",
+      "sha256": "f071fb235fa2d202fa3d5ae0701b03dba9d17618bc33f142999ed431d107ec6e",
+      "result": "PASS",
+      "finding": "The two original projection volumes stay local to the existing bowl/pedestal. Same mesh, camera, light and room; restrained visible differences."
+    },
+    {
+      "file": "hearth_soot_on_low.png",
+      "sha256": "88396ab4fbbe8c17bbc9072aee51e8c00c5a1cd33deece6f515267dc3fc452ed",
+      "result": "PASS",
+      "finding": "Isolated soft soot is visible on the recessed bowl floor, without a hard texture rectangle or changed lip/room."
+    },
+    {
+      "file": "hearth_soot_off_low.png",
+      "sha256": "d8248465f6615529a1fc82c7f0888576338a2613c3b7daf46d4d5593ba7dfaed",
+      "result": "PASS",
+      "finding": "Isolated soft soot is visible on the recessed bowl floor, without a hard texture rectangle or changed lip/room."
+    },
+    {
+      "file": "hearth_dust_on_low.png",
+      "sha256": "14e37d0da693a7d737cf6c8c87dde98d9e919d19a4a8065a6fdd969fc1cd81df",
+      "result": "PASS",
+      "finding": "Isolated dust stays on the pedestal bevel with feathered edges; adjacent room floor is unaffected."
+    },
+    {
+      "file": "hearth_dust_off_low.png",
+      "sha256": "d647db26166f5dd7385a34132b4452af877d742f2f92fc12dd8337043eae95a9",
+      "result": "PASS",
+      "finding": "Isolated dust stays on the pedestal bevel with feathered edges; adjacent room floor is unaffected."
+    },
+    {
+      "file": "hearth_approach_on_low.png",
+      "sha256": "d346481874156c05fe6cc99ead5bd49517cc94ff094502f2131ea6ae71d9f52b",
+      "result": "PASS",
+      "finding": "Existing approach and bowl silhouette remain clear; surface change is sparse and secondary. Room/lighting/full style remain incomplete."
+    },
+    {
+      "file": "hearth_approach_off_low.png",
+      "sha256": "c295ec97c19ba72a4ae592e342672d7a80cc211a18ed55bb9c2abc23e56f1358",
+      "result": "PASS",
+      "finding": "Existing approach and bowl silhouette remain clear; surface change is sparse and secondary. Room/lighting/full style remain incomplete."
+    },
+    {
+      "file": "neutral_kit_on_medium.png",
+      "sha256": "a2817cbdf8eedff0a86c5f359557b4287d15e06f4dc549a68d04464a13fec422",
+      "result": "PASS",
+      "finding": "Four original mask families are visible on neutral planes; the off frame retains clean planes. This is a neutral fixture, not shipping art/style."
+    },
+    {
+      "file": "neutral_kit_off_medium.png",
+      "sha256": "9c98fedba64ba424804ff76e8e5738dbb208cb1da6693bba881880abbddc5e6a",
+      "result": "PASS",
+      "finding": "Four original mask families are visible on neutral planes; the off frame retains clean planes. This is a neutral fixture, not shipping art/style."
+    },
+    {
+      "file": "hearth_close_on_medium.png",
+      "sha256": "69c724196ac53620064ea5bdc299591a1fb2f5fdaf5b76024029caed786f8210",
+      "result": "PASS",
+      "finding": "The two original projection volumes stay local to the existing bowl/pedestal. Same mesh, camera, light and room; restrained visible differences."
+    },
+    {
+      "file": "hearth_close_off_medium.png",
+      "sha256": "30df0f9e7b6bc7a497e086abe22c0d960810f3a41fa798c6042cf2b70052d9d2",
+      "result": "PASS",
+      "finding": "The two original projection volumes stay local to the existing bowl/pedestal. Same mesh, camera, light and room; restrained visible differences."
+    },
+    {
+      "file": "hearth_soot_on_medium.png",
+      "sha256": "210a181dc0bcc6e6c0bffb0c4abbe56ff571ee5aef008cfb2f57018426fc258b",
+      "result": "PASS",
+      "finding": "Isolated soft soot is visible on the recessed bowl floor, without a hard texture rectangle or changed lip/room."
+    },
+    {
+      "file": "hearth_soot_off_medium.png",
+      "sha256": "2b3a9fb6b6175dc15cccc97f736cbc735499cccb25a0be968ccf93eb7f0cc57e",
+      "result": "PASS",
+      "finding": "Isolated soft soot is visible on the recessed bowl floor, without a hard texture rectangle or changed lip/room."
+    },
+    {
+      "file": "hearth_dust_on_medium.png",
+      "sha256": "e7d855d94ac742dc4693cae6c09ecce751f0564e1f9f8469c17f7a77e44ef13b",
+      "result": "PASS",
+      "finding": "Isolated dust stays on the pedestal bevel with feathered edges; adjacent room floor is unaffected."
+    },
+    {
+      "file": "hearth_dust_off_medium.png",
+      "sha256": "d0bfdb2f0b022ef67ac7f45b76c34622477da15fc5d73ecee93a696aadd3c42d",
+      "result": "PASS",
+      "finding": "Isolated dust stays on the pedestal bevel with feathered edges; adjacent room floor is unaffected."
+    },
+    {
+      "file": "hearth_approach_on_medium.png",
+      "sha256": "2261ca439968cd9b4c34ff7eac09410403dccb940e9265b008c57c75784475fc",
+      "result": "PASS",
+      "finding": "Existing approach and bowl silhouette remain clear; surface change is sparse and secondary. Room/lighting/full style remain incomplete."
+    },
+    {
+      "file": "hearth_approach_off_medium.png",
+      "sha256": "3d0498528ec0ae5e4ecd9f9de377ce9f4fab18a88841793f833b074bfa617ec4",
+      "result": "PASS",
+      "finding": "Existing approach and bowl silhouette remain clear; surface change is sparse and secondary. Room/lighting/full style remain incomplete."
+    }
+  ]
 }

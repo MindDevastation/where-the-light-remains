@@ -1,4 +1,30 @@
-# Current bounded fragment glyph VFX acceptance - 2026-11-02
+# Current bounded surface decal acceptance - 2026-11-02
+
+ARCHIVE_DECAL_ATLAS_V1.md records one original2048 four-mask coverage atlas,
+four exact1024 runtime crops and two static Hearth projections. Final
+native-20261102-1: cache-free Godot4.7.2 import,43 pixel-source +42 native
+import/surface +19 affected housing +14 Low +14 Medium assertions pass.
+All20 original frames individually inspected. Eight carrier pairs have zero
+changed pixels outside projected decal volume bounds with a two-pixel reserve.
+
+Only DECAL-001 moves MISSING to PARTIAL:27 ACCEPTED /45 PARTIAL /5 MISSING
+among77 VS1 groups;185 canonical rows retained. Of626 existing game files,
+625 are byte-identical to cad2916; only the Hearth art wrapper changes, with
+20 new data/import/scene/test files. Meshes, materials, colliders, lights,
+controller, narrative and save ownership stay unchanged.47 existing GLBs
+independently read; no new LFS upload. Synthetic slots and DTO/dirty pass.
+
+Broader stages0-15 placement, full style and physical target hardware remain
+open. Earlier font/sigil/dust/inspect suites were not rerun or aggregated.
+ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Prior central-mechanism binary
+refusal stays in effect, without retry or conversion. Source at48e5ca5;
+acceptance publication resolves from continuation_decals_20261102.jsonl.
+The journal retains an actual994.042s checkpoint interval exceeding900s;
+no blanket cadence compliance is claimed.
+
+---
+
+# Historical bounded fragment glyph VFX acceptance - 2026-11-02
 
 FRAGMENT_SIGIL_DISSOLVE_V1.md records the shared Star/Hearth modal reveal and
 outgoing dissolve. Final native-20261102-4: cache-free Godot4.7.2 import,
