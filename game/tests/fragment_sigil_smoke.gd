@@ -64,11 +64,13 @@ func _run() -> void:
     get_tree().paused = false
     await _wait()
     _check(not effect.active and modal.sigil_view.material == null, "settled reveal restores original rendering")
+    var original_rect := modal.sigil_view.get_global_rect()
     modal.continue_button.pressed.emit()
     _check(not modal.visible and _closed == 1 and InputManager.mode == InputManager.Mode.GAMEPLAY and
         AudioDirector.playback_snapshot()["duck_locks"] == 0, "Continue immediately closes and releases input/audio once")
     _check(_ghosts().size() == 1 and effect.active, "one outgoing glyph survives modal hide")
     var ghost := _ghosts()[0] as TextureRect
+    _check(ghost.get_global_rect() == original_rect, "outgoing glyph preserves exact source size and position")
     _check(ghost.mouse_filter == Control.MOUSE_FILTER_IGNORE and ghost.focus_mode == Control.FOCUS_NONE,
         "outgoing glyph cannot intercept interaction")
     get_tree().paused = true
@@ -91,10 +93,11 @@ func _run() -> void:
     modal.present_fragment(&"star")
     await _wait(0.08)
     var partial := modal._sigil_effect.amount
-    var escape := InputEventAction.new()
-    escape.action = &"ui_cancel"
+    var escape := InputEventKey.new()
+    escape.keycode = KEY_ESCAPE
+    escape.physical_keycode = KEY_ESCAPE
     escape.pressed = true
-    modal._unhandled_input(escape)
+    modal._unhandled_key_input(escape)
     _check(not modal.visible and modal._sigil_effect.amount == partial and _ghosts().size() == 1,
         "early Escape dissolves from current coverage without a full glyph flash")
     var old_closed := _closed
@@ -159,7 +162,7 @@ func _run() -> void:
     modal.dismiss()
     ghost = _ghosts()[0]
     ghost.reparent(self)
-    var previous := (ghost.material as ShaderMaterial).get_shader_parameter("amount")
+    var previous: float = (ghost.material as ShaderMaterial).get_shader_parameter("amount")
     await _wait(0.06)
     _check(is_instance_valid(ghost) and (ghost.material as ShaderMaterial).get_shader_parameter("amount") == previous and
         not modal._sigil_effect.active, "reparented outgoing quad is relinquished before further writes")

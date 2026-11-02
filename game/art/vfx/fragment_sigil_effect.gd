@@ -112,10 +112,12 @@ func dissolve() -> void:
     var ghost := TextureRect.new() if allowed else null
     if ghost != null:
         ghost.name = "FragmentSigilGhost"
-        ghost.texture = visual.texture
-        ghost.size = visual.size
         ghost.expand_mode = visual.expand_mode
         ghost.stretch_mode = visual.stretch_mode
+        # Set sizing policy before texture/size: the default texture minimum
+        # would otherwise clamp a 100px glyph rect to its 128px source size.
+        ghost.texture = visual.texture
+        ghost.size = visual.size
         ghost.texture_filter = visual.texture_filter
         ghost.modulate = visual.modulate
         ghost.self_modulate = visual.self_modulate
