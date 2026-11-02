@@ -1359,7 +1359,7 @@
     "game/gameplay/collectibles/hearth.tres": "357fbc0eb05c5cbeefb4cafb532382608924d669e20f1c552bfead4eff725840"
   },
   "private_copy_removed": true,
-  "visual_review": "PENDING individual inspection",
+  "visual_review": "PASS: all30 original frames individually inspected at native resolution; no unresolved bounded glyph/readability/cleanup defect.",
   "finished_at": "2026-11-02T07:42:49.454751+00:00",
   "evidence_hashes": {
     "hearth_reveal_half_medium_1920x1080.png": "eb96ce6bfba72adf3754f3d8cde9bd000c93a1871b9978ffe96345b291e89615",
@@ -1399,5 +1399,188 @@
     "star_shader_one_medium_1920x1080.png": "b85b2d87bbc07d96d397eedf90d76a41b95dbce8af0728cc22497ba553b47a59",
     "star_reveal_paused_low_1280x720.png": "98188af17c6f60a78849e91e94eba2c33695fd013763949c9c611878897eb418",
     "star_shader_one_low_1280x720.png": "7d3691b749727e8feb13803285f19049e1f045e0287155525afa2df58c2f29d2"
-  }
+  },
+  "visual_reviewed_at": "2026-11-02T07:48:59.734385+00:00",
+  "visual_reviews": [
+    {
+      "file": "star_reveal_zero_low_1280x720.png",
+      "sha256": "5aa03f31dfbeefdf5289d0ccea61cd9affed16ae3389a4d0ad8ad2bd83ae9daa",
+      "result": "PASS",
+      "finding": "Only glyph absent; title, couplet, feeling and Continue are fully readable."
+    },
+    {
+      "file": "star_reveal_half_low_1280x720.png",
+      "sha256": "98188af17c6f60a78849e91e94eba2c33695fd013763949c9c611878897eb418",
+      "result": "PASS",
+      "finding": "Partial glyph with bounded cell edge; text/panel stable."
+    },
+    {
+      "file": "star_reveal_paused_low_1280x720.png",
+      "sha256": "98188af17c6f60a78849e91e94eba2c33695fd013763949c9c611878897eb418",
+      "result": "PASS",
+      "finding": "Same partial glyph as reveal_half; native exact frame identity passes."
+    },
+    {
+      "file": "star_settled_low_1280x720.png",
+      "sha256": "7d3691b749727e8feb13803285f19049e1f045e0287155525afa2df58c2f29d2",
+      "result": "PASS",
+      "finding": "Complete original glyph; original modal layout and Cyrillic fit."
+    },
+    {
+      "file": "star_shader_one_low_1280x720.png",
+      "sha256": "7d3691b749727e8feb13803285f19049e1f045e0287155525afa2df58c2f29d2",
+      "result": "PASS",
+      "finding": "Visually identical complete glyph; exact native raster equality passes."
+    },
+    {
+      "file": "star_dissolve_half_low_1280x720.png",
+      "sha256": "b209cde2881af47f6822016e1e28be6fbc9ee1cc9f8531f7b1107e303258b5b6",
+      "result": "PASS",
+      "finding": "Same original glyph size/position on the flat fixture background; modal already closed."
+    },
+    {
+      "file": "star_dissolve_finished_low_1280x720.png",
+      "sha256": "808c4c4dc2b5d52d82cdf40cb41fc845c34d1123ebc6e60f41da238c4c5ee162",
+      "result": "PASS",
+      "finding": "Only the flat background remains, with no ghost quad."
+    },
+    {
+      "file": "hearth_reveal_zero_low_1280x720.png",
+      "sha256": "62e9aa249398d6300c7f5f2216e1ce4ff3b76db6dc88aa730b78584ba359fb21",
+      "result": "PASS",
+      "finding": "Only glyph absent; title, couplet, feeling and Continue are fully readable."
+    },
+    {
+      "file": "hearth_reveal_half_low_1280x720.png",
+      "sha256": "10ef5d997485ba505d9c8be0ecf335859ac1942cafc07edbabff04ced245bdd4",
+      "result": "PASS",
+      "finding": "Partial glyph with bounded cell edge; text/panel stable."
+    },
+    {
+      "file": "hearth_reveal_paused_low_1280x720.png",
+      "sha256": "10ef5d997485ba505d9c8be0ecf335859ac1942cafc07edbabff04ced245bdd4",
+      "result": "PASS",
+      "finding": "Same partial glyph as reveal_half; native exact frame identity passes."
+    },
+    {
+      "file": "hearth_settled_low_1280x720.png",
+      "sha256": "079a4cfdedda8e62d3abbc381528e3a1e966e3e714623a1cc81994fcf4788d4a",
+      "result": "PASS",
+      "finding": "Complete original glyph; original modal layout and Cyrillic fit."
+    },
+    {
+      "file": "hearth_shader_one_low_1280x720.png",
+      "sha256": "079a4cfdedda8e62d3abbc381528e3a1e966e3e714623a1cc81994fcf4788d4a",
+      "result": "PASS",
+      "finding": "Visually identical complete glyph; exact native raster equality passes."
+    },
+    {
+      "file": "hearth_dissolve_half_low_1280x720.png",
+      "sha256": "d0b63e00c6be0b961288b87c259fb923b7e50087c6aae5193e8e9d1426bc6942",
+      "result": "PASS",
+      "finding": "Same original glyph size/position on the flat fixture background; modal already closed."
+    },
+    {
+      "file": "hearth_dissolve_finished_low_1280x720.png",
+      "sha256": "808c4c4dc2b5d52d82cdf40cb41fc845c34d1123ebc6e60f41da238c4c5ee162",
+      "result": "PASS",
+      "finding": "Only the flat background remains, with no ghost quad."
+    },
+    {
+      "file": "star_effects_off_low_1280x720.png",
+      "sha256": "7d3691b749727e8feb13803285f19049e1f045e0287155525afa2df58c2f29d2",
+      "result": "PASS",
+      "finding": "Immediate complete original Star, no effect or extra quad."
+    },
+    {
+      "file": "star_reveal_zero_medium_1920x1080.png",
+      "sha256": "5dd7bf42ec574ca8a919202b00670edcee7eecd7d6784eadd63dfe9d7fdec271",
+      "result": "PASS",
+      "finding": "Only glyph absent; title, couplet, feeling and Continue are fully readable."
+    },
+    {
+      "file": "star_reveal_half_medium_1920x1080.png",
+      "sha256": "980f2c1bdc816643bcdcd9c47744a64a5b0d8c513d3d223a67790586cd3a4768",
+      "result": "PASS",
+      "finding": "Partial glyph with bounded cell edge; text/panel stable."
+    },
+    {
+      "file": "star_reveal_paused_medium_1920x1080.png",
+      "sha256": "980f2c1bdc816643bcdcd9c47744a64a5b0d8c513d3d223a67790586cd3a4768",
+      "result": "PASS",
+      "finding": "Same partial glyph as reveal_half; native exact frame identity passes."
+    },
+    {
+      "file": "star_settled_medium_1920x1080.png",
+      "sha256": "b85b2d87bbc07d96d397eedf90d76a41b95dbce8af0728cc22497ba553b47a59",
+      "result": "PASS",
+      "finding": "Complete original glyph; original modal layout and Cyrillic fit."
+    },
+    {
+      "file": "star_shader_one_medium_1920x1080.png",
+      "sha256": "b85b2d87bbc07d96d397eedf90d76a41b95dbce8af0728cc22497ba553b47a59",
+      "result": "PASS",
+      "finding": "Visually identical complete glyph; exact native raster equality passes."
+    },
+    {
+      "file": "star_dissolve_half_medium_1920x1080.png",
+      "sha256": "2d4fc8be91135d7397838a6e8a1434ec5580cbb8cd66868091b90626495558b5",
+      "result": "PASS",
+      "finding": "Same original glyph size/position on the flat fixture background; modal already closed."
+    },
+    {
+      "file": "star_dissolve_finished_medium_1920x1080.png",
+      "sha256": "deeceacab1c1ab2ee9b9ce4eda1cde04ce5a14e63bd11cbf442eded757aa82a5",
+      "result": "PASS",
+      "finding": "Only the flat background remains, with no ghost quad."
+    },
+    {
+      "file": "hearth_reveal_zero_medium_1920x1080.png",
+      "sha256": "4a6cc4fdd723e90e150adab80e5b7051a24480f370cffbe0cde579576618b451",
+      "result": "PASS",
+      "finding": "Only glyph absent; title, couplet, feeling and Continue are fully readable."
+    },
+    {
+      "file": "hearth_reveal_half_medium_1920x1080.png",
+      "sha256": "eb96ce6bfba72adf3754f3d8cde9bd000c93a1871b9978ffe96345b291e89615",
+      "result": "PASS",
+      "finding": "Partial glyph with bounded cell edge; text/panel stable."
+    },
+    {
+      "file": "hearth_reveal_paused_medium_1920x1080.png",
+      "sha256": "eb96ce6bfba72adf3754f3d8cde9bd000c93a1871b9978ffe96345b291e89615",
+      "result": "PASS",
+      "finding": "Same partial glyph as reveal_half; native exact frame identity passes."
+    },
+    {
+      "file": "hearth_settled_medium_1920x1080.png",
+      "sha256": "703f79f86f1eef7d11521bc58026f1ef66c98510312587cb25e2c72054a97403",
+      "result": "PASS",
+      "finding": "Complete original glyph; original modal layout and Cyrillic fit."
+    },
+    {
+      "file": "hearth_shader_one_medium_1920x1080.png",
+      "sha256": "703f79f86f1eef7d11521bc58026f1ef66c98510312587cb25e2c72054a97403",
+      "result": "PASS",
+      "finding": "Visually identical complete glyph; exact native raster equality passes."
+    },
+    {
+      "file": "hearth_dissolve_half_medium_1920x1080.png",
+      "sha256": "874e3af01c0bfe5f1cc5cae789bfdd85fe14fa225614279daaa75eac1e451ea0",
+      "result": "PASS",
+      "finding": "Same original glyph size/position on the flat fixture background; modal already closed."
+    },
+    {
+      "file": "hearth_dissolve_finished_medium_1920x1080.png",
+      "sha256": "deeceacab1c1ab2ee9b9ce4eda1cde04ce5a14e63bd11cbf442eded757aa82a5",
+      "result": "PASS",
+      "finding": "Only the flat background remains, with no ghost quad."
+    },
+    {
+      "file": "star_effects_off_medium_1920x1080.png",
+      "sha256": "b85b2d87bbc07d96d397eedf90d76a41b95dbce8af0728cc22497ba553b47a59",
+      "result": "PASS",
+      "finding": "Immediate complete original Star, no effect or extra quad."
+    }
+  ]
 }

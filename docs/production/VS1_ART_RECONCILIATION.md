@@ -1,4 +1,27 @@
-# Current bundled Cyrillic UI font acceptance - 2026-10-31
+# Current bounded fragment glyph VFX acceptance - 2026-11-02
+
+FRAGMENT_SIGIL_DISSOLVE_V1.md records the shared Star/Hearth modal reveal and
+outgoing dissolve. Final native-20261102-4: cache-free Godot4.7.2 import,
+34 lifecycle +13 actual PCM +40 Low +40 Medium assertion executions pass;
+all30 original frames individually inspected. Exact settled shader/original
+raster and paused-frame identity pass; outgoing size/position are preserved.
+Prior three diagnostics are retained and excluded from final credit.
+
+Only VFX-004 moves MISSING to PARTIAL:27 ACCEPTED /44 PARTIAL /6 MISSING
+among77 VS1 groups;185 canonical rows retained. Of620 existing game files,
+619 are byte-identical to6457676; only FragmentPresenter changes, with six new
+VFX/test files. Existing47 GLBs are verified cache reads, with no new upload.
+Protected synthetic slots and DTO/dirty remain unchanged. World carrier,
+eight later sigils, final UI/VFX style, actual full gameplay and target GPU
+remain open. FONT-001 stays ACCEPTED; prior font/channel/gallery suites were
+not rerun. ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Central-mechanism
+binary publication retains the prior refusal, with no retry or conversion.
+Source/evidence at364b333; final publication and actual checkpoint intervals
+resolve from evidence/checkpoints/continuation_sigil_20261102.jsonl.
+
+---
+
+# Historical bundled Cyrillic UI font acceptance - 2026-10-31
 
 UI_CYRILLIC_FONT_V1.md records Open Sans600/100 and two explicit bundled Noto
 Symbols fallbacks, exact upstream files/full notices and native PCK readback.
@@ -138,7 +161,7 @@ recorded in evidence/checkpoints/continuation_20261007.jsonl.
 | VFX-001 | ACCEPTED | Archive light beam / spline beam; Shared beam immutable mesh/shaders accepted for S02; other route/global variants not implicitly approved. | docs/production/WING01_BEAM_STAR_ACCEPTANCE.md |
 | VFX-002 | PARTIAL | Light path motes / shimmer; Original native local last-spark SVG/billboard now accepted at unchanged clock/anchor. Global reusable particle/shimmer/scripted path coverage and completed exterior guided composition remain open. | docs/production/S00_LAST_SPARK_ACCEPTANCE.md |
 | VFX-003 | PARTIAL | Correct interaction pulse/chime visual; Existing pausable route pulses/target feedback functional; final unified chime/pulse presentation and audio unbound. | game/worlds/archive/common/archive_light_channel.gd |
-| VFX-004 | MISSING | Fragment materialize / dissolve; No production materialize/dissolve, ambient dust particle or shared inspect-highlight family. Quiet Star breathing and local Flame are separate accepted effects, not these assets. |  |
+| VFX-004 | PARTIAL | Fragment materialize / dissolve; Bounded native Star/Hearth modal glyph materialize/dissolve with independent pausable state, immediate close, effects-off/quiet cleanup and exact outgoing geometry. World carrier, eight later sigils/stages and full VFX/style remain open. | `FRAGMENT_SIGIL_DISSOLVE_V1.md`; `evidence/fragment_sigil/acceptance-20261102/acceptance.json` |
 | VFX-006 | PARTIAL | Dust motes / soft atmosphere; Bounded native dust in two existing Hub/S02 volumes accepted; Low12/Medium36/High48, pause/effects/quiet projection,602 current assertions and20 individually inspected Forward+ on/off frames. Full stages0–15 adoption/style remains open. | docs/production/ARCHIVE_DUST_MOTES_ACCEPTANCE.md, game/art/vfx/archive_dust_motes.tscn |
 | VFX-007 | PARTIAL | Highlight / inspect glow; Bounded native warm additive inspect wash on eight existing S01/S02 target/visual bindings accepted: actual player ray, Low/effects-off, pause/occlusion/consumed/lifetime/material preservation.286 current scoped assertions and8 individually inspected paired native frames. Stages1–11 adoption and complete style remain open. | docs/production/ARCHIVE_INSPECT_GLOW_ACCEPTANCE.md, game/art/vfx/archive_inspect_glow.gd, game/art/materials/m_archive_inspect_glow.tres |
 | UI-001 | ACCEPTED | Minimal reticle / focus dot; Russian/Cyrillic runtime reticle, interaction and hint widgets validated; retain accepted behavior. | docs/production/IMPLEMENTATION_PLAN.md |

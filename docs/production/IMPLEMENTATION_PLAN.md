@@ -1,4 +1,27 @@
-# Current bundled Cyrillic UI font acceptance - 2026-10-31
+# Current bounded fragment glyph VFX acceptance - 2026-11-02
+
+FRAGMENT_SIGIL_DISSOLVE_V1.md records the shared Star/Hearth modal reveal and
+outgoing dissolve. Final native-20261102-4: cache-free Godot4.7.2 import,
+34 lifecycle +13 actual PCM +40 Low +40 Medium assertion executions pass;
+all30 original frames individually inspected. Exact settled shader/original
+raster and paused-frame identity pass; outgoing size/position are preserved.
+Prior three diagnostics are retained and excluded from final credit.
+
+Only VFX-004 moves MISSING to PARTIAL:27 ACCEPTED /44 PARTIAL /6 MISSING
+among77 VS1 groups;185 canonical rows retained. Of620 existing game files,
+619 are byte-identical to6457676; only FragmentPresenter changes, with six new
+VFX/test files. Existing47 GLBs are verified cache reads, with no new upload.
+Protected synthetic slots and DTO/dirty remain unchanged. World carrier,
+eight later sigils, final UI/VFX style, actual full gameplay and target GPU
+remain open. FONT-001 stays ACCEPTED; prior font/channel/gallery suites were
+not rerun. ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Central-mechanism
+binary publication retains the prior refusal, with no retry or conversion.
+Source/evidence at364b333; final publication and actual checkpoint intervals
+resolve from evidence/checkpoints/continuation_sigil_20261102.jsonl.
+
+---
+
+# Historical bundled Cyrillic UI font acceptance - 2026-10-31
 
 UI_CYRILLIC_FONT_V1.md records Open Sans600/100 and two explicit bundled Noto
 Symbols fallbacks, exact upstream files/full notices and native PCK readback.

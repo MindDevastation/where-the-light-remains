@@ -1,5 +1,5 @@
 {
-  "status": "BRIEF_ONLY_NOT_VALIDATED",
+  "status": "BOUNDED_PASS_VFX004_PARTIAL",
   "baseline_commit": "6457676cdfe201cea142e3e66a7bf6c343e69919",
   "scope": "Bounded CanvasItem sigil materialize/dissolve in the existing Star/Hearth fragment modal",
   "asset_row": "VFX-004",
@@ -18,5 +18,7 @@
   "modal_contract": "No delayed present/dismiss/closed signal, input restoration, duck release or checkpoint. Text and buttons remain readable immediately.",
   "source_contract": "Existing glyphs, fonts, textures, sizes, narrative, routes, puzzle clocks, save schema and ArchiveMain preserved. Only local UI VFX resources/controller and Presenter hooks.",
   "acceptance_limits": "Requires current shader render, settled raster identity, pause/resize/effects/ownership/reentrancy/cancellation and affected modal/audio checks. Bounded UI coverage only; world carrier, later sigils/stages, full VFX/style/VS1 not closed.",
-  "central_mechanism_binary_upload": "Not retried or converted; separate prior refusal remains unresolved."
+  "central_mechanism_binary_upload": "Not retried or converted; separate prior refusal remains unresolved.",
+  "acceptance_receipt": "docs/production/evidence/fragment_sigil/acceptance-20261102/acceptance.json",
+  "final_native_run": "docs/production/evidence/fragment_sigil/native-20261102-4"
 }

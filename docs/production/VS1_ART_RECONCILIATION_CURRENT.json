@@ -882,9 +882,15 @@
       "variants": "1 system",
       "canonical_notes": "10 sigils reuse same effect",
       "required_for_vs1": true,
-      "status": "MISSING",
-      "finding": "No production materialize/dissolve, ambient dust particle or shared inspect-highlight family. Quiet Star breathing and local Flame are separate accepted effects, not these assets.",
-      "evidence_paths": []
+      "status": "PARTIAL",
+      "finding": "Bounded native Star/Hearth modal glyph materialize/dissolve with independent pausable state, immediate close, effects-off/quiet cleanup and exact outgoing geometry. World carrier, eight later sigils/stages and full VFX/style remain open.",
+      "evidence_paths": [
+        "game/art/vfx/fragment_sigil_dissolve.gdshader",
+        "game/art/vfx/fragment_sigil_effect.gd",
+        "game/gameplay/collectibles/fragment_presenter.gd",
+        "docs/production/FRAGMENT_SIGIL_DISSOLVE_V1.md",
+        "docs/production/evidence/fragment_sigil/acceptance-20261102/acceptance.json"
+      ]
     },
     {
       "section": "GLOBAL / REUSABLE",
@@ -2998,12 +3004,12 @@
   "baseline_receipt": "docs/production/evidence/archive_reconstruction/vs1-reconciliation-20261006/results.json",
   "status": "PARTIAL",
   "gate_vs1": "OPEN",
-  "updated_at": "2026-10-31T19:58:40.629231+00:00",
-  "latest_delta": "Only FONT-001 PARTIAL to ACCEPTED for bundled family/fallback/licensed source and current native readability. Settings initial row/focus corrected. Full UI style, FONT-002, ARCH/VS1 unchanged.",
+  "updated_at": "2026-11-02T07:48:59.734385+00:00",
+  "latest_delta": "Only VFX-004 MISSING to PARTIAL for the two current modal glyphs. FONT-001 remains ACCEPTED; world carrier/later glyphs/full UI/VFX/ARCH/VS1 unchanged.",
   "vs1_counts": {
+    "PARTIAL": 44,
     "ACCEPTED": 27,
-    "PARTIAL": 43,
-    "MISSING": 7
+    "MISSING": 6
   },
-  "publication_status": "Final font source and remote acknowledgement resolve from continuation_fonts_20261031.jsonl and current working branch. Prior channel/gallery evidence remains historical. Central-mechanism binary upload not retried."
+  "publication_status": "Final sigil source/evidence at364b333; final acceptance/remote receipt resolves from continuation_sigil_20261102.jsonl and current branch. Prior font/channel/gallery evidence remains historical. Central-mechanism binary upload not retried."
 }
