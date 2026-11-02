@@ -58,15 +58,16 @@
     {
       "kind": "dust",
       "position": [
-        0,
-        -0.545,
-        0
+        0.34,
+        -0.54,
+        0.25
       ],
       "size": [
-        0.75,
-        0.025,
-        0.75
-      ]
+        0.35,
+        0.075,
+        0.25
+      ],
+      "normal_fade": 0.25
     }
   ],
   "cull_mask": 1,
@@ -82,5 +83,6 @@
     "game/gameplay/puzzles/wing01/wing01_hearth_art.tscn": "acd90e9648f0f9fbe31f9e0b0382fd72a7b9cbf7c066cac797b826e019d23c17",
     "game/art/meshes/wing01/sm_wing01_hearth.glb": "c4699e4c99d5b118ef66675b119099649522be876c0d9c3bc503ce81c3861bba"
   },
-  "central_mechanism_binary_upload": "Not retried or converted."
+  "central_mechanism_binary_upload": "Not retried or converted.",
+  "placement_note": "Dust patch offset onto the actual pedestal bevel, instead of the central solid interior. Native rendered confirmation still required."
 }

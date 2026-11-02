@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://art/decals/archive_soot.tscn" id="Soot"]
+[ext_resource type="PackedScene" path="res://art/decals/archive_dust.tscn" id="Dust"]
+
+[node name="HearthSurfaceDetail" type="Node3D"]
+metadata/scope = "DECAL-001 first bounded carrier; static inner-floor soot and pedestal bevel dust"
+
+[node name="InnerSoot" parent="." instance=ExtResource("Soot")]
+position = Vector3(0, -0.045, 0)
+size = Vector3(0.60, 0.045, 0.60)
+
+[node name="PedestalDust" parent="." instance=ExtResource("Dust")]
+position = Vector3(0.34, -0.54, 0.25)
+size = Vector3(0.35, 0.075, 0.25)
+normal_fade = 0.25

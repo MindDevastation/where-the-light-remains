@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "inventory": "DECAL-001",
+  "seed": 20261102,
+  "recipe": "tools/generate_archive_decal_atlas.py",
+  "recipe_sha256": "7bb5d8b798d2c5268a39cdba021af4193f63df0bcd51deb03a9c360bc950ea18",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0"
+  },
+  "provenance": "Original deterministic analytic strokes and scalar fields; no input image, photograph, existing atlas or accepted artwork read.",
+  "packing": {
+    "scratches": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "edge_wear": [
+      1024,
+      0,
+      1024,
+      1024
+    ],
+    "dust": [
+      0,
+      1024,
+      1024,
+      1024
+    ],
+    "soot": [
+      1024,
+      1024,
+      1024,
+      1024
+    ]
+  },
+  "transparent_guard_px": 32,
+  "interpretation": "RGBA8; white RGB and scalar alpha. Four runtime files are exact master crops, not four independently authored atlases.",
+  "textures": [
+    {
+      "kind": "atlas",
+      "file": "t_archive_decal_atlas.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "bytes": 557728,
+      "sha256": "a01a75dca6eaf817c27e3f4de9fc44fc9e4ffd6e1b9be58557c1f46645e1a10b",
+      "decoded_rgba_sha256": "47629eef4adaa3a06c14d9dbfe79acc0fe1c840a4697cc473b3ecc93a2a674c2",
+      "alpha_max": 255,
+      "mean_alpha": 0.06431455425187653,
+      "nonzero_fraction": 0.397113561630249
+    },
+    {
+      "kind": "scratches",
+      "file": "t_archive_decal_scratches.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 64822,
+      "sha256": "74b142895416cea51c156d2efa6df196f26fe6936b0a9e38803857524bcd4be0",
+      "decoded_rgba_sha256": "1ecd61c982f33f8d1c5abb19d400aa26118f220a2ce6aeb5c3741bb5f64ca371",
+      "alpha_max": 214,
+      "mean_alpha": 0.004875527176202512,
+      "nonzero_fraction": 0.03349018096923828
+    },
+    {
+      "kind": "edge_wear",
+      "file": "t_archive_decal_edge_wear.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 49247,
+      "sha256": "e3c71b5d0ad82a3150b5120b45ab3fd5a1923be3ff5618101b9c87f7d525c8e9",
+      "decoded_rgba_sha256": "46b67a21ddaa206f92d5bb893ce89d3657c59e2ae06160c431cd579df31609bb",
+      "alpha_max": 255,
+      "mean_alpha": 0.017587568245682063,
+      "nonzero_fraction": 0.06603813171386719
+    },
+    {
+      "kind": "dust",
+      "file": "t_archive_decal_dust.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 204024,
+      "sha256": "df3309c06504a8529a78b7ec925adbb1a3930e949b8c0c364e78ddab0be3c2d7",
+      "decoded_rgba_sha256": "7480414f1f1eccd7d78094faa3205a956c0a376d19874304d74116a545cedeeb",
+      "alpha_max": 163,
+      "mean_alpha": 0.1107200772154565,
+      "nonzero_fraction": 0.6649599075317383
+    },
+    {
+      "kind": "soot",
+      "file": "t_archive_decal_soot.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 220794,
+      "sha256": "bdd906576f8edb2479eeea5a7fd651c0b9679a4759d22302bfc14d2746ecf5ad",
+      "decoded_rgba_sha256": "6244c39075ba3ab1c5604e97b622834eabbd88f304ddbc7e2d44b3f528f8dc01",
+      "alpha_max": 205,
+      "mean_alpha": 0.12407504437016506,
+      "nonzero_fraction": 0.8239660263061523
+    }
+  ]
+}
