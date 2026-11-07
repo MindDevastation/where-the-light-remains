@@ -1,0 +1,9 @@
+{
+  "status": "PASS_EXACT_RECOVERY_ONLY",
+  "utc": "2026-11-07T00:42:02.325864+00:00",
+  "archive_sha256": "2f03aa80e0e58b314c10ef3d14244990b17961f106f10e9e620a4e5085e45861",
+  "verified_manifest_files": 40,
+  "manifest_sha256": "a04d4c1bc4dfd31c52f49cb35754d82c1a824f015392a9bd2b1fdf990fcb9b69",
+  "scope": "Exact previously delivered bytes recovered. Historical source/GLB receipts retained; no fresh DCC/render/gameplay acceptance and no regeneration claimed.",
+  "repository_binary_writes": 0
+}
