@@ -1,0 +1,41 @@
+{
+  "all_yaw_enclosure_actual_vertex_radius_m": 0.587122797966003,
+  "checks": 32,
+  "failures": [
+    "Re-entry starts asleep"
+  ],
+  "original_energy_peak": 1.60000002384186,
+  "parts": [
+    {
+      "name": "Orbit_Inner",
+      "triangles": 1536
+    },
+    {
+      "name": "Orbit_Outer",
+      "triangles": 1536
+    },
+    {
+      "name": "Orbit_Third",
+      "triangles": 1536
+    },
+    {
+      "name": "UpperMounts",
+      "triangles": 440
+    },
+    {
+      "name": "CoreEnergy",
+      "triangles": 2880
+    },
+    {
+      "name": "CoreGlass",
+      "triangles": 960
+    }
+  ],
+  "renderer": "forward_plus",
+  "scope": "Isolated exact original GLB references and projection lifecycle on software Vulkan. Capability image uses fixture lighting, not shipping scene or style acceptance.",
+  "status": "FAIL",
+  "surfaces": 7,
+  "unique_mipped_textures": 6,
+  "visible_meshes": 6,
+  "visible_triangles": 8888
+}

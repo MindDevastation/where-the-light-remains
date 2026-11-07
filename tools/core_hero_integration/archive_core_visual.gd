@@ -10,8 +10,13 @@ var _previous_override: Material
 var _peak := 1.0
 
 
+func _enter_tree() -> void:
+    request_ready()
+
+
 func _ready() -> void:
-    _energy = get_node("VisualCore/CoreAssembly/CoreEnergy") as MeshInstance3D
+    warmth = 0.0
+    _energy = get_node("VisualCore/ArchiveCentralMechanism/CoreAssembly/CoreEnergy") as MeshInstance3D
     _source = _energy.get_active_material(0) as StandardMaterial3D
     assert(_source != null, "Recovered core requires its original emissive material")
     _previous_override = _energy.get_surface_override_material(0)

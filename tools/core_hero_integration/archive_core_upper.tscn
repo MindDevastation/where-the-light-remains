@@ -13,19 +13,19 @@ metadata/scope = "Staged only. Exact measured upper plus original delivered ener
 [node name="VisualCore" parent="." instance=ExtResource("DeliveredHero")]
 position = Vector3(0, -1.02, 0)
 
-[node name="Orbit_Inner" parent="VisualCore/CoreAssembly" index="2"]
+[node name="Orbit_Inner" parent="VisualCore/ArchiveCentralMechanism/CoreAssembly" index="2"]
 visible = false
 
-[node name="Orbit_Outer" parent="VisualCore/CoreAssembly" index="3"]
+[node name="Orbit_Outer" parent="VisualCore/ArchiveCentralMechanism/CoreAssembly" index="3"]
 visible = false
 
-[node name="Orbit_Third" parent="VisualCore/CoreAssembly" index="4"]
+[node name="Orbit_Third" parent="VisualCore/ArchiveCentralMechanism/CoreAssembly" index="4"]
 visible = false
 
-[node name="sm_archive_core_mounts_and_cage" parent="VisualCore/CoreAssembly" index="5"]
+[node name="sm_archive_core_mounts_and_cage" parent="VisualCore/ArchiveCentralMechanism/CoreAssembly" index="5"]
 visible = false
 
-[node name="sm_archive_core_static_body" parent="VisualCore" index="1"]
+[node name="sm_archive_core_static_body" parent="VisualCore/ArchiveCentralMechanism" index="1"]
 visible = false
 
 [editable path="VisualCore"]

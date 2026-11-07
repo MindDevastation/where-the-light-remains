@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "Actual S02 E/fragment/checkpoint/reload/physical return with one extra recovered-core warmth assertion. Owned writable synthetic checkpoint namespace.",
+  "original_fixture_sha256": "5f29419b708c26577f9bc2d4b43086b8e99b1e69b374f98dcb3538eb6e39c4bd",
+  "extended_fixture_sha256": "befee8d5701d721ca974e57abca80c71cce8fa9369e6e9f34803da662a095682",
+  "log_sha256": "38df27b302a77baab501714b6f9c7c1e7e7caed85c97e8a54aec2c81d5cd0e8f",
+  "slots": {
+    "savegame.json": "e7f210697abbb9e4bb565351590b156ec9715ecc062d8f1775e15851662b06d8",
+    "savegame.backup.json": "82fc0b9ad8e52bcc0ffbb7b308a740176e88f9720467c956b4aa7e58ce6ba8da"
+  }
+}

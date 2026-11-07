@@ -13,12 +13,12 @@
     },
     {
       "path": "game/art/scenes/hero_props/archive_core_visual.gd",
-      "after_sha256": "7898647cc8697bfc088406e6d751fbdbadd33d7bf2923d8344fc6e48e25eea36",
+      "after_sha256": "768ec81af6aaefdac1a132d7f67c200c0f23d2eeebe04538e112f695f50162d4",
       "new_text_source": true
     },
     {
       "path": "game/art/scenes/hero_props/archive_core_upper.tscn",
-      "after_sha256": "341a5db99f28b76998fd26dcf890c4774c173204da05a5eccc3bfb3029b4ee61",
+      "after_sha256": "891949714b4910ffa63c17e77db5b1d680ea6158c0bb349911ec7ce0b7097698",
       "new_text_source": true
     }
   ],
