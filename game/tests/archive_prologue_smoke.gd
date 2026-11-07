@@ -61,6 +61,7 @@ func _run() -> void:
     await get_tree().process_frame
     await get_tree().physics_frame
     _check(prologue.camera.is_current() and not prologue.spark.visible, "Actual exterior camera precedes first spark")
+    _check(is_zero_approx(prologue.lock_bolt.position.x), "Fresh S00 has a fully engaged bolt")
     _check(_sparks.is_empty() and AudioDirector.playback_snapshot()["players"].all(func(p: Dictionary) -> bool: return not p["playing"]), "Unbound shipping prologue remains scoreless before the spark")
     _check(is_equal_approx(prologue.camera.fov, player.camera.fov) and is_equal_approx(player.camera.fov, 95.0), "Cinematic and player use the same configured FOV")
     for edge in [Vector3(3, .6, 15), Vector3(0, .6, 18)]:
@@ -72,14 +73,23 @@ func _run() -> void:
         await get_tree().process_frame
     _check(prologue.spark.visible and world.get_node("Routes/Wing01/Gate").status == ArchiveGate.Status.DORMANT, "First spark appears without awakening the Archive")
     _check(_sparks == [ERR_UNCONFIGURED] and AudioDirector.current_state == ArchivePrologue.SPARK_MUSIC_STATE, "Unbound first spark emits exactly one silent semantic request")
+    _check(is_zero_approx(prologue.lock_bolt.position.x), "The first spark precedes bolt release")
+    while prologue.elapsed < 1.7:
+        await get_tree().process_frame
+    _check(prologue.lock_bolt.position.x < 0 and prologue.lock_bolt.position.x > -.24 and is_equal_approx(prologue.left_door.position.x, -.65), "Actual clock retracts the bolt while both leaves remain closed")
     var paused_at := prologue.elapsed
     var paused_camera := prologue.camera.global_transform
+    var paused_bolt := prologue.lock_bolt.global_transform
     InputManager.set_paused(true)
     InputManager.set_mode(InputManager.Mode.UI)
     await get_tree().create_timer(.15, true).timeout
     _check(is_equal_approx(prologue.elapsed, paused_at) and prologue.camera.global_transform.is_equal_approx(paused_camera), "Cinematic simulation and camera remain frozen while paused")
+    _check(prologue.lock_bolt.global_transform.is_equal_approx(paused_bolt), "Partial bolt release freezes with the cinematic")
     InputManager.set_mode(InputManager.Mode.CINEMATIC)
     InputManager.set_paused(false)
+    while prologue.elapsed < 2.0:
+        await get_tree().process_frame
+    _check(is_equal_approx(prologue.lock_bolt.position.x, -.24), "Bolt clears the keeper before the unchanged door opening interval")
     while prologue.elapsed < 3.8:
         await get_tree().process_frame
     await get_tree().physics_frame
@@ -106,6 +116,7 @@ func _run() -> void:
     world = slot.get_child(0) as ArchiveMain
     _check(not world.get_node("Prologue/Camera3D").is_current() and player.active and _checkpoints.size() == 1, "Quiet S01 load does not replay S00")
     var resumed_prologue := world.get_node("Prologue") as ArchivePrologue
+    _check(is_equal_approx(resumed_prologue.lock_bolt.position.x, -.24), "Quiet S01 resume restores the released bolt")
     resumed_prologue.spark_ignited.connect(func(error: Error) -> void: _sparks.append(error))
     await get_tree().process_frame
     _check(_sparks == [ERR_UNCONFIGURED] and AudioDirector.current_stage == ArchiveProgress.INTRO, "Restored completed prologue never requests a new seed")

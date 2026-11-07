@@ -1,0 +1,22 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/archive_arched_fanlight.blend",
+      "bytes": 642601,
+      "sha256": "3c1a8cd4411b6a46ac7ad261d1fcba2fb7a9659082d2df9bb924c9a578e18367"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_arched_fanlight.glb",
+      "bytes": 174220,
+      "sha256": "caf5e4b5bb21fe97b8a3df915d912419ec9f60b99d7b4998e894f848f1d8f03b"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_archive_arched_fanlight",
+      "triangles": 1560,
+      "surfaces": 4
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

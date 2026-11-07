@@ -1,0 +1,259 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T20:59:03.917314+00:00",
+  "scope": "All28 current images individually viewed. Bounded state/local practical acceptance only; full style/VS1/target hardware open.",
+  "images": [
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s00_closed_low.png",
+      "sha256": "543699a07afdc003b337ed21020788d76acfb899e74731130bba2f481a30ff94",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "One exterior amber source; original entry/guards readable; black unbuilt backdrop/upper apertures remain open. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s00_opening_low.png",
+      "sha256": "c74ff1b4e8886252bd199ab5fb6b259f1b5b12cced3c5955df0ace6c66a7e223",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Original automatic sliding opening and spark path retained; no interior warm spill onto outer side walls. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s00_entry_low.png",
+      "sha256": "366b71f85573904d484fff9639046de2c56523adb9a87d2b168bef3e16005498",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Original camera enters a cold dormant core; interior practicals still hidden before S01 handoff. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s01_asleep_low.png",
+      "sha256": "21e712ead5858a4f0d716d3043b729e57b1d04a81b59dfafba06da140fa6af9f",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Local wall amber pockets against cold dormant core; complete pale-stone/style and upper infill remain PARTIAL. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s01_detail_low.png",
+      "sha256": "0e0aa9ae367ca66660c12dbb49d87a7e71c706b57e7bbe55766a15e041089c2b",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Gate silhouette and unit wall fixtures readable; dark timber and unfinished overhead aperture noted, no emblem/style approval. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_corridor_join_low.png",
+      "sha256": "adf96f07352a6e01cad22da1ec641c396c0cc37177d4c9a4ce1d3992eb3dbfb8",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Open eligible passage and original cyan route remain clear; original floor seam/height unchanged. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s01_awakened_low.png",
+      "sha256": "04c2e1aed95db8d07bec50f616494703821bd55dc0264d25093ed79521d5dd80",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Core warms locally while wall practicals stay restrained; bright uniform floor still requires full material/style polish. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_completed_hub_low.png",
+      "sha256": "5b78ecebb0359748017fb7bc3f252fe50e62a97deace6ff76f2079fecba0f6cd",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Warm restored core and completed/next route clues persist; this is a quiet read-only projection. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s01_controls_low.png",
+      "sha256": "909827ed6305b9d5c974842245ad76d03820013c960f770dbf7795136b2f6b2c",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Panel/lens/socket/lever silhouettes visible, restrained brass rim; dark timber detail and thin Low joints remain limited. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s01_awakening_low.png",
+      "sha256": "56a8ab8a794cccba6b4d0681c9d5d79bc811ce7e86cb17bfc3525d7f5587c69d",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Intermediate core illumination and original temporary five-channel flash visible; no final route-state inference from this transient pose. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s02_entry_cold_low.png",
+      "sha256": "de45bd50819af4d43f085a13c5a6096d4cade79622249a12708f38ce5b3af372",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Original cold room entrance, rug/bookcases/practicals and three-ring silhouette visible; incomplete distant environment/style remains open. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s02_optics_cold_low.png",
+      "sha256": "cbde3af775ad8ac11ec1f3a31157cdb20aca43408d8a8220e013c2d43a6c4833",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Cold optics/five-stop control outline and original beam readable; beam overlaps lamp in this camera projection, no new source. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s02_star_low.png",
+      "sha256": "db0efbfcf2da96acc64092711ce98cd422b7e6c4fa2b5f1b4e7bf2b1b62af0bb",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Star progression exposes original connected beam/focus indication; room stays cold until Hearth as required. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s02_hearth_warm_low.png",
+      "sha256": "5413d31303392c9dd03ac18ab70f1145c60247d244db10f4518df19572a48d79",
+      "quality": "low",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Clear warm room transition, Hearth flame, rings and beams retained; no full VFX/material polish acceptance. Thin edges alias at Low .75 render scale.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s00_closed_medium.png",
+      "sha256": "df621e9cce8e7566d6b955e808253cf521217c5c7ba9305643bab365d1247494",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "One exterior amber source; original entry/guards readable; black unbuilt backdrop/upper apertures remain open. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s00_opening_medium.png",
+      "sha256": "29f7b6a7a0286c471dd0d191b526a3180bdc6a9f56da0393fbe86e0dde275e1f",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Original automatic sliding opening and spark path retained; no interior warm spill onto outer side walls. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s00_entry_medium.png",
+      "sha256": "ac07c7bb5dcf82a8c9c8268771ab874801b7b540198db3ce2606a5c3e638c665",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Original camera enters a cold dormant core; interior practicals still hidden before S01 handoff. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s01_asleep_medium.png",
+      "sha256": "dad7768cbb5fa8c583094f89b40103266216c5dec195e726f16600d44e5979e4",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Local wall amber pockets against cold dormant core; complete pale-stone/style and upper infill remain PARTIAL. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s01_detail_medium.png",
+      "sha256": "561ff38230afb31c79e26e3178143fd276c502bb0c4db9e2c46e982235f53b74",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Gate silhouette and unit wall fixtures readable; dark timber and unfinished overhead aperture noted, no emblem/style approval. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_corridor_join_medium.png",
+      "sha256": "3ca538149e554433b5a95342c571f62f95d03a2f72c6df85985141df5bba7ee2",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Open eligible passage and original cyan route remain clear; original floor seam/height unchanged. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_s01_awakened_medium.png",
+      "sha256": "de222f8086166f3415cac5dddfea826641f8541d86d9371ec3510aad09fe6005",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Core warms locally while wall practicals stay restrained; bright uniform floor still requires full material/style polish. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/practical_lighting_completed_hub_medium.png",
+      "sha256": "ea3b1626a17f74e3b2bf6b44547192eaa93c8bfba481ed4922251c03fd06b928",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Warm restored core and completed/next route clues persist; this is a quiet read-only projection. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s01_controls_medium.png",
+      "sha256": "854aac579a4198622e6afc16d07c905b4daed8f95ddbc1aa41969b497107ddc3",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Panel/lens/socket/lever silhouettes visible, restrained brass rim; dark timber detail and thin Low joints remain limited. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s01_awakening_medium.png",
+      "sha256": "882691200664a4460688c01e813aa933b4e4a5f1ae637f811257ad231b25dc17",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Intermediate core illumination and original temporary five-channel flash visible; no final route-state inference from this transient pose. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s02_entry_cold_medium.png",
+      "sha256": "a530dc058935e5e6fb889cc0ab758c1dd0406e2c950b01a38018917377695a8c",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Original cold room entrance, rug/bookcases/practicals and three-ring silhouette visible; incomplete distant environment/style remains open. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s02_optics_cold_medium.png",
+      "sha256": "277e3d2b28592692fccde94882432001d19aa4070615d00852b271484bad69b7",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Cold optics/five-stop control outline and original beam readable; beam overlaps lamp in this camera projection, no new source. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": true
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s02_star_medium.png",
+      "sha256": "16bc661b465fb0aed54925eb9545c3944f60bad4c6478e5601ca8ed2a7c60801",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Star progression exposes original connected beam/focus indication; room stays cold until Hearth as required. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    },
+    {
+      "file": "docs/production/evidence/archive_reconstruction/practical-lighting-native-3/lighting_s02_hearth_warm_medium.png",
+      "sha256": "b38ce45a1614a438bb46f26a9efc9d76a33980eb5324e2a8b5ea7cf03e006734",
+      "quality": "medium",
+      "individually_viewed": true,
+      "judgment": "BOUNDED_LIGHT_STATE_READABILITY_PASS_FULL_STYLE_PARTIAL",
+      "notes": "Clear warm room transition, Hearth flame, rings and beams retained; no full VFX/material polish acceptance. Medium retains sharper fixture/stone joints.",
+      "supplemental_detail": false
+    }
+  ]
+}

@@ -12,6 +12,7 @@ var apply_button: Button
 var cancel_button: Button
 var defaults_button: Button
 var _panel: PanelContainer
+var _scroll: ScrollContainer
 var _previous_mode := InputManager.Mode.UI
 
 
@@ -40,6 +41,7 @@ func _ready() -> void:
     title.add_theme_font_size_override("font_size", 30)
     column.add_child(title)
     var scroll := ScrollContainer.new()
+    _scroll = scroll
     scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
     scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
     scroll.follow_focus = true
@@ -139,7 +141,16 @@ func open() -> void:
     error_label.text = ""
     InputManager.set_mode(InputManager.Mode.UI)
     show()
+    _focus_initial_field.call_deferred()
+
+
+func _focus_initial_field() -> void:
+    # Focus after the newly visible container has sorted its children. Earlier
+    # focus can scroll the first row above the viewport using stale geometry.
+    if not visible or is_queued_for_deletion() or InputManager.mode != InputManager.Mode.UI:
+        return
     fields["resolution"].grab_focus()
+    _scroll.scroll_vertical = 0
 
 
 func close() -> void:

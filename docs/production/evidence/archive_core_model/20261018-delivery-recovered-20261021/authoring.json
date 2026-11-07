@@ -1,0 +1,33 @@
+{
+  "status": "AUTHORED_EXPORTED_RENDERED",
+  "blender": "4.5.14 LTS",
+  "triangles": 29780,
+  "mesh_parts": 7,
+  "ring_triangles": [
+    1536,
+    1536,
+    1536
+  ],
+  "pivot_y_m": 1.02,
+  "units": "meters",
+  "shipping_scene_changed": false,
+  "reference": "assets/3d/reference/s01_core_final_look_v1/s01_core_final_look_v1.png",
+  "compatibility_variant": "sm_s01_core_upper_v1.glb preserves the earlier measured contract",
+  "outputs": [
+    {
+      "file": "s01_archive_core_hero_v1.blend",
+      "bytes": 12268681,
+      "sha256": "bcb075f50eb8f213d8a8e6c1ba2f083560590d8c095e844c9f685075d24f283b"
+    },
+    {
+      "file": "s01_archive_core_hero_preview.png",
+      "bytes": 1808545,
+      "sha256": "7bbe43c7faac738388ddf27e4fde5e262fb8c5b6b203c38768e7fc4644df4d52"
+    },
+    {
+      "file": "sm_s01_archive_core_hero_v1.glb",
+      "bytes": 9761304,
+      "sha256": "30c9630339791d6362ad3758ddac86e146a8c1d4840e6a2464263f886e505ccc"
+    }
+  ]
+}

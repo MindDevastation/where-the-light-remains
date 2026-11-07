@@ -1,0 +1,151 @@
+{
+  "captures": [
+    {
+      "camera": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.579207, -0.81518), Z: (0.0, 0.81518, 0.579207), O: (0.0, 3.8, 2.7)]",
+      "decal_count": 4,
+      "effects": false,
+      "enabled": true,
+      "file": "neutral_kit_on_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "neutral_kit"
+    },
+    {
+      "camera": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.579207, -0.81518), Z: (0.0, 0.81518, 0.579207), O: (0.0, 3.8, 2.7)]",
+      "decal_count": 4,
+      "effects": false,
+      "enabled": false,
+      "file": "neutral_kit_off_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "neutral_kit"
+    },
+    {
+      "camera": "[X: (0.722642, 0.0, -0.691223), Y: (-0.319649, 0.88665, -0.334179), Z: (0.612873, 0.462441, 0.640731), O: (-1.7, 1.45, -22.85)]",
+      "decal_count": 2,
+      "effects": false,
+      "enabled": true,
+      "file": "hearth_close_on_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "hearth_close"
+    },
+    {
+      "camera": "[X: (0.722642, 0.0, -0.691223), Y: (-0.319649, 0.88665, -0.334179), Z: (0.612873, 0.462441, 0.640731), O: (-1.7, 1.45, -22.85)]",
+      "decal_count": 2,
+      "effects": false,
+      "enabled": false,
+      "file": "hearth_close_off_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "hearth_close"
+    },
+    {
+      "camera": "[X: (0.707107, 0.0, -0.707106), Y: (-0.537867, 0.649151, -0.537868), Z: (0.459019, 0.76066, 0.459019), O: (-2.1, 1.75, -23.3)]",
+      "decal_count": 1,
+      "effects": false,
+      "enabled": true,
+      "file": "hearth_soot_on_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "hearth_soot"
+    },
+    {
+      "camera": "[X: (0.707107, 0.0, -0.707106), Y: (-0.537867, 0.649151, -0.537868), Z: (0.459019, 0.76066, 0.459019), O: (-2.1, 1.75, -23.3)]",
+      "decal_count": 1,
+      "effects": false,
+      "enabled": false,
+      "file": "hearth_soot_off_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "hearth_soot"
+    },
+    {
+      "camera": "[X: (0.808237, 0.0, -0.588858), Y: (-0.349959, 0.804242, -0.480336), Z: (0.473584, 0.594302, 0.650018), O: (-1.95, 0.75, -23.05)]",
+      "decal_count": 1,
+      "effects": false,
+      "enabled": true,
+      "file": "hearth_dust_on_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "hearth_dust"
+    },
+    {
+      "camera": "[X: (0.808237, 0.0, -0.588858), Y: (-0.349959, 0.804242, -0.480336), Z: (0.473584, 0.594302, 0.650018), O: (-1.95, 0.75, -23.05)]",
+      "decal_count": 1,
+      "effects": false,
+      "enabled": false,
+      "file": "hearth_dust_off_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "hearth_dust"
+    },
+    {
+      "camera": "[X: (0.970142, 0.0, -0.242536), Y: (-0.073659, 0.952766, -0.294637), Z: (0.23108, 0.303705, 0.924319), O: (-2.1, 1.62, -21.2)]",
+      "decal_count": 2,
+      "effects": false,
+      "enabled": true,
+      "file": "hearth_approach_on_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "hearth_approach"
+    },
+    {
+      "camera": "[X: (0.970142, 0.0, -0.242536), Y: (-0.073659, 0.952766, -0.294637), Z: (0.23108, 0.303705, 0.924319), O: (-2.1, 1.62, -21.2)]",
+      "decal_count": 2,
+      "effects": false,
+      "enabled": false,
+      "file": "hearth_approach_off_low.png",
+      "preset": "Low",
+      "scope": "Neutral kit fixture or current S02 API/camera pose; no gameplay input/save/route execution",
+      "size": [
+        1280,
+        720
+      ],
+      "view": "hearth_approach"
+    }
+  ],
+  "checks": 14,
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "failures": 0,
+  "preset": "Low",
+  "renderer": "forward_plus",
+  "scope": "New four-mask kit and two static existing Hearth projections; software Vulkan, API/pose review only",
+  "status": "PASS_CAPTURE_ONLY"
+}

@@ -1,0 +1,1 @@
+Initial135-check passing fixture. Current final2 applies a full2*pi*radius/N step reserve near the clipped own-ring terminal-joint boundary;the entire-circle ring/bridge bound retains the proper half-step reserve. Checks/floors unchanged. Exclude these135 executions from final credit. The diagram remains valid: unchanged native bases/routes/geometry,not a native shipping frame.

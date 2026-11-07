@@ -1,6 +1,246 @@
+# Current bounded surface decal acceptance - 2026-11-02
+
+ARCHIVE_DECAL_ATLAS_V1.md records one original2048 four-mask coverage atlas,
+four exact1024 runtime crops and two static Hearth projections. Final
+native-20261102-1: cache-free Godot4.7.2 import,43 pixel-source +42 native
+import/surface +19 affected housing +14 Low +14 Medium assertions pass.
+All20 original frames individually inspected. Eight carrier pairs have zero
+changed pixels outside projected decal volume bounds with a two-pixel reserve.
+
+Only DECAL-001 moves MISSING to PARTIAL:27 ACCEPTED /45 PARTIAL /5 MISSING
+among77 VS1 groups;185 canonical rows retained. Of626 existing game files,
+625 are byte-identical to cad2916; only the Hearth art wrapper changes, with
+20 new data/import/scene/test files. Meshes, materials, colliders, lights,
+controller, narrative and save ownership stay unchanged.47 existing GLBs
+independently read; no new LFS upload. Synthetic slots and DTO/dirty pass.
+
+Broader stages0-15 placement, full style and physical target hardware remain
+open. Earlier font/sigil/dust/inspect suites were not rerun or aggregated.
+ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Prior central-mechanism binary
+refusal stays in effect, without retry or conversion. Source at48e5ca5;
+acceptance publication resolves from continuation_decals_20261102.jsonl.
+The journal retains an actual994.042s checkpoint interval exceeding900s;
+no blanket cadence compliance is claimed.
+
+---
+
+# Historical bounded fragment glyph VFX acceptance - 2026-11-02
+
+FRAGMENT_SIGIL_DISSOLVE_V1.md records the shared Star/Hearth modal reveal and
+outgoing dissolve. Final native-20261102-4: cache-free Godot4.7.2 import,
+34 lifecycle +13 actual PCM +40 Low +40 Medium assertion executions pass;
+all30 original frames individually inspected. Exact settled shader/original
+raster and paused-frame identity pass; outgoing size/position are preserved.
+Prior three diagnostics are retained and excluded from final credit.
+
+Only VFX-004 moves MISSING to PARTIAL:27 ACCEPTED /44 PARTIAL /6 MISSING
+among77 VS1 groups;185 canonical rows retained. Of620 existing game files,
+619 are byte-identical to6457676; only FragmentPresenter changes, with six new
+VFX/test files. Existing47 GLBs are verified cache reads, with no new upload.
+Protected synthetic slots and DTO/dirty remain unchanged. World carrier,
+eight later sigils, final UI/VFX style, actual full gameplay and target GPU
+remain open. FONT-001 stays ACCEPTED; prior font/channel/gallery suites were
+not rerun. ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Central-mechanism
+binary publication retains the prior refusal, with no retry or conversion.
+Source/evidence at364b333; final publication and actual checkpoint intervals
+resolve from evidence/checkpoints/continuation_sigil_20261102.jsonl.
+
+---
+
+# Historical bundled Cyrillic UI font acceptance - 2026-10-31
+
+UI_CYRILLIC_FONT_V1.md records Open Sans600/100 and two explicit bundled Noto
+Symbols fallbacks, exact upstream files/full notices and native PCK readback.
+Fresh final native-20261031-3: cache-free Godot4.7.2 import,627 checks at each of
+1280x720,1600x900,1920x1080 and36 individually inspected original frames pass.
+No earlier617-check attempts or old accepted suites are aggregated. Native
+captions prove inherited/explicit font raster equality. A42px first-row Settings
+scroll was fixed with guarded deferred focus and reset; early close/reopen pass.
+
+Only FONT-001 is promoted:27 ACCEPTED /43 PARTIAL /7 MISSING among77,185 rows
+retained. FONT-002 and full UI style remain PARTIAL. Three existing game files
+change for font bootstrap/settings focus;598 other baseline files match exactly.
+Geometry, narrative, routes, clocks, materials and save schema are preserved.
+Protected synthetic slots and DTO/dirty pass. Software Vulkan is not a platform
+release, actual full gameplay/input/failure/save-reload or target-GPU acceptance.
+
+ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Prior channel and sixteen-frame
+owner-gallery acceptance remains separate. Central mechanism binary publication
+still has its prior automatic-review blocker; no retry or format conversion.
+Source/remote acknowledgement resolves from continuation_fonts_20261031.jsonl.
+
+---
+
+# Historical bounded channel presentation - 2026-10-31
+
+ARCHIVE_CHANNEL_TRIM_V1.md records the original shared 180-triangle luminous
+core/iron-rail skin now used by five existing Hub channels. Fresh cache-free
+Godot 4.7.2 import, 28 bounded geometry/state/pause/cancellation checks and eight
+individually inspected Low/Medium native views pass. The successful run reuses
+47 payloads independently retrieved in the retained first attempt; no new LFS
+binary is uploaded. Existing controller, routes, materials, lights, quality and
+save ownership are preserved. First failed fixture and correction are retained.
+
+ARCH-015/S01-005 stay PARTIAL; 26 ACCEPTED / 44 PARTIAL / 7 MISSING among 77,
+185 rows retained. Full floor/wall/curved family, Hub composition, owner style,
+audio and target GPU remain open. ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked.
+The prior sixteen-frame owner gallery remains STABLE_REVIEW_ONLY and was not
+rerun. Central-mechanism binary publication remains blocked by prior automatic
+review; generic continuation does not retry it. Main/base/draft stay unchanged.
+Current publication resolves from continuation_20261031.jsonl and remote branch.
+
+---
+
+# Historical fanlight acceptance and next layout dependency — 2026-10-06
+
+ARCHIVE_ARCHED_FANLIGHT_ACCEPTANCE.md records one1560tri four-surface shared
+window above five original gates:712 scoped assertions plus72 in independent
+LFS use;32 individually inspected Low/Medium images;208 prior art/module
+identities preserved. Strengthened source reopen verifies83 closed positive
+components. Existing lighting stable1af05c2/receipt2224b73 remains accepted.
+Fanlight candidate6c7d99f/receipt dc6805a is remotely confirmed; resolve final
+stable acceptance/receipt from docs/production/evidence/checkpoints/development.jsonl.
+
+ARCH-008 MISSING→PARTIAL;25 ACCEPTED/38 PARTIAL/14 MISSING among77 rows;185
+canonical rows retained. Complete windows/infill/backdrop/hero/channels/dressing/
+audio/gallery/physical GTX1060/style/VS1 remain OPEN; S03 blocked. Planning
+estimate25–30%, low confidence,3/16 playable stages.
+Next ARCH-011 is paused for canonical stair locations, two widths and walking
+elevations; current accepted S01/S02 surfaces are flatY0. See
+ARCHIVE_SHORT_STAIRS_LAYOUT_AUDIT.md. No stair asset/layout or future stage was
+invented. This is a design dependency, not another push-permission request.
+
+---
+
+# Historical lighting acceptance at1af05c2 — 2026-10-06
+
+ARCHIVE_PRACTICAL_LIGHTING_ACCEPTANCE.md:654 current assertions/import/startup,
+28 individually inspected native Low/Medium images, protected saves PASS. Four
+accepted Hub lantern instances and local clock/state-owned core lighting; S00
+retains one warm source by stage projection. Accepted art bytes preserved.
+Full style/upper apertures/windows/backdrop/hero/channels/dressing/audio/gallery/
+physical GTX1060 remain OPEN; GATE-VS1 OPEN/S03 blocked. Counts25/37/15 among77,
+185 rows retained; full-game planning estimate25–30%, low confidence.
+Next highest missing architectural row ARCH-008: audit window/glass placement
+and opening-ghost clearance in existing upper apertures before authoring.
+Resolve newest stable/receipt from actual remote/checkpoint journal.
+
+---
+
+# Current publication/recovery resolution — 2026-10-06
+
+Owner directly authorized the prepared and subsequent ordinary working-branch
+checkpoint pushes with “Разрешаю”. Accepted shared-gate evidence is remotely
+verified at 3d81acbcd94759d472b72f60dbac3eb39000fad4.
+The publication blocker below is historical and resolved. Fresh recovery uses
+this exact remote tip after checkout/coordinator loss; no unattended work is
+claimed. Next bounded scope is warm/cool practical lighting, fixed contracts
+and affected S00/S01/S02 regression. No accepted art regeneration; VS1/S03 and
+physical target-GPU gates remain open. Publication receipt: wing-gate-acceptance-
+20261006/publication.json.
+
+---
+
+# Latest bounded gate acceptance — prepared locally, remote publication pending
+
+Recovered actual a914b53c import-only revision4; existing3596tri shared master
+and five gate instances validated without reauthoring.542 scoped assertions
+reused after exact identity comparison,16 retained native images individually
+inspected, two fresh independently retrieved LFS payloads reopened/imported/
+used with116 checks/startup PASS.204 prior art/module identities unchanged.
+ARCHIVE_WING_GATE_ACCEPTANCE.md defines scope; per-route light/emblem and full
+Hub remain PARTIAL. Current25 ACCEPTED/37 PARTIAL/15 MISSING among77.
+Remote publication requires direct authorization after automatic review refusal;
+no remote stable checkpoint claimed. Next practical warm/cool lighting, then
+remaining inventory. Full art/audio/gallery/physical GPU/VS1 OPEN; S03 blocked.
+
+---
+
+# Latest bounded checkpoint — original Hub floor geometry accepted
+
+hub-floor-acceptance-20261006:248 scoped assertions/startup,16 inspected native
+images,2 independently retrieved/used LFS payloads;201 prior identities retained.
+Full lighting/style explicitly PARTIAL. Next missing shared five-gate mesh with
+original binding/ghost/state contracts, then representative practical warm/cool
+lighting. Full visuals/audio/gallery/physical GPU/VS1 OPEN; S03 blocked.
+
+---
+
+# Latest bounded checkpoint — original lower wall skins accepted
+
+hub-wall-acceptance-20261006:515 scoped assertions/startup,16 inspected native
+images,2 independently retrieved/used LFS payloads;198 prior identities retained.
+Next Hub floor skin on fixed original cylinder/plane, preserve accepted corridor
+and approach/core/channel ownership. Full visuals/audio/gallery/physical GPU/
+GATE-VS1 OPEN; S03 blocked.25 ACCEPTED/35 PARTIAL/17 MISSING among77 groups.
+
+---
+
+# Latest bounded checkpoint — shared upper drum/dome accepted
+
+hub-dome-acceptance-20261006:414 scoped assertions/startup,16 inspected native
+images,5 independently retrieved LFS payloads;187 prior identities preserved.
+Current25 ACCEPTED/35 PARTIAL/17 MISSING among77 slice groups. Continue eight
+original lower wall panels, fixed bodies/apertures/FOV/puzzles/save. Full visual/
+audio/gallery/target hardware gates open; GATE-VS1 OPEN/S03 blocked.
+
+---
+
+# Latest bounded checkpoint — original S00 approach accepted
+
+S00_APPROACH_ACCEPTANCE.md / approach-acceptance-20261006:291 scoped assertions,
+startup,12 inspected Low/Medium captures and4 fresh LFS payloads used PASS.
+Current77 inventory groups:25 ACCEPTED/33 PARTIAL/19 MISSING. Next missing shared
+exterior/dome/Hub upper architecture; keep all original apertures/gameplay/save.
+GATE-VS1 OPEN, S03 blocked; full visuals/audio/gallery/physical GPU outstanding.
+
+---
+
+# Latest bounded checkpoint — entry facade/crown accepted
+
+S00_ENTRY_PORTAL_ACCEPTANCE.md / portal-acceptance-20261006:225 scoped assertions,
+startup,12 inspected Low/Medium captures and independent3-payload LFS use PASS.
+Next existing flat approach/guard presentation, then missing shared exterior/
+dome/upper infill/backdrop and Hub, with original routes and gameplay preserved.
+GATE-VS1 remains OPEN and S03 blocked; owner gallery/audio/physical GPU outstanding.
+
+---
+
 # Implementation plan
 
 Status: **started**.
+
+## Latest recovered bounded stages — 2026-10-06
+
+Current development branch is `feature/04-archive-gameplay/resume-2026-10-06`.
+`WORK_RECOVERY.md` and the verified remote checkpoint journal supersede the
+historical active-window/environment notes below.
+
+- [x] Bounded upper supports, dome and shipping roof integration, beam/quiet Star,
+  wall lanterns and bookcases were already accepted before this recovery. Their
+  respective acceptance documents/receipts define the exact scope. The old
+  write-credential blocker below is historical; no full ARCH/VS1 claim follows.
+- [x] Recover and complete the ordinary crimson/navy rug: 44 triangles, two shared
+  materials, 6 mm measured floor gap, no collider; 207 read-only and 60 real S02
+  assertions, 14 inspected player views and independent fresh-store source/GLB
+  retrieval/reopen/import/use. Art acceptance: `c5fc78a`.
+- [x] Add optional compact remote delta checkpoints after a full-history collection
+  proved too large for live cadence. Actual staged/unstaged/LFS recovery, remote
+  advancement and publication/refusal fixtures pass; old full archive tests pass.
+  Tooling source: `f59c385`; accepted game/art bytes unchanged.
+- [x] Original S00-005 bolt/housing/keeper,848 triangles, unchanged automatic
+  prologue/collider/save contract;378 assertions/startup,18 inspected Low/Medium
+  pose views and independent retrieval/use of four LFS payloads. See
+  `S00_DOOR_LOCK_ACCEPTANCE.md`; full exterior/door composition remains open.
+- [x] Reconcile all185 canonical groups and77 VS1-related rows against runtime
+  owners, reference authority and14 current art acceptance subsets. See
+  VS1_ART_RECONCILIATION.md; counts are scoped, not percent completion.
+- [x] Original S00 timber leaf skin:2100 triangles/shared by both unchanged doors,
+  114 assertions/startup,18 native images and independent two-payload LFS use.
+  Portal/exterior still open. See S00_ENTRANCE_LEAF_ACCEPTANCE.md.
+- [ ] Complete authored audio, full gallery/art review and physical target-hardware
+  acceptance. `GATE-VS1` remains open and S03 remains gated.
+
 
 ## Latest bounded Flame and ceiling inputs — 2026-10-06
 
@@ -476,3 +716,42 @@ two existing read-only save fixtures. Both primary/backup SHA values remain
 No runtime errors/warnings or shipping source-audio bindings. The two S00
 opening proposals in `audio/REVIEW_INDEX.md` are ready for listening; first-note
 and common motif selection remain pending, so GATE-VS1 stays open.
+
+## Working-branch art checkpoint — 2026-10-06, S01 PROP-003
+
+Starting lens/socket bounded art complete on resume-2026-10-06; no main
+integration.259 scoped current assertions/startup,14 inspected Low/Medium views
+and independent retrieval/use of all3 LFS payloads PASS. Existing target poses,
+controller/save behavior and prior142 art/module identities preserved. See
+S01_STARTING_LENS_ACCEPTANCE.md and SLICE_ART_INVENTORY.md. Remaining required
+slice art includes S00 exterior, full Hub mechanism/console/rotunda/gates/channels
+and final S02 presentation; full ARCH/VS1/audio/physical GPU/S03 remain open.
+
+## Working-branch art checkpoint — 2026-10-06, S01 controls
+
+Bounded original panel/lever fittings complete on resume-2026-10-06,1940
+triangles/four meshes/five LFS payloads.325 scoped current assertions/startup,
+14 individually inspected Low/Medium views, independent retrieval/reopen/use
+PASS. Cosmetic phase poses include real E input and physical checkpoint quiet
+reload; original sequence/timers/save schema preserved.147 prior art/module
+identities unchanged. See S01_HUB_CONTROLS_ACCEPTANCE.md. Universal variants,
+full Hub console/mounting/lighting/architecture and full visual gate remain open.
+Main unchanged; S00 activation fitting now has bounded acceptance; next audit is remaining universal leaf-prop skins/variants.
+
+## Working-branch checkpoint — S01 lower housing, 2026-10-06
+
+[x] Ordinary bounded lower housing inside unchanged core collider;240 current
+assertions,16 inspected Low/Medium images and two-payload independent LFS use.
+[ ] Complete hero3–5 orbit family/console mounts/Hub rotunda, architecture/light gate.
+Next eligible composition: one S00 warm practical from the accepted lantern.
+
+[x] One S00 warm practical from unchanged accepted lantern;49 scoped checks,
+12 inspected Low/Medium views. Full exterior/night composition remains open.
+Next eligible local art: S00 last-spark sprite presentation inside existing clock;
+no global particle strategy or gameplay/path redesign.
+
+[x] Local S00 spark replaces primitive with original native VFX,40 scoped checks,
+12 inspected Low/Medium views. Global particle/path family remains PARTIAL.
+[ ] Highest missing reusable S00/S15 exterior and Hub architecture: ASTRA §9
+reasoning escalation required before modular architectural design; see
+VS1_NEXT_BLOCKERS.md. Full VS1 and S03 not promoted.

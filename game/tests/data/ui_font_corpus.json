@@ -1,0 +1,2092 @@
+{
+  "scope": "Non-test source quoted Cyrillic strings plus basic Latin/digits/punctuation and full Russian alphabet. Development overlay included. No new shipping copy.",
+  "source_string_count": 105,
+  "codepoints": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    183,
+    1025,
+    1040,
+    1041,
+    1042,
+    1043,
+    1044,
+    1045,
+    1046,
+    1047,
+    1048,
+    1049,
+    1050,
+    1051,
+    1052,
+    1053,
+    1054,
+    1055,
+    1056,
+    1057,
+    1058,
+    1059,
+    1060,
+    1061,
+    1062,
+    1063,
+    1064,
+    1065,
+    1066,
+    1067,
+    1068,
+    1069,
+    1070,
+    1071,
+    1072,
+    1073,
+    1074,
+    1075,
+    1076,
+    1077,
+    1078,
+    1079,
+    1080,
+    1081,
+    1082,
+    1083,
+    1084,
+    1085,
+    1086,
+    1087,
+    1088,
+    1089,
+    1090,
+    1091,
+    1092,
+    1093,
+    1094,
+    1095,
+    1096,
+    1097,
+    1098,
+    1099,
+    1100,
+    1101,
+    1102,
+    1103,
+    1105,
+    8212,
+    8230,
+    8594
+  ],
+  "source_strings": [
+    {
+      "path": "game/autoload/settings_manager.gd",
+      "text_sha256": "8dd0787501f65bcce2ef7278364d7bb49aa570f89053c3c1ed0e86540d63500a",
+      "codepoints": [
+        32,
+        37,
+        46,
+        58,
+        100,
+        1050,
+        1053,
+        1060,
+        1072,
+        1073,
+        1075,
+        1076,
+        1077,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1088,
+        1089,
+        1090,
+        1091,
+        1093,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "5368b245f5f13dcbe7ac71cd7605f4d9894266c0a0d67c77d307cfcb99915799",
+      "codepoints": [
+        32,
+        46,
+        1053,
+        1072,
+        1074,
+        1075,
+        1076,
+        1077,
+        1080,
+        1083,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "a42aee58d60a7d2a2fa9c112cea5dd62ba3b4c6ea05610a8a671ccb0c4da558d",
+      "codepoints": [
+        1055,
+        1076,
+        1078,
+        1080,
+        1083,
+        1086,
+        1088,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "6f7120a639d37d26949d80501971a81ad9edbe903076ec9ee17c61d1254fedea",
+      "codepoints": [
+        32,
+        1053,
+        1072,
+        1074,
+        1075,
+        1080,
+        1086,
+        1088,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "985b5e0f2ccf1ba08ac53253af32d2e9a600b846d3f3b99978f28d177388b9fa",
+      "codepoints": [
+        1053,
+        1072,
+        1080,
+        1081,
+        1082,
+        1086,
+        1088,
+        1089,
+        1090
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "2feb8fdfc490276136246fb193e60cb7c95fcb8508ef73ca9a4a91d9209c9de8",
+      "codepoints": [
+        32,
+        1042,
+        1075,
+        1079,
+        1080,
+        1081,
+        1088,
+        1090,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "a5111ff7c2815eda5c19f759d12bb81b8ef1f0e3a99be42fe82c014ebd93ed28",
+      "codepoints": [
+        32,
+        63,
+        1053,
+        1072,
+        1074,
+        1075,
+        1080,
+        1085,
+        1086,
+        1088,
+        1090,
+        1091,
+        1095,
+        1100,
+        1102
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "45c264ab6e509a10f555ae9d7b7c98ed9a48c74b6af627625e622dc189d8ee5f",
+      "codepoints": [
+        32,
+        46,
+        1050,
+        1058,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1097,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "1a93b387b18801bc219f6f6a2f1e70ab482ad406eb2b08a61014c98314ad9fd7",
+      "codepoints": [
+        32,
+        1053,
+        1072,
+        1074,
+        1075,
+        1080,
+        1085,
+        1086,
+        1088,
+        1090,
+        1091,
+        1095,
+        1100,
+        1102
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "8fbe9b75cbdfbfa6f57f060f286e00dee7e021068ebe378cfb495f3380d1e96b",
+      "codepoints": [
+        1054,
+        1072,
+        1077,
+        1084,
+        1085,
+        1090
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "53c58b99f36ed0a906652e905c4b8166f1593c17371349845d4523ed5e354b9f",
+      "codepoints": [
+        32,
+        46,
+        1057,
+        1072,
+        1074,
+        1075,
+        1076,
+        1077,
+        1079,
+        1080,
+        1081,
+        1085,
+        1086,
+        1088,
+        1089,
+        1091,
+        1093,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "bc6b0f89a4dd2ef461755d1d915056c8e98bc66c357bc8c1d941e2901a235f19",
+      "codepoints": [
+        32,
+        46,
+        1053,
+        1055,
+        1072,
+        1074,
+        1076,
+        1077,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1095,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "d96a3cad0569e555419bdd939693d1bfc69ca02f9d56142b34a0a61867d5b4dc",
+      "codepoints": [
+        32,
+        46,
+        1044,
+        1072,
+        1074,
+        1077,
+        1079,
+        1080,
+        1082,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1093,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "14489256271f9973d7ecfe4a7d4dae20247c5417bd270c69f51486bf026db430",
+      "codepoints": [
+        32,
+        46,
+        1069,
+        1072,
+        1074,
+        1075,
+        1076,
+        1077,
+        1080,
+        1081,
+        1082,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1093,
+        1097,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "cbc6c6d03eb974097c92913353936942d89f4ef91f2ffc678e2633d527ec1a90",
+      "codepoints": [
+        32,
+        46,
+        1052,
+        1057,
+        1072,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1080,
+        1081,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1095,
+        1099,
+        1100,
+        1102,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/boot/boot.gd",
+      "text_sha256": "7e02ff9161aa43bfbe859717e23dfaeac1778ae1fe479b8f7fe04dfefaee3b81",
+      "codepoints": [
+        32,
+        46,
+        59,
+        1053,
+        1055,
+        1072,
+        1073,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1083,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1095,
+        1097,
+        1099,
+        1100,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "872e28fec7a76566382248c1acc3f6f927ddedd67f7268ca3a4dc586e65dfae4",
+      "codepoints": [
+        32,
+        1072,
+        1077,
+        1081,
+        1083,
+        1085,
+        1090,
+        1092
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "1f73ec1fdd3cabc0055893dde68198e8b25d5577b02a00e96125c70633c61b8c",
+      "codepoints": [
+        32,
+        1072,
+        1073,
+        1077,
+        1080,
+        1082,
+        1085,
+        1086,
+        1090,
+        1095,
+        1096,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "cea9004e4ba69c6ab6c30759aa1c981b5e13f171cbef789c3e227f250f6f745e",
+      "codepoints": [
+        32,
+        50,
+        53,
+        54,
+        1041,
+        1050,
+        1072,
+        1074,
+        1077,
+        1080,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1096,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "8184055b9d73a922a919c9075f6d7b7c8dd0f9e3db78e6a5c9b0847b18b142c8",
+      "codepoints": [
+        32,
+        74,
+        78,
+        79,
+        83,
+        1072,
+        1073,
+        1080,
+        1082,
+        1086,
+        1096
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "747385260bfdb782250218e38393e93f8ffb5d84a7b1c2aeead6ca06784508d2",
+      "codepoints": [
+        32,
+        40,
+        41,
+        74,
+        78,
+        79,
+        83,
+        1072,
+        1073,
+        1074,
+        1077,
+        1079,
+        1080,
+        1082,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1093,
+        1095,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "44c528c37a2d4f2f43a076b2405429ab691c8caacb5fefb53fa1b251193fb43d",
+      "codepoints": [
+        32,
+        37,
+        58,
+        100,
+        115,
+        183,
+        1072,
+        1073,
+        1081,
+        1090
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "d940a11cf8c3e880849d0fa444ea362069855ea008ae387342726ba69d61a5bc",
+      "codepoints": [
+        32,
+        183,
+        1040,
+        1041,
+        1043,
+        1044,
+        1047,
+        1048,
+        1050,
+        1053,
+        1054,
+        1056,
+        1057,
+        1058,
+        1077,
+        1080,
+        1082,
+        1083,
+        1085,
+        1086,
+        1090,
+        1095,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "2be55a92f751bb3ff8f3ec6a6255d0c9af5214bc9f11f39c7cb4b7f193657d35",
+      "codepoints": [
+        32,
+        47,
+        51,
+        58,
+        68,
+        70,
+        80,
+        85,
+        97,
+        101,
+        103,
+        110,
+        111,
+        112,
+        119,
+        183,
+        1072,
+        1079,
+        1082,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1099,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "b78e7cd6ddd80144fa0981216f636a1de831a98540f86f7c1677851198a6982e",
+      "codepoints": [
+        32,
+        37,
+        58,
+        115,
+        183,
+        1055,
+        1056,
+        1069,
+        1072,
+        1074,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1084,
+        1086,
+        1087,
+        1090,
+        1091
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "1e4dc5c0430b9d01bcc60c047eadf5d20f4c49e21dffd69627645ad737d4dc8e",
+      "codepoints": [
+        32,
+        37,
+        58,
+        115,
+        183,
+        1048,
+        1060,
+        1072,
+        1074,
+        1075,
+        1077,
+        1079,
+        1084,
+        1085,
+        1088,
+        1090,
+        1096,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "5bb95acba0edc81ad9739be918b336d42a26abbd5c1b7ed57b3e70cfdcf17060",
+      "codepoints": [
+        32,
+        58,
+        183,
+        1040,
+        1045,
+        1048,
+        1053,
+        1054,
+        1056,
+        1057,
+        1061,
+        1072,
+        1077,
+        1079,
+        1080,
+        1084,
+        1085,
+        1086,
+        1088,
+        1089,
+        1093,
+        1099,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "3062d1bcf568a54990c305ee361b5f6246928a673c4c235717108e046953bf39",
+      "codepoints": [
+        32,
+        58,
+        1040,
+        1045,
+        1053,
+        1057,
+        1062
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "8aa82fd2afc280d0c845736db5376c73b0631e6f4a374a6fa82692cd600f8e7b",
+      "codepoints": [
+        32,
+        1072,
+        1077,
+        1079,
+        1085,
+        1095
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "221f463cdcfb05afcd01a05ef7669e591d4231f148fdc46a0269d8d754d67e7c",
+      "codepoints": [
+        32,
+        58,
+        1052,
+        1080,
+        1088
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "d91f9cb96e5cd7eb2faa26cd7ab8b75c7884aa17e3e8ac5f9315d468513e92c5",
+      "codepoints": [
+        32,
+        83,
+        87,
+        100,
+        108,
+        111,
+        114,
+        116,
+        1087,
+        1089,
+        1090,
+        1091
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "c833d7ec65f125578ae16209cb23d09f7dfd4fc87ac9dca2cd9786692b2be8fc",
+      "codepoints": [
+        32,
+        37,
+        40,
+        41,
+        46,
+        50,
+        58,
+        70,
+        80,
+        83,
+        100,
+        102,
+        183,
+        1050,
+        1059,
+        1072,
+        1076,
+        1077,
+        1079,
+        1083,
+        1084,
+        1085,
+        1088,
+        1089,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "08830cfaf0c8ff321e4e1af1d905dc1b0e10a3fde8da0bc84c1306a76ecfefd7",
+      "codepoints": [
+        32,
+        37,
+        46,
+        50,
+        58,
+        100,
+        102,
+        183,
+        1042,
+        1055,
+        1060,
+        1072,
+        1074,
+        1077,
+        1079,
+        1080,
+        1082,
+        1084,
+        1086,
+        1088,
+        1089,
+        1090,
+        1094,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "4cf506bec8d961ea55c3ebaaf539e2caefa0d7a8ab158667d2ff4c6478ec228a",
+      "codepoints": [
+        32,
+        37,
+        58,
+        65,
+        68,
+        99,
+        100,
+        101,
+        105,
+        111,
+        114,
+        115,
+        116,
+        117,
+        183,
+        1042,
+        1047,
+        1050,
+        1057,
+        1059,
+        1069,
+        1072,
+        1077,
+        1080,
+        1085,
+        1086,
+        1087,
+        1089,
+        1090,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "b921a80b933d04114433669ba8052333c95ce5cd60826c833307423346b17f50",
+      "codepoints": [
+        32,
+        1072,
+        1077,
+        1079,
+        1085,
+        1095
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "edada4cf6afeac2ae01d4dec0625257e2e7e208f58299b9fb9f81ce2c369618e",
+      "codepoints": [
+        32,
+        37,
+        46,
+        49,
+        58,
+        102,
+        115,
+        183,
+        1041,
+        1042,
+        1057,
+        1076,
+        1082,
+        1083,
+        1086,
+        1099,
+        8594
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "4e9d56e63f864b19e4e9bf64c70bd8c01796d2d0061e827cd17c2ade92597ac7",
+      "codepoints": [
+        1074,
+        1076,
+        1086,
+        1093,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "cdc5ed90cb4b9a7540b24d1c45c23c851930c98b07b6885667114c9f95fb0a12",
+      "codepoints": [
+        1072,
+        1076
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.gd",
+      "text_sha256": "dc9337ff5b423e6828cd8f164d022d3a02b4efeaf7a0d2f60eaa032b7d9dcd3f",
+      "codepoints": [
+        1077,
+        1085,
+        1090
+      ]
+    },
+    {
+      "path": "game/core/debug/debug_overlay.tscn",
+      "text_sha256": "fcc2a27f91bc00463e6f6a076a7afa14b7875272bb6a4d38fcf1f68275cdf419",
+      "codepoints": [
+        32,
+        1044,
+        1072,
+        1073,
+        1075,
+        1079,
+        1080,
+        1082,
+        1085,
+        1086,
+        1088,
+        1089,
+        1090
+      ]
+    },
+    {
+      "path": "game/core/game_root/game_root.gd",
+      "text_sha256": "6f63c4f713c227df7e3167e776d916287a2fbee4fef9aaa144ff5f79824e2c7b",
+      "codepoints": [
+        32,
+        44,
+        46,
+        1055,
+        1072,
+        1073,
+        1074,
+        1077,
+        1079,
+        1080,
+        1082,
+        1083,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1096,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/interaction/interaction_target.gd",
+      "text_sha256": "656c101ed2034615f37eee4781d3eb7ac8d228877b207bc1735da9982a1dc398",
+      "codepoints": [
+        1042,
+        1072,
+        1074,
+        1076,
+        1077,
+        1079,
+        1080,
+        1081,
+        1084,
+        1086,
+        1089,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/transitions/fade_overlay.gd",
+      "text_sha256": "db491ef5033fe069001c11460a5703989b4db1c510861ed5d566e33c99e4ec71",
+      "codepoints": [
+        1047,
+        1072,
+        1075,
+        1079,
+        1082,
+        1088,
+        1091,
+        8230
+      ]
+    },
+    {
+      "path": "game/core/ui/checkpoint_notice.gd",
+      "text_sha256": "35971d8193da167bd6fd21e5fa9efa091779c231df896257b6dfab1a21c3e362",
+      "codepoints": [
+        32,
+        46,
+        1053,
+        1055,
+        1072,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1093,
+        1097,
+        1100,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/ui/checkpoint_notice.gd",
+      "text_sha256": "3c320d7fe3f06ae7ac7bcaeb18c46c725bfe38466e62931000170e0a8a337662",
+      "codepoints": [
+        32,
+        1055,
+        1072,
+        1074,
+        1077,
+        1080,
+        1085,
+        1086,
+        1088,
+        1089,
+        1090,
+        1093,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/ui/exit_failure_dialog.gd",
+      "text_sha256": "c52796d41caa970955822aa4d743ec8c37dba1a1888b138071a59a15ae51e77a",
+      "codepoints": [
+        32,
+        46,
+        1048,
+        1053,
+        1072,
+        1075,
+        1076,
+        1077,
+        1080,
+        1081,
+        1082,
+        1083,
+        1085,
+        1086,
+        1088,
+        1089,
+        1090,
+        1091,
+        1093,
+        1099,
+        1100,
+        1103,
+        1105
+      ]
+    },
+    {
+      "path": "game/core/ui/exit_failure_dialog.gd",
+      "text_sha256": "5189135a6110bd31b69bbcb3487109995252165ac7ee7da59ead9d789f690248",
+      "codepoints": [
+        1055,
+        1074,
+        1080,
+        1086,
+        1088,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/ui/exit_failure_dialog.gd",
+      "text_sha256": "3a5acd0245fe70cb1e32a9015c99852e7c9d16c9d0339a03d1a8b8b1b04ca4e2",
+      "codepoints": [
+        1054,
+        1072,
+        1089,
+        1090,
+        1100,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/ui/pause_menu.gd",
+      "text_sha256": "65530fd463eac0becf9727c8f030412f254d9a82e682bedec78898149f1fb0e9",
+      "codepoints": [
+        1055,
+        1072,
+        1079,
+        1091
+      ]
+    },
+    {
+      "path": "game/core/ui/pause_menu.gd",
+      "text_sha256": "a42aee58d60a7d2a2fa9c112cea5dd62ba3b4c6ea05610a8a671ccb0c4da558d",
+      "codepoints": [
+        1055,
+        1076,
+        1078,
+        1080,
+        1083,
+        1086,
+        1088,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/ui/pause_menu.gd",
+      "text_sha256": "985b5e0f2ccf1ba08ac53253af32d2e9a600b846d3f3b99978f28d177388b9fa",
+      "codepoints": [
+        1053,
+        1072,
+        1080,
+        1081,
+        1082,
+        1086,
+        1088,
+        1089,
+        1090
+      ]
+    },
+    {
+      "path": "game/core/ui/pause_menu.gd",
+      "text_sha256": "2feb8fdfc490276136246fb193e60cb7c95fcb8508ef73ca9a4a91d9209c9de8",
+      "codepoints": [
+        32,
+        1042,
+        1075,
+        1079,
+        1080,
+        1081,
+        1088,
+        1090,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "985b5e0f2ccf1ba08ac53253af32d2e9a600b846d3f3b99978f28d177388b9fa",
+      "codepoints": [
+        1053,
+        1072,
+        1080,
+        1081,
+        1082,
+        1086,
+        1088,
+        1089,
+        1090
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "adc3b01f3c15512feaae137f4b66f076d7c892707942382ff525729330326f7c",
+      "codepoints": [
+        1056,
+        1072,
+        1077,
+        1079,
+        1080,
+        1085,
+        1088,
+        1096
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "f42c392566b531204fe461a86e2d8d89e3a25df07e73a34aca8e76688ae21d1e",
+      "codepoints": [
+        32,
+        1055,
+        1072,
+        1081,
+        1082,
+        1083,
+        1085,
+        1086,
+        1088,
+        1099,
+        1101
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "332161ccb6f54b979191af230015b155503106fe663a3b684010eef3cef651d2",
+      "codepoints": [
+        32,
+        1050,
+        1072,
+        1074,
+        1075,
+        1077,
+        1080,
+        1082,
+        1086,
+        1088,
+        1089,
+        1090,
+        1092,
+        1095
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "e93e59e4a79c174237232fdc60babcbb3d749472f931422c36a5aaba130ed909",
+      "codepoints": [
+        1053,
+        1077,
+        1079,
+        1080,
+        1082,
+        1086
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "cca5c7ff9e17fbd1384e4b2a660061f4320b8df32206f568ab9e4321e567cee6",
+      "codepoints": [
+        1057,
+        1076,
+        1077,
+        1085,
+        1088
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "71abc1e1f08e63a58c5906a18526929dd1d9e4854ae4fb59abd9bc70ff0081b1",
+      "codepoints": [
+        1042,
+        1077,
+        1082,
+        1086,
+        1089,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "6488b06aa2138f6525b3599acd443829cc2ae694eb85e3c940f2f01b1685aa45",
+      "codepoints": [
+        1058,
+        1077,
+        1080,
+        1085
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "4a767f2aa26a9a0de5f05fe767ea8ba9582c7915b8243c7922c2fa72aa30c020",
+      "codepoints": [
+        1069,
+        1077,
+        1082,
+        1090,
+        1092,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "406cb89b031f831be95a95bb8a2ea7b1a77838b7f9d5152308742147d0c93cb4",
+      "codepoints": [
+        32,
+        1054,
+        1072,
+        1073,
+        1075,
+        1082,
+        1084,
+        1086,
+        1088,
+        1089,
+        1090,
+        1097,
+        1100,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "26d99df6eab5da7cc564a7b09a8d02625ee94a965b9e6ee7edd799dc6aff197c",
+      "codepoints": [
+        1052,
+        1072,
+        1079,
+        1082,
+        1091,
+        1099
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "e1fc9e9c739a5cf903786e8365f2696de7cbd70ac765583e1f403c777299c1bd",
+      "codepoints": [
+        1047,
+        1074,
+        1080,
+        1082,
+        1091
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "bdb1fbb30ce73ba9f6f4fce7efff10585e7209fc9bc0e62f3651d9fe3a309f88",
+      "codepoints": [
+        32,
+        1063,
+        1074,
+        1077,
+        1080,
+        1083,
+        1084,
+        1085,
+        1086,
+        1089,
+        1090,
+        1091,
+        1096,
+        1099,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "1d3ebdf3dc3c65444bf870ccc279ab72e6aff720611fa48da91ee0be2d4efb10",
+      "codepoints": [
+        32,
+        1055,
+        1077,
+        1079,
+        1080,
+        1083,
+        1085,
+        1086,
+        1088,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "fcd820e38280a1e152c073a3da2a071f5d57056f71d990b883f151fc9f27822e",
+      "codepoints": [
+        32,
+        1048,
+        1072,
+        1074,
+        1077,
+        1080,
+        1082,
+        1083,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1103
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "fd0560ebbf83d2d5ba8eb50fb92f53b241e9049093b4eaa9a553c391f2567d10",
+      "codepoints": [
+        32,
+        1055,
+        1072,
+        1080,
+        1083,
+        1084,
+        1085,
+        1086,
+        1091,
+        1095,
+        1102
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "8fbe9b75cbdfbfa6f57f060f286e00dee7e021068ebe378cfb495f3380d1e96b",
+      "codepoints": [
+        1054,
+        1072,
+        1077,
+        1084,
+        1085,
+        1090
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "e15f960d93eb4ee826d90c49a6609bc93d0f2e434e455a5a0cbe246f7146e428",
+      "codepoints": [
+        1055,
+        1077,
+        1080,
+        1084,
+        1085,
+        1088,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "20494f41aba31c1b5a377ec9da2b17f3211a5d3d43372e47d71e87f9f662423b",
+      "codepoints": [
+        1042,
+        1077,
+        1082,
+        1083,
+        1085,
+        1086,
+        1095,
+        1099,
+        1102
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "4d1d43042e73c2dc9cb1c204e0876a79f365b0790679cb7b44a897dba7c1e34f",
+      "codepoints": [
+        1042,
+        1077,
+        1082,
+        1083,
+        1085,
+        1086,
+        1095,
+        1102
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "20494f41aba31c1b5a377ec9da2b17f3211a5d3d43372e47d71e87f9f662423b",
+      "codepoints": [
+        1042,
+        1077,
+        1082,
+        1083,
+        1085,
+        1086,
+        1095,
+        1099,
+        1102
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "4d1d43042e73c2dc9cb1c204e0876a79f365b0790679cb7b44a897dba7c1e34f",
+      "codepoints": [
+        1042,
+        1077,
+        1082,
+        1083,
+        1085,
+        1086,
+        1095,
+        1102
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "20494f41aba31c1b5a377ec9da2b17f3211a5d3d43372e47d71e87f9f662423b",
+      "codepoints": [
+        1042,
+        1077,
+        1082,
+        1083,
+        1085,
+        1086,
+        1095,
+        1099,
+        1102
+      ]
+    },
+    {
+      "path": "game/core/ui/settings_menu.gd",
+      "text_sha256": "afd80f183d602fb173b91c1df668d20964ad42418c92c60c490e19cc8830f4b8",
+      "codepoints": [
+        32,
+        37,
+        46,
+        58,
+        100,
+        1048,
+        1050,
+        1053,
+        1072,
+        1076,
+        1077,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1093,
+        1099,
+        1100,
+        1103
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "52b99c2a977b538a427c673096b80fa8e977b260ed63683753d187b0dbe28858",
+      "codepoints": [
+        1071
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "a4af3e9a60e811946d46b2782a1d7f3fafa0baa05b18bcf150af09a21f5853d2",
+      "codepoints": [
+        1051
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "595e448114cdfb6239465808a6d49281e8a7a6ab40f6eb753311bbf0b0fa15e1",
+      "codepoints": [
+        1070
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "c78364c5d0f27706fe002726c70be55fa7ceeb2537db621cfe54f73e9047c389",
+      "codepoints": [
+        1041
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "a4af3e9a60e811946d46b2782a1d7f3fafa0baa05b18bcf150af09a21f5853d2",
+      "codepoints": [
+        1051
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "595e448114cdfb6239465808a6d49281e8a7a6ab40f6eb753311bbf0b0fa15e1",
+      "codepoints": [
+        1070
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "7614b90a1064ca4807d95608648757b009528e81dda475812d99d96bfeb036e6",
+      "codepoints": [
+        1058
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "e13196ea897b06c54b379b610c04feda934e7a3082d5bfd5cd17bfa2f5aa276d",
+      "codepoints": [
+        1045
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "c78364c5d0f27706fe002726c70be55fa7ceeb2537db621cfe54f73e9047c389",
+      "codepoints": [
+        1041
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_data.gd",
+      "text_sha256": "52b99c2a977b538a427c673096b80fa8e977b260ed63683753d187b0dbe28858",
+      "codepoints": [
+        1071
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/fragment_presenter.gd",
+      "text_sha256": "a42aee58d60a7d2a2fa9c112cea5dd62ba3b4c6ea05610a8a671ccb0c4da558d",
+      "codepoints": [
+        1055,
+        1076,
+        1078,
+        1080,
+        1083,
+        1086,
+        1088,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/hearth.tres",
+      "text_sha256": "ad1a0723c7b526ef337560b5c5ff5eb33b3f821f641b6e972bc20e0e1d8047b3",
+      "codepoints": [
+        1054,
+        1072,
+        1075,
+        1095
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/hearth.tres",
+      "text_sha256": "9781d3d0050a03ca9e5f0afefdee4df94feb78d91cc27b001ca8fcde881ce08a",
+      "codepoints": [
+        32,
+        44,
+        1071,
+        1072,
+        1073,
+        1074,
+        1076,
+        1077,
+        1079,
+        1080,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1089,
+        1090,
+        1093,
+        1095,
+        1099,
+        1103
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/hearth.tres",
+      "text_sha256": "7fa6e7b8bd38aec292f37127480dd59eae36c35187f62b4a6c7e85740ca2fe0f",
+      "codepoints": [
+        32,
+        46,
+        1054,
+        1074,
+        1075,
+        1077,
+        1080,
+        1083,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1093,
+        1100,
+        1103,
+        8212
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/hearth.tres",
+      "text_sha256": "3e6c1933e2bdcea21357d4bafc8ebe843f5c4dc3e7f0d77fa11e45e784e0d8a4",
+      "codepoints": [
+        32,
+        44,
+        45,
+        46,
+        1053,
+        1057,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1093,
+        1095,
+        1096,
+        1099,
+        1100,
+        1103,
+        8212
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/hearth.tres",
+      "text_sha256": "52b99c2a977b538a427c673096b80fa8e977b260ed63683753d187b0dbe28858",
+      "codepoints": [
+        1071
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/star.tres",
+      "text_sha256": "638a9a538d76b8ba3f749865b62e758ff6ddc0d4c0881c4055717a2defd67277",
+      "codepoints": [
+        1047,
+        1072,
+        1074,
+        1076,
+        1077,
+        1079
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/star.tres",
+      "text_sha256": "d95a6683e780677aa8bc97b809308406f4435d7580adfb26b4466a2c3c4eee44",
+      "codepoints": [
+        32,
+        44,
+        1051,
+        1072,
+        1073,
+        1074,
+        1076,
+        1077,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1088,
+        1089,
+        1090,
+        1099,
+        1102,
+        1103,
+        8212
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/star.tres",
+      "text_sha256": "b96d06bf65bca09fcc6c45711c56f0a2622283cf49dc96ff769d40611ece4ba4",
+      "codepoints": [
+        32,
+        45,
+        46,
+        1054,
+        1072,
+        1073,
+        1075,
+        1076,
+        1077,
+        1079,
+        1082,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1095,
+        1096,
+        1097,
+        1099,
+        1100,
+        1103
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/star.tres",
+      "text_sha256": "ad1ea2ce70dbdbcdf94055f426fdfebd85e25ae267a3708ceaa83fb1fb8b5746",
+      "codepoints": [
+        32,
+        44,
+        45,
+        46,
+        1042,
+        1052,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1079,
+        1080,
+        1081,
+        1082,
+        1084,
+        1085,
+        1086,
+        1088,
+        1089,
+        1090,
+        1093,
+        1095,
+        1096,
+        1099,
+        1100,
+        1103,
+        8212
+      ]
+    },
+    {
+      "path": "game/gameplay/collectibles/star.tres",
+      "text_sha256": "a4af3e9a60e811946d46b2782a1d7f3fafa0baa05b18bcf150af09a21f5853d2",
+      "codepoints": [
+        1051
+      ]
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "text_sha256": "656c101ed2034615f37eee4781d3eb7ac8d228877b207bc1735da9982a1dc398",
+      "codepoints": [
+        1042,
+        1072,
+        1074,
+        1076,
+        1077,
+        1079,
+        1080,
+        1081,
+        1084,
+        1086,
+        1089,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "text_sha256": "4367e0063eba791f03f9135fccd59c98a174be778751382dcec9a97f5c1f0cac",
+      "codepoints": [
+        1042,
+        1079,
+        1090,
+        1100,
+        1103
+      ]
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "text_sha256": "b7cd6fae08d93f3f2e51364f9c7be59f7441862ca19998b97ab569ec88215a93",
+      "codepoints": [
+        1059,
+        1072,
+        1074,
+        1080,
+        1085,
+        1086,
+        1089,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "text_sha256": "15fc037dc04b5056b197e86762651e528c60390d437664e0637d13b2e40c4a6b",
+      "codepoints": [
+        1040,
+        1072,
+        1074,
+        1080,
+        1082,
+        1086,
+        1088,
+        1090,
+        1100
+      ]
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "text_sha256": "eb344ed33bd96a50a8e2643e84d3d89096836bd3d123992fceb91a523b59be7c",
+      "codepoints": [
+        32,
+        1055,
+        1074,
+        1077,
+        1082,
+        1083,
+        1085,
+        1086,
+        1088,
+        1090,
+        1091,
+        1094,
+        1096,
+        1100
+      ]
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "text_sha256": "648f585f8586b2518421895e3365924b2829c6ba839ce7b281dbaa3dc71ddb99",
+      "codepoints": [
+        32,
+        1055,
+        1074,
+        1076,
+        1077,
+        1082,
+        1083,
+        1085,
+        1086,
+        1088,
+        1089,
+        1090,
+        1091,
+        1094,
+        1100
+      ]
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "text_sha256": "bf5b95deec0ecdbd128242be7d5dcdfb5cef36c93dbe263d0d2ecbbcbe8ee068",
+      "codepoints": [
+        32,
+        1055,
+        1074,
+        1077,
+        1082,
+        1083,
+        1085,
+        1086,
+        1088,
+        1090,
+        1091,
+        1094,
+        1100
+      ]
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "text_sha256": "4769cc7f6c18f36fbcd8f5e20209f9df2de306cfb815bb9a47241ce2d8d69a17",
+      "codepoints": [
+        32,
+        1048,
+        1077,
+        1079,
+        1080,
+        1082,
+        1084,
+        1085,
+        1086,
+        1089,
+        1090,
+        1091,
+        1092,
+        1100
+      ]
+    }
+  ],
+  "fallback_specimen_codepoints": [
+    8594,
+    9166,
+    10003,
+    8987,
+    9632
+  ]
+}

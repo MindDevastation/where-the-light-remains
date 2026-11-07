@@ -1,0 +1,37 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: ARCHIVE_ENTRY_PORTAL FAIL: Original leaf sweep and camera rail pose 0.0
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_entry_portal_smoke.gd:14)
+       [1] _run (res://tests/archive_entry_portal_smoke.gd:89)
+ERROR: ARCHIVE_ENTRY_PORTAL FAIL: Original leaf sweep and camera rail pose 1.2
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_entry_portal_smoke.gd:14)
+       [1] _run (res://tests/archive_entry_portal_smoke.gd:89)
+ERROR: ARCHIVE_ENTRY_PORTAL FAIL: Original leaf sweep and camera rail pose 2.0
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_entry_portal_smoke.gd:14)
+       [1] _run (res://tests/archive_entry_portal_smoke.gd:89)
+ERROR: ARCHIVE_ENTRY_PORTAL FAIL: Original leaf sweep and camera rail pose 2.5
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_entry_portal_smoke.gd:14)
+       [1] _run (res://tests/archive_entry_portal_smoke.gd:89)
+ERROR: ARCHIVE_ENTRY_PORTAL FAIL: Original leaf sweep and camera rail pose 3.5
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_entry_portal_smoke.gd:14)
+       [1] _run (res://tests/archive_entry_portal_smoke.gd:89)
+ERROR: ARCHIVE_ENTRY_PORTAL FAIL: Original leaf sweep and camera rail pose 7.9
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_entry_portal_smoke.gd:14)
+       [1] _run (res://tests/archive_entry_portal_smoke.gd:89)
+ERROR: ARCHIVE_ENTRY_PORTAL FAIL: Original leaf sweep and camera rail pose 8.0
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_entry_portal_smoke.gd:14)
+       [1] _run (res://tests/archive_entry_portal_smoke.gd:89)

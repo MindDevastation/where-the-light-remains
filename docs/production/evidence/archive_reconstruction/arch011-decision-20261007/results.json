@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Decision readiness/static source protection only; no stair implementation or new runtime/native acceptance. VFX-006 brief prepared only.",
+  "utc": "2026-10-06T22:07:11.183295+00:00",
+  "head_before": "1f38cb4806e5489dfb9af60bbf4fa2e83d297e0e",
+  "checks": [
+    "actual corridor X +/-2,Z -15..-8,walking planeY0",
+    "proposal 2.4/3.6 widths inside original4m corridor",
+    "two0.30m riser runs and all landings inside original corridor",
+    "all original checkpoint spawns outside proposal",
+    "ARCH-011 remainsMISSING/required_for_vs1",
+    "canonical and runtime source unchanged",
+    "SVG parsed; rendered PNG visually inspected; reviewable proposal"
+  ],
+  "source_hashes": {
+    "docs/production/ARCHIVE_SHORT_STAIRS_DECISION.md": "7e9d8f03b1f9c623303bf2a7f60c1f5840c2525d84007c11020e61cf45cf1fb7",
+    "docs/production/ARCHIVE_DUST_MOTES.md": "63d5b19f8126709016147730994b5ff363f067806f0f32ae0622ffba9d378e3a",
+    "docs/production/review/arch011_decision.svg": "c15a92a09ee64392d1cba11a283cba671e2d5dca0ae5d0bcb9231f049ee00c61",
+    "docs/production/review/arch011_decision.png": "19567eb814f550b20ecb7ba89c7652f3c78e5431f53e66780e0f6e31c12c281a",
+    "docs/production/ARCHIVE_SHORT_STAIRS_LAYOUT_AUDIT.md": "3331fe7d37b52482340544ad4d12c70cc4198d94ca421464b3240c9f11538e5b",
+    "docs/design/REQUIRED_ASSET_TABLE.md": "e5aa8ba983d18feef4fddf0f8ddfa7795b246dcbf1a0978fa38f366fdbce960c",
+    "game/core/player/player.gd": "ab7c871cd58cddacc6c371113d3c8442c458708d7a7b8faa2ef7e13b55c4040a",
+    "game/core/player/player.tscn": "8757c0216146778fef0a29f8fb170228f4a647df74f9739f70faae9f4f8c4954",
+    "game/worlds/archive/archive_main.tscn": "224e81d8040d9efe16c4880e14a6711dc0a1e3465e953ab8a3d9cca0fe8388e5",
+    "game/worlds/archive/wing01_corridor_floor.tscn": "ec82cfdebe079262a40b4fcf6d9aa9e73f708a20f009f6c3f585131f8551e526",
+    "game/worlds/archive/wing01_room_floor.tscn": "2e26220c75da0f0d8d963b217b9cf17b2377dc85777a42532e1195fdf82e25b1"
+  }
+}

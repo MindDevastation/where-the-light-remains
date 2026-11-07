@@ -1,0 +1,9 @@
+{
+  "status": "REMOTE_VERIFIED",
+  "verified_utc": "2026-10-06T20:42:45.259750+00:00",
+  "branch": "feature/04-archive-gameplay/resume-2026-10-06",
+  "accepted_remote_sha": "3d81acbcd94759d472b72f60dbac3eb39000fad4",
+  "authorization": "Direct user message Разрешаю authorizes prepared and subsequent ordinary work-branch checkpoint pushes.",
+  "recovery": "Prior checkout and coordinator lost; fresh sparse clone of exact remote tip. No newer local-only resolution notes were applied as remote history.",
+  "scope": "Publication receipt only; accepted gate tests/art remain unchanged. No full VS1 or hardware acceptance."
+}

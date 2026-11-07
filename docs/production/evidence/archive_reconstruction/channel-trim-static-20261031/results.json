@@ -1,0 +1,53 @@
+{
+  "status": "PASS_STATIC_ONLY",
+  "utc": "2026-10-31T17:51:21.330787+00:00",
+  "baseline": "8dc7ffe618e0f95e802f310b714903d0ea21c39c",
+  "checks": [
+    {
+      "path": "game/worlds/archive/common/archive_light_channel.gd",
+      "byte_identical_to_baseline": true,
+      "sha256": "877929fa42d476fb95a8a8b9e627a3c61e3380187fb8f09b73b9e4943ce96a77"
+    },
+    {
+      "path": "game/worlds/archive/archive_main.gd",
+      "byte_identical_to_baseline": true,
+      "sha256": "17edcb806e5868d671a1f820c1674b8975b57fbf5d745c0f879c28c19bddf09f"
+    },
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "byte_identical_to_baseline": true,
+      "sha256": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082"
+    },
+    {
+      "path": "game/autoload/settings_manager.gd",
+      "byte_identical_to_baseline": true,
+      "sha256": "17c1499f08bcedca5778060102c316428d9ba363d73e4cea7b603ed90ac1fd44"
+    },
+    {
+      "path": "game/art/materials/m_dark_iron.tres",
+      "byte_identical_to_baseline": true,
+      "sha256": "cd98d082db10f52a9f8c8dde2618a4cc8de59ce863f39ed9d849d50893d9feff"
+    },
+    {
+      "material_block": "Active",
+      "byte_identical_properties": true
+    },
+    {
+      "material_block": "Completed",
+      "byte_identical_properties": true
+    }
+  ],
+  "new_resources": {
+    "game/art/vfx/archive_channel_core_mesh.tres": "38f9e8b401dd294155d6e574e0fd7c535b5198aefd57a895cfb3fdbcca73f91a",
+    "game/art/vfx/archive_channel_rails_mesh.tres": "0c13d096550bdb27f26700c9cdd018cb941ed1ccd11a686af23ae6302b1ea88a"
+  },
+  "native_generation": {
+    "godot": "4.7.2.stable.official.ed1daf0bf",
+    "core_triangles": 60,
+    "rail_triangles": 120,
+    "total_per_instance": 180,
+    "five_instance_total": 900,
+    "local_ceiling": 200
+  },
+  "scope": "Byte identity of controller/layout/quality/shared iron and state material properties. Native geometry/state/render validation is a separate receipt."
+}

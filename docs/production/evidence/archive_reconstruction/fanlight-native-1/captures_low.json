@@ -1,0 +1,299 @@
+{
+  "captures": [
+    {
+      "bolt_local_x": 0.0,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 123,
+      "file": "fanlight_s00_closed_low.png",
+      "left_door_x": -0.649999976158142,
+      "light_count": 10,
+      "name": "fanlight_s00_closed",
+      "opening_ghost": false,
+      "right_door_x": 0.649999976158142,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 0.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 124,
+      "file": "fanlight_s00_opening_low.png",
+      "left_door_x": -1.11666667461395,
+      "light_count": 10,
+      "name": "fanlight_s00_opening",
+      "opening_ghost": false,
+      "right_door_x": 1.11666667461395,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 2.5,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 98,
+      "file": "fanlight_s00_entry_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "fanlight_s00_entry",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 7.9,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 99,
+      "file": "fanlight_s01_asleep_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "fanlight_s01_asleep",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 75,
+      "file": "fanlight_s01_detail_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "fanlight_s01_detail",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 47,
+      "file": "fanlight_corridor_join_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "fanlight_corridor_join",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 100,
+      "file": "fanlight_s01_awakened_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "fanlight_s01_awakened",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 104,
+      "file": "fanlight_completed_hub_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "fanlight_completed_hub",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(1.0, 0.68, 0.36, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 94,
+      "file": "lighting_s01_controls_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s01_controls",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.04999995231628,
+      "draw_calls": 100,
+      "file": "lighting_s01_awakening_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s01_awakening",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 53,
+      "file": "lighting_s02_entry_cold_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s02_entry_cold",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 53,
+      "file": "lighting_s02_optics_cold_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s02_optics_cold",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 54,
+      "file": "lighting_s02_star_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s02_star",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 55,
+      "file": "lighting_s02_hearth_warm_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "lighting_s02_hearth_warm",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(1.0, 0.68, 0.36, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 0.300000011920929,
+      "draw_calls": 78,
+      "file": "fanlight_header_detail_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "fanlight_header_detail",
+      "opening_ghost": false,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "core_light_energy": 1.79999995231628,
+      "draw_calls": 79,
+      "file": "fanlight_opening_ghost_low.png",
+      "left_door_x": -2.04999995231628,
+      "light_count": 10,
+      "name": "fanlight_opening_ghost",
+      "opening_ghost": true,
+      "right_door_x": 2.04999995231628,
+      "room_light_color": "(0.43, 0.65, 1.0, 1.0)",
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "fanlight",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

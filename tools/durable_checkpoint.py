@@ -27,9 +27,10 @@ def stamp():
 
 
 class Coordinator:
-    def __init__(self, repo, output, branch, stage, fixture=False):
+    def __init__(self, repo, output, branch, stage, fixture=False, snapshot_mode="available"):
         self.repo, self.output = repo.resolve(), output.resolve()
         self.branch, self.stage, self.fixture = branch, stage, fixture
+        self.snapshot_mode = snapshot_mode
         self.env = dict(os.environ, GIT_NO_LAZY_FETCH="1", GIT_LFS_SKIP_SMUDGE="1", GIT_TERMINAL_PROMPT="0")
         self.log = Path("docs/production/evidence/checkpoints/development.jsonl")
         self.commands = []
@@ -127,10 +128,17 @@ class Coordinator:
             tests = {"status": "PASS", "validation": str(validation), "source_hashes": len(hashes)}
         before = self.changed_paths()
         previous = self.run("rev-parse", "HEAD").decode().strip()
-        archive = snapshot(self.repo, self.output, [], "available")
-        verify = subprocess.run([sys.executable, "-B", str(Path(__file__).with_name("verify_session_snapshot.py")), "--archive", str(archive)], cwd=self.repo, capture_output=True, text=True, timeout=55)
-        if verify.returncode:
-            raise RuntimeError("Archive verification failed: " + self.safe(verify.stdout + verify.stderr))
+        if self.snapshot_mode == "remote-delta":
+            import remote_delta_snapshot
+            archive = remote_delta_snapshot.snapshot(self.repo, self.output)
+            remote_delta_snapshot.verify(archive)
+            verification_text = "PASS: changed payloads and patches verified against exact remote HEAD; remote baseline required for recovery"
+        else:
+            archive = snapshot(self.repo, self.output, [], "available")
+            verify = subprocess.run([sys.executable, "-B", str(Path(__file__).with_name("verify_session_snapshot.py")), "--archive", str(archive)], cwd=self.repo, capture_output=True, text=True, timeout=55)
+            if verify.returncode:
+                raise RuntimeError("Archive verification failed: " + self.safe(verify.stdout + verify.stderr))
+            verification_text = verify.stdout.strip()
         with tarfile.open(archive) as t:
             state = json.load(t.extractfile("state.json"))
         after = self.changed_paths()
@@ -141,7 +149,7 @@ class Coordinator:
         self.append({"event": "snapshot", "utc": stamp(), "snapshot_started_utc": state["started_utc"],
                      "archive": archive.name, "archive_sha256": archive_sha, "stage": self.stage,
                      "kind": kind.upper(), "head_before": previous, "changed_files": after,
-                     "tests": tests, "archive_verification": verify.stdout.strip(),
+                     "tests": tests, "archive_verification": verification_text,
                      "git_review": self.commands})
         paths = sorted(set(after + [str(self.log)]))
         self.run("add", "--sparse", "--", *paths)
@@ -212,6 +220,8 @@ def main():
     parser.add_argument("--stage", default="ArchiveMain/S01/S02 reconstruction")
     parser.add_argument("--interval", type=int, default=600)
     parser.add_argument("--gh", type=Path)
+    parser.add_argument("--snapshot-mode", choices=["available", "remote-delta"], default="available",
+                        help="remote-delta saves changes only and requires current HEAD already present on the remote working branch")
     parser.add_argument("--credential-stdin", action="store_true")
     parser.add_argument("--self-test", action="store_true")
     args = parser.parse_args()
@@ -237,7 +247,7 @@ def main():
         os.environ["GH_TOKEN"] = token
     if not os.environ.get("GH_TOKEN"):
         raise RuntimeError("GH_TOKEN unavailable; use private credential input.")
-    coordinator = Coordinator(args.repo, args.output, args.branch, args.stage)
+    coordinator = Coordinator(args.repo, args.output, args.branch, args.stage, snapshot_mode=args.snapshot_mode)
     lock_path = coordinator.repo / os.fsdecode(coordinator.run("rev-parse", "--git-path", "checkpoint-coordinator.lock")).strip()
     with lock_path.open("a") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)

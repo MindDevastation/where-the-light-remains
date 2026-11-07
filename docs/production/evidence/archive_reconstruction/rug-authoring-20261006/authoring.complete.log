@@ -1,0 +1,11 @@
+Info: Saved as "archive_rug.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/0152d86aa631/toolchain/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+11:02:36 | INFO: Starting glTF 2.0 export
+11:02:36 | INFO: Extracting primitive: sm_archive_rug
+11:02:36 | INFO: Primitives created: 2
+11:02:36 | INFO: Finished glTF 2.0 export in 0.005771636962890625 s
+
+ARCHIVE_RUG_CREATED PASS: 44 triangles; closed navy border/crimson field
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+
+Blender quit

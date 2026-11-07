@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_panel_base.glb" id="Base"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_panel_cover.glb" id="Cover"]
+
+[node name="ArchiveHubPanel" type="Node3D"]
+metadata/asset_brief = "docs/production/S01_HUB_CONTROLS.md"
+
+[node name="Base" parent="." instance=ExtResource("Base")]
+
+[node name="Cover" type="Node3D" parent="."]
+position = Vector3(-0.157, 0, 0.02)
+
+[node name="Art" parent="Cover" instance=ExtResource("Cover")]

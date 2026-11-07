@@ -1,0 +1,350 @@
+{
+  "status": "PASS",
+  "started_at": "2026-10-07T16:05:14.191838+00:00",
+  "scope": "Unbound isolated material specimens; no gameplay, shipping assignment, fresh old-art/GLB test, target GPU or full VS1 acceptance",
+  "source_hashes": {
+    "game/tests/stone_trim_review.gd": "679086d70894268f3aa3329b120590c7c1e0145aa6cdc43a52685a65b9f89685",
+    "tools/generate_stone_trim_maps.py": "c09b5a4a7b89b75d6a93a67a4c3b008354e9ccc5b346dd92996f6ced4af973fd",
+    "tools/validate_stone_trim.py": "392e87d6c931b77c42de95c46ab3742f98373d19d37bd6dcb38a6c1add019009",
+    "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205",
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "game/autoload/settings_manager.gd": "17c1499f08bcedca5778060102c316428d9ba363d73e4cea7b603ed90ac1fd44",
+    "docs/production/STONE_TRIM.md": "d988dc0d7e0a77c3c6dfbb92aafee7468ef0d9d4f40a672401d69fabf8f96c43",
+    "docs/production/stone_trim_regions.json": "e4bd26a48543e7df65e64abf615f519a6e07e48812cdb0fb84795d9f72a63ed6",
+    "game/art/materials/m_stone_ornament_trim.tres": "d775c1281be8e03dd1837345969ca34ed750e8720f0e3f69d59ca13009944703",
+    "game/art/textures/trims/stone_trim_manifest.json": "450a2eb93c98dec06e11edba98889bff24239699600a18b060c2b7c81fbfd177",
+    "game/worlds/archive/archive_main.tscn": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082",
+    "game/worlds/archive/archive_main.gd": "17edcb806e5868d671a1f820c1674b8975b57fbf5d745c0f879c28c19bddf09f",
+    "game/worlds/archive/wing01_corridor_presentation.tscn": "eabde12947f19766d88472ad24162ab388eb2a82e24d7722e40e3e2135351a8a",
+    "tools/create_archive_kit.py": "b4a42fd0cca72cb68edb22f2d7dc8f0ea93e132618c18ec761140cbc2dd0a5e9",
+    "tools/create_s01_core_pedestal.py": "070fd3ec07d99d7d8abe5b59c7d10e83d0454d8b2c3c2b20958d74a1480bcf07",
+    "docs/production/modular_archive_kit_v1.json": "ebbcadc704be7af4a304a31bf094f763b7caf0e9b90a565b819484c43900fe5c",
+    "docs/production/s01_core_pedestal.json": "afb4ac0a68961176a021d71a1a5bf589012bc7c49897a56d1481887eb128c43a",
+    "docs/production/ARCHIVE_PRACTICAL_LIGHTING.md": "1641ae441bea124e1134eeaadfe95af85f5e20745302dbb329590a77d20abbda",
+    "game/art/textures/trims/t_stone_ornament_trim_albedo.png": "25a6669610cb406f77628332d7e98ecdd6e8e10ecec31ba9244c602f25561a78",
+    "game/art/textures/trims/t_stone_ornament_trim_albedo.png.import": "bf3279aece53af752691a6f23fa20b212e16066da5e078967edefaac6b01bfd3",
+    "game/art/textures/trims/t_stone_ornament_trim_normal.png": "0f21e21ded56948483554d8cae192cba09d4b79d3109c4c792c1aad38eb7162c",
+    "game/art/textures/trims/t_stone_ornament_trim_normal.png.import": "5561505f0b051d58c2e45d4203e4b922bc92362508df97762de5f350062cad97",
+    "game/art/textures/trims/t_stone_ornament_trim_orm.png": "2f718d5d44f1d2bc16afbf4856f8957b73a93d4520d7589357ffe20b73c5191a",
+    "game/art/textures/trims/t_stone_ornament_trim_orm.png.import": "286b3124619a11dba9b03f622ea45e4f52ac0b674ea388797b19c8041fa7f33c",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/low.log": "725dedf4abfff215b7e5344cfa821094ef1e1a524d2d2bbeb03e01d246b49ea9",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/stone_trim_corridor_cold_low.png": "b9bcda0c279abe56aaf3af04cb2e04ddd1790c3568f19f2b0cf7d373a1b9a4ac",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/stone_trim_neutral_low.png": "ffae8b390aa65f8c867a9eaea699632f2bd0cbfd4ce3f9fc064b0b24267953ef",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/medium.log": "a8d4f4ce107f35b7ab9ea64de3d3d852ffad5322d2b6d8a73afe8f5e6d5bab06",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/stone_trim_hub_awake_medium.png": "105e9153223a2390a54c7e8af71422540cedfb53779c4d3209add0e21f3ae72f",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/stone_trim_corridor_cold_medium.png": "bd2fe71e8f18f37a086a234d4158aaf2d9836e30d4208c191c4b3f00b6343d52",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/stone_trim_neutral_medium.png": "06a0b65d68b816cfdf7249687a4d1415c273cf0e1dd271a2c73acceb3e1473aa",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/captures_low.json": "191c724c845566bc7df853cf696ab39177d3ba723334cb16efe0524d9e2a9eb6",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/stone_trim_mips_low.png": "ec36082af7f84198e4fc5a0000d7dea31a52cdfabc6ebffce244ca30c0d80308",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/stone_trim_mips_medium.png": "85e09c1068967eee3e8fb0d56db3a75b4d8dd6d0af011a166ab7a8109221e033",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/stone_trim_hub_awake_low.png": "e70e6d42de187cedc2c66af00918c7c44d1e54c9cbb4eaa3e67d4249477c39ad",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/fresh_map_regeneration.log": "835acc0a60f6dd5b752dcd6f2341832c30abe7e06c7718da621524213320bbd7",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/captures_medium.json": "c201458c2cd69cd85a913dbdebbef8fa3f2ed67d01409cccee174caa6a948cf2",
+    "docs/production/evidence/archive_reconstruction/stone-trim-native-2/isolated_clean_import.log": "7756371ace66d2806617c4b2a72261f39f64b342f263a715cc77d8c1c729cbe7"
+  },
+  "records": [
+    {
+      "name": "fresh_map_regeneration",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-stone_trim-31nil2nx/tools/generate_stone_trim_maps.py",
+        "--output",
+        "/tmp/wlr-stone_trim-31nil2nx/regenerated"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "835acc0a60f6dd5b752dcd6f2341832c30abe7e06c7718da621524213320bbd7"
+    },
+    {
+      "name": "isolated_clean_import",
+      "command": [
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "game",
+        "--editor",
+        "--import"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "7756371ace66d2806617c4b2a72261f39f64b342f263a715cc77d8c1c729cbe7"
+    },
+    {
+      "name": "low",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-stone_trim-31nil2nx/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+        "--godot",
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "100",
+        "--expect",
+        "STONE_TRIM_REVIEW PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "960x540",
+        "--script",
+        "res://tests/stone_trim_review.gd",
+        "--",
+        "--review-output=/workspace/scratch/0e91a73a58d2/repo/docs/production/evidence/archive_reconstruction/stone-trim-native-2",
+        "--quality=low"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "725dedf4abfff215b7e5344cfa821094ef1e1a524d2d2bbeb03e01d246b49ea9"
+    },
+    {
+      "name": "medium",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-stone_trim-31nil2nx/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+        "--godot",
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "100",
+        "--expect",
+        "STONE_TRIM_REVIEW PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "960x540",
+        "--script",
+        "res://tests/stone_trim_review.gd",
+        "--",
+        "--review-output=/workspace/scratch/0e91a73a58d2/repo/docs/production/evidence/archive_reconstruction/stone-trim-native-2",
+        "--quality=medium"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "a8d4f4ce107f35b7ab9ea64de3d3d852ffad5322d2b6d8a73afe8f5e6d5bab06"
+    }
+  ],
+  "captures": [
+    {
+      "assertions": 64,
+      "captures": [
+        {
+          "all_scene_lights_reproduced": false,
+          "camera_size": 2.34999990463257,
+          "density_px_per_m": 1024,
+          "file": "stone_trim_neutral_low.png",
+          "lighting": "neutral",
+          "normal_scale": 1.0,
+          "physical_u_length_m": 4,
+          "regions": 6,
+          "render_scale": 0.75,
+          "scene_lighting_subset": false,
+          "scope": "isolated_metric_trim_uv",
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "u_repeats": 2
+        },
+        {
+          "all_scene_lights_reproduced": false,
+          "camera_size": 2.34999990463257,
+          "density_px_per_m": 1024,
+          "file": "stone_trim_corridor_cold_low.png",
+          "lighting": "corridor_cold",
+          "normal_scale": 1.0,
+          "physical_u_length_m": 4,
+          "regions": 6,
+          "render_scale": 0.75,
+          "scene_lighting_subset": true,
+          "scope": "isolated_metric_trim_uv",
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "u_repeats": 2
+        },
+        {
+          "all_scene_lights_reproduced": false,
+          "camera_size": 2.34999990463257,
+          "density_px_per_m": 1024,
+          "file": "stone_trim_hub_awake_low.png",
+          "lighting": "hub_awake",
+          "normal_scale": 1.0,
+          "physical_u_length_m": 4,
+          "regions": 6,
+          "render_scale": 0.75,
+          "scene_lighting_subset": true,
+          "scope": "isolated_metric_trim_uv",
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "u_repeats": 2
+        },
+        {
+          "all_scene_lights_reproduced": false,
+          "camera_size": 5.0,
+          "density_px_per_m": 1024,
+          "file": "stone_trim_mips_low.png",
+          "lighting": "mips",
+          "normal_scale": 1.0,
+          "physical_u_length_m": 4,
+          "regions": 6,
+          "render_scale": 0.75,
+          "scene_lighting_subset": false,
+          "scope": "isolated_metric_trim_uv",
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "u_repeats": 2
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "quality": "low",
+      "renderer": "forward_plus",
+      "status": "CAPTURED_FOR_REVIEW"
+    },
+    {
+      "assertions": 64,
+      "captures": [
+        {
+          "all_scene_lights_reproduced": false,
+          "camera_size": 2.34999990463257,
+          "density_px_per_m": 1024,
+          "file": "stone_trim_neutral_medium.png",
+          "lighting": "neutral",
+          "normal_scale": 1.0,
+          "physical_u_length_m": 4,
+          "regions": 6,
+          "render_scale": 1.0,
+          "scene_lighting_subset": false,
+          "scope": "isolated_metric_trim_uv",
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "u_repeats": 2
+        },
+        {
+          "all_scene_lights_reproduced": false,
+          "camera_size": 2.34999990463257,
+          "density_px_per_m": 1024,
+          "file": "stone_trim_corridor_cold_medium.png",
+          "lighting": "corridor_cold",
+          "normal_scale": 1.0,
+          "physical_u_length_m": 4,
+          "regions": 6,
+          "render_scale": 1.0,
+          "scene_lighting_subset": true,
+          "scope": "isolated_metric_trim_uv",
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "u_repeats": 2
+        },
+        {
+          "all_scene_lights_reproduced": false,
+          "camera_size": 2.34999990463257,
+          "density_px_per_m": 1024,
+          "file": "stone_trim_hub_awake_medium.png",
+          "lighting": "hub_awake",
+          "normal_scale": 1.0,
+          "physical_u_length_m": 4,
+          "regions": 6,
+          "render_scale": 1.0,
+          "scene_lighting_subset": true,
+          "scope": "isolated_metric_trim_uv",
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "u_repeats": 2
+        },
+        {
+          "all_scene_lights_reproduced": false,
+          "camera_size": 5.0,
+          "density_px_per_m": 1024,
+          "file": "stone_trim_mips_medium.png",
+          "lighting": "mips",
+          "normal_scale": 1.0,
+          "physical_u_length_m": 4,
+          "regions": 6,
+          "render_scale": 1.0,
+          "scene_lighting_subset": false,
+          "scope": "isolated_metric_trim_uv",
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "u_repeats": 2
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "quality": "medium",
+      "renderer": "forward_plus",
+      "status": "CAPTURED_FOR_REVIEW"
+    }
+  ],
+  "private_fixture_project_sha256": "4dd5ce7f638d16dd6e2877cb82b3bca371ea3a9505fed04e177c684f67e20b91",
+  "fresh_regeneration_files_identical": 4,
+  "metric_regions_and_padding_verified": 5,
+  "texel_density_px_per_m": 1024,
+  "first_surface_width_m": 0.06,
+  "first_uv_v": [
+    0.0475,
+    0.0775
+  ],
+  "native_scope": "Current environment/moon and selected cold RoomLight/awake CoreLight subsets; not all scene lights or shipping scenes",
+  "private_copy_removed": true,
+  "shipping_assignments_added": 0,
+  "new_lfs_payloads": 0,
+  "finished_at": "2026-10-07T16:06:05.084723+00:00"
+}

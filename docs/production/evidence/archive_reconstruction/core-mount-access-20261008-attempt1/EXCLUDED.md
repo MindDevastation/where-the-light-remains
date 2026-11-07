@@ -1,0 +1,1 @@
+Diagnostic only. Retained corrupt Godot executable exited -11 before loading fixture;zero assertions. Restored cached official archive with verified bounded atomic writes. See core-mount-tool-restore-20261008.json. Not final test credit.

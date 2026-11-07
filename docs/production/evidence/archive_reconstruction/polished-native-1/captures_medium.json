@@ -1,0 +1,225 @@
+{
+  "captures": [
+    {
+      "active_overlays": 0,
+      "actual_ray_target": "",
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.999977, 0.006842), Z: (0.0, -0.006842, 0.999977), O: (0.0, 1.620076, 3.8)]",
+      "decorative_effects": false,
+      "draw_calls": 100,
+      "file": "sleeping_polished_medium.png",
+      "inner_transform": "[X: (0.751754, -0.236958, 0.136808), Y: (0.273616, 0.651038, -0.375877), Z: (0.0, 0.4, 0.69282), O: (0.0, 1.8, 0.0)]",
+      "material": "res://art/materials/m_polished_brass.tres",
+      "outer_transform": "[X: (0.906308, 0.242404, 0.346189), Y: (-0.422618, 0.519837, 0.742404), Z: (0.0, -0.819152, 0.573576), O: (0.0, 1.8, 0.0)]",
+      "polished": true,
+      "scope": "shipping_pair",
+      "shipping_lights": true,
+      "size": [
+        960,
+        540
+      ],
+      "view": "sleeping"
+    },
+    {
+      "active_overlays": 0,
+      "actual_ray_target": "",
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.999977, 0.006842), Z: (0.0, -0.006842, 0.999977), O: (0.0, 1.620076, 3.8)]",
+      "decorative_effects": false,
+      "draw_calls": 100,
+      "file": "sleeping_previous_medium.png",
+      "inner_transform": "[X: (0.751754, -0.236958, 0.136808), Y: (0.273616, 0.651038, -0.375877), Z: (0.0, 0.4, 0.69282), O: (0.0, 1.8, 0.0)]",
+      "material": "res://worlds/archive/archive_main.tscn::Metal",
+      "outer_transform": "[X: (0.906308, 0.242404, 0.346189), Y: (-0.422618, 0.519837, 0.742404), Z: (0.0, -0.819152, 0.573576), O: (0.0, 1.8, 0.0)]",
+      "polished": false,
+      "scope": "shipping_pair",
+      "shipping_lights": true,
+      "size": [
+        960,
+        540
+      ],
+      "view": "sleeping"
+    },
+    {
+      "active_overlays": 0,
+      "actual_ray_target": "",
+      "camera_transform": "[X: (0.862698, 0.0, -0.50572), Y: (-0.003611, 0.999975, -0.006159), Z: (0.505707, 0.007139, 0.862676), O: (1.7, 1.619898, 2.9)]",
+      "decorative_effects": false,
+      "draw_calls": 103,
+      "file": "oblique_polished_medium.png",
+      "inner_transform": "[X: (0.751754, -0.236958, 0.136808), Y: (0.273616, 0.651038, -0.375877), Z: (0.0, 0.4, 0.69282), O: (0.0, 1.8, 0.0)]",
+      "material": "res://art/materials/m_polished_brass.tres",
+      "outer_transform": "[X: (0.906308, 0.242404, 0.346189), Y: (-0.422618, 0.519837, 0.742404), Z: (0.0, -0.819152, 0.573576), O: (0.0, 1.8, 0.0)]",
+      "polished": true,
+      "scope": "shipping_pair",
+      "shipping_lights": true,
+      "size": [
+        960,
+        540
+      ],
+      "view": "oblique"
+    },
+    {
+      "active_overlays": 0,
+      "actual_ray_target": "",
+      "camera_transform": "[X: (0.862698, 0.0, -0.50572), Y: (-0.003611, 0.999975, -0.006159), Z: (0.505707, 0.007139, 0.862676), O: (1.7, 1.619898, 2.9)]",
+      "decorative_effects": false,
+      "draw_calls": 103,
+      "file": "oblique_previous_medium.png",
+      "inner_transform": "[X: (0.751754, -0.236958, 0.136808), Y: (0.273616, 0.651038, -0.375877), Z: (0.0, 0.4, 0.69282), O: (0.0, 1.8, 0.0)]",
+      "material": "res://worlds/archive/archive_main.tscn::Metal",
+      "outer_transform": "[X: (0.906308, 0.242404, 0.346189), Y: (-0.422618, 0.519837, 0.742404), Z: (0.0, -0.819152, 0.573576), O: (0.0, 1.8, 0.0)]",
+      "polished": false,
+      "scope": "shipping_pair",
+      "shipping_lights": true,
+      "size": [
+        960,
+        540
+      ],
+      "view": "oblique"
+    },
+    {
+      "active_overlays": 1,
+      "actual_ray_target": "/root/ArchivePolishedBrassReview/GameRoot/WorldSlot/ArchiveMain/Hub/Onboarding/Panel/InteractionTarget",
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.954706, -0.29755), Z: (0.0, 0.29755, 0.954706), O: (-0.65, 1.620338, 2.1)]",
+      "decorative_effects": false,
+      "draw_calls": 99,
+      "file": "panel_polished_medium.png",
+      "inner_transform": "[X: (0.751754, -0.236958, 0.136808), Y: (0.273616, 0.651038, -0.375877), Z: (0.0, 0.4, 0.69282), O: (0.0, 1.8, 0.0)]",
+      "material": "res://art/materials/m_polished_brass.tres",
+      "outer_transform": "[X: (0.906308, 0.242404, 0.346189), Y: (-0.422618, 0.519837, 0.742404), Z: (0.0, -0.819152, 0.573576), O: (0.0, 1.8, 0.0)]",
+      "polished": true,
+      "scope": "shipping_pair",
+      "shipping_lights": true,
+      "size": [
+        960,
+        540
+      ],
+      "view": "panel"
+    },
+    {
+      "active_overlays": 1,
+      "actual_ray_target": "/root/ArchivePolishedBrassReview/GameRoot/WorldSlot/ArchiveMain/Hub/Onboarding/Panel/InteractionTarget",
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.954706, -0.29755), Z: (0.0, 0.29755, 0.954706), O: (-0.65, 1.620338, 2.1)]",
+      "decorative_effects": false,
+      "draw_calls": 99,
+      "file": "panel_previous_medium.png",
+      "inner_transform": "[X: (0.751754, -0.236958, 0.136808), Y: (0.273616, 0.651038, -0.375877), Z: (0.0, 0.4, 0.69282), O: (0.0, 1.8, 0.0)]",
+      "material": "res://worlds/archive/archive_main.tscn::Metal",
+      "outer_transform": "[X: (0.906308, 0.242404, 0.346189), Y: (-0.422618, 0.519837, 0.742404), Z: (0.0, -0.819152, 0.573576), O: (0.0, 1.8, 0.0)]",
+      "polished": false,
+      "scope": "shipping_pair",
+      "shipping_lights": true,
+      "size": [
+        960,
+        540
+      ],
+      "view": "panel"
+    },
+    {
+      "active_overlays": 0,
+      "actual_ray_target": "",
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.999977, 0.006842), Z: (0.0, -0.006842, 0.999977), O: (0.0, 1.619898, 3.8)]",
+      "decorative_effects": false,
+      "draw_calls": 101,
+      "file": "awakened_polished_medium.png",
+      "inner_transform": "[X: (0.751754, -0.236958, 0.136808), Y: (0.273616, 0.651038, -0.375877), Z: (0.0, 0.4, 0.69282), O: (0.0, 1.8, 0.0)]",
+      "material": "res://art/materials/m_polished_brass.tres",
+      "outer_transform": "[X: (0.906308, 0.242404, 0.346189), Y: (-0.422618, 0.519837, 0.742404), Z: (0.0, -0.819152, 0.573576), O: (0.0, 1.8, 0.0)]",
+      "polished": true,
+      "scope": "shipping_pair",
+      "shipping_lights": true,
+      "size": [
+        960,
+        540
+      ],
+      "view": "awakened"
+    },
+    {
+      "active_overlays": 0,
+      "actual_ray_target": "",
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.999977, 0.006842), Z: (0.0, -0.006842, 0.999977), O: (0.0, 1.619898, 3.8)]",
+      "decorative_effects": false,
+      "draw_calls": 101,
+      "file": "awakened_previous_medium.png",
+      "inner_transform": "[X: (0.751754, -0.236958, 0.136808), Y: (0.273616, 0.651038, -0.375877), Z: (0.0, 0.4, 0.69282), O: (0.0, 1.8, 0.0)]",
+      "material": "res://worlds/archive/archive_main.tscn::Metal",
+      "outer_transform": "[X: (0.906308, 0.242404, 0.346189), Y: (-0.422618, 0.519837, 0.742404), Z: (0.0, -0.819152, 0.573576), O: (0.0, 1.8, 0.0)]",
+      "polished": false,
+      "scope": "shipping_pair",
+      "shipping_lights": true,
+      "size": [
+        960,
+        540
+      ],
+      "view": "awakened"
+    },
+    {
+      "draw_calls": 3,
+      "file": "specimen_neutral_medium.png",
+      "lighting": "neutral",
+      "material_paths": [
+        "res://art/materials/m_polished_brass.tres",
+        "res://art/materials/m_aged_brass.tres"
+      ],
+      "scope": "isolated_specimen",
+      "shipping_lights": false,
+      "size": [
+        960,
+        540
+      ],
+      "tiles": 1
+    },
+    {
+      "draw_calls": 3,
+      "file": "specimen_warm_medium.png",
+      "lighting": "warm",
+      "material_paths": [
+        "res://art/materials/m_polished_brass.tres",
+        "res://art/materials/m_aged_brass.tres"
+      ],
+      "scope": "isolated_specimen",
+      "shipping_lights": false,
+      "size": [
+        960,
+        540
+      ],
+      "tiles": 1
+    },
+    {
+      "draw_calls": 3,
+      "file": "specimen_cool_medium.png",
+      "lighting": "cool",
+      "material_paths": [
+        "res://art/materials/m_polished_brass.tres",
+        "res://art/materials/m_aged_brass.tres"
+      ],
+      "scope": "isolated_specimen",
+      "shipping_lights": false,
+      "size": [
+        960,
+        540
+      ],
+      "tiles": 1
+    },
+    {
+      "draw_calls": 3,
+      "file": "specimen_tiles_medium.png",
+      "lighting": "tiles",
+      "material_paths": [
+        "res://art/materials/m_polished_brass.tres",
+        "res://art/materials/m_aged_brass.tres"
+      ],
+      "scope": "isolated_specimen",
+      "shipping_lights": false,
+      "size": [
+        960,
+        540
+      ],
+      "tiles": 4
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "polished_brass",
+  "status": "CAPTURED_FOR_REVIEW"
+}

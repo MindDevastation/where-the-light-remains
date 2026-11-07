@@ -1,0 +1,90 @@
+{
+  "status": "BOUNDED_PASS_DECAL001_PARTIAL",
+  "baseline_commit": "cad291635c6082b325a54c07b215d00da14deed6",
+  "asset_row": "DECAL-001",
+  "source": "tools/generate_archive_decal_atlas.py",
+  "atlas_resolution": [
+    2048,
+    2048
+  ],
+  "cell_resolution": [
+    1024,
+    1024
+  ],
+  "transparent_guard_px": 32,
+  "regions": {
+    "scratches": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "edge_wear": [
+      1024,
+      0,
+      1024,
+      1024
+    ],
+    "dust": [
+      0,
+      1024,
+      1024,
+      1024
+    ],
+    "soot": [
+      1024,
+      1024,
+      1024,
+      1024
+    ]
+  },
+  "format": "RGBA8 white RGB plus exact scalar alpha coverage; not a photograph, baked lighting or normal/ORM replacement. Runtime slices must be byte-identical to master regions.",
+  "runtime": "Four script-free native Decal scene variants using four independently imported exact atlas slices, avoiding an unverified AtlasTexture projection region. No runtime texture extraction or shader clock.",
+  "first_carrier": "Two native-validated static decals in the existing Hearth wrapper: inner-floor soot and pedestal bevel dust. Actual mesh/material/collision and controller remain unchanged.",
+  "provisional_placements": [
+    {
+      "kind": "soot",
+      "position": [
+        0,
+        -0.045,
+        0
+      ],
+      "size": [
+        0.6,
+        0.045,
+        0.6
+      ]
+    },
+    {
+      "kind": "dust",
+      "position": [
+        0.34,
+        -0.54,
+        0.25
+      ],
+      "size": [
+        0.35,
+        0.075,
+        0.25
+      ],
+      "normal_fade": 0.25
+    }
+  ],
+  "cull_mask": 1,
+  "normal_fade": 0.7,
+  "distance_fade_begin_m": 8,
+  "distance_fade_length_m": 4,
+  "maximum_shipping_decals": 2,
+  "effects_setting": "Static surface detail remains at Low and effects-off, like the existing material textures; no VFX/settings controller change.",
+  "scope_limits": "Original restrained marks;132 final assertions,20 individually inspected originals,eight projected-volume scope pairs pass. Inventory27/45/5; DECAL-001 PARTIAL. Full stages0-15 placement, all-material variants, full style and physical target GPU remain open.",
+  "baseline_hashes": {
+    "game/worlds/archive/archive_main.gd": "17edcb806e5868d671a1f820c1674b8975b57fbf5d745c0f879c28c19bddf09f",
+    "game/worlds/archive/archive_main.tscn": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082",
+    "game/gameplay/puzzles/wing01/wing01_hearth_art.tscn": "acd90e9648f0f9fbe31f9e0b0382fd72a7b9cbf7c066cac797b826e019d23c17",
+    "game/art/meshes/wing01/sm_wing01_hearth.glb": "c4699e4c99d5b118ef66675b119099649522be876c0d9c3bc503ce81c3861bba"
+  },
+  "central_mechanism_binary_upload": "Not retried or converted.",
+  "placement_note": "Dust patch offset onto the actual pedestal bevel, instead of the central solid interior. Native rendered confirmation still required.",
+  "acceptance_receipt": "docs/production/evidence/archive_decals/acceptance-20261102/acceptance.json",
+  "projection_validation": "Native imported centre hits at world Y0.59 for soot andY0.121023 for dust; all changed pixels of eight carrier pairs inside conservative projected volume bounds. Two-pixel raster/metadata reserve."
+}

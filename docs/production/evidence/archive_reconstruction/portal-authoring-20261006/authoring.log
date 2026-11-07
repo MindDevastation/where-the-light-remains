@@ -1,0 +1,16 @@
+Info: Saved as "s00_entry_portal.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/0152d86aa631/toolchain/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+16:05:13 | INFO: Starting glTF 2.0 export
+16:05:13 | INFO: Extracting primitive: sm_s00_entry_facade
+16:05:13 | INFO: Primitives created: 5
+16:05:13 | INFO: Finished glTF 2.0 export in 0.024814128875732422 s
+
+16:05:13 | INFO: Starting glTF 2.0 export
+16:05:13 | INFO: Extracting primitive: sm_s00_entry_arch
+16:05:13 | INFO: Primitives created: 3
+16:05:13 | INFO: Finished glTF 2.0 export in 0.009547710418701172 s
+
+S00_ENTRY_PORTAL_CREATED PASS [{'stem': 'sm_s00_entry_facade', 'triangles': 3840, 'surfaces': 5}, {'stem': 'sm_s00_entry_arch', 'triangles': 984, 'surfaces': 3}]
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+
+Blender quit

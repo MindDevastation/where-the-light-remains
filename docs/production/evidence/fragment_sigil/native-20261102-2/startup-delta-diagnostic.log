@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PAUSE_DIAGNOSTIC before=0.0; after=0.0
+FRAGMENT_SIGIL FAIL: 33 assertions
+ERROR: FRAGMENT_SIGIL FAIL: pause freezes intermediate reveal uniform
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/fragment_sigil_smoke.gd:25)
+       [1] _run (res://tests/fragment_sigil_smoke.gd:64)
+       [2] _wait (res://tests/fragment_sigil_smoke.gd:37)

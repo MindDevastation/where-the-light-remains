@@ -1,0 +1,11 @@
+{
+  "source_url": "https://github.com/godotengine/godot/blob/ed1daf0bf001b61586d9930840f2f1394092c079/core/os/os.cpp",
+  "engine_commit": "ed1daf0bf001b61586d9930840f2f1394092c079",
+  "file_git_blob_sha": "ffc0dff1c747abb5f0ba60f2cf375db74cb60f65",
+  "checked_symbols": [
+    "OS::create_lock_file",
+    "OS::remove_lock_file"
+  ],
+  "finding": "Godot creates an empty .recovery_mode_lock in its user data directory; it is distinct from the two protected progression fixtures.",
+  "limit": "The cause of its post-exit visibility in this managed filesystem is not established. The original directory-wide FAIL and marker are retained."
+}

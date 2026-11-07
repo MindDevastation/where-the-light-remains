@@ -1,0 +1,24 @@
+{
+  "status": "BOUNDED_PASS_VFX004_PARTIAL",
+  "baseline_commit": "6457676cdfe201cea142e3e66a7bf6c343e69919",
+  "scope": "Bounded CanvasItem sigil materialize/dissolve in the existing Star/Hearth fragment modal",
+  "asset_row": "VFX-004",
+  "baseline_hashes": {
+    "game/gameplay/collectibles/fragment_presenter.gd": "b2e020d8df6557644166b8704cda32aaca1b26407617c38728e785c39707d5eb",
+    "game/worlds/archive/archive_main.gd": "17edcb806e5868d671a1f820c1674b8975b57fbf5d745c0f879c28c19bddf09f",
+    "game/gameplay/collectibles/star.tres": "8fd2a2eb015c797008826af5dfc7c0e149b11be2b198baf6b638f9cdb94cc07b",
+    "game/gameplay/collectibles/hearth.tres": "357fbc0eb05c5cbeefb4cafb532382608924d669e20f1c552bfead4eff725840"
+  },
+  "reveal_seconds": 0.35,
+  "dissolve_seconds": 0.28,
+  "maximum_ghost_quads_per_presenter": 1,
+  "shader_clock": "Owned pausable Tween uniform; no shader TIME",
+  "effects_disabled": "Immediate original glyph, no tween/ghost",
+  "quiet_restore": "No reveal/dissolve replay; cancel owned visuals",
+  "modal_contract": "No delayed present/dismiss/closed signal, input restoration, duck release or checkpoint. Text and buttons remain readable immediately.",
+  "source_contract": "Existing glyphs, fonts, textures, sizes, narrative, routes, puzzle clocks, save schema and ArchiveMain preserved. Only local UI VFX resources/controller and Presenter hooks.",
+  "acceptance_limits": "Requires current shader render, settled raster identity, pause/resize/effects/ownership/reentrancy/cancellation and affected modal/audio checks. Bounded UI coverage only; world carrier, later sigils/stages, full VFX/style/VS1 not closed.",
+  "central_mechanism_binary_upload": "Not retried or converted; separate prior refusal remains unresolved.",
+  "acceptance_receipt": "docs/production/evidence/fragment_sigil/acceptance-20261102/acceptance.json",
+  "final_native_run": "docs/production/evidence/fragment_sigil/native-20261102-4"
+}

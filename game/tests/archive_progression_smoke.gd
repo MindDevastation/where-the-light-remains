@@ -82,6 +82,8 @@ func _run() -> void:
     SceneRouter.fade_duration = .02
     _check(await SceneRouter.request_registered_stage(ArchiveProgress.INTRO, initial) == OK, "Actual Archive entry with safe physical spawn")
     var world := slot.get_child(0) as ArchiveMain
+    var core_light := world.get_node("Hub/CoreLight") as OmniLight3D
+    _check(is_equal_approx(core_light.light_energy,.30), "Fresh core is asleep before player activates it")
     var id := world.get_instance_id()
     var feet := player.global_transform
     var look := player.head.rotation
@@ -114,6 +116,9 @@ func _run() -> void:
             route_frames[1] = Engine.get_process_frames()
     )
     var onboarding := world.get_node("Hub/Onboarding") as ArchiveOnboarding
+    var cover := onboarding.get_node("Panel/Visual/Cover") as Node3D
+    var handle := onboarding.get_node("Lever/Visual/Handle") as Node3D
+    _check(cover.rotation == Vector3.ZERO and handle.rotation == Vector3.ZERO, "Fresh S01 fitting poses")
     _check(onboarding.advance(ArchiveOnboarding.Step.INSTALL_LENS) == ERR_UNAUTHORIZED, "No out-of-order installation")
     for index in 4:
         var component := onboarding.get_node(onboarding.target_paths[index]) as InteractionTarget
@@ -126,15 +131,18 @@ func _run() -> void:
         _check(player.call("_pick_target") == component, "Actual interaction ray reaches the authored S01 target")
         await _press_interact()
         _check(int(onboarding.phase) == index + 1, "Real E advances exactly one onboarding step")
+        _check(absf(cover.rotation.y-deg_to_rad(-18))<.00001 and absf(handle.rotation.x-(deg_to_rad(25) if index==3 else 0.0))<.00001, "Actual E projects cover/lever cosmetic poses")
         await _press_interact()
         _check(int(onboarding.phase) == index + 1, "Consumed target or sequence cannot repeat by E spam")
     _check(InputManager.mode == InputManager.Mode.LIMITED_LOOK and not InputManager.can_interact(), "Awakening restricts interaction while retaining look")
     var elapsed: float = world.get("_awakening_elapsed")
+    var paused_energy := core_light.light_energy
     var pause := game.get_node("UILayer/PauseMenu") as PauseMenu
     _check(pause.open(), "Pause supported during awakening")
     await get_tree().process_frame
     await get_tree().process_frame
     _check(is_equal_approx(world.get("_awakening_elapsed"), elapsed), "Pause freezes awakening duration")
+    _check(is_equal_approx(core_light.light_energy,paused_energy), "Actual pause freezes core illumination with the sequence clock")
     pause.resume()
     feet = player.global_transform
     look = player.head.rotation
@@ -143,6 +151,7 @@ func _run() -> void:
     while GameState.current_stage_id != ArchiveProgress.WING_ONE and Time.get_ticks_msec() < deadline:
         await get_tree().process_frame
     _check(GameState.current_stage_id == ArchiveProgress.WING_ONE and onboarding.phase == ArchiveOnboarding.Phase.AWAKENED, "Actual seven-second awakening commits the next stage")
+    _check(is_equal_approx(core_light.light_energy,1.8) and core_light.light_color.is_equal_approx(Color(1,.68,.36)), "Committed awakening warms the same-world core light")
     _check(slot.get_child_count() == 1 and world.get_instance_id() == id and slot.get_child(0) == world, "ArchiveMain remains the same instance")
     _check(route_frames[0] == route_frames[1] and route_frames[0] > 0, "Actual progression commits without yielding a loading frame")
     _check(player.global_transform.origin.distance_to(feet.origin) < .02 and player.head.rotation == look and fade.request_revision == fade_revision, "No teleport, camera reset or fade at awakening")
@@ -154,6 +163,17 @@ func _run() -> void:
     for frame in 5:
         await get_tree().physics_frame
     _check(world.get_node("Routes/Wing01/Gate").status == ArchiveGate.Status.OPEN, "Physical approach opens eligible gate")
+    _check(await SceneRouter.request_resume_stage(saved["data"]) == OK, "Actual saved awakening checkpoint resumes")
+    var restored := slot.get_child(0) as ArchiveMain
+    var restored_hub := restored.get_node("Hub/Onboarding") as ArchiveOnboarding
+    var restored_light := restored.get_node("Hub/CoreLight") as OmniLight3D
+    _check(is_equal_approx(restored_light.light_energy,1.8) and restored_light.light_color.is_equal_approx(Color(1,.68,.36)), "Physical reload restores awakened illumination immediately")
+    _check(restored_hub.phase == ArchiveOnboarding.Phase.AWAKENED and restored.get("_awakening_elapsed") < 0.0 and
+        absf((restored_hub.get_node("Panel/Visual/Cover") as Node3D).rotation.y-deg_to_rad(-18))<.00001 and
+        absf((restored_hub.get_node("Lever/Visual/Handle") as Node3D).rotation.x-deg_to_rad(25))<.00001,
+        "Quiet physical reload restores art poses without replaying awakening")
+    var after_resume := SaveManager.read_save()
+    _check(after_resume["error"] == OK and after_resume["data"].to_dict() == saved["data"].to_dict(), "Art restoration leaves physical checkpoint unchanged")
     game.queue_free()
     await get_tree().process_frame
     for stage in ArchiveProgress.STAGES:

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-21T14:25:43.936782+00:00",
+  "status": "PASS_EXACT_PRIOR_DELIVERY_RECOVERY",
+  "archive_sha256": "2f03aa80e0e58b314c10ef3d14244990b17961f106f10e9e620a4e5085e45861",
+  "files_verified": 40,
+  "historical_tests_reused_from": "2026-10-18",
+  "new_model_tests_this_session": 0,
+  "private_native_git_dry_run": {
+    "exit": 128,
+    "stderr": "fatal: could not read Username for https://github.com: No such device or address"
+  },
+  "historical_credentials_used": false,
+  "binary_publication": "Pending current native Git/LFS write authentication; no model pointer committed without its payload"
+}

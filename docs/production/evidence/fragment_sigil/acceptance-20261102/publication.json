@@ -1,0 +1,31 @@
+{
+  "status": "SOURCE_ACCEPTANCE_REMOTE_PASS",
+  "utc": "2026-11-02T07:51:46.661234+00:00",
+  "code_and_native_evidence_commit": "364b3338ad682b88c6d69dbecea71c09702346ff",
+  "acceptance_commit": "2e707c007143eb6a87ada6132e1b34fe21780b7a",
+  "acceptance_tree": "78d1207d64c82b6c88a35fdcd6e06f6fc3c8cf00",
+  "branch": "feature/04-archive-gameplay/resume-2026-10-06",
+  "verification": "Independent git fetch and ls-remote; exact parent/index tree; guarded local fast-forward; clean checkout.",
+  "force": false,
+  "new_lfs_uploads": 0,
+  "assertion_executions": 127,
+  "original_frames_individually_inspected": 30,
+  "inventory_counts": {
+    "ACCEPTED": 27,
+    "PARTIAL": 44,
+    "MISSING": 6
+  },
+  "gate_vs1": "OPEN",
+  "s03": "blocked",
+  "receipt_checkpoint": "The commit containing this publication record is the receipt checkpoint. Its exact SHA is independently acknowledged outside the repository to avoid a recursive receipt mutation.",
+  "cadence": {
+    "ack_intervals_seconds": [
+      791.410169,
+      758.823118,
+      381.134063
+    ],
+    "target_seconds": 600,
+    "maximum_seconds": 900,
+    "interpretation": "Two measured intervals missed600s target; all three measured intervals remained below900s. No claim about an unmeasured initial session interval or historical cadence."
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "captures": [
+    {
+      "amount": 0.0,
+      "file": "star_reveal_zero_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "star_reveal_zero"
+    },
+    {
+      "amount": 0.5,
+      "file": "star_reveal_half_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "star_reveal_half"
+    },
+    {
+      "amount": 0.5,
+      "file": "star_reveal_paused_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "star_reveal_paused"
+    },
+    {
+      "amount": 1.0,
+      "file": "star_settled_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "star_settled"
+    },
+    {
+      "amount": 1.0,
+      "file": "star_shader_one_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "star_shader_one"
+    },
+    {
+      "amount": 0.5,
+      "file": "star_dissolve_half_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "star_dissolve_half"
+    },
+    {
+      "amount": 0.0,
+      "file": "star_dissolve_finished_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "star_dissolve_finished"
+    },
+    {
+      "amount": 0.0,
+      "file": "hearth_reveal_zero_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "hearth_reveal_zero"
+    },
+    {
+      "amount": 0.5,
+      "file": "hearth_reveal_half_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "hearth_reveal_half"
+    },
+    {
+      "amount": 0.5,
+      "file": "hearth_reveal_paused_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "hearth_reveal_paused"
+    },
+    {
+      "amount": 1.0,
+      "file": "hearth_settled_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "hearth_settled"
+    },
+    {
+      "amount": 1.0,
+      "file": "hearth_shader_one_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "hearth_shader_one"
+    },
+    {
+      "amount": 0.5,
+      "file": "hearth_dissolve_half_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "hearth_dissolve_half"
+    },
+    {
+      "amount": 0.0,
+      "file": "hearth_dissolve_finished_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "hearth_dissolve_finished"
+    },
+    {
+      "amount": 1.0,
+      "file": "star_effects_off_medium_1920x1080.png",
+      "preset": "Medium",
+      "scope": "Actual modal API and owned Tween timeline sample over a flat fixture background; no world/input/save action",
+      "size": [
+        1920,
+        1080
+      ],
+      "view": "star_effects_off"
+    }
+  ],
+  "checks": 40,
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "failures": 0,
+  "preset": "Medium",
+  "renderer": "forward_plus",
+  "scope": "Star/Hearth modal glyph VFX only; native API/timeline fixture; no world carrier, later sigils, route, persistence or target GPU acceptance",
+  "status": "PASS_CAPTURE_ONLY"
+}

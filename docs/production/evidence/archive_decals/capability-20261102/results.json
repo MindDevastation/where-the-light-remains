@@ -1,0 +1,15 @@
+{
+  "status": "PASS_CAPABILITY_ONLY",
+  "utc": "2026-11-02T19:30:42.157137+00:00",
+  "renderer": "Vulkan Forward+ software llvmpipe",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "scope": "Minimal isolated native Decal alpha projection on a neutral plane, not atlas/shipping integration acceptance. Both original frames individually inspected.",
+  "files": {
+    "probe.gd": "fe756a9243128caa81ae5673582108a687ce9ca897a027c8c1048b1127b7f0df",
+    "probe.tscn": "648bdb41da3bd07f843c8c1846af59c584fc4024230599eb012b59cd7be209a4",
+    "native.log": "5fb840e2f35652b6c22795172d99a2de9995f7393ef58e0e6ece4a6c7986131d",
+    "decal_on.png": "aae152c1c5187d36d829fe59b11a7ac6b811decf19f76fbd35c2c02d10e841ea",
+    "decal_off.png": "5e6f74126ca2150cb5d52a42e527ede519010b36a555743c470e6f30e0450d00",
+    "project.godot": "8fce07a36561521313c965b0cf07955f68196d55e994e16d00f00a18791a78fd"
+  }
+}

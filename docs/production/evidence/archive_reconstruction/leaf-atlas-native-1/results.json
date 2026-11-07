@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "started_at": "2026-10-07T11:27:32.680484+00:00",
+  "scope": "Unbound isolated material specimens; no gameplay, shipping assignment, fresh old-art/GLB test, target GPU or full VS1 acceptance",
+  "source_hashes": {
+    "game/tests/leaf_atlas_review.gd": "c945e0eb57f1ca9f414d48d139b5d8b9f779437c6e4e9a1af60738a62dab2da6",
+    "tools/validate_leaf_atlas.py": "3f1133161270a5fc27b72e5e9bfabe4c51c844ef3afbfcf48cfbe3b51896c9d2",
+    "tools/run_graphical.py": "278fc528afc37ffe18deba15267073b52494ac053e27d31015a63a1d5ac13205",
+    "tools/linux_graphics_packages.json": "d35d038c014d7e875e9673b0d15dfa6f1d43a9026bdff5fc0876038645b2e327",
+    "game/autoload/settings_manager.gd": "17c1499f08bcedca5778060102c316428d9ba363d73e4cea7b603ed90ac1fd44",
+    "docs/production/LEAF_ATLAS.md": "f62f83f8507e71f1fadae18488c0255c6f2e11f700e60b302416bd0e685a3820",
+    "docs/production/leaf_atlas_prompt.txt": "740799654b47365f6a8d7341b74c2b0aeb01209f945a91f52e0fddab306e0d0c",
+    "docs/production/leaf_atlas_edit_prompt.txt": "2af6681e9f99958741e9dd2af839e04a3f2de7c91d9e06972de50cf091550e60",
+    "game/art/materials/m_archive_leaf_cutout.tres": "520081e77e5c8857e5916f536fb8923dc07e823f966e7a329093f219a5898fc6",
+    "game/art/textures/foliage/t_archive_leaf_atlas.png": "e393f45ac7550485e175e9817cf043b486649904f433dd521e5ad5f5d9a860a7",
+    "game/art/textures/foliage/t_archive_leaf_atlas.png.import": "fe582795da2d8a81accc50338d82303fce7e2d80fca87c4b814eeeea33566f93",
+    "game/art/textures/foliage/leaf_atlas_manifest.json": "e0aefefed434dacd9868afbb2ff2dd0e9f30a83a6506a7e09e23412d49f2862a",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/isolated_clean_import.log": "13525f55e4f69e0a495b39b9fc28bfb27124798199c6ffc9d11d3efc8b7b6f9e",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/low.log": "524af8614fa84db7b9bb3445ef1e20f7022bf0a307192aef1208e6dc69aa3403",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/leaf_atlas_neutral_medium.png": "3778cd612d0f4d788f3a2fd14d6aaa729666a0666b163fd8957cd66f08b496cf",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/captures_medium.json": "cd5b6f5109d7e34c912a52d0be5a45f0dfec69c11e93327976fb843d7fd2766d",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/leaf_atlas_neutral_low.png": "1b7e262f9f9fdfabfc33ae0e04272cebdb08086911808c795d33e40259eb8ad1",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/leaf_atlas_warm_medium.png": "73737bb7c871a72ceb9845832cee335781d2a3a5a6b172a8cce5ab90743583a4",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/medium.log": "1a367d953eabb61d850662f289467c76e2e362f2f0c407ec927b17adab82e772",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/leaf_atlas_warm_low.png": "d18da8150f74a1ab66fc902088a3e243a3b0a76adfc42dfda49e2659b4804b3f",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/leaf_atlas_distance_low.png": "af25be1f7f432d309740dddcb138c3c90329c387bff817f8d67c81804026667f",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/leaf_atlas_distance_medium.png": "bb74b0cc0ef1cf2bb0190321a05daf9cbd0d246695997e318d4b6059055ca503",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/leaf_atlas_cool_low.png": "453d78f887939b31da18d0893b519ee395c5c59e5a6baa86b7bad01984d2042d",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/captures_low.json": "a35c6b2244fd4d3ce52308d382d1f040ea9f27da7c35ef4a838eccfab7836ffa",
+    "docs/production/evidence/archive_reconstruction/leaf-atlas-native-1/leaf_atlas_cool_medium.png": "2f5c507c1a18a2bd65479b065c2480b79dfeb8c53ca6d02cd4f0c343ed62d0d6"
+  },
+  "records": [
+    {
+      "name": "isolated_clean_import",
+      "command": [
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "game",
+        "--editor",
+        "--import"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "13525f55e4f69e0a495b39b9fc28bfb27124798199c6ffc9d11d3efc8b7b6f9e"
+    },
+    {
+      "name": "low",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-leaf_atlas-8huouqc9/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+        "--godot",
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "100",
+        "--expect",
+        "LEAF_ATLAS_REVIEW PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "960x540",
+        "--script",
+        "res://tests/leaf_atlas_review.gd",
+        "--",
+        "--review-output=/workspace/scratch/0e91a73a58d2/repo/docs/production/evidence/archive_reconstruction/leaf-atlas-native-1",
+        "--quality=low"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "524af8614fa84db7b9bb3445ef1e20f7022bf0a307192aef1208e6dc69aa3403"
+    },
+    {
+      "name": "medium",
+      "command": [
+        "python3",
+        "-B",
+        "/tmp/wlr-leaf_atlas-8huouqc9/tools/run_graphical.py",
+        "--graphics-prefix",
+        "/workspace/scratch/0e91a73a58d2/toolchain/graphics",
+        "--godot",
+        "/workspace/scratch/0e91a73a58d2/toolchain/godot/Godot_v4.7.2-stable_linux.x86_64",
+        "--timeout",
+        "100",
+        "--expect",
+        "LEAF_ATLAS_REVIEW PASS",
+        "--",
+        "--path",
+        "game",
+        "--resolution",
+        "960x540",
+        "--script",
+        "res://tests/leaf_atlas_review.gd",
+        "--",
+        "--review-output=/workspace/scratch/0e91a73a58d2/repo/docs/production/evidence/archive_reconstruction/leaf-atlas-native-1",
+        "--quality=medium"
+      ],
+      "passed": true,
+      "exit_code": 0,
+      "slots_before": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "slots_after": {
+        "savegame.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b",
+        "savegame.backup.json": "3a007c2364087c9b7460ef1c3b805d290befc0f2e20b5cb7c5c39eb6d86f990b"
+      },
+      "log_sha256": "1a367d953eabb61d850662f289467c76e2e362f2f0c407ec927b17adab82e772"
+    }
+  ],
+  "captures": [
+    {
+      "assertions": 84,
+      "captures": [
+        {
+          "camera_size": 6.40000009536743,
+          "file": "leaf_atlas_neutral_low.png",
+          "leaf_cells": 8,
+          "lighting": "neutral",
+          "material": "res://art/materials/m_archive_leaf_cutout.tres",
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "top_row_reverse_facing": false
+        },
+        {
+          "camera_size": 6.40000009536743,
+          "file": "leaf_atlas_warm_low.png",
+          "leaf_cells": 8,
+          "lighting": "warm",
+          "material": "res://art/materials/m_archive_leaf_cutout.tres",
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "top_row_reverse_facing": false
+        },
+        {
+          "camera_size": 6.40000009536743,
+          "file": "leaf_atlas_cool_low.png",
+          "leaf_cells": 8,
+          "lighting": "cool",
+          "material": "res://art/materials/m_archive_leaf_cutout.tres",
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "top_row_reverse_facing": true
+        },
+        {
+          "camera_size": 12.0,
+          "file": "leaf_atlas_distance_low.png",
+          "leaf_cells": 8,
+          "lighting": "distance",
+          "material": "res://art/materials/m_archive_leaf_cutout.tres",
+          "render_scale": 0.75,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "top_row_reverse_facing": false
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "quality": "low",
+      "renderer": "forward_plus",
+      "scope": "unbound_leaf_alpha_specimens",
+      "status": "CAPTURED_FOR_REVIEW"
+    },
+    {
+      "assertions": 84,
+      "captures": [
+        {
+          "camera_size": 6.40000009536743,
+          "file": "leaf_atlas_neutral_medium.png",
+          "leaf_cells": 8,
+          "lighting": "neutral",
+          "material": "res://art/materials/m_archive_leaf_cutout.tres",
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "top_row_reverse_facing": false
+        },
+        {
+          "camera_size": 6.40000009536743,
+          "file": "leaf_atlas_warm_medium.png",
+          "leaf_cells": 8,
+          "lighting": "warm",
+          "material": "res://art/materials/m_archive_leaf_cutout.tres",
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "top_row_reverse_facing": false
+        },
+        {
+          "camera_size": 6.40000009536743,
+          "file": "leaf_atlas_cool_medium.png",
+          "leaf_cells": 8,
+          "lighting": "cool",
+          "material": "res://art/materials/m_archive_leaf_cutout.tres",
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "top_row_reverse_facing": true
+        },
+        {
+          "camera_size": 12.0,
+          "file": "leaf_atlas_distance_medium.png",
+          "leaf_cells": 8,
+          "lighting": "distance",
+          "material": "res://art/materials/m_archive_leaf_cutout.tres",
+          "render_scale": 1.0,
+          "shipping_assignment": false,
+          "size": [
+            960,
+            540
+          ],
+          "top_row_reverse_facing": false
+        }
+      ],
+      "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "quality": "medium",
+      "renderer": "forward_plus",
+      "scope": "unbound_leaf_alpha_specimens",
+      "status": "CAPTURED_FOR_REVIEW"
+    }
+  ],
+  "private_fixture_project_sha256": "4dd5ce7f638d16dd6e2877cb82b3bca371ea3a9505fed04e177c684f67e20b91",
+  "source_alpha_cells_verified": 8,
+  "original_generated_bytes_preserved": true,
+  "map_regeneration": "Not applicable: generated original bitmap plus exact two-prompt lineage; no deterministic rerender claim",
+  "private_copy_removed": true,
+  "shipping_assignments_added": 0,
+  "new_lfs_payloads": 0,
+  "finished_at": "2026-10-07T11:27:49.061389+00:00"
+}

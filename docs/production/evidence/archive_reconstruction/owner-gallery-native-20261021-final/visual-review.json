@@ -1,0 +1,106 @@
+{
+  "status": "PASS_INDIVIDUAL_CAPTURE_REVIEW",
+  "utc": "2026-10-21T14:49:37.450155+00:00",
+  "reviewed_individually": 16,
+  "reviewer": "Codex AI assistant",
+  "frames": {
+    "s00_closed_low.png": {
+      "sha256": "79be622722491c96c0e0e3d8880e83f16141a408bdf165b1a13b8ce0cabbe871",
+      "observation": "Створки сомкнуты; каменная арка, поперечные крепления и тёплый фонарь справа различимы. По краям виден незаполненный фон; сборка входа остаётся частичной. На диагоналях заметна ступенчатость при текущем внутреннем масштабе Low.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s00_entry_low.png": {
+      "sha256": "88c69f055ae98e75f3058c0e4f99e32bdbf1f362aba03350df01e4c5f50bd67e",
+      "observation": "В одном кадре видны круглый Hub, стеклянный купол и пьедестал. Показаны прежние временные кольца; боковые шкафы и заполнение комнаты ещё упрощены. На диагоналях заметна ступенчатость при текущем внутреннем масштабе Low.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s01_asleep_low.png": {
+      "sha256": "437849ac4a634be369a64ddc68f3dfd60d95fe62b2c0700b6efb6d3303f2d1d0",
+      "observation": "Ядро остаётся тёмным на фоне холодного камня и боковых тёплых фонарей. Органы управления вокруг пьедестала видны; геометрия колец временная. На диагоналях заметна ступенчатость при текущем внутреннем масштабе Low.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s01_awakened_low.png": {
+      "sha256": "ea6d85ecc9d3cca570d47a72262d96155303feda8ee0a026f0979540d653a533",
+      "observation": "Основание и кольца подсвечены тёплым светом; справа виден голубой напольный канал. Камера совпадает со спящим состоянием. На диагоналях заметна ступенчатость при текущем внутреннем масштабе Low.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s02_entry_cold_low.png": {
+      "sha256": "fd2c69d71a5bffe80a3a251e72c95b021c9892f99b86517e6088f10ca73dbef4",
+      "observation": "Входной ракурс показывает оптический механизм между двумя книжными шкафами. Ковёр, тёплые фонари и холодный каменный зал различимы; декор остаётся неполным. На диагоналях заметна ступенчатость при текущем внутреннем масштабе Low.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s02_star_low.png": {
+      "sha256": "69a9451c2c83d4a8ae20134bca8692a299ee3ef5b1eaf384d3684a7537899d39",
+      "observation": "Голубые лучи проходят через механизм; контур Звезды виден справа за стойкой. Часть контура перекрыта стойкой с этого ракурса. На диагоналях заметна ступенчатость при текущем внутреннем масштабе Low.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s02_hearth_low.png": {
+      "sha256": "73bc71046e7142073d279001d536d20fea3c271e1eef9ab7c5ee1b790de9e18c",
+      "observation": "Освещение комнаты стало тёплым; над чашей слева виден огонь. Голубые лучи и контур Звезды сохраняются. На диагоналях заметна ступенчатость при текущем внутреннем масштабе Low.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s01_return_low.png": {
+      "sha256": "7dfd5049e35482a7977db4fb0f882d461484d9f7edef5fb8bcb4cb86e64ce5e4",
+      "observation": "В Hub одновременно видны голубой и золотой напольные каналы. Открытый проход справа показывает тёплую комнату S02; на пьедестале остаётся временная модель колец. На диагоналях заметна ступенчатость при текущем внутреннем масштабе Low.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s00_closed_medium.png": {
+      "sha256": "4d2135e3f461a6971acd973480d322f6b7be1ae75ded6d861aee678f28320548",
+      "observation": "Створки сомкнуты; каменная арка, поперечные крепления и тёплый фонарь справа различимы. По краям виден незаполненный фон; сборка входа остаётся частичной. В Medium грани и мелкие линии читаются чётче, чем в парном Low-кадре.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s00_entry_medium.png": {
+      "sha256": "2c1bb4a96b80656711ace2f5ee811ab3677467b809fa9007984c4a3ce60b68ea",
+      "observation": "В одном кадре видны круглый Hub, стеклянный купол и пьедестал. Показаны прежние временные кольца; боковые шкафы и заполнение комнаты ещё упрощены. В Medium грани и мелкие линии читаются чётче, чем в парном Low-кадре.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s01_asleep_medium.png": {
+      "sha256": "ad1fca56a41c2cc0ca3997b109817a6e3995136d58a231b3b2a2ec5492a9aa0c",
+      "observation": "Ядро остаётся тёмным на фоне холодного камня и боковых тёплых фонарей. Органы управления вокруг пьедестала видны; геометрия колец временная. В Medium грани и мелкие линии читаются чётче, чем в парном Low-кадре.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s01_awakened_medium.png": {
+      "sha256": "234a4b4f15e73dd126a6fddadf321a24923b3bc44afeef2c0c069cafd0a86574",
+      "observation": "Основание и кольца подсвечены тёплым светом; справа виден голубой напольный канал. Камера совпадает со спящим состоянием. В Medium грани и мелкие линии читаются чётче, чем в парном Low-кадре.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s02_entry_cold_medium.png": {
+      "sha256": "6efbadf7d8a4c9361feb497490d85572e25c6af8acd87e7d8c47ece30951b52d",
+      "observation": "Входной ракурс показывает оптический механизм между двумя книжными шкафами. Ковёр, тёплые фонари и холодный каменный зал различимы; декор остаётся неполным. В Medium грани и мелкие линии читаются чётче, чем в парном Low-кадре.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s02_star_medium.png": {
+      "sha256": "f9838c59f170bb1c9982b20e587e3b38fc7524c4a691d9378d16dee0e0f62cb5",
+      "observation": "Голубые лучи проходят через механизм; контур Звезды виден справа за стойкой. Часть контура перекрыта стойкой с этого ракурса. В Medium грани и мелкие линии читаются чётче, чем в парном Low-кадре.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s02_hearth_medium.png": {
+      "sha256": "26d0f2b6af9ab0d55c2c99503a2e1876349982912c97ddd4d9a16b03f90c7e94",
+      "observation": "Освещение комнаты стало тёплым; над чашей слева виден огонь. Голубые лучи и контур Звезды сохраняются. В Medium грани и мелкие линии читаются чётче, чем в парном Low-кадре.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    },
+    "s01_return_medium.png": {
+      "sha256": "cb2e7c4e0e4d11ee95115e7c0e16569714080dd145716917cd08d5593a38e150",
+      "observation": "В Hub одновременно видны голубой и золотой напольные каналы. Открытый проход справа показывает тёплую комнату S02; на пьедестале остаётся временная модель колец. В Medium грани и мелкие линии читаются чётче, чем в парном Low-кадре.",
+      "review_method": "Individual native PNG inspection through view_image; no contact-sheet-only review",
+      "owner_style_acceptance": false
+    }
+  },
+  "scope": "Capture integrity and readable state comparison only; current art remains partial.",
+  "new_gameplay_assertions": 0
+}

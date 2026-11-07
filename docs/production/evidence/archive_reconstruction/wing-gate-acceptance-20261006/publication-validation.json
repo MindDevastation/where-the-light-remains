@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "Current documentation-only gate publication/recovery resolution; original gate art/test acceptance retained.",
+  "source_hashes": {
+    "docs/production/WORK_RECOVERY.md": "a312043240bfc3dd7b4cd6c3d8836019c813952672f24af1968b939428f3e0b4",
+    "docs/production/IMPLEMENTATION_PLAN.md": "ea9ca969f7eee3afcd84b56df54af593d266407f65198c659846278fed05f125",
+    "docs/production/ROOM_ART_NEXT_BLOCK.md": "9e6de388585d49fbda7102e4ae26e57f83d7d5d347a9c2f844dcd8efdd8144c1",
+    "docs/production/VS1_NEXT_BLOCKERS.md": "b2523b1d5be0d0fdfea669e2474bb05dd3bd90d2300ebd671a6c16e34e05cab1",
+    "docs/production/ARCHIVE_WING_GATE_ACCEPTANCE.md": "2104026e0055459726f501397cae771ab4ee82df3716e188e46d659c4a527e24",
+    "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/publication.json": "560dfa4afb0b9da4f49321edd83b03468b44eeb5bc876fb9bcc7cde5310f5bce",
+    "docs/production/evidence/archive_reconstruction/wing-gate-acceptance-20261006/results.json": "b1ff630860ec1a1610ee3ba2e5a1a0ce54a8c12c84aec5598493ea9261408768"
+  },
+  "remote_verified_sha": "3d81acbcd94759d472b72f60dbac3eb39000fad4"
+}

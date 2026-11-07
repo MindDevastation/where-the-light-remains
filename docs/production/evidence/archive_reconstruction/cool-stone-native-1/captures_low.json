@@ -1,0 +1,74 @@
+{
+  "assertions": 33,
+  "captures": [
+    {
+      "draw_calls": 3,
+      "file": "stone_neutral_low.png",
+      "lighting": "neutral",
+      "materials": [
+        "res://art/materials/m_cool_dark_stone.tres",
+        "res://art/materials/m_observatory_stone.tres"
+      ],
+      "render_scale": 0.75,
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "tiles": 1
+    },
+    {
+      "draw_calls": 3,
+      "file": "stone_warm_low.png",
+      "lighting": "warm",
+      "materials": [
+        "res://art/materials/m_cool_dark_stone.tres",
+        "res://art/materials/m_observatory_stone.tres"
+      ],
+      "render_scale": 0.75,
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "tiles": 1
+    },
+    {
+      "draw_calls": 3,
+      "file": "stone_cool_low.png",
+      "lighting": "cool",
+      "materials": [
+        "res://art/materials/m_cool_dark_stone.tres",
+        "res://art/materials/m_observatory_stone.tres"
+      ],
+      "render_scale": 0.75,
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "tiles": 1
+    },
+    {
+      "draw_calls": 3,
+      "file": "stone_tiles_low.png",
+      "lighting": "tiles",
+      "materials": [
+        "res://art/materials/m_cool_dark_stone.tres",
+        "res://art/materials/m_observatory_stone.tres"
+      ],
+      "render_scale": 0.75,
+      "shipping_assignment": false,
+      "size": [
+        960,
+        540
+      ],
+      "tiles": 4
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "quality": "low",
+  "renderer": "forward_plus",
+  "scope": "unbound_material_specimens",
+  "status": "CAPTURED_FOR_REVIEW"
+}

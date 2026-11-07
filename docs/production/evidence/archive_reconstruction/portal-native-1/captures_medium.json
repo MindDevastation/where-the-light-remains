@@ -1,0 +1,95 @@
+{
+  "captures": [
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 105,
+      "file": "portal_rail_closed_medium.png",
+      "left_door_x": -0.649999976158142,
+      "name": "portal_rail_closed",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 0.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 104,
+      "file": "portal_facade_oblique_medium.png",
+      "left_door_x": -0.649999976158142,
+      "name": "portal_facade_oblique",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 1.2,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 97,
+      "file": "portal_crown_detail_medium.png",
+      "left_door_x": -0.649999976158142,
+      "name": "portal_crown_detail",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 1.2,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 106,
+      "file": "portal_rail_opening_medium.png",
+      "left_door_x": -1.11666667461395,
+      "name": "portal_rail_opening",
+      "right_door_x": 1.11666667461395,
+      "sample_seconds": 2.5,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 81,
+      "file": "portal_rail_entry_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "portal_rail_entry",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 7.9,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 26,
+      "file": "portal_quiet_s01_reverse_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "portal_quiet_s01_reverse",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "portal",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

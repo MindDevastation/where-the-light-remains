@@ -1,0 +1,10 @@
+{
+  "first_attempt": "../channel-trim-native-20261031-1/results.json",
+  "status": "TEST_FIXTURE_CORRECTED_NATIVE_RERUN_PENDING",
+  "measured_maximum_decoded_tangent_dot": 0.000155925750732422,
+  "decoded_error_bound": 0.00025,
+  "reason": "Native packed normals/tangents are unit length within 6e-8; the original 1e-4 dot bound was tighter than measured 16-bit decoding error. New bound remains below 0.0144 degrees. No mesh/controller change.",
+  "ownership_reason": "A newly created Tween can make its first step before the next node process guard after reparenting. Test now checks cancellation at that existing frame boundary, foreign node survival/no completion and no subsequent writes. Instant synchronous reparent cancellation is not claimed.",
+  "changed_shipping_controller": false,
+  "changed_native_meshes": false
+}

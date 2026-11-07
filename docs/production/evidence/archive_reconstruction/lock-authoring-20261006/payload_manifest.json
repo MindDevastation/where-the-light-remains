@@ -1,0 +1,42 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s00_door_lock.blend",
+      "bytes": 551297,
+      "sha256": "d7146727118f1f82ec92f5529a8476d7d633f50df459061680362cf7e5186ced"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_lock_housing.glb",
+      "bytes": 43104,
+      "sha256": "c38850f65031236949be5f7533886c0a5bf2bb75e236643488b1c8acf9ebdf50"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_lock_bolt.glb",
+      "bytes": 19692,
+      "sha256": "f90aa412f2c70f15e959eadce3f12b65ca49fce0adaa9716d543f6b681f3d93b"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_lock_keeper.glb",
+      "bytes": 40220,
+      "sha256": "257fb8d48d95547a3a61fbb2fab6d82307c6c68ffb138cb14f89426ae5d6c26e"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s00_lock_housing",
+      "triangles": 364,
+      "surfaces": 2
+    },
+    {
+      "stem": "sm_s00_lock_bolt",
+      "triangles": 152,
+      "surfaces": 2
+    },
+    {
+      "stem": "sm_s00_lock_keeper",
+      "triangles": 332,
+      "surfaces": 2
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

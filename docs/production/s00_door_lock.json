@@ -1,0 +1,22 @@
+{
+  "version":1,
+  "source":"assets/3d/blender/archive_kit/s00_door_lock.blend",
+  "materials":{
+    "iron":"res://art/materials/m_dark_iron.tres",
+    "brass":"res://art/materials/m_aged_brass.tres"
+  },
+  "parts":[
+    {"id":"housing","stem":"sm_s00_lock_housing","joint":[0,0,0],"materials":["iron","brass"],"triangle_ceiling":1600},
+    {"id":"bolt","stem":"sm_s00_lock_bolt","joint":[0,0,0],"materials":["brass","iron"],"triangle_ceiling":1600},
+    {"id":"keeper","stem":"sm_s00_lock_keeper","joint":[0,0,0],"materials":["iron","brass"],"triangle_ceiling":1600}
+  ],
+  "left_root":[0.65,-0.28,0.175],
+  "right_root":[-0.65,-0.28,0.175],
+  "retraction_m":0.24,
+  "bar_center":[-0.10,0,0.025],
+  "bar_size":[0.39,0.032,0.045],
+  "bore_half_height":0.020,
+  "bore_half_depth":0.0265,
+  "bore_z":0.025,
+  "keeper_entry_x":0.04
+}

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_lock_housing.glb" id="Housing"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s00_lock_bolt.glb" id="Bolt"]
+
+[node name="ArchiveDoorLock" type="Node3D"]
+metadata/asset_brief = "docs/production/S00_DOOR_LOCK.md"
+
+[node name="Housing" parent="." instance=ExtResource("Housing")]
+
+[node name="Bolt" type="Node3D" parent="."]
+
+[node name="Art" parent="Bolt" instance=ExtResource("Bolt")]

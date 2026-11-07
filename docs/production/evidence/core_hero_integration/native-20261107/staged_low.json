@@ -1,0 +1,151 @@
+{
+  "access": [
+    {
+      "angle_degrees": -30,
+      "enclosure_ray_clearance_m": 0.795373748779297,
+      "target": "Panel/InteractionTarget"
+    },
+    {
+      "angle_degrees": -15,
+      "enclosure_ray_clearance_m": 0.807748149871826,
+      "target": "Panel/InteractionTarget"
+    },
+    {
+      "angle_degrees": 0,
+      "enclosure_ray_clearance_m": 0.77271301651001,
+      "target": "Panel/InteractionTarget"
+    },
+    {
+      "angle_degrees": 15,
+      "enclosure_ray_clearance_m": 0.749313544273376,
+      "target": "Panel/InteractionTarget"
+    },
+    {
+      "angle_degrees": 30,
+      "enclosure_ray_clearance_m": 0.729645203590393,
+      "target": "Panel/InteractionTarget"
+    },
+    {
+      "angle_degrees": -30,
+      "enclosure_ray_clearance_m": 1.38934476280212,
+      "target": "Lens/InteractionTarget"
+    },
+    {
+      "angle_degrees": -15,
+      "enclosure_ray_clearance_m": 1.39647955799103,
+      "target": "Lens/InteractionTarget"
+    },
+    {
+      "angle_degrees": 0,
+      "enclosure_ray_clearance_m": 1.40244204902649,
+      "target": "Lens/InteractionTarget"
+    },
+    {
+      "angle_degrees": 15,
+      "enclosure_ray_clearance_m": 1.40808851623535,
+      "target": "Lens/InteractionTarget"
+    },
+    {
+      "angle_degrees": 30,
+      "enclosure_ray_clearance_m": 1.39359862709045,
+      "target": "Lens/InteractionTarget"
+    },
+    {
+      "angle_degrees": -30,
+      "enclosure_ray_clearance_m": 0.507897924423218,
+      "target": "Socket/InteractionTarget"
+    },
+    {
+      "angle_degrees": -15,
+      "enclosure_ray_clearance_m": 0.524243663787842,
+      "target": "Socket/InteractionTarget"
+    },
+    {
+      "angle_degrees": 0,
+      "enclosure_ray_clearance_m": 0.543367814064026,
+      "target": "Socket/InteractionTarget"
+    },
+    {
+      "angle_degrees": 15,
+      "enclosure_ray_clearance_m": 0.570460509300232,
+      "target": "Socket/InteractionTarget"
+    },
+    {
+      "angle_degrees": 30,
+      "enclosure_ray_clearance_m": 0.594938110351563,
+      "target": "Socket/InteractionTarget"
+    },
+    {
+      "angle_degrees": -30,
+      "enclosure_ray_clearance_m": 0.724223922729492,
+      "target": "Lever/InteractionTarget"
+    },
+    {
+      "angle_degrees": -15,
+      "enclosure_ray_clearance_m": 0.771142910957336,
+      "target": "Lever/InteractionTarget"
+    },
+    {
+      "angle_degrees": 0,
+      "enclosure_ray_clearance_m": 0.789364170074463,
+      "target": "Lever/InteractionTarget"
+    },
+    {
+      "angle_degrees": 15,
+      "enclosure_ray_clearance_m": 0.769131611824036,
+      "target": "Lever/InteractionTarget"
+    },
+    {
+      "angle_degrees": 30,
+      "enclosure_ray_clearance_m": 0.749688457489014,
+      "target": "Lever/InteractionTarget"
+    }
+  ],
+  "captures": [
+    {
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.997717, 0.067538), Z: (0.0, -0.067538, 0.997717), O: (0.0, 1.624, 2.6)]",
+      "core_light_energy": 0.300000011920929,
+      "core_warmth": 0.0,
+      "file": "staged_front_asleep_low.png",
+      "quiet_pose": true,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.997717, 0.067538), Z: (0.0, -0.067538, 0.997717), O: (0.0, 1.624, 2.6)]",
+      "core_light_energy": 1.79999995231628,
+      "core_warmth": 1.0,
+      "file": "staged_front_awakened_low.png",
+      "quiet_pose": true,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "camera_transform": "[X: (0.707107, 0.0, -0.707107), Y: (-0.034404, 0.998816, -0.034404), Z: (0.706269, 0.048654, 0.706269), O: (1.8, 1.624, 1.8)]",
+      "core_light_energy": 1.79999995231628,
+      "core_warmth": 1.0,
+      "file": "staged_control_oblique_awakened_low.png",
+      "quiet_pose": true,
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "checks": 72,
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "effects": false,
+  "failures": [],
+  "glow": false,
+  "minimum_continuous_yaw_ray_clearance_m": 0.507897924423218,
+  "preset": "Low",
+  "renderer": "forward_plus",
+  "scope": "Matched original/staged shipping camera and lighting, quiet API poses and actual player target queries. Software Vulkan, not performance or final art acceptance. Actual E/clock/pause/disk reload is separate.",
+  "status": "PASS",
+  "variant": "staged",
+  "volumetrics": false
+}

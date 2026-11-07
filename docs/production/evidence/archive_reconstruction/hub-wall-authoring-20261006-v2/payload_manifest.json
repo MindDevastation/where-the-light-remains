@@ -1,0 +1,22 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/s01_hub_wall.blend",
+      "bytes": 1064532,
+      "sha256": "8de0e3a0378752a848e0ccd1c1fd3c57f9d659b6ebf04fafce1ddaae76bbdfe1"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_wall.glb",
+      "bytes": 768808,
+      "sha256": "f00705ba6d03def2ea4a01c8bd736be6c469a1b94c8f3a3ab5712e90e5c33e0f"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_s01_hub_wall",
+      "triangles": 6708,
+      "surfaces": 5
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

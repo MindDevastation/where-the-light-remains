@@ -1,0 +1,45 @@
+{
+  "status": "FINAL_APPEARANCE_IMAGE_FOR_OWNER_REVIEW",
+  "created_at_utc": "2026-10-17T23:47:59.168055+00:00",
+  "reference_commit": "78233a51806d45ccf2fce50282e68caf970a55b4",
+  "selected_primary": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_a.png",
+  "references": [
+    {
+      "path": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_a.png",
+      "sha256": "9b221120ebc6bbbde7b830314ee9aaa21a709a75c1ba99584d628add51525ebb"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_b.png",
+      "sha256": "5480a8c1491f0c16c8b34ce49a3f36f87021532de3983226dee1799ffdc337b3"
+    },
+    {
+      "path": "assets/concept_art/hero_props/The Archive’s Central Mechanism_v2_angle_c.png",
+      "sha256": "0d87254b46ca4b24208c39a4b54bbf3ab4ccd0f3e60951e701f4018c6cb14e50"
+    }
+  ],
+  "intended_role": "Final appearance image for owner review and later S01 core 3D production;not a shipped GLB or native frame",
+  "existing_geometry_contract": "docs/production/core_orbits_mount_revision2.json",
+  "shipping_changes": 0,
+  "inventory_delta": [],
+  "tool": "built-in imagegen",
+  "completed_at_utc": "2026-10-17T23:49:25.093222+00:00",
+  "output": "assets/3d/reference/s01_core_final_look_v1/s01_core_final_look_v1.png",
+  "output_sha256": "1b5ccd29e34f9fd2528d063b5e772756690e639039f764779369acda2e6544d8",
+  "output_bytes": 2135120,
+  "output_size": [
+    1536,
+    1024
+  ],
+  "mode": "RGB",
+  "generated_bytes_preserved": true,
+  "visual_review": {
+    "subject": "single complete three-orbit Archive core on walnut/brass pedestal",
+    "style": "crafted brass/dark iron/wood with a warm energy core;isolated dark studio presentation",
+    "limitations": [
+      "Illustrative 2D final-look target,not a measured mesh",
+      "Ring clearances and exact geometry are not established by generated pixels",
+      "Generated graduation motifs are ornamental proposals,not new canon or gameplay clues",
+      "No Blender/GLB/Godot integration or performance acceptance"
+    ]
+  }
+}

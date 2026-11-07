@@ -1,0 +1,123 @@
+{
+  "captures": [
+    {
+      "cover_degrees": 0.0,
+      "draw_calls": 82,
+      "file": "core_hub_sleeping_medium.png",
+      "installed_visible": false,
+      "lever_degrees": 0.0,
+      "loose_visible": true,
+      "name": "core_hub_sleeping",
+      "phase": 0,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "cover_degrees": 0.0,
+      "draw_calls": 85,
+      "file": "core_base_oblique_medium.png",
+      "installed_visible": false,
+      "lever_degrees": 0.0,
+      "loose_visible": true,
+      "name": "core_base_oblique",
+      "phase": 0,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "cover_degrees": 0.0,
+      "draw_calls": 82,
+      "file": "core_panel_closed_medium.png",
+      "installed_visible": false,
+      "lever_degrees": 0.0,
+      "loose_visible": true,
+      "name": "core_panel_closed",
+      "phase": 0,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "cover_degrees": -18.0000005008956,
+      "draw_calls": 82,
+      "file": "core_panel_open_medium.png",
+      "installed_visible": false,
+      "lever_degrees": 0.0,
+      "loose_visible": true,
+      "name": "core_panel_open",
+      "phase": 1,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "cover_degrees": -18.0000005008956,
+      "draw_calls": 83,
+      "file": "core_panel_oblique_medium.png",
+      "installed_visible": false,
+      "lever_degrees": 0.0,
+      "loose_visible": true,
+      "name": "core_panel_oblique",
+      "phase": 1,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "cover_degrees": -18.0000005008956,
+      "draw_calls": 78,
+      "file": "core_lever_ready_medium.png",
+      "installed_visible": true,
+      "lever_degrees": 0.0,
+      "loose_visible": false,
+      "name": "core_lever_ready",
+      "phase": 3,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "cover_degrees": -18.0000005008956,
+      "draw_calls": 79,
+      "file": "core_lever_pulled_medium.png",
+      "installed_visible": true,
+      "lever_degrees": 25.0000001265059,
+      "loose_visible": false,
+      "name": "core_lever_pulled",
+      "phase": 5,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "cover_degrees": -18.0000005008956,
+      "draw_calls": 83,
+      "file": "core_hub_awakened_medium.png",
+      "installed_visible": true,
+      "lever_degrees": 25.0000001265059,
+      "loose_visible": false,
+      "name": "core_hub_awakened",
+      "phase": 5,
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "core",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

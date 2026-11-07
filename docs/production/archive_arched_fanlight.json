@@ -1,0 +1,8 @@
+{
+  "source":"assets/3d/blender/archive_kit/archive_arched_fanlight.blend",
+  "parts":[{"id":"window","stem":"sm_archive_arched_fanlight","runtime":"game/art/meshes/archive_kit/sm_archive_arched_fanlight.glb","joint":[0,0,0],"materials":["stone","iron","brass","glass"],"triangle_ceiling":3500}],
+  "materials":{"stone":"res://art/materials/m_observatory_stone.tres","iron":"res://art/materials/m_dark_iron.tres","brass":"res://art/materials/m_aged_brass.tres","glass":"res://art/materials/m_clear_glass.tres"},
+  "min":[-1.70,3.22,0.176],"max":[1.70,4.78,0.276],
+  "gate_max_z":0.1195,"gate_top":3.20,"lintel_bottom":4.80,
+  "opening_height":3.3,"opening_duration":0.45,"instances":5
+}

@@ -1,0 +1,331 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T20:48:07.225286+00:00",
+  "scope": "Restore exact committed runtime LFS identities after environment replacement; no asset regeneration or independent acceptance rerun.",
+  "payloads": [
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_emitter.glb",
+      "bytes": 142444,
+      "sha256": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39\nsize 142444\n"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_ring_outer.glb",
+      "bytes": 185028,
+      "sha256": "14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212\nsize 185028\n"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_ring_inner.glb",
+      "bytes": 184740,
+      "sha256": "e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c\nsize 184740\n"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_hearth.glb",
+      "bytes": 163888,
+      "sha256": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738\nsize 163888\n"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_ring_middle.glb",
+      "bytes": 185080,
+      "sha256": "845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352\nsize 185080\n"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_focus.glb",
+      "bytes": 128240,
+      "sha256": "da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7\nsize 128240\n"
+    },
+    {
+      "path": "game/art/meshes/wing01/sm_wing01_frame.glb",
+      "bytes": 322060,
+      "sha256": "90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01\nsize 322060\n"
+    },
+    {
+      "path": "game/art/meshes/validation/sm_pipeline_meter_cube.glb",
+      "bytes": 1992,
+      "sha256": "245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893\nsize 1992\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_dome_sky.glb",
+      "bytes": 339840,
+      "sha256": "ad08178e51dec6e6c11b2e3746e9ede7004e9233a1b7d6de793bfb9361bd7245",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:ad08178e51dec6e6c11b2e3746e9ede7004e9233a1b7d6de793bfb9361bd7245\nsize 339840\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_floor_1m.glb",
+      "bytes": 3344,
+      "sha256": "76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8\nsize 3344\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_entry_arch.glb",
+      "bytes": 75100,
+      "sha256": "c1c0efd48af37d6b9c03a2a745c4e88dbae395f77d8b4827a5557304916d029b",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:c1c0efd48af37d6b9c03a2a745c4e88dbae395f77d8b4827a5557304916d029b\nsize 75100\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_floor.glb",
+      "bytes": 700572,
+      "sha256": "b13179eca99cf87dde6a76097ab3436955a3470ce3dd1bc6eed3960a17fa2c35",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:b13179eca99cf87dde6a76097ab3436955a3470ce3dd1bc6eed3960a17fa2c35\nsize 700572\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wing_gate.glb",
+      "bytes": 403636,
+      "sha256": "0df79227b620257ef586821690c9f58257457defe6aa1608ac93e1c81281a190",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:0df79227b620257ef586821690c9f58257457defe6aa1608ac93e1c81281a190\nsize 403636\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_dome_drum.glb",
+      "bytes": 1583316,
+      "sha256": "eaf342a4196e36b7c811fee1e8a62b8e4530b6ec8f8297c4128770540c54e404",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:eaf342a4196e36b7c811fee1e8a62b8e4530b6ec8f8297c4128770540c54e404\nsize 1583316\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_starting_lens.glb",
+      "bytes": 158820,
+      "sha256": "2f3e6451666da55d05bddf4124a216ed7d3cae05d0bed894486a0eedbc72a1ea",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:2f3e6451666da55d05bddf4124a216ed7d3cae05d0bed894486a0eedbc72a1ea\nsize 158820\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_panel_base.glb",
+      "bytes": 78604,
+      "sha256": "f9e3a6455a74e06ae9941726095d99183b8ee9d88603716ab664c5de91a17cf8",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:f9e3a6455a74e06ae9941726095d99183b8ee9d88603716ab664c5de91a17cf8\nsize 78604\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_panel_cover.glb",
+      "bytes": 41688,
+      "sha256": "55f821825a8894bd0692b3e99669f3da4816e767d26f4eb2304a06ae7207934c",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:55f821825a8894bd0692b3e99669f3da4816e767d26f4eb2304a06ae7207934c\nsize 41688\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_3m.glb",
+      "bytes": 20076,
+      "sha256": "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3\nsize 20076\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb",
+      "bytes": 1436904,
+      "sha256": "54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8\nsize 1436904\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_entry_facade.glb",
+      "bytes": 307084,
+      "sha256": "f434c2bbc9bc5a8bc007373cab6bd9ce337c6692aa6da281f6ff66e8d96734d8",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:f434c2bbc9bc5a8bc007373cab6bd9ce337c6692aa6da281f6ff66e8d96734d8\nsize 307084\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_lock_bolt.glb",
+      "bytes": 19692,
+      "sha256": "f90aa412f2c70f15e959eadce3f12b65ca49fce0adaa9716d543f6b681f3d93b",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:f90aa412f2c70f15e959eadce3f12b65ca49fce0adaa9716d543f6b681f3d93b\nsize 19692\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_lock_housing.glb",
+      "bytes": 43104,
+      "sha256": "c38850f65031236949be5f7533886c0a5bf2bb75e236643488b1c8acf9ebdf50",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:c38850f65031236949be5f7533886c0a5bf2bb75e236643488b1c8acf9ebdf50\nsize 43104\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_arch_4m.glb",
+      "bytes": 159160,
+      "sha256": "92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8\nsize 159160\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_4m.glb",
+      "bytes": 19496,
+      "sha256": "e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be\nsize 19496\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb",
+      "bytes": 681472,
+      "sha256": "fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa\nsize 681472\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb",
+      "bytes": 681268,
+      "sha256": "ee8a33474c883136f62d09fbe01ec35877b1fff37d35c0c3491e6813d1d6f054",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:ee8a33474c883136f62d09fbe01ec35877b1fff37d35c0c3491e6813d1d6f054\nsize 681268\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_approach_guard_long.glb",
+      "bytes": 211612,
+      "sha256": "4d52cb70a3fec6bdce3c75d714f15fc4afce1cbfff1b8ec1cee19848fcb30f57",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:4d52cb70a3fec6bdce3c75d714f15fc4afce1cbfff1b8ec1cee19848fcb30f57\nsize 211612\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb",
+      "bytes": 167500,
+      "sha256": "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8\nsize 167500\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_lever_handle.glb",
+      "bytes": 50956,
+      "sha256": "3e75aa3d1dc259985069b225d8e4ac0ca7e7695a352b98b69b3f4b1770530ee0",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:3e75aa3d1dc259985069b225d8e4ac0ca7e7695a352b98b69b3f4b1770530ee0\nsize 50956\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb",
+      "bytes": 256964,
+      "sha256": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff\nsize 256964\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_lock_keeper.glb",
+      "bytes": 40220,
+      "sha256": "257fb8d48d95547a3a61fbb2fab6d82307c6c68ffb138cb14f89426ae5d6c26e",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:257fb8d48d95547a3a61fbb2fab6d82307c6c68ffb138cb14f89426ae5d6c26e\nsize 40220\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_approach_guard_rear.glb",
+      "bytes": 135832,
+      "sha256": "75dcc815e74c1900e7d8ab36bf1f2a8d3f46c348132f8bd3b675b76d2c22afd6",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:75dcc815e74c1900e7d8ab36bf1f2a8d3f46c348132f8bd3b675b76d2c22afd6\nsize 135832\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_dome_frame.glb",
+      "bytes": 296632,
+      "sha256": "bb68b2af5849907104c88c368c5bbe5c369362237bd862fc5121bd0b0975017d",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:bb68b2af5849907104c88c368c5bbe5c369362237bd862fc5121bd0b0975017d\nsize 296632\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_dome_glass.glb",
+      "bytes": 340980,
+      "sha256": "441f5630a6dd34cbdee0fe878e7c3691a03016e3b0716f77d10ac45619f2b9df",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:441f5630a6dd34cbdee0fe878e7c3691a03016e3b0716f77d10ac45619f2b9df\nsize 340980\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_approach_path.glb",
+      "bytes": 434252,
+      "sha256": "2697adc7b90c93c4a1cd2da5513d13d7c7893084d0d9dae258339826a717c7b4",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:2697adc7b90c93c4a1cd2da5513d13d7c7893084d0d9dae258339826a717c7b4\nsize 434252\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_hub_wall.glb",
+      "bytes": 768808,
+      "sha256": "f00705ba6d03def2ea4a01c8bd736be6c469a1b94c8f3a3ab5712e90e5c33e0f",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:f00705ba6d03def2ea4a01c8bd736be6c469a1b94c8f3a3ab5712e90e5c33e0f\nsize 768808\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s00_entrance_leaf.glb",
+      "bytes": 252500,
+      "sha256": "5af2f6db8dc3860d29bd1a90c1379e460d96d152fa21ccdf0f7af35612d05e41",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:5af2f6db8dc3860d29bd1a90c1379e460d96d152fa21ccdf0f7af35612d05e41\nsize 252500\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_2m.glb",
+      "bytes": 10708,
+      "sha256": "0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612\nsize 10708\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_rug.glb",
+      "bytes": 5720,
+      "sha256": "d4d5d77e2348b229ac532d1c8088ae0762c8d3b636a48a240bf14652eb3261d9",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:d4d5d77e2348b229ac532d1c8088ae0762c8d3b636a48a240bf14652eb3261d9\nsize 5720\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wall_lantern.glb",
+      "bytes": 81164,
+      "sha256": "9598d00819f9c1bacc37390f02b6d677b8e9830a8ebad70b940dc1a6fe3c3096",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:9598d00819f9c1bacc37390f02b6d677b8e9830a8ebad70b940dc1a6fe3c3096\nsize 81164\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_core_pedestal.glb",
+      "bytes": 274028,
+      "sha256": "46fd606039325ab095a87debcee5b168b48ceefe7d4574838f061d9f42e1f1ff",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:46fd606039325ab095a87debcee5b168b48ceefe7d4574838f061d9f42e1f1ff\nsize 274028\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_pier_4m.glb",
+      "bytes": 36280,
+      "sha256": "fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0\nsize 36280\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_bookcase.glb",
+      "bytes": 454768,
+      "sha256": "4eabe0dc054f24b6efd894733ac9758e83d84d7d590e4914b3253eaec816205a",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:4eabe0dc054f24b6efd894733ac9758e83d84d7d590e4914b3253eaec816205a\nsize 454768\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_lens_socket.glb",
+      "bytes": 161136,
+      "sha256": "048dc3854782d0f9675a84eddbd9f7bdd1d13687908d5c1d574afc6e4370d07a",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:048dc3854782d0f9675a84eddbd9f7bdd1d13687908d5c1d574afc6e4370d07a\nsize 161136\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb",
+      "bytes": 258596,
+      "sha256": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662\nsize 258596\n"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_s01_lever_base.glb",
+      "bytes": 58512,
+      "sha256": "c3817ce376a2b7380fbaaaab5796c271707c0ea7d6ccb03e8d1c7e0d3707c7a3",
+      "committed_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:c3817ce376a2b7380fbaaaab5796c271707c0ea7d6ccb03e8d1c7e0d3707c7a3\nsize 58512\n"
+    }
+  ],
+  "source_hashes": {
+    "game/art/meshes/wing01/sm_wing01_emitter.glb": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39",
+    "game/art/meshes/wing01/sm_wing01_ring_outer.glb": "14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212",
+    "game/art/meshes/wing01/sm_wing01_ring_inner.glb": "e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c",
+    "game/art/meshes/wing01/sm_wing01_hearth.glb": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738",
+    "game/art/meshes/wing01/sm_wing01_ring_middle.glb": "845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352",
+    "game/art/meshes/wing01/sm_wing01_focus.glb": "da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7",
+    "game/art/meshes/wing01/sm_wing01_frame.glb": "90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01",
+    "game/art/meshes/validation/sm_pipeline_meter_cube.glb": "245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893",
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_sky.glb": "ad08178e51dec6e6c11b2e3746e9ede7004e9233a1b7d6de793bfb9361bd7245",
+    "game/art/meshes/archive_kit/sm_archive_floor_1m.glb": "76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8",
+    "game/art/meshes/archive_kit/sm_s00_entry_arch.glb": "c1c0efd48af37d6b9c03a2a745c4e88dbae395f77d8b4827a5557304916d029b",
+    "game/art/meshes/archive_kit/sm_s01_hub_floor.glb": "b13179eca99cf87dde6a76097ab3436955a3470ce3dd1bc6eed3960a17fa2c35",
+    "game/art/meshes/archive_kit/sm_archive_wing_gate.glb": "0df79227b620257ef586821690c9f58257457defe6aa1608ac93e1c81281a190",
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_drum.glb": "eaf342a4196e36b7c811fee1e8a62b8e4530b6ec8f8297c4128770540c54e404",
+    "game/art/meshes/archive_kit/sm_s01_starting_lens.glb": "2f3e6451666da55d05bddf4124a216ed7d3cae05d0bed894486a0eedbc72a1ea",
+    "game/art/meshes/archive_kit/sm_s01_panel_base.glb": "f9e3a6455a74e06ae9941726095d99183b8ee9d88603716ab664c5de91a17cf8",
+    "game/art/meshes/archive_kit/sm_s01_panel_cover.glb": "55f821825a8894bd0692b3e99669f3da4816e767d26f4eb2304a06ae7207934c",
+    "game/art/meshes/archive_kit/sm_archive_wall_3m.glb": "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3",
+    "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb": "54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8",
+    "game/art/meshes/archive_kit/sm_s00_entry_facade.glb": "f434c2bbc9bc5a8bc007373cab6bd9ce337c6692aa6da281f6ff66e8d96734d8",
+    "game/art/meshes/archive_kit/sm_s00_lock_bolt.glb": "f90aa412f2c70f15e959eadce3f12b65ca49fce0adaa9716d543f6b681f3d93b",
+    "game/art/meshes/archive_kit/sm_s00_lock_housing.glb": "c38850f65031236949be5f7533886c0a5bf2bb75e236643488b1c8acf9ebdf50",
+    "game/art/meshes/archive_kit/sm_archive_arch_4m.glb": "92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8",
+    "game/art/meshes/archive_kit/sm_archive_wall_4m.glb": "e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be",
+    "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb": "fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa",
+    "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb": "ee8a33474c883136f62d09fbe01ec35877b1fff37d35c0c3491e6813d1d6f054",
+    "game/art/meshes/archive_kit/sm_s00_approach_guard_long.glb": "4d52cb70a3fec6bdce3c75d714f15fc4afce1cbfff1b8ec1cee19848fcb30f57",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb": "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8",
+    "game/art/meshes/archive_kit/sm_s01_lever_handle.glb": "3e75aa3d1dc259985069b225d8e4ac0ca7e7695a352b98b69b3f4b1770530ee0",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+    "game/art/meshes/archive_kit/sm_s00_lock_keeper.glb": "257fb8d48d95547a3a61fbb2fab6d82307c6c68ffb138cb14f89426ae5d6c26e",
+    "game/art/meshes/archive_kit/sm_s00_approach_guard_rear.glb": "75dcc815e74c1900e7d8ab36bf1f2a8d3f46c348132f8bd3b675b76d2c22afd6",
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_frame.glb": "bb68b2af5849907104c88c368c5bbe5c369362237bd862fc5121bd0b0975017d",
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_glass.glb": "441f5630a6dd34cbdee0fe878e7c3691a03016e3b0716f77d10ac45619f2b9df",
+    "game/art/meshes/archive_kit/sm_s00_approach_path.glb": "2697adc7b90c93c4a1cd2da5513d13d7c7893084d0d9dae258339826a717c7b4",
+    "game/art/meshes/archive_kit/sm_s01_hub_wall.glb": "f00705ba6d03def2ea4a01c8bd736be6c469a1b94c8f3a3ab5712e90e5c33e0f",
+    "game/art/meshes/archive_kit/sm_s00_entrance_leaf.glb": "5af2f6db8dc3860d29bd1a90c1379e460d96d152fa21ccdf0f7af35612d05e41",
+    "game/art/meshes/archive_kit/sm_archive_wall_2m.glb": "0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612",
+    "game/art/meshes/archive_kit/sm_archive_rug.glb": "d4d5d77e2348b229ac532d1c8088ae0762c8d3b636a48a240bf14652eb3261d9",
+    "game/art/meshes/archive_kit/sm_archive_wall_lantern.glb": "9598d00819f9c1bacc37390f02b6d677b8e9830a8ebad70b940dc1a6fe3c3096",
+    "game/art/meshes/archive_kit/sm_s01_core_pedestal.glb": "46fd606039325ab095a87debcee5b168b48ceefe7d4574838f061d9f42e1f1ff",
+    "game/art/meshes/archive_kit/sm_archive_pier_4m.glb": "fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0",
+    "game/art/meshes/archive_kit/sm_archive_bookcase.glb": "4eabe0dc054f24b6efd894733ac9758e83d84d7d590e4914b3253eaec816205a",
+    "game/art/meshes/archive_kit/sm_s01_lens_socket.glb": "048dc3854782d0f9675a84eddbd9f7bdd1d13687908d5c1d574afc6e4370d07a",
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+    "game/art/meshes/archive_kit/sm_s01_lever_base.glb": "c3817ce376a2b7380fbaaaab5796c271707c0ea7d6ccb03e8d1c7e0d3707c7a3"
+  }
+}

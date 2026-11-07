@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "inventory": "TRIM-002",
+  "resolution": 2048,
+  "texel_density_px_per_m": 1024,
+  "u_period_m": 2.0,
+  "packing": "RGB ORM: R1 reserved AO, G roughness, B0 metal; +Y normals",
+  "first_surface": "ArchiveMain/Wing01/Corridor/Presentation/RoomPortal/Art: profile6\u21927 front stone fillet",
+  "regions": [
+    {
+      "id": "arch_fillet",
+      "allocated_rows": [
+        0,
+        256
+      ],
+      "active_rows": [
+        96,
+        160
+      ],
+      "uv_v": [
+        0.046875,
+        0.078125
+      ],
+      "physical_width_m": 0.0625,
+      "actual_reference_width_m": 0.06,
+      "canonical_surface": "ARCH-005",
+      "minimum_guard_px": 96
+    },
+    {
+      "id": "arch_moulding",
+      "allocated_rows": [
+        256,
+        768
+      ],
+      "active_rows": [
+        352,
+        672
+      ],
+      "uv_v": [
+        0.171875,
+        0.328125
+      ],
+      "physical_width_m": 0.3125,
+      "actual_reference_width_m": 0.30943298257252266,
+      "canonical_surface": "ARCH-005",
+      "minimum_guard_px": 96
+    },
+    {
+      "id": "pedestal_plinth",
+      "allocated_rows": [
+        768,
+        1152
+      ],
+      "active_rows": [
+        864,
+        1056
+      ],
+      "uv_v": [
+        0.421875,
+        0.515625
+      ],
+      "physical_width_m": 0.1875,
+      "actual_reference_width_m": 0.164,
+      "canonical_surface": "PROP-001",
+      "minimum_guard_px": 96
+    },
+    {
+      "id": "wall_border",
+      "allocated_rows": [
+        1152,
+        1664
+      ],
+      "active_rows": [
+        1216,
+        1600
+      ],
+      "uv_v": [
+        0.59375,
+        0.78125
+      ],
+      "physical_width_m": 0.375,
+      "actual_reference_width_m": 0.16688319268278637,
+      "canonical_surface": "ARCH-004",
+      "minimum_guard_px": 64
+    },
+    {
+      "id": "floor_edge",
+      "allocated_rows": [
+        1664,
+        2048
+      ],
+      "active_rows": [
+        1728,
+        1984
+      ],
+      "uv_v": [
+        0.84375,
+        0.96875
+      ],
+      "physical_width_m": 0.25,
+      "actual_reference_width_m": 0.2,
+      "canonical_surface": "ARCH-006",
+      "minimum_guard_px": 64
+    }
+  ],
+  "source_authorities": {
+    "tools/create_archive_kit.py": "b4a42fd0cca72cb68edb22f2d7dc8f0ea93e132618c18ec761140cbc2dd0a5e9",
+    "tools/create_s01_core_pedestal.py": "070fd3ec07d99d7d8abe5b59c7d10e83d0454d8b2c3c2b20958d74a1480bcf07",
+    "docs/production/modular_archive_kit_v1.json": "ebbcadc704be7af4a304a31bf094f763b7caf0e9b90a565b819484c43900fe5c",
+    "docs/production/s01_core_pedestal.json": "afb4ac0a68961176a021d71a1a5bf589012bc7c49897a56d1481887eb128c43a",
+    "game/worlds/archive/wing01_corridor_presentation.tscn": "eabde12947f19766d88472ad24162ab388eb2a82e24d7722e40e3e2135351a8a",
+    "game/worlds/archive/archive_main.tscn": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082",
+    "docs/production/ARCHIVE_PRACTICAL_LIGHTING.md": "1641ae441bea124e1134eeaadfe95af85f5e20745302dbb329590a77d20abbda"
+  }
+}

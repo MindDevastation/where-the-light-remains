@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://art/scenes/hero_props/archive_core_visual.gd" id="Projection"]
+[ext_resource type="PackedScene" path="res://art/meshes/archive_kit/sm_s01_core_upper_v1.glb" id="MeasuredUpper"]
+[ext_resource type="PackedScene" path="res://art/meshes/hero_props/sm_s01_archive_core_hero_v1.glb" id="DeliveredHero"]
+
+[node name="CoreHeroUpper" type="Node3D"]
+script = ExtResource("Projection")
+metadata/scope = "Staged only. Exact measured upper plus original delivered energy/glass, no regenerated mesh."
+
+[node name="MeasuredUpper" parent="." instance=ExtResource("MeasuredUpper")]
+
+[node name="VisualCore" parent="." instance=ExtResource("DeliveredHero")]
+position = Vector3(0, -1.02, 0)
+
+[node name="Orbit_Inner" parent="VisualCore/ArchiveCentralMechanism/CoreAssembly" index="2"]
+visible = false
+
+[node name="Orbit_Outer" parent="VisualCore/ArchiveCentralMechanism/CoreAssembly" index="3"]
+visible = false
+
+[node name="Orbit_Third" parent="VisualCore/ArchiveCentralMechanism/CoreAssembly" index="4"]
+visible = false
+
+[node name="sm_archive_core_mounts_and_cage" parent="VisualCore/ArchiveCentralMechanism/CoreAssembly" index="5"]
+visible = false
+
+[node name="sm_archive_core_static_body" parent="VisualCore/ArchiveCentralMechanism" index="1"]
+visible = false
+
+[editable path="VisualCore"]

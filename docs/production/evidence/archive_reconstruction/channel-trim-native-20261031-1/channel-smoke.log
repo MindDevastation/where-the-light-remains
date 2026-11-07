@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ARCHIVE_CHANNEL_TRIM_SMOKE FAIL: 27 bounded resource/state checks; 180 triangles
+ERROR: ARCHIVE_CHANNEL_TRIM FAIL: finite outward nondegenerate triangles, UVs, unit normals and orthogonal tangents
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_channel_trim_smoke.gd:12)
+       [1] _geometry (res://tests/archive_channel_trim_smoke.gd:47)
+       [2] _run (res://tests/archive_channel_trim_smoke.gd:67)
+ERROR: ARCHIVE_CHANNEL_TRIM FAIL: finite outward nondegenerate triangles, UVs, unit normals and orthogonal tangents
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_channel_trim_smoke.gd:12)
+       [1] _geometry (res://tests/archive_channel_trim_smoke.gd:47)
+       [2] _run (res://tests/archive_channel_trim_smoke.gd:68)
+ERROR: ARCHIVE_CHANNEL_TRIM FAIL: foreign marker is preserved and stale tween cancelled
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/archive_channel_trim_smoke.gd:12)
+       [1] _run (res://tests/archive_channel_trim_smoke.gd:107)

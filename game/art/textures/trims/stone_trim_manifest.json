@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "inventory": "TRIM-002",
+  "source": "tools/generate_stone_trim_maps.py",
+  "contract": "docs/production/stone_trim_regions.json",
+  "contract_sha256": "e4bd26a48543e7df65e64abf615f519a6e07e48812cdb0fb84795d9f72a63ed6",
+  "resolution": 2048,
+  "texel_density_px_per_m": 1024,
+  "u_period_m": 2.0,
+  "provenance": "Original editable metric relief/profile and periodic fields; no third-party/reference pixels or accepted source overwritten.",
+  "packing": "RGB ORM: R1 reserved AO, G roughness, B0 metal; +Y normals",
+  "regions": [
+    {
+      "id": "arch_fillet",
+      "allocated_rows": [
+        0,
+        256
+      ],
+      "active_rows": [
+        96,
+        160
+      ],
+      "uv_v": [
+        0.046875,
+        0.078125
+      ],
+      "physical_width_m": 0.0625,
+      "actual_reference_width_m": 0.06,
+      "canonical_surface": "ARCH-005",
+      "minimum_guard_px": 96,
+      "relief_range_m": [
+        -0.0015177431250773322,
+        3.995307144145896e-05
+      ],
+      "roughness_range": [
+        0.8170000211778693,
+        0.8643804223750057
+      ],
+      "authored_profile": "twin_chisel_channels",
+      "physical_u_repeat_m": 2.0
+    },
+    {
+      "id": "arch_moulding",
+      "allocated_rows": [
+        256,
+        768
+      ],
+      "active_rows": [
+        352,
+        672
+      ],
+      "uv_v": [
+        0.171875,
+        0.328125
+      ],
+      "physical_width_m": 0.3125,
+      "actual_reference_width_m": 0.30943298257252266,
+      "canonical_surface": "ARCH-005",
+      "minimum_guard_px": 96,
+      "relief_range_m": [
+        -0.0030029451798342897,
+        0.003537653989637121
+      ],
+      "roughness_range": [
+        0.8170000008471149,
+        0.8755217822105467
+      ],
+      "authored_profile": "rails_and_rounded_beads",
+      "physical_u_repeat_m": 2.0
+    },
+    {
+      "id": "pedestal_plinth",
+      "allocated_rows": [
+        768,
+        1152
+      ],
+      "active_rows": [
+        864,
+        1056
+      ],
+      "uv_v": [
+        0.421875,
+        0.515625
+      ],
+      "physical_width_m": 0.1875,
+      "actual_reference_width_m": 0.164,
+      "canonical_surface": "PROP-001",
+      "minimum_guard_px": 96,
+      "relief_range_m": [
+        -0.004012185086129625,
+        3.999731752943677e-05
+      ],
+      "roughness_range": [
+        0.817000002353097,
+        0.8829545549473463
+      ],
+      "authored_profile": "plinth_block_joints",
+      "physical_u_repeat_m": 2.0
+    },
+    {
+      "id": "wall_border",
+      "allocated_rows": [
+        1152,
+        1664
+      ],
+      "active_rows": [
+        1216,
+        1600
+      ],
+      "uv_v": [
+        0.59375,
+        0.78125
+      ],
+      "physical_width_m": 0.375,
+      "actual_reference_width_m": 0.16688319268278637,
+      "canonical_surface": "ARCH-004",
+      "minimum_guard_px": 64,
+      "relief_range_m": [
+        -0.004027114595290382,
+        0.00047021923947191985
+      ],
+      "roughness_range": [
+        0.817000002353097,
+        0.8825765960479791
+      ],
+      "authored_profile": "framed_border_courses",
+      "physical_u_repeat_m": 2.0
+    },
+    {
+      "id": "floor_edge",
+      "allocated_rows": [
+        1664,
+        2048
+      ],
+      "active_rows": [
+        1728,
+        1984
+      ],
+      "uv_v": [
+        0.84375,
+        0.96875
+      ],
+      "physical_width_m": 0.25,
+      "actual_reference_width_m": 0.2,
+      "canonical_surface": "ARCH-006",
+      "minimum_guard_px": 64,
+      "relief_range_m": [
+        -0.001996578141732526,
+        0.0030398854997353395
+      ],
+      "roughness_range": [
+        0.8170000211778693,
+        0.8679215321597951
+      ],
+      "authored_profile": "rounded_floor_return",
+      "physical_u_repeat_m": 2.0
+    }
+  ],
+  "maps": [
+    {
+      "role": "albedo",
+      "file": "t_stone_ornament_trim_albedo.png",
+      "bytes": 852877,
+      "sha256": "25a6669610cb406f77628332d7e98ecdd6e8e10ecec31ba9244c602f25561a78",
+      "u_wrap_mean_8bit": 0.48095703125,
+      "u_adjacent_mean_8bit": 0.23080723123778701
+    },
+    {
+      "role": "normal",
+      "file": "t_stone_ornament_trim_normal.png",
+      "bytes": 288795,
+      "sha256": "0f21e21ded56948483554d8cae192cba09d4b79d3109c4c792c1aad38eb7162c",
+      "u_wrap_mean_8bit": 1.1424153645833333,
+      "u_adjacent_mean_8bit": 0.11310894818128155
+    },
+    {
+      "role": "orm",
+      "file": "t_stone_ornament_trim_orm.png",
+      "bytes": 126337,
+      "sha256": "2f718d5d44f1d2bc16afbf4856f8957b73a93d4520d7589357ffe20b73c5191a",
+      "u_wrap_mean_8bit": 0.24820963541666666,
+      "u_adjacent_mean_8bit": 0.22431637444532648
+    }
+  ]
+}

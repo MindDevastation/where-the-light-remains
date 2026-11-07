@@ -1,0 +1,22 @@
+{
+  "payloads": [
+    {
+      "path": "assets/3d/blender/archive_kit/archive_wing_gate.blend",
+      "bytes": 775941,
+      "sha256": "06fdc27a487d6cc8bc9d1f14a6a1fa745f0e47cae8670c54978c789ecadc1156"
+    },
+    {
+      "path": "game/art/meshes/archive_kit/sm_archive_wing_gate.glb",
+      "bytes": 403636,
+      "sha256": "0df79227b620257ef586821690c9f58257457defe6aa1608ac93e1c81281a190"
+    }
+  ],
+  "measurements": [
+    {
+      "stem": "sm_archive_wing_gate",
+      "triangles": 3596,
+      "surfaces": 3
+    }
+  ],
+  "geometry_helper_sha256": "da99969a66263bde92d323fed17f1299b7e6c8f2a0605d44be98da52026ad2c7"
+}

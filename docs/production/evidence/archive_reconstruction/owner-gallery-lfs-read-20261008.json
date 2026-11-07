@@ -1,0 +1,29 @@
+{
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout_bytes": 3344,
+  "stderr": "Downloading game/art/meshes/archive_kit/sm_archive_floor_1m.glb (3.3 KB)\n",
+  "payload_verified": true,
+  "started_at": "2026-10-08T12:31:59.910813+00:00",
+  "finished_at": "2026-10-08T12:32:10.539504+00:00",
+  "scope": "One existing3344-byte floor object into owned empty store;anonymous read only,no upload/ref/working-file changes",
+  "command": [
+    "git",
+    "-c",
+    "lfs.storage=OWNED_EMPTY_TEMP",
+    "-c",
+    "lfs.dialtimeout=8",
+    "-c",
+    "lfs.tlstimeout=8",
+    "-c",
+    "lfs.activitytimeout=8",
+    "-c",
+    "lfs.transfer.maxretries=0",
+    "lfs",
+    "smudge",
+    "--",
+    "game/art/meshes/archive_kit/sm_archive_floor_1m.glb"
+  ],
+  "credential_present": false,
+  "owned_private_store_removed": true
+}

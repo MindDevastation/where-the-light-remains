@@ -1,0 +1,123 @@
+{
+  "captures": [
+    {
+      "bolt_local_x": 0.0,
+      "draw_calls": 116,
+      "file": "hub_floor_s00_closed_medium.png",
+      "left_door_x": -0.649999976158142,
+      "name": "hub_floor_s00_closed",
+      "right_door_x": 0.649999976158142,
+      "sample_seconds": 0.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 117,
+      "file": "hub_floor_s00_opening_medium.png",
+      "left_door_x": -1.11666667461395,
+      "name": "hub_floor_s00_opening",
+      "right_door_x": 1.11666667461395,
+      "sample_seconds": 2.5,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 92,
+      "file": "hub_floor_s00_entry_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "hub_floor_s00_entry",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 7.9,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 92,
+      "file": "hub_floor_s01_asleep_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "hub_floor_s01_asleep",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 70,
+      "file": "hub_floor_s01_detail_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "hub_floor_s01_detail",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 47,
+      "file": "hub_floor_corridor_join_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "hub_floor_corridor_join",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": true
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 93,
+      "file": "hub_floor_s01_awakened_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "hub_floor_s01_awakened",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    },
+    {
+      "bolt_local_x": -0.239999994635582,
+      "draw_calls": 97,
+      "file": "hub_floor_completed_hub_medium.png",
+      "left_door_x": -2.04999995231628,
+      "name": "hub_floor_completed_hub",
+      "right_door_x": 2.04999995231628,
+      "sample_seconds": 8.0,
+      "size": [
+        960,
+        540
+      ],
+      "supplemental_detail": false
+    }
+  ],
+  "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "glow": false,
+  "quality": "medium",
+  "renderer": "forward_plus",
+  "scope": "hub_floor",
+  "status": "CAPTURED_FOR_REVIEW",
+  "volumetrics": false
+}

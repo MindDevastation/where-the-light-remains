@@ -10,6 +10,10 @@ enum Step {PANEL, TAKE_LENS, INSTALL_LENS, ACTIVATE}
 @export var target_paths: Array[NodePath] = []
 @export var loose_lens_path: NodePath
 @export var installed_lens_path: NodePath
+@export var panel_lid_path: NodePath
+@export var lever_handle_path: NodePath
+@export var panel_open_degrees := -18.0
+@export var lever_pulled_degrees := 25.0
 var _phase: Phase = Phase.CLOSED
 
 var phase: Phase:
@@ -50,3 +54,10 @@ func _refresh() -> void:
         loose.visible = _phase in [Phase.CLOSED, Phase.PANEL_OPEN]
     if installed != null:
         installed.visible = _phase >= Phase.LENS_INSTALLED
+    # Cosmetic pose projection also runs on quiet restore and activation retry.
+    var lid: Node3D = get_node_or_null(panel_lid_path) as Node3D if not panel_lid_path.is_empty() else null
+    var handle: Node3D = get_node_or_null(lever_handle_path) as Node3D if not lever_handle_path.is_empty() else null
+    if lid != null:
+        lid.rotation.y = deg_to_rad(panel_open_degrees) if _phase >= Phase.PANEL_OPEN else 0.0
+    if handle != null:
+        handle.rotation.x = deg_to_rad(lever_pulled_degrees) if _phase >= Phase.AWAKENING else 0.0

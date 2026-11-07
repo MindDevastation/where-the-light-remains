@@ -1,0 +1,406 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T23:25:59.388863+00:00",
+  "scope": "Source/actual existing GLB material-assignment audit only; no native test, material production or art acceptance",
+  "base_production_stable": "5184c48031b5e710b7fdf2b698bccf3091784374",
+  "source_hashes": {
+    "docs/design/REQUIRED_ASSET_TABLE.md": "e5aa8ba983d18feef4fddf0f8ddfa7795b246dcbf1a0978fa38f366fdbce960c",
+    "game/worlds/archive/archive_main.tscn": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082",
+    "game/worlds/archive/archive_prologue.tscn": "50d9cd1a0b04f1367c27cb35fc5394dfcc347185a762f7412f8693b003270860",
+    "docs/production/MATERIAL_LIBRARY.md": "c24b764449fa1b65dae016388f66c736b1129ebfd9dbfeef95f84ba879a6f54f"
+  },
+  "hidden_stone_nodes": [
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Corridor/CorridorFloor\"]",
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Corridor/CorridorWallL\"]",
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Corridor/CorridorWallR\"]",
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Room/RoomFloor\"]",
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Room/RoomWallL\"]",
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Room/RoomWallR\"]",
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Room/RoomBack\"]",
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Room/RoomFrontL\"]",
+    "name=\"Mesh\" type=\"MeshInstance3D\" parent=\"Wing01/Room/RoomFrontR\"]"
+  ],
+  "s00_stone_resource_unused": true,
+  "existing_material_resources": [
+    "m_aged_brass.tres",
+    "m_aged_leather.tres",
+    "m_archive_beam_core.tres",
+    "m_archive_beam_halo.tres",
+    "m_archive_emissive_gold.tres",
+    "m_archive_inspect_glow.tres",
+    "m_archive_night_sky.tres",
+    "m_archive_parchment.tres",
+    "m_clear_glass.tres",
+    "m_crimson_textile.tres",
+    "m_crystal_glass.tres",
+    "m_dark_iron.tres",
+    "m_dark_walnut.tres",
+    "m_hub_night_sky.tres",
+    "m_memory_glass.tres",
+    "m_navy_textile.tres",
+    "m_observatory_stone.tres",
+    "m_polished_brass.tres",
+    "m_resonance_teal.tres"
+  ],
+  "actual_glb_material_families": {
+    "game/art/meshes/archive_kit/sm_archive_arch_4m.glb": {
+      "sha256": "92b0bd4dabd7025b18fe5cd014113d82630f33db5c4d914adbfcb5df475469b8",
+      "material_names": [
+        "m_observatory_stone",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_arched_fanlight.glb": {
+      "sha256": "caf5e4b5bb21fe97b8a3df915d912419ec9f60b99d7b4998e894f848f1d8f03b",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_iron",
+        "m_aged_brass",
+        "m_clear_glass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_bookcase.glb": {
+      "sha256": "4eabe0dc054f24b6efd894733ac9758e83d84d7d590e4914b3253eaec816205a",
+      "material_names": [
+        "m_dark_walnut",
+        "m_aged_brass",
+        "m_aged_leather",
+        "m_archive_parchment",
+        "m_navy_textile",
+        "m_crimson_textile"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_floor_1m.glb": {
+      "sha256": "76439e3190d4800f1b9420156d205d456eb28a4ce16efd10754622a67c7351b8",
+      "material_names": [
+        "m_observatory_stone"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_pier_4m.glb": {
+      "sha256": "fccc429872c7830a8383af365ede92e4133dc8167cc0f49cf6566e6bb59504a0",
+      "material_names": [
+        "m_observatory_stone",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_rug.glb": {
+      "sha256": "d4d5d77e2348b229ac532d1c8088ae0762c8d3b636a48a240bf14652eb3261d9",
+      "material_names": [
+        "m_navy_textile",
+        "m_crimson_textile"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_2m.glb": {
+      "sha256": "0c1f97a72051fc307759d6c231fb1814673002d7900ebbb622a876063dc2c612",
+      "material_names": [
+        "m_observatory_stone"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_3m.glb": {
+      "sha256": "2e80cff33e5a33ccec4d97fbe622874da9c23db20622903cd89963fc0528ecb3",
+      "material_names": [
+        "m_observatory_stone"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_4m.glb": {
+      "sha256": "e31fbbf52dbcfedaa9eafa5e847b4767685e4ca1fc7dbd246a1d9e9708dc09be",
+      "material_names": [
+        "m_observatory_stone"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_wall_lantern.glb": {
+      "sha256": "9598d00819f9c1bacc37390f02b6d677b8e9830a8ebad70b940dc1a6fe3c3096",
+      "material_names": [
+        "m_dark_iron",
+        "m_aged_brass",
+        "m_clear_glass",
+        "m_archive_emissive_gold"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_archive_wing_gate.glb": {
+      "sha256": "0df79227b620257ef586821690c9f58257457defe6aa1608ac93e1c81281a190",
+      "material_names": [
+        "m_dark_walnut",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_guard_long.glb": {
+      "sha256": "4d52cb70a3fec6bdce3c75d714f15fc4afce1cbfff1b8ec1cee19848fcb30f57",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_guard_rear.glb": {
+      "sha256": "75dcc815e74c1900e7d8ab36bf1f2a8d3f46c348132f8bd3b675b76d2c22afd6",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_approach_path.glb": {
+      "sha256": "2697adc7b90c93c4a1cd2da5513d13d7c7893084d0d9dae258339826a717c7b4",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_entrance_leaf.glb": {
+      "sha256": "5af2f6db8dc3860d29bd1a90c1379e460d96d152fa21ccdf0f7af35612d05e41",
+      "material_names": [
+        "m_dark_walnut",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_entry_arch.glb": {
+      "sha256": "c1c0efd48af37d6b9c03a2a745c4e88dbae395f77d8b4827a5557304916d029b",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_entry_facade.glb": {
+      "sha256": "f434c2bbc9bc5a8bc007373cab6bd9ce337c6692aa6da281f6ff66e8d96734d8",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_walnut",
+        "m_dark_iron",
+        "m_aged_brass",
+        "m_crimson_textile"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_bolt.glb": {
+      "sha256": "f90aa412f2c70f15e959eadce3f12b65ca49fce0adaa9716d543f6b681f3d93b",
+      "material_names": [
+        "m_aged_brass",
+        "m_dark_iron"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_housing.glb": {
+      "sha256": "c38850f65031236949be5f7533886c0a5bf2bb75e236643488b1c8acf9ebdf50",
+      "material_names": [
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s00_lock_keeper.glb": {
+      "sha256": "257fb8d48d95547a3a61fbb2fab6d82307c6c68ffb138cb14f89426ae5d6c26e",
+      "material_names": [
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_core_pedestal.glb": {
+      "sha256": "46fd606039325ab095a87debcee5b168b48ceefe7d4574838f061d9f42e1f1ff",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_walnut",
+        "m_dark_iron",
+        "m_aged_brass",
+        "m_crimson_textile"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_drum.glb": {
+      "sha256": "eaf342a4196e36b7c811fee1e8a62b8e4530b6ec8f8297c4128770540c54e404",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_walnut",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_frame.glb": {
+      "sha256": "bb68b2af5849907104c88c368c5bbe5c369362237bd862fc5121bd0b0975017d",
+      "material_names": [
+        "m_dark_walnut",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_glass.glb": {
+      "sha256": "441f5630a6dd34cbdee0fe878e7c3691a03016e3b0716f77d10ac45619f2b9df",
+      "material_names": [
+        "m_clear_glass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_dome_sky.glb": {
+      "sha256": "ad08178e51dec6e6c11b2e3746e9ede7004e9233a1b7d6de793bfb9361bd7245",
+      "material_names": [
+        "m_hub_night_sky"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_floor.glb": {
+      "sha256": "b13179eca99cf87dde6a76097ab3436955a3470ce3dd1bc6eed3960a17fa2c35",
+      "material_names": [
+        "m_observatory_stone",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_hub_wall.glb": {
+      "sha256": "f00705ba6d03def2ea4a01c8bd736be6c469a1b94c8f3a3ab5712e90e5c33e0f",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_walnut",
+        "m_dark_iron",
+        "m_aged_brass",
+        "m_navy_textile"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_lens_socket.glb": {
+      "sha256": "048dc3854782d0f9675a84eddbd9f7bdd1d13687908d5c1d574afc6e4370d07a",
+      "material_names": [
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_lever_base.glb": {
+      "sha256": "c3817ce376a2b7380fbaaaab5796c271707c0ea7d6ccb03e8d1c7e0d3707c7a3",
+      "material_names": [
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_lever_handle.glb": {
+      "sha256": "3e75aa3d1dc259985069b225d8e4ac0ca7e7695a352b98b69b3f4b1770530ee0",
+      "material_names": [
+        "m_aged_brass",
+        "m_dark_walnut"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_panel_base.glb": {
+      "sha256": "f9e3a6455a74e06ae9941726095d99183b8ee9d88603716ab664c5de91a17cf8",
+      "material_names": [
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_panel_cover.glb": {
+      "sha256": "55f821825a8894bd0692b3e99669f3da4816e767d26f4eb2304a06ae7207934c",
+      "material_names": [
+        "m_dark_walnut",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_s01_starting_lens.glb": {
+      "sha256": "2f3e6451666da55d05bddf4124a216ed7d3cae05d0bed894486a0eedbc72a1ea",
+      "material_names": [
+        "m_aged_brass",
+        "m_clear_glass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_10m.glb": {
+      "sha256": "751d08a82f16a7ba953bf5507f650ef3e9a886fe2835e5052605fb3d212a8662",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_rib_12m.glb": {
+      "sha256": "29e908b8af61325accfbec02960671a3f7daaef6a0cc63ebea9bb3825946c8ff",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_wing01_ceiling_transition.glb": {
+      "sha256": "9236b5c4ed502d265ef502351ee15f7fdaf460da566f7732fb5e5f96787345c8",
+      "material_names": [
+        "m_observatory_stone",
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_frame.glb": {
+      "sha256": "54940fbce6ebacb2109e4b49dce1e23130a5597232a7e68b841b9bef97fb8de8",
+      "material_names": [
+        "m_dark_iron",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_glass.glb": {
+      "sha256": "ee8a33474c883136f62d09fbe01ec35877b1fff37d35c0c3491e6813d1d6f054",
+      "material_names": [
+        "m_clear_glass"
+      ]
+    },
+    "game/art/meshes/archive_kit/sm_wing01_dome_sky.glb": {
+      "sha256": "fbef1abb6098414630ab74a235f42f158e60479e8a726a9376a0d923f48019aa",
+      "material_names": [
+        "m_archive_night_sky"
+      ]
+    },
+    "game/art/meshes/validation/sm_pipeline_meter_cube.glb": {
+      "sha256": "245d2866efb6e44d1e7cea3eda98ed3119584850e5be4981a451723eac7d4893",
+      "material_names": [
+        "m_pipeline_neutral"
+      ]
+    },
+    "game/art/meshes/wing01/sm_wing01_emitter.glb": {
+      "sha256": "fc1b2c56dd149aab74776ff3d26f904d6dee4fa1e8d426808be3041482a3fd39",
+      "material_names": [
+        "m_aged_brass",
+        "m_dark_iron",
+        "m_clear_glass"
+      ]
+    },
+    "game/art/meshes/wing01/sm_wing01_focus.glb": {
+      "sha256": "da40f358885bcc06ffd6716c1529d1739946ac96a9b0dc4b0b883c935639f4c7",
+      "material_names": [
+        "m_aged_brass",
+        "m_dark_walnut",
+        "m_dark_iron"
+      ]
+    },
+    "game/art/meshes/wing01/sm_wing01_frame.glb": {
+      "sha256": "90d453c1dbc7993ff3c125540d1740c6e2f9b4a08c8bfb1943c58c5e38d8fe01",
+      "material_names": [
+        "m_observatory_stone",
+        "m_aged_brass",
+        "m_dark_walnut",
+        "m_dark_iron"
+      ]
+    },
+    "game/art/meshes/wing01/sm_wing01_hearth.glb": {
+      "sha256": "a0f729e5ff711f296a6e1d10e5dac6df8b2950f8076e6d834a5cdb1a4d012738",
+      "material_names": [
+        "m_observatory_stone",
+        "m_aged_brass"
+      ]
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_inner.glb": {
+      "sha256": "e412622abfdb4484c4fe29507fbb09664ea0f4611918e57c2e8ece3c0c1fd80c",
+      "material_names": [
+        "m_aged_brass",
+        "m_dark_walnut",
+        "m_dark_iron"
+      ]
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_middle.glb": {
+      "sha256": "845e6764c1d558dfd3fbc287124232b0ed4e7d3f150c07078b1208837b175352",
+      "material_names": [
+        "m_aged_brass",
+        "m_dark_walnut",
+        "m_dark_iron"
+      ]
+    },
+    "game/art/meshes/wing01/sm_wing01_ring_outer.glb": {
+      "sha256": "14e778dbc18c373c9c516e1ffd6a899a398d6eca81a9e2d2b971e7af6f79b212",
+      "material_names": [
+        "m_aged_brass",
+        "m_dark_walnut",
+        "m_dark_iron"
+      ]
+    }
+  },
+  "new_material_or_geometry": false,
+  "inventory_change": false,
+  "finding": "Nine primitive Stone bindings are hidden replaced collider shells; S00 Stone is unused. No distinct linen/leaf/cool-stone runtime master or safe assigned new slot. Preserve accepted warm-stone/cloth geometry. Native candidate master/specimen work is independently possible but shipping assignment needs its own fixed asset placement; no fake visible primitive restoration."
+}

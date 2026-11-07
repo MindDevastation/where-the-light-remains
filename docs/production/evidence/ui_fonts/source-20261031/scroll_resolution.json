@@ -1,0 +1,11 @@
+{
+  "status": "PASS_RESOLVED_IN_NATIVE_ATTEMPT3",
+  "before_scroll_px": 42,
+  "before_field_top_y": 91,
+  "viewport_top_y": 133,
+  "manual_zero_field_top_y": 133,
+  "resolution": "Defer initial focus until visible layout and reset scroll to zero. Check normal open, early close and reopen in all three current-resolution runs.",
+  "diagnostic_entrypoint_failure": "First probe incorrectly launched a Node script with --script; corrected scene launch is retained alongside that failure. No engine blocker claimed.",
+  "retained_private_source_restoration": "App/project/theme temporarily synced for diagnostic; original private source bytes restored and verified afterward.",
+  "final_ui_receipt": "../native-20261031-3/results.json"
+}

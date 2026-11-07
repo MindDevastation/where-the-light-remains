@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-06T21:16:57.317876+00:00",
+  "scope": "Strengthened per-connected-component source check; same payloads, no export/art change. Initial authoring receipt retained unchanged.",
+  "components": 83,
+  "source_hashes": {
+    "tools/verify_archive_arched_fanlight.py": "c32786935054d575f55ca64d950f40bbce8a69b9af654b017f90f2eed9c308b2",
+    "assets/3d/blender/archive_kit/archive_arched_fanlight.blend": "3c1a8cd4411b6a46ac7ad261d1fcba2fb7a9659082d2df9bb924c9a578e18367",
+    "game/art/meshes/archive_kit/sm_archive_arched_fanlight.glb": "caf5e4b5bb21fe97b8a3df915d912419ec9f60b99d7b4998e894f848f1d8f03b",
+    "docs/production/archive_arched_fanlight.json": "90884d4671b830273cd6e4a87a28f207e533918b53b1afe91205a950740ca21f"
+  },
+  "log_sha256": "342d48e26b09fc270c4d70715d4bd52ad878ace52b1d32066b002d79c05f32ab"
+}

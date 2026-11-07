@@ -1,0 +1,47 @@
+$ /workspace/scratch/0152d86aa631/graphics/usr/bin/Xvfb :100 -screen 0 1920x1080x24 -listen tcp -nolisten unix -nolisten local -noreset -auth /tmp/wlr-x11-g28v3gfc/Xauthority
+DISPLAY=127.0.0.1:100; VK_ICD_FILENAMES=/workspace/scratch/0152d86aa631/graphics/usr/share/vulkan/icd.d/lvp_icd.json
+X11_TCP_AUTH PASS: valid cookie accepted; unauthenticated client rejected
+$ /workspace/scratch/0152d86aa631/toolchain/godot-4.7.2/Godot_v4.7.2-stable_linux.x86_64 --display-driver x11 --rendering-driver vulkan --rendering-method forward_plus --audio-driver Dummy --path game --resolution 960x540 res://tests/archive_starting_lens_review.tscn -- --review-output=/workspace/scratch/0152d86aa631/where-the-light-remains/docs/production/evidence/archive_reconstruction/lens-visual-1 --quality=low --preserve-display
+
+Godot stdout/stderr:
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.318 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 20.1.2, 256 bits)
+
+ERROR: Lens shipping resume failed
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://tests/archive_starting_lens_review.gd:41)
+       [1] request_resume_stage (res://autoload/scene_router.gd:201)
+       [2] _request_stage (res://autoload/scene_router.gd:307)
+       [3] _preload_definition (res://autoload/scene_router.gd:89)
+
+
+Xvfb stdout/stderr:
+Warning: getifaddrs returns Operation not permitted
+Warning: getifaddrs returns Operation not permitted
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Could not resolve keysym XF86CameraAccessEnable
+> Warning:          Could not resolve keysym XF86CameraAccessDisable
+> Warning:          Could not resolve keysym XF86CameraAccessToggle
+> Warning:          Could not resolve keysym XF86NextElement
+> Warning:          Could not resolve keysym XF86PreviousElement
+> Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+> Warning:          Could not resolve keysym XF86MarkWaypoint
+> Warning:          Could not resolve keysym XF86Sos
+> Warning:          Could not resolve keysym XF86NavChart
+> Warning:          Could not resolve keysym XF86FishingChart
+> Warning:          Could not resolve keysym XF86SingleRangeRadar
+> Warning:          Could not resolve keysym XF86DualRangeRadar
+> Warning:          Could not resolve keysym XF86RadarOverlay
+> Warning:          Could not resolve keysym XF86TraditionalSonar
+> Warning:          Could not resolve keysym XF86ClearvuSonar
+> Warning:          Could not resolve keysym XF86SidevuSonar
+> Warning:          Could not resolve keysym XF86NavInfo
+Errors from xkbcomp are not fatal to the X server
+
+Traceback (most recent call last):
+  File "/tmp/wlr-lens-visual-88ol3q_3/tools/run_graphical.py", line 145, in <module>
+    main()
+  File "/tmp/wlr-lens-visual-88ol3q_3/tools/run_graphical.py", line 130, in main
+    raise RuntimeError(f'Godot failed: exit={code}; see captured output')
+RuntimeError: Godot failed: exit=1; see captured output

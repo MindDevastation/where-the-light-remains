@@ -1,0 +1,59 @@
+{
+  "source": "assets/3d/blender/archive_kit/s00_entry_portal.blend",
+  "materials": {
+    "stone": "res://art/materials/m_observatory_stone.tres",
+    "walnut": "res://art/materials/m_dark_walnut.tres",
+    "iron": "res://art/materials/m_dark_iron.tres",
+    "brass": "res://art/materials/m_aged_brass.tres",
+    "crimson": "res://art/materials/m_crimson_textile.tres"
+  },
+  "parts": [
+    {
+      "id": "facade",
+      "stem": "sm_s00_entry_facade",
+      "runtime": "game/art/meshes/archive_kit/sm_s00_entry_facade.glb",
+      "materials": [
+        "stone",
+        "walnut",
+        "iron",
+        "brass",
+        "crimson"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 7000
+    },
+    {
+      "id": "arch",
+      "stem": "sm_s00_entry_arch",
+      "runtime": "game/art/meshes/archive_kit/sm_s00_entry_arch.glb",
+      "materials": [
+        "stone",
+        "iron",
+        "brass"
+      ],
+      "joint": [
+        0,
+        0,
+        0
+      ],
+      "triangle_ceiling": 3000
+    }
+  ],
+  "facade_body_size": [
+    2.258,
+    4.8,
+    0.35
+  ],
+  "arch_world_root": [
+    0,
+    0,
+    9
+  ],
+  "arch_min_y": 3.84,
+  "arch_max_z": 0.16,
+  "leaf_rear_z": 9.275
+}

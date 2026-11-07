@@ -1,0 +1,2 @@
+ARCHIVE_DECAL_GENERATE PASS: one2048 master and four exact1024 coverage crops
+ARCHIVE_DECAL_PIXELS PASS: 43 assertions; exact source crops and reproducible bytes

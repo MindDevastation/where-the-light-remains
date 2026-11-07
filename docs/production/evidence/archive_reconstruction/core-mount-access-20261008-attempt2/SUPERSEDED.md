@@ -1,0 +1,1 @@
+Passing132-assertion development probe. Superseded by final135-assertion fixture adding explicit10um numerical allowance and own-ring outside-terminal-joint checks. Do not aggregate these132 as final executions.

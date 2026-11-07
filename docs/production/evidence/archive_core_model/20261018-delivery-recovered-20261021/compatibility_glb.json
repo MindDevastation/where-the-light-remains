@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "triangles": 5048,
+  "surfaces": 5,
+  "self_contained": true,
+  "scope": "Container/count check; the complete hero has independent source and native render checks"
+}

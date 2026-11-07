@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "scope": "Eight existing Hearth pairs only. Conservative screen AABBs of fixed original decal volumes with two-pixel raster/metadata reserve. No image edits, new render or gameplay action.",
+  "pairs": [
+    {
+      "preset": "low",
+      "view": "hearth_close",
+      "changed_pixels": 4634,
+      "pixels_outside_projected_volume_bounds": 0,
+      "maximum_channel_delta_8bit": 5,
+      "projected_volume_bounds": [
+        {
+          "kind": "dust",
+          "rect_xyxy": [
+            580,
+            551,
+            766,
+            720
+          ]
+        },
+        {
+          "kind": "soot",
+          "rect_xyxy": [
+            473,
+            293,
+            806,
+            474
+          ]
+        }
+      ]
+    },
+    {
+      "preset": "low",
+      "view": "hearth_soot",
+      "changed_pixels": 49438,
+      "pixels_outside_projected_volume_bounds": 0,
+      "maximum_channel_delta_8bit": 6,
+      "projected_volume_bounds": [
+        {
+          "kind": "soot",
+          "rect_xyxy": [
+            391,
+            187,
+            890,
+            590
+          ]
+        }
+      ]
+    },
+    {
+      "preset": "low",
+      "view": "hearth_dust",
+      "changed_pixels": 11604,
+      "pixels_outside_projected_volume_bounds": 0,
+      "maximum_channel_delta_8bit": 6,
+      "projected_volume_bounds": [
+        {
+          "kind": "dust",
+          "rect_xyxy": [
+            480,
+            262,
+            801,
+            489
+          ]
+        }
+      ]
+    },
+    {
+      "preset": "low",
+      "view": "hearth_approach",
+      "changed_pixels": 1158,
+      "pixels_outside_projected_volume_bounds": 0,
+      "maximum_channel_delta_8bit": 5,
+      "projected_volume_bounds": [
+        {
+          "kind": "dust",
+          "rect_xyxy": [
+            654,
+            488,
+            753,
+            551
+          ]
+        },
+        {
+          "kind": "soot",
+          "rect_xyxy": [
+            549,
+            349,
+            721,
+            420
+          ]
+        }
+      ]
+    },
+    {
+      "preset": "medium",
+      "view": "hearth_close",
+      "changed_pixels": 10185,
+      "pixels_outside_projected_volume_bounds": 0,
+      "maximum_channel_delta_8bit": 6,
+      "projected_volume_bounds": [
+        {
+          "kind": "dust",
+          "rect_xyxy": [
+            871,
+            828,
+            1147,
+            1080
+          ]
+        },
+        {
+          "kind": "soot",
+          "rect_xyxy": [
+            711,
+            440,
+            1208,
+            709
+          ]
+        }
+      ]
+    },
+    {
+      "preset": "medium",
+      "view": "hearth_soot",
+      "changed_pixels": 110600,
+      "pixels_outside_projected_volume_bounds": 0,
+      "maximum_channel_delta_8bit": 6,
+      "projected_volume_bounds": [
+        {
+          "kind": "soot",
+          "rect_xyxy": [
+            588,
+            282,
+            1333,
+            884
+          ]
+        }
+      ]
+    },
+    {
+      "preset": "medium",
+      "view": "hearth_dust",
+      "changed_pixels": 25890,
+      "pixels_outside_projected_volume_bounds": 0,
+      "maximum_channel_delta_8bit": 6,
+      "projected_volume_bounds": [
+        {
+          "kind": "dust",
+          "rect_xyxy": [
+            722,
+            394,
+            1200,
+            731
+          ]
+        }
+      ]
+    },
+    {
+      "preset": "medium",
+      "view": "hearth_approach",
+      "changed_pixels": 2501,
+      "pixels_outside_projected_volume_bounds": 0,
+      "maximum_channel_delta_8bit": 6,
+      "projected_volume_bounds": [
+        {
+          "kind": "dust",
+          "rect_xyxy": [
+            983,
+            734,
+            1128,
+            825
+          ]
+        },
+        {
+          "kind": "soot",
+          "rect_xyxy": [
+            825,
+            525,
+            1079,
+            628
+          ]
+        }
+      ]
+    }
+  ]
+}

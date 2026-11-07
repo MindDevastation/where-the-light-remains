@@ -1,0 +1,1 @@
+Historical failed test fixture: exact float32 leaf Y/Z comparison rejected every pose. Production geometry, collider and timeline unchanged. Corrected is_equal_approx fixture and portal-smoke-2 PASS are authority. No failed run included in acceptance.
