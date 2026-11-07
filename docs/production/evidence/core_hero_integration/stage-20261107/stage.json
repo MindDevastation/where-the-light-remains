@@ -1,0 +1,30 @@
+{
+  "status": "STAGED_NOT_PUBLISHED",
+  "changed": [
+    {
+      "path": "game/worlds/archive/archive_main.tscn",
+      "before_sha256": "43594ed5a5f6c053c6a0af8cf65f6d8e76e0757359de601520cbc00291b4b082",
+      "after_sha256": "e285debeeed033cdb9e13b4cc07fd54afeb7c01c2e6eac0adea6e66b35513356"
+    },
+    {
+      "path": "game/worlds/archive/archive_main.gd",
+      "before_sha256": "17edcb806e5868d671a1f820c1674b8975b57fbf5d745c0f879c28c19bddf09f",
+      "after_sha256": "be59a4d0d9e30d96afbf211d43b4ac18c25b3c94904c5b440152f32f0dff04e2"
+    },
+    {
+      "path": "game/art/scenes/hero_props/archive_core_visual.gd",
+      "after_sha256": "7898647cc8697bfc088406e6d751fbdbadd33d7bf2923d8344fc6e48e25eea36",
+      "new_text_source": true
+    },
+    {
+      "path": "game/art/scenes/hero_props/archive_core_upper.tscn",
+      "after_sha256": "341a5db99f28b76998fd26dcf890c4774c173204da05a5eccc3bfb3029b4ee61",
+      "new_text_source": true
+    }
+  ],
+  "ring_mount_triangles": 5048,
+  "delivered_energy_glass_triangles": 3840,
+  "expected_visible_triangles": 8888,
+  "rings_mounts_ceiling": 6000,
+  "scope": "Original GLB references and text-only projection hook. Hidden full-body/richer ring parts remain in the original referenced GLB, not converted or exported. Exact source files and GLBs remain unchanged."
+}

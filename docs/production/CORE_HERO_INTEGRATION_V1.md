@@ -9,3 +9,7 @@ First stage: prepare an exact private-copy patch that replaces the provisional u
 The three previously reviewed Blender/GLB publication destinations retain their earlier automatic-review blocker. No binary upload, conversion, replacement format or LFS pointer is attempted. Prepare concrete files, hashes, integration patch and current native evidence before requesting the required specific publication consent. Shipping game files and inventories remain unchanged in this staged block. The private patch is reviewable source, not an enabled fallback that conceals a missing resource.
 
 Current status: recovery-only WIP, not runtime/style acceptance. Final hero style and full initial-zone readiness remain open. ARCH-011 A/B pending; GATE-VS1 OPEN/S03 blocked. Main/base/draft unchanged.
+
+## Private staging checkpoint
+
+The original delivery was recovered with all 40 manifest identities verified. The owned private game copy restored all 47 existing GLB payloads with independent SHA-256/size checks. Repository game files remain unchanged. A guarded text-only patch references the original compatible upper (5,048 triangles) and the original delivered energy/glass (3,840 triangles). Native import, envelope/control checks and matched scene captures are pending. This checkpoint is preparation, not runtime acceptance or asset publication.
